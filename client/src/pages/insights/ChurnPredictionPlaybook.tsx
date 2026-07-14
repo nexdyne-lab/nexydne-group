@@ -1,251 +1,134 @@
-import React from 'react';
-import ReadingProgress from '@/components/ReadingProgress';
-import InlineTableOfContents from '@/components/InlineTableOfContents';
-import { Link } from 'wouter';
-import { ArrowLeft, Clock, Calendar, Tag, ArrowRight, Code, Database, Server, Cpu } from 'lucide-react';
-import NewsletterSubscribe from '@/components/NewsletterSubscribe';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import Breadcrumbs from '@/components/Breadcrumbs';
-import SocialShare from '@/components/SocialShare';
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function ChurnPredictionPlaybook() {
+  const sections = [
+    { id: "data-pipeline", label: "The data pipeline" },
+    { id: "feature-engineering", label: "Feature engineering" },
+    { id: "model-selection", label: "Model selection" },
+    { id: "last-mile", label: "The last mile" },
+    { id: "automation", label: "Automating action" },
+    { id: "conclusion", label: "Conclusion" },
+  ];
+
+  const relatedInsights = [
+    { title: "Why NPS Is a Vanity Metric", category: "Data Science", link: "/insights/why-nps-is-a-vanity-metric", image: "/images/insights-predictive-retention.jpg" },
+    { title: "The Economics of Loyalty", category: "Unit Economics", link: "/insights/economics-of-loyalty", image: "/images/insight-subscription-models.jpg" },
+    { title: "Customer Intelligence", category: "Data Science", link: "/insights/customer-intelligence", image: "/images/insight-customer-intel.jpg" },
+  ];
+
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary selection:text-white">
-      <Navigation />
-      
-      {/* Hero Section */}
-      <section className="bg-background text-charcoal py-16 md:py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/50 z-10" />
-        <div className="absolute inset-0 bg-[url('/images/capabilities/cap-conference-data.jpg')] opacity-10 bg-cover bg-center" />
-        
-        <div className="container max-w-4xl mx-auto px-4 relative z-20">
-          <div className="mb-8">
-            <Breadcrumbs variant="light" />
-          </div>
-          
-          <div className="flex flex-wrap gap-4 mb-6">
-            <span className="inline-flex items-center gap-2 text-sm text-primary font-medium px-3 py-1 rounded-full bg-charcoal/30 border border-primary">
-              <Code className="w-4 h-4" />
-              Technical Guide
-            </span>
-            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
-              <Calendar className="w-4 h-4" />
-              March 5, 2025
-            </span>
-            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
-              <Clock className="w-4 h-4" />
-              12 min read
-            </span>
-          </div>
+    <InsightArticleV2
+      category="Technical Guide"
+      title="The Churn Prediction Playbook: From Random Forest to Production"
+      subtitle="A technical walkthrough of building, training, and deploying a churn prediction model that actually integrates with your CRM."
+      heroImage="/images/industries/meeting-topview.jpg"
+      publishDate="March 5, 2025"
+      readTime="12 min"
+      sections={sections}
+      keyTakeaways={[
+        "Most churn models fail not because the math is wrong, but because the engineering is disconnected from the business process—a model in a notebook is useless.",
+        "A robust pipeline aggregates product analytics, CRM and billing, and interaction data, then engineers dynamic features that capture change rather than static attributes.",
+        "For tabular churn data, ensemble methods like Random Forest or XGBoost often beat neural networks and, crucially, provide the feature importance that makes predictions explainable.",
+        "The 'last mile' decides success: push probability scores and risk factors back into the CRM with Reverse ETL, then automate interventions off the score.",
+      ]}
+      relatedInsights={relatedInsights}
+    >
+      <p>
+        Most churn prediction models fail not because the math is wrong, but because the engineering is disconnected
+        from the business process. A model that lives in a Jupyter notebook is useless. A model that pushes probability
+        scores into Salesforce is a revenue engine.
+      </p>
+      <p>
+        In this guide, we'll walk through the end-to-end architecture of a production-grade churn prediction system.
+        We'll cover feature engineering, model selection, and the critical "last mile" of integration.
+      </p>
 
-          <h1 className="text-4xl md:text-6xl font-bold mb-3 leading-tight tracking-tight">
-            The Churn Prediction Playbook: <span className="text-secondary">From Random Forest to Production</span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-muted-foreground/50 font-light leading-relaxed max-w-3xl">
-            A technical walkthrough of building, training, and deploying a churn prediction model that actually integrates with your CRM.
-          </p>
-        </div>
-      </section>
+      <h2 id="data-pipeline">1. The Data Pipeline</h2>
+      <p>
+        Garbage in, garbage out. The foundation of any churn model is a robust ETL pipeline that aggregates data from
+        three primary sources:
+      </p>
+      <ul>
+        <li>
+          <strong>Product Analytics:</strong> Login frequency, feature usage, session duration (Segment, Mixpanel).
+        </li>
+        <li>
+          <strong>CRM &amp; Billing:</strong> Contract value, tenure, payment history, support tickets (Salesforce,
+          Stripe).
+        </li>
+        <li>
+          <strong>Interaction Data:</strong> Email sentiment, call transcripts, meeting frequency (Gong, Outreach).
+        </li>
+      </ul>
 
-      {/* Article Content */}
-      <article className="py-16 md:py-24">
-        <div className="container max-w-3xl mx-auto px-4">
-          {/* Featured Image */}
-          <div className="aspect-video bg-subtle rounded-2xl mb-12 overflow-hidden shadow-xl">
-            <img 
-              src="/images/industries/meeting-topview.jpg" 
-              alt="Code on screen" 
-              className="w-full h-full object-cover"
-            />
-          </div>
+      <h2 id="feature-engineering">2. Feature Engineering</h2>
+      <p>
+        Raw data is rarely predictive. We need to transform it into features that capture <em>change</em>. Static
+        features (like "Industry") are less valuable than dynamic features (like "Change in Weekly Active Users").
+      </p>
+      <p>Key features we engineer for B2B SaaS:</p>
+      <ul>
+        <li>
+          <strong>Usage Velocity:</strong> (Current Week Logins − Last Week Logins) / Last Week Logins
+        </li>
+        <li>
+          <strong>Ticket Sentiment Score:</strong> NLP analysis of support ticket text
+        </li>
+        <li>
+          <strong>Champion Activity:</strong> Activity level of the primary account admin
+        </li>
+        <li>
+          <strong>Invoice Latency:</strong> Average days to pay invoice (increasing latency is a major red flag)
+        </li>
+      </ul>
 
-          <div className="flex justify-between items-center mb-12 border-b border-border pb-8">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-muted rounded-full overflow-hidden">
-                <img 
-                  src="/images/capabilities/cap-data-bars.jpg" 
-                  alt="Sarah Jenkins" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <h4 className="font-bold text-charcoal">Sarah Jenkins</h4>
-                <p className="text-sm text-muted-foreground">Lead ML Engineer</p>
-              </div>
-            </div>
-            <SocialShare title="The Churn Prediction Playbook" />
-          </div>
+      <h2 id="model-selection">3. Model Selection: Why Random Forest?</h2>
+      <p>
+        While deep learning gets all the hype, for tabular churn data, ensemble methods like Random Forest or XGBoost
+        often outperform neural networks. They handle non-linear relationships well, are robust to outliers, and most
+        importantly, provide <strong>feature importance</strong>.
+      </p>
+      <p>
+        Explainability is critical. When a CSM asks "Why is this account at risk?", you need to be able to say
+        "Because their usage dropped 40% and they have an open critical ticket," not "Because the neural net said so."
+      </p>
 
-          <div className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-base prose-a:text-secondary prose-img:rounded-xl prose-pre:bg-charcoal prose-pre:text-muted-foreground">
-            <p className="lead text-xl text-muted-foreground mb-8">
-              Most churn prediction models fail not because the math is wrong, but because the engineering is disconnected from the business process. A model that lives in a Jupyter notebook is useless. A model that pushes probability scores into Salesforce is a revenue engine.
-            </p>
+      <h2 id="last-mile">4. The "Last Mile": Reverse ETL</h2>
+      <p>
+        This is where most projects die. A CSV of churn probabilities sent to the VP of Success is not operational. We
+        use Reverse ETL tools (like Hightouch or Census) to push the model's output directly into the fields where
+        CSMs live.
+      </p>
+      <p>We create two fields in Salesforce:</p>
+      <ul>
+        <li>
+          <strong>Churn Probability Score:</strong> 0-100%
+        </li>
+        <li>
+          <strong>Risk Factors:</strong> Top 3 features contributing to the score (e.g., "Low Usage", "Late Payment")
+        </li>
+      </ul>
 
-            <p>
-              In this guide, we'll walk through the end-to-end architecture of a production-grade churn prediction system. We'll cover feature engineering, model selection, and the critical "last mile" of integration.
-            </p>
+      <h2 id="automation">5. Automating the Intervention</h2>
+      <p>The final step is automation. We set up triggers in the CRM:</p>
+      <ul>
+        <li>
+          <strong>Score &gt; 70%:</strong> Alert CSM Manager, create "At Risk" opportunity.
+        </li>
+        <li>
+          <strong>Score 50-70%:</strong> Trigger automated email sequence from CSM.
+        </li>
+        <li>
+          <strong>Score &lt; 20%:</strong> Trigger upsell campaign.
+        </li>
+      </ul>
 
-            <h2>1. The Data Pipeline</h2>
-            <p>
-              Garbage in, garbage out. The foundation of any churn model is a robust ETL pipeline that aggregates data from three primary sources:
-            </p>
-            
-            <div className="grid md:grid-cols-3 gap-6 my-8 not-prose">
-              <div className="bg-subtle p-6 rounded-xl border border-border">
-                <Database className="w-8 h-8 text-secondary mb-4" />
-                <h4 className="font-bold text-base mb-2">Product Analytics</h4>
-                <p className="text-sm text-muted-foreground">Login frequency, feature usage, session duration (Segment, Mixpanel).</p>
-              </div>
-              <div className="bg-subtle p-6 rounded-xl border border-border">
-                <Server className="w-8 h-8 text-secondary mb-4" />
-                <h4 className="font-bold text-base mb-2">CRM & Billing</h4>
-                <p className="text-sm text-muted-foreground">Contract value, tenure, payment history, support tickets (Salesforce, Stripe).</p>
-              </div>
-              <div className="bg-subtle p-6 rounded-xl border border-border">
-                <Cpu className="w-8 h-8 text-secondary mb-4" />
-                <h4 className="font-bold text-base mb-2">Interaction Data</h4>
-                <p className="text-sm text-muted-foreground">Email sentiment, call transcripts, meeting frequency (Gong, Outreach).</p>
-              </div>
-            </div>
-
-            <h2>2. Feature Engineering</h2>
-            <p>
-              Raw data is rarely predictive. We need to transform it into features that capture <em>change</em>. Static features (like "Industry") are less valuable than dynamic features (like "Change in Weekly Active Users").
-            </p>
-            <p>
-              Key features we engineer for B2B SaaS:
-            </p>
-            <ul>
-              <li><strong>Usage Velocity:</strong> (Current Week Logins - Last Week Logins) / Last Week Logins</li>
-              <li><strong>Ticket Sentiment Score:</strong> NLP analysis of support ticket text</li>
-              <li><strong>Champion Activity:</strong> Activity level of the primary account admin</li>
-              <li><strong>Invoice Latency:</strong> Average days to pay invoice (increasing latency is a major red flag)</li>
-            </ul>
-
-            <h2>3. Model Selection: Why Random Forest?</h2>
-            <p>
-              While deep learning gets all the hype, for tabular churn data, ensemble methods like Random Forest or XGBoost often outperform neural networks. They handle non-linear relationships well, are robust to outliers, and most importantly, provide <strong>feature importance</strong>.
-            </p>
-            <p>
-              Explainability is critical. When a CSM asks "Why is this account at risk?", you need to be able to say "Because their usage dropped 40% and they have an open critical ticket," not "Because the neural net said so."
-            </p>
-
-            <pre className="language-python">
-{`# Example: Training a Random Forest Classifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
-
-X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2)
-
-rf = RandomForestClassifier(n_estimators=100, max_depth=10, random_state=42)
-rf.fit(X_train, y_train)
-
-# Get feature importance
-importances = rf.feature_importances_`}
-            </pre>
-
-            <h2>4. The "Last Mile": Reverse ETL</h2>
-            <p>
-              This is where most projects die. A CSV of churn probabilities sent to the VP of Success is not operational. We use Reverse ETL tools (like Hightouch or Census) to push the model's output directly into the fields where CSMs live.
-            </p>
-            <p>
-              We create two fields in Salesforce:
-            </p>
-            <ul>
-              <li><strong>Churn Probability Score:</strong> 0-100%</li>
-              <li><strong>Risk Factors:</strong> Top 3 features contributing to the score (e.g., "Low Usage", "Late Payment")</li>
-            </ul>
-
-            <h2>5. Automating the Intervention</h2>
-            <p>
-              The final step is automation. We set up triggers in the CRM:
-            </p>
-            <div className="bg-primary/5 border-l-4 border-secondary p-6 my-8 rounded-r-lg">
-              <ul className="mb-0 text-charcoal/80 list-none pl-0 space-y-2">
-                <li><strong>Score &gt; 70%:</strong> Alert CSM Manager, create "At Risk" opportunity.</li>
-                <li><strong>Score 50-70%:</strong> Trigger automated email sequence from CSM.</li>
-                <li><strong>Score &lt; 20%:</strong> Trigger upsell campaign.</li>
-              </ul>
-            </div>
-
-            <h2>Conclusion</h2>
-            <p>
-              Building a churn prediction model is an engineering challenge, but deploying it is a product challenge. Success comes from treating the internal sales/success team as your users and building a tool that makes their lives easier, not just one that generates math.
-            </p>
-          </div>
-
-          {/* CTA Section */}
-          <div className="mt-16 p-8 md:p-12 bg-background rounded-2xl text-charcoal relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -mr-32 -mt-32" />
-            <div className="relative z-10">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">Don't build this from scratch.</h3>
-              <p className="text-muted-foreground/50 mb-8 max-w-xl text-lg">
-                NexDyne's Data Engineering team can deploy a production-ready churn prediction pipeline in your infrastructure in under 4 weeks.
-              </p>
-              <Link href="/contact">
-                <button className="px-8 py-4 bg-primary hover:bg-primary-hover text-white rounded-full font-bold transition transform hover:scale-105 shadow-[0_10px_30px_-10px_rgba(224,76,44,0.45)]">
-                  Get the Technical Specs
-                </button>
-              </Link>
-            </div>
-          </div>
-
-          {/* Newsletter Subscription */}
-          <div className="mt-16">
-            <NewsletterSubscribe />
-          </div>
-
-          {/* Related Posts */}
-          <div className="mt-16 pt-16 border-t border-border">
-            <h3 className="text-2xl font-bold text-base mb-8">Related Engineering Insights</h3>
-            <div className="grid md:grid-cols-2 gap-8">
-              <Link href="/insights/why-nps-is-a-vanity-metric">
-                <div className="group cursor-pointer">
-                  <div className="aspect-video bg-subtle rounded-xl mb-4 overflow-hidden">
-                    <img 
-                      src="/images/capabilities/cap-presenting-graphs.jpg" 
-                      alt="Data dashboard" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-secondary font-medium mb-2">
-                    <Tag className="w-3 h-3" /> Data Science
-                  </div>
-                  <h4 className="font-bold text-xl text-base group-hover:text-secondary transition-colors mb-2">
-                    Why NPS is a Vanity Metric
-                  </h4>
-                  <p className="text-muted-foreground text-sm line-clamp-2">
-                    Net Promoter Score tells you how customers felt yesterday. It doesn't tell you who will leave tomorrow.
-                  </p>
-                </div>
-              </Link>
-              <Link href="/insights/economics-of-loyalty">
-                <div className="group cursor-pointer">
-                  <div className="aspect-video bg-subtle rounded-xl mb-4 overflow-hidden">
-                    <img 
-                      src="/images/industries/advisor-charts.jpg" 
-                      alt="Financial chart" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-secondary font-medium mb-2">
-                    <Tag className="w-3 h-3" /> Unit Economics
-                  </div>
-                  <h4 className="font-bold text-xl text-base group-hover:text-secondary transition-colors mb-2">
-                    The Economics of Loyalty
-                  </h4>
-                  <p className="text-muted-foreground text-sm line-clamp-2">
-                    Why most loyalty programs are just disguised price cuts that kill margins.
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </article>
-      <Footer />
-    </div>
+      <h2 id="conclusion">Conclusion</h2>
+      <p>
+        Building a churn prediction model is an engineering challenge, but deploying it is a product challenge. Success
+        comes from treating the internal sales/success team as your users and building a tool that makes their lives
+        easier, not just one that generates math.
+      </p>
+    </InsightArticleV2>
   );
 }

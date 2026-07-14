@@ -1,135 +1,85 @@
-import { Link } from "wouter";
-import ReadingProgress from "@/components/ReadingProgress";
-import InlineTableOfContents from "@/components/InlineTableOfContents";
-import { ArrowLeft, Clock, Calendar, Tag } from "lucide-react";
-import NewsletterSubscribe from "@/components/NewsletterSubscribe";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function CommercialDueDiligence() {
+  const sections = [
+    { id: "revenue-engine", label: "Stress-testing revenue" },
+    { id: "integration-api", label: "The integration API" },
+    { id: "buying-the-future", label: "Buying the future" },
+  ];
+
+  const relatedInsights = [
+    { title: "The Due Diligence Checklist", category: "M&A", link: "/insights/due-diligence-checklist", image: "/images/business-strategy-abstract.jpg" },
+    { title: "M&A Failure Analysis", category: "M&A", link: "/insights/ma-failure-analysis", image: "/images/capital-raising-abstract.jpg" },
+    { title: "Synergy Capture", category: "M&A", link: "/insights/synergy-capture", image: "/images/digital-venture-abstract.jpg" },
+  ];
+
   return (
-    <div className="min-h-screen bg-white">
-      <ReadingProgress />
-      <Navigation />
-      {/* Hero Section */}
-      <section className="bg-charcoal text-white py-16 md:py-24">
-        <div className="container max-w-4xl">
-          <Link href="/capabilities/growth-marketing-sales/growth-strategy" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
-            <ArrowLeft className="w-4 h-4" />
-            Back to Growth Strategy
-          </Link>
-          
-          <div className="flex flex-wrap gap-4 mb-6">
-            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
-              <Tag className="w-4 h-4" />
-              M&A
-            </span>
-            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
-              <Calendar className="w-4 h-4" />
-              December 15, 2025
-            </span>
-            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
-              <Clock className="w-4 h-4" />
-              5 min read
-            </span>
-          </div>
+    <InsightArticleV2
+      category="M&A"
+      title="Commercial Due Diligence: Debugging the Business Model"
+      subtitle="Moving beyond financial audits to stress-test the underlying commercial code of a target acquisition."
+      heroImage="/images/mergers-acquisitions-abstract.jpg"
+      publishDate="December 15, 2025"
+      readTime="5 min"
+      sections={sections}
+      keyTakeaways={[
+        "Traditional due diligence checks the financials but ignores commercial viability—a company with perfect books can still be structurally doomed.",
+        "Treat commercial due diligence as a debugging exercise: hunt for the hidden dependencies, race conditions, and scalability bottlenecks that never appear on a balance sheet.",
+        "Stress-test the revenue engine on unit economics, structural versus cyclical churn, and whether the addressable market is real or an optimistic hallucination.",
+        "The biggest destroyer of value is failed integration; assess technical and cultural debt up front, and sometimes the right move is not to merge the codebases at all.",
+      ]}
+      relatedInsights={relatedInsights}
+    >
+      <p>
+        Traditional due diligence is like a code review that only checks for syntax errors (financials) but ignores the
+        logic errors (commercial viability). You can have a company with perfect books that is structurally doomed
+        because its market is shrinking, its customers are churning, or its value proposition is deprecated.
+      </p>
+      <p>
+        We approach Commercial Due Diligence (CDD) as a debugging exercise. We are looking for the bugs in the business
+        model—the hidden dependencies, the race conditions, and the scalability bottlenecks that don't show up on a
+        balance sheet.
+      </p>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-3">
-            Commercial Due Diligence: Debugging the Business Model
-          </h1>
-          
-          <p className="text-xl text-muted-foreground/50">
-            Moving beyond financial audits to stress-test the underlying commercial code of a target acquisition.
-          </p>
-        </div>
-      </section>
+      <h2 id="revenue-engine">Stress-Testing the Revenue Engine</h2>
+      <p>
+        A target's revenue growth is often a lagging indicator. To understand future performance, we need to inspect
+        the engine itself.
+      </p>
+      <h3>The CDD Debugging Checklist</h3>
+      <ul>
+        <li>
+          <strong>Customer Unit Economics:</strong> Is the LTV/CAC ratio sustainable, or is growth being subsidized by
+          venture capital?
+        </li>
+        <li>
+          <strong>Churn Analysis:</strong> Is the churn structural (product failure) or cyclical? We look for "silent
+          churn"—customers who are paying but not using.
+        </li>
+        <li>
+          <strong>Market Depth:</strong> Is the Total Addressable Market (TAM) real, or is it a hallucination based on
+          optimistic assumptions?
+        </li>
+      </ul>
 
-      {/* Article Content */}
-      <article className="py-16">
-        <div className="container max-w-3xl">
-          <div className="prose prose-lg max-w-none">
-            <InlineTableOfContents />
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              Traditional due diligence is like a code review that only checks for syntax errors (financials) but ignores the logic errors (commercial viability). You can have a company with perfect books that is structurally doomed because its market is shrinking, its customers are churning, or its value proposition is deprecated.
-            </p>
+      <h2 id="integration-api">The Integration API</h2>
+      <p>
+        The biggest destroyer of value in M&amp;A is failed integration. Two companies might look compatible on paper,
+        but their "APIs" are incompatible. Their cultures, sales motions, and technology stacks cannot talk to each
+        other.
+      </p>
+      <p>
+        Our diligence process includes an "Integration Compatibility Check." We assess the technical and cultural debt
+        of the target to estimate the true cost of integration. Sometimes, the best move is to not merge the codebases
+        at all, but to run them as separate microservices.
+      </p>
 
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              We approach Commercial Due Diligence (CDD) as a debugging exercise. We are looking for the bugs in the business model—the hidden dependencies, the race conditions, and the scalability bottlenecks that don't show up on a balance sheet.
-            </p>
-
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
-              Stress-Testing the Revenue Engine
-            </h2>
-            
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              A target's revenue growth is often a lagging indicator. To understand future performance, we need to inspect the engine itself.
-            </p>
-
-            <div className="bg-off-white border-l-4 border-primary p-6 my-8">
-              <h3 className="text-xl font-bold text-charcoal mb-4">The CDD Debugging Checklist</h3>
-              <ul className="space-y-3 text-charcoal/80">
-                <li><strong>Customer Unit Economics:</strong> Is the LTV/CAC ratio sustainable, or is growth being subsidized by venture capital?</li>
-                <li><strong>Churn Analysis:</strong> Is the churn structural (product failure) or cyclical? We look for "silent churn"—customers who are paying but not using.</li>
-                <li><strong>Market Depth:</strong> Is the Total Addressable Market (TAM) real, or is it a hallucination based on optimistic assumptions?</li>
-              </ul>
-            </div>
-
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
-              The Integration API
-            </h2>
-            
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              The biggest destroyer of value in M&A is failed integration. Two companies might look compatible on paper, but their "APIs" are incompatible. Their cultures, sales motions, and technology stacks cannot talk to each other.
-            </p>
-
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              Our diligence process includes an "Integration Compatibility Check." We assess the technical and cultural debt of the target to estimate the true cost of integration. Sometimes, the best move is to not merge the codebases at all, but to run them as separate microservices.
-            </p>
-
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
-              Buying the Future, Not the Past
-            </h2>
-            
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-8">
-              Ultimately, CDD is about validating the future state. It's about answering the question: "If we inject capital and capabilities into this system, will it scale?" By applying rigorous analytical frameworks, we turn M&A from a gamble into a calculated engineering decision.
-            </p>
-          </div>
-
-          {/* CTA Section */}
-          <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
-            <h3 className="text-2xl font-bold mb-4">Validate your investment</h3>
-            <p className="text-muted-foreground/50 mb-6">
-              NexDyne provides data-driven commercial due diligence to help private equity and corporate acquirers make confident decisions.
-            </p>
-            <Link href="/contact">
-              <button className="px-6 py-3 bg-primary hover:bg-primary-hover text-white rounded-lg font-semibold transition-colors">
-                Schedule a Consultation
-              </button>
-            </Link>
-          </div>
-
-          {/* Author Info */}
-          <div className="mt-12 pt-8 border-t border-border">
-            <div className="flex items-start gap-4">
-              <div className="w-16 h-16 bg-charcoal rounded-full flex items-center justify-center text-white font-bold text-xl">
-                N
-              </div>
-              <div>
-                <h4 className="font-bold text-charcoal text-lg">NEXDYNE TECHNOLOGIES</h4>
-                <p className="text-muted-foreground mt-1">
-                  Engineering intelligent systems that transform enterprise operations through AI-driven automation and data intelligence.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Newsletter Subscription */}
-          <div className="mt-16">
-            <NewsletterSubscribe />
-          </div>
-        </div>
-      </article>
-      <Footer />
-    </div>
+      <h2 id="buying-the-future">Buying the Future, Not the Past</h2>
+      <p>
+        Ultimately, CDD is about validating the future state. It's about answering the question: "If we inject capital
+        and capabilities into this system, will it scale?" By applying rigorous analytical frameworks, we turn M&amp;A
+        from a gamble into a calculated engineering decision.
+      </p>
+    </InsightArticleV2>
   );
 }

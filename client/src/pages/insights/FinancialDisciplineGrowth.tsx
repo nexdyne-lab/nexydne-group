@@ -1,160 +1,127 @@
-import { motion } from "framer-motion";
-import { Link } from "wouter";
-import { ArrowRight, ArrowLeft, TrendingUp, Target, Shield, BarChart3, CheckCircle2, Clock } from 'lucide-react';
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import { BackToTop } from "@/components/BackToTop";
-import { Button } from "@/components/ui/button";
-import { SEO } from "@/components/SEO";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function FinancialDisciplineGrowth() {
+  const sections = [
+    { id: "paradox", label: "Discipline-growth paradox" },
+    { id: "foundations", label: "The foundations" },
+    { id: "enables-growth", label: "How it enables growth" },
+    { id: "building-discipline", label: "Building discipline" },
+    { id: "bottom-line", label: "The bottom line" },
+  ];
+
+  const relatedInsights = [
+    { title: "The CFO's guide to cash flow", category: "Fractional CFO Services", link: "/insights/cfo-cash-flow-guide", image: "/images/cfo-services-abstract.jpg" },
+    { title: "Investor-ready board decks", category: "Fractional CFO Services", link: "/insights/investor-ready-board-decks", image: "/images/capital-raising-abstract.jpg" },
+    { title: "Rolling forecasts", category: "Fractional CFO Services", link: "/insights/rolling-forecasts", image: "/images/fpa-abstract.jpg" },
+  ];
+
   return (
-    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Financial Discipline as a Growth Enabler | NexDyne Technologies" 
-        description="Learn how financial discipline accelerates growth rather than constraining it. A framework for building financial foundations that scale."
-        canonical="/insights/financial-discipline-growth"
-      />
-      <Navigation />
-      
-      {/* DZ10 Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/industries/fin-monitors.jpg')] bg-cover bg-center opacity-20"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/70 to-background"></div>
-        
-        <div className="container relative z-10 px-4 md:px-12">
-          <Breadcrumbs />
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">Insight · Fractional CFO Services</span>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
-              Financial Discipline as a <span className="text-primary">Growth Enabler</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl">
-              How financial discipline accelerates growth rather than constraining it. Building the financial foundations that enable sustainable scaling.
-            </p>
-            <div className="flex items-center gap-6 mt-8 text-sm text-muted-foreground">
-              <span className="flex items-center gap-2"><Clock className="w-4 h-4" />8 min read</span>
-              <span>December 2024</span>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+    <InsightArticleV2
+      category="Fractional CFO Services"
+      title="Financial discipline as a growth enabler"
+      subtitle="How financial discipline accelerates growth rather than constraining it. Building the financial foundations that enable sustainable scaling."
+      heroImage="/images/industries/fin-monitors.jpg"
+      publishDate="December 2024"
+      readTime="8 min"
+      sections={sections}
+      keyTakeaways={[
+        "Financial discipline is not a constraint on growth—the fastest-growing companies are often the most disciplined, because discipline means saying yes to the right investments and no to waste.",
+        "The foundations are clear financial visibility, a firm grasp of unit economics, and disciplined cash flow management, since companies die from a lack of cash, not a lack of profit.",
+        "Discipline enables growth through better resource allocation, greater investor confidence, and sustainable scaling with the right guardrails in place.",
+        "Practical habits build discipline: monthly closes within 10 days, rolling forecasts, leading indicators, and clear spending guardrails.",
+      ]}
+      relatedInsights={relatedInsights}
+    >
+      <p>
+        Many entrepreneurs view financial discipline as a constraint on growth—a necessary evil that slows down the
+        business. This couldn't be further from the truth. The fastest-growing companies are often the most financially
+        disciplined, not despite their growth but because of it.
+      </p>
 
-      {/* Article Content */}
-      <article className="py-16 bg-white text-charcoal">
-        <div className="container px-4 md:px-12 max-w-4xl">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="prose prose-lg max-w-none">
-            
-            <h2 className="text-3xl font-bold text-charcoal mb-6">The Discipline-Growth Paradox</h2>
-            <p className="text-charcoal/80 leading-relaxed mb-6">
-              Many entrepreneurs view financial discipline as a constraint on growth—a necessary evil that slows down the business. This couldn't be further from the truth. The fastest-growing companies are often the most financially disciplined, not despite their growth but because of it.
-            </p>
-            <p className="text-charcoal/70 leading-relaxed mb-8">
-              Financial discipline isn't about saying no to everything. It's about saying yes to the right things—the investments that drive growth—while avoiding the distractions and waste that consume resources without creating value.
-            </p>
+      <h2 id="paradox">The discipline-growth paradox</h2>
 
-            <h2 className="text-3xl font-bold text-charcoal mb-6">The Foundations of Financial Discipline</h2>
-            
-            <div className="space-y-8 mb-12">
-              <div className="flex gap-6">
-                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center"><Target className="w-6 h-6" /></div></div>
-                <div>
-                  <h3 className="text-xl font-bold text-charcoal mb-2">Clear Financial Visibility</h3>
-                  <p className="text-charcoal/70 leading-relaxed">You can't manage what you can't see. Financial discipline starts with accurate, timely financial reporting that gives leaders the information they need to make good decisions.</p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center"><BarChart3 className="w-6 h-6" /></div></div>
-                <div>
-                  <h3 className="text-xl font-bold text-charcoal mb-2">Unit Economics Understanding</h3>
-                  <p className="text-charcoal/70 leading-relaxed">Know your unit economics cold. What does it cost to acquire a customer? What's the lifetime value? What's the payback period? These metrics should guide every growth investment.</p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center"><Shield className="w-6 h-6" /></div></div>
-                <div>
-                  <h3 className="text-xl font-bold text-charcoal mb-2">Cash Flow Management</h3>
-                  <p className="text-charcoal/70 leading-relaxed">Cash is oxygen. Companies don't die from lack of profit—they die from lack of cash. Disciplined cash flow management ensures you can fund growth without running out of runway.</p>
-                </div>
-              </div>
-            </div>
+      <p>
+        Financial discipline isn't about saying no to everything. It's about saying yes to the right things—the
+        investments that drive growth—while avoiding the distractions and waste that consume resources without creating
+        value.
+      </p>
 
-            <div className="p-8 bg-charcoal/5 rounded-xl mb-12">
-              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><TrendingUp className="w-6 h-6 text-primary" />The Rule of 40</h3>
-              <p className="text-charcoal/70 mb-4">A useful benchmark for balancing growth and profitability:</p>
-              <div className="p-4 bg-white rounded-lg text-center font-mono text-charcoal">
-                Revenue Growth Rate + Profit Margin ≥ 40%
-              </div>
-              <p className="text-charcoal/70 mt-4">This framework acknowledges that high-growth companies may sacrifice profitability, but there should be limits. A company growing 50% can afford to lose 10%, but a company growing 10% should be profitable.</p>
-            </div>
+      <h2 id="foundations">The foundations of financial discipline</h2>
 
-            <h2 className="text-3xl font-bold text-charcoal mb-6">How Discipline Enables Growth</h2>
-            
-            <div className="space-y-6 mb-12">
-              <div className="p-6 bg-charcoal/5 rounded-xl">
-                <h4 className="text-lg font-bold text-charcoal mb-2">Better Resource Allocation</h4>
-                <p className="text-charcoal/70">Financial discipline forces hard choices about where to invest. This focus means resources go to the highest-impact opportunities rather than being spread thin across too many initiatives.</p>
-              </div>
-              <div className="p-6 bg-charcoal/5 rounded-xl">
-                <h4 className="text-lg font-bold text-charcoal mb-2">Investor Confidence</h4>
-                <p className="text-charcoal/70">Investors fund companies they trust. Financial discipline—demonstrated through accurate forecasting, clean books, and thoughtful capital allocation—builds the credibility that attracts capital.</p>
-              </div>
-              <div className="p-6 bg-charcoal/5 rounded-xl">
-                <h4 className="text-lg font-bold text-charcoal mb-2">Sustainable Scaling</h4>
-                <p className="text-charcoal/70">Growth without discipline often leads to chaos—processes break, quality suffers, and culture erodes. Financial discipline provides the guardrails that enable sustainable scaling.</p>
-              </div>
-            </div>
+      <ul>
+        <li>
+          <strong>Clear financial visibility.</strong> You can't manage what you can't see. Financial discipline starts
+          with accurate, timely financial reporting that gives leaders the information they need to make good decisions.
+        </li>
+        <li>
+          <strong>Unit economics understanding.</strong> Know your unit economics cold. What does it cost to acquire a
+          customer? What's the lifetime value? What's the payback period? These metrics should guide every growth
+          investment.
+        </li>
+        <li>
+          <strong>Cash flow management.</strong> Cash is oxygen. Companies don't die from lack of profit—they die from
+          lack of cash. Disciplined cash flow management ensures you can fund growth without running out of runway.
+        </li>
+      </ul>
 
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Building Financial Discipline</h2>
-            <ul className="space-y-4 text-charcoal/70 mb-8">
-              <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong className="text-charcoal">Implement monthly closes:</strong> Close your books within 10 days of month-end. This creates the rhythm and visibility needed for disciplined management.</span></li>
-              <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong className="text-charcoal">Build a rolling forecast:</strong> Replace annual budgets with rolling forecasts that adapt to changing conditions while maintaining accountability.</span></li>
-              <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong className="text-charcoal">Track leading indicators:</strong> Don't just measure results—track the leading indicators that predict future performance.</span></li>
-              <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong className="text-charcoal">Create spending guardrails:</strong> Establish clear approval thresholds and spending policies that empower teams while maintaining control.</span></li>
-            </ul>
+      <h3>The Rule of 40</h3>
+      <p>A useful benchmark for balancing growth and profitability:</p>
+      <p>
+        <strong>Revenue growth rate + profit margin &ge; 40%</strong>
+      </p>
+      <p>
+        This framework acknowledges that high-growth companies may sacrifice profitability, but there should be limits.
+        A company growing 50% can afford to lose 10%, but a company growing 10% should be profitable.
+      </p>
 
-            <div className="p-8 bg-primary text-charcoal rounded-xl mb-12">
-              <h3 className="text-xl font-bold mb-4">The Bottom Line</h3>
-              <p className="text-charcoal/90 leading-relaxed">
-                Financial discipline isn't the enemy of growth—it's the enabler. Companies that build strong financial foundations can grow faster and more sustainably than those that don't. The key is viewing discipline not as a constraint but as a competitive advantage that enables better decisions, attracts capital, and supports sustainable scaling.
-              </p>
-            </div>
+      <h2 id="enables-growth">How discipline enables growth</h2>
 
-          </motion.div>
-        </div>
-      </article>
+      <ul>
+        <li>
+          <strong>Better resource allocation.</strong> Financial discipline forces hard choices about where to invest.
+          This focus means resources go to the highest-impact opportunities rather than being spread thin across too
+          many initiatives.
+        </li>
+        <li>
+          <strong>Investor confidence.</strong> Investors fund companies they trust. Financial discipline—demonstrated
+          through accurate forecasting, clean books, and thoughtful capital allocation—builds the credibility that
+          attracts capital.
+        </li>
+        <li>
+          <strong>Sustainable scaling.</strong> Growth without discipline often leads to chaos—processes break, quality
+          suffers, and culture erodes. Financial discipline provides the guardrails that enable sustainable scaling.
+        </li>
+      </ul>
 
-      {/* Related Insights */}
-      <section className="py-24 md:py-32 bg-background">
-        <div className="container px-4 md:px-12">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">Related Insights</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">Continue reading</h2>
-          </motion.div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
-            {[
-              { title: "The CFO's Guide to Cash Flow", category: "Fractional CFO Services", description: "Mastering cash flow management for growth", link: "/insights/cfo-cash-flow-guide" },
-              { title: "Investor-Ready Board Decks", category: "Fractional CFO Services", description: "Building board materials that impress", link: "/insights/investor-ready-board-decks" }
-            ].map((item, index) => (
-              <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>
-                <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
-                  <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.category}</span>
-                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
-                  <p className="text-muted-foreground mt-2">{item.description}</p>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-[gap]">Read insight <ArrowRight className="w-3 h-3" /></span>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-          <div className="text-center mt-16">
-            <Link href="/insights"><Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-8 py-6 text-base font-semibold transition bg-transparent"><ArrowLeft className="w-4 h-4 mr-2" />Back to all insights</Button></Link>
-          </div>
-        </div>
-      </section>
+      <h2 id="building-discipline">Building financial discipline</h2>
 
-      <BackToTop />
-      <Footer />
-    </div>
+      <ul>
+        <li>
+          <strong>Implement monthly closes:</strong> Close your books within 10 days of month-end. This creates the
+          rhythm and visibility needed for disciplined management.
+        </li>
+        <li>
+          <strong>Build a rolling forecast:</strong> Replace annual budgets with rolling forecasts that adapt to
+          changing conditions while maintaining accountability.
+        </li>
+        <li>
+          <strong>Track leading indicators:</strong> Don't just measure results—track the leading indicators that
+          predict future performance.
+        </li>
+        <li>
+          <strong>Create spending guardrails:</strong> Establish clear approval thresholds and spending policies that
+          empower teams while maintaining control.
+        </li>
+      </ul>
+
+      <h2 id="bottom-line">The bottom line</h2>
+
+      <p>
+        Financial discipline isn't the enemy of growth—it's the enabler. Companies that build strong financial
+        foundations can grow faster and more sustainably than those that don't. The key is viewing discipline not as a
+        constraint but as a competitive advantage that enables better decisions, attracts capital, and supports
+        sustainable scaling.
+      </p>
+    </InsightArticleV2>
   );
 }

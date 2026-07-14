@@ -1,129 +1,97 @@
-import { Link } from "wouter";
-import ReadingProgress from "@/components/ReadingProgress";
-import InlineTableOfContents from "@/components/InlineTableOfContents";
-import { ArrowLeft, Clock, Calendar, Tag } from "lucide-react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function VendorSelection() {
+  const sections = [
+    { id: "must-haves", label: "Must-haves vs. nice-to-haves" },
+    { id: "proof-of-concept", label: "The proof of concept" },
+    { id: "total-cost-of-ownership", label: "Total cost of ownership" },
+    { id: "exit-strategy", label: "The exit strategy" },
+  ];
+
+  const relatedInsights = [
+    { title: "Composable Architecture for Growing Companies", category: "Technology", link: "/insights/composable-architecture", image: "/images/cloud-abstract.jpg" },
+    { title: "The Enterprise Integration Playbook", category: "Integration", link: "/insights/enterprise-integration-playbook", image: "/images/digital-transformation-abstract.jpg" },
+    { title: "Measuring Automation ROI", category: "Operations", link: "/insights/measuring-automation-roi", image: "/images/data-abstract.jpg" },
+  ];
+
   return (
-    <div className="min-h-screen bg-white">
-      <ReadingProgress />
-      <Navigation />
-      {/* Hero Section */}
-      <section className="bg-charcoal text-white py-16 md:py-24">
-        <div className="container max-w-4xl">
-          <Link href="/solutions/martech-stack" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
-            <ArrowLeft className="w-4 h-4" />
-            Back to MarTech & Stack Architecture
-          </Link>
-          
-          <div className="flex flex-wrap gap-4 mb-6">
-            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
-              <Tag className="w-4 h-4" />
-              Strategy
-            </span>
-            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
-              <Calendar className="w-4 h-4" />
-              June 18, 2026
-            </span>
-            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
-              <Clock className="w-4 h-4" />
-              6 min read
-            </span>
-          </div>
+    <InsightArticleV2
+      category="Strategy"
+      categoryHref="/insights"
+      title="The Vendor Selection Matrix: How to Choose Tech That Actually Fits"
+      subtitle="Stop buying shelfware. A structured approach to evaluating software vendors ensures you buy what you need, not what the salesperson wants to sell."
+      heroImage="/images/approach-technology.jpg"
+      publishDate="June 18, 2026"
+      readTime="6 min"
+      sections={sections}
+      keyTakeaways={[
+        "The average enterprise wastes 30% of its software budget on unused 'shelfware'—a problem that starts with falling in love with a demo before defining requirements.",
+        "Before contacting vendors, assemble stakeholders from marketing, sales, IT, and legal and build a weighted scorecard of functional, technical, and usability requirements.",
+        "Never sign a multi-year contract off a slide deck—demand a paid proof of concept against a hard use case using your own data.",
+        "Evaluate total cost of ownership, not just license fees, and plan your exit—data ownership and exportability—before you sign.",
+      ]}
+      relatedInsights={relatedInsights}
+    >
+      <p>
+        The average enterprise wastes 30% of its software budget on unused licenses. This "shelfware"
+        problem stems from a flawed buying process: falling in love with a demo before defining the
+        requirements.
+      </p>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-3">
-            The Vendor Selection Matrix: How to Choose Tech That Actually Fits
-          </h1>
-          
-          <p className="text-xl text-muted-foreground/50">
-            Stop buying shelfware. A structured approach to evaluating software vendors ensures you buy what you need, not what the salesperson wants to sell.
-          </p>
-        </div>
-      </section>
+      <h2 id="must-haves">Step 1: Define the "Must-Haves" vs. "Nice-to-Haves"</h2>
 
-      {/* Article Content */}
-      <article className="py-16">
-        <div className="container max-w-3xl">
-          <div className="prose prose-lg max-w-none">
-            <InlineTableOfContents />
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              The average enterprise wastes 30% of its software budget on unused licenses. This "shelfware" problem stems from a flawed buying process: falling in love with a demo before defining the requirements.
-            </p>
+      <p>
+        Before talking to a single vendor, gather stakeholders from marketing, sales, IT, and legal.
+        Create a weighted scorecard.
+      </p>
 
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
-              Step 1: Define the "Must-Haves" vs. "Nice-to-Haves"
-            </h2>
-            
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              Before talking to a single vendor, gather stakeholders from marketing, sales, IT, and legal. Create a weighted scorecard.
-            </p>
+      <ul>
+        <li><strong>Functional Requirements:</strong> "Must integrate natively with Salesforce." "Must support multi-currency."</li>
+        <li><strong>Technical Requirements:</strong> "Must be SOC2 compliant." "Must have an open API with rate limits above 1000/min."</li>
+        <li><strong>Usability Requirements:</strong> "Must be intuitive enough for non-technical staff to use with &lt;2 hours of training."</li>
+      </ul>
 
-            <ul className="list-disc pl-6 space-y-4 text-charcoal/80 mb-8">
-              <li><strong>Functional Requirements:</strong> "Must integrate natively with Salesforce." "Must support multi-currency."</li>
-              <li><strong>Technical Requirements:</strong> "Must be SOC2 compliant." "Must have an open API with rate limits above 1000/min."</li>
-              <li><strong>Usability Requirements:</strong> "Must be intuitive enough for non-technical staff to use with &lt;2 hours of training."</li>
-            </ul>
+      <h2 id="proof-of-concept">Step 2: The Proof of Concept (POC)</h2>
 
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
-              Step 2: The Proof of Concept (POC)
-            </h2>
-            
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              Never sign a multi-year contract based on a slide deck. Demand a paid POC. Pick a specific, difficult use case—one that your current tool failed at—and ask the vendor to prove they can handle it with <i>your</i> data.
-            </p>
+      <p>
+        Never sign a multi-year contract based on a slide deck. Demand a paid POC. Pick a specific,
+        difficult use case—one that your current tool failed at—and ask the vendor to prove they can
+        handle it with <em>your</em> data.
+      </p>
 
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              If they hesitate, walk away. A vendor confident in their product will welcome the chance to prove it.
-            </p>
+      <p>
+        If they hesitate, walk away. A vendor confident in their product will welcome the chance to prove
+        it.
+      </p>
 
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
-              Step 3: Total Cost of Ownership (TCO)
-            </h2>
-            
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              The license fee is just the tip of the iceberg. A true TCO analysis includes:
-            </p>
+      <h2 id="total-cost-of-ownership">Step 3: Total Cost of Ownership (TCO)</h2>
 
-            <ul className="list-disc pl-6 space-y-4 text-charcoal/80 mb-8">
-              <li><strong>Implementation Costs:</strong> Will you need an external agency to set it up?</li>
-              <li><strong>Training Costs:</strong> How much downtime will your team experience while learning the new tool?</li>
-              <li><strong>Maintenance Costs:</strong> Does it require a dedicated admin?</li>
-            </ul>
+      <p>
+        The license fee is just the tip of the iceberg. A true TCO analysis includes:
+      </p>
 
-            <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
-              <p className="text-lg text-charcoal font-semibold">
-                "The most expensive software is the one that nobody uses."
-              </p>
-            </div>
+      <ul>
+        <li><strong>Implementation Costs:</strong> Will you need an external agency to set it up?</li>
+        <li><strong>Training Costs:</strong> How much downtime will your team experience while learning the new tool?</li>
+        <li><strong>Maintenance Costs:</strong> Does it require a dedicated admin?</li>
+      </ul>
 
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
-              The Exit Strategy
-            </h2>
-            
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              Always plan for the divorce before the marriage. Ensure your contract includes clear terms on data ownership and exportability. If you leave, can you take your data with you in a usable format?
-            </p>
+      <blockquote>
+        The most expensive software is the one that nobody uses.
+      </blockquote>
 
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-8">
-              By adding rigor to the selection process, you transform technology from a cost center into a strategic enabler.
-            </p>
-          </div>
+      <h2 id="exit-strategy">The Exit Strategy</h2>
 
-          {/* CTA Section */}
-          <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
-            <h3 className="text-2xl font-bold mb-4">Need an unbiased audit?</h3>
-            <p className="text-muted-foreground/50 mb-6">
-              We provide vendor-agnostic advisory services to help you select, negotiate, and implement the right technology for your unique needs.
-            </p>
-            <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-charcoal bg-white rounded-lg hover:bg-subtle transition-colors">
-              Contact our team
-            </Link>
-          </div>
-        </div>
-      </article>
-      <Footer />
-    </div>
+      <p>
+        Always plan for the divorce before the marriage. Ensure your contract includes clear terms on
+        data ownership and exportability. If you leave, can you take your data with you in a usable
+        format?
+      </p>
+
+      <p>
+        By adding rigor to the selection process, you transform technology from a cost center into a
+        strategic enabler.
+      </p>
+    </InsightArticleV2>
   );
 }

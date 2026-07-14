@@ -1,223 +1,117 @@
-import React from 'react';
-import ReadingProgress from '@/components/ReadingProgress';
-import InlineTableOfContents from '@/components/InlineTableOfContents';
-import { Link } from 'wouter';
-import { ArrowLeft, Clock, Calendar, Tag, ArrowRight, TrendingUp, DollarSign, Percent } from 'lucide-react';
-import NewsletterSubscribe from '@/components/NewsletterSubscribe';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import Breadcrumbs from '@/components/Breadcrumbs';
-import SocialShare from '@/components/SocialShare';
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function EconomicsOfLoyalty() {
+  const sections = [
+    { id: "discount-trap", label: "The discount trap" },
+    { id: "amazon-prime", label: "The Amazon Prime model" },
+    { id: "behavioral-economics", label: "Behavioral economics" },
+    { id: "margin-positive", label: "Margin-positive design" },
+  ];
+
+  const relatedInsights = [
+    { title: "Why NPS is a Vanity Metric", category: "Data Science", link: "/insights/why-nps-is-a-vanity-metric", image: "/images/industries/retail-shelves.jpg" },
+    { title: "The Churn Prediction Playbook", category: "Technical Guide", link: "/insights/churn-prediction-playbook", image: "/images/capabilities/cap-colleagues-smile.jpg" },
+    { title: "Subscription Pricing Models", category: "Unit Economics", link: "/insights/subscription-pricing-models", image: "/images/capabilities/cap-retail-apparel.jpg" },
+  ];
+
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary selection:text-white">
-      <Navigation />
-      
-      {/* Hero Section */}
-      <section className="bg-background text-charcoal py-16 md:py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/50 z-10" />
-        <div className="absolute inset-0 bg-[url('/images/capabilities/cap-retail-apparel.jpg')] opacity-10 bg-cover bg-center" />
-        
-        <div className="container max-w-4xl mx-auto px-4 relative z-20">
-          <div className="mb-8">
-            <Breadcrumbs variant="light" />
-          </div>
-          
-          <div className="flex flex-wrap gap-4 mb-6">
-            <span className="inline-flex items-center gap-2 text-sm text-primary font-medium px-3 py-1 rounded-full bg-charcoal/30 border border-primary">
-              <TrendingUp className="w-4 h-4" />
-              Unit Economics
-            </span>
-            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
-              <Calendar className="w-4 h-4" />
-              March 12, 2025
-            </span>
-            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
-              <Clock className="w-4 h-4" />
-              8 min read
-            </span>
-          </div>
+    <InsightArticleV2
+      category="Unit Economics"
+      title="The Economics of Loyalty: Why Points Programs Fail"
+      subtitle="Most loyalty programs are just disguised price cuts. We analyze the math behind successful behavioral rewards vs. margin-killing discounts."
+      heroImage="/images/capabilities/cap-retail-data.jpg"
+      publishDate="March 12, 2025"
+      readTime="8 min"
+      sections={sections}
+      keyTakeaways={[
+        "Traditional points-based programs often act as a tax on your own margin, discounting customers who would have bought anyway.",
+        "At a 30% gross margin, a 10% loyalty discount gives away 33% of your profit unless it lifts LTV or lowers CAC.",
+        "Amazon Prime shows structural loyalty: a paid subscription changes behavior. Don't pay customers to stay—make them pay to belong.",
+        "Design margin-positive programs by asking whether they change behavior, add value rather than discount, and create a barrier to exit.",
+      ]}
+      relatedInsights={relatedInsights}
+    >
+      <p>
+        "Buy 10, get 1 free." It's the oldest trick in the book. But in the digital economy, this model is
+        fundamentally broken. Traditional points-based loyalty programs are often just a tax on your own margin—giving
+        discounts to customers who would have bought anyway.
+      </p>
 
-          <h1 className="text-4xl md:text-6xl font-bold mb-3 leading-tight tracking-tight">
-            The Economics of Loyalty: <span className="text-secondary">Why Points Programs Fail</span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-muted-foreground/50 font-light leading-relaxed max-w-3xl">
-            Most loyalty programs are just disguised price cuts. We analyze the math behind successful behavioral rewards vs. margin-killing discounts.
-          </p>
-        </div>
-      </section>
+      <p>
+        True loyalty isn't about bribery; it's about habit formation. The most successful retention strategies today
+        don't rely on financial incentives, but on <strong>structural lock-in</strong> and{" "}
+        <strong>behavioral reinforcement</strong>.
+      </p>
 
-      {/* Article Content */}
-      <article className="py-16 md:py-24">
-        <div className="container max-w-3xl mx-auto px-4">
-          {/* Featured Image */}
-          <div className="aspect-video bg-subtle rounded-2xl mb-12 overflow-hidden shadow-xl">
-            <img 
-              src="/images/capabilities/cap-retail-data.jpg" 
-              alt="Financial chart" 
-              className="w-full h-full object-cover"
-            />
-          </div>
+      <h2 id="discount-trap">The discount trap</h2>
 
-          <div className="flex justify-between items-center mb-12 border-b border-border pb-8">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-muted rounded-full overflow-hidden">
-                <img 
-                  src="/images/capabilities/cap-mobile-woman.jpg" 
-                  alt="James Wilson" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <h4 className="font-bold text-charcoal">James Wilson</h4>
-                <p className="text-sm text-muted-foreground">Principal Economist</p>
-              </div>
-            </div>
-            <SocialShare title="The Economics of Loyalty" />
-          </div>
+      <p>
+        Let's look at the unit economics. If you have a 30% gross margin and you offer a 10% loyalty discount, you
+        aren't giving away 10% of your revenue; you are giving away <strong>33% of your profit</strong>.
+      </p>
 
-          <div className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-base prose-a:text-secondary prose-img:rounded-xl">
-            <p className="lead text-xl text-muted-foreground mb-8">
-              "Buy 10, get 1 free." It's the oldest trick in the book. But in the digital economy, this model is fundamentally broken. Traditional points-based loyalty programs are often just a tax on your own margin—giving discounts to customers who would have bought anyway.
-            </p>
+      <p>
+        Unless that discount drives a commensurate increase in Lifetime Value (LTV) or a decrease in Customer
+        Acquisition Cost (CAC) via referrals, you are simply eroding your own profitability.
+      </p>
 
-            <p>
-              True loyalty isn't about bribery; it's about habit formation. The most successful retention strategies today don't rely on financial incentives, but on <strong>structural lock-in</strong> and <strong>behavioral reinforcement</strong>.
-            </p>
+      <h3>Transactional loyalty</h3>
+      <ul>
+        <li>Based on discounts</li>
+        <li>Easy to copy by competitors</li>
+        <li>Attracts price-sensitive customers</li>
+        <li>Erodes margin</li>
+      </ul>
 
-            <h2>The "Discount Trap"</h2>
-            <p>
-              Let's look at the unit economics. If you have a 30% gross margin and you offer a 10% loyalty discount, you aren't giving away 10% of your revenue; you are giving away <strong>33% of your profit</strong>.
-            </p>
-            <p>
-              Unless that discount drives a commensurate increase in Lifetime Value (LTV) or a decrease in Customer Acquisition Cost (CAC) via referrals, you are simply eroding your own profitability.
-            </p>
+      <h3>Emotional / structural loyalty</h3>
+      <ul>
+        <li>Based on experience and utility</li>
+        <li>Hard to replicate</li>
+        <li>Attracts value-sensitive customers</li>
+        <li>Preserves margin</li>
+      </ul>
 
-            <div className="grid md:grid-cols-2 gap-6 my-8 not-prose">
-              <div className="bg-primary/5 p-6 rounded-xl border border-primary">
-                <h4 className="font-bold text-primary mb-2">Transactional Loyalty</h4>
-                <ul className="text-sm text-primary space-y-2">
-                  <li>• Based on discounts</li>
-                  <li>• Easy to copy by competitors</li>
-                  <li>• Attracts price-sensitive customers</li>
-                  <li>• Erodes margin</li>
-                </ul>
-              </div>
-              <div className="bg-secondary/10 p-6 rounded-xl border border-amber/10">
-                <h4 className="font-bold text-amber mb-2">Emotional/Structural Loyalty</h4>
-                <ul className="text-sm text-secondary space-y-2">
-                  <li>• Based on experience/utility</li>
-                  <li>• Hard to replicate</li>
-                  <li>• Attracts value-sensitive customers</li>
-                  <li>• Preserves margin</li>
-                </ul>
-              </div>
-            </div>
+      <h2 id="amazon-prime">The Amazon Prime model</h2>
 
-            <h2>The Amazon Prime Model</h2>
-            <p>
-              Amazon Prime is the gold standard of structural loyalty. It's not a discount program; it's a <strong>paid subscription</strong> that changes behavior. By paying upfront for shipping, customers feel "invested" in the platform. They stop price-shopping because they want to "get their money's worth" from their Prime membership.
-            </p>
-            <p>
-              This is the key shift: <strong>Don't pay customers to stay. Make them pay to belong.</strong>
-            </p>
+      <p>
+        Amazon Prime is the gold standard of structural loyalty. It's not a discount program; it's a{" "}
+        <strong>paid subscription</strong> that changes behavior. By paying upfront for shipping, customers feel
+        "invested" in the platform. They stop price-shopping because they want to "get their money's worth" from their
+        Prime membership.
+      </p>
 
-            <h2>Behavioral Economics of Rewards</h2>
-            <p>
-              If you must use rewards, use them to drive specific behaviors, not just spend.
-            </p>
-            <ul>
-              <li><strong>Variable Rewards:</strong> The "surprise and delight" model (like a random upgrade) is more addictive than a predictable "buy X get Y" model.</li>
-              <li><strong>Goal Gradient Effect:</strong> People work harder to achieve a goal as they get closer to it. Visualizing progress (e.g., "You are 80% of the way to VIP status") drives incremental activity.</li>
-              <li><strong>Sunk Cost Fallacy:</strong> Charging a small membership fee (like Costco) makes customers more loyal because they want to justify the expense.</li>
-            </ul>
+      <p>
+        This is the key shift: <strong>Don't pay customers to stay. Make them pay to belong.</strong>
+      </p>
 
-            <h2>Designing a Margin-Positive Program</h2>
-            <p>
-              We advise clients to audit their loyalty programs with three questions:
-            </p>
-            <ol>
-              <li>Does this program change behavior, or just reward existing behavior?</li>
-              <li>Is the reward a discount (margin negative) or a value-add service (margin neutral)?</li>
-              <li>Does the program create a barrier to exit?</li>
-            </ol>
-            <p>
-              The future of loyalty is not points. It's integration. It's becoming so embedded in your customer's workflow or life that leaving becomes inconceivable.
-            </p>
-          </div>
+      <h2 id="behavioral-economics">Behavioral economics of rewards</h2>
 
-          {/* CTA Section */}
-          <div className="mt-16 p-8 md:p-12 bg-background rounded-2xl text-charcoal relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -mr-32 -mt-32" />
-            <div className="relative z-10">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">Stop eroding your margins.</h3>
-              <p className="text-muted-foreground/50 mb-8 max-w-xl text-lg">
-                NexDyne helps companies restructure loyalty programs to drive true LTV without sacrificing profitability.
-              </p>
-              <Link href="/contact">
-                <button className="px-8 py-4 bg-primary hover:bg-primary-hover text-white rounded-full font-bold transition transform hover:scale-105 shadow-[0_10px_30px_-10px_rgba(224,76,44,0.45)]">
-                  Analyze Your Unit Economics
-                </button>
-              </Link>
-            </div>
-          </div>
+      <p>
+        If you must use rewards, use them to drive specific behaviors, not just spend.
+      </p>
 
-          {/* Newsletter Subscription */}
-          <div className="mt-16">
-            <NewsletterSubscribe />
-          </div>
+      <ul>
+        <li><strong>Variable rewards:</strong> The "surprise and delight" model (like a random upgrade) is more addictive than a predictable "buy X get Y" model.</li>
+        <li><strong>Goal gradient effect:</strong> People work harder to achieve a goal as they get closer to it. Visualizing progress (e.g., "You are 80% of the way to VIP status") drives incremental activity.</li>
+        <li><strong>Sunk cost fallacy:</strong> Charging a small membership fee (like Costco) makes customers more loyal because they want to justify the expense.</li>
+      </ul>
 
-          {/* Related Posts */}
-          <div className="mt-16 pt-16 border-t border-border">
-            <h3 className="text-2xl font-bold text-base mb-8">Related Engineering Insights</h3>
-            <div className="grid md:grid-cols-2 gap-8">
-              <Link href="/insights/why-nps-is-a-vanity-metric">
-                <div className="group cursor-pointer">
-                  <div className="aspect-video bg-subtle rounded-xl mb-4 overflow-hidden">
-                    <img 
-                      src="/images/industries/retail-shelves.jpg" 
-                      alt="Data dashboard" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-secondary font-medium mb-2">
-                    <Tag className="w-3 h-3" /> Data Science
-                  </div>
-                  <h4 className="font-bold text-xl text-base group-hover:text-secondary transition-colors mb-2">
-                    Why NPS is a Vanity Metric
-                  </h4>
-                  <p className="text-muted-foreground text-sm line-clamp-2">
-                    Net Promoter Score tells you how customers felt yesterday. It doesn't tell you who will leave tomorrow.
-                  </p>
-                </div>
-              </Link>
-              <Link href="/insights/churn-prediction-playbook">
-                <div className="group cursor-pointer">
-                  <div className="aspect-video bg-subtle rounded-xl mb-4 overflow-hidden">
-                    <img 
-                      src="/images/capabilities/cap-colleagues-smile.jpg" 
-                      alt="Code on screen" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-secondary font-medium mb-2">
-                    <Tag className="w-3 h-3" /> Technical Guide
-                  </div>
-                  <h4 className="font-bold text-xl text-base group-hover:text-secondary transition-colors mb-2">
-                    The Churn Prediction Playbook
-                  </h4>
-                  <p className="text-muted-foreground text-sm line-clamp-2">
-                    A technical walkthrough of building, training, and deploying a churn prediction model.
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </article>
-      <Footer />
-    </div>
+      <h2 id="margin-positive">Designing a margin-positive program</h2>
+
+      <p>
+        We advise clients to audit their loyalty programs with three questions:
+      </p>
+
+      <ol>
+        <li>Does this program change behavior, or just reward existing behavior?</li>
+        <li>Is the reward a discount (margin negative) or a value-add service (margin neutral)?</li>
+        <li>Does the program create a barrier to exit?</li>
+      </ol>
+
+      <p>
+        The future of loyalty is not points. It's integration. It's becoming so embedded in your customer's workflow or
+        life that leaving becomes inconceivable.
+      </p>
+    </InsightArticleV2>
   );
 }

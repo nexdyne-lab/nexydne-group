@@ -1,568 +1,284 @@
-import { Link } from "wouter";
-import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Calendar, User, Clock, Users, Network, TrendingUp, Shield, CheckCircle2, Layers, Zap, Target, BarChart3, Scale } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import { SEO } from "@/components/SEO";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import { RelatedContent } from "@/components/RelatedContent";
-import SocialShare from "@/components/SocialShare";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function MarketplacePlaybook() {
+  const sections = [
+    { id: "why-marketplaces-win", label: "Why marketplaces win" },
+    { id: "chicken-and-egg", label: "The chicken-and-egg problem" },
+    { id: "network-effects", label: "Network effects explained" },
+    { id: "business-models", label: "Business models" },
+    { id: "launch-strategies", label: "Launch strategies" },
+    { id: "scaling", label: "Scaling the platform" },
+    { id: "governance-trust", label: "Governance & trust" },
+    { id: "metrics", label: "Metrics that matter" },
+    { id: "case-example", label: "Case example" },
+  ];
+
+  const relatedInsights = [
+    { title: "The digital growth playbook for growing companies", category: "Growth", link: "/insights/digital-growth-playbook", image: "/images/capabilities/cap-retail-data.jpg" },
+    { title: "E-commerce economics: Building profitable D2C channels", category: "Growth", link: "/insights/ecommerce-economics", image: "/images/capabilities/cap-mobile-woman.jpg" },
+    { title: "From MVP to scale: The startup growth journey", category: "Growth", link: "/insights/from-mvp-to-scale", image: "/images/industries/retail-shelves.jpg" },
+  ];
+
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="The Marketplace Playbook: Building Network Effects" 
-        description="A comprehensive guide to launching and scaling two-sided marketplaces that create sustainable competitive advantages."
-        canonical="/insights/marketplace-playbook"
-      />
-      <Navigation />
-      
-      {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center pt-20 overflow-hidden bg-background">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/capabilities/cap-retail-apparel.jpg" 
-            alt="Marketplace Analytics Dashboard" 
-            className="w-full h-full object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/70" />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-        </div>
-        
-        <div className="container px-4 md:px-12 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl"
-          >
-            <Link href="/solutions/accelerating-business-growth">
-              <span className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-6 cursor-pointer">
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                Back to Accelerating Business Growth
-              </span>
-            </Link>
-            
-            <div className="flex items-center gap-4 text-sm text-purple font-semibold mb-6">
-              <span className="uppercase tracking-wider">Whitepaper</span>
-              <span className="w-1 h-1 rounded-full bg-white/40" />
-              <span className="text-muted-foreground">15 min read</span>
-            </div>
-            
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
-              The marketplace playbook: Building network effects
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl mb-10">
-              A comprehensive guide to launching and scaling two-sided marketplaces that create sustainable competitive advantages.
-            </p>
-            
-            <div className="flex items-center gap-6 text-muted-foreground text-sm">
-              <div className="flex items-center gap-2">
-                <User className="w-4 h-4" />
-                <span>By Platform Strategy Team</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
-                <span>October 15, 2025</span>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+    <InsightArticleV2
+      category="Whitepaper"
+      title="The marketplace playbook: Building network effects"
+      subtitle="A comprehensive guide to launching and scaling two-sided marketplaces that create sustainable competitive advantages."
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      publishDate="October 15, 2025"
+      readTime="15 min"
+      sections={sections}
+      authors={[{ name: "NexDyne Consulting Group", role: "Platform Strategy Team" }]}
+      keyTakeaways={[
+        "Marketplaces create value by reducing friction between supply and demand—the strongest ones solve a genuine matching problem, serve both sides, and grow more valuable through network effects.",
+        "Every marketplace must solve the chicken-and-egg \"cold start\" problem using tactics like single-player mode, subsidizing the hard side, seeding supply, constraining geography, or leveraging existing networks.",
+        "The monetization model—transaction fee, subscription, listing fee, lead generation, or freemium—shapes incentives, while launch strategy should match the market type: high fragmentation, high-value transactions, or geographic density.",
+        "At scale the battle shifts to quality control, trust and safety, liquidity, platform leakage, and multi-homing, tracked through marketplace-specific metrics like GMV, take rate, and liquidity.",
+      ]}
+      relatedInsights={relatedInsights}
+    >
+      <p>
+        Marketplaces are among the most valuable business models in the digital economy. Amazon, Airbnb, Uber, and
+        Alibaba have created trillions in value by connecting buyers and sellers at scale. But for every successful
+        marketplace, hundreds have failed. This playbook distills the strategies that separate winners from losers.
+      </p>
 
-      {/* Article Content */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="grid md:grid-cols-12 gap-12">
-            {/* Sidebar */}
-            <div className="md:col-span-3 hidden md:block">
-              <div className="sticky top-32">
-                <h4 className="font-bold text-charcoal mb-4">Table of Contents</h4>
-                <ul className="space-y-3 text-sm text-charcoal/60 border-l border-border pl-4">
-                  <li className="hover:text-primary cursor-pointer">Why Marketplaces Win</li>
-                  <li className="hover:text-primary cursor-pointer">The Chicken-and-Egg Problem</li>
-                  <li className="hover:text-primary cursor-pointer">Network Effects Explained</li>
-                  <li className="hover:text-primary cursor-pointer">Marketplace Business Models</li>
-                  <li className="hover:text-primary cursor-pointer">Launch Strategies</li>
-                  <li className="hover:text-primary cursor-pointer">Scaling the Platform</li>
-                  <li className="hover:text-primary cursor-pointer">Governance & Trust</li>
-                  <li className="hover:text-primary cursor-pointer">Metrics That Matter</li>
-                </ul>
-                
-                <div className="mt-12">
-                  <h4 className="font-bold text-charcoal mb-4">Share this insight</h4>
-                  <SocialShare 
-                    title="The Marketplace Playbook: Building Network Effects" 
-                    url="https://nexdyne.com/insights/marketplace-playbook" 
-                  />
-                </div>
-              </div>
-            </div>
+      <h2 id="why-marketplaces-win">Why Marketplaces Win</h2>
 
-            {/* Main Text */}
-            <div className="md:col-span-7">
-              <div className="prose prose-lg prose-slate max-w-none">
-                <p className="lead text-xl text-charcoal/70 mb-8">
-                  Marketplaces are among the most valuable business models in the digital economy. Amazon, Airbnb, Uber, and Alibaba have created trillions in value by connecting buyers and sellers at scale. But for every successful marketplace, hundreds have failed. This playbook distills the strategies that separate winners from losers.
-                </p>
-                
-                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Why Marketplaces Win</h2>
-                <p className="text-charcoal/70 leading-relaxed mb-6">
-                  Marketplaces create value by reducing friction between supply and demand. They aggregate fragmented markets, provide trust mechanisms, and enable transactions that wouldn't otherwise occur. When they work, they create powerful competitive moats through network effects.
-                </p>
-                <p className="text-charcoal/70 leading-relaxed mb-8">
-                  The most successful marketplaces share common characteristics: they solve a genuine matching problem, they create value for both sides, and they become more valuable as they grow. Understanding these dynamics is essential before building.
-                </p>
+      <p>
+        Marketplaces create value by reducing friction between supply and demand. They aggregate fragmented markets,
+        provide trust mechanisms, and enable transactions that wouldn't otherwise occur. When they work, they create
+        powerful competitive moats through network effects.
+      </p>
 
-                <div className="bg-subtle p-8 rounded-xl border border-border my-10">
-                  <h4 className="font-bold text-charcoal mb-4 flex items-center gap-2">
-                    <Network className="w-5 h-5 text-purple" />
-                    Marketplace Value Creation
-                  </h4>
-                  <div className="grid md:grid-cols-3 gap-6 text-center">
-                    <div>
-                      <div className="text-3xl font-bold text-purple">$4.5T</div>
-                      <div className="text-sm text-charcoal/60">Combined market cap of top 10 marketplaces</div>
-                    </div>
-                    <div>
-                      <div className="text-3xl font-bold text-purple">70%</div>
-                      <div className="text-sm text-charcoal/60">of unicorns are platform businesses</div>
-                    </div>
-                    <div>
-                      <div className="text-3xl font-bold text-purple">2.5x</div>
-                      <div className="text-sm text-charcoal/60">higher valuation multiples vs. linear businesses</div>
-                    </div>
-                  </div>
-                </div>
+      <p>
+        The most successful marketplaces share common characteristics: they solve a genuine matching problem, they
+        create value for both sides, and they become more valuable as they grow. Understanding these dynamics is
+        essential before building.
+      </p>
 
-                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">The Chicken-and-Egg Problem</h2>
-                <p className="text-charcoal/70 leading-relaxed mb-6">
-                  Every marketplace faces the same fundamental challenge: buyers won't come without sellers, and sellers won't come without buyers. Solving this "cold start" problem is the first and often most difficult hurdle.
-                </p>
+      <p>
+        The scale of the prize is significant. The top ten marketplaces command a combined market capitalization of
+        roughly <strong>$4.5T</strong>. Around <strong>70%</strong> of unicorns are platform businesses, and platforms
+        command valuation multiples roughly <strong>2.5x</strong> higher than linear businesses.
+      </p>
 
-                <div className="bg-background p-8 rounded-xl my-10 text-charcoal">
-                  <h4 className="font-bold mb-6 flex items-center gap-2">
-                    <Layers className="w-5 h-5 text-purple" />
-                    Cold Start Strategies
-                  </h4>
-                  <div className="space-y-6">
-                    {[
-                      { 
-                        title: "Single-Player Mode", 
-                        description: "Provide value to one side even without the other. Yelp started as a review site before becoming a marketplace." 
-                      },
-                      { 
-                        title: "Subsidize the Hard Side", 
-                        description: "Pay or incentivize the side that's harder to acquire. Uber subsidized drivers heavily in new markets." 
-                      },
-                      { 
-                        title: "Seed Supply", 
-                        description: "Create initial supply yourself. Amazon sold books directly before opening to third-party sellers." 
-                      },
-                      { 
-                        title: "Constrain Geography", 
-                        description: "Launch in a single market to achieve density. Airbnb started in San Francisco during conferences." 
-                      },
-                      { 
-                        title: "Leverage Existing Networks", 
-                        description: "Tap into communities that already exist. LinkedIn grew through professional networks." 
-                      }
-                    ].map((strategy, index) => (
-                      <div key={index} className="flex gap-4 items-start">
-                        <div className="w-8 h-8 bg-purple rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">
-                          {index + 1}
-                        </div>
-                        <div>
-                          <h5 className="font-bold text-charcoal">{strategy.title}</h5>
-                          <p className="text-muted-foreground text-sm">{strategy.description}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+      <h2 id="chicken-and-egg">The Chicken-and-Egg Problem</h2>
 
-                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Network Effects Explained</h2>
-                <p className="text-charcoal/70 leading-relaxed mb-6">
-                  Network effects occur when a product becomes more valuable as more people use it. In marketplaces, this typically manifests as cross-side network effects: more sellers attract more buyers, which attracts more sellers, creating a virtuous cycle.
-                </p>
+      <p>
+        Every marketplace faces the same fundamental challenge: buyers won't come without sellers, and sellers won't
+        come without buyers. Solving this "cold start" problem is the first and often most difficult hurdle.
+      </p>
 
-                <div className="grid md:grid-cols-2 gap-6 my-8">
-                  {[
-                    {
-                      icon: <Users className="w-6 h-6 text-purple" />,
-                      title: "Direct Network Effects",
-                      description: "Value increases with users on the same side. Social networks, communication tools."
-                    },
-                    {
-                      icon: <Network className="w-6 h-6 text-purple" />,
-                      title: "Cross-Side Network Effects",
-                      description: "Value increases with users on the opposite side. Marketplaces, platforms."
-                    },
-                    {
-                      icon: <TrendingUp className="w-6 h-6 text-purple" />,
-                      title: "Data Network Effects",
-                      description: "More usage generates better data, improving the product. Search, recommendations."
-                    },
-                    {
-                      icon: <Layers className="w-6 h-6 text-purple" />,
-                      title: "Platform Network Effects",
-                      description: "Third-party developers create additional value. App stores, APIs."
-                    }
-                  ].map((effect, index) => (
-                    <div key={index} className="p-6 bg-subtle rounded-xl">
-                      <div className="mb-4">{effect.icon}</div>
-                      <h4 className="font-bold text-charcoal mb-2">{effect.title}</h4>
-                      <p className="text-charcoal/60 text-sm">{effect.description}</p>
-                    </div>
-                  ))}
-                </div>
+      <h3>Cold Start Strategies</h3>
 
-                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Marketplace Business Models</h2>
-                <p className="text-charcoal/70 leading-relaxed mb-6">
-                  How you monetize determines your incentives and growth trajectory. The most common models:
-                </p>
+      <ul>
+        <li>
+          <strong>Single-Player Mode:</strong> Provide value to one side even without the other. Yelp started as a
+          review site before becoming a marketplace.
+        </li>
+        <li>
+          <strong>Subsidize the Hard Side:</strong> Pay or incentivize the side that's harder to acquire. Uber
+          subsidized drivers heavily in new markets.
+        </li>
+        <li>
+          <strong>Seed Supply:</strong> Create initial supply yourself. Amazon sold books directly before opening to
+          third-party sellers.
+        </li>
+        <li>
+          <strong>Constrain Geography:</strong> Launch in a single market to achieve density. Airbnb started in San
+          Francisco during conferences.
+        </li>
+        <li>
+          <strong>Leverage Existing Networks:</strong> Tap into communities that already exist. LinkedIn grew through
+          professional networks.
+        </li>
+      </ul>
 
-                <div className="overflow-x-auto my-8">
-                  <table className="w-full text-sm">
-                    <thead>
-                      <tr className="border-b border-border">
-                        <th className="text-left py-3 font-bold text-charcoal">Model</th>
-                        <th className="text-left py-3 font-bold text-charcoal">How It Works</th>
-                        <th className="text-left py-3 font-bold text-charcoal">Examples</th>
-                        <th className="text-left py-3 font-bold text-charcoal">Take Rate</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-charcoal/70">
-                      <tr className="border-b border-border">
-                        <td className="py-3 font-semibold">Transaction Fee</td>
-                        <td className="py-3">Percentage of each transaction</td>
-                        <td className="py-3">eBay, Airbnb, Uber</td>
-                        <td className="py-3">5-30%</td>
-                      </tr>
-                      <tr className="border-b border-border">
-                        <td className="py-3 font-semibold">Subscription</td>
-                        <td className="py-3">Monthly/annual fee for access</td>
-                        <td className="py-3">LinkedIn, Alibaba</td>
-                        <td className="py-3">Fixed</td>
-                      </tr>
-                      <tr className="border-b border-border">
-                        <td className="py-3 font-semibold">Listing Fee</td>
-                        <td className="py-3">Fee to list products/services</td>
-                        <td className="py-3">Etsy, Craigslist</td>
-                        <td className="py-3">$0.20-$5</td>
-                      </tr>
-                      <tr className="border-b border-border">
-                        <td className="py-3 font-semibold">Lead Generation</td>
-                        <td className="py-3">Fee for qualified leads</td>
-                        <td className="py-3">Thumbtack, Houzz</td>
-                        <td className="py-3">$5-$100</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 font-semibold">Freemium</td>
-                        <td className="py-3">Free basic, paid premium</td>
-                        <td className="py-3">Indeed, Glassdoor</td>
-                        <td className="py-3">Varies</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+      <h2 id="network-effects">Network Effects Explained</h2>
 
-                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Launch Strategies by Market Type</h2>
-                <p className="text-charcoal/70 leading-relaxed mb-6">
-                  The right launch strategy depends on your market characteristics. Here's how to approach different scenarios:
-                </p>
+      <p>
+        Network effects occur when a product becomes more valuable as more people use it. In marketplaces, this
+        typically manifests as cross-side network effects: more sellers attract more buyers, which attracts more
+        sellers, creating a virtuous cycle.
+      </p>
 
-                <div className="space-y-6 my-8">
-                  <div className="p-6 border border-border rounded-xl">
-                    <div className="flex items-center gap-2 text-purple text-sm font-semibold mb-2">
-                      <Target className="w-4 h-4" />
-                      HIGH FRAGMENTATION
-                    </div>
-                    <h4 className="font-bold text-charcoal mb-2">Many Small Suppliers</h4>
-                    <p className="text-charcoal/60 text-sm mb-4">
-                      Markets with thousands of small suppliers (restaurants, contractors, freelancers) benefit from aggregation. Focus on making it easy for suppliers to join and manage their presence.
-                    </p>
-                    <div className="text-sm text-charcoal/70">
-                      <strong>Strategy:</strong> Self-service onboarding, automated tools, mobile-first experience
-                    </div>
-                  </div>
-                  <div className="p-6 border border-border rounded-xl">
-                    <div className="flex items-center gap-2 text-purple text-sm font-semibold mb-2">
-                      <Target className="w-4 h-4" />
-                      HIGH VALUE TRANSACTIONS
-                    </div>
-                    <h4 className="font-bold text-charcoal mb-2">B2B or Enterprise</h4>
-                    <p className="text-charcoal/60 text-sm mb-4">
-                      Large transactions justify high-touch sales and white-glove service. Focus on trust, compliance, and integration with existing workflows.
-                    </p>
-                    <div className="text-sm text-charcoal/70">
-                      <strong>Strategy:</strong> Direct sales, account management, enterprise features
-                    </div>
-                  </div>
-                  <div className="p-6 border border-border rounded-xl">
-                    <div className="flex items-center gap-2 text-purple text-sm font-semibold mb-2">
-                      <Target className="w-4 h-4" />
-                      LOCAL/GEOGRAPHIC
-                    </div>
-                    <h4 className="font-bold text-charcoal mb-2">Location-Dependent Services</h4>
-                    <p className="text-charcoal/60 text-sm mb-4">
-                      Services that require physical proximity need density in each market. Launch city-by-city and achieve critical mass before expanding.
-                    </p>
-                    <div className="text-sm text-charcoal/70">
-                      <strong>Strategy:</strong> Hyper-local marketing, city launchers, geographic expansion playbook
-                    </div>
-                  </div>
-                </div>
+      <ul>
+        <li>
+          <strong>Direct Network Effects:</strong> Value increases with users on the same side. Social networks,
+          communication tools.
+        </li>
+        <li>
+          <strong>Cross-Side Network Effects:</strong> Value increases with users on the opposite side. Marketplaces,
+          platforms.
+        </li>
+        <li>
+          <strong>Data Network Effects:</strong> More usage generates better data, improving the product. Search,
+          recommendations.
+        </li>
+        <li>
+          <strong>Platform Network Effects:</strong> Third-party developers create additional value. App stores, APIs.
+        </li>
+      </ul>
 
-                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Scaling the Platform</h2>
-                <p className="text-charcoal/70 leading-relaxed mb-6">
-                  Once you've achieved product-market fit in your initial market, scaling requires different capabilities. The key challenges at scale:
-                </p>
+      <h2 id="business-models">Marketplace Business Models</h2>
 
-                <div className="space-y-4 mb-8">
-                  {[
-                    {
-                      title: "Quality Control",
-                      description: "As supply grows, maintaining quality becomes harder. Implement ratings, reviews, and algorithmic quality scoring."
-                    },
-                    {
-                      title: "Trust & Safety",
-                      description: "Fraud, abuse, and bad actors increase with scale. Build robust verification, dispute resolution, and enforcement systems."
-                    },
-                    {
-                      title: "Liquidity Management",
-                      description: "Balance supply and demand across categories and geographies. Use pricing, incentives, and matching algorithms."
-                    },
-                    {
-                      title: "Platform Leakage",
-                      description: "Users may try to transact off-platform. Create enough value (payments, insurance, support) to keep transactions on-platform."
-                    },
-                    {
-                      title: "Multi-Homing",
-                      description: "Suppliers and buyers may use multiple platforms. Differentiate through unique features, better economics, or exclusive supply."
-                    }
-                  ].map((challenge, index) => (
-                    <div key={index} className="flex gap-4 p-4 bg-subtle rounded-lg">
-                      <CheckCircle2 className="w-6 h-6 text-purple flex-shrink-0 mt-1" />
-                      <div>
-                        <h4 className="font-bold text-charcoal mb-1">{challenge.title}</h4>
-                        <p className="text-charcoal/60 text-sm">{challenge.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+      <p>
+        How you monetize determines your incentives and growth trajectory. The most common models:
+      </p>
 
-                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Governance & Trust</h2>
-                <p className="text-charcoal/70 leading-relaxed mb-6">
-                  Marketplaces are mini-economies that require governance. The rules you set—and how you enforce them—determine the health of your ecosystem.
-                </p>
+      <ul>
+        <li>
+          <strong>Transaction Fee:</strong> A percentage of each transaction—used by eBay, Airbnb, and Uber. Take rates
+          typically run 5-30%.
+        </li>
+        <li>
+          <strong>Subscription:</strong> A monthly or annual fee for access—used by LinkedIn and Alibaba. The fee is
+          fixed.
+        </li>
+        <li>
+          <strong>Listing Fee:</strong> A fee to list products or services—used by Etsy and Craigslist. Typically
+          $0.20-$5.
+        </li>
+        <li>
+          <strong>Lead Generation:</strong> A fee for qualified leads—used by Thumbtack and Houzz. Typically $5-$100.
+        </li>
+        <li>
+          <strong>Freemium:</strong> Free basic access with paid premium—used by Indeed and Glassdoor. Take rate varies.
+        </li>
+      </ul>
 
-                <div className="bg-background p-8 rounded-xl my-10 text-charcoal">
-                  <h4 className="font-bold mb-6 flex items-center gap-2">
-                    <Shield className="w-5 h-5 text-purple" />
-                    Trust Architecture
-                  </h4>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <h5 className="font-semibold text-purple mb-3">Pre-Transaction Trust</h5>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• Identity verification</li>
-                        <li>• Background checks</li>
-                        <li>• Portfolio/credential review</li>
-                        <li>• Social proof (reviews, ratings)</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h5 className="font-semibold text-purple mb-3">Post-Transaction Trust</h5>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• Escrow/payment protection</li>
-                        <li>• Dispute resolution</li>
-                        <li>• Insurance/guarantees</li>
-                        <li>• Feedback systems</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+      <h2 id="launch-strategies">Launch Strategies by Market Type</h2>
 
-                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Metrics That Matter</h2>
-                <p className="text-charcoal/70 leading-relaxed mb-6">
-                  Marketplace metrics differ from traditional SaaS or e-commerce. Focus on these key indicators:
-                </p>
+      <p>
+        The right launch strategy depends on your market characteristics. Here's how to approach different scenarios:
+      </p>
 
-                <div className="grid md:grid-cols-2 gap-6 my-8">
-                  {[
-                    {
-                      metric: "GMV (Gross Merchandise Value)",
-                      description: "Total value of transactions on the platform",
-                      benchmark: "Growing 50%+ YoY in early stage"
-                    },
-                    {
-                      metric: "Take Rate",
-                      description: "Revenue as percentage of GMV",
-                      benchmark: "5-30% depending on category"
-                    },
-                    {
-                      metric: "Liquidity",
-                      description: "Percentage of listings that result in transactions",
-                      benchmark: "30%+ for healthy marketplace"
-                    },
-                    {
-                      metric: "Time to Transaction",
-                      description: "How quickly buyers find what they need",
-                      benchmark: "Decreasing over time"
-                    },
-                    {
-                      metric: "Repeat Rate",
-                      description: "Percentage of users who transact again",
-                      benchmark: "40%+ within 90 days"
-                    },
-                    {
-                      metric: "NPS by Side",
-                      description: "Satisfaction of buyers and sellers separately",
-                      benchmark: "50+ for both sides"
-                    }
-                  ].map((item, index) => (
-                    <div key={index} className="p-4 border border-border rounded-lg">
-                      <h4 className="font-bold text-charcoal mb-1">{item.metric}</h4>
-                      <p className="text-charcoal/60 text-sm mb-2">{item.description}</p>
-                      <p className="text-xs text-purple font-semibold">{item.benchmark}</p>
-                    </div>
-                  ))}
-                </div>
+      <h3>High Fragmentation: Many Small Suppliers</h3>
 
-                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Case Example: B2B Industrial Marketplace</h2>
-                <p className="text-charcoal/70 leading-relaxed mb-6">
-                  A NEXDYNE client built a B2B marketplace connecting industrial manufacturers with distributors across Africa. Here's how they applied these principles:
-                </p>
+      <p>
+        Markets with thousands of small suppliers (restaurants, contractors, freelancers) benefit from aggregation.
+        Focus on making it easy for suppliers to join and manage their presence. <strong>Strategy:</strong> self-service
+        onboarding, automated tools, mobile-first experience.
+      </p>
 
-                <div className="bg-subtle p-8 rounded-xl my-8">
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div>
-                      <h4 className="font-bold text-charcoal mb-4">Launch Strategy</h4>
-                      <ul className="space-y-2 text-sm text-charcoal/70">
-                        <li>• Started with single product category (industrial fasteners)</li>
-                        <li>• Seeded supply by onboarding 50 manufacturers directly</li>
-                        <li>• Offered free listings for first year to build catalog</li>
-                        <li>• Focused on one geographic region initially</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-charcoal mb-4">Results (18 months)</h4>
-                      <ul className="space-y-2 text-sm text-charcoal/70">
-                        <li>• $10M GMV achieved</li>
-                        <li>• 2,500+ active users</li>
-                        <li>• 15% take rate on transactions</li>
-                        <li>• 45% repeat purchase rate</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+      <h3>High Value Transactions: B2B or Enterprise</h3>
 
-                <div className="bg-purple/10 p-8 rounded-xl my-10">
-                  <h4 className="font-bold text-charcoal mb-4">Ready to build your marketplace?</h4>
-                  <p className="text-charcoal/70 mb-6">
-                    NEXDYNE helps companies design, build, and scale marketplace platforms. From strategy to technology to growth, we've helped launch marketplaces across industries.
-                  </p>
-                  <Link href="/contact">
-                    <Button className="bg-purple hover:bg-purple text-charcoal">
-                      Schedule a Consultation
-                      <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
+      <p>
+        Large transactions justify high-touch sales and white-glove service. Focus on trust, compliance, and
+        integration with existing workflows. <strong>Strategy:</strong> direct sales, account management, enterprise
+        features.
+      </p>
 
-            {/* Right Sidebar */}
-            <div className="md:col-span-2 hidden lg:block">
-              <div className="sticky top-32">
-                <div className="p-6 bg-subtle rounded-xl">
-                  <h4 className="font-bold text-charcoal mb-4">Related Case Studies</h4>
-                  <div className="space-y-4">
-                    <Link href="/cases/retail-ecommerce-growth">
-                      <div className="group cursor-pointer">
-                        <p className="text-sm font-semibold text-charcoal group-hover:text-primary transition-colors">Outdoor Gear E-commerce</p>
-                        <p className="text-xs text-charcoal/60">180% revenue growth</p>
-                      </div>
-                    </Link>
-                    <Link href="/cases/b2b-digital-ordering">
-                      <div className="group cursor-pointer">
-                        <p className="text-sm font-semibold text-charcoal group-hover:text-primary transition-colors">B2B Digital Ordering</p>
-                        <p className="text-xs text-charcoal/60">$4.5M new revenue</p>
-                      </div>
-                    </Link>
-                    <Link href="/cases/training-subscription-platform">
-                      <div className="group cursor-pointer">
-                        <p className="text-sm font-semibold text-charcoal group-hover:text-primary transition-colors">Subscription Platform</p>
-                        <p className="text-xs text-charcoal/60">$1.8M ARR</p>
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <h3>Local/Geographic: Location-Dependent Services</h3>
 
-      {/* Related Insights */}
-      <RelatedContent
-        title="Related Insights"
-        items={[
-          {
-            type: "Article",
-            title: "The digital growth playbook for growing companies",
-            description: "How leading growing companies are building digital channels that compete with well-funded startups.",
-            image: "/images/capabilities/cap-retail-data.jpg",
-            link: "/insights/digital-growth-playbook"
-          },
-          {
-            type: "Article",
-            title: "E-commerce economics: Building profitable D2C channels",
-            description: "The unit economics, technology choices, and operational considerations that determine D2C success.",
-            image: "/images/capabilities/cap-mobile-woman.jpg",
-            link: "/insights/ecommerce-economics"
-          },
-          {
-            type: "Article",
-            title: "From MVP to scale: The startup growth journey",
-            description: "How to navigate the critical transitions from product-market fit to sustainable growth.",
-            image: "/images/industries/retail-shelves.jpg",
-            link: "/insights/from-mvp-to-scale"
-          }
-        ]}
-      />
+      <p>
+        Services that require physical proximity need density in each market. Launch city-by-city and achieve critical
+        mass before expanding. <strong>Strategy:</strong> hyper-local marketing, city launchers, geographic expansion
+        playbook.
+      </p>
 
-      {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-background">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
-              Ready to build your marketplace?
-            </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed mb-10">
-              Let's design a platform strategy that creates network effects and sustainable competitive advantages.
-            </p>
-            <Link href="/contact">
-              <Button className="bg-purple hover:bg-purple text-charcoal px-10 py-6 text-lg font-semibold transition">
-                Schedule a Consultation
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </Link>
-          </motion.div>
-        </div>
-      </section>
+      <h2 id="scaling">Scaling the Platform</h2>
 
-      <Footer />
-    </div>
+      <p>
+        Once you've achieved product-market fit in your initial market, scaling requires different capabilities. The key
+        challenges at scale:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Quality Control:</strong> As supply grows, maintaining quality becomes harder. Implement ratings,
+          reviews, and algorithmic quality scoring.
+        </li>
+        <li>
+          <strong>Trust &amp; Safety:</strong> Fraud, abuse, and bad actors increase with scale. Build robust
+          verification, dispute resolution, and enforcement systems.
+        </li>
+        <li>
+          <strong>Liquidity Management:</strong> Balance supply and demand across categories and geographies. Use
+          pricing, incentives, and matching algorithms.
+        </li>
+        <li>
+          <strong>Platform Leakage:</strong> Users may try to transact off-platform. Create enough value (payments,
+          insurance, support) to keep transactions on-platform.
+        </li>
+        <li>
+          <strong>Multi-Homing:</strong> Suppliers and buyers may use multiple platforms. Differentiate through unique
+          features, better economics, or exclusive supply.
+        </li>
+      </ul>
+
+      <h2 id="governance-trust">Governance &amp; Trust</h2>
+
+      <p>
+        Marketplaces are mini-economies that require governance. The rules you set—and how you enforce them—determine
+        the health of your ecosystem.
+      </p>
+
+      <h3>Pre-Transaction Trust</h3>
+
+      <ul>
+        <li>Identity verification</li>
+        <li>Background checks</li>
+        <li>Portfolio/credential review</li>
+        <li>Social proof (reviews, ratings)</li>
+      </ul>
+
+      <h3>Post-Transaction Trust</h3>
+
+      <ul>
+        <li>Escrow/payment protection</li>
+        <li>Dispute resolution</li>
+        <li>Insurance/guarantees</li>
+        <li>Feedback systems</li>
+      </ul>
+
+      <h2 id="metrics">Metrics That Matter</h2>
+
+      <p>
+        Marketplace metrics differ from traditional SaaS or e-commerce. Focus on these key indicators:
+      </p>
+
+      <ul>
+        <li>
+          <strong>GMV (Gross Merchandise Value):</strong> Total value of transactions on the platform. Benchmark:
+          growing 50%+ YoY in early stage.
+        </li>
+        <li>
+          <strong>Take Rate:</strong> Revenue as a percentage of GMV. Benchmark: 5-30% depending on category.
+        </li>
+        <li>
+          <strong>Liquidity:</strong> Percentage of listings that result in transactions. Benchmark: 30%+ for a healthy
+          marketplace.
+        </li>
+        <li>
+          <strong>Time to Transaction:</strong> How quickly buyers find what they need. Benchmark: decreasing over time.
+        </li>
+        <li>
+          <strong>Repeat Rate:</strong> Percentage of users who transact again. Benchmark: 40%+ within 90 days.
+        </li>
+        <li>
+          <strong>NPS by Side:</strong> Satisfaction of buyers and sellers separately. Benchmark: 50+ for both sides.
+        </li>
+      </ul>
+
+      <h2 id="case-example">Case Example: B2B Industrial Marketplace</h2>
+
+      <p>
+        A NexDyne client built a B2B marketplace connecting industrial manufacturers with distributors across Africa.
+        Here's how they applied these principles.
+      </p>
+
+      <p>
+        <strong>Launch strategy:</strong> They started with a single product category (industrial fasteners), seeded
+        supply by onboarding 50 manufacturers directly, offered free listings for the first year to build the catalog,
+        and focused on one geographic region initially.
+      </p>
+
+      <p>
+        <strong>Results (18 months):</strong> $10M GMV achieved, 2,500+ active users, a 15% take rate on transactions,
+        and a 45% repeat purchase rate.
+      </p>
+    </InsightArticleV2>
   );
 }

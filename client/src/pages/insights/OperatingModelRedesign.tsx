@@ -1,168 +1,114 @@
-import { motion } from "framer-motion";
-import { Link } from "wouter";
-import { ArrowRight, ArrowLeft, Layers, Target, Cog, Users, CheckCircle2, Clock } from 'lucide-react';
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import { BackToTop } from "@/components/BackToTop";
-import { Button } from "@/components/ui/button";
-import { SEO } from "@/components/SEO";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function OperatingModelRedesign() {
+  const sections = [
+    { id: "structure-follows-strategy", label: "Structure follows strategy" },
+    { id: "operating-model-canvas", label: "Operating model canvas" },
+    { id: "archetypes", label: "Model archetypes" },
+    { id: "redesign-principles", label: "Redesign principles" },
+    { id: "implementation", label: "Implementation approach" },
+    { id: "bottom-line", label: "The bottom line" },
+  ];
+
+  const relatedInsights = [
+    { title: "Why Strategic Plans Fail", category: "Business Strategy", link: "/insights/strategic-plans-success", image: "/images/business-strategy-abstract.jpg" },
+    { title: "Portfolio Management Excellence", category: "Business Strategy", link: "/insights/portfolio-management", image: "/images/capabilities/cap-strategy-spheres.jpg" },
+    { title: "Business Transformation Strategy", category: "Business Strategy", link: "/insights/business-transformation-strategy", image: "/images/approach-strategy.jpg" },
+  ];
+
   return (
-    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Operating Model Redesign: Aligning Structure with Strategy | NexDyne Technologies" 
-        description="Learn how to redesign your operating model to enable strategy execution. A framework for aligning structure, processes, and capabilities."
-        canonical="/insights/operating-model-redesign"
-      />
-      <Navigation />
-      
-      {/* DZ10 Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/capabilities/cap-chess.jpg')] bg-cover bg-center opacity-20"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/70 to-background"></div>
-        
-        <div className="container relative z-10 px-4 md:px-12">
-          <Breadcrumbs />
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">Insight · Business Strategy</span>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
-              <span className="text-primary">Operating Model</span> Redesign
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl">
-              How to redesign your operating model to enable strategy execution. Aligning structure, processes, and capabilities with strategic intent.
-            </p>
-            <div className="flex items-center gap-6 mt-8 text-sm text-muted-foreground">
-              <span className="flex items-center gap-2"><Clock className="w-4 h-4" />10 min read</span>
-              <span>December 2024</span>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+    <InsightArticleV2
+      category="Business Strategy"
+      title="Operating Model Redesign"
+      subtitle="How to redesign your operating model to enable strategy execution. Aligning structure, processes, and capabilities with strategic intent."
+      heroImage="/images/capabilities/cap-chess.jpg"
+      publishDate="December 2024"
+      readTime="10 min"
+      sections={sections}
+      keyTakeaways={[
+        "Structure follows strategy: many organizations try to execute new strategies through old operating models and wonder why results don't follow.",
+        "An operating model spans six dimensions—structure, processes, technology, governance, people, and metrics—and all of them must align when strategy changes.",
+        "Centralized, decentralized, and federated archetypes each trade control against local responsiveness; the right choice depends on strategic requirements.",
+        "Redesign holistically and phase it—design, pilot, rollout, stabilize—planning for a 12-18 month stabilization period, because changing structure without processes and governance rarely lasts.",
+      ]}
+      relatedInsights={relatedInsights}
+    >
+      <h2 id="structure-follows-strategy">Structure follows strategy</h2>
+      <p>
+        Alfred Chandler's famous dictum—"structure follows strategy"—remains as relevant today as when he
+        wrote it in 1962. Yet many organizations try to execute new strategies through old operating
+        models, wondering why results don't follow.
+      </p>
+      <p>
+        An operating model defines how an organization creates and delivers value. It encompasses
+        structure, processes, technology, and governance. When strategy changes, the operating model must
+        evolve to enable it.
+      </p>
 
-      {/* Article Content */}
-      <article className="py-16 bg-white text-charcoal">
-        <div className="container px-4 md:px-12 max-w-4xl">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="prose prose-lg max-w-none">
-            
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Structure Follows Strategy</h2>
-            <p className="text-charcoal/80 leading-relaxed mb-6">
-              Alfred Chandler's famous dictum—"structure follows strategy"—remains as relevant today as when he wrote it in 1962. Yet many organizations try to execute new strategies through old operating models, wondering why results don't follow.
-            </p>
-            <p className="text-charcoal/70 leading-relaxed mb-8">
-              An operating model defines how an organization creates and delivers value. It encompasses structure, processes, technology, and governance. When strategy changes, the operating model must evolve to enable it.
-            </p>
+      <h2 id="operating-model-canvas">The operating model canvas</h2>
+      <h3>Six dimensions of the operating model</h3>
+      <ul>
+        <li><strong>Structure:</strong> How the organization is organized and how work is divided.</li>
+        <li><strong>Processes:</strong> How work flows through the organization.</li>
+        <li><strong>Technology:</strong> Systems and tools that enable operations.</li>
+        <li><strong>Governance:</strong> How decisions are made and performance managed.</li>
+        <li><strong>People:</strong> Capabilities, culture, and talent management.</li>
+        <li><strong>Metrics:</strong> How performance is measured and rewarded.</li>
+      </ul>
 
-            <h2 className="text-3xl font-bold text-charcoal mb-6">The Operating Model Canvas</h2>
-            
-            <div className="p-8 bg-charcoal/5 rounded-xl mb-12">
-              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Layers className="w-6 h-6 text-primary" />Six Dimensions of Operating Model</h3>
-              <div className="grid md:grid-cols-2 gap-4 text-charcoal/70">
-                <div><strong className="text-charcoal">Structure:</strong> How the organization is organized and how work is divided</div>
-                <div><strong className="text-charcoal">Processes:</strong> How work flows through the organization</div>
-                <div><strong className="text-charcoal">Technology:</strong> Systems and tools that enable operations</div>
-                <div><strong className="text-charcoal">Governance:</strong> How decisions are made and performance managed</div>
-                <div><strong className="text-charcoal">People:</strong> Capabilities, culture, and talent management</div>
-                <div><strong className="text-charcoal">Metrics:</strong> How performance is measured and rewarded</div>
-              </div>
-            </div>
+      <h2 id="archetypes">Common operating model archetypes</h2>
+      <h3>Centralized model</h3>
+      <p>
+        Decision-making concentrated at the center. Best for organizations requiring tight control,
+        consistency, and efficiency. Trade-off: slower response to local conditions.
+      </p>
+      <h3>Decentralized model</h3>
+      <p>
+        Decision-making pushed to business units or regions. Best for diverse businesses requiring local
+        responsiveness. Trade-off: potential duplication and inconsistency.
+      </p>
+      <h3>Federated model</h3>
+      <p>
+        Hybrid approach with some functions centralized and others decentralized. Best for balancing
+        efficiency with responsiveness. Trade-off: complexity in defining boundaries.
+      </p>
 
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Common Operating Model Archetypes</h2>
-            
-            <div className="space-y-8 mb-12">
-              <div className="flex gap-6">
-                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center"><Target className="w-6 h-6" /></div></div>
-                <div>
-                  <h3 className="text-xl font-bold text-charcoal mb-2">Centralized Model</h3>
-                  <p className="text-charcoal/70 leading-relaxed">Decision-making concentrated at the center. Best for organizations requiring tight control, consistency, and efficiency. Trade-off: slower response to local conditions.</p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center"><Users className="w-6 h-6" /></div></div>
-                <div>
-                  <h3 className="text-xl font-bold text-charcoal mb-2">Decentralized Model</h3>
-                  <p className="text-charcoal/70 leading-relaxed">Decision-making pushed to business units or regions. Best for diverse businesses requiring local responsiveness. Trade-off: potential duplication and inconsistency.</p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center"><Cog className="w-6 h-6" /></div></div>
-                <div>
-                  <h3 className="text-xl font-bold text-charcoal mb-2">Federated Model</h3>
-                  <p className="text-charcoal/70 leading-relaxed">Hybrid approach with some functions centralized and others decentralized. Best for balancing efficiency with responsiveness. Trade-off: complexity in defining boundaries.</p>
-                </div>
-              </div>
-            </div>
+      <h2 id="redesign-principles">Redesign principles</h2>
+      <ul>
+        <li><strong>Start with strategy:</strong> The operating model should enable strategic priorities. Define what the organization needs to do well, then design the model to deliver it.</li>
+        <li><strong>Design for the future:</strong> Don't just fix today's problems—design for where the business is going. Build in flexibility for evolution.</li>
+        <li><strong>Simplify ruthlessly:</strong> Complexity is the enemy of execution. Remove unnecessary layers, streamline processes, and clarify decision rights.</li>
+        <li><strong>Align all dimensions:</strong> Structure alone isn't enough. Processes, technology, governance, and metrics must all align with the new model.</li>
+      </ul>
 
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Redesign Principles</h2>
-            <ul className="space-y-4 text-charcoal/70 mb-8">
-              <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong className="text-charcoal">Start with strategy:</strong> The operating model should enable strategic priorities. Define what the organization needs to do well, then design the model to deliver it.</span></li>
-              <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong className="text-charcoal">Design for the future:</strong> Don't just fix today's problems—design for where the business is going. Build in flexibility for evolution.</span></li>
-              <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong className="text-charcoal">Simplify ruthlessly:</strong> Complexity is the enemy of execution. Remove unnecessary layers, streamline processes, and clarify decision rights.</span></li>
-              <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong className="text-charcoal">Align all dimensions:</strong> Structure alone isn't enough. Processes, technology, governance, and metrics must all align with the new model.</span></li>
-            </ul>
+      <h2 id="implementation">Implementation approach</h2>
+      <h3>Phase 1: Design</h3>
+      <p>
+        Define the target operating model based on strategic requirements. Engage stakeholders to build
+        buy-in and identify implementation challenges.
+      </p>
+      <h3>Phase 2: Pilot</h3>
+      <p>
+        Test the new model in a limited scope to identify issues and refine the design before full rollout.
+      </p>
+      <h3>Phase 3: Rollout</h3>
+      <p>
+        Implement the new model across the organization with clear communication, training, and change
+        management support.
+      </p>
+      <h3>Phase 4: Stabilize</h3>
+      <p>
+        Monitor performance, address issues, and make adjustments. Operating model changes take time to
+        embed—plan for a 12-18 month stabilization period.
+      </p>
 
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Implementation Approach</h2>
-            <div className="space-y-6 mb-12">
-              <div className="p-6 bg-charcoal/5 rounded-xl">
-                <h4 className="text-lg font-bold text-charcoal mb-2">Phase 1: Design</h4>
-                <p className="text-charcoal/70">Define the target operating model based on strategic requirements. Engage stakeholders to build buy-in and identify implementation challenges.</p>
-              </div>
-              <div className="p-6 bg-charcoal/5 rounded-xl">
-                <h4 className="text-lg font-bold text-charcoal mb-2">Phase 2: Pilot</h4>
-                <p className="text-charcoal/70">Test the new model in a limited scope to identify issues and refine the design before full rollout.</p>
-              </div>
-              <div className="p-6 bg-charcoal/5 rounded-xl">
-                <h4 className="text-lg font-bold text-charcoal mb-2">Phase 3: Rollout</h4>
-                <p className="text-charcoal/70">Implement the new model across the organization with clear communication, training, and change management support.</p>
-              </div>
-              <div className="p-6 bg-charcoal/5 rounded-xl">
-                <h4 className="text-lg font-bold text-charcoal mb-2">Phase 4: Stabilize</h4>
-                <p className="text-charcoal/70">Monitor performance, address issues, and make adjustments. Operating model changes take time to embed—plan for a 12-18 month stabilization period.</p>
-              </div>
-            </div>
-
-            <div className="p-8 bg-primary text-charcoal rounded-xl mb-12">
-              <h3 className="text-xl font-bold mb-4">The Bottom Line</h3>
-              <p className="text-charcoal/90 leading-relaxed">
-                Operating model redesign is one of the most powerful levers for improving organizational performance. By aligning structure, processes, and capabilities with strategic intent, organizations can unlock significant value. The key is to approach it holistically—changing structure without changing processes and governance rarely delivers lasting results.
-              </p>
-            </div>
-
-          </motion.div>
-        </div>
-      </article>
-
-      {/* Related Insights */}
-      <section className="py-24 md:py-32 bg-background">
-        <div className="container px-4 md:px-12">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">Related Insights</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">Continue reading</h2>
-          </motion.div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
-            {[
-              { title: "Why Strategic Plans Fail", category: "Business Strategy", description: "Building strategies that get executed", link: "/insights/strategic-plans-success" },
-              { title: "Portfolio Management Excellence", category: "Business Strategy", description: "Managing strategic initiatives", link: "/insights/portfolio-management" }
-            ].map((item, index) => (
-              <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>
-                <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
-                  <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.category}</span>
-                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
-                  <p className="text-muted-foreground mt-2">{item.description}</p>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-[gap]">Read insight <ArrowRight className="w-3 h-3" /></span>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-          <div className="text-center mt-16">
-            <Link href="/insights"><Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-8 py-6 text-base font-semibold transition bg-transparent"><ArrowLeft className="w-4 h-4 mr-2" />Back to all insights</Button></Link>
-          </div>
-        </div>
-      </section>
-
-      <BackToTop />
-      <Footer />
-    </div>
+      <h2 id="bottom-line">The bottom line</h2>
+      <p>
+        Operating model redesign is one of the most powerful levers for improving organizational
+        performance. By aligning structure, processes, and capabilities with strategic intent,
+        organizations can unlock significant value. The key is to approach it holistically—changing
+        structure without changing processes and governance rarely delivers lasting results.
+      </p>
+    </InsightArticleV2>
   );
 }

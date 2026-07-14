@@ -1,118 +1,82 @@
-import React from 'react';
-import ReadingProgress from '@/components/ReadingProgress';
-import InlineTableOfContents from '@/components/InlineTableOfContents';
-import { Link } from 'wouter';
-import { Separator } from '@/components/ui/separator';
-import { Button } from '@/components/ui/button';
-import { ArrowRight, Share2 } from 'lucide-react';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function CarbonMarkets() {
+  const sections = [
+    { id: "integrity-turn", label: "The integrity turn" },
+    { id: "regulatory-convergence", label: "Regulatory convergence" },
+    { id: "strategic-implications", label: "Strategic implications" },
+  ];
+
+  const relatedInsights = [
+    { title: "The Net-Zero Transition", category: "Sustainability", link: "/insights/net-zero-transition", image: "/images/insight-net-zero.jpg" },
+    { title: "Green Materials", category: "Sustainability", link: "/insights/green-materials", image: "/images/insight-green-materials.jpg" },
+    { title: "The Green Growth Imperative", category: "Sustainability", link: "/insights/green-growth-imperative", image: "/images/green-growth-hero.jpg" },
+  ];
+
   return (
-    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-primary/10">
-      <Navigation />
+    <InsightArticleV2
+      category="Sustainability"
+      title="Carbon Markets 2025: From Voluntary to Compliance"
+      subtitle="As regulatory frameworks tighten, the distinction between voluntary and compliance carbon markets is blurring. Here is what business leaders need to know."
+      heroImage="/images/insight-carbon-markets.jpg"
+      readTime="6 min"
+      sections={sections}
+      keyTakeaways={[
+        "The voluntary carbon market grew rapidly on the back of corporate net-zero commitments, but concerns about credit quality and a lack of standardization have held it back.",
+        "New guidance from the ICVCM and the VCMI is setting a high bar for quality, and buyers increasingly demand removal credits over avoidance credits—paying a premium for them.",
+        "Article 6 of the Paris Agreement and jurisdictions like the EU and California are converging voluntary and compliance markets, which will likely drive up prices and liquidity.",
+        "Leaders should audit their credit portfolios against the new integrity standards, secure long-term supply of high-quality removal credits, and prepare for stricter regulation.",
+      ]}
+      relatedInsights={relatedInsights}
+    >
+      <p>
+        The voluntary carbon market (VCM) has grown rapidly in recent years, driven by corporate net-zero
+        commitments. However, concerns about credit quality and a lack of standardization have held it back. Now, as
+        we approach 2025, a new era is emerging—one defined by convergence with compliance markets and rigorous
+        integrity standards.
+      </p>
 
-      {/* Hero Section */}
-      <header className="pt-20 pb-16 border-b border-border">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl">
-            <div className="text-sm font-medium text-muted-foreground mb-6 uppercase tracking-wider">
-              <Link href="/insights" className="hover:text-primary transition-colors">
-                Insights
-              </Link>
-              <span className="mx-2">/</span>
-              <span className="text-charcoal">Article</span>
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-4 leading-[1.1]">
-              Carbon Markets 2025: From Voluntary to Compliance
-            </h1>
-            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light">
-              As regulatory frameworks tighten, the distinction between voluntary and compliance carbon markets is blurring. Here is what business leaders need to know.
-            </p>
-          </div>
-        </div>
-      </header>
+      <h2 id="integrity-turn">The Integrity Turn</h2>
+      <p>
+        The "wild west" days of carbon offsetting are ending. New guidance from the Integrity Council for the
+        Voluntary Carbon Market (ICVCM) and the Voluntary Carbon Markets Integrity Initiative (VCMI) is setting a high
+        bar for what counts as a high-quality credit. Buyers are increasingly demanding removal credits over avoidance
+        credits, and they are willing to pay a premium for them.
+      </p>
 
-      <main className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
-          
-          {/* Main Content */}
-          <div className="lg:col-span-8 space-y-12">
-            
-            {/* Article Body */}
-            <section className="prose prose-lg prose-slate max-w-none">
-              <p className="text-lg leading-relaxed text-muted-foreground font-medium">
-                The voluntary carbon market (VCM) has grown rapidly in recent years, driven by corporate net-zero commitments. However, concerns about credit quality and a lack of standardization have held it back. Now, as we approach 2025, a new era is emerging—one defined by convergence with compliance markets and rigorous integrity standards.
-              </p>
-              
-              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">The Integrity Turn</h3>
-              <p className="text-muted-foreground">
-                The "wild west" days of carbon offsetting are ending. New guidance from the Integrity Council for the Voluntary Carbon Market (ICVCM) and the Voluntary Carbon Markets Integrity Initiative (VCMI) is setting a high bar for what counts as a high-quality credit. Buyers are increasingly demanding removal credits over avoidance credits, and they are willing to pay a premium for them.
-              </p>
+      <h2 id="regulatory-convergence">Regulatory Convergence</h2>
+      <p>
+        Governments are stepping in. Article 6 of the Paris Agreement is creating a framework for international carbon
+        trading, and jurisdictions like the EU and California are exploring ways to integrate high-quality voluntary
+        credits into their compliance schemes. This convergence will likely drive up prices and liquidity.
+      </p>
 
-              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Regulatory Convergence</h3>
-              <p className="text-muted-foreground">
-                Governments are stepping in. Article 6 of the Paris Agreement is creating a framework for international carbon trading, and jurisdictions like the EU and California are exploring ways to integrate high-quality voluntary credits into their compliance schemes. This convergence will likely drive up prices and liquidity.
-              </p>
-              
-              <blockquote className="border-l-4 border-primary pl-6 italic text-xl text-charcoal my-12">
-                "The future of carbon markets lies in high-integrity, transparent, and regulated trading systems that can unlock the trillions needed for climate action."
-              </blockquote>
+      <blockquote>
+        The future of carbon markets lies in high-integrity, transparent, and regulated trading systems that can
+        unlock the trillions needed for climate action.
+      </blockquote>
 
-              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Strategic Implications</h3>
-              <p className="text-muted-foreground">
-                For companies, this means that carbon credits can no longer be a "check-the-box" exercise. They must be part of a comprehensive decarbonization strategy that prioritizes internal abatement. When credits are used, they must be high-quality and verified.
-              </p>
-              <p className="text-muted-foreground mt-4">
-                We recommend three actions for business leaders:
-              </p>
-              <ol className="list-decimal pl-6 space-y-4 text-muted-foreground">
-                <li><strong>Audit your portfolio:</strong> Review existing carbon credit purchases against the new integrity standards.</li>
-                <li><strong>Secure supply:</strong> Long-term offtake agreements for high-quality removal credits (e.g., direct air capture, biochar) are becoming essential as demand outstrips supply.</li>
-                <li><strong>Prepare for regulation:</strong> Anticipate stricter reporting requirements and potential carbon border taxes.</li>
-              </ol>
-            </section>
-
-          </div>
-
-          {/* Sidebar */}
-          <div className="lg:col-span-4 space-y-8">
-            <div className="bg-off-white p-8 rounded-sm border border-border sticky top-24">
-              <div className="flex flex-col gap-4 mb-8">
-                <Button variant="outline" className="w-full border-border text-charcoal/80 hover:bg-off-white flex items-center justify-center gap-2">
-                  <Share2 className="w-4 h-4" /> Share Article
-                </Button>
-              </div>
-
-              <h3 className="text-lg font-bold text-charcoal mb-4">Authors</h3>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-grey rounded-full"></div>
-                  <div>
-                    <div className="font-medium text-charcoal">Elena Rodriguez</div>
-                    <div className="text-xs text-muted-foreground">Associate Partner, New York</div>
-                  </div>
-                </li>
-              </ul>
-
-              <div className="pt-8 border-t border-border">
-                <h4 className="font-bold text-charcoal mb-4 text-sm uppercase tracking-wide">Related Capabilities</h4>
-                <ul className="space-y-3">
-                  <li>
-                    <Link href="/capabilities/growth-marketing-sales/green-growth" className="text-muted-foreground hover:text-primary transition-colors text-sm block">
-                      Green Growth
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </main>
-
-      <Footer />
-    </div>
+      <h2 id="strategic-implications">Strategic Implications</h2>
+      <p>
+        For companies, this means that carbon credits can no longer be a "check-the-box" exercise. They must be part
+        of a comprehensive decarbonization strategy that prioritizes internal abatement. When credits are used, they
+        must be high-quality and verified.
+      </p>
+      <p>We recommend three actions for business leaders:</p>
+      <ol>
+        <li>
+          <strong>Audit your portfolio:</strong> Review existing carbon credit purchases against the new integrity
+          standards.
+        </li>
+        <li>
+          <strong>Secure supply:</strong> Long-term offtake agreements for high-quality removal credits (e.g., direct
+          air capture, biochar) are becoming essential as demand outstrips supply.
+        </li>
+        <li>
+          <strong>Prepare for regulation:</strong> Anticipate stricter reporting requirements and potential carbon
+          border taxes.
+        </li>
+      </ol>
+    </InsightArticleV2>
   );
 }

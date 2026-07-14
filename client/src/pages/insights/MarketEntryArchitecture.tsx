@@ -1,134 +1,87 @@
-import { Link } from "wouter";
-import ReadingProgress from "@/components/ReadingProgress";
-import InlineTableOfContents from "@/components/InlineTableOfContents";
-import { ArrowLeft, Clock, Calendar, Tag } from "lucide-react";
-import NewsletterSubscribe from "@/components/NewsletterSubscribe";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function MarketEntryArchitecture() {
+  const sections = [
+    { id: "go-to-market-stack", label: "The go-to-market stack" },
+    { id: "hard-coded-assumptions", label: "Hard-coded assumptions" },
+    { id: "continuous-deployment", label: "Continuous deployment" },
+  ];
+
+  const relatedInsights = [
+    { title: "The digital growth playbook for growing companies", category: "Growth", link: "/insights/digital-growth-playbook", image: "/images/growth-scaling-abstract.jpg" },
+    { title: "From MVP to scale: The startup growth journey", category: "Growth", link: "/insights/from-mvp-to-scale", image: "/images/insight-mvp-myths-mid-market.jpg" },
+    { title: "Value proposition design", category: "Strategy", link: "/insights/value-proposition-design", image: "/images/business-strategy-abstract.jpg" },
+  ];
+
   return (
-    <div className="min-h-screen bg-white">
-      <ReadingProgress />
-      <Navigation />
-      {/* Hero Section */}
-      <section className="bg-charcoal text-white py-16 md:py-24">
-        <div className="container max-w-4xl">
-          <Link href="/capabilities/growth-marketing-sales/growth-strategy" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
-            <ArrowLeft className="w-4 h-4" />
-            Back to Growth Strategy
-          </Link>
-          
-          <div className="flex flex-wrap gap-4 mb-6">
-            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
-              <Tag className="w-4 h-4" />
-              Strategy
-            </span>
-            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
-              <Calendar className="w-4 h-4" />
-              December 18, 2025
-            </span>
-            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
-              <Clock className="w-4 h-4" />
-              6 min read
-            </span>
-          </div>
+    <InsightArticleV2
+      category="Strategy"
+      title="Market Entry Architecture: Designing for Scalability from Day One"
+      subtitle='Why most market entries fail due to "strategic debt," and how to architect a go-to-market motion that scales like software.'
+      heroImage="/images/go-to-market-abstract.jpg"
+      publishDate="December 18, 2025"
+      readTime="6 min"
+      sections={sections}
+      keyTakeaways={[
+        "Ad-hoc market entry creates \"strategic debt\"—a tangle of unscalable processes, inconsistent messaging, and fragmented data that eventually grinds growth to a halt.",
+        "Treat market entry as a product deployment built on a defined stack: a data layer (intelligence), a logic layer (value proposition), and an interface layer (channel strategy).",
+        "Favor \"configuration over code\": build a flexible go-to-market engine you can tune for local pricing, messaging, and compliance without rewriting the core business logic.",
+        "Market entry is a continuous deployment process, not a launch-and-leave event—deploy a minimum viable strategy, monitor the data, and iterate.",
+      ]}
+      relatedInsights={relatedInsights}
+    >
+      <p>
+        Entering a new market is often treated as a series of disconnected experiments: hire a local sales lead,
+        translate the website, run some ads. This ad-hoc approach creates "strategic debt"—a tangled mess of
+        unscalable processes, inconsistent messaging, and fragmented data that eventually grinds growth to a halt.
+      </p>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-3">
-            Market Entry Architecture: Designing for Scalability from Day One
-          </h1>
-          
-          <p className="text-xl text-muted-foreground/50">
-            Why most market entries fail due to "strategic debt," and how to architect a go-to-market motion that scales like software.
-          </p>
-        </div>
-      </section>
+      <p>
+        Successful market entry requires an architectural mindset. Just as we design software systems for scalability,
+        reliability, and observability, we must design our market entry "stack" to handle complexity without collapsing.
+      </p>
 
-      {/* Article Content */}
-      <article className="py-16">
-        <div className="container max-w-3xl">
-          <div className="prose prose-lg max-w-none">
-            <InlineTableOfContents />
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              Entering a new market is often treated as a series of disconnected experiments: hire a local sales lead, translate the website, run some ads. This ad-hoc approach creates "strategic debt"—a tangled mess of unscalable processes, inconsistent messaging, and fragmented data that eventually grinds growth to a halt.
-            </p>
+      <h2 id="go-to-market-stack">The Go-to-Market Stack</h2>
 
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              Successful market entry requires an architectural mindset. Just as we design software systems for scalability, reliability, and observability, we must design our market entry "stack" to handle complexity without collapsing.
-            </p>
+      <p>
+        We view market entry not as a project, but as a product deployment. It requires a defined stack of capabilities:
+      </p>
 
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
-              The Go-to-Market Stack
-            </h2>
-            
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              We view market entry not as a project, but as a product deployment. It requires a defined stack of capabilities:
-            </p>
+      <ul>
+        <li>
+          <strong>The Data Layer (Intelligence):</strong> Before a single dollar is spent, we need deep telemetry. Who
+          are the users? What is the regulatory latency? What is the competitive density?
+        </li>
+        <li>
+          <strong>The Logic Layer (Value Proposition):</strong> How does our core value proposition translate? Does it
+          need to be refactored for local cultural or economic APIs?
+        </li>
+        <li>
+          <strong>The Interface Layer (Channel Strategy):</strong> How do we interface with the market? Direct sales,
+          channel partners, or product-led growth?
+        </li>
+      </ul>
 
-            <div className="bg-off-white border-l-4 border-primary p-6 my-8">
-              <ul className="space-y-3 text-charcoal/80">
-                <li><strong>The Data Layer (Intelligence):</strong> Before a single dollar is spent, we need deep telemetry. Who are the users? What is the regulatory latency? What is the competitive density?</li>
-                <li><strong>The Logic Layer (Value Proposition):</strong> How does our core value proposition translate? Does it need to be refactored for local cultural or economic APIs?</li>
-                <li><strong>The Interface Layer (Channel Strategy):</strong> How do we interface with the market? Direct sales, channel partners, or product-led growth?</li>
-              </ul>
-            </div>
+      <h2 id="hard-coded-assumptions">Avoiding "Hard-Coded" Assumptions</h2>
 
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
-              Avoiding "Hard-Coded" Assumptions
-            </h2>
-            
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              The biggest failure mode in market entry is hard-coding assumptions from the home market into the new one. "It worked in the US, so it will work in Germany." This is the strategic equivalent of hard-coding file paths. It works on your machine, but crashes in production.
-            </p>
+      <p>
+        The biggest failure mode in market entry is hard-coding assumptions from the home market into the new one. "It
+        worked in the US, so it will work in Germany." This is the strategic equivalent of hard-coding file paths. It
+        works on your machine, but crashes in production.
+      </p>
 
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              Instead, we advocate for "configuration over code." Build a flexible go-to-market engine that can be configured for local variables—pricing, messaging, compliance—without rewriting the core business logic.
-            </p>
+      <p>
+        Instead, we advocate for "configuration over code." Build a flexible go-to-market engine that can be configured
+        for local variables—pricing, messaging, compliance—without rewriting the core business logic.
+      </p>
 
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
-              Continuous Deployment of Strategy
-            </h2>
-            
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-8">
-              Market entry is not a "launch and leave" event. It is a continuous deployment process. You deploy a minimum viable strategy, monitor the logs (sales data, customer feedback), and iterate. By treating market entry as an engineering problem, we replace guesswork with systematic execution.
-            </p>
-          </div>
+      <h2 id="continuous-deployment">Continuous Deployment of Strategy</h2>
 
-          {/* CTA Section */}
-          <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
-            <h3 className="text-2xl font-bold mb-4">Architect your expansion</h3>
-            <p className="text-muted-foreground/50 mb-6">
-              NexDyne helps organizations design scalable market entry strategies backed by data and rigorous execution frameworks.
-            </p>
-            <Link href="/contact">
-              <button className="px-6 py-3 bg-primary hover:bg-primary-hover text-white rounded-lg font-semibold transition-colors">
-                Schedule a Consultation
-              </button>
-            </Link>
-          </div>
-
-          {/* Author Info */}
-          <div className="mt-12 pt-8 border-t border-border">
-            <div className="flex items-start gap-4">
-              <div className="w-16 h-16 bg-charcoal rounded-full flex items-center justify-center text-white font-bold text-xl">
-                N
-              </div>
-              <div>
-                <h4 className="font-bold text-charcoal text-lg">NEXDYNE TECHNOLOGIES</h4>
-                <p className="text-muted-foreground mt-1">
-                  Engineering intelligent systems that transform enterprise operations through AI-driven automation and data intelligence.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Newsletter Subscription */}
-          <div className="mt-16">
-            <NewsletterSubscribe />
-          </div>
-        </div>
-      </article>
-      <Footer />
-    </div>
+      <p>
+        Market entry is not a "launch and leave" event. It is a continuous deployment process. You deploy a minimum
+        viable strategy, monitor the logs (sales data, customer feedback), and iterate. By treating market entry as an
+        engineering problem, we replace guesswork with systematic execution.
+      </p>
+    </InsightArticleV2>
   );
 }

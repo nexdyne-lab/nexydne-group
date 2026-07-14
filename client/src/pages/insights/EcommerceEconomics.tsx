@@ -1,493 +1,159 @@
-import { Link } from "wouter";
-import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Calendar, User, Clock, DollarSign, ShoppingCart, TrendingUp, Package, Truck, CheckCircle2, Calculator, BarChart3, Target } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import { SEO } from "@/components/SEO";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import { RelatedContent } from "@/components/RelatedContent";
-import SocialShare from "@/components/SocialShare";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function EcommerceEconomics() {
+  const sections = [
+    { id: "d2c-opportunity", label: "The D2C opportunity" },
+    { id: "unit-economics", label: "Unit economics" },
+    { id: "customer-acquisition", label: "Customer acquisition" },
+    { id: "fulfillment", label: "Fulfillment & operations" },
+    { id: "technology-stack", label: "Technology stack" },
+    { id: "path-to-profitability", label: "Path to profitability" },
+  ];
+
+  const relatedInsights = [
+    { title: "The digital growth playbook for growing companies", category: "Growth & Marketing", link: "/insights/digital-growth-playbook", image: "/images/capabilities/cap-retail-data.jpg" },
+    { title: "The marketplace playbook: Building network effects", category: "Growth & Marketing", link: "/insights/marketplace-playbook", image: "/images/capabilities/cap-mobile-woman.jpg" },
+    { title: "Headless commerce: The engineering case", category: "Technology", link: "/insights/headless-commerce-guide", image: "/images/industries/retail-shelves.jpg" },
+  ];
+
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="E-commerce Economics: Building Profitable D2C Channels" 
-        description="The unit economics, technology choices, and operational considerations that determine D2C success."
-        canonical="/insights/ecommerce-economics"
-      />
-      <Navigation />
-      
-      {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center pt-20 overflow-hidden bg-background">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/capabilities/cap-retail-apparel.jpg" 
-            alt="E-commerce Shopping" 
-            className="w-full h-full object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/70" />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-        </div>
-        
-        <div className="container px-4 md:px-12 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl"
-          >
-            <Link href="/solutions/accelerating-business-growth">
-              <span className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-6 cursor-pointer">
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                Back to Accelerating Business Growth
-              </span>
-            </Link>
-            
-            <div className="flex items-center gap-4 text-sm text-primary font-semibold mb-6">
-              <span className="uppercase tracking-wider">Article</span>
-              <span className="w-1 h-1 rounded-full bg-white/40" />
-              <span className="text-muted-foreground">10 min read</span>
-            </div>
-            
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
-              E-commerce economics: Building profitable D2C channels
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl mb-10">
-              The unit economics, technology choices, and operational considerations that determine D2C success.
-            </p>
-            
-            <div className="flex items-center gap-6 text-muted-foreground text-sm">
-              <div className="flex items-center gap-2">
-                <User className="w-4 h-4" />
-                <span>By Commerce Strategy Team</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
-                <span>November 28, 2025</span>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+    <InsightArticleV2
+      category="Growth & Marketing"
+      title="E-commerce economics: Building profitable D2C channels"
+      subtitle="The unit economics, technology choices, and operational considerations that determine D2C success."
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      publishDate="November 28, 2025"
+      readTime="10 min"
+      sections={sections}
+      keyTakeaways={[
+        "D2C can capture the margin that traditional retail (40-60% of sale price) and marketplaces (15-45% in fees) take—but only with efficient customer acquisition and scale.",
+        "Model the unit economics rigorously around CAC, LTV, AOV, and contribution margin, targeting an LTV:CAC ratio of 3:1 or higher and a 40%+ contribution margin.",
+        "Fulfillment is often the hidden killer of D2C profitability; choose among in-house, 3PL, FBA, or drop-ship based on volume, control, and cost per order.",
+        "The path to profitability runs through repeat purchase rate, conversion, returns, shipping rates, and diversified acquisition.",
+      ]}
+      relatedInsights={relatedInsights}
+    >
+      <p>
+        Direct-to-consumer (D2C) e-commerce promises higher margins, direct customer relationships, and valuable
+        first-party data. But the path to profitability is littered with companies that underestimated the complexity
+        of building a sustainable D2C business.
+      </p>
 
-      {/* Article Content */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="grid md:grid-cols-12 gap-12">
-            {/* Sidebar */}
-            <div className="md:col-span-3 hidden md:block">
-              <div className="sticky top-32">
-                <h4 className="font-bold text-charcoal mb-4">Table of Contents</h4>
-                <ul className="space-y-3 text-sm text-charcoal/60 border-l border-border pl-4">
-                  <li className="hover:text-primary cursor-pointer">The D2C Opportunity</li>
-                  <li className="hover:text-primary cursor-pointer">Unit Economics Fundamentals</li>
-                  <li className="hover:text-primary cursor-pointer">Customer Acquisition</li>
-                  <li className="hover:text-primary cursor-pointer">Fulfillment & Operations</li>
-                  <li className="hover:text-primary cursor-pointer">Technology Stack</li>
-                  <li className="hover:text-primary cursor-pointer">Path to Profitability</li>
-                </ul>
-                
-                <div className="mt-12">
-                  <h4 className="font-bold text-charcoal mb-4">Share this insight</h4>
-                  <SocialShare 
-                    title="E-commerce Economics: Building Profitable D2C Channels" 
-                    url="https://nexdyne.com/insights/ecommerce-economics" 
-                  />
-                </div>
-              </div>
-            </div>
+      <h2 id="d2c-opportunity">The D2C opportunity</h2>
 
-            {/* Main Text */}
-            <div className="md:col-span-7">
-              <div className="prose prose-lg prose-slate max-w-none">
-                <p className="lead text-xl text-charcoal/70 mb-8">
-                  Direct-to-consumer (D2C) e-commerce promises higher margins, direct customer relationships, and valuable first-party data. But the path to profitability is littered with companies that underestimated the complexity of building a sustainable D2C business.
-                </p>
-                
-                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">The D2C Opportunity</h2>
-                <p className="text-charcoal/70 leading-relaxed mb-6">
-                  Traditional retail channels take 40-60% of the final sale price. Marketplaces like Amazon charge 15-45% in fees. D2C promises to capture that margin—but only if you can acquire customers efficiently and operate at scale.
-                </p>
-                <p className="text-charcoal/70 leading-relaxed mb-8">
-                  The companies that succeed in D2C share common characteristics: strong brand identity, products with natural replenishment cycles, and the operational discipline to manage complex logistics. Those that fail typically underestimate customer acquisition costs or overestimate their ability to compete with established players.
-                </p>
+      <p>
+        Traditional retail channels take 40-60% of the final sale price. Marketplaces like Amazon charge 15-45% in
+        fees. D2C promises to capture that margin—but only if you can acquire customers efficiently and operate at
+        scale.
+      </p>
 
-                <div className="bg-subtle p-8 rounded-xl border border-border my-10">
-                  <h4 className="font-bold text-charcoal mb-4 flex items-center gap-2">
-                    <DollarSign className="w-5 h-5 text-primary" />
-                    D2C vs. Traditional Retail Margin Comparison
-                  </h4>
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-4">
-                      <span className="w-32 text-sm text-charcoal/60">Traditional Retail</span>
-                      <div className="flex-1 bg-charcoal/10 rounded-full h-6 overflow-hidden">
-                        <div className="bg-charcoal/40 h-full rounded-full" style={{ width: '35%' }}></div>
-                      </div>
-                      <span className="w-16 text-sm font-semibold text-charcoal">35%</span>
-                    </div>
-                    <div className="flex items-center gap-4">
-                      <span className="w-32 text-sm text-charcoal/60">Marketplace</span>
-                      <div className="flex-1 bg-charcoal/10 rounded-full h-6 overflow-hidden">
-                        <div className="bg-primary/60 h-full rounded-full" style={{ width: '50%' }}></div>
-                      </div>
-                      <span className="w-16 text-sm font-semibold text-charcoal">50%</span>
-                    </div>
-                    <div className="flex items-center gap-4">
-                      <span className="w-32 text-sm text-charcoal/60">D2C E-commerce</span>
-                      <div className="flex-1 bg-charcoal/10 rounded-full h-6 overflow-hidden">
-                        <div className="bg-primary h-full rounded-full" style={{ width: '70%' }}></div>
-                      </div>
-                      <span className="w-16 text-sm font-semibold text-primary">70%</span>
-                    </div>
-                  </div>
-                  <p className="text-xs text-charcoal/50 mt-4">*Gross margin before customer acquisition and fulfillment costs</p>
-                </div>
+      <p>
+        The companies that succeed in D2C share common characteristics: strong brand identity, products with natural
+        replenishment cycles, and the operational discipline to manage complex logistics. Those that fail typically
+        underestimate customer acquisition costs or overestimate their ability to compete with established players.
+      </p>
 
-                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Unit Economics Fundamentals</h2>
-                <p className="text-charcoal/70 leading-relaxed mb-6">
-                  Before launching a D2C channel, you need to model the unit economics rigorously. The key metrics that determine profitability:
-                </p>
+      <p>
+        Comparing gross margin before customer acquisition and fulfillment costs illustrates the prize:
+      </p>
+      <ul>
+        <li><strong>Traditional retail:</strong> roughly 35% gross margin retained</li>
+        <li><strong>Marketplace:</strong> roughly 50% retained</li>
+        <li><strong>D2C e-commerce:</strong> roughly 70% retained</li>
+      </ul>
 
-                <div className="grid md:grid-cols-2 gap-6 my-8">
-                  {[
-                    {
-                      icon: <Calculator className="w-6 h-6 text-primary" />,
-                      title: "Customer Acquisition Cost (CAC)",
-                      description: "Total marketing spend divided by new customers acquired. Benchmark: $30-100 for most consumer products."
-                    },
-                    {
-                      icon: <TrendingUp className="w-6 h-6 text-primary" />,
-                      title: "Customer Lifetime Value (LTV)",
-                      description: "Total revenue from a customer over their relationship. Target: LTV:CAC ratio of 3:1 or higher."
-                    },
-                    {
-                      icon: <ShoppingCart className="w-6 h-6 text-primary" />,
-                      title: "Average Order Value (AOV)",
-                      description: "Revenue per transaction. Higher AOV improves unit economics by spreading fixed costs."
-                    },
-                    {
-                      icon: <Package className="w-6 h-6 text-primary" />,
-                      title: "Contribution Margin",
-                      description: "Revenue minus variable costs (COGS, shipping, payment processing). Target: 40%+ for sustainability."
-                    }
-                  ].map((metric, index) => (
-                    <div key={index} className="p-6 bg-subtle rounded-xl">
-                      <div className="mb-4">{metric.icon}</div>
-                      <h4 className="font-bold text-charcoal mb-2">{metric.title}</h4>
-                      <p className="text-charcoal/60 text-sm">{metric.description}</p>
-                    </div>
-                  ))}
-                </div>
+      <h2 id="unit-economics">Unit economics fundamentals</h2>
 
-                <div className="bg-background p-8 rounded-xl my-10 text-charcoal">
-                  <h4 className="font-bold mb-4 flex items-center gap-2">
-                    <BarChart3 className="w-5 h-5 text-primary" />
-                    Sample Unit Economics Model
-                  </h4>
-                  <div className="space-y-3 text-sm">
-                    <div className="flex justify-between py-2 border-b border-border">
-                      <span className="text-muted-foreground">Average Order Value</span>
-                      <span className="font-semibold">$85.00</span>
-                    </div>
-                    <div className="flex justify-between py-2 border-b border-border">
-                      <span className="text-muted-foreground">Cost of Goods Sold (35%)</span>
-                      <span className="font-semibold">-$29.75</span>
-                    </div>
-                    <div className="flex justify-between py-2 border-b border-border">
-                      <span className="text-muted-foreground">Shipping & Fulfillment</span>
-                      <span className="font-semibold">-$8.50</span>
-                    </div>
-                    <div className="flex justify-between py-2 border-b border-border">
-                      <span className="text-muted-foreground">Payment Processing (3%)</span>
-                      <span className="font-semibold">-$2.55</span>
-                    </div>
-                    <div className="flex justify-between py-2 border-b border-border">
-                      <span className="text-muted-foreground">Returns & Refunds (8%)</span>
-                      <span className="font-semibold">-$6.80</span>
-                    </div>
-                    <div className="flex justify-between py-2 text-primary">
-                      <span className="font-bold">Contribution Margin</span>
-                      <span className="font-bold">$37.40 (44%)</span>
-                    </div>
-                  </div>
-                </div>
+      <p>
+        Before launching a D2C channel, you need to model the unit economics rigorously. The key metrics that determine
+        profitability:
+      </p>
 
-                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Customer Acquisition Strategy</h2>
-                <p className="text-charcoal/70 leading-relaxed mb-6">
-                  Customer acquisition is where most D2C businesses struggle. The days of cheap Facebook ads are over—CACs have increased 60% over the past three years. Successful D2C brands diversify their acquisition channels:
-                </p>
+      <ul>
+        <li><strong>Customer Acquisition Cost (CAC):</strong> Total marketing spend divided by new customers acquired. Benchmark: $30-100 for most consumer products.</li>
+        <li><strong>Customer Lifetime Value (LTV):</strong> Total revenue from a customer over their relationship. Target: LTV:CAC ratio of 3:1 or higher.</li>
+        <li><strong>Average Order Value (AOV):</strong> Revenue per transaction. Higher AOV improves unit economics by spreading fixed costs.</li>
+        <li><strong>Contribution Margin:</strong> Revenue minus variable costs (COGS, shipping, payment processing). Target: 40%+ for sustainability.</li>
+      </ul>
 
-                <div className="space-y-4 mb-8">
-                  {[
-                    {
-                      title: "Paid Social (Meta, TikTok)",
-                      pros: "Scalable, precise targeting, measurable",
-                      cons: "Expensive, increasing competition, privacy changes",
-                      cac: "$40-80"
-                    },
-                    {
-                      title: "Paid Search (Google, Bing)",
-                      pros: "High intent, predictable, brand protection",
-                      cons: "Limited scale, expensive for competitive terms",
-                      cac: "$30-60"
-                    },
-                    {
-                      title: "Influencer Marketing",
-                      pros: "Authentic, builds brand, can be cost-effective",
-                      cons: "Hard to scale, attribution challenges",
-                      cac: "$20-50"
-                    },
-                    {
-                      title: "Content/SEO",
-                      pros: "Low marginal cost, compounds over time",
-                      cons: "Slow to build, requires expertise",
-                      cac: "$10-30"
-                    },
-                    {
-                      title: "Referral Programs",
-                      pros: "High quality customers, low cost",
-                      cons: "Limited scale, requires existing base",
-                      cac: "$15-25"
-                    }
-                  ].map((channel, index) => (
-                    <div key={index} className="p-4 border border-border rounded-lg">
-                      <div className="flex justify-between items-start mb-2">
-                        <h4 className="font-bold text-charcoal">{channel.title}</h4>
-                        <span className="text-sm font-semibold text-primary">CAC: {channel.cac}</span>
-                      </div>
-                      <div className="grid md:grid-cols-2 gap-4 text-sm">
-                        <div>
-                          <span className="text-secondary font-semibold">+</span>
-                          <span className="text-charcoal/60 ml-2">{channel.pros}</span>
-                        </div>
-                        <div>
-                          <span className="text-primary font-semibold">-</span>
-                          <span className="text-charcoal/60 ml-2">{channel.cons}</span>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+      <p>A sample unit economics model shows how those costs stack up:</p>
+      <ul>
+        <li>Average Order Value: $85.00</li>
+        <li>Cost of Goods Sold (35%): -$29.75</li>
+        <li>Shipping &amp; Fulfillment: -$8.50</li>
+        <li>Payment Processing (3%): -$2.55</li>
+        <li>Returns &amp; Refunds (8%): -$6.80</li>
+        <li><strong>Contribution Margin: $37.40 (44%)</strong></li>
+      </ul>
 
-                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Fulfillment & Operations</h2>
-                <p className="text-charcoal/70 leading-relaxed mb-6">
-                  Fulfillment is often the hidden killer of D2C profitability. Customers expect Amazon-level speed and service, but few growing companies can match that infrastructure. Your options:
-                </p>
+      <h2 id="customer-acquisition">Customer acquisition strategy</h2>
 
-                <div className="overflow-x-auto my-8">
-                  <table className="w-full text-sm">
-                    <thead>
-                      <tr className="border-b border-border">
-                        <th className="text-left py-3 font-bold text-charcoal">Model</th>
-                        <th className="text-left py-3 font-bold text-charcoal">Best For</th>
-                        <th className="text-left py-3 font-bold text-charcoal">Cost/Order</th>
-                        <th className="text-left py-3 font-bold text-charcoal">Control</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-charcoal/70">
-                      <tr className="border-b border-border">
-                        <td className="py-3 font-semibold">In-house</td>
-                        <td className="py-3">High volume, custom packaging</td>
-                        <td className="py-3">$3-6</td>
-                        <td className="py-3">High</td>
-                      </tr>
-                      <tr className="border-b border-border">
-                        <td className="py-3 font-semibold">3PL</td>
-                        <td className="py-3">Scaling businesses, variable demand</td>
-                        <td className="py-3">$5-10</td>
-                        <td className="py-3">Medium</td>
-                      </tr>
-                      <tr className="border-b border-border">
-                        <td className="py-3 font-semibold">FBA</td>
-                        <td className="py-3">Amazon-centric, Prime eligibility</td>
-                        <td className="py-3">$8-15</td>
-                        <td className="py-3">Low</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 font-semibold">Drop Ship</td>
-                        <td className="py-3">Testing products, low capital</td>
-                        <td className="py-3">Varies</td>
-                        <td className="py-3">Very Low</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+      <p>
+        Customer acquisition is where most D2C businesses struggle. The days of cheap Facebook ads are over—CACs have
+        increased 60% over the past three years. Successful D2C brands diversify their acquisition channels:
+      </p>
 
-                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Technology Stack Decisions</h2>
-                <p className="text-charcoal/70 leading-relaxed mb-6">
-                  Your technology choices have long-term implications for scalability, cost, and flexibility. The key decision is between all-in-one platforms and composable commerce:
-                </p>
+      <ul>
+        <li><strong>Paid Social (Meta, TikTok) — CAC $40-80:</strong> Scalable, precise targeting, and measurable, but expensive, with increasing competition and privacy changes.</li>
+        <li><strong>Paid Search (Google, Bing) — CAC $30-60:</strong> High intent, predictable, and brand-protective, but limited in scale and expensive for competitive terms.</li>
+        <li><strong>Influencer Marketing — CAC $20-50:</strong> Authentic, brand-building, and potentially cost-effective, but hard to scale with attribution challenges.</li>
+        <li><strong>Content/SEO — CAC $10-30:</strong> Low marginal cost that compounds over time, but slow to build and requires expertise.</li>
+        <li><strong>Referral Programs — CAC $15-25:</strong> High-quality customers at low cost, but limited in scale and dependent on an existing base.</li>
+      </ul>
 
-                <div className="grid md:grid-cols-2 gap-6 my-8">
-                  <div className="p-6 border border-border rounded-xl">
-                    <h4 className="font-bold text-charcoal mb-4">All-in-One Platforms</h4>
-                    <p className="text-sm text-charcoal/60 mb-4">Shopify, BigCommerce, Squarespace</p>
-                    <ul className="space-y-2 text-sm text-charcoal/70">
-                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-secondary flex-shrink-0" /> Fast time to market</li>
-                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-secondary flex-shrink-0" /> Lower upfront cost</li>
-                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-secondary flex-shrink-0" /> Built-in best practices</li>
-                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" /> Limited customization</li>
-                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" /> Transaction fees add up</li>
-                    </ul>
-                  </div>
-                  <div className="p-6 border border-border rounded-xl">
-                    <h4 className="font-bold text-charcoal mb-4">Composable Commerce</h4>
-                    <p className="text-sm text-charcoal/60 mb-4">Headless + best-of-breed components</p>
-                    <ul className="space-y-2 text-sm text-charcoal/70">
-                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-secondary flex-shrink-0" /> Maximum flexibility</li>
-                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-secondary flex-shrink-0" /> Better performance</li>
-                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-secondary flex-shrink-0" /> No vendor lock-in</li>
-                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" /> Higher complexity</li>
-                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" /> Requires technical team</li>
-                    </ul>
-                  </div>
-                </div>
+      <h2 id="fulfillment">Fulfillment &amp; operations</h2>
 
-                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Path to Profitability</h2>
-                <p className="text-charcoal/70 leading-relaxed mb-6">
-                  Most D2C businesses lose money in year one. The path to profitability requires disciplined focus on a few key levers:
-                </p>
+      <p>
+        Fulfillment is often the hidden killer of D2C profitability. Customers expect Amazon-level speed and service,
+        but few growing companies can match that infrastructure. Your options:
+      </p>
 
-                <div className="space-y-4 mb-8">
-                  {[
-                    {
-                      title: "Increase Repeat Purchase Rate",
-                      description: "Subscription models, loyalty programs, and email marketing can increase LTV by 2-3x without increasing CAC."
-                    },
-                    {
-                      title: "Optimize Conversion Rate",
-                      description: "A/B testing, site speed improvements, and checkout optimization can improve conversion by 20-50%."
-                    },
-                    {
-                      title: "Reduce Returns",
-                      description: "Better product descriptions, sizing guides, and quality control can cut returns from 15% to 5%."
-                    },
-                    {
-                      title: "Negotiate Shipping Rates",
-                      description: "As volume grows, negotiate better rates with carriers. Consider zone-skipping and regional carriers."
-                    },
-                    {
-                      title: "Diversify Acquisition",
-                      description: "Reduce dependence on paid social by investing in content, SEO, and referral programs."
-                    }
-                  ].map((lever, index) => (
-                    <div key={index} className="flex gap-4 p-4 bg-subtle rounded-lg">
-                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-charcoal font-bold text-sm flex-shrink-0">
-                        {index + 1}
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-charcoal mb-1">{lever.title}</h4>
-                        <p className="text-charcoal/60 text-sm">{lever.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+      <ul>
+        <li><strong>In-house — $3-6 per order, high control:</strong> Best for high volume and custom packaging.</li>
+        <li><strong>3PL — $5-10 per order, medium control:</strong> Best for scaling businesses with variable demand.</li>
+        <li><strong>FBA — $8-15 per order, low control:</strong> Best for Amazon-centric operations needing Prime eligibility.</li>
+        <li><strong>Drop Ship — variable cost, very low control:</strong> Best for testing products with low capital.</li>
+      </ul>
 
-                <div className="bg-primary/10 p-8 rounded-xl my-10">
-                  <h4 className="font-bold text-charcoal mb-4">Ready to build a profitable D2C channel?</h4>
-                  <p className="text-charcoal/70 mb-6">
-                    NEXDYNE helps companies launch and scale e-commerce operations with sustainable unit economics. Let's model your opportunity.
-                  </p>
-                  <Link href="/contact">
-                    <Button className="bg-primary hover:bg-primary/90 text-charcoal">
-                      Schedule a Consultation
-                      <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
+      <h2 id="technology-stack">Technology stack decisions</h2>
 
-            {/* Right Sidebar */}
-            <div className="md:col-span-2 hidden lg:block">
-              <div className="sticky top-32">
-                <div className="p-6 bg-subtle rounded-xl">
-                  <h4 className="font-bold text-charcoal mb-4">Related Case Studies</h4>
-                  <div className="space-y-4">
-                    <Link href="/cases/retail-ecommerce-growth">
-                      <div className="group cursor-pointer">
-                        <p className="text-sm font-semibold text-charcoal group-hover:text-primary transition-colors">Outdoor Gear E-commerce</p>
-                        <p className="text-xs text-charcoal/60">180% revenue growth</p>
-                      </div>
-                    </Link>
-                    <Link href="/cases/b2b-digital-ordering">
-                      <div className="group cursor-pointer">
-                        <p className="text-sm font-semibold text-charcoal group-hover:text-primary transition-colors">B2B Digital Ordering</p>
-                        <p className="text-xs text-charcoal/60">$4.5M new revenue</p>
-                      </div>
-                    </Link>
-                    <Link href="/cases/training-subscription-platform">
-                      <div className="group cursor-pointer">
-                        <p className="text-sm font-semibold text-charcoal group-hover:text-primary transition-colors">Subscription Platform</p>
-                        <p className="text-xs text-charcoal/60">$1.8M ARR</p>
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <p>
+        Your technology choices have long-term implications for scalability, cost, and flexibility. The key decision is
+        between all-in-one platforms and composable commerce:
+      </p>
 
-      {/* Related Insights */}
-      <RelatedContent
-        title="Related Insights"
-        items={[
-          {
-            type: "Article",
-            title: "The digital growth playbook for growing companies",
-            description: "How leading growing companies are building digital channels that compete with well-funded startups.",
-            image: "/images/capabilities/cap-retail-data.jpg",
-            link: "/insights/digital-growth-playbook"
-          },
-          {
-            type: "Whitepaper",
-            title: "The marketplace playbook: Building network effects",
-            description: "A comprehensive guide to launching and scaling two-sided marketplaces.",
-            image: "/images/capabilities/cap-mobile-woman.jpg",
-            link: "/insights/marketplace-playbook"
-          },
-          {
-            type: "Article",
-            title: "Headless commerce: The engineering case",
-            description: "Why decoupling your frontend from your backend is the key to agility and speed.",
-            image: "/images/industries/retail-shelves.jpg",
-            link: "/insights/headless-commerce-guide"
-          }
-        ]}
-      />
+      <h3>All-in-one platforms (Shopify, BigCommerce, Squarespace)</h3>
+      <ul>
+        <li>Fast time to market</li>
+        <li>Lower upfront cost</li>
+        <li>Built-in best practices</li>
+        <li>Limited customization</li>
+        <li>Transaction fees add up</li>
+      </ul>
 
-      {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-background">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
-              Ready to launch your D2C channel?
-            </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed mb-10">
-              Let's build an e-commerce operation with sustainable unit economics and a clear path to profitability.
-            </p>
-            <Link href="/contact">
-              <Button className="bg-primary hover:bg-primary/90 text-charcoal px-10 py-6 text-lg font-semibold transition">
-                Schedule a Consultation
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </Link>
-          </motion.div>
-        </div>
-      </section>
+      <h3>Composable commerce (headless + best-of-breed components)</h3>
+      <ul>
+        <li>Maximum flexibility</li>
+        <li>Better performance</li>
+        <li>No vendor lock-in</li>
+        <li>Higher complexity</li>
+        <li>Requires a technical team</li>
+      </ul>
 
-      <Footer />
-    </div>
+      <h2 id="path-to-profitability">Path to profitability</h2>
+
+      <p>
+        Most D2C businesses lose money in year one. The path to profitability requires disciplined focus on a few key
+        levers:
+      </p>
+
+      <ol>
+        <li><strong>Increase repeat purchase rate:</strong> Subscription models, loyalty programs, and email marketing can increase LTV by 2-3x without increasing CAC.</li>
+        <li><strong>Optimize conversion rate:</strong> A/B testing, site speed improvements, and checkout optimization can improve conversion by 20-50%.</li>
+        <li><strong>Reduce returns:</strong> Better product descriptions, sizing guides, and quality control can cut returns from 15% to 5%.</li>
+        <li><strong>Negotiate shipping rates:</strong> As volume grows, negotiate better rates with carriers. Consider zone-skipping and regional carriers.</li>
+        <li><strong>Diversify acquisition:</strong> Reduce dependence on paid social by investing in content, SEO, and referral programs.</li>
+      </ol>
+    </InsightArticleV2>
   );
 }

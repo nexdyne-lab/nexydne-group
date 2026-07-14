@@ -1,130 +1,73 @@
-import React from 'react';
-import ReadingProgress from '@/components/ReadingProgress';
-import InlineTableOfContents from '@/components/InlineTableOfContents';
-import { Link } from 'wouter';
-import { Separator } from '@/components/ui/separator';
-import { Button } from '@/components/ui/button';
-import { ArrowRight, Share2 } from 'lucide-react';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function GreenMaterials() {
+  const sections = [
+    { id: "premium-for-green", label: "The premium for green" },
+    { id: "technology-breakthroughs", label: "Technology breakthroughs" },
+    { id: "supply-gap", label: "The supply gap" },
+    { id: "what-leaders-should-do", label: "What leaders should do" },
+  ];
+
+  const relatedInsights = [
+    { title: "Green Growth", category: "Sustainability", link: "/insights/green-growth-imperative", image: "/images/green-growth-hero.jpg" },
+    { title: "The Net Zero Transition: What it would cost, what it could bring", category: "Sustainability", link: "/insights/net-zero-transition", image: "/images/insight-net-zero.jpg" },
+    { title: "Carbon Markets 2025: From Voluntary to Compliance", category: "Sustainability", link: "/insights/carbon-markets", image: "/images/insight-carbon-markets.jpg" },
+  ];
+
   return (
-    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-primary/10">
-      <Navigation />
+    <InsightArticleV2
+      category="Perspective"
+      categoryHref="/insights"
+      title="The Green Materials Revolution"
+      subtitle="From green steel to bio-based plastics, a wave of material innovation is reshaping industrial supply chains."
+      heroImage="/images/insight-green-materials.jpg"
+      readTime="5 min"
+      sections={sections}
+      keyTakeaways={[
+        "Steel, cement, aluminum, and chemicals are responsible for nearly 30% of total global greenhouse gas emissions, making decarbonization both a necessity and a commercial opportunity.",
+        "Early movers are already securing premiums for low-carbon materials through long-term contracts for green steel, recycled plastics, and bio-based alternatives.",
+        "Technologies including hydrogen-based steelmaking, carbon capture, and bio-feedstocks are reaching maturity simultaneously.",
+        "Supply is lagging demand—buyers should send clear demand signals while producers secure low-cost renewable energy and share risk across the value chain.",
+      ]}
+      relatedInsights={relatedInsights}
+    >
+      <p>
+        Materials account for a significant portion of global greenhouse gas emissions. Steel, cement, aluminum, and
+        chemicals alone are responsible for nearly 30% of the total. Decarbonizing these sectors is not just an
+        environmental necessity; it is a massive commercial opportunity.
+      </p>
 
-      {/* Hero Section */}
-      <header className="pt-20 pb-16 border-b border-border">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl">
-            <div className="text-sm font-medium text-muted-foreground mb-6 uppercase tracking-wider">
-              <Link href="/insights" className="hover:text-primary transition-colors">
-                Insights
-              </Link>
-              <span className="mx-2">/</span>
-              <span className="text-charcoal">Perspective</span>
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-4 leading-[1.1]">
-              The Green Materials Revolution
-            </h1>
-            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light">
-              From green steel to bio-based plastics, a wave of material innovation is reshaping industrial supply chains.
-            </p>
-          </div>
-        </div>
-      </header>
+      <h2 id="premium-for-green">The Premium for Green</h2>
+      <p>
+        Early movers are already securing premiums for low-carbon materials. Automakers are signing long-term contracts
+        for green steel to meet their scope 3 targets. Consumer goods companies are racing to secure supplies of
+        recycled plastics and bio-based alternatives.
+      </p>
 
-      <main className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
-          
-          {/* Main Content */}
-          <div className="lg:col-span-8 space-y-12">
-            
-            {/* Article Body */}
-            <section className="prose prose-lg prose-slate max-w-none">
-              <p className="text-lg leading-relaxed text-muted-foreground font-medium">
-                Materials account for a significant portion of global greenhouse gas emissions. Steel, cement, aluminum, and chemicals alone are responsible for nearly 30% of the total. Decarbonizing these sectors is not just an environmental necessity; it is a massive commercial opportunity.
-              </p>
-              
-              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">The Premium for Green</h3>
-              <p className="text-muted-foreground">
-                Early movers are already securing premiums for low-carbon materials. Automakers are signing long-term contracts for green steel to meet their scope 3 targets. Consumer goods companies are racing to secure supplies of recycled plastics and bio-based alternatives.
-              </p>
+      <h2 id="technology-breakthroughs">Technology Breakthroughs</h2>
+      <p>Several technologies are reaching maturity simultaneously:</p>
+      <ul>
+        <li><strong>Hydrogen-based steelmaking (DRI):</strong> Replacing coal with green hydrogen to produce near-zero emission steel.</li>
+        <li><strong>Carbon capture, utilization, and storage (CCUS):</strong> Essential for decarbonizing cement and chemicals.</li>
+        <li><strong>Bio-feedstocks:</strong> Using agricultural waste and biomass to replace fossil fuels in chemical production.</li>
+      </ul>
 
-              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Technology Breakthroughs</h3>
-              <p className="text-muted-foreground">
-                Several technologies are reaching maturity simultaneously:
-              </p>
-              <ul className="list-disc pl-6 space-y-4 text-muted-foreground">
-                <li><strong>Hydrogen-based steelmaking (DRI):</strong> Replacing coal with green hydrogen to produce near-zero emission steel.</li>
-                <li><strong>Carbon capture, utilization, and storage (CCUS):</strong> Essential for decarbonizing cement and chemicals.</li>
-                <li><strong>Bio-feedstocks:</strong> Using agricultural waste and biomass to replace fossil fuels in chemical production.</li>
-              </ul>
-              
-              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">The Supply Gap</h3>
-              <p className="text-muted-foreground">
-                Despite the excitement, supply is lagging behind demand. Scaling these technologies requires massive capital investment and cheap, abundant renewable energy. We estimate a supply gap of 20-30% for green steel and recycled plastics by 2030 unless investment accelerates significantly.
-              </p>
+      <h2 id="supply-gap">The Supply Gap</h2>
+      <p>
+        Despite the excitement, supply is lagging behind demand. Scaling these technologies requires massive capital
+        investment and cheap, abundant renewable energy. We estimate a supply gap of 20-30% for green steel and recycled
+        plastics by 2030 unless investment accelerates significantly.
+      </p>
 
-              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">What Leaders Should Do</h3>
-              <p className="text-muted-foreground">
-                <strong>For buyers:</strong> Send clear demand signals through advance market commitments and long-term offtake agreements.
-                <br /><br />
-                <strong>For producers:</strong> Focus on securing low-cost renewable energy and building partnerships across the value chain to share risk and capital.
-              </p>
-            </section>
-
-          </div>
-
-          {/* Sidebar */}
-          <div className="lg:col-span-4 space-y-8">
-            <div className="bg-off-white p-8 rounded-sm border border-border sticky top-24">
-              <div className="flex flex-col gap-4 mb-8">
-                <Button variant="outline" className="w-full border-border text-charcoal/80 hover:bg-off-white flex items-center justify-center gap-2">
-                  <Share2 className="w-4 h-4" /> Share Perspective
-                </Button>
-              </div>
-
-              <h3 className="text-lg font-bold text-charcoal mb-4">Authors</h3>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-grey rounded-full"></div>
-                  <div>
-                    <div className="font-medium text-charcoal">David Kim</div>
-                    <div className="text-xs text-muted-foreground">Partner, Seoul</div>
-                  </div>
-                </li>
-                <li className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-grey rounded-full"></div>
-                  <div>
-                    <div className="font-medium text-charcoal">Dr. Anna Weber</div>
-                    <div className="text-xs text-muted-foreground">Expert Associate Partner, Munich</div>
-                  </div>
-                </li>
-              </ul>
-
-              <div className="pt-8 border-t border-border">
-                <h4 className="font-bold text-charcoal mb-4 text-sm uppercase tracking-wide">Related Capabilities</h4>
-                <ul className="space-y-3">
-                  <li>
-                    <Link href="/capabilities/growth-marketing-sales/green-growth" className="text-muted-foreground hover:text-primary transition-colors text-sm block">
-                      Green Growth
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/capabilities/growth-marketing-sales/green-growth/consumer-goods" className="text-muted-foreground hover:text-primary transition-colors text-sm block">
-                      Consumer Goods
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </main>
-
-      <Footer />
-    </div>
+      <h2 id="what-leaders-should-do">What Leaders Should Do</h2>
+      <p>
+        <strong>For buyers:</strong> Send clear demand signals through advance market commitments and long-term offtake
+        agreements.
+      </p>
+      <p>
+        <strong>For producers:</strong> Focus on securing low-cost renewable energy and building partnerships across the
+        value chain to share risk and capital.
+      </p>
+    </InsightArticleV2>
   );
 }

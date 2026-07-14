@@ -1,120 +1,101 @@
-import { Link } from "wouter";
-import ReadingProgress from "@/components/ReadingProgress";
-import InlineTableOfContents from "@/components/InlineTableOfContents";
-import { ArrowLeft, Clock, Calendar, Tag } from "lucide-react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function ComposableArchitecture() {
+  const sections = [
+    { id: "mach-architecture", label: "MACH architecture" },
+    { id: "agility-over-stability", label: "Agility over stability" },
+    { id: "role-of-the-orchestrator", label: "The orchestrator" },
+  ];
+
+  const relatedInsights = [
+    { title: "Cloud-Native Architecture", category: "Technology", link: "/insights/cloud-native-architecture", image: "/images/cloud-abstract.jpg" },
+    { title: "The Headless Commerce Guide", category: "Architecture", link: "/insights/headless-commerce-guide", image: "/images/capabilities/cap-retail-data.jpg" },
+    { title: "The Enterprise Integration Playbook", category: "Integration", link: "/insights/enterprise-integration-playbook", image: "/images/devops-automation-hub-abstract.jpg" },
+  ];
+
   return (
-    <div className="min-h-screen bg-white">
-      <ReadingProgress />
-      <Navigation />
-      {/* Hero Section */}
-      <section className="bg-charcoal text-white py-16 md:py-24">
-        <div className="container max-w-4xl">
-          <Link href="/solutions/martech-stack" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
-            <ArrowLeft className="w-4 h-4" />
-            Back to MarTech & Stack Architecture
-          </Link>
-          
-          <div className="flex flex-wrap gap-4 mb-6">
-            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
-              <Tag className="w-4 h-4" />
-              Architecture
-            </span>
-            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
-              <Calendar className="w-4 h-4" />
-              April 14, 2026
-            </span>
-            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
-              <Clock className="w-4 h-4" />
-              8 min read
-            </span>
-          </div>
+    <InsightArticleV2
+      category="Architecture"
+      title="The End of the Monolith: Why Composable Architecture Wins"
+      subtitle="The shift from all-in-one suites to best-of-breed stacks is accelerating. Here's why 'composable' is the future of enterprise tech."
+      heroImage="/images/cloud-infrastructure-hub-abstract.jpg"
+      publishDate="April 14, 2026"
+      readTime="8 min"
+      sections={sections}
+      keyTakeaways={[
+        "Composable architecture builds a stack from modular, best-of-breed components connected via APIs, replacing the all-in-one monolith.",
+        "Its foundation is MACH: microservices, API-first, cloud-native, and headless.",
+        "The trade-off for composability is integration complexity, repaid in the ability to swap components without a full system overhaul.",
+        "Orchestration and middleware become the most critical layer; without robust error handling, retries, and monitoring, a distributed system can become a distributed nightmare.",
+      ]}
+      relatedInsights={relatedInsights}
+    >
+      <p>
+        For decades, the safe bet for CIOs was to buy a massive, all-in-one suite (think Oracle, SAP, Salesforce).
+        "Nobody gets fired for buying IBM," the saying went. These monoliths promised seamless integration, but often
+        delivered vendor lock-in, bloated features, and slow innovation cycles.
+      </p>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-3">
-            The End of the Monolith: Why Composable Architecture Wins
-          </h1>
-          
-          <p className="text-xl text-muted-foreground/50">
-            The shift from all-in-one suites to best-of-breed stacks is accelerating. Here's why "composable" is the future of enterprise tech.
-          </p>
-        </div>
-      </section>
+      <p>
+        Today, the paradigm has flipped. <strong>Composable architecture</strong>—building a stack from modular,
+        best-of-breed components connected via APIs—is the new standard for agility.
+      </p>
 
-      {/* Article Content */}
-      <article className="py-16">
-        <div className="container max-w-3xl">
-          <div className="prose prose-lg max-w-none">
-            <InlineTableOfContents />
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              For decades, the safe bet for CIOs was to buy a massive, all-in-one suite (think Oracle, SAP, Salesforce). "Nobody gets fired for buying IBM," the saying went. These monoliths promised seamless integration, but often delivered vendor lock-in, bloated features, and slow innovation cycles.
-            </p>
+      <h2 id="mach-architecture">MACH architecture explained</h2>
 
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              Today, the paradigm has flipped. <strong>Composable Architecture</strong>—building a stack from modular, best-of-breed components connected via APIs—is the new standard for agility.
-            </p>
+      <p>The foundation of composable business is MACH:</p>
 
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
-              MACH Architecture Explained
-            </h2>
-            
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              The foundation of composable business is MACH:
-            </p>
+      <ul>
+        <li>
+          <strong>Microservices:</strong> individual pieces of business functionality that are independently developed,
+          deployed, and managed.
+        </li>
+        <li>
+          <strong>API-first:</strong> all functionality is exposed through APIs, making it possible to tie together two
+          or more applications or services.
+        </li>
+        <li>
+          <strong>Cloud-native:</strong> SaaS that leverages the full capabilities of the cloud, beyond storage and
+          hosting, including elastic scaling and automatic updating.
+        </li>
+        <li>
+          <strong>Headless:</strong> front-end presentation is decoupled from back-end logic, allowing for omnichannel
+          delivery.
+        </li>
+      </ul>
 
-            <ul className="list-disc pl-6 space-y-4 text-charcoal/80 mb-8">
-              <li><strong>Microservices:</strong> Individual pieces of business functionality that are independently developed, deployed, and managed.</li>
-              <li><strong>API-first:</strong> All functionality is exposed through APIs, making it possible to tie together two or more applications or services.</li>
-              <li><strong>Cloud-native:</strong> SaaS that leverages the full capabilities of the cloud, beyond storage and hosting, including elastic scaling and automatic updating.</li>
-              <li><strong>Headless:</strong> Front-end presentation is decoupled from back-end logic, allowing for omnichannel delivery.</li>
-            </ul>
+      <h2 id="agility-over-stability">Agility over stability?</h2>
 
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
-              Agility Over Stability?
-            </h2>
-            
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              Critics argue that composable stacks are complex to manage. While true that integration becomes a primary responsibility, the trade-off is massive agility. In a monolith, upgrading a single feature might require a full system overhaul. In a composable stack, you can swap out your search engine or recommendation algorithm without touching the rest of the system.
-            </p>
+      <p>
+        Critics argue that composable stacks are complex to manage. While it is true that integration becomes a primary
+        responsibility, the trade-off is massive agility. In a monolith, upgrading a single feature might require a full
+        system overhaul. In a composable stack, you can swap out your search engine or recommendation algorithm without
+        touching the rest of the system.
+      </p>
 
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              This allows businesses to adapt to market changes instantly. New social commerce channel? Plug in a module. New privacy regulation? Update the consent management microservice.
-            </p>
+      <p>
+        This allows businesses to adapt to market changes instantly. New social commerce channel? Plug in a module. New
+        privacy regulation? Update the consent management microservice.
+      </p>
 
-            <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
-              <p className="text-lg text-charcoal font-semibold">
-                "Composable business means every part of the organization is pluggable, scalable, and replaceable."
-              </p>
-            </div>
+      <blockquote>
+        Composable business means every part of the organization is pluggable, scalable, and replaceable.
+      </blockquote>
 
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
-              The Role of the Orchestrator
-            </h2>
-            
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              In a composable world, the "glue" becomes the most critical component. Middleware and orchestration layers (like iPaaS or Service Mesh) ensure data flows reliably between services. This is where engineering discipline is non-negotiable. Without robust error handling, retries, and monitoring, a distributed system can become a distributed nightmare.
-            </p>
+      <h2 id="role-of-the-orchestrator">The role of the orchestrator</h2>
 
-            <p className="text-lg text-charcoal/80 leading-relaxed mb-8">
-              The future isn't about buying the best software; it's about building the best <strong>system</strong>. Composable architecture gives you the building blocks to design a stack that is uniquely fitted to your business strategy.
-            </p>
-          </div>
+      <p>
+        In a composable world, the "glue" becomes the most critical component. Middleware and orchestration layers (like
+        iPaaS or Service Mesh) ensure data flows reliably between services. This is where engineering discipline is
+        non-negotiable. Without robust error handling, retries, and monitoring, a distributed system can become a
+        distributed nightmare.
+      </p>
 
-          {/* CTA Section */}
-          <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
-            <h3 className="text-2xl font-bold mb-4">Design your composable stack</h3>
-            <p className="text-muted-foreground/50 mb-6">
-              Our Solution Architects help you audit your legacy monoliths and design a roadmap to a modern, flexible MACH architecture.
-            </p>
-            <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-charcoal bg-white rounded-lg hover:bg-subtle transition-colors">
-              Contact our team
-            </Link>
-          </div>
-        </div>
-      </article>
-      <Footer />
-    </div>
+      <p>
+        The future isn't about buying the best software; it's about building the best <strong>system</strong>.
+        Composable architecture gives you the building blocks to design a stack that is uniquely fitted to your business
+        strategy.
+      </p>
+    </InsightArticleV2>
   );
 }

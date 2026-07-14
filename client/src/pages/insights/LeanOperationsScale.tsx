@@ -1,179 +1,167 @@
-import { motion } from "framer-motion";
-import { Link } from "wouter";
-import { ArrowRight, ArrowLeft, Cog, Target, Users, TrendingUp, CheckCircle2, Clock } from 'lucide-react';
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import { BackToTop } from "@/components/BackToTop";
-import { Button } from "@/components/ui/button";
-import { SEO } from "@/components/SEO";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function LeanOperationsScale() {
+  const sections = [
+    { id: "beyond-factory", label: "Beyond the factory floor" },
+    { id: "eight-wastes", label: "The eight wastes" },
+    { id: "success-factors", label: "Key success factors" },
+    { id: "management-system", label: "The management system" },
+    { id: "scaling-challenges", label: "Scaling challenges" },
+    { id: "lean-culture", label: "Building a lean culture" },
+    { id: "bottom-line", label: "The bottom line" },
+  ];
+
+  const relatedInsights = [
+    { title: "Smart Cost Reduction", category: "Performance Improvement", link: "/insights/smart-cost-reduction", image: "/images/capabilities/cap-strategy-spheres.jpg" },
+    { title: "Working Capital Optimization", category: "Performance Improvement", link: "/insights/working-capital-optimization", image: "/images/capabilities/cap-hands-data.jpg" },
+    { title: "Performance Improvement Framework", category: "Performance Improvement", link: "/insights/performance-improvement-framework", image: "/images/industries/ops-gears.jpg" },
+  ];
+
   return (
-    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Lean Operations at Scale | NexDyne Technologies" 
-        description="Learn how to apply lean principles to complex organizations for sustainable operational excellence."
-        canonical="/insights/lean-operations-scale"
-      />
-      <Navigation />
-      
-      {/* DZ10 Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/capabilities/cap-team-screens.jpg')] bg-cover bg-center opacity-20"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/70 to-background"></div>
-        
-        <div className="container relative z-10 px-4 md:px-12">
-          <Breadcrumbs />
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">Insight · Performance Improvement</span>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
-              <span className="text-primary">Lean Operations</span> at Scale
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl">
-              How to apply lean principles to complex organizations for sustainable operational excellence and continuous improvement.
-            </p>
-            <div className="flex items-center gap-6 mt-8 text-sm text-muted-foreground">
-              <span className="flex items-center gap-2"><Clock className="w-4 h-4" />11 min read</span>
-              <span>December 2024</span>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+    <InsightArticleV2
+      category="Performance Improvement"
+      title="Lean Operations at Scale"
+      subtitle="How to apply lean principles to complex organizations for sustainable operational excellence and continuous improvement."
+      heroImage="/images/capabilities/cap-team-screens.jpg"
+      publishDate="December 2024"
+      readTime="11 min"
+      sections={sections}
+      keyTakeaways={[
+        "Lean principles—eliminating waste, reducing variation, and continuously improving—apply far beyond manufacturing to any organization that wants to deliver more value with fewer resources.",
+        "The DOWNTIME framework captures the eight wastes: defects, overproduction, waiting, non-utilized talent, transportation, inventory, motion, and extra processing.",
+        "Scaling lean depends on leadership commitment, a sustaining management system, and broad capability building—not tools and events alone.",
+        "Lean at scale is ultimately about culture, and the organizations that achieve it gain a competitive advantage that compounds and is difficult to replicate.",
+      ]}
+      relatedInsights={relatedInsights}
+    >
+      <h2 id="beyond-factory">Beyond the Factory Floor</h2>
+      <p>
+        Lean principles were developed in manufacturing but apply far more broadly. The core concepts—eliminating
+        waste, reducing variation, and continuously improving—are relevant to any organization that wants to deliver
+        more value with fewer resources.
+      </p>
+      <p>
+        Yet many organizations struggle to scale lean beyond pilot projects. They achieve impressive results in one
+        area, then fail to replicate success across the enterprise. This article explores how to build lean
+        capabilities that scale.
+      </p>
 
-      {/* Article Content */}
-      <article className="py-16 bg-white text-charcoal">
-        <div className="container px-4 md:px-12 max-w-4xl">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="prose prose-lg max-w-none">
-            
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Beyond the Factory Floor</h2>
-            <p className="text-charcoal/80 leading-relaxed mb-6">
-              Lean principles were developed in manufacturing but apply far more broadly. The core concepts—eliminating waste, reducing variation, and continuously improving—are relevant to any organization that wants to deliver more value with fewer resources.
-            </p>
-            <p className="text-charcoal/70 leading-relaxed mb-8">
-              Yet many organizations struggle to scale lean beyond pilot projects. They achieve impressive results in one area, then fail to replicate success across the enterprise. This article explores how to build lean capabilities that scale.
-            </p>
+      <h2 id="eight-wastes">The Eight Wastes</h2>
+      <p>
+        The DOWNTIME framework is a memorable way to identify the eight classic wastes lean sets out to eliminate:
+      </p>
+      <ul>
+        <li>
+          <strong>D</strong>efects — errors requiring rework
+        </li>
+        <li>
+          <strong>O</strong>verproduction — making more than needed
+        </li>
+        <li>
+          <strong>W</strong>aiting — idle time between steps
+        </li>
+        <li>
+          <strong>N</strong>on-utilized talent — underusing people
+        </li>
+        <li>
+          <strong>T</strong>ransportation — unnecessary movement
+        </li>
+        <li>
+          <strong>I</strong>nventory — excess stock or WIP
+        </li>
+        <li>
+          <strong>M</strong>otion — unnecessary physical movement
+        </li>
+        <li>
+          <strong>E</strong>xtra processing — more work than required
+        </li>
+      </ul>
 
-            <h2 className="text-3xl font-bold text-charcoal mb-6">The Eight Wastes</h2>
-            
-            <div className="p-8 bg-charcoal/5 rounded-xl mb-12">
-              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Target className="w-6 h-6 text-primary" />DOWNTIME Framework</h3>
-              <div className="grid md:grid-cols-2 gap-4 text-charcoal/70">
-                <div><strong className="text-charcoal">D</strong>efects - Errors requiring rework</div>
-                <div><strong className="text-charcoal">O</strong>verproduction - Making more than needed</div>
-                <div><strong className="text-charcoal">W</strong>aiting - Idle time between steps</div>
-                <div><strong className="text-charcoal">N</strong>on-utilized talent - Underusing people</div>
-                <div><strong className="text-charcoal">T</strong>ransportation - Unnecessary movement</div>
-                <div><strong className="text-charcoal">I</strong>nventory - Excess stock or WIP</div>
-                <div><strong className="text-charcoal">M</strong>otion - Unnecessary physical movement</div>
-                <div><strong className="text-charcoal">E</strong>xtra processing - More work than required</div>
-              </div>
-            </div>
+      <h2 id="success-factors">Scaling Lean: Key Success Factors</h2>
 
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Scaling Lean: Key Success Factors</h2>
-            
-            <div className="space-y-8 mb-12">
-              <div className="flex gap-6">
-                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center"><Users className="w-6 h-6" /></div></div>
-                <div>
-                  <h3 className="text-xl font-bold text-charcoal mb-2">Leadership Commitment</h3>
-                  <p className="text-charcoal/70 leading-relaxed">Lean transformation requires sustained leadership commitment. Leaders must model lean behaviors, allocate resources, and hold the organization accountable for results.</p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center"><Cog className="w-6 h-6" /></div></div>
-                <div>
-                  <h3 className="text-xl font-bold text-charcoal mb-2">Management System</h3>
-                  <p className="text-charcoal/70 leading-relaxed">Tools and events don't sustain themselves. A lean management system—including daily management, visual controls, and problem-solving routines—is essential for sustainability.</p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center"><TrendingUp className="w-6 h-6" /></div></div>
-                <div>
-                  <h3 className="text-xl font-bold text-charcoal mb-2">Capability Building</h3>
-                  <p className="text-charcoal/70 leading-relaxed">Lean at scale requires broad capability. Invest in training and coaching to build problem-solving skills throughout the organization, not just in a central lean team.</p>
-                </div>
-              </div>
-            </div>
+      <h3>Leadership Commitment</h3>
+      <p>
+        Lean transformation requires sustained leadership commitment. Leaders must model lean behaviors, allocate
+        resources, and hold the organization accountable for results.
+      </p>
 
-            <h2 className="text-3xl font-bold text-charcoal mb-6">The Lean Management System</h2>
-            
-            <div className="space-y-6 mb-12">
-              <div className="p-6 bg-charcoal/5 rounded-xl">
-                <h4 className="text-lg font-bold text-charcoal mb-2">Daily Management</h4>
-                <p className="text-charcoal/70">Short, focused meetings at the start of each day to review performance, identify issues, and assign countermeasures. The foundation of operational discipline.</p>
-              </div>
-              <div className="p-6 bg-charcoal/5 rounded-xl">
-                <h4 className="text-lg font-bold text-charcoal mb-2">Visual Management</h4>
-                <p className="text-charcoal/70">Make performance visible so problems are immediately apparent. Visual boards, status indicators, and real-time metrics enable rapid response.</p>
-              </div>
-              <div className="p-6 bg-charcoal/5 rounded-xl">
-                <h4 className="text-lg font-bold text-charcoal mb-2">Standard Work</h4>
-                <p className="text-charcoal/70">Document the current best way to perform each process. Standard work is the baseline for improvement—you can't improve what isn't standardized.</p>
-              </div>
-              <div className="p-6 bg-charcoal/5 rounded-xl">
-                <h4 className="text-lg font-bold text-charcoal mb-2">Problem Solving</h4>
-                <p className="text-charcoal/70">Structured approach to identifying root causes and implementing countermeasures. A3 thinking and PDCA cycles build problem-solving capability.</p>
-              </div>
-            </div>
+      <h3>Management System</h3>
+      <p>
+        Tools and events don't sustain themselves. A lean management system—including daily management, visual
+        controls, and problem-solving routines—is essential for sustainability.
+      </p>
 
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Common Scaling Challenges</h2>
-            <ul className="space-y-4 text-charcoal/70 mb-8">
-              <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong className="text-charcoal">Tool focus:</strong> Implementing lean tools without the underlying management system and culture change.</span></li>
-              <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong className="text-charcoal">Expert dependency:</strong> Relying on a central lean team rather than building capability throughout the organization.</span></li>
-              <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong className="text-charcoal">Event-driven improvement:</strong> Focusing on kaizen events without daily management to sustain gains.</span></li>
-              <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong className="text-charcoal">Insufficient leadership engagement:</strong> Leaders who delegate lean rather than actively participating.</span></li>
-            </ul>
+      <h3>Capability Building</h3>
+      <p>
+        Lean at scale requires broad capability. Invest in training and coaching to build problem-solving skills
+        throughout the organization, not just in a central lean team.
+      </p>
 
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Building a Lean Culture</h2>
-            <p className="text-charcoal/80 leading-relaxed mb-6">
-              Ultimately, lean at scale is about culture. It's about creating an organization where everyone—from the front line to the C-suite—is engaged in identifying and solving problems, eliminating waste, and continuously improving.
-            </p>
-            <p className="text-charcoal/70 leading-relaxed mb-8">
-              This culture doesn't happen overnight. It requires years of consistent effort, leadership modeling, and reinforcement. But organizations that achieve it gain a sustainable competitive advantage that's difficult for competitors to replicate.
-            </p>
+      <h2 id="management-system">The Lean Management System</h2>
 
-            <div className="p-8 bg-primary text-charcoal rounded-xl mb-12">
-              <h3 className="text-xl font-bold mb-4">The Bottom Line</h3>
-              <p className="text-charcoal/90 leading-relaxed">
-                Lean at scale is achievable, but it requires more than tools and training. It requires a management system that sustains improvement, leadership commitment that persists through challenges, and a culture that embraces continuous improvement as a way of working. Organizations that get this right achieve operational excellence that compounds over time.
-              </p>
-            </div>
+      <h3>Daily Management</h3>
+      <p>
+        Short, focused meetings at the start of each day to review performance, identify issues, and assign
+        countermeasures. The foundation of operational discipline.
+      </p>
 
-          </motion.div>
-        </div>
-      </article>
+      <h3>Visual Management</h3>
+      <p>
+        Make performance visible so problems are immediately apparent. Visual boards, status indicators, and
+        real-time metrics enable rapid response.
+      </p>
 
-      {/* Related Insights */}
-      <section className="py-24 md:py-32 bg-background">
-        <div className="container px-4 md:px-12">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">Related Insights</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">Continue reading</h2>
-          </motion.div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
-            {[
-              { title: "Smart Cost Reduction", category: "Performance Improvement", description: "Strategic cost optimization that preserves value", link: "/insights/smart-cost-reduction" },
-              { title: "Working Capital Optimization", category: "Performance Improvement", description: "Unlock cash trapped in your balance sheet", link: "/insights/working-capital-optimization" }
-            ].map((item, index) => (
-              <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>
-                <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
-                  <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.category}</span>
-                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
-                  <p className="text-muted-foreground mt-2">{item.description}</p>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-[gap]">Read insight <ArrowRight className="w-3 h-3" /></span>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-          <div className="text-center mt-16">
-            <Link href="/insights"><Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-8 py-6 text-base font-semibold transition bg-transparent"><ArrowLeft className="w-4 h-4 mr-2" />Back to all insights</Button></Link>
-          </div>
-        </div>
-      </section>
+      <h3>Standard Work</h3>
+      <p>
+        Document the current best way to perform each process. Standard work is the baseline for improvement—you
+        can't improve what isn't standardized.
+      </p>
 
-      <BackToTop />
-      <Footer />
-    </div>
+      <h3>Problem Solving</h3>
+      <p>
+        Structured approach to identifying root causes and implementing countermeasures. A3 thinking and PDCA cycles
+        build problem-solving capability.
+      </p>
+
+      <h2 id="scaling-challenges">Common Scaling Challenges</h2>
+      <ul>
+        <li>
+          <strong>Tool focus:</strong> Implementing lean tools without the underlying management system and culture
+          change.
+        </li>
+        <li>
+          <strong>Expert dependency:</strong> Relying on a central lean team rather than building capability
+          throughout the organization.
+        </li>
+        <li>
+          <strong>Event-driven improvement:</strong> Focusing on kaizen events without daily management to sustain
+          gains.
+        </li>
+        <li>
+          <strong>Insufficient leadership engagement:</strong> Leaders who delegate lean rather than actively
+          participating.
+        </li>
+      </ul>
+
+      <h2 id="lean-culture">Building a Lean Culture</h2>
+      <p>
+        Ultimately, lean at scale is about culture. It's about creating an organization where everyone—from the front
+        line to the C-suite—is engaged in identifying and solving problems, eliminating waste, and continuously
+        improving.
+      </p>
+      <p>
+        This culture doesn't happen overnight. It requires years of consistent effort, leadership modeling, and
+        reinforcement. But organizations that achieve it gain a sustainable competitive advantage that's difficult
+        for competitors to replicate.
+      </p>
+
+      <h2 id="bottom-line">The Bottom Line</h2>
+      <p>
+        Lean at scale is achievable, but it requires more than tools and training. It requires a management system
+        that sustains improvement, leadership commitment that persists through challenges, and a culture that embraces
+        continuous improvement as a way of working. Organizations that get this right achieve operational excellence
+        that compounds over time.
+      </p>
+    </InsightArticleV2>
   );
 }

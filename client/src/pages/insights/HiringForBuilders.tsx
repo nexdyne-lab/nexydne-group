@@ -1,49 +1,35 @@
-import React from 'react';
-import InsightArticleLayout, { InsightCallout } from "@/components/InsightArticleLayout";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function HiringForBuilders() {
+  const sections = [
+    { id: "pirate-ship", label: "Pirate ship culture" },
+    { id: "compensation", label: "Compensation" },
+    { id: "tour-of-duty", label: "Tour of duty" },
+    { id: "red-flag", label: "Red flag to watch" },
+  ];
+
   const relatedInsights = [
-    {
-      category: "Article",
-      categoryIcon: "📄",
-      title: "The Corporate Venture Advantage",
-      description: "Why established assets combined with startup speed create an unfair market advantage.",
-      readTime: "6 min read",
-      image: "/images/capabilities/cap-lightbulb-idea.jpg",
-      link: "/insights/corporate-venture-advantage"
-    },
-    {
-      category: "Guide",
-      categoryIcon: "📘",
-      title: "From MVP to Scale",
-      description: "Navigating the 'valley of death' and operationalizing your new venture for growth.",
-      readTime: "10 min read",
-      image: "/images/capabilities/cap-venturing.jpg",
-      link: "/insights/from-mvp-to-scale"
-    },
-    {
-      category: "Culture",
-      categoryIcon: "🎬",
-      title: "Building a Data-First Culture",
-      description: "NexDyne's Chief Data Officer discusses the human side of digital change.",
-      readTime: "12 min watch",
-      image: "/images/capabilities/cap-telescope.jpg",
-      link: "/insights/building-data-culture"
-    }
+    { title: "The Corporate Venture Advantage", category: "Venture Building", link: "/insights/corporate-venture-advantage", image: "/images/capabilities/cap-lightbulb-idea.jpg" },
+    { title: "From MVP to Scale", category: "Venture Building", link: "/insights/from-mvp-to-scale", image: "/images/capabilities/cap-venturing.jpg" },
+    { title: "Building a Data-First Culture", category: "Culture", link: "/insights/building-data-culture", image: "/images/capabilities/cap-telescope.jpg" },
   ];
 
   return (
-    <InsightArticleLayout
+    <InsightArticleV2
       category="Talent"
-      categoryIcon="👥"
+      categoryHref="/insights"
       title="Hiring for Builders: Attracting Entrepreneurial Talent to Corporate Ventures"
       subtitle="The type of person who thrives in a structured corporate hierarchy is rarely the same person who can build a business from zero to one. Here is how to find, hire, and retain the 'builders.'"
-      readTime="5 min read"
-      publishDate="October 15, 2024"
       heroImage="/images/industries/team-strategy-board.jpg"
-      heroImageAlt="Hiring for Builders"
-      authorName="Raphaelyn CN Bomosy-Forkpa"
-      authorRole="Co-Founder & Managing Partner, NexDyne Consulting Group"
+      publishDate="October 15, 2024"
+      readTime="5 min"
+      sections={sections}
+      keyTakeaways={[
+        "Corporate innovation needs makers, not managers—people who thrive on ambiguity, speed, and building from zero to one.",
+        "Give the venture team a distinct 'pirate ship' culture: physical separation, tool autonomy, and its own norms.",
+        "Align incentives with a phantom-equity model so builders share in the value they create, not the politics of the parent.",
+        "Frame the role as a two-to-three-year 'tour of duty' and hire for curiosity, resilience, and a bias for action.",
+      ]}
       relatedInsights={relatedInsights}
     >
       <p>
@@ -52,8 +38,8 @@ export default function HiringForBuilders() {
       <p>
         To build a successful new venture, you need makers. But makers are allergic to bureaucracy. So, how do you get them to join a corporate-backed venture?
       </p>
-      
-      <h2>1. The "Pirate Ship" Culture</h2>
+
+      <h2 id="pirate-ship">1. The "Pirate Ship" Culture</h2>
       <p>
         You must create a distinct sub-culture for the venture team. It should feel like a pirate ship docked next to the navy fleet.
       </p>
@@ -63,7 +49,7 @@ export default function HiringForBuilders() {
         <li><strong>Dress Code:</strong> If the corporation wears suits, let the venture team wear hoodies. It signals "we are different."</li>
       </ul>
 
-      <h2>2. Compensation that Aligns Incentives</h2>
+      <h2 id="compensation">2. Compensation that Aligns Incentives</h2>
       <p>
         You cannot pay a venture founder a standard corporate salary and bonus. They need upside.
       </p>
@@ -71,22 +57,21 @@ export default function HiringForBuilders() {
         We recommend a <strong>"Phantom Equity"</strong> model. The venture team gets a stake in the value they create. If the venture is spun out or acquired by the parent company, they get a payout. This aligns their interests with the success of the <em>venture</em>, not the politics of the parent company.
       </p>
 
-      <h2>3. The "Tour of Duty" Mindset</h2>
+      <h2 id="tour-of-duty">3. The "Tour of Duty" Mindset</h2>
       <p>
         Accept that builders might not stay forever. And that's okay. Frame the role as a 2-3 year "tour of duty" to launch a specific product.
       </p>
-      <p>
-        "Come build this with us. We have the funding and the distribution. You bring the speed. In two years, you'll have a massive win on your resume, and we'll have a thriving business."
-      </p>
+      <blockquote>
+        Come build this with us. We have the funding and the distribution. You bring the speed. In two years, you'll have a massive win on your resume, and we'll have a thriving business.
+      </blockquote>
       <p>
         This honest framing attracts high-performers who want to build, ship, and move on to the next challenge, rather than climb a corporate ladder.
       </p>
 
-      <InsightCallout title="Red Flag to Watch For">
-        <p>
-          If a candidate asks more questions about the pension plan than the product roadmap, they are not a builder. Hire for curiosity, resilience, and a bias for action.
-        </p>
-      </InsightCallout>
-    </InsightArticleLayout>
+      <h2 id="red-flag">A Red Flag to Watch For</h2>
+      <p>
+        If a candidate asks more questions about the pension plan than the product roadmap, they are not a builder. Hire for curiosity, resilience, and a bias for action.
+      </p>
+    </InsightArticleV2>
   );
 }
