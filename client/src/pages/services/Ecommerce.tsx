@@ -53,7 +53,7 @@ export default function Ecommerce() {
             </div>
             <div className="order-1 lg:order-2">
               <p className="text-xs md:text-sm font-semibold text-secondary uppercase tracking-wider mb-4">E-commerce</p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-base">What we do</h2>
+              <h2 className="nx-h2 mb-6 md:mb-8">What we do</h2>
               <p className="text-base md:text-lg text-charcoal/80 leading-relaxed mb-6">
                 At NEXDYNE, we give you everything you need to create an incredible e-commerce experience. Whether you're looking for a solid platform, a flexible headless CMS, smart chatbots or advanced native apps – we have the tools and expertise to make it happen.
               </p>
@@ -71,7 +71,7 @@ export default function Ecommerce() {
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
             {/* Left: Contact Person */}
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-charcoal">Services</h2>
+              <h2 className="nx-h2 mb-6 md:mb-8 text-charcoal">Services</h2>
               <Card className="p-6 md:p-8 bg-white/10 backdrop-blur-sm border-secondary/30 shadow-xl hover:shadow-2xl hover:shadow-secondary/20 transition">
                 <div className="flex flex-col sm:flex-row items-start gap-6">
                   <div className="relative flex-shrink-0">
@@ -134,7 +134,7 @@ export default function Ecommerce() {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-base">Why NEXDYNE</h2>
+              <h2 className="nx-h2 mb-6 md:mb-8">Why NEXDYNE</h2>
               <p className="text-base md:text-lg text-charcoal/80 leading-relaxed mb-6">
                 Whether you're looking for a strategic partner, a boost for your digital transformation, or the ultimate customer experience for your customers, you've come to the right place.
               </p>
@@ -155,7 +155,7 @@ export default function Ecommerce() {
           <div className="mb-8 md:mb-12">
             <p className="text-xs md:text-sm font-semibold text-secondary uppercase tracking-wider mb-4">Cases</p>
             <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-6 md:mb-8 gap-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-charcoal">Cases we love talking about</h2>
+              <h2 className="nx-h2 text-charcoal">Cases we love talking about</h2>
             </div>
             <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8 max-w-3xl">
               Heard of a business that transforms unique business challenges into exceptional outcomes? That'd be us. Check out these inspiring cases.
@@ -243,7 +243,7 @@ export default function Ecommerce() {
         <div className="container px-4">
           <div className="mb-8 md:mb-12">
             <p className="text-xs md:text-sm font-semibold text-secondary uppercase tracking-wider mb-4">Partners</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-base">Awesome partners turn dreams into reality</h2>
+            <h2 className="nx-h2 mb-6">Awesome partners turn dreams into reality</h2>
             <p className="text-base md:text-lg text-charcoal/80 mb-6 md:mb-8">
               With these partners we realize outstanding ecommerce solutions.
             </p>
@@ -274,7 +274,7 @@ export default function Ecommerce() {
       <AnimatedSection animation="fade-up" delay={500} className="py-16 md:py-20 bg-gradient-to-br from-background via-background to-background">
         <div className="container px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-charcoal">Ready to transform your e-commerce?</h2>
+            <h2 className="nx-h2 mb-6 text-charcoal">Ready to transform your e-commerce?</h2>
             <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8">
               Let's discuss how we can help you build a future-proof online store that drives growth and delights customers.
             </p>

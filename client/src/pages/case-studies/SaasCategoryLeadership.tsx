@@ -112,7 +112,7 @@ export default function SaasCategoryLeadership() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 A B2B SaaS platform serving growing companies had built a successful business by being a fast follower in their category. They watched competitors introduce new features and capabilities, then quickly replicated them with competitive pricing. This strategy had generated steady growth and profitability, but leadership recognized they had hit a ceiling.
@@ -152,7 +152,7 @@ export default function SaasCategoryLeadership() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Breaking the Fast Follower Trap
             </h2>
           </motion.div>
@@ -225,7 +225,7 @@ export default function SaasCategoryLeadership() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               "Insights to Action" Financial Framework
             </h2>
           </motion.div>
@@ -382,7 +382,7 @@ export default function SaasCategoryLeadership() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Category Leadership Achieved
             </h2>
           </motion.div>
@@ -489,7 +489,7 @@ export default function SaasCategoryLeadership() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">More success stories</h2>
+            <h2 className="nx-h2 text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">

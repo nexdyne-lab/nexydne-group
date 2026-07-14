@@ -88,7 +88,7 @@ export default function StrategicAcquisition() {
       <section className="py-16 bg-white text-charcoal">
         <div className="container px-4 md:px-12 max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client is a B2B software company with $150M in revenue, providing enterprise solutions to the financial services industry. They had built a strong position in their core market but recognized that adjacent markets represented significant growth opportunities.
@@ -111,7 +111,7 @@ export default function StrategicAcquisition() {
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">The Challenge</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">Entering a new market without domain expertise</h2>
+            <h2 className="nx-h2 text-charcoal max-w-4xl">Entering a new market without domain expertise</h2>
           </motion.div>
         </div>
       </section>
@@ -152,7 +152,7 @@ export default function StrategicAcquisition() {
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">The Solution</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">Comprehensive acquisition search and execution</h2>
+            <h2 className="nx-h2 text-charcoal max-w-4xl">Comprehensive acquisition search and execution</h2>
           </motion.div>
         </div>
       </section>
@@ -206,7 +206,7 @@ export default function StrategicAcquisition() {
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">The Impact</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">Results & Impact</h2>
+            <h2 className="nx-h2 text-charcoal max-w-4xl">Results & Impact</h2>
           </motion.div>
         </div>
       </section>
@@ -260,7 +260,7 @@ export default function StrategicAcquisition() {
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16">
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">Related Case Studies</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">More success stories</h2>
+            <h2 className="nx-h2 text-charcoal">More success stories</h2>
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
             {[

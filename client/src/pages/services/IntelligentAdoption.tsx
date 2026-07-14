@@ -71,7 +71,7 @@ export default function IntelligentAdoption() {
             <p className="text-purple text-sm font-medium tracking-widest uppercase mb-4">
               The Challenge
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-8">
+            <h2 className="nx-h2 text-charcoal mb-8">
               Technology fails when people aren't ready
             </h2>
             <div className="prose prose-lg prose-slate max-w-none">
@@ -104,7 +104,7 @@ export default function IntelligentAdoption() {
             <p className="text-purple text-sm font-medium tracking-widest uppercase mb-4">
               Our Approach
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-12">
+            <h2 className="nx-h2 text-charcoal mb-12">
               Change management that accelerates transformation
             </h2>
             
@@ -160,7 +160,7 @@ export default function IntelligentAdoption() {
             <p className="text-purple text-sm font-medium tracking-widest uppercase mb-4">
               Capabilities
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-12">
+            <h2 className="nx-h2 text-charcoal mb-12">
               What we deliver
             </h2>
             
@@ -197,7 +197,7 @@ export default function IntelligentAdoption() {
             <p className="text-white/80 text-sm font-medium tracking-widest uppercase mb-4">
               The Difference
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-12">
+            <h2 className="nx-h2 mb-12">
               Why change management matters for AI
             </h2>
             
@@ -239,7 +239,7 @@ export default function IntelligentAdoption() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-charcoal mb-8">Related Services</h2>
+            <h2 className="nx-h2 text-charcoal mb-8">Related Services</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
               <BainHoverCard
@@ -261,7 +261,7 @@ export default function IntelligentAdoption() {
       <section className="py-20 bg-off-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Ready to ensure your transformation succeeds?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">

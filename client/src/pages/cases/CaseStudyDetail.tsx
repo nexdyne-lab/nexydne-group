@@ -154,7 +154,7 @@ export default function CaseStudyDetail() {
             {/* Main Content */}
             <div className="lg:col-span-7 space-y-16">
               <div>
-                <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                <h2 className="nx-h2 mb-6 flex items-center gap-3">
                   <span className="w-8 h-1 bg-secondary" />
                   The Challenge
                 </h2>
@@ -164,7 +164,7 @@ export default function CaseStudyDetail() {
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                <h2 className="nx-h2 mb-6 flex items-center gap-3">
                   <span className="w-8 h-1 bg-secondary" />
                   The Solution
                 </h2>
@@ -219,7 +219,7 @@ export default function CaseStudyDetail() {
       {/* CTA */}
       <section className="py-24 bg-background border-t border-border">
         <div className="container px-4 md:px-12 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">Ready to write your success story?</h2>
+          <h2 className="nx-h2 mb-8">Ready to write your success story?</h2>
           <Link href="/contact">
             <button className="px-10 py-4 bg-primary text-white font-bold rounded-full hover:bg-primary-hover transition">
               Start a Conversation

@@ -113,7 +113,7 @@ export default function OperationalExcellenceHealthcare() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Organization Background</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Organization Background</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client operates a network of 12 outpatient healthcare facilities across a three-state region, providing primary care, specialty services, and diagnostic capabilities. With 850 employees serving approximately 85,000 active patients, the organization had grown through a combination of organic expansion and strategic acquisitions over 15 years.
@@ -168,7 +168,7 @@ export default function OperationalExcellenceHealthcare() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Mounting Pressure on Margins and Operations
             </h2>
           </motion.div>
@@ -248,7 +248,7 @@ export default function OperationalExcellenceHealthcare() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Comprehensive Operational Excellence Program
             </h2>
           </motion.div>
@@ -397,7 +397,7 @@ export default function OperationalExcellenceHealthcare() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Transformational Results Across All Dimensions
             </h2>
           </motion.div>
@@ -517,7 +517,7 @@ export default function OperationalExcellenceHealthcare() {
       {/* Key Success Factors */}
       <section className="py-16 bg-white text-charcoal">
         <div className="container px-4 md:px-12 max-w-4xl">
-          <h2 className="text-3xl font-bold text-charcoal mb-8">Key Success Factors</h2>
+          <h2 className="nx-h2 text-charcoal mb-8">Key Success Factors</h2>
           
           <div className="grid md:grid-cols-2 gap-6">
             <div className="border-l-4 border-primary pl-6">
@@ -571,7 +571,7 @@ export default function OperationalExcellenceHealthcare() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">More success stories</h2>
+            <h2 className="nx-h2 text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">

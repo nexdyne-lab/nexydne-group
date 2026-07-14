@@ -131,7 +131,7 @@ export default function FPATransformation() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client is a growing industrial equipment manufacturer with $85M in annual revenue and operations across three facilities. The company had grown rapidly through acquisition but was struggling with fragmented financial systems and manual processes that made it difficult to get a clear picture of performance.
@@ -171,7 +171,7 @@ export default function FPATransformation() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Fragmented systems and manual processes
             </h2>
           </motion.div>
@@ -237,7 +237,7 @@ export default function FPATransformation() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Modern FP&A infrastructure and processes
             </h2>
           </motion.div>
@@ -394,7 +394,7 @@ export default function FPATransformation() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Results & Impact
             </h2>
           </motion.div>
@@ -495,7 +495,7 @@ export default function FPATransformation() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">More success stories</h2>
+            <h2 className="nx-h2 text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">

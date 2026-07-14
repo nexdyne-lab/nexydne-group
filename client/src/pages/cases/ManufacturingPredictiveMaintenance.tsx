@@ -407,8 +407,7 @@ export default function ManufacturingPredictiveMaintenance() {
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
               Work With Us
             </span>
-            <h2
-              className="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-8"
+            <h2 className="nx-h2 text-white mb-8"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               Have a similar problem?

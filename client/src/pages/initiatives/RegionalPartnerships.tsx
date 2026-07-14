@@ -50,7 +50,7 @@ function RegionalPartnershipsFAQ() {
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
             Frequently Asked Questions
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+          <h2 className="nx-h2">
             Questions about partnerships
           </h2>
         </motion.div>
@@ -164,7 +164,7 @@ export default function RegionalPartnerships() {
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
                 What It Is
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-8">
+              <h2 className="nx-h2 mb-8">
                 Infrastructure-building for local economies
               </h2>
               
@@ -216,7 +216,7 @@ export default function RegionalPartnerships() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Who We Partner With
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
+            <h2 className="nx-h2 mb-6">
               Organizations that anchor local economies
             </h2>
             <p className="text-lg text-charcoal/70 leading-relaxed">
@@ -291,7 +291,7 @@ export default function RegionalPartnerships() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Why It Matters to Chambers
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-8">
+            <h2 className="nx-h2 text-charcoal mb-8">
               Moving beyond networking to strategic growth enablement
             </h2>
             
@@ -355,7 +355,7 @@ export default function RegionalPartnerships() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               What Partners Receive
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
+            <h2 className="nx-h2 mb-6">
               Everything needed to deliver intelligence to members
             </h2>
             <p className="text-lg text-charcoal/70 leading-relaxed">
@@ -411,7 +411,7 @@ export default function RegionalPartnerships() {
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Strategic Framing
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-8">
+              <h2 className="nx-h2 mb-8">
                 This is infrastructure-building for local economies
               </h2>
               
@@ -478,7 +478,7 @@ export default function RegionalPartnerships() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Partnership Process
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal leading-tight mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               How partnerships work
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -556,7 +556,7 @@ export default function RegionalPartnerships() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Related Initiatives
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+            <h2 className="nx-h2">
               Explore other NexDyne initiatives
             </h2>
           </motion.div>

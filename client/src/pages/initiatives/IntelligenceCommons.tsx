@@ -50,7 +50,7 @@ function IntelligenceCommonsFAQ() {
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
             Frequently Asked Questions
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+          <h2 className="nx-h2">
             Questions about the platform
           </h2>
         </motion.div>
@@ -164,7 +164,7 @@ export default function IntelligenceCommons() {
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
                 What It Is
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-8">
+              <h2 className="nx-h2 mb-8">
                 Enterprise intelligence without enterprise costs
               </h2>
               
@@ -216,7 +216,7 @@ export default function IntelligenceCommons() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Platform Capabilities
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
+            <h2 className="nx-h2 mb-6">
               Intelligence tools for every growth stage
             </h2>
             <p className="text-lg text-charcoal/70 leading-relaxed">
@@ -306,7 +306,7 @@ export default function IntelligenceCommons() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Why This Is Different
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-8">
+            <h2 className="nx-h2 text-charcoal mb-8">
               Opening Fortune 500 capabilities to growing businesses
             </h2>
             
@@ -354,7 +354,7 @@ export default function IntelligenceCommons() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Public Benefit
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-8">
+            <h2 className="nx-h2 mb-8">
               Better intelligence, stronger communities
             </h2>
             
@@ -406,7 +406,7 @@ export default function IntelligenceCommons() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Platform Access
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal leading-tight mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Intelligence for every growth stage
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -509,7 +509,7 @@ export default function IntelligenceCommons() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Related Initiatives
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+            <h2 className="nx-h2">
               Explore other NexDyne initiatives
             </h2>
           </motion.div>

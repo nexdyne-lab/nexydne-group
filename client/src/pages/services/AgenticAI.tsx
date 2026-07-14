@@ -71,7 +71,7 @@ export default function AgenticAI() {
             <p className="text-primary text-sm font-medium tracking-widest uppercase mb-4">
               The Opportunity
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-8">
+            <h2 className="nx-h2 text-charcoal mb-8">
               AI that works alongside your team
             </h2>
             <div className="prose prose-lg prose-slate max-w-none">
@@ -104,7 +104,7 @@ export default function AgenticAI() {
             <p className="text-primary text-sm font-medium tracking-widest uppercase mb-4">
               Our Approach
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-12">
+            <h2 className="nx-h2 text-charcoal mb-12">
               From experimentation to enterprise value
             </h2>
             
@@ -159,7 +159,7 @@ export default function AgenticAI() {
             <p className="text-primary text-sm font-medium tracking-widest uppercase mb-4">
               Capabilities
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-12">
+            <h2 className="nx-h2 text-charcoal mb-12">
               What we deliver
             </h2>
             
@@ -196,7 +196,7 @@ export default function AgenticAI() {
             <p className="text-primary text-sm font-medium tracking-widest uppercase mb-4">
               Use Cases
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-12">
+            <h2 className="nx-h2 mb-12">
               AI in action across industries
             </h2>
             
@@ -246,7 +246,7 @@ export default function AgenticAI() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-charcoal mb-8">Related Services</h2>
+            <h2 className="nx-h2 text-charcoal mb-8">Related Services</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
               <BainHoverCard
@@ -268,7 +268,7 @@ export default function AgenticAI() {
       <section className="py-20 bg-off-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Ready to explore AI for your business?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">

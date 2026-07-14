@@ -113,7 +113,7 @@ export default function SeriesBFunding() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client is a healthtech company that developed an AI-powered platform for chronic disease management. With $8M in ARR and 150% year-over-year growth, they had proven product-market fit and were ready to scale. The company had raised a $12M Series A two years prior and was seeking Series B funding to accelerate growth.
@@ -153,7 +153,7 @@ export default function SeriesBFunding() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Positioning for premium valuation in a competitive market
             </h2>
           </motion.div>
@@ -219,7 +219,7 @@ export default function SeriesBFunding() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Comprehensive fundraising preparation and execution
             </h2>
           </motion.div>
@@ -376,7 +376,7 @@ export default function SeriesBFunding() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Results & Impact
             </h2>
           </motion.div>
@@ -477,7 +477,7 @@ export default function SeriesBFunding() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">More success stories</h2>
+            <h2 className="nx-h2 text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">

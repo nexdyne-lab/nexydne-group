@@ -112,7 +112,7 @@ export default function RetailMarketExpansion() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 A regional consumer electronics retailer with 35 stores across multiple markets had achieved moderate success but struggled to break through to the next level of market leadership. Despite having strong customer satisfaction scores and competitive pricing, the company was stuck in fifth place in their regional market, watching larger competitors dominate the most lucrative territories.
@@ -152,7 +152,7 @@ export default function RetailMarketExpansion() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Unfocused Expansion Strategy
             </h2>
           </motion.div>
@@ -225,7 +225,7 @@ export default function RetailMarketExpansion() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Data-Driven Geographic Clustering
             </h2>
           </motion.div>
@@ -382,7 +382,7 @@ export default function RetailMarketExpansion() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Market Leadership Achieved
             </h2>
           </motion.div>
@@ -497,7 +497,7 @@ export default function RetailMarketExpansion() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">More success stories</h2>
+            <h2 className="nx-h2 text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">

@@ -112,7 +112,7 @@ export default function MedicalDeviceGrowth() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 A growing medical device manufacturer with a strong product portfolio and established market presence faced a critical strategic challenge. While the company had achieved stable revenue growth, leadership recognized they were operating reactively rather than strategically. They lacked a systematic framework for evaluating growth opportunities and prioritizing capital allocation across potential investment channels.
@@ -152,7 +152,7 @@ export default function MedicalDeviceGrowth() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Strategic Void in Growth Planning
             </h2>
           </motion.div>
@@ -225,7 +225,7 @@ export default function MedicalDeviceGrowth() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Proprietary Financial Modeling Framework
             </h2>
           </motion.div>
@@ -382,7 +382,7 @@ export default function MedicalDeviceGrowth() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Strategic Clarity and Actionable Roadmap
             </h2>
           </motion.div>
@@ -489,7 +489,7 @@ export default function MedicalDeviceGrowth() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">More success stories</h2>
+            <h2 className="nx-h2 text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">

@@ -113,7 +113,7 @@ export default function StrategicRepositioningTechnology() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Background</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Company Background</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client had built a successful business over 18 years providing on-premise enterprise resource planning software to growth-stage manufacturing companies. With 220 employees and approximately 300 enterprise customers, the company generated $9M in annual recurring revenue primarily from maintenance contracts and professional services.
@@ -168,7 +168,7 @@ export default function StrategicRepositioningTechnology() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Navigating the Innovator's Dilemma
             </h2>
           </motion.div>
@@ -248,7 +248,7 @@ export default function StrategicRepositioningTechnology() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               Comprehensive Strategic Repositioning
             </h2>
           </motion.div>
@@ -397,7 +397,7 @@ export default function StrategicRepositioningTechnology() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-charcoal max-w-4xl">
               From Decline to High-Growth Leadership
             </h2>
           </motion.div>
@@ -517,7 +517,7 @@ export default function StrategicRepositioningTechnology() {
       {/* Key Success Factors */}
       <section className="py-16 bg-white text-charcoal">
         <div className="container px-4 md:px-12 max-w-4xl">
-          <h2 className="text-3xl font-bold text-charcoal mb-8">Key Success Factors</h2>
+          <h2 className="nx-h2 text-charcoal mb-8">Key Success Factors</h2>
           
           <div className="grid md:grid-cols-2 gap-6">
             <div className="border-l-4 border-primary pl-6">
@@ -571,7 +571,7 @@ export default function StrategicRepositioningTechnology() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">More success stories</h2>
+            <h2 className="nx-h2 text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
