@@ -159,7 +159,7 @@ export default function Cases() {
       </section>
 
       {/* Insights Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-charcoal text-white border-t-2 border-primary">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-charcoal text-white border-t-2 border-amber">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -223,7 +223,7 @@ export default function Cases() {
                   <p className="text-white/60 leading-relaxed mb-4">
                     {post.description}
                   </p>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-[gap]">
+                  <span className="text-amber text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-[gap]">
                     Read more <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link>
