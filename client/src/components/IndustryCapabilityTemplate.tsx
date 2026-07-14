@@ -290,7 +290,7 @@ export default function IndustryCapabilityTemplate(
                     <p className="text-[11px] uppercase tracking-[0.1em] text-black/60 mb-3">
                       {c.industry} · {c.metric}
                     </p>
-                    <h3 className="text-[1.2rem] font-semibold text-black tracking-[-0.01em] leading-[1.35] mb-3 group-hover:text-primary transition-colors">
+                    <h3 className="text-[1.35rem] md:text-[1.5rem] font-semibold text-black tracking-[-0.01em] leading-[1.35] mb-3 group-hover:text-primary transition-colors">
                       {c.title}
                     </h3>
                     <span className="inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.1em] text-black">
@@ -338,7 +338,7 @@ export default function IndustryCapabilityTemplate(
                   href={r.href}
                   className="group flex items-center justify-between gap-3 ring-1 ring-black/10 hover:ring-black/40 px-6 py-6 min-h-[104px] transition-shadow cursor-pointer h-full"
                 >
-                  <span className="text-[1.05rem] font-semibold text-black leading-[1.3] tracking-[-0.01em] group-hover:text-primary transition-colors">
+                  <span className="text-[1.2rem] md:text-[1.35rem] font-semibold text-black leading-[1.3] tracking-[-0.01em] group-hover:text-primary transition-colors">
                     {r.name}
                   </span>
                   <ArrowRight className="w-4 h-4 text-primary shrink-0 transition-transform duration-300 group-hover:translate-x-1" />

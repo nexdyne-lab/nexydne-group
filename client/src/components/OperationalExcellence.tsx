@@ -85,7 +85,7 @@ export function OperationalExcellence() {
                     />
                   </div>
                   <div className="pt-5">
-                    <h3 className="text-charcoal font-semibold leading-[1.25] tracking-[-0.015em] text-[1.2rem] lg:text-[1.35rem]">
+                    <h3 className="text-charcoal font-semibold leading-[1.25] tracking-[-0.015em] text-[1.35rem] lg:text-[1.5rem]">
                       {s.title}
                     </h3>
                     <p className="mt-3 text-[0.95rem] leading-[1.6] text-muted-foreground line-clamp-2">

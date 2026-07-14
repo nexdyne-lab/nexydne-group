@@ -222,7 +222,7 @@ export default function ServiceDetailTemplate(
                 transition={{ duration: 0.5, ease, delay: index * 0.06 }}
                 className="border-t-2 border-black pt-7"
               >
-                <h3 className="text-[1.35rem] font-semibold text-black mb-4 leading-[1.25] tracking-[-0.015em]">
+                <h3 className="text-[1.35rem] md:text-[1.5rem] font-semibold text-black mb-4 leading-[1.25] tracking-[-0.015em]">
                   {pillar.title}
                 </h3>
                 <p className="text-base text-black/70 leading-[1.65]">
@@ -314,7 +314,7 @@ export default function ServiceDetailTemplate(
                     <p className="text-[11px] uppercase tracking-[0.1em] text-black/60 mb-3">
                       {c.industry} · {c.metric}
                     </p>
-                    <h3 className="text-[1.2rem] font-semibold text-black tracking-[-0.01em] leading-[1.35] mb-3 group-hover:text-primary transition-colors">
+                    <h3 className="text-[1.35rem] md:text-[1.5rem] font-semibold text-black tracking-[-0.01em] leading-[1.35] mb-3 group-hover:text-primary transition-colors">
                       {c.title}
                     </h3>
                     <span className="inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.1em] text-black">

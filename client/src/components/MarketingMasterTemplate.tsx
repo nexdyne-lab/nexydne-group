@@ -313,7 +313,7 @@ export default function MarketingMasterTemplate(
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, ease, delay: (index % 3) * 0.06 }}
               >
-                <h3 className="text-[1.3rem] font-semibold text-black tracking-[-0.015em] leading-[1.25] mb-3">
+                <h3 className="text-[1.35rem] md:text-[1.5rem] font-semibold text-black tracking-[-0.015em] leading-[1.25] mb-3">
                   {ambition.title}
                 </h3>
                 <p className="text-[0.98rem] text-black/75 leading-[1.65] mb-6">

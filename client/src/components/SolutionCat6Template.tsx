@@ -238,7 +238,7 @@ export default function SolutionCat6Template(props: SolutionCat6TemplateProps) {
                 className="border-b border-black/15 py-7 lg:py-8 grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-10 items-baseline"
               >
                 <div className="lg:col-span-4">
-                  <h3 className="text-[1.2rem] font-semibold text-black leading-[1.3] tracking-[-0.01em]">
+                  <h3 className="text-[1.35rem] md:text-[1.5rem] font-semibold text-black leading-[1.3] tracking-[-0.01em]">
                     {item.name}
                   </h3>
                 </div>
@@ -310,7 +310,7 @@ export default function SolutionCat6Template(props: SolutionCat6TemplateProps) {
                   <p className="text-[11px] uppercase tracking-[0.1em] text-black/60 mb-4">
                     {result.industry}
                   </p>
-                  <h3 className="text-[1.3rem] font-semibold text-black tracking-[-0.015em] leading-[1.3] mb-4 group-hover:text-primary transition-colors">
+                  <h3 className="text-[1.35rem] md:text-[1.5rem] font-semibold text-black tracking-[-0.015em] leading-[1.3] mb-4 group-hover:text-primary transition-colors">
                     {result.title}
                   </h3>
                   <p className="text-base text-black/70 leading-[1.65] mb-6">
@@ -359,7 +359,7 @@ export default function SolutionCat6Template(props: SolutionCat6TemplateProps) {
                   href={offering.link}
                   className="group flex items-center justify-between gap-3 ring-1 ring-black/10 hover:ring-black/40 px-6 py-6 min-h-[104px] transition-shadow cursor-pointer h-full"
                 >
-                  <span className="text-[1.05rem] font-semibold text-black leading-[1.3] tracking-[-0.01em] group-hover:text-primary transition-colors">
+                  <span className="text-[1.2rem] md:text-[1.35rem] font-semibold text-black leading-[1.3] tracking-[-0.01em] group-hover:text-primary transition-colors">
                     {offering.title}
                   </span>
                   <ArrowRight className="w-4 h-4 text-primary shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
