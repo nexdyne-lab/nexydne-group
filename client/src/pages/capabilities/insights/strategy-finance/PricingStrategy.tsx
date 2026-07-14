@@ -1,14 +1,27 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function PricingStrategy() {
+  const sections = [
+    { id: "pricing-opportunity", label: "The Pricing Opportunity" },
+    { id: "pricing-frameworks", label: "Pricing Frameworks by Business Model" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       title="Pricing Strategy for Profitable Growth"
       subtitle="How to optimize pricing without losing customers, with frameworks for different business models."
       date="November 2025"
       readTime="7 min"
       category="Strategy & Corporate Finance"
       categoryHref="/capabilities/strategy-corporate-finance"
+      heroImage="/images/insights-pricing-strategy.jpg"
+      sections={sections}
+      keyTakeaways={[
+        "Pricing improvements have outsized profit impact.",
+        "Value-based pricing outperforms cost-plus approaches.",
+        "Different business models require different pricing strategies.",
+        "Regular price reviews should be part of the business rhythm.",
+      ]}
       authors={[
         { name: "Thomas Wright", role: "Partner, Pricing & Revenue Management" },
       ]}
@@ -25,33 +38,19 @@ export default function PricingStrategy() {
         },
       ]}
     >
-      <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+      <p>
         Pricing is one of the most powerful levers for improving profitability, yet many growing companies approach it reactively. A strategic approach to pricing can significantly improve margins without sacrificing volume.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
-        The Pricing Opportunity
-      </h2>
-      <p className="text-charcoal/80 mb-6 leading-relaxed">
+      <h2 id="pricing-opportunity">The Pricing Opportunity</h2>
+      <p>
         A 1% improvement in price typically has 3-4x the profit impact of a 1% improvement in volume or cost. Yet most companies spend far more time on cost reduction than pricing optimization.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
-        Pricing Frameworks by Business Model
-      </h2>
-      <p className="text-charcoal/80 mb-6 leading-relaxed">
+      <h2 id="pricing-frameworks">Pricing Frameworks by Business Model</h2>
+      <p>
         Effective pricing strategies vary by business model. Product companies, service businesses, and subscription models each require different approaches to value-based pricing.
       </p>
-
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
-        Key Takeaways
-      </h2>
-      <ul className="list-disc pl-6 text-charcoal/80 space-y-3 mb-8">
-        <li>Pricing improvements have outsized profit impact</li>
-        <li>Value-based pricing outperforms cost-plus approaches</li>
-        <li>Different business models require different pricing strategies</li>
-        <li>Regular price reviews should be part of business rhythm</li>
-      </ul>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

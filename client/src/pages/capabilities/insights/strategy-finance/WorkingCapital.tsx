@@ -1,14 +1,27 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function WorkingCapital() {
+  const sections = [
+    { id: "working-capital-opportunity", label: "The Working Capital Opportunity" },
+    { id: "quick-wins-long-term", label: "Quick Wins vs. Long-Term Strategies" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       title="Working Capital Optimization: Quick Wins and Long-Term Strategies"
       subtitle="Practical approaches to improving cash flow without sacrificing growth or relationships."
       date="November 2025"
       readTime="8 min"
       category="Strategy & Corporate Finance"
       categoryHref="/capabilities/strategy-corporate-finance"
+      heroImage="/images/insight-working-capital-optimization.jpg"
+      sections={sections}
+      keyTakeaways={[
+        "Most companies have significant working capital improvement opportunity.",
+        "Quick wins can be captured through process improvements.",
+        "Sustainable improvement requires a systematic approach.",
+        "Balance cash optimization with customer and supplier relationships.",
+      ]}
       authors={[
         { name: "Lisa Chang", role: "Director, Treasury & Working Capital" },
       ]}
@@ -25,33 +38,19 @@ export default function WorkingCapital() {
         },
       ]}
     >
-      <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+      <p>
         Working capital optimization can free significant cash without external financing. For growing companies, even modest improvements in receivables, payables, and inventory can release millions in trapped capital.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
-        The Working Capital Opportunity
-      </h2>
-      <p className="text-charcoal/80 mb-6 leading-relaxed">
+      <h2 id="working-capital-opportunity">The Working Capital Opportunity</h2>
+      <p>
         Most growing companies have 10-20% improvement opportunity in working capital. This represents cash that can fund growth, reduce debt, or provide operating flexibility.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
-        Quick Wins vs. Long-Term Strategies
-      </h2>
-      <p className="text-charcoal/80 mb-6 leading-relaxed">
+      <h2 id="quick-wins-long-term">Quick Wins vs. Long-Term Strategies</h2>
+      <p>
         Some working capital improvements can be captured quickly through better processes and policies. Others require longer-term investments in systems, relationships, and organizational capabilities.
       </p>
-
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
-        Key Takeaways
-      </h2>
-      <ul className="list-disc pl-6 text-charcoal/80 space-y-3 mb-8">
-        <li>Most companies have significant working capital improvement opportunity</li>
-        <li>Quick wins can be captured through process improvements</li>
-        <li>Sustainable improvement requires systematic approach</li>
-        <li>Balance cash optimization with customer and supplier relationships</li>
-      </ul>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

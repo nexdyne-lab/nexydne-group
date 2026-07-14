@@ -1,16 +1,28 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function QualitySystems() {
+  const sections = [
+    { id: "quality-challenge", label: "The Quality Challenge" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       title="Quality Management Systems That Scale"
       subtitle="Building quality processes that maintain standards as your company grows."
+      heroImage="/images/quality-management-abstract.jpg"
       date="December 2025"
       readTime="7 min"
       category="Operations"
       categoryHref="/capabilities/operations"
+      sections={sections}
       authors={[
         { name: "Mark Anderson", role: "Senior Manager, Quality Excellence" },
+      ]}
+      keyTakeaways={[
+        "Quality systems must evolve as companies grow",
+        "Prevention is more scalable than inspection",
+        "Technology enables quality at scale",
+        "Culture is the foundation of sustainable quality",
       ]}
       relatedContent={[
         {
@@ -25,26 +37,14 @@ export default function QualitySystems() {
         },
       ]}
     >
-      <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+      <p>
         Quality management is often a casualty of growth. As companies scale, the informal quality processes that worked at smaller scale break down. This guide outlines how to build quality systems that scale with your business.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
-        The Quality Challenge
-      </h2>
-      <p className="text-charcoal/80 mb-6 leading-relaxed">
+      <h2 id="quality-challenge">The Quality Challenge</h2>
+      <p>
         Growing companies face a common quality dilemma: the processes that ensured quality at smaller scale become bottlenecks as volume increases. The solution is building scalable quality systems.
       </p>
-
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
-        Key Takeaways
-      </h2>
-      <ul className="list-disc pl-6 text-charcoal/80 space-y-3 mb-8">
-        <li>Quality systems must evolve as companies grow</li>
-        <li>Prevention is more scalable than inspection</li>
-        <li>Technology enables quality at scale</li>
-        <li>Culture is the foundation of sustainable quality</li>
-      </ul>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

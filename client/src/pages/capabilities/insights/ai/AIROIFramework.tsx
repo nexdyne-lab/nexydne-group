@@ -1,14 +1,29 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function AIROIFramework() {
+  const sections = [
+    { id: "traditional-roi-shortfall", label: "Why Traditional ROI Models Fall Short" },
+    { id: "three-horizons", label: "The Three Horizons of AI Value" },
+    { id: "benchmarks", label: "Benchmarks from the Field" },
+    { id: "five-principles", label: "Five Principles for Maximizing AI ROI" },
+    { id: "getting-started", label: "Getting Started" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       title="The ROI of AI: What Mid-Size Companies Need to Know"
       subtitle="A practical framework for measuring AI investment returns, with benchmarks from 50+ implementations at growing companies."
       date="January 15, 2026"
       readTime="8 min"
       category="Artificial Intelligence"
       categoryHref="/capabilities/artificial-intelligence"
+      sections={sections}
+      keyTakeaways={[
+        "Traditional ROI models consistently underestimate AI returns by 40-60% because they capture direct labor savings but miss strategic value.",
+        "Evaluate AI investments across three horizons: operational efficiency, decision enhancement, and strategic transformation.",
+        "Realistic benchmarks vary by use case, from document processing to quality inspection, with returns compounding over three years.",
+        "Maximize returns by starting with the business problem, investing in data quality, planning change management, and building measurement in from day one.",
+      ]}
       authors={[
         { name: "Michael Chen", role: "Partner, AI Practice" },
         { name: "Sarah Williams", role: "Director, Analytics" },
@@ -39,7 +54,7 @@ export default function AIROIFramework() {
         and maximizing AI ROI.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="traditional-roi-shortfall" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Why Traditional ROI Models Fall Short for AI
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -57,7 +72,7 @@ export default function AIROIFramework() {
         improved customer experience, and competitive differentiation.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="three-horizons" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         The Three Horizons of AI Value
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -120,7 +135,7 @@ export default function AIROIFramework() {
         <li>Building proprietary data assets that create competitive moats</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="benchmarks" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Benchmarks from the Field
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -174,7 +189,7 @@ export default function AIROIFramework() {
         see 30-50% lower returns.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="five-principles" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Five Principles for Maximizing AI ROI
       </h2>
 
@@ -228,7 +243,7 @@ export default function AIROIFramework() {
         investment.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="getting-started" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Getting Started
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -245,6 +260,6 @@ export default function AIROIFramework() {
         clear goals, realistic expectations, and a commitment to measuring and
         improving over time.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

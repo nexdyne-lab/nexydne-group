@@ -1,14 +1,31 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function FirstAIUseCase() {
+  const sections = [
+    { id: "first-use-case-paradox", label: "The First Use Case Paradox" },
+    { id: "phase-1-identification", label: "Phase 1: Use Case Identification" },
+    { id: "phase-2-validation", label: "Phase 2: Use Case Validation" },
+    { id: "phase-3-implementation", label: "Phase 3: Implementation" },
+    { id: "phase-4-launch", label: "Phase 4: Launch and Learning" },
+    { id: "common-patterns", label: "Common First Use Case Patterns" },
+    { id: "setting-up-for-scale", label: "Setting Up for Scale" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       title="Building Your First AI Use Case: A Step-by-Step Guide"
       subtitle="How to identify, validate, and implement your organization's first AI initiative without enterprise-level resources."
       date="January 2026"
       readTime="12 min"
       category="Artificial Intelligence"
       categoryHref="/capabilities/artificial-intelligence"
+      sections={sections}
+      keyTakeaways={[
+        "The first AI use case matters most because it sets the foundation and builds organizational confidence for everything that follows.",
+        "Select the right first opportunity by balancing business impact with technical feasibility, data readiness, and organizational fit.",
+        "Validate with a quick proof of concept and clearly defined success metrics before committing significant resources.",
+        "Treat the first use case as a learning opportunity, building reusable infrastructure and capabilities that compound over time.",
+      ]}
       authors={[
         { name: "David Park", role: "Partner, AI Implementation" },
         { name: "Jennifer Liu", role: "Senior Manager, Digital" },
@@ -38,7 +55,7 @@ export default function FirstAIUseCase() {
         and you may set back your AI ambitions by years.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="first-use-case-paradox" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         The First Use Case Paradox
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -53,7 +70,7 @@ export default function FirstAIUseCase() {
         and execute their initial projects.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="phase-1-identification" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Phase 1: Use Case Identification (Weeks 1-3)
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -101,7 +118,7 @@ export default function FirstAIUseCase() {
         <li><strong>Measurement capability:</strong> Can you clearly measure success?</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="phase-2-validation" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Phase 2: Use Case Validation (Weeks 4-6)
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -135,7 +152,7 @@ export default function FirstAIUseCase() {
         <li><strong>Guardrails:</strong> Thresholds that must not be crossed (e.g., minimum accuracy levels)</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="phase-3-implementation" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Phase 3: Implementation (Weeks 7-16)
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -182,7 +199,7 @@ export default function FirstAIUseCase() {
         <li>Develop rollback procedures for issues</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="phase-4-launch" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Phase 4: Launch and Learning (Weeks 17-20)
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -215,7 +232,7 @@ export default function FirstAIUseCase() {
         <li>Quarterly assessments of expansion opportunities</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="common-patterns" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Common First Use Case Patterns
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -246,7 +263,7 @@ export default function FirstAIUseCase() {
         </ul>
       </div>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="setting-up-for-scale" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Setting Up for Scale
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -270,6 +287,6 @@ export default function FirstAIUseCase() {
         capabilities and infrastructure that compound over time, creating an AI 
         foundation that supports increasingly ambitious initiatives.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

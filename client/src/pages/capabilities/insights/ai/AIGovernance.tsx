@@ -1,14 +1,30 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function AIGovernance() {
+  const sections = [
+    { id: "why-governance-matters", label: "Why AI Governance Matters Now" },
+    { id: "four-pillars", label: "The Four Pillars of AI Governance" },
+    { id: "building-framework", label: "Building Your Governance Framework" },
+    { id: "risk-classification", label: "Risk-Based Classification" },
+    { id: "governance-tools", label: "Practical Governance Tools" },
+    { id: "common-pitfalls", label: "Common Governance Pitfalls" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       title="AI Governance for Growing Companies"
       subtitle="Establishing responsible AI practices that scale with your business, from data privacy to algorithmic transparency."
       date="December 2025"
       readTime="10 min"
       category="Artificial Intelligence"
       categoryHref="/capabilities/artificial-intelligence"
+      sections={sections}
+      keyTakeaways={[
+        "AI governance is not just about compliance—it builds the trust that drives higher user adoption and fewer implementation delays.",
+        "Effective governance rests on four pillars: accountability and oversight, transparency and explainability, fairness and bias prevention, and privacy and security.",
+        "Build governance in phases that grow with your AI maturity, from foundation through standardization to formalized maturity.",
+        "Classify AI systems by risk level to focus resources appropriately, and avoid pitfalls like over-engineering, under-resourcing, and siloing.",
+      ]}
       authors={[
         { name: "Rachel Morrison", role: "Partner, Risk & Compliance" },
         { name: "James Chen", role: "Director, AI Ethics" },
@@ -38,7 +54,7 @@ export default function AIGovernance() {
         slowing innovation.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="why-governance-matters" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Why AI Governance Matters Now
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -53,7 +69,7 @@ export default function AIGovernance() {
         to stakeholder concerns. Good governance accelerates AI, it doesn't slow it down.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="four-pillars" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         The Four Pillars of AI Governance
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -117,7 +133,7 @@ export default function AIGovernance() {
         <li><strong>Security measures:</strong> Protecting AI systems from attacks and misuse</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="building-framework" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Building Your Governance Framework
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -164,7 +180,7 @@ export default function AIGovernance() {
         <li>Develop incident response procedures for AI failures</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="risk-classification" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Risk-Based Classification
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -201,7 +217,7 @@ export default function AIGovernance() {
         </table>
       </div>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="governance-tools" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Practical Governance Tools
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -215,7 +231,7 @@ export default function AIGovernance() {
         <li><strong>Review meeting agenda:</strong> Guides regular governance discussions</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
+      <h2 id="common-pitfalls" className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Common Governance Pitfalls
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -233,6 +249,6 @@ export default function AIGovernance() {
         experience, and evolve your approach as your AI capabilities mature. The goal is 
         to enable responsible AI innovation, not to create bureaucratic barriers.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

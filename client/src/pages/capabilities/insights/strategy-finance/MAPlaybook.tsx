@@ -1,17 +1,31 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function MAPlaybook() {
+  const sections = [
+    { id: "why-acquire", label: "Why Growing Companies Acquire" },
+    { id: "building-capability", label: "Building Your M&A Capability" },
+    { id: "integration", label: "The Integration Imperative" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       title="M&A for Growth: A Strategic Buyer's Playbook"
       subtitle="How to identify, evaluate, and integrate acquisitions that accelerate your strategic objectives."
+      heroImage="/images/mergers-acquisitions-abstract.jpg"
       date="December 2025"
       readTime="12 min"
       category="Strategy & Corporate Finance"
       categoryHref="/capabilities/strategy-corporate-finance"
+      sections={sections}
       authors={[
         { name: "Jennifer Martinez", role: "Partner, M&A Advisory" },
         { name: "Robert Kim", role: "Director, Corporate Development" },
+      ]}
+      keyTakeaways={[
+        "Acquisitions should serve clear strategic objectives",
+        "Systematic processes improve deal quality and execution",
+        "Integration planning must begin before close",
+        "Cultural fit is as important as financial fit",
       ]}
       relatedContent={[
         {
@@ -26,40 +40,24 @@ export default function MAPlaybook() {
         },
       ]}
     >
-      <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+      <p>
         Acquisitions can accelerate growth, expand capabilities, and create competitive advantage. But for growing companies without dedicated M&A teams, the process can be daunting. This playbook provides a practical framework for successful acquisitions.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
-        Why Growing Companies Acquire
-      </h2>
-      <p className="text-charcoal/80 mb-6 leading-relaxed">
+      <h2 id="why-acquire">Why Growing Companies Acquire</h2>
+      <p>
         The most successful growth-stage acquirers pursue deals for clear strategic reasons: geographic expansion, capability addition, customer access, or talent acquisition. Opportunistic deals without strategic rationale rarely deliver expected value.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
-        Building Your M&A Capability
-      </h2>
-      <p className="text-charcoal/80 mb-6 leading-relaxed">
+      <h2 id="building-capability">Building Your M&A Capability</h2>
+      <p>
         Even without a dedicated team, growing companies can build effective M&A capabilities through clear strategy, systematic processes, and selective use of external advisors.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
-        The Integration Imperative
-      </h2>
-      <p className="text-charcoal/80 mb-6 leading-relaxed">
+      <h2 id="integration">The Integration Imperative</h2>
+      <p>
         Integration is where most acquisitions succeed or fail. Planning should begin before the deal closes and address people, processes, systems, and culture.
       </p>
-
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
-        Key Takeaways
-      </h2>
-      <ul className="list-disc pl-6 text-charcoal/80 space-y-3 mb-8">
-        <li>Acquisitions should serve clear strategic objectives</li>
-        <li>Systematic processes improve deal quality and execution</li>
-        <li>Integration planning must begin before close</li>
-        <li>Cultural fit is as important as financial fit</li>
-      </ul>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

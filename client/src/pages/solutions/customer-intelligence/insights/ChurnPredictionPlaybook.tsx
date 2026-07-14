@@ -1,425 +1,244 @@
-import { motion } from "framer-motion";
-import { Link } from "wouter";
-import { ArrowRight, ArrowLeft, Clock, Share2, Linkedin, Twitter, CheckCircle2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import { SEO } from "@/components/SEO";
-import { RelatedContent } from "@/components/RelatedContent";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function ChurnPredictionPlaybook() {
+  const sections = [
+    { id: "define-churn-events", label: "Define your churn events" },
+    { id: "feature-set", label: "Assemble your feature set" },
+    { id: "prediction-horizon", label: "Choose your prediction horizon" },
+    { id: "build-validate", label: "Build and validate your model" },
+    { id: "make-actionable", label: "Make it actionable" },
+    { id: "measuring-success", label: "Measuring success" },
+    { id: "bottom-line", label: "The bottom line" },
+  ];
+
+  const relatedInsights = [
+    {
+      title: "Beyond Segmentation: The Future of Customer Intelligence",
+      category: "Strategy",
+      link: "/solutions/data-driven-customer-intelligence/insights/beyond-segmentation",
+      image: "/images/capabilities/cap-hologram.jpg",
+    },
+    {
+      title: "Hyper-Personalization at Scale: A Practical Guide",
+      category: "Marketing",
+      link: "/solutions/data-driven-customer-intelligence/insights/hyper-personalization",
+      image: "/images/capabilities/cap-colleagues-smile.jpg",
+    },
+    {
+      title: "B2B software company reduces churn by 38%",
+      category: "Case Study",
+      link: "/solutions/data-driven-customer-intelligence/case-studies/saas-churn-reduction",
+      image: "/images/capabilities/cap-office-women.jpg",
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="The Churn Prediction Playbook for Growth-Stage SaaS" 
-        description="A practical guide to building and deploying churn prediction models that actually drive retention—from feature engineering to intervention automation."
-        canonical="/solutions/data-driven-customer-intelligence/insights/churn-prediction-playbook"
-      />
-      <Navigation />
-      
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-16 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/capabilities/cap-mobile-woman.jpg" 
-            alt="SaaS Analytics" 
-            className="w-full h-full object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
-        </div>
-        
-        <div className="container px-4 md:px-12 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-3xl"
-          >
-            <Link href="/solutions/data-driven-customer-intelligence/insights" className="inline-flex items-center text-muted-foreground hover:text-primary mb-8 transition-colors">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Insights
-            </Link>
-            
-            <div className="flex items-center gap-4 mb-6">
-              <span className="text-primary text-xs font-bold uppercase tracking-[0.2em]">Technology</span>
-              <span className="flex items-center text-muted-foreground text-sm">
-                <Clock className="w-4 h-4 mr-1" />
-                15 min read
-              </span>
-            </div>
-            
-            <h1 className="text-[2rem] md:text-[2.5rem] lg:text-[2.75rem] font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
-              The Churn Prediction Playbook for Growth-Stage SaaS
-            </h1>
-            
-            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              A practical guide to building and deploying churn prediction models that actually drive retention—from feature engineering to intervention automation.
-            </p>
+    <InsightArticleV2
+      category="Technology"
+      categoryHref="/solutions/data-driven-customer-intelligence/insights"
+      title="The Churn Prediction Playbook for Growth-Stage SaaS"
+      subtitle="A practical guide to building and deploying churn prediction models that actually drive retention—from feature engineering to intervention automation."
+      heroImage="/images/capabilities/cap-mobile-woman.jpg"
+      publishDate="November 2024"
+      readTime="15 min"
+      sections={sections}
+      keyTakeaways={[
+        "Product usage features are typically the strongest churn predictors.",
+        "A 60-day prediction horizon balances accuracy with intervention time.",
+        "Gradient boosting models such as XGBoost work well for churn prediction.",
+        "Connect predictions to specific intervention playbooks so the model drives action.",
+      ]}
+      relatedInsights={relatedInsights}
+    >
+      <p>
+        Churn is the silent killer of SaaS businesses. While companies obsess over acquisition, the customers quietly
+        walking out the back door often represent a larger drag on growth than insufficient new customer volume. For
+        growth-stage SaaS companies with annual churn rates of 15-20%, reducing churn by even a few percentage points can
+        add millions to the bottom line.
+      </p>
 
-            <div className="flex items-center gap-6">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-charcoal font-bold">
-                  NX
-                </div>
-                <div>
-                  <div className="font-semibold text-charcoal">NEXDYNE Research</div>
-                  <div className="text-muted-foreground text-sm">November 2024</div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <p>
+        The good news: churn is predictable. Customers don't wake up one day and decide to cancel—they exhibit warning
+        signs weeks or months in advance. The challenge is detecting those signals early enough to intervene
+        effectively.
+      </p>
 
-      {/* Article Content */}
-      <section className="py-16 bg-white text-charcoal">
-        <div className="container px-4 md:px-12">
-          <div className="grid lg:grid-cols-12 gap-16">
-            {/* Main Content */}
-            <motion.article
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="lg:col-span-8 prose prose-lg max-w-none"
-            >
-              <p className="text-xl text-charcoal/80 leading-relaxed">
-                Churn is the silent killer of SaaS businesses. While companies obsess over acquisition, the customers quietly walking out the back door often represent a larger drag on growth than insufficient new customer volume. For growth-stage SaaS companies with annual churn rates of 15-20%, reducing churn by even a few percentage points can add millions to the bottom line.
-              </p>
+      <p>
+        This playbook walks through the practical steps to build and deploy a churn prediction system that actually
+        drives retention outcomes.
+      </p>
 
-              <p>
-                The good news: churn is predictable. Customers don't wake up one day and decide to cancel—they exhibit warning signs weeks or months in advance. The challenge is detecting those signals early enough to intervene effectively.
-              </p>
+      <h2 id="define-churn-events">Step 1: Define your churn events</h2>
 
-              <p>
-                This playbook walks through the practical steps to build and deploy a churn prediction system that actually drives retention outcomes.
-              </p>
+      <p>
+        Before building any models, you need a clear definition of what constitutes "churn" for your business. This
+        sounds obvious, but it's where many projects go wrong.
+      </p>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6">Step 1: Define Your Churn Events</h2>
+      <p>Common churn definitions:</p>
 
-              <p>
-                Before building any models, you need a clear definition of what constitutes "churn" for your business. This sounds obvious, but it's where many projects go wrong.
-              </p>
+      <ul>
+        <li><strong>Contract cancellation:</strong> Customer explicitly cancels their subscription</li>
+        <li><strong>Non-renewal:</strong> Customer doesn't renew at contract end</li>
+        <li><strong>Downgrade:</strong> Customer moves to a lower tier (partial churn)</li>
+        <li><strong>Inactivity:</strong> Customer stops using the product but hasn't cancelled</li>
+      </ul>
 
-              <p>
-                Common churn definitions:
-              </p>
+      <p>
+        For most SaaS companies, we recommend starting with explicit cancellation as your primary churn event. It's
+        unambiguous and gives you a clear target to predict. You can add nuance (downgrades, inactivity) later.
+      </p>
 
-              <ul>
-                <li><strong>Contract cancellation:</strong> Customer explicitly cancels their subscription</li>
-                <li><strong>Non-renewal:</strong> Customer doesn't renew at contract end</li>
-                <li><strong>Downgrade:</strong> Customer moves to a lower tier (partial churn)</li>
-                <li><strong>Inactivity:</strong> Customer stops using the product but hasn't cancelled</li>
-              </ul>
+      <h2 id="feature-set">Step 2: Assemble your feature set</h2>
 
-              <p>
-                For most SaaS companies, we recommend starting with explicit cancellation as your primary churn event. It's unambiguous and gives you a clear target to predict. You can add nuance (downgrades, inactivity) later.
-              </p>
+      <p>
+        The features you use to predict churn are more important than the algorithm you choose. Based on our experience
+        across 50+ SaaS churn projects, here are the feature categories that consistently drive predictive power:
+      </p>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6">Step 2: Assemble Your Feature Set</h2>
+      <h3>Product usage features</h3>
 
-              <p>
-                The features you use to predict churn are more important than the algorithm you choose. Based on our experience across 50+ SaaS churn projects, here are the feature categories that consistently drive predictive power:
-              </p>
+      <p>These are typically your strongest predictors. Key metrics include:</p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Product Usage Features</h3>
+      <ul>
+        <li>Login frequency and recency (days since last login)</li>
+        <li>Feature adoption breadth (% of features used)</li>
+        <li>Core feature engagement (usage of "sticky" features)</li>
+        <li>Usage trends (increasing, stable, declining)</li>
+        <li>Time-to-value metrics (how quickly they activated)</li>
+      </ul>
 
-              <p>
-                These are typically your strongest predictors. Key metrics include:
-              </p>
+      <h3>Support and sentiment features</h3>
 
-              <div className="bg-subtle p-6 rounded-xl my-6">
-                <ul className="space-y-2 text-charcoal/70">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Login frequency and recency (days since last login)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Feature adoption breadth (% of features used)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Core feature engagement (usage of "sticky" features)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Usage trends (increasing, stable, declining)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Time-to-value metrics (how quickly they activated)</span>
-                  </li>
-                </ul>
-              </div>
+      <p>Customer support interactions often signal dissatisfaction before it manifests in usage decline:</p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Support & Sentiment Features</h3>
+      <ul>
+        <li>Support ticket volume and trend</li>
+        <li>Ticket severity distribution</li>
+        <li>Time to resolution</li>
+        <li>NPS/CSAT scores and trends</li>
+        <li>Sentiment from support conversations</li>
+      </ul>
 
-              <p>
-                Customer support interactions often signal dissatisfaction before it manifests in usage decline:
-              </p>
+      <h3>Commercial features</h3>
 
-              <div className="bg-subtle p-6 rounded-xl my-6">
-                <ul className="space-y-2 text-charcoal/70">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Support ticket volume and trend</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Ticket severity distribution</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Time to resolution</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>NPS/CSAT scores and trends</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Sentiment from support conversations</span>
-                  </li>
-                </ul>
-              </div>
+      <p>Contract and billing data provide important context:</p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Commercial Features</h3>
+      <ul>
+        <li>Contract value and term</li>
+        <li>Days until renewal</li>
+        <li>Payment history (late payments, failed charges)</li>
+        <li>Expansion/contraction history</li>
+        <li>Discount level</li>
+      </ul>
 
-              <p>
-                Contract and billing data provide important context:
-              </p>
+      <h2 id="prediction-horizon">Step 3: Choose your prediction horizon</h2>
 
-              <div className="bg-subtle p-6 rounded-xl my-6">
-                <ul className="space-y-2 text-charcoal/70">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Contract value and term</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Days until renewal</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Payment history (late payments, failed charges)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Expansion/contraction history</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Discount level</span>
-                  </li>
-                </ul>
-              </div>
+      <p>How far in advance do you want to predict churn? This decision involves a trade-off:</p>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6">Step 3: Choose Your Prediction Horizon</h2>
+      <ul>
+        <li>
+          <strong>Longer horizons (90+ days):</strong> More time to intervene, but lower accuracy and more false
+          positives
+        </li>
+        <li>
+          <strong>Shorter horizons (30 days):</strong> Higher accuracy, but less time to save the customer
+        </li>
+      </ul>
 
-              <p>
-                How far in advance do you want to predict churn? This decision involves a trade-off:
-              </p>
+      <p>
+        For most growth-stage SaaS companies, we recommend a <strong>60-day prediction horizon</strong>. This provides
+        enough lead time for meaningful intervention while maintaining reasonable accuracy.
+      </p>
 
-              <ul>
-                <li><strong>Longer horizons (90+ days):</strong> More time to intervene, but lower accuracy and more false positives</li>
-                <li><strong>Shorter horizons (30 days):</strong> Higher accuracy, but less time to save the customer</li>
-              </ul>
+      <h2 id="build-validate">Step 4: Build and validate your model</h2>
 
-              <p>
-                For most growth-stage SaaS companies, we recommend a <strong>60-day prediction horizon</strong>. This provides enough lead time for meaningful intervention while maintaining reasonable accuracy.
-              </p>
+      <p>
+        With your features assembled and horizon defined, it's time to build the model. A few practical
+        recommendations:
+      </p>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6">Step 4: Build and Validate Your Model</h2>
+      <h3>Algorithm selection</h3>
 
-              <p>
-                With your features assembled and horizon defined, it's time to build the model. A few practical recommendations:
-              </p>
+      <p>
+        For churn prediction, gradient boosting models (XGBoost, LightGBM) typically outperform other approaches. They
+        handle mixed feature types well, are robust to outliers, and provide feature importance insights that help with
+        explainability.
+      </p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Algorithm Selection</h3>
+      <h3>Handling class imbalance</h3>
 
-              <p>
-                For churn prediction, gradient boosting models (XGBoost, LightGBM) typically outperform other approaches. They handle mixed feature types well, are robust to outliers, and provide feature importance insights that help with explainability.
-              </p>
+      <p>
+        Churn is typically a rare event (5-15% of customers), creating class imbalance. Techniques to address this:
+      </p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Handling Class Imbalance</h3>
+      <ul>
+        <li>Oversample the minority class (SMOTE)</li>
+        <li>Undersample the majority class</li>
+        <li>Use class weights in your loss function</li>
+        <li>Optimize for precision-recall rather than accuracy</li>
+      </ul>
 
-              <p>
-                Churn is typically a rare event (5-15% of customers), creating class imbalance. Techniques to address this:
-              </p>
+      <h3>Validation strategy</h3>
 
-              <ul>
-                <li>Oversample the minority class (SMOTE)</li>
-                <li>Undersample the majority class</li>
-                <li>Use class weights in your loss function</li>
-                <li>Optimize for precision-recall rather than accuracy</li>
-              </ul>
+      <p>
+        Use time-based cross-validation to simulate real-world deployment. Train on historical data, validate on future
+        data. This prevents data leakage and gives you realistic performance estimates.
+      </p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Validation Strategy</h3>
+      <h2 id="make-actionable">Step 5: Make it actionable</h2>
 
-              <p>
-                Use time-based cross-validation to simulate real-world deployment. Train on historical data, validate on future data. This prevents data leakage and gives you realistic performance estimates.
-              </p>
+      <p>
+        A churn prediction model is worthless if it doesn't drive action. The final step is connecting predictions to
+        interventions.
+      </p>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6">Step 5: Make It Actionable</h2>
+      <h3>Risk stratification</h3>
 
-              <p>
-                A churn prediction model is worthless if it doesn't drive action. The final step is connecting predictions to interventions.
-              </p>
+      <p>Convert continuous probability scores into actionable risk tiers:</p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Risk Stratification</h3>
+      <ul>
+        <li>
+          <strong>High Risk (70%+):</strong> Immediate CSM outreach, executive escalation
+        </li>
+        <li>
+          <strong>Medium Risk (40-70%):</strong> Proactive check-in, value reinforcement
+        </li>
+        <li>
+          <strong>Low Risk (&lt;40%):</strong> Standard engagement, expansion opportunities
+        </li>
+      </ul>
 
-              <p>
-                Convert continuous probability scores into actionable risk tiers:
-              </p>
+      <h3>Intervention playbooks</h3>
 
-              <div className="bg-subtle p-6 rounded-xl my-6">
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4">
-                    <div className="w-4 h-4 bg-primary/50 rounded-full"></div>
-                    <div>
-                      <span className="font-bold">High Risk (70%+):</span>
-                      <span className="text-charcoal/70 ml-2">Immediate CSM outreach, executive escalation</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-4 h-4 bg-amber rounded-full"></div>
-                    <div>
-                      <span className="font-bold">Medium Risk (40-70%):</span>
-                      <span className="text-charcoal/70 ml-2">Proactive check-in, value reinforcement</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-4 h-4 bg-secondary/100 rounded-full"></div>
-                    <div>
-                      <span className="font-bold">Low Risk (&lt;40%):</span>
-                      <span className="text-charcoal/70 ml-2">Standard engagement, expansion opportunities</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <p>
+        Develop specific playbooks for each risk tier and churn driver. If the model identifies "declining usage" as the
+        primary risk factor, the intervention should address that specifically—perhaps a training session or feature
+        walkthrough—rather than a generic discount offer.
+      </p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Intervention Playbooks</h3>
+      <h2 id="measuring-success">Measuring success</h2>
 
-              <p>
-                Develop specific playbooks for each risk tier and churn driver. If the model identifies "declining usage" as the primary risk factor, the intervention should address that specifically—perhaps a training session or feature walkthrough—rather than a generic discount offer.
-              </p>
+      <p>Track these metrics to evaluate your churn prediction program:</p>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6">Measuring Success</h2>
+      <ul>
+        <li><strong>Model performance:</strong> Precision, recall, AUC at your chosen threshold</li>
+        <li><strong>Intervention effectiveness:</strong> Save rate for high-risk accounts that received intervention</li>
+        <li><strong>Business impact:</strong> Retained ARR attributable to the program</li>
+        <li><strong>Efficiency:</strong> CSM time spent on high-risk vs. low-risk accounts</li>
+      </ul>
 
-              <p>
-                Track these metrics to evaluate your churn prediction program:
-              </p>
+      <h2 id="bottom-line">The bottom line</h2>
 
-              <ul>
-                <li><strong>Model performance:</strong> Precision, recall, AUC at your chosen threshold</li>
-                <li><strong>Intervention effectiveness:</strong> Save rate for high-risk accounts that received intervention</li>
-                <li><strong>Business impact:</strong> Retained ARR attributable to the program</li>
-                <li><strong>Efficiency:</strong> CSM time spent on high-risk vs. low-risk accounts</li>
-              </ul>
+      <p>
+        Churn prediction isn't magic—it's applied data science. The companies that succeed are those that invest in the
+        fundamentals: clean data, thoughtful feature engineering, and tight integration between predictions and actions.
+      </p>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6">The Bottom Line</h2>
-
-              <p>
-                Churn prediction isn't magic—it's applied data science. The companies that succeed are those that invest in the fundamentals: clean data, thoughtful feature engineering, and tight integration between predictions and actions.
-              </p>
-
-              <p>
-                Start simple, prove value, then iterate. A basic model that drives action beats a sophisticated model that sits on a shelf.
-              </p>
-            </motion.article>
-
-            {/* Sidebar */}
-            <motion.aside
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="lg:col-span-4"
-            >
-              <div className="sticky top-32 space-y-8">
-                {/* Share */}
-                <div className="bg-subtle p-6 rounded-xl">
-                  <h3 className="font-bold mb-4">Share this article</h3>
-                  <div className="flex gap-3">
-                    <button className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-charcoal hover:bg-primary/90 transition-colors">
-                      <Linkedin className="w-5 h-5" />
-                    </button>
-                    <button className="w-10 h-10 bg-[#1DA1F2] rounded-full flex items-center justify-center text-white hover:opacity-80 transition-opacity">
-                      <Twitter className="w-5 h-5" />
-                    </button>
-                    <button className="w-10 h-10 bg-background rounded-full flex items-center justify-center text-charcoal hover:bg-charcoal/80 transition-colors">
-                      <Share2 className="w-5 h-5" />
-                    </button>
-                  </div>
-                </div>
-
-                {/* Key Takeaways */}
-                <div className="bg-subtle p-6 rounded-xl">
-                  <h3 className="font-bold mb-4">Key Takeaways</h3>
-                  <ul className="space-y-3 text-sm text-charcoal/70">
-                    <li className="flex gap-2">
-                      <span className="text-primary font-bold">1.</span>
-                      Product usage features are typically the strongest churn predictors
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary font-bold">2.</span>
-                      60-day prediction horizon balances accuracy with intervention time
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary font-bold">3.</span>
-                      Gradient boosting models (XGBoost) work well for churn prediction
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary font-bold">4.</span>
-                      Connect predictions to specific intervention playbooks
-                    </li>
-                  </ul>
-                </div>
-
-                {/* CTA */}
-                <div className="bg-primary p-6 rounded-xl text-charcoal">
-                  <h3 className="font-bold mb-3">Need help building your churn prediction system?</h3>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    We've helped 50+ SaaS companies reduce churn with predictive analytics.
-                  </p>
-                  <Link href="/contact">
-                    <Button className="w-full bg-white text-primary hover:bg-white/90">
-                      Schedule a Consultation
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-            </motion.aside>
-          </div>
-        </div>
-      </section>
-
-      {/* Related Content */}
-      <RelatedContent 
-        items={[
-          {
-            title: "B2B software company reduces churn by 38%",
-            category: "Case Study",
-            link: "/solutions/data-driven-customer-intelligence/case-studies/saas-churn-reduction",
-            image: "/images/capabilities/cap-office-women.jpg"
-          },
-          {
-            title: "Beyond Segmentation: The Future of Customer Intelligence",
-            category: "Strategy",
-            link: "/solutions/data-driven-customer-intelligence/insights/beyond-segmentation",
-            image: "/images/capabilities/cap-hologram.jpg"
-          },
-          {
-            title: "Hyper-Personalization at Scale: A Practical Guide",
-            category: "Marketing",
-            link: "/solutions/data-driven-customer-intelligence/insights/hyper-personalization",
-            image: "/images/capabilities/cap-colleagues-smile.jpg"
-          }
-        ]}
-      />
-
-      <Footer />
-    </div>
+      <p>
+        Start simple, prove value, then iterate. A basic model that drives action beats a sophisticated model that sits
+        on a shelf.
+      </p>
+    </InsightArticleV2>
   );
 }
