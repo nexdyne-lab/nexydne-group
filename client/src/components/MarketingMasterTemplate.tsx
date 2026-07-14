@@ -241,7 +241,7 @@ export default function MarketingMasterTemplate(
                         <span className="block text-[11px] font-semibold uppercase tracking-[0.16em] text-primary mb-2">
                           {article.tag}
                         </span>
-                        <span className="block text-[1.15rem] md:text-[1.25rem] font-semibold text-black tracking-[-0.01em] leading-[1.35] group-hover:text-primary transition-colors">
+                        <span className="block text-[1.35rem] md:text-[1.5rem] font-semibold text-black tracking-[-0.015em] leading-[1.3] group-hover:text-primary transition-colors">
                           {article.title}
                         </span>
                       </span>
@@ -492,7 +492,7 @@ export default function MarketingMasterTemplate(
                             className="h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.03]"
                           />
                         </div>
-                        <h3 className="text-[1.2rem] font-semibold text-black tracking-[-0.01em] leading-[1.35] mb-3 group-hover:text-primary transition-colors">
+                        <h3 className="text-[1.35rem] md:text-[1.5rem] font-semibold text-black tracking-[-0.015em] leading-[1.3] mb-3 group-hover:text-primary transition-colors">
                           {c.title}
                         </h3>
                         <p className="text-[0.95rem] text-black/60 leading-[1.5]">
@@ -611,7 +611,7 @@ export default function MarketingMasterTemplate(
                       className="w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.03]"
                     />
                   </div>
-                  <h3 className="text-[1.2rem] font-semibold text-black tracking-[-0.01em] leading-[1.35] mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-[1.35rem] md:text-[1.5rem] font-semibold text-black tracking-[-0.015em] leading-[1.3] mb-3 group-hover:text-primary transition-colors">
                     {insight.title}
                   </h3>
                   <p className="text-[0.95rem] text-black/60 leading-[1.5]">
