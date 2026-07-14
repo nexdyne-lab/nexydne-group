@@ -162,8 +162,7 @@ export function CapabilitiesExplorer() {
             className="max-w-xl relative z-10"
           >
             {/* Headline */}
-            <h2 
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] text-charcoal leading-[1.1] mb-4 sm:mb-6"
+            <h2 className="nx-h2 text-charcoal mb-4 sm:mb-6"
             >
               How can we assist you today?
             </h2>

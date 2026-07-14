@@ -41,7 +41,7 @@ export function TestimonialsSection() {
           <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-charcoal/60 mb-4 sm:mb-6 block">
             CLIENT TESTIMONIALS
           </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold mb-4 sm:mb-6 text-charcoal px-2 sm:px-0">
+          <h2 className="nx-h2 mb-4 sm:mb-6 text-charcoal px-2 sm:px-0">
             Trusted by industry leaders
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-charcoal/70">

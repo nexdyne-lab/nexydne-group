@@ -71,7 +71,7 @@ export function SpotlightStories() {
               NexDyne Spotlight
             </span>
           </div>
-          <h2 className="text-[1.6rem] md:text-[1.9rem] lg:text-[2.1rem] font-bold tracking-[-0.02em] leading-[1.15] text-charcoal">
+          <h2 className="nx-h2 text-charcoal">
             What&apos;s moving in AI right now.
           </h2>
         </div>

@@ -81,7 +81,7 @@ export function BusinessBuildingInitiatives() {
             NexDyne Initiatives
           </span>
 
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight leading-[1.2] sm:leading-[1.15] text-charcoal mb-4 sm:mb-6 max-w-4xl mx-auto px-2 sm:px-0">
+          <h2 className="nx-h2 text-charcoal mb-4 sm:mb-6 max-w-4xl mx-auto px-2 sm:px-0">
             Building intelligent, competitive, and resilient growing businesses across the United States
           </h2>
           

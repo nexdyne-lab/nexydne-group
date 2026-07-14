@@ -252,7 +252,7 @@ export default function InsightArticleLayout({
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-charcoal">
+                <h2 className="nx-h2 mb-4 text-charcoal">
                   Related Thinking
                 </h2>
                 <p className="text-charcoal/60">Continue exploring our latest perspectives.</p>

@@ -127,7 +127,7 @@ export default function Footer() {
                 className="h-7 sm:h-9 w-auto"
               />
             </Link>
-            <h2 className="mt-6 sm:mt-8 max-w-[20ch] text-xl sm:text-3xl md:text-[2.4rem] leading-[1.15] tracking-[-0.02em] text-white/90">
+            <h2 className="nx-h2 mt-6 sm:mt-8 max-w-[20ch] text-white/90">
               Human intelligence, governed and scaled.
             </h2>
           </div>

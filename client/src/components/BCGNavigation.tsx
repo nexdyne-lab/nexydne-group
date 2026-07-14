@@ -485,7 +485,7 @@ export default function BCGNavigation() {
                   <div className="animate-in fade-in duration-300">
                     {/* Category Header */}
                     <div className="mb-8">
-                      <h2 className="text-2xl font-bold text-charcoal mb-2">
+                      <h2 className="nx-h2 text-charcoal mb-2">
                         {currentCategory.name}
                       </h2>
                       <p className="text-muted-foreground">
@@ -543,7 +543,7 @@ export default function BCGNavigation() {
                 {/* Default state when menu first opens */}
                 {!activeSection && (
                   <div className="flex flex-col items-start justify-center h-64">
-                    <h2 className="text-3xl font-bold text-charcoal mb-4">
+                    <h2 className="nx-h2 text-charcoal mb-4">
                       How can we assist you today?
                     </h2>
                     <p className="text-muted-foreground text-lg">

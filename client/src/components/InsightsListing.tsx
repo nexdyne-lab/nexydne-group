@@ -112,7 +112,7 @@ export default function InsightsListing({
           <span className="inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/50 mb-6">
             <span className="h-px w-8 bg-primary" /> Take the next step <span className="h-px w-8 bg-primary" />
           </span>
-          <h2 className="text-[1.9rem] md:text-[2.4rem] font-medium tracking-[-0.02em] leading-[1.1] max-w-2xl mx-auto">
+          <h2 className="nx-h2 max-w-2xl mx-auto">
             Want to discuss these topics?
           </h2>
           <p className="text-[15px] md:text-base text-white/70 leading-[1.7] mt-5 max-w-xl mx-auto">

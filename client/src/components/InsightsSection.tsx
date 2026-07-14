@@ -19,7 +19,7 @@ export function InsightsSection({ insights }: InsightsSectionProps) {
     <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal">
       <div className="container">
         <div className="text-center mb-8 sm:mb-12 md:mb-8 sm:mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="nx-h2 text-white mb-6">
             OUR INSIGHTS
           </h2>
           <p className="text-lg text-white/60 max-w-4xl mx-auto">

@@ -48,7 +48,7 @@ export function TestimonialSection({ testimonials, title = "What Our Clients Say
     <section className="py-12 sm:py-16 lg:py-20 bg-off-white">
       <div className="container">
         <div className="text-center mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
-          <h2 className="text-4xl font-bold text-charcoal mb-4">{title}</h2>
+          <h2 className="nx-h2 text-charcoal mb-4">{title}</h2>
           {subtitle && (
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{subtitle}</p>
           )}

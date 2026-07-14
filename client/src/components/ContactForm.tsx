@@ -65,7 +65,7 @@ export default function ContactForm({
   return (
     <div className="bg-white rounded-xl sm:rounded-xl sm:rounded-2xl shadow-xl p-8 md:p-12">
       <div className="mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-4">
+        <h2 className="nx-h2 text-charcoal mb-4">
           {title}
         </h2>
         <p className="text-lg text-muted-foreground">

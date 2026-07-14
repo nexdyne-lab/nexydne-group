@@ -191,7 +191,7 @@ export default function MarketingMasterTemplate(
             <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-amber mb-5 drop-shadow-[0_1px_10px_rgba(0,0,0,0.55)]">
               Featured thinking · {thoughtLeadership.featured.tag}
             </span>
-            <h2 className="max-w-[26ch] font-bold tracking-[-0.03em] leading-[1.08] text-[1.9rem] md:text-[2.5rem] text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
+            <h2 className="nx-h2 max-w-[26ch] text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
               {thoughtLeadership.featured.title}
             </h2>
             <p className="mt-4 hidden sm:block max-w-[54ch] text-[1.02rem] leading-[1.6] text-white/90 drop-shadow-[0_1px_12px_rgba(0,0,0,0.55)]">

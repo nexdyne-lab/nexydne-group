@@ -14,7 +14,7 @@ export function FeaturedInitiatives() {
           transition={{ duration: 0.6 }}
           className="mb-8 sm:mb-12 md:mb-8 sm:mb-12 md:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1] text-charcoal">
+          <h2 className="nx-h2 text-charcoal">
             Our <span className="text-secondary">Initiatives</span>
           </h2>
         </motion.div>

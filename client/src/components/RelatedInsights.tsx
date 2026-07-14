@@ -43,7 +43,7 @@ export default function RelatedInsights() {
       <div className="container px-6 md:px-12">
         <div className="flex items-end justify-between mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
           <div>
-            <h2 className="text-3xl font-bold text-white mb-4">Featured Thinking</h2>
+            <h2 className="nx-h2 text-white mb-4">Featured Thinking</h2>
             <p className="text-muted-foreground/70 max-w-xl">
               Latest perspectives from our engineering and strategy teams.
             </p>

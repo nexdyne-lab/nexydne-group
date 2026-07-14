@@ -40,7 +40,7 @@ export function Capabilities() {
     <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal text-white">
       <div className="container px-4 md:px-6">
         <div className="mb-8 sm:mb-12 md:mb-8 sm:mb-12 md:mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">Capabilities</h2>
+          <h2 className="nx-h2 mb-6">Capabilities</h2>
           <p className="text-xl text-muted-foreground/50 max-w-3xl">
             We bring world-class expertise tailored to the unique challenges of US growing companies, helping you navigate complexity and unlock value.
           </p>

@@ -26,7 +26,7 @@ export default function RelatedCaseStudies({
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12 gap-4">
           <div>
-            <h2 className="text-3xl font-bold text-white mb-4">{title}</h2>
+            <h2 className="nx-h2 text-white mb-4">{title}</h2>
             <p className="text-white/70">{subtitle}</p>
           </div>
           <Link href="/cases" className="hidden md:flex items-center text-secondary hover:text-white transition-colors font-medium">

@@ -37,7 +37,7 @@ export function ResearchInsight({
               Our Research Shows
             </span>
           </div>
-          <h2 className="text-4xl font-bold text-charcoal mb-4">{title}</h2>
+          <h2 className="nx-h2 text-charcoal mb-4">{title}</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{subtitle}</p>
         </div>
 

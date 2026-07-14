@@ -41,7 +41,7 @@ export function RelatedContent({
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-4 sm:mb-6 block">
               Insights
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-4">{title}</h2>
+            <h2 className="nx-h2 text-charcoal mb-4">{title}</h2>
             {subtitle && (
               <p className="text-charcoal/60 max-w-xl text-lg">
                 {subtitle}

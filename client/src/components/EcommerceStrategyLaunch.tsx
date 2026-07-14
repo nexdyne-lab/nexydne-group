@@ -291,8 +291,7 @@ export default function EcommerceStrategyLaunch() {
             <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
               The Outcome
             </span>
-            <h2
-              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+            <h2 className="nx-h2 text-white mb-8"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               Programs that decide the commercial model before they pick the platform launch 30 to 50 percent faster — and contribute revenue inside the first fiscal year, not the third.
@@ -422,8 +421,7 @@ export default function EcommerceStrategyLaunch() {
                 <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
                   Ready to Talk?
                 </span>
-                <h2
-                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                <h2 className="nx-h2 text-white mb-10"
                   style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
                 >
                   Bring our ecommerce launch team into your next channel-strategy conversation.

@@ -122,7 +122,7 @@ export default function CaseStudyArticle({
       {/* Results Summary */}
       <section className="py-16 bg-subtle">
         <div className="container max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-charcoal mb-8 text-center">
+          <h2 className="nx-h2 text-charcoal mb-8 text-center">
             Key Results
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -145,7 +145,7 @@ export default function CaseStudyArticle({
       {relatedCaseStudies.length > 0 && (
         <section className="py-16 bg-white">
           <div className="container max-w-6xl mx-auto px-4">
-            <h2 className="text-2xl font-bold text-charcoal mb-8">
+            <h2 className="nx-h2 text-charcoal mb-8">
               Related Case Studies
             </h2>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
@@ -169,7 +169,7 @@ export default function CaseStudyArticle({
       {/* CTA Section */}
       <section className="py-16 bg-charcoal text-white">
         <div className="container max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="nx-h2 mb-4">
             Ready to Achieve Similar Results?
           </h2>
           <p className="text-xl text-muted-foreground/50 mb-8">

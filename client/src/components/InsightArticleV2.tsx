@@ -350,7 +350,7 @@ export default function InsightArticleV2({
             <span className="inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/50 mb-6">
               <span className="h-px w-8 bg-primary" /> Take the next step
             </span>
-            <h2 className="text-[1.9rem] md:text-[2.6rem] font-medium tracking-[-0.02em] leading-[1.1]">
+            <h2 className="nx-h2">
               Ready to put this into practice?
             </h2>
             <p className="text-[15px] md:text-base text-white/70 leading-[1.7] mt-5 max-w-2xl">

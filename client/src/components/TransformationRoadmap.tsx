@@ -32,7 +32,7 @@ export function TransformationRoadmap({
               Implementation Timeline
             </span>
           </div>
-          <h2 className="text-4xl font-bold text-charcoal mb-4">{title}</h2>
+          <h2 className="nx-h2 text-charcoal mb-4">{title}</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-6">{subtitle}</p>
           {totalDuration && (
             <div className="inline-flex items-center gap-2 bg-white border border-border rounded-full px-6 py-3 shadow-sm">

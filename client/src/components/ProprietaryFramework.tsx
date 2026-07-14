@@ -32,7 +32,7 @@ export function ProprietaryFramework({
               Proprietary Methodology
             </span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="nx-h2 text-white mb-4">
             {name}{trademark && <sup className="text-2xl">™</sup>}
           </h2>
           <p className="text-xl text-amber font-medium mb-6">{tagline}</p>
