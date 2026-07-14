@@ -995,6 +995,24 @@ import RetailEngagement from "./pages/cases/industries/RetailEngagement";
 import SaasOnboarding from "./pages/cases/industries/SaasOnboarding";
 import SaasMeddiccTransformation from "./pages/cases/industries/SaasMeddiccTransformation";
 import ManufacturerChannelTransformation from "./pages/cases/industries/ManufacturerChannelTransformation";
+import BankCloudMigration from "./pages/cases/industries/BankCloudMigration";
+import ManufacturingErp from "./pages/cases/industries/ManufacturingErp";
+import LogisticsApiPlatform from "./pages/cases/industries/LogisticsApiPlatform";
+import HealthcareSecurity from "./pages/cases/industries/HealthcareSecurity";
+import InsuranceModernization from "./pages/cases/industries/InsuranceModernization";
+import RetailDataPlatform from "./pages/cases/industries/RetailDataPlatform";
+import GlobalRetailerAiPersonalizationFeature from "./pages/cases/industries/GlobalRetailerAiPersonalizationFeature";
+import FinancialInstitutionLoanAutomationFeature from "./pages/cases/industries/FinancialInstitutionLoanAutomationFeature";
+import HealthcarePredictiveAnalyticsFeature from "./pages/cases/industries/HealthcarePredictiveAnalyticsFeature";
+import LogisticsShipmentAutomationFeature from "./pages/cases/industries/LogisticsShipmentAutomationFeature";
+import EcommerceOrderFulfillmentFeature from "./pages/cases/industries/EcommerceOrderFulfillmentFeature";
+import SaasCustomerOnboardingFeature from "./pages/cases/industries/SaasCustomerOnboardingFeature";
+import CareerConnectEducationFeature from "./pages/cases/industries/CareerConnectEducationFeature";
+import SustainableFoodSystemsFeature from "./pages/cases/industries/SustainableFoodSystemsFeature";
+import ManufacturingPredictiveMaintenanceFeature from "./pages/cases/industries/ManufacturingPredictiveMaintenanceFeature";
+import HospitalWorkflowAutomation from "./pages/cases/industries/HospitalWorkflowAutomation";
+import LogisticsScale from "./pages/cases/industries/LogisticsScale";
+import WealthManagementOnboarding from "./pages/cases/industries/WealthManagementOnboarding";
 import ChemicalPlantOptimization from "./pages/cases/industries/ChemicalPlantOptimization";
 import ChemicalSupplyChain from "./pages/cases/industries/ChemicalSupplyChain";
 import ChemicalSustainability from "./pages/cases/industries/ChemicalSustainability";
@@ -1894,6 +1912,25 @@ function Router() {
         <Route path="/cases/saas-onboarding" component={SaasOnboarding} />
         <Route path="/cases/saas-meddicc-transformation" component={SaasMeddiccTransformation} />
         <Route path="/cases/manufacturer-channel-transformation" component={ManufacturerChannelTransformation} />
+        <Route path="/capabilities/technology/case-studies/bank-cloud-migration" component={BankCloudMigration} />
+        <Route path="/capabilities/technology/case-studies/manufacturing-erp" component={ManufacturingErp} />
+        <Route path="/capabilities/technology/case-studies/logistics-api-platform" component={LogisticsApiPlatform} />
+        <Route path="/capabilities/technology/case-studies/healthcare-security" component={HealthcareSecurity} />
+        <Route path="/capabilities/technology/case-studies/insurance-modernization" component={InsuranceModernization} />
+        <Route path="/capabilities/technology/case-studies/retail-data-platform" component={RetailDataPlatform} />
+        <Route path="/case-studies/global-retailer-ai-personalization" component={GlobalRetailerAiPersonalizationFeature} />
+        <Route path="/case-studies/financial-institution-loan-automation" component={FinancialInstitutionLoanAutomationFeature} />
+        <Route path="/case-studies/healthcare-predictive-analytics" component={HealthcarePredictiveAnalyticsFeature} />
+        <Route path="/case-studies/logistics-shipment-automation" component={LogisticsShipmentAutomationFeature} />
+        <Route path="/case-studies/ecommerce-order-fulfillment" component={EcommerceOrderFulfillmentFeature} />
+        <Route path="/case-studies/saas-customer-onboarding" component={SaasCustomerOnboardingFeature} />
+        <Route path="/case-studies/career-connect-education" component={CareerConnectEducationFeature} />
+        <Route path="/case-studies/sustainable-food-systems" component={SustainableFoodSystemsFeature} />
+        <Route path="/case-studies/manufacturing-predictive-maintenance" component={ManufacturingPredictiveMaintenanceFeature} />
+        <Route path="/cases/hospital-workflow-automation" component={HospitalWorkflowAutomation} />
+        <Route path="/cases/logistics-scale" component={LogisticsScale} />
+        <Route path="/cases/retail-omnichannel" component={RetailOmnichannel} />
+        <Route path="/cases/wealth-management-onboarding" component={WealthManagementOnboarding} />
         <Route path="/cases/chemical-plant-optimization" component={ChemicalPlantOptimization} />
         <Route path="/cases/chemical-supply-chain" component={ChemicalSupplyChain} />
         <Route path="/cases/chemical-sustainability" component={ChemicalSustainability} />
