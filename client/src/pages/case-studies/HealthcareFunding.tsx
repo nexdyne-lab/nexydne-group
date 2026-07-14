@@ -36,7 +36,7 @@ export default function HealthcareFunding() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Case Study · Medical Devices
             </span>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-4">
+            <h1 className="nx-h1 mb-4">
               <span className="text-primary">$28M</span> strategic healthcare investment
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">

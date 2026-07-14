@@ -22,7 +22,7 @@ export default function BlogDigitalTransformation() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
             <div>
               <p className="text-sm font-semibold tracking-wider uppercase mb-4 text-primary">NEXDYNE INSIGHTS</p>
-              <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-charcoal mb-3 leading-tight">
+              <h1 className="nx-h1 text-charcoal mb-3">
                 5 signs your business is ready for digital transformation
               </h1>
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-5 sm:mb-6 md:mb-8">

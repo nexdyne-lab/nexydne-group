@@ -26,7 +26,7 @@ export default function NotFound() {
                 <span>Error 404</span>
               </div>
               
-              <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-charcoal tracking-tight">
+              <h1 className="nx-h1 text-charcoal">
                 Page not <span className="text-secondary">found</span>
               </h1>
               

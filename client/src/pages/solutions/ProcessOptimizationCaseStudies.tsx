@@ -197,7 +197,7 @@ export default function ProcessOptimizationCaseStudies() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Process Optimization Case Studies
             </span>
-            <h1 className="text-[2.25rem] md:text-[3.25rem] font-bold tracking-tight leading-[1.05] mb-4">
+            <h1 className="nx-h1 mb-4">
               Real results from <br />
               <span className="text-primary">intelligent automation</span>
             </h1>

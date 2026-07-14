@@ -20,7 +20,7 @@ export default function BlogROIMeasurement() {
       <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="container max-w-5xl">
           <p className="text-sm font-semibold tracking-wider uppercase mb-4 text-primary">NEXDYNE INSIGHTS</p>
-          <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-charcoal mb-5 sm:mb-3 md:mb-4 leading-tight max-w-4xl">
+          <h1 className="nx-h1 text-charcoal mb-5 sm:mb-3 md:mb-4 max-w-4xl">
             Measuring ROI: What to expect in your first year of automation
           </h1>
           <div className="flex items-center gap-4 sm:p-5 md:p-6 text-sm text-muted-foreground mb-6 sm:mb-8 md:mb-12">

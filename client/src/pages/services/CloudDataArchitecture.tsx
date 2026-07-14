@@ -20,7 +20,7 @@ export default function CloudDataArchitecture() {
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-4">
+              <h1 className="nx-h1 text-white mb-4">
                 Cloud & Data Architecture
               </h1>
               

@@ -60,7 +60,7 @@ export default function CustomModelTuning() {
               Custom Model Tuning
             </span>
             
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.05]">
+            <h1 className="nx-h1 text-charcoal mb-2 sm:mb-3 md:mb-4">
               Custom Model <br />
               <span className="text-primary">Tuning</span>
             </h1>

@@ -139,7 +139,7 @@ export default function MidMarketAIAccess() {
               The AI Access Program
             </span>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
+            <h1 className="nx-h1 text-charcoal mb-4">
               Expanding access to enterprise-grade AI for America's growing companies
             </h1>
             

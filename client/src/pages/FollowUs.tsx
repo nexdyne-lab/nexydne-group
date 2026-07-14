@@ -61,7 +61,7 @@ export default function FollowUs() {
       <section className="bg-white pt-32 pb-16 border-b border-border/50">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl">
-            <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-charcoal tracking-tight mb-3">
+            <h1 className="nx-h1 text-charcoal mb-3">
               Follow Us
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">

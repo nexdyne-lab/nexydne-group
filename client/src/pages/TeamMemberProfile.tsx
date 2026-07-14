@@ -432,7 +432,7 @@ export default function TeamMemberProfile() {
         <Navigation />
         <div className="container py-16 sm:py-20 md:py-24 lg:py-16 sm:py-20 md:py-24 lg:py-32">
           <div className="max-w-2xl mx-auto text-center">
-            <h1 className="text-4xl font-bold text-charcoal mb-4">Team Member Not Found</h1>
+            <h1 className="nx-h1 text-charcoal mb-4">Team Member Not Found</h1>
             <p className="text-lg text-muted-foreground mb-5 sm:mb-6 md:mb-8">The team member you're looking for doesn't exist.</p>
             <Link href="/team" className="inline-flex items-center gap-2 px-6 py-3 bg-charcoal text-white font-semibold rounded-lg hover:bg-charcoal transition-colors">
                 <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4" />
@@ -488,7 +488,7 @@ export default function TeamMemberProfile() {
 
             {/* Profile Info */}
             <div>
-              <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-charcoal mb-4 leading-tight tracking-tight">
+              <h1 className="nx-h1 text-charcoal mb-4">
                 {member.name}
               </h1>
               <p className="text-xl font-bold text-primary mb-3 tracking-wide uppercase">

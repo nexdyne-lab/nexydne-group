@@ -24,7 +24,7 @@ export default function CustomerDataPlatform() {
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-[2.25rem] md:text-[2.75rem] font-bold mb-4">
+              <h1 className="nx-h1 mb-4">
                 Customer data platform (CDP)
               </h1>
             </div>

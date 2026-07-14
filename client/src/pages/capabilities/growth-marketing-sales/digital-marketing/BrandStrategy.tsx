@@ -28,7 +28,7 @@ export default function BrandStrategy() {
               <span className="mx-2">/</span>
               <span className="text-charcoal">Brand Strategy & Positioning</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-charcoal mb-3 leading-[1.1]">
+            <h1 className="nx-h1 text-charcoal mb-3">
               Brand Strategy & Positioning
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light">

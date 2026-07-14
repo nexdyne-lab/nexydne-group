@@ -29,7 +29,7 @@ export default function PostMergerIntegration() {
           <Breadcrumbs />
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">Case Study · Professional Services</span>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-4">
+            <h1 className="nx-h1 mb-4">
               <span className="text-primary">120%</span> synergy capture through disciplined integration
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">

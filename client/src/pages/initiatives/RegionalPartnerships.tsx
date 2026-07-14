@@ -140,7 +140,7 @@ export default function RegionalPartnerships() {
               Regional Business Intelligence Partnerships
             </span>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
+            <h1 className="nx-h1 text-charcoal mb-4">
               Partnering with local chambers to build data-driven growth ecosystems
             </h1>
             

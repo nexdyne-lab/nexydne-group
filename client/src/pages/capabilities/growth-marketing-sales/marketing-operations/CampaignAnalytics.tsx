@@ -37,7 +37,7 @@ export default function CampaignAnalytics() {
               </span>
             </Link>
             
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-2 sm:mb-3 md:mb-4">
+            <h1 className="nx-h1 mb-2 sm:mb-3 md:mb-4">
               Campaign Performance <br />
               <span className="text-primary">Analytics</span>
             </h1>

@@ -31,7 +31,7 @@ export default function BlogAIAutomation() {
         <div className="relative container h-full flex items-end pb-16">
           <div className="max-w-4xl text-white">
             <p className="text-sm font-semibold tracking-wider uppercase mb-4 text-amber">NEXDYNE INSIGHTS</p>
-            <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 leading-tight">
+            <h1 className="nx-h1 mb-3">
               How AI and automation are reshaping business operations
             </h1>
             <div className="flex items-center gap-4 sm:p-5 md:p-6 text-sm">

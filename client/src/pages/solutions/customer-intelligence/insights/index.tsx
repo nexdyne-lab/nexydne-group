@@ -103,7 +103,7 @@ export default function CustomerIntelligenceInsights() {
               Insights
             </span>
             
-            <h1 className="text-[2.25rem] md:text-[2.75rem] lg:text-[3.25rem] font-bold tracking-tight text-charcoal leading-[1.1] mb-4 max-w-4xl">
+            <h1 className="nx-h1 text-charcoal mb-4 max-w-4xl">
               Customer Intelligence Insights
             </h1>
             

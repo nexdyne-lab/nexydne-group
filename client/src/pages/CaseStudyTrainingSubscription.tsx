@@ -39,7 +39,7 @@ export default function CaseStudyTrainingSubscription() {
                   Professional Services • Subscription
                 </span>
 
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-charcoal leading-[1.1] mb-5 sm:mb-3 md:mb-4">
+                <h1 className="nx-h1 text-charcoal mb-5 sm:mb-3 md:mb-4">
                   Training company launches subscription platform with 2,400 members
                 </h1>
 

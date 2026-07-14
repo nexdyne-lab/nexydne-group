@@ -40,7 +40,7 @@ export default function CaseStudyDetail() {
       <div className="min-h-screen bg-background text-charcoal flex items-center justify-center">
         <Navigation />
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">Case Study Not Found</h1>
+          <h1 className="nx-h1 mb-4">Case Study Not Found</h1>
           <Button onClick={() => setLocation("/cases")} variant="outline" className="text-charcoal border-charcoal/25 bg-transparent hover:border-primary">
             Return to Case Studies
           </Button>

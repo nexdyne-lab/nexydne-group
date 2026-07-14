@@ -24,7 +24,7 @@ export default function DataIntegrationDashboards() {
               <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
               Back to Marketing Operations
             </Link>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 leading-tight">
+            <h1 className="nx-h1 mb-3">
               Data Integration & Intelligence
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-charcoal/70 max-w-3xl font-light leading-relaxed">

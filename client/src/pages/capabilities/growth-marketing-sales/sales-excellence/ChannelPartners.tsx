@@ -21,7 +21,7 @@ export default function ChannelPartners() {
                 Sales Excellence
               </Link>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1]">
+            <h1 className="nx-h1 text-charcoal mb-2 sm:mb-3 md:mb-4">
               Channel Partner Management
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light">

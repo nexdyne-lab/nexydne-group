@@ -140,7 +140,7 @@ export default function IntelligenceCommons() {
               NexDyne Intelligence Commons
             </span>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
+            <h1 className="nx-h1 text-charcoal mb-4">
               Democratizing business intelligence for growing companies
             </h1>
             

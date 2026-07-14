@@ -72,7 +72,7 @@ export default function CaseStudyDetail() {
     return (
       <div className="min-h-screen bg-background text-charcoal flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">Case Study Not Found</h1>
+          <h1 className="nx-h1 mb-4">Case Study Not Found</h1>
           <Link href="/venture-portfolio">
             <button className="text-secondary hover:underline flex items-center gap-2 mx-auto">
               <ArrowLeft className="w-4 h-4" /> Back to Portfolio
@@ -109,7 +109,7 @@ export default function CaseStudyDetail() {
             {study.industry}
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+          <h1 className="nx-h1 mb-4">
             {study.title}
           </h1>
           <p className="text-2xl text-muted-foreground/50 mb-8 font-light">

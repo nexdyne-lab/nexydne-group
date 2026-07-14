@@ -22,7 +22,7 @@ const StackOrchestration = () => {
               <Layers className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>MarTech & Stack Architecture</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-charcoal mb-3 leading-tight">
+            <h1 className="nx-h1 text-charcoal mb-3">
               Stack Orchestration & <br />
               <span className="text-charcoal">
                 Ecosystem Design

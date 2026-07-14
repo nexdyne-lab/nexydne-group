@@ -31,7 +31,7 @@ export function CRO() {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl">
             <Breadcrumbs className="mb-5 sm:mb-6 md:mb-8" />
-            <h1 className="text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3 md:mb-4 leading-tight">
+            <h1 className="nx-h1 text-charcoal mb-2 sm:mb-3 md:mb-4">
               Conversion Rate <br/>
               <span className="text-secondary">Optimization (CRO)</span>
             </h1>

@@ -37,7 +37,7 @@ export default function MartechAssessment() {
               </span>
             </Link>
             
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="nx-h1 mb-5 sm:mb-3 md:mb-4">
               MarTech Stack <br />
               <span className="text-primary">Assessment</span>
             </h1>

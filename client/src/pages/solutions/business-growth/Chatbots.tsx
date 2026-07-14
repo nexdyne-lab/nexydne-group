@@ -32,7 +32,7 @@ export default function Chatbots() {
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-[2.75rem] font-bold mb-3">Chatbots</h1>
+              <h1 className="nx-h1 mb-3">Chatbots</h1>
             </div>
             <div>
               <p className="text-xl leading-relaxed">

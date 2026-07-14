@@ -48,7 +48,7 @@ export function CaseStudies() {
         <div className="px-6 sm:px-8 md:px-12 lg:px-16">
           <div className="max-w-4xl">
             <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">Case Studies</span>
-            <h1 className="text-3xl sm:text-4xl md:text-[2.75rem] lg:text-[3.25rem] text-charcoal leading-[1.1] mb-6" style={{ fontWeight: 500, letterSpacing: "-0.02em" }}>Impact Stories</h1>
+            <h1 className="nx-h1 text-charcoal mb-6" style={{ fontWeight: 500, letterSpacing: "-0.02em" }}>Impact Stories</h1>
             <p className="text-base sm:text-lg text-charcoal/70 leading-[1.7] max-w-2xl">Explore how we create lasting value for our clients, communities, and colleagues through strategic consulting and intelligent automation.</p>
           </div>
         </div>

@@ -27,7 +27,7 @@ export default function DataPlatform() {
         
         <div className="container relative py-16 sm:py-20 md:py-24 lg:py-16 sm:py-20 md:py-24 lg:py-32">
           <div className="max-w-4xl">
-            <h1 className="text-6xl md:text-7xl font-bold mb-5 sm:mb-3 md:mb-4 leading-tight">
+            <h1 className="nx-h1 mb-5 sm:mb-3 md:mb-4">
               Data Platform
             </h1>
             <p className="text-2xl leading-relaxed opacity-90">

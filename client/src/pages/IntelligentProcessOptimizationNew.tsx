@@ -26,7 +26,7 @@ export default function IntelligentProcessOptimizationNew() {
         <div className="container relative py-16 sm:py-20 md:py-24 lg:py-16 sm:py-20 md:py-24 lg:py-32">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-sm font-semibold tracking-widest uppercase mb-6 text-amber">Solutions</p>
-            <h1 className="text-6xl md:text-7xl font-bold mb-5 sm:mb-3 md:mb-4 leading-tight">
+            <h1 className="nx-h1 mb-5 sm:mb-3 md:mb-4">
               Intelligent Process Optimization
             </h1>
             <p className="text-2xl leading-relaxed opacity-90 max-w-3xl mx-auto">

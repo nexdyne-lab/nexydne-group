@@ -106,7 +106,7 @@ export default function GrowthSimulator() {
               <BarChart3 className="w-4 h-4 text-secondary" />
               <span className="text-sm font-medium text-secondary uppercase tracking-wider">Growth Simulator</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-3">
+            <h1 className="nx-h1 mb-3">
               Visualize your <br />
               <span className="text-charcoal">
                 venture potential.

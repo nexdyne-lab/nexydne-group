@@ -22,7 +22,7 @@ export default function Ecommerce() {
               <span className="text-charcoal">E-commerce</span>
             </nav>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 text-charcoal">
+            <h1 className="nx-h1 mb-3 text-charcoal">
               E-commerce Solutions
             </h1>
             <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">

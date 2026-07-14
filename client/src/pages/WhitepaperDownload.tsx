@@ -146,7 +146,7 @@ export default function WhitepaperDownload() {
             <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
             <span className="text-sm font-semibold uppercase tracking-wider">Whitepaper</span>
           </div>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">{whitepaper.title}</h1>
+          <h1 className="nx-h1 mb-4">{whitepaper.title}</h1>
           <p className="text-xl text-muted-foreground">{whitepaper.subtitle}</p>
         </div>
       </section>

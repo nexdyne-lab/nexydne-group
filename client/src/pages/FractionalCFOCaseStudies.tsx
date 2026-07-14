@@ -68,7 +68,7 @@ export default function FractionalCFOCaseStudies() {
               <div className="text-sm font-semibold text-amber mb-4 uppercase tracking-wider">
                 Case Studies
               </div>
-              <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3">
+              <h1 className="nx-h1 mb-3">
                 Fractional CFO Success Stories
               </h1>
               <p className="text-xl text-muted-foreground/50 leading-relaxed">
