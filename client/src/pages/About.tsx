@@ -390,7 +390,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* ══ Explore the firm — image-tile navigation ══════════════════════════ */}
+      {/* ══ Explore the firm — typographic index ══════════════════════════════ */}
       <section className="nx-section bg-off-white border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div {...fadeUp} className="max-w-3xl mb-10 md:mb-12">
@@ -398,27 +398,21 @@ export default function About() {
             <h2 className="nx-h2 text-charcoal mt-4">Go deeper into who we are.</h2>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid md:grid-cols-2 md:gap-x-14 lg:gap-x-20 border-t border-border">
             {explore.map((item, i) => (
-              <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.06 }} className="group">
+              <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.05 }}>
                 <Link href={item.href}>
-                  <div className="relative overflow-hidden aspect-[4/3] cursor-pointer">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-[700ms] group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal/92 via-charcoal/45 to-charcoal/10" />
-                    <span aria-hidden className="absolute top-0 left-0 h-1 w-full bg-primary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
-                    <div className="relative h-full flex flex-col justify-between p-6 lg:p-7">
-                      <span className="text-[13px] font-semibold text-white/60 tabular-nums">{item.no}</span>
-                      <div>
-                        <div className="flex items-center gap-2.5">
-                          <h3 className="text-[1.3rem] md:text-[1.55rem] font-semibold text-white leading-tight tracking-[-0.01em]">{item.title}</h3>
-                          <span className="text-primary text-xl transition-transform duration-300 group-hover:translate-x-1.5">→</span>
-                        </div>
-                        <p className="text-[13px] md:text-[14px] text-white/75 mt-2 leading-relaxed">{item.description}</p>
+                  <div className="group relative flex items-start gap-5 md:gap-7 py-6 md:py-7 border-b border-border cursor-pointer">
+                    <span aria-hidden className="absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2 h-8 w-[3px] bg-primary scale-y-0 group-hover:scale-y-100 origin-center transition-transform duration-300" />
+                    <span className="text-[13px] font-semibold text-charcoal/30 tabular-nums pt-1.5">{item.no}</span>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between gap-4">
+                        <h3 className="text-[1.35rem] md:text-[1.65rem] font-semibold tracking-[-0.015em] text-charcoal group-hover:text-primary transition-colors">
+                          {item.title}
+                        </h3>
+                        <span className="shrink-0 text-primary text-xl transition-transform duration-300 group-hover:translate-x-1.5">→</span>
                       </div>
+                      <p className="text-[14px] md:text-[15px] text-muted-foreground mt-1.5 leading-relaxed">{item.description}</p>
                     </div>
                   </div>
                 </Link>
