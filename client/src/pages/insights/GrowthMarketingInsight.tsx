@@ -1,4 +1,4 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 const Cite = ({ n }: { n: number }) => (
   <sup>
@@ -22,8 +22,17 @@ export default function GrowthMarketingInsight() {
     { title: "The Pragmatic CEO's Guide to AI", category: "AI Executive Guide", link: "/insights/ceo-guide-data-modernization", image: "/images/hero-ceo-ai-guide.jpg" },
   ];
 
+  const sections = [
+    { id: "value-is-real", label: "The value is real" },
+    { id: "why-still-shallow", label: "Why it's still shallow" },
+    { id: "trust-problem", label: "The trust problem" },
+    { id: "nexdyne-view", label: "The NexDyne view" },
+    { id: "practical-path", label: "A practical path" },
+    { id: "bottom-line", label: "The bottom line" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       category="Growth & Marketing"
       categoryHref="/insights"
       title="Growth in the Age of Generative AI: Real Value, Shallow Adoption, and the Trust Problem"
@@ -31,6 +40,7 @@ export default function GrowthMarketingInsight() {
       heroImage="/images/abstract-growth.jpg"
       publishDate="July 1, 2026"
       readTime="9 min"
+      sections={sections}
       keyTakeaways={[
         "61% of marketers say AI is driving marketing's biggest disruption in 20 years, and AI-in-marketing spend is set to more than double to over US$107B by 2028.",
         "The value is concentrated and large: McKinsey puts marketing and sales among generative AI's biggest value pools, worth hundreds of billions annually.",
@@ -53,7 +63,7 @@ export default function GrowthMarketingInsight() {
         is about capturing the first outcome without the second.
       </p>
 
-      <h2>The value is real—and unusually large</h2>
+      <h2 id="value-is-real">The value is real—and unusually large</h2>
 
       <p>
         This is not hype looking for a use case. McKinsey estimates generative AI could add US$2.6–4.4 trillion in
@@ -73,7 +83,7 @@ export default function GrowthMarketingInsight() {
         individual customer decision. That is a bigger shift than most org charts are ready for.
       </blockquote>
 
-      <h2>So why is most of it still shallow?</h2>
+      <h2 id="why-still-shallow">So why is most of it still shallow?</h2>
 
       <p>
         Because adoption is a mile wide and an inch deep. Across content, support, personalisation, and back-office
@@ -90,7 +100,7 @@ export default function GrowthMarketingInsight() {
         outrun the ability to capture value<Cite n={5} />.
       </p>
 
-      <h2>The trust problem no dashboard shows</h2>
+      <h2 id="trust-problem">The trust problem no dashboard shows</h2>
 
       <p>
         Marketing carries a risk finance and operations don't: every output is public. A hallucinated claim, an
@@ -100,7 +110,7 @@ export default function GrowthMarketingInsight() {
         not a compliance footnote.
       </p>
 
-      <h2>The NexDyne view: govern the customer decision first</h2>
+      <h2 id="nexdyne-view">The NexDyne view: govern the customer decision first</h2>
 
       <p>
         Our discipline is Human Intelligence Governance—HIG™—and in growth it means the same thing it means
@@ -124,7 +134,7 @@ export default function GrowthMarketingInsight() {
         always skipped this.
       </p>
 
-      <h2>A practical path for growth leaders</h2>
+      <h2 id="practical-path">A practical path for growth leaders</h2>
 
       <h3>1. Start with one decision, not one tool</h3>
       <p>
@@ -150,7 +160,7 @@ export default function GrowthMarketingInsight() {
         is<Cite n={1} />, disciplined measurement is how you claim your share of it.
       </p>
 
-      <h2>The bottom line</h2>
+      <h2 id="bottom-line">The bottom line</h2>
 
       <p>
         Generative AI in growth is one of the clearest value opportunities in business today<Cite n={1} /><Cite n={3} />—
@@ -159,6 +169,6 @@ export default function GrowthMarketingInsight() {
         companies, that discipline is the great equaliser: it lets a focused team out-execute far larger competitors.
         That is precisely the work NexDyne was built to do.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

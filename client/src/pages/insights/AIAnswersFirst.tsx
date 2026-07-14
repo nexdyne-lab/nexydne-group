@@ -1,4 +1,4 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 const Cite = ({ n }: { n: number }) => (
   <sup>
@@ -19,8 +19,15 @@ export default function AIAnswersFirst() {
     { title: "How AI Agents Are Reshaping Enterprise Operations", category: "AI in Enterprise", link: "/insights/ai-agents-transform-operations", image: "/images/ai-in-enterprises.jpg" },
   ];
 
+  const sections = [
+    { id: "resolution-or-deflection", label: "Resolution or deflection" },
+    { id: "human-tier-premium", label: "The premium human tier" },
+    { id: "well-run-flips", label: "What separates the best" },
+    { id: "measure-that-matters", label: "The measure that matters" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       category="Customer Channels"
       categoryHref="/insights"
       title="The Channel Flip: AI Now Answers First. Your Customers Are Deciding If They Mind."
@@ -28,6 +35,7 @@ export default function AIAnswersFirst() {
       heroImage="/images/ai-team-collaboration.jpg"
       publishDate="July 6, 2026"
       readTime="8 min"
+      sections={sections}
       keyTakeaways={[
         "Customer channels are flipping from human-first-with-tools to AI-first-with-human-escalation; analysts project autonomous resolution of a large share of routine service issues within a few years.",
         "Early large-scale deployments showed a single AI assistant absorbing the workload of hundreds of agents while holding satisfaction steady — proof the economics are real when resolution, not deflection, is the goal.",
@@ -52,7 +60,7 @@ export default function AIAnswersFirst() {
         numbers, the strategic message landed: the economics of the channel flip are real.
       </p>
 
-      <h2>Resolution or deflection: the only design question that matters</h2>
+      <h2 id="resolution-or-deflection">Resolution or deflection: the only design question that matters</h2>
 
       <p>
         Customers do not hate AI service. They hate <em>unresolved</em> service. The bots that poisoned the well
@@ -72,7 +80,7 @@ export default function AIAnswersFirst() {
         measure the human tier: resolution rate, re-contact rate, and satisfaction — on the same scale.
       </p>
 
-      <h2>The human tier becomes the premium product</h2>
+      <h2 id="human-tier-premium">The human tier becomes the premium product</h2>
 
       <p>
         The flip does not eliminate human service; it concentrates it. When AI absorbs the routine 70–80%, what
@@ -88,7 +96,7 @@ export default function AIAnswersFirst() {
         drafted for human judgment.
       </p>
 
-      <h2>What separates the well-run flips</h2>
+      <h2 id="well-run-flips">What separates the well-run flips</h2>
 
       <h3>Give the agent real authority, with real limits</h3>
       <p>
@@ -111,7 +119,7 @@ export default function AIAnswersFirst() {
         which beats resolving it, however elegantly.
       </p>
 
-      <h2>The measure that matters</h2>
+      <h2 id="measure-that-matters">The measure that matters</h2>
 
       <p>
         Boards will ask for the cost line, and the cost line will look good. The durable question is different:
@@ -119,6 +127,6 @@ export default function AIAnswersFirst() {
         same or better rates? If yes, you have built a better channel, not just a cheaper one. That distinction —
         efficiency with judgment intact — is the entire discipline we call Human Intelligence Governance.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

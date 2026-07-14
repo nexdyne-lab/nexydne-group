@@ -1,4 +1,4 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function ScalingOperations() {
   const relatedInsights = [
@@ -22,21 +22,39 @@ export default function ScalingOperations() {
     }
   ];
 
+  const sections = [
+    { id: "new-economics", label: "New economics" },
+    { id: "automate-first", label: "Automate first" },
+    { id: "variable-costs", label: "Variable costs" },
+    { id: "standardize", label: "Standardize" },
+    { id: "integration", label: "Integration" },
+    { id: "build-for-10x", label: "Build for 10x" },
+    { id: "measuring", label: "Measuring efficiency" },
+    { id: "path-forward", label: "The path forward" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       category="Operations"
       title="Scaling Operations Without Breaking the Bank"
       subtitle="Cost-effective strategies for growing companies looking to grow efficiently."
       heroImage="/images/insight-scaling-ops.jpg"
       readTime="7 min"
       publishDate="January 5, 2026"
+      sections={sections}
+      keyTakeaways={[
+        "Cloud-based, automation-first operations let growing companies add capacity incrementally instead of making large upfront investments.",
+        "Automate repetitive, rule-based, time-consuming tasks before adding headcount, and convert fixed costs to variable ones wherever possible.",
+        "Standardize and document processes and invest in system integration so manual work doesn't scale linearly with volume.",
+        "Track revenue per employee, customer acquisition cost, gross margin, and time-to-onboard to confirm you are scaling efficiently.",
+      ]}
       relatedInsights={relatedInsights}
     >
       <p>
         Growth is the goal of every ambitious growing company, but scaling operations often feels like a catch-22: you need infrastructure to grow, but you need growth to afford the infrastructure. The good news? Modern approaches to operational scaling have fundamentally changed this equation, making it possible to grow efficiently without massive upfront investments.
       </p>
 
-      <h2>The New Economics of Scaling</h2>
+      <h2 id="new-economics">The New Economics of Scaling</h2>
       
       <p>
         Traditional scaling required significant capital expenditure—new facilities, equipment, and large teams hired in anticipation of growth. Today's cloud-based, automation-first approach allows companies to scale incrementally, paying for capacity as they need it rather than building for projected demand.
@@ -50,7 +68,7 @@ export default function ScalingOperations() {
         This shift has profound implications for growing companies. Instead of choosing between under-investing (and missing growth opportunities) or over-investing (and risking financial strain), you can now match operational capacity precisely to actual demand.
       </p>
 
-      <h2>Strategy 1: Automate Before You Hire</h2>
+      <h2 id="automate-first">Strategy 1: Automate Before You Hire</h2>
 
       <p>
         Before adding headcount to handle increased volume, ask: "Can this process be automated?" Modern automation tools have made it possible to automate tasks that previously required human judgment.
@@ -72,7 +90,7 @@ export default function ScalingOperations() {
         The rule of thumb: if a task is repetitive, rule-based, and time-consuming, it's a candidate for automation.
       </p>
 
-      <h2>Strategy 2: Embrace Variable Cost Structures</h2>
+      <h2 id="variable-costs">Strategy 2: Embrace Variable Cost Structures</h2>
 
       <p>
         Fixed costs are the enemy of efficient scaling. Every fixed cost you can convert to variable creates flexibility and reduces risk.
@@ -89,7 +107,7 @@ export default function ScalingOperations() {
         <li><strong>Logistics:</strong> Third-party fulfillment that scales with order volume</li>
       </ul>
 
-      <h2>Strategy 3: Standardize and Document Everything</h2>
+      <h2 id="standardize">Strategy 3: Standardize and Document Everything</h2>
 
       <p>
         Scaling becomes exponentially harder when processes exist only in people's heads. Standardization and documentation are prerequisites for efficient growth.
@@ -110,7 +128,7 @@ export default function ScalingOperations() {
         Well-documented processes can be delegated, automated, or outsourced. Undocumented processes create bottlenecks and key-person dependencies.
       </p>
 
-      <h2>Strategy 4: Invest in Integration</h2>
+      <h2 id="integration">Strategy 4: Invest in Integration</h2>
 
       <p>
         Disconnected systems create manual work that scales linearly with volume. Every hour spent on data entry or reconciliation is an hour not spent on value-creating activities.
@@ -127,7 +145,7 @@ export default function ScalingOperations() {
         <li>Ensure customer data flows seamlessly across touchpoints</li>
       </ul>
 
-      <h2>Strategy 5: Build for 10x, Not 2x</h2>
+      <h2 id="build-for-10x">Strategy 5: Build for 10x, Not 2x</h2>
 
       <p>
         When making operational investments, design for an order of magnitude more capacity than you currently need. The marginal cost of building for scale is usually small compared to the cost of rebuilding later.
@@ -144,7 +162,7 @@ export default function ScalingOperations() {
         <li>Create organizational structures that scale without constant reorganization</li>
       </ul>
 
-      <h2>Measuring Scaling Efficiency</h2>
+      <h2 id="measuring">Measuring Scaling Efficiency</h2>
 
       <p>
         Track these metrics to ensure you're scaling efficiently:
@@ -157,7 +175,7 @@ export default function ScalingOperations() {
         <li><strong>Time to onboard:</strong> New customers and employees should ramp faster</li>
       </ul>
 
-      <h2>The Path Forward</h2>
+      <h2 id="path-forward">The Path Forward</h2>
 
       <p>
         Scaling efficiently isn't about doing more with less—it's about doing more with the same. By automating routine work, embracing variable costs, standardizing processes, integrating systems, and building for scale, growing companies can grow revenue faster than costs and build sustainable competitive advantages.
@@ -166,6 +184,6 @@ export default function ScalingOperations() {
       <p>
         The companies that master efficient scaling today will be the market leaders of tomorrow. The tools and strategies are available—the question is whether you'll seize the opportunity.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

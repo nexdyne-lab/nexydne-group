@@ -1,4 +1,4 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function ProcessMiningGuide() {
   const relatedInsights = [
@@ -22,8 +22,19 @@ export default function ProcessMiningGuide() {
     }
   ];
 
+  const sections = [
+    { id: "what-is", label: "What it is" },
+    { id: "three-pillars", label: "Three pillars" },
+    { id: "applications", label: "Applications" },
+    { id: "getting-started", label: "Getting started" },
+    { id: "pitfalls", label: "Common pitfalls" },
+    { id: "mining-and-ai", label: "Process mining + AI" },
+    { id: "roi", label: "The ROI" },
+    { id: "first-step", label: "Taking the first step" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       category="Technology Strategy"
       categoryHref="/insights"
       title="The Complete Guide to Process Mining"
@@ -31,13 +42,20 @@ export default function ProcessMiningGuide() {
       heroImage="/images/hero-process-mining.jpg"
       publishDate="January 12, 2026"
       readTime="9 min"
+      sections={sections}
+      keyTakeaways={[
+        "Process mining uses the event logs already in your enterprise systems to reveal how work actually flows—which rarely matches the documented process.",
+        "It rests on three pillars: process discovery, conformance checking, and process enhancement.",
+        "Organizations typically see 20-30% shorter cycle times, 15-25% better compliance, and payback in 6-12 months for focused implementations.",
+        "Paired with AI, process mining can predict which cases will fail, recommend next steps, and trigger automated interventions.",
+      ]}
       relatedInsights={relatedInsights}
     >
       <p>
         Every organization has processes. Order-to-cash. Procure-to-pay. Customer onboarding. Employee hiring. These processes are documented in procedure manuals, visualized in flowcharts, and discussed in meetings. But here's the uncomfortable truth: the way processes actually work rarely matches how we think they work.
       </p>
 
-      <h2>What Is Process Mining?</h2>
+      <h2 id="what-is">What Is Process Mining?</h2>
       
       <p>
         Process mining is a data-driven technique that extracts knowledge from event logs in enterprise systems to discover, monitor, and improve real processes. Unlike traditional process mapping—which relies on interviews and assumptions—process mining reveals what actually happens, based on digital footprints left in your systems.
@@ -51,7 +69,7 @@ export default function ProcessMiningGuide() {
         Think of it as an MRI for your business operations. Just as medical imaging reveals what's happening inside the body, process mining reveals what's happening inside your organization—including inefficiencies, bottlenecks, and deviations you never knew existed.
       </p>
 
-      <h2>The Three Pillars of Process Mining</h2>
+      <h2 id="three-pillars">The Three Pillars of Process Mining</h2>
 
       <h3>1. Process Discovery</h3>
       
@@ -71,7 +89,7 @@ export default function ProcessMiningGuide() {
         Enhancement uses event log data to improve existing process models. This includes adding performance metrics (how long each step takes), identifying bottlenecks, and predicting outcomes based on process patterns.
       </p>
 
-      <h2>Real-World Applications</h2>
+      <h2 id="applications">Real-World Applications</h2>
 
       <h3>Order-to-Cash Optimization</h3>
       
@@ -91,7 +109,7 @@ export default function ProcessMiningGuide() {
         A healthcare organization used process mining to monitor adherence to clinical protocols. They identified that 15% of patient cases deviated from standard care pathways—some for valid clinical reasons, others due to process breakdowns. This insight enabled targeted interventions that improved both compliance and patient outcomes.
       </p>
 
-      <h2>Getting Started with Process Mining</h2>
+      <h2 id="getting-started">Getting Started with Process Mining</h2>
 
       <p>
         Implementing process mining doesn't require massive investment or organizational transformation. Here's a practical roadmap:
@@ -122,7 +140,7 @@ export default function ProcessMiningGuide() {
         Process mining isn't a one-time exercise. Implement continuous monitoring to track improvement impact, identify new issues, and ensure processes stay optimized over time.
       </p>
 
-      <h2>Common Pitfalls to Avoid</h2>
+      <h2 id="pitfalls">Common Pitfalls to Avoid</h2>
 
       <ul>
         <li><strong>Starting too broad:</strong> Focus on one or two processes initially rather than trying to mine everything at once</li>
@@ -131,7 +149,7 @@ export default function ProcessMiningGuide() {
         <li><strong>Forgetting the human element:</strong> Process mining reveals what happens, but understanding why requires talking to the people who execute the process</li>
       </ul>
 
-      <h2>Process Mining and AI</h2>
+      <h2 id="mining-and-ai">Process Mining and AI</h2>
 
       <p>
         Process mining becomes even more powerful when combined with AI and machine learning. Advanced process mining platforms can:
@@ -144,7 +162,7 @@ export default function ProcessMiningGuide() {
         <li><strong>Simulate changes:</strong> Model the impact of process changes before implementation</li>
       </ul>
 
-      <h2>The ROI of Process Mining</h2>
+      <h2 id="roi">The ROI of Process Mining</h2>
 
       <p>
         Organizations implementing process mining typically see significant returns:
@@ -161,7 +179,7 @@ export default function ProcessMiningGuide() {
         Perhaps more importantly, process mining creates a foundation for continuous improvement. Once you can see how processes actually work, you can systematically optimize them—and track the impact of every change.
       </p>
 
-      <h2>Taking the First Step</h2>
+      <h2 id="first-step">Taking the First Step</h2>
 
       <p>
         Process mining represents one of the highest-ROI investments in operational excellence available today. The technology is mature, the tools are accessible, and the methodology is proven.
@@ -170,6 +188,6 @@ export default function ProcessMiningGuide() {
       <p>
         The question isn't whether process mining will benefit your organization—it's which processes to start with. Choose a high-impact process, extract the data, and discover what's really happening. The insights will likely surprise you—and the improvements will follow naturally.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

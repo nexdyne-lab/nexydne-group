@@ -1,4 +1,4 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 const Cite = ({ n }: { n: number }) => (
   <sup>
@@ -19,8 +19,15 @@ export default function ShadowAIInsideYourFirm() {
     { title: "The AI Adoption Outlook 2026", category: "Featured Insight", link: "/insights/ai-adoption-outlook-2026", image: "/images/agentic-ai-abstract.jpg" },
   ];
 
+  const sections = [
+    { id: "worse-than-shadow-it", label: "Worse than shadow IT" },
+    { id: "ban-reflex", label: "Why bans backfire" },
+    { id: "paved-road", label: "The paved-road path" },
+    { id: "governance-dividend", label: "The governance dividend" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       category="Security & Risk"
       categoryHref="/insights"
       title="Shadow AI Is the New Shadow IT — Except This Time It Makes Decisions"
@@ -28,6 +35,7 @@ export default function ShadowAIInsideYourFirm() {
       heroImage="/images/cyber-abstract.jpg"
       publishDate="July 6, 2026"
       readTime="8 min"
+      sections={sections}
       keyTakeaways={[
         "Shadow AI — employees using unapproved AI tools with company data — is now pervasive, and unlike shadow IT it doesn't just store information; it transforms it and feeds decisions.",
         "Breach research shows AI-related incidents concentrate where access controls and inventories are missing; ungoverned AI usage adds measurable cost when things go wrong.",
@@ -52,7 +60,7 @@ export default function ShadowAIInsideYourFirm() {
         and no access controls, and ungoverned AI use adds measurable cost when a breach lands<Cite n={1} />.
       </p>
 
-      <h2>Why this is worse than the last shadow</h2>
+      <h2 id="worse-than-shadow-it">Why this is worse than the last shadow</h2>
 
       <p>
         Three properties separate shadow AI from shadow IT:
@@ -80,7 +88,7 @@ export default function ShadowAIInsideYourFirm() {
         straight into your work product.
       </blockquote>
 
-      <h2>Why the ban reflex backfires</h2>
+      <h2 id="ban-reflex">Why the ban reflex backfires</h2>
 
       <p>
         The instinctive response — block the domains, publish a prohibition memo — has been tried at scale, and
@@ -89,7 +97,7 @@ export default function ShadowAIInsideYourFirm() {
         converts a governable behavior into an invisible one.
       </p>
 
-      <h2>The paved-road alternative</h2>
+      <h2 id="paved-road">The paved-road alternative</h2>
 
       <p>
         The firms handling this well follow a pattern we'd summarise in four moves:
@@ -121,7 +129,7 @@ export default function ShadowAIInsideYourFirm() {
         does double duty as EU AI Act groundwork.
       </p>
 
-      <h2>The governance dividend</h2>
+      <h2 id="governance-dividend">The governance dividend</h2>
 
       <p>
         Handled this way, the shadow-AI problem quietly becomes an asset: a live map of where your people find AI
@@ -129,6 +137,6 @@ export default function ShadowAIInsideYourFirm() {
         roadmap should start. Govern the behavior, and you don't just remove the risk — you inherit the R&D your
         workforce has been doing for free.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

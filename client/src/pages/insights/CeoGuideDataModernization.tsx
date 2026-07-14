@@ -1,6 +1,16 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function CEOGuideDataModernization() {
+  const sections = [
+    { id: "reality-check", label: "The AI reality check" },
+    { id: "investment-framework", label: "Investment framework" },
+    { id: "three-horizons", label: "Three horizons of value" },
+    { id: "five-questions", label: "Five questions to ask" },
+    { id: "common-pitfalls", label: "Common pitfalls" },
+    { id: "building-capabilities", label: "Building capabilities" },
+    { id: "path-forward", label: "The path forward" },
+  ];
+
   const relatedInsights = [
     {
       title: "How AI Agents Are Reshaping Enterprise Operations",
@@ -23,7 +33,7 @@ export default function CEOGuideDataModernization() {
   ];
 
   return (
-    <InsightArticle
+    <InsightArticleV2
       category="AI Executive Guide"
       categoryHref="/insights"
       title="The Pragmatic CEO's Guide to AI"
@@ -31,6 +41,13 @@ export default function CEOGuideDataModernization() {
       heroImage="/images/hero-ceo-ai-guide.jpg"
       publishDate="January 8, 2026"
       readTime="11 min"
+      sections={sections}
+      keyTakeaways={[
+        "AI is a capability, not a strategy—it should serve business objectives, and the right question is which business problems AI can help solve.",
+        "Evaluate AI opportunities across four dimensions: business impact potential, feasibility, organizational readiness, and risk profile.",
+        "AI value typically progresses through three horizons—efficiency, enhancement, and transformation—and organizations should pursue initiatives across all three at once.",
+        "Sustainable value comes from building capabilities—data infrastructure, talent, governance, and partnerships—not just buying technology, and from stopping initiatives that aren't working.",
+      ]}
       relatedInsights={relatedInsights}
     >
       <p>
@@ -41,7 +58,7 @@ export default function CEOGuideDataModernization() {
         This guide cuts through the hype to provide a pragmatic framework for evaluating AI opportunities, making investment decisions, and driving real business value. It's written for executives who need to make decisions, not data scientists who need technical depth.
       </p>
 
-      <h2>The CEO's AI Reality Check</h2>
+      <h2 id="reality-check">The CEO's AI Reality Check</h2>
       
       <p>
         Before diving into strategy, let's establish some ground truth about AI in business today:
@@ -63,7 +80,7 @@ export default function CEOGuideDataModernization() {
         <strong>AI is a capability, not a strategy.</strong> AI should serve business objectives, not the other way around. The question isn't "How do we use AI?" but "What business problems can AI help us solve?"
       </p>
 
-      <h2>A Framework for AI Investment Decisions</h2>
+      <h2 id="investment-framework">A Framework for AI Investment Decisions</h2>
 
       <p>
         When evaluating AI opportunities, consider four dimensions:
@@ -93,7 +110,7 @@ export default function CEOGuideDataModernization() {
         What could go wrong, and what are the consequences? Evaluate implementation risk, operational risk, reputational risk, and regulatory/compliance risk. Higher-risk initiatives require stronger governance and more conservative rollout approaches.
       </p>
 
-      <h2>The Three Horizons of AI Value</h2>
+      <h2 id="three-horizons">The Three Horizons of AI Value</h2>
 
       <p>
         AI value creation typically follows a progression:
@@ -118,7 +135,7 @@ export default function CEOGuideDataModernization() {
         Most organizations should pursue initiatives across all three horizons simultaneously—using Horizon 1 wins to fund and build capabilities for Horizons 2 and 3.
       </p>
 
-      <h2>Five Questions Every CEO Should Ask</h2>
+      <h2 id="five-questions">Five Questions Every CEO Should Ask</h2>
 
       <h3>1. What problem are we solving?</h3>
       
@@ -150,7 +167,7 @@ export default function CEOGuideDataModernization() {
         Not every AI initiative will succeed. Before starting, define the criteria for stopping or pivoting. How much will you invest before expecting results? What signals would indicate the initiative isn't working? Having clear exit criteria prevents throwing good money after bad.
       </p>
 
-      <h2>Common Pitfalls to Avoid</h2>
+      <h2 id="common-pitfalls">Common Pitfalls to Avoid</h2>
 
       <ul>
         <li><strong>Technology-first thinking:</strong> Starting with "We should use AI" instead of "We need to solve this problem"</li>
@@ -161,7 +178,7 @@ export default function CEOGuideDataModernization() {
         <li><strong>Vendor dependency:</strong> Building critical capabilities on platforms you don't control</li>
       </ul>
 
-      <h2>Building AI Capabilities</h2>
+      <h2 id="building-capabilities">Building AI Capabilities</h2>
 
       <p>
         Sustainable AI value requires building organizational capabilities, not just buying technology:
@@ -183,7 +200,7 @@ export default function CEOGuideDataModernization() {
         <strong>Partnership Ecosystem:</strong> Identify partners who can accelerate your AI journey. This might include technology vendors, consulting firms, or academic institutions.
       </p>
 
-      <h2>The Path Forward</h2>
+      <h2 id="path-forward">The Path Forward</h2>
 
       <p>
         AI represents a genuine opportunity for business transformation—but only for organizations that approach it pragmatically. The winners won't be those who invest the most in AI technology. They'll be those who most effectively apply AI to solve real business problems.
@@ -196,6 +213,6 @@ export default function CEOGuideDataModernization() {
       <p>
         The AI revolution is real. But like all revolutions, it rewards the pragmatic over the idealistic, the focused over the scattered, and the persistent over the impatient.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

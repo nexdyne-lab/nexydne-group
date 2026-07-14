@@ -1,6 +1,16 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function AIAgentsTransformOperations() {
+  const sections = [
+    { id: "rise-of-agents", label: "Rise of AI agents" },
+    { id: "enterprise-functions", label: "Functions transformed" },
+    { id: "architecture", label: "Agent architecture" },
+    { id: "implementation-roadmap", label: "Implementation roadmap" },
+    { id: "governance", label: "Governance & risk" },
+    { id: "human-agent-partnership", label: "Human-agent partnership" },
+    { id: "looking-ahead", label: "Looking ahead" },
+  ];
+
   const relatedInsights = [
     {
       title: "The $15 Trillion Question: How AI Will Reshape the Global Economy",
@@ -23,7 +33,7 @@ export default function AIAgentsTransformOperations() {
   ];
 
   return (
-    <InsightArticle
+    <InsightArticleV2
       category="AI in Enterprise"
       categoryHref="/insights"
       title="How AI Agents Are Reshaping Enterprise Operations"
@@ -31,13 +41,20 @@ export default function AIAgentsTransformOperations() {
       heroImage="/images/hero-ai-enterprise.webp"
       publishDate="January 20, 2026"
       readTime="10 min"
+      sections={sections}
+      keyTakeaways={[
+        "Unlike rule-based automation, AI agents adapt to new situations, learn from experience, and handle complex, multi-step tasks with minimal human intervention.",
+        "Five enterprise functions are being reshaped: customer service, supply chain management, financial operations, IT operations and security, and sales and marketing.",
+        "Effective agents share a common architecture—perception, reasoning, memory, action framework, and guardrails—and are best rolled out through a phased implementation roadmap.",
+        "Governance is critical as autonomy grows, and the most successful deployments augment human teams rather than replace them.",
+      ]}
       relatedInsights={relatedInsights}
     >
       <p>
         The enterprise landscape is undergoing a fundamental transformation. AI agents—autonomous software systems capable of perceiving their environment, making decisions, and taking actions to achieve specific goals—are no longer confined to research labs. They're actively reshaping how the world's most successful companies operate.
       </p>
 
-      <h2>The Rise of Autonomous AI Agents</h2>
+      <h2 id="rise-of-agents">The Rise of Autonomous AI Agents</h2>
       
       <p>
         Unlike traditional automation tools that follow rigid, pre-programmed rules, AI agents can adapt to new situations, learn from experience, and handle complex, multi-step tasks with minimal human intervention. This represents a paradigm shift from automation to true autonomy.
@@ -51,7 +68,7 @@ export default function AIAgentsTransformOperations() {
         Our analysis of over 200 enterprise AI deployments reveals that organizations implementing AI agents are seeing 40-60% improvements in operational efficiency, with some achieving even greater gains in specific use cases.
       </p>
 
-      <h2>Five Enterprise Functions Being Transformed</h2>
+      <h2 id="enterprise-functions">Five Enterprise Functions Being Transformed</h2>
 
       <h3>1. Customer Service and Support</h3>
       
@@ -87,7 +104,7 @@ export default function AIAgentsTransformOperations() {
         Sales AI agents are qualifying leads, personalizing outreach, and even conducting initial sales conversations. Marketing agents optimize campaigns in real-time, adjusting targeting, messaging, and budget allocation based on performance data.
       </p>
 
-      <h2>The Architecture of Enterprise AI Agents</h2>
+      <h2 id="architecture">The Architecture of Enterprise AI Agents</h2>
 
       <p>
         Successful enterprise AI agents share common architectural elements that enable their effectiveness:
@@ -101,7 +118,7 @@ export default function AIAgentsTransformOperations() {
         <li><strong>Guardrails:</strong> Safety mechanisms that ensure agents operate within defined boundaries and escalate appropriately</li>
       </ul>
 
-      <h2>Implementation Roadmap</h2>
+      <h2 id="implementation-roadmap">Implementation Roadmap</h2>
 
       <p>
         Organizations looking to deploy AI agents should follow a structured approach:
@@ -122,7 +139,7 @@ export default function AIAgentsTransformOperations() {
         Deploy agents across critical business functions. Enable agents to make higher-stakes decisions within defined parameters. Integrate agent performance into business KPIs and continuously optimize.
       </p>
 
-      <h2>Governance and Risk Management</h2>
+      <h2 id="governance">Governance and Risk Management</h2>
 
       <p>
         As AI agents take on more autonomous roles, governance becomes critical. Leading organizations are implementing:
@@ -135,7 +152,7 @@ export default function AIAgentsTransformOperations() {
         <li><strong>Performance Monitoring:</strong> Real-time dashboards tracking agent accuracy, efficiency, and business impact</li>
       </ul>
 
-      <h2>The Human-Agent Partnership</h2>
+      <h2 id="human-agent-partnership">The Human-Agent Partnership</h2>
 
       <p>
         The most successful AI agent deployments don't replace humans—they augment them. Agents handle routine, time-consuming tasks while humans focus on strategic decisions, relationship building, and creative problem-solving.
@@ -145,7 +162,7 @@ export default function AIAgentsTransformOperations() {
         This partnership model is proving to be the winning formula: organizations that position AI agents as team members rather than replacements see higher adoption rates, better outcomes, and more sustainable implementations.
       </p>
 
-      <h2>Looking Ahead</h2>
+      <h2 id="looking-ahead">Looking Ahead</h2>
 
       <p>
         The next wave of AI agents will be even more capable, with improved reasoning abilities, better integration with physical systems, and more sophisticated collaboration capabilities. Organizations that build strong foundations today will be best positioned to leverage these advances.
@@ -154,6 +171,6 @@ export default function AIAgentsTransformOperations() {
       <p>
         The question is no longer whether to deploy AI agents, but how quickly you can build the capabilities to do so effectively. The competitive advantage goes to those who act decisively while maintaining the governance and risk management frameworks necessary for sustainable success.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

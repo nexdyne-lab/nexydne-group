@@ -1,4 +1,4 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 const Cite = ({ n }: { n: number }) => (
   <sup>
@@ -20,8 +20,15 @@ export default function AgenticAIBudgetLine() {
     { title: "AI in the CFO's Office", category: "Strategy & Finance", link: "/insights/strategy-finance", image: "/images/ai-powered-finance-abstract.jpg" },
   ];
 
+  const sections = [
+    { id: "uncomfortable-forecast", label: "The uncomfortable forecast" },
+    { id: "funded-and-working", label: "What works in common" },
+    { id: "growth-stage-advantage", label: "Growth-stage advantage" },
+    { id: "where-to-start", label: "Where to start" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       category="The AI Agenda"
       categoryHref="/insights"
       title="Agentic AI Just Got a Budget Line. Most of It Will Be Wasted."
@@ -29,6 +36,7 @@ export default function AgenticAIBudgetLine() {
       heroImage="/images/ai-acceleration-abstract.jpg"
       publishDate="July 6, 2026"
       readTime="8 min"
+      sections={sections}
       keyTakeaways={[
         "Agentic AI has crossed from experimentation into formal budgets: a large share of enterprises are now piloting or scaling agents, and boards expect a visible return this cycle.",
         "Analysts have warned that a large fraction of agentic projects will be cancelled — mostly for unclear business cases and immature controls, not model quality.",
@@ -52,7 +60,7 @@ export default function AgenticAIBudgetLine() {
         higher-stakes use cases, with autonomy as the differentiator<Cite n={2} />.
       </p>
 
-      <h2>The uncomfortable forecast nobody puts on the board slide</h2>
+      <h2 id="uncomfortable-forecast">The uncomfortable forecast nobody puts on the board slide</h2>
 
       <p>
         Alongside the funding wave sits a colder projection. Industry analysts have repeatedly warned that a large
@@ -66,7 +74,7 @@ export default function AgenticAIBudgetLine() {
         and skip the onboarding, supervision, and performance review — get exactly what that approach deserves.
       </blockquote>
 
-      <h2>What the funded-and-working deployments have in common</h2>
+      <h2 id="funded-and-working">What the funded-and-working deployments have in common</h2>
 
       <p>
         Across the deployments that survive contact with production, we see four repeating decisions:
@@ -101,7 +109,7 @@ export default function AgenticAIBudgetLine() {
         management task, not a model upgrade.
       </p>
 
-      <h2>The growth-stage advantage nobody talks about</h2>
+      <h2 id="growth-stage-advantage">The growth-stage advantage nobody talks about</h2>
 
       <p>
         Growing firms hold an underrated edge here. They have fewer legacy approval layers to re-engineer,
@@ -116,7 +124,7 @@ export default function AgenticAIBudgetLine() {
         ungoverned agent has spent six months making quiet decisions in your revenue engine.
       </p>
 
-      <h2>Where to start this quarter</h2>
+      <h2 id="where-to-start">Where to start this quarter</h2>
 
       <p>
         Pick the one workflow where exceptions eat the most skilled time. Baseline it honestly. Deploy an agent on
@@ -128,6 +136,6 @@ export default function AgenticAIBudgetLine() {
         The budget line is already written. Whether it becomes capacity or a cancellation statistic is decided by
         the operating discipline around it.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

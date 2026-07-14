@@ -1,6 +1,15 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function CustomerIntelligence() {
+  const sections = [
+    { id: "customer-intelligence-imperative", label: "The imperative" },
+    { id: "building-foundation", label: "Building the foundation" },
+    { id: "intelligence-into-action", label: "Intelligence into action" },
+    { id: "measuring-impact", label: "Measuring impact" },
+    { id: "getting-started", label: "Getting started" },
+    { id: "competitive-advantage", label: "Competitive advantage" },
+  ];
+
   const relatedInsights = [
     {
       title: "How Growing Companies Are Winning with AI",
@@ -23,20 +32,27 @@ export default function CustomerIntelligence() {
   ];
 
   return (
-    <InsightArticle
+    <InsightArticleV2
       category="Customer Strategy"
       title="Customer Intelligence for Growing Businesses"
       subtitle="How to build data-driven customer insights that drive retention and revenue."
       heroImage="/images/insight-customer-intel.jpg"
       readTime="7 min"
       publishDate="December 28, 2025"
+      sections={sections}
+      keyTakeaways={[
+        "Customer intelligence—the systematic collection, analysis, and application of customer data—lets growing companies deliver personalized, anticipatory service without enterprise-scale resources.",
+        "The foundation is consolidating scattered customer data, creating a unified golden-record view of each customer, and identifying patterns through segmentation.",
+        "The most valuable intelligence is predictive: anticipating churn, next-best-action, lifetime value, and cross-sell propensity, then acting on it through personalization at scale.",
+        "In a market of commoditized products, understanding customers and acting on that understanding becomes a sustainable competitive advantage.",
+      ]}
       relatedInsights={relatedInsights}
     >
       <p>
         In an era where customer expectations are shaped by experiences with digital giants like Amazon and Netflix, growing companies face a critical challenge: how do you deliver personalized, anticipatory service without enterprise-scale resources? The answer lies in customer intelligence—the systematic collection, analysis, and application of customer data to drive business decisions.
       </p>
 
-      <h2>The Customer Intelligence Imperative</h2>
+      <h2 id="customer-intelligence-imperative">The Customer Intelligence Imperative</h2>
       
       <p>
         Customer intelligence goes beyond basic analytics. It's about developing a deep, actionable understanding of who your customers are, what they need, and how they behave. This understanding becomes the foundation for everything from product development to marketing to customer service.
@@ -50,7 +66,7 @@ export default function CustomerIntelligence() {
         For growing companies, customer intelligence represents a significant competitive opportunity. While larger competitors may have more data, they often struggle to act on it quickly. Smaller, more agile organizations can turn insights into action faster, creating superior customer experiences.
       </p>
 
-      <h2>Building Your Customer Intelligence Foundation</h2>
+      <h2 id="building-foundation">Building Your Customer Intelligence Foundation</h2>
 
       <h3>Step 1: Consolidate Your Customer Data</h3>
       
@@ -106,7 +122,7 @@ export default function CustomerIntelligence() {
         <li><strong>Lifecycle:</strong> New customers, established relationships, at-risk for churn</li>
       </ul>
 
-      <h2>Turning Intelligence into Action</h2>
+      <h2 id="intelligence-into-action">Turning Intelligence into Action</h2>
 
       <h3>Predictive Customer Insights</h3>
 
@@ -138,7 +154,7 @@ export default function CustomerIntelligence() {
         <li>Dynamic pricing or offers based on customer segment</li>
       </ul>
 
-      <h2>Measuring Customer Intelligence Impact</h2>
+      <h2 id="measuring-impact">Measuring Customer Intelligence Impact</h2>
 
       <p>
         Track these metrics to measure the impact of your customer intelligence initiatives:
@@ -152,7 +168,7 @@ export default function CustomerIntelligence() {
         <li><strong>Customer acquisition cost:</strong> Are you acquiring customers more efficiently?</li>
       </ul>
 
-      <h2>Getting Started</h2>
+      <h2 id="getting-started">Getting Started</h2>
 
       <p>
         Building customer intelligence capabilities doesn't require a massive investment or a team of data scientists. Start with these practical steps:
@@ -165,7 +181,7 @@ export default function CustomerIntelligence() {
         <li><strong>Build the habit:</strong> Make data-driven decision-making part of your culture</li>
       </ul>
 
-      <h2>The Competitive Advantage</h2>
+      <h2 id="competitive-advantage">The Competitive Advantage</h2>
 
       <p>
         In a world where products and services are increasingly commoditized, customer intelligence becomes a sustainable competitive advantage. Companies that truly understand their customers—and act on that understanding—will win in the marketplace.
@@ -174,6 +190,6 @@ export default function CustomerIntelligence() {
       <p>
         The tools and techniques for building customer intelligence are more accessible than ever. The question isn't whether growing companies can compete on customer insight—it's whether they will.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

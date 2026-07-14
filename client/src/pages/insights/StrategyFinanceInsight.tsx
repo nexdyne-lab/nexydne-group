@@ -1,4 +1,4 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 const Cite = ({ n }: { n: number }) => (
   <sup>
@@ -23,8 +23,17 @@ export default function StrategyFinanceInsight() {
     { title: "The Complete Guide to Process Mining", category: "Technology Strategy", link: "/insights/process-mining-guide", image: "/images/hero-process-mining.jpg" },
   ];
 
+  const sections = [
+    { id: "adoption-vs-depth", label: "Adoption vs. depth" },
+    { id: "paying-off", label: "Where it pays off" },
+    { id: "value-gap", label: "The value gap" },
+    { id: "nexdyne-view", label: "The NexDyne view" },
+    { id: "practical-path", label: "A practical path" },
+    { id: "bottom-line", label: "The bottom line" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       category="Strategy & Finance"
       categoryHref="/insights"
       title="AI in the CFO's Office: Closing the Gap Between Adoption and Advantage"
@@ -32,6 +41,7 @@ export default function StrategyFinanceInsight() {
       heroImage="/images/ai-powered-finance-abstract.jpg"
       publishDate="July 1, 2026"
       readTime="10 min"
+      sections={sections}
       keyTakeaways={[
         "AI use in finance has roughly doubled since 2023, yet finance still trails every other business function—and nearly half of teams remain stuck in pilots.",
         "Firms that deploy agentic AI in finance report materially stronger performance, including up to ~40 points higher forecast accuracy and ROI than peers.",
@@ -54,7 +64,7 @@ export default function StrategyFinanceInsight() {
         arrived. Advantage has not. This piece is about the gap between the two—and how to close it.
       </p>
 
-      <h2>Adoption is up. Depth is not.</h2>
+      <h2 id="adoption-vs-depth">Adoption is up. Depth is not.</h2>
 
       <p>
         The headline numbers flatter the reality. Even as usage doubles, finance still ranks <strong>last among all
@@ -74,7 +84,7 @@ export default function StrategyFinanceInsight() {
         discipline to redesign those decisions before automating them.
       </p>
 
-      <h2>Where AI is already paying off</h2>
+      <h2 id="paying-off">Where AI is already paying off</h2>
 
       <p>
         The organizations that get past the pilot trap are seeing real returns—concentrated, tellingly, in
@@ -93,7 +103,7 @@ export default function StrategyFinanceInsight() {
         maturity<Cite n={4} />.
       </p>
 
-      <h2>The gap almost no one talks about: value you can't measure</h2>
+      <h2 id="value-gap">The gap almost no one talks about: value you can't measure</h2>
 
       <p>
         Here is the uncomfortable finding. Even among adopters, most institutions cannot prove the value they are
@@ -109,7 +119,7 @@ export default function StrategyFinanceInsight() {
         scaled with confidence, and can't be trusted with anything that touches capital allocation or risk.
       </p>
 
-      <h2>The NexDyne view: govern the human system first</h2>
+      <h2 id="nexdyne-view">The NexDyne view: govern the human system first</h2>
 
       <p>
         At NexDyne we start from a simple conviction: <strong>we implement technology only after we design the human
@@ -140,7 +150,7 @@ export default function StrategyFinanceInsight() {
         advantage.
       </p>
 
-      <h2>A practical path for finance leaders</h2>
+      <h2 id="practical-path">A practical path for finance leaders</h2>
 
       <h3>1. Start where the decision is expensive and repeatable</h3>
       <p>
@@ -167,7 +177,7 @@ export default function StrategyFinanceInsight() {
         function<Cite n={4} />.
       </p>
 
-      <h2>The bottom line</h2>
+      <h2 id="bottom-line">The bottom line</h2>
 
       <p>
         The finance function has crossed the adoption threshold—the technology question is largely settled<Cite n={1} /><Cite n={2} />.
@@ -181,6 +191,6 @@ export default function StrategyFinanceInsight() {
         finance capability once reserved for the largest institutions is now within reach<Cite n={5} /><Cite n={6} />—
         provided it is governed with the discipline the stakes demand.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

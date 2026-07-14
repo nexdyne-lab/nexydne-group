@@ -1,4 +1,4 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 const Cite = ({ n }: { n: number }) => (
   <sup>
@@ -19,8 +19,15 @@ export default function EUAIActMidMarket() {
     { title: "Shadow AI Is Already Inside Your Firm", category: "Security & Risk", link: "/insights/shadow-ai-inside-your-firm", image: "/images/cyber-abstract.jpg" },
   ];
 
+  const sections = [
+    { id: "the-misconception", label: "The misconception" },
+    { id: "august-2026", label: "What lands in 2026" },
+    { id: "90-day-posture", label: "A 90-day posture" },
+    { id: "compliance-by-product", label: "Compliance as by-product" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       category="Regulation & Governance"
       categoryHref="/insights"
       title="The EU AI Act Is Enforcing in Stages — and August 2026 Is the Big One"
@@ -28,6 +35,7 @@ export default function EUAIActMidMarket() {
       heroImage="/images/business-strategy-abstract.jpg"
       publishDate="July 6, 2026"
       readTime="9 min"
+      sections={sections}
       keyTakeaways={[
         "The AI Act entered into force in August 2024 and applies in stages: prohibitions and AI-literacy duties from February 2025, general-purpose AI obligations from August 2025, and most high-risk requirements from August 2026.",
         "You don't have to build AI to be covered. Deployers — firms that merely use AI systems in areas like hiring, credit, or worker management — carry their own obligations.",
@@ -52,7 +60,7 @@ export default function EUAIActMidMarket() {
         routing insurance claims. Deployment alone creates obligations.
       </p>
 
-      <h2>The misconception that creates the exposure</h2>
+      <h2 id="the-misconception">The misconception that creates the exposure</h2>
 
       <p>
         The recurring assumption we hear — "we just use vendor tools, so compliance is the vendor's problem" — is
@@ -68,7 +76,7 @@ export default function EUAIActMidMarket() {
         creates the obligations.
       </blockquote>
 
-      <h2>What actually lands in August 2026</h2>
+      <h2 id="august-2026">What actually lands in August 2026</h2>
 
       <p>
         The high-risk regime covers AI used in domains listed in the Act — among them employment and worker
@@ -85,7 +93,7 @@ export default function EUAIActMidMarket() {
         place growing firms feel the Act is not a regulator's letter. It is a lost RFP.
       </p>
 
-      <h2>A 90-day posture that doesn't require a compliance department</h2>
+      <h2 id="90-day-posture">A 90-day posture that doesn't require a compliance department</h2>
 
       <h3>Days 1–30: Inventory</h3>
       <p>
@@ -108,7 +116,7 @@ export default function EUAIActMidMarket() {
         <Cite n={3} /> so the same file serves EU compliance, customer due-diligence, and board reporting at once.
       </p>
 
-      <h2>Compliance as a by-product, not a project</h2>
+      <h2 id="compliance-by-product">Compliance as a by-product, not a project</h2>
 
       <p>
         Firms that treat the AI Act as a standalone compliance project will do the work twice — once for the
@@ -117,6 +125,6 @@ export default function EUAIActMidMarket() {
         actually steer. That is the entire argument of Human Intelligence Governance: govern first, and the
         regulatory question answers itself.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

@@ -1,6 +1,17 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function AIEconomicImpact() {
+  const sections = [
+    { id: "understanding-opportunity", label: "The $15T opportunity" },
+    { id: "where-value-created", label: "Where value is created" },
+    { id: "growth-stage-advantage", label: "Growth-stage advantage" },
+    { id: "regional-shifts", label: "Regional shifts" },
+    { id: "workforce-transformation", label: "Workforce transformation" },
+    { id: "investment-priorities", label: "Investment priorities" },
+    { id: "cost-of-inaction", label: "The cost of inaction" },
+    { id: "taking-action", label: "Taking action" },
+  ];
+
   const relatedInsights = [
     {
       title: "How AI Agents Are Reshaping Enterprise Operations",
@@ -23,7 +34,7 @@ export default function AIEconomicImpact() {
   ];
 
   return (
-    <InsightArticle
+    <InsightArticleV2
       category="Economic Impact"
       categoryHref="/insights"
       title="The $15 Trillion Question: How AI Will Reshape the Global Economy"
@@ -31,13 +42,20 @@ export default function AIEconomicImpact() {
       heroImage="/images/hero-ai-global-economy.jpg"
       publishDate="January 18, 2026"
       readTime="12 min"
+      sections={sections}
+      keyTakeaways={[
+        "AI is projected to add $15.7 trillion to the global economy by 2030, split between $6.6 trillion in productivity gains and $9.1 trillion in consumption effects.",
+        "Value will concentrate in sectors such as healthcare, financial services, retail and e-commerce, and manufacturing—while gains vary sharply by region.",
+        "Growing companies hold structural advantages—agility, focus, cleaner data, and less bureaucracy—that let them deploy AI in months rather than years.",
+        "Capturing value requires investing in data infrastructure, high-impact use cases, talent, and partnerships; the cost of inaction is compounding competitive disadvantage.",
+      ]}
       relatedInsights={relatedInsights}
     >
       <p>
         The numbers are staggering. According to PwC's Global Artificial Intelligence Study, AI is projected to contribute $15.7 trillion to the global economy by 2030—more than the current combined output of China and India. This isn't a distant possibility; it's an economic transformation already underway.
       </p>
 
-      <h2>Understanding the $15 Trillion Opportunity</h2>
+      <h2 id="understanding-opportunity">Understanding the $15 Trillion Opportunity</h2>
       
       <p>
         The economic impact of AI breaks down into two primary categories: productivity gains and consumption effects. Productivity improvements—estimated at $6.6 trillion—come from businesses automating processes, augmenting human capabilities, and optimizing operations. Consumption effects—worth $9.1 trillion—emerge as AI enables new products, services, and experiences that drive consumer spending.
@@ -51,7 +69,7 @@ export default function AIEconomicImpact() {
         For growing companies, this presents both an enormous opportunity and an existential challenge. Those who successfully harness AI will capture disproportionate value; those who don't risk being displaced by more agile competitors.
       </p>
 
-      <h2>Where Value Will Be Created</h2>
+      <h2 id="where-value-created">Where Value Will Be Created</h2>
 
       <h3>Healthcare: $1.8 Trillion</h3>
       
@@ -77,7 +95,7 @@ export default function AIEconomicImpact() {
         Predictive maintenance, quality control, and supply chain optimization are driving AI adoption in manufacturing. Growing manufacturers are finding that AI investments often pay back within 12-18 months through reduced downtime and improved efficiency.
       </p>
 
-      <h2>The Growth-Stage Advantage</h2>
+      <h2 id="growth-stage-advantage">The Growth-Stage Advantage</h2>
 
       <p>
         While enterprise organizations often struggle with legacy systems and organizational inertia, growing companies possess unique advantages in the AI economy:
@@ -90,7 +108,7 @@ export default function AIEconomicImpact() {
         <li><strong>Culture:</strong> Less bureaucracy enables the cultural shifts necessary for successful AI adoption</li>
       </ul>
 
-      <h2>Regional Economic Shifts</h2>
+      <h2 id="regional-shifts">Regional Economic Shifts</h2>
 
       <p>
         AI's economic impact won't be distributed evenly. China is projected to see the largest gains—a 26% boost to GDP by 2030—driven by massive government investment and a manufacturing-heavy economy ripe for automation. North America follows with a 14.5% GDP increase, led by innovation in AI development and early adoption across industries.
@@ -100,7 +118,7 @@ export default function AIEconomicImpact() {
         For African economies, AI presents a leapfrog opportunity. Just as mobile banking allowed Africa to skip traditional banking infrastructure, AI could enable African businesses to compete globally without the legacy systems that burden developed-market competitors.
       </p>
 
-      <h2>Workforce Transformation</h2>
+      <h2 id="workforce-transformation">Workforce Transformation</h2>
 
       <p>
         The $15 trillion AI economy will fundamentally reshape the workforce. While some jobs will be automated, AI will create new roles and transform existing ones. Our analysis suggests:
@@ -117,7 +135,7 @@ export default function AIEconomicImpact() {
         For business leaders, this means investing not just in AI technology, but in workforce development. Companies that help their employees adapt to AI-augmented work will retain talent and build competitive advantage.
       </p>
 
-      <h2>Investment Priorities for Growth-Stage Leaders</h2>
+      <h2 id="investment-priorities">Investment Priorities for Growth-Stage Leaders</h2>
 
       <p>
         To capture value in the AI economy, growing companies should prioritize:
@@ -143,7 +161,7 @@ export default function AIEconomicImpact() {
         Partner with AI specialists who understand your industry. The right partner can accelerate implementation and help avoid costly mistakes.
       </p>
 
-      <h2>The Cost of Inaction</h2>
+      <h2 id="cost-of-inaction">The Cost of Inaction</h2>
 
       <p>
         Perhaps the most important insight from the $15 trillion projection is what it implies for companies that don't embrace AI. As AI-enabled competitors capture productivity gains and deliver superior customer experiences, laggards will face:
@@ -156,7 +174,7 @@ export default function AIEconomicImpact() {
         <li>Increasing difficulty catching up as AI capabilities compound over time</li>
       </ul>
 
-      <h2>Taking Action</h2>
+      <h2 id="taking-action">Taking Action</h2>
 
       <p>
         The $15 trillion AI economy isn't a future scenario—it's being built right now. Every day that passes without AI investment is a day of compounding disadvantage.
@@ -169,6 +187,6 @@ export default function AIEconomicImpact() {
       <p>
         The question isn't whether AI will reshape your industry. It's whether you'll be among the companies creating the $15 trillion opportunity—or among those disrupted by it.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

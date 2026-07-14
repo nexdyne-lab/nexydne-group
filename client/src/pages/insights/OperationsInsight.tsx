@@ -1,4 +1,4 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 const Cite = ({ n }: { n: number }) => (
   <sup>
@@ -23,8 +23,17 @@ export default function OperationsInsight() {
     { title: "The Pragmatic CEO's Guide to AI", category: "AI Executive Guide", link: "/insights/ceo-guide-data-modernization", image: "/images/hero-ceo-ai-guide.jpg" },
   ];
 
+  const sections = [
+    { id: "broad-adoption-narrow-value", label: "Adoption vs. value" },
+    { id: "agentic-shift", label: "The agentic shift" },
+    { id: "governance-gap", label: "The governance gap" },
+    { id: "nexdyne-view", label: "The NexDyne view" },
+    { id: "practical-path", label: "A practical path" },
+    { id: "bottom-line", label: "The bottom line" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       category="Operations"
       categoryHref="/insights"
       title="From Automation to Agentic Operations: Turning Adoption into Advantage"
@@ -32,6 +41,7 @@ export default function OperationsInsight() {
       heroImage="/images/ai-acceleration-abstract.jpg"
       publishDate="July 1, 2026"
       readTime="10 min"
+      sections={sections}
       keyTakeaways={[
         "Operations is now the leading target for enterprise AI, yet only about 12% of leaders report capturing both revenue growth and cost reduction from it.",
         "Agentic AI is shifting from novelty to default—Gartner expects roughly a third of enterprise software to embed AI agents by 2028, up from under 1% in 2024.",
@@ -56,7 +66,7 @@ export default function OperationsInsight() {
         question has moved on from "should we?" to "why aren't we getting more?"
       </p>
 
-      <h2>Broad adoption, narrow value</h2>
+      <h2 id="broad-adoption-narrow-value">Broad adoption, narrow value</h2>
 
       <p>
         Because here is the paradox at the heart of operational AI: usage is everywhere, but transformative impact is
@@ -71,7 +81,7 @@ export default function OperationsInsight() {
         is whether the process around the model was redesigned to use it.
       </blockquote>
 
-      <h2>The agentic shift is already underway</h2>
+      <h2 id="agentic-shift">The agentic shift is already underway</h2>
 
       <p>
         The next wave is agentic: AI that doesn't just analyze but <em>acts</em>, executing multi-step work across
@@ -87,7 +97,7 @@ export default function OperationsInsight() {
         precisely where the risk concentrates.
       </p>
 
-      <h2>The governance gap</h2>
+      <h2 id="governance-gap">The governance gap</h2>
 
       <p>
         Agent adoption is sprinting ahead of the ability to govern it. Only about one in five companies has a mature
@@ -103,7 +113,7 @@ export default function OperationsInsight() {
         imbalance NexDyne exists to correct.
       </p>
 
-      <h2>The NexDyne view: design the operation, then deploy the agent</h2>
+      <h2 id="nexdyne-view">The NexDyne view: design the operation, then deploy the agent</h2>
 
       <p>
         Our discipline is Human Intelligence Governance—HIG™—and in operations it is deceptively simple: <strong>we
@@ -127,7 +137,7 @@ export default function OperationsInsight() {
         you move from a trusted pilot to production—the step most organizations never take at scale<Cite n={3} />.
       </p>
 
-      <h2>A practical path for operations leaders</h2>
+      <h2 id="practical-path">A practical path for operations leaders</h2>
 
       <h3>1. Fix the data foundation you'll actually use</h3>
       <p>
@@ -154,7 +164,7 @@ export default function OperationsInsight() {
         evidence, not a leap you take on faith.
       </p>
 
-      <h2>The bottom line</h2>
+      <h2 id="bottom-line">The bottom line</h2>
 
       <p>
         The agentic operation is coming fast<Cite n={4} />, and the winners won't be those who deploy the most
@@ -162,6 +172,6 @@ export default function OperationsInsight() {
         don't need the largest AI budget to build an intelligent operation. You need the discipline to design the
         human system first, and the governance to scale it with confidence. That is the work NexDyne was built to do.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

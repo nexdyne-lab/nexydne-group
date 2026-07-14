@@ -1,6 +1,15 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function DigitalTransformationReadiness() {
+  const sections = [
+    { id: "sign-1-systems", label: "Systems holding you back" },
+    { id: "sign-2-competitors", label: "Competitors pulling ahead" },
+    { id: "sign-3-data", label: "Siloed data" },
+    { id: "sign-4-team", label: "Team ready for change" },
+    { id: "sign-5-business-case", label: "A clear business case" },
+    { id: "taking-the-next-step", label: "Taking the next step" },
+  ];
+
   const relatedInsights = [
     {
       title: "How Growing Companies Are Winning with AI",
@@ -23,20 +32,27 @@ export default function DigitalTransformationReadiness() {
   ];
 
   return (
-    <InsightArticle
+    <InsightArticleV2
       category="Digital Strategy"
       title="5 Signs Your Business Is Ready for Digital Transformation"
       subtitle="Key indicators that signal it's time to modernize your operations and technology stack."
       heroImage="/images/insight-digital-transform.jpg"
       readTime="6 min"
       publishDate="January 10, 2026"
+      sections={sections}
+      keyTakeaways={[
+        "The clearest readiness signal is when existing technology actively impedes growth—manual data entry between disconnected systems, no real-time intelligence, and process workarounds.",
+        "When competitors offer capabilities you can't match on speed, experience, or personalization, transformation moves from optional to essential.",
+        "Organizational readiness matters as much as technology: leadership alignment, change champions, a skills foundation, and cultural openness to change.",
+        "Successful transformation is driven by a clear, measurable business case; recognizing three or more of these signs means you're likely ready to begin.",
+      ]}
       relatedInsights={relatedInsights}
     >
       <p>
         Digital transformation has become a business imperative, but timing is everything. Move too early without the right foundation, and you risk wasted investment and organizational fatigue. Wait too long, and competitors will leave you behind. Understanding when your organization is truly ready for transformation can mean the difference between success and costly failure.
       </p>
 
-      <h2>Sign 1: Your Current Systems Are Holding You Back</h2>
+      <h2 id="sign-1-systems">Sign 1: Your Current Systems Are Holding You Back</h2>
       
       <p>
         The clearest indicator of transformation readiness is when your existing technology actively impedes business growth. If your team spends more time working around system limitations than leveraging them for competitive advantage, it's time for change.
@@ -57,7 +73,7 @@ export default function DigitalTransformationReadiness() {
         "The cost of maintaining legacy systems often exceeds the investment required to modernize. The question isn't whether you can afford to transform—it's whether you can afford not to."
       </blockquote>
 
-      <h2>Sign 2: Your Competitors Are Pulling Ahead</h2>
+      <h2 id="sign-2-competitors">Sign 2: Your Competitors Are Pulling Ahead</h2>
 
       <p>
         When competitors start offering capabilities you can't match—faster delivery, better customer experiences, more personalized service—it's a clear signal that digital transformation has moved from optional to essential.
@@ -74,7 +90,7 @@ export default function DigitalTransformationReadiness() {
         <li>Operational efficiency and pricing flexibility</li>
       </ul>
 
-      <h2>Sign 3: Your Data Is Siloed and Underutilized</h2>
+      <h2 id="sign-3-data">Sign 3: Your Data Is Siloed and Underutilized</h2>
 
       <p>
         Most growing companies sit on goldmines of data scattered across departments, systems, and spreadsheets. If you can't easily answer basic questions about customer behavior, operational efficiency, or market trends, you're leaving value on the table.
@@ -95,7 +111,7 @@ export default function DigitalTransformationReadiness() {
         If these questions require weeks of analysis or remain unanswerable, digital transformation can unlock significant value.
       </p>
 
-      <h2>Sign 4: Your Team Is Ready for Change</h2>
+      <h2 id="sign-4-team">Sign 4: Your Team Is Ready for Change</h2>
 
       <p>
         Technology is only half the transformation equation. Organizational readiness—the willingness and ability of your team to embrace new ways of working—is equally critical.
@@ -112,7 +128,7 @@ export default function DigitalTransformationReadiness() {
         <li><strong>Cultural openness:</strong> Organization has successfully navigated change before</li>
       </ul>
 
-      <h2>Sign 5: You Have a Clear Business Case</h2>
+      <h2 id="sign-5-business-case">Sign 5: You Have a Clear Business Case</h2>
 
       <p>
         Transformation for transformation's sake rarely succeeds. The most successful digital initiatives are driven by specific, measurable business objectives tied to strategic priorities.
@@ -129,7 +145,7 @@ export default function DigitalTransformationReadiness() {
         <li>Competitive positioning (market share, customer satisfaction)</li>
       </ul>
 
-      <h2>Taking the Next Step</h2>
+      <h2 id="taking-the-next-step">Taking the Next Step</h2>
 
       <p>
         If you recognize three or more of these signs in your organization, you're likely ready to begin your digital transformation journey. The key is to start with a clear strategy, realistic timeline, and the right partners.
@@ -138,6 +154,6 @@ export default function DigitalTransformationReadiness() {
       <p>
         Successful transformation doesn't happen overnight. It's a journey that requires patience, persistence, and a willingness to learn and adapt. But for organizations that are truly ready, the rewards—improved efficiency, better customer experiences, and sustainable competitive advantage—are well worth the investment.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }

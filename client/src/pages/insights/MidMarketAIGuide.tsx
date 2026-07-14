@@ -1,6 +1,14 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function MidMarketAIGuide() {
+  const sections = [
+    { id: "growth-stage-advantage", label: "The growth-stage advantage" },
+    { id: "five-ai-applications", label: "Five AI applications" },
+    { id: "building-roadmap", label: "Building your roadmap" },
+    { id: "common-pitfalls", label: "Common pitfalls" },
+    { id: "path-forward", label: "The path forward" },
+  ];
+
   const relatedInsights = [
     {
       title: "5 Signs Your Business Is Ready for Digital Transformation",
@@ -23,20 +31,27 @@ export default function MidMarketAIGuide() {
   ];
 
   return (
-    <InsightArticle
+    <InsightArticleV2
       category="Featured"
       title="How Growing Companies Are Winning with AI: A Practical Guide"
       subtitle="Discover how growing businesses are leveraging artificial intelligence to compete with larger enterprises—without the enterprise budget."
       heroImage="/images/insight-ai-midmarket.jpg"
       readTime="8 min"
       publishDate="January 15, 2026"
+      sections={sections}
+      keyTakeaways={[
+        "AI is no longer exclusive to Fortune 500 budgets; the organizational agility and manageable data volumes of growing companies make them surprisingly well-positioned for fast, cost-effective adoption.",
+        "Five high-impact applications stand out: intelligent customer service, predictive sales intelligence, automated financial operations, supply chain optimization, and marketing personalization.",
+        "Successful adoption follows a phased roadmap—foundation, expansion, then transformation—starting with a single well-defined use case and measuring results rigorously.",
+        "Common pitfalls include starting too big, ignoring data quality, underestimating change management, and chasing shiny objects rather than real business problems.",
+      ]}
       relatedInsights={relatedInsights}
     >
       <p>
         The artificial intelligence revolution is no longer exclusive to Fortune 500 companies with unlimited budgets and dedicated data science teams. Today, growing companies are finding innovative ways to harness AI's transformative power, often achieving results that rival—or even surpass—their larger competitors.
       </p>
 
-      <h2>The Growth-Stage AI Advantage</h2>
+      <h2 id="growth-stage-advantage">The Growth-Stage AI Advantage</h2>
       
       <p>
         While enterprise organizations often struggle with legacy systems and bureaucratic approval processes, growing companies possess unique advantages that make them surprisingly well-positioned for AI adoption. Their organizational agility allows for faster decision-making, while their manageable data volumes make AI implementation more straightforward and cost-effective.
@@ -50,7 +65,7 @@ export default function MidMarketAIGuide() {
         Our research across dozens of implementations at growing companies reveals that companies in the $50M to $500M revenue range are achieving AI ROI 40% faster than their enterprise counterparts. The key lies in strategic, focused implementations rather than attempting to boil the ocean.
       </p>
 
-      <h2>Five High-Impact AI Applications for Growing Companies</h2>
+      <h2 id="five-ai-applications">Five High-Impact AI Applications for Growing Companies</h2>
 
       <h3>1. Intelligent Customer Service</h3>
       <p>
@@ -77,7 +92,7 @@ export default function MidMarketAIGuide() {
         Personalized marketing at scale was once the exclusive domain of tech giants. Today, AI-powered marketing platforms enable growing companies to deliver individualized experiences across email, web, and social channels.
       </p>
 
-      <h2>Building Your AI Roadmap</h2>
+      <h2 id="building-roadmap">Building Your AI Roadmap</h2>
 
       <p>
         Successful AI adoption among growing companies follows a proven pattern. Start with a single, well-defined use case that addresses a clear business pain point. Measure results rigorously, build internal capabilities, and expand systematically.
@@ -98,7 +113,7 @@ export default function MidMarketAIGuide() {
         Move from tactical implementations to strategic AI integration. At this stage, AI becomes a competitive differentiator rather than just an efficiency tool.
       </p>
 
-      <h2>Common Pitfalls to Avoid</h2>
+      <h2 id="common-pitfalls">Common Pitfalls to Avoid</h2>
 
       <p>
         Our experience working with growing companies has revealed several common mistakes that can derail AI initiatives:
@@ -111,7 +126,7 @@ export default function MidMarketAIGuide() {
         <li><strong>Chasing shiny objects:</strong> Focus on AI applications that solve real business problems, not the latest trending technology.</li>
       </ul>
 
-      <h2>The Path Forward</h2>
+      <h2 id="path-forward">The Path Forward</h2>
 
       <p>
         The AI opportunity for growing companies is real and expanding. Companies that act now will build competitive advantages that compound over time. Those that wait risk falling behind as AI-enabled competitors capture market share and talent.
@@ -120,6 +135,6 @@ export default function MidMarketAIGuide() {
       <p>
         The question isn't whether to adopt AI—it's how quickly you can move from exploration to implementation. With the right strategy and partners, growing companies can achieve AI success faster and more cost-effectively than ever before.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }
