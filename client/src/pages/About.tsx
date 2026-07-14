@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { Mail, Linkedin } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
@@ -309,16 +310,33 @@ export default function About() {
             {founders.map((f, i) => (
               <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.08 }}>
                 <div className="group bg-white border border-border p-7 lg:p-9 h-full transition-shadow duration-300 hover:shadow-[0_18px_40px_-22px_rgba(0,0,0,0.22)]">
-                  <div className="flex items-center gap-5">
-                    <div className="shrink-0 h-16 w-16 rounded-full bg-charcoal text-white flex items-center justify-center text-[1.05rem] font-semibold tracking-[0.02em]">
+                  <div className="flex items-start gap-6">
+                    <div className="shrink-0 h-24 w-24 rounded-full bg-charcoal text-white flex items-center justify-center text-[1.5rem] font-semibold tracking-[0.02em] ring-4 ring-off-white">
                       {f.initials}
                     </div>
-                    <div>
-                      <h3 className="text-[1.2rem] font-semibold text-charcoal leading-tight">{f.name}</h3>
-                      <p className="text-[13px] text-primary font-medium mt-1 uppercase tracking-[0.06em]">{f.role}</p>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-[1.4rem] lg:text-[1.55rem] font-semibold text-charcoal leading-tight tracking-[-0.015em]">{f.name}</h3>
+                      <p className="text-[12px] font-semibold uppercase tracking-[0.08em] text-charcoal/70 mt-2">{f.role}</p>
+                      <span aria-hidden className="block h-[2px] w-9 bg-primary mt-3" />
+                      <p className="text-[15px] text-muted-foreground leading-[1.7] mt-4">{f.focus}</p>
+                      <div className="flex items-center gap-3 mt-6">
+                        <Link href="/contact">
+                          <span aria-label={`Contact ${f.name}`} className="h-10 w-10 rounded-full bg-charcoal text-white flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                            <Mail className="w-[18px] h-[18px]" />
+                          </span>
+                        </Link>
+                        <a
+                          href="https://www.linkedin.com/company/nexdyne"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`${f.name} — firm LinkedIn`}
+                          className="h-10 w-10 rounded-full bg-charcoal text-white flex items-center justify-center hover:bg-primary transition-colors"
+                        >
+                          <Linkedin className="w-[18px] h-[18px]" />
+                        </a>
+                      </div>
                     </div>
                   </div>
-                  <p className="text-[15px] text-muted-foreground leading-[1.7] mt-6">{f.focus}</p>
                 </div>
               </motion.div>
             ))}
