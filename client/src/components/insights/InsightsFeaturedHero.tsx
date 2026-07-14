@@ -34,8 +34,7 @@ export default function InsightsFeaturedHero({
           <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
             INSIGHTS · FEATURED
           </span>
-          <h1
-            className="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+          <h1 className="nx-h1 text-white mb-6"
             style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
           >
             {featuredArticle.title}

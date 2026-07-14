@@ -75,8 +75,7 @@ export default function CaseStudyTemplate({
             <span className="block nx-eyebrow text-charcoal/60 mb-5">
               {industry} · {client}
             </span>
-            <h1
-              className="text-3xl sm:text-4xl md:text-[2.75rem] lg:text-[3.25rem] text-charcoal leading-[1.1] mb-6"
+            <h1 className="nx-h1 text-charcoal mb-6"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               {title}

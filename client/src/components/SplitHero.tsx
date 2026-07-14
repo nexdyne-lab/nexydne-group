@@ -75,7 +75,7 @@ export function SplitHero() {
               </span>
               
               {/* Main Tagline - Serif Font like Solutions Section */}
-              <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] xl:text-[3.25rem] text-charcoal leading-[1.15] tracking-tight mb-6">
+              <h1 className="nx-h1 text-charcoal mb-6">
                 Redefining what's possible with Artificial Intelligence
               </h1>
               

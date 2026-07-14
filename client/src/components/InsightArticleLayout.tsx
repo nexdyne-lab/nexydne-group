@@ -110,7 +110,7 @@ export default function InsightArticleLayout({
               </div>
             </div>
             
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.15] mb-6 text-white">
+            <h1 className="nx-h1 mb-6 text-white">
               {title}
             </h1>
             

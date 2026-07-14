@@ -52,7 +52,7 @@ export default function CaseStudyArticle({
               {industry}
             </span>
           </Link>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6 leading-tight">
+          <h1 className="nx-h1 mt-4 mb-6">
             {title}
           </h1>
           <p className="text-xl text-muted-foreground/50 mb-8 leading-relaxed max-w-3xl">
