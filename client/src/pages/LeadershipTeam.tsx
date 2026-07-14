@@ -11,7 +11,7 @@ const fadeUp = {
   transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
 };
 
-// Founding partners. (Titles are editable — adjust to taste.)
+// Firm leadership. (Titles are editable — adjust to taste.)
 const leaders = [
   {
     name: "David Seyaker",
@@ -20,7 +20,7 @@ const leaders = [
   },
   {
     name: "Raphaelyn CN Bomosy-Forkpa",
-    role: "Co-Founder & Managing Partner",
+    role: "Managing Partner",
     focus: "Leads client delivery and the standards behind every engagement—turning strategy into governed, durable outcomes.",
   },
 ];
@@ -85,8 +85,8 @@ export default function LeadershipTeam() {
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div {...fadeUp} className="flex flex-wrap items-end justify-between gap-6 mb-12">
             <div>
-              <span className="nx-eyebrow text-charcoal/55">Our founders</span>
-              <h2 className="nx-h2 text-charcoal mt-4">Meet the founders</h2>
+              <span className="nx-eyebrow text-charcoal/55">Our leadership</span>
+              <h2 className="nx-h2 text-charcoal mt-4">The people leading the firm</h2>
             </div>
             <div className="border-l-2 border-primary pl-5">
               <div className="text-[2.5rem] leading-none font-semibold text-charcoal">62+</div>

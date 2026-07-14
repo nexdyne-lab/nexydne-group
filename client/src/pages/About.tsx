@@ -18,7 +18,7 @@ export default function About() {
     { value: "62+", label: "Client engagements delivered" },
     { value: "18", label: "Industries served" },
     { value: "HIG™", label: "Our governing doctrine" },
-    { value: "2", label: "Founding partners, one firm" },
+    { value: "2", label: "Partners leading the firm" },
   ];
 
   const principles = [
@@ -66,7 +66,7 @@ export default function About() {
 
   const founders = [
     { name: "David Seyaker", initials: "DS", role: "Co-Founder & Chief Executive", focus: "Sets the firm's direction and its governing doctrine, HIG™ — leading strategy and enterprise-wide transformation for clients." },
-    { name: "Raphaelyn CN Bomosy-Forkpa", initials: "RB", role: "Co-Founder & Managing Partner", focus: "Leads client delivery and the standards behind every engagement — turning strategy into governed, durable outcomes." },
+    { name: "Raphaelyn CN Bomosy-Forkpa", initials: "RB", role: "Managing Partner", focus: "Leads client delivery and the standards behind every engagement — turning strategy into governed, durable outcomes." },
   ];
 
   const partners = ["OpenAI", "Anthropic", "AWS", "Google Cloud", "Microsoft Azure", "Databricks"];
