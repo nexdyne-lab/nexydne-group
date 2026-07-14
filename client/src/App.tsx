@@ -979,6 +979,22 @@ import InsurerClaimsRpa from "./pages/cases/industries/InsurerClaimsRpa";
 import HealthcareEligibilityRpa from "./pages/cases/industries/HealthcareEligibilityRpa";
 import BankOperatingModelTransformation from "./pages/cases/industries/BankOperatingModelTransformation";
 import IndustrialMaIntegration from "./pages/cases/industries/IndustrialMaIntegration";
+import RetailChatbotDeflection from "./pages/cases/industries/RetailChatbotDeflection";
+import BankChatbotLeadgen from "./pages/cases/industries/BankChatbotLeadgen";
+import TelecomConversationalAi from "./pages/cases/industries/TelecomConversationalAi";
+import BankInternalAgent from "./pages/cases/industries/BankInternalAgent";
+import InsurancePortal from "./pages/cases/industries/InsurancePortal";
+import DistributionDealerPortal from "./pages/cases/industries/DistributionDealerPortal";
+import FinancialServicesInsightRedesign from "./pages/cases/industries/FinancialServicesInsightRedesign";
+import RetailInsightCadence from "./pages/cases/industries/RetailInsightCadence";
+import HealthOnboardingJourneyMap from "./pages/cases/industries/HealthOnboardingJourneyMap";
+import SaasCrossFunctionalJourney from "./pages/cases/industries/SaasCrossFunctionalJourney";
+import EcommercePersonalizationExecution from "./pages/cases/industries/EcommercePersonalizationExecution";
+import HospitalityPersonalizationExecution from "./pages/cases/industries/HospitalityPersonalizationExecution";
+import RetailEngagement from "./pages/cases/industries/RetailEngagement";
+import SaasOnboarding from "./pages/cases/industries/SaasOnboarding";
+import SaasMeddiccTransformation from "./pages/cases/industries/SaasMeddiccTransformation";
+import ManufacturerChannelTransformation from "./pages/cases/industries/ManufacturerChannelTransformation";
 import ChemicalPlantOptimization from "./pages/cases/industries/ChemicalPlantOptimization";
 import ChemicalSupplyChain from "./pages/cases/industries/ChemicalSupplyChain";
 import ChemicalSustainability from "./pages/cases/industries/ChemicalSustainability";
@@ -1860,6 +1876,24 @@ function Router() {
         <Route path="/cases/healthcare-eligibility-rpa" component={HealthcareEligibilityRpa} />
         <Route path="/cases/bank-operating-model-transformation" component={BankOperatingModelTransformation} />
         <Route path="/cases/industrial-ma-integration" component={IndustrialMaIntegration} />
+        <Route path="/cases/retail-chatbot-deflection" component={RetailChatbotDeflection} />
+        <Route path="/cases/bank-chatbot-leadgen" component={BankChatbotLeadgen} />
+        <Route path="/cases/telecom-conversational-ai" component={TelecomConversationalAi} />
+        <Route path="/cases/bank-internal-agent" component={BankInternalAgent} />
+        <Route path="/cases/insurance-portal" component={InsurancePortal} />
+        <Route path="/cases/distribution-dealer-portal" component={DistributionDealerPortal} />
+        <Route path="/cases/financial-services-insight-redesign" component={FinancialServicesInsightRedesign} />
+        <Route path="/cases/retail-insight-cadence" component={RetailInsightCadence} />
+        <Route path="/cases/retail-personalization" component={RetailPersonalization} />
+        <Route path="/cases/financial-churn-prediction" component={FinancialChurnPrediction} />
+        <Route path="/cases/health-onboarding-journey-map" component={HealthOnboardingJourneyMap} />
+        <Route path="/cases/saas-cross-functional-journey" component={SaasCrossFunctionalJourney} />
+        <Route path="/cases/ecommerce-personalization-execution" component={EcommercePersonalizationExecution} />
+        <Route path="/cases/hospitality-personalization-execution" component={HospitalityPersonalizationExecution} />
+        <Route path="/cases/retail-engagement" component={RetailEngagement} />
+        <Route path="/cases/saas-onboarding" component={SaasOnboarding} />
+        <Route path="/cases/saas-meddicc-transformation" component={SaasMeddiccTransformation} />
+        <Route path="/cases/manufacturer-channel-transformation" component={ManufacturerChannelTransformation} />
         <Route path="/cases/chemical-plant-optimization" component={ChemicalPlantOptimization} />
         <Route path="/cases/chemical-supply-chain" component={ChemicalSupplyChain} />
         <Route path="/cases/chemical-sustainability" component={ChemicalSustainability} />
