@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Mail } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
@@ -11,6 +11,14 @@ const fadeUp = {
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, amount: 0.2 },
   transition: { duration: 0.6, ease },
+};
+
+// Founder — sits above the managing partners.
+const founder = {
+  name: "David Seyaker",
+  initials: "DS",
+  role: "Co-Founder & Chief Executive",
+  focus: "Sets the firm's direction and its governing doctrine, HIG™ — leading strategy and enterprise-wide transformation for clients.",
 };
 
 // Managing partners — each accountable for outcomes in one practice area.
@@ -49,8 +57,53 @@ export default function LeadershipTeam() {
         </div>
       </section>
 
+      {/* ── Founder — featured card above the partners ────────────────────── */}
+      <section className="pt-4 pb-14 md:pb-16 bg-off-white">
+        <div className="container px-4 sm:px-6 md:px-12">
+          <motion.div {...fadeUp} className="mb-6">
+            <span className="nx-eyebrow text-charcoal/55">Founder</span>
+          </motion.div>
+          <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.08 }} className="max-w-2xl">
+            <div className="group bg-white border border-border p-7 lg:p-9 transition-shadow duration-300 hover:shadow-[0_18px_40px_-22px_rgba(0,0,0,0.22)]">
+              <div className="flex items-start gap-6">
+                <div className="shrink-0 h-24 w-24 rounded-full bg-charcoal text-white flex items-center justify-center text-[1.5rem] font-semibold tracking-[0.02em] ring-4 ring-off-white">
+                  {founder.initials}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-[1.4rem] lg:text-[1.55rem] font-semibold text-charcoal leading-tight tracking-[-0.015em]">{founder.name}</h3>
+                  <p className="text-[12px] font-semibold uppercase tracking-[0.08em] text-charcoal/70 mt-2">{founder.role}</p>
+                  <span aria-hidden className="block h-[2px] w-9 bg-primary mt-3" />
+                  <p className="text-[15px] text-muted-foreground leading-[1.7] mt-4">{founder.focus}</p>
+                  <div className="flex items-center gap-3 mt-6">
+                    <Link href="/contact">
+                      <span aria-label={`Contact ${founder.name}`} className="h-10 w-10 rounded-full bg-charcoal text-white flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                        <Mail className="w-[18px] h-[18px]" />
+                      </span>
+                    </Link>
+                    <a
+                      href="https://www.linkedin.com/company/nexdyne"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${founder.name} — firm LinkedIn`}
+                      className="h-10 w-10 rounded-full bg-charcoal text-white flex items-center justify-center hover:bg-primary transition-colors"
+                    >
+                      <Linkedin className="w-[18px] h-[18px]" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* ── Partners grid — McKinsey 'Our People' format ──────────────────── */}
       <section className="nx-section bg-off-white border-t border-border">
+        <div className="container px-4 sm:px-6 md:px-12">
+          <motion.div {...fadeUp} className="mb-8">
+            <span className="nx-eyebrow text-charcoal/55">Managing partners</span>
+          </motion.div>
+        </div>
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {partners.map((p, i) => (
