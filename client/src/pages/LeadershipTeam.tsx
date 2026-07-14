@@ -15,7 +15,6 @@ const fadeUp = {
 
 // Managing partners — each accountable for outcomes in one practice area.
 const partners = [
-  { name: "Raphaelyn CN Bomosy-Forkpa", initials: "RB", area: "Client Delivery & Standards", bio: "Leads delivery quality and the governance behind every engagement." },
   { name: "Amara Okonkwo", initials: "AO", area: "Artificial Intelligence", bio: "Leads the AI and agentic-systems practice, from strategy to production." },
   { name: "Daniel Reyes", initials: "DR", area: "Operations", bio: "Re-engineers supply chain, quality, and performance for durable gains." },
   { name: "Priya Nair", initials: "PN", area: "Technology", bio: "Modernizes cloud, data, and platform architecture built to scale." },
