@@ -46,12 +46,12 @@ export default function About() {
   ];
 
   const explore = [
-    { no: "01", title: "Purpose, Mission & Values", description: "What drives us and the principles that guide every engagement.", href: "/about/values" },
-    { no: "02", title: "Our Impact", description: "How we create lasting value for clients and the communities around them.", href: "/about/impact" },
-    { no: "03", title: "Leadership Team", description: "The people leading the firm, and the partnership behind it.", href: "/about/team" },
-    { no: "04", title: "Our Offices", description: "Where we work, and how to reach the team nearest you.", href: "/offices" },
-    { no: "05", title: "Case Studies", description: "Real results from real client partnerships across every industry.", href: "/cases" },
-    { no: "06", title: "Contact Us", description: "Start a conversation about the change you want to make.", href: "/contact" },
+    { no: "01", title: "Purpose, Mission & Values", description: "What drives us and the principles that guide every engagement.", href: "/about/values", image: "/images/approach-strategy.jpg" },
+    { no: "02", title: "Our Impact", description: "How we create lasting value for clients and communities.", href: "/about/impact", image: "/images/case-professional-services.jpg" },
+    { no: "03", title: "Leadership Team", description: "The people leading the firm, and the partnership behind it.", href: "/about/team", image: "/images/hero-team-2.webp" },
+    { no: "04", title: "Our Offices", description: "Where we work, and how to reach the team nearest you.", href: "/offices", image: "/images/office-grand-rapids.jpg" },
+    { no: "05", title: "Case Studies", description: "Real results from real client partnerships.", href: "/cases", image: "/images/case-consulting-knowledge-management.jpg" },
+    { no: "06", title: "Contact Us", description: "Start a conversation about the change you want to make.", href: "/contact", image: "/images/ai-team-consulting.jpg" },
   ];
 
   const capabilities = [
@@ -390,32 +390,36 @@ export default function About() {
         </div>
       </section>
 
-      {/* ══ Explore the firm — charcoal neighbor navigation ═══════════════════ */}
-      <section className="nx-section bg-charcoal text-white relative overflow-hidden">
-        <div
-          aria-hidden
-          className="absolute inset-0"
-          style={{ background: "radial-gradient(50% 60% at 92% 0%, rgba(222,47,35,0.12) 0%, transparent 60%)" }}
-        />
-        <div className="relative container px-4 sm:px-6 md:px-12">
+      {/* ══ Explore the firm — image-tile navigation ══════════════════════════ */}
+      <section className="nx-section bg-off-white border-t border-border">
+        <div className="container px-4 sm:px-6 md:px-12">
           <motion.div {...fadeUp} className="max-w-3xl mb-10 md:mb-12">
-            <span className="nx-eyebrow text-white/45">Explore the firm</span>
-            <h2 className="nx-h2 text-white mt-4">Go deeper into who we are.</h2>
+            <span className="nx-eyebrow text-charcoal/55">Explore the firm</span>
+            <h2 className="nx-h2 text-charcoal mt-4">Go deeper into who we are.</h2>
           </motion.div>
 
-          <div className="border-t border-white/12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {explore.map((item, i) => (
-              <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.05 }}>
+              <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.06 }} className="group">
                 <Link href={item.href}>
-                  <div className="group grid grid-cols-[auto_1fr_auto] items-center gap-5 md:gap-10 py-6 md:py-7 border-b border-white/12 cursor-pointer transition-colors hover:bg-white/[0.04] -mx-4 px-4 sm:-mx-6 sm:px-6 md:-mx-12 md:px-12">
-                    <span className="text-[13px] md:text-[14px] font-semibold text-white/35 tabular-nums w-7">{item.no}</span>
-                    <div>
-                      <h3 className="text-[1.35rem] md:text-[1.7rem] leading-tight font-semibold tracking-[-0.01em] text-white group-hover:text-primary transition-colors">
-                        {item.title}
-                      </h3>
-                      <p className="text-[14px] md:text-[15px] text-white/55 mt-1.5 leading-relaxed max-w-xl">{item.description}</p>
+                  <div className="relative overflow-hidden aspect-[4/3] cursor-pointer">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-[700ms] group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal/92 via-charcoal/45 to-charcoal/10" />
+                    <span aria-hidden className="absolute top-0 left-0 h-1 w-full bg-primary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
+                    <div className="relative h-full flex flex-col justify-between p-6 lg:p-7">
+                      <span className="text-[13px] font-semibold text-white/60 tabular-nums">{item.no}</span>
+                      <div>
+                        <div className="flex items-center gap-2.5">
+                          <h3 className="text-[1.3rem] md:text-[1.55rem] font-semibold text-white leading-tight tracking-[-0.01em]">{item.title}</h3>
+                          <span className="text-primary text-xl transition-transform duration-300 group-hover:translate-x-1.5">→</span>
+                        </div>
+                        <p className="text-[13px] md:text-[14px] text-white/75 mt-2 leading-relaxed">{item.description}</p>
+                      </div>
                     </div>
-                    <span className="text-primary text-xl md:text-2xl transition-transform duration-300 group-hover:translate-x-1.5">→</span>
                   </div>
                 </Link>
               </motion.div>
