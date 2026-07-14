@@ -211,29 +211,29 @@ export default function OurImpact() {
             Where we put our expertise, our capacity, and our conviction to work.
           </motion.p>
 
-          <div className="grid sm:grid-cols-2 gap-px bg-border border border-border">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
             {focusAreas.map((f, i) => (
-              <motion.div
+              <motion.article
                 key={f.title}
                 {...fadeUp}
-                transition={{ ...fadeUp.transition, delay: (i % 2) * 0.1 }}
-                className="bg-white p-8 lg:p-12 flex flex-col items-center text-center"
+                transition={{ ...fadeUp.transition, delay: (i % 4) * 0.08 }}
+                className="group"
               >
-                <div className="w-full overflow-hidden">
+                <div className="overflow-hidden rounded-xl">
                   <img
                     src={f.img}
                     alt={f.title}
                     loading="lazy"
-                    className="w-full aspect-[3/2] object-cover"
+                    className="w-full aspect-[5/4] object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.04]"
                   />
                 </div>
-                <h3 className="text-[1.35rem] lg:text-[1.5rem] font-semibold tracking-[-0.01em] text-charcoal mt-7">
-                  {f.title}
-                </h3>
-                <p className="text-[15px] text-muted-foreground leading-relaxed mt-4 max-w-[42ch]">
-                  {f.body}
-                </p>
-              </motion.div>
+                <div className="pt-5">
+                  <h3 className="text-charcoal font-semibold leading-[1.25] tracking-[-0.015em] text-[1.2rem] lg:text-[1.35rem]">
+                    {f.title}
+                  </h3>
+                  <p className="mt-3 text-[0.95rem] leading-[1.6] text-muted-foreground">{f.body}</p>
+                </div>
+              </motion.article>
             ))}
           </div>
         </div>
