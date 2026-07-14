@@ -42,7 +42,9 @@ surfaces. A red 3px bar or red text reads fine on white.
 | Solutions | ✅ Done & pushed | overview + `SolutionCat6Template` |
 | Industries | ✅ Done & pushed | detail, industry-capability, case-study templates |
 | Case studies (all) | ✅ Done & pushed | `/cases` listing (dark band→amber) + `FractionalCFOCaseStudies` eyebrow. All ~270 detail pages ride `IndustryCaseStudyTemplate` (fixed) or `CaseStudyTemplate` (compliant); 8/9 bespoke listings are all-light. Solution case studies (4 majors + subpages) covered via these. |
-| **About** | ⏳ **NOT STARTED** | Last section. Bespoke (Big3 editorial pattern), fewer shared templates → expect a per-page spot-check, not a template pass. Pages: `/about`, `/about/values`, `/about/impact`, `/about/team` (+ any subpages). |
+| **About** | ✅ Done (audited, no changes needed) | `/about`, `/about/values`, `/about/impact`, `/about/team`, `/contact` all audited — already fully compliant (red on light, amber on dark) and well-designed (Big3 editorial). No color/layout fixes required. Open (non-design): `/contact` shows the same email for General/Careers/Press — confirm with client whether to split to careers@/press@. |
+
+**🎉 Site-wide color audit COMPLETE** — every section (Homepage, Capabilities, Solutions, Industries, Case Studies, About) now follows red-leads-on-light / amber-on-dark. Only non-design follow-up: the Contact email split (client input) and the deferred cyan/blue photo swaps + `AITechnologyConsulting` legacy redesign (§4).
 
 ---
 

@@ -1,4 +1,4 @@
-import InsightArticle from "@/components/InsightArticle";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 const Cite = ({ n }: { n: number }) => (
   <sup>
@@ -23,8 +23,18 @@ export default function AIAdoptionOutlook2026() {
     { title: "Growth in the Age of Generative AI", category: "Growth & Marketing", link: "/insights/growth-marketing", image: "/images/abstract-growth.jpg" },
   ];
 
+  const sections = [
+    { id: "adoption", label: "Adoption vs. maturity" },
+    { id: "value-gap", label: "The value gap" },
+    { id: "agentic-era", label: "The agentic era arrives" },
+    { id: "governance", label: "Governance is the line" },
+    { id: "thesis", label: "The NexDyne thesis" },
+    { id: "winners", label: "What the winners do" },
+    { id: "bottom-line", label: "The bottom line" },
+  ];
+
   return (
-    <InsightArticle
+    <InsightArticleV2
       category="Featured Insight"
       categoryHref="/insights"
       title="The AI Adoption Outlook 2026: Why the Winners Will Govern First"
@@ -32,6 +42,8 @@ export default function AIAdoptionOutlook2026() {
       heroImage="/images/agentic-ai-abstract.jpg"
       publishDate="July 1, 2026"
       readTime="11 min"
+      sections={sections}
+      authors={[{ name: "NexDyne Consulting Group", role: "Office of the CEO · HIG™ Practice" }]}
       keyTakeaways={[
         "Enterprise AI adoption is now near-universal (~88–90%), yet only about 1% of executives call their gen-AI rollouts 'mature' and just 39% report enterprise-level EBIT impact.",
         "The agentic era has begun—roughly a quarter of firms are scaling agents—but only about one in five can properly govern autonomous AI.",
@@ -54,7 +66,7 @@ export default function AIAdoptionOutlook2026() {
         that govern AI first.
       </p>
 
-      <h2>Adoption is everywhere. Maturity is almost nowhere.</h2>
+      <h2 id="adoption">Adoption is everywhere. Maturity is almost nowhere.</h2>
 
       <p>
         Behind the impressive headline adoption numbers sits a sobering reality. As of early 2025, only 1% of
@@ -69,7 +81,7 @@ export default function AIAdoptionOutlook2026() {
         the next decade of competitive advantage will be won or lost.
       </blockquote>
 
-      <h2>The value gap</h2>
+      <h2 id="value-gap">The value gap</h2>
 
       <p>
         The clearest evidence of the gap is financial. Nearly two-thirds of organizations say they have not yet begun
@@ -84,7 +96,7 @@ export default function AIAdoptionOutlook2026() {
         in press releases but not in the P&amp;L.
       </p>
 
-      <h2>The agentic era arrives</h2>
+      <h2 id="agentic-era">The agentic era arrives</h2>
 
       <p>
         Into this gap steps agentic AI—systems that don't just answer but act. Roughly 23% of organizations already
@@ -100,7 +112,7 @@ export default function AIAdoptionOutlook2026() {
         loop. Which way it breaks for any given organization comes down to one capability.
       </p>
 
-      <h2>Governance is the dividing line</h2>
+      <h2 id="governance">Governance is the dividing line</h2>
 
       <p>
         Here is the finding that should reorganise every 2026 AI roadmap. Only about one in five companies has a
@@ -122,7 +134,7 @@ export default function AIAdoptionOutlook2026() {
         strongest, adoption goes <em>furthest</em>—because trust is what lets you scale.
       </p>
 
-      <h2>The NexDyne thesis: govern first</h2>
+      <h2 id="thesis">The NexDyne thesis: govern first</h2>
 
       <p>
         We built NexDyne on a conviction the 2026 data now validates: <strong>we implement technology only after we
@@ -147,7 +159,7 @@ export default function AIAdoptionOutlook2026() {
         manage<Cite n={3} />.
       </p>
 
-      <h2>What the winners will do differently in 2026</h2>
+      <h2 id="winners">What the winners will do differently in 2026</h2>
 
       <h3>1. Treat governance as strategy, not overhead</h3>
       <p>
@@ -173,7 +185,7 @@ export default function AIAdoptionOutlook2026() {
         impact they cannot prove.
       </p>
 
-      <h2>The bottom line</h2>
+      <h2 id="bottom-line">The bottom line</h2>
 
       <p>
         In 2026, AI adoption is table stakes—nearly everyone has it<Cite n={1} />. Advantage will accrue to the
@@ -182,6 +194,6 @@ export default function AIAdoptionOutlook2026() {
         good news. You don't need the largest AI budget to win. You need the discipline to govern first—and that is
         exactly the work NexDyne exists to do.
       </p>
-    </InsightArticle>
+    </InsightArticleV2>
   );
 }
