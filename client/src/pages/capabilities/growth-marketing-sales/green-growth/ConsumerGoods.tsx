@@ -54,7 +54,7 @@ export default function ConsumerGoods() {
 
             {/* Key Challenges & Solutions */}
             <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">Strategic Priorities</h2>
+              <h2 className="nx-h2 text-charcoal mb-5 sm:mb-6 md:mb-8">Strategic Priorities</h2>
               
               <div className="space-y-10">
                 <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
@@ -114,7 +114,7 @@ export default function ConsumerGoods() {
 
             {/* Case Study */}
             <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">Impact in Action</h2>
+              <h2 className="nx-h2 text-charcoal mb-5 sm:mb-6 md:mb-8">Impact in Action</h2>
               <div className="bg-charcoal text-white p-8 md:p-12 rounded-sm relative overflow-hidden group">
                 <div className="absolute top-0 right-0 p-4 sm:p-6 md:p-8 opacity-10">
                   <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">

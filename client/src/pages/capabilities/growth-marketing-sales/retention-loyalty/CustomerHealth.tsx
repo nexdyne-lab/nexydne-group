@@ -42,7 +42,7 @@ export default function CustomerHealth() {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
             <div>
-              <h2 className="text-3xl font-bold text-charcoal mb-6">
+              <h2 className="nx-h2 text-charcoal mb-6">
                 The Pulse of Your Customer Base
               </h2>
               <div className="prose prose-lg text-muted-foreground">

@@ -69,7 +69,7 @@ export default function MartechAssessment() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-xl sm:text-2xl font-bold mb-8 sm:mb-12">Our Experience</h2>
+            <h2 className="nx-h2 mb-8 sm:mb-12">Our Experience</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
               <div className="border-l-2 border-primary pl-6">
                 <div className="text-4xl sm:text-5xl font-bold text-charcoal mb-2">150+</div>
@@ -129,7 +129,7 @@ export default function MartechAssessment() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               What We Do
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">Our assessment approach</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Our assessment approach</h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">
               We conduct comprehensive martech audits that reveal the true state of your technology ecosystem and chart a path forward:
             </p>
@@ -196,7 +196,7 @@ export default function MartechAssessment() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Examples of Our Work
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">Examples of our work</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Examples of our work</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 sm:p-6 md:p-8 lg:gap-10">
@@ -261,7 +261,7 @@ export default function MartechAssessment() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               Featured Capabilities
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">Related capabilities</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Related capabilities</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 sm:p-6 md:p-8 lg:gap-10">
@@ -327,7 +327,7 @@ export default function MartechAssessment() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Insights
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+              <h2 className="nx-h2 text-charcoal">
                 The Latest on MarTech
               </h2>
             </motion.div>
@@ -407,7 +407,7 @@ export default function MartechAssessment() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Ready to optimize your martech stack?
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-10">

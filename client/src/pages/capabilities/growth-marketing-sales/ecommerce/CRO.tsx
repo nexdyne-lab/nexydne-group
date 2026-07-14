@@ -47,7 +47,7 @@ export function CRO() {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mb-24">
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6">
+              <h2 className="nx-h2 text-charcoal mb-6">
                 The Science of Selling Online
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
@@ -107,7 +107,7 @@ export function CRO() {
 
           {/* Methodology */}
           <div className="mb-24">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6 sm:mb-8 md:mb-12 text-center">
+            <h2 className="nx-h2 text-charcoal mb-6 sm:mb-8 md:mb-12 text-center">
               Our Optimization Cycle
             </h2>
             <div className="grid md:grid-cols-4 gap-4 sm:p-6 md:p-8">
@@ -149,7 +149,7 @@ export function CRO() {
       {/* CTA */}
       <section className="py-24 bg-charcoal text-charcoal">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
+          <h2 className="nx-h2 mb-6">
             Stop Leaving Money on the Table
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground/50 mb-10 max-w-2xl mx-auto">

@@ -38,7 +38,7 @@ export default function MarketingAutomation() {
       <section className="py-20 bg-white">
         <div className="container mx-auto max-w-4xl px-4">
           <div className="prose prose-lg max-w-none text-muted-foreground">
-            <h2 className="text-3xl font-bold text-base mb-6">
+            <h2 className="nx-h2 mb-6">
               Orchestrating the Perfect Customer Journey
             </h2>
             <p className="mb-6">
@@ -101,7 +101,7 @@ export default function MarketingAutomation() {
       {/* Platforms We Support */}
       <section className="py-20 bg-off-white">
         <div className="container mx-auto max-w-6xl px-4 text-center">
-          <h2 className="text-3xl font-bold text-base mb-6 sm:mb-8 md:mb-12">
+          <h2 className="nx-h2 mb-6 sm:mb-8 md:mb-12">
             Enterprise-Grade Platform Expertise
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:p-6 md:p-8 items-center opacity-70 grayscale hover:grayscale-0 transition duration-500">
@@ -117,7 +117,7 @@ export default function MarketingAutomation() {
       {/* CTA */}
       <section className="py-20 bg-white border-t border-border">
         <div className="container mx-auto max-w-4xl px-4 text-center">
-          <h2 className="text-3xl font-bold text-base mb-6">
+          <h2 className="nx-h2 mb-6">
             Accelerate Your Revenue Engine
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-5 sm:mb-6 md:mb-8">

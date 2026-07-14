@@ -54,7 +54,7 @@ export default function PackagingBundling() {
 
             {/* Key Strategies */}
             <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">Strategic Levers</h2>
+              <h2 className="nx-h2 text-charcoal mb-5 sm:mb-6 md:mb-8">Strategic Levers</h2>
               <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8">
                 <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Tiered Architecture</h3>
@@ -87,7 +87,7 @@ export default function PackagingBundling() {
 
             {/* Methodology */}
             <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">Our Methodology</h2>
+              <h2 className="nx-h2 text-charcoal mb-5 sm:mb-6 md:mb-8">Our Methodology</h2>
               <div className="space-y-8">
                 <div className="flex gap-4 sm:p-5 md:p-6">
                   <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl">1</div>

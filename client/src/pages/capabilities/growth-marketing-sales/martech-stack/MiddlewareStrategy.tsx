@@ -49,7 +49,7 @@ const MiddlewareStrategy = () => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6">
+              <h2 className="nx-h2 text-charcoal mb-6">
                 Decoupling for <span className="text-primary">Resilience</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
@@ -159,7 +159,7 @@ const MiddlewareStrategy = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8 md:mb-12 gap-4 sm:p-5 md:p-6">
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-4">
+              <h2 className="nx-h2 text-charcoal mb-4">
                 Impact Stories
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl">
@@ -228,7 +228,7 @@ const MiddlewareStrategy = () => {
       <section className="py-24 bg-off-white">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-12 md:mb-16">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Integration Patterns We Deploy
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -267,7 +267,7 @@ const MiddlewareStrategy = () => {
       <section className="py-24 bg-background relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">
+          <h2 className="nx-h2 text-charcoal mb-5 sm:mb-6 md:mb-8">
             Build a resilient data backbone.
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-primary mb-10 max-w-2xl mx-auto">

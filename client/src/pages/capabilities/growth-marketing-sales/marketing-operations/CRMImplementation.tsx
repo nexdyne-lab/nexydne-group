@@ -38,7 +38,7 @@ export default function CRMImplementation() {
       <section className="py-20 bg-white">
         <div className="container mx-auto max-w-4xl px-4">
           <div className="prose prose-lg max-w-none text-muted-foreground">
-            <h2 className="text-3xl font-bold text-base mb-6">
+            <h2 className="nx-h2 mb-6">
               Engineering the Perfect Sales Engine
             </h2>
             <p className="mb-6">
@@ -94,7 +94,7 @@ export default function CRMImplementation() {
       <section className="py-20 bg-off-white">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <h2 className="text-3xl font-bold text-base mb-4">
+            <h2 className="nx-h2 mb-4">
               Implementation Methodology
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -140,7 +140,7 @@ export default function CRMImplementation() {
       {/* CTA */}
       <section className="py-20 bg-white border-t border-border">
         <div className="container mx-auto max-w-4xl px-4 text-center">
-          <h2 className="text-3xl font-bold text-base mb-6">
+          <h2 className="nx-h2 mb-6">
             Architect Your Growth Engine
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-5 sm:mb-6 md:mb-8">

@@ -85,7 +85,7 @@ export default function GoToMarket() {
             </div>
 
             <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-6">The "Full-Stack" GTM Team</h2>
+              <h2 className="nx-h2 text-charcoal mb-6">The "Full-Stack" GTM Team</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Silos kill velocity. We help you organize cross-functional "pods" that include product, marketing, and sales representation. These pods operate like agile squads, iterating on messaging, pricing, and feature sets in real-time based on market feedback. This "DevOps for Sales" approach ensures that your GTM strategy is always in sync with market reality.
               </p>
