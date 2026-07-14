@@ -51,7 +51,7 @@ export default function DigitalMarketing() {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-[2rem] font-bold text-charcoal mb-6">
+              <h2 className="nx-h2 text-charcoal mb-6">
                 Precision at Scale
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
@@ -91,7 +91,7 @@ export default function DigitalMarketing() {
       <section className="py-24 bg-white border-y border-border">
         <div className="container mx-auto px-6">
           <div className="mb-16">
-            <h2 className="text-3xl md:text-[2rem] font-bold text-charcoal mb-6">Marketing Capabilities</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Marketing Capabilities</h2>
             <div className="w-20 h-1 bg-primary" />
           </div>
 
@@ -156,7 +156,7 @@ export default function DigitalMarketing() {
           <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-amber mb-6 block">
             Performance Engine
           </span>
-          <h2 className="text-[2rem] md:text-[2.75rem] font-bold mb-8">
+          <h2 className="nx-h2 mb-8">
             Amplify your brand.
           </h2>
           <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto">

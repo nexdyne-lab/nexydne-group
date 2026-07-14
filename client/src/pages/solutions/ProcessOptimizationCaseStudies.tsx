@@ -257,7 +257,7 @@ export default function ProcessOptimizationCaseStudies() {
                         {featuredCase.industry}
                       </span>
                     </div>
-                    <h2 className="text-3xl md:text-[2rem] font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
+                    <h2 className="nx-h2 text-charcoal mb-4 group-hover:text-primary transition-colors">
                       {featuredCase.title}
                     </h2>
                     <p className="text-muted-foreground text-lg leading-relaxed mb-6">
@@ -371,7 +371,7 @@ export default function ProcessOptimizationCaseStudies() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Aggregate Impact
             </span>
-            <h2 className="text-[2rem] md:text-[2.5rem] font-bold text-charcoal">
+            <h2 className="nx-h2 text-charcoal">
               Results across all engagements
             </h2>
           </motion.div>
@@ -409,7 +409,7 @@ export default function ProcessOptimizationCaseStudies() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-[2rem] md:text-[2.5rem] font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Ready to achieve similar results?
             </h2>
             <p className="text-xl text-muted-foreground mb-10">

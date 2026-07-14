@@ -60,7 +60,7 @@ export default function ConversionOptimization() {
             </div>
 
             <div>
-              <h2 className="text-[2rem] font-bold mb-12">The benefits of Conversion Rate Optimization</h2>
+              <h2 className="nx-h2 mb-12">The benefits of Conversion Rate Optimization</h2>
               <div className="space-y-8">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
@@ -126,7 +126,7 @@ export default function ConversionOptimization() {
       {/* About CRO Section */}
       <section className="py-20 bg-white">
         <div className="container max-w-4xl">
-          <h2 className="text-[2rem] font-bold mb-8">About conversion rate optimization</h2>
+          <h2 className="nx-h2 mb-8">About conversion rate optimization</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
             <p>
               Conversion rate optimization: your key to increasing sales from existing visitors. Many companies focus on generating more traffic. But the secret to generating serious profit is right under your nose: optimizing for your current visitors.
@@ -149,7 +149,7 @@ export default function ConversionOptimization() {
       <section className="py-20 bg-off-white">
         <div className="container">
           <div className="max-w-3xl mb-16">
-            <h2 className="text-[2rem] font-bold mb-6">Our approach to conversion rate optimization</h2>
+            <h2 className="nx-h2 mb-6">Our approach to conversion rate optimization</h2>
             <p className="text-xl text-muted-foreground">
               We combine our experience and expertise to enhance the performance of marketing teams. Our consultants know exactly what drives smooth sales funnels. They share that knowledge and their unique Incentronaut flair directly with your team. No filters here.
             </p>
@@ -209,7 +209,7 @@ export default function ConversionOptimization() {
               />
             </div>
             <div>
-              <h2 className="text-[2rem] font-bold mb-6">Do you want to know more?</h2>
+              <h2 className="nx-h2 mb-6">Do you want to know more?</h2>
               <div className="mb-8">
                 <p className="text-lg font-semibold mb-2">Robert Martinez</p>
                 <p className="text-muted-foreground">CRO Director</p>
@@ -239,7 +239,7 @@ export default function ConversionOptimization() {
               />
             </div>
             <div>
-              <h2 className="text-[2rem] font-bold mb-6">Why NEXDYNE</h2>
+              <h2 className="nx-h2 mb-6">Why NEXDYNE</h2>
               <p className="text-xl text-muted-foreground mb-8">
                 Whether you're looking for a strategic partner, a boost for your digital transformation, or the ultimate customer experience for your customers, you've come to the right place. With our next-generation digital solutions, you'll always be one step ahead of the competition.
               </p>
@@ -256,7 +256,7 @@ export default function ConversionOptimization() {
         <div className="container">
           <div className="max-w-2xl mb-16">
             <p className="text-sm font-bold text-primary uppercase tracking-wider mb-4">Partners</p>
-            <h2 className="text-[2rem] font-bold mb-6">Awesome partners turn dreams into reality</h2>
+            <h2 className="nx-h2 mb-6">Awesome partners turn dreams into reality</h2>
             <p className="text-xl text-muted-foreground">
               With these partners we realize outstanding CRO solutions
             </p>
@@ -289,7 +289,7 @@ export default function ConversionOptimization() {
       <section className="py-20 bg-white">
         <div className="container">
           <div className="max-w-2xl mb-16">
-            <h2 className="text-[2rem] font-bold mb-6">Success stories</h2>
+            <h2 className="nx-h2 mb-6">Success stories</h2>
             <p className="text-xl text-muted-foreground">
               See how we've optimized conversion rates and transformed digital experiences for leading brands.
             </p>
@@ -369,7 +369,7 @@ export default function ConversionOptimization() {
       <section className="py-20 bg-off-white">
         <div className="container">
           <div className="max-w-2xl mb-16">
-            <h2 className="text-[2rem] font-bold mb-6">CRO capabilities & services</h2>
+            <h2 className="nx-h2 mb-6">CRO capabilities & services</h2>
             <p className="text-xl text-muted-foreground">
               Our conversion optimization expertise spans analytics, testing, and experimentation best practices.
             </p>
@@ -461,7 +461,7 @@ export default function ConversionOptimization() {
         </div>
 
         <div className="container relative z-10 text-center">
-          <h2 className="text-5xl font-bold mb-6">Ready to optimize conversions?</h2>
+          <h2 className="nx-h2 mb-6">Ready to optimize conversions?</h2>
           <p className="text-2xl mb-12 text-primary max-w-3xl mx-auto">
             Let's turn your website into a profit-making machine with data-driven CRO strategies. Our experts are ready to maximize your conversion rates.
           </p>

@@ -71,7 +71,7 @@ export default function Chatbots() {
 
             {/* Benefits Cards */}
             <div className="lg:col-span-2">
-              <h2 className="text-[2rem] font-bold text-base mb-12">The benefits of Chatbots</h2>
+              <h2 className="nx-h2 mb-12">The benefits of Chatbots</h2>
               
               <div className="space-y-8">
                 {[
@@ -121,7 +121,7 @@ export default function Chatbots() {
       {/* About chatbots Section */}
       <AnimatedSection delay={0.1} className="py-20 bg-gradient-to-br from-background via-background to-background text-charcoal">
         <div className="container max-w-4xl">
-          <h2 className="text-[2rem] font-bold mb-8 text-center">About chatbots</h2>
+          <h2 className="nx-h2 mb-8 text-center">About chatbots</h2>
           <p className="text-lg leading-relaxed mb-12 text-charcoal/90">
             Intelligent chatbots serve as the foundation of contemporary digital support, resolving common inquiries and routine requests instantly. This approach minimizes response delays, cuts operational expenses, and enables your staff to address sophisticated challenges. Beyond answering questions, chatbots collect behavioral insights and preference patterns—a critical resource for informed business strategy. Serving as your initial touchpoint, chatbots elevate the customer journey through reliable, intelligent engagement across all platforms.
           </p>
@@ -138,7 +138,7 @@ export default function Chatbots() {
       {/* Our chatbot solutions Section */}
       <AnimatedSection delay={0.2} className="py-20 bg-white">
         <div className="container max-w-4xl">
-          <h2 className="text-[2rem] font-bold text-base mb-8 text-center">Our chatbot solutions</h2>
+          <h2 className="nx-h2 mb-8 text-center">Our chatbot solutions</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-12 text-center">
             NEXDYNE engineers bespoke chatbot platforms that integrate flawlessly with your operational ecosystem and business objectives. Powered by advanced AI, our solutions employ sophisticated dialogue patterns and evolve through continuous data analysis. Built-in intelligence and adaptive learning capabilities enhance real-time customer interactions while generating strategic insights that optimize your go-to-market approach.
           </p>
@@ -185,7 +185,7 @@ export default function Chatbots() {
               />
             </div>
             <div>
-              <h2 className="text-[2rem] font-bold text-base mb-6">Why NEXDYNE</h2>
+              <h2 className="nx-h2 mb-6">Why NEXDYNE</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 Seeking a trusted technology partner, an accelerator for your digital evolution, or exceptional experiences that wow your customers? You're in the right place. Our cutting-edge solutions position you ahead of market trends and competitive pressures.
               </p>
@@ -202,7 +202,7 @@ export default function Chatbots() {
         <div className="container">
           <div className="text-center mb-12">
             <p className="text-sm text-secondary font-semibold mb-2 uppercase tracking-wider">Partners</p>
-            <h2 className="text-[2rem] font-bold text-base mb-4">Awesome partners turn dreams into reality</h2>
+            <h2 className="nx-h2 mb-4">Awesome partners turn dreams into reality</h2>
             <p className="text-lg text-muted-foreground mb-8">Together with these technology leaders, we deliver world-class e-commerce experiences.</p>
             <Button variant="outline" className="border-secondary text-base hover:bg-secondary/10">
               View all partners
@@ -230,7 +230,7 @@ export default function Chatbots() {
       {/* CTA Section */}
       <section className="relative bg-gradient-to-br from-background via-background to-background text-charcoal py-20">
         <div className="container max-w-4xl text-center">
-          <h2 className="text-[2rem] font-bold mb-6">Ready to revolutionize customer service?</h2>
+          <h2 className="nx-h2 mb-6">Ready to revolutionize customer service?</h2>
           <p className="text-xl text-charcoal/90 mb-8 leading-relaxed">
             Let's explore how intelligent chatbot technology can elevate customer satisfaction, streamline operations, and unlock new growth opportunities.
           </p>

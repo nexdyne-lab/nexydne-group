@@ -59,7 +59,7 @@ export default function EcommercePlatforms() {
             
             {/* Benefits Grid */}
             <div>
-              <h2 className="text-[2rem] font-bold text-charcoal mb-12">The benefits of e-commerce platforms</h2>
+              <h2 className="nx-h2 text-charcoal mb-12">The benefits of e-commerce platforms</h2>
               
               <div className="space-y-8">
                 <div className="flex gap-6">
@@ -126,7 +126,7 @@ export default function EcommercePlatforms() {
       {/* About Section */}
       <section className="nx-section bg-off-white">
         <div className="container">
-          <h2 className="text-[2rem] font-bold text-charcoal mb-6">About e-commerce platforms</h2>
+          <h2 className="nx-h2 text-charcoal mb-6">About e-commerce platforms</h2>
           <div className="max-w-4xl">
             <p className="text-xl text-muted-foreground leading-relaxed mb-6">
               A new e-commerce platform is your secret ingredient for growth. For clicks and bricks retailers, it means ultimate flexibility, the ability to launch new channels and seamless integration with your stores. In a fiercely competitive market, you need to lead the pack. No prizes for second best.
@@ -147,7 +147,7 @@ export default function EcommercePlatforms() {
       {/* How We Work Section */}
       <section className="nx-section bg-white">
         <div className="container">
-          <h2 className="text-[2rem] font-bold text-charcoal mb-4">How we build e-commerce platforms</h2>
+          <h2 className="nx-h2 text-charcoal mb-4">How we build e-commerce platforms</h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
             Our proven methodology combines MACH principles with composable commerce to deliver flexible, scalable platforms that grow with your business.
           </p>
@@ -195,7 +195,7 @@ export default function EcommercePlatforms() {
       {/* Platform Partners Section */}
       <section className="nx-section bg-off-white">
         <div className="container">
-          <h2 className="text-[2rem] font-bold text-charcoal mb-4">E-commerce platform expertise</h2>
+          <h2 className="nx-h2 text-charcoal mb-4">E-commerce platform expertise</h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
             We partner with leading e-commerce platforms to deliver best-in-class solutions tailored to your business needs.
           </p>
@@ -312,7 +312,7 @@ export default function EcommercePlatforms() {
       {/* Case Studies Section */}
       <section className="nx-section bg-primary/5">
         <div className="container">
-          <h2 className="text-[2rem] font-bold text-charcoal mb-4">Success stories</h2>
+          <h2 className="nx-h2 text-charcoal mb-4">Success stories</h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
             See how we've built cutting-edge e-commerce platforms that drive growth and exceed expectations.
           </p>
@@ -432,7 +432,7 @@ export default function EcommercePlatforms() {
       {/* E-commerce Capabilities Section */}
       <section className="nx-section bg-white">
         <div className="container">
-          <h2 className="text-[2rem] font-bold text-charcoal mb-4">E-commerce capabilities & services</h2>
+          <h2 className="nx-h2 text-charcoal mb-4">E-commerce capabilities & services</h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
             Our e-commerce expertise spans modern platforms and best practices.
           </p>
@@ -516,7 +516,7 @@ export default function EcommercePlatforms() {
       {/* Our Solutions Section */}
       <section className="nx-section bg-off-white">
         <div className="container">
-          <h2 className="text-[2rem] font-bold text-charcoal mb-4">Our e-commerce solutions</h2>
+          <h2 className="nx-h2 text-charcoal mb-4">Our e-commerce solutions</h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
             NEXDYNE has all the tools to take your e-commerce platform to new heights. Want a top-notch user experience design, solid backend, smart APIs? No sweat. Whether you're a pure player or omnichannel pro, we prime your platform for success from the first design to the last integration. Ready for more? Our experts are ready to help you take the next big step.
           </p>
@@ -563,7 +563,7 @@ export default function EcommercePlatforms() {
 
         <div className="container relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-[2rem] md:text-[2.5rem] font-bold mb-6">Ready to build your platform?</h2>
+            <h2 className="nx-h2 mb-6">Ready to build your platform?</h2>
             <p className="text-xl mb-8 opacity-90">
               Let's create an e-commerce platform that's flexible, scalable, and always one step ahead. Our experts are ready to bring your vision to life.
             </p>

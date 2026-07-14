@@ -51,7 +51,7 @@ export default function GrowthStrategy() {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-[2rem] font-bold text-charcoal mb-6">
+              <h2 className="nx-h2 text-charcoal mb-6">
                 Where to Play, How to Win
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
@@ -105,7 +105,7 @@ export default function GrowthStrategy() {
       <section className="py-24 bg-white border-y border-border">
         <div className="container mx-auto px-6">
           <div className="mb-16 text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-[2rem] font-bold text-charcoal mb-6">Our Strategic Framework</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Our Strategic Framework</h2>
             <p className="text-muted-foreground text-lg">
               We don't just deliver reports; we deliver results. Our approach is grounded in data, tested in the real world, and designed for execution.
             </p>
@@ -169,7 +169,7 @@ export default function GrowthStrategy() {
           <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-amber mb-6 block">
             Strategic Advisory
           </span>
-          <h2 className="text-[2rem] md:text-[2.75rem] font-bold mb-8">
+          <h2 className="nx-h2 mb-8">
             Define your future.
           </h2>
           <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto">

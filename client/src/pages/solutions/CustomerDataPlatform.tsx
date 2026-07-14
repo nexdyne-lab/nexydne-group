@@ -59,7 +59,7 @@ export default function CustomerDataPlatform() {
             
             {/* Benefits Grid */}
             <div>
-              <h2 className="text-[2rem] font-bold text-charcoal mb-12">The benefits</h2>
+              <h2 className="nx-h2 text-charcoal mb-12">The benefits</h2>
               
               <div className="space-y-8">
                 <div className="flex gap-6">
@@ -126,7 +126,7 @@ export default function CustomerDataPlatform() {
       {/* About CDP Section */}
       <section className="nx-section bg-off-white">
         <div className="container max-w-4xl">
-          <h2 className="text-[2rem] font-bold text-charcoal mb-8">About Customer Data Platforms (CDP)</h2>
+          <h2 className="nx-h2 text-charcoal mb-8">About Customer Data Platforms (CDP)</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
             A Customer Data Platform (CDP) gathers customer data from multiple sources to create a central, comprehensive profile. This lets you segment customers accurately and make data-driven decisions on solid ground, enabling personalized interactions. A CDP also guarantees secure, compliant data processing, which is non-negotiable in an environment reliant on customer trust.
           </p>
@@ -151,7 +151,7 @@ export default function CustomerDataPlatform() {
       {/* Our CDP Solution Section */}
       <section className="nx-section bg-off-white">
         <div className="container max-w-4xl">
-          <h2 className="text-[2rem] font-bold text-charcoal mb-8">Our CDP solution</h2>
+          <h2 className="nx-h2 text-charcoal mb-8">Our CDP solution</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
             At NEXDYNE, we leverage CDPs as part of a broader data strategy, integrating various data sources to create a complete customer profile. Our data integration and analysis expertise seamlessly link CDP solutions to your systems, ensuring fast and secure availability of customer data from every channel. This integration helps you create personalized interactions and make smart, data-driven decisions that bring your brand closer to your customers.
           </p>
@@ -176,7 +176,7 @@ export default function CustomerDataPlatform() {
             </div>
             
             <div>
-              <h2 className="text-[2rem] font-bold text-charcoal mb-6">Do you want to know more?</h2>
+              <h2 className="nx-h2 text-charcoal mb-6">Do you want to know more?</h2>
               <p className="text-xl text-charcoal/80 mb-4">Marcus Rivera</p>
               <p className="text-lg text-muted-foreground mb-8">Director of Customer Intelligence</p>
               <div className="flex flex-wrap gap-4">
@@ -208,7 +208,7 @@ export default function CustomerDataPlatform() {
             </div>
             
             <div>
-              <h2 className="text-[2rem] font-bold text-charcoal mb-6">Why NEXDYNE</h2>
+              <h2 className="nx-h2 text-charcoal mb-6">Why NEXDYNE</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Whether you're looking for a strategic partner, a boost for your digital transformation, or the ultimate customer experience for your customers, you've come to the right place. With our next-generation digital solutions, you'll always be one step ahead of the competition.
               </p>
@@ -230,7 +230,7 @@ export default function CustomerDataPlatform() {
             <p className="text-sm uppercase tracking-wider text-muted-foreground font-semibold mb-2">
               Partners
             </p>
-            <h2 className="text-[2rem] font-bold text-charcoal mb-4">
+            <h2 className="nx-h2 text-charcoal mb-4">
               Awesome partners turn dreams into reality
             </h2>
             <p className="text-lg text-muted-foreground mb-8">

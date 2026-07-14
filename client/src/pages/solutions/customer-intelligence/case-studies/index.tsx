@@ -142,7 +142,7 @@ export default function CustomerIntelligenceCaseStudies() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-charcoal">Featured Case Studies</h2>
+            <h2 className="nx-h2 text-charcoal">Featured Case Studies</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -198,7 +198,7 @@ export default function CustomerIntelligenceCaseStudies() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold">More Success Stories</h2>
+            <h2 className="nx-h2">More Success Stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -254,7 +254,7 @@ export default function CustomerIntelligenceCaseStudies() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-[2rem] md:text-[2.5rem] font-bold text-charcoal mb-6">
+              <h2 className="nx-h2 text-charcoal mb-6">
                 Ready to write your success story?
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed mb-10">

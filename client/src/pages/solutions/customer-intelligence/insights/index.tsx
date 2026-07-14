@@ -124,7 +124,7 @@ export default function CustomerIntelligenceInsights() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-charcoal">Featured Insights</h2>
+            <h2 className="nx-h2 text-charcoal">Featured Insights</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -178,7 +178,7 @@ export default function CustomerIntelligenceInsights() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold">More Insights</h2>
+            <h2 className="nx-h2">More Insights</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -232,7 +232,7 @@ export default function CustomerIntelligenceInsights() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-[2rem] font-bold mb-6">
+              <h2 className="nx-h2 mb-6">
                 Stay ahead of the curve
               </h2>
               <p className="text-lg text-charcoal/60 leading-relaxed mb-8">
@@ -259,7 +259,7 @@ export default function CustomerIntelligenceInsights() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-[2rem] md:text-[2.5rem] font-bold text-charcoal mb-6">
+              <h2 className="nx-h2 text-charcoal mb-6">
                 Ready to put these insights into action?
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed mb-10">
