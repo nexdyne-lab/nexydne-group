@@ -172,13 +172,18 @@ export default function About() {
         </div>
       </section>
 
-      {/* ══ HIG™ — the governing doctrine, explained ══════════════════════════ */}
-      <section className="nx-section bg-white border-y border-border">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* ══ HIG™ — the governing doctrine (charcoal) ══════════════════════════ */}
+      <section className="nx-section bg-charcoal text-white relative overflow-hidden">
+        <div
+          aria-hidden
+          className="absolute inset-0"
+          style={{ background: "radial-gradient(55% 60% at 88% 4%, rgba(222,47,35,0.14) 0%, transparent 60%)" }}
+        />
+        <div className="relative container px-4 sm:px-6 md:px-12">
           <motion.div {...fadeUp} className="max-w-3xl mb-12 md:mb-16">
-            <span className="nx-eyebrow text-charcoal/55">Our doctrine</span>
-            <h2 className="nx-h2 text-charcoal mt-4">Human Intelligence Governance (HIG™)</h2>
-            <p className="nx-lead text-muted-foreground mt-6">
+            <span className="nx-eyebrow text-white/45">Our doctrine</span>
+            <h2 className="nx-h2 text-white mt-4">Human Intelligence Governance (HIG™)</h2>
+            <p className="nx-lead text-white/65 mt-6">
               Every engagement runs inside one discipline. HIG™ insists that technology serve a human
               system we design first, operate within explicit controls, and stay accountable as it
               scales — so transformation is durable, not just impressive. Three layers make it work.
@@ -192,11 +197,11 @@ export default function About() {
                 transition={{ ...fadeUp.transition, delay: i * 0.1 }}
                 className="group relative pt-8"
               >
-                <span className="absolute top-0 left-0 h-px w-full bg-border" />
+                <span className="absolute top-0 left-0 h-px w-full bg-white/15" />
                 <span className="absolute top-0 left-0 h-px w-16 bg-primary scale-x-100 md:scale-x-0 md:group-hover:scale-x-100 origin-left transition-transform duration-500" />
-                <div className="text-[2.4rem] leading-none font-semibold text-charcoal/15 mb-6">{p.no}</div>
-                <h3 className="nx-h3 text-charcoal mb-4 group-hover:text-primary transition-colors">{p.title}</h3>
-                <p className="text-[15px] text-muted-foreground leading-[1.7]">{p.body}</p>
+                <div className="text-[2.4rem] leading-none font-semibold text-white/20 mb-6">{p.no}</div>
+                <h3 className="nx-h3 text-white mb-4 group-hover:text-primary transition-colors">{p.title}</h3>
+                <p className="text-[15px] text-white/60 leading-[1.7]">{p.body}</p>
               </motion.div>
             ))}
           </div>
@@ -362,24 +367,29 @@ export default function About() {
         </div>
       </section>
 
-      {/* ══ Partners & ecosystem ══════════════════════════════════════════════ */}
-      <section className="nx-section bg-off-white border-t border-border">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* ══ Partners & ecosystem (charcoal) ═══════════════════════════════════ */}
+      <section className="nx-section bg-charcoal text-white relative overflow-hidden">
+        <div
+          aria-hidden
+          className="absolute inset-0"
+          style={{ background: "radial-gradient(50% 60% at 8% 100%, rgba(222,47,35,0.12) 0%, transparent 60%)" }}
+        />
+        <div className="relative container px-4 sm:px-6 md:px-12">
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
             <motion.div {...fadeUp} className="lg:col-span-4">
-              <span className="nx-eyebrow text-charcoal/55">Ecosystem</span>
-              <h2 className="nx-h2 text-charcoal mt-4">Built on frontier platforms.</h2>
-              <p className="text-[15px] text-muted-foreground leading-[1.7] mt-5 max-w-md">
+              <span className="nx-eyebrow text-white/45">Ecosystem</span>
+              <h2 className="nx-h2 text-white mt-4">Built on frontier platforms.</h2>
+              <p className="text-[15px] text-white/60 leading-[1.7] mt-5 max-w-md">
                 We deploy real technology, not slideware — building on the AI and cloud platforms our
                 clients can trust and scale.
               </p>
             </motion.div>
             <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.12 }} className="lg:col-span-8">
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-px bg-border border border-border">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-px bg-white/10 border border-white/10">
                 {partners.map((p, i) => (
                   <div
                     key={i}
-                    className="bg-white flex items-center justify-center px-4 py-8 md:py-10 text-[15px] md:text-[17px] font-semibold text-charcoal/80 tracking-[-0.01em] hover:text-primary hover:bg-off-white transition-colors"
+                    className="bg-charcoal flex items-center justify-center px-4 py-8 md:py-10 text-[15px] md:text-[17px] font-semibold text-white/80 tracking-[-0.01em] hover:text-primary hover:bg-white/[0.03] transition-colors"
                   >
                     {p}
                   </div>
