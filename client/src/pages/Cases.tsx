@@ -135,9 +135,6 @@ export default function Cases() {
                         alt={study.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       />
-                      <div className="absolute top-4 left-4 bg-charcoal/90 px-3 py-1 rounded-full">
-                        <span className="text-xs font-bold text-primary">{study.metric}</span>
-                      </div>
                     </div>
 
                     {/* Content */}
