@@ -54,6 +54,22 @@ export default function About() {
     { no: "06", title: "Contact Us", description: "Start a conversation about the change you want to make.", href: "/contact" },
   ];
 
+  const capabilities = [
+    { title: "Artificial Intelligence", desc: "Generative and agentic systems, built for production.", href: "/capabilities/artificial-intelligence" },
+    { title: "Operations", desc: "Supply chain, quality, and performance, re-engineered.", href: "/capabilities/operations" },
+    { title: "Technology", desc: "Cloud, data, and platform modernisation that scales.", href: "/capabilities/technology" },
+    { title: "Strategy & Corporate Finance", desc: "Strategy, planning, and the numbers behind the plan.", href: "/capabilities/strategy-corporate-finance" },
+    { title: "Business Building", desc: "New digital ventures and revenue streams, launched.", href: "/capabilities/business-building" },
+    { title: "Growth, Marketing & Sales", desc: "Demand, pricing, and commercial engines that compound.", href: "/capabilities/growth-marketing-sales" },
+  ];
+
+  const founders = [
+    { name: "David Seyaker", initials: "DS", role: "Co-Founder & Chief Executive", focus: "Sets the firm's direction and its governing doctrine, HIG™ — leading strategy and enterprise-wide transformation for clients." },
+    { name: "Raphaelyn CN Bomosy-Forkpa", initials: "RB", role: "Co-Founder & Managing Partner", focus: "Leads client delivery and the standards behind every engagement — turning strategy into governed, durable outcomes." },
+  ];
+
+  const partners = ["OpenAI", "Anthropic", "AWS", "Google Cloud", "Microsoft Azure", "Databricks"];
+
   return (
     <div className="min-h-screen bg-off-white text-charcoal">
       <SEO
@@ -156,14 +172,17 @@ export default function About() {
         </div>
       </section>
 
-      {/* ══ How we work — numbered principles ═════════════════════════════════ */}
+      {/* ══ HIG™ — the governing doctrine, explained ══════════════════════════ */}
       <section className="nx-section bg-white border-y border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div {...fadeUp} className="max-w-3xl mb-12 md:mb-16">
-            <span className="nx-eyebrow text-charcoal/55">How we work</span>
-            <h2 className="nx-h2 text-charcoal mt-4">
-              Technology follows the human system — never the other way around.
-            </h2>
+            <span className="nx-eyebrow text-charcoal/55">Our doctrine</span>
+            <h2 className="nx-h2 text-charcoal mt-4">Human Intelligence Governance (HIG™)</h2>
+            <p className="nx-lead text-muted-foreground mt-6">
+              Every engagement runs inside one discipline. HIG™ insists that technology serve a human
+              system we design first, operate within explicit controls, and stay accountable as it
+              scales — so transformation is durable, not just impressive. Three layers make it work.
+            </p>
           </motion.div>
           <div className="grid md:grid-cols-3 gap-x-10 gap-y-12">
             {principles.map((p, i) => (
@@ -184,8 +203,49 @@ export default function About() {
         </div>
       </section>
 
-      {/* ══ Who we are + pull quote ═══════════════════════════════════════════ */}
+      {/* ══ What we do — capability breadth ═══════════════════════════════════ */}
       <section className="nx-section bg-off-white">
+        <div className="container px-4 sm:px-6 md:px-12">
+          <motion.div {...fadeUp} className="max-w-3xl mb-12 md:mb-14">
+            <span className="nx-eyebrow text-charcoal/55">What we do</span>
+            <h2 className="nx-h2 text-charcoal mt-4">
+              The full range — strategy, technology, and the governance to make it stick.
+            </h2>
+          </motion.div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
+            {capabilities.map((c, i) => (
+              <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.05 }}>
+                <Link href={c.href}>
+                  <div className="group h-full bg-white p-7 lg:p-8 hover:bg-off-white transition-colors cursor-pointer">
+                    <div className="flex items-start justify-between gap-4">
+                      <h3 className="nx-h3 text-charcoal group-hover:text-primary transition-colors">{c.title}</h3>
+                      <span className="text-primary text-lg transition-transform duration-300 group-hover:translate-x-1">→</span>
+                    </div>
+                    <p className="text-[14px] text-muted-foreground leading-relaxed mt-3">{c.desc}</p>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+          <motion.div {...fadeUp} className="mt-8 flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-9">
+            <Link href="/capabilities">
+              <span className="group inline-flex items-center gap-2 text-[15px] font-medium text-charcoal cursor-pointer">
+                <span className="border-b border-charcoal/30 group-hover:border-primary group-hover:text-primary transition-colors pb-0.5">Explore all capabilities</span>
+                <span className="text-primary transition-transform duration-300 group-hover:translate-x-1">→</span>
+              </span>
+            </Link>
+            <Link href="/industries">
+              <span className="group inline-flex items-center gap-2 text-[15px] font-medium text-charcoal cursor-pointer">
+                <span className="border-b border-charcoal/30 group-hover:border-primary group-hover:text-primary transition-colors pb-0.5">18 industries served</span>
+                <span className="text-primary transition-transform duration-300 group-hover:translate-x-1">→</span>
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ══ Who we are + pull quote ═══════════════════════════════════════════ */}
+      <section className="nx-section bg-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
             <motion.div {...fadeUp} className="lg:col-span-4">
@@ -233,6 +293,42 @@ export default function About() {
         </div>
       </section>
 
+      {/* ══ Leadership & founders ═════════════════════════════════════════════ */}
+      <section className="nx-section bg-off-white border-t border-border">
+        <div className="container px-4 sm:px-6 md:px-12">
+          <motion.div {...fadeUp} className="max-w-3xl mb-12 md:mb-14">
+            <span className="nx-eyebrow text-charcoal/55">Leadership</span>
+            <h2 className="nx-h2 text-charcoal mt-4">The partnership behind the firm.</h2>
+          </motion.div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {founders.map((f, i) => (
+              <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.08 }}>
+                <div className="group bg-white border border-border p-7 lg:p-9 h-full transition-shadow duration-300 hover:shadow-[0_18px_40px_-22px_rgba(0,0,0,0.22)]">
+                  <div className="flex items-center gap-5">
+                    <div className="shrink-0 h-16 w-16 rounded-full bg-charcoal text-white flex items-center justify-center text-[1.05rem] font-semibold tracking-[0.02em]">
+                      {f.initials}
+                    </div>
+                    <div>
+                      <h3 className="text-[1.2rem] font-semibold text-charcoal leading-tight">{f.name}</h3>
+                      <p className="text-[13px] text-primary font-medium mt-1 uppercase tracking-[0.06em]">{f.role}</p>
+                    </div>
+                  </div>
+                  <p className="text-[15px] text-muted-foreground leading-[1.7] mt-6">{f.focus}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+          <motion.div {...fadeUp} className="mt-8">
+            <Link href="/about/team">
+              <span className="group inline-flex items-center gap-2 text-[15px] font-medium text-charcoal cursor-pointer">
+                <span className="border-b border-charcoal/30 group-hover:border-primary group-hover:text-primary transition-colors pb-0.5">Meet the full leadership team</span>
+                <span className="text-primary transition-transform duration-300 group-hover:translate-x-1">→</span>
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
       {/* ══ Values — refined editorial grid ═══════════════════════════════════ */}
       <section className="nx-section bg-white border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
@@ -262,6 +358,34 @@ export default function About() {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══ Partners & ecosystem ══════════════════════════════════════════════ */}
+      <section className="nx-section bg-off-white border-t border-border">
+        <div className="container px-4 sm:px-6 md:px-12">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+            <motion.div {...fadeUp} className="lg:col-span-4">
+              <span className="nx-eyebrow text-charcoal/55">Ecosystem</span>
+              <h2 className="nx-h2 text-charcoal mt-4">Built on frontier platforms.</h2>
+              <p className="text-[15px] text-muted-foreground leading-[1.7] mt-5 max-w-md">
+                We deploy real technology, not slideware — building on the AI and cloud platforms our
+                clients can trust and scale.
+              </p>
+            </motion.div>
+            <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.12 }} className="lg:col-span-8">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-px bg-border border border-border">
+                {partners.map((p, i) => (
+                  <div
+                    key={i}
+                    className="bg-white flex items-center justify-center px-4 py-8 md:py-10 text-[15px] md:text-[17px] font-semibold text-charcoal/80 tracking-[-0.01em] hover:text-primary hover:bg-off-white transition-colors"
+                  >
+                    {p}
+                  </div>
+                ))}
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
