@@ -306,8 +306,6 @@ import USOffice from "./pages/USOffice";
 import PurposeMissionValues from "./pages/PurposeMissionValues";
 import OurImpact from "./pages/OurImpact";
 import LeadershipTeam from "./pages/LeadershipTeam";
-import TeamMemberProfile from "@/pages/TeamMemberProfile";
-import OurPeople from "@/pages/OurPeople";
 import Careers from "@/pages/Careers";
 import Offices from "@/pages/Offices";
 import Contact from "@/pages/Contact";
@@ -1985,9 +1983,10 @@ function Router() {
         <Route path="/cookies" component={CookiePreferences} />
         <Route path="/accessibility" component={Accessibility} />
         <Route path="/follow-us" component={FollowUs} />
-        <Route path="/team" component={OurPeople} />
-        <Route path="/team/:id" component={TeamMemberProfile} />
-        <Route path="/our-people" component={OurPeople} />
+        {/* Consolidated to a single leadership page — /about/team */}
+        <Route path="/team">{() => <Redirect to="/about/team" />}</Route>
+        <Route path="/team/:id">{() => <Redirect to="/about/team" />}</Route>
+        <Route path="/our-people">{() => <Redirect to="/about/team" />}</Route>
         <Route path="/about" component={About} />
         <Route path="/about/values" component={PurposeMissionValues} />
         <Route path="/about/impact" component={OurImpact} />

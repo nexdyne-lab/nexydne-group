@@ -264,7 +264,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
                       <Link href="/about" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
                         About Us
                       </Link>
-                      <Link href="/team" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
+                      <Link href="/about/team" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
                         Our People
                       </Link>
                       <Link href="/insights" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>

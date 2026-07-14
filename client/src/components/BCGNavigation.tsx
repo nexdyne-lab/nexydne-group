@@ -133,7 +133,7 @@ const menuStructure = {
         name: "Our People",
         description: "Meet the team behind NexDyne.",
         items: [
-          { name: "Leadership Team", href: "/team" },
+          { name: "Leadership Team", href: "/about/team" },
           { name: "Careers", href: "/careers" },
         ],
       },

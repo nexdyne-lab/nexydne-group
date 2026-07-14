@@ -50,7 +50,7 @@ const aboutItems = [
   { name: "About Us", slug: "" },
   { name: "Purpose, Mission & Values", slug: "values" },
   { name: "Our Impact", slug: "impact" },
-  { name: "Leadership Team", slug: "/team" },
+  { name: "Leadership Team", slug: "team" },
   // { name: "US Office", slug: "us-office" },
 ];
 
