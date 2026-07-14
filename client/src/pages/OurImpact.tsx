@@ -146,52 +146,22 @@ export default function OurImpact() {
         </div>
       </div>
 
-      {/* ── Our Mission + featured commitment ─────────────────────────────── */}
+      {/* ── Our Mission ───────────────────────────────────────────────────── */}
       <section id="mission" className="nx-section bg-off-white scroll-mt-32">
         <div className="container px-4 sm:px-6 md:px-12">
-          <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-            <motion.div {...fadeUp} className="lg:col-span-5">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+            <motion.div {...fadeUp} className="lg:col-span-4">
               <span className="nx-eyebrow text-charcoal/55">Our mission</span>
-              <h2 className="nx-h2 text-charcoal mt-4">
+            </motion.div>
+            <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.12 }} className="lg:col-span-8">
+              <h2 className="nx-h2 text-charcoal">
                 Advanced intelligence, deployed with a conscience.
               </h2>
-              <p className="nx-lead text-muted-foreground mt-6">
+              <p className="nx-lead text-muted-foreground mt-6 max-w-2xl">
                 We exist to put enterprise-grade AI and analytics to work for organizations that
                 were never meant to be priced out of it—and to leave every client stronger than we
                 found them.
               </p>
-            </motion.div>
-
-            {/* Featured commitment card — HIG™ */}
-            <motion.div
-              {...fadeUp}
-              transition={{ ...fadeUp.transition, delay: 0.12 }}
-              className="lg:col-span-7"
-            >
-              <div className="relative overflow-hidden rounded-2xl bg-charcoal text-white p-9 lg:p-12">
-                <div
-                  aria-hidden
-                  className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-primary/25 blur-3xl"
-                />
-                <div className="relative">
-                  <span className="inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.12em] text-amber">
-                    <span className="h-[2px] w-6 bg-amber" /> Our defining commitment
-                  </span>
-                  <h3 className="text-[1.6rem] lg:text-[2rem] font-semibold tracking-[-0.02em] leading-[1.15] mt-5">
-                    Human Intelligence Governance (HIG™)
-                  </h3>
-                  <p className="text-[15px] lg:text-base text-white/70 leading-[1.7] mt-5 max-w-xl">
-                    Every system we build stays transparent, fair, and accountable—kept under human
-                    judgment, not handed over to a black box. It is the standard we hold ourselves to
-                    on every engagement, and the reason our clients trust what we deploy.
-                  </p>
-                  <Link href="/about">
-                    <span className="inline-flex items-center gap-2 mt-8 text-[13px] font-semibold uppercase tracking-[0.12em] text-white hover:text-amber transition-colors cursor-pointer">
-                      How HIG™ works <ArrowRight className="w-4 h-4" />
-                    </span>
-                  </Link>
-                </div>
-              </div>
             </motion.div>
           </div>
         </div>
