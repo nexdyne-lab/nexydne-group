@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { useState } from "react";
+import { ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SolutionHero from "@/components/SolutionHero";
 import { SEO } from "@/components/SEO";
 import {
   Select,
@@ -109,15 +109,32 @@ export default function Contact() {
       />
       <Navigation />
 
-      {/* SLOT 1 — Charcoal compact hero (downshifted H1, ~25% shorter than Cat 5) */}
-      <SolutionHero
-        eyebrow="CONTACT · LET'S TALK"
-        title="Talk to a NexDyne partner."
-        subtitle="Tell us what you're working on. We'll route you to the practice lead who can help — typically within one business day."
-        backgroundImage="/images/contact-hero.jpg"
-        h1ClassName="nx-h2 text-charcoal leading-[1.05] mb-6"
-        containerClassName="h-[60vh] min-h-[440px] sm:min-h-[480px] lg:min-h-[540px]"
-      />
+      {/* SLOT 1 — Full-bleed photo hero + light card panel */}
+      <section className="relative">
+        <div className="absolute inset-0">
+          <img
+            src="/images/contact-hero.jpg"
+            alt="NexDyne headquarters"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/15 to-transparent" />
+        </div>
+        <div className="relative container px-4 sm:px-6 md:px-12 min-h-[62vh] flex items-center pt-28 pb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 28 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            className="w-full max-w-xl bg-off-white/95 backdrop-blur-sm border-t-[3px] border-primary p-8 sm:p-10 lg:p-12 shadow-[0_30px_70px_-30px_rgba(0,0,0,0.5)]"
+          >
+            <span className="nx-eyebrow text-primary">Contact · Let's talk</span>
+            <h1 className="nx-h1 text-charcoal mt-4">Talk to a NexDyne partner.</h1>
+            <p className="nx-lead text-muted-foreground mt-5">
+              Tell us what you're working on. We'll route you to the practice lead who can
+              help—typically within one business day.
+            </p>
+          </motion.div>
+        </div>
+      </section>
 
       {/* SLOT 2 — White contact form (the centerpiece) */}
       <section className="bg-white nx-section">
@@ -274,7 +291,7 @@ export default function Contact() {
       </section>
 
       {/* SLOT 3 — Light-grey "What happens next" reassurance band */}
-      <section className="bg-grey nx-section">
+      <section className="bg-off-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -302,7 +319,7 @@ export default function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="bg-white"
+                className="bg-white border border-border transition-shadow hover:shadow-[0_18px_40px_-22px_rgba(0,0,0,0.18)]"
               >
                 <div className="h-full p-8 lg:p-10 flex flex-col">
                   <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-5">
@@ -350,7 +367,7 @@ export default function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="bg-white"
+                className="bg-white border border-border transition-shadow hover:shadow-[0_18px_40px_-22px_rgba(0,0,0,0.18)]"
               >
                 <div className="h-full p-8 lg:p-10 flex flex-col">
                   <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-5">
@@ -373,7 +390,7 @@ export default function Contact() {
       </section>
 
       {/* SLOT 5 — Light-grey "Where we work" — single Grand Rapids HQ */}
-      <section className="bg-grey nx-section">
+      <section className="bg-off-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -401,9 +418,9 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="max-w-md"
+            className="grid md:grid-cols-2 border border-border bg-white overflow-hidden"
           >
-            <div className="border border-charcoal/10 bg-white p-8 lg:p-10">
+            <div className="p-8 lg:p-12 flex flex-col justify-center">
               <h4 className="text-xl text-charcoal font-medium mb-5 leading-[1.25]">
                 Grand Rapids
               </h4>
@@ -413,6 +430,13 @@ export default function Contact() {
                 <div>Grand Rapids, MI 49512</div>
                 <div>United States</div>
               </address>
+            </div>
+            <div className="relative min-h-[240px] md:min-h-0 order-first md:order-last">
+              <img
+                src="/images/office-grand-rapids.jpg"
+                alt="NexDyne headquarters in Grand Rapids, Michigan"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
             </div>
           </motion.div>
         </div>

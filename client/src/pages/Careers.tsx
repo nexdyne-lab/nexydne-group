@@ -1,14 +1,16 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 
+const ease = [0.22, 1, 0.36, 1] as const;
 const fadeUp = {
   initial: { opacity: 0, y: 24 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, amount: 0.2 },
-  transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
+  transition: { duration: 0.6, ease },
 };
 
 const reasons = [
@@ -35,7 +37,7 @@ const areas = [
 
 export default function Careers() {
   return (
-    <div className="min-h-screen bg-subtle text-charcoal selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-off-white text-charcoal selection:bg-primary selection:text-white">
       <SEO
         title="Careers | NexDyne Consulting Group"
         description="Build your career at a founder-led firm where you own real work from day one—helping businesses transform with AI and agentic systems, governed by HIG™."
@@ -43,20 +45,33 @@ export default function Careers() {
       />
       <Navigation />
 
-      {/* Hero */}
-      <section className="bg-subtle">
-        <div className="container px-4 sm:px-6 md:px-12 pt-24 md:pt-28 lg:pt-32 pb-16 md:pb-20">
-          <motion.div {...fadeUp} className="max-w-4xl">
-            <span className="nx-eyebrow text-charcoal/55">Careers</span>
-            <h1 className="nx-h1 text-charcoal mt-5 mb-6">Do the best work of your career.</h1>
-            <p className="nx-lead text-muted-foreground max-w-2xl">
+      {/* ── Hero — full-bleed photo + light card panel ────────────────────── */}
+      <section className="relative">
+        <div className="absolute inset-0">
+          <img
+            src="/images/careers-hero.jpg"
+            alt="The work you'd own at NexDyne"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/15 to-transparent" />
+        </div>
+        <div className="relative container px-4 sm:px-6 md:px-12 min-h-[74vh] flex items-center pt-28 pb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 28 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease }}
+            className="w-full max-w-xl bg-off-white/95 backdrop-blur-sm border-t-[3px] border-primary p-8 sm:p-10 lg:p-12 shadow-[0_30px_70px_-30px_rgba(0,0,0,0.5)]"
+          >
+            <span className="nx-eyebrow text-primary">Careers</span>
+            <h1 className="nx-h1 text-charcoal mt-4">Do the best work of your career.</h1>
+            <p className="nx-lead text-muted-foreground mt-5">
               We're a founder-led firm, growing carefully. That means senior-level ownership from day
               one, real transformation work, and the chance to help shape what NexDyne becomes.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
+            <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
               <Link href="/contact">
-                <span className="inline-block px-8 py-4 bg-primary text-white text-[13px] font-semibold uppercase tracking-[0.12em] hover:bg-primary-hover transition-colors cursor-pointer">
-                  Introduce yourself
+                <span className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white text-[13px] font-semibold uppercase tracking-[0.12em] hover:bg-primary-hover transition-colors cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                  Introduce yourself <ArrowRight className="w-4 h-4" />
                 </span>
               </Link>
               <a href="#how-we-hire" className="group inline-flex items-center gap-2 text-[15px] font-medium text-charcoal cursor-pointer">
@@ -66,17 +81,9 @@ export default function Careers() {
             </div>
           </motion.div>
         </div>
-
-        {/* full-bleed image band */}
-        <motion.div {...fadeUp} className="w-full">
-          <div className="relative h-[300px] md:h-[420px] lg:h-[460px] overflow-hidden">
-            <img src="/images/hero-team.jpg" alt="The NexDyne team at work" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-charcoal/15" />
-          </div>
-        </motion.div>
       </section>
 
-      {/* Why NexDyne */}
+      {/* ── Why NexDyne ───────────────────────────────────────────────────── */}
       <section id="why-nexdyne" className="nx-section bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div {...fadeUp} className="max-w-3xl mb-14">
@@ -85,7 +92,7 @@ export default function Careers() {
           </motion.div>
           <div className="grid sm:grid-cols-2 gap-px bg-border border border-border">
             {reasons.map((r, i) => (
-              <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: (i % 2) * 0.08 }} className="group bg-white p-8 lg:p-10 hover:bg-subtle transition-colors">
+              <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: (i % 2) * 0.08 }} className="group bg-white p-8 lg:p-10 hover:bg-off-white transition-colors">
                 <div className="h-[3px] w-8 bg-primary mb-5 transition-[width] duration-300 group-hover:w-12" />
                 <h3 className="nx-h3 text-charcoal mb-3">{r.title}</h3>
                 <p className="text-[15px] text-muted-foreground leading-relaxed">{r.body}</p>
@@ -95,31 +102,38 @@ export default function Careers() {
         </div>
       </section>
 
-      {/* Life at NexDyne — editorial */}
-      <section className="nx-section bg-subtle">
+      {/* ── Life at NexDyne — split feature card ──────────────────────────── */}
+      <section className="nx-section bg-off-white">
         <div className="container px-4 sm:px-6 md:px-12">
-          <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-start">
-            <motion.div {...fadeUp} className="lg:col-span-4">
+          <motion.div {...fadeUp} className="grid md:grid-cols-2 border border-border overflow-hidden">
+            <div className="relative min-h-[320px] md:min-h-0">
+              <img
+                src="/images/hero-team-2.webp"
+                alt="Life at NexDyne"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="bg-white p-9 sm:p-12 lg:p-14 flex flex-col justify-center">
               <span className="nx-eyebrow text-charcoal/55">Life at NexDyne</span>
-              <h2 className="nx-h2 text-charcoal mt-4">High trust. High standards.</h2>
-            </motion.div>
-            <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.15 }} className="lg:col-span-8">
-              <p className="nx-lead text-charcoal mb-6">
-                We keep the team small on purpose. It means every person matters, every voice is heard,
-                and the quality of the work is never diluted by scale.
+              <h2 className="text-[1.7rem] md:text-[2.1rem] font-semibold tracking-[-0.02em] leading-[1.15] text-charcoal mt-4">
+                High trust. High standards.
+              </h2>
+              <p className="text-[15px] md:text-base text-charcoal leading-[1.7] mt-5">
+                We keep the team small on purpose. It means every person matters, every voice is
+                heard, and the quality of the work is never diluted by scale.
               </p>
-              <p className="text-[15px] text-muted-foreground leading-relaxed max-w-2xl">
+              <p className="text-[15px] text-muted-foreground leading-[1.7] mt-4">
                 Based in Grand Rapids and working with clients wherever they are, we value autonomy,
                 curiosity, and craft. The pace is real and the expectations are high—but so is the
                 support, and so is the reward: you'll build rare skills, work on problems that matter,
                 and see the impact of your work first-hand.
               </p>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* How we hire */}
+      {/* ── How we hire ───────────────────────────────────────────────────── */}
       <section id="how-we-hire" className="nx-section bg-white border-y border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div {...fadeUp} className="max-w-3xl mb-14">
@@ -143,8 +157,8 @@ export default function Careers() {
         </div>
       </section>
 
-      {/* Where we hire — areas */}
-      <section className="nx-section bg-subtle">
+      {/* ── Where we hire — areas ─────────────────────────────────────────── */}
+      <section className="nx-section bg-off-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div {...fadeUp} className="max-w-3xl mb-14">
             <span className="nx-eyebrow text-charcoal/55">Where we hire</span>
@@ -152,7 +166,7 @@ export default function Careers() {
           </motion.div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border border border-border">
             {areas.map((a, i) => (
-              <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.08 }} className="group bg-white p-8 hover:bg-subtle transition-colors">
+              <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.08 }} className="group bg-white p-8 hover:bg-off-white transition-colors">
                 <div className="text-primary text-sm font-semibold tracking-[0.1em] mb-5">0{i + 1}</div>
                 <h3 className="nx-h3 text-charcoal mb-3">{a.title}</h3>
                 <p className="text-[15px] text-muted-foreground leading-relaxed">{a.body}</p>
@@ -162,7 +176,7 @@ export default function Careers() {
         </div>
       </section>
 
-      {/* Open roles — honest */}
+      {/* ── Open roles — charcoal CTA ─────────────────────────────────────── */}
       <section className="nx-section bg-charcoal text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div {...fadeUp} className="max-w-3xl">
@@ -177,7 +191,7 @@ export default function Careers() {
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
               <Link href="/contact">
-                <span className="inline-block px-8 py-4 bg-primary text-white text-[13px] font-semibold uppercase tracking-[0.12em] hover:bg-primary-hover transition-colors cursor-pointer">Introduce yourself</span>
+                <span className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white text-[13px] font-semibold uppercase tracking-[0.12em] hover:bg-primary-hover transition-colors cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Introduce yourself <ArrowRight className="w-4 h-4" /></span>
               </Link>
               <Link href="/about/team">
                 <span className="inline-block px-8 py-4 border border-white/25 text-white text-[13px] font-semibold uppercase tracking-[0.12em] hover:bg-white/10 transition-colors cursor-pointer">Meet the founders</span>
