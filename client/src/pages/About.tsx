@@ -344,23 +344,24 @@ export default function About() {
               Four commitments that shape every engagement and every partnership we build.
             </p>
           </motion.div>
-          <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
             {values.map((value, i) => (
-              <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.08 }} className="group">
-                <div className="relative h-full border border-border overflow-hidden bg-white transition-shadow duration-300 hover:shadow-[0_18px_40px_-22px_rgba(0,0,0,0.22)]">
-                  <span className="absolute top-0 left-0 z-10 h-[3px] w-full bg-primary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
-                  <div className="aspect-[16/11] overflow-hidden">
+              <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.08 }}>
+                <article className="group">
+                  <div className="overflow-hidden rounded-xl">
                     <img
                       src={value.image}
                       alt={value.title}
-                      className="w-full h-full object-cover transition-transform duration-[700ms] group-hover:scale-105"
+                      className="w-full aspect-[5/4] object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.04]"
                     />
                   </div>
-                  <div className="p-6">
-                    <h3 className="nx-h3 text-charcoal mb-3 group-hover:text-primary transition-colors">{value.title}</h3>
-                    <p className="text-[14px] text-muted-foreground leading-[1.7]">{value.description}</p>
+                  <div className="pt-5">
+                    <h3 className="text-charcoal font-semibold leading-[1.25] tracking-[-0.015em] text-[1.2rem] lg:text-[1.35rem]">
+                      {value.title}
+                    </h3>
+                    <p className="mt-3 text-[0.95rem] leading-[1.6] text-muted-foreground">{value.description}</p>
                   </div>
-                </div>
+                </article>
               </motion.div>
             ))}
           </div>
