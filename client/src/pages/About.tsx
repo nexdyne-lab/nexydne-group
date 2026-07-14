@@ -57,7 +57,6 @@ export default function About() {
     { value: "62+", label: "Client engagements delivered" },
     { value: "18", label: "Industries served" },
     { value: "HIG™", label: "Our governing doctrine" },
-    { value: "2", label: "Partners leading the firm" },
   ];
 
   const principles = [
@@ -190,7 +189,7 @@ export default function About() {
       {/* ══ Firm at a glance — charcoal stat band ═════════════════════════════ */}
       <section className="bg-charcoal text-white">
         <div className="container px-4 sm:px-6 md:px-12">
-          <div className="grid grid-cols-2 lg:grid-cols-4 divide-y divide-x divide-white/10 lg:divide-y-0">
+          <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/10">
             {stats.map((s, i) => (
               <motion.div
                 key={i}
