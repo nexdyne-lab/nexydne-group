@@ -178,9 +178,9 @@ export default function Ecommerce() {
                 <div className="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/10 transition-colors"></div>
               </div>
               <div className="p-5 md:p-6 bg-white/10 backdrop-blur-sm flex flex-col">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-charcoal group-hover:text-secondary transition-colors">Stand Management Optimisation at RAI Amsterdam</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-charcoal group-hover:text-secondary transition-colors">Stand Management Optimization at RAI Amsterdam</h3>
                 <p className="text-sm text-muted-foreground mb-4 flex-grow">
-                  RAI Amsterdam optimises stand management and enhances the experience of its exhibitors with a digital solution developed by NEXDYNE
+                  RAI Amsterdam optimizes stand management and enhances the experience of its exhibitors with a digital solution developed by NEXDYNE
                 </p>
                 <Button variant="outline" className="rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white transition w-fit" size="sm">
                   Learn more

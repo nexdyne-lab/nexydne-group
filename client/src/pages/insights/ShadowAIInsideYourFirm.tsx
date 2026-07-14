@@ -48,7 +48,7 @@ export default function ShadowAIInsideYourFirm() {
       <p>
         And it is everywhere. Adoption research consistently finds employee AI usage running far ahead of official
         enablement<Cite n={3} /> — people use what makes them faster, sanctioned or not. Security research tells
-        the same story from the damage side: AI-related incidents cluster in organisations with no AI inventory
+        the same story from the damage side: AI-related incidents cluster in organizations with no AI inventory
         and no access controls, and ungoverned AI use adds measurable cost when a breach lands<Cite n={1} />.
       </p>
 
@@ -72,7 +72,7 @@ export default function ShadowAIInsideYourFirm() {
 
       <p>
         <strong>It is invisible to traditional controls.</strong> To your network, it's just HTTPS traffic to a
-        popular domain. There is no server to find, no licence renewal to catch. Discovery has to be deliberate.
+        popular domain. There is no server to find, no license renewal to catch. Discovery has to be deliberate.
       </p>
 
       <blockquote>
@@ -86,7 +86,7 @@ export default function ShadowAIInsideYourFirm() {
         The instinctive response — block the domains, publish a prohibition memo — has been tried at scale, and
         the result is consistent: usage doesn't stop, it relocates. To personal phones, home accounts, and
         pasted-through personal email. The firm keeps all of the risk and loses all of the visibility. Prohibition
-        converts a governable behaviour into an invisible one.
+        converts a governable behavior into an invisible one.
       </p>
 
       <h2>The paved-road alternative</h2>
@@ -116,7 +116,7 @@ export default function ShadowAIInsideYourFirm() {
 
       <h3>4. Anchor it in a real framework</h3>
       <p>
-        Fold AI usage into your risk management using a recognised structure such as the NIST AI RMF<Cite n={2} />.
+        Fold AI usage into your risk management using a recognized structure such as the NIST AI RMF<Cite n={2} />.
         That gives the board a defensible answer, satisfies customer due-diligence, and — for firms in scope —
         does double duty as EU AI Act groundwork.
       </p>
@@ -125,8 +125,8 @@ export default function ShadowAIInsideYourFirm() {
 
       <p>
         Handled this way, the shadow-AI problem quietly becomes an asset: a live map of where your people find AI
-        genuinely useful, field-tested and prioritised by demand. That map is exactly where your sanctioned AI
-        roadmap should start. Govern the behaviour, and you don't just remove the risk — you inherit the R&D your
+        genuinely useful, field-tested and prioritized by demand. That map is exactly where your sanctioned AI
+        roadmap should start. Govern the behavior, and you don't just remove the risk — you inherit the R&D your
         workforce has been doing for free.
       </p>
     </InsightArticle>

@@ -110,7 +110,7 @@ export default function SeriesAFundraisingGuide() {
             </h2>
             
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              Financial preparation for Series A extends far beyond having positive revenue trends. Institutional investors expect financial sophistication that demonstrates you understand your business model at a granular level. This means developing comprehensive financial models that project three to five years forward with clear assumptions, cohort analyses that show customer behavior patterns over time, and unit economics breakdowns by customer segment, acquisition channel, and product line.
+              Financial preparation for Series A extends far beyond having positive revenue trends. Institutional investors expect financial sophistication that demonstrates you understand your business model at a granular level. This means developing comprehensive financial models that project three to five years forward with clear assumptions, cohort analyzes that show customer behavior patterns over time, and unit economics breakdowns by customer segment, acquisition channel, and product line.
             </p>
 
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">

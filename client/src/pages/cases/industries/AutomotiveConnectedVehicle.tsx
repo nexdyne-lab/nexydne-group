@@ -62,7 +62,7 @@ export default function AutomotiveConnectedVehicle() {
         {
           step: "02",
           title: "Learning the Signs of a Failure",
-          description: "By studying the manufacturer's own history of field failures, we taught the system to recognise the early patterns that come before a breakdown, giving on average about three to four weeks of warning before a component gave out."
+          description: "By studying the manufacturer's own history of field failures, we taught the system to recognize the early patterns that come before a breakdown, giving on average about three to four weeks of warning before a component gave out."
         },
         {
           step: "03",
@@ -72,7 +72,7 @@ export default function AutomotiveConnectedVehicle() {
         {
           step: "04",
           title: "Turning Insight into a Service Customers Buy",
-          description: "We packaged the same health monitoring into a subscription the manufacturer could sell to fleet owners, who valued knowing a problem was coming before it stranded a vehicle. A cost centre became a product."
+          description: "We packaged the same health monitoring into a subscription the manufacturer could sell to fleet owners, who valued knowing a problem was coming before it stranded a vehicle. A cost center became a product."
         }
       ]}
       resultsTitle="One Data Stream, Two Wins"

@@ -16,14 +16,14 @@ export default function OurImpact() {
     { title: "People & Talent", body: "Capabilities that outlast the engagement", href: "#people" },
     { title: "Community", body: "Enterprise-grade intelligence, widened access", href: "#community" },
     { title: "Responsible AI", body: "Governed, transparent, accountable systems", href: "#responsible-ai" },
-    { title: "Social Good", body: "Expertise for mission-driven organisations", href: "#social-good" },
+    { title: "Social Good", body: "Expertise for mission-driven organizations", href: "#social-good" },
   ];
 
   return (
     <div className="min-h-screen bg-subtle text-charcoal">
       <SEO
         title="Our Impact | NexDyne Consulting Group"
-        description="How NexDyne creates lasting impact—capabilities that outlast our engagements, wider access to enterprise-grade intelligence, responsible AI, and work for mission-driven organisations."
+        description="How NexDyne creates lasting impact—capabilities that outlast our engagements, wider access to enterprise-grade intelligence, responsible AI, and work for mission-driven organizations."
         canonical="/about/impact"
       />
       <Navigation />
@@ -74,7 +74,7 @@ export default function OurImpact() {
               </p>
               <figure className="border-l-2 border-primary pl-6 md:pl-8">
                 <blockquote className="text-[1.3rem] md:text-[1.6rem] leading-[1.4] tracking-[-0.01em] text-charcoal font-medium">
-                  "Before NexDyne, our finance team was intimidated by predictive modelling. Now they
+                  "Before NexDyne, our finance team was intimidated by predictive modeling. Now they
                   build their own forecasts and challenge assumptions we'd held for years."
                 </blockquote>
                 <figcaption className="mt-5 text-[14px] text-muted-foreground">
@@ -94,14 +94,14 @@ export default function OurImpact() {
             <h2 className="nx-h2 text-charcoal mt-4">Democratising advanced intelligence</h2>
             <p className="nx-lead text-muted-foreground mt-5">
               Sophisticated AI and analytics were historically reserved for the Fortune 500. We bring
-              enterprise-grade capability to growth-stage and growing organisations.
+              enterprise-grade capability to growth-stage and growing organizations.
             </p>
           </motion.div>
           <div className="grid md:grid-cols-3 gap-px bg-border border border-border">
             {[
-              { t: "Levelling the field", b: "Smaller organisations compete with industry giants through data-driven decisions." },
+              { t: "Levelling the field", b: "Smaller organizations compete with industry giants through data-driven decisions." },
               { t: "Fuelling growth", b: "Better decisions help our clients scale—and create new roles as they grow." },
-              { t: "Market expansion", b: "Organisations enter new markets with data-backed confidence and strategic clarity." },
+              { t: "Market expansion", b: "Organizations enter new markets with data-backed confidence and strategic clarity." },
             ].map((c, i) => (
               <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.08 }} className="group bg-white p-8 lg:p-10 hover:bg-subtle transition-colors">
                 <div className="h-[3px] w-8 bg-primary mb-5 transition-[width] duration-300 group-hover:w-12" />
@@ -124,7 +124,7 @@ export default function OurImpact() {
             <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.15 }} className="lg:col-span-8">
               <p className="nx-lead text-charcoal mb-8">
                 Under Human Intelligence Governance (HIG™), every system we deploy is transparent, fair,
-                and accountable—and efficient. We prioritise model efficiency, cloud optimisation, and
+                and accountable—and efficient. We prioritize model efficiency, cloud optimization, and
                 carbon-aware deployment so intelligence scales responsibly.
               </p>
               <div className="border-t border-border">
@@ -151,15 +151,15 @@ export default function OurImpact() {
             <span className="nx-eyebrow text-white/45">Social good</span>
             <h2 className="nx-h2 text-white mt-4">Giving our expertise where it counts</h2>
             <p className="nx-lead text-white/70 mt-5">
-              We dedicate a share of our consulting capacity to mission-driven organisations working on
+              We dedicate a share of our consulting capacity to mission-driven organizations working on
               education access, healthcare equity, and sustainability.
             </p>
           </motion.div>
           <div className="grid sm:grid-cols-3 border-t border-white/10">
             {[
-              { t: "Education access", l: "Helping mission-driven organisations widen access to learning and opportunity." },
+              { t: "Education access", l: "Helping mission-driven organizations widen access to learning and opportunity." },
               { t: "Healthcare equity", l: "Applying data and AI to close gaps in how care is planned and delivered." },
-              { t: "Sustainability", l: "Backing organisations working toward a more sustainable, resilient future." },
+              { t: "Sustainability", l: "Backing organizations working toward a more sustainable, resilient future." },
             ].map((s, i) => (
               <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.1 }} className="py-8 sm:py-10 sm:px-8 border-b sm:border-b-0 sm:border-r border-white/10 last:border-r-0">
                 <div className="h-[3px] w-8 bg-amber mb-5" />

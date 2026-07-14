@@ -38,7 +38,7 @@ export default function PersonalizationAtScale() {
             "Instrument personalization at scale so each campaign, account, and decision feeds the next one — building a proprietary asset that competitors cannot copy from a vendor.",
         },
         {
-          title: "Modernise the personalization at scale tech and talent stack",
+          title: "Modernize the personalization at scale tech and talent stack",
           description:
             "Invest in the platforms, partners, and people that match the next stage of the business — not the one you grew up in.",
         },

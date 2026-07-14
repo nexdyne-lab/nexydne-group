@@ -72,7 +72,7 @@ export default function GenerativeAIDocumentAutomation() {
         {
           step: "04",
           title: "Keeping a Person in Charge",
-          description: "The underwriter or specialist reviewed each draft, made any changes and gave final approval. The AI never sent anything on its own; it did the drafting so people could focus their judgement where it mattered most."
+          description: "The underwriter or specialist reviewed each draft, made any changes and gave final approval. The AI never sent anything on its own; it did the drafting so people could focus their judgment where it mattered most."
         }
       ]}
       resultsTitle="Faster Paperwork, Same Standards"

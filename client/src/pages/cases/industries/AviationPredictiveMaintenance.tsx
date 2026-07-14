@@ -62,7 +62,7 @@ export default function AviationPredictiveMaintenance() {
         {
           step: "02",
           title: "Learning the Warning Signs",
-          description: "By studying a decade of maintenance history, we taught the system to recognise the early patterns that precede a failure across dozens of the most common fault types."
+          description: "By studying a decade of maintenance history, we taught the system to recognize the early patterns that precede a failure across dozens of the most common fault types."
         },
         {
           step: "03",

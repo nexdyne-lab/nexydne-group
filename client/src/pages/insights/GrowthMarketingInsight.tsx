@@ -27,14 +27,14 @@ export default function GrowthMarketingInsight() {
       category="Growth & Marketing"
       categoryHref="/insights"
       title="Growth in the Age of Generative AI: Real Value, Shallow Adoption, and the Trust Problem"
-      subtitle="Marketers call this the biggest disruption in a generation—and the numbers back them up. Yet most organisations are stuck in shallow pilots, held back not by creativity but by data, brand risk, and governance."
+      subtitle="Marketers call this the biggest disruption in a generation—and the numbers back them up. Yet most organizations are stuck in shallow pilots, held back not by creativity but by data, brand risk, and governance."
       heroImage="/images/abstract-growth.jpg"
       publishDate="July 1, 2026"
       readTime="9 min"
       keyTakeaways={[
         "61% of marketers say AI is driving marketing's biggest disruption in 20 years, and AI-in-marketing spend is set to more than double to over US$107B by 2028.",
         "The value is concentrated and large: McKinsey puts marketing and sales among generative AI's biggest value pools, worth hundreds of billions annually.",
-        "Most organisations remain in shallow pilots—what stalls them is data fragmentation, brand risk, and weak governance, not a shortage of ideas.",
+        "Most organizations remain in shallow pilots—what stalls them is data fragmentation, brand risk, and weak governance, not a shortage of ideas.",
         "HIG™ reframes the problem: govern the customer decision and the brand and data system first, then scale generative AI where it compounds.",
       ]}
       references={references}
@@ -62,7 +62,7 @@ export default function GrowthMarketingInsight() {
       </p>
 
       <p>
-        Practitioners are already seeing it. In Adobe's 2026 survey, 70% of organisations report that personalisation
+        Practitioners are already seeing it. In Adobe's 2026 survey, 70% of organizations report that personalisation
         performance improved over the past year, 64% report gains in lead generation, and 59% in customer
         retention<Cite n={2} />. The mechanism is consistent: AI lets teams move from broad segments to genuinely
         individualised experiences, at a scale humans cannot manage by hand.
@@ -77,7 +77,7 @@ export default function GrowthMarketingInsight() {
 
       <p>
         Because adoption is a mile wide and an inch deep. Across content, support, personalisation, and back-office
-        CX, only roughly a quarter to a third of organisations are running even limited generative-AI
+        CX, only roughly a quarter to a third of organizations are running even limited generative-AI
         pilots<Cite n={2} />. And genuinely operational use remains small: just 5.5% of U.S. businesses reported
         using AI in production environments in 2025, up from 3.7% in 2023<Cite n={6} />—rising fast, but from a low
         base.
@@ -120,7 +120,7 @@ export default function GrowthMarketingInsight() {
 
       <p>
         <strong>The measure.</strong> How do we tie AI activity to revenue, retention, and efficiency—so wins are
-        real and repeatable, not anecdotal? The organisations that can't connect AI to value<Cite n={2} /> almost
+        real and repeatable, not anecdotal? The organizations that can't connect AI to value<Cite n={2} /> almost
         always skipped this.
       </p>
 

@@ -38,7 +38,7 @@ export default function RetentionLoyalty() {
             "Instrument retention & loyalty so each campaign, account, and decision feeds the next one — building a proprietary asset that competitors cannot copy from a vendor.",
         },
         {
-          title: "Modernise the retention & loyalty tech and talent stack",
+          title: "Modernize the retention & loyalty tech and talent stack",
           description:
             "Invest in the platforms, partners, and people that match the next stage of the business — not the one you grew up in.",
         },

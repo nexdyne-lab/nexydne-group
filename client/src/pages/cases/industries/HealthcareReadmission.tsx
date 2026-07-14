@@ -42,7 +42,7 @@ export default function HealthcareReadmission() {
         },
         {
           icon: Clock,
-          title: "Recognised Too Late",
+          title: "Recognized Too Late",
           description: "Patients who genuinely needed extra help were often identified only after discharge — too late to change the outcome."
         },
         {

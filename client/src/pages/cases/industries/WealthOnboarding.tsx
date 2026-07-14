@@ -52,7 +52,7 @@ export default function WealthOnboarding() {
         }
       ]}
       approachTitle="Quiet Technology, Personal Service"
-      approachIntro="Working with the firm's advisers and compliance team, we rebuilt the first weeks of the client relationship so the administrative work happened quietly in the background — fast, accurate and largely invisible — leaving the human part of the service front and centre where it belonged."
+      approachIntro="Working with the firm's advisers and compliance team, we rebuilt the first weeks of the client relationship so the administrative work happened quietly in the background — fast, accurate and largely invisible — leaving the human part of the service front and center where it belonged."
       steps={[
         {
           step: "01",

@@ -9,7 +9,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
  *
  * Composition rules (adapted from EY's hero, mapped to our brand):
  * - ONE short all-white headline, low in the frame (no eyebrow, no accent
- *   colour in the headline — hero rule).
+ *   color in the headline — hero rule).
  * - One-sentence sub-line with a vertical orange signal bar at its left.
  * - Quiet inline slide tabs bottom-left: short amber progress tick above the
  *   active label only — no full-width progress tracks.
@@ -24,7 +24,7 @@ const SLIDE_MS = 6500;
 const ease = [0.22, 1, 0.36, 1] as const;
 
 const CHARCOAL = "#000000";
-const SIGNAL = "#DE2F23"; // Orange-Red — the signal colour
+const SIGNAL = "#DE2F23"; // Orange-Red — the signal color
 const AMBER = "#FFB41D";
 
 interface Slide {

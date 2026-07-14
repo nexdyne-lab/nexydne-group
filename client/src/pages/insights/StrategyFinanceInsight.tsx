@@ -11,7 +11,7 @@ export default function StrategyFinanceInsight() {
     { label: "McKinsey & Company — “The state of AI” (global adoption survey).", url: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" },
     { label: "CFO Connect / General Atlantic — “State of AI in Finance 2026.”", url: "https://www.cfoconnect.eu/resources/reports/state-of-ai-in-finance-2026/" },
     { label: "KPMG — “2026: The Decision Advantage — How AI is producing value across the finance function.”", url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/kpmg-ai-in-finance.pdf" },
-    { label: "Cambridge Centre for Alternative Finance (Cambridge Judge Business School) — “2026 Global AI in Financial Services Report.”", url: "https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" },
+    { label: "Cambridge Center for Alternative Finance (Cambridge Judge Business School) — “2026 Global AI in Financial Services Report.”", url: "https://www.jbs.cam.ac.uk/faculty-research/centers/alternative-finance/publications/2026-global-ai-in-financial-services-report/" },
     { label: "PwC — “2026 AI Business Predictions.”", url: "https://www.pwc.com/us/en/tech-effect/ai-analytics/ai-predictions.html" },
     { label: "Financial Executives International — “The evolution of the finance function: CFO strategy and AI.”", url: "https://www.financialexecutives.org/About-FEI/For-the-Press/2026/evolution-of-the-finance-function-cfo-strategy-ai.aspx" },
     { label: "Stanford HAI — “Artificial Intelligence Index Report 2025.”", url: "https://hai.stanford.edu/ai-index/2025-ai-index-report" },
@@ -49,7 +49,7 @@ export default function StrategyFinanceInsight() {
       </p>
 
       <p>
-        And yet, ask a CFO whether AI has changed how their organisation actually makes decisions, and the answer is
+        And yet, ask a CFO whether AI has changed how their organization actually makes decisions, and the answer is
         usually a hesitant "not yet." That hesitation is the most important signal in the market. Adoption has
         arrived. Advantage has not. This piece is about the gap between the two—and how to close it.
       </p>
@@ -77,8 +77,8 @@ export default function StrategyFinanceInsight() {
       <h2>Where AI is already paying off</h2>
 
       <p>
-        The organisations that get past the pilot trap are seeing real returns—concentrated, tellingly, in
-        decision-heavy work. In a 2026 survey, more than three-quarters of organisations reported using AI in
+        The organizations that get past the pilot trap are seeing real returns—concentrated, tellingly, in
+        decision-heavy work. In a 2026 survey, more than three-quarters of organizations reported using AI in
         financial planning, reporting, and commercial analysis<Cite n={3} />. Among those actively using it, 70%
         report better decision quality, 71% report faster decisions, and 64% report improved forecasting
         accuracy<Cite n={3} />.
@@ -86,7 +86,7 @@ export default function StrategyFinanceInsight() {
 
       <p>
         The step-change comes from <strong>agentic AI</strong>—systems that don't just answer questions but carry out
-        multi-step financial workflows. Organisations deploying agentic AI in finance report at least 32 percentage
+        multi-step financial workflows. Organizations deploying agentic AI in finance report at least 32 percentage
         points stronger performance across key finance metrics, rising to nearly 40 points on forecast accuracy and
         ROI versus peers<Cite n={3} />. In financial services specifically, 40% of firms already report increased
         profitability from AI, and among those investing more than US$100,000 a year, 62% have reached advanced AI
@@ -104,7 +104,7 @@ export default function StrategyFinanceInsight() {
       </p>
 
       <p>
-        That combination—hard to measure, confined to the back office—is exactly what stalls an AI programme in year
+        That combination—hard to measure, confined to the back office—is exactly what stalls an AI program in year
         two. Without a measurement and governance frame, initiatives can't be defended at budget time, can't be
         scaled with confidence, and can't be trusted with anything that touches capital allocation or risk.
       </p>
@@ -144,7 +144,7 @@ export default function StrategyFinanceInsight() {
 
       <h3>1. Start where the decision is expensive and repeatable</h3>
       <p>
-        Prioritise decisions that are made often, matter financially, and depend on data you already trust—forecasting,
+        Prioritize decisions that are made often, matter financially, and depend on data you already trust—forecasting,
         variance analysis, and reporting are natural first movers, which is why they lead adoption<Cite n={3} />.
       </p>
 
@@ -172,7 +172,7 @@ export default function StrategyFinanceInsight() {
       <p>
         The finance function has crossed the adoption threshold—the technology question is largely settled<Cite n={1} /><Cite n={2} />.
         The advantage question is not. It will be won by the CFOs who treat AI not as a tool to install but as a change
-        to how the organisation decides—governed, measured, and owned. That is a management challenge before it is a
+        to how the organization decides—governed, measured, and owned. That is a management challenge before it is a
         technical one, and it is precisely the kind of work a firm built on Human Intelligence Governance exists to do.
       </p>
 

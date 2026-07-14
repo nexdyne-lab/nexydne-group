@@ -52,7 +52,7 @@ export default function ConsumerElectronicsDemandOptimization() {
         }
       ]}
       approachTitle="Learning From the Products That Came Before"
-      approachIntro="We helped the brand replace guesswork with judgement grounded in evidence — starting each new product from the behaviour of similar past products, reading the earliest signs of how a launch was landing, and adjusting the plan as real demand came in rather than waiting until it was too late to act."
+      approachIntro="We helped the brand replace guesswork with judgment grounded in evidence — starting each new product from the behavior of similar past products, reading the earliest signs of how a launch was landing, and adjusting the plan as real demand came in rather than waiting until it was too late to act."
       steps={[
         {
           step: "01",

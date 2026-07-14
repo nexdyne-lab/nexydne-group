@@ -46,7 +46,7 @@ export default function EUAIActMidMarket() {
       </p>
 
       <p>
-        Large enterprises have compliance programmes standing. The exposed population is growing companies — firms
+        Large enterprises have compliance programs standing. The exposed population is growing companies — firms
         that don't think of themselves as "AI companies" but are, in the Act's terms, <em>deployers</em> of AI
         systems: screening CVs with an AI tool, scoring credit applications, monitoring worker productivity,
         routing insurance claims. Deployment alone creates obligations.
@@ -89,7 +89,7 @@ export default function EUAIActMidMarket() {
 
       <h3>Days 1–30: Inventory</h3>
       <p>
-        List every AI system in use — bought, built, or embedded in SaaS you already licence. For each: what it
+        List every AI system in use — bought, built, or embedded in SaaS you already license. For each: what it
         does, whose data it touches, who owns it internally. (This exercise reliably surfaces the shadow-AI
         population too, which is its own risk story.)
       </p>
@@ -104,7 +104,7 @@ export default function EUAIActMidMarket() {
       <h3>Days 61–90: File</h3>
       <p>
         Open a governance file per high-risk system: purpose, oversight owner, logging locations, vendor
-        documentation, incident path. Align the structure to a recognised framework such as the NIST AI RMF
+        documentation, incident path. Align the structure to a recognized framework such as the NIST AI RMF
         <Cite n={3} /> so the same file serves EU compliance, customer due-diligence, and board reporting at once.
       </p>
 

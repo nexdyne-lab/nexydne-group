@@ -20,7 +20,7 @@ export default function AutomotiveEVTransition() {
       ]}
       clientContextTitle="A New Product on an Old Line, With No Room to Fail"
       clientContextIntro="A components supplier — a company that makes precision parts that go into vehicles built by larger automakers — had won its first major electric-vehicle program. The part was new, the tolerances were tighter than anything the plant had made before, and the work had to be done on a line that was still producing the supplier's established products every day. There was no spare building and no spare crew; the same floor and the same people had to carry both the old business and the new one."
-      clientContextBody="Early builds went badly. The first electric-vehicle parts came off the line with defect rates several times higher than the plant's mature products, and every reject was expensive scrap. Getting to an acceptable quality level was taking far longer than the program plan allowed, and the cost of each good part was running well above the price the supplier had quoted to win the work. Left alone, the program would have launched late, missed its margins, and put the customer relationship at risk. Leadership recognised that the problem was not the workforce's effort but the way the line had been set up to learn — slowly, and only after mistakes had already been made."
+      clientContextBody="Early builds went badly. The first electric-vehicle parts came off the line with defect rates several times higher than the plant's mature products, and every reject was expensive scrap. Getting to an acceptable quality level was taking far longer than the program plan allowed, and the cost of each good part was running well above the price the supplier had quoted to win the work. Left alone, the program would have launched late, missed its margins, and put the customer relationship at risk. Leadership recognized that the problem was not the workforce's effort but the way the line had been set up to learn — slowly, and only after mistakes had already been made."
       clientProfile={{
         industry: "Automotive Components Supplier",
         companySize: "~$380M Annual Revenue",
@@ -102,7 +102,7 @@ export default function AutomotiveEVTransition() {
           detail: "The line hit its production target ahead of plan"
         }
       ]}
-      quote="We had won the work, but for a while it looked like winning it might cost us money. The turning point was realising most of our scrap came from just a few steps. Once we controlled those, the line settled down, the cost came back to where we had promised, and we launched on time. That program is now a reference we point new customers to."
+      quote="We had won the work, but for a while it looked like winning it might cost us money. The turning point was realizing most of our scrap came from just a few steps. Once we controlled those, the line settled down, the cost came back to where we had promised, and we launched on time. That program is now a reference we point new customers to."
       quoteAuthor="Vice President, Operations"
       quoteRole="Automotive components supplier"
       relatedStudies={[

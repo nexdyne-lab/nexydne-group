@@ -75,7 +75,7 @@ export default function Solutions() {
           aria-hidden
           className="absolute inset-0 h-full w-full object-cover"
         />
-        {/* Legibility overlay + soft vignette (flat, no brand-colour wash) */}
+        {/* Legibility overlay + soft vignette (flat, no brand-color wash) */}
         <div aria-hidden className="absolute inset-0 bg-charcoal/55" />
         <div
           aria-hidden

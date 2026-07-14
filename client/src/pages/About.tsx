@@ -30,7 +30,7 @@ export default function About() {
     {
       no: "02",
       title: "Deploy AI and agentic systems",
-      body: "We put artificial intelligence and agentic workflows to work across the enterprise — automating judgement-heavy tasks and compounding capability, not just cost.",
+      body: "We put artificial intelligence and agentic workflows to work across the enterprise — automating judgment-heavy tasks and compounding capability, not just cost.",
     },
     {
       no: "03",
@@ -43,7 +43,7 @@ export default function About() {
     { title: "Our people", description: "We are defined by our people and a culture where diverse talent does the best work of their careers.", image: "/images/hero-team.jpg" },
     { title: "Client impact", description: "We measure success by the lasting capabilities we build — not the size of the deck we leave behind.", image: "/images/ai-team-consulting.jpg" },
     { title: "Intelligent innovation", description: "We pair frontier technology with disciplined strategy to solve problems that matter, responsibly.", image: "/images/ai-technology-consulting.jpg" },
-    { title: "Governed growth", description: "We help organisations scale AI and agentic systems without losing the human system that governs them.", image: "/images/case-professional-services.jpg" },
+    { title: "Governed growth", description: "We help organizations scale AI and agentic systems without losing the human system that governs them.", image: "/images/case-professional-services.jpg" },
   ];
 
   const explore = [
@@ -58,7 +58,7 @@ export default function About() {
   const capabilities = [
     { title: "Artificial Intelligence", desc: "Generative and agentic systems, built for production.", href: "/capabilities/artificial-intelligence" },
     { title: "Operations", desc: "Supply chain, quality, and performance, re-engineered.", href: "/capabilities/operations" },
-    { title: "Technology", desc: "Cloud, data, and platform modernisation that scales.", href: "/capabilities/technology" },
+    { title: "Technology", desc: "Cloud, data, and platform modernization that scales.", href: "/capabilities/technology" },
     { title: "Strategy & Corporate Finance", desc: "Strategy, planning, and the numbers behind the plan.", href: "/capabilities/strategy-corporate-finance" },
     { title: "Business Building", desc: "New digital ventures and revenue streams, launched.", href: "/capabilities/business-building" },
     { title: "Growth, Marketing & Sales", desc: "Demand, pricing, and commercial engines that compound.", href: "/capabilities/growth-marketing-sales" },
@@ -159,7 +159,7 @@ export default function About() {
               <span className="nx-eyebrow text-charcoal/55">Our purpose</span>
             </div>
             <p className="text-[1.6rem] sm:text-[2rem] md:text-[2.5rem] leading-[1.28] tracking-[-0.02em] text-charcoal font-medium">
-              Ambitious organisations are testing, challenging, striving for the change that
+              Ambitious organizations are testing, challenging, striving for the change that
               transforms everything. We partner with bold leaders to pinpoint strategy, harness{" "}
               <span className="text-primary">AI and agentic systems</span>, and build capabilities
               that compound.
@@ -269,13 +269,13 @@ export default function About() {
             <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.12 }} className="lg:col-span-8">
               <p className="nx-lead text-charcoal mb-8 max-w-2xl">
                 NexDyne operates as one — a unified partnership committed to business transformation
-                for growing organisations and the enterprises that partner with them.
+                for growing organizations and the enterprises that partner with them.
               </p>
 
               <figure className="border-l-2 border-primary pl-7 md:pl-9 my-10">
                 <blockquote className="text-[1.5rem] md:text-[1.95rem] leading-[1.35] tracking-[-0.01em] text-charcoal font-medium">
                   World-class strategy, AI, and data capability should not be reserved for the
-                  Fortune 500. Ambitious organisations everywhere deserve the same caliber of
+                  Fortune 500. Ambitious organizations everywhere deserve the same caliber of
                   expertise — and the same discipline in how it is governed.
                 </blockquote>
               </figure>

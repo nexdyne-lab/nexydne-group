@@ -39,7 +39,7 @@ export default function TeamProcessSetup() {
       ]}
       outcomes={[
         "A clear, prioritized roadmap that ties team & process setup to specific business outcomes leadership has signed off on.",
-        "A first production-grade release in market within a single quarter, not a multi-year programme.",
+        "A first production-grade release in market within a single quarter, not a multi-year program.",
         "Measurable, attributable lift on the primary metric — speed, cost, quality, or revenue — within the first 90 days of deployment.",
         "Internal capability built alongside the work, so your teams can extend, govern, and operate the system without permanent vendor dependency.",
         "Documented guardrails, monitoring, and escalation paths that satisfy risk, security, and compliance reviewers.",

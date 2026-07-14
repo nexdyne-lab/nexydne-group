@@ -46,7 +46,7 @@ export default function AgenticAIBudgetLine() {
       </p>
 
       <p>
-        Surveys of enterprise adoption show the shift clearly: most large organisations now use AI in at least one
+        Surveys of enterprise adoption show the shift clearly: most large organizations now use AI in at least one
         function, and a fast-growing share report piloting or scaling agentic systems specifically<Cite n={1} />.
         Deloitte's enterprise research finds the same pattern — investment concentrating on a smaller number of
         higher-stakes use cases, with autonomy as the differentiator<Cite n={2} />.
@@ -62,7 +62,7 @@ export default function AgenticAIBudgetLine() {
       </p>
 
       <blockquote>
-        An agent is not a feature you ship. It is capacity you hire. Firms that fund agents like software licences —
+        An agent is not a feature you ship. It is capacity you hire. Firms that fund agents like software licenses —
         and skip the onboarding, supervision, and performance review — get exactly what that approach deserves.
       </blockquote>
 
@@ -97,7 +97,7 @@ export default function AgenticAIBudgetLine() {
       <p>
         The metric that predicts whether an agentic rollout scales is the rate at which humans stop re-checking the
         agent's work — earned autonomy, expanded deliberately as evidence accumulates. Stanford's AI Index notes the
-        persistent gap between AI capability and organisational trust<Cite n={3} />; closing that gap is a
+        persistent gap between AI capability and organizational trust<Cite n={3} />; closing that gap is a
         management task, not a model upgrade.
       </p>
 

@@ -20,7 +20,7 @@ Tier 1 (Data Literacy, All Employees): A 4-week foundation covering data concept
 The blended delivery model combined live workshops (monthly), self-paced online modules (weekly), and hands-on projects (continuous). NEXDYNE provided train-the-trainer sessions to build internal instructors who could sustain the academy after the engagement concluded.`}
       impact={`One year post-launch, employee data usage increased from 15% to 68% of the workforce making data-informed daily decisions. Store managers now optimize staffing schedules using traffic forecasts (reducing labor costs 8%). Merchandisers identify slow-moving inventory 3 weeks earlier, minimizing markdowns. Marketing runs A/B tests in-house instead of paying agencies $50K per campaign.
 
-250+ custom dashboards and reports were built by business users, reducing dependence on the data team for standard analyses. Annual savings from reduced external analytics consulting reached $1.2M. The Data Academy became a permanent fixture in the talent development program—new hires complete Tier 1 during onboarding, and 3 Tier 3 graduates were promoted into newly created "Analytics Lead" roles.`}
+250+ custom dashboards and reports were built by business users, reducing dependence on the data team for standard analyzes. Annual savings from reduced external analytics consulting reached $1.2M. The Data Academy became a permanent fixture in the talent development program—new hires complete Tier 1 during onboarding, and 3 Tier 3 graduates were promoted into newly created "Analytics Lead" roles.`}
       metrics={[
         { value: "120", label: "Employees trained across 6 departments" },
         { value: "68%", label: "Employees using data daily (from 15%)" },

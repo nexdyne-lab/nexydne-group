@@ -19,7 +19,7 @@ export default function RetailAssortmentOptimization() {
         { value: "25%", label: "Fewer SKUs" }
       ]}
       clientContextTitle="One Assortment for Every Kind of Shopper"
-      clientContextIntro="A regional retailer ran around eighty stores and stocked nearly all of them the same way — the same products on the same shelves whether the store sat in a busy city centre or a quiet rural town, whether its shoppers were affluent or watching every dollar. The result was predictable: products that sold out in one store sat untouched in another, and the chain never quite fit any of its customers."
+      clientContextIntro="A regional retailer ran around eighty stores and stocked nearly all of them the same way — the same products on the same shelves whether the store sat in a busy city center or a quiet rural town, whether its shoppers were affluent or watching every dollar. The result was predictable: products that sold out in one store sat untouched in another, and the chain never quite fit any of its customers."
       clientContextBody="Buying decisions were made centrally, from chain-wide sales figures that averaged away every local difference. A store serving one kind of neighbourhood was left without the products those shoppers wanted, while another carried items its customers never bought. With tens of thousands of products across the range and dozens of stores, tailoring the assortment by hand was simply impossible — so no one tried, and the money left on the table stayed there."
       clientProfile={{
         industry: "Regional Retailer",
@@ -62,7 +62,7 @@ export default function RetailAssortmentOptimization() {
         {
           step: "02",
           title: "Learning What Each Group Wants",
-          description: "For each group of stores we modelled how every product was likely to sell, drawing on local buying patterns and what customers tended to purchase together — pinpointing the products that would over- or under-perform in each kind of location."
+          description: "For each group of stores we modeled how every product was likely to sell, drawing on local buying patterns and what customers tended to purchase together — pinpointing the products that would over- or under-perform in each kind of location."
         },
         {
           step: "03",

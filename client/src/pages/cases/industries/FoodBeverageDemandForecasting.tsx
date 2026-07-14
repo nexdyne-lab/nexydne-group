@@ -20,7 +20,7 @@ export default function FoodBeverageDemandForecasting() {
       ]}
       clientContextTitle="When a Wrong Forecast Costs You Twice"
       clientContextIntro="A food and beverage maker produced around two thousand products for grocery and convenience customers across a dozen regional markets. Its forecasts were wrong by more than a third on average, and because much of what it sold was perishable, every error cost the company twice — good product passing its date and being thrown away, and other product selling out and sending shoppers to a competitor's brand instead."
-      clientContextBody="Planning still ran on statistical models and the judgement of experienced planners. Neither could keep up with everything that actually moved demand — a heatwave, a competitor's promotion, a local event, a shift in what shoppers were talking about. Worse, the planners spent the bulk of their week simply gathering data and stitching together spreadsheets, leaving little room for the judgement that was supposed to be their real contribution. The company was working hard at forecasting and still getting it wrong."
+      clientContextBody="Planning still ran on statistical models and the judgment of experienced planners. Neither could keep up with everything that actually moved demand — a heatwave, a competitor's promotion, a local event, a shift in what shoppers were talking about. Worse, the planners spent the bulk of their week simply gathering data and stitching together spreadsheets, leaving little room for the judgment that was supposed to be their real contribution. The company was working hard at forecasting and still getting it wrong."
       clientProfile={{
         industry: "Food and Beverage Maker",
         companySize: "~$500M Annual Revenue",
@@ -48,11 +48,11 @@ export default function FoodBeverageDemandForecasting() {
         {
           icon: BarChart3,
           title: "Planners Buried in Spreadsheets",
-          description: "Most of the planning week went to gathering data by hand, leaving little time for the judgement the role was meant to add."
+          description: "Most of the planning week went to gathering data by hand, leaving little time for the judgment the role was meant to add."
         }
       ]}
       approachTitle="A Clearer Read on Demand"
-      approachIntro="We helped the company build a far better read on what customers would actually buy — bringing together the outside forces that move demand, sharpening the forecast down to the product and the week, and freeing planners to spend their time on judgement rather than data entry."
+      approachIntro="We helped the company build a far better read on what customers would actually buy — bringing together the outside forces that move demand, sharpening the forecast down to the product and the week, and freeing planners to spend their time on judgment rather than data entry."
       steps={[
         {
           step: "01",

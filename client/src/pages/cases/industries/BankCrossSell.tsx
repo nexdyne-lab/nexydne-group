@@ -33,12 +33,12 @@ export default function BankCrossSell() {
         {
           icon: Database,
           title: "A Customer in Pieces",
-          description: "What the bank knew about each person was split across separate systems, with no reliable way to recognise it was all the same customer."
+          description: "What the bank knew about each person was split across separate systems, with no reliable way to recognize it was all the same customer."
         },
         {
           icon: Target,
           title: "Marketing by Guesswork",
-          description: "Offers were aimed at broad demographic groups, missing the everyday behaviour that signals when someone is genuinely ready to buy."
+          description: "Offers were aimed at broad demographic groups, missing the everyday behavior that signals when someone is genuinely ready to buy."
         },
         {
           icon: TrendingUp,
@@ -66,7 +66,7 @@ export default function BankCrossSell() {
         },
         {
           step: "03",
-          title: "Recognising Life's Turning Points",
+          title: "Recognizing Life's Turning Points",
           description: "We taught the system to spot the moments that drive financial decisions — a change in regular pay, spending that points to a new baby or a home in prospect — so the bank could be genuinely useful precisely when it mattered."
         },
         {

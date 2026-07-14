@@ -57,7 +57,7 @@ const aboutItems = [
 type NavItem = "industries" | "capabilities" | "solutions" | "insights" | "about" | null;
 
 /* ------------------------------------------------------------------ */
-/*  Mega-menu — one clean, organised pattern for every dropdown        */
+/*  Mega-menu — one clean, organized pattern for every dropdown        */
 /*  Intro column · structured link grid · branded feature card         */
 /* ------------------------------------------------------------------ */
 
@@ -158,7 +158,7 @@ const MENU: Record<Exclude<NavItem, null>, MenuConfig> = {
     feature: {
       eyebrow: "Featured insight",
       title: "The AI Adoption Outlook 2026",
-      desc: "Why the winners will be the organisations that govern first.",
+      desc: "Why the winners will be the organizations that govern first.",
       href: "/insights/ai-adoption-outlook-2026",
       cta: "Read more",
     },
@@ -420,7 +420,7 @@ export default function Navigation() {
     }, 150);
   };
 
-  // The home hero is a full-bleed colour carousel, so the navbar sits transparent
+  // The home hero is a full-bleed color carousel, so the navbar sits transparent
   // (white text) over it at the top of the page and turns solid white on scroll.
   const darkHeroPages: string[] = ["/"];
   const isLightBackgroundPage = !darkHeroPages.includes(location);
@@ -626,7 +626,7 @@ export default function Navigation() {
           </div>
         </div>
 
-        {/* Mega Menu Dropdown — one organised pattern for every nav item */}
+        {/* Mega Menu Dropdown — one organized pattern for every nav item */}
         {activeDropdown && MENU[activeDropdown] && (
           <MegaMenu
             config={MENU[activeDropdown]}

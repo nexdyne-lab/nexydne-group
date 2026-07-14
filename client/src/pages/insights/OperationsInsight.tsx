@@ -43,7 +43,7 @@ export default function OperationsInsight() {
     >
       <p>
         If you want to know where enterprises are really betting on AI, look at operations. AI adoption has gone
-        broad-based—78% of organisations reported using AI in at least one business function in 2024, up from 55% a
+        broad-based—78% of organizations reported using AI in at least one business function in 2024, up from 55% a
         year earlier<Cite n={1} />—and operations is where much of that investment lands. In PwC's 2026 survey, 72%
         of leaders rank automating operations among their top three AI priorities, ahead of many customer-facing
         uses<Cite n={2} />.
@@ -74,10 +74,10 @@ export default function OperationsInsight() {
       <h2>The agentic shift is already underway</h2>
 
       <p>
-        The next wave is agentic: AI that doesn't just analyse but <em>acts</em>, executing multi-step work across
+        The next wave is agentic: AI that doesn't just analyze but <em>acts</em>, executing multi-step work across
         systems. Gartner forecasts that by 2028, 33% of enterprise software applications will include agentic AI, up
         from less than 1% in 2024<Cite n={4} />. Operations leaders expect this to reshape how work is
-        organised—83% say AI agents and automation will accelerate the breakdown of traditional functional silos,
+        organized—83% say AI agents and automation will accelerate the breakdown of traditional functional silos,
         rising to 93% among health-services operations and supply-chain leaders<Cite n={2} />.
       </p>
 
@@ -98,7 +98,7 @@ export default function OperationsInsight() {
       </p>
 
       <p>
-        This gap falls hardest on smaller organisations. In 2025, 55% of large EU enterprises used AI, versus just
+        This gap falls hardest on smaller organizations. In 2025, 55% of large EU enterprises used AI, versus just
         17% of small ones—a 38-point divide<Cite n={7} />. Scale, for now, still buys access. That is exactly the
         imbalance NexDyne exists to correct.
       </p>
@@ -124,7 +124,7 @@ export default function OperationsInsight() {
 
       <p>
         <strong>The controls.</strong> What are the limits, escalation paths, and audit trails? These are what let
-        you move from a trusted pilot to production—the step most organisations never take at scale<Cite n={3} />.
+        you move from a trusted pilot to production—the step most organizations never take at scale<Cite n={3} />.
       </p>
 
       <h2>A practical path for operations leaders</h2>

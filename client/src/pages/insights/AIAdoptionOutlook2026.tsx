@@ -28,14 +28,14 @@ export default function AIAdoptionOutlook2026() {
       category="Featured Insight"
       categoryHref="/insights"
       title="The AI Adoption Outlook 2026: Why the Winners Will Govern First"
-      subtitle="AI is now everywhere and delivering almost nowhere at scale. As the agentic era arrives, the organisations that pull ahead won't be the ones that adopt the most—they'll be the ones that govern first."
+      subtitle="AI is now everywhere and delivering almost nowhere at scale. As the agentic era arrives, the organizations that pull ahead won't be the ones that adopt the most—they'll be the ones that govern first."
       heroImage="/images/agentic-ai-abstract.jpg"
       publishDate="July 1, 2026"
       readTime="11 min"
       keyTakeaways={[
         "Enterprise AI adoption is now near-universal (~88–90%), yet only about 1% of executives call their gen-AI rollouts 'mature' and just 39% report enterprise-level EBIT impact.",
         "The agentic era has begun—roughly a quarter of firms are scaling agents—but only about one in five can properly govern autonomous AI.",
-        "Governance is the dividing line: organisations investing heavily in responsible AI are far likelier to see EBIT impact above 5%.",
+        "Governance is the dividing line: organizations investing heavily in responsible AI are far likelier to see EBIT impact above 5%.",
         "The 2026 winners won't be those who adopt the most AI—they'll be those who govern it first. That is the premise of Human Intelligence Governance (HIG™).",
       ]}
       references={references}
@@ -43,14 +43,14 @@ export default function AIAdoptionOutlook2026() {
     >
       <p>
         The story of enterprise AI in 2026 is a paradox. Adoption has become near-universal—the share of
-        organisations using AI in at least one business function rose from 78% in 2024 to 88% in 2025, and nearly
+        organizations using AI in at least one business function rose from 78% in 2024 to 88% in 2025, and nearly
         nine in ten now say they use AI regularly<Cite n={1} />. And yet, ask how many have turned that ubiquity into
         durable financial advantage, and the number collapses.
       </p>
 
       <p>
         This outlook makes one argument, backed by the year's most authoritative research: <strong>adoption is no
-        longer the differentiator—governance is.</strong> The organisations that pull ahead in 2026 will be the ones
+        longer the differentiator—governance is.</strong> The organizations that pull ahead in 2026 will be the ones
         that govern AI first.
       </p>
 
@@ -59,7 +59,7 @@ export default function AIAdoptionOutlook2026() {
       <p>
         Behind the impressive headline adoption numbers sits a sobering reality. As of early 2025, only 1% of
         executives described their generative-AI rollouts as "mature"<Cite n={1} />. Leaders feel the gap acutely:
-        47% say their organisations are moving too slowly on AI, despite 69% having already invested for a year or
+        47% say their organizations are moving too slowly on AI, despite 69% having already invested for a year or
         more<Cite n={1} />. Access is surging—worker access to AI rose 50% in 2025<Cite n={3} />—but access is not the
         same as advantage.
       </p>
@@ -72,14 +72,14 @@ export default function AIAdoptionOutlook2026() {
       <h2>The value gap</h2>
 
       <p>
-        The clearest evidence of the gap is financial. Nearly two-thirds of organisations say they have not yet begun
+        The clearest evidence of the gap is financial. Nearly two-thirds of organizations say they have not yet begun
         scaling AI across the enterprise<Cite n={1} />, and just 39% report enterprise-level EBIT impact from
         AI<Cite n={1} />. When companies try to go further and build genuinely AI-first operating models, fewer than
         20% succeed<Cite n={4} />.
       </p>
 
       <p>
-        In other words: the technology has been adopted, but the <em>organisation</em> around it has not been
+        In other words: the technology has been adopted, but the <em>organization</em> around it has not been
         rebuilt. That is a management gap, not a technology gap—and it is precisely why so much AI investment shows up
         in press releases but not in the P&amp;L.
       </p>
@@ -87,7 +87,7 @@ export default function AIAdoptionOutlook2026() {
       <h2>The agentic era arrives</h2>
 
       <p>
-        Into this gap steps agentic AI—systems that don't just answer but act. Roughly 23% of organisations already
+        Into this gap steps agentic AI—systems that don't just answer but act. Roughly 23% of organizations already
         report scaling an agentic AI system somewhere in the enterprise<Cite n={1} />, and the trajectory is steep:
         Gartner projects that by 2029, 80% of common customer-service issues will be resolved by AI
         agents<Cite n={5} />. Deloitte expects the number of firms with 40% or more of their AI projects in production
@@ -97,7 +97,7 @@ export default function AIAdoptionOutlook2026() {
       <p>
         Agentic AI raises the stakes in both directions. The upside is larger—autonomous systems that coordinate work
         across silos. So is the downside—autonomous systems making consequential decisions without a human in the
-        loop. Which way it breaks for any given organisation comes down to one capability.
+        loop. Which way it breaks for any given organization comes down to one capability.
       </p>
 
       <h2>Governance is the dividing line</h2>
@@ -110,8 +110,8 @@ export default function AIAdoptionOutlook2026() {
       </p>
 
       <p>
-        The link to value is direct and measurable. McKinsey finds that organisations investing US$25 million or more
-        in responsible-AI initiatives are far more likely to realise material benefits, including EBIT impact above
+        The link to value is direct and measurable. McKinsey finds that organizations investing US$25 million or more
+        in responsible-AI initiatives are far more likely to realize material benefits, including EBIT impact above
         5%<Cite n={2} />. Firms with explicit accountability for responsible AI achieve higher maturity than those
         without<Cite n={2} />. Governance, in short, is not the brake on AI value—it is the engine.
       </p>
@@ -164,12 +164,12 @@ export default function AIAdoptionOutlook2026() {
       <h3>3. Rebuild the operating model, not just the tool stack</h3>
       <p>
         With fewer than 20% of AI-first operating-model attempts succeeding<Cite n={4} />, the winners treat AI as an
-        organisational redesign—processes, roles, and decision rights—rather than a software rollout.
+        organizational redesign—processes, roles, and decision rights—rather than a software rollout.
       </p>
 
       <h3>4. Measure to the P&amp;L from day one</h3>
       <p>
-        The organisations capturing value defined the measure before the build. Everyone else is left estimating an
+        The organizations capturing value defined the measure before the build. Everyone else is left estimating an
         impact they cannot prove.
       </p>
 
@@ -177,7 +177,7 @@ export default function AIAdoptionOutlook2026() {
 
       <p>
         In 2026, AI adoption is table stakes—nearly everyone has it<Cite n={1} />. Advantage will accrue to the
-        organisations that govern it: that invest in responsible AI, assign clear accountability, rebuild their
+        organizations that govern it: that invest in responsible AI, assign clear accountability, rebuild their
         operating models, and measure to the bottom line. For growing companies, this is genuinely
         good news. You don't need the largest AI budget to win. You need the discipline to govern first—and that is
         exactly the work NexDyne exists to do.

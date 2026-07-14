@@ -24,14 +24,14 @@ export default function AIAnswersFirst() {
       category="Customer Channels"
       categoryHref="/insights"
       title="The Channel Flip: AI Now Answers First. Your Customers Are Deciding If They Mind."
-      subtitle="Service organisations are quietly inverting a decades-old design: AI resolves first, humans handle what escalates. Done well, customers get instant resolution and your best people do their best work. Done badly, it's a maze with a chatbot at the door."
+      subtitle="Service organizations are quietly inverting a decades-old design: AI resolves first, humans handle what escalates. Done well, customers get instant resolution and your best people do their best work. Done badly, it's a maze with a chatbot at the door."
       heroImage="/images/ai-team-collaboration.jpg"
       publishDate="July 6, 2026"
       readTime="8 min"
       keyTakeaways={[
         "Customer channels are flipping from human-first-with-tools to AI-first-with-human-escalation; analysts project autonomous resolution of a large share of routine service issues within a few years.",
         "Early large-scale deployments showed a single AI assistant absorbing the workload of hundreds of agents while holding satisfaction steady — proof the economics are real when resolution, not deflection, is the goal.",
-        "The design line that separates loved from hated: AI that resolves versus AI that deflects. Containment-rate targets quietly optimise for the second.",
+        "The design line that separates loved from hated: AI that resolves versus AI that deflects. Containment-rate targets quietly optimize for the second.",
         "The human tier becomes your premium product — fewer, more skilled people handling the moments that decide loyalty. Staff it and measure it accordingly.",
       ]}
       references={references}
@@ -84,7 +84,7 @@ export default function AIAnswersFirst() {
       <p>
         This is also where loyalty is actually decided. Routine interactions are table stakes; customers judge you
         on the exceptional ones. Which means the human tier deserves your best people and your richest tooling —
-        including AI, this time as the assistant: full history assembled, options pre-analysed, next actions
+        including AI, this time as the assistant: full history assembled, options pre-analyzed, next actions
         drafted for human judgment.
       </p>
 
@@ -100,7 +100,7 @@ export default function AIAnswersFirst() {
       <h3>Make the exit to a human obvious and instant</h3>
       <p>
         Counter-intuitively, an easy path to a human <em>increases</em> AI-tier acceptance. Customers who know
-        they can leave are willing to let the AI try. Trapping them optimises one interaction and taxes the
+        they can leave are willing to let the AI try. Trapping them optimizes one interaction and taxes the
         relationship.
       </p>
 

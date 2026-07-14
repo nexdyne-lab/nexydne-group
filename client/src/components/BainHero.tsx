@@ -4,7 +4,7 @@ import { Warp } from "@paper-design/shaders-react";
 
 /**
  * NexDyne homepage hero — BCG-style statement hero (Brand v2, neutral-first) with a
- * warm brand-colour gradient field. Off-white base + a soft orange-red→amber mesh and
+ * warm brand-color gradient field. Off-white base + a soft orange-red→amber mesh and
  * grain for depth. Giant Instrument Sans statement; one brand word in a warm gradient.
  */
 
@@ -26,7 +26,7 @@ const GRAIN =
 export function BainHero() {
   return (
     <section className="relative w-full overflow-hidden bg-background">
-      {/* Animated Warp shader — brand-colour field (orange-red / amber / purple) */}
+      {/* Animated Warp shader — brand-color field (orange-red / amber / purple) */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <Warp
           style={{ width: "100%", height: "100%" }}

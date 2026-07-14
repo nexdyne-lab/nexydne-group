@@ -62,7 +62,7 @@ export default function IndustrialConnectedProducts() {
         {
           step: "02",
           title: "Spotting Failures Before They Happen",
-          description: "Drawing on the company's own service history, we taught the system to recognise the signs of a developing fault — in vibration, temperature and running conditions — two to four weeks before a machine would have broken down."
+          description: "Drawing on the company's own service history, we taught the system to recognize the signs of a developing fault — in vibration, temperature and running conditions — two to four weeks before a machine would have broken down."
         },
         {
           step: "03",

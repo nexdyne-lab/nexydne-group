@@ -20,7 +20,7 @@ export default function FinancialFraudDetection() {
       ]}
       clientContextTitle="Finding Fraud a Day After the Money Was Gone"
       clientContextIntro="A regional bank ran the card payments for a large base of local businesses and consumers. Its defense against fraud worked in overnight batches: transactions were gathered up and examined together the next morning, which meant a fraudulent charge was typically caught twelve to twenty-four hours after it had already cleared. By then the money had moved and the loss was, in most cases, simply written off."
-      clientContextBody="The team's alerts were driven by fixed rules, and roughly four out of five turned out to be false alarms — busy work that consumed analysts while genuine fraud, which rarely fit an old rule neatly, slipped past. The costs pulled in two directions at once. Honest customers had good purchases declined and grew frustrated, while the bank absorbed around $15 million a year in fraud losses on top of the expense of chasing thousands of alerts that led nowhere. Leadership recognised the real problem was timing: the bank was always looking at yesterday's fraud with yesterday's tools."
+      clientContextBody="The team's alerts were driven by fixed rules, and roughly four out of five turned out to be false alarms — busy work that consumed analysts while genuine fraud, which rarely fit an old rule neatly, slipped past. The costs pulled in two directions at once. Honest customers had good purchases declined and grew frustrated, while the bank absorbed around $15 million a year in fraud losses on top of the expense of chasing thousands of alerts that led nowhere. Leadership recognized the real problem was timing: the bank was always looking at yesterday's fraud with yesterday's tools."
       clientProfile={{
         industry: "Regional Bank",
         companySize: "~$6B in Assets",
@@ -93,13 +93,13 @@ export default function FinancialFraudDetection() {
           icon: Zap,
           value: "<100ms",
           label: "Time to decide",
-          detail: "A fraud judgement in the blink of an eye, at the point of sale"
+          detail: "A fraud judgment in the blink of an eye, at the point of sale"
         },
         {
           icon: Users,
           value: "70%",
           label: "Less manual review",
-          detail: "Analysts freed to focus on organised, sophisticated fraud"
+          detail: "Analysts freed to focus on organized, sophisticated fraud"
         }
       ]}
       quote="We used to find our fraud the next morning, when the money was already gone and there was nothing to do but write it off. Now we catch it in the split second before the charge goes through. Our analysts have stopped firefighting false alarms and our customers have stopped being turned away for no reason. Same team, same customers — we simply stopped fighting yesterday's fraud with yesterday's tools."

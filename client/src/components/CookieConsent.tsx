@@ -95,7 +95,7 @@ export default function CookieConsent() {
           /* --- Slim consent bar --- */
           <div className="mx-auto max-w-[1500px] px-4 md:px-8 py-3.5 md:py-3 flex flex-col md:flex-row md:items-center gap-3 md:gap-6">
             <p className="flex-1 text-[13px] leading-[1.55] text-charcoal/75">
-              We use cookies to improve your experience and analyse traffic — see our{" "}
+              We use cookies to improve your experience and analyze traffic — see our{" "}
               <Link href="/cookie-policy">
                 <span className="underline underline-offset-2 text-charcoal hover:text-primary transition-colors cursor-pointer">
                   Cookie

@@ -72,7 +72,7 @@ export default function HealthcareRevenueCycle() {
         {
           step: "04",
           title: "Chasing the Right Dollars First",
-          description: "We gave staff prioritised worklists that put the most recoverable money at the top — ranked by how likely it was to be collected, how much was at stake and how long it had been outstanding — so effort went where it paid off."
+          description: "We gave staff prioritized worklists that put the most recoverable money at the top — ranked by how likely it was to be collected, how much was at stake and how long it had been outstanding — so effort went where it paid off."
         }
       ]}
       resultsTitle="A Stronger Bottom Line"

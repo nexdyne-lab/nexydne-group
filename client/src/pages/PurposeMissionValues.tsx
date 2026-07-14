@@ -20,9 +20,9 @@ export default function PurposeMissionValues() {
   ];
 
   const values = [
-    { no: "01", title: "Intelligence with Purpose", lead: "We don't pursue technology for its own sake. Every model we build and every system we deploy must create measurable business value—we ask not just \"Can we?\" but \"Should we?\"", sub: "AI should augment human judgement, never replace it." },
+    { no: "01", title: "Intelligence with Purpose", lead: "We don't pursue technology for its own sake. Every model we build and every system we deploy must create measurable business value—we ask not just \"Can we?\" but \"Should we?\"", sub: "AI should augment human judgment, never replace it." },
     { no: "02", title: "Clarity Through Complexity", lead: "The most valuable insights hide inside the most tangled data. We bring structure to chaos and translate technical possibility into business language.", sub: "Clients don't need the mathematics—they need to know what to decide on Monday morning." },
-    { no: "03", title: "Partnership Over Transactions", lead: "We measure success by clients transformed, not projects closed. We invest deeply in each organisation's context, constraints, and ambitions.", sub: "Long after an engagement ends, the capabilities we build keep compounding value." },
+    { no: "03", title: "Partnership Over Transactions", lead: "We measure success by clients transformed, not projects closed. We invest deeply in each organization's context, constraints, and ambitions.", sub: "Long after an engagement ends, the capabilities we build keep compounding value." },
     { no: "04", title: "Relentless Curiosity", lead: "The frontier of strategy and AI moves daily. We stay ahead through disciplined study and rigorous experimentation—not trend-chasing.", sub: "We learn from every engagement and approach each new challenge with a beginner's mind." },
     { no: "05", title: "Integrity in Every Interaction", lead: "We tell clients what they need to hear, acknowledge the limits of our expertise, and protect confidentiality as a sacred trust.", sub: "Our reputation is built one honest conversation at a time." },
     { no: "06", title: "Excellence Through Diversity", lead: "The best solutions emerge when diverse perspectives collide. We seek different backgrounds and make space for productive, idea-sharpening friction.", sub: "Diversity isn't only ethical—it's how we see blind spots others miss." },
@@ -68,12 +68,12 @@ export default function PurposeMissionValues() {
               <p className="text-[15px] text-muted-foreground leading-relaxed mb-5 max-w-2xl">
                 In an era where data overwhelms and technology accelerates faster than strategy can
                 keep pace, we exist to bridge the gap between what businesses know and what they need
-                to do. Every ambitious organisation deserves the caliber of strategic intelligence
+                to do. Every ambitious organization deserves the caliber of strategic intelligence
                 once reserved for the Fortune 500.
               </p>
               <p className="text-[15px] text-muted-foreground leading-relaxed max-w-2xl">
                 Our purpose is to democratise that capability—bringing the rigour of top-tier advisory,
-                and the discipline to govern it, to the organisations building the future of their
+                and the discipline to govern it, to the organizations building the future of their
                 industries.
               </p>
             </motion.div>
@@ -180,7 +180,7 @@ export default function PurposeMissionValues() {
           <motion.div {...fadeUp} className="max-w-3xl">
             <h2 className="nx-h2 text-charcoal mb-5">Work with a team that shares your standards.</h2>
             <p className="nx-lead text-muted-foreground mb-10 max-w-2xl">
-              Let's discuss how we can transform your organisation with intelligence, discipline, and
+              Let's discuss how we can transform your organization with intelligence, discipline, and
               integrity.
             </p>
             <div className="flex flex-col sm:flex-row gap-5">

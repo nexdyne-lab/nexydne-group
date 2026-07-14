@@ -116,7 +116,7 @@ export default function DueDiligenceChecklist() {
             </p>
 
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              Prepare a customer list with contract values, start dates, renewal dates, and current status. Create cohort retention analyses that show how different customer vintages perform over time. Document your top 10-20 customers with details on how you acquired them, what value you deliver, and why they're likely to renew. Identify reference customers who can speak credibly about your impact.
+              Prepare a customer list with contract values, start dates, renewal dates, and current status. Create cohort retention analyzes that show how different customer vintages perform over time. Document your top 10-20 customers with details on how you acquired them, what value you deliver, and why they're likely to renew. Identify reference customers who can speak credibly about your impact.
             </p>
 
             <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">

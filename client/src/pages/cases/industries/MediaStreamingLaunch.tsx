@@ -19,8 +19,8 @@ export default function MediaStreamingLaunch() {
         { value: "$65M", label: "First-Year Revenue" }
       ]}
       clientContextTitle="A Strong Catalogue With No Way to Reach Viewers Directly"
-      clientContextIntro="A regional broadcaster had spent decades building a library of well-loved programming and a loyal audience. But that audience was moving online faster than the company could follow. Viewers were cancelling cable in favour of streaming, and the broadcaster had no service of its own to keep them. Its content was strong; its ability to deliver it directly to a viewer's television or phone was not."
-      clientContextBody="Earlier attempts at a digital product had disappointed. The app was slow, the recommendations were crude, and technical faults drove people away almost as quickly as they arrived. The organisation had been built to make and broadcast programmes, not to run a consumer technology product, and it lacked the engineering and data skills that a modern streaming service depends on. Leadership decided that owning the direct relationship with its viewers was no longer optional — and that the company would have to build the capability to do it, largely from scratch."
+      clientContextIntro="A regional broadcaster had spent decades building a library of well-loved programming and a loyal audience. But that audience was moving online faster than the company could follow. Viewers were cancelling cable in favor of streaming, and the broadcaster had no service of its own to keep them. Its content was strong; its ability to deliver it directly to a viewer's television or phone was not."
+      clientContextBody="Earlier attempts at a digital product had disappointed. The app was slow, the recommendations were crude, and technical faults drove people away almost as quickly as they arrived. The organization had been built to make and broadcast programs, not to run a consumer technology product, and it lacked the engineering and data skills that a modern streaming service depends on. Leadership decided that owning the direct relationship with its viewers was no longer optional — and that the company would have to build the capability to do it, largely from scratch."
       clientProfile={{
         industry: "Media & Entertainment",
         companySize: "~$600M Annual Revenue",
@@ -38,7 +38,7 @@ export default function MediaStreamingLaunch() {
         {
           icon: Users,
           title: "Built for Broadcast, Not Product",
-          description: "The organisation had few of the product, engineering and data people a consumer streaming service needs to run day to day."
+          description: "The organization had few of the product, engineering and data people a consumer streaming service needs to run day to day."
         },
         {
           icon: Target,
@@ -57,7 +57,7 @@ export default function MediaStreamingLaunch() {
         {
           step: "01",
           title: "A Platform Built to Scale",
-          description: "We built the service on modern cloud foundations so it could grow with demand and add features quickly. Programmes started playing in under two seconds, and the platform was sized to absorb the traffic spikes that come with a launch and a popular new release."
+          description: "We built the service on modern cloud foundations so it could grow with demand and add features quickly. Programs started playing in under two seconds, and the platform was sized to absorb the traffic spikes that come with a launch and a popular new release."
         },
         {
           step: "02",
