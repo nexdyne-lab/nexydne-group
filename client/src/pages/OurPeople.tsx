@@ -12,7 +12,7 @@ const fadeUp = {
 };
 
 const founders = [
-  { name: "David Seyaker", role: "Founder & CEO", focus: "Leads strategy, vision, and the firm's governing doctrine, HIG™." },
+  { name: "David Seyaker", role: "Founder & Chief Executive Officer", focus: "Leads strategy, vision, and the firm's governing doctrine, HIG™." },
   { name: "Raphaelyn CN Bomosy-Forkpa", role: "Co-Founder & Managing Partner", focus: "Leads client delivery and the standards behind every engagement." },
 ];
 

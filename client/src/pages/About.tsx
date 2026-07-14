@@ -103,7 +103,7 @@ export default function About() {
   ];
 
   const founders = [
-    { name: "David Seyaker", initials: "DS", role: "Founder & CEO", focus: "Sets the firm's direction and its governing doctrine, HIG™ — leading strategy and enterprise-wide transformation for clients." },
+    { name: "David Seyaker", initials: "DS", role: "Founder & Chief Executive Officer", focus: "Sets the firm's direction and its governing doctrine, HIG™ — leading strategy and enterprise-wide transformation for clients." },
   ];
 
   const partners = ["OpenAI", "Anthropic", "AWS", "Google Cloud", "Microsoft Azure", "Databricks"];

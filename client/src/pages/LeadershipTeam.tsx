@@ -17,7 +17,7 @@ const fadeUp = {
 const founder = {
   name: "David Seyaker",
   initials: "DS",
-  role: "Founder & CEO",
+  role: "Founder & Chief Executive Officer",
   focus: "Sets the firm's direction and its governing doctrine, HIG™ — leading strategy and enterprise-wide transformation for clients.",
 };
 
