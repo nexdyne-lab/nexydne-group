@@ -12,10 +12,6 @@ const fadeUp = {
   transition: { duration: 0.7, ease },
 };
 
-// faint film grain for depth on the dark hero (per brand depth guardrail)
-const GRAIN =
-  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E\")";
-
 export default function About() {
   const stats = [
     { value: "62+", label: "Client engagements delivered" },
@@ -67,63 +63,57 @@ export default function About() {
       />
       <Navigation />
 
-      {/* ══ Hero — cinematic dark editorial ═══════════════════════════════════ */}
-      <section className="relative bg-charcoal text-white overflow-hidden">
-        {/* background image + layered scrims + orange glow */}
-        <div className="absolute inset-0">
-          <img
-            src="/images/hero-team.jpg"
-            alt=""
-            aria-hidden
-            className="w-full h-full object-cover object-center opacity-[0.45]"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/80 to-charcoal/45" />
-          <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-charcoal/85 via-charcoal/40 to-transparent" />
-          <div
-            aria-hidden
-            className="absolute inset-0"
-            style={{ background: "radial-gradient(60% 55% at 88% 6%, rgba(222,47,35,0.18) 0%, transparent 60%)" }}
-          />
-          <div aria-hidden className="absolute inset-0 mix-blend-overlay opacity-[0.5]" style={{ backgroundImage: GRAIN }} />
-        </div>
-
-        <div className="relative container px-4 sm:px-6 md:px-12 min-h-[92vh] flex flex-col justify-end pt-36 pb-16 md:pb-20">
-          <motion.div {...fadeUp} className="max-w-4xl">
-            <div className="flex items-center gap-4 mb-8">
-              <span className="h-px w-10 bg-primary" />
-              <span className="nx-eyebrow text-white/70">About NexDyne Consulting Group</span>
-            </div>
-            <h1 className="nx-display text-white text-[2.9rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem]">
-              Human intelligence,
-              <br />
-              <span className="nx-display-italic text-white/95">governed and scaled.</span>
-            </h1>
-            <p className="mt-9 text-[1.05rem] md:text-[1.2rem] leading-[1.65] text-white/70 max-w-2xl">
-              We help growing companies and the enterprises that partner with them harness AI and
-              agentic systems for enterprise-wide transformation — implementing technology only after
-              we design the human system it operates within.
-            </p>
-            <div className="mt-11 flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-9">
-              <Link href="/contact">
-                <span className="inline-block px-9 py-4 bg-primary text-white text-[13px] font-semibold uppercase tracking-[0.12em] hover:bg-primary-hover transition-colors cursor-pointer">
-                  Start a conversation
-                </span>
-              </Link>
-              <Link href="/capabilities">
-                <span className="group inline-flex items-center gap-2 text-[15px] font-medium text-white cursor-pointer">
-                  <span className="border-b border-white/30 group-hover:border-primary group-hover:text-primary transition-colors pb-0.5">
-                    Explore our capabilities
+      {/* ══ Hero — light editorial split ══════════════════════════════════════ */}
+      <section className="bg-off-white">
+        <div className="container px-4 sm:px-6 md:px-12 pt-28 md:pt-32 lg:pt-36 pb-14 md:pb-20">
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+            <motion.div {...fadeUp} className="lg:col-span-7">
+              <div className="flex items-center gap-4 mb-7">
+                <span className="h-px w-10 bg-primary" />
+                <span className="nx-eyebrow text-charcoal/55">About NexDyne Consulting Group</span>
+              </div>
+              <h1 className="nx-h1 text-charcoal">
+                Human intelligence,
+                <br className="hidden sm:block" /> governed and scaled.
+              </h1>
+              <p className="nx-lead text-muted-foreground mt-7 max-w-xl">
+                We help growing companies and the enterprises that partner with them harness AI and
+                agentic systems for enterprise-wide transformation — implementing technology only
+                after we design the human system it operates within.
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
+                <Link href="/contact">
+                  <span className="inline-block px-9 py-4 bg-primary text-white text-[13px] font-semibold uppercase tracking-[0.12em] hover:bg-primary-hover transition-colors cursor-pointer">
+                    Start a conversation
                   </span>
-                  <span className="text-primary transition-transform duration-300 group-hover:translate-x-1">→</span>
-                </span>
-              </Link>
-            </div>
-          </motion.div>
+                </Link>
+                <Link href="/capabilities">
+                  <span className="group inline-flex items-center gap-2 text-[15px] font-medium text-charcoal cursor-pointer">
+                    <span className="border-b border-charcoal/30 group-hover:border-primary group-hover:text-primary transition-colors pb-0.5">
+                      Explore our capabilities
+                    </span>
+                    <span className="text-primary transition-transform duration-300 group-hover:translate-x-1">→</span>
+                  </span>
+                </Link>
+              </div>
+            </motion.div>
+
+            <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.12 }} className="lg:col-span-5">
+              <div className="relative overflow-hidden">
+                <img
+                  src="/images/hero-team.jpg"
+                  alt="NexDyne consultants at work"
+                  className="w-full aspect-[4/3] lg:aspect-[4/5] object-cover"
+                />
+                <span aria-hidden className="absolute bottom-0 left-0 h-1 w-24 bg-primary" />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
       {/* ══ Firm at a glance — stat band ══════════════════════════════════════ */}
-      <section className="bg-white border-b border-border">
+      <section className="bg-white border-y border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-2 lg:grid-cols-4 divide-y divide-x divide-border border-x border-border sm:border-x-0 lg:divide-y-0">
             {stats.map((s, i) => (
@@ -131,9 +121,9 @@ export default function About() {
                 key={i}
                 {...fadeUp}
                 transition={{ ...fadeUp.transition, delay: i * 0.08 }}
-                className="px-6 py-10 md:py-12"
+                className="px-6 py-9 md:py-11"
               >
-                <div className={`nx-display text-[2.6rem] md:text-[3.1rem] leading-none mb-3 ${i === 2 ? "text-primary" : "text-charcoal"}`}>
+                <div className={`text-[2.4rem] md:text-[2.9rem] leading-none font-semibold tracking-[-0.02em] mb-3 ${i === 2 ? "text-primary" : "text-charcoal"}`}>
                   {s.value}
                 </div>
                 <p className="text-[13px] md:text-[14px] text-muted-foreground leading-snug">{s.label}</p>
@@ -147,17 +137,17 @@ export default function About() {
       <section className="nx-section bg-off-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div {...fadeUp} className="max-w-5xl">
-            <div className="flex items-center gap-4 mb-9">
+            <div className="flex items-center gap-4 mb-8">
               <span className="h-px w-10 bg-primary" />
               <span className="nx-eyebrow text-charcoal/55">Our purpose</span>
             </div>
-            <p className="nx-display text-[1.9rem] sm:text-[2.4rem] md:text-[3rem] leading-[1.18] text-charcoal">
+            <p className="text-[1.6rem] sm:text-[2rem] md:text-[2.5rem] leading-[1.28] tracking-[-0.02em] text-charcoal font-medium">
               Ambitious organisations are testing, challenging, striving for the change that
               transforms everything. We partner with bold leaders to pinpoint strategy, harness{" "}
               <span className="text-primary">AI and agentic systems</span>, and build capabilities
               that compound.
             </p>
-            <p className="mt-10 nx-lead text-muted-foreground max-w-3xl">
+            <p className="mt-9 nx-lead text-muted-foreground max-w-3xl">
               Every technology we deploy sits inside a human system we design first. That discipline —
               Human Intelligence Governance (HIG™) — is how we turn ambition into enterprise-wide
               transformation and durable growth.
@@ -169,9 +159,9 @@ export default function About() {
       {/* ══ How we work — numbered principles ═════════════════════════════════ */}
       <section className="nx-section bg-white border-y border-border">
         <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div {...fadeUp} className="max-w-3xl mb-14 md:mb-16">
+          <motion.div {...fadeUp} className="max-w-3xl mb-12 md:mb-16">
             <span className="nx-eyebrow text-charcoal/55">How we work</span>
-            <h2 className="nx-display text-[2.1rem] md:text-[2.9rem] leading-[1.1] text-charcoal mt-5">
+            <h2 className="nx-h2 text-charcoal mt-4">
               Technology follows the human system — never the other way around.
             </h2>
           </motion.div>
@@ -185,10 +175,8 @@ export default function About() {
               >
                 <span className="absolute top-0 left-0 h-px w-full bg-border" />
                 <span className="absolute top-0 left-0 h-px w-16 bg-primary scale-x-100 md:scale-x-0 md:group-hover:scale-x-100 origin-left transition-transform duration-500" />
-                <div className="nx-display text-[2.6rem] leading-none text-charcoal/15 mb-6">{p.no}</div>
-                <h3 className="text-[1.3rem] font-semibold text-charcoal tracking-[-0.01em] mb-4 group-hover:text-primary transition-colors">
-                  {p.title}
-                </h3>
+                <div className="text-[2.4rem] leading-none font-semibold text-charcoal/15 mb-6">{p.no}</div>
+                <h3 className="nx-h3 text-charcoal mb-4 group-hover:text-primary transition-colors">{p.title}</h3>
                 <p className="text-[15px] text-muted-foreground leading-[1.7]">{p.body}</p>
               </motion.div>
             ))}
@@ -202,16 +190,13 @@ export default function About() {
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
             <motion.div {...fadeUp} className="lg:col-span-4">
               <span className="nx-eyebrow text-charcoal/55">Who we are</span>
-              <h2 className="nx-display text-[2rem] md:text-[2.6rem] leading-[1.12] text-charcoal mt-5">
-                One firm, one partnership.
-              </h2>
-              <div className="mt-8 hidden lg:block relative overflow-hidden">
+              <h2 className="nx-h2 text-charcoal mt-4">One firm, one partnership.</h2>
+              <div className="mt-8 hidden lg:block overflow-hidden">
                 <img
                   src="/images/ai-team-collaboration.jpg"
                   alt="NexDyne consultants collaborating"
                   className="w-full aspect-[4/5] object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/25 to-transparent" />
               </div>
             </motion.div>
 
@@ -222,7 +207,7 @@ export default function About() {
               </p>
 
               <figure className="border-l-2 border-primary pl-7 md:pl-9 my-10">
-                <blockquote className="nx-display text-[1.55rem] md:text-[2.05rem] leading-[1.3] text-charcoal">
+                <blockquote className="text-[1.5rem] md:text-[1.95rem] leading-[1.35] tracking-[-0.01em] text-charcoal font-medium">
                   World-class strategy, AI, and data capability should not be reserved for the
                   Fortune 500. Ambitious organisations everywhere deserve the same caliber of
                   expertise — and the same discipline in how it is governed.
@@ -251,28 +236,27 @@ export default function About() {
       {/* ══ Values — refined editorial grid ═══════════════════════════════════ */}
       <section className="nx-section bg-white border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div {...fadeUp} className="max-w-3xl mb-14">
+          <motion.div {...fadeUp} className="max-w-3xl mb-12 md:mb-14">
             <span className="nx-eyebrow text-charcoal/55">Our values</span>
-            <h2 className="nx-display text-[2.1rem] md:text-[2.9rem] leading-[1.1] text-charcoal mt-5">What defines us</h2>
-            <p className="nx-lead text-muted-foreground mt-6">
+            <h2 className="nx-h2 text-charcoal mt-4">What defines us</h2>
+            <p className="nx-lead text-muted-foreground mt-5">
               Four commitments that shape every engagement and every partnership we build.
             </p>
           </motion.div>
           <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-5">
             {values.map((value, i) => (
               <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.08 }} className="group">
-                <div className="relative h-full border border-border overflow-hidden bg-white transition-shadow duration-300 hover:shadow-[0_22px_50px_-24px_rgba(0,0,0,0.30)]">
+                <div className="relative h-full border border-border overflow-hidden bg-white transition-shadow duration-300 hover:shadow-[0_18px_40px_-22px_rgba(0,0,0,0.22)]">
                   <span className="absolute top-0 left-0 z-10 h-[3px] w-full bg-primary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
-                  <div className="relative aspect-[16/11] overflow-hidden">
+                  <div className="aspect-[16/11] overflow-hidden">
                     <img
                       src={value.image}
                       alt={value.title}
                       className="w-full h-full object-cover transition-transform duration-[700ms] group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal/30 to-transparent" />
                   </div>
                   <div className="p-6">
-                    <h3 className="nx-display text-[1.4rem] text-charcoal mb-3 group-hover:text-primary transition-colors">{value.title}</h3>
+                    <h3 className="nx-h3 text-charcoal mb-3 group-hover:text-primary transition-colors">{value.title}</h3>
                     <p className="text-[14px] text-muted-foreground leading-[1.7]">{value.description}</p>
                   </div>
                 </div>
@@ -283,31 +267,24 @@ export default function About() {
       </section>
 
       {/* ══ Explore the firm — neighbor navigation, editorial rows ════════════ */}
-      <section className="nx-section bg-charcoal text-white overflow-hidden relative">
-        <div
-          aria-hidden
-          className="absolute inset-0"
-          style={{ background: "radial-gradient(50% 60% at 92% 0%, rgba(222,47,35,0.12) 0%, transparent 60%)" }}
-        />
-        <div className="relative container px-4 sm:px-6 md:px-12">
-          <motion.div {...fadeUp} className="max-w-3xl mb-12 md:mb-14">
-            <span className="nx-eyebrow text-white/45">Explore the firm</span>
-            <h2 className="nx-display text-[2.1rem] md:text-[2.9rem] leading-[1.1] text-white mt-5">
-              Go deeper into who we are.
-            </h2>
+      <section className="nx-section bg-off-white border-t border-border">
+        <div className="container px-4 sm:px-6 md:px-12">
+          <motion.div {...fadeUp} className="max-w-3xl mb-10 md:mb-12">
+            <span className="nx-eyebrow text-charcoal/55">Explore the firm</span>
+            <h2 className="nx-h2 text-charcoal mt-4">Go deeper into who we are.</h2>
           </motion.div>
 
-          <div className="border-t border-white/12">
+          <div className="border-t border-border">
             {explore.map((item, i) => (
               <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.05 }}>
                 <Link href={item.href}>
-                  <div className="group grid grid-cols-[auto_1fr_auto] items-center gap-5 md:gap-10 py-7 md:py-8 border-b border-white/12 cursor-pointer transition-colors hover:bg-white/[0.04] -mx-4 px-4 sm:-mx-6 sm:px-6 md:-mx-12 md:px-12">
-                    <span className="nx-display text-[1.1rem] md:text-[1.3rem] text-white/35 tabular-nums w-8">{item.no}</span>
+                  <div className="group grid grid-cols-[auto_1fr_auto] items-center gap-5 md:gap-10 py-6 md:py-7 border-b border-border cursor-pointer transition-colors hover:bg-white -mx-4 px-4 sm:-mx-6 sm:px-6 md:-mx-12 md:px-12">
+                    <span className="text-[13px] md:text-[14px] font-semibold text-charcoal/35 tabular-nums w-7">{item.no}</span>
                     <div>
-                      <h3 className="nx-display text-[1.5rem] md:text-[2rem] leading-tight text-white group-hover:text-primary transition-colors">
+                      <h3 className="text-[1.35rem] md:text-[1.7rem] leading-tight font-semibold tracking-[-0.01em] text-charcoal group-hover:text-primary transition-colors">
                         {item.title}
                       </h3>
-                      <p className="text-[14px] md:text-[15px] text-white/55 mt-1.5 leading-relaxed max-w-xl">{item.description}</p>
+                      <p className="text-[14px] md:text-[15px] text-muted-foreground mt-1.5 leading-relaxed max-w-xl">{item.description}</p>
                     </div>
                     <span className="text-primary text-xl md:text-2xl transition-transform duration-300 group-hover:translate-x-1.5">→</span>
                   </div>
@@ -319,13 +296,11 @@ export default function About() {
       </section>
 
       {/* ══ Closing CTA ═══════════════════════════════════════════════════════ */}
-      <section className="nx-section bg-off-white border-t border-border">
+      <section className="nx-section bg-white border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div {...fadeUp} className="max-w-3xl">
-            <h2 className="nx-display text-[2.3rem] md:text-[3.2rem] leading-[1.08] text-charcoal mb-6">
-              Ready to transform your business?
-            </h2>
-            <p className="nx-lead text-muted-foreground mb-11 max-w-2xl">
+            <h2 className="nx-h2 text-charcoal mb-5">Ready to transform your business?</h2>
+            <p className="nx-lead text-muted-foreground mb-10 max-w-2xl">
               Let's discuss where AI and agentic systems can create durable advantage — and how we'll
               govern the change end to end.
             </p>
@@ -336,7 +311,7 @@ export default function About() {
                 </span>
               </Link>
               <Link href="/careers">
-                <span className="inline-block px-9 py-4 border border-charcoal/25 text-charcoal text-[13px] font-semibold uppercase tracking-[0.12em] hover:border-charcoal hover:bg-white transition-colors cursor-pointer">
+                <span className="inline-block px-9 py-4 border border-charcoal/25 text-charcoal text-[13px] font-semibold uppercase tracking-[0.12em] hover:border-charcoal hover:bg-off-white transition-colors cursor-pointer">
                   Join our team
                 </span>
               </Link>

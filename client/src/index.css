@@ -218,19 +218,6 @@
   }
   @media (min-width: 768px) { .nx-lead { font-size: 1.125rem; } }  /* 18 · md+ */
 
-  /* ── Editorial display serif — Fraunces, used ONLY on the firm / About cluster
-     (About + Purpose, Impact, Leadership, Offices, Contact). Pairs a high-craft
-     magazine serif with the Instrument Sans body per the brand's editorial rule.
-     Optical sizing + tight tracking keep large headlines premium, not decorative. */
-  .nx-display {
-    font-family: "Fraunces", Georgia, "Times New Roman", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    line-height: 1.04;
-  }
-  .nx-display-italic { font-style: italic; }
-
   /* Standard vertical rhythm for full-width stacked sections. Replaces the old
      `py-20 lg:py-28` (which doubled to ~224px of dead space at every seam).
      Two stacked .nx-section blocks now meet at ~144px — clear separation,

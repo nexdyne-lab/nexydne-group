@@ -420,10 +420,9 @@ export default function Navigation() {
     }, 150);
   };
 
-  // The home hero and the About firm-hero are full-bleed dark, so the navbar sits
-  // transparent (white text) over them at the top of the page and turns solid white
-  // on scroll. Keep this list in sync with any page that opens on a dark hero.
-  const darkHeroPages: string[] = ["/", "/about"];
+  // The home hero is a full-bleed colour carousel, so the navbar sits transparent
+  // (white text) over it at the top of the page and turns solid white on scroll.
+  const darkHeroPages: string[] = ["/"];
   const isLightBackgroundPage = !darkHeroPages.includes(location);
 
   // Determine if navbar should be light (white bg, dark text)
