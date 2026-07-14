@@ -104,7 +104,6 @@ export default function About() {
 
   const founders = [
     { name: "David Seyaker", initials: "DS", role: "Co-Founder & Chief Executive", focus: "Sets the firm's direction and its governing doctrine, HIG™ — leading strategy and enterprise-wide transformation for clients." },
-    { name: "Raphaelyn CN Bomosy-Forkpa", initials: "RB", role: "Managing Partner", focus: "Leads client delivery and the standards behind every engagement — turning strategy into governed, durable outcomes." },
   ];
 
   const partners = ["OpenAI", "Anthropic", "AWS", "Google Cloud", "Microsoft Azure", "Databricks"];
@@ -195,7 +194,7 @@ export default function About() {
                 key={i}
                 {...fadeUp}
                 transition={{ ...fadeUp.transition, delay: i * 0.08 }}
-                className="px-6 py-10 md:py-12"
+                className="px-6 py-10 md:py-12 text-center"
               >
                 <div className={`text-[2.4rem] md:text-[2.9rem] leading-none font-semibold tracking-[-0.02em] mb-3 ${i === 2 ? "text-amber" : "text-white"}`}>
                   {s.value}
@@ -367,7 +366,7 @@ export default function About() {
             <span className="nx-eyebrow text-charcoal/55">Leadership</span>
             <h2 className="nx-h2 text-charcoal mt-4">The partnership behind the firm.</h2>
           </motion.div>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="max-w-2xl">
             {founders.map((f, i) => (
               <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.08 }}>
                 <div className="group bg-white border border-border p-7 lg:p-9 h-full transition-shadow duration-300 hover:shadow-[0_18px_40px_-22px_rgba(0,0,0,0.22)]">
