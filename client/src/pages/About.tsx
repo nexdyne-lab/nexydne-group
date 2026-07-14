@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Mail, Linkedin } from "lucide-react";
@@ -13,7 +14,45 @@ const fadeUp = {
   transition: { duration: 0.7, ease },
 };
 
+// Bain-style in-page section jump-nav
+const sectionTabs = [
+  { id: "purpose", label: "Purpose" },
+  { id: "hig", label: "HIG™" },
+  { id: "what-we-do", label: "What we do" },
+  { id: "leadership", label: "Leadership" },
+  { id: "values", label: "Our values" },
+  { id: "partners", label: "Ecosystem" },
+];
+
 export default function About() {
+  const [activeTab, setActiveTab] = useState("purpose");
+  const [capability, setCapability] = useState("");
+  const [email, setEmail] = useState("");
+
+  useEffect(() => {
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) setActiveTab(e.target.id);
+        });
+      },
+      { rootMargin: "-45% 0px -50% 0px" }
+    );
+    sectionTabs.forEach((s) => {
+      const el = document.getElementById(s.id);
+      if (el) obs.observe(el);
+    });
+    return () => obs.disconnect();
+  }, []);
+
+  const contactHref =
+    "/contact" +
+    (capability || email
+      ? "?" +
+        [capability && `capability=${encodeURIComponent(capability)}`, email && `email=${encodeURIComponent(email)}`]
+          .filter(Boolean)
+          .join("&")
+      : "");
   const stats = [
     { value: "62+", label: "Client engagements delivered" },
     { value: "18", label: "Industries served" },
@@ -129,6 +168,25 @@ export default function About() {
         </div>
       </section>
 
+      {/* ══ Sticky section jump-nav (Bain-style) ═════════════════════════════ */}
+      <div className="sticky top-14 md:top-20 z-30 bg-white/95 backdrop-blur border-y border-border">
+        <div className="container px-4 sm:px-6 md:px-12">
+          <div className="flex gap-6 md:gap-9 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+            {sectionTabs.map((s) => (
+              <a
+                key={s.id}
+                href={`#${s.id}`}
+                className={`shrink-0 py-4 text-[12px] md:text-[13px] font-semibold uppercase tracking-[0.08em] border-b-2 -mb-px transition-colors ${
+                  activeTab === s.id ? "border-primary text-primary" : "border-transparent text-charcoal/55 hover:text-charcoal"
+                }`}
+              >
+                {s.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* ══ Firm at a glance — charcoal stat band ═════════════════════════════ */}
       <section className="bg-charcoal text-white">
         <div className="container px-4 sm:px-6 md:px-12">
@@ -151,7 +209,7 @@ export default function About() {
       </section>
 
       {/* ══ Positioning statement ═════════════════════════════════════════════ */}
-      <section className="nx-section bg-off-white">
+      <section id="purpose" className="nx-section bg-off-white scroll-mt-[130px]">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div {...fadeUp} className="max-w-5xl">
             <div className="flex items-center gap-4 mb-8">
@@ -174,7 +232,7 @@ export default function About() {
       </section>
 
       {/* ══ HIG™ — the governing doctrine (charcoal) ══════════════════════════ */}
-      <section className="nx-section bg-charcoal text-white relative overflow-hidden">
+      <section id="hig" className="nx-section bg-charcoal text-white relative overflow-hidden scroll-mt-[130px]">
         <div
           aria-hidden
           className="absolute inset-0"
@@ -210,13 +268,17 @@ export default function About() {
       </section>
 
       {/* ══ What we do — capability breadth ═══════════════════════════════════ */}
-      <section className="nx-section bg-off-white">
+      <section id="what-we-do" className="nx-section bg-off-white scroll-mt-[130px]">
         <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div {...fadeUp} className="max-w-3xl mb-12 md:mb-14">
-            <span className="nx-eyebrow text-charcoal/55">What we do</span>
-            <h2 className="nx-h2 text-charcoal mt-4">
-              The full range — strategy, technology, and the governance to make it stick.
-            </h2>
+          <motion.div {...fadeUp} className="mb-12 md:mb-14">
+            <div className="flex items-center gap-6">
+              <span className="h-px flex-1 bg-border" />
+              <h2 className="nx-h2 text-charcoal text-center">What We Do</h2>
+              <span className="h-px flex-1 bg-border" />
+            </div>
+            <p className="text-center nx-lead text-muted-foreground max-w-2xl mx-auto mt-6">
+              Strategy, technology, and the governance to make it stick — across six capability areas.
+            </p>
           </motion.div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
             {capabilities.map((c, i) => (
@@ -300,7 +362,7 @@ export default function About() {
       </section>
 
       {/* ══ Leadership & founders ═════════════════════════════════════════════ */}
-      <section className="nx-section bg-off-white border-t border-border">
+      <section id="leadership" className="nx-section bg-off-white border-t border-border scroll-mt-[130px]">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div {...fadeUp} className="max-w-3xl mb-12 md:mb-14">
             <span className="nx-eyebrow text-charcoal/55">Leadership</span>
@@ -353,12 +415,15 @@ export default function About() {
       </section>
 
       {/* ══ Values — refined editorial grid ═══════════════════════════════════ */}
-      <section className="nx-section bg-white border-t border-border">
+      <section id="values" className="nx-section bg-white border-t border-border scroll-mt-[130px]">
         <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div {...fadeUp} className="max-w-3xl mb-12 md:mb-14">
-            <span className="nx-eyebrow text-charcoal/55">Our values</span>
-            <h2 className="nx-h2 text-charcoal mt-4">What defines us</h2>
-            <p className="nx-lead text-muted-foreground mt-5">
+          <motion.div {...fadeUp} className="mb-12 md:mb-14">
+            <div className="flex items-center gap-6">
+              <span className="h-px flex-1 bg-border" />
+              <h2 className="nx-h2 text-charcoal text-center">What Defines Us</h2>
+              <span className="h-px flex-1 bg-border" />
+            </div>
+            <p className="text-center nx-lead text-muted-foreground max-w-2xl mx-auto mt-6">
               Four commitments that shape every engagement and every partnership we build.
             </p>
           </motion.div>
@@ -386,8 +451,33 @@ export default function About() {
         </div>
       </section>
 
+      {/* ══ Statement-over-photo banner (Bain-style) ═════════════════════════ */}
+      <section className="bg-white">
+        <Link href="/careers">
+          <div className="group relative overflow-hidden h-[300px] md:h-[400px] cursor-pointer">
+            <img
+              src="/images/ai-team-collaboration.jpg"
+              alt="NexDyne team at work"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/55 to-charcoal/15" />
+            <div className="relative h-full container px-4 sm:px-6 md:px-12 flex items-center">
+              <div className="max-w-2xl">
+                <h2 className="text-white text-[1.9rem] sm:text-[2.4rem] md:text-[3rem] font-semibold leading-[1.08] tracking-[-0.02em]">
+                  Bold ambition. Governed outcomes.
+                  <span className="text-primary transition-transform inline-block group-hover:translate-x-1"> →</span>
+                </h2>
+                <p className="text-white/75 text-[15px] md:text-[16px] mt-4 max-w-lg">
+                  Build your career where human judgment leads the technology, not the other way around.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Link>
+      </section>
+
       {/* ══ Partners & ecosystem (charcoal) ═══════════════════════════════════ */}
-      <section className="nx-section bg-charcoal text-white relative overflow-hidden">
+      <section id="partners" className="nx-section bg-charcoal text-white relative overflow-hidden scroll-mt-[130px]">
         <div
           aria-hidden
           className="absolute inset-0"
@@ -422,9 +512,15 @@ export default function About() {
       {/* ══ Explore the firm — typographic index ══════════════════════════════ */}
       <section className="nx-section bg-off-white border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div {...fadeUp} className="max-w-3xl mb-10 md:mb-12">
-            <span className="nx-eyebrow text-charcoal/55">Explore the firm</span>
-            <h2 className="nx-h2 text-charcoal mt-4">Go deeper into who we are.</h2>
+          <motion.div {...fadeUp} className="mb-10 md:mb-12">
+            <div className="flex items-center gap-6">
+              <span className="h-px flex-1 bg-border" />
+              <h2 className="nx-h2 text-charcoal text-center whitespace-nowrap">Explore the Firm</h2>
+              <span className="h-px flex-1 bg-border" />
+            </div>
+            <p className="text-center nx-lead text-muted-foreground max-w-2xl mx-auto mt-6">
+              Go deeper into who we are.
+            </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 md:gap-x-14 lg:gap-x-20 border-t border-border">
@@ -451,28 +547,50 @@ export default function About() {
         </div>
       </section>
 
-      {/* ══ Closing CTA — orange band ═════════════════════════════════════════ */}
+      {/* ══ Ready to talk — interactive contact block (Bain-style, orange) ════ */}
       <section className="nx-section bg-primary text-white">
         <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div {...fadeUp} className="max-w-3xl">
-            <h2 className="nx-h2 text-white mb-5">Ready to transform your business?</h2>
-            <p className="nx-lead text-white/85 mb-10 max-w-2xl">
-              Let's discuss where AI and agentic systems can create durable advantage — and how we'll
-              govern the change end to end.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-5">
-              <Link href="/contact">
-                <span className="inline-block px-9 py-4 bg-white text-charcoal text-[13px] font-semibold uppercase tracking-[0.12em] hover:bg-white/90 transition-colors cursor-pointer">
-                  Contact us
-                </span>
-              </Link>
-              <Link href="/careers">
-                <span className="inline-block px-9 py-4 border border-white/50 text-white text-[13px] font-semibold uppercase tracking-[0.12em] hover:bg-white/10 hover:border-white transition-colors cursor-pointer">
-                  Join our team
-                </span>
-              </Link>
-            </div>
-          </motion.div>
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+            <motion.div {...fadeUp}>
+              <span className="nx-eyebrow text-white/70">What's your ambition?</span>
+              <h2 className="nx-h2 text-white mt-4 mb-8">Ready to talk?</h2>
+              <label htmlFor="about-cap" className="block text-[12px] font-semibold uppercase tracking-[0.08em] text-white/80 mb-3">
+                I want to talk to your experts in
+              </label>
+              <select
+                id="about-cap"
+                value={capability}
+                onChange={(e) => setCapability(e.target.value)}
+                className="w-full max-w-md bg-white text-charcoal text-[15px] px-4 py-3.5 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/60 cursor-pointer"
+              >
+                <option value="">Select a capability</option>
+                {capabilities.map((c) => (
+                  <option key={c.title} value={c.title}>{c.title}</option>
+                ))}
+              </select>
+            </motion.div>
+
+            <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.1 }} className="lg:pt-14">
+              <p className="nx-lead text-white/85 mb-6 max-w-md">
+                We work with ambitious leaders who want to define the future — not hide from it.
+                Let's build durable advantage together.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 max-w-lg">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Your email"
+                  className="flex-1 bg-white text-charcoal text-[15px] px-4 py-3.5 border border-white/30 placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-white/60"
+                />
+                <Link href={contactHref}>
+                  <span className="inline-flex items-center justify-center bg-charcoal text-white text-[13px] font-semibold uppercase tracking-[0.12em] px-8 py-3.5 hover:bg-charcoal/85 transition-colors cursor-pointer whitespace-nowrap">
+                    Contact us
+                  </span>
+                </Link>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
