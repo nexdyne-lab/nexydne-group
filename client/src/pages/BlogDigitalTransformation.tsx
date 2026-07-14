@@ -61,7 +61,7 @@ export default function BlogDigitalTransformation() {
                 1
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-charcoal mb-4">
+                <h2 className="nx-h2 text-charcoal mb-4">
                   Your team is drowning in repetitive work
                 </h2>
                 <p className="text-lg text-charcoal/80 leading-relaxed">
@@ -87,7 +87,7 @@ export default function BlogDigitalTransformation() {
                 2
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-charcoal mb-4">
+                <h2 className="nx-h2 text-charcoal mb-4">
                   Growth is constrained by operational capacity
                 </h2>
                 <p className="text-lg text-charcoal/80 leading-relaxed">
@@ -113,7 +113,7 @@ export default function BlogDigitalTransformation() {
                 3
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-charcoal mb-4">
+                <h2 className="nx-h2 text-charcoal mb-4">
                   Errors are costing you money or credibility
                 </h2>
                 <p className="text-lg text-charcoal/80 leading-relaxed">
@@ -139,7 +139,7 @@ export default function BlogDigitalTransformation() {
                 4
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-charcoal mb-4">
+                <h2 className="nx-h2 text-charcoal mb-4">
                   Data exists but insights don't
                 </h2>
                 <p className="text-lg text-charcoal/80 leading-relaxed">
@@ -165,7 +165,7 @@ export default function BlogDigitalTransformation() {
                 5
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-charcoal mb-4">
+                <h2 className="nx-h2 text-charcoal mb-4">
                   Competitors are pulling ahead on service delivery
                 </h2>
                 <p className="text-lg text-charcoal/80 leading-relaxed">
@@ -186,7 +186,7 @@ export default function BlogDigitalTransformation() {
 
           {/* Conclusion */}
           <div className="bg-gradient-to-br from-charcoal to-charcoal text-white p-6 sm:p-6 sm:p-8 md:p-12 rounded-lg mt-16">
-            <h2 className="text-3xl font-bold mb-6">What if you checked multiple boxes?</h2>
+            <h2 className="nx-h2 mb-6">What if you checked multiple boxes?</h2>
             <p className="text-lg leading-relaxed mb-6">
               If you identified with three or more of these indicators, your business is likely ready for automation. The good news is that you don't need to transform everything at once. The most successful implementations start with a focused pilot project that delivers measurable results in 90-120 days, then expand based on proven value.
             </p>
@@ -219,7 +219,7 @@ export default function BlogDigitalTransformation() {
         <div className="container max-w-6xl">
           <div className="mb-6 sm:mb-8 md:mb-12">
             <p className="text-sm font-semibold tracking-wider uppercase mb-3 text-primary">RELATED CASE STUDIES</p>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal">
+            <h2 className="nx-h2 text-charcoal">
               Companies that recognized the signs and took action
             </h2>
           </div>

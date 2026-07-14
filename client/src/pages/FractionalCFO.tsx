@@ -74,7 +74,7 @@ export default function FractionalCFO() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Our Philosophy
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-5 sm:mb-6 md:mb-8">
+              <h2 className="nx-h2 mb-5 sm:mb-6 md:mb-8">
                 Transform finance <br />
                 <span className="text-primary">into a growth engine.</span>
               </h2>
@@ -135,7 +135,7 @@ export default function FractionalCFO() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Core Capabilities
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Comprehensive CFO services
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl">
@@ -206,7 +206,7 @@ export default function FractionalCFO() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Engagement Models
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              <h2 className="nx-h2 mb-6">
                 Flexible <span className="text-primary">partnership</span>
               </h2>
               <p className="text-lg text-charcoal/70 leading-relaxed mb-5 sm:mb-6 md:mb-8">
@@ -274,7 +274,7 @@ export default function FractionalCFO() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Our Impact
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+              <h2 className="nx-h2 text-charcoal">
                 Fractional CFO success stories
               </h2>
             </motion.div>
@@ -350,7 +350,7 @@ export default function FractionalCFO() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Related Services
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Complementary capabilities
             </h2>
             <p className="text-xl text-charcoal/60 max-w-2xl mx-auto">

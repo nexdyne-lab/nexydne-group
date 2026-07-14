@@ -461,7 +461,7 @@ export default function About() {
             <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/55 to-charcoal/15" />
             <div className="relative h-full container px-4 sm:px-6 md:px-12 flex items-center">
               <div className="max-w-2xl">
-                <h2 className="text-white text-[1.9rem] sm:text-[2.4rem] md:text-[3rem] font-semibold leading-[1.08] tracking-[-0.02em]">
+                <h2 className="nx-h2 text-white">
                   Bold ambition. Governed outcomes.
                   <span className="text-primary transition-transform inline-block group-hover:translate-x-1"> →</span>
                 </h2>

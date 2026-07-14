@@ -179,7 +179,7 @@ export default function WhitepaperDownload() {
 
               {/* Description */}
               <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 shadow-sm mb-5 sm:mb-6 md:mb-8">
-                <h2 className="text-2xl font-bold text-charcoal mb-4">About This Whitepaper</h2>
+                <h2 className="nx-h2 text-charcoal mb-4">About This Whitepaper</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">{whitepaper.description}</p>
 
                 {/* Topics */}
@@ -265,7 +265,7 @@ export default function WhitepaperDownload() {
       {/* More Whitepapers Section */}
       <section className="py-10 sm:py-12 lg:py-16 bg-white">
         <div className="container">
-          <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">More Whitepapers</h2>
+          <h2 className="nx-h2 text-charcoal mb-5 sm:mb-6 md:mb-8">More Whitepapers</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8">
             {Object.values(whitepapers)
               .filter((wp) => wp.id !== whitepaper.id)

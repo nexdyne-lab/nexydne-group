@@ -60,7 +60,7 @@ export default function BlogAIAutomation() {
                   Over the past 18 months, we've worked with more than 40 companies ranging from 50 to 300 employees, helping them deploy automation solutions that deliver measurable results. What we've learned is that successful automation isn't about replacing people—it's about amplifying their capabilities and freeing them from repetitive work that doesn't require human judgment.
                 </p>
 
-                <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">The shift from manual to intelligent</h2>
+                <h2 className="nx-h2 text-charcoal mt-12 mb-6">The shift from manual to intelligent</h2>
 
                 <p className="text-charcoal/80 leading-relaxed">
                   Traditional automation focused on simple, rule-based tasks. Today's intelligent automation combines robotic process automation (RPA) with machine learning to handle complex workflows that previously required human decision-making. A 75-attorney law firm we worked with reduced contract review time by 65% not by eliminating attorney oversight, but by automating the initial analysis and flagging items requiring professional judgment.
@@ -75,7 +75,7 @@ export default function BlogAIAutomation() {
                   </p>
                 </div>
 
-                <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Three automation trends reshaping growing businesses</h2>
+                <h2 className="nx-h2 text-charcoal mt-12 mb-6">Three automation trends reshaping growing businesses</h2>
 
                 <h3 className="text-2xl font-semibold text-charcoal mt-8 mb-4">1. Document intelligence is becoming table stakes</h3>
                 <p className="text-charcoal/80 leading-relaxed">
@@ -92,7 +92,7 @@ export default function BlogAIAutomation() {
                   Unlike traditional software that remains static after deployment, intelligent automation improves over time. Systems learn from user corrections, identify new patterns, and suggest process improvements. An accounting firm's audit automation platform now handles 85% of routine testing procedures autonomously—up from 60% at initial deployment—because it learned which anomalies require auditor review versus routine confirmation.
                 </p>
 
-                <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">What this means for your business</h2>
+                <h2 className="nx-h2 text-charcoal mt-12 mb-6">What this means for your business</h2>
 
                 <p className="text-charcoal/80 leading-relaxed">
                   The question isn't whether to automate, but how to do it strategically. Start with processes that are high-volume, rule-based, and currently consuming significant staff time. Look for workflows where errors are costly and consistency matters. Focus on areas where faster turnaround creates competitive advantage or improves customer experience.

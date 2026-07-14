@@ -116,7 +116,7 @@ export default function CaseStudyVarianceAnalysis() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client is a regional logistics and warehousing company operating 12 facilities across the Southeast United States. With 220 employees and $45M in annual revenue, they provide third-party logistics services to manufacturers, distributors, and e-commerce companies. The business operates on thin margins typical of the logistics industry, making tight financial control essential for profitability.
@@ -156,7 +156,7 @@ export default function CaseStudyVarianceAnalysis() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Manual variance analysis consumed weeks each month
             </h2>
           </motion.div>
@@ -222,7 +222,7 @@ export default function CaseStudyVarianceAnalysis() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Automated variance analysis system
             </h2>
           </motion.div>
@@ -323,7 +323,7 @@ export default function CaseStudyVarianceAnalysis() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Results & Impact
             </h2>
           </motion.div>
@@ -424,7 +424,7 @@ export default function CaseStudyVarianceAnalysis() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">More success stories</h2>
+            <h2 className="nx-h2 text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-4 max-w-5xl">

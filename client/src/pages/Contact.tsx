@@ -455,8 +455,7 @@ export default function Contact() {
             <span className="block nx-eyebrow text-white/70 mb-5">
               PREFER A DIFFERENT CHANNEL?
             </span>
-            <h2
-              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-8"
+            <h2 className="nx-h2 text-white mb-8"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               Not ready to fill a form?

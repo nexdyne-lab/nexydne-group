@@ -101,7 +101,7 @@ export default function CaseStudyB2BDigitalOrdering() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Company Overview
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-5 sm:mb-6 md:mb-8">
+              <h2 className="nx-h2 mb-5 sm:mb-6 md:mb-8">
                 A traditional distributor embracing digital
               </h2>
               
@@ -163,7 +163,7 @@ export default function CaseStudyB2BDigitalOrdering() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">
+            <h2 className="nx-h2 text-charcoal mb-5 sm:mb-6 md:mb-8">
               Manual processes limiting growth and efficiency
             </h2>
 
@@ -215,7 +215,7 @@ export default function CaseStudyB2BDigitalOrdering() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            <h2 className="nx-h2 mb-6">
               A B2B commerce platform built for industrial distribution
             </h2>
             <p className="text-xl text-charcoal/60 max-w-3xl mx-auto">
@@ -300,7 +300,7 @@ export default function CaseStudyB2BDigitalOrdering() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Implementation
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            <h2 className="nx-h2 mb-6">
               Phased rollout over 14 months
             </h2>
           </motion.div>
@@ -365,7 +365,7 @@ export default function CaseStudyB2BDigitalOrdering() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               Results
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="nx-h2 text-white mb-6">
               Digital transformation delivering measurable ROI
             </h2>
             <p className="text-xl text-white/70 max-w-3xl mx-auto">
@@ -433,7 +433,7 @@ export default function CaseStudyB2BDigitalOrdering() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+            <h2 className="nx-h2">
               More digital growth success stories
             </h2>
           </motion.div>
@@ -504,7 +504,7 @@ export default function CaseStudyB2BDigitalOrdering() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Ready to digitize your B2B sales channel?
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed mb-10">

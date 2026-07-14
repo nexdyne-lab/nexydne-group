@@ -124,7 +124,7 @@ export default function CaseStudyLawFirm() {
             <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Opportunity
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Managing contract complexity at scale in a growing practice
             </h2>
           </motion.div>
@@ -183,7 +183,7 @@ export default function CaseStudyLawFirm() {
             <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Building an AI-powered contract intelligence platform
             </h2>
           </motion.div>
@@ -251,7 +251,7 @@ export default function CaseStudyLawFirm() {
             <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Measurable improvements in efficiency, quality, and client satisfaction
             </h2>
           </motion.div>
@@ -308,7 +308,7 @@ export default function CaseStudyLawFirm() {
             <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-charcoal">More success stories</h2>
+            <h2 className="nx-h2 text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

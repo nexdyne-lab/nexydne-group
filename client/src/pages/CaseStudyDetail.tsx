@@ -133,7 +133,7 @@ export default function CaseStudyDetail() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Understanding the problem
             </h2>
           </motion.div>
@@ -173,7 +173,7 @@ export default function CaseStudyDetail() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Our approach
             </h2>
           </motion.div>
@@ -228,7 +228,7 @@ export default function CaseStudyDetail() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Results
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Key outcomes
             </h2>
           </motion.div>

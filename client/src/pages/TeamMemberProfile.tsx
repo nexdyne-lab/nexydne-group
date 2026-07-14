@@ -537,7 +537,7 @@ export default function TeamMemberProfile() {
       <section className="py-10 sm:py-12 lg:py-16 bg-white border-b border-border">
         <div className="container">
           <div className="max-w-4xl">
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Background</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Background</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-charcoal/80 leading-relaxed mb-4">
                 {member.fullBio}
@@ -553,7 +553,7 @@ export default function TeamMemberProfile() {
           <div className="max-w-4xl">
             <div className="flex items-center gap-3 mb-5 sm:mb-6 md:mb-8">
               <FileText className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
-              <h2 className="text-3xl font-bold text-charcoal">Publications & Research</h2>
+              <h2 className="nx-h2 text-charcoal">Publications & Research</h2>
             </div>
             
             <div className="space-y-6">
@@ -589,7 +589,7 @@ export default function TeamMemberProfile() {
           <div className="max-w-4xl">
             <div className="flex items-center gap-3 mb-5 sm:mb-6 md:mb-8">
               <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
-              <h2 className="text-3xl font-bold text-charcoal">Client Work Examples</h2>
+              <h2 className="nx-h2 text-charcoal">Client Work Examples</h2>
             </div>
             
             <div className="space-y-8">
@@ -645,7 +645,7 @@ export default function TeamMemberProfile() {
         
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white leading-tight tracking-tight">
+            <h2 className="nx-h2 mb-6 text-white">
               Work with {member.name.split(' ')[0]}
             </h2>
             <p className="text-xl mb-10 text-muted-foreground/50 leading-relaxed font-light">

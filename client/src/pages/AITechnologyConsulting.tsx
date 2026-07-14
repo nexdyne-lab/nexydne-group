@@ -290,7 +290,7 @@ export default function AITechnologyConsulting() {
             <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Our Approach
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
+            <h2 className="nx-h2">
               Strategy, technology, and people—{" "}
               <span className="italic">integrated for impact.</span>
             </h2>
@@ -369,7 +369,7 @@ export default function AITechnologyConsulting() {
             <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Proprietary Tools
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl leading-tight">
+            <h2 className="nx-h2">
               NexDyne Accelerators
             </h2>
             <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
@@ -455,7 +455,7 @@ export default function AITechnologyConsulting() {
             <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Client Success
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl leading-tight">
+            <h2 className="nx-h2">
               Results that speak for themselves
             </h2>
             <p className="text-lg text-muted-foreground mt-6">
@@ -537,7 +537,7 @@ export default function AITechnologyConsulting() {
             <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Foundational Services
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl leading-tight">
+            <h2 className="nx-h2">
               The complete value chain
             </h2>
             <p className="text-lg text-muted-foreground mt-6">
@@ -596,7 +596,7 @@ export default function AITechnologyConsulting() {
             <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Insights
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl leading-tight">
+            <h2 className="nx-h2">
               Our latest thinking on AI & technology
             </h2>
           </motion.div>
@@ -662,7 +662,7 @@ export default function AITechnologyConsulting() {
             variants={fadeInUp}
             className="max-w-4xl mx-auto text-center"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            <h2 className="nx-h2 text-white mb-6">
               Ready to transform your operations?
             </h2>
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">

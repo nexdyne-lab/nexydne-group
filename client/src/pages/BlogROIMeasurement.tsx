@@ -60,7 +60,7 @@ export default function BlogROIMeasurement() {
       <article className="py-8 bg-subtle">
         <div className="container max-w-5xl">
           <div className="bg-white p-8 md:p-6 sm:p-6 sm:p-8 md:p-12 rounded-lg shadow-sm">
-            <h2 className="text-3xl font-bold text-charcoal mb-6">The ROI measurement challenge</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">The ROI measurement challenge</h2>
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
               Most automation vendors promise dramatic returns—"400% ROI in year one!" or "payback in 6 months!" While these numbers aren't impossible, they're rarely realistic for mid-sized businesses implementing their first automation project. The truth is more nuanced and, ultimately, more useful for planning purposes.
             </p>
@@ -74,7 +74,7 @@ export default function BlogROIMeasurement() {
       <article className="py-8">
         <div className="container max-w-5xl">
           <div className="bg-white p-8 md:p-6 sm:p-6 sm:p-8 md:p-12 rounded-lg shadow-sm mb-5 sm:mb-6 md:mb-8">
-            <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">ROI by project tier and timeline</h2>
+            <h2 className="nx-h2 text-charcoal mb-5 sm:mb-6 md:mb-8">ROI by project tier and timeline</h2>
             
             {/* Tier 1 */}
             <div className="mb-6 sm:mb-8 md:mb-12">
@@ -177,7 +177,7 @@ export default function BlogROIMeasurement() {
           </div>
 
           <div className="bg-white p-8 md:p-6 sm:p-6 sm:p-8 md:p-12 rounded-lg shadow-sm mb-5 sm:mb-6 md:mb-8">
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Where the benefits actually come from</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Where the benefits actually come from</h2>
             <p className="text-lg text-charcoal/80 leading-relaxed mb-5 sm:mb-6 md:mb-8">
               Understanding the composition of ROI helps set realistic expectations and measure progress accurately. Here's the typical benefit breakdown we see across successful projects:
             </p>
@@ -250,7 +250,7 @@ export default function BlogROIMeasurement() {
           </div>
 
           <div className="bg-white p-8 md:p-6 sm:p-6 sm:p-8 md:p-12 rounded-lg shadow-sm">
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Setting up ROI measurement from day one</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Setting up ROI measurement from day one</h2>
             <p className="text-lg text-charcoal/80 leading-relaxed mb-5 sm:mb-6 md:mb-8">
               The companies that achieve the best ROI establish measurement frameworks before implementation begins. Here's our recommended approach:
             </p>
@@ -299,7 +299,7 @@ export default function BlogROIMeasurement() {
           </div>
 
           <div className="bg-gradient-to-br from-charcoal to-charcoal text-white p-6 sm:p-6 sm:p-8 md:p-12 rounded-lg mt-12">
-            <h2 className="text-3xl font-bold mb-6">The bottom line on automation ROI</h2>
+            <h2 className="nx-h2 mb-6">The bottom line on automation ROI</h2>
             <p className="text-lg leading-relaxed mb-6">
               Realistic automation projects for mid-sized businesses deliver 200-340% ROI over 18-30 months, with breakeven typically occurring at 9-16 months depending on project complexity. These returns are strong enough to justify investment without needing to promise unrealistic "400% in year one" results.
             </p>
@@ -337,7 +337,7 @@ export default function BlogROIMeasurement() {
         <div className="container max-w-6xl">
           <div className="mb-6 sm:mb-8 md:mb-12">
             <p className="text-sm font-semibold tracking-wider uppercase mb-3 text-primary">RELATED CASE STUDIES</p>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal">
+            <h2 className="nx-h2 text-charcoal">
               Real ROI numbers from our client engagements
             </h2>
           </div>

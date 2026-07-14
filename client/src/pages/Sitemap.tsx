@@ -231,7 +231,7 @@ export default function Sitemap() {
                   <div className="text-primary">
                     {section.icon}
                   </div>
-                  <h2 className="text-2xl font-bold text-charcoal">
+                  <h2 className="nx-h2 text-charcoal">
                     {section.title}
                   </h2>
                 </div>

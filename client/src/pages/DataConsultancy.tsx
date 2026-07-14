@@ -41,7 +41,7 @@ export default function DataConsultancy() {
       <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-white">
         <div className="container max-w-6xl">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-4">
+            <h2 className="nx-h2 text-charcoal mb-4">
               The benefits
             </h2>
           </div>
@@ -95,7 +95,7 @@ export default function DataConsultancy() {
         <div className="container max-w-5xl">
           <div className="mb-6 sm:mb-8 md:mb-12">
             <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Understanding Data Consultancy</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+            <h2 className="nx-h2 text-charcoal">
               Expertise when you need it
             </h2>
           </div>
@@ -126,7 +126,7 @@ export default function DataConsultancy() {
         <div className="container max-w-5xl">
           <div className="mb-8 sm:mb-12 md:mb-16">
             <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Our Methodology</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">
+            <h2 className="nx-h2 text-charcoal mb-5 sm:mb-6 md:mb-8">
               Embedded expertise
             </h2>
             <p className="text-xl text-charcoal/80 leading-relaxed">
@@ -185,7 +185,7 @@ export default function DataConsultancy() {
         <div className="container max-w-6xl">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Areas of Expertise</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+            <h2 className="nx-h2 text-charcoal">
               Comprehensive data capabilities
             </h2>
           </div>
@@ -241,7 +241,7 @@ export default function DataConsultancy() {
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Related Capabilities</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+            <h2 className="nx-h2 text-charcoal">
               Complete data solutions
             </h2>
           </div>
@@ -283,7 +283,7 @@ export default function DataConsultancy() {
       {/* CTA Section */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal text-white">
         <div className="container max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
+          <h2 className="nx-h2 mb-5 sm:mb-6 md:mb-8">
             Ready to strengthen your data team?
           </h2>
           <p className="text-xl leading-relaxed opacity-90 mb-6 sm:mb-8 md:mb-12 max-w-2xl mx-auto">

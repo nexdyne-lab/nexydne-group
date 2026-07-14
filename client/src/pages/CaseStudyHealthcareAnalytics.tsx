@@ -117,7 +117,7 @@ export default function CaseStudyHealthcareAnalytics() {
             <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Opportunity
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Managing population health risk in a value-based care environment
             </h2>
           </motion.div>
@@ -172,7 +172,7 @@ export default function CaseStudyHealthcareAnalytics() {
             <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Predictive analytics that enables proactive, data-driven care management
             </h2>
           </motion.div>
@@ -207,7 +207,7 @@ export default function CaseStudyHealthcareAnalytics() {
             <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               From financial risk to value-based care success
             </h2>
           </motion.div>
@@ -237,7 +237,7 @@ export default function CaseStudyHealthcareAnalytics() {
             <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               Get In Touch
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-charcoal">Our experts</h2>
+            <h2 className="nx-h2 text-charcoal">Our experts</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl">
@@ -292,7 +292,7 @@ export default function CaseStudyHealthcareAnalytics() {
             <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-charcoal">More success stories</h2>
+            <h2 className="nx-h2 text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

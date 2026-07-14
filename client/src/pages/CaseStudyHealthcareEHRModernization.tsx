@@ -122,7 +122,7 @@ export default function CaseStudyHealthcareEHRModernization() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 The Challenge
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6">
+              <h2 className="nx-h2 text-charcoal mb-6">
                 Fragmented patient records
               </h2>
               <div className="space-y-6 text-lg text-charcoal/70 leading-relaxed">
@@ -143,7 +143,7 @@ export default function CaseStudyHealthcareEHRModernization() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Our Approach
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6">
+              <h2 className="nx-h2 text-charcoal mb-6">
                 FHIR-based interoperability
               </h2>
               <div className="space-y-6 text-lg text-charcoal/70 leading-relaxed">
@@ -183,7 +183,7 @@ export default function CaseStudyHealthcareEHRModernization() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               Results
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+            <h2 className="nx-h2 text-white">
               Business Impact
             </h2>
           </motion.div>
@@ -277,7 +277,7 @@ export default function CaseStudyHealthcareEHRModernization() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Related Work
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+              <h2 className="nx-h2 text-charcoal">
                 More Success Stories
               </h2>
             </motion.div>
@@ -356,7 +356,7 @@ export default function CaseStudyHealthcareEHRModernization() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               Explore Further
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Related Capabilities
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

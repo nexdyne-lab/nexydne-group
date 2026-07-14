@@ -170,7 +170,7 @@ export default function OurImpact() {
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div {...fadeUp} className="grid md:grid-cols-2 border border-border bg-white overflow-hidden">
             <div className="p-9 sm:p-12 lg:p-14 flex flex-col justify-center">
-              <h2 className="text-[1.7rem] md:text-[2.1rem] font-semibold tracking-[-0.02em] leading-[1.15] text-charcoal">
+              <h2 className="nx-h2 text-charcoal">
                 Built to hand over, not to hold on to.
               </h2>
               <p className="text-[15px] md:text-base text-muted-foreground leading-[1.7] mt-5 max-w-md">
@@ -272,7 +272,7 @@ export default function OurImpact() {
             </div>
             <div className="bg-charcoal text-white p-9 sm:p-12 lg:p-14 flex flex-col justify-center">
               <span className="nx-eyebrow text-amber">Going further</span>
-              <h2 className="text-[1.7rem] md:text-[2.1rem] font-semibold tracking-[-0.02em] leading-[1.15] mt-4">
+              <h2 className="nx-h2 mt-4">
                 Expertise, where it counts most.
               </h2>
               <p className="text-[15px] md:text-base text-white/70 leading-[1.7] mt-5 max-w-md">
@@ -322,7 +322,7 @@ export default function OurImpact() {
           <motion.div {...fadeUp} className="border border-border bg-white p-8 sm:p-12">
             <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               <div className="lg:col-span-5">
-                <h2 className="text-[1.7rem] md:text-[2.1rem] font-semibold tracking-[-0.02em] text-charcoal">
+                <h2 className="nx-h2 text-charcoal">
                   Ready to talk?
                 </h2>
                 <p className="text-[15px] text-muted-foreground leading-relaxed mt-3">

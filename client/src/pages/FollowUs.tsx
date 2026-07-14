@@ -96,7 +96,7 @@ export default function FollowUs() {
                       {/* Content */}
                       <div className="flex-grow">
                         <div className="flex items-center gap-3 mb-2">
-                          <h2 className="text-2xl font-bold text-charcoal group-hover:text-primary transition-colors">
+                          <h2 className="nx-h2 text-charcoal group-hover:text-primary transition-colors">
                             {channel.name}
                           </h2>
                           <span className="text-sm text-muted-foreground">
@@ -136,7 +136,7 @@ export default function FollowUs() {
             <div className="w-16 h-16 bg-charcoal rounded-lg flex items-center justify-center mx-auto mb-6">
               <Mail className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-4">
+            <h2 className="nx-h2 text-charcoal mb-4">
               Subscribe to Our Newsletter
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-5 sm:mb-6 md:mb-8">
@@ -224,7 +224,7 @@ export default function FollowUs() {
       <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
+            <h2 className="nx-h2 mb-6">
               Content Guidelines
             </h2>
             <p className="text-lg text-white/80 leading-relaxed mb-5 sm:mb-6 md:mb-8">

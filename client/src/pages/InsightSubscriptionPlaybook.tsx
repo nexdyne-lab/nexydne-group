@@ -71,7 +71,7 @@ export default function InsightSubscriptionPlaybook() {
                     The subscription economy has grown 435% over the past decade, and it's no longer limited to software and streaming services. Traditional businesses across industries—from manufacturing to professional services—are discovering that subscription models can transform their economics and competitive position.
                   </p>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     Why subscriptions matter for traditional businesses
                   </h2>
                   
@@ -96,7 +96,7 @@ export default function InsightSubscriptionPlaybook() {
                     ))}
                   </div>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     Five subscription models for traditional businesses
                   </h2>
 
@@ -187,7 +187,7 @@ export default function InsightSubscriptionPlaybook() {
                     <li>Equipment rental (usage-based leasing)</li>
                   </ul>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     Building a successful subscription business
                   </h2>
 
@@ -249,7 +249,7 @@ export default function InsightSubscriptionPlaybook() {
                     <li><strong>Engagement tools:</strong> Drive usage and prevent churn</li>
                   </ul>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     The transition roadmap
                   </h2>
                   
@@ -290,7 +290,7 @@ export default function InsightSubscriptionPlaybook() {
                     </div>
                   </div>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     Conclusion
                   </h2>
                   

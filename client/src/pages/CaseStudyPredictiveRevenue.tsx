@@ -116,7 +116,7 @@ export default function CaseStudyPredictiveRevenue() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client is a rapidly growing B2B SaaS company providing workflow automation tools to growing enterprises. With 180 employees and $28M in annual recurring revenue, they were experiencing 40% year-over-year growth but struggling to forecast revenue accurately enough to make confident hiring and investment decisions.
@@ -156,7 +156,7 @@ export default function CaseStudyPredictiveRevenue() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Static budgets couldn't keep pace with growth
             </h2>
           </motion.div>
@@ -222,7 +222,7 @@ export default function CaseStudyPredictiveRevenue() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Driver-based revenue forecasting
             </h2>
           </motion.div>
@@ -347,7 +347,7 @@ export default function CaseStudyPredictiveRevenue() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Results & Impact
             </h2>
           </motion.div>
@@ -448,7 +448,7 @@ export default function CaseStudyPredictiveRevenue() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">More success stories</h2>
+            <h2 className="nx-h2 text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-5xl">

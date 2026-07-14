@@ -106,7 +106,7 @@ export default function FractionalCFOCaseStudies() {
                             </div>
                           </div>
 
-                          <h2 className="text-3xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
+                          <h2 className="nx-h2 text-charcoal mb-4 group-hover:text-primary transition-colors">
                             {study.title}
                           </h2>
 
@@ -156,7 +156,7 @@ export default function FractionalCFOCaseStudies() {
         <div className="bg-off-white py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-24">
           <div className="container">
             <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-6 sm:p-8 md:p-12 text-center shadow-lg">
-              <h2 className="text-3xl font-bold text-charcoal mb-6">
+              <h2 className="nx-h2 text-charcoal mb-6">
                 Ready to professionalize your finance function?
               </h2>
               <p className="text-lg text-muted-foreground mb-5 sm:mb-6 md:mb-8 max-w-2xl mx-auto">

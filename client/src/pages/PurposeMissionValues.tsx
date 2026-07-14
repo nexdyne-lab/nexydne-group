@@ -131,7 +131,7 @@ export default function PurposeMissionValues() {
             </div>
             <div className="p-9 sm:p-12 lg:p-14 flex flex-col justify-center">
               <span className="nx-eyebrow text-charcoal/55">Our purpose</span>
-              <h2 className="text-[1.7rem] md:text-[2.1rem] font-semibold tracking-[-0.02em] leading-[1.15] text-charcoal mt-4">
+              <h2 className="nx-h2 text-charcoal mt-4">
                 Complexity into clarity.
               </h2>
               <p className="text-[15px] md:text-base text-charcoal leading-[1.7] mt-5">
@@ -155,7 +155,7 @@ export default function PurposeMissionValues() {
           <motion.div {...fadeUp} className="grid md:grid-cols-2 border border-border overflow-hidden mb-12 lg:mb-14">
             <div className="p-9 sm:p-12 lg:p-14 flex flex-col justify-center bg-white">
               <span className="nx-eyebrow text-charcoal/55">Our mission</span>
-              <h2 className="text-[1.7rem] md:text-[2.1rem] font-semibold tracking-[-0.02em] leading-[1.15] text-charcoal mt-4">
+              <h2 className="nx-h2 text-charcoal mt-4">
                 Turn challenge into advantage.
               </h2>
               <p className="text-[15px] md:text-base text-charcoal leading-[1.7] mt-5">
@@ -260,7 +260,7 @@ export default function PurposeMissionValues() {
         <div className="container px-4 sm:px-6 md:px-12 py-16 md:py-20">
           <div className="grid lg:grid-cols-12 gap-8 items-center">
             <motion.div {...fadeUp} className="lg:col-span-8">
-              <h2 className="text-[1.8rem] md:text-[2.4rem] font-semibold tracking-[-0.02em] leading-[1.1]">
+              <h2 className="nx-h2">
                 Work with a team that shares your standards.
               </h2>
               <p className="text-[15px] md:text-base text-white/80 leading-[1.7] mt-5 max-w-2xl">

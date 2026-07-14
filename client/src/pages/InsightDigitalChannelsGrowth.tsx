@@ -71,7 +71,7 @@ export default function InsightDigitalChannelsGrowth() {
                     The digital transformation of commerce is no longer a future trend—it's the present reality. Growing companies that embrace digital channels are consistently outperforming their peers, achieving 2-5x revenue growth while reducing customer acquisition costs by 30-50%.
                   </p>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     The digital imperative for growing companies
                   </h2>
                   
@@ -90,7 +90,7 @@ export default function InsightDigitalChannelsGrowth() {
                     </p>
                   </div>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     Three digital channel strategies driving growth
                   </h2>
 
@@ -155,7 +155,7 @@ export default function InsightDigitalChannelsGrowth() {
                     </p>
                   </div>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     Implementation: From strategy to execution
                   </h2>
                   
@@ -205,7 +205,7 @@ export default function InsightDigitalChannelsGrowth() {
                     <li><strong>Data and analytics:</strong> Dashboards, attribution, and insights to guide decision-making</li>
                   </ul>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     Getting started: A practical roadmap
                   </h2>
                   
@@ -246,7 +246,7 @@ export default function InsightDigitalChannelsGrowth() {
                     </div>
                   </div>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     Conclusion
                   </h2>
                   

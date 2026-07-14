@@ -141,7 +141,7 @@ export default function DataSolutions() {
         <div className="container max-w-5xl mx-auto">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">What We Do</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8 text-charcoal">
+            <h2 className="nx-h2 mb-5 sm:mb-6 md:mb-8 text-charcoal">
               Turn data into competitive advantage
             </h2>
           </div>
@@ -171,7 +171,7 @@ export default function DataSolutions() {
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Our Capabilities</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+            <h2 className="nx-h2 text-charcoal">
               End-to-end data solutions
             </h2>
           </div>
@@ -282,7 +282,7 @@ export default function DataSolutions() {
       {/* CTA Section */}
       <section className="nx-section bg-charcoal text-white">
         <div className="container text-center max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
+          <h2 className="nx-h2 mb-5 sm:mb-6 md:mb-8">
             Ready to unlock your data's potential?
           </h2>
           <p className="text-xl opacity-90 mb-6 sm:mb-8 md:mb-12 leading-relaxed">

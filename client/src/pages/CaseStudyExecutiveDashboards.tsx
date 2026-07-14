@@ -120,7 +120,7 @@ export default function CaseStudyExecutiveDashboards() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client is a professional services firm specializing in management consulting and organizational transformation. With 150 consultants across 8 offices and $32M in annual revenue, they serve Fortune 500 clients in financial services, healthcare, and technology sectors. The firm operates on a project-based model with complex resource allocation, utilization tracking, and profitability analysis requirements.
@@ -160,7 +160,7 @@ export default function CaseStudyExecutiveDashboards() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Information overload paralyzed decision-making
             </h2>
           </motion.div>
@@ -227,7 +227,7 @@ export default function CaseStudyExecutiveDashboards() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Interactive dashboards that surface what matters
             </h2>
           </motion.div>
@@ -364,7 +364,7 @@ export default function CaseStudyExecutiveDashboards() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="nx-h2 text-white max-w-4xl">
               Results & Impact
             </h2>
           </motion.div>
@@ -466,7 +466,7 @@ export default function CaseStudyExecutiveDashboards() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">More success stories</h2>
+            <h2 className="nx-h2 text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-4 max-w-5xl">

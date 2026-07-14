@@ -81,7 +81,7 @@ export default function IPaaS() {
         <div className="container max-w-5xl mx-auto">
           <div className="mb-8 sm:mb-12 md:mb-16">
             <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Understanding iPaaS</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+            <h2 className="nx-h2 text-charcoal">
               The integration challenge
             </h2>
           </div>
@@ -114,7 +114,7 @@ export default function IPaaS() {
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-6 sm:p-6 sm:p-8 md:p-12 lg:gap-8 sm:gap-6 sm:p-8 md:p-12 lg:gap-16 items-start max-w-7xl mx-auto">
             <div>
               <p className="text-sm font-semibold tracking-widest uppercase mb-6 text-amber">Our Methodology</p>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
+              <h2 className="nx-h2 mb-5 sm:mb-6 md:mb-8">
                 From fragmentation to orchestration
               </h2>
               <p className="text-xl leading-relaxed opacity-90 mb-5 sm:mb-6 md:mb-8">
@@ -180,7 +180,7 @@ export default function IPaaS() {
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Platform Capabilities</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+            <h2 className="nx-h2 text-charcoal">
               Comprehensive integration infrastructure
             </h2>
           </div>
@@ -242,7 +242,7 @@ export default function IPaaS() {
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Related Capabilities</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+            <h2 className="nx-h2 text-charcoal">
               Complementary automation technologies
             </h2>
           </div>
@@ -284,7 +284,7 @@ export default function IPaaS() {
       {/* CTA Section */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal text-white">
         <div className="container max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
+          <h2 className="nx-h2 mb-5 sm:mb-6 md:mb-8">
             Ready to unify your technology ecosystem?
           </h2>
           <p className="text-xl leading-relaxed opacity-90 mb-6 sm:mb-8 md:mb-12">

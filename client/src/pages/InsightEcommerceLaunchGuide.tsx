@@ -71,7 +71,7 @@ export default function InsightEcommerceLaunchGuide() {
                     Launching e-commerce doesn't have to take years or cost millions. With the right approach, you can go from zero to generating revenue in 90 days. This guide provides a practical, week-by-week roadmap based on our experience launching dozens of e-commerce initiatives.
                   </p>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     The 90-day framework
                   </h2>
                   
@@ -86,7 +86,7 @@ export default function InsightEcommerceLaunchGuide() {
                     </p>
                   </div>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     Phase 1: Foundation (Weeks 1-4)
                   </h2>
 
@@ -176,7 +176,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <li>Set up project management and communication tools</li>
                   </ul>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     Phase 2: Build (Weeks 5-10)
                   </h2>
 
@@ -255,7 +255,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <li>Load testing if expecting significant traffic</li>
                   </ul>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     Phase 3: Launch (Weeks 11-12)
                   </h2>
 
@@ -291,7 +291,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <li>Be ready to respond quickly to issues</li>
                   </ul>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     Post-launch: The first 30 days
                   </h2>
                   
@@ -316,7 +316,7 @@ export default function InsightEcommerceLaunchGuide() {
                     ))}
                   </div>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     Common pitfalls to avoid
                   </h2>
                   
@@ -329,7 +329,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <li><strong>Underestimating fulfillment:</strong> Test your fulfillment process before launch.</li>
                   </ul>
 
-                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
                     Conclusion
                   </h2>
                   

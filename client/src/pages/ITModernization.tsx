@@ -143,7 +143,7 @@ export default function ITModernization() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Why Modernize
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Transform your technology landscape
             </h2>
           </motion.div>
@@ -211,7 +211,7 @@ export default function ITModernization() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Understanding IT Modernization
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">
+              <h2 className="nx-h2 text-charcoal mb-5 sm:mb-6 md:mb-8">
                 The <span className="text-primary">legacy trap</span>
               </h2>
 
@@ -267,7 +267,7 @@ export default function ITModernization() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Our Capabilities
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Modernization services
             </h2>
             <p className="text-xl text-charcoal/60 max-w-2xl">
@@ -359,7 +359,7 @@ export default function ITModernization() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Our Impact
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+              <h2 className="nx-h2 text-charcoal">
                 Modernization success stories
               </h2>
             </motion.div>
@@ -438,7 +438,7 @@ export default function ITModernization() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Technology Partners
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Modernization technology stack
             </h2>
           </motion.div>
@@ -463,7 +463,7 @@ export default function ITModernization() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Self-Assessment
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Is your IT ready for modernization?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -492,7 +492,7 @@ export default function ITModernization() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Explore Further
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Related Capabilities
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

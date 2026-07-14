@@ -188,7 +188,7 @@ export default function VenturePortfolio() {
       {/* CTA Section */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="nx-h2 mb-6">
             Have a concept ready to scale?
           </h2>
           <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto">

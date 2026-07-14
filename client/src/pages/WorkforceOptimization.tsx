@@ -69,7 +69,7 @@ export default function WorkforceOptimization() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 The Challenge
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-5 sm:mb-6 md:mb-8">
+              <h2 className="nx-h2 mb-5 sm:mb-6 md:mb-8">
                 Your people are your <br />
                 <span className="text-primary">greatest asset.</span>
               </h2>
@@ -136,7 +136,7 @@ export default function WorkforceOptimization() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Our Capabilities
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Comprehensive workforce solutions
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl">
@@ -217,7 +217,7 @@ export default function WorkforceOptimization() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Our Approach
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              <h2 className="nx-h2 mb-6">
                 The NexDyne <span className="text-primary">Methodology</span>
               </h2>
               <p className="text-lg text-charcoal/70 leading-relaxed mb-5 sm:mb-6 md:mb-8">
@@ -275,7 +275,7 @@ export default function WorkforceOptimization() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Our Impact
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+              <h2 className="nx-h2 text-charcoal">
                 Workforce transformations
               </h2>
             </motion.div>
@@ -346,7 +346,7 @@ export default function WorkforceOptimization() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Why NexDyne
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               The workforce partner <br />you've been looking for
             </h2>
           </motion.div>

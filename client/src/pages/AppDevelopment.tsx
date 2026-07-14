@@ -42,7 +42,7 @@ export default function AppDevelopment() {
         <div className="container max-w-5xl mx-auto">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">What We Do</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8 text-charcoal">
+            <h2 className="nx-h2 mb-5 sm:mb-6 md:mb-8 text-charcoal">
               Applications that work for you
             </h2>
           </div>
@@ -66,7 +66,7 @@ export default function AppDevelopment() {
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Our Capabilities</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+            <h2 className="nx-h2 text-charcoal">
               Comprehensive development solutions
             </h2>
           </div>
@@ -152,7 +152,7 @@ export default function AppDevelopment() {
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Success Stories</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+            <h2 className="nx-h2 text-charcoal">
               Applications that transform businesses
             </h2>
           </div>
@@ -240,7 +240,7 @@ export default function AppDevelopment() {
       {/* CTA Section */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal text-white">
         <div className="container max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
+          <h2 className="nx-h2 mb-5 sm:mb-6 md:mb-8">
             Ready to build your application?
           </h2>
           <p className="text-xl leading-relaxed opacity-90 mb-6 sm:mb-8 md:mb-12 max-w-2xl mx-auto">

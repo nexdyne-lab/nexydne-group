@@ -101,7 +101,7 @@ export default function CaseStudyTrainingSubscription() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Company Overview
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-5 sm:mb-6 md:mb-8">
+              <h2 className="nx-h2 mb-5 sm:mb-6 md:mb-8">
                 A training company seeking sustainable growth
               </h2>
               
@@ -163,7 +163,7 @@ export default function CaseStudyTrainingSubscription() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">
+            <h2 className="nx-h2 text-charcoal mb-5 sm:mb-6 md:mb-8">
               Breaking free from the workshop treadmill
             </h2>
 
@@ -215,7 +215,7 @@ export default function CaseStudyTrainingSubscription() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            <h2 className="nx-h2 mb-6">
               A comprehensive learning membership platform
             </h2>
             <p className="text-xl text-charcoal/60 max-w-3xl mx-auto">
@@ -300,7 +300,7 @@ export default function CaseStudyTrainingSubscription() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Implementation
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            <h2 className="nx-h2 mb-6">
               Building a subscription business in 12 months
             </h2>
           </motion.div>
@@ -365,7 +365,7 @@ export default function CaseStudyTrainingSubscription() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               Results
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="nx-h2 text-white mb-6">
               From workshops to recurring revenue
             </h2>
             <p className="text-xl text-white/70 max-w-3xl mx-auto">
@@ -433,7 +433,7 @@ export default function CaseStudyTrainingSubscription() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+            <h2 className="nx-h2">
               More digital growth success stories
             </h2>
           </motion.div>
@@ -504,7 +504,7 @@ export default function CaseStudyTrainingSubscription() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Ready to build recurring revenue?
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed mb-10">

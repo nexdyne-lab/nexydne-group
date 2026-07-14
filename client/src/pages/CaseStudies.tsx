@@ -113,7 +113,7 @@ export function CaseStudies() {
         <div className="px-6 sm:px-8 md:px-12 lg:px-16">
           <div className="max-w-3xl mx-auto text-center">
             <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">Get Started</span>
-            <h2 className="text-3xl sm:text-4xl md:text-[2.5rem] text-charcoal leading-[1.15] mb-6" style={{ fontWeight: 500, letterSpacing: "-0.02em" }}>Ready to Create Your Own Success Story?</h2>
+            <h2 className="nx-h2 text-charcoal mb-6" style={{ fontWeight: 500, letterSpacing: "-0.02em" }}>Ready to Create Your Own Success Story?</h2>
             <p className="text-base sm:text-lg text-charcoal/70 leading-[1.7] mb-10 max-w-2xl mx-auto">Join the growing number of organizations transforming their operations with NexDyne.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact"><span className="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold text-[13px] tracking-[0.1em] uppercase hover:bg-primary-hover transition-colors cursor-pointer">Contact Us</span></Link>

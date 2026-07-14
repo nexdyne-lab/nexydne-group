@@ -41,7 +41,7 @@ export default function IntelligentProcessOptimizationNew() {
         <div className="container max-w-5xl mx-auto">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">The Challenge</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8 text-charcoal">
+            <h2 className="nx-h2 mb-5 sm:mb-6 md:mb-8 text-charcoal">
               Your operations are drowning in manual work
             </h2>
           </div>
@@ -65,7 +65,7 @@ export default function IntelligentProcessOptimizationNew() {
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Our Approach</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+            <h2 className="nx-h2 text-charcoal">
               How we eliminate operational bottlenecks
             </h2>
           </div>
@@ -139,7 +139,7 @@ export default function IntelligentProcessOptimizationNew() {
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Impact</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+            <h2 className="nx-h2 text-charcoal">
               Measurable outcomes that accelerate growth
             </h2>
           </div>
@@ -184,7 +184,7 @@ export default function IntelligentProcessOptimizationNew() {
           <div className="max-w-4xl mx-auto bg-white rounded-xl sm:rounded-2xl shadow-xl overflow-hidden">
             <div className="p-6 sm:p-6 sm:p-8 md:p-12">
               <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-primary">Case Study</p>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-charcoal">
+              <h2 className="nx-h2 mb-6 text-charcoal">
                 Regional logistics company cuts shipment processing time by 75%
               </h2>
               <p className="text-xl text-charcoal/80 leading-relaxed mb-5 sm:mb-6 md:mb-8">
@@ -216,7 +216,7 @@ export default function IntelligentProcessOptimizationNew() {
       {/* CTA Section */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-24 bg-charcoal text-white">
         <div className="container text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="nx-h2 mb-6">
             Ready to eliminate operational bottlenecks?
           </h2>
           <p className="text-xl opacity-90 mb-10 max-w-2xl mx-auto">

@@ -108,7 +108,7 @@ export default function CaseStudyRetailEcommerce() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Company Overview
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-5 sm:mb-6 md:mb-8">
+              <h2 className="nx-h2 mb-5 sm:mb-6 md:mb-8">
                 A specialty retailer ready for digital transformation
               </h2>
               
@@ -170,7 +170,7 @@ export default function CaseStudyRetailEcommerce() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">
+            <h2 className="nx-h2 text-charcoal mb-5 sm:mb-6 md:mb-8">
               Competing in a digital-first retail landscape
             </h2>
             
@@ -222,7 +222,7 @@ export default function CaseStudyRetailEcommerce() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            <h2 className="nx-h2 mb-6">
               A comprehensive digital commerce platform
             </h2>
             <p className="text-xl text-charcoal/60 max-w-3xl mx-auto">
@@ -307,7 +307,7 @@ export default function CaseStudyRetailEcommerce() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Implementation
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            <h2 className="nx-h2 mb-6">
               From kickoff to launch in 10 weeks
             </h2>
           </motion.div>
@@ -372,7 +372,7 @@ export default function CaseStudyRetailEcommerce() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               Results
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Transformative business outcomes
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -440,7 +440,7 @@ export default function CaseStudyRetailEcommerce() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+            <h2 className="nx-h2">
               More digital growth success stories
             </h2>
           </motion.div>
@@ -511,7 +511,7 @@ export default function CaseStudyRetailEcommerce() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Ready to launch your digital growth initiative?
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed mb-10">

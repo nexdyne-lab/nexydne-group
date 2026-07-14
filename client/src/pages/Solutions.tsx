@@ -192,7 +192,7 @@ export default function Solutions() {
           >
             <div className="max-w-2xl">
               <span aria-hidden className="mb-4 block h-[3px] w-10 bg-amber" />
-              <h2 className="text-[1.75rem] font-bold leading-[1.15] tracking-[-0.02em] md:text-[2.25rem]">
+              <h2 className="nx-h2">
                 Not sure which solution fits?
               </h2>
               <p className="mt-4 text-[1.05rem] leading-[1.6] text-white/70">

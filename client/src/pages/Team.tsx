@@ -105,7 +105,7 @@ export default function Team() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-tight mb-6">
+                <h2 className="nx-h2 text-charcoal mb-6">
                   Built on trust.<br />
                   Driven by results.
                 </h2>
@@ -146,7 +146,7 @@ export default function Team() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl text-charcoal mb-6">
+            <h2 className="nx-h2 text-charcoal mb-6">
               Meet our consultants
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -222,7 +222,7 @@ export default function Team() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6">
+              <h2 className="nx-h2 mb-6">
                 Ready to transform your business?
               </h2>
               <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto">

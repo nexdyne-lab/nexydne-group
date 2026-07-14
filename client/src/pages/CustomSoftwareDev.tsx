@@ -188,7 +188,7 @@ export default function CustomSoftwareDev() {
         <div className="container max-w-5xl mx-auto">
           <div className="mb-8 sm:mb-12 md:mb-16">
             <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Understanding Custom Software</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+            <h2 className="nx-h2 text-charcoal">
               Built for you, not the masses
             </h2>
           </div>
@@ -227,7 +227,7 @@ export default function CustomSoftwareDev() {
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-6 sm:p-6 sm:p-8 md:p-12 lg:gap-8 sm:gap-6 sm:p-8 md:p-12 lg:gap-16 items-start max-w-7xl mx-auto">
             <div>
               <p className="text-sm font-semibold tracking-widest uppercase mb-6 text-amber">Our Methodology</p>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
+              <h2 className="nx-h2 mb-5 sm:mb-6 md:mb-8">
                 Iterative development, continuous value
               </h2>
               <p className="text-xl leading-relaxed opacity-90 mb-5 sm:mb-6 md:mb-8">
@@ -306,7 +306,7 @@ export default function CustomSoftwareDev() {
       {/* CTA Section */}
       <section className="nx-section bg-charcoal text-white">
         <div className="container text-center max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
+          <h2 className="nx-h2 mb-5 sm:mb-6 md:mb-8">
             Ready to build software that fits?
           </h2>
           <p className="text-xl opacity-90 mb-6 sm:mb-8 md:mb-12 leading-relaxed">

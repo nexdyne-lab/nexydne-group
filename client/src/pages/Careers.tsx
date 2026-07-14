@@ -115,7 +115,7 @@ export default function Careers() {
             </div>
             <div className="bg-white p-9 sm:p-12 lg:p-14 flex flex-col justify-center">
               <span className="nx-eyebrow text-charcoal/55">Life at NexDyne</span>
-              <h2 className="text-[1.7rem] md:text-[2.1rem] font-semibold tracking-[-0.02em] leading-[1.15] text-charcoal mt-4">
+              <h2 className="nx-h2 text-charcoal mt-4">
                 High trust. High standards.
               </h2>
               <p className="text-[15px] md:text-base text-charcoal leading-[1.7] mt-5">

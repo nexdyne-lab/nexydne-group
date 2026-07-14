@@ -171,7 +171,7 @@ export default function Cases() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               NexDyne Insights
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Latest thinking</h2>
+            <h2 className="nx-h2 text-white">Latest thinking</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:p-6 md:p-8 mb-6 sm:mb-8 md:mb-12">
