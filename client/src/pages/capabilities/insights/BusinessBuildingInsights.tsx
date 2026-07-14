@@ -2,58 +2,58 @@ import InsightsListing from "@/components/InsightsListing";
 
 const insights = [
   {
-    title: "The Venture Playbook: Building New Businesses Without VC",
+    title: "The Digital Venture Playbook for Growing Companies",
     excerpt:
-      "How established mid-size companies can launch new ventures using internal resources and strategic partnerships.",
-    href: "/capabilities/business-building/insights/venture-playbook",
-    date: "January 2026",
-    readTime: "10 min",
+      "A practical framework for launching new digital businesses within established growing organizations.",
+    href: "/capabilities/business-building/insights/digital-venture-playbook",
+    date: "June 2026",
+    readTime: "15 min",
+    category: "Business Building",
+  },
+  {
+    title: "The Corporate Venture Advantage: Why Established Assets + Startup Speed Wins",
+    excerpt:
+      "When incumbents learn to leverage their unfair advantages—data, distribution, and domain expertise—they don't just compete with startups.",
+    href: "/insights/corporate-venture-advantage",
+    date: "May 2026",
+    readTime: "6 min",
     category: "Strategy",
   },
   {
-    title: "Corporate Innovation That Actually Works",
+    title: "From MVP to scale: navigating the 'Valley of Death'",
     excerpt:
-      "Lessons from 30 innovation initiatives at growing companies: what separates successful ventures from expensive experiments.",
-    href: "/capabilities/business-building/insights/corporate-innovation",
+      "Building an MVP is easy. Turning it into a scalable, revenue-generating business is where 90% of corporate ventures fail.",
+    href: "/insights/from-mvp-to-scale",
+    date: "April 2026",
+    readTime: "10 min",
+    category: "Guide",
+  },
+  {
+    title: "Market Entry Architecture: Designing for Scalability from Day One",
+    excerpt:
+      "Why most market entries fail due to strategic debt, and how to architect a go-to-market motion that scales like software.",
+    href: "/insights/market-entry-architecture",
+    date: "March 2026",
+    readTime: "6 min",
+    category: "Strategy",
+  },
+  {
+    title: "The marketplace playbook: Building network effects",
+    excerpt:
+      "A comprehensive guide to launching and scaling two-sided marketplaces that create sustainable competitive advantages.",
+    href: "/insights/marketplace-playbook",
+    date: "February 2026",
+    readTime: "15 min",
+    category: "Whitepaper",
+  },
+  {
+    title: "The Complete Guide to Series A Fundraising Preparation",
+    excerpt:
+      "The gap between seed funding and institutional capital is wider than most founders anticipate, and preparation determines outcomes.",
+    href: "/insights/series-a-fundraising-guide",
     date: "January 2026",
-    readTime: "8 min",
-    category: "Innovation",
-  },
-  {
-    title: "From Service to Product: The Productization Journey",
-    excerpt:
-      "A framework for service companies looking to build scalable product offerings without losing their service DNA.",
-    href: "/capabilities/business-building/insights/productization",
-    date: "December 2025",
-    readTime: "9 min",
-    category: "Business Model",
-  },
-  {
-    title: "Building Adjacent Businesses: When to Expand Your Core",
-    excerpt:
-      "How to identify and evaluate adjacent market opportunities that leverage your existing capabilities.",
-    href: "/capabilities/business-building/insights/adjacent-expansion",
-    date: "December 2025",
-    readTime: "7 min",
-    category: "Growth",
-  },
-  {
-    title: "The Partnership Advantage: Accelerating Growth Through Alliances",
-    excerpt:
-      "Strategic partnership models that help mid-size companies compete with larger players.",
-    href: "/capabilities/business-building/insights/partnership-models",
-    date: "November 2025",
-    readTime: "8 min",
-    category: "Partnerships",
-  },
-  {
-    title: "Digital Business Models for Traditional Industries",
-    excerpt:
-      "How companies in manufacturing, distribution, and services are building digital revenue streams.",
-    href: "/capabilities/business-building/insights/digital-business-models",
-    date: "November 2025",
-    readTime: "11 min",
-    category: "Digital",
+    readTime: "12 min",
+    category: "Capital Raising",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function BusinessBuildingInsights() {
   return (
     <InsightsListing
       title="Business Building Insights"
-      subtitle="Expert perspectives on launching new ventures, corporate innovation, and building sustainable growth engines for mid-size companies."
+      subtitle="Expert perspectives on launching new ventures, corporate innovation, and building sustainable growth engines for growing companies."
       parentTitle="Business Building"
       parentHref="/capabilities/business-building"
       insights={insights}

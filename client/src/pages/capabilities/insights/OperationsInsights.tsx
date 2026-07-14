@@ -11,12 +11,12 @@ const insights = [
     category: "Lean",
   },
   {
-    title: "Supply Chain Resilience: Lessons from Recent Disruptions",
+    title: "Building Supply Chain Resilience Without Breaking the Bank",
     excerpt:
-      "How mid-size companies can build supply chain resilience without the resources of global enterprises.",
+      "Practical strategies for growing companies to strengthen supply chain resilience while managing costs.",
     href: "/capabilities/operations/insights/supply-chain-resilience",
     date: "January 2026",
-    readTime: "10 min",
+    readTime: "11 min",
     category: "Supply Chain",
   },
   {
@@ -61,7 +61,7 @@ export default function OperationsInsights() {
   return (
     <InsightsListing
       title="Operations Insights"
-      subtitle="Expert perspectives on operational excellence, supply chain management, and process optimization for mid-size companies."
+      subtitle="Expert perspectives on operational excellence, supply chain management, and process optimization for growing companies."
       parentTitle="Operations"
       parentHref="/capabilities/operations"
       insights={insights}

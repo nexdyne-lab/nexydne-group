@@ -11,7 +11,7 @@ const insights = [
     category: "Leadership",
   },
   {
-    title: "Capital Raising in 2026: What Mid-Size Companies Need to Know",
+    title: "Capital Raising in 2026: What Growing Companies Need to Know",
     excerpt:
       "Current market conditions, investor expectations, and strategies for successful fundraising.",
     href: "/capabilities/strategy-corporate-finance/insights/capital-raising-2026",
@@ -61,7 +61,7 @@ export default function StrategyFinanceInsights() {
   return (
     <InsightsListing
       title="Strategy & Corporate Finance Insights"
-      subtitle="Expert perspectives on strategic finance, capital markets, and corporate development for mid-size companies pursuing growth."
+      subtitle="Expert perspectives on strategic finance, capital markets, and corporate development for growing companies pursuing their next stage of growth."
       parentTitle="Strategy & Corporate Finance"
       parentHref="/capabilities/strategy-corporate-finance"
       insights={insights}

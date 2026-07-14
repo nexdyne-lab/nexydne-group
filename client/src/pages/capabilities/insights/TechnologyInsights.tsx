@@ -2,58 +2,58 @@ import InsightsListing from "@/components/InsightsListing";
 
 const insights = [
   {
-    title: "Cloud Migration for Mid-Size Companies: A Practical Guide",
+    title: "The Cloud Migration Roadmap for Growing Companies",
     excerpt:
-      "How to plan and execute cloud migration without enterprise-level budgets or dedicated IT teams.",
-    href: "/capabilities/technology/insights/cloud-migration-guide",
+      "A practical guide to planning and executing cloud migration without enterprise-level budgets or teams.",
+    href: "/capabilities/technology/insights/cloud-migration-roadmap",
     date: "January 2026",
-    readTime: "12 min",
+    readTime: "14 min",
     category: "Cloud",
   },
   {
-    title: "Technical Debt: When to Pay It Down and When to Live With It",
+    title: "Cloud-Native Architecture for Scale",
     excerpt:
-      "A framework for prioritizing technical debt reduction based on business impact and opportunity cost.",
-    href: "/capabilities/technology/insights/technical-debt",
+      "The principles of building resilient, scalable cloud-native systems that grow with your ambition.",
+    href: "/insights/cloud-native-architecture",
+    date: "August 2025",
+    readTime: "18 min",
+    category: "Architecture",
+  },
+  {
+    title: "The Modern Enterprise Integration Playbook",
+    excerpt:
+      "A guide to connecting legacy systems with modern cloud platforms while maintaining security and compliance.",
+    href: "/insights/enterprise-integration-playbook",
+    date: "August 2025",
+    readTime: "15 min",
+    category: "Integration",
+  },
+  {
+    title: "Building Scalable Data Architectures",
+    excerpt:
+      "The architectural patterns and technology choices that scale data operations from millions to billions of events.",
+    href: "/insights/scalable-data-architecture",
+    date: "September 2025",
+    readTime: "8 min",
+    category: "Data",
+  },
+  {
+    title: "The Millisecond Imperative: Real-Time Decision Architectures",
+    excerpt:
+      "The technical stack required to process user signals and serve personalized recommendations in under 50ms.",
+    href: "/insights/real-time-decision-architectures",
+    date: "March 2026",
+    readTime: "10 min",
+    category: "Engineering",
+  },
+  {
+    title: "Privacy by Design: Building Trust in the Age of AI",
+    excerpt:
+      "How to deliver hyper-relevant experiences while adhering to the strictest data privacy standards.",
+    href: "/insights/privacy-by-design",
     date: "January 2026",
     readTime: "8 min",
-    category: "Architecture",
-  },
-  {
-    title: "The Build vs. Buy Decision in 2026",
-    excerpt:
-      "Updated guidance on when to build custom solutions versus adopting SaaS platforms, with cost models.",
-    href: "/capabilities/technology/insights/build-vs-buy",
-    date: "December 2025",
-    readTime: "10 min",
-    category: "Strategy",
-  },
-  {
-    title: "Cybersecurity Essentials for Growing Companies",
-    excerpt:
-      "The security investments that matter most for mid-size companies, prioritized by risk and cost.",
-    href: "/capabilities/technology/insights/cybersecurity-essentials",
-    date: "December 2025",
-    readTime: "9 min",
     category: "Security",
-  },
-  {
-    title: "API-First Architecture: Enabling Future Growth",
-    excerpt:
-      "How API-first design enables faster integration, better partnerships, and more agile operations.",
-    href: "/capabilities/technology/insights/api-first",
-    date: "November 2025",
-    readTime: "7 min",
-    category: "Architecture",
-  },
-  {
-    title: "Managing Technology Vendors: A Practical Playbook",
-    excerpt:
-      "Strategies for getting enterprise-quality service from technology vendors without enterprise budgets.",
-    href: "/capabilities/technology/insights/vendor-management",
-    date: "November 2025",
-    readTime: "8 min",
-    category: "Operations",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function TechnologyInsights() {
   return (
     <InsightsListing
       title="Technology Insights"
-      subtitle="Expert perspectives on technology strategy, architecture, and operations for mid-size companies navigating digital transformation."
+      subtitle="Expert perspectives on technology strategy, architecture, and operations for growing companies navigating digital transformation."
       parentTitle="Technology"
       parentHref="/capabilities/technology"
       insights={insights}

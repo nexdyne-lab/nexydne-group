@@ -4,9 +4,9 @@ const insights = [
   {
     title: "The ROI of AI: What Mid-Size Companies Need to Know",
     excerpt:
-      "A practical framework for measuring AI investment returns, with benchmarks from 50+ implementations at growing companies.",
+      "A practical framework for measuring AI investment returns, with benchmarks from more than 50 implementations at growing companies.",
     href: "/capabilities/artificial-intelligence/insights/ai-roi-framework",
-    date: "January 2026",
+    date: "January 15, 2026",
     readTime: "8 min",
     category: "Strategy",
   },
@@ -29,31 +29,31 @@ const insights = [
     category: "Governance",
   },
   {
-    title: "Generative AI in Operations: Beyond the Hype",
+    title: "The AI Adoption Outlook 2026: Why the Winners Will Govern First",
     excerpt:
-      "Practical applications of generative AI for mid-size operations, from document processing to customer service.",
-    href: "/capabilities/artificial-intelligence/insights/generative-ai-operations",
-    date: "December 2025",
-    readTime: "9 min",
-    category: "Operations",
+      "AI is now everywhere and delivering almost nowhere at scale. As the agentic era arrives, the organizations that pull ahead will be the ones that govern first.",
+    href: "/insights/ai-adoption-outlook-2026",
+    date: "July 1, 2026",
+    readTime: "11 min",
+    category: "AI Strategy",
   },
   {
-    title: "The AI Talent Gap: Strategies for Growing Companies",
+    title: "Why Intelligent Automation Isn't Optional Anymore",
     excerpt:
-      "How to build AI capabilities when you can't compete with Big Tech salaries, including partnerships and upskilling approaches.",
-    href: "/capabilities/artificial-intelligence/insights/ai-talent-strategy",
-    date: "November 2025",
-    readTime: "7 min",
-    category: "Talent",
+      "What was once positioned as a competitive advantage has become table stakes. Intelligent automation is now essential to survival in modern business.",
+    href: "/insights/why-intelligent-automation",
+    date: "November 30, 2025",
+    readTime: "5 min",
+    category: "Automation",
   },
   {
-    title: "Machine Learning vs. Rule-Based Automation: When to Use Each",
+    title: "Why Change Management Determines AI Project Success",
     excerpt:
-      "A decision framework for choosing the right automation approach based on your data, complexity, and business goals.",
-    href: "/capabilities/artificial-intelligence/insights/ml-vs-rules",
-    date: "November 2025",
-    readTime: "6 min",
-    category: "Technology",
+      "Technology is the easy part. Adoption, behavior change, and cultural alignment determine whether AI investments deliver returns or become expensive shelfware.",
+    href: "/insights/change-management-ai-success",
+    date: "January 2026",
+    readTime: "10 min",
+    category: "Change Management",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function AIInsights() {
   return (
     <InsightsListing
       title="Artificial Intelligence Insights"
-      subtitle="Expert perspectives on AI strategy, implementation, and governance for mid-size companies navigating the AI transformation."
+      subtitle="Expert perspectives on AI strategy, implementation, and governance for growing companies navigating the AI transformation."
       parentTitle="Artificial Intelligence"
       parentHref="/capabilities/artificial-intelligence"
       insights={insights}

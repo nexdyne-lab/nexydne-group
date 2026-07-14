@@ -9,6 +9,7 @@ import { SEO } from "@/components/SEO";
 const insights = [
   {
     id: "beyond-segmentation",
+    href: "/solutions/data-driven-customer-intelligence/insights/beyond-segmentation",
     title: "Beyond Segmentation: The Future of Customer Intelligence",
     category: "Strategy",
     description: "Why traditional customer segmentation is failing and how AI-powered behavioral intelligence is reshaping how companies understand and engage customers.",
@@ -18,6 +19,7 @@ const insights = [
   },
   {
     id: "churn-prediction-playbook",
+    href: "/solutions/data-driven-customer-intelligence/insights/churn-prediction-playbook",
     title: "The Churn Prediction Playbook for Growth-Stage SaaS",
     category: "Technology",
     description: "A practical guide to building and deploying churn prediction models that actually drive retention—from feature engineering to intervention automation.",
@@ -27,6 +29,7 @@ const insights = [
   },
   {
     id: "hyper-personalization",
+    href: "/solutions/data-driven-customer-intelligence/insights/hyper-personalization",
     title: "Hyper-Personalization at Scale: A Practical Guide",
     category: "Marketing",
     description: "How to move from basic segmentation to true 1:1 personalization without drowning in complexity or burning through your marketing budget.",
@@ -35,29 +38,32 @@ const insights = [
     featured: true
   },
   {
-    id: "customer-data-platforms",
-    title: "The Executive Guide to Customer Data Platforms",
-    category: "Technology",
-    description: "Cutting through the CDP hype: what these platforms actually do, when you need one, and how to evaluate vendors for your specific use cases.",
-    readTime: "14 min read",
+    id: "customer-intelligence",
+    href: "/insights/customer-intelligence",
+    title: "Customer Intelligence for Growing Businesses",
+    category: "Customer Strategy",
+    description: "How to build data-driven customer insights that drive retention and revenue without enterprise-scale complexity.",
+    readTime: "7 min read",
     image: "/images/capabilities/cap-colleagues-smile.jpg",
     featured: false
   },
   {
-    id: "ltv-modeling",
-    title: "Customer Lifetime Value Modeling: From Theory to Practice",
+    id: "why-nps-is-a-vanity-metric",
+    href: "/insights/why-nps-is-a-vanity-metric",
+    title: "Why NPS is a Vanity Metric (And What to Track Instead)",
     category: "Analytics",
-    description: "A comprehensive guide to building LTV models that inform acquisition strategy, customer success prioritization, and marketing investment decisions.",
-    readTime: "18 min read",
+    description: "Net Promoter Score tells you how customers felt yesterday. It doesn't tell you who will leave tomorrow. Here is the engineering approach to health scoring.",
+    readTime: "6 min read",
     image: "/images/capabilities/cap-ai-search.jpg",
     featured: false
   },
   {
-    id: "journey-orchestration",
-    title: "Journey Orchestration: The Next Frontier in Customer Experience",
+    id: "economics-of-loyalty",
+    href: "/insights/economics-of-loyalty",
+    title: "The Economics of Loyalty: Why Points Programs Fail",
     category: "Marketing",
-    description: "How leading companies are moving from campaign-centric to journey-centric engagement—and the technology and organizational changes required.",
-    readTime: "11 min read",
+    description: "Most loyalty programs are just disguised price cuts. We analyze the math behind behavioral rewards versus margin-killing discounts.",
+    readTime: "8 min read",
     image: "/images/capabilities/cap-conference-data.jpg",
     featured: false
   }
@@ -130,10 +136,10 @@ export default function CustomerIntelligenceInsights() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Link href={`/solutions/data-driven-customer-intelligence/insights/${insight.id}`} className="group block">
+                <Link href={insight.href ?? `/solutions/data-driven-customer-intelligence/insights/${insight.id}`} className="group block">
                   <div className="relative overflow-hidden rounded-xl aspect-[4/3] mb-6">
-                    <img 
-                      src={insight.image} 
+                    <img
+                      src={insight.image}
                       alt={insight.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
@@ -184,10 +190,10 @@ export default function CustomerIntelligenceInsights() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Link href={`/solutions/data-driven-customer-intelligence/insights/${insight.id}`} className="group block">
+                <Link href={insight.href ?? `/solutions/data-driven-customer-intelligence/insights/${insight.id}`} className="group block">
                   <div className="relative overflow-hidden rounded-xl aspect-[4/3] mb-6">
-                    <img 
-                      src={insight.image} 
+                    <img
+                      src={insight.image}
                       alt={insight.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
