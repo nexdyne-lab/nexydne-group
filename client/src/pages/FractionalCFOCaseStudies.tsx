@@ -65,7 +65,7 @@ export default function FractionalCFOCaseStudies() {
         <div className="bg-charcoal text-white py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-24">
           <div className="container">
             <div className="max-w-4xl">
-              <div className="text-sm font-semibold text-primary mb-4 uppercase tracking-wider">
+              <div className="text-sm font-semibold text-amber mb-4 uppercase tracking-wider">
                 Case Studies
               </div>
               <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3">
