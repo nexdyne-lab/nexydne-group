@@ -70,6 +70,17 @@ export default function CookieConsent() {
 
   const persist = (prefs: CookiePreferences) => {
     localStorage.setItem(COOKIE_CONSENT_KEY, JSON.stringify(prefs));
+    // Tell Google Analytics (Consent Mode v2) about the choice so it only
+    // stores cookies for the categories the visitor allowed.
+    const gtag = (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag;
+    if (typeof gtag === "function") {
+      gtag("consent", "update", {
+        analytics_storage: prefs.analytics ? "granted" : "denied",
+        ad_storage: prefs.marketing ? "granted" : "denied",
+        ad_user_data: prefs.marketing ? "granted" : "denied",
+        ad_personalization: prefs.marketing ? "granted" : "denied",
+      });
+    }
     setIsVisible(false);
     setShowPreferences(false);
   };
