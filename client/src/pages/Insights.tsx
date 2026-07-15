@@ -394,8 +394,8 @@ export default function Insights() {
                       }}
                       className={
                         isActive
-                          ? "inline-flex items-center px-4 py-2 text-[13px] uppercase tracking-[0.1em] border border-primary text-primary cursor-pointer transition-colors"
-                          : "inline-flex items-center px-4 py-2 text-[13px] uppercase tracking-[0.1em] border border-charcoal/15 text-charcoal/70 hover:border-primary hover:text-primary transition-colors cursor-pointer"
+                          ? "inline-flex items-center rounded-full px-4 py-2 text-[12px] uppercase tracking-[0.1em] bg-primary text-white cursor-pointer transition-colors"
+                          : "inline-flex items-center rounded-full px-4 py-2 text-[12px] uppercase tracking-[0.1em] border border-border text-charcoal/70 hover:border-charcoal hover:text-charcoal transition-colors cursor-pointer"
                       }
                     >
                       {opt.label}
@@ -421,8 +421,8 @@ export default function Insights() {
                       }}
                       className={
                         isActive
-                          ? "inline-flex items-center px-4 py-2 text-[13px] uppercase tracking-[0.1em] border border-primary text-primary cursor-pointer transition-colors"
-                          : "inline-flex items-center px-4 py-2 text-[13px] uppercase tracking-[0.1em] border border-charcoal/15 text-charcoal/70 hover:border-primary hover:text-primary transition-colors cursor-pointer"
+                          ? "inline-flex items-center rounded-full px-4 py-2 text-[12px] uppercase tracking-[0.1em] bg-primary text-white cursor-pointer transition-colors"
+                          : "inline-flex items-center rounded-full px-4 py-2 text-[12px] uppercase tracking-[0.1em] border border-border text-charcoal/70 hover:border-charcoal hover:text-charcoal transition-colors cursor-pointer"
                       }
                     >
                       {opt.label}
@@ -443,7 +443,7 @@ export default function Insights() {
                       <span
                         key={opt.value}
                         aria-disabled="true"
-                        className="inline-flex items-center px-4 py-2 text-[13px] uppercase tracking-[0.1em] border border-charcoal/10 text-charcoal/30 cursor-not-allowed"
+                        className="inline-flex items-center rounded-full px-4 py-2 text-[12px] uppercase tracking-[0.1em] border border-border text-charcoal/30 cursor-not-allowed"
                       >
                         {opt.label}
                       </span>
@@ -456,8 +456,8 @@ export default function Insights() {
                       onClick={() => setContentTypeFilter(opt.value)}
                       className={
                         isActive
-                          ? "inline-flex items-center px-4 py-2 text-[13px] uppercase tracking-[0.1em] border border-primary text-primary cursor-pointer transition-colors"
-                          : "inline-flex items-center px-4 py-2 text-[13px] uppercase tracking-[0.1em] border border-charcoal/15 text-charcoal/70 hover:border-primary hover:text-primary transition-colors cursor-pointer"
+                          ? "inline-flex items-center rounded-full px-4 py-2 text-[12px] uppercase tracking-[0.1em] bg-primary text-white cursor-pointer transition-colors"
+                          : "inline-flex items-center rounded-full px-4 py-2 text-[12px] uppercase tracking-[0.1em] border border-border text-charcoal/70 hover:border-charcoal hover:text-charcoal transition-colors cursor-pointer"
                       }
                     >
                       {opt.label}
@@ -511,24 +511,24 @@ export default function Insights() {
                     transition={{ duration: 0.5, delay: (index % 3) * 0.05 }}
                   >
                     <Link href={`/insights/${article.slug}`} className="group block cursor-pointer">
-                      <div className="aspect-[16/9] overflow-hidden">
+                      <div className="overflow-hidden rounded-xl">
                         <img
                           src={article.heroImage}
                           alt=""
                           loading={index >= 6 ? "lazy" : "eager"}
-                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                          className="w-full aspect-[16/10] object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.04]"
                         />
                       </div>
-                      <span className="block text-[11px] uppercase tracking-[0.1em] text-charcoal/60 mt-6 mb-3">
+                      <span className="nx-eyebrow text-primary block mt-5">
                         {article.topic}
                       </span>
-                      <h3 className="text-xl md:text-2xl text-charcoal font-medium leading-[1.25] mb-3 group-hover:text-primary transition-colors">
+                      <h3 className="text-charcoal font-semibold text-[1.2rem] lg:text-[1.35rem] leading-[1.3] tracking-[-0.015em] mt-2 mb-3 group-hover:text-primary transition-colors">
                         {article.title}
                       </h3>
-                      <p className="text-base text-charcoal/75 leading-[1.55] line-clamp-2 mb-4">
+                      <p className="text-[0.95rem] text-muted-foreground leading-[1.6] line-clamp-2 mb-4">
                         {article.dek}
                       </p>
-                      <div className="text-[12px] text-charcoal/50">
+                      <div className="text-[13px] text-muted-foreground">
                         {article.readTime} · {article.date}
                       </div>
                     </Link>
@@ -587,7 +587,7 @@ export default function Insights() {
       </section>
 
       {/* SLOT 6 — Light-grey curated topic rails (3 hand-picked clusters) */}
-      <section className="bg-grey py-24 md:py-32">
+      <section className="bg-off-white py-24 md:py-32">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -628,15 +628,15 @@ export default function Insights() {
                     <Link
                       key={article.slug}
                       href={`/insights/${article.slug}`}
-                      className="group block cursor-pointer bg-white border border-charcoal/10 p-6 lg:p-7"
+                      className="group h-full flex flex-col cursor-pointer bg-white border border-border p-6 lg:p-7 transition-shadow duration-300 hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.25)]"
                     >
-                      <span className="block text-[11px] uppercase tracking-[0.1em] text-charcoal/60 mb-3">
+                      <span className="nx-eyebrow text-primary block mb-3">
                         {article.topic}
                       </span>
-                      <h5 className="text-base text-charcoal font-medium group-hover:text-primary transition-colors leading-[1.3] mb-4">
+                      <h5 className="text-[1.05rem] text-charcoal font-semibold group-hover:text-primary transition-colors leading-[1.35] tracking-[-0.01em] mb-4 flex-1">
                         {article.title}
                       </h5>
-                      <div className="text-[12px] text-charcoal/50">
+                      <div className="text-[12px] text-muted-foreground">
                         {article.readTime} · {article.date}
                       </div>
                     </Link>
@@ -649,7 +649,7 @@ export default function Insights() {
       </section>
 
       {/* SLOT 7 — Light-grey newsletter signup (dedicated band) */}
-      <section className="bg-grey py-24 md:py-32 border-t border-charcoal/10">
+      <section className="bg-off-white py-24 md:py-32 border-t border-charcoal/10">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -735,7 +735,7 @@ export default function Insights() {
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-5">
-            <div className="bg-white">
+            <div className="bg-white border border-border">
               <div className="h-full p-12 flex flex-col">
                 <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
                   REPORTS · COMING SOON
@@ -748,7 +748,7 @@ export default function Insights() {
                 </p>
               </div>
             </div>
-            <div className="bg-white">
+            <div className="bg-white border border-border">
               <div className="h-full p-12 flex flex-col">
                 <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
                   PODCASTS · COMING SOON
