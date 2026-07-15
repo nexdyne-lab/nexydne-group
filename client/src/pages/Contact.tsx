@@ -12,6 +12,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { trpc } from "@/lib/trpc";
+import { TurnstileWidget } from "@/components/TurnstileWidget";
+import { toast } from "sonner";
 
 export default function Contact() {
   // ── Form field state ────────────────────────────────────────────────────────
@@ -25,6 +28,8 @@ export default function Contact() {
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">(
     "idle",
   );
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+  const contactSubmit = trpc.contact.submit.useMutation();
 
   // ── Industry options (David approved — 8 verticals + Other) ─────────────────
   const industries = [
@@ -88,16 +93,36 @@ export default function Contact() {
     },
   ];
 
-  // ── Submit handler stub ─────────────────────────────────────────────────────
+  // ── Submit handler ──────────────────────────────────────────────────────────
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    const sitekey = import.meta.env.VITE_TURNSTILE_SITEKEY as string | undefined;
+    if (sitekey && !turnstileToken) {
+      toast.error("Please complete the human verification.");
+      return;
+    }
+
     setIsSubmitting(true);
-
-    // Example: await fetch('/api/contact', { method: 'POST', body: JSON.stringify({ name, email, company, industry, topic, message }) });
-    await new Promise((resolve) => setTimeout(resolve, 800)); // simulate network
-
-    setIsSubmitting(false);
-    setSubmitStatus("success");
+    try {
+      await contactSubmit.mutateAsync({
+        name,
+        email,
+        company: company || undefined,
+        industry: industry || undefined,
+        topic: topic || undefined,
+        message,
+        turnstileToken: turnstileToken ?? undefined,
+      });
+      setSubmitStatus("success");
+    } catch (err) {
+      toast.error(
+        err instanceof Error ? err.message : "Something went wrong. Please try again.",
+      );
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -274,7 +299,7 @@ export default function Contact() {
                     />
                   </div>
 
-                  <div className="md:col-span-2">
+                  <div className="md:col-span-2 flex flex-col sm:flex-row sm:items-center gap-5">
                     <button
                       type="submit"
                       disabled={isSubmitting}
@@ -282,6 +307,11 @@ export default function Contact() {
                     >
                       {isSubmitting ? "Sending…" : "Send message"}
                     </button>
+                    <TurnstileWidget
+                      appearance="interaction-only"
+                      onVerify={setTurnstileToken}
+                      onExpire={() => setTurnstileToken(null)}
+                    />
                   </div>
                 </form>
               </>

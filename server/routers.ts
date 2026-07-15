@@ -13,11 +13,72 @@ import {
 } from "./db";
 import { notifyOwner } from "./_core/notification";
 import { verifyTurnstile } from "./_core/turnstile";
+import { sendEmail, escapeHtml } from "./_core/email";
 import { z } from "zod";
 
 export const appRouter = router({
   // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
   system: systemRouter,
+
+  // Contact form → emails the owner via Resend (Turnstile-gated).
+  contact: router({
+    submit: publicProcedure
+      .input(
+        z.object({
+          name: z.string().min(1).max(200),
+          email: z.string().email(),
+          company: z.string().max(200).optional(),
+          industry: z.string().max(120).optional(),
+          topic: z.string().max(120).optional(),
+          message: z.string().min(1).max(5000),
+          turnstileToken: z.string().optional(),
+        })
+      )
+      .mutation(async ({ input, ctx }) => {
+        const clientIp =
+          (ctx.req.headers["cf-connecting-ip"] as string | undefined) ??
+          ctx.req.ip;
+        const human = await verifyTurnstile(input.turnstileToken, clientIp);
+        if (!human) {
+          throw new Error("Human verification failed. Please try again.");
+        }
+
+        const to = process.env.LEAD_NOTIFY_TO || "admin@nexdynegroup.com";
+        const rows: [string, string][] = [
+          ["Name", input.name],
+          ["Email", input.email],
+          ["Company", input.company || "—"],
+          ["Industry", input.industry || "—"],
+          ["Topic", input.topic || "—"],
+        ];
+        const html = `
+          <div style="font-family:system-ui,-apple-system,sans-serif;color:#242424;line-height:1.6">
+            <h2 style="margin:0 0 16px">New contact-form message</h2>
+            <table style="border-collapse:collapse">
+              ${rows
+                .map(
+                  ([k, v]) =>
+                    `<tr><td style="padding:4px 16px 4px 0;color:#6B7280">${k}</td><td style="padding:4px 0"><strong>${escapeHtml(v)}</strong></td></tr>`
+                )
+                .join("")}
+            </table>
+            <p style="margin:20px 0 6px;color:#6B7280">Message</p>
+            <p style="margin:0;white-space:pre-wrap">${escapeHtml(input.message)}</p>
+          </div>`;
+
+        const sent = await sendEmail({
+          to,
+          subject: `New inquiry from ${input.name}${input.company ? ` (${input.company})` : ""}`,
+          html,
+          replyTo: input.email,
+        });
+
+        if (!sent) {
+          throw new Error("We couldn't send your message. Please email us directly.");
+        }
+        return { success: true };
+      }),
+  }),
   auth: router({
     me: publicProcedure.query(opts => opts.ctx.user),
     logout: publicProcedure.mutation(({ ctx }) => {
