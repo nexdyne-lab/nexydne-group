@@ -1993,12 +1993,8 @@ function Router() {
         <Route path="/about/team" component={LeadershipTeam} />
         <Route path="/about/us-office" component={USOffice} />
         <Route path="/offices" component={Offices} />
-        <Route path="/careers">
-          <HumanGate context="careers"><Careers /></HumanGate>
-        </Route>
-        <Route path="/contact">
-          <HumanGate context="the contact page"><Contact /></HumanGate>
-        </Route>
+        <Route path="/careers" component={Careers} />
+        <Route path="/contact" component={Contact} />
       
             {/* === Cat 2-4c Phase 2: Operations level-3 leaves (54) === */}
             {/* Operations / Supply Chain Optimization sub-services */}
@@ -2466,7 +2462,6 @@ import GmsServiceDesignPersonalizationAtScale from "@/pages/capabilities/growth-
 import GmsServiceDesignPhysicalDigitalIntegration from "@/pages/capabilities/growth-marketing-sales/service-design/PhysicalDigitalIntegration";
 import GmsServiceDesignServiceBlueprinting from "@/pages/capabilities/growth-marketing-sales/service-design/ServiceBlueprinting";
 import GmsServiceDesignServicePrototypingAndPiloting from "@/pages/capabilities/growth-marketing-sales/service-design/ServicePrototypingAndPiloting";
-import { HumanGate } from "@/components/HumanGate";
 
 
 function App() {
