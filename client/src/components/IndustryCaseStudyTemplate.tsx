@@ -347,31 +347,33 @@ export default function IndustryCaseStudyTemplate({
         </div>
       </section>
 
-      {/* Client Quote */}
-      <section className="nx-section bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="relative"
-            >
-              <Quote className="w-16 h-16 text-primary/20 absolute -top-4 -left-4" />
-              <blockquote className="relative z-10 pl-8 border-l-4 border-primary">
-                <p className="text-2xl md:text-3xl text-charcoal leading-relaxed mb-6">
-                  "{quote}"
-                </p>
-                <footer>
-                  <div className="font-bold text-charcoal">{quoteAuthor}</div>
-                  <div className="text-charcoal/60">{quoteRole}</div>
-                </footer>
-              </blockquote>
-            </motion.div>
+      {/* Client Quote — only when a quote is provided */}
+      {quote && (
+        <section className="nx-section bg-white">
+          <div className="container px-4 sm:px-6 md:px-12">
+            <div className="max-w-4xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="relative"
+              >
+                <Quote className="w-16 h-16 text-primary/20 absolute -top-4 -left-4" />
+                <blockquote className="relative z-10 pl-8 border-l-4 border-primary">
+                  <p className="text-2xl md:text-3xl text-charcoal leading-relaxed mb-6">
+                    "{quote}"
+                  </p>
+                  <footer>
+                    <div className="font-bold text-charcoal">{quoteAuthor}</div>
+                    <div className="text-charcoal/60">{quoteRole}</div>
+                  </footer>
+                </blockquote>
+              </motion.div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Related Case Studies */}
       <section className="nx-section bg-subtle">
