@@ -1,35 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { TrendingDown, Dices, Scale, LineChart, SlidersHorizontal, ShieldCheck, Users, DollarSign } from "lucide-react";
 
 export function DistributionPricing() {
   return (
-    <CaseStudyTemplate
-      client="Industrial Distribution Company"
-      industry="Distribution · Growth Marketing"
-      title="Pricing Optimization Improves Margins by 8 Points"
-      subtitle="How a distribution company transformed their pricing approach to capture value while maintaining customer relationships."
+    <IndustryCaseStudyTemplate
+      seoTitle="Pricing Optimization That Improved Margins 8 Points | Distribution Case Study"
+      seoDescription="A $125M distributor's margins eroded from 28% to 22% amid ad-hoc discounting. Systematic, value-based pricing recovered 8 margin points and $10M in profit — while lifting retention 3%."
+      canonical="/capabilities/growth-marketing-sales/case-studies/distribution-pricing"
+      industry="Transportation & Logistics"
+      industryLink="/industries/transportation-logistics"
+      title="How a Distributor Improved Margins 8 Points With Pricing Optimization"
+      subtitle="An industrial distributor transformed ad-hoc pricing into a systematic, value-based discipline — recovering 8 margin points and $10M in annual profit while improving customer retention 3%."
       heroImage="/images/capabilities/cap-chess.jpg"
-      challenge={`Gross margins had eroded from 28% to 22% over five years as sales reps discounted to win deals. Pricing was ad hoc, with no systematic approach to setting or managing prices. Customer profitability varied wildly, with some accounts actually losing money. Competitors were using data-driven pricing while the company relied on gut feel.
-
-A 160-employee distribution company with $125M in annual revenue serves industrial customers with MRO supplies and equipment. The company had grown through acquisition but pricing was inconsistent across the combined customer base. Analysis revealed significant value leakage across multiple dimensions: list prices hadn't been updated in years, discounting was inconsistent with similar customers receiving vastly different prices, freight and handling charges were regularly waived without justification, and rebates and allowances had accumulated without systematic review.`}
-      solution={`NEXDYNE established the infrastructure for systematic pricing management, implementing pricing software for visibility and control, creating a pricing governance structure with clear roles and approval authorities, building pricing analytics to track performance and identify opportunities, and forming a dedicated pricing team.
-
-A data-driven approach to list prices analyzed competitive positioning and price elasticity by product category, implementing market-based pricing reflecting value and competition with a regular review cadence. Discount management was transformed through guidelines based on customer value and competitive situation, approval workflows requiring justification for exceptions, deal desk support for complex situations, and reporting tracking discount trends and outliers.
-
-The sales team was enabled for value-based pricing conversations through training on pricing strategy and negotiation, tools showing customer profitability and pricing history, incentives rewarding margin rather than just revenue, and coaching programs reinforcing pricing discipline.`}
-      impact={`Gross margins improved 8 percentage points over 18 months, generating $10 million in annual profit impact on a $125 million revenue base. Importantly, customer retention improved 3% during the transition—demonstrating that the pricing changes were defensible and that value-based conversations strengthened rather than damaged customer relationships.
-
-Pricing consistency improved 30% as the new governance structure eliminated the arbitrary variation that had made customer profitability so unpredictable. Sales reps who initially resisted the changes became advocates as they found that pricing discipline gave them more confidence and credibility in customer negotiations, not less flexibility.`}
       metrics={[
-        { value: "8pts", label: "Margin improvement" },
-        { value: "3%", label: "Customer retention gain" },
-        { value: "$10M", label: "Profit impact" },
-        { value: "30%", label: "Pricing consistency improvement" }
+        { value: "8 pts", label: "Margin Improvement" },
+        { value: "3%", label: "Retention Gain" },
+        { value: "$10M", label: "Profit Impact" },
+        { value: "30%", label: "Pricing Consistency Gain" }
       ]}
-      tags={["Distribution", "Pricing", "Margin Improvement", "Growth"]}
-      relatedCapability={{
-        title: "Growth Marketing & Sales",
-        link: "/capabilities/growth-marketing-sales"
+      clientContextTitle="Value Leaking Away"
+      clientContextIntro="A 160-employee distribution company with $125M in revenue serves industrial customers with MRO supplies. Gross margins had eroded from 28% to 22% over five years as reps discounted to win deals, with pricing set ad hoc and no systematic approach."
+      clientContextBody="The company had grown through acquisition, leaving pricing inconsistent across the combined customer base. Analysis found value leaking on every dimension: list prices hadn't been updated in years, similar customers received vastly different discounts, freight and handling were regularly waived without justification, and rebates had accumulated without review. Some accounts were actually losing money while competitors priced on data."
+      clientProfile={{
+        industry: "Industrial Distributor",
+        companySize: "$125M Revenue",
+        projectDuration: "18-Month Program",
+        additionalInfo: "Pricing Governance",
+        additionalLabel: "Structure"
       }}
+      challengeTitle="Why Margins Eroded"
+      challenges={[
+        {
+          icon: TrendingDown,
+          title: "Margins from 28% to 22%",
+          description: "Five years of reps discounting to win deals steadily eroded gross margin."
+        },
+        {
+          icon: Dices,
+          title: "Ad-hoc pricing",
+          description: "No systematic approach meant similar customers received vastly different prices."
+        },
+        {
+          icon: Scale,
+          title: "Money-losing accounts",
+          description: "Customer profitability varied wildly, with some accounts actually unprofitable."
+        },
+        {
+          icon: LineChart,
+          title: "Outdated list prices",
+          description: "Prices hadn't been updated in years while rebates and waivers accumulated unchecked."
+        }
+      ]}
+      approachTitle="Systematic, Value-Based Pricing"
+      approachIntro="NEXDYNE built the infrastructure for systematic pricing — software, governance, analytics, and a dedicated team — then enabled the sales force to have value-based pricing conversations."
+      steps={[
+        {
+          step: "01",
+          title: "Set data-driven list prices",
+          description: "Competitive positioning and price-elasticity analysis by category drove market-based prices with a regular review cadence."
+        },
+        {
+          step: "02",
+          title: "Govern discounts",
+          description: "Value-based guidelines, approval workflows requiring justification, deal-desk support, and outlier reporting replaced arbitrary discounting."
+        },
+        {
+          step: "03",
+          title: "Enable the sales team",
+          description: "Training, profitability and pricing-history tools, margin-based incentives, and coaching built pricing discipline."
+        },
+        {
+          step: "04",
+          title: "Make it stick",
+          description: "A dedicated pricing team and dashboards tracked performance and surfaced ongoing opportunities."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: DollarSign,
+          value: "8 pts",
+          label: "Margin improvement",
+          detail: "$10M in annual profit on a $125M revenue base"
+        },
+        {
+          icon: Users,
+          value: "3%",
+          label: "Better retention",
+          detail: "Value-based conversations strengthened relationships"
+        },
+        {
+          icon: ShieldCheck,
+          value: "30%",
+          label: "More pricing consistency",
+          detail: "Eliminating the variation that hid unprofitable accounts"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Improving Sales Win Rate With Process Optimization",
+          metric: "45%",
+          label: "higher win rate",
+          link: "/capabilities/growth-marketing-sales/case-studies/software-sales-optimization",
+          image: "/images/industries/meeting-topview.jpg"
+        },
+        {
+          title: "AI Demand Forecasting That Cut Inventory 35%",
+          metric: "35%",
+          label: "less inventory",
+          link: "/capabilities/artificial-intelligence/case-studies/distributor-demand-forecasting",
+          image: "/images/industries/retail-warehouse.jpg"
+        }
+      ]}
+      ctaTitle="Ready to stop leaking margin?"
+      ctaDescription="Let's talk about what systematic pricing could do for your profitability."
     />
   );
 }

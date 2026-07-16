@@ -1,35 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { Split, Clock, Database, UserPlus, BookOpen, Wrench, Trophy, Gauge } from "lucide-react";
 
 export function SoftwareSalesOptimization() {
   return (
-    <CaseStudyTemplate
-      client="Enterprise Software Company"
-      industry="Technology · Growth Marketing"
-      title="Sales Process Optimization Increases Win Rate"
-      subtitle="How a software company transformed their sales process to improve win rates and shorten sales cycles."
+    <IndustryCaseStudyTemplate
+      seoTitle="Sales Process Optimization That Lifted Win Rate 45% | Software Case Study"
+      seoDescription="An enterprise software company's win rates ranged from 15% to 35% with 90-day cycles and 9-month ramps. Codifying top-performer behavior lifted win rate 45% and cut ramp to 4 months."
+      canonical="/capabilities/growth-marketing-sales/case-studies/software-sales-optimization"
+      industry="Technology, Media & Telecom"
+      industryLink="/industries/technology-media-telecom"
+      title="How a Software Company Lifted Win Rate 45% With Sales Process Optimization"
+      subtitle="An enterprise software company codified its top performers' approach into a repeatable playbook — lifting win rate 45%, shortening sales cycles 28%, and cutting new-hire ramp from 9 months to 4."
       heroImage="/images/industries/meeting-topview.jpg"
-      challenge={`Sales performance was inconsistent across the team. Top performers closed at 35% while others struggled at 15%. Sales cycles had lengthened from 60 to 90 days as deals stalled in evaluation. The CRM was poorly adopted, making pipeline visibility unreliable. New hire ramp time had stretched to 9 months.
-
-A 180-employee software company with $52M in annual revenue sells enterprise software to mid-size businesses. The company had grown rapidly but sales productivity was declining as the team scaled. Analysis of top performer behavior revealed they followed a fundamentally different approach than the rest of the team: more time on discovery and qualification, earlier engagement of multiple stakeholders, effective use of customer success stories and ROI models, and disciplined follow-up cadences.`}
-      solution={`NEXDYNE worked with top performers to document their approach in a repeatable sales playbook, defining clear stages with specific exit criteria, creating discovery frameworks uncovering business pain and buying criteria, developing stakeholder mapping tools identifying decision-makers and influencers, and building objection handling guides for common competitive situations.
-
-The playbook was brought to life through training programs teaching the methodology via role-play and coaching, sales tools including ROI calculators and competitive battlecards, email templates and call scripts for key conversation types, and a content library organized by buyer persona and journey stage.
-
-CRM was transformed from a reporting burden into a selling tool by simplifying data entry, implementing pipeline inspection processes identifying stuck deals early, and creating dashboards giving reps visibility into their own performance. Manager coaching capabilities were built through pipeline review training, weekly deal strategy sessions, peer learning programs, and certification programs validating methodology adoption.`}
-      impact={`Win rate improved 45%, driven by earlier qualification, better multi-stakeholder engagement, and more effective competitive differentiation. Average sales cycle shortened 28% as the new methodology identified and resolved deal blockers earlier in the process. Revenue impact from improved win rate and cycle time totaled $8.2 million in the first year.
-
-New hire ramp time cut from 9 months to 4 months as the codified sales playbook gave new reps a clear path to productivity rather than requiring them to reverse-engineer success independently. CRM adoption improved markedly when reps discovered it helped them sell rather than merely report to management—pipeline forecast accuracy reached 90%, enabling better resource allocation and financial planning.`}
       metrics={[
-        { value: "45%", label: "Win rate improvement" },
-        { value: "28%", label: "Shorter sales cycle" },
-        { value: "$8.2M", label: "Revenue impact" },
-        { value: "4 mo", label: "New hire ramp time" }
+        { value: "45%", label: "Win Rate Improvement" },
+        { value: "28%", label: "Shorter Sales Cycle" },
+        { value: "$8.2M", label: "Revenue Impact" },
+        { value: "4 mo", label: "New-Hire Ramp" }
       ]}
-      tags={["Technology", "Sales Optimization", "Growth", "Operations"]}
-      relatedCapability={{
-        title: "Growth Marketing & Sales",
-        link: "/capabilities/growth-marketing-sales"
+      clientContextTitle="Inconsistent by Rep"
+      clientContextIntro="A 180-employee software company with $52M in revenue sells enterprise software to mid-size businesses. It had grown rapidly, but sales productivity was declining as the team scaled — top performers closed at 35% while others struggled at 15%."
+      clientContextBody="Sales cycles had lengthened from 60 to 90 days as deals stalled, the CRM was poorly adopted so pipeline visibility was unreliable, and new-hire ramp had stretched to 9 months. Analysis of top-performer behavior revealed a fundamentally different approach: more time on discovery and qualification, earlier multi-stakeholder engagement, effective use of ROI models and success stories, and disciplined follow-up."
+      clientProfile={{
+        industry: "Enterprise Software Company",
+        companySize: "$52M Revenue",
+        projectDuration: "Playbook + Coaching",
+        additionalInfo: "Repeatable Method",
+        additionalLabel: "Output"
       }}
+      challengeTitle="Why Performance Varied So Widely"
+      challenges={[
+        {
+          icon: Split,
+          title: "15% to 35% win rates",
+          description: "Top performers closed at more than twice the rate of the rest of the team."
+        },
+        {
+          icon: Clock,
+          title: "Cycles from 60 to 90 days",
+          description: "Deals increasingly stalled in evaluation, lengthening the sales cycle."
+        },
+        {
+          icon: Database,
+          title: "Poor CRM adoption",
+          description: "Weak data entry made pipeline visibility and forecasting unreliable."
+        },
+        {
+          icon: UserPlus,
+          title: "9-month ramp",
+          description: "New reps had to reverse-engineer success, stretching time to productivity."
+        }
+      ]}
+      approachTitle="Codify What the Best Reps Do"
+      approachIntro="NEXDYNE worked with top performers to document their approach in a repeatable playbook, then brought it to life through training, tools, and manager coaching — and turned the CRM into a selling tool."
+      steps={[
+        {
+          step: "01",
+          title: "Build the playbook",
+          description: "Clear stages with exit criteria, discovery frameworks, stakeholder mapping, and objection-handling guides captured the winning approach."
+        },
+        {
+          step: "02",
+          title: "Enable the team",
+          description: "Role-play training, ROI calculators, competitive battlecards, and a persona-organized content library operationalized the method."
+        },
+        {
+          step: "03",
+          title: "Make the CRM useful",
+          description: "Simplified data entry, pipeline inspection to catch stuck deals early, and self-service dashboards turned reporting into selling."
+        },
+        {
+          step: "04",
+          title: "Coach to the method",
+          description: "Pipeline-review training, weekly deal strategy sessions, peer learning, and certification validated adoption."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Trophy,
+          value: "45%",
+          label: "Higher win rate",
+          detail: "From earlier qualification and better stakeholder engagement"
+        },
+        {
+          icon: Gauge,
+          value: "90%",
+          label: "Forecast accuracy",
+          detail: "As CRM adoption improved with a selling-focused design"
+        },
+        {
+          icon: BookOpen,
+          value: "4 mo",
+          label: "New-hire ramp",
+          detail: "Down from 9, with $8.2M in first-year revenue impact"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Landing Enterprise Clients With Account-Based Marketing",
+          metric: "$18M",
+          label: "pipeline created",
+          link: "/capabilities/growth-marketing-sales/case-studies/tech-abm",
+          image: "/images/industries/tech-datacenter.jpg"
+        },
+        {
+          title: "Pricing Optimization That Improved Margins 8 Points",
+          metric: "8 pts",
+          label: "margin improvement",
+          link: "/capabilities/growth-marketing-sales/case-studies/distribution-pricing",
+          image: "/images/capabilities/cap-chess.jpg"
+        }
+      ]}
+      ctaTitle="Ready to make every rep a top performer?"
+      ctaDescription="Let's talk about what a codified sales method could do for your win rates and ramp time."
     />
   );
 }
