@@ -76,6 +76,40 @@ export const appRouter = router({
         if (!sent) {
           throw new Error("We couldn't send your message. Please email us directly.");
         }
+
+        // Best-effort acknowledgment to the customer. A failure here must not
+        // fail the submission — the owner notification above already succeeded.
+        try {
+          const firstName = input.name.trim().split(/\s+/)[0] || "there";
+          const ackHtml = `
+            <div style="font-family:system-ui,-apple-system,sans-serif;color:#242424;line-height:1.65;max-width:520px">
+              <p style="margin:0 0 16px">Hi ${escapeHtml(firstName)},</p>
+              <p style="margin:0 0 16px">
+                Thanks for reaching out to NexDyne Consulting Group. We've received your
+                message and it's now with our team.
+              </p>
+              <p style="margin:0 0 16px">
+                A practice lead will get back to you within one business day. If your
+                matter is time-sensitive, simply reply to this email.
+              </p>
+              <p style="margin:24px 0 4px">Warm regards,</p>
+              <p style="margin:0;font-weight:600">NexDyne Consulting Group</p>
+              <hr style="border:none;border-top:1px solid #E5E7EB;margin:24px 0" />
+              <p style="margin:0;font-size:12px;color:#6B7280">
+                This is an automated confirmation for the message you submitted at
+                nexdynegroup.com. No action is needed.
+              </p>
+            </div>`;
+          await sendEmail({
+            to: input.email,
+            from: "NexDyne Consulting Group <contact@nexdynegroup.com>",
+            subject: "We've received your message — NexDyne Consulting Group",
+            html: ackHtml,
+          });
+        } catch (ackErr) {
+          console.warn("[Contact] Acknowledgment email failed:", ackErr);
+        }
+
         return { success: true };
       }),
   }),

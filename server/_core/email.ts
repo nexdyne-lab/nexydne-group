@@ -14,11 +14,14 @@ interface SendEmailInput {
   subject: string;
   html: string;
   replyTo?: string;
+  /** Override the default EMAIL_FROM (e.g. send the customer ack from contact@). */
+  from?: string;
 }
 
 export async function sendEmail(input: SendEmailInput): Promise<boolean> {
   const apiKey = process.env.RESEND_API_KEY;
-  const from = process.env.EMAIL_FROM || "NexDyne <noreply@nexdynegroup.com>";
+  const from =
+    input.from || process.env.EMAIL_FROM || "NexDyne <noreply@nexdynegroup.com>";
 
   if (!apiKey) {
     console.log(`[Email] RESEND_API_KEY unset — would send "${input.subject}" to ${input.to}`);
