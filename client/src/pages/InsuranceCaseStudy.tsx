@@ -1,40 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { Clock, Split, ShieldQuestion, TrendingUp, ScanText, GitBranch, ShieldCheck, DollarSign } from "lucide-react";
 
 export function InsuranceCaseStudy() {
   return (
-    <CaseStudyTemplate
-      client="Regional Property & Casualty Insurance Company"
-      industry="Insurance & Financial Services · Operations"
-      title="73% Faster Claims Processing Cycle"
-      subtitle="Regional property & casualty insurer automates claims intake and adjudication, reducing average processing time from 14 days to 3.8 days while improving accuracy and customer satisfaction."
+    <IndustryCaseStudyTemplate
+      seoTitle="Cutting the Claims Cycle 73% With Intelligent Automation | Insurance Case Study"
+      seoDescription="A $340M P&C insurer's claims took 14 days across manual channels with inconsistent decisions. Intelligent automation cut cycle time to 3.8 days, auto-adjudicated 85%, and saved $1.8M."
+      canonical="/case-studies/insurance-claims-automation"
+      industry="Insurance"
+      industryLink="/industries/insurance"
+      title="How a P&C Insurer Cut Its Claims Cycle 73%"
+      subtitle="A regional property & casualty insurer automated claims intake and adjudication — cutting average processing time from 14 days to 3.8, auto-adjudicating 85% of claims, and saving $1.8M a year."
       heroImage="/case-insurance-office.f039a4a1.jpg"
-      challenge={`Claims arrived through multiple channels—email, fax, mail, and agent portals—requiring staff to manually extract data from PDFs, images, and handwritten forms. Each claim required 45-60 minutes of data entry before adjudication could begin. With 18 adjusters handling claims across different lines, decision-making varied significantly—similar claims received different outcomes depending on which adjuster reviewed them, creating compliance risks and customer fairness concerns.
-
-A regional property and casualty insurance company serving homeowners, small businesses, and commercial clients across six Southeastern states with 280 employees and $340M in annual premiums processed approximately 45,000 claims annually. As the company expanded into new markets, claims volume grew 60% over three years while staffing increased only 15%, creating backlogs and extending processing times. Fraud detection rates were below 40% despite an estimated 3-4% of claims involving some level of fraud, resulting in significant leakage.`}
-      solution={`NEXDYNE implemented an intelligent claims automation platform combining document AI, rules-based adjudication, and machine learning fraud detection to streamline the entire claims lifecycle.
-
-AI-powered document extraction automatically processed claims from any channel—photos, PDFs, handwritten notes, and structured forms—extracting key data fields with 96% accuracy and reducing intake time from 45 minutes to under 3 minutes per claim. A rules-based decision engine applied consistent adjudication criteria across all claims, with straightforward claims (85% of volume) auto-approved or auto-denied based on policy terms, coverage limits, and claim characteristics, and complex cases routed to human adjusters.
-
-Machine learning models analyzed claim patterns, claimant history, provider networks, and external data sources to flag potentially fraudulent claims, generating risk scores and supporting evidence for investigators. Automated notifications kept claimants informed at every stage via email, SMS, and portal updates, with self-service tools allowing customers to upload documents, check status, and schedule inspections without calling in.`}
-      impact={`Average claims cycle time reduced from 14 days to 3.8 days—a 73% improvement—with simple claims resolved in under 24 hours. 85% of claims now processed without human intervention, freeing adjusters to focus on complex cases requiring genuine expertise. Annual savings of $1.8 million came from combined reductions in processing costs, improved fraud detection, and lower customer service expenses.
-
-Fraud detection rate improved from 38% to 87%—a 2.3x improvement—recovering an estimated $420,000 annually in previously undetected fraudulent claims. Customer satisfaction improved from 72 to 89 NPS. Call center volume reduced 54% through self-service and proactive communication. Regulatory compliance improved with consistent, auditable decision trails. Adjuster capacity effectively tripled, enabling growth without proportional hiring.`}
       metrics={[
-        { value: "73%", label: "Faster processing" },
-        { value: "85%", label: "Auto-adjudication rate" },
-        { value: "$1.8M", label: "Annual savings" },
-        { value: "45K+", label: "Claims per year" }
+        { value: "73%", label: "Faster Processing" },
+        { value: "85%", label: "Auto-Adjudication Rate" },
+        { value: "$1.8M", label: "Annual Savings" },
+        { value: "45K+", label: "Claims Per Year" }
       ]}
-      quote={{
-        text: "We were drowning in claims volume and our customers were suffering. NEXDYNE didn't just automate our processes—they transformed how we think about claims handling. Our adjusters now focus on the cases that truly need human judgment, while routine claims flow through automatically.",
-        author: "Sarah Kim",
-        role: "Chief Claims Officer, Southeastern Mutual Insurance"
+      clientContextTitle="Volume Growing Faster Than Staff"
+      clientContextIntro="A regional property & casualty insurer serving homeowners and businesses across six Southeastern states — 280 employees and $340M in annual premiums — processed roughly 45,000 claims a year. Claims arrived through email, fax, mail, and agent portals, requiring 45–60 minutes of manual data entry before adjudication could even begin."
+      clientContextBody="With 18 adjusters across lines, decisions varied significantly — similar claims received different outcomes depending on the reviewer, creating compliance and fairness risks. As the company expanded, claims volume grew 60% over three years while staffing rose only 15%, creating backlogs. Fraud detection sat below 40% despite an estimated 3–4% of claims involving fraud, causing significant leakage."
+      clientProfile={{
+        industry: "P&C Insurance Company",
+        companySize: "$340M Premiums",
+        projectDuration: "45,000 Claims/Year",
+        additionalInfo: "Document AI + ML",
+        additionalLabel: "Solution"
       }}
-      tags={["Insurance", "AI", "Claims Automation", "Operations"]}
-      relatedCapability={{
-        title: "AI & Machine Learning",
-        link: "/capabilities/ai"
-      }}
+      challengeTitle="Why Claims Were Slow and Inconsistent"
+      challenges={[
+        {
+          icon: Clock,
+          title: "45–60 minutes of manual entry",
+          description: "Claims arrived across four channels, each requiring manual data extraction before adjudication."
+        },
+        {
+          icon: Split,
+          title: "Inconsistent decisions",
+          description: "18 adjusters produced different outcomes on similar claims, creating compliance risk."
+        },
+        {
+          icon: TrendingUp,
+          title: "Volume up 60%, staff up 15%",
+          description: "Rapid growth created backlogs and stretched processing times."
+        },
+        {
+          icon: ShieldQuestion,
+          title: "Sub-40% fraud detection",
+          description: "Weak detection let an estimated 3–4% of fraudulent claims leak through."
+        }
+      ]}
+      approachTitle="Document AI, Rules, and ML Fraud Detection"
+      approachIntro="NEXDYNE implemented an intelligent claims-automation platform combining document AI, rules-based adjudication, and machine-learning fraud detection across the entire claims lifecycle."
+      steps={[
+        {
+          step: "01",
+          title: "Extract from any channel",
+          description: "Document AI processed photos, PDFs, handwritten notes, and forms at 96% accuracy, cutting intake from 45 minutes to under 3."
+        },
+        {
+          step: "02",
+          title: "Adjudicate consistently",
+          description: "A rules engine auto-approved or denied the 85% of straightforward claims by policy terms, routing complex cases to adjusters."
+        },
+        {
+          step: "03",
+          title: "Detect fraud with ML",
+          description: "Models analyzed claim patterns, claimant history, and external data to flag fraud with risk scores and supporting evidence."
+        },
+        {
+          step: "04",
+          title: "Keep claimants informed",
+          description: "Automated notifications and self-service tools let customers upload documents, check status, and schedule inspections without calling."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: GitBranch,
+          value: "3.8 days",
+          label: "Average cycle time",
+          detail: "Down from 14, with simple claims resolved in under 24 hours"
+        },
+        {
+          icon: ShieldCheck,
+          value: "87%",
+          label: "Fraud detection rate",
+          detail: "Up from 38%, recovering ~$420K a year"
+        },
+        {
+          icon: DollarSign,
+          value: "$1.8M",
+          label: "Annual savings",
+          detail: "With NPS up from 72 to 89 and call volume down 54%"
+        }
+      ]}
+      quote="We were drowning in claims volume and our customers were suffering. NEXDYNE didn't just automate our processes — they transformed how we think about claims handling. Our adjusters now focus on the cases that truly need human judgment, while routine claims flow through automatically."
+      quoteAuthor="Sarah Kim"
+      quoteRole="Chief Claims Officer, Southeastern Mutual Insurance"
+      relatedStudies={[
+        {
+          title: "Cutting Claims Processing Time 73% With Document AI",
+          metric: "73%",
+          label: "faster processing",
+          link: "/capabilities/artificial-intelligence/case-studies/insurance-document-ai",
+          image: "/case-insurance-office.f039a4a1.jpg"
+        },
+        {
+          title: "AI-Driven Underwriting That Accelerated a Lender 5x",
+          metric: "5x",
+          label: "application throughput",
+          link: "/capabilities/artificial-intelligence/case-studies/lender-ai-underwriting",
+          image: "/images/industries/fin-handshake-city.jpg"
+        }
+      ]}
+      ctaTitle="Ready to transform claims handling?"
+      ctaDescription="Let's talk about what intelligent automation could do for your cycle times and fraud detection."
     />
   );
 }

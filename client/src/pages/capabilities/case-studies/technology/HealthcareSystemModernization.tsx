@@ -1,33 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { ServerCrash, ShieldAlert, UserX, DollarSign, Layers, CloudCog, Rocket, ShieldCheck } from "lucide-react";
 
 export function HealthcareSystemModernization() {
   return (
-    <CaseStudyTemplate
-      client="Regional Healthcare System"
-      industry="Healthcare · Technology"
-      title="Regional Healthcare System Modernizes Core Technology"
-      subtitle="How a 12-hospital healthcare system modernized legacy infrastructure while maintaining 24/7 operations."
+    <IndustryCaseStudyTemplate
+      seoTitle="Modernizing Core Healthcare Technology at Zero Downtime | Healthcare Case Study"
+      seoDescription="A 12-hospital system ran core clinical systems on failing legacy infrastructure. A phased 24-month modernization reached 99.99% availability and cut infrastructure costs 40% with zero downtime."
+      canonical="/capabilities/technology/case-studies/healthcare-system-modernization"
+      industry="Healthcare"
+      industryLink="/industries/healthcare"
+      title="How a Healthcare System Modernized Core Technology With Zero Downtime"
+      subtitle="A 12-hospital healthcare system modernized failing legacy infrastructure over 24 months — reaching 99.99% availability and cutting infrastructure costs 40% without a single unplanned outage affecting care."
       heroImage="/case-healthcare-analytics.0ceb030c.jpg"
-      challenge={`A regional healthcare system operating 12 hospitals and 85 outpatient facilities faced a technology crisis. Their core clinical and administrative systems ran on aging infrastructure that was increasingly difficult and expensive to maintain. System outages were becoming more frequent, threatening patient care and regulatory compliance.
-
-The organization needed to modernize their technology foundation while maintaining 24/7 operations across all facilities. Any significant downtime could impact patient care, violate HIPAA requirements, and damage the organization's reputation in a competitive market. Previous modernization attempts had stalled due to the complexity of healthcare IT environments, resistance from clinical staff, and concerns about disrupting patient care. Leadership needed a new approach that could deliver results without unacceptable risk.`}
-      solution={`NEXDYNE designed a phased 24-month modernization program prioritizing stability and safety while progressively transforming the technology landscape. Phase 1 (months 1-4) focused on stabilizing the existing environment through a comprehensive system assessment identifying critical vulnerabilities, immediate fixes for highest-risk issues, and establishing governance including clinical advisory committees, change management processes, and communication protocols.
-
-Phase 2 (months 5-12) built a modern hybrid cloud foundation—private cloud for sensitive clinical data, public cloud integration for less sensitive workloads, modern software-defined networking, and enhanced security controls meeting healthcare compliance requirements—developed in parallel with existing systems to allow thorough testing before migration. Phase 3 (months 13-20) migrated applications in carefully planned waves, each following a rigorous process with clinical stakeholder planning, environment preparation and testing, migration execution during low-usage windows, and intensive post-migration monitoring. Phase 4 (months 21-24) optimized the new environment, implemented advanced monitoring and automation, trained IT staff on new technologies, and established ongoing optimization programs.`}
-      impact={`System availability improved to 99.99% with zero unplanned downtime affecting patient care during or after the 24-month migration—a result achieved through automatic failover and disaster recovery capabilities the legacy environment had lacked. Infrastructure costs decreased 40% through consolidation, cloud optimization, and elimination of expensive legacy maintenance contracts. New application deployments that previously took weeks now complete in hours, enabling rapid response to clinical needs and regulatory requirements—a 60% improvement in deployment cycle times.
-
-The modernized environment passed the most recent HIPAA audit with zero findings, a marked improvement from the compliance posture of the legacy infrastructure. The phased approach and clinical partnership model resolved the organizational barriers that had derailed previous modernization attempts, establishing a replicable model for ongoing technology evolution across the system.`}
       metrics={[
-        { value: "40%", label: "Infrastructure cost reduction" },
-        { value: "99.99%", label: "System availability" },
-        { value: "60%", label: "Faster deployment cycles" },
-        { value: "Zero", label: "Unplanned downtime" }
+        { value: "40%", label: "Lower Infrastructure Cost" },
+        { value: "99.99%", label: "System Availability" },
+        { value: "60%", label: "Faster Deployments" },
+        { value: "Zero", label: "Unplanned Downtime" }
       ]}
-      tags={["Healthcare", "Technology Modernization", "Cloud", "Infrastructure"]}
-      relatedCapability={{
-        title: "Technology",
-        link: "/capabilities/technology"
+      clientContextTitle="A Technology Crisis"
+      clientContextIntro="A regional healthcare system operating 12 hospitals and 85 outpatient facilities faced a technology crisis. Core clinical and administrative systems ran on aging infrastructure that was increasingly difficult and expensive to maintain, and outages were becoming more frequent — threatening patient care and compliance."
+      clientContextBody="The organization needed to modernize its foundation while maintaining 24/7 operations across all facilities. Any significant downtime could impact care, violate HIPAA, and damage reputation in a competitive market. Previous modernization attempts had stalled on the complexity of healthcare IT, clinical-staff resistance, and fears of disrupting care. Leadership needed an approach that delivered results without unacceptable risk."
+      clientProfile={{
+        industry: "Regional Healthcare System",
+        companySize: "12 Hospitals",
+        projectDuration: "24-Month Program",
+        additionalInfo: "Hybrid Cloud",
+        additionalLabel: "Foundation"
       }}
+      challengeTitle="Why Modernization Kept Stalling"
+      challenges={[
+        {
+          icon: ServerCrash,
+          title: "Failing legacy infrastructure",
+          description: "Aging systems grew costly to maintain as outages became more frequent."
+        },
+        {
+          icon: ShieldAlert,
+          title: "Care and compliance at risk",
+          description: "Any significant downtime threatened patient care and HIPAA compliance."
+        },
+        {
+          icon: UserX,
+          title: "Clinical-staff resistance",
+          description: "Previous attempts stalled on the complexity of healthcare IT and staff concerns."
+        },
+        {
+          icon: DollarSign,
+          title: "Expensive legacy contracts",
+          description: "Costly maintenance contracts drained budget without improving reliability."
+        }
+      ]}
+      approachTitle="Phased, Safety-First Modernization"
+      approachIntro="NEXDYNE designed a phased 24-month program prioritizing stability and safety — stabilizing first, building a modern hybrid-cloud foundation in parallel, then migrating in carefully planned waves."
+      steps={[
+        {
+          step: "01",
+          title: "Stabilize and govern",
+          description: "Months 1–4 assessed critical vulnerabilities, fixed the highest-risk issues, and stood up clinical advisory and change governance."
+        },
+        {
+          step: "02",
+          title: "Build a hybrid-cloud foundation",
+          description: "Months 5–12 built private cloud for clinical data, public-cloud integration, modern networking, and healthcare-grade security in parallel."
+        },
+        {
+          step: "03",
+          title: "Migrate in waves",
+          description: "Months 13–20 migrated applications in planned waves during low-usage windows with clinical planning and intensive monitoring."
+        },
+        {
+          step: "04",
+          title: "Optimize and enable",
+          description: "Months 21–24 added advanced monitoring and automation, trained IT staff, and established ongoing optimization."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: ShieldCheck,
+          value: "99.99%",
+          label: "System availability",
+          detail: "Zero unplanned downtime affecting care across the migration"
+        },
+        {
+          icon: DollarSign,
+          value: "40%",
+          label: "Lower infrastructure cost",
+          detail: "From consolidation, cloud optimization, and retired contracts"
+        },
+        {
+          icon: Rocket,
+          value: "60%",
+          label: "Faster deployments",
+          detail: "Weeks to hours, with a HIPAA audit passed at zero findings"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Reaching 99.99% Uptime After Migrating to AWS",
+          metric: "99.99%",
+          label: "uptime",
+          link: "/cases/healthcare-cloud-migration",
+          image: "/case-medical-collaboration.9602cc8c.jpg"
+        },
+        {
+          title: "Transforming DevOps to Cut Deployment Time 82%",
+          metric: "82%",
+          label: "faster deployments",
+          link: "/case-studies/technology-devops-transformation",
+          image: "/images/industries/tech-datacenter.jpg"
+        }
+      ]}
+      ctaTitle="Ready to modernize without disruption?"
+      ctaDescription="Let's talk about what a phased modernization could do for your reliability and cost."
     />
   );
 }

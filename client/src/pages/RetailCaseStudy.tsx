@@ -1,40 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { Split, Clock, Percent, PackageX, Network, Brain, ArrowLeftRight, DollarSign } from "lucide-react";
 
 export function RetailCaseStudy() {
   return (
-    <CaseStudyTemplate
-      client="Specialty Home Goods Retailer"
-      industry="Retail & Consumer Goods · Operations"
-      title="47% Reduction in Inventory Carrying Costs"
-      subtitle="Multi-location specialty retailer with 28 stores implements AI-driven inventory optimization, reducing stockouts by 68% while cutting excess inventory by $2.1M annually."
+    <IndustryCaseStudyTemplate
+      seoTitle="Cutting Inventory Carrying Costs 47% With AI | Retail Case Study"
+      seoDescription="A 28-store specialty retailer had excess stock in some stores and stockouts in others, with 28% seasonal markdowns. AI-driven inventory optimization cut carrying costs 47% and stockouts 68%."
+      canonical="/case-studies/retail-inventory-optimization"
+      industry="Retail"
+      industryLink="/industries/retail"
+      title="How a Specialty Retailer Cut Inventory Carrying Costs 47%"
+      subtitle="A 28-store specialty home-goods retailer deployed AI-driven inventory optimization with real-time visibility — cutting carrying costs 47%, stockouts 68%, and saving $2.1M a year."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
-      challenge={`Each store operated with semi-independent inventory systems that didn't communicate in real-time. Corporate buyers made purchasing decisions based on weekly aggregated reports, missing critical demand signals and creating a 5-7 day lag between actual sales and replenishment decisions. With 40% of revenue concentrated in seasonal products, the company consistently over-ordered for some seasons while under-ordering for others—end-of-season markdowns averaged 28% of seasonal inventory.
-
-A specialty home goods retailer operating 28 stores across the Midwest and Eastern United States with 320 employees and over 15,000 SKUs struggled with simultaneous inventory problems: excess inventory in some locations while experiencing stockouts in others. Rapid expansion from 12 to 28 stores over four years created inventory management challenges legacy systems couldn't handle. Online orders drew from a separate warehouse inventory, causing 12% of online orders to be canceled or delayed when products showed "in stock" online but were actually allocated to stores.`}
-      solution={`NEXDYNE implemented a unified inventory intelligence platform providing real-time visibility across all channels, AI-powered demand forecasting, and automated allocation optimization.
-
-Real-time integration across all 28 stores, the central warehouse, and e-commerce platform updated every sale, return, and transfer within seconds. Machine learning models analyzed historical sales, local events, weather patterns, and economic indicators to forecast demand at the store-SKU level, generating 90-day rolling forecasts updated daily with accuracy rates exceeding 87%.
-
-When inventory imbalances were detected, the system automatically generated transfer recommendations, calculated optimal routing, and initiated logistics coordination—with store managers receiving pre-approved transfer requests requiring only one-click confirmation. A single inventory pool served both in-store and online channels, with intelligent allocation rules balancing channel demand. Ship-from-store capabilities enabled online orders to be fulfilled from the nearest location with available stock.`}
-      impact={`Inventory carrying costs reduced 47%—from $4.2 million to $2.2 million annually—through better demand matching and faster turnover. Stockout incidents dropped 68%, from 340 per month to 108, capturing previously lost sales. Annual savings of $2.1 million came from combined reductions in carrying costs, fewer markdowns, and captured sales that would have been lost to stockouts.
-
-Seasonal markdown rate reduced from 28% to 11%, protecting gross margins significantly. Inventory turnover improved from 4.2x to 6.1x annually. Store manager time spent on inventory tasks reduced 15 hours per week. E-commerce fulfillment rate improved from 88% to 94%, with ship-from-store enabling faster delivery for 40% of online orders. Customer satisfaction scores increased 18 points due to improved product availability.`}
       metrics={[
-        { value: "47%", label: "Carrying cost reduction" },
-        { value: "68%", label: "Fewer stockouts" },
-        { value: "$2.1M", label: "Annual savings" },
-        { value: "28", label: "Store locations" }
+        { value: "47%", label: "Lower Carrying Costs" },
+        { value: "68%", label: "Fewer Stockouts" },
+        { value: "$2.1M", label: "Annual Savings" },
+        { value: "28", label: "Store Locations" }
       ]}
-      quote={{
-        text: "The transformation has been remarkable. We went from constantly firefighting inventory issues to having predictive insights that let us stay ahead of demand. Our buyers now spend their time on strategic decisions instead of chasing data.",
-        author: "Michael Rodriguez",
-        role: "VP of Operations, HomeStyle Goods"
+      clientContextTitle="Excess and Stockouts at Once"
+      clientContextIntro="A specialty home-goods retailer with 28 stores across the Midwest and East, 320 employees, and 15,000+ SKUs struggled with simultaneous inventory problems — excess in some locations while stocking out in others. Rapid expansion from 12 to 28 stores in four years outgrew legacy systems."
+      clientContextBody="Each store ran semi-independent inventory that didn't sync in real time, so corporate buyers decided on weekly aggregated reports with a 5–7 day lag. With 40% of revenue in seasonal products, the company over-ordered some seasons and under-ordered others, with end-of-season markdowns averaging 28% of seasonal inventory. Online orders drew from a separate warehouse, so 12% were canceled or delayed when products showed in stock but were allocated to stores."
+      clientProfile={{
+        industry: "Home-Goods Retailer",
+        companySize: "28 Stores",
+        projectDuration: "Unified Platform",
+        additionalInfo: "15,000+ SKUs",
+        additionalLabel: "Catalog"
       }}
-      tags={["Retail", "Inventory", "AI", "Operations"]}
-      relatedCapability={{
-        title: "Operations",
-        link: "/capabilities/operations"
-      }}
+      challengeTitle="Why Inventory Was Out of Balance"
+      challenges={[
+        {
+          icon: Split,
+          title: "Semi-independent store systems",
+          description: "Stores didn't sync in real time, so buyers worked from weekly aggregated reports."
+        },
+        {
+          icon: Clock,
+          title: "5–7 day replenishment lag",
+          description: "The gap between actual sales and decisions missed critical demand signals."
+        },
+        {
+          icon: Percent,
+          title: "28% seasonal markdowns",
+          description: "Over- and under-ordering on 40%-seasonal revenue drove heavy end-of-season markdowns."
+        },
+        {
+          icon: PackageX,
+          title: "Split online inventory",
+          description: "A separate warehouse pool canceled or delayed 12% of online orders shown in stock."
+        }
+      ]}
+      approachTitle="One Inventory Pool, AI-Optimized"
+      approachIntro="NEXDYNE implemented a unified inventory-intelligence platform with real-time cross-channel visibility, AI demand forecasting, and automated allocation."
+      steps={[
+        {
+          step: "01",
+          title: "Sync everything in real time",
+          description: "Integration across 28 stores, the warehouse, and e-commerce updated every sale, return, and transfer within seconds."
+        },
+        {
+          step: "02",
+          title: "Forecast at store-SKU level",
+          description: "ML models used sales history, local events, and weather for 90-day rolling forecasts at 87%+ accuracy, updated daily."
+        },
+        {
+          step: "03",
+          title: "Automate rebalancing",
+          description: "Detected imbalances generated pre-approved transfer recommendations with optimal routing and one-click confirmation."
+        },
+        {
+          step: "04",
+          title: "Unify the channels",
+          description: "A single inventory pool served store and online, with ship-from-store fulfilling from the nearest location with stock."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: DollarSign,
+          value: "47%",
+          label: "Lower carrying costs",
+          detail: "From $4.2M to $2.2M, with turnover from 4.2x to 6.1x"
+        },
+        {
+          icon: PackageX,
+          value: "68%",
+          label: "Fewer stockouts",
+          detail: "From 340 to 108 a month, capturing lost sales"
+        },
+        {
+          icon: Percent,
+          value: "11%",
+          label: "Seasonal markdown rate",
+          detail: "Down from 28%, protecting gross margin"
+        }
+      ]}
+      quote="The transformation has been remarkable. We went from constantly firefighting inventory issues to having predictive insights that let us stay ahead of demand. Our buyers now spend their time on strategic decisions instead of chasing data."
+      quoteAuthor="Michael Rodriguez"
+      quoteRole="VP of Operations, HomeStyle Goods"
+      relatedStudies={[
+        {
+          title: "Cutting Stockouts 35% With ML Demand Forecasting",
+          metric: "35%",
+          label: "fewer stockouts",
+          link: "/cases/retail-demand-forecasting",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
+        },
+        {
+          title: "Automating Order Fulfillment to Triple Capacity",
+          metric: "3x",
+          label: "order capacity",
+          link: "/capabilities/operations/case-studies/ecommerce-fulfillment",
+          image: "/images/industries/retail-warehouse.jpg"
+        }
+      ]}
+      ctaTitle="Ready to balance your inventory?"
+      ctaDescription="Let's talk about what AI-driven optimization could do for your carrying costs and stockouts."
     />
   );
 }
