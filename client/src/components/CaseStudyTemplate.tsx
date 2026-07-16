@@ -101,6 +101,8 @@ export default function CaseStudyTemplate({
                 results={impact.split("\n").map(s => s.trim()).filter(Boolean)}
                 metrics={metrics}
                 variant="outline"
+                size="lg"
+                className="bg-charcoal text-white border-charcoal hover:bg-charcoal/90 hover:text-white uppercase tracking-[0.1em] text-[13px] font-semibold px-8 py-3 h-auto"
               />
             </div>
           </div>
