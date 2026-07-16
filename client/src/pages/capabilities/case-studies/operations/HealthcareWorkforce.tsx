@@ -1,35 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { DollarSign, Clock, Car, UserMinus, MapPinned, Smartphone, Gauge, HeartPulse } from "lucide-react";
 
 export function HealthcareWorkforce() {
   return (
-    <CaseStudyTemplate
-      client="Healthcare Services Company"
-      industry="Healthcare · Operations"
-      title="Workforce Optimization Improves Productivity by 28%"
-      subtitle="How a healthcare services company optimized staffing to improve productivity while reducing overtime costs."
+    <IndustryCaseStudyTemplate
+      seoTitle="Workforce Optimization That Improved Productivity 28% | Healthcare Case Study"
+      seoDescription="A $48M home-health company spent 72% of revenue on labor with clinicians driving 35% of the day and 35% turnover. Scheduling optimization lifted productivity 28% and saved $1.4M."
+      canonical="/capabilities/operations/case-studies/healthcare-workforce"
+      industry="Healthcare"
+      industryLink="/industries/healthcare"
+      title="How a Healthcare Services Company Improved Productivity 28%"
+      subtitle="A home-health services company optimized staffing with geographic routing, redesigned territories, and mobile documentation — improving clinician productivity 28%, cutting overtime 15%, and saving $1.4M."
       heroImage="/case-medical-collaboration.9602cc8c.jpg"
-      challenge={`Labor costs were consuming 72% of revenue, well above industry benchmarks. Overtime had become chronic, with some staff working 50+ hours weekly. Scheduling was manual and reactive, leading to inefficient routing and missed visits. Staff turnover was 35% annually, driven partly by unpredictable schedules.
-
-A 190-employee healthcare services company with $48M in annual revenue provides home health, hospice, and personal care services across a three-state region, employing 150 field clinicians and caregivers. The workforce diagnostic revealed multiple sources of productivity loss: schedulers assigning visits manually without considering geographic proximity, clinicians spending 35% of their time driving between visits, paper-based documentation entered into systems at the end of the day, and no-shows and cancellations leaving gaps in schedules rather than being systematically backfilled.`}
-      solution={`NEXDYNE deployed a scheduling optimization system considering clinician skills, patient needs, and geographic proximity—automatically optimizing routes to minimize drive time, providing real-time visibility into schedule changes and gaps, and enabling patients to self-schedule within defined parameters.
-
-Service territories were redesigned to balance workload and minimize travel by analyzing patient density and visit patterns, creating territories grouping patients geographically while balancing caseloads, establishing primary and backup clinician assignments for continuity, and building flexibility for growth and seasonal variation.
-
-Mobile technology deployment included mobile devices for real-time schedule access and documentation, point-of-care documentation eliminating end-of-day data entry, electronic visit verification automating compliance requirements, and GPS navigation integrated with the scheduling system. Workforce engagement improved through schedule preferences giving staff input into assignments, transparent productivity metrics enabling self-management, recognition programs for high performers, and improved communication through regular team huddles.`}
-      impact={`Clinician productivity improved 28% as geographic routing optimization reduced drive time from 35% to under 20% of the workday, allowing more patient visits per shift with less exhaustion. Overtime decreased 15% as smarter scheduling eliminated the schedule gaps and reactive over-staffing that had driven chronic overtime. Annual savings of $1.4 million came from labor efficiency improvements and overtime reduction.
-
-Staff turnover dropped 22% as schedule predictability improved—a high-value outcome that compounds over time by reducing the recruiting, onboarding, and training costs associated with 35% annual turnover in a skilled clinical workforce. The mobile documentation capability was particularly valued by clinicians, who regained personal time previously consumed by end-of-day data entry and improved the quality of their documentation by completing it at point of care.`}
       metrics={[
-        { value: "28%", label: "Productivity gain" },
-        { value: "15%", label: "Overtime reduction" },
-        { value: "$1.4M", label: "Annual savings" },
-        { value: "22%", label: "Turnover reduction" }
+        { value: "28%", label: "Productivity Gain" },
+        { value: "15%", label: "Overtime Reduction" },
+        { value: "$1.4M", label: "Annual Savings" },
+        { value: "22%", label: "Turnover Reduction" }
       ]}
-      tags={["Healthcare", "Workforce Optimization", "Operations", "Scheduling"]}
-      relatedCapability={{
-        title: "Operations",
-        link: "/capabilities/operations"
+      clientContextTitle="Labor Eating the Business"
+      clientContextIntro="A 190-employee healthcare services company with $48M in revenue provides home health, hospice, and personal care across a three-state region with 150 field clinicians. Labor costs consumed 72% of revenue — well above benchmark — and overtime had become chronic, with some staff working 50+ hours a week."
+      clientContextBody="Scheduling was manual and reactive, causing inefficient routing and missed visits, and turnover ran 35% annually, driven partly by unpredictable schedules. The diagnostic found multiple sources of productivity loss: schedulers assigning visits without regard to geography, clinicians spending 35% of their time driving, paper documentation entered at day's end, and no-shows leaving gaps rather than being backfilled."
+      clientProfile={{
+        industry: "Home Health Services",
+        companySize: "150 Clinicians",
+        projectDuration: "Three-State Region",
+        additionalInfo: "Route Optimization",
+        additionalLabel: "Core"
       }}
+      challengeTitle="Why Productivity Suffered"
+      challenges={[
+        {
+          icon: DollarSign,
+          title: "72% of revenue on labor",
+          description: "Labor costs ran well above industry benchmarks, squeezing the business."
+        },
+        {
+          icon: Clock,
+          title: "Chronic overtime",
+          description: "Manual, reactive scheduling pushed some staff past 50 hours a week."
+        },
+        {
+          icon: Car,
+          title: "35% of the day driving",
+          description: "Visits assigned without geographic logic sent clinicians backtracking across territories."
+        },
+        {
+          icon: UserMinus,
+          title: "35% annual turnover",
+          description: "Unpredictable schedules drove attrition in a skilled clinical workforce."
+        }
+      ]}
+      approachTitle="Optimize Routes, Territories, and Tools"
+      approachIntro="NEXDYNE deployed scheduling optimization, redesigned service territories, and put documentation on mobile — cutting drive time and giving clinicians predictable, manageable schedules."
+      steps={[
+        {
+          step: "01",
+          title: "Optimize scheduling and routes",
+          description: "A system matched clinician skills, patient needs, and proximity, auto-optimizing routes and enabling patient self-scheduling."
+        },
+        {
+          step: "02",
+          title: "Redesign territories",
+          description: "Territories grouped patients geographically while balancing caseloads, with primary and backup assignments for continuity."
+        },
+        {
+          step: "03",
+          title: "Go mobile at point of care",
+          description: "Mobile devices, point-of-care documentation, electronic visit verification, and integrated GPS eliminated end-of-day data entry."
+        },
+        {
+          step: "04",
+          title: "Engage the workforce",
+          description: "Schedule preferences, transparent metrics, recognition, and team huddles improved communication and buy-in."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Gauge,
+          value: "28%",
+          label: "Higher productivity",
+          detail: "Drive time cut from 35% to under 20% of the workday"
+        },
+        {
+          icon: HeartPulse,
+          value: "22%",
+          label: "Lower turnover",
+          detail: "As schedule predictability improved, compounding savings over time"
+        },
+        {
+          icon: Smartphone,
+          value: "$1.4M",
+          label: "Annual savings",
+          detail: "From labor efficiency and a 15% overtime reduction"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Reducing Patient Wait Times 35% With Predictive Analytics",
+          metric: "35%",
+          label: "shorter waits",
+          link: "/cases/healthcare-provider-ai",
+          image: "/case-medical-collaboration.9602cc8c.jpg"
+        },
+        {
+          title: "Automating Patient Data Management, Cutting Admin Work 40%",
+          metric: "40%",
+          label: "less admin overhead",
+          link: "/cases/healthcare-provider",
+          image: "/case-medical-collaboration.9602cc8c.jpg"
+        }
+      ]}
+      ctaTitle="Ready to get more from your workforce?"
+      ctaDescription="Let's talk about what scheduling optimization could do for your productivity and retention."
     />
   );
 }

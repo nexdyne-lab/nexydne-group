@@ -1,35 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { TrendingUp, Boxes, Truck, LineChart, Radar, Handshake, Network, DollarSign } from "lucide-react";
 
 export function ConsumerGoodsSupplyChain() {
   return (
-    <CaseStudyTemplate
-      client="Consumer Goods Manufacturer"
-      industry="Manufacturing · Operations"
-      title="Supply Chain Optimization Reduces Costs by 25%"
-      subtitle="How a consumer goods manufacturer transformed their supply chain to achieve significant cost savings and improved lead times."
+    <IndustryCaseStudyTemplate
+      seoTitle="Supply Chain Optimization That Cut Costs 25% | Consumer Goods Case Study"
+      seoDescription="An $85M consumer-goods maker had 150 suppliers, freight 18% above benchmark, and forecasts on spreadsheets. Demand-driven planning cut supply-chain costs 25% and saved $3.2M."
+      canonical="/capabilities/operations/case-studies/consumer-goods-supply-chain"
+      industry="Manufacturing"
+      industryLink="/industries/manufacturing"
+      title="How a Consumer-Goods Maker Cut Supply-Chain Costs 25%"
+      subtitle="A consumer-goods manufacturer transformed a fragmented supply chain with demand-driven planning, supplier consolidation, and network redesign — cutting costs 25%, saving $3.2M, and reaching 98% on-time delivery."
       heroImage="/images/industries/retail-warehouse.jpg"
-      challenge={`The company faced escalating supply chain costs that were eroding margins in an increasingly competitive market. Raw material costs had increased 15% over two years, while customer demands for faster delivery were intensifying. The existing supply chain was fragmented, with limited visibility into inventory levels across facilities and no systematic approach to demand planning.
-
-A 200-employee consumer goods manufacturer with $85M in annual revenue operates three production facilities across the Midwest, producing household cleaning products sold through major retailers and regional distributors. The supply chain diagnostic revealed interconnected issues: inventory distributed unevenly across facilities (some locations holding 90+ days of stock, others facing frequent stockouts), over 150 suppliers with no formal management program, transportation costs 18% above industry benchmarks due to inefficient routing and carrier selection, and demand forecasting relying on spreadsheets and sales team intuition.`}
-      solution={`NEXDYNE implemented a demand-driven planning process with a cloud-based demand planning system integrating POS data from major retail customers, statistical forecasting models improving accuracy from 65% to 88%, a monthly S&OP process aligning sales, production, and procurement, and a demand sensing capability detecting consumer behavior shifts within days rather than weeks.
-
-Supplier optimization consolidated the active supplier base from 150 to 85 while maintaining dual-source coverage for critical materials. Volume-based agreements with strategic suppliers reduced material costs by 8%, supported by a supplier scorecard tracking quality, delivery, and responsiveness.
-
-The distribution network was redesigned, consolidating from three regional distribution centers to two strategically located facilities and implementing a transportation management system optimizing carrier selection and routing. New carrier contracts reduced freight costs 22%. Planning team capabilities were built through advanced forecasting training, daily management systems, and a supply chain analytics function.`}
-      impact={`Supply chain costs decreased 25%, generating $3.2 million in annual savings. Lead times improved 40% as demand-driven planning replaced reactive scheduling, enabling the company to meet customer delivery requirements consistently. On-time delivery reached 98%, strengthening relationships with major retail customers.
-
-Working capital improved significantly as inventory levels normalized across facilities—ending the paradox of simultaneous stockouts and excess inventory. The supplier consolidation, combined with stronger volume-based relationships, created a more resilient supply base than the previous fragmented 150-supplier network. The S&OP process became a durable management capability that continues to adapt supply chain decisions to changing market conditions.`}
       metrics={[
-        { value: "25%", label: "Cost reduction" },
-        { value: "40%", label: "Lead time improvement" },
-        { value: "$3.2M", label: "Annual savings" },
-        { value: "98%", label: "On-time delivery" }
+        { value: "25%", label: "Cost Reduction" },
+        { value: "40%", label: "Lead Time Improvement" },
+        { value: "$3.2M", label: "Annual Savings" },
+        { value: "98%", label: "On-Time Delivery" }
       ]}
-      tags={["Manufacturing", "Supply Chain", "Operations", "Cost Reduction"]}
-      relatedCapability={{
-        title: "Operations",
-        link: "/capabilities/operations"
+      clientContextTitle="Costs Eroding Margins"
+      clientContextIntro="A 200-employee consumer-goods manufacturer with $85M in revenue operates three Midwest facilities producing household cleaning products for major retailers. Raw-material costs had risen 15% over two years while customer demands for faster delivery intensified — and the fragmented supply chain had little inventory visibility and no systematic demand planning."
+      clientContextBody="The diagnostic revealed interconnected issues: inventory distributed unevenly (some sites holding 90+ days of stock, others facing stockouts), 150+ suppliers with no formal management, transportation costs 18% above benchmark from inefficient routing, and demand forecasting relying on spreadsheets and sales intuition."
+      clientProfile={{
+        industry: "Consumer-Goods Manufacturer",
+        companySize: "$85M Revenue",
+        projectDuration: "3 Facilities",
+        additionalInfo: "S&OP Process",
+        additionalLabel: "Capability"
       }}
+      challengeTitle="Why the Supply Chain Cost Too Much"
+      challenges={[
+        {
+          icon: Boxes,
+          title: "Stockouts and 90+ days of stock",
+          description: "Inventory sat unevenly across sites, causing simultaneous shortages and excess."
+        },
+        {
+          icon: Handshake,
+          title: "150+ unmanaged suppliers",
+          description: "A fragmented supplier base had no formal management program or leverage."
+        },
+        {
+          icon: Truck,
+          title: "Freight 18% over benchmark",
+          description: "Inefficient routing and carrier selection inflated transportation costs."
+        },
+        {
+          icon: LineChart,
+          title: "Spreadsheet forecasting",
+          description: "Quarterly, intuition-based forecasts couldn't keep up with real demand."
+        }
+      ]}
+      approachTitle="Demand-Driven, Consolidated, Redesigned"
+      approachIntro="NEXDYNE implemented demand-driven planning, consolidated the supplier base, and redesigned the distribution network — replacing reactive scheduling with a durable S&OP capability."
+      steps={[
+        {
+          step: "01",
+          title: "Plan from real demand",
+          description: "A cloud demand-planning system with retailer POS data and statistical models lifted forecast accuracy from 65% to 88%, sensing shifts in days."
+        },
+        {
+          step: "02",
+          title: "Run monthly S&OP",
+          description: "A formal S&OP process aligned sales, production, and procurement on one plan."
+        },
+        {
+          step: "03",
+          title: "Consolidate suppliers",
+          description: "The active base went from 150 to 85 with dual-sourcing on critical materials, cutting material costs 8% via volume agreements."
+        },
+        {
+          step: "04",
+          title: "Redesign distribution",
+          description: "Consolidating to two strategic DCs plus a transportation management system cut freight costs 22%."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: DollarSign,
+          value: "25%",
+          label: "Lower supply-chain costs",
+          detail: "$3.2M in annual savings"
+        },
+        {
+          icon: TrendingUp,
+          value: "40%",
+          label: "Better lead times",
+          detail: "With on-time delivery reaching 98%"
+        },
+        {
+          icon: Network,
+          value: "Resilience",
+          label: "A stronger supplier base",
+          detail: "Consolidated relationships replaced a fragile 150-supplier network"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Doubling Warehouse Throughput Without Expanding",
+          metric: "2x",
+          label: "throughput",
+          link: "/capabilities/operations/case-studies/distribution-warehouse",
+          image: "/images/capabilities/cap-warehouse-robot.jpg"
+        },
+        {
+          title: "AI Demand Forecasting That Cut Inventory 35%",
+          metric: "35%",
+          label: "less inventory",
+          link: "/capabilities/artificial-intelligence/case-studies/distributor-demand-forecasting",
+          image: "/images/industries/retail-warehouse.jpg"
+        }
+      ]}
+      ctaTitle="Ready to take cost out of your supply chain?"
+      ctaDescription="Let's talk about what demand-driven planning could do for your costs and service."
     />
   );
 }
