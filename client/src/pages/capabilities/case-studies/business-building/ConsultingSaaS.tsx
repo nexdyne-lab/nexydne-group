@@ -1,35 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { Waves, UserCog, Ban, Shield, SlidersHorizontal, BarChart3, Users, Percent } from "lucide-react";
 
 export function ConsultingSaaS() {
   return (
-    <CaseStudyTemplate
-      client="Management Consulting Firm"
-      industry="Professional Services · Business Building"
-      title="Professional Services Firm Builds SaaS Product"
-      subtitle="How a consulting firm transformed their proprietary methodology into a subscription software product, creating recurring revenue and expanding market reach."
+    <IndustryCaseStudyTemplate
+      seoTitle="Turning a Consulting Methodology Into a $3.2M ARR SaaS Product | Business Building Case Study"
+      seoDescription="A consulting firm's project-based revenue swung feast-or-famine and priced out smaller clients. Productizing its methodology reached 2,400 subscribers and $3.2M ARR at 92% retention."
+      canonical="/capabilities/business-building/case-studies/consulting-saas"
+      industry="Professional Services"
+      industryLink="/industries"
+      title="How a Consulting Firm Built a $3.2M ARR SaaS Product"
+      subtitle="A management consulting firm productized its 15-year methodology into subscription software — reaching 2,400 subscribers and $3.2M ARR at 45% gross margin and 92% retention, without cannibalizing its core business."
       heroImage="/images/capabilities/cap-team-screens.jpg"
-      challenge={`Project-based revenue created feast-or-famine cycles. The firm's methodology was valuable but delivery required expensive senior consultants. Smaller companies couldn't afford full engagements. The leadership sought recurring revenue and broader market access while protecting their intellectual property.
-
-A 120-employee management consulting firm specializing in operational excellence had developed a proprietary assessment and improvement methodology over 15 years, with revenue entirely project-based and subject to significant seasonality. The challenge was translating a methodology that depended on experienced human judgment into software that could deliver meaningful value self-service, without cannibalizing the core consulting business or creating a product so watered-down it damaged the firm's reputation.`}
-      solution={`NEXDYNE mapped the assessment process to identify components suitable for self-service versus those requiring human expertise, designing a product that delivered 80% of the value at 20% of the cost with upgrade paths connecting software users to consulting services.
-
-The SaaS platform guided users through operational assessments via diagnostic questionnaires based on the firm's frameworks, benchmarking capabilities using anonymized data from consulting engagements, action planning tools that prioritized improvement opportunities, and progress tracking and reporting dashboards. The platform was built on modern multi-tenant SaaS architecture with robust security, business system integrations, and analytics infrastructure to generate insights from aggregated data.
-
-Go-to-market strategy targeted mid-size companies through content marketing demonstrating methodology value, free assessment tools generating qualified leads, pricing tiers matching different company sizes, and sales team training on SaaS selling motions. Seamless connections between product and consulting services allowed software users to engage consultants when needed, while consultants used the platform to deliver more efficient engagements.`}
-      impact={`Within two years of launch, the platform reached 2,400 paying subscribers generating $3.2 million in ARR at 45% gross margin—a recurring revenue stream that smoothed the feast-or-famine cycles of project-based work. Retention rate reached 92%, demonstrating that the product delivered sustained value rather than one-time novelty.
-
-The SaaS product expanded the firm's addressable market to companies that couldn't afford full consulting engagements, creating a pipeline of future consulting clients who had proven the methodology's value through the software. Aggregated platform data also created new insights that enhanced the quality of full consulting engagements, making the two revenue streams mutually reinforcing rather than competitive.`}
       metrics={[
-        { value: "2,400", label: "Paying subscribers" },
-        { value: "45%", label: "Gross margin" },
+        { value: "2,400", label: "Paying Subscribers" },
+        { value: "45%", label: "Gross Margin" },
         { value: "$3.2M", label: "ARR" },
-        { value: "92%", label: "Retention rate" }
+        { value: "92%", label: "Retention Rate" }
       ]}
-      tags={["Professional Services", "SaaS", "Business Building", "Strategy"]}
-      relatedCapability={{
-        title: "Strategy & Finance",
-        link: "/capabilities/strategy-finance"
+      clientContextTitle="Valuable Methodology, Volatile Revenue"
+      clientContextIntro="A 120-employee management consulting firm specializing in operational excellence had developed a proprietary assessment methodology over 15 years. Revenue was entirely project-based and highly seasonal, creating feast-or-famine cycles, while delivery required expensive senior consultants."
+      clientContextBody="Smaller companies couldn't afford full engagements, and leadership wanted recurring revenue and broader reach while protecting their IP. The challenge was translating a methodology that depended on experienced human judgment into software delivering meaningful self-service value — without cannibalizing the core consulting business or watering the product down enough to damage the firm's reputation."
+      clientProfile={{
+        industry: "Management Consulting Firm",
+        companySize: "120 Employees",
+        projectDuration: "Multi-Tenant SaaS",
+        additionalInfo: "15-Year Methodology",
+        additionalLabel: "IP"
       }}
+      challengeTitle="Why Productizing Was Hard"
+      challenges={[
+        {
+          icon: Waves,
+          title: "Feast-or-famine revenue",
+          description: "Entirely project-based, seasonal revenue created volatile cash flows."
+        },
+        {
+          icon: UserCog,
+          title: "Expensive to deliver",
+          description: "The methodology required senior consultants, pricing out smaller companies."
+        },
+        {
+          icon: Ban,
+          title: "Cannibalization risk",
+          description: "A self-service product could undercut the core consulting business if mishandled."
+        },
+        {
+          icon: Shield,
+          title: "Reputation on the line",
+          description: "A watered-down product could damage 15 years of brand equity."
+        }
+      ]}
+      approachTitle="80% of the Value, Self-Service"
+      approachIntro="NEXDYNE mapped the assessment process to separate self-service components from those needing human expertise — designing a product that delivered 80% of the value at 20% of the cost, with upgrade paths to consulting."
+      steps={[
+        {
+          step: "01",
+          title: "Split self-service from expertise",
+          description: "Process mapping identified which assessment components could be automated and which required a consultant's judgment."
+        },
+        {
+          step: "02",
+          title: "Build the platform",
+          description: "Diagnostic questionnaires, benchmarking from anonymized engagement data, action planning, and progress dashboards ran on multi-tenant SaaS."
+        },
+        {
+          step: "03",
+          title: "Go to market on content",
+          description: "Free assessment tools generated qualified leads, with pricing tiers by company size and sales training on SaaS motions."
+        },
+        {
+          step: "04",
+          title: "Make the channels reinforce",
+          description: "Software users could engage consultants when needed, while consultants used the platform to deliver more efficient engagements."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Users,
+          value: "2,400",
+          label: "Paying subscribers",
+          detail: "Generating $3.2M ARR within two years of launch"
+        },
+        {
+          icon: Percent,
+          value: "92%",
+          label: "Retention rate",
+          detail: "Proving sustained value, not one-time novelty"
+        },
+        {
+          icon: BarChart3,
+          value: "45%",
+          label: "Gross margin",
+          detail: "A recurring stream that smoothed project seasonality"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Commercializing Internal Tech Into a $12M Spin-Off",
+          metric: "$12M",
+          label: "spin-off valuation",
+          link: "/capabilities/business-building/case-studies/logistics-tech-spinoff",
+          image: "/images/industries/transport-bridge.jpg"
+        },
+        {
+          title: "Launching a B2B Marketplace for a Distributor",
+          metric: "$4.2M",
+          label: "new revenue",
+          link: "/capabilities/business-building/case-studies/distributor-marketplace",
+          image: "/images/industries/retail-warehouse.jpg"
+        }
+      ]}
+      ctaTitle="Ready to productize your expertise?"
+      ctaDescription="Let's talk about what a SaaS product could do for your recurring revenue and reach."
     />
   );
 }

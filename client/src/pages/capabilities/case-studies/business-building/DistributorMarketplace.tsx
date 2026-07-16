@@ -1,35 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { TrendingDown, PackageSearch, DollarSign, Users, ShieldCheck, Store, ShoppingBag, Percent } from "lucide-react";
 
 export function DistributorMarketplace() {
   return (
-    <CaseStudyTemplate
-      client="Industrial Supplies Distributor"
-      industry="Distribution · Business Building"
-      title="Regional Distributor Launches Digital Marketplace"
-      subtitle="How an industrial supplies distributor created a new revenue stream by building a B2B marketplace connecting buyers with specialized vendors."
+    <IndustryCaseStudyTemplate
+      seoTitle="Launching a B2B Marketplace for a Distributor | Business Building Case Study"
+      seoDescription="A $45M distributor faced eroding margins and a catalog it couldn't match. A curated B2B marketplace generated $4.2M in year-one revenue from 340 sellers and 2,800 buyers at an 18% take rate."
+      canonical="/capabilities/business-building/case-studies/distributor-marketplace"
+      industry="Transportation & Logistics"
+      industryLink="/industries/transportation-logistics"
+      title="How a Regional Distributor Launched a Digital Marketplace"
+      subtitle="An industrial-supplies distributor built a curated B2B marketplace connecting buyers with specialized vendors — generating $4.2M in new revenue from 340 sellers and 2,800 buyers at an 18% take rate."
       heroImage="/images/industries/retail-warehouse.jpg"
-      challenge={`Traditional distribution margins were declining as customers gained price transparency. The company's product catalog couldn't match larger competitors. Customer acquisition costs were rising. The leadership team needed a differentiated strategy that leveraged existing relationships while creating new value.
-
-A 150-employee industrial supplies distributor with $45M annual revenue serves manufacturing and construction customers across the Midwest. Analysis revealed that customers frequently needed specialized products outside the existing catalog and were spending significant time finding and vetting new suppliers. The distributor had relationships with hundreds of specialty vendors who struggled to reach mid-size buyers—a two-sided market inefficiency that created the foundation for a curated marketplace opportunity.`}
-      solution={`NEXDYNE designed a marketplace model that leveraged the distributor's strengths: curated vendors vetted by the distributor's procurement team, consolidated invoicing and credit terms for buyers, access to qualified buyers without direct sales investment for sellers, and transaction fee revenue for the distributor while strengthening customer relationships.
-
-NEXDYNE built a B2B marketplace platform tailored to industrial supplies with robust search and filtering for technical specifications, integration with the distributor's existing ERP for seamless operations, seller onboarding tools simplifying catalog management, and buyer tools for RFQ management and order tracking.
-
-Seller recruitment targeted specialty vendors who complemented rather than competed with existing inventory, emphasizing access to qualified buyers and providing onboarding support to help sellers succeed. Buyer adoption was driven through targeted outreach to existing customers with frequent specialty purchasing needs, early adoption incentives, integration into existing customer portals, and sales team training on marketplace benefits.`}
-      impact={`In its first year, the marketplace generated $4.2 million in new revenue from 340 marketplace sellers serving 2,800 active buyers at an 18% take rate. The curated model—with vendors vetted by the distributor's procurement team—differentiated the marketplace from open platforms and maintained the distributor's reputation for quality.
-
-The marketplace transformed the company's competitive position. Rather than competing on price against larger distributors with broader catalogs, the company now offered a solution that no competitor could replicate: access to a curated network of specialty vendors, combined with the consolidated invoicing, credit terms, and relationship trust that the distributor had built over decades. Existing customer relationships strengthened as the marketplace solved a genuine pain point, and new buyer accounts joined the platform seeking access to the curated vendor network.`}
       metrics={[
-        { value: "$4.2M", label: "New revenue (Year 1)" },
-        { value: "340", label: "Marketplace sellers" },
-        { value: "2,800", label: "Active buyers" },
-        { value: "18%", label: "Take rate" }
+        { value: "$4.2M", label: "New Revenue (Year 1)" },
+        { value: "340", label: "Marketplace Sellers" },
+        { value: "2,800", label: "Active Buyers" },
+        { value: "18%", label: "Take Rate" }
       ]}
-      tags={["Distribution", "Marketplace", "Business Building", "Technology"]}
-      relatedCapability={{
-        title: "Strategy & Finance",
-        link: "/capabilities/strategy-finance"
+      clientContextTitle="Margins Under Pressure"
+      clientContextIntro="A 150-employee industrial-supplies distributor with $45M in revenue serves manufacturing and construction customers across the Midwest. Traditional distribution margins were declining as customers gained price transparency, and its catalog couldn't match larger competitors while acquisition costs rose."
+      clientContextBody="Analysis revealed customers frequently needed specialized products outside the existing catalog and spent significant time finding and vetting new suppliers. The distributor had relationships with hundreds of specialty vendors who struggled to reach mid-size buyers — a two-sided market inefficiency that created the foundation for a curated marketplace leveraging existing relationships while creating new value."
+      clientProfile={{
+        industry: "Industrial Supplies Distributor",
+        companySize: "$45M Revenue",
+        projectDuration: "ERP-Integrated",
+        additionalInfo: "Curated B2B",
+        additionalLabel: "Model"
       }}
+      challengeTitle="Why the Core Model Was Squeezed"
+      challenges={[
+        {
+          icon: TrendingDown,
+          title: "Declining margins",
+          description: "Price transparency eroded traditional distribution margins across the catalog."
+        },
+        {
+          icon: PackageSearch,
+          title: "Catalog gaps",
+          description: "Customers needed specialty products the distributor didn't stock, sending them elsewhere."
+        },
+        {
+          icon: DollarSign,
+          title: "Rising acquisition costs",
+          description: "Winning new business grew more expensive against larger, broader competitors."
+        },
+        {
+          icon: Users,
+          title: "Vendors couldn't reach buyers",
+          description: "Hundreds of specialty vendors struggled to reach the distributor's mid-size buyers."
+        }
+      ]}
+      approachTitle="A Curated Two-Sided Marketplace"
+      approachIntro="NEXDYNE designed a marketplace that leveraged the distributor's strengths — procurement-vetted vendors, consolidated invoicing and credit for buyers, and transaction-fee revenue that strengthened relationships."
+      steps={[
+        {
+          step: "01",
+          title: "Curate the supply side",
+          description: "Vendors were vetted by the distributor's procurement team, differentiating from open platforms and protecting its quality reputation."
+        },
+        {
+          step: "02",
+          title: "Build for industrial supply",
+          description: "The platform offered technical-spec search, ERP integration, seller catalog tools, and buyer RFQ and order tracking."
+        },
+        {
+          step: "03",
+          title: "Recruit complementary sellers",
+          description: "Onboarding targeted specialty vendors that complemented rather than competed with existing inventory."
+        },
+        {
+          step: "04",
+          title: "Drive buyer adoption",
+          description: "Targeted outreach, early-adoption incentives, portal integration, and sales training brought existing customers onto the platform."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: DollarSign,
+          value: "$4.2M",
+          label: "New revenue in year one",
+          detail: "At an 18% take rate across the marketplace"
+        },
+        {
+          icon: Store,
+          value: "340",
+          label: "Marketplace sellers",
+          detail: "Serving 2,800 active buyers in a curated network"
+        },
+        {
+          icon: ShieldCheck,
+          value: "Moat",
+          label: "No competitor could replicate",
+          detail: "Curated vendors plus consolidated invoicing and decades of trust"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Launching a B2B E-Commerce Platform That Drives 35% of Revenue",
+          metric: "35%",
+          label: "of revenue digital",
+          link: "/capabilities/business-building/case-studies/ecommerce-platform-launch",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
+        },
+        {
+          title: "Turning a Consulting Methodology Into a $3.2M ARR Product",
+          metric: "$3.2M",
+          label: "ARR",
+          link: "/capabilities/business-building/case-studies/consulting-saas",
+          image: "/images/capabilities/cap-team-screens.jpg"
+        }
+      ]}
+      ctaTitle="Ready to build a new revenue stream?"
+      ctaDescription="Let's talk about what a curated marketplace could do for your margins and relationships."
     />
   );
 }
