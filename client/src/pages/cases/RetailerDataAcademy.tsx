@@ -1,41 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { EyeOff, GraduationCap, Repeat, Users, BookOpen, Layers, TrendingUp, DollarSign } from "lucide-react";
 
 export function RetailerDataAcademy() {
   return (
-    <CaseStudyTemplate
-      client="Regional Retail Chain"
-      industry="Retail · Data Strategy"
-      title="Retailer Builds Internal Data Academy to Train 120 Employees"
-      subtitle="Custom curriculum covering analytics fundamentals through ML deployment trained employees across 6 departments in 12 months, creating a data-literate organization."
+    <IndustryCaseStudyTemplate
+      seoTitle="Building an Internal Data Academy to Train 120 Employees | Retail Case Study"
+      seoDescription="A retail chain invested in a data warehouse but only 15% of staff used data. A tiered, role-specific Data Academy lifted data usage to 68% and saved $1.2M in consulting a year."
+      canonical="/cases/retailer-data-academy"
+      industry="Retail"
+      industryLink="/industries/retail"
+      title="How a Retailer Built an Internal Data Academy to Train 120 Employees"
+      subtitle="A custom, role-specific curriculum — from analytics fundamentals to ML deployment — trained employees across 6 departments in 12 months, taking data usage from 15% to 68% of the workforce."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
-      challenge={`A regional retail chain with 85 stores and $450M annual revenue recognized that data literacy was becoming a competitive differentiator. While they had invested in a modern data warehouse and BI tools, adoption remained low—only 15% of employees used data to inform decisions.
-
-The problem wasn't technology—it was capability. Store managers didn't know how to interpret sales dashboards. Merchandising teams couldn't build custom reports. Marketing relied on external agencies for campaign analysis because internal teams lacked analytics skills.
-
-Leadership wanted to build a "data-driven culture," but one-off training sessions hadn't worked. Employees attended generic webinars, forgot the content within weeks, and reverted to gut-feel decision-making. The company needed a structured, ongoing program that built real capability.`}
-      solution={`NEXDYNE designed a multi-tier "Data Academy" with role-specific learning paths spanning 12 months. Rather than one-size-fits-all training, we created curricula tailored to job functions—store operations, merchandising, marketing, finance, supply chain, and IT.
-
-Tier 1 (Data Literacy, All Employees): A 4-week foundation covering data concepts, dashboard interpretation, and basic Excel analytics, delivered as 1-hour weekly modules with practical exercises using real store performance data. Tier 2 (Self-Service Analytics, Business Users): An 8-week program teaching Looker, SQL basics, and report building. Store managers learned to create custom sales reports; merchandisers built inventory dashboards; marketers analyzed campaign performance independently. Tier 3 (Advanced Analytics, Analysts & Data Team): A 12-week intensive covering Python, statistical analysis, A/B testing, and ML fundamentals, with a final capstone requiring participants to deploy a production ML model that improves business KPIs.
-
-The blended delivery model combined live workshops (monthly), self-paced online modules (weekly), and hands-on projects (continuous). NEXDYNE provided train-the-trainer sessions to build internal instructors who could sustain the academy after the engagement concluded.`}
-      impact={`One year post-launch, employee data usage increased from 15% to 68% of the workforce making data-informed daily decisions. Store managers now optimize staffing schedules using traffic forecasts (reducing labor costs 8%). Merchandisers identify slow-moving inventory 3 weeks earlier, minimizing markdowns. Marketing runs A/B tests in-house instead of paying agencies $50K per campaign.
-
-250+ custom dashboards and reports were built by business users, reducing dependence on the data team for standard analyzes. Annual savings from reduced external analytics consulting reached $1.2M. The Data Academy became a permanent fixture in the talent development program—new hires complete Tier 1 during onboarding, and 3 Tier 3 graduates were promoted into newly created "Analytics Lead" roles.`}
       metrics={[
-        { value: "120", label: "Employees trained across 6 departments" },
-        { value: "68%", label: "Employees using data daily (from 15%)" },
-        { value: "$1.2M", label: "Annual savings from reduced consulting" }
+        { value: "120", label: "Employees Trained" },
+        { value: "68%", label: "Using Data Daily (from 15%)" },
+        { value: "$1.2M", label: "Annual Consulting Savings" }
       ]}
-      quote={{
-        text: "The Data Academy transformed our organization. We went from data-averse to data-native in 12 months. Employees who were intimidated by spreadsheets now build ML models. This is the best talent investment we've made.",
-        author: "Chief People Officer",
-        role: "Regional Retail Chain"
+      clientContextTitle="Tools, But No Capability"
+      clientContextIntro="A regional retail chain with 85 stores and $450M in revenue recognized data literacy as a competitive differentiator. It had invested in a modern data warehouse and BI tools — but adoption stayed low, with only 15% of employees using data to inform decisions."
+      clientContextBody="The problem wasn't technology, it was capability. Store managers couldn't interpret sales dashboards, merchandising couldn't build custom reports, and marketing relied on external agencies for campaign analysis. Leadership wanted a data-driven culture, but one-off training hadn't worked: employees attended generic webinars, forgot the content within weeks, and reverted to gut-feel decisions. The company needed a structured, ongoing program that built real capability."
+      clientProfile={{
+        industry: "Regional Retail Chain",
+        companySize: "85 Stores",
+        projectDuration: "12-Month Program",
+        additionalInfo: "6 Departments",
+        additionalLabel: "Coverage"
       }}
-      tags={["Retail", "Data Strategy", "Training", "Operations"]}
-      relatedCapability={{
-        title: "Data Transformation",
-        link: "/capabilities/data-transformation"
-      }}
+      challengeTitle="Why Data Went Unused"
+      challenges={[
+        {
+          icon: EyeOff,
+          title: "Only 15% used data",
+          description: "Despite a modern warehouse and BI tools, most decisions stayed gut-feel."
+        },
+        {
+          icon: Users,
+          title: "A capability gap",
+          description: "Managers couldn't read dashboards and merchandising couldn't build reports."
+        },
+        {
+          icon: DollarSign,
+          title: "Reliance on agencies",
+          description: "Marketing paid external agencies $50K per campaign for analysis internal teams couldn't do."
+        },
+        {
+          icon: Repeat,
+          title: "One-off training failed",
+          description: "Generic webinars were forgotten within weeks, with no lasting behavior change."
+        }
+      ]}
+      approachTitle="A Tiered, Role-Specific Academy"
+      approachIntro="NEXDYNE designed a multi-tier Data Academy with role-specific learning paths over 12 months — curricula tailored to store operations, merchandising, marketing, finance, supply chain, and IT."
+      steps={[
+        {
+          step: "01",
+          title: "Data literacy for everyone",
+          description: "A 4-week foundation covered data concepts, dashboard interpretation, and Excel analytics using real store data."
+        },
+        {
+          step: "02",
+          title: "Self-service analytics for business users",
+          description: "An 8-week program taught Looker, SQL basics, and report building so teams answered their own questions."
+        },
+        {
+          step: "03",
+          title: "Advanced analytics for the data team",
+          description: "A 12-week intensive covered Python, statistics, A/B testing, and ML — capstoned by deploying a production model."
+        },
+        {
+          step: "04",
+          title: "Make it self-sustaining",
+          description: "Blended live workshops, self-paced modules, and train-the-trainer sessions built internal instructors to run the academy after the engagement."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: TrendingUp,
+          value: "68%",
+          label: "Using data daily",
+          detail: "Up from 15%, cutting store labor costs 8% via traffic forecasts"
+        },
+        {
+          icon: BookOpen,
+          value: "250+",
+          label: "Dashboards built by business users",
+          detail: "Reducing dependence on the central data team"
+        },
+        {
+          icon: DollarSign,
+          value: "$1.2M",
+          label: "Annual consulting savings",
+          detail: "As the academy became a permanent talent-development fixture"
+        }
+      ]}
+      quote="The Data Academy transformed our organization. We went from data-averse to data-native in 12 months. Employees who were intimidated by spreadsheets now build ML models. This is the best talent investment we've made."
+      quoteAuthor="Chief People Officer"
+      quoteRole="Regional Retail Chain"
+      relatedStudies={[
+        {
+          title: "Upskilling 50 Analysts With a SQL & Python Bootcamp",
+          metric: "60%",
+          label: "smaller IT backlog",
+          link: "/cases/financial-services-sql-bootcamp",
+          image: "/images/industries/fin-monitors.jpg"
+        },
+        {
+          title: "Training 200 Clinicians to Build Their Own Dashboards",
+          metric: "45%",
+          label: "better visibility",
+          link: "/cases/healthcare-dashboard-training",
+          image: "/case-medical-collaboration.9602cc8c.jpg"
+        }
+      ]}
+      ctaTitle="Ready to build a data-driven culture?"
+      ctaDescription="Let's talk about what a role-based data academy could do for your organization."
     />
   );
 }

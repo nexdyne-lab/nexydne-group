@@ -1,35 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { Clock, PhoneCall, Frown, PackageX, Route, UserCog, MessageSquareWarning, TrendingUp } from "lucide-react";
 
 export function PaymentTerminalOnboarding() {
   return (
-    <CaseStudyTemplate
-      client="Payment Processor"
-      industry="Fintech · Personalization"
-      title="Fintech Speeds Up Terminal Onboarding 52% with Personalized Merchant Workflows"
-      subtitle="How a payment processor implemented Sitecore DXP and journey mapping to deliver personalized merchant onboarding experiences—reducing time-to-activation and increasing satisfaction scores."
+    <IndustryCaseStudyTemplate
+      seoTitle="Speeding Terminal Onboarding 52% With Personalized Workflows | Fintech Case Study"
+      seoDescription="A payment processor's generic setup left merchants 14 days to first transaction and 78% calling support. Personalized onboarding cut time-to-activation 52% and lifted satisfaction to 4.7/5."
+      canonical="/cases/payment-terminal-onboarding"
+      industry="Financial Services"
+      industryLink="/industries/financial-services"
+      title="How a Payment Processor Sped Terminal Onboarding 52%"
+      subtitle="A payment processor deployed Sitecore DXP and journey mapping to personalize merchant onboarding — cutting time-to-activation 52%, lifting satisfaction from 2.9 to 4.7, and recovering $2.4M in revenue."
       heroImage="/images/industries/fin-monitors.jpg"
-      challenge={`A rapidly growing payment processor serving 45,000+ merchants across retail, restaurants, and professional services faced a critical challenge: their terminal onboarding process created friction that delayed merchant activation and drove support costs. New merchants received generic setup instructions regardless of business type, technical sophistication, or hardware configuration—resulting in confusion, errors, and abandoned onboarding.
-
-Merchants took an average of 14 days from terminal delivery to first transaction. Generic setup guides forced merchants to wade through irrelevant instructions. 78% of new merchants contacted support during onboarding, overwhelming the support team with repetitive questions. Merchant satisfaction scores during onboarding averaged 2.9/5. 12% of merchants who received terminals never completed activation, representing lost revenue and wasted hardware investment. The company had no visibility into where merchants got stuck or why they abandoned the process.`}
-      solution={`NEXDYNE designed and implemented a personalized onboarding platform built on Sitecore DXP that adapted content, workflows, and guidance based on merchant characteristics—business type, terminal model, technical experience, and real-time progress.
-
-We began with in-depth merchant journey mapping across segments (retail, restaurant, professional services) and technical sophistication levels, identifying friction points where merchants abandoned onboarding. We then implemented Sitecore's personalization engine to dynamically adapt onboarding content: a restaurant owner with a countertop terminal saw a streamlined workflow focused on quick setup and tip configuration, while a retail merchant with an integrated POS received detailed inventory sync instructions. Content personalized in real-time—if merchants spent excessive time on network configuration, the system surfaced troubleshooting guides and offered proactive chat support.
-
-We replaced static PDF manuals with interactive step-by-step workflows with progress tracking, video tutorials, and conditional logic that skipped irrelevant steps. Behavioral analytics integrated with the support platform to trigger proactive interventions for merchants showing signs of struggle, and automated email sequences kept merchants engaged between sessions.`}
-      impact={`Average time from terminal delivery to first transaction dropped from 14 days to 6.7 days—a 52% improvement. The company activated 3,200 additional merchants per quarter compared to the previous year. Personalized, contextual guidance reduced support contacts during onboarding from 78% to 48% of merchants, decreasing support cost per onboarded merchant by $42 and freeing the team to handle revenue-generating activities.
-
-Post-onboarding satisfaction scores increased from 2.9/5 to 4.7/5. Net Promoter Score for onboarding improved from -12 to +58. Onboarding abandonment dropped from 12% to 3%, recovering $2.4M in annual processing revenue from merchants who would have previously abandoned. Proactive interventions rescued 67% of at-risk onboarding sessions.`}
       metrics={[
-        { value: "52%", label: "Faster onboarding" },
-        { value: "38%", label: "Support ticket reduction" },
-        { value: "4.7/5", label: "Merchant satisfaction score" },
-        { value: "89%", label: "First-time completion rate" }
+        { value: "52%", label: "Faster Onboarding" },
+        { value: "38%", label: "Fewer Support Tickets" },
+        { value: "4.7/5", label: "Merchant Satisfaction" },
+        { value: "89%", label: "First-Time Completion" }
       ]}
-      tags={["Fintech", "Personalization", "Customer Experience", "Technology"]}
-      relatedCapability={{
-        title: "Growth Marketing & Sales",
-        link: "/capabilities/growth-marketing-sales"
+      clientContextTitle="One Setup Guide for Everyone"
+      clientContextIntro="A rapidly growing payment processor serving 45,000+ merchants across retail, restaurants, and professional services faced a critical problem: its terminal onboarding created friction that delayed activation and drove support costs. New merchants got generic setup instructions regardless of business type, technical skill, or hardware."
+      clientContextBody="Merchants took an average of 14 days from terminal delivery to first transaction, wading through irrelevant instructions. 78% contacted support during onboarding, overwhelming the team with repetitive questions, and satisfaction averaged just 2.9/5. Worse, 12% of merchants who received terminals never activated — lost revenue and wasted hardware — and the company had no visibility into where merchants got stuck or why they abandoned."
+      clientProfile={{
+        industry: "Payment Processor",
+        companySize: "45,000+ Merchants",
+        projectDuration: "Journey-Mapped",
+        additionalInfo: "Sitecore DXP",
+        additionalLabel: "Platform"
       }}
+      challengeTitle="Why Merchants Stalled"
+      challenges={[
+        {
+          icon: Clock,
+          title: "14 days to first transaction",
+          description: "Generic setup guides forced every merchant through irrelevant instructions."
+        },
+        {
+          icon: PhoneCall,
+          title: "78% contacted support",
+          description: "Repetitive onboarding questions overwhelmed the support team."
+        },
+        {
+          icon: PackageX,
+          title: "12% never activated",
+          description: "More than one in ten merchants abandoned onboarding, wasting hardware and revenue."
+        },
+        {
+          icon: Frown,
+          title: "No visibility into friction",
+          description: "The company couldn't see where merchants got stuck or why they gave up."
+        }
+      ]}
+      approachTitle="Onboarding That Adapts to the Merchant"
+      approachIntro="NEXDYNE built a personalized onboarding platform on Sitecore DXP that adapted content, workflows, and guidance to each merchant's business type, terminal model, technical experience, and real-time progress."
+      steps={[
+        {
+          step: "01",
+          title: "Map the merchant journeys",
+          description: "Detailed journey mapping across segments and skill levels pinpointed where merchants abandoned onboarding."
+        },
+        {
+          step: "02",
+          title: "Personalize in real time",
+          description: "A restaurant owner saw a quick countertop setup with tip config; a retail merchant got detailed POS inventory-sync steps."
+        },
+        {
+          step: "03",
+          title: "Replace PDFs with guided flows",
+          description: "Interactive, step-by-step workflows with progress tracking, video, and conditional logic skipped irrelevant steps."
+        },
+        {
+          step: "04",
+          title: "Intervene before they quit",
+          description: "Behavioral analytics triggered proactive chat and email for merchants showing signs of struggle."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Route,
+          value: "6.7 days",
+          label: "To first transaction",
+          detail: "Down from 14, activating 3,200 more merchants a quarter"
+        },
+        {
+          icon: MessageSquareWarning,
+          value: "48%",
+          label: "Contacted support",
+          detail: "Down from 78%, cutting cost per onboarded merchant by $42"
+        },
+        {
+          icon: TrendingUp,
+          value: "3%",
+          label: "Onboarding abandonment",
+          detail: "Down from 12%, recovering $2.4M in annual revenue"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Launching a Credit Union Mobile App to 78% Adoption",
+          metric: "78%",
+          label: "member adoption",
+          link: "/cases/fintech-mobile-banking",
+          image: "/images/industries/fin-monitors.jpg"
+        },
+        {
+          title: "Enabling 3.2x Faster Product Access With Personalized Search",
+          metric: "3.2x",
+          label: "faster discovery",
+          link: "/cases/logistics-product-access",
+          image: "/images/industries/retail-warehouse.jpg"
+        }
+      ]}
+      ctaTitle="Ready to make onboarding effortless?"
+      ctaDescription="Let's talk about what personalized onboarding could do for your activation and support costs."
     />
   );
 }
