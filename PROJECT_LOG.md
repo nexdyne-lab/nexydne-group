@@ -56,6 +56,9 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 - **Fabricated specifics** still in some article bodies (invented client ROI
   figures) — a content-honesty sweep is worthwhile but not urgent.
 - **CSP header** not yet added (needs testing against the built site).
+- **Canonical red not settled**: `#DE1C26` (owner's latest) vs `#DE2F23` (current
+  site/log) vs `#E04C2C` (older code). Pick one and sweep app code + social tiles +
+  THEME_REFERENCE in one pass. (See 2026-07-15 social/collateral changelog entry.)
 - **"Mid-Size" in a few article/hub titles** (e.g. ai-roi-framework, lean-operations) —
   hub subtitles were cleaned to "growing companies" but the article H1s were left
   (changing one desyncs the hub card that mirrors it); a matched sweep would fix both.
@@ -67,6 +70,66 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 ---
 
 ## Changelog (newest first)
+
+### 2026-07-16 — Case-study template consistency (wave 1)
+- Migrated the 3 Data-Driven Customer Intelligence **solution** case studies
+  (bank-cross-sell, saas-churn-reduction, ecommerce-repeat-purchase) from the OLD
+  `CaseStudyTemplate` to the approved `IndustryCaseStudyTemplate` (same design as
+  `/cases/aerospace-digital-engineering`). Routes/URLs unchanged; each page's own
+  numbers preserved. User-approved on localhost before push. Commit 072d5f7.
+- **KNOWN INCONSISTENCY (mapped, not yet fixed):** the site has TWO case-study
+  templates. Approved = `IndustryCaseStudyTemplate` (rich: client context, structured
+  challenge/approach/results). Old = `CaseStudyTemplate` (challenge/solution/impact
+  blobs). **127 pages still on the OLD template**, incl. **82 under `/cases`** (e.g.
+  AirlineMaintenance, BankCoreModernization) + many `/capabilities/case-studies/*`.
+  The `/cases` section is itself a mix. Migrating each = careful per-page content
+  restructure (NOT mechanical). Plan: do in waves, keep each page's own content,
+  routes untouched, QC vs aerospace, prove-before-push. Also: prominent charcoal
+  Download PDF button was added to `CaseStudyTemplate` (132 pages) — that stays
+  useful until those pages are migrated off it.
+
+
+### 2026-07-15 — Social media, brand collateral & launch posts (content-design session)
+This was a **brand/marketing-content** session, mostly outside the app code. All
+outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
+- **Social-tile pipeline built**: `social-tiles/tile-N.html` → PNG via
+  `node social-tiles/tile-shot.mjs [WxH] N...` (needs `node serve.mjs` on :3000).
+  Shared isometric/mesh SVG helpers in `social-tiles/lib-iso.js`. ~26 tiles across
+  registers: **editorial-split** (image untouched + off-white text panel — the
+  clean/HBR default for insight posts), **typographic** (charcoal or off-white —
+  stats/quotes/doctrine), **photo-overlay** (light scrim, brand-moment only), and
+  **square 1080²** templates modeled on the Strategy/Tungsten FB pages
+  (CASE STUDY / BLOG / INSIGHT / LIVE BRIEFING / We're Hiring). Photo **scrim
+  recipe** codified in `Brand Assets/Brand Revision and USP/THEME_REFERENCE.md` §6.
+- **Facebook drafts**: 10 posts saved as **Spool drafts** (4 homepage spotlight
+  insights + HIG doctrine, 65% churn stat, USP, careers, NPS photo-canvas).
+  **Facebook is NOT connected in Spool** — needs Meta app creds (client id/secret)
+  before anything can publish; direct posting also needs public image URLs.
+- **Hero-carousel illustrations**: 4 custom SVG iso line-art backgrounds (sources
+  `social-tiles/tile-20..23.html`) exported to
+  `social-tiles/out/hero/hero-{hig,ai,ops,cloud}.jpg` (2560×1440, ~280KB). Named to
+  **drop-in replace** `client/public/images/hero/hero-*.jpg` (the 4 slides in
+  `BainHeroCarousel.tsx`). **NOT yet integrated** — handed to another session to swap.
+- **Public-launch posts** (finished, in `social-tiles/out/posts/`):
+  - `public-sector-milestone.jpg` + caption — company's **first public-sector
+    milestone**, framed as "a State of Michigan agency" (MDHHS deliberately NOT
+    named/sealed, for publicity-rights safety). Charcoal register; links to
+    /industries/public-sector + /capabilities/artificial-intelligence. Signed by
+    David Seyaker, Founder & CEO.
+  - `hiring-creative-director.jpg` (charcoal) + `hiring-creative-director-red.jpg`
+    (**red hero-moment, recommended**) + caption — **fractional / remote Creative
+    Director**, reports to Founder & CEO, owns NexDyne + every client/partner's
+    visual voice. Links /careers.
+  - **Post 2 (founder David steps forward as CEO to lead growth & marketing)** —
+    planned, NOT yet built.
+- **Brand v2 colour fix** (early in session, app code): 52 replacements / 28 files —
+  purple `bg-secondary` CTAs → `bg-primary`, removed legacy cyan-glow shadows,
+  fixed self-hover no-ops, quiz progress bars → amber. Subsumed by the definitive
+  2026-07-14 COLOR_AUDIT; logged for history.
+- **⚠ Red hex divergence (open)**: three reds now in play — user's latest **official
+  `#DE1C26`** (used on the red hiring tile), the site/log standard **`#DE2F23`**, and
+  older live code **`#E04C2C`**. Needs one reconciliation pass to pick the canonical
+  red and sweep app code + tiles + THEME_REFERENCE together.
 
 ### 2026-07-15 — Design: Bain-style page redesigns + full Insights V2 migration
 - **New long-read article template `components/InsightArticleV2.tsx`**: reading-progress
