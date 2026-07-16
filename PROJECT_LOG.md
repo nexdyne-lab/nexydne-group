@@ -100,6 +100,41 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 - **Design**: warm flat "veil" image treatment (no gradients) on hero + cards; new
   AI-section image; slim cookie banner.
 
+### 2026-07-14 — Design system: color discipline, type scale, navigation
+- **Site-wide color audit COMPLETE** across every section (Homepage, Capabilities
+  + subpages, Solutions, Industries, all Case Studies, About). Established and
+  applied one rule: **red (`#DE2F23`, primary) leads on light surfaces + every
+  button + the hero signal bar; amber (`#FFB41D`) is the accent for dark surfaces
+  only (`bg-black`/`bg-charcoal`); charcoal = structure.** Reversed an earlier
+  "amber everywhere" pass that under-used the primary. Most pages fixed via shared
+  templates. **Full playbook + per-template record: `COLOR_AUDIT.md`.**
+- **Type-scale / font sweep COMPLETE** (Bain-style bold, consistent sizing). Root
+  cause: ~630 headings used hardcoded raw Tailwind sizes instead of the central
+  `nx-*` scale — why sizes didn't match. Converted all hero `<h1>` → `nx-h1` and
+  all section `<h2>` → `nx-h2` (in verified buckets: Capabilities, Solutions,
+  cases/services, remaining pages, components, h1 pages/components). Enlarged the
+  "too small" scale steps in `index.css`: `nx-h3` → 1.3/1.5rem, `nx-lead` →
+  1.06/1.25rem; card titles across templates + homepage → bold 24px. Deliberately
+  did **not** blanket-sweep `<h3>` (mix of card titles and intentionally-small
+  labels — would have broken small labels). Scale lives in `client/src/index.css`.
+- **Navbar mega-menus redesigned**: Capabilities/Solutions hover menus trimmed to
+  the 6 major capabilities / 4 major solutions with one-line descriptors; featured
+  card is now solid `#1b1b1b` with a thin orange top-rule (was the "ugly charcoal"
+  box). Kept the "Capabilities" label.
+- **Hamburger menu rebuilt** as a Bain-style two-level slide drawer (clear Back
+  link + clear ✕ close), plus utility links (Offices/Alumni/Media/Contact/etc.).
+  Restrained monochrome (red hover only) after trying and reverting per-section
+  color dots. All drawer links verified against real routes.
+- **New `/solutions` overview page** built (route was a 404) — full-bleed centered
+  hero, red "Get in touch" CTA.
+- **Homepage** "core areas of expertise" section → black bg + amber accents + red
+  CTA (matches the industry-page dark CTAs).
+- **Footer brand line** fixed: "Unleashing the Potential of the Companies Building
+  What's Next" → **"Human intelligence, governed and scaled."**
+- Note: two dead tracked files exist under `client/src/pages/` (`XXta22kf`,
+  `IntelligentProcessOptimization.tsx.backup`) — unreferenced, not built; safe to
+  delete in a future cleanup.
+
 ### 2026-07-14 (design chat, for context)
 - Insights V2: new InsightArticleV2 long-read template; migrated ~90 legacy
   insight/capability/solution articles onto it; fixed 21 broken article links.
