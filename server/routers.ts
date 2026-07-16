@@ -35,6 +35,7 @@ export const appRouter = router({
           email: input.email,
           firstName: input.firstName || null,
           lastName: input.lastName || null,
+          source: "newsletter",
         });
         // Present success to the visitor regardless — a list-add hiccup
         // shouldn't look like a broken form. Failures are logged server-side.
@@ -197,12 +198,13 @@ export const appRouter = router({
           return { success: true, id: undefined, leadScore: 0 };
         }
 
-        // If they opted in to marketing, add them to the newsletter Audience.
+        // If they opted in to marketing, add them to the case-study Audience.
         if (input.marketingConsent) {
           await addToAudience({
             email: input.email,
             firstName: input.firstName || null,
             lastName: input.lastName || null,
+            source: "casestudy",
           });
         }
 

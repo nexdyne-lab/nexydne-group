@@ -57,20 +57,36 @@ export async function sendEmail(input: SendEmailInput): Promise<boolean> {
 }
 
 /**
- * Add (or upsert) a contact to the Resend Audience — the subscriber list that
- * powers newsletters/broadcasts. No-ops if RESEND_API_KEY or RESEND_AUDIENCE_ID
- * is unset. Best-effort: never throws, returns false on failure so callers can
- * carry on (a signup should still "succeed" for the user even if list-add fails).
+ * Which subscriber bucket a contact belongs to. Each maps to a separate Resend
+ * Audience so we can segment sends by where the person came from.
+ */
+export type AudienceSource = "newsletter" | "casestudy";
+
+function audienceIdFor(source: AudienceSource): string | undefined {
+  switch (source) {
+    case "newsletter":
+      return process.env.RESEND_NEWSLETTER_AUDIENCE_ID;
+    case "casestudy":
+      return process.env.RESEND_CASESTUDY_AUDIENCE_ID;
+  }
+}
+
+/**
+ * Add (or upsert) a contact to the Resend Audience for the given source bucket.
+ * No-ops if RESEND_API_KEY or the source's audience id is unset. Best-effort:
+ * never throws, returns false on failure so callers can carry on (a signup
+ * should still "succeed" for the user even if the list-add fails).
  */
 export async function addToAudience(input: {
   email: string;
   firstName?: string | null;
   lastName?: string | null;
+  source: AudienceSource;
 }): Promise<boolean> {
   const apiKey = process.env.RESEND_API_KEY;
-  const audienceId = process.env.RESEND_AUDIENCE_ID;
+  const audienceId = audienceIdFor(input.source);
   if (!apiKey || !audienceId) {
-    console.log(`[Audience] not configured — would add ${input.email}`);
+    console.log(`[Audience:${input.source}] not configured — would add ${input.email}`);
     return true;
   }
 

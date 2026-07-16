@@ -9,6 +9,7 @@ import { Link } from "wouter";
 import { Separator } from "@/components/ui/separator";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { CaseStudyPDFButton } from "@/components/CaseStudyPDFButton";
 
 interface Metric {
   value: string;
@@ -84,18 +85,23 @@ export default function CaseStudyTemplate({
               {subtitle}
             </p>
 
-            {/* Capability link */}
+            {/* Capability link + gated PDF download */}
             <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
               <Link href={relatedCapability.link}>
                 <span className="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold text-[13px] tracking-[0.1em] uppercase hover:bg-primary-hover transition-colors cursor-pointer">
                   Explore {relatedCapability.title}
                 </span>
               </Link>
-              <Link href="/case-studies">
-                <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-charcoal border-b border-charcoal/40 hover:border-primary hover:text-primary transition-colors cursor-pointer pb-1">
-                  All Case Studies
-                </span>
-              </Link>
+              <CaseStudyPDFButton
+                title={title}
+                industry={industry}
+                summary={subtitle}
+                challenge={challenge}
+                solution={solution}
+                results={impact.split("\n").map(s => s.trim()).filter(Boolean)}
+                metrics={metrics}
+                variant="outline"
+              />
             </div>
           </div>
         </div>
