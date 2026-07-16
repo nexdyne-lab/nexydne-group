@@ -1,35 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { ScanSearch, Trash2, UserX, Frown, Camera, Brain, Gauge, DollarSign } from "lucide-react";
 
 export function FoodQualityAI() {
   return (
-    <CaseStudyTemplate
-      client="Regional Food Processing Company"
-      industry="Food & Beverage · Artificial Intelligence"
-      title="Quality Inspection AI Improves Yield for Food Processor"
-      subtitle="How a regional food processor implemented computer vision AI to improve quality detection and increase production yield."
+    <IndustryCaseStudyTemplate
+      seoTitle="Computer Vision Quality Inspection That Lifted Yield 18% | Food Processing Case Study"
+      seoDescription="A food processor's manual inspection missed defects and wasted 12% of production. A computer-vision system improved defect detection 40%, lifted yield 18%, and saved $1.8M a year."
+      canonical="/capabilities/artificial-intelligence/case-studies/food-quality-ai"
+      industry="Consumer Products"
+      industryLink="/industries/consumer-products"
+      title="How a Food Processor Improved Yield 18% With Computer Vision"
+      subtitle="A regional food processor deployed computer-vision quality inspection integrated with its production lines — improving defect detection 40%, lifting yield 18%, and saving $1.8M a year."
       heroImage="/images/capabilities/cap-food.jpg"
-      challenge={`Manual quality inspection was inconsistent and couldn't keep pace with production speeds. Defect detection rates varied by shift and inspector. Product waste from quality issues was running at 12% of production. Customer complaints about quality were increasing, threatening key accounts.
-
-A regional food processing company with 200 employees processes fresh produce for retail and foodservice customers, with quality as a critical differentiator. Visual defects like bruising, discoloration, and size variations were difficult to detect consistently at production speeds, and grading accuracy varied significantly between inspectors. The speed of production lines made thorough manual inspection impossible at the volume required to serve major retail accounts.`}
-      solution={`NEXDYNE designed a computer vision system tailored to food processing requirements, selecting cameras and lighting optimized for detecting defects in produce and developing image processing pipelines that handled varying product sizes and orientations. Inspection stations integrated with existing conveyor systems with built-in redundancy to ensure continuous operation.
-
-Deep learning models were trained using thousands of labeled product images, creating defect classification models that identified specific quality issues, grading models that sorted products into quality tiers, and foreign material detection that identified contamination. Continuous learning capabilities improved accuracy as new defect types emerged.
-
-The AI system was integrated with production line controls, connected to sorting and rejection mechanisms for automated removal of defective products, and linked to production tracking systems for quality traceability. Real-time dashboards showed quality metrics by line and shift, with supervisor alerts for emerging quality trends. After a successful pilot deployment, the system was expanded to additional production lines and product types.`}
-      impact={`The computer vision quality system improved defect detection by 40% compared to manual inspection, with consistent performance across all shifts and production speeds. Yield increased 18% as improved sorting accuracy eliminated both missed defects and false rejections of acceptable product. Customer complaints dropped 65% as quality consistency improved across retail and foodservice accounts.
-
-Annual savings of $1.8 million came from reduced waste, avoided customer penalties, and lower rework costs. The predictive capabilities that identified upstream quality issues enabled proactive interventions before defective product reached inspection stations. Customer quality audit reports, now automatically generated from system data, strengthened relationships with major retail accounts.`}
       metrics={[
-        { value: "40%", label: "Defect detection improvement" },
-        { value: "18%", label: "Yield increase" },
-        { value: "65%", label: "Complaint reduction" },
-        { value: "$1.8M", label: "Annual savings" }
+        { value: "40%", label: "Better Defect Detection" },
+        { value: "18%", label: "Yield Increase" },
+        { value: "65%", label: "Fewer Complaints" },
+        { value: "$1.8M", label: "Annual Savings" }
       ]}
-      tags={["Food & Beverage", "AI", "Computer Vision", "Quality Control"]}
-      relatedCapability={{
-        title: "AI & Machine Learning",
-        link: "/capabilities/ai"
+      clientContextTitle="Inspection That Couldn't Keep Pace"
+      clientContextIntro="A regional food processing company with 200 employees processes fresh produce for retail and foodservice customers, with quality as a critical differentiator. Manual inspection was inconsistent and couldn't keep pace with production speeds — and product waste from quality issues ran at 12% of production."
+      clientContextBody="Visual defects like bruising, discoloration, and size variation were hard to detect consistently at line speed, and grading accuracy varied significantly between inspectors and shifts. Customer complaints about quality were increasing, threatening key retail accounts. The speed of the lines made thorough manual inspection impossible at the volume required to serve major customers."
+      clientProfile={{
+        industry: "Food Processing Company",
+        companySize: "200 Employees",
+        projectDuration: "Line-Integrated",
+        additionalInfo: "Computer Vision",
+        additionalLabel: "Solution"
       }}
+      challengeTitle="Why Quality Slipped Through"
+      challenges={[
+        {
+          icon: UserX,
+          title: "Inconsistent by shift and inspector",
+          description: "Defect detection and grading accuracy varied widely across people and production speeds."
+        },
+        {
+          icon: Trash2,
+          title: "12% of production wasted",
+          description: "Quality issues drove significant waste and rework costs."
+        },
+        {
+          icon: Frown,
+          title: "Rising customer complaints",
+          description: "Inconsistent quality threatened key retail and foodservice accounts."
+        },
+        {
+          icon: ScanSearch,
+          title: "Line speed beat manual review",
+          description: "At the volumes major accounts demanded, thorough manual inspection was impossible."
+        }
+      ]}
+      approachTitle="Vision Systems on Every Line"
+      approachIntro="NEXDYNE designed a computer-vision system tailored to food processing — optimized cameras and lighting, deep-learning defect and grading models, and integration with sorting and rejection mechanisms."
+      steps={[
+        {
+          step: "01",
+          title: "Engineer for produce",
+          description: "Cameras and lighting were tuned to detect defects across varying product sizes and orientations, with redundancy for continuous operation."
+        },
+        {
+          step: "02",
+          title: "Train on real defects",
+          description: "Deep-learning models trained on thousands of labeled images classified defects, graded quality tiers, and detected foreign material."
+        },
+        {
+          step: "03",
+          title: "Act on the results automatically",
+          description: "The system connected to sorting and rejection mechanisms and to production tracking for full quality traceability."
+        },
+        {
+          step: "04",
+          title: "Surface trends in real time",
+          description: "Dashboards showed quality by line and shift with supervisor alerts, then expanded from pilot to more lines and product types."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Gauge,
+          value: "40%",
+          label: "Better defect detection",
+          detail: "Consistent across all shifts and line speeds"
+        },
+        {
+          icon: Brain,
+          value: "18%",
+          label: "Higher yield",
+          detail: "Eliminating both missed defects and false rejections"
+        },
+        {
+          icon: DollarSign,
+          value: "$1.8M",
+          label: "Annual savings",
+          detail: "With customer complaints down 65%"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Reducing Manufacturing Downtime With Predictive Maintenance",
+          metric: "45%",
+          label: "less downtime",
+          link: "/capabilities/artificial-intelligence/case-studies/manufacturing-predictive-maintenance",
+          image: "/images/industries/mfg-robotics.jpg"
+        },
+        {
+          title: "AI Demand Forecasting That Cut Inventory 35%",
+          metric: "35%",
+          label: "less inventory",
+          link: "/capabilities/artificial-intelligence/case-studies/distributor-demand-forecasting",
+          image: "/images/industries/retail-warehouse.jpg"
+        }
+      ]}
+      ctaTitle="Ready to make quality consistent?"
+      ctaDescription="Let's talk about what computer vision could do for your yield and quality control."
     />
   );
 }

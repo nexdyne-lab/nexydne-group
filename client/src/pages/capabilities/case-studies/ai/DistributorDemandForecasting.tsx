@@ -1,35 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { DollarSign, PackageX, Boxes, TrendingDown, Brain, Layers, Gauge, Wallet } from "lucide-react";
 
 export function DistributorDemandForecasting() {
   return (
-    <CaseStudyTemplate
-      client="Wholesale Distribution Company"
-      industry="Distribution · Artificial Intelligence"
-      title="Demand Forecasting AI Optimizes Inventory for Regional Distributor"
-      subtitle="How a wholesale distributor implemented AI-powered demand forecasting to reduce inventory costs while improving service levels."
+    <IndustryCaseStudyTemplate
+      seoTitle="AI Demand Forecasting That Cut Inventory 35% | Distribution Case Study"
+      seoDescription="A $75M distributor's carrying costs ate 18% of margin and 8% of orders stocked out across 15,000 SKUs. AI forecasting cut inventory 35% and freed $2.8M in working capital."
+      canonical="/capabilities/artificial-intelligence/case-studies/distributor-demand-forecasting"
+      industry="Transportation & Logistics"
+      industryLink="/industries/transportation-logistics"
+      title="How a Wholesale Distributor Cut Inventory 35% With AI Demand Forecasting"
+      subtitle="A regional distributor deployed hierarchical ML forecasting across 15,000+ SKUs and 5 distribution centers — cutting inventory 35% while improving service, and freeing $2.8M in working capital."
       heroImage="/images/industries/retail-warehouse.jpg"
-      challenge={`Inventory carrying costs were consuming 18% of gross margin. Stockouts were occurring on 8% of orders, causing customer dissatisfaction. Manual forecasting couldn't keep up with 15,000+ SKUs across multiple locations. Seasonal patterns and customer-specific demand were difficult to predict.
-
-A wholesale distribution company with 180 employees and $75M annual revenue distributes industrial supplies to 3,000+ customers across the Midwest from 5 distribution centers. The complexity of customer ordering behavior across industry segments, combined with supplier lead time variability and geographic seasonal patterns, made traditional forecasting approaches inadequate at scale.`}
-      solution={`NEXDYNE developed a machine learning forecasting system tailored to distribution. The model incorporated historical sales data, customer attributes, and external factors including economic indicators relevant to customer industries, weather data that affected demand for certain products, customer financial health signals, and supplier lead time data for dynamic safety stock calculation.
-
-The team implemented hierarchical forecasting that worked at SKU, category, and location levels, with built-in seasonality detection that automatically identified patterns and anomaly detection to flag unusual demand signals. The AI system went beyond forecasting to optimize inventory decisions—dynamic reorder points based on forecast confidence, automated replenishment recommendations for buyers, multi-echelon optimization across distribution centers, and simulation capabilities to test policy changes before implementation.
-
-Buyers were equipped with dashboards showing forecast accuracy and inventory health, exception-based workflows that highlighted items needing attention, and feedback loops where buyer expertise improved model accuracy over time.`}
-      impact={`The AI forecasting system reduced inventory by 35% while improving service levels, freeing $2.8 million in working capital. Forecast accuracy reached 92%, down from stockout rates of 8% to 2.1% of orders. Inventory carrying costs dropped significantly as dynamic reorder points replaced static safety stock rules.
-
-Buyer productivity improved as exception-based workflows focused attention on items genuinely needing human judgment rather than routine replenishment decisions. The multi-echelon optimization across all five distribution centers enabled network-wide inventory balancing that further reduced total stock requirements while improving customer fill rates.`}
       metrics={[
-        { value: "35%", label: "Inventory reduction" },
-        { value: "92%", label: "Forecast accuracy" },
-        { value: "2.1%", label: "Stockout rate" },
-        { value: "$2.8M", label: "Working capital freed" }
+        { value: "35%", label: "Inventory Reduction" },
+        { value: "92%", label: "Forecast Accuracy" },
+        { value: "2.1%", label: "Stockout Rate" },
+        { value: "$2.8M", label: "Working Capital Freed" }
       ]}
-      tags={["Distribution", "AI", "Demand Forecasting", "Inventory Optimization"]}
-      relatedCapability={{
-        title: "AI & Machine Learning",
-        link: "/capabilities/ai"
+      clientContextTitle="Forecasting That Couldn't Scale"
+      clientContextIntro="A wholesale distribution company with 180 employees and $75M in revenue distributes industrial supplies to 3,000+ customers across the Midwest from 5 distribution centers. Inventory carrying costs consumed 18% of gross margin, and stockouts hit 8% of orders."
+      clientContextBody="Manual forecasting couldn't keep pace with 15,000+ SKUs across multiple locations. Customer ordering behavior varied by industry segment, supplier lead times were volatile, and geographic seasonal patterns compounded the complexity — making traditional forecasting inadequate at scale and eroding both margin and customer satisfaction."
+      clientProfile={{
+        industry: "Wholesale Distributor",
+        companySize: "$75M Revenue",
+        projectDuration: "5 Distribution Centers",
+        additionalInfo: "15,000+ SKUs",
+        additionalLabel: "Catalog"
       }}
+      challengeTitle="Why Inventory Ran Out of Control"
+      challenges={[
+        {
+          icon: DollarSign,
+          title: "18% of margin in carrying cost",
+          description: "Static safety stock across 15,000 SKUs tied up working capital and eroded gross margin."
+        },
+        {
+          icon: PackageX,
+          title: "8% of orders stocked out",
+          description: "Missed availability frustrated 3,000+ customers across industry segments."
+        },
+        {
+          icon: Boxes,
+          title: "Manual forecasting at its limit",
+          description: "No manual process could handle 15,000 SKUs across five locations at the needed accuracy."
+        },
+        {
+          icon: TrendingDown,
+          title: "Volatile, seasonal demand",
+          description: "Supplier lead-time variability and geographic seasonality defeated traditional methods."
+        }
+      ]}
+      approachTitle="Hierarchical ML, Built for Distribution"
+      approachIntro="NEXDYNE developed a machine-learning forecasting system tailored to distribution — incorporating sales history, customer attributes, and external signals, and going beyond forecasts to optimize inventory decisions."
+      steps={[
+        {
+          step: "01",
+          title: "Forecast at every level",
+          description: "Hierarchical forecasting worked at SKU, category, and location levels with automatic seasonality and anomaly detection."
+        },
+        {
+          step: "02",
+          title: "Add the external signals",
+          description: "The model incorporated economic indicators, weather, customer financial health, and supplier lead times for dynamic safety stock."
+        },
+        {
+          step: "03",
+          title: "Optimize the whole network",
+          description: "Dynamic reorder points and multi-echelon optimization across all five centers balanced inventory network-wide."
+        },
+        {
+          step: "04",
+          title: "Keep buyers in control",
+          description: "Exception-based dashboards focused buyer attention on real decisions, with feedback loops improving the model over time."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Wallet,
+          value: "35%",
+          label: "Less inventory",
+          detail: "Freeing $2.8M in working capital while improving service"
+        },
+        {
+          icon: Gauge,
+          value: "92%",
+          label: "Forecast accuracy",
+          detail: "With stockouts down from 8% to 2.1% of orders"
+        },
+        {
+          icon: Layers,
+          value: "5 DCs",
+          label: "Balanced network-wide",
+          detail: "Multi-echelon optimization improved fill rates across all centers"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Cutting Stockouts 35% With ML Demand Forecasting",
+          metric: "35%",
+          label: "fewer stockouts",
+          link: "/cases/retail-demand-forecasting",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
+        },
+        {
+          title: "Reducing Manufacturing Downtime With Predictive Maintenance",
+          metric: "45%",
+          label: "less downtime",
+          link: "/capabilities/artificial-intelligence/case-studies/manufacturing-predictive-maintenance",
+          image: "/images/industries/mfg-robotics.jpg"
+        }
+      ]}
+      ctaTitle="Ready to right-size your inventory?"
+      ctaDescription="Let's talk about what AI forecasting could do for your working capital and service levels."
     />
   );
 }

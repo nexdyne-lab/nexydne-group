@@ -1,35 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { TrendingUp, Clock, Frown, Users, Bot, BookOpen, Route, Smile } from "lucide-react";
 
 export function SaaSCustomerServiceAI() {
   return (
-    <CaseStudyTemplate
-      client="B2B SaaS Company"
-      industry="Technology · Artificial Intelligence"
-      title="Customer Service AI Scales Support for Growing SaaS Company"
-      subtitle="How a B2B SaaS company implemented AI to handle 60% of support tickets automatically while improving customer satisfaction."
+    <IndustryCaseStudyTemplate
+      seoTitle="Customer Service AI That Deflected 60% of Tickets | SaaS Case Study"
+      seoDescription="A B2B SaaS company's ticket volume tripled in 18 months while response times hit 8 hours. A multi-tier AI support system deflected 60% of tickets and cut response time to 15 minutes."
+      canonical="/capabilities/artificial-intelligence/case-studies/saas-customer-service-ai"
+      industry="Technology, Media & Telecom"
+      industryLink="/industries/technology-media-telecom"
+      title="How a SaaS Company Scaled Support With AI, Deflecting 60% of Tickets"
+      subtitle="A B2B SaaS company deployed a multi-tier AI support system — deflecting 60% of tickets, giving the team 4.5x capacity, and cutting average response time from 8 hours to 15 minutes."
       heroImage="/images/capabilities/cap-office-women.jpg"
-      challenge={`Support ticket volume had tripled in 18 months while the team only grew by 50%. Average response time had increased from 2 hours to 8 hours. Customer satisfaction scores were declining. The company needed to scale support without proportionally scaling headcount.
-
-A B2B SaaS company with 120 employees serves 2,000+ business customers with project management software and was experiencing rapid growth that strained their support team. Analysis of 50,000 historical tickets revealed that 70% of inquiries fell into predictable categories: password resets and account access issues (25%), feature usage questions (30%), billing inquiries (15%), and complex technical issues or escalations requiring human judgment (30%).`}
-      solution={`NEXDYNE designed a multi-layered AI support system with three tiers: an intelligent chatbot handling common questions using natural language understanding, an AI-powered knowledge base surfacing relevant articles based on query intent, and intelligent routing directing complex issues to the right specialist. Sentiment analysis was implemented to identify frustrated customers for priority handling.
-
-The AI was trained using the company's historical support data—intent classification models from thousands of labeled ticket examples, response generation capabilities matched to the company's voice and tone, escalation triggers recognizing when human intervention was needed, and continuous learning to improve accuracy over time.
-
-The solution integrated seamlessly with existing support infrastructure: CRM connection for customer context and history, product database integration for accurate feature information, billing system linkage for account-related queries, and management dashboards for visibility into AI performance. Comprehensive metrics tracked deflection rate, resolution accuracy, customer satisfaction, escalation patterns, and cost per ticket across AI and human-handled inquiries.`}
-      impact={`The AI support system deflected 60% of tickets without human intervention, effectively giving the support team 4.5x the capacity to handle the 40% of tickets requiring human expertise. Average response time dropped from 8 hours to 15 minutes. Customer satisfaction scores recovered to 92% as faster, accurate responses replaced the delays that had frustrated customers during the growth surge.
-
-The company avoided hiring the additional support staff that linear growth in ticket volume would have required, while simultaneously delivering better customer experiences. Escalation pattern analysis identified training opportunities that further reduced the volume of complex issues reaching human agents. The AI system became a competitive differentiator, enabling the company to sustain rapid growth without the support quality degradation that commonly afflicts fast-scaling SaaS businesses.`}
       metrics={[
-        { value: "60%", label: "Ticket deflection" },
-        { value: "4.5x", label: "Support capacity" },
-        { value: "92%", label: "CSAT score" },
-        { value: "15 min", label: "Avg response time" }
+        { value: "60%", label: "Ticket Deflection" },
+        { value: "4.5x", label: "Support Capacity" },
+        { value: "92%", label: "CSAT Score" },
+        { value: "15 min", label: "Avg Response Time" }
       ]}
-      tags={["Technology", "AI", "Customer Service", "SaaS"]}
-      relatedCapability={{
-        title: "AI & Machine Learning",
-        link: "/capabilities/ai"
+      clientContextTitle="Support Buckling Under Growth"
+      clientContextIntro="A B2B SaaS company with 120 employees serves 2,000+ business customers with project-management software. Rapid growth strained its support team: ticket volume tripled in 18 months while the team grew only 50%, pushing average response time from 2 hours to 8."
+      clientContextBody="Customer satisfaction was declining, and the company needed to scale support without proportionally scaling headcount. Analysis of 50,000 historical tickets showed 70% fell into predictable categories — password and access issues (25%), feature questions (30%), and billing (15%) — leaving 30% of complex issues genuinely needing human judgment."
+      clientProfile={{
+        industry: "B2B SaaS Company",
+        companySize: "2,000+ Customers",
+        projectDuration: "3-Tier System",
+        additionalInfo: "50,000 Tickets Analyzed",
+        additionalLabel: "Training Data"
       }}
+      challengeTitle="Why Support Couldn't Keep Up"
+      challenges={[
+        {
+          icon: TrendingUp,
+          title: "Volume tripled, team grew 50%",
+          description: "Ticket growth badly outpaced hiring during an 18-month surge."
+        },
+        {
+          icon: Clock,
+          title: "Response time to 8 hours",
+          description: "Average first response stretched from 2 hours to 8 as the backlog grew."
+        },
+        {
+          icon: Frown,
+          title: "Declining satisfaction",
+          description: "Slow responses eroded CSAT during the company's most important growth phase."
+        },
+        {
+          icon: Users,
+          title: "Headcount couldn't scale linearly",
+          description: "The company needed to absorb volume without proportionally growing the team."
+        }
+      ]}
+      approachTitle="A Multi-Layered AI Support System"
+      approachIntro="NEXDYNE designed a three-tier AI support system trained on the company's own history — a chatbot for common questions, an AI knowledge base, and intelligent routing for complex issues, with sentiment analysis for frustrated customers."
+      steps={[
+        {
+          step: "01",
+          title: "Deflect the predictable",
+          description: "An NLU chatbot handled common questions while an AI knowledge base surfaced relevant articles by intent."
+        },
+        {
+          step: "02",
+          title: "Route the complex",
+          description: "Intelligent routing directed hard issues to the right specialist, with sentiment analysis prioritizing frustrated customers."
+        },
+        {
+          step: "03",
+          title: "Train on real tickets",
+          description: "Intent models learned from thousands of labeled examples, with responses matched to the company's voice and clear escalation triggers."
+        },
+        {
+          step: "04",
+          title: "Integrate and measure",
+          description: "CRM, product, and billing integrations gave full context, while dashboards tracked deflection, accuracy, and cost per ticket."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Bot,
+          value: "60%",
+          label: "Tickets deflected",
+          detail: "Giving the team 4.5x capacity for issues needing humans"
+        },
+        {
+          icon: Route,
+          value: "15 min",
+          label: "Average response time",
+          detail: "Down from 8 hours"
+        },
+        {
+          icon: Smile,
+          value: "92%",
+          label: "CSAT recovered",
+          detail: "Without hiring the staff linear growth would have required"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Predictive Lead Scoring That Lifted Conversion 20%",
+          metric: "20%",
+          label: "higher conversion",
+          link: "/cases/marketing-conversion-boost",
+          image: "/images/capabilities/cap-conference-data.jpg"
+        },
+        {
+          title: "Cutting Telecom Churn 22% With a Predictive Model",
+          metric: "22%",
+          label: "lower churn",
+          link: "/cases/telecom-churn-prediction",
+          image: "/images/industries/tech-datacenter.jpg"
+        }
+      ]}
+      ctaTitle="Ready to scale support without scaling headcount?"
+      ctaDescription="Let's talk about what an AI support system could do for your response times and CSAT."
     />
   );
 }
