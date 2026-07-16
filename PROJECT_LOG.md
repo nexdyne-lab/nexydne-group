@@ -71,6 +71,19 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-16 — Case-study migration waves 1–3 (12 pages done)
+- Migrating all OLD-template case studies onto the approved IndustryCaseStudyTemplate,
+  in reviewed waves. Routes/URLs UNCHANGED; each page's own numbers preserved; no
+  fabricated quotes (template now hides the quote section when none is provided);
+  industry links + hero images verified per page. Selection = grep old-template import
+  (approved pages excluded by construction); each file git-proven old before migration.
+- Done: wave1 (3 solution CI cases), wave2 (accounting-firm, credit-union, medical-practice),
+  wave3 (airline-maintenance, energy-grid, financial-compliance, insurance-climate,
+  logistics-cold-chain, media-content). Commits 072d5f7, 72fd764, 71b2cc8.
+- Remaining: ~42 routed old-template case pages (of 51 routed; 39 unrouted/dead are skipped).
+  Continue in waves of ~6, same pattern.
+
+
 ### 2026-07-16 — Case-study template consistency (wave 1)
 - Migrated the 3 Data-Driven Customer Intelligence **solution** case studies
   (bank-cross-sell, saas-churn-reduction, ecommerce-repeat-purchase) from the OLD
