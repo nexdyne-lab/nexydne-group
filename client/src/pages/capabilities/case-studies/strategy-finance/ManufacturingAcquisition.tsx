@@ -1,35 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { TrendingDown, MapPinned, PackageX, Compass, Filter, ClipboardCheck, Handshake, Trophy } from "lucide-react";
 
 export function ManufacturingAcquisition() {
   return (
-    <CaseStudyTemplate
-      client="Precision Manufacturing Company"
-      industry="Manufacturing · Strategy & Finance"
-      title="Strategic Acquisition Doubles Market Presence"
-      subtitle="How a manufacturing company identified, acquired, and integrated a competitor to achieve market leadership."
+    <IndustryCaseStudyTemplate
+      seoTitle="A Strategic Acquisition That Doubled Market Presence | Manufacturing Case Study"
+      seoDescription="A $45M aerospace manufacturer was losing share to larger rivals but had no M&A experience. A screened, well-integrated acquisition doubled market share at 95% customer retention."
+      canonical="/capabilities/strategy-corporate-finance/case-studies/manufacturing-acquisition"
+      industry="Manufacturing"
+      industryLink="/industries/manufacturing"
+      title="How a Manufacturer Doubled Market Presence Through Acquisition"
+      subtitle="A precision manufacturer identified, acquired, and integrated a competitor to reach market leadership — doubling market share at 95% customer retention and expanding EBITDA margin to 18%."
       heroImage="/images/industries/mfg-robot-arm-team.jpg"
-      challenge={`The company had grown organically for 25 years but was losing market share to larger competitors with broader capabilities. The founder wanted to accelerate growth through acquisition but had no M&A experience.
-
-A 180-employee precision manufacturing company serving the aerospace and defense industry with $45M in annual revenue and a strong quality reputation needed expanded capabilities in CNC machining, geographic presence on the West Coast to reduce shipping costs for key customers, and capacity to handle larger orders that were currently being declined. The strategic rationale was clear; the execution pathway was not.`}
-      solution={`NEXDYNE conducted systematic target screening across 200+ companies against criteria including capability fit, geographic location, financial health, and cultural alignment—narrowing the field to 12 serious candidates through detailed analysis and management conversations.
-
-For the selected target—a $25M revenue competitor with complementary capabilities—comprehensive due diligence covered financial performance and quality of earnings, customer concentration and contract terms, equipment condition and capital requirements, employee capabilities and retention risk, and environmental and regulatory compliance.
-
-The transaction was structured with a combination of cash and seller financing, earnout provisions tied to customer retention, employment agreements for key personnel, and representations and warranties insurance limiting post-closing risk. A detailed 100-day integration plan developed before close covered customer communication and retention, employee onboarding and cultural integration, systems and process harmonization, and synergy capture and tracking.`}
-      impact={`Market share doubled as the combined entity offered a breadth of capabilities—CNC machining, precision fabrication, and West Coast presence—that neither company could have provided independently. Customer retention reached 95% through proactive communication and continuity planning that made the acquisition nearly invisible to existing accounts. EBITDA margin expanded to 18% as combined overhead was rationalized and cross-selling opportunities were realized.
-
-The $45M deal created an entity capable of competing for programs that were previously inaccessible due to capability or capacity constraints. Two new Tier 1 customers contracted with the combined company within 12 months—relationships that would not have been possible without the acquisition's expanded capabilities.`}
       metrics={[
-        { value: "2x", label: "Market share" },
-        { value: "$45M", label: "Deal value" },
-        { value: "95%", label: "Customer retention" },
-        { value: "18%", label: "EBITDA margin" }
+        { value: "2x", label: "Market Share" },
+        { value: "$45M", label: "Deal Value" },
+        { value: "95%", label: "Customer Retention" },
+        { value: "18%", label: "EBITDA Margin" }
       ]}
-      tags={["Manufacturing", "M&A", "Strategy", "Growth"]}
-      relatedCapability={{
-        title: "Strategy & Finance",
-        link: "/capabilities/strategy-finance"
+      clientContextTitle="Organic Growth Hit Its Ceiling"
+      clientContextIntro="A 180-employee precision manufacturer serving aerospace and defense with $45M in revenue had grown organically for 25 years — but was losing share to larger competitors with broader capabilities. The founder wanted to accelerate through acquisition but had no M&A experience."
+      clientContextBody="The company needed expanded CNC machining capabilities, West Coast presence to cut shipping costs for key customers, and capacity to handle larger orders it was currently declining. The strategic rationale was clear; the execution pathway was not — from finding the right target to structuring and integrating the deal."
+      clientProfile={{
+        industry: "Precision Manufacturer",
+        companySize: "$45M Revenue",
+        projectDuration: "100-Day Integration",
+        additionalInfo: "Aerospace & Defense",
+        additionalLabel: "Sector"
       }}
+      challengeTitle="Why Going It Alone Fell Short"
+      challenges={[
+        {
+          icon: TrendingDown,
+          title: "Losing share to scale",
+          description: "Larger competitors with broader capabilities were taking market share."
+        },
+        {
+          icon: MapPinned,
+          title: "No West Coast presence",
+          description: "Shipping costs for key customers were high without a western footprint."
+        },
+        {
+          icon: PackageX,
+          title: "Declining large orders",
+          description: "Capacity constraints forced the company to turn away bigger programs."
+        },
+        {
+          icon: Compass,
+          title: "No M&A experience",
+          description: "The strategic case was clear, but the founder had never executed an acquisition."
+        }
+      ]}
+      approachTitle="Screen, Diligence, Integrate"
+      approachIntro="NEXDYNE ran systematic target screening, comprehensive due diligence, and a detailed 100-day integration plan — turning a clear strategy into a well-executed deal."
+      steps={[
+        {
+          step: "01",
+          title: "Screen the market",
+          description: "200+ companies were evaluated on capability fit, geography, financial health, and cultural alignment, narrowing to 12 serious candidates."
+        },
+        {
+          step: "02",
+          title: "Diligence the target",
+          description: "For the chosen $25M competitor, diligence covered quality of earnings, customer concentration, equipment, retention risk, and compliance."
+        },
+        {
+          step: "03",
+          title: "Structure for safety",
+          description: "Cash plus seller financing, retention-based earnouts, key employment agreements, and reps-and-warranties insurance limited post-closing risk."
+        },
+        {
+          step: "04",
+          title: "Integrate in 100 days",
+          description: "A plan built before close covered customer retention, cultural onboarding, systems harmonization, and synergy tracking."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Trophy,
+          value: "2x",
+          label: "Market share",
+          detail: "From a combined capability neither company had alone"
+        },
+        {
+          icon: Handshake,
+          value: "95%",
+          label: "Customer retention",
+          detail: "Proactive communication made the deal nearly invisible to accounts"
+        },
+        {
+          icon: ClipboardCheck,
+          value: "2",
+          label: "New Tier 1 customers",
+          detail: "Within 12 months, on expanded capabilities and capacity"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Maximizing Founder Value Through Exit Preparation",
+          metric: "40%",
+          label: "valuation premium",
+          link: "/capabilities/strategy-corporate-finance/case-studies/services-exit",
+          image: "/images/industries/meeting-topview.jpg"
+        },
+        {
+          title: "Achieving ISO 9001 and AS9100 to Save $15M in Contracts",
+          metric: "$15M",
+          label: "contracts retained",
+          link: "/capabilities/operations/case-studies/aerospace-quality",
+          image: "/images/industries/aero-rocket.jpg"
+        }
+      ]}
+      ctaTitle="Ready to grow through acquisition?"
+      ctaDescription="Let's talk about what a disciplined M&A process could do for your market position."
     />
   );
 }

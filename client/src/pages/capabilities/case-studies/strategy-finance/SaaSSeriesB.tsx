@@ -1,35 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { LineChart, Users, ClipboardList, Scale, Calculator, BookOpen, Handshake, TrendingUp } from "lucide-react";
 
 export function SaaSSeriesB() {
   return (
-    <CaseStudyTemplate
-      client="B2B SaaS Company"
-      industry="Technology · Strategy & Finance"
-      title="Series B Fundraise Supports Technology Expansion"
-      subtitle="How a B2B software company prepared for and executed a successful growth capital raise at an 8x revenue multiple."
+    <IndustryCaseStudyTemplate
+      seoTitle="A Series B Raise of $35M at an 8x Revenue Multiple | SaaS Case Study"
+      seoDescription="A $15M ARR B2B SaaS company had product-market fit but no institutional fundraising experience. A structured process closed $35M at an 8x multiple with three competing term sheets."
+      canonical="/capabilities/strategy-corporate-finance/case-studies/saas-series-b"
+      industry="Technology, Media & Telecom"
+      industryLink="/industries/technology-media-telecom"
+      title="How a SaaS Company Raised $35M at an 8x Revenue Multiple"
+      subtitle="A B2B SaaS company prepared for and executed a Series B growth raise — closing $35M at an 8x revenue multiple in 12 weeks, with three competing term sheets and founder-friendly governance."
       heroImage="/images/capabilities/cap-celebrate.jpg"
-      challenge={`The company had achieved product-market fit and was ready to accelerate growth, but the founders had never raised institutional capital. They needed to prepare the company for investor scrutiny, develop compelling materials, and navigate the fundraising process.
-
-A 120-employee B2B SaaS company providing workflow automation software to mid-size professional services firms had $15M ARR and strong unit economics. The readiness assessment revealed several areas requiring attention before approaching investors: financial reporting that didn't clearly show SaaS metrics, incomplete customer cohort data, a sales pipeline not systematically tracked, and legal housekeeping including option grants and IP assignments.`}
-      solution={`NEXDYNE developed a comprehensive financial model telling the company's growth story—historical performance with clear SaaS metrics (ARR, MRR, churn, LTV/CAC), a bottoms-up revenue forecast based on sales capacity and conversion rates, expense projections tied to hiring plan and go-to-market investments, and scenario analysis showing different growth trajectories.
-
-The investment narrative was crafted to resonate with growth investors: a large and growing market opportunity, differentiated product with strong customer retention, a proven go-to-market motion ready to scale, and an experienced team with relevant domain expertise. Pitch deck, executive summary, and detailed data room materials were created.
-
-A structured fundraising process identified and prioritized 50+ potential investors, managed outreach and scheduling, prepared founders for investor meetings, coordinated due diligence requests, and negotiated term sheet provisions—designed to create competitive tension while minimizing distraction for the management team.`}
-      impact={`The process generated strong investor interest, resulting in three competing term sheets. The final deal closed $35 million at an 8x revenue multiple within 12 weeks of launching the process. The lead investor took a board seat with founder-friendly governance and standard protective provisions without unusual terms; a secondary component allowed founders to take some liquidity while remaining fully invested in the outcome.
-
-The preparation work paid measurable dividends: the clean SaaS metrics, complete cohort data, and proactive due diligence materials reduced investor friction and accelerated diligence timelines. Competing term sheets gave the founders genuine negotiating leverage on governance provisions that matter as much as valuation over the life of the investment.`}
       metrics={[
-        { value: "$35M", label: "Capital raised" },
-        { value: "8x", label: "Revenue multiple" },
-        { value: "12 weeks", label: "Process duration" },
-        { value: "3", label: "Competing term sheets" }
+        { value: "$35M", label: "Capital Raised" },
+        { value: "8x", label: "Revenue Multiple" },
+        { value: "12 wks", label: "Process Duration" },
+        { value: "3", label: "Competing Term Sheets" }
       ]}
-      tags={["Technology", "SaaS", "Fundraising", "Strategy"]}
-      relatedCapability={{
-        title: "Strategy & Finance",
-        link: "/capabilities/strategy-finance"
+      clientContextTitle="Ready to Scale, New to Raising"
+      clientContextIntro="A 120-employee B2B SaaS company providing workflow automation to mid-size professional-services firms had $15M ARR and strong unit economics. It had achieved product-market fit and was ready to accelerate — but the founders had never raised institutional capital."
+      clientContextBody="The readiness assessment revealed several areas requiring attention before approaching investors: financial reporting that didn't clearly show SaaS metrics, incomplete customer cohort data, a sales pipeline not systematically tracked, and legal housekeeping including option grants and IP assignments."
+      clientProfile={{
+        industry: "B2B SaaS Company",
+        companySize: "$15M ARR",
+        projectDuration: "12-Week Raise",
+        additionalInfo: "Series B",
+        additionalLabel: "Round"
       }}
+      challengeTitle="Why the Company Wasn't Raise-Ready"
+      challenges={[
+        {
+          icon: LineChart,
+          title: "Metrics not investor-ready",
+          description: "Financial reporting didn't clearly show ARR, churn, or LTV/CAC."
+        },
+        {
+          icon: Users,
+          title: "Incomplete cohort data",
+          description: "Customer cohort analysis wasn't complete enough for investor scrutiny."
+        },
+        {
+          icon: ClipboardList,
+          title: "Untracked pipeline",
+          description: "The sales pipeline wasn't systematically tracked to support a forecast."
+        },
+        {
+          icon: Scale,
+          title: "Legal housekeeping",
+          description: "Option grants and IP assignments needed cleanup before diligence."
+        }
+      ]}
+      approachTitle="Prepare, Position, and Run a Process"
+      approachIntro="NEXDYNE built the financial model and narrative, then ran a structured, competitive fundraising process designed to create tension while minimizing management distraction."
+      steps={[
+        {
+          step: "01",
+          title: "Build the model",
+          description: "Historical SaaS metrics, a bottoms-up forecast tied to sales capacity, expense projections, and scenario analysis told the growth story."
+        },
+        {
+          step: "02",
+          title: "Craft the narrative",
+          description: "A large market, a differentiated product with strong retention, a proven GTM motion, and an experienced team anchored the pitch."
+        },
+        {
+          step: "03",
+          title: "Prepare the materials",
+          description: "Pitch deck, executive summary, and a complete data room with proactive diligence materials reduced friction."
+        },
+        {
+          step: "04",
+          title: "Run a competitive process",
+          description: "50+ investors were prioritized and worked, founders prepped, diligence coordinated, and term-sheet provisions negotiated."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: TrendingUp,
+          value: "$35M",
+          label: "Raised at 8x revenue",
+          detail: "Closed within 12 weeks of launching the process"
+        },
+        {
+          icon: Handshake,
+          value: "3",
+          label: "Competing term sheets",
+          detail: "Giving founders real leverage on governance terms"
+        },
+        {
+          icon: BookOpen,
+          value: "Faster",
+          label: "Diligence",
+          detail: "Clean metrics and proactive materials cut investor friction"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Maximizing Founder Value Through Exit Preparation",
+          metric: "40%",
+          label: "valuation premium",
+          link: "/capabilities/strategy-corporate-finance/case-studies/services-exit",
+          image: "/images/industries/meeting-topview.jpg"
+        },
+        {
+          title: "Turning a Consulting Methodology Into a $3.2M ARR Product",
+          metric: "$3.2M",
+          label: "ARR",
+          link: "/capabilities/business-building/case-studies/consulting-saas",
+          image: "/images/capabilities/cap-team-screens.jpg"
+        }
+      ]}
+      ctaTitle="Preparing to raise?"
+      ctaDescription="Let's talk about what a well-run process could do for your valuation and terms."
     />
   );
 }

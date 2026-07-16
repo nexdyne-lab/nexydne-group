@@ -1,35 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { CalendarClock, Boxes, EyeOff, Server, Database, LayoutDashboard, Users, Wallet } from "lucide-react";
 
 export function DistributionFPA() {
   return (
-    <CaseStudyTemplate
-      client="Industrial Distribution Company"
-      industry="Distribution · Strategy & Finance"
-      title="FP&A Transformation Enables Data-Driven Decisions"
-      subtitle="How a distribution company modernized its finance function to gain real-time visibility and accelerate decision-making."
+    <IndustryCaseStudyTemplate
+      seoTitle="FP&A Transformation That Cut Monthly Close to 5 Days | Distribution Case Study"
+      seoDescription="A $75M distributor took 20+ days to close the books, deciding on intuition while finance drowned in data entry. A cloud ERP and analytics cut close to 5 days and tripled finance productivity."
+      canonical="/capabilities/strategy-corporate-finance/case-studies/distribution-fpa"
+      industry="Transportation & Logistics"
+      industryLink="/industries/transportation-logistics"
+      title="How a Distributor Cut Monthly Close From 20+ Days to 5"
+      subtitle="An industrial distributor modernized its finance function with a cloud ERP and real-time analytics — cutting monthly close to 5 days, freeing 15% of working capital, and tripling finance productivity."
       heroImage="/images/industries/fin-monitors.jpg"
-      challenge={`The company was growing rapidly but flying blind. Monthly financials took 20+ days to close, making it impossible to respond to market changes. Leadership made decisions based on intuition rather than data, and the finance team spent all their time on transaction processing rather than analysis.
-
-A 200-employee industrial distribution company with $75M in revenue operates 8 warehouses across the Midwest serving manufacturing customers. The diagnostic revealed a finance function overwhelmed by manual processes: 80% of team time spent on data entry and reconciliation, multiple disconnected systems requiring manual data transfer, no standardized chart of accounts across locations, inventory valuation updated only monthly, and customer profitability unknown at the account level.`}
-      solution={`NEXDYNE implemented a cloud-based ERP system integrating financials, inventory, and sales—including data migration and cleansing from legacy systems, a standardized chart of accounts and cost centers, automated bank reconciliations and intercompany eliminations, and integration with the warehouse management system for real-time inventory visibility.
-
-With clean data flowing into a single system, analytical tools were built to serve the business: executive dashboards showing revenue, margin, and inventory turns by location, customer profitability analysis incorporating all costs to serve, product margin analysis identifying pricing optimization opportunities, and a rolling 13-week cash flow forecast.
-
-Finance team transformation restructured roles to separate transaction processing from analysis, trained team members on new tools and analytical techniques, established a business partner model with finance liaisons for each region, and created a monthly business review process driving accountability.`}
-      impact={`Monthly close time dropped from 20+ days to 5 days, enabling leadership to identify and respond to performance issues in weeks rather than months. Real-time dashboards gave location managers and executives visibility into key operational and financial metrics for the first time. Finance team productivity tripled as automation freed the team from transaction processing for genuine business partnership.
-
-Working capital improved 15% as the customer profitability analysis and real-time inventory data revealed opportunities to optimize receivables, payables, and inventory levels that had been invisible in the previous fragmented system. The business now has the financial infrastructure to support continued growth—each new warehouse can be onboarded with standardized reporting from day one rather than requiring manual reconciliation.`}
       metrics={[
-        { value: "5 days", label: "Faster monthly close" },
-        { value: "Real-time", label: "Performance visibility" },
-        { value: "15%", label: "Working capital freed" },
-        { value: "3x", label: "Finance productivity" }
+        { value: "5 days", label: "Monthly Close" },
+        { value: "Real-time", label: "Performance Visibility" },
+        { value: "15%", label: "Working Capital Freed" },
+        { value: "3x", label: "Finance Productivity" }
       ]}
-      tags={["Distribution", "FP&A", "Finance Transformation", "Strategy"]}
-      relatedCapability={{
-        title: "Strategy & Finance",
-        link: "/capabilities/strategy-finance"
+      clientContextTitle="Growing, but Flying Blind"
+      clientContextIntro="A 200-employee industrial distribution company with $75M in revenue operates 8 Midwest warehouses serving manufacturing customers. It was growing rapidly but flying blind — monthly financials took 20+ days to close, making it impossible to respond to market changes."
+      clientContextBody="Leadership decided on intuition rather than data, and finance spent all its time on transaction processing. The diagnostic found a function overwhelmed by manual work: 80% of team time on data entry and reconciliation, multiple disconnected systems, no standardized chart of accounts across locations, monthly-only inventory valuation, and unknown customer profitability at the account level."
+      clientProfile={{
+        industry: "Industrial Distributor",
+        companySize: "$75M Revenue",
+        projectDuration: "8 Warehouses",
+        additionalInfo: "Cloud ERP",
+        additionalLabel: "Platform"
       }}
+      challengeTitle="Why Decisions Lagged"
+      challenges={[
+        {
+          icon: CalendarClock,
+          title: "20+ day close",
+          description: "Monthly financials arrived too late to respond to performance issues."
+        },
+        {
+          icon: Server,
+          title: "Disconnected systems",
+          description: "Multiple systems required manual data transfer with no standardized chart of accounts."
+        },
+        {
+          icon: EyeOff,
+          title: "Unknown customer profitability",
+          description: "The company couldn't see profitability at the account level."
+        },
+        {
+          icon: Boxes,
+          title: "Monthly-only inventory",
+          description: "Inventory valuation updated just once a month, obscuring real position."
+        }
+      ]}
+      approachTitle="Clean Data, Real-Time Analytics"
+      approachIntro="NEXDYNE implemented a cloud ERP integrating financials, inventory, and sales — then built analytics on clean data and restructured the finance team from processors into business partners."
+      steps={[
+        {
+          step: "01",
+          title: "Unify onto one system",
+          description: "A cloud ERP with migrated, cleansed data, a standardized chart of accounts, and automated reconciliations replaced the fragmented stack."
+        },
+        {
+          step: "02",
+          title: "See inventory in real time",
+          description: "WMS integration delivered real-time inventory visibility across all eight warehouses."
+        },
+        {
+          step: "03",
+          title: "Build the analytics",
+          description: "Executive dashboards, account-level customer profitability, product-margin analysis, and a rolling 13-week cash forecast served the business."
+        },
+        {
+          step: "04",
+          title: "Transform the team",
+          description: "Roles separated processing from analysis, with a business-partner model and monthly business reviews driving accountability."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: LayoutDashboard,
+          value: "5 days",
+          label: "Monthly close",
+          detail: "Down from 20+, with real-time dashboards for every location"
+        },
+        {
+          icon: Users,
+          value: "3x",
+          label: "Finance productivity",
+          detail: "As automation freed the team for business partnership"
+        },
+        {
+          icon: Wallet,
+          value: "15%",
+          label: "Working capital freed",
+          detail: "From profitability and inventory insights previously invisible"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Tripling Revenue From $40M to $120M Post-Acquisition",
+          metric: "3x",
+          label: "revenue growth",
+          link: "/capabilities/strategy-corporate-finance/case-studies/pe-growth-healthcare",
+          image: "/case-healthcare-team.5797392b.jpg"
+        },
+        {
+          title: "Upskilling 50 Analysts With a SQL & Python Bootcamp",
+          metric: "60%",
+          label: "smaller IT backlog",
+          link: "/cases/financial-services-sql-bootcamp",
+          image: "/images/industries/fin-monitors.jpg"
+        }
+      ]}
+      ctaTitle="Ready to close faster and see clearly?"
+      ctaDescription="Let's talk about what a modern FP&A function could do for your decision speed."
     />
   );
 }
