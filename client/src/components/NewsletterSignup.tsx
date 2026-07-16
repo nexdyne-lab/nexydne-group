@@ -43,7 +43,7 @@ export default function NewsletterSignup() {
           Get automation insights delivered to your inbox
         </h3>
         <p className="text-lg mb-6 text-white/90">
-          Join 2,500+ business leaders receiving our monthly newsletter with practical automation strategies, ROI benchmarks, and case study deep-dives.
+          Get our monthly newsletter — practical automation strategies, ROI benchmarks, and case-study deep-dives, straight to your inbox.
         </p>
         
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
