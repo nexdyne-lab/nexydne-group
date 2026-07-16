@@ -1,34 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { Zap, DollarSign, Timer, Database, RefreshCw, ShieldCheck, GraduationCap } from "lucide-react";
 
-export function EcommerceDataWarehouse() {
+export default function EcommerceDataWarehouse() {
   return (
-    <CaseStudyTemplate
-      client="Multi-Brand E-Commerce Retailer"
-      industry="E-Commerce · Data Engineering"
-      title="E-Commerce Retailer Migrates to Snowflake"
-      subtitle="Multi-brand retailer modernizes legacy data warehouse, reducing query times by 85% and cutting infrastructure costs 40%."
+    <IndustryCaseStudyTemplate
+      seoTitle="Migrating a Retailer to Snowflake | E-Commerce Data Engineering Case Study"
+      seoDescription="A multi-brand retailer's legacy Oracle warehouse cost $180K a year and ran 4–6 hour ETL. A Snowflake + dbt migration cut query times 85% and infrastructure cost 40% with zero downtime."
+      canonical="/cases/ecommerce-data-warehouse"
+      industry="Retail"
+      industryLink="/industries/retail"
+      title="How a Multi-Brand Retailer Migrated to Snowflake and Cut Query Times 85%"
+      subtitle="A multi-brand e-commerce retailer modernized its legacy data warehouse — reducing query times 85% and infrastructure costs 40%, with zero downtime for business-critical reporting."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
-      challenge={`A multi-brand e-commerce retailer operating 6 online storefronts with $450M in annual revenue struggled with a legacy on-premise data warehouse built on Oracle Exadata. The system required 3 full-time DBAs to maintain, cost $180K annually in licensing and hardware maintenance, and took 4-6 hours to run nightly ETL jobs. Business analysts waited 15-30 seconds for basic product performance queries, and the marketing team couldn't access customer behavior data for same-day campaign optimization.
-
-The company's data team of 5 engineers lacked cloud data warehouse expertise and modern ELT tooling experience. Previous attempts to modernize using internal resources stalled after 8 months due to the complexity of migrating 15 years of historical data, rewriting 200+ legacy ETL jobs, and ensuring zero downtime for critical business reporting.`}
-      solution={`NEXDYNE deployed a 3-person data engineering team with deep Snowflake and dbt expertise. We started with a 2-week discovery phase, cataloging all existing ETL jobs, data sources, downstream dependencies, and business-critical reporting workflows. Our team designed a phased migration strategy that prioritized high-value use cases first while maintaining parallel operation of legacy and modern systems to ensure zero business disruption.
-
-We implemented a modern ELT architecture using Fivetran for data ingestion from Shopify, Salesforce, Google Analytics, and internal databases, with dbt for transformation logic. All transformation code was version-controlled in Git with automated testing via dbt's built-in testing framework. We established data quality monitoring using Monte Carlo to catch schema changes and data anomalies before they impacted business users. Throughout the 7-month engagement, we conducted hands-on training sessions teaching the client's team dbt development, Snowflake optimization, and DataOps best practices.`}
-      impact={`The Snowflake migration completed on schedule with zero downtime for business-critical reporting. Query performance improved dramatically—analysts now get results in 2-3 seconds instead of 15-30 seconds. The marketing team can now analyze customer behavior and adjust campaigns in real-time, leading to a 22% improvement in email campaign conversion rates.
-
-Infrastructure costs dropped 40% ($72K annually) by eliminating Oracle licensing, reducing DBA headcount from 3 to 1, and leveraging Snowflake's automatic scaling. The client's data team now independently develops and deploys new dbt models, with 15 new analytics use cases shipped in the 6 months post-migration.`}
       metrics={[
-        { value: "85%", label: "Query time reduction" },
-        { value: "40%", label: "Infrastructure cost savings" },
-        { value: "30 min", label: "ETL runtime (from 4-6 hours)" }
+        { value: "85%", label: "Faster Queries" },
+        { value: "40%", label: "Lower Infra Cost" },
+        { value: "30 min", label: "ETL (from 4–6 hrs)" }
       ]}
-      tags={["Data Engineering", "Cloud Migration", "Snowflake", "E-Commerce"]}
-      relatedCapability={{
-        title: "Data Transformation",
-        link: "/capabilities/data-transformation"
+      clientContextTitle="Fifteen Years of Data, Stuck on Oracle"
+      clientContextIntro="A multi-brand e-commerce retailer running six storefronts with $450M in annual revenue struggled with a legacy on-premise warehouse on Oracle Exadata. It needed three full-time DBAs, cost $180K a year in licensing and hardware, and took 4–6 hours to run nightly ETL — while analysts waited 15–30 seconds for basic queries."
+      clientContextBody="The marketing team couldn't access customer-behavior data for same-day campaign optimization, and the five-person data team lacked cloud-warehouse and modern ELT experience. A previous in-house modernization attempt stalled after eight months against the complexity of migrating 15 years of history, rewriting 200+ ETL jobs, and guaranteeing zero downtime for critical reporting."
+      clientProfile={{
+        industry: "Multi-Brand E-Commerce Retailer",
+        companySize: "$450M Revenue · 6 Storefronts",
+        projectDuration: "7-Month Engagement",
+        additionalInfo: "Snowflake + dbt",
+        additionalLabel: "Modern Stack"
       }}
+      challengeTitle="Why the Legacy Warehouse Held Them Back"
+      challenges={[
+        {
+          icon: Timer,
+          title: "Slow queries, slow ETL",
+          description: "Analysts waited 15–30 seconds for basic queries while nightly ETL ran 4–6 hours, delaying every insight."
+        },
+        {
+          icon: DollarSign,
+          title: "Costly to run",
+          description: "The Oracle Exadata warehouse cost $180K a year and required three full-time DBAs just to keep running."
+        },
+        {
+          icon: RefreshCw,
+          title: "No real-time optimization",
+          description: "Marketing couldn't reach customer-behavior data in time to adjust campaigns the same day."
+        },
+        {
+          icon: Database,
+          title: "A stalled migration",
+          description: "A prior in-house effort stalled after eight months against 15 years of history and 200+ legacy ETL jobs."
+        }
+      ]}
+      approachTitle="A Phased Move to a Modern ELT Stack"
+      approachIntro="NEXDYNE deployed a three-person data-engineering team with deep Snowflake and dbt expertise, and designed a phased migration that kept legacy and modern systems running in parallel for zero business disruption."
+      steps={[
+        {
+          step: "01",
+          title: "Discover before migrating",
+          description: "A two-week discovery cataloged every ETL job, data source, downstream dependency, and business-critical report before anything moved."
+        },
+        {
+          step: "02",
+          title: "Modern ELT with Fivetran + dbt",
+          description: "We ingested from Shopify, Salesforce, Google Analytics, and internal databases via Fivetran, with dbt transformations version-controlled in Git and automatically tested."
+        },
+        {
+          step: "03",
+          title: "Guard data quality",
+          description: "Monte Carlo monitoring caught schema changes and anomalies before they reached business users."
+        },
+        {
+          step: "04",
+          title: "Hand over the keys",
+          description: "Hands-on training in dbt, Snowflake optimization, and DataOps left the client's team able to build and deploy independently."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Zap,
+          value: "85%",
+          label: "Faster queries",
+          detail: "Results in 2–3 seconds instead of 15–30"
+        },
+        {
+          icon: DollarSign,
+          value: "40%",
+          label: "Lower infrastructure cost",
+          detail: "$72K a year, with DBA headcount from 3 to 1"
+        },
+        {
+          icon: GraduationCap,
+          value: "15",
+          label: "New use cases shipped",
+          detail: "By the client's own team in the 6 months after"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Lifting Repeat Purchase 42% for an E-commerce Brand",
+          metric: "42%",
+          label: "more repeat purchases",
+          link: "/solutions/data-driven-customer-intelligence/case-studies/ecommerce-repeat-purchase",
+          image: "/images/capabilities/cap-celebrate.jpg"
+        },
+        {
+          title: "Reducing Retail Shrinkage 25% with Computer Vision",
+          metric: "25%",
+          label: "less shrinkage",
+          link: "/case-studies/retail-shrinkage-reduction",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
+        }
+      ]}
+      ctaTitle="Ready to make your data fast and affordable again?"
+      ctaDescription="Let's talk about what a modern data platform could do for your speed and cost."
     />
   );
 }
-
-export default EcommerceDataWarehouse;

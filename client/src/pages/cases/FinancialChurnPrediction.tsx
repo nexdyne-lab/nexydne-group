@@ -1,36 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { TrendingDown, DollarSign, Target, Eye, Users, Workflow, Gauge } from "lucide-react";
 
-export function FinancialChurnPrediction() {
+export default function FinancialChurnPrediction() {
   return (
-    <CaseStudyTemplate
-      client="Regional Financial Services Firm"
-      industry="Financial Services · Predictive Analytics"
-      title="Financial Services Firm Reduces Churn by 28% with Predictive Analytics"
-      subtitle="Machine learning models identify at-risk customers 90 days before defection and trigger automated retention campaigns that save $47M in annual revenue."
+    <IndustryCaseStudyTemplate
+      seoTitle="Cutting Customer Churn 28% with Predictive Analytics | Financial Services Case Study"
+      seoDescription="A $12B financial services firm was losing customers to reactive retention. ML models flagged defection 90 days early, cut churn 28%, and saved $47M a year."
+      canonical="/cases/financial-churn-prediction"
+      industry="Financial Services"
+      industryLink="/industries/financial-services"
+      title="How a Financial Services Firm Cut Churn 28% with Predictive Analytics"
+      subtitle="Machine-learning models identified at-risk customers 90 days before defection and triggered automated retention campaigns — saving $47M in annual revenue."
       heroImage="/images/industries/fin-monitors.jpg"
-      challenge={`A regional financial services firm managing $12 billion in assets faced escalating customer attrition that threatened long-term profitability. Annual churn rates had climbed to 14.2%—significantly above industry benchmarks—costing the firm approximately $168 million in lost revenue and requiring aggressive customer acquisition spending to maintain growth targets. The core problem: reactive retention strategies that only engaged customers after they'd already decided to leave.
-
-The firm's existing approach relied on lagging indicators like account closure requests and complaint escalations—signals that appeared only after customers had researched alternatives and made switching decisions. Relationship managers lacked visibility into early warning signs of dissatisfaction, and retention offers were generic rather than tailored to individual customer needs and value profiles.`}
-      solution={`NEXDYNE built a comprehensive churn prediction platform that analyzed over 200 behavioral, transactional, and demographic signals to identify customers at risk of defection up to 90 days before they left. The solution combined gradient boosting machine learning models with deep learning techniques to detect subtle patterns in customer behavior—declining transaction frequency, reduced digital engagement, increased support contacts, and competitive product research signals.
-
-The platform scored every customer daily on a 0-100 churn risk scale, segmenting the portfolio into risk tiers that triggered different retention interventions. High-value customers showing early warning signs received proactive outreach from relationship managers armed with personalized retention offers based on predicted reasons for dissatisfaction.
-
-NEXDYNE integrated the churn prediction system with the firm's CRM, marketing automation, and customer service platforms—ensuring every customer-facing team had real-time visibility into risk scores and recommended actions.`}
-      impact={`The churn prediction platform transformed the firm's retention economics within the first year. Overall churn rates decreased from 14.2% to 10.2%—a 28% reduction that saved approximately $47 million in annual revenue. The platform achieved 87% accuracy in predicting customer defection 90 days in advance.
-
-Retention campaign effectiveness improved dramatically. Customers contacted through predictive interventions showed a 62% save rate compared to just 23% for reactive retention efforts. High-value customer retention increased by 34%, protecting the firm's most profitable relationships. Net Promoter Score increased by 18 points as proactive engagement demonstrated the firm's commitment to customer success.`}
       metrics={[
-        { value: "28%", label: "Churn reduction" },
-        { value: "$47M", label: "Revenue saved annually" },
-        { value: "87%", label: "Prediction accuracy" }
+        { value: "28%", label: "Lower Churn" },
+        { value: "$47M", label: "Revenue Saved / Year" },
+        { value: "87%", label: "Prediction Accuracy" }
       ]}
-      tags={["Predictive Analytics", "Churn Prevention", "Financial Services", "Machine Learning"]}
-      relatedCapability={{
-        title: "Artificial Intelligence",
-        link: "/capabilities/artificial-intelligence"
+      clientContextTitle="Retention That Always Ran Late"
+      clientContextIntro="A regional financial services firm managing $12 billion in assets faced escalating attrition that threatened long-term profitability. Annual churn had climbed to 14.2% — well above benchmark — costing roughly $168 million in lost revenue and forcing aggressive acquisition spending just to hold growth."
+      clientContextBody="The core problem was reactive retention: the firm relied on lagging indicators like account-closure requests and complaint escalations — signals that appeared only after customers had already researched alternatives and decided to switch. Relationship managers had no visibility into early dissatisfaction, and retention offers were generic rather than tailored to each customer's needs and value."
+      clientProfile={{
+        industry: "Regional Financial Services Firm",
+        companySize: "$12B in Assets",
+        projectDuration: "First-Year Impact",
+        additionalInfo: "200+ Signals Modeled",
+        additionalLabel: "Data Depth"
       }}
+      challengeTitle="Why Customers Left Before Anyone Noticed"
+      challenges={[
+        {
+          icon: Eye,
+          title: "Only lagging indicators",
+          description: "The firm saw risk only after a customer requested closure — long after the switching decision had been made."
+        },
+        {
+          icon: Users,
+          title: "Managers flying blind",
+          description: "Relationship managers had no early warning of dissatisfaction to act on before it was too late."
+        },
+        {
+          icon: Target,
+          title: "Generic retention offers",
+          description: "One-size-fits-all offers ignored each customer's actual reasons for leaving and their value to the firm."
+        },
+        {
+          icon: DollarSign,
+          title: "Costly acquisition treadmill",
+          description: "High churn forced aggressive, expensive acquisition just to maintain growth targets."
+        }
+      ]}
+      approachTitle="Ninety Days of Warning, and a Plan to Act"
+      approachIntro="NEXDYNE built a churn-prediction platform that analyzed 200+ behavioral, transactional, and demographic signals to flag customers at risk up to 90 days early — and wired the scores into every customer-facing team."
+      steps={[
+        {
+          step: "01",
+          title: "Detect subtle defection patterns",
+          description: "Gradient boosting and deep learning caught early signals — declining transactions, reduced digital engagement, rising support contacts, competitive research."
+        },
+        {
+          step: "02",
+          title: "Score every customer daily",
+          description: "The platform scored the whole portfolio 0–100 for churn risk each day, segmenting into tiers that triggered different interventions."
+        },
+        {
+          step: "03",
+          title: "Arm managers with the 'why'",
+          description: "High-value at-risk customers got proactive outreach with personalized offers based on the predicted reasons for dissatisfaction."
+        },
+        {
+          step: "04",
+          title: "Wire it into every system",
+          description: "Integration with CRM, marketing automation, and customer service gave every team real-time risk scores and recommended actions."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: TrendingDown,
+          value: "28%",
+          label: "Lower churn",
+          detail: "From 14.2% down to 10.2%"
+        },
+        {
+          icon: DollarSign,
+          value: "$47M",
+          label: "Revenue saved annually",
+          detail: "By retaining customers who would have left"
+        },
+        {
+          icon: Gauge,
+          value: "62%",
+          label: "Save rate on interventions",
+          detail: "Versus just 23% for reactive retention"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Cutting SaaS Churn 38% with Predictive Intelligence",
+          metric: "38%",
+          label: "lower annual churn",
+          link: "/solutions/data-driven-customer-intelligence/case-studies/saas-churn-reduction",
+          image: "/images/capabilities/cap-mobile-woman.jpg"
+        },
+        {
+          title: "Detecting Fraud 40% Faster with ML",
+          metric: "40%",
+          label: "faster fraud detection",
+          link: "/cases/financial-fraud-detection-ml",
+          image: "/images/industries/fin-monitors.jpg"
+        }
+      ]}
+      ctaTitle="Ready to see churn 90 days before it happens?"
+      ctaDescription="Let's talk about what predictive retention could protect across your book."
     />
   );
 }
-
-export default FinancialChurnPrediction;
