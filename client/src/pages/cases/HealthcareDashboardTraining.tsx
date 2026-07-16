@@ -1,41 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { EyeOff, Clock, FileSpreadsheet, Users, GraduationCap, LayoutDashboard, TrendingDown, Award } from "lucide-react";
 
 export function HealthcareDashboardTraining() {
   return (
-    <CaseStudyTemplate
-      client="Regional Healthcare Network"
-      industry="Healthcare · Data Training"
-      title="Healthcare Network Trains 200 Clinicians to Build Custom Dashboards"
-      subtitle="Half-day workshops taught clinical staff to create Tableau dashboards for patient outcomes, improving visibility 45% and reducing manual reporting 30 hours/week."
+    <IndustryCaseStudyTemplate
+      seoTitle="Training 200 Clinicians to Build Their Own Tableau Dashboards | Healthcare Case Study"
+      seoDescription="A 12-hospital network licensed Tableau for 500 users but only 20 in IT could use it. Half-day clinician workshops lifted outcome visibility 45% and cut 30 hours/week of manual reporting."
+      canonical="/cases/healthcare-dashboard-training"
+      industry="Healthcare"
+      industryLink="/industries/healthcare"
+      title="How a Healthcare Network Trained 200 Clinicians to Build Their Own Dashboards"
+      subtitle="Half-day, healthcare-specific workshops taught clinical staff to build Tableau dashboards for patient outcomes — improving visibility 45% and eliminating 30 hours a week of manual reporting."
       heroImage="/case-medical-collaboration.9602cc8c.jpg"
-      challenge={`A regional healthcare network with 12 hospitals and 45 outpatient clinics struggled with patient outcome visibility. Clinicians wanted to track readmission rates, infection rates, length of stay, and other quality metrics—but relied on IT to generate reports that arrived weeks after the data was collected.
-
-The IT team maintained a Tableau server with pre-built dashboards, but they were generic and didn't answer specific clinical questions. Physicians wanted to drill down by department, diagnosis, or physician—capabilities that existed in the tool but required technical knowledge to configure.
-
-Clinical staff resorted to manual workarounds: exporting data to Excel, creating pivot tables, and emailing spreadsheets to colleagues. This consumed 30+ hours/week across the organization and introduced errors when formulas broke or data got stale.
-
-Leadership recognized the opportunity: Tableau was already deployed and licensed for 500 users, but only 20 people (all in IT) knew how to use it. If clinical staff could build their own dashboards, they'd get faster insights and free IT to focus on infrastructure.`}
-      solution={`NEXDYNE designed a half-day "Tableau for Clinicians" workshop tailored to healthcare use cases. Rather than teaching generic BI concepts, we focused on patient outcome dashboards using real (de-identified) clinical data from the network's EHR system.
-
-Morning Session (3 hours): Participants learned to connect to data sources, create visualizations (bar charts, line graphs, heat maps), and apply filters. We used familiar clinical scenarios: "Show readmission rates by department," "Compare infection rates across hospitals," "Track length of stay trends over time."
-
-Afternoon Session (2 hours): Participants learned calculated fields, parameters, and dashboard actions. Final project: build a custom dashboard answering a specific clinical question relevant to their role. Cardiologists built heart failure readmission dashboards, orthopedic surgeons tracked surgical site infection rates, primary care physicians monitored chronic disease management metrics.
-
-In-person workshops were held at each hospital (12 sessions total), limited to 15-20 participants per session to ensure hands-on support. We trained 5 internal "Tableau Champions" (clinical informatics staff) who could provide ongoing support after our engagement ended. Champions held monthly office hours, maintained a Slack channel for Q&A, and curated a library of reusable dashboard templates.`}
-      impact={`Six months post-training, Tableau usage skyrocketed: 420 active users (up from 20), 180+ custom dashboards created, and 15,000+ dashboard views per month. Clinical staff built dashboards for use cases IT never anticipated—OR utilization tracking, physician productivity metrics, patient satisfaction trends by unit.
-
-Physicians identified a 12% readmission spike in heart failure patients at one hospital, traced it to discharge medication errors, and implemented process changes that reduced readmissions 18% within 3 months. The infection control team built real-time dashboards that flagged outbreaks 5 days earlier than manual surveillance. The IT data request backlog dropped 70% as clinical staff answered their own questions, freeing IT to focus on integrating new data sources and building predictive models for patient risk stratification.`}
       metrics={[
-        { value: "200", label: "Clinicians trained across 12 hospitals" },
-        { value: "45%", label: "Improvement in patient outcome visibility" },
-        { value: "180+", label: "Custom dashboards built in 6 months" },
-        { value: "30 hrs/wk", label: "Reduction in manual Excel reporting" }
+        { value: "200", label: "Clinicians Trained" },
+        { value: "45%", label: "Better Outcome Visibility" },
+        { value: "180+", label: "Dashboards Built in 6 Months" },
+        { value: "30 hrs/wk", label: "Less Manual Reporting" }
       ]}
-      tags={["Data Training", "Healthcare", "Analytics", "Tableau"]}
-      relatedCapability={{
-        title: "Data Transformation",
-        link: "/capabilities/data-transformation"
+      clientContextTitle="A Tool Nobody Could Use"
+      clientContextIntro="A regional healthcare network with 12 hospitals and 45 outpatient clinics struggled with patient-outcome visibility. Clinicians wanted to track readmissions, infection rates, and length of stay — but relied on IT to generate reports that arrived weeks after the data was collected."
+      clientContextBody="Pre-built dashboards were generic and didn't answer specific clinical questions, so staff resorted to exporting to Excel and emailing spreadsheets — consuming 30+ hours a week and introducing errors. The irony: Tableau was already deployed and licensed for 500 users, but only 20 people, all in IT, knew how to use it. If clinical staff could build their own dashboards, they'd get faster insight and free IT to focus on infrastructure."
+      clientProfile={{
+        industry: "Regional Healthcare Network",
+        companySize: "12 Hospitals, 45 Clinics",
+        projectDuration: "12 Onsite Sessions",
+        additionalInfo: "500 Tableau Licenses",
+        additionalLabel: "Already Deployed"
       }}
+      challengeTitle="Why Insight Arrived Too Late"
+      challenges={[
+        {
+          icon: EyeOff,
+          title: "Reports weeks behind the data",
+          description: "Clinicians depended on IT for every metric, receiving generic reports long after the moment for action had passed."
+        },
+        {
+          icon: FileSpreadsheet,
+          title: "30+ hours a week in Excel",
+          description: "Manual exports and pivot tables consumed enormous time and broke when formulas failed or data went stale."
+        },
+        {
+          icon: Users,
+          title: "Only 20 of 500 licenses used",
+          description: "Tableau was licensed for 500 users, but the skills sat entirely with a 20-person IT team."
+        },
+        {
+          icon: Clock,
+          title: "A growing IT request backlog",
+          description: "Every clinical question became an IT ticket, crowding out infrastructure and strategic work."
+        }
+      ]}
+      approachTitle="Training Built on Real Clinical Data"
+      approachIntro="NEXDYNE designed a half-day “Tableau for Clinicians” workshop — not generic BI, but patient-outcome dashboards built on the network's own de-identified EHR data and everyday clinical questions."
+      steps={[
+        {
+          step: "01",
+          title: "Start with clinical scenarios",
+          description: "A three-hour morning session taught data connections, visualizations, and filters using real questions like readmission rates by department."
+        },
+        {
+          step: "02",
+          title: "Build a dashboard that matters",
+          description: "The afternoon covered calculated fields and dashboard actions, ending with each clinician building a dashboard for their own role."
+        },
+        {
+          step: "03",
+          title: "Go where the clinicians are",
+          description: "Twelve onsite sessions ran at each hospital, capped at 15–20 people for hands-on support with real clinical data."
+        },
+        {
+          step: "04",
+          title: "Leave champions behind",
+          description: "Five internal clinical-informatics \"Tableau Champions\" took over monthly office hours, a Q&A channel, and a library of reusable templates."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: LayoutDashboard,
+          value: "420",
+          label: "Active Tableau users",
+          detail: "Up from 20, with 180+ custom dashboards in six months"
+        },
+        {
+          icon: TrendingDown,
+          value: "18%",
+          label: "Fewer heart-failure readmissions",
+          detail: "After physicians traced a 12% spike to discharge medication errors"
+        },
+        {
+          icon: Award,
+          value: "70%",
+          label: "Smaller IT request backlog",
+          detail: "As clinicians answered their own questions directly"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Upskilling 50 Analysts With a SQL & Python Bootcamp",
+          metric: "60%",
+          label: "smaller IT backlog",
+          link: "/cases/financial-services-sql-bootcamp",
+          image: "/images/industries/fin-monitors.jpg"
+        },
+        {
+          title: "Launching a Patient Portal That Cut Admin Calls 65%",
+          metric: "65%",
+          label: "fewer admin calls",
+          link: "/cases/healthcare-patient-portal",
+          image: "/case-medical-collaboration.9602cc8c.jpg"
+        }
+      ]}
+      ctaTitle="Ready to put analytics in your clinicians' hands?"
+      ctaDescription="Let's talk about what role-based data training could do for your speed to insight."
     />
   );
 }

@@ -1,39 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { FileWarning, Languages, ShieldCheck, Clock, Layers, GitPullRequestArrow, ScanSearch, HeartPulse } from "lucide-react";
 
 export function HealthcareContentCompliance() {
   return (
-    <CaseStudyTemplate
-      client="Large Healthcare System"
-      industry="Healthcare · Content Management"
-      title="Healthcare System Ensures Compliance with Content Workflows"
-      subtitle="Automated approval workflows for patient education materials across 18 languages and 25 facilities, reducing compliance review time from 3 weeks to 4 days while maintaining 100% regulatory adherence."
+    <IndustryCaseStudyTemplate
+      seoTitle="Cutting Patient-Education Compliance Review From 3 Weeks to 4 Days | Healthcare Case Study"
+      seoDescription="A 25-facility healthcare system managed patient-education materials in 18 languages with no version control. Automated approval workflows cut review time to 4 days at 100% adherence."
+      canonical="/cases/healthcare-content-compliance"
+      industry="Healthcare"
+      industryLink="/industries/healthcare"
+      title="How a Healthcare System Cut Content Compliance Review From 3 Weeks to 4 Days"
+      subtitle="Automated approval workflows for patient-education materials across 18 languages and 25 facilities cut compliance review time from three weeks to four days — while reaching 100% regulatory adherence."
       heroImage="/case-medical-collaboration.9602cc8c.jpg"
-      challenge={`A large healthcare system with 25 facilities serving diverse patient populations struggled with patient education content management. They produced materials in 18 languages covering hundreds of conditions, procedures, and wellness topics. Content lived in Word documents scattered across departmental shared drives, and version control was nonexistent—clinicians printed outdated materials regularly because they couldn't find the latest approved versions.
-
-Regulatory compliance was a constant concern. Patient education materials must meet HIPAA requirements, ADA accessibility standards, and health literacy guidelines (6th-grade reading level). Medical claims require legal review, translations need clinical validation to ensure accuracy, and all content must be reviewed annually for medical accuracy. The manual review process took 3 weeks per document, involving 5 stakeholders (clinical SME, legal, compliance, accessibility specialist, translation validator) with no visibility into approval status.
-
-The system had distributed 3 pieces of outdated content in the past year—one with incorrect medication dosages, one with expired clinical guidelines, and one with translation errors that confused patients. While no harm occurred, the Joint Commission cited them during accreditation review, and the compliance team spent 400 hours investigating and remediating the incidents.`}
-      solution={`NEXDYNE deployed Adobe Experience Manager as the centralized content management system for all patient education materials. We built structured content templates that enforce compliance requirements: required fields for medical review date, legal approval, accessibility certification, and translation validation. Content cannot be published without all required approvals, and the system automatically flags materials approaching their annual review deadline.
-
-Automated workflows route content through required reviewers based on content type and language. New diabetes education materials trigger clinical review by endocrinologists, legal review for medical claims, accessibility checks for ADA compliance (alt text, color contrast, screen reader compatibility), and translation validation for all 18 languages. Each reviewer receives notifications with context-specific instructions and can approve, reject with comments, or request revisions. The system tracks approval status in real-time, showing content creators exactly where each document sits in the pipeline.
-
-We implemented automated compliance checks that catch common errors before human review: readability analysis flags content above 6th-grade reading level, accessibility scanners detect missing alt text or insufficient color contrast, and terminology validators ensure consistent use of medical terms across languages. Content that fails automated checks returns to the creator with specific error messages, reducing reviewer burden and accelerating approval cycles.`}
-      impact={`Compliance review time dropped from 3 weeks to 4 days. Automated workflows route content to the right reviewers instantly, eliminating delays from manual handoffs and email chains. Parallel review—legal and accessibility happening simultaneously instead of sequentially—cuts approval cycles dramatically. Content creators know exactly where each document sits in the pipeline and can proactively address bottlenecks.
-
-Regulatory adherence reached 100%. The system prevents outdated content from being distributed—materials approaching their annual review deadline are automatically flagged 60 days in advance, and expired content is removed from circulation until re-approved. Zero compliance incidents occurred in the first year, and the Joint Commission praised the system during the next accreditation review, citing it as a best practice example.
-
-Patient outcomes improved measurably. Consistent, accurate, and accessible education materials led to better patient understanding of their conditions and treatment plans. Patient satisfaction scores for "understanding my care plan" increased 18 points, hospital readmission rates for chronic conditions dropped 12%, and patient portal engagement increased 35% as patients accessed education materials proactively.`}
       metrics={[
-        { value: "4 days", label: "Compliance review time (from 3 weeks)" },
-        { value: "18", label: "Languages supported" },
-        { value: "100%", label: "Regulatory adherence" },
-        { value: "25", label: "Facilities covered" }
+        { value: "4 days", label: "Review Time (from 3 weeks)" },
+        { value: "18", label: "Languages Supported" },
+        { value: "100%", label: "Regulatory Adherence" },
+        { value: "25", label: "Facilities Covered" }
       ]}
-      tags={["Healthcare", "Content Management", "Compliance", "Operations"]}
-      relatedCapability={{
-        title: "Operations",
-        link: "/capabilities/operations"
+      clientContextTitle="Content Chaos, Compliance Risk"
+      clientContextIntro="A large healthcare system with 25 facilities produced patient-education materials in 18 languages covering hundreds of conditions and procedures. Content lived in Word documents scattered across departmental drives with no version control — clinicians routinely printed outdated materials."
+      clientContextBody="Compliance was a constant concern: materials must meet HIPAA, ADA accessibility, and 6th-grade health-literacy standards, with legal review of medical claims and clinical validation of translations. The manual process took three weeks per document across five stakeholders with no visibility into status. In the prior year the system distributed three outdated pieces — including incorrect medication dosages — drawing a Joint Commission citation and 400 hours of remediation."
+      clientProfile={{
+        industry: "Large Healthcare System",
+        companySize: "25 Facilities",
+        projectDuration: "18-Language Rollout",
+        additionalInfo: "Adobe Experience Manager",
+        additionalLabel: "Platform"
       }}
+      challengeTitle="Where Content Governance Broke Down"
+      challenges={[
+        {
+          icon: FileWarning,
+          title: "No version control",
+          description: "Materials scattered across shared drives meant clinicians regularly printed outdated, non-current content."
+        },
+        {
+          icon: Clock,
+          title: "3-week review cycles",
+          description: "Sequential manual review across five stakeholders left no visibility into approval status."
+        },
+        {
+          icon: Languages,
+          title: "18 languages to validate",
+          description: "Every translation needed clinical validation for accuracy on top of legal and accessibility review."
+        },
+        {
+          icon: ShieldCheck,
+          title: "A Joint Commission citation",
+          description: "Three outdated documents reached patients, triggering a citation and 400 hours of remediation."
+        }
+      ]}
+      approachTitle="Structured Content With Enforced Approvals"
+      approachIntro="NEXDYNE deployed Adobe Experience Manager as the single source of truth, with structured templates that make compliance a precondition of publishing rather than an afterthought."
+      steps={[
+        {
+          step: "01",
+          title: "Enforce compliance in the template",
+          description: "Required fields for medical-review date, legal approval, accessibility certification, and translation validation block publishing until every approval is in place."
+        },
+        {
+          step: "02",
+          title: "Route to the right reviewers",
+          description: "Automated workflows send content to the correct clinical, legal, accessibility, and translation reviewers based on type and language — in parallel, not sequence."
+        },
+        {
+          step: "03",
+          title: "Catch errors before humans",
+          description: "Automated checks flag content above 6th-grade reading level, missing alt text, poor contrast, and inconsistent terminology, returning specifics to the creator."
+        },
+        {
+          step: "04",
+          title: "Never let content expire",
+          description: "Materials nearing their annual review are flagged 60 days ahead and pulled from circulation until re-approved."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: GitPullRequestArrow,
+          value: "4 days",
+          label: "Compliance review time",
+          detail: "Down from three weeks via parallel, automated routing"
+        },
+        {
+          icon: ShieldCheck,
+          value: "100%",
+          label: "Regulatory adherence",
+          detail: "Zero compliance incidents in year one, praised at accreditation"
+        },
+        {
+          icon: HeartPulse,
+          value: "+18 pts",
+          label: "\"Understanding my care plan\"",
+          detail: "With chronic-condition readmissions down 12%"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Automating HIPAA Audit Trails, Cutting Violations 92%",
+          metric: "92%",
+          label: "fewer violations",
+          link: "/cases/healthcare-hipaa-compliance",
+          image: "/case-medical-collaboration.9602cc8c.jpg"
+        },
+        {
+          title: "Automating Patient Data Management, Cutting Admin Work 40%",
+          metric: "40%",
+          label: "less admin overhead",
+          link: "/cases/healthcare-provider",
+          image: "/case-medical-collaboration.9602cc8c.jpg"
+        }
+      ]}
+      ctaTitle="Ready to make compliance the default?"
+      ctaDescription="Let's talk about what structured content governance could do for your review cycles."
     />
   );
 }

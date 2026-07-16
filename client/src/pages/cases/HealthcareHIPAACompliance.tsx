@@ -1,37 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { Unlock, ShieldAlert, ScrollText, UserX, KeyRound, ScanEye, ShieldCheck, Search } from "lucide-react";
 
 export function HealthcareHIPAACompliance() {
   return (
-    <CaseStudyTemplate
-      client="Regional Hospital System"
-      industry="Healthcare · Data Governance"
-      title="Hospital Achieves HIPAA Compliance with Automated Audit Trails"
-      subtitle="Automated access controls and comprehensive audit logging for 12,000 employees accessing patient records across 8 facilities, reducing compliance violations 92%."
+    <IndustryCaseStudyTemplate
+      seoTitle="Cutting HIPAA Violations 92% With Automated Audit Trails | Healthcare Case Study"
+      seoDescription="An 8-facility hospital system gave 12,000 employees broad EHR access and was cited by OCR after a breach. Automated access controls and audit logging cut violations 92%."
+      canonical="/cases/healthcare-hipaa-compliance"
+      industry="Healthcare"
+      industryLink="/industries/healthcare"
+      title="How a Hospital Cut HIPAA Violations 92% With Automated Audit Trails"
+      subtitle="Automated, role-based access controls and comprehensive audit logging for 12,000 employees across 8 facilities cut compliance violations 92% — and turned breach investigations from weeks into hours."
       heroImage="/case-medical-collaboration.9602cc8c.jpg"
-      challenge={`A regional hospital system with 8 facilities and 12,000 employees faced mounting HIPAA compliance risks. Their legacy EHR system granted broad access permissions—nurses could view records for patients they'd never treated, billing staff saw clinical notes they didn't need, and IT administrators had unrestricted access to everything. Audit logs existed but were scattered across systems, making compliance investigations take weeks.
-
-The Office for Civil Rights had cited them for insufficient access controls after a breach investigation revealed that a terminated employee's credentials remained active for 6 weeks, allowing unauthorized access to 2,400 patient records. The potential fine was $1.5M, and the reputational damage was worse—local media covered the breach extensively, and patient trust eroded.
-
-They needed a governance system that enforced role-based access automatically, logged every data access event with immutable timestamps, detected anomalous access patterns in real-time, and generated audit reports that compliance officers could understand without technical expertise. The solution had to integrate with their existing EHR (Epic), identity provider (Active Directory), and SIEM system without disrupting clinical workflows.`}
-      solution={`NEXDYNE implemented a comprehensive data governance layer that sits between users and the EHR system. We deployed Immuta for automated access control and audit logging, integrated with their Active Directory for identity management, and built custom policies that enforce HIPAA's minimum necessary standard—users only see data required for their specific job function.
-
-Access policies are role-based but context-aware: nurses assigned to a patient's care team see full clinical records, but nurses on different floors see only basic demographics. Physicians access records for their own patients plus emergency override capability (logged and reviewed). Billing staff see diagnosis codes and procedure details but clinical notes are masked. IT administrators have no patient data access by default—they must request break-glass access with manager approval, and every action is logged.
-
-We built anomaly detection rules that flag suspicious patterns: accessing records of VIP patients without clinical justification, bulk record downloads, after-hours access from unusual locations, and access by terminated employees (synced from HR systems). Alerts route to the compliance team via Slack and email with enough context to investigate immediately.`}
-      impact={`HIPAA compliance violations dropped 92% in the first year. The hospital passed its next OCR audit with zero findings—auditors praised the comprehensive audit trail and automated access controls. Average time to investigate potential breaches fell from 3 weeks to 2 hours, as compliance officers could query audit logs directly instead of requesting reports from IT.
-
-Clinical staff initially worried that tighter access controls would slow them down, but the opposite happened. Nurses no longer waste time scrolling through irrelevant patient lists—they see only their assigned patients. The system caught 14 policy violations in the first 6 months: 8 were innocent mistakes, 4 were curiosity-driven snooping, and 2 were potential fraud cases. All were investigated and resolved before causing harm.`}
       metrics={[
-        { value: "92%", label: "Compliance violation reduction" },
-        { value: "12,000", label: "Employees with controlled access" },
-        { value: "100%", label: "Audit trail coverage" },
-        { value: "8", label: "Facilities secured" }
+        { value: "92%", label: "Fewer Violations" },
+        { value: "12,000", label: "Employees Governed" },
+        { value: "100%", label: "Audit-Trail Coverage" },
+        { value: "8", label: "Facilities Secured" }
       ]}
-      tags={["Healthcare", "HIPAA", "Data Governance", "Compliance"]}
-      relatedCapability={{
-        title: "Risk & Resilience",
-        link: "/capabilities/risk-resilience"
+      clientContextTitle="Broad Access, Mounting Risk"
+      clientContextIntro="A regional hospital system with 8 facilities and 12,000 employees faced mounting HIPAA risk. Its legacy EHR granted broad permissions — nurses could view records for patients they'd never treated, billing staff saw clinical notes, and IT admins had unrestricted access to everything."
+      clientContextBody="Audit logs existed but were scattered across systems, making investigations take weeks. The Office for Civil Rights had cited the system after a breach revealed a terminated employee's credentials stayed active for six weeks, exposing 2,400 patient records — a potential $1.5M fine plus reputational damage. The system needed governance that enforced role-based access automatically, logged every access event immutably, detected anomalies in real time, and produced audit reports non-technical officers could read — all without disrupting clinical workflows in Epic."
+      clientProfile={{
+        industry: "Regional Hospital System",
+        companySize: "12,000 Employees",
+        projectDuration: "Epic + AD Integration",
+        additionalInfo: "Immuta Governance",
+        additionalLabel: "Platform"
       }}
+      challengeTitle="Why Access Was Out of Control"
+      challenges={[
+        {
+          icon: Unlock,
+          title: "Everyone could see everything",
+          description: "Broad EHR permissions let staff view records with no clinical justification, violating the minimum-necessary standard."
+        },
+        {
+          icon: UserX,
+          title: "A six-week credential gap",
+          description: "A terminated employee's access stayed live for six weeks, exposing 2,400 patient records."
+        },
+        {
+          icon: ScrollText,
+          title: "Weeks-long investigations",
+          description: "Audit logs scattered across systems made every compliance inquiry a multi-week effort."
+        },
+        {
+          icon: ShieldAlert,
+          title: "An OCR citation and fine exposure",
+          description: "Insufficient access controls drew a regulatory citation and up to $1.5M in potential fines."
+        }
+      ]}
+      approachTitle="A Governance Layer Between Users and the EHR"
+      approachIntro="NEXDYNE implemented a governance layer that sits between users and the EHR — deploying Immuta for automated, context-aware access control and audit logging, integrated with Active Directory and the SIEM."
+      steps={[
+        {
+          step: "01",
+          title: "Enforce minimum-necessary access",
+          description: "Role-based, context-aware policies mean care-team nurses see full records while others see only demographics, and clinical notes stay masked from billing."
+        },
+        {
+          step: "02",
+          title: "Lock down privileged access",
+          description: "IT admins get no patient data by default — they must request logged, manager-approved break-glass access for every action."
+        },
+        {
+          step: "03",
+          title: "Detect anomalies in real time",
+          description: "Rules flag VIP-record access without justification, bulk downloads, unusual after-hours access, and terminated-employee activity synced from HR."
+        },
+        {
+          step: "04",
+          title: "Make audits self-service",
+          description: "Immutable, unified logs let compliance officers query access directly instead of waiting on IT reports."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: ShieldCheck,
+          value: "92%",
+          label: "Fewer HIPAA violations",
+          detail: "With the next OCR audit passed at zero findings"
+        },
+        {
+          icon: Search,
+          value: "2 hrs",
+          label: "Breach investigation time",
+          detail: "Down from three weeks via self-service audit logs"
+        },
+        {
+          icon: ScanEye,
+          value: "14",
+          label: "Policy violations caught",
+          detail: "In six months — all resolved before causing harm"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Cutting Content Compliance Review From 3 Weeks to 4 Days",
+          metric: "100%",
+          label: "regulatory adherence",
+          link: "/cases/healthcare-content-compliance",
+          image: "/case-medical-collaboration.9602cc8c.jpg"
+        },
+        {
+          title: "Reaching 99.99% Uptime After Migrating to AWS",
+          metric: "99.99%",
+          label: "uptime",
+          link: "/cases/healthcare-cloud-migration",
+          image: "/case-medical-collaboration.9602cc8c.jpg"
+        }
+      ]}
+      ctaTitle="Ready to prove compliance on demand?"
+      ctaDescription="Let's talk about what automated data governance could do for your audit posture."
     />
   );
 }

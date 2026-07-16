@@ -1,42 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { ServerCrash, DollarSign, ShieldAlert, Activity, CloudCog, Database, Gauge, Rocket } from "lucide-react";
 
 export function HealthcareCloudMigration() {
   return (
-    <CaseStudyTemplate
-      client="MedFlow"
-      industry="Healthcare Tech · Cloud Migration"
-      title="Health Tech Platform Achieves 99.99% Uptime After Cloud Migration"
-      subtitle="A 240-employee healthcare SaaS company transformed their legacy infrastructure to AWS, achieving enterprise-grade reliability and 65% cost reduction in 9 months."
+    <IndustryCaseStudyTemplate
+      seoTitle="Health-Tech Platform Hits 99.99% Uptime After AWS Migration | Healthcare Case Study"
+      seoDescription="MedFlow's aging on-prem infrastructure averaged 4 hours of downtime a month. A phased AWS migration reached 99.99% uptime and cut infrastructure costs 65% in nine months."
+      canonical="/cases/healthcare-cloud-migration"
+      industry="Healthcare"
+      industryLink="/industries/healthcare"
+      title="How a Health-Tech Platform Reached 99.99% Uptime After Migrating to AWS"
+      subtitle="A 240-employee healthcare SaaS company moved off legacy on-prem infrastructure to a multi-region AWS architecture — achieving enterprise-grade reliability and a 65% cost reduction in nine months."
       heroImage="/case-medical-collaboration.9602cc8c.jpg"
-      challenge={`MedFlow, a healthcare SaaS platform serving 500+ medical practices, was running on aging on-premise infrastructure that had become a critical business risk. Their monolithic application, built over a decade, struggled with increasing load as their customer base grew.
-
-Downtime incidents were becoming more frequent—averaging 4 hours per month—directly impacting patient scheduling, billing, and clinical workflows. Each minute of downtime meant medical practices couldn't access patient records, schedule appointments, or process insurance claims.
-
-Beyond reliability, their infrastructure costs were spiraling. They were paying for peak capacity 24/7, even though actual usage varied dramatically throughout the day. Compliance requirements (HIPAA, SOC 2) were becoming harder to maintain with their aging security controls.`}
-      solution={`NEXDYNE designed and executed a phased migration to AWS that prioritized reliability, security, and cost optimization—without disrupting the 500+ medical practices depending on the platform.
-
-We deployed a multi-region architecture across two AWS regions with automatic failover, ensuring continuous availability even during regional outages. Elastic auto-scaling automatically adjusts capacity based on demand, eliminating over-provisioning costs. We built comprehensive HIPAA-compliant security controls including encryption at rest and in transit, audit logging, and access management, and migrated the database from a single-instance architecture to Amazon Aurora with read replicas and point-in-time recovery.
-
-The 9-month transformation proceeded in four phases: assessment and architecture design (months 1-2), foundation and pilot migration of non-critical workloads (months 3-4), wave-based migration of core application components using AWS DMS with zero data loss (months 5-7), and final cutover with 15-minute planned downtime followed by cost optimization through reserved instances and right-sizing (months 8-9).`}
-      impact={`The migration delivered measurable business impact on reliability, cost, and engineering velocity. Uptime improved from 99.5% to 99.99%, with zero unplanned downtime in the 12 months following migration. Mean time to recovery dropped from 45 minutes to 2 minutes through automatic failover. Infrastructure costs fell 65% through elastic scaling and right-sizing—eliminating the need to pay for peak capacity around the clock.
-
-Engineering productivity improved 40% as deployment frequency increased from monthly to daily. The team achieved SOC 2 Type II certification, removing a compliance barrier that had limited enterprise sales. The scalable architecture positioned MedFlow to serve its next tier of growth without additional infrastructure investment.`}
       metrics={[
-        { value: "99.99%", label: "Uptime achieved" },
-        { value: "65%", label: "Cost reduction" },
-        { value: "9 months", label: "Migration timeline" },
-        { value: "240", label: "Employees" }
+        { value: "99.99%", label: "Uptime Achieved" },
+        { value: "65%", label: "Lower Infrastructure Cost" },
+        { value: "9 mo", label: "Migration Timeline" },
+        { value: "500+", label: "Medical Practices Served" }
       ]}
-      quote={{
-        text: "NEXDYNE's Digital Transformation Roadmap gave us the confidence to migrate our entire infrastructure to AWS without disrupting customer operations. We achieved 99.99% uptime and reduced infrastructure costs by 65%. The transformation has been game-changing for our business.",
-        author: "Dr. Emily Watson",
-        role: "Chief Technology Officer, MedFlow"
+      clientContextTitle="Aging Infrastructure, Rising Risk"
+      clientContextIntro="MedFlow, a healthcare SaaS platform serving 500+ medical practices, was running on aging on-premise infrastructure that had become a critical business risk. Its decade-old monolith struggled with load as the customer base grew."
+      clientContextBody="Downtime incidents averaged 4 hours a month, directly disrupting patient scheduling, billing, and clinical workflows — every minute meant practices couldn't reach patient records or process claims. Infrastructure costs were spiraling because MedFlow paid for peak capacity 24/7 despite highly variable usage, and maintaining HIPAA and SOC 2 compliance grew harder with aging security controls."
+      clientProfile={{
+        industry: "Healthcare SaaS Platform",
+        companySize: "240 Employees",
+        projectDuration: "9-Month Migration",
+        additionalInfo: "Multi-Region AWS",
+        additionalLabel: "Architecture"
       }}
-      tags={["Cloud Migration", "Healthcare", "AWS", "Technology"]}
-      relatedCapability={{
-        title: "Technology",
-        link: "/capabilities/technology"
-      }}
+      challengeTitle="Why the Legacy Stack Had to Go"
+      challenges={[
+        {
+          icon: ServerCrash,
+          title: "4 hours of downtime a month",
+          description: "Frequent incidents disrupted patient scheduling, billing, and clinical workflows across 500+ practices."
+        },
+        {
+          icon: DollarSign,
+          title: "Paying for peak, 24/7",
+          description: "The fixed on-prem footprint charged for peak capacity around the clock despite highly variable demand."
+        },
+        {
+          icon: ShieldAlert,
+          title: "Compliance under strain",
+          description: "Aging security controls made HIPAA and SOC 2 requirements increasingly hard to maintain."
+        },
+        {
+          icon: Database,
+          title: "A single-instance database",
+          description: "The monolithic data tier couldn't scale with a growing customer base or recover quickly from failure."
+        }
+      ]}
+      approachTitle="A Phased, Zero-Disruption Migration"
+      approachIntro="NEXDYNE designed and executed a phased migration to AWS that prioritized reliability, security, and cost — without disrupting the 500+ medical practices depending on the platform."
+      steps={[
+        {
+          step: "01",
+          title: "Assess and design",
+          description: "Months 1–2 mapped the estate and designed a multi-region architecture with automatic failover for continuous availability."
+        },
+        {
+          step: "02",
+          title: "Foundation and pilot",
+          description: "Months 3–4 built the landing zone and piloted migration of non-critical workloads to prove the pattern."
+        },
+        {
+          step: "03",
+          title: "Wave-based core migration",
+          description: "Months 5–7 migrated core components with AWS DMS at zero data loss, moving the database to Aurora with read replicas and point-in-time recovery."
+        },
+        {
+          step: "04",
+          title: "Cutover and optimize",
+          description: "Months 8–9 executed a 15-minute planned cutover, then optimized cost with reserved instances, elastic auto-scaling, and right-sizing."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Activity,
+          value: "99.99%",
+          label: "Uptime",
+          detail: "Up from 99.5%, with zero unplanned downtime in 12 months"
+        },
+        {
+          icon: Gauge,
+          value: "2 min",
+          label: "Mean time to recovery",
+          detail: "Down from 45 minutes via automatic failover"
+        },
+        {
+          icon: Rocket,
+          value: "65%",
+          label: "Lower infrastructure cost",
+          detail: "With deploys from monthly to daily and SOC 2 Type II achieved"
+        }
+      ]}
+      quote="NEXDYNE's Digital Transformation Roadmap gave us the confidence to migrate our entire infrastructure to AWS without disrupting customer operations. We achieved 99.99% uptime and reduced infrastructure costs by 65%. The transformation has been game-changing for our business."
+      quoteAuthor="Dr. Emily Watson"
+      quoteRole="Chief Technology Officer, MedFlow"
+      relatedStudies={[
+        {
+          title: "Automating Patient Data Management, Cutting Admin Work 40%",
+          metric: "40%",
+          label: "less admin overhead",
+          link: "/cases/healthcare-provider",
+          image: "/case-medical-collaboration.9602cc8c.jpg"
+        },
+        {
+          title: "Launching a Patient Portal That Cut Admin Calls 65%",
+          metric: "65%",
+          label: "fewer admin calls",
+          link: "/cases/healthcare-patient-portal",
+          image: "/case-medical-collaboration.9602cc8c.jpg"
+        }
+      ]}
+      ctaTitle="Ready to modernize without downtime?"
+      ctaDescription="Let's talk about what a resilient cloud architecture could do for your reliability and cost."
     />
   );
 }
