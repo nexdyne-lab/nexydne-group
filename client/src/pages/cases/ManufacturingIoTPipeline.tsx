@@ -1,32 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { AlertTriangle, DollarSign, UsersRound, Cpu, Radio, LineChart, Gauge, ShieldCheck } from "lucide-react";
 
 export function ManufacturingIoTPipeline() {
   return (
-    <CaseStudyTemplate
-      client="Mid-Sized Industrial Equipment Manufacturer"
-      industry="Manufacturing · Data Engineering"
-      title="Manufacturer Builds IoT Sensor Data Platform"
-      subtitle="Industrial equipment company ingests 2 million sensor events per hour, enabling predictive maintenance and 30% downtime reduction."
+    <IndustryCaseStudyTemplate
+      seoTitle="Building an IoT Sensor Platform for Predictive Maintenance | Manufacturing Case Study"
+      seoDescription="A manufacturer's 450 machines logged sensor data nobody analyzed, with downtime costing $85K/hour. An IoT platform ingesting 2M events/hour cut downtime 30% and saved $1.8M a year."
+      canonical="/cases/manufacturing-iot-pipeline"
+      industry="Manufacturing"
+      industryLink="/industries/manufacturing"
+      title="How a Manufacturer Built an IoT Platform for Predictive Maintenance"
+      subtitle="An industrial-equipment maker built a platform ingesting 2 million sensor events an hour across 8 facilities — enabling predictive maintenance, a 30% downtime reduction, and $1.8M in annual savings."
       heroImage="/images/industries/mfg-robotics.jpg"
-      challenge={`A mid-sized industrial equipment manufacturer operating 8 production facilities across the United States faced mounting maintenance costs and unplanned equipment downtime. Their 450 CNC machines, robotic arms, and conveyor systems generated sensor data (temperature, vibration, pressure, runtime metrics) that was logged locally but never analyzed. Maintenance teams relied on reactive repairs and fixed schedules, leading to unexpected failures that cost $85K per hour in lost production and emergency service calls averaging $15K per incident.
-
-The company's IT team of 6 people had no experience building IoT data pipelines or implementing machine learning for predictive maintenance. They needed to centralize sensor data from 1,200+ connected devices, build real-time monitoring dashboards for plant managers, and develop predictive models to forecast equipment failures 48-72 hours in advance. Leadership wanted to build an in-house solution using cloud infrastructure, but lacked the specialized engineering talent to execute.`}
-      solution={`NEXDYNE deployed a 3-person data engineering team with expertise in IoT architectures and time-series data processing. We started with a 2-week pilot at one facility, instrumenting 50 machines with AWS IoT Core agents that streamed sensor data to the cloud. Our team designed a scalable architecture using AWS IoT Core for device connectivity, Kinesis Data Streams for ingestion, TimescaleDB for time-series storage, and Apache Spark for batch analytics and ML model training.
-
-We built real-time monitoring dashboards in Grafana that displayed equipment health metrics, anomaly detection alerts, and predictive maintenance recommendations. Our engineers worked closely with the client's maintenance team to understand failure patterns and calibrate alert thresholds. We implemented a CI/CD pipeline using Terraform for infrastructure-as-code and GitHub Actions for automated testing and deployment. Throughout the 8-month engagement, we conducted weekly training sessions teaching the client's IT team IoT architecture patterns, time-series database optimization, and ML model deployment workflows.`}
-      impact={`The IoT sensor data platform rolled out across all 8 facilities over 6 months, with the final 2 months dedicated to ML model training and alert threshold tuning. Unplanned equipment downtime dropped 30% in the first year as maintenance teams shifted from reactive repairs to proactive interventions based on predictive alerts. The system accurately predicted 88% of equipment failures 48-72 hours in advance, giving maintenance teams time to schedule repairs during planned downtime windows.
-
-Maintenance costs decreased $1.8M annually by reducing emergency service calls, optimizing spare parts inventory, and extending equipment lifespan through condition-based maintenance. Plant managers gained real-time visibility into equipment health across all facilities through Grafana dashboards accessible on mobile devices. The client's IT team now independently manages the IoT platform, adds new device types, and trains updated ML models using historical data.`}
       metrics={[
-        { value: "30%", label: "Unplanned downtime reduction" },
-        { value: "$1.8M", label: "Annual maintenance cost savings" },
-        { value: "88%", label: "Failure prediction accuracy" }
+        { value: "30%", label: "Less Unplanned Downtime" },
+        { value: "$1.8M", label: "Annual Maintenance Savings" },
+        { value: "88%", label: "Failure Prediction Accuracy" }
       ]}
-      tags={["Manufacturing", "IoT", "Data Engineering", "Predictive Maintenance"]}
-      relatedCapability={{
-        title: "Data Transformation",
-        link: "/capabilities/data-transformation"
+      clientContextTitle="Data Logged, Never Used"
+      clientContextIntro="A mid-sized industrial-equipment manufacturer running 8 US production facilities faced mounting maintenance costs and unplanned downtime. Its 450 CNC machines, robotic arms, and conveyors generated sensor data — temperature, vibration, pressure, runtime — that was logged locally but never analyzed."
+      clientContextBody="Maintenance teams relied on reactive repairs and fixed schedules, so unexpected failures cost $85K per hour in lost production plus $15K per emergency service call. The company's 6-person IT team had no experience building IoT pipelines or ML for predictive maintenance. Leadership wanted an in-house cloud solution to centralize data from 1,200+ devices, monitor plant health in real time, and forecast failures 48–72 hours ahead — but lacked the specialized engineering talent."
+      clientProfile={{
+        industry: "Industrial Equipment Manufacturer",
+        companySize: "8 Facilities",
+        projectDuration: "8-Month Engagement",
+        additionalInfo: "2M Events/Hour",
+        additionalLabel: "Scale"
       }}
+      challengeTitle="Why Maintenance Stayed Reactive"
+      challenges={[
+        {
+          icon: AlertTriangle,
+          title: "$85K/hour downtime",
+          description: "Unexpected failures halted production, with emergency service calls averaging $15K each."
+        },
+        {
+          icon: LineChart,
+          title: "Data logged but ignored",
+          description: "Sensor data from 450 machines sat locally, never analyzed for early warning signs."
+        },
+        {
+          icon: UsersRound,
+          title: "No in-house IoT expertise",
+          description: "A 6-person IT team had never built IoT pipelines or ML for predictive maintenance."
+        },
+        {
+          icon: Cpu,
+          title: "1,200+ devices to unify",
+          description: "Sensor data had to be centralized from over 1,200 connected devices across 8 plants."
+        }
+      ]}
+      approachTitle="A Scalable IoT and ML Pipeline"
+      approachIntro="NEXDYNE embedded a 3-person data-engineering team specializing in IoT and time-series data — starting with a 2-week pilot at one facility and building toward a platform the client's team could run itself."
+      steps={[
+        {
+          step: "01",
+          title: "Pilot, then architect",
+          description: "A 2-week pilot instrumented 50 machines with AWS IoT Core, informing a scalable architecture with Kinesis, TimescaleDB, and Spark."
+        },
+        {
+          step: "02",
+          title: "Monitor in real time",
+          description: "Grafana dashboards displayed equipment health, anomaly alerts, and predictive-maintenance recommendations for plant managers."
+        },
+        {
+          step: "03",
+          title: "Calibrate with the experts",
+          description: "Engineers worked with maintenance staff to understand failure patterns and tune alert thresholds to real conditions."
+        },
+        {
+          step: "04",
+          title: "Transfer the knowledge",
+          description: "Terraform and GitHub Actions delivered reproducible infrastructure, while weekly training left the IT team running the platform independently."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Gauge,
+          value: "30%",
+          label: "Less unplanned downtime",
+          detail: "As teams shifted from reactive to proactive maintenance"
+        },
+        {
+          icon: ShieldCheck,
+          value: "88%",
+          label: "Failures predicted 48–72 hrs out",
+          detail: "Letting repairs happen in planned windows"
+        },
+        {
+          icon: DollarSign,
+          value: "$1.8M",
+          label: "Annual maintenance savings",
+          detail: "From fewer emergencies and condition-based maintenance"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Cutting Stockouts 35% With ML Demand Forecasting",
+          metric: "35%",
+          label: "fewer stockouts",
+          link: "/cases/retail-demand-forecasting",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
+        },
+        {
+          title: "Scaling Real-Time Payment Processing 10x",
+          metric: "10x",
+          label: "transaction capacity",
+          link: "/cases/fintech-data-pipeline",
+          image: "/images/industries/fin-monitors.jpg"
+        }
+      ]}
+      ctaTitle="Ready to predict failures before they happen?"
+      ctaDescription="Let's talk about what an IoT and ML pipeline could do for your uptime and maintenance cost."
     />
   );
 }
