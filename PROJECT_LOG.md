@@ -56,12 +56,47 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 - **Fabricated specifics** still in some article bodies (invented client ROI
   figures) — a content-honesty sweep is worthwhile but not urgent.
 - **CSP header** not yet added (needs testing against the built site).
-- The process-optimization insights hub links to a few `/insights/*` URLs that
-  may not all exist — worth a broken-link audit.
+- **"Mid-Size" in a few article/hub titles** (e.g. ai-roi-framework, lean-operations) —
+  hub subtitles were cleaned to "growing companies" but the article H1s were left
+  (changing one desyncs the hub card that mirrors it); a matched sweep would fix both.
+- **A few fabricated named quotes** still sit inside some migrated article bodies
+  (e.g. BuildingDataCulture's "Sarah Jenkins, CDO") — role-ify in a content pass.
+- **Citations**: most insight articles cite no sources — optional Perplexity pass
+  to add Big3-style references. (Broken insight-hub links — RESOLVED 2026-07-15.)
 
 ---
 
 ## Changelog (newest first)
+
+### 2026-07-15 — Design: Bain-style page redesigns + full Insights V2 migration
+- **New long-read article template `components/InsightArticleV2.tsx`**: reading-progress
+  bar, editorial masthead, full-bleed hero, two-column body with a **sticky left-rail
+  live TOC + share**, orange drop cap, numbered Key Takeaways panel, refined typography
+  (orange-border pull-quotes, inline `<Cite>`), author byline, charcoal CTA. Drop-in
+  compatible with the old `InsightArticle` props (+ optional `sections` for the TOC).
+- **Migrated ALL 112 insight articles onto V2** via subagent waves: 91 top-level
+  `/insights/*` + 21 nested (`capabilities/insights/*`, `solutions/.../insights/*`).
+  Preserved content; dropped ~10 fabricated author bylines; tsc/build clean each wave.
+- **Insight hubs fixed + restyled**: the 6 capability hubs + CI index advertised
+  **21 broken/phantom article links** — all repointed to real articles (**0 broken**).
+  Redesigned the shared `components/InsightsListing.tsx` (light masthead + refined
+  cards + charcoal CTA).
+- **`/insights` landing redesigned** to the V2 aesthetic: light photo-hero + card
+  panel (was a dark charcoal overlay), uniform image-led article cards (orange
+  eyebrow), rounded filter pills, off-white bands, bordered "coming soon" cards.
+- **About cluster redesigned** using Bain's "Our Social Impact" as reference — About,
+  Our Impact, Purpose/Mission & Values, Careers, Contact: photo heroes with light card
+  panels, split feature cards, image-led card grids, "Ready to talk?" contact rows.
+  Instrument Sans only (no serif), light heroes (no dark), brand palette.
+- **Leadership consolidated**: removed duplicate `/team` (redirects → `/about/team`);
+  `/about/team` in McKinsey "Our People" format with a **David Seyaker founder card**
+  above 6 AI managing partners; removed Raphaelyn from the grid.
+- **David's title** → **"Founder & Chief Executive Officer"** (sole founder; corrected
+  from Co-Founder) on About + team.
+- **Footer tagline**: removed BCG's "Unlocking the Potential of Those Who Advance the
+  World"; current line = **"Human intelligence, governed and scaled."**
+- **Process cleanup**: killed ~16 orphaned `tsx watch`/vite-preview dev-server node
+  processes (some 8 days old) that had exhausted app memory.
 
 ### 2026-07-15 — Marketing & content pipeline
 - **Insights honesty**: removed fabricated "2,500+ business leaders" newsletter
