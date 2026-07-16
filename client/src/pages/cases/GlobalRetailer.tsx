@@ -1,34 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { Timer, AlertTriangle, DollarSign, Boxes, Bot, ScanLine, Package } from "lucide-react";
 
-export function GlobalRetailer() {
+export default function GlobalRetailer() {
   return (
-    <CaseStudyTemplate
-      client="Global Retailer"
-      industry="Retail · Supply Chain Automation"
-      title="Global Retailer: Supply Chain Automation"
-      subtitle="Deployed RPA bots to automate order processing and inventory management across 200+ retail locations, eliminating manual data entry and reducing processing time by 45%."
+    <IndustryCaseStudyTemplate
+      seoTitle="Automating Supply-Chain Order Processing with RPA | Retail Case Study"
+      seoDescription="A 200-location retailer's procurement team spent 40+ hours a week re-keying orders across three systems. RPA cut processing time 45%, errors 60%, and saved $1.8M a year."
+      canonical="/cases/global-retailer"
+      industry="Retail"
+      industryLink="/industries/retail"
+      title="How a Global Retailer Automated Its Supply Chain with RPA"
+      subtitle="RPA bots automated order processing and inventory management across 200+ locations — eliminating manual data entry and reducing processing time 45% without waiting on a new ERP."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
-      challenge={`A multinational retail chain with 200+ locations was drowning in manual order processing. Their procurement team spent 40+ hours weekly transferring data between their legacy ERP system, supplier portals, and inventory management platform. Each order required manual entry across three systems, creating bottlenecks that delayed restocking and frustrated store managers.
-
-The manual process introduced errors that cascaded through the supply chain—incorrect quantities, wrong SKUs, duplicate orders. These mistakes cost the company $2M+ annually in expedited shipping fees, stockouts, and excess inventory. Traditional integration wasn't viable because their ERP system was scheduled for replacement within 18 months, making API development economically unjustifiable.`}
-      solution={`NEXDYNE deployed UiPath RPA bots that automated the entire order-to-inventory workflow. The bots logged into each system, extracted order data, validated quantities against inventory levels, and submitted purchase orders to suppliers—executing in minutes what previously took hours of manual work.
-
-Process discovery workshops with the procurement team identified all edge cases and exception handling needs. Bots were developed and tested in a 6-week sprint, then rolled out in phases across 50 locations per week. UiPath Orchestrator enabled centralized bot management and monitoring. OCR extracted data from supplier invoices, and an exception handling dashboard routed edge cases to human reviewers.`}
-      impact={`The RPA implementation delivered measurable results across every operational dimension. Processing time dropped 45%, freeing the procurement team from 40 hours of weekly data entry for strategic supplier negotiations and vendor relationship management. Order error rates fell 60%, eliminating the downstream costs of incorrect quantities, wrong SKUs, and duplicate orders.
-
-Annual cost savings reached $1.8M through reduced labor, lower expedited shipping fees, and fewer stockouts. Inventory accuracy improvements reduced stockouts by 35%, improving customer satisfaction and sales conversion. The bot infrastructure was architected to support 500+ locations without additional headcount, with full investment recovered in 7 months.`}
       metrics={[
-        { value: "45%", label: "Reduction in processing time" },
-        { value: "60%", label: "Decrease in order errors" },
-        { value: "$1.8M", label: "Annual cost savings" }
+        { value: "45%", label: "Faster Processing" },
+        { value: "60%", label: "Fewer Order Errors" },
+        { value: "$1.8M", label: "Annual Savings" }
       ]}
-      tags={["RPA", "Supply Chain", "Retail", "Operations"]}
-      relatedCapability={{
-        title: "Operations",
-        link: "/capabilities/operations"
+      clientContextTitle="Drowning in Manual Orders"
+      clientContextIntro="A multinational retail chain with 200+ locations was drowning in manual order processing. Its procurement team spent 40+ hours a week transferring data between a legacy ERP, supplier portals, and an inventory platform — entering each order across three systems by hand."
+      clientContextBody="The manual process introduced errors that cascaded through the supply chain: wrong quantities, wrong SKUs, duplicate orders — costing $2M+ a year in expedited shipping, stockouts, and excess inventory. Traditional integration wasn't viable, because the ERP was slated for replacement within 18 months, making API development hard to justify."
+      clientProfile={{
+        industry: "Multinational Retail Chain",
+        companySize: "200+ Locations",
+        projectDuration: "Seven-Month Payback",
+        additionalInfo: "UiPath RPA",
+        additionalLabel: "Platform"
       }}
+      challengeTitle="Where the Supply Chain Broke Down"
+      challenges={[
+        {
+          icon: Timer,
+          title: "40+ hours a week re-keying",
+          description: "Procurement hand-entered every order across three disconnected systems, creating constant bottlenecks."
+        },
+        {
+          icon: AlertTriangle,
+          title: "Cascading errors",
+          description: "Manual entry produced wrong quantities, wrong SKUs, and duplicate orders that rippled through the chain."
+        },
+        {
+          icon: DollarSign,
+          title: "$2M+ a year in waste",
+          description: "Those errors drove expedited shipping fees, stockouts, and excess inventory."
+        },
+        {
+          icon: Boxes,
+          title: "Integration wasn't worth it",
+          description: "With the ERP slated for replacement in 18 months, building API integrations couldn't be justified."
+        }
+      ]}
+      approachTitle="Bots That Do the Re-Keying"
+      approachIntro="NEXDYNE deployed UiPath RPA bots that automated the entire order-to-inventory workflow — doing in minutes what took hours of manual work, without touching the soon-to-be-replaced ERP."
+      steps={[
+        {
+          step: "01",
+          title: "Map every edge case first",
+          description: "Process-discovery workshops with procurement identified all exception paths and handling needs before a bot was built."
+        },
+        {
+          step: "02",
+          title: "Automate the full workflow",
+          description: "Bots logged into each system, extracted order data, validated quantities against inventory, and submitted purchase orders to suppliers."
+        },
+        {
+          step: "03",
+          title: "Roll out in phases",
+          description: "Developed and tested in a six-week sprint, then rolled out at 50 locations a week under centralized UiPath Orchestrator management."
+        },
+        {
+          step: "04",
+          title: "Keep humans on exceptions",
+          description: "OCR extracted data from supplier invoices, while an exception dashboard routed edge cases to human reviewers."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Bot,
+          value: "45%",
+          label: "Faster processing",
+          detail: "Freeing 40 weekly hours for supplier negotiation"
+        },
+        {
+          icon: ScanLine,
+          value: "60%",
+          label: "Fewer order errors",
+          detail: "Eliminating downstream cost of wrong and duplicate orders"
+        },
+        {
+          icon: Package,
+          value: "$1.8M",
+          label: "Annual savings",
+          detail: "With stockouts down 35% and payback in 7 months"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Automating KYC Compliance with RPA",
+          metric: "80%",
+          label: "less manual work",
+          link: "/cases/financial-institution",
+          image: "/images/industries/fin-monitors.jpg"
+        },
+        {
+          title: "Reducing Retail Shrinkage 25% with Computer Vision",
+          metric: "25%",
+          label: "less shrinkage",
+          link: "/case-studies/retail-shrinkage-reduction",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
+        }
+      ]}
+      ctaTitle="Ready to take the re-keying off your team?"
+      ctaDescription="Let's talk about what RPA could automate across your supply chain."
     />
   );
 }
-
-export default GlobalRetailer;

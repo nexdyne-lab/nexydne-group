@@ -1,34 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { Gauge, ShieldCheck, Timer, Zap, Layers, Boxes, DollarSign } from "lucide-react";
 
-export function FintechDataPipeline() {
+export default function FintechDataPipeline() {
   return (
-    <CaseStudyTemplate
-      client="Payment Processing Company"
-      industry="Fintech · Data Engineering"
-      title="Fintech Scales Real-Time Transaction Processing"
-      subtitle="Payment processor builds Kafka streaming pipeline handling 50,000 transactions per second with 99.99% uptime and sub-100ms latency."
+    <IndustryCaseStudyTemplate
+      seoTitle="Scaling Real-Time Payment Processing 10x with Kafka | Fintech Case Study"
+      seoDescription="A payment processor's batch system capped at 5,000 TPS as volume grew 300%. A Kafka streaming pipeline scaled to 50,000 TPS at 99.99% uptime and sub-100ms latency."
+      canonical="/cases/fintech-data-pipeline"
+      industry="Financial Services"
+      industryLink="/industries/financial-services"
+      title="How a Payment Processor Scaled Real-Time Transactions 10x"
+      subtitle="A payment processor rebuilt its transaction pipeline on Kafka streaming — handling 50,000 transactions per second at 99.99% uptime and sub-100ms latency, all PCI-DSS compliant."
       heroImage="/images/industries/fin-monitors.jpg"
-      challenge={`A rapidly growing payment processing company serving 2,500 merchants across the United States faced a critical infrastructure bottleneck. Their legacy batch-based transaction processing system could only handle 5,000 transactions per second during peak hours. As merchant volume grew 300% year-over-year, the system began experiencing frequent outages, delayed settlements, and data inconsistencies that threatened customer trust and regulatory compliance.
-
-The internal engineering team of 8 people lacked specialized expertise in distributed streaming architectures and real-time data processing. They needed to rebuild their entire transaction pipeline to handle 10x current volume while maintaining PCI-DSS compliance, implementing fraud detection in real-time, and providing merchants with instant transaction visibility.`}
-      solution={`NEXDYNE embedded a 4-person data engineering team specializing in real-time streaming architectures. Within 2 weeks, our engineers conducted a comprehensive technical assessment, identified critical failure points, and designed a cloud-native architecture using Apache Kafka, AWS Kinesis, and Flink for stream processing. The new architecture separated transaction ingestion, processing, fraud detection, and settlement into independent microservices that could scale horizontally.
-
-We implemented CI/CD pipelines using GitHub Actions, established comprehensive monitoring with Datadog, and built automated testing frameworks that validated data integrity across the entire streaming pipeline. Throughout the 6-month engagement, we conducted weekly knowledge transfer sessions—by month 4, the client's team was independently managing routine pipeline maintenance and feature development. Key implementations included an Apache Kafka cluster with 12 brokers handling 50K messages/second and a PCI-DSS compliant encryption and tokenization layer.`}
-      impact={`The new real-time transaction processing pipeline went live in production after 5 months of development and 1 month of parallel testing. The system now handles peak loads of 50,000 transactions per second with 99.99% uptime and sub-100ms end-to-end latency. Merchant churn dropped 45% within the first quarter post-launch as transaction visibility and settlement speed improved dramatically.
-
-The client's internal engineering team gained deep expertise in distributed streaming architectures. The company successfully passed their PCI-DSS audit with zero findings. The new architecture positioned them to support 10x growth without additional engineering augmentation, saving an estimated $2.4M in hiring and infrastructure costs over 3 years.`}
       metrics={[
-        { value: "10x", label: "Transaction capacity increase" },
-        { value: "99.99%", label: "System uptime achieved" },
-        { value: "<100ms", label: "End-to-end latency" }
+        { value: "10x", label: "Transaction Capacity" },
+        { value: "99.99%", label: "Uptime" },
+        { value: "<100ms", label: "End-to-End Latency" }
       ]}
-      tags={["Data Engineering", "Fintech", "Real-Time Systems", "Kafka"]}
-      relatedCapability={{
-        title: "Technology",
-        link: "/capabilities/technology"
+      clientContextTitle="A Batch System Buckling Under Growth"
+      clientContextIntro="A rapidly growing payment processor serving 2,500 merchants hit a critical bottleneck: its legacy batch-based system could only handle 5,000 transactions per second at peak. As merchant volume grew 300% year-over-year, the system began failing — outages, delayed settlements, and data inconsistencies that threatened trust and compliance."
+      clientContextBody="The eight-person engineering team lacked specialized expertise in distributed streaming and real-time processing. They needed to rebuild the entire pipeline to handle 10x the volume while maintaining PCI-DSS compliance, running fraud detection in real time, and giving merchants instant transaction visibility."
+      clientProfile={{
+        industry: "Payment Processing Company",
+        companySize: "2,500 Merchants",
+        projectDuration: "6-Month Engagement",
+        additionalInfo: "Kafka + Kinesis + Flink",
+        additionalLabel: "Streaming Stack"
       }}
+      challengeTitle="Why the Old Pipeline Couldn't Keep Up"
+      challenges={[
+        {
+          icon: Timer,
+          title: "Capped at 5,000 TPS",
+          description: "The batch system maxed out at 5,000 transactions per second — far short of peak demand as volume surged."
+        },
+        {
+          icon: Boxes,
+          title: "Outages and delayed settlements",
+          description: "As volume grew 300%, the system suffered frequent outages, delayed settlements, and data inconsistencies."
+        },
+        {
+          icon: ShieldCheck,
+          title: "Compliance under strain",
+          description: "Data inconsistencies threatened both customer trust and PCI-DSS regulatory compliance."
+        },
+        {
+          icon: Layers,
+          title: "A specialized skills gap",
+          description: "The internal team lacked deep expertise in distributed streaming architectures and real-time processing."
+        }
+      ]}
+      approachTitle="A Cloud-Native Streaming Architecture"
+      approachIntro="NEXDYNE embedded a four-person data-engineering team specializing in real-time streaming, designing a cloud-native architecture that separated ingestion, processing, fraud detection, and settlement into independently scalable services."
+      steps={[
+        {
+          step: "01",
+          title: "Assess and design fast",
+          description: "Within two weeks, engineers mapped critical failure points and designed a Kafka, Kinesis, and Flink architecture built to scale horizontally."
+        },
+        {
+          step: "02",
+          title: "Decompose into microservices",
+          description: "Transaction ingestion, processing, fraud detection, and settlement each became an independent service that could scale on its own."
+        },
+        {
+          step: "03",
+          title: "Build for compliance and reliability",
+          description: "A 12-broker Kafka cluster handled 50K messages/second behind a PCI-DSS-compliant encryption and tokenization layer, with CI/CD and Datadog monitoring."
+        },
+        {
+          step: "04",
+          title: "Transfer the knowledge",
+          description: "Weekly sessions meant that by month four the client's team was independently managing maintenance and shipping features."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Gauge,
+          value: "10x",
+          label: "Transaction capacity",
+          detail: "Now handling 50,000 transactions per second at peak"
+        },
+        {
+          icon: Zap,
+          value: "99.99%",
+          label: "Uptime",
+          detail: "At sub-100ms end-to-end latency"
+        },
+        {
+          icon: DollarSign,
+          value: "$2.4M",
+          label: "Costs avoided",
+          detail: "Over 3 years, plus a PCI-DSS audit with zero findings"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Scaling a Fintech Platform to 50M Transactions a Day",
+          metric: "50M",
+          label: "daily transactions",
+          link: "/cases/fintech-microservices",
+          image: "/images/industries/fin-monitors.jpg"
+        },
+        {
+          title: "Detecting Fraud 40% Faster with ML",
+          metric: "40%",
+          label: "faster fraud detection",
+          link: "/cases/financial-fraud-detection-ml",
+          image: "/images/industries/fin-monitors.jpg"
+        }
+      ]}
+      ctaTitle="Ready to scale your transactions without breaking?"
+      ctaDescription="Let's talk about what a real-time streaming architecture could handle for you."
     />
   );
 }
-
-export default FintechDataPipeline;

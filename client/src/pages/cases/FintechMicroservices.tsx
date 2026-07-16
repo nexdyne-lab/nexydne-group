@@ -1,43 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { Boxes, Zap, Rocket, Lock, AlertTriangle, GitBranch, Timer } from "lucide-react";
 
-export function FintechMicroservices() {
+export default function FintechMicroservices() {
   return (
-    <CaseStudyTemplate
-      client="PayStream"
-      industry="Fintech · Platform Engineering"
-      title="Payment Processor Scales to 50M Transactions Per Day"
-      subtitle="A 190-employee fintech startup rebuilt their core platform with microservices architecture and event-driven processing to handle exponential growth."
+    <IndustryCaseStudyTemplate
+      seoTitle="Scaling a Fintech Platform to 50M Transactions a Day | Fintech Case Study"
+      seoDescription="PayStream's Rails monolith buckled at 6M daily transactions. A microservices rebuild scaled to 50M/day, cut P99 latency from 800ms to 45ms, and unlocked 10x-daily deploys."
+      canonical="/cases/fintech-microservices"
+      industry="Financial Services"
+      industryLink="/industries/financial-services"
+      title="How PayStream Scaled to 50M Transactions a Day with Microservices"
+      subtitle="A 190-employee fintech rebuilt its core platform with microservices and event-driven processing — scaling 8x while cutting P99 latency from 800ms to 45ms and deploying 10x more often."
       heroImage="/images/industries/fin-monitors.jpg"
-      challenge={`PayStream, a rapidly growing payment processing platform, was experiencing the classic symptoms of monolithic architecture strain. Their single Ruby on Rails application, which had served them well during early growth, was now struggling to handle 6 million daily transactions—and their business was growing 40% year-over-year.
-
-Peak processing times were causing latency spikes that triggered timeouts in merchant integrations. Database locks during high-volume periods created cascading failures. Every deployment required a maintenance window, limiting their ability to ship features and fixes quickly.
-
-With enterprise clients demanding 99.99% uptime SLAs and transaction volumes projected to grow 8x over three years, PayStream needed a fundamental architecture transformation—not just incremental improvements.`}
-      solution={`NEXDYNE designed and implemented a modern microservices architecture using event-driven patterns that could scale horizontally to handle 50M+ daily transactions while maintaining sub-100ms latency.
-
-We decomposed the monolith into 12 bounded contexts including payments, settlements, fraud detection, and merchant management—each independently deployable. We implemented event sourcing for transaction processing, enabling complete audit trails and the ability to rebuild state from events. An event streaming platform on Kafka handled 100K+ events per second with exactly-once delivery semantics. We deployed on AWS EKS with auto-scaling policies that respond to transaction volume in real-time, scaling from 10 to 200 pods within minutes.
-
-The 12-month transformation proceeded in phases: domain analysis and architecture design, platform foundation, service extraction using the strangler fig pattern, and final migration with optimization.`}
-      impact={`The transformation delivered measurable business impact across every dimension. Transaction capacity increased 8x to 50M daily transactions, with P99 latency reduced from 800ms to 45ms. Auto-scaling responds to demand in under 2 minutes with zero transaction loss during peak events.
-
-Development velocity transformed dramatically: deployment frequency went from weekly to 10x daily, lead time for changes dropped from 3 weeks to 2 days, and mean time to recovery decreased from 45 minutes to 5 minutes. The microservices architecture enabled independent team deployments and unlocked enterprise deals that the firm couldn't pursue before.`}
       metrics={[
-        { value: "50M", label: "Daily transactions (8x increase)" },
-        { value: "45ms", label: "P99 latency (from 800ms)" },
-        { value: "10x", label: "Deployment frequency increase" }
+        { value: "50M", label: "Daily Transactions (8x)" },
+        { value: "45ms", label: "P99 Latency (from 800ms)" },
+        { value: "10x", label: "More Frequent Deploys" }
       ]}
-      quote={{
-        text: "Our legacy monolith was holding us back from scaling. NEXDYNE decomposed it into microservices, implemented CI/CD, and enabled us to deploy 10x more frequently with higher quality. Game-changing transformation that positioned us to win enterprise deals we couldn't pursue before.",
-        author: "Marcus Johnson",
-        role: "VP of Engineering, PayStream"
+      clientContextTitle="A Monolith at Its Breaking Point"
+      clientContextIntro="PayStream, a fast-growing payment platform, was showing the classic symptoms of monolithic strain. Its single Ruby on Rails application — which had served early growth well — now struggled to handle 6 million daily transactions while the business grew 40% year-over-year."
+      clientContextBody="Peak processing caused latency spikes that timed out merchant integrations, database locks created cascading failures, and every deployment needed a maintenance window that slowed shipping. With enterprise clients demanding 99.99% uptime and volumes projected to grow 8x over three years, PayStream needed a fundamental architecture transformation, not incremental fixes."
+      clientProfile={{
+        industry: "Fintech Payment Platform",
+        companySize: "190 Employees",
+        projectDuration: "12-Month Transformation",
+        additionalInfo: "12 Bounded Contexts",
+        additionalLabel: "Service Decomposition"
       }}
-      tags={["Microservices", "Fintech", "Cloud Architecture", "Technology"]}
-      relatedCapability={{
-        title: "Technology",
-        link: "/capabilities/technology"
-      }}
+      challengeTitle="Why the Monolith Held Them Back"
+      challenges={[
+        {
+          icon: AlertTriangle,
+          title: "Latency spikes and timeouts",
+          description: "Peak processing caused latency spikes that triggered timeouts in merchant integrations."
+        },
+        {
+          icon: Lock,
+          title: "Cascading database failures",
+          description: "Database locks during high-volume periods created cascading failures across the platform."
+        },
+        {
+          icon: Timer,
+          title: "Slow, risky deployments",
+          description: "Every deploy required a maintenance window, limiting how fast the team could ship features and fixes."
+        },
+        {
+          icon: Boxes,
+          title: "8x growth on the horizon",
+          description: "Enterprise SLAs and projected 8x growth made the monolith an existential constraint."
+        }
+      ]}
+      approachTitle="Event-Driven Microservices That Scale"
+      approachIntro="NEXDYNE designed and implemented a modern microservices architecture using event-driven patterns that could scale horizontally to 50M+ daily transactions at sub-100ms latency."
+      steps={[
+        {
+          step: "01",
+          title: "Decompose the monolith",
+          description: "We split the application into 12 bounded contexts — payments, settlements, fraud detection, merchant management — each independently deployable."
+        },
+        {
+          step: "02",
+          title: "Event sourcing for auditability",
+          description: "Event sourcing for transaction processing gave complete audit trails and the ability to rebuild state from events."
+        },
+        {
+          step: "03",
+          title: "Stream at scale",
+          description: "A Kafka event-streaming platform handled 100K+ events per second with exactly-once delivery semantics."
+        },
+        {
+          step: "04",
+          title: "Auto-scale on demand",
+          description: "Deployed on AWS EKS, the platform scaled from 10 to 200 pods in minutes in response to transaction volume, using the strangler-fig pattern to migrate safely."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Boxes,
+          value: "50M",
+          label: "Daily transactions",
+          detail: "An 8x increase in capacity"
+        },
+        {
+          icon: Zap,
+          value: "45ms",
+          label: "P99 latency",
+          detail: "Down from 800ms, scaling in under 2 minutes"
+        },
+        {
+          icon: Rocket,
+          value: "10x",
+          label: "More frequent deploys",
+          detail: "From weekly to 10x daily, with MTTR from 45 to 5 minutes"
+        }
+      ]}
+      quote="Our legacy monolith was holding us back from scaling. NEXDYNE decomposed it into microservices, implemented CI/CD, and enabled us to deploy 10x more frequently with higher quality. Game-changing transformation that positioned us to win enterprise deals we couldn't pursue before."
+      quoteAuthor="Marcus Johnson"
+      quoteRole="VP of Engineering, PayStream"
+      relatedStudies={[
+        {
+          title: "Scaling Real-Time Payment Processing 10x",
+          metric: "10x",
+          label: "transaction capacity",
+          link: "/cases/fintech-data-pipeline",
+          image: "/images/industries/fin-monitors.jpg"
+        },
+        {
+          title: "Launching a Credit Union Mobile App to 78% Adoption",
+          metric: "78%",
+          label: "member adoption",
+          link: "/cases/fintech-mobile-banking",
+          image: "/images/industries/fin-monitors.jpg"
+        }
+      ]}
+      ctaTitle="Ready to break out of your monolith?"
+      ctaDescription="Let's talk about what a microservices architecture could unlock for your scale and velocity."
     />
   );
 }
-
-export default FintechMicroservices;
