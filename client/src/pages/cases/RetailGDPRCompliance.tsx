@@ -1,39 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { Boxes, Clock, MapPinned, ShieldAlert, Database, GitBranch, ShieldCheck, Search } from "lucide-react";
 
 export function RetailGDPRCompliance() {
   return (
-    <CaseStudyTemplate
-      client="Mid-Sized E-Commerce Retailer"
-      industry="Retail · Data Governance"
-      title="Retailer Implements GDPR-Compliant Data Catalog for 15M Customers"
-      subtitle="Consent management, right-to-be-forgotten workflows, and data residency controls across EU markets, reducing GDPR request fulfillment time from 28 days to 4 hours."
-      heroImage="/images/industries/fin-monitors.jpg"
-      challenge={`A mid-sized e-commerce retailer with 15M customers across 12 EU countries faced GDPR compliance challenges that threatened their ability to operate in Europe. Customer data was scattered across 40+ systems—e-commerce platform, CRM, email marketing, customer service, loyalty program, payment processor, and analytics tools. When customers exercised their right to access or delete their data, fulfilling requests required manual coordination across IT, legal, and business teams.
-
-The legal maximum for GDPR requests is 30 days, but their average fulfillment time was 28 days—leaving no margin for error. They'd missed 3 deadlines in the past year, exposing them to potential fines up to 4% of global revenue (€18M based on their €450M annual revenue). Worse, they couldn't prove data residency compliance—some customer data was processed in US-based cloud services without proper safeguards, violating Schrems II requirements.
-
-They needed a data catalog that mapped every customer data element to its storage location, a consent management system that tracked marketing permissions across channels, automated workflows for right-to-access and right-to-be-forgotten requests, and data residency controls that ensured EU customer data stayed within EU borders.`}
-      solution={`NEXDYNE deployed Collibra Data Intelligence Cloud as the central data catalog, automatically discovering and classifying personal data across all 40+ systems. We tagged data elements by sensitivity (PII, sensitive PII, pseudonymized), legal basis for processing (consent, contract, legitimate interest), and data residency requirements (EU-only, US-allowed with safeguards, unrestricted).
-
-We built automated workflows for GDPR requests: when a customer submits a data access request, the system queries all registered data sources via API, compiles a complete report of what data exists and how it's used, and delivers it in human-readable format. Right-to-be-forgotten requests trigger deletion workflows across systems with verification checks—the system confirms data was actually deleted, not just flagged, and generates audit trails for legal compliance.
-
-Consent management integrates with their e-commerce platform and email marketing tools. When customers update preferences, changes propagate to all systems within 15 minutes. Data residency controls enforce geographic boundaries—EU customer data is stored in AWS eu-west-1, and cross-border transfers require explicit approval workflows.`}
-      impact={`GDPR request fulfillment time dropped from 28 days to 4 hours. The retailer now processes data access requests automatically—customers receive comprehensive reports showing what data exists, how it's used, and who it's shared with, all without manual intervention. Right-to-be-forgotten requests complete within 24 hours with full audit trails proving deletion across all systems.
-
-They processed 1,200 GDPR requests in the first year with 100% on-time completion and zero regulatory complaints. Data residency compliance is now provable—every customer record is tagged with storage location, and automated checks prevent EU data from leaving approved regions.
-
-The data catalog also delivered unexpected business value: marketing teams discovered duplicate customer records across 6 systems wasting ad spend on duplicate targeting, and legal counsel can now answer "where do we store customer phone numbers?" in seconds instead of weeks, accelerating vendor due diligence and M&A processes.`}
+    <IndustryCaseStudyTemplate
+      seoTitle="Cutting GDPR Request Fulfillment From 28 Days to 4 Hours | Retail Case Study"
+      seoDescription="A 15M-customer EU e-commerce retailer scattered data across 40+ systems and had missed 3 GDPR deadlines. A data catalog and automated workflows cut fulfillment to 4 hours."
+      canonical="/cases/retail-gdpr-compliance"
+      industry="Retail"
+      industryLink="/industries/retail"
+      title="How an E-Commerce Retailer Cut GDPR Fulfillment From 28 Days to 4 Hours"
+      subtitle="A data catalog, consent management, and right-to-be-forgotten workflows across 12 EU markets cut GDPR request fulfillment from 28 days to 4 hours — at 100% on-time compliance."
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       metrics={[
-        { value: "4 hours", label: "GDPR request fulfillment time (from 28 days)" },
-        { value: "15M", label: "Customer records cataloged" },
-        { value: "100%", label: "GDPR compliance rate" },
-        { value: "12", label: "EU markets covered" }
+        { value: "4 hrs", label: "Fulfillment (from 28 days)" },
+        { value: "15M", label: "Customer Records Cataloged" },
+        { value: "100%", label: "GDPR Compliance Rate" },
+        { value: "12", label: "EU Markets Covered" }
       ]}
-      tags={["Retail", "GDPR", "Data Governance", "Risk & Resilience"]}
-      relatedCapability={{
-        title: "Risk & Resilience",
-        link: "/capabilities/risk-resilience"
+      clientContextTitle="Compliance on a Knife's Edge"
+      clientContextIntro="A mid-sized e-commerce retailer with 15M customers across 12 EU countries faced GDPR challenges that threatened its ability to operate in Europe. Customer data lived in 40+ systems, so fulfilling access or deletion requests required manual coordination across IT, legal, and business teams."
+      clientContextBody="The legal maximum is 30 days, but average fulfillment ran 28 days — no margin for error. The retailer had missed three deadlines in a year, exposing it to fines up to 4% of global revenue (€18M on €450M). Worse, it couldn't prove data residency: some customer data was processed in US cloud services without proper safeguards, violating Schrems II. It needed a catalog mapping every data element to its location, consent management across channels, automated request workflows, and enforced EU data residency."
+      clientProfile={{
+        industry: "E-Commerce Retailer",
+        companySize: "15M Customers",
+        projectDuration: "40+ Systems Mapped",
+        additionalInfo: "Collibra",
+        additionalLabel: "Data Catalog"
       }}
+      challengeTitle="Why GDPR Was Unmanageable"
+      challenges={[
+        {
+          icon: Boxes,
+          title: "Data across 40+ systems",
+          description: "Customer data scattered across e-commerce, CRM, marketing, loyalty, and analytics made every request a manual hunt."
+        },
+        {
+          icon: Clock,
+          title: "28-day average fulfillment",
+          description: "Against a 30-day legal maximum, three missed deadlines left the retailer exposed to €18M in fines."
+        },
+        {
+          icon: MapPinned,
+          title: "Unprovable data residency",
+          description: "Some EU customer data was processed in US clouds without safeguards, violating Schrems II."
+        },
+        {
+          icon: ShieldAlert,
+          title: "No unified consent record",
+          description: "Marketing permissions lived per-channel, with no way to track or enforce consent consistently."
+        }
+      ]}
+      approachTitle="A Central Catalog With Automated Workflows"
+      approachIntro="NEXDYNE deployed Collibra Data Intelligence Cloud as the central catalog — automatically discovering and classifying personal data across all 40+ systems by sensitivity, legal basis, and residency requirement."
+      steps={[
+        {
+          step: "01",
+          title: "Discover and classify everything",
+          description: "The catalog tagged every element as PII, sensitive, or pseudonymized, with its legal basis and residency rule."
+        },
+        {
+          step: "02",
+          title: "Automate access requests",
+          description: "A request queries all registered sources via API and compiles a complete, human-readable report of what data exists and how it's used."
+        },
+        {
+          step: "03",
+          title: "Verify deletion, don't just flag it",
+          description: "Right-to-be-forgotten requests trigger deletion across systems with verification checks and audit trails proving the data is gone."
+        },
+        {
+          step: "04",
+          title: "Enforce residency automatically",
+          description: "EU customer data stays in AWS eu-west-1, and any cross-border transfer requires an explicit approval workflow."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: GitBranch,
+          value: "4 hrs",
+          label: "GDPR request fulfillment",
+          detail: "Down from 28 days, fully automated"
+        },
+        {
+          icon: ShieldCheck,
+          value: "1,200",
+          label: "Requests handled in year one",
+          detail: "At 100% on-time completion with zero complaints"
+        },
+        {
+          icon: Search,
+          value: "Seconds",
+          label: "To answer \"where is this data?\"",
+          detail: "Down from weeks, accelerating due diligence and M&A"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Automating HIPAA Audit Trails, Cutting Violations 92%",
+          metric: "92%",
+          label: "fewer violations",
+          link: "/cases/healthcare-hipaa-compliance",
+          image: "/case-medical-collaboration.9602cc8c.jpg"
+        },
+        {
+          title: "Scaling E-Commerce Revenue 40% With AI Personalization",
+          metric: "40%",
+          label: "revenue growth",
+          link: "/cases/global-retailer-ecommerce",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
+        }
+      ]}
+      ctaTitle="Ready to make compliance provable?"
+      ctaDescription="Let's talk about what a governed data catalog could do for your privacy posture."
     />
   );
 }

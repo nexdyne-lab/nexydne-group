@@ -1,36 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { LineChart, ThumbsDown, Users, Database, Zap, FlaskConical, TrendingUp, ShoppingCart } from "lucide-react";
 
 export function RetailPersonalization() {
   return (
-    <CaseStudyTemplate
-      client="National Specialty Retailer"
-      industry="Retail · AI Personalization"
-      title="National Retailer Drives 34% Revenue Lift with AI Personalization"
-      subtitle="Real-time recommendation engine increases conversion rates by 42% and average order value by 27% across digital channels through machine learning-powered product suggestions."
+    <IndustryCaseStudyTemplate
+      seoTitle="Driving a 34% Revenue Lift With AI Personalization | Retail Case Study"
+      seoDescription="A 450-store, $2.8B retailer's online conversion trailed benchmarks by 35%. A real-time recommendation engine lifted revenue 34%, conversion 42%, and average order value 27%."
+      canonical="/cases/retail-personalization"
+      industry="Retail"
+      industryLink="/industries/retail"
+      title="How a National Retailer Drove a 34% Revenue Lift With AI Personalization"
+      subtitle="A real-time recommendation engine delivering sub-50ms product suggestions lifted online revenue 34% — improving conversion 42% and average order value 27% across digital channels."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
-      challenge={`A national specialty retailer with 450 stores and $2.8 billion in annual revenue faced a critical digital commerce challenge. Despite investing heavily in e-commerce infrastructure, their online conversion rate lagged industry benchmarks by 35%, and average order value remained stubbornly flat year-over-year. The core problem: a one-size-fits-all digital experience that failed to recognize individual customer preferences, purchase history, or browsing behavior.
-
-The retailer's existing recommendation system relied on basic collaborative filtering—showing customers "products others bought" without considering individual context, seasonality, or real-time signals. This generic approach produced irrelevant suggestions that customers ignored, leading to abandoned carts and missed cross-sell opportunities. Meanwhile, competitors with sophisticated personalization engines were capturing market share by delivering tailored experiences that drove engagement and revenue.
-
-The business impact extended beyond lost sales. Marketing teams struggled to optimize campaigns without granular customer insights, inventory planners couldn't predict demand patterns accurately, and customer service faced increasing complaints about irrelevant email promotions.`}
-      solution={`NEXDYNE designed and implemented an enterprise-grade AI personalization platform that unified customer data from all touchpoints—e-commerce, point-of-sale, mobile app, email, and customer service interactions. The solution centered on a real-time recommendation engine built using advanced machine learning techniques including collaborative filtering, content-based filtering, and deep learning models trained on 18 months of historical transaction data.
-
-The platform processed over 500 customer attributes and behavioral signals to generate personalized product recommendations within 50 milliseconds—fast enough to support real-time website personalization without degrading page performance. We implemented multiple recommendation strategies optimized for different customer journey stages: homepage discovery, category browsing, product detail pages, cart optimization, and post-purchase cross-sell.
-
-Beyond product recommendations, the solution enabled dynamic content personalization—adjusting hero banners, promotional messaging, and email campaigns based on individual customer segments and predicted lifetime value. A comprehensive A/B testing framework allowed merchandising teams to experiment with recommendation strategies and measure impact without requiring engineering resources. Automated model retraining pipelines continuously improved recommendation accuracy as new customer data arrived.`}
-      impact={`Online revenue increased by 34% year-over-year, driven by a 42% improvement in conversion rate and a 27% increase in average order value. Customers who engaged with personalized recommendations showed 3.2x higher lifetime value compared to those who didn't, validating the long-term strategic value of the investment.
-
-Email marketing performance improved dramatically, with click-through rates increasing by 58% and unsubscribe rates dropping by 31% as customers received more relevant product suggestions. Cart abandonment decreased by 23% as the recommendation engine surfaced complementary products that increased perceived value. Inventory turnover improved by 18% as predictive models helped planners anticipate demand more accurately. Marketing teams reduced customer acquisition costs by 22% through better targeting based on lookalike modeling. Customer satisfaction scores increased by 15 points.`}
       metrics={[
-        { value: "34%", label: "Revenue increase" },
-        { value: "42%", label: "Higher conversion rate" },
-        { value: "27%", label: "Larger average order value" }
+        { value: "34%", label: "Revenue Increase" },
+        { value: "42%", label: "Higher Conversion" },
+        { value: "27%", label: "Larger Average Order" }
       ]}
-      tags={["Retail", "AI", "Personalization", "E-commerce"]}
-      relatedCapability={{
-        title: "AI & Machine Learning",
-        link: "/capabilities/ai"
+      clientContextTitle="One Experience for Everyone"
+      clientContextIntro="A national specialty retailer with 450 stores and $2.8B in revenue faced a critical digital-commerce challenge. Despite heavy e-commerce investment, online conversion trailed benchmarks by 35% and average order value stayed flat — the result of a one-size-fits-all experience that ignored individual preferences and behavior."
+      clientContextBody="The existing recommendation system used basic collaborative filtering — showing “products others bought” with no individual context, seasonality, or real-time signal. The generic suggestions were ignored, driving abandoned carts and missed cross-sell. Competitors with sophisticated personalization captured share, while marketing lacked customer insight, planners couldn't predict demand, and service fielded complaints about irrelevant promotions."
+      clientProfile={{
+        industry: "Specialty Retailer",
+        companySize: "450 Stores",
+        projectDuration: "Real-Time Engine",
+        additionalInfo: "$2.8B Revenue",
+        additionalLabel: "Scale"
       }}
+      challengeTitle="Why the Old Engine Fell Flat"
+      challenges={[
+        {
+          icon: LineChart,
+          title: "Conversion 35% below benchmark",
+          description: "A generic digital experience left online conversion trailing peers and order value flat."
+        },
+        {
+          icon: ThumbsDown,
+          title: "Ignored recommendations",
+          description: "Basic collaborative filtering produced irrelevant suggestions customers scrolled past."
+        },
+        {
+          icon: ShoppingCart,
+          title: "Abandoned carts, missed cross-sell",
+          description: "Without individual context, the system surfaced the wrong products at the wrong moments."
+        },
+        {
+          icon: Users,
+          title: "No shared customer insight",
+          description: "Marketing, planning, and service all lacked the granular signals to do their jobs well."
+        }
+      ]}
+      approachTitle="Real-Time Recommendations at Scale"
+      approachIntro="NEXDYNE built an enterprise AI personalization platform that unified data from every touchpoint and served recommendations in under 50 milliseconds — fast enough for live website personalization without degrading performance."
+      steps={[
+        {
+          step: "01",
+          title: "Unify every touchpoint",
+          description: "The platform merged e-commerce, POS, app, email, and service data, training models on 18 months of transactions."
+        },
+        {
+          step: "02",
+          title: "Blend recommendation strategies",
+          description: "Collaborative filtering, content-based filtering, and deep-learning models processed 500+ signals per customer in real time."
+        },
+        {
+          step: "03",
+          title: "Personalize the whole journey",
+          description: "Distinct strategies optimized homepage discovery, category browsing, product pages, cart, and post-purchase cross-sell."
+        },
+        {
+          step: "04",
+          title: "Let merchandisers experiment",
+          description: "An A/B testing framework and automated retraining let teams tune strategies without engineering support."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: TrendingUp,
+          value: "34%",
+          label: "Online revenue growth",
+          detail: "With 3.2x higher lifetime value among engaged customers"
+        },
+        {
+          icon: Zap,
+          value: "42%",
+          label: "Higher conversion",
+          detail: "Alongside a 27% larger average order value"
+        },
+        {
+          icon: FlaskConical,
+          value: "23%",
+          label: "Less cart abandonment",
+          detail: "With email CTR up 58% and acquisition cost down 22%"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Increasing Customer Engagement 156% With Omnichannel",
+          metric: "156%",
+          label: "higher engagement",
+          link: "/cases/retail-omnichannel",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
+        },
+        {
+          title: "Scaling E-Commerce Revenue 40% With AI Personalization",
+          metric: "40%",
+          label: "revenue growth",
+          link: "/cases/global-retailer-ecommerce",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
+        }
+      ]}
+      ctaTitle="Ready to personalize every session?"
+      ctaDescription="Let's talk about what a real-time recommendation engine could do for your digital revenue."
     />
   );
 }

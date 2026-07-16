@@ -1,36 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { Split, MailX, Users, Store, Database, Smartphone, MapPin, TrendingUp } from "lucide-react";
 
 export function RetailOmnichannel() {
   return (
-    <CaseStudyTemplate
-      client="National Specialty Retailer"
-      industry="Retail · Digital Engagement"
-      title="Retailer Increases Customer Engagement by 156% with Omnichannel Platform"
-      subtitle="Mobile-first engagement strategy drives 43% increase in app usage and 31% boost in customer lifetime value through personalized experiences across all touchpoints."
+    <IndustryCaseStudyTemplate
+      seoTitle="Increasing Customer Engagement 156% With an Omnichannel Platform | Retail Case Study"
+      seoDescription="A 380-store, $1.9B specialty retailer ran mobile, email, and loyalty in silos. A unified omnichannel platform lifted engagement 156%, app usage 43%, and lifetime value 31%."
+      canonical="/cases/retail-omnichannel"
+      industry="Retail"
+      industryLink="/industries/retail"
+      title="How a Specialty Retailer Increased Customer Engagement 156% With Omnichannel"
+      subtitle="A mobile-first engagement platform unified app, email, SMS, push, and in-store touchpoints — driving a 43% rise in app usage and a 31% lift in customer lifetime value."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
-      challenge={`A national specialty retailer with 380 stores and $1.9 billion in annual revenue faced a critical customer engagement problem. Despite having a mobile app, email marketing platform, and loyalty program, these channels operated in silos—creating disjointed experiences that frustrated customers and limited marketing effectiveness. App engagement rates lagged industry benchmarks by 45%, email open rates had declined 22% year-over-year, and loyalty program participation stagnated at just 28% of the customer base.
-
-The core issue: customers received generic, untargeted communications that ignored their preferences, purchase history, and real-time context. A customer browsing winter coats online would receive an email promoting summer dresses the next day. In-store shoppers had no way to access their loyalty points or personalized offers via mobile. The fragmented experience drove customers to competitors who delivered seamless, personalized engagement across every touchpoint.
-
-Beyond lost sales, the siloed approach created operational inefficiencies. Marketing teams spent excessive time manually coordinating campaigns across channels. Customer service struggled to resolve issues without unified customer histories. Store associates couldn't access digital engagement data to personalize in-store interactions.`}
-      solution={`NEXDYNE designed and implemented an enterprise omnichannel engagement platform that unified customer data and orchestrated personalized interactions across mobile app, email, SMS, push notifications, and in-store touchpoints. The solution centered on a CDP that consolidated behavioral data, purchase history, loyalty status, and real-time context into unified customer profiles accessible across all channels.
-
-The mobile app became the engagement hub, rebuilt with React Native to deliver native iOS and Android experiences. NEXDYNE implemented intelligent push notifications triggered by behavioral signals—cart abandonment, price drops on saved items, back-in-stock alerts, and location-based offers when customers entered store proximity. Email and SMS campaigns leveraged predictive analytics to optimize send times, content, and offers for individual customers. Dynamic content templates automatically personalized product recommendations, imagery, and messaging based on customer segments and purchase patterns.
-
-For in-store experiences, associates were equipped with tablet apps that surfaced customer engagement histories, preferences, and personalized recommendations during interactions. Geofencing capabilities triggered welcome messages and exclusive in-store offers when loyalty members entered stores. All engagement touchpoints fed data back into the CDP, creating a continuous learning loop that improved personalization over time.`}
-      impact={`Overall customer engagement increased by 156% as personalized, contextually relevant communications replaced generic mass messaging. Mobile app usage surged 43%, with daily active users growing from 12% to 34% of the loyalty member base. Email open rates increased 38% and click-through rates doubled as dynamic content personalization delivered more relevant product suggestions. SMS campaigns achieved 62% open rates and 18% conversion rates. Push notification opt-in rates reached 67%, with 24% of recipients taking action within 30 minutes of receiving location-based offers.
-
-Customer lifetime value increased by 31% as personalized experiences drove higher purchase frequency and average order values. Loyalty program participation grew from 28% to 58% as the mobile app made enrollment and reward redemption frictionless. Store associates reported 25% faster checkout times. Marketing team productivity improved by 40% through automated campaign orchestration.`}
       metrics={[
-        { value: "156%", label: "Engagement increase" },
-        { value: "43%", label: "Higher app usage" },
-        { value: "31%", label: "Increased customer lifetime value" }
+        { value: "156%", label: "Engagement Increase" },
+        { value: "43%", label: "Higher App Usage" },
+        { value: "31%", label: "Higher Lifetime Value" }
       ]}
-      tags={["Retail", "Omnichannel", "Digital Engagement", "Growth Marketing"]}
-      relatedCapability={{
-        title: "Growth Marketing & Sales",
-        link: "/capabilities/growth-marketing-sales"
+      clientContextTitle="Channels That Didn't Talk"
+      clientContextIntro="A national specialty retailer with 380 stores and $1.9B in revenue faced a critical engagement problem. Despite having a mobile app, email platform, and loyalty program, these channels operated in silos — creating disjointed experiences that frustrated customers and limited marketing effectiveness."
+      clientContextBody="App engagement lagged benchmarks by 45%, email open rates had fallen 22% year-over-year, and loyalty participation stalled at 28% of customers. A shopper browsing winter coats online would get a summer-dress email the next day; in-store shoppers couldn't reach loyalty points or offers on mobile. The fragmentation drove customers to competitors with seamless engagement — and created operational drag as teams manually coordinated campaigns across channels."
+      clientProfile={{
+        industry: "Specialty Retailer",
+        companySize: "380 Stores",
+        projectDuration: "Unified CDP",
+        additionalInfo: "$1.9B Revenue",
+        additionalLabel: "Scale"
       }}
+      challengeTitle="Why Engagement Stalled"
+      challenges={[
+        {
+          icon: Split,
+          title: "Siloed channels",
+          description: "App, email, and loyalty operated separately, producing disjointed, contradictory customer experiences."
+        },
+        {
+          icon: MailX,
+          title: "Declining email and app metrics",
+          description: "Open rates fell 22% and app engagement trailed benchmarks by 45% as messaging stayed generic."
+        },
+        {
+          icon: Users,
+          title: "Stalled loyalty at 28%",
+          description: "A clunky enrollment and redemption experience kept loyalty participation flat."
+        },
+        {
+          icon: Store,
+          title: "Disconnected in-store experience",
+          description: "Associates had no access to digital engagement data to personalize in-person interactions."
+        }
+      ]}
+      approachTitle="One Platform, Every Touchpoint"
+      approachIntro="NEXDYNE built an enterprise omnichannel platform that unified customer data and orchestrated personalized interactions across app, email, SMS, push, and in-store — centered on a CDP feeding every channel."
+      steps={[
+        {
+          step: "01",
+          title: "Make the app the hub",
+          description: "Rebuilt in React Native, the app delivered native iOS and Android experiences with intelligent, behavior-triggered push notifications."
+        },
+        {
+          step: "02",
+          title: "Trigger on real signals",
+          description: "Cart abandonment, price drops on saved items, back-in-stock alerts, and store-proximity offers drove timely, relevant outreach."
+        },
+        {
+          step: "03",
+          title: "Personalize email and SMS",
+          description: "Predictive analytics optimized send times and content, with dynamic templates tailoring recommendations by segment and pattern."
+        },
+        {
+          step: "04",
+          title: "Arm store associates",
+          description: "Tablet apps surfaced engagement history and recommendations in-store, while geofencing triggered welcome messages and exclusive offers."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Smartphone,
+          value: "43%",
+          label: "Higher app usage",
+          detail: "Daily active users grew from 12% to 34% of loyalty members"
+        },
+        {
+          icon: TrendingUp,
+          value: "31%",
+          label: "Higher lifetime value",
+          detail: "From higher purchase frequency and order values"
+        },
+        {
+          icon: MapPin,
+          value: "58%",
+          label: "Loyalty participation",
+          detail: "Up from 28% as the app made enrollment frictionless"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Unlocking 34% Revenue Growth With AI Personalization",
+          metric: "34%",
+          label: "revenue growth",
+          link: "/cases/retail-modernization-personalization",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
+        },
+        {
+          title: "Driving a 34% Revenue Lift With AI Personalization",
+          metric: "42%",
+          label: "higher conversion",
+          link: "/cases/retail-personalization",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
+        }
+      ]}
+      ctaTitle="Ready to unify your channels?"
+      ctaDescription="Let's talk about what an omnichannel platform could do for your engagement and retention."
     />
   );
 }

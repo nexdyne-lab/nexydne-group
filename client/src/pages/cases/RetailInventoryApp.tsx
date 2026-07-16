@@ -1,32 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { ClipboardList, PackageX, WifiOff, Timer, ScanBarcode, RefreshCw, Gauge, DollarSign } from "lucide-react";
 
 export function RetailInventoryApp() {
   return (
-    <CaseStudyTemplate
-      client="Specialty Outdoor Gear Retailer"
-      industry="Retail · App Development"
-      title="Retailer Builds Custom Inventory App Cutting Stockouts 40%"
-      subtitle="Multi-location retailer deploys mobile inventory management app with real-time sync, barcode scanning, and automated reorder triggers across 85 stores."
+    <IndustryCaseStudyTemplate
+      seoTitle="Building a Custom Inventory App That Cut Stockouts 40% | Retail Case Study"
+      seoDescription="An 85-store outdoor retailer's associates spent 3–4 hours a day on manual counts with 84% accuracy. A mobile inventory app lifted accuracy to 98.5% and cut stockouts 40%."
+      canonical="/cases/retail-inventory-app"
+      industry="Retail"
+      industryLink="/industries/retail"
+      title="How a Retailer Built a Custom Inventory App and Cut Stockouts 40%"
+      subtitle="A multi-location retailer deployed a mobile inventory app with real-time sync, barcode scanning, and automated reorder triggers across 85 stores — lifting accuracy to 98.5% and saving $1.2M a year."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
-      challenge={`A specialty outdoor gear retailer operating 85 stores across the Western United States struggled with chronic inventory accuracy issues. Their legacy inventory management system required manual data entry via desktop computers in back offices, leading to delayed updates and frequent discrepancies between system records and actual shelf stock. Store associates spent 3-4 hours per day on manual inventory counts, taking them away from customer service. Stockouts occurred on 22% of popular items during peak seasons, resulting in lost sales and customer frustration.
-
-The retailer needed a mobile-first inventory solution that would enable real-time stock updates from the sales floor, streamline receiving and cycle counting processes, and automatically trigger reorders when inventory fell below safety stock levels. The solution had to integrate with their existing NetSuite ERP system, support offline functionality for stores with unreliable connectivity, and provide intuitive barcode scanning for fast data entry. With peak season approaching in 4 months, the retailer needed rapid development and deployment across all locations.`}
-      solution={`NEXDYNE designed and developed a custom mobile inventory management app for iOS and Android tablets, optimized for rugged devices used on retail sales floors. The app featured barcode scanning for instant product lookup, real-time inventory adjustments synchronized with NetSuite, guided receiving workflows with photo documentation, cycle counting with variance tracking, and automated reorder recommendations based on sales velocity and lead times.
-
-Our team built the app using React Native for cross-platform compatibility and implemented offline-first architecture with intelligent sync queuing to handle intermittent connectivity. We integrated with NetSuite's SuiteScript APIs for real-time inventory updates and developed custom algorithms to calculate optimal reorder points based on historical sales data, seasonality patterns, and supplier lead times. The app included role-based permissions, allowing store managers to approve large adjustments while enabling all associates to perform basic counts and updates.`}
-      impact={`The mobile inventory app launched across all 85 stores within 3.5 months, meeting the retailer's peak season deadline. Within 6 months of deployment, inventory accuracy improved from 84% to 98.5%, and stockouts on high-demand items decreased 40%. Store associates reduced time spent on inventory tasks from 3-4 hours to 45 minutes per day, freeing them to focus on customer service. The retailer calculated $1.2M in annual labor savings from improved efficiency.
-
-The automated reorder system prevented 1,850 stockout incidents in the first year by proactively triggering purchase orders when inventory fell below calculated safety stock levels. Sales increased 8% in categories that previously experienced frequent stockouts. The app's offline functionality proved critical during network outages, with zero data loss across 127 connectivity interruptions. Store managers praised the intuitive interface, with 94% of associates requiring less than 30 minutes of training.`}
       metrics={[
-        { value: "40%", label: "Reduction in stockouts" },
-        { value: "98.5%", label: "Inventory accuracy achieved" },
-        { value: "$1.2M", label: "Annual labor savings" }
+        { value: "40%", label: "Fewer Stockouts" },
+        { value: "98.5%", label: "Inventory Accuracy" },
+        { value: "$1.2M", label: "Annual Labor Savings" }
       ]}
-      tags={["Retail", "App Development", "Operations", "Mobile"]}
-      relatedCapability={{
-        title: "Technology",
-        link: "/capabilities/technology"
+      clientContextTitle="Counting by Hand"
+      clientContextIntro="A specialty outdoor gear retailer running 85 stores across the Western US struggled with chronic inventory accuracy. Its legacy system required manual data entry on back-office desktops, causing delayed updates and frequent gaps between records and actual shelf stock."
+      clientContextBody="Associates spent 3–4 hours a day on manual counts, pulling them away from customers, and stockouts hit 22% of popular items during peak seasons. The retailer needed a mobile-first solution for real-time updates from the sales floor, streamlined receiving and cycle counting, and automated reorders — integrated with NetSuite, working offline in stores with poor connectivity, with fast barcode scanning. With peak season four months out, it needed rapid development and rollout."
+      clientProfile={{
+        industry: "Outdoor Gear Retailer",
+        companySize: "85 Stores",
+        projectDuration: "3.5-Month Build",
+        additionalInfo: "NetSuite ERP",
+        additionalLabel: "Integration"
       }}
+      challengeTitle="Why Inventory Was Unreliable"
+      challenges={[
+        {
+          icon: ClipboardList,
+          title: "3–4 hours a day counting",
+          description: "Manual, back-office data entry pulled associates off the floor and away from customers."
+        },
+        {
+          icon: PackageX,
+          title: "22% peak-season stockouts",
+          description: "Delayed updates meant popular items ran out with no timely reorder signal."
+        },
+        {
+          icon: WifiOff,
+          title: "Unreliable connectivity",
+          description: "Stores needed the app to work offline without losing data during network interruptions."
+        },
+        {
+          icon: Timer,
+          title: "A four-month deadline",
+          description: "The solution had to build and roll out across 85 stores before peak season."
+        }
+      ]}
+      approachTitle="An Offline-First Mobile App"
+      approachIntro="NEXDYNE designed and built a custom iOS and Android tablet app optimized for rugged sales-floor devices — with barcode scanning, guided receiving, cycle counting, and automated reorder recommendations synced to NetSuite."
+      steps={[
+        {
+          step: "01",
+          title: "Scan, adjust, sync in real time",
+          description: "Barcode scanning gave instant lookup, and inventory adjustments synchronized live with NetSuite via SuiteScript APIs."
+        },
+        {
+          step: "02",
+          title: "Build offline-first",
+          description: "React Native with intelligent sync queuing kept the app fully usable through intermittent connectivity, with zero data loss."
+        },
+        {
+          step: "03",
+          title: "Automate the reorder point",
+          description: "Custom algorithms calculated optimal reorder points from sales velocity, seasonality, and supplier lead times."
+        },
+        {
+          step: "04",
+          title: "Right-size permissions",
+          description: "Role-based access let managers approve large adjustments while every associate could run basic counts and updates."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Gauge,
+          value: "98.5%",
+          label: "Inventory accuracy",
+          detail: "Up from 84%, with stockouts on key items down 40%"
+        },
+        {
+          icon: Timer,
+          value: "45 min",
+          label: "Daily inventory time",
+          detail: "Down from 3–4 hours, freeing associates for customers"
+        },
+        {
+          icon: DollarSign,
+          value: "$1.2M",
+          label: "Annual labor savings",
+          detail: "With 1,850 stockouts prevented and sales up 8%"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Cutting Stockouts 35% With ML Demand Forecasting",
+          metric: "35%",
+          label: "fewer stockouts",
+          link: "/cases/retail-demand-forecasting",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
+        },
+        {
+          title: "Automating a Retailer's Supply Chain With RPA",
+          metric: "45%",
+          label: "faster processing",
+          link: "/cases/global-retailer",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
+        }
+      ]}
+      ctaTitle="Ready to get inventory right?"
+      ctaDescription="Let's talk about what a purpose-built mobile app could do for your accuracy and labor cost."
     />
   );
 }

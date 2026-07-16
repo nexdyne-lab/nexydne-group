@@ -1,37 +1,122 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { PackageX, TrendingDown, LineChart, Boxes, Brain, CloudSun, Gauge, DollarSign } from "lucide-react";
 
 export function RetailDemandForecasting() {
   return (
-    <CaseStudyTemplate
-      client="Mid-Sized Specialty Retailer"
-      industry="Retail · Machine Learning"
-      title="Retailer Reduces Stockouts 35% with Demand Forecasting"
-      subtitle="Multi-location forecasting model predicts SKU-level demand 8 weeks ahead, optimizing inventory across 200 stores and cutting overstock 28%."
+    <IndustryCaseStudyTemplate
+      seoTitle="Cutting Stockouts 35% With ML Demand Forecasting | Retail Case Study"
+      seoDescription="A 200-store specialty retailer lost $12M to stockouts while overstock piled up. An explainable ML model forecasting SKU-store demand 8 weeks out cut stockouts 35% and saved $8.5M."
+      canonical="/cases/retail-demand-forecasting"
+      industry="Retail"
+      industryLink="/industries/retail"
+      title="How a Specialty Retailer Cut Stockouts 35% With ML Demand Forecasting"
+      subtitle="A multi-location forecasting model predicts SKU-level demand eight weeks ahead across 200 stores — cutting stockouts 35%, overstock 28%, and saving $8.5M a year."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
-      challenge={`A mid-sized specialty retailer with 200 locations faced chronic inventory problems. Popular items sold out before replenishment arrived, while slow-moving SKUs accumulated in back rooms. Store managers ordered based on gut feel, corporate buyers relied on last year's sales, and nobody could predict seasonal spikes accurately.
-
-The financial impact was severe: $12M in lost sales from stockouts, $6M in markdowns to clear excess inventory, and deteriorating customer satisfaction as shoppers learned not to rely on product availability. Their existing inventory system used simple moving averages that couldn't handle regional demand variation, promotional effects, or weather-driven purchasing patterns.
-
-They needed demand forecasting that worked at SKU-store-week granularity, incorporated external signals (weather, local events, competitor promotions), and integrated with their existing replenishment systems. The solution had to be explainable—buyers needed to understand why the model recommended specific order quantities.`}
-      solution={`NEXDYNE built a gradient boosting model (XGBoost) that forecasts demand 8 weeks ahead for every SKU-store combination. The model ingests 3 years of transaction history, promotional calendars, local weather forecasts, regional demographics, and competitor pricing data scraped from public websites.
-
-We engineered features that capture seasonal patterns (back-to-school, holidays), promotional lift (historical response to discounts), cannibalization effects (substitute products), and local preferences (regional taste differences). The model retrains weekly on fresh data, automatically detecting trend shifts and adjusting forecasts. SHAP values provide forecast explainability so buyers understand why the model recommends specific order quantities.
-
-Forecasts feed directly into their replenishment system via API, generating purchase orders that optimize for target service levels while minimizing carrying costs. Store managers see predictions in their existing Tableau dashboard with confidence intervals and explanations for unusual forecasts.`}
-      impact={`Within 6 months of deployment, stockouts dropped 35% and overstock situations fell 28%. The retailer saved $8.5M annually through reduced markdowns, lower carrying costs, and recaptured sales. Forecast accuracy (MAPE) improved from 42% with their old system to 18% with the ML model.
-
-Store managers trust the system enough to reduce safety stock levels, freeing up working capital. Buyers spend less time firefighting stockouts and more time on strategic merchandising. Customer satisfaction scores improved 12 points as product availability became reliable. The model continues to improve as it learns from new data, with seasonal forecasts becoming more accurate each year.`}
       metrics={[
-        { value: "35%", label: "Stockout reduction" },
-        { value: "28%", label: "Overstock reduction" },
-        { value: "$8.5M", label: "Annual savings" },
-        { value: "200", label: "Stores optimized" }
+        { value: "35%", label: "Fewer Stockouts" },
+        { value: "28%", label: "Less Overstock" },
+        { value: "$8.5M", label: "Annual Savings" },
+        { value: "200", label: "Stores Optimized" }
       ]}
-      tags={["Retail", "Machine Learning", "Demand Forecasting", "AI"]}
-      relatedCapability={{
-        title: "AI & Machine Learning",
-        link: "/capabilities/ai"
+      clientContextTitle="Guessing at Demand"
+      clientContextIntro="A mid-sized specialty retailer with 200 locations faced chronic inventory problems. Popular items sold out before replenishment arrived, while slow movers piled up in back rooms. Managers ordered on gut feel, buyers relied on last year's sales, and nobody predicted seasonal spikes accurately."
+      clientContextBody="The impact was severe: $12M in lost sales from stockouts, $6M in markdowns to clear excess, and eroding customer trust as shoppers stopped relying on availability. The legacy system used simple moving averages that couldn't handle regional variation, promotional effects, or weather-driven demand. The retailer needed forecasting at SKU-store-week granularity, incorporating external signals — and it had to be explainable, so buyers understood every recommendation."
+      clientProfile={{
+        industry: "Specialty Retailer",
+        companySize: "200 Locations",
+        projectDuration: "8-Week Horizon",
+        additionalInfo: "XGBoost + SHAP",
+        additionalLabel: "Model"
       }}
+      challengeTitle="Why Inventory Was Always Wrong"
+      challenges={[
+        {
+          icon: PackageX,
+          title: "$12M in lost sales",
+          description: "Popular items sold out before replenishment arrived, driving stockouts and customer frustration."
+        },
+        {
+          icon: Boxes,
+          title: "$6M in markdowns",
+          description: "Slow-moving SKUs accumulated in back rooms, forcing discounts to clear excess inventory."
+        },
+        {
+          icon: LineChart,
+          title: "Moving averages that missed",
+          description: "The old system couldn't handle regional variation, promotions, or weather-driven demand."
+        },
+        {
+          icon: Brain,
+          title: "Forecasts buyers didn't trust",
+          description: "Any solution had to be explainable so buyers understood why the model recommended each quantity."
+        }
+      ]}
+      approachTitle="Explainable Forecasting at SKU-Store-Week"
+      approachIntro="NEXDYNE built a gradient-boosting model (XGBoost) that forecasts demand eight weeks ahead for every SKU-store combination — trained on three years of history and external signals, with SHAP explanations buyers can read."
+      steps={[
+        {
+          step: "01",
+          title: "Ingest the full signal set",
+          description: "The model combined three years of transactions with promotional calendars, local weather, demographics, and scraped competitor pricing."
+        },
+        {
+          step: "02",
+          title: "Engineer demand features",
+          description: "Features captured seasonality, promotional lift, product cannibalization, and regional preferences — the drivers moving averages missed."
+        },
+        {
+          step: "03",
+          title: "Make every forecast explainable",
+          description: "SHAP values showed buyers exactly why the model recommended each order quantity, building trust in the numbers."
+        },
+        {
+          step: "04",
+          title: "Feed replenishment directly",
+          description: "Forecasts flowed via API into the replenishment system, generating purchase orders that hit service-level targets at minimum carrying cost."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: PackageX,
+          value: "35%",
+          label: "Fewer stockouts",
+          detail: "With overstock situations down 28% within six months"
+        },
+        {
+          icon: Gauge,
+          value: "18%",
+          label: "Forecast error (MAPE)",
+          detail: "Down from 42% under the old moving-average system"
+        },
+        {
+          icon: DollarSign,
+          value: "$8.5M",
+          label: "Annual savings",
+          detail: "From lower markdowns, carrying costs, and recaptured sales"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Building a Custom Inventory App That Cut Stockouts 40%",
+          metric: "40%",
+          label: "fewer stockouts",
+          link: "/cases/retail-inventory-app",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
+        },
+        {
+          title: "Automating a Retailer's Supply Chain With RPA",
+          metric: "45%",
+          label: "faster processing",
+          link: "/cases/global-retailer",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
+        }
+      ]}
+      ctaTitle="Ready to stop guessing at demand?"
+      ctaDescription="Let's talk about what explainable forecasting could do for your inventory and margins."
     />
   );
 }
