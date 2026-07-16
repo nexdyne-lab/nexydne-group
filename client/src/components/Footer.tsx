@@ -1,6 +1,8 @@
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
+import { trpc } from "@/lib/trpc";
+import { toast } from "sonner";
 
 // Social icons (inline brand glyphs — lucide dropped brand icons)
 const socials = [
@@ -34,14 +36,23 @@ const socials = [
 export default function Footer() {
   const [email, setEmail] = useState("");
   const [privacyChecked, setPrivacyChecked] = useState(false);
+  const [subscribed, setSubscribed] = useState(false);
+  const subscribe = trpc.newsletter.subscribe.useMutation();
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email && privacyChecked) {
-      // Handle subscription
-      console.log("Subscribing:", email);
+    if (!email || !privacyChecked) {
+      if (!privacyChecked) toast.error("Please accept the privacy notice to subscribe.");
+      return;
+    }
+    try {
+      await subscribe.mutateAsync({ email });
+      setSubscribed(true);
       setEmail("");
       setPrivacyChecked(false);
+      setTimeout(() => setSubscribed(false), 6000);
+    } catch {
+      toast.error("Something went wrong. Please try again.");
     }
   };
 
@@ -87,11 +98,15 @@ export default function Footer() {
                 />
                 <button
                   type="submit"
-                  className="px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white font-bold uppercase tracking-wider hover:bg-primary-hover transition-colors duration-200 ease-in-out text-sm"
+                  disabled={subscribe.isPending || subscribed}
+                  className="px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white font-bold uppercase tracking-wider hover:bg-primary-hover transition-colors duration-200 ease-in-out text-sm disabled:opacity-60"
                 >
-                  Subscribe
+                  {subscribe.isPending ? "Subscribing…" : subscribed ? "Subscribed ✓" : "Subscribe"}
                 </button>
               </form>
+              {subscribed && (
+                <p className="text-sm text-amber">Thanks — you're on the list.</p>
+              )}
 
               {/* Privacy Checkbox */}
               <label className="flex items-start gap-3 cursor-pointer">

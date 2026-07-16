@@ -13,12 +13,34 @@ import {
 } from "./db";
 import { notifyOwner } from "./_core/notification";
 import { verifyTurnstile } from "./_core/turnstile";
-import { sendEmail, escapeHtml } from "./_core/email";
+import { sendEmail, escapeHtml, addToAudience } from "./_core/email";
 import { z } from "zod";
 
 export const appRouter = router({
   // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
   system: systemRouter,
+
+  // Newsletter signup → adds the visitor to the Resend Audience (subscriber list).
+  newsletter: router({
+    subscribe: publicProcedure
+      .input(
+        z.object({
+          email: z.string().email(),
+          firstName: z.string().max(120).optional(),
+          lastName: z.string().max(120).optional(),
+        })
+      )
+      .mutation(async ({ input }) => {
+        const added = await addToAudience({
+          email: input.email,
+          firstName: input.firstName || null,
+          lastName: input.lastName || null,
+        });
+        // Present success to the visitor regardless — a list-add hiccup
+        // shouldn't look like a broken form. Failures are logged server-side.
+        return { success: true, stored: added };
+      }),
+  }),
 
   // Contact form → emails the owner via Resend (Turnstile-gated).
   contact: router({
@@ -173,6 +195,15 @@ export const appRouter = router({
             JSON.stringify({ email: input.email, caseStudyTitle: input.caseStudyTitle })
           );
           return { success: true, id: undefined, leadScore: 0 };
+        }
+
+        // If they opted in to marketing, add them to the newsletter Audience.
+        if (input.marketingConsent) {
+          await addToAudience({
+            email: input.email,
+            firstName: input.firstName || null,
+            lastName: input.lastName || null,
+          });
         }
 
         // Send notification to owner about new lead

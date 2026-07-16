@@ -1,13 +1,15 @@
 import { useState } from "react";
+import { trpc } from "@/lib/trpc";
 
 export default function NewsletterSignup() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [message, setMessage] = useState("");
+  const subscribe = trpc.newsletter.subscribe.useMutation();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email || !email.includes("@")) {
       setStatus("error");
       setMessage("Please enter a valid email address");
@@ -15,15 +17,14 @@ export default function NewsletterSignup() {
     }
 
     setStatus("submitting");
-    
-    // Simulate API call - in production, this would connect to your email service
+
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      await subscribe.mutateAsync({ email });
 
       setStatus("success");
-      setMessage("Thanks for subscribing! Check your inbox for our latest insights.");
+      setMessage("Thanks for subscribing! You're on the list.");
       setEmail("");
-      
+
       // Reset after 5 seconds
       setTimeout(() => {
         setStatus("idle");
@@ -70,7 +71,7 @@ export default function NewsletterSignup() {
         )}
         
         <p className="text-xs text-white/70 mt-4">
-          No spam, ever. Unsubscribe anytime. By subscribing, you agree to receive emails from NewCo Technologies.
+          No spam, ever. Unsubscribe anytime. By subscribing, you agree to receive emails from NexDyne Consulting Group.
         </p>
       </div>
     </div>

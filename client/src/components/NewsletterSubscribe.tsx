@@ -2,24 +2,29 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Mail, CheckCircle } from "lucide-react";
+import { trpc } from "@/lib/trpc";
+import { toast } from "sonner";
 
 export default function NewsletterSubscribe() {
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const subscribe = trpc.newsletter.subscribe.useMutation();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
 
     setIsLoading(true);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    setIsSubmitted(true);
-    setIsLoading(false);
-    setEmail("");
+    try {
+      await subscribe.mutateAsync({ email });
+      setIsSubmitted(true);
+      setEmail("");
+    } catch {
+      toast.error("Something went wrong. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   if (isSubmitted) {
@@ -65,7 +70,7 @@ export default function NewsletterSubscribe() {
           </Button>
         </form>
         <p className="text-xs text-muted-foreground mt-4">
-          By subscribing, you agree to receive marketing communications from NEXDYNE TECHNOLOGIES. You can unsubscribe at any time.
+          By subscribing, you agree to receive marketing communications from NexDyne Consulting Group. You can unsubscribe at any time.
         </p>
       </div>
     </div>
