@@ -1,32 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { FileText, PhoneCall, Route, TrendingDown, Smartphone, PlugZap, WifiOff, DollarSign } from "lucide-react";
 
 export function LogisticsTrackingApp() {
   return (
-    <CaseStudyTemplate
-      client="3PL Provider"
-      industry="Logistics · Low-Code Development"
-      title="Logistics Firm Builds Real-Time Tracking App for 500 Drivers"
-      subtitle="3PL provider deploys OutSystems mobile app for package tracking and route optimization—improving on-time delivery from 82% to 96% and reducing fuel costs by $850K annually."
+    <IndustryCaseStudyTemplate
+      seoTitle="Building a Real-Time Tracking App for 500 Drivers | Logistics Case Study"
+      seoDescription="A 3PL running 500 vehicles relied on paper manifests and phone check-ins, stuck at 82% on-time. An OutSystems mobile app lifted on-time delivery to 96% and saved $850K in annual fuel."
+      canonical="/cases/logistics-tracking-app"
+      industry="Transportation & Logistics"
+      industryLink="/industries/transportation-logistics"
+      title="How a 3PL Built a Real-Time Tracking App for 500 Drivers"
+      subtitle="A third-party logistics provider deployed an OutSystems mobile app for package tracking and route optimization — improving on-time delivery from 82% to 96% and cutting fuel costs $850K a year."
       heroImage="/images/industries/retail-warehouse.jpg"
-      challenge={`A third-party logistics (3PL) provider operating 500 delivery vehicles across the Southeast faced mounting pressure from e-commerce clients demanding Amazon-level delivery visibility. Their drivers relied on paper manifests and manual check-ins via phone calls, making real-time package tracking impossible. Dispatchers spent 40% of their time answering "Where is my package?" calls from customers, while drivers wasted hours on inefficient routes due to lack of dynamic routing capabilities.
-
-On-time delivery performance had declined to 82%, well below the industry standard of 95%, leading to SLA penalties and client churn. The company's legacy transportation management system (TMS) lacked mobile capabilities and couldn't provide real-time GPS tracking or proof-of-delivery capture. With major e-commerce clients threatening to switch providers, the 3PL needed a mobile-first solution that could launch quickly, integrate with their TMS, and provide real-time visibility without disrupting daily operations.`}
-      solution={`NEXDYNE partnered with the 3PL's operations and IT teams to design and develop a comprehensive driver mobile app using OutSystems low-code platform. We conducted ride-alongs with 25 drivers across different routes to understand their workflows, pain points, and device preferences. The app featured digital manifests with barcode scanning, GPS-based route optimization, photo capture for proof-of-delivery, customer signature collection, and real-time status updates synced to the TMS.
-
-Our development team built the iOS and Android apps in 8 weeks using OutSystems' mobile development capabilities, with 2 weeks reserved for pilot testing with 50 drivers. We implemented REST APIs to integrate with the legacy TMS, enabling real-time package status updates and route assignments. The app's offline mode allowed drivers to continue working in areas with poor cellular coverage, with data syncing automatically when connectivity resumed. GPS tracking provided dispatchers with real-time vehicle locations, enabling dynamic route adjustments based on traffic, weather, and last-minute pickup requests.`}
-      impact={`The driver mobile app launched on schedule after 10 weeks of development and pilot testing. Within 4 months of full deployment across 500 vehicles, on-time delivery performance improved from 82% to 96%, exceeding client SLA requirements and eliminating penalties. Route optimization reduced daily miles driven by 18%, saving $850,000 annually in fuel costs and vehicle maintenance. Customer service calls decreased 78% as clients gained real-time package tracking visibility.
-
-Driver productivity increased 22% as they eliminated manual paperwork and phone check-ins, completing an average of 15 additional deliveries per day. Proof-of-delivery disputes dropped 92% due to photo and signature capture. The 3PL retained all major e-commerce clients and won three new contracts worth $12 million annually, citing the real-time tracking capabilities as a key differentiator.`}
       metrics={[
-        { value: "96%", label: "On-time delivery rate (from 82%)" },
-        { value: "$850K", label: "Annual fuel savings" },
-        { value: "78%", label: "Reduction in customer calls" }
+        { value: "96%", label: "On-Time Delivery (from 82%)" },
+        { value: "$850K", label: "Annual Fuel Savings" },
+        { value: "78%", label: "Fewer Customer Calls" }
       ]}
-      tags={["Logistics", "Low-Code", "Mobile App", "Operations"]}
-      relatedCapability={{
-        title: "Technology",
-        link: "/capabilities/technology"
+      clientContextTitle="Paper Manifests in an Amazon World"
+      clientContextIntro="A third-party logistics provider operating 500 delivery vehicles across the Southeast faced mounting pressure from e-commerce clients demanding Amazon-level visibility. Drivers relied on paper manifests and phone check-ins, making real-time tracking impossible."
+      clientContextBody="Dispatchers spent 40% of their time answering “where is my package?” calls, while drivers wasted hours on inefficient routes with no dynamic routing. On-time performance had slipped to 82%, well below the 95% standard, driving SLA penalties and client churn. The legacy TMS lacked mobile, GPS tracking, and proof-of-delivery capture — and major clients were threatening to switch."
+      clientProfile={{
+        industry: "3PL Provider",
+        companySize: "500 Vehicles",
+        projectDuration: "10-Week Build",
+        additionalInfo: "OutSystems Low-Code",
+        additionalLabel: "Platform"
       }}
+      challengeTitle="Why Delivery Was Falling Behind"
+      challenges={[
+        {
+          icon: FileText,
+          title: "Paper manifests, phone check-ins",
+          description: "Manual processes made real-time package tracking impossible."
+        },
+        {
+          icon: PhoneCall,
+          title: "40% of dispatch time on 'where's my package?'",
+          description: "Customer status calls consumed dispatchers who should have been optimizing routes."
+        },
+        {
+          icon: Route,
+          title: "No dynamic routing",
+          description: "Drivers wasted hours on inefficient routes with no real-time adjustment."
+        },
+        {
+          icon: TrendingDown,
+          title: "82% on-time, clients leaving",
+          description: "Performance below the 95% standard drove SLA penalties and churn threats."
+        }
+      ]}
+      approachTitle="A Mobile-First Driver App"
+      approachIntro="NEXDYNE built native iOS and Android driver apps on OutSystems — grounded in ride-alongs with 25 drivers — with digital manifests, GPS route optimization, and proof-of-delivery capture."
+      steps={[
+        {
+          step: "01",
+          title: "Ride along first",
+          description: "Ride-alongs with 25 drivers across routes surfaced real workflows, pain points, and device preferences."
+        },
+        {
+          step: "02",
+          title: "Digitize the manifest",
+          description: "Barcode scanning, GPS route optimization, photo proof-of-delivery, and signature capture replaced paper."
+        },
+        {
+          step: "03",
+          title: "Integrate and sync live",
+          description: "REST APIs to the legacy TMS delivered real-time status and route assignments, with dispatcher GPS visibility."
+        },
+        {
+          step: "04",
+          title: "Work offline",
+          description: "Offline mode let drivers keep working in poor-coverage areas, syncing automatically on reconnect."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Route,
+          value: "96%",
+          label: "On-time delivery",
+          detail: "Up from 82%, eliminating SLA penalties"
+        },
+        {
+          icon: DollarSign,
+          value: "$850K",
+          label: "Annual fuel savings",
+          detail: "From an 18% reduction in daily miles driven"
+        },
+        {
+          icon: Smartphone,
+          value: "78%",
+          label: "Fewer customer calls",
+          detail: "As clients gained real-time tracking, winning $12M in new contracts"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Cutting Delivery Delays 40% With a Real-Time Dashboard",
+          metric: "40%",
+          label: "fewer delays",
+          link: "/cases/logistics-operations-dashboard",
+          image: "/images/industries/retail-warehouse.jpg"
+        },
+        {
+          title: "Launching a Digital Claims Portal in 8 Weeks",
+          metric: "2 hrs",
+          label: "processing time",
+          link: "/cases/insurance-claims-portal",
+          image: "/case-insurance-office.f039a4a1.jpg"
+        }
+      ]}
+      ctaTitle="Ready to give clients real-time visibility?"
+      ctaDescription="Let's talk about what a mobile driver app could do for your on-time delivery and costs."
     />
   );
 }

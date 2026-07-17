@@ -1,39 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { TrendingDown, EyeOff, Clock, MessageSquare, Filter, Flame, Users, DollarSign } from "lucide-react";
 
 export function SaaSProductAnalytics() {
   return (
-    <CaseStudyTemplate
-      client="B2B SaaS Company"
-      industry="Technology · Data Visualization"
-      title="SaaS Company Increases Trial-to-Paid Conversion 28% with Product Analytics Dashboard"
-      subtitle="Usage analytics identified friction points in onboarding flow, driving targeted improvements that boosted conversion rates."
+    <IndustryCaseStudyTemplate
+      seoTitle="Lifting Trial-to-Paid Conversion 28% With Product Analytics | SaaS Case Study"
+      seoDescription="A B2B SaaS company converted only 18% of trials, blind to user behavior. A product-analytics dashboard found the onboarding friction, lifting conversion to 23% and adding $3.2M ARR."
+      canonical="/cases/saas-product-analytics"
+      industry="Technology, Media & Telecom"
+      industryLink="/industries/technology-media-telecom"
+      title="How a SaaS Company Lifted Trial-to-Paid Conversion 28%"
+      subtitle="Usage analytics identified friction points in the onboarding flow — driving targeted improvements that raised trial-to-paid conversion from 18% to 23% and added $3.2M in ARR."
       heroImage="/images/industries/tech-datacenter.jpg"
-      challenge={`A B2B SaaS company offering project management software struggled with low trial-to-paid conversion rates. Only 18% of trial users converted to paying customers—well below the SaaS industry benchmark of 25-30%. The product team lacked visibility into user behavior during the trial period. They didn't know which features drove conversion, where users got stuck, or why most trials ended without purchase.
-
-The VP of Product relied on anecdotal feedback from sales calls and support tickets. Quantitative analysis happened quarterly through manual SQL queries that took days to run. By the time insights emerged, the product roadmap had already been set. The team needed real-time visibility into user behavior to identify friction points and validate product improvements.`}
-      solution={`NEXDYNE built a product analytics dashboard using Mixpanel for event tracking and Tableau for visualization. The dashboard tracked 50+ user actions—feature usage, time spent in product, collaboration patterns, support ticket creation—and correlated them with trial outcomes (converted, churned, extended trial).
-
-A conversion funnel analysis visualized the trial journey from signup through activation to conversion, identifying that 42% of users never completed onboarding—they signed up but never created their first project. A feature adoption heatmap revealed converted users were 3x more likely to use collaboration features and 2x more likely to integrate external tools. Cohort retention analysis showed enterprise users (50+ employees) converted at 35% vs. 12% for SMBs.
-
-Based on these insights, the product team redesigned onboarding with interactive tooltips and sample data (completion rate increased from 58% to 82%), and added in-app prompts encouraging users to invite teammates. Users who invited 2+ collaborators converted at 45% vs. 12% for solo users.`}
-      impact={`Trial-to-paid conversion increased from 18% to 23%—a 28% relative improvement. With 1,000 monthly trial signups, this added 50 new paying customers per month, generating $3.2M in additional ARR. The dashboard paid for itself in the first quarter.
-
-Onboarding completion rate increased from 58% to 82% after the data-driven redesign. Users who completed onboarding converted at 32% vs. 5% for those who didn't. Cohort analysis revealed enterprise users converted at nearly 3x the rate of SMBs, leading the product team to refocus go-to-market strategy on the enterprise segment, increasing sales efficiency 40%.`}
       metrics={[
-        { value: "28%", label: "Increase in trial-to-paid conversion" },
-        { value: "23%", label: "Trial-to-paid conversion rate achieved" },
-        { value: "$3.2M", label: "Additional ARR from improved conversion" }
+        { value: "28%", label: "Higher Trial-to-Paid Conversion" },
+        { value: "23%", label: "Conversion Rate Achieved" },
+        { value: "$3.2M", label: "Additional ARR" }
       ]}
-      quote={{
-        text: "We were flying blind during the trial period. The analytics dashboard showed us exactly where users got stuck and which features drove conversion. We redesigned onboarding based on the data—completion rates jumped from 58% to 82%. Trial-to-paid conversion increased from 18% to 23%, adding $3.2M in ARR. The dashboard paid for itself in the first quarter.",
-        author: "David Chen",
-        role: "VP of Product"
+      clientContextTitle="Flying Blind Through the Trial"
+      clientContextIntro="A B2B SaaS company offering project-management software struggled with low trial-to-paid conversion — only 18% of trial users converted, well below the 25–30% industry benchmark. The product team had no visibility into user behavior during the trial."
+      clientContextBody="They didn't know which features drove conversion, where users got stuck, or why most trials ended without purchase. The VP of Product relied on anecdotal sales and support feedback, and quantitative analysis happened quarterly through manual SQL queries that took days. By the time insights emerged, the roadmap was already set. The team needed real-time visibility into behavior to find friction and validate improvements."
+      clientProfile={{
+        industry: "B2B SaaS Company",
+        companySize: "1,000 Trials/Month",
+        projectDuration: "Mixpanel + Tableau",
+        additionalInfo: "50+ Events Tracked",
+        additionalLabel: "Instrumentation"
       }}
-      tags={["SaaS", "Product Analytics", "Data Visualization", "Technology"]}
-      relatedCapability={{
-        title: "Data Transformation",
-        link: "/capabilities/data-transformation"
-      }}
+      challengeTitle="Why Trials Weren't Converting"
+      challenges={[
+        {
+          icon: TrendingDown,
+          title: "18% conversion",
+          description: "Trial-to-paid ran well below the 25–30% SaaS benchmark."
+        },
+        {
+          icon: EyeOff,
+          title: "No behavior visibility",
+          description: "The team couldn't see which features drove conversion or where users stalled."
+        },
+        {
+          icon: Clock,
+          title: "Quarterly, manual analysis",
+          description: "SQL queries took days, so insights arrived after the roadmap was set."
+        },
+        {
+          icon: MessageSquare,
+          title: "Anecdote-driven decisions",
+          description: "Product choices leaned on sales and support hearsay, not data."
+        }
+      ]}
+      approachTitle="Instrument, Analyze, Then Fix"
+      approachIntro="NEXDYNE built a product-analytics dashboard with Mixpanel and Tableau — tracking 50+ user actions and correlating them with trial outcomes to pinpoint exactly where conversion broke."
+      steps={[
+        {
+          step: "01",
+          title: "Track the whole journey",
+          description: "50+ actions — feature usage, time in product, collaboration, support tickets — were correlated with converted, churned, or extended outcomes."
+        },
+        {
+          step: "02",
+          title: "Find the drop-off",
+          description: "Funnel analysis revealed 42% of users never completed onboarding — they signed up but never created a first project."
+        },
+        {
+          step: "03",
+          title: "Learn what converts",
+          description: "A feature heatmap showed converters were 3x more likely to use collaboration; enterprise users converted at 35% vs. 12% for SMBs."
+        },
+        {
+          step: "04",
+          title: "Redesign on the data",
+          description: "Interactive onboarding with sample data and teammate-invite prompts lifted completion and conversion sharply."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Users,
+          value: "82%",
+          label: "Onboarding completion",
+          detail: "Up from 58%; completers converted at 32% vs. 5%"
+        },
+        {
+          icon: DollarSign,
+          value: "$3.2M",
+          label: "Additional ARR",
+          detail: "From 50 more paying customers a month"
+        },
+        {
+          icon: Filter,
+          value: "3x",
+          label: "Enterprise conversion vs. SMB",
+          detail: "Refocusing go-to-market and lifting sales efficiency 40%"
+        }
+      ]}
+      quote="We were flying blind during the trial period. The analytics dashboard showed us exactly where users got stuck and which features drove conversion. We redesigned onboarding based on the data — completion rates jumped from 58% to 82%. Trial-to-paid conversion increased from 18% to 23%, adding $3.2M in ARR. The dashboard paid for itself in the first quarter."
+      quoteAuthor="David Chen"
+      quoteRole="VP of Product"
+      relatedStudies={[
+        {
+          title: "Cutting Customer Onboarding Time 78% With AI",
+          metric: "78%",
+          label: "faster onboarding",
+          link: "/cases/saas-platform-optimization",
+          image: "/images/capabilities/cap-conference-data.jpg"
+        },
+        {
+          title: "A Retention Program That Cut Churn 40%",
+          metric: "40%",
+          label: "churn reduction",
+          link: "/capabilities/growth-marketing-sales/case-studies/subscription-retention",
+          image: "/images/capabilities/cap-colleagues-smile.jpg"
+        }
+      ]}
+      ctaTitle="Ready to see what drives conversion?"
+      ctaDescription="Let's talk about what product analytics could do for your trial-to-paid rate."
     />
   );
 }

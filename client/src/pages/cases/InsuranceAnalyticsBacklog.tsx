@@ -1,41 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { Layers, Megaphone, Timer, Flame, Grid3x3, Calculator, Scissors, TrendingUp } from "lucide-react";
 
 export function InsuranceAnalyticsBacklog() {
   return (
-    <CaseStudyTemplate
-      client="Regional P&C Insurance Carrier"
-      industry="Insurance · Data Strategy"
-      title="Insurance Carrier Prioritizes $12M Analytics Backlog in 6 Weeks"
-      subtitle="Data strategy sprint identified high-ROI use cases, eliminated projects that wouldn't move the needle, and created executable roadmap that aligned analytics team with business priorities."
+    <IndustryCaseStudyTemplate
+      seoTitle="Prioritizing a $12M Analytics Backlog in 6 Weeks | Insurance Case Study"
+      seoDescription="A P&C carrier's 8-person analytics team faced a 47-project, $12M backlog with no way to prioritize. A 6-week data-strategy sprint killed 23 projects and built a $13.3M roadmap."
+      canonical="/cases/insurance-analytics-backlog"
+      industry="Insurance"
+      industryLink="/industries/insurance"
+      title="How an Insurance Carrier Prioritized a $12M Analytics Backlog in 6 Weeks"
+      subtitle="A data-strategy sprint identified high-ROI use cases, killed projects that wouldn't move the needle, and built an executable roadmap — aligning the analytics team with $13.3M in prioritized value."
       heroImage="/case-insurance-office.f039a4a1.jpg"
-      challenge={`A regional property & casualty insurance carrier with $800M in annual premiums had accumulated a $12M analytics project backlog over 3 years. Business units submitted 47 requests—fraud detection models, claims cost prediction, underwriting automation, customer churn prevention, pricing optimization, agent performance dashboards. The analytics team of 8 people couldn't execute everything.
-
-The Chief Data Officer faced impossible choices. Every business unit claimed their project was "critical." No objective framework existed to prioritize requests. The team worked on whichever project had the loudest executive sponsor, not the highest business value. Projects took 9 months on average to deliver because scope kept expanding. Stakeholders complained about slow delivery while the analytics team burned out from context-switching.
-
-The carrier needed a data strategy that objectively prioritized the backlog, killed low-value projects, sequenced high-impact initiatives, and created realistic delivery timelines that matched team capacity.`}
-      solution={`NEXDYNE conducted a 6-week Data Strategy Sprint that evaluated all 47 backlog projects, scored them on business value and implementation complexity, identified 8 high-ROI initiatives to execute, killed 23 low-value projects, and built an 18-month roadmap with realistic delivery milestones based on team capacity.
-
-Each project was evaluated on financial impact (revenue increase, cost reduction, loss prevention), strategic alignment, stakeholder demand, data readiness, technical difficulty, and organizational change requirements. All 47 projects were plotted on a value/complexity matrix: high-value, low-complexity projects executed first; high-value, high-complexity projects sequenced based on dependencies; low-value projects killed regardless of complexity.
-
-Capacity planning calculated team capacity (8 FTEs = 14,400 hours/year after meetings, training, support) and estimated effort for each project. The 8 prioritized initiatives included: fraud detection model ($3.2M annual savings), claims cost prediction ($2.8M savings), underwriting automation ($1.5M savings), pricing optimization ($4M revenue increase), and customer churn prevention ($1.8M retention value). 23 low-value projects were eliminated and 16 deferred pending foundational capabilities.`}
-      impact={`The $13.3M projected value from 8 prioritized initiatives exceeded what the full 47-project backlog could have delivered—most projects had no quantified business case. The backlog dropped 49% through eliminating 23 low-value projects. Stakeholder alignment improved dramatically as transparent scoring ended political battles over project sequencing, reducing executive escalations by 80%.
-
-Delivery predictability transformed: the capacity-based roadmap set realistic expectations, and average project delivery time decreased from 9 months to 5 months because scope was defined upfront and the team wasn't overcommitted. Team morale improved as they focused on projects that mattered.`}
       metrics={[
-        { value: "$13.3M", label: "Projected value from 8 prioritized projects" },
-        { value: "49%", label: "Backlog reduction (23 projects killed)" },
-        { value: "6 weeks", label: "From backlog chaos to executable roadmap" }
+        { value: "$13.3M", label: "Value From 8 Prioritized Projects" },
+        { value: "49%", label: "Backlog Reduction" },
+        { value: "6 wks", label: "Chaos to Executable Roadmap" }
       ]}
-      quote={{
-        text: "We had 47 analytics projects in the backlog and no way to prioritize them objectively. Every business unit claimed their project was critical. NEXDYNE's prioritization framework was a revelation—scoring projects on business value and implementation complexity gave us an objective basis to make tough decisions. We killed 23 low-value projects that would have wasted resources. The 8 high-ROI initiatives we're executing will deliver $13.3M in value. The roadmap is realistic—we're not overcommitting anymore.",
-        author: "Lisa Chen",
-        role: "Chief Data Officer"
+      clientContextTitle="Everything Was 'Critical'"
+      clientContextIntro="A regional P&C insurance carrier with $800M in annual premiums had accumulated a $12M, 47-project analytics backlog over three years — fraud detection, claims prediction, underwriting automation, churn prevention, pricing optimization, and more. An 8-person analytics team couldn't execute it all."
+      clientContextBody="The Chief Data Officer faced impossible choices. Every business unit claimed its project was critical, and no objective framework existed to prioritize. The team worked on whichever project had the loudest sponsor, not the highest value. Projects took 9 months on average as scope kept expanding, stakeholders complained about slow delivery, and the team burned out from context-switching."
+      clientProfile={{
+        industry: "P&C Insurance Carrier",
+        companySize: "$800M Premiums",
+        projectDuration: "6-Week Sprint",
+        additionalInfo: "8-Person Team",
+        additionalLabel: "Capacity"
       }}
-      tags={["Insurance", "Data Strategy", "Analytics", "Strategy & Finance"]}
-      relatedCapability={{
-        title: "Strategy & Finance",
-        link: "/capabilities/strategy-finance"
-      }}
+      challengeTitle="Why the Backlog Was Unmanageable"
+      challenges={[
+        {
+          icon: Layers,
+          title: "47 projects, one small team",
+          description: "A $12M backlog far exceeded what 8 analysts could realistically deliver."
+        },
+        {
+          icon: Flame,
+          title: "Loudest-sponsor prioritization",
+          description: "Work went to whoever escalated hardest, not to the highest business value."
+        },
+        {
+          icon: Timer,
+          title: "9-month average delivery",
+          description: "Ever-expanding scope stretched every project and eroded predictability."
+        },
+        {
+          icon: Megaphone,
+          title: "No objective framework",
+          description: "Nothing let the CDO compare projects on value versus complexity."
+        }
+      ]}
+      approachTitle="Score, Sequence, and Cut"
+      approachIntro="NEXDYNE ran a 6-week Data Strategy Sprint that scored all 47 projects on value and complexity, identified 8 to execute, killed 23, and built a capacity-based 18-month roadmap."
+      steps={[
+        {
+          step: "01",
+          title: "Score every project",
+          description: "Each was evaluated on financial impact, strategic alignment, demand, data readiness, difficulty, and change requirements."
+        },
+        {
+          step: "02",
+          title: "Plot value versus complexity",
+          description: "All 47 went on a matrix — high-value/low-complexity first, high-value/high-complexity by dependency, low-value killed."
+        },
+        {
+          step: "03",
+          title: "Plan to real capacity",
+          description: "The team's 14,400 annual hours were matched against estimated effort, keeping the roadmap achievable."
+        },
+        {
+          step: "04",
+          title: "Commit to eight, defer the rest",
+          description: "Eight initiatives — fraud, claims cost, underwriting, pricing, churn — were sequenced; 23 killed and 16 deferred."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: TrendingUp,
+          value: "$13.3M",
+          label: "Projected value",
+          detail: "From 8 prioritized initiatives, more than the full backlog offered"
+        },
+        {
+          icon: Scissors,
+          value: "49%",
+          label: "Smaller backlog",
+          detail: "23 low-value projects eliminated, escalations down 80%"
+        },
+        {
+          icon: Calculator,
+          value: "5 mo",
+          label: "Average delivery time",
+          detail: "Down from 9, with scope defined upfront"
+        }
+      ]}
+      quote="We had 47 analytics projects in the backlog and no way to prioritize them objectively. Every business unit claimed their project was critical. NEXDYNE's prioritization framework was a revelation — scoring projects on business value and implementation complexity gave us an objective basis to make tough decisions. We killed 23 low-value projects that would have wasted resources. The 8 high-ROI initiatives we're executing will deliver $13.3M in value."
+      quoteAuthor="Lisa Chen"
+      quoteRole="Chief Data Officer"
+      relatedStudies={[
+        {
+          title: "Identifying a $4M Revenue Opportunity Through Data Monetization",
+          metric: "$4M",
+          label: "projected ARR",
+          link: "/cases/manufacturer-data-monetization",
+          image: "/images/industries/mfg-robotics.jpg"
+        },
+        {
+          title: "Prioritizing an Analytics Roadmap With FP&A Discipline",
+          metric: "5 days",
+          label: "monthly close",
+          link: "/capabilities/strategy-corporate-finance/case-studies/distribution-fpa",
+          image: "/images/industries/fin-monitors.jpg"
+        }
+      ]}
+      ctaTitle="Ready to focus on what matters?"
+      ctaDescription="Let's talk about what a data-strategy sprint could do for your analytics roadmap."
     />
   );
 }

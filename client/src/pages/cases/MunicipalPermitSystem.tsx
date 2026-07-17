@@ -1,32 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { FileText, Clock, XCircle, Building2, LayoutGrid, Workflow, Accessibility, Smile } from "lucide-react";
 
 export function MunicipalPermitSystem() {
   return (
-    <CaseStudyTemplate
-      client="Mid-Sized City Government"
-      industry="Public Sector · Low-Code Development"
-      title="City Government Modernizes Permit System Serving 250K Residents"
-      subtitle="Municipal government replaces 30-year-old legacy system with Microsoft Power Platform solution—reducing permit approval time from 45 days to 7 days and improving citizen satisfaction by 58 points."
+    <IndustryCaseStudyTemplate
+      seoTitle="Modernizing a City Permit System for 250K Residents | Public Sector Case Study"
+      seoDescription="A city's 30-year-old permit system took 45 days and paper visits across 12 departments. A Microsoft Power Platform build cut approval to 7 days and lifted citizen satisfaction 58 points."
+      canonical="/cases/municipal-permit-system"
+      industry="Public Sector"
+      industryLink="/industries/public-sector"
+      title="How a City Modernized Its Permit System for 250K Residents"
+      subtitle="A municipal government replaced a 30-year-old legacy system with a Microsoft Power Platform solution — cutting permit approval time from 45 days to 7 and improving citizen satisfaction by 58 points."
       heroImage="/images/capabilities/cap-conference-data.jpg"
-      challenge={`A mid-sized city government serving 250,000 residents struggled with a 30-year-old permit management system that required citizens to submit paper applications in person and wait weeks for approval. The system handled building permits, business licenses, special event permits, and zoning variances across 12 different departments, each with their own manual review processes. Citizens complained about long wait times, lack of status visibility, and the inconvenience of taking time off work to visit city hall during business hours.
-
-The city's IT department had attempted to modernize the system twice over the past decade, but both projects failed due to budget constraints, vendor lock-in concerns, and resistance from department staff accustomed to paper-based workflows. Average permit approval time had increased to 45 days, well above the state average of 21 days, causing frustration among residents and local businesses. With a new mayor committed to digital government and a federal grant available for technology modernization, the city set a 12-week timeline to launch a digital permit system that could serve all departments while maintaining compliance with state regulations.`}
-      solution={`NEXDYNE partnered with the city's IT and department leaders to design and develop a comprehensive permit management system using Microsoft Power Platform. We conducted workshops with staff from all 12 departments to map existing workflows, identify bottlenecks, and design streamlined approval processes. The system featured online permit applications with document upload, automated routing to appropriate departments, electronic review and approval workflows, payment processing, and real-time status tracking for citizens.
-
-Our development team leveraged Power Apps for the citizen-facing portal and staff review interfaces, Power Automate for workflow automation and email notifications, and Power BI for department dashboards and compliance reporting. We integrated with the city's existing financial system for payment processing and document management system for permit record retention. The solution included self-service kiosks in city hall for residents without internet access, ensuring equitable access to digital services. Role-based access controls ensured staff could only view and approve permits within their department's jurisdiction.`}
-      impact={`The digital permit system launched on schedule after 12 weeks of development and staff training. Within 6 months of launch, 82% of permit applications were submitted online, far exceeding the initial 60% adoption target. Average permit approval time dropped from 45 days to 7 days, with simple permits approved within 24 hours. Citizen satisfaction scores increased 58 points, with residents praising the convenience of 24/7 online access and real-time status tracking.
-
-The city reduced permit processing costs by $420,000 annually through automation and eliminated the need for three temporary staff positions previously required to manage paper applications. Department staff productivity increased 40% as they spent less time on data entry and more time on complex permit reviews requiring professional judgment. The system's audit trail and compliance reporting capabilities simplified state inspections and reduced regulatory findings by 85%. The city now uses Power Platform for additional citizen services, including code enforcement reporting, park reservations, and public records requests.`}
       metrics={[
-        { value: "7 days", label: "Average approval time (from 45 days)" },
-        { value: "82%", label: "Online submission rate" },
-        { value: "58 pts", label: "Citizen satisfaction improvement" }
+        { value: "7 days", label: "Approval Time (from 45 days)" },
+        { value: "82%", label: "Online Submission Rate" },
+        { value: "58 pts", label: "Citizen Satisfaction Gain" }
       ]}
-      tags={["Public Sector", "Low-Code", "Government", "Operations"]}
-      relatedCapability={{
-        title: "Technology",
-        link: "/capabilities/technology"
+      clientContextTitle="Paper Permits Across 12 Departments"
+      clientContextIntro="A mid-sized city government serving 250,000 residents struggled with a 30-year-old permit system requiring in-person paper applications and weeks of waiting. It handled building permits, business licenses, event permits, and zoning variances across 12 departments, each with its own manual review."
+      clientContextBody="Citizens complained about long waits, no status visibility, and taking time off work to visit city hall during business hours. IT had tried to modernize twice, failing on budget, vendor lock-in, and staff resistance to leaving paper. Average approval had climbed to 45 days — well above the 21-day state average. With a new digital-government mayor and a federal modernization grant, the city set a 12-week timeline to launch a system serving all departments while maintaining state compliance."
+      clientProfile={{
+        industry: "Municipal Government",
+        companySize: "250,000 Residents",
+        projectDuration: "12-Week Build",
+        additionalInfo: "Microsoft Power Platform",
+        additionalLabel: "Platform"
       }}
+      challengeTitle="Why Permits Took 45 Days"
+      challenges={[
+        {
+          icon: FileText,
+          title: "In-person paper applications",
+          description: "Residents filed on paper at city hall during business hours, with no online option."
+        },
+        {
+          icon: Building2,
+          title: "12 siloed departments",
+          description: "Each department ran its own manual review process, with no shared workflow."
+        },
+        {
+          icon: Clock,
+          title: "45-day approvals",
+          description: "Processing ran more than double the 21-day state average, frustrating residents and businesses."
+        },
+        {
+          icon: XCircle,
+          title: "Two failed modernizations",
+          description: "Prior attempts stalled on budget, vendor lock-in, and staff resistance to change."
+        }
+      ]}
+      approachTitle="One Platform for Every Department"
+      approachIntro="NEXDYNE built a comprehensive permit-management system on Microsoft Power Platform — mapping all 12 departments' workflows and designing streamlined, automated approval processes with equitable access."
+      steps={[
+        {
+          step: "01",
+          title: "Map every department",
+          description: "Workshops with all 12 departments identified bottlenecks and designed streamlined approval flows."
+        },
+        {
+          step: "02",
+          title: "Build citizen and staff apps",
+          description: "Power Apps delivered the citizen portal and staff review interfaces with document upload and payments."
+        },
+        {
+          step: "03",
+          title: "Automate the routing",
+          description: "Power Automate routed applications, sent notifications, and Power BI gave departments dashboards and compliance reporting."
+        },
+        {
+          step: "04",
+          title: "Ensure equitable access",
+          description: "Self-service kiosks in city hall served residents without internet, with role-based access controls by jurisdiction."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Workflow,
+          value: "7 days",
+          label: "Average approval time",
+          detail: "Down from 45, with simple permits approved within 24 hours"
+        },
+        {
+          icon: Smile,
+          value: "82%",
+          label: "Online submission",
+          detail: "Beating the 60% target, satisfaction up 58 points"
+        },
+        {
+          icon: Accessibility,
+          value: "$420K",
+          label: "Annual cost savings",
+          detail: "With regulatory findings down 85% and staff productivity up 40%"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Launching a Digital Claims Portal in 8 Weeks",
+          metric: "2 hrs",
+          label: "processing time",
+          link: "/cases/insurance-claims-portal",
+          image: "/case-insurance-office.f039a4a1.jpg"
+        },
+        {
+          title: "Building a Real-Time Tracking App for 500 Drivers",
+          metric: "96%",
+          label: "on-time delivery",
+          link: "/cases/logistics-tracking-app",
+          image: "/images/industries/retail-warehouse.jpg"
+        }
+      ]}
+      ctaTitle="Ready to modernize citizen services?"
+      ctaDescription="Let's talk about what a low-code platform could do for your approval times and satisfaction."
     />
   );
 }

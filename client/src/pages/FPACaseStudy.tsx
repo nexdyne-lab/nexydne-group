@@ -1,34 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { FileSpreadsheet, Clock, HelpCircle, LineChart, GitBranch, Layers, Gauge, DollarSign } from "lucide-react";
 
 export function FPACaseStudy() {
   return (
-    <CaseStudyTemplate
-      client="B2B SaaS Company"
-      industry="Technology · Strategy & Finance"
-      title="How Scenario Planning Helped a SaaS Company Navigate Market Uncertainty"
-      subtitle="A growth-stage B2B SaaS company transformed their financial planning from reactive budgeting to proactive scenario modeling, enabling confident decision-making during unprecedented market volatility."
+    <IndustryCaseStudyTemplate
+      seoTitle="Scenario Planning That Avoided $2.4M in Costs | SaaS FP&A Case Study"
+      seoDescription="A $12M ARR SaaS company ran static Excel budgets that went stale in weeks and couldn't model churn or hiring scenarios. Driver-based FP&A cut forecast error 35% and avoided $2.4M in costs."
+      canonical="/case-studies/fpa-scenario-planning"
+      industry="Technology, Media & Telecom"
+      industryLink="/industries/technology-media-telecom"
+      title="How Scenario Planning Helped a SaaS Company Navigate Uncertainty"
+      subtitle="A growth-stage B2B SaaS company moved from reactive budgeting to driver-based scenario modeling — improving forecast accuracy 35%, accelerating decisions by 10 days, and avoiding $2.4M in costs."
       heroImage="/images/capabilities/cap-presenting-graphs.jpg"
-      challenge={`The company had built a successful product and achieved strong early traction, but their financial planning infrastructure hadn't evolved with their growth. Static annual budgets built in Excel were disconnected from real-time business drivers and became obsolete within weeks of approval.
-
-A growth-stage B2B SaaS company providing marketing automation software with 85-110 employees and $12M ARR was scaling from product-market fit to market leadership post-Series B. Revenue forecasts lived in the CRM, expense budgets in Excel, and actuals in the accounting system—consolidating data for variance analysis took 5-7 days monthly, leaving little time for strategic analysis. The leadership team couldn't answer critical questions: What happens if churn increases by 2%? How does a 20% sales hiring acceleration impact cash runway? Board meetings focused on explaining historical variances from outdated budgets rather than discussing strategic options.`}
-      solution={`NEXDYNE implemented a driver-based revenue model integrating CRM pipeline data with historical conversion metrics, decomposing revenue into underlying drivers—lead volume, conversion rates by stage, average contract value, and expansion/churn dynamics—enabling modeling under different assumptions and revealing which levers had the greatest impact on outcomes.
-
-Automated pipelines connected the CRM, accounting system, and HR platform into a unified analytical layer, reducing close-to-forecast time from 7 days to under 2 days. A three-scenario planning framework (Base Case, Upside, Downside) modeled different market conditions and strategic choices, enabling the leadership team to stress-test decisions before committing resources. Sensitivity analysis tools showed which assumptions had the greatest impact on cash runway and profitability.
-
-The annual budget was replaced with a rolling 18-month forecast updating quarterly, transforming budgeting from a once-a-year exercise into a continuous strategic dialogue. Board reporting was redesigned to focus on scenario comparison dashboards and forward-looking metrics rather than variance explanations.`}
-      impact={`Driver-based revenue modeling reduced forecast error from ±18% to ±12%—a 35% accuracy improvement enabling more confident resource allocation. Real-time scenario modeling enabled the leadership team to evaluate strategic options in days rather than weeks, accelerating decision-making by 10 days during critical market shifts.
-
-Scenario analysis directly avoided $2.4 million in unnecessary costs: analysis revealed that a planned sales hiring acceleration would have extended cash runway by only 2 months while increasing burn by $200K per month, leading the company to defer hiring and focus on sales productivity instead. Monthly forecast preparation dropped from 7 days to under 2 days. Board confidence in the financial planning process increased 40%. The scenario planning framework also provided the analytical foundation for a successful Series C raise of $25M.`}
       metrics={[
-        { value: "35%", label: "Forecast accuracy improvement" },
-        { value: "10 days", label: "Faster strategic response" },
-        { value: "$2.4M", label: "Cost avoidance in year 1" }
+        { value: "35%", label: "Better Forecast Accuracy" },
+        { value: "10 days", label: "Faster Strategic Response" },
+        { value: "$2.4M", label: "Cost Avoidance in Year 1" }
       ]}
-      tags={["Technology", "SaaS", "FP&A", "Strategy"]}
-      relatedCapability={{
-        title: "Strategy & Finance",
-        link: "/capabilities/strategy-finance"
+      clientContextTitle="Budgets Obsolete in Weeks"
+      clientContextIntro="A growth-stage B2B SaaS company providing marketing-automation software — 85–110 employees and $12M ARR — was scaling from product-market fit to market leadership post-Series B. But its financial planning hadn't evolved: static annual Excel budgets were disconnected from real-time drivers and obsolete within weeks of approval."
+      clientContextBody="Revenue forecasts lived in the CRM, expense budgets in Excel, and actuals in the accounting system — consolidating for variance analysis took 5–7 days a month, leaving no time for strategy. Leadership couldn't answer critical questions: what happens if churn rises 2%? How does a 20% sales-hiring acceleration hit runway? Board meetings explained historical variances from outdated budgets instead of discussing strategic options."
+      clientProfile={{
+        industry: "B2B SaaS Company",
+        companySize: "$12M ARR",
+        projectDuration: "Driver-Based Model",
+        additionalInfo: "3-Scenario Framework",
+        additionalLabel: "Planning"
       }}
+      challengeTitle="Why Planning Fell Behind"
+      challenges={[
+        {
+          icon: FileSpreadsheet,
+          title: "Static Excel budgets",
+          description: "Annual budgets disconnected from real-time drivers went obsolete within weeks."
+        },
+        {
+          icon: Clock,
+          title: "5–7 day monthly close",
+          description: "Consolidating CRM, Excel, and accounting data left little time for strategic analysis."
+        },
+        {
+          icon: HelpCircle,
+          title: "Unanswerable what-ifs",
+          description: "Leadership couldn't model churn increases or hiring changes against cash runway."
+        },
+        {
+          icon: LineChart,
+          title: "Backward-looking board reviews",
+          description: "Meetings explained past variances instead of weighing forward options."
+        }
+      ]}
+      approachTitle="Driver-Based Modeling and Rolling Forecasts"
+      approachIntro="NEXDYNE implemented a driver-based revenue model integrating CRM pipeline with historical conversion metrics — decomposing revenue into levers and replacing the annual budget with a rolling forecast."
+      steps={[
+        {
+          step: "01",
+          title: "Model the real drivers",
+          description: "Revenue decomposed into lead volume, stage conversion, contract value, and expansion/churn, revealing which levers moved outcomes most."
+        },
+        {
+          step: "02",
+          title: "Unify the data",
+          description: "Automated pipelines connected CRM, accounting, and HR into one analytical layer, cutting close-to-forecast from 7 days to under 2."
+        },
+        {
+          step: "03",
+          title: "Plan in three scenarios",
+          description: "A Base, Upside, and Downside framework with sensitivity analysis let leadership stress-test decisions before committing resources."
+        },
+        {
+          step: "04",
+          title: "Forecast on a rolling basis",
+          description: "A rolling 18-month forecast updated quarterly turned budgeting into a continuous strategic dialogue, with redesigned board reporting."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Gauge,
+          value: "±12%",
+          label: "Forecast error",
+          detail: "Down from ±18%, a 35% accuracy improvement"
+        },
+        {
+          icon: DollarSign,
+          value: "$2.4M",
+          label: "Costs avoided",
+          detail: "By deferring a hiring plan that barely extended runway"
+        },
+        {
+          icon: Layers,
+          value: "< 2 days",
+          label: "Monthly forecast prep",
+          detail: "Down from 7, and the foundation for a $25M Series C"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "A Series B Raise of $35M at an 8x Revenue Multiple",
+          metric: "$35M",
+          label: "capital raised",
+          link: "/capabilities/strategy-corporate-finance/case-studies/saas-series-b",
+          image: "/images/capabilities/cap-celebrate.jpg"
+        },
+        {
+          title: "FP&A Transformation That Cut Monthly Close to 5 Days",
+          metric: "5 days",
+          label: "monthly close",
+          link: "/capabilities/strategy-corporate-finance/case-studies/distribution-fpa",
+          image: "/images/industries/fin-monitors.jpg"
+        }
+      ]}
+      ctaTitle="Ready to plan for what's next, not what's past?"
+      ctaDescription="Let's talk about what driver-based scenario planning could do for your decision-making."
     />
   );
 }

@@ -1,43 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { FileSpreadsheet, Split, ShieldQuestion, Timer, Database, BookOpen, Brain, Gauge } from "lucide-react";
 
 export function HealthcareDataMaturity() {
   return (
-    <CaseStudyTemplate
-      client="12-Hospital Healthcare System"
-      industry="Healthcare · Data Strategy"
-      title="Healthcare System Achieves Level 3 Data Maturity in 18 Months"
-      subtitle="Maturity assessment and phased roadmap transformed ad-hoc reporting culture into self-service analytics organization where clinical teams answer their own questions without IT bottlenecks."
+    <IndustryCaseStudyTemplate
+      seoTitle="Reaching Level 3 Data Maturity in 18 Months | Healthcare Case Study"
+      seoDescription="A 12-hospital system sat at Level 1 data maturity — ad-hoc Excel reports, analysts spending 80% of time extracting data. A phased roadmap reached self-service analytics and cut IT requests 75%."
+      canonical="/cases/healthcare-data-maturity"
+      industry="Healthcare"
+      industryLink="/industries/healthcare"
+      title="How a Healthcare System Reached Level 3 Data Maturity in 18 Months"
+      subtitle="A maturity assessment and phased roadmap turned an ad-hoc reporting culture into a self-service analytics organization — cutting IT reporting requests 75% and embedding predictive models in care."
       heroImage="/case-medical-collaboration.9602cc8c.jpg"
-      challenge={`A 12-hospital healthcare system with 3,000 physicians struggled with data-driven decision-making. Clinical quality teams, population health managers, and operational leaders needed data to improve outcomes and reduce costs, but every analysis required IT support. Analysts spent 80% of their time extracting data from disparate systems and only 20% analyzing it.
-
-The Chief Medical Information Officer commissioned a data maturity assessment that revealed Level 1 maturity (ad-hoc reporting). No centralized data platform existed. Each department built their own Excel-based reports pulling data manually from EHRs, billing systems, and lab databases. Data definitions were inconsistent—"readmission rate" calculated differently across departments. No data governance, no self-service capabilities, no predictive analytics.
-
-The healthcare system needed a data strategy that assessed current maturity, defined target state (Level 3: self-service analytics with predictive capabilities), and built a phased roadmap to close the gap without disrupting clinical operations.`}
-      solution={`NEXDYNE conducted a 4-week data maturity assessment using a 5-level framework (Level 1: Ad-hoc, Level 2: Repeatable, Level 3: Defined, Level 4: Managed, Level 5: Optimized). We assessed people, processes, technology, and governance across 8 dimensions, identified gaps between current state (Level 1) and target state (Level 3), and built an 18-month roadmap with phased milestones.
-
-Phase 1 (Months 1-6): Deploy Snowflake data warehouse, migrate clinical and financial data from source systems, establish data governance council, define standard metrics (readmission rate, length of stay, cost per case). Train 20 analysts on SQL and Tableau.
-
-Phase 2 (Months 7-12): Launch Tableau dashboards for quality reporting, population health, and operational metrics. Certify 50 business users on self-service analytics. Implement data catalog so users can discover available datasets. Reduce IT reporting requests 60%.
-
-Phase 3 (Months 13-18): Build ML models for 30-day readmission prediction, ED visit forecasting, and high-risk patient identification. Deploy models into clinical workflows. Achieve Level 3 maturity—self-service analytics with predictive capabilities embedded in operations.`}
-      impact={`In 18 months the system built a data warehouse, launched self-service dashboards, and deployed predictive models for readmission risk. IT reporting requests dropped 75% because clinical teams can now answer their own questions. Analysts shifted from data extraction to advanced analytics. The readmission prediction model alone saved $2.8M by identifying high-risk patients before discharge.
-
-Self-service analytics reduced IT reporting workload 75%. Six FTEs were reallocated from manual reporting to advanced analytics projects. Quality reporting time decreased from 3 weeks to 2 hours. Standardized metric definitions eliminated inconsistencies—"readmission rate" calculated identically across all departments, with data error rates decreased 65%.`}
       metrics={[
-        { value: "Level 3", label: "Data maturity achieved (from Level 1)" },
-        { value: "75%", label: "Reduction in IT reporting requests" },
-        { value: "18 months", label: "From ad-hoc to self-service analytics" }
+        { value: "Level 3", label: "Data Maturity (from Level 1)" },
+        { value: "75%", label: "Fewer IT Reporting Requests" },
+        { value: "18 mo", label: "Ad-Hoc to Self-Service" }
       ]}
-      quote={{
-        text: "The maturity assessment was a wake-up call. We were at Level 1—every analysis required IT support, data definitions were inconsistent, no one could answer their own questions. The roadmap gave us a clear path to Level 3. In 18 months we built a data warehouse, launched self-service dashboards, and deployed predictive models for readmission risk. IT reporting requests dropped 75% because clinical teams can now answer their own questions. The readmission prediction model alone saved $2.8M by identifying high-risk patients before discharge.",
-        author: "Dr. Michael Rodriguez",
-        role: "Chief Medical Information Officer"
+      clientContextTitle="Every Question Went Through IT"
+      clientContextIntro="A 12-hospital healthcare system with 3,000 physicians struggled with data-driven decisions. Clinical quality, population health, and operational leaders needed data to improve outcomes and cut costs — but every analysis required IT support, and analysts spent 80% of their time extracting data and only 20% analyzing it."
+      clientContextBody="A maturity assessment revealed Level 1 (ad-hoc reporting): no centralized platform, each department building its own Excel reports pulled manually from EHRs, billing, and labs. Data definitions were inconsistent — “readmission rate” was calculated differently across departments — with no governance, self-service, or predictive analytics. The system needed a strategy to assess current maturity, define a Level 3 target, and close the gap without disrupting clinical operations."
+      clientProfile={{
+        industry: "12-Hospital Healthcare System",
+        companySize: "3,000 Physicians",
+        projectDuration: "18-Month Roadmap",
+        additionalInfo: "Snowflake + Tableau",
+        additionalLabel: "Platform"
       }}
-      tags={["Healthcare", "Data Strategy", "Analytics", "Data Transformation"]}
-      relatedCapability={{
-        title: "Data Transformation",
-        link: "/capabilities/data-transformation"
-      }}
+      challengeTitle="Why Data Stayed Stuck at Level 1"
+      challenges={[
+        {
+          icon: FileSpreadsheet,
+          title: "Ad-hoc Excel reporting",
+          description: "Each department pulled data manually from EHRs, billing, and labs into its own spreadsheets."
+        },
+        {
+          icon: Split,
+          title: "Inconsistent definitions",
+          description: "\"Readmission rate\" was calculated differently across departments, undermining trust."
+        },
+        {
+          icon: Timer,
+          title: "80% of time on extraction",
+          description: "Analysts spent most of their effort pulling data rather than analyzing it."
+        },
+        {
+          icon: ShieldQuestion,
+          title: "No governance or prediction",
+          description: "There was no data governance, self-service, or predictive capability at all."
+        }
+      ]}
+      approachTitle="Assess, Standardize, Then Predict"
+      approachIntro="NEXDYNE ran a 4-week maturity assessment across 8 dimensions, then executed a three-phase roadmap from a data warehouse to self-service analytics to embedded prediction."
+      steps={[
+        {
+          step: "01",
+          title: "Build the foundation",
+          description: "Months 1–6 deployed Snowflake, migrated clinical and financial data, stood up a governance council, and defined standard metrics."
+        },
+        {
+          step: "02",
+          title: "Enable self-service",
+          description: "Months 7–12 launched Tableau dashboards, certified 50 business users, and added a data catalog — cutting IT requests."
+        },
+        {
+          step: "03",
+          title: "Embed prediction",
+          description: "Months 13–18 built ML models for 30-day readmission, ED forecasting, and high-risk identification, deployed into clinical workflows."
+        },
+        {
+          step: "04",
+          title: "Reach Level 3",
+          description: "Self-service analytics with predictive capabilities became embedded in day-to-day operations."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Gauge,
+          value: "75%",
+          label: "Fewer IT reporting requests",
+          detail: "Clinical teams now answer their own questions"
+        },
+        {
+          icon: Brain,
+          value: "$2.8M",
+          label: "Saved by readmission model",
+          detail: "Identifying high-risk patients before discharge"
+        },
+        {
+          icon: BookOpen,
+          value: "2 hrs",
+          label: "Quality reporting time",
+          detail: "Down from 3 weeks, with data errors down 65%"
+        }
+      ]}
+      quote="The maturity assessment was a wake-up call. We were at Level 1 — every analysis required IT support, data definitions were inconsistent, no one could answer their own questions. The roadmap gave us a clear path to Level 3. In 18 months we built a data warehouse, launched self-service dashboards, and deployed predictive models for readmission risk. IT reporting requests dropped 75%, and the readmission prediction model alone saved $2.8M by identifying high-risk patients before discharge."
+      quoteAuthor="Dr. Michael Rodriguez"
+      quoteRole="Chief Medical Information Officer"
+      relatedStudies={[
+        {
+          title: "Unifying Patient Records for Better Care Outcomes",
+          metric: "20%",
+          label: "fewer readmissions",
+          link: "/cases/healthcare-data-platform",
+          image: "/case-medical-collaboration.9602cc8c.jpg"
+        },
+        {
+          title: "Training 200 Clinicians to Build Their Own Dashboards",
+          metric: "45%",
+          label: "better visibility",
+          link: "/cases/healthcare-dashboard-training",
+          image: "/case-medical-collaboration.9602cc8c.jpg"
+        }
+      ]}
+      ctaTitle="Ready to move up the maturity curve?"
+      ctaDescription="Let's talk about what a data strategy could do for your self-service analytics."
     />
   );
 }

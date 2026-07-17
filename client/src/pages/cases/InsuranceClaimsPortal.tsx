@@ -1,32 +1,121 @@
-import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
+import { FileText, Clock, TrendingDown, XCircle, Smartphone, PlugZap, Workflow, Smile } from "lucide-react";
 
 export function InsuranceClaimsPortal() {
   return (
-    <CaseStudyTemplate
-      client="Regional Property & Casualty Insurer"
-      industry="Insurance · Low-Code Development"
-      title="Insurance Company Launches Digital Claims Portal in 8 Weeks"
-      subtitle="Regional insurer replaces paper-based claims processing with Mendix low-code portal—reducing processing time from 14 days to 2 hours and improving customer satisfaction scores by 42 points."
+    <IndustryCaseStudyTemplate
+      seoTitle="Launching a Digital Claims Portal in 8 Weeks | Insurance Case Study"
+      seoDescription="A 75-year-old P&C insurer processed paper claims in 14 days and lost 12% of policyholders a year. A Mendix low-code portal cut processing to 2 hours and lifted satisfaction 42 points."
+      canonical="/cases/insurance-claims-portal"
+      industry="Insurance"
+      industryLink="/industries/insurance"
+      title="How an Insurer Launched a Digital Claims Portal in 8 Weeks"
+      subtitle="A regional insurer replaced paper-based claims with a Mendix low-code portal — cutting processing time from 14 days to 2 hours and improving customer satisfaction by 42 points."
       heroImage="/case-insurance-office.f039a4a1.jpg"
-      challenge={`A 75-year-old regional property and casualty insurer serving 8 states faced mounting pressure from digital-native competitors offering instant claims processing. Their legacy claims system, built in the 1990s, required policyholders to submit paper forms via mail or fax, with claims taking an average of 14 days to process. Customer satisfaction scores had declined 28 points over three years, and the company was losing 12% of policyholders annually to competitors with mobile-first experiences.
-
-The insurer's IT team had attempted to modernize the system twice over the past decade, but both projects stalled due to complexity, cost overruns, and integration challenges with their core policy administration system. The business needed a solution that could launch quickly, integrate with existing systems, and provide a modern user experience without requiring a complete technology overhaul. With regulatory pressure to improve claims transparency and customer expectations rising, the company set an aggressive 8-week timeline to launch a digital claims portal.`}
-      solution={`NEXDYNE partnered with the insurer's claims and IT teams to design and develop a comprehensive digital claims portal using Mendix low-code platform. We conducted rapid discovery workshops with claims adjusters, customer service representatives, and policyholders to map the end-to-end claims journey and identify pain points. The portal featured photo upload for damage documentation, real-time claims status tracking, secure messaging with adjusters, automated document generation, and integration with third-party estimating tools.
-
-Our development team leveraged Mendix's visual modeling capabilities to build the portal in 6 weeks, with 2 weeks reserved for user acceptance testing and deployment. We implemented REST APIs to integrate with the insurer's legacy policy administration system, enabling real-time policy verification and claims validation. The portal's workflow engine automated routine claims processing steps—eligibility checks, deductible calculations, and payment approvals—reducing manual touchpoints by 70%. Mobile-responsive design ensured policyholders could file claims from any device, with photo upload optimized for smartphone cameras.`}
-      impact={`The digital claims portal launched on schedule after 8 weeks of development and testing. Within 3 months of launch, 86% of new claims were submitted through the portal, far exceeding the initial 60% adoption target. Average claims processing time dropped from 14 days to 2 hours for straightforward claims, with complex claims processing in under 48 hours. Customer satisfaction scores increased 42 points, with policyholders praising the convenience of mobile claims filing and real-time status updates.
-
-The insurer reduced claims processing costs by $2.8 million annually through automation and reduced manual data entry. Claims adjuster productivity increased 35% as they spent less time on administrative tasks. Policyholder churn reversed, with retention improving from 88% to 94% within 6 months.`}
       metrics={[
-        { value: "86%", label: "Digital claims adoption" },
-        { value: "2 hours", label: "Average processing time (from 14 days)" },
-        { value: "42 pts", label: "NPS improvement" }
+        { value: "86%", label: "Digital Claims Adoption" },
+        { value: "2 hrs", label: "Processing Time (from 14 days)" },
+        { value: "42 pts", label: "NPS Improvement" }
       ]}
-      tags={["Insurance", "Low-Code", "Digital Transformation", "Technology"]}
-      relatedCapability={{
-        title: "Technology",
-        link: "/capabilities/technology"
+      clientContextTitle="Paper in a Digital Market"
+      clientContextIntro="A 75-year-old regional P&C insurer serving 8 states faced mounting pressure from digital-native competitors offering instant claims. Its 1990s legacy system required policyholders to mail or fax paper forms, with claims averaging 14 days to process."
+      clientContextBody="Customer satisfaction had fallen 28 points over three years, and the company was losing 12% of policyholders annually to mobile-first rivals. IT had tried to modernize twice, but both projects stalled on complexity, cost overruns, and integration challenges. The business needed a solution that launched quickly, integrated with existing systems, and delivered a modern experience — targeting an aggressive 8-week timeline."
+      clientProfile={{
+        industry: "Regional P&C Insurer",
+        companySize: "8 States",
+        projectDuration: "8-Week Build",
+        additionalInfo: "Mendix Low-Code",
+        additionalLabel: "Platform"
       }}
+      challengeTitle="Why Claims Were Losing Customers"
+      challenges={[
+        {
+          icon: FileText,
+          title: "Paper forms by mail and fax",
+          description: "A 1990s system forced policyholders through slow, manual submission."
+        },
+        {
+          icon: Clock,
+          title: "14-day processing",
+          description: "Manual review kept claims slow, well behind instant-processing competitors."
+        },
+        {
+          icon: TrendingDown,
+          title: "12% annual churn",
+          description: "Satisfaction fell 28 points as customers left for mobile-first insurers."
+        },
+        {
+          icon: XCircle,
+          title: "Two failed modernizations",
+          description: "Prior attempts stalled on complexity, cost, and legacy integration."
+        }
+      ]}
+      approachTitle="A Low-Code Portal in Weeks"
+      approachIntro="NEXDYNE built a comprehensive digital claims portal on Mendix — mapping the end-to-end journey with adjusters and policyholders, then delivering in 6 weeks with 2 weeks for testing."
+      steps={[
+        {
+          step: "01",
+          title: "Map the journey fast",
+          description: "Rapid discovery with adjusters, service reps, and policyholders identified the real friction points."
+        },
+        {
+          step: "02",
+          title: "Build the experience",
+          description: "Photo damage upload, real-time status tracking, secure messaging, and automated document generation went into the portal."
+        },
+        {
+          step: "03",
+          title: "Integrate with the core",
+          description: "REST APIs connected to the legacy policy-administration system for real-time verification and validation."
+        },
+        {
+          step: "04",
+          title: "Automate the routine",
+          description: "A workflow engine automated eligibility, deductible, and payment approvals, cutting manual touchpoints 70%."
+        }
+      ]}
+      resultsTitle="The Payoff"
+      results={[
+        {
+          icon: Workflow,
+          value: "2 hrs",
+          label: "Processing time",
+          detail: "Down from 14 days for straightforward claims, 48 hrs for complex"
+        },
+        {
+          icon: Smartphone,
+          value: "86%",
+          label: "Digital adoption",
+          detail: "Within 3 months, beating the 60% target"
+        },
+        {
+          icon: Smile,
+          value: "94%",
+          label: "Retention",
+          detail: "Up from 88%, saving $2.8M a year in processing costs"
+        }
+      ]}
+      quote=""
+      quoteAuthor=""
+      quoteRole=""
+      relatedStudies={[
+        {
+          title: "Cutting the Claims Cycle 73% With Intelligent Automation",
+          metric: "73%",
+          label: "faster processing",
+          link: "/case-studies/insurance-claims-automation",
+          image: "/case-insurance-office.f039a4a1.jpg"
+        },
+        {
+          title: "Launching a Real-Time Tracking App for 500 Drivers",
+          metric: "96%",
+          label: "on-time delivery",
+          link: "/cases/logistics-tracking-app",
+          image: "/images/industries/retail-warehouse.jpg"
+        }
+      ]}
+      ctaTitle="Ready to digitize claims fast?"
+      ctaDescription="Let's talk about what a low-code portal could do for your processing times and retention."
     />
   );
 }
