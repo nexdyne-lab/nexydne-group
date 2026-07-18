@@ -50,6 +50,19 @@ export const LEAD_MAGNETS: Record<string, LeadMagnet> = {
       "When you're ready to apply the framework to your business, we run an <strong>AI &amp; Operations Readiness Assessment</strong> and hand you a prioritized, honest plan. Just reply to this email.",
     leadSource: "ai_readiness_guide",
   },
+  "operations-readiness-checklist": {
+    title: "Operations Readiness Checklist",
+    downloadFilename: "NexDyne-Operations-Readiness-Checklist.pdf",
+    r2Key: "lead-magnets/operations-readiness-checklist.pdf",
+    localFile: "NexDyne-Operations-Readiness-Checklist.pdf",
+    contentType: "application/pdf",
+    emailIntro: "a 15-point check across the systems that break first when you scale.",
+    emailBody:
+      "Score each area honestly, then start with your lowest-scoring one — that's where growth will strain first.",
+    emailNextStep:
+      "When you're ready to apply it to your business, we run an <strong>Operations Diagnostic</strong> and hand you a prioritized, honest plan. Just reply to this email.",
+    leadSource: "operations_readiness_checklist",
+  },
 };
 
 function r2Configured(): boolean {

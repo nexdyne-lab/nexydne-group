@@ -102,4 +102,55 @@ export const LEAD_MAGNETS: Record<string, LeadMagnetConfig> = {
     successCtaLine:
       "Landed in the middle? That's where the right first move matters most. Reply to the email to request an <strong>AI &amp; Operations Readiness Assessment</strong>.",
   },
+
+  "operations-readiness-checklist": {
+    slug: "operations-readiness-checklist",
+    seoTitle: "The Operations Readiness Checklist — Free Download",
+    seoDescription:
+      "A free 15-point diagnostic for growing companies. Find the operational gaps that break first when you scale — before they cost you.",
+
+    heroTag: "Free Download",
+    headline: "The Operations Readiness Checklist",
+    subhead:
+      "Is your business ready to scale? A free, 15-point check across the systems that break first when you grow — process, ownership, data, handoffs, and risk.",
+    heroCtaLabel: "Download Now",
+    cover: "/images/operations-readiness-checklist-cover.png",
+    peek: "/images/operations-readiness-checklist-peek.png",
+
+    contentsEyebrow: "What's inside",
+    contents: [
+      "A 15-point checklist across the five areas that break first when a company scales.",
+      "A simple 0–2 score for each check, rolled into a clear readiness band.",
+      "A “ready when” line for every item, so you know exactly what good looks like.",
+      "A plain read on whether you can scale now — or need to shore up foundations first.",
+    ],
+
+    upgradeEyebrow: "Why it matters",
+    upgradeHeading: "Growth doesn't create operational problems. It exposes them.",
+    upgradeParagraphs: [
+      "The process nobody wrote down, the report only one person can produce, the approval that waits on a single inbox — they work at ten people and quietly break at fifty. Scaling multiplies whatever you already have.",
+      "This checklist finds those gaps before growth strains them — so you scale on foundations that hold. That's what we mean by <strong>human intelligence, governed and scaled.</strong>",
+    ],
+    upgradeCtaLabel: "Grab Your Copy",
+
+    faqHeading: "Before you download.",
+    faqs: [
+      { q: "Is this really free?", a: "Yes — genuinely free, no strings. We'd rather you find your operational gaps early. Keep us in mind when you're ready to close them." },
+      { q: "Who is this for?", a: "Leaders of growing companies — owners, CEOs, presidents, COOs, and operations managers who are scaling and want to do it without breaking things." },
+      { q: "How long does it take?", a: "About ten minutes. Fifteen checks, score each, read your band. Built to bring straight into a leadership meeting." },
+      { q: "Why do I need to fill out the information requested?", a: "So we can email you the checklist and send occasional practical insights for growing companies. We keep your information safe and you can unsubscribe anytime." },
+    ],
+
+    finalEyebrow: "The Operations Readiness Checklist",
+    finalHeading: "Find the gaps before growth finds them for you.",
+    finalCtaLabel: "Download for free",
+
+    formHeading: "Get the free checklist",
+    formSub: "Free download",
+    ctaLabel: "Get the Free Checklist",
+    successHeading: "Check your inbox.",
+    successBody: "We've emailed your copy of the checklist. You can also download it now:",
+    successCtaLine:
+      "Scored low in an area? That's where scaling will hurt first. Reply to the email to request an <strong>Operations Diagnostic</strong>.",
+  },
 };
