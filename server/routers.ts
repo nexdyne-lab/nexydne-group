@@ -158,8 +158,10 @@ export const appRouter = router({
           throw new Error("Human verification failed. Please try again.");
         }
 
+        // Gated download endpoint (streams from private R2 / fallback) — never
+        // the raw file URL, so downloads only follow a completed capture.
         const GUIDE_URL =
-          "https://nexdynegroup.com/downloads/NexDyne-SMB-AI-Readiness-Guide.pdf";
+          "https://nexdynegroup.com/api/download/ai-readiness-guide";
         const firstName = (input.firstName || "there").trim() || "there";
 
         // 1. Deliver the guide — the outcome the visitor actually asked for.

@@ -16,7 +16,9 @@ import {
   Minus,
 } from "lucide-react";
 
-const GUIDE_PDF = "/downloads/NexDyne-SMB-AI-Readiness-Guide.pdf";
+// Gated endpoint — the raw file is never linked directly, so a download only
+// ever follows a completed capture (soft gate). Streams from private R2 in prod.
+const GUIDE_PDF = "/api/download/ai-readiness-guide";
 
 const LEARN = [
   "Whether your business problem is clearly defined — or still just “we should use AI”",
@@ -166,7 +168,7 @@ export default function AiReadinessGuide() {
                     <p className="mt-3 text-charcoal/70 text-[15px] leading-relaxed">
                       We've emailed your copy of <strong>The SMB AI Readiness Guide</strong>. You can also download it now:
                     </p>
-                    <a href={GUIDE_PDF} target="_blank" rel="noopener noreferrer" className={BTN + " mt-5 w-full text-center"}>
+                    <a href={GUIDE_PDF} download className={BTN + " mt-5 w-full text-center"}>
                       Download the guide
                     </a>
                     <p className="mt-6 text-sm text-charcoal/60 leading-relaxed">

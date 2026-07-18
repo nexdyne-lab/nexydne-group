@@ -8,6 +8,7 @@ import { registerOAuthRoutes } from "./oauth";
 import { appRouter } from "../routers";
 import { createContext } from "./context";
 import { serveStatic, setupVite } from "./vite";
+import { registerDownloadRoutes } from "./downloads";
 
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -101,6 +102,9 @@ async function startServer() {
       createContext,
     })
   );
+  // Gated lead-magnet downloads (streams from private R2, or bundled fallback).
+  // Registered before serveStatic so the SPA fallback doesn't swallow it.
+  registerDownloadRoutes(app);
   // development mode uses Vite, production mode uses static files
   if (process.env.NODE_ENV === "development") {
     await setupVite(app, server);
