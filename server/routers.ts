@@ -235,6 +235,10 @@ export const appRouter = router({
           payload: {
             slug,
             magnetTitle: magnet.title,
+            // FNAME populates the nurture templates' declared {{{FNAME}}}
+            // variable (event-triggered automations don't resolve the reserved
+            // {{{FIRST_NAME}}} from the contact). Falls back to "there".
+            FNAME: input.firstName || "there",
             firstName: input.firstName || "there",
           },
         });
