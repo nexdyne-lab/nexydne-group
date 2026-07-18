@@ -184,8 +184,6 @@ import DataTrainingPage from "./pages/DataTraining";
 import DataGovernancePage from "./pages/DataGovernance";
 import DataConsultancyPage from "./pages/DataConsultancy";
 import { CaseStudies } from "./pages/CaseStudies";
-import LogisticsCaseStudy from "./pages/LogisticsCaseStudy";
-import EcommerceCaseStudy from "./pages/EcommerceCaseStudy";
 import ConsumerShopperInsights from "@/pages/capabilities/growth-marketing-sales/ConsumerShopperInsights";
 import { Ecommerce as EcommerceCapability } from "@/pages/capabilities/growth-marketing-sales/Ecommerce";
 import { PlatformStrategy } from "@/pages/capabilities/growth-marketing-sales/ecommerce/PlatformStrategy";
@@ -410,7 +408,6 @@ import SecurityCompliance from "@/pages/solutions/SecurityCompliance";
 import MachineLearning from "@/pages/solutions/MachineLearning";
 import HealthcareDataPlatform from "@/pages/cases/HealthcareDataPlatform";
 import RetailerMLForecasting from "@/pages/cases/RetailerMLForecasting";
-import FinancialFraudDetection from "@/pages/cases/FinancialFraudDetection";
 import ManufacturerDataMonetization from "@/pages/cases/ManufacturerDataMonetization";
 import InsuranceAnalyticsBacklog from "@/pages/cases/InsuranceAnalyticsBacklog";
 import HealthcareDataMaturity from "@/pages/cases/HealthcareDataMaturity";
@@ -494,30 +491,15 @@ import { InsuranceClaimsPortal } from "./pages/cases/InsuranceClaimsPortal";
 import { LogisticsTrackingApp } from "./pages/cases/LogisticsTrackingApp";
 import { MunicipalPermitSystem } from "./pages/cases/MunicipalPermitSystem";
 import CustomSoftware from "./pages/solutions/CustomSoftware";
-import { EnergyTradingPlatform } from "./pages/cases/EnergyTradingPlatform";
-import { PharmaceuticalComplianceSystem } from "./pages/cases/PharmaceuticalComplianceSystem";
-import { ConstructionProjectManagement } from "./pages/cases/ConstructionProjectManagement";
 import CustomerPortal from "./pages/solutions/CustomerPortal";
-import { TelecomCustomerPortal } from "./pages/cases/TelecomCustomerPortal";
-import { UtilityBillingPortal } from "./pages/cases/UtilityBillingPortal";
-import { InsurancePolicyholderPortal } from "./pages/cases/InsurancePolicyholderPortal";
 import LegacyModernization from "./pages/solutions/LegacyModernization";
-import BankCoreModernization from "./pages/cases/BankCoreModernization";
-import HealthcareEhrModernization from "./pages/cases/HealthcareEhrModernization";
-import ManufacturingErpModernization from "./pages/cases/ManufacturingErpModernization";
 import CustomerIntelligence from "./pages/solutions/CustomerIntelligence";
 import RetailPersonalization from "./pages/cases/RetailPersonalization";
 import FinancialChurnPrediction from "./pages/cases/FinancialChurnPrediction";
-import TelecomCustomerExperience from "./pages/cases/TelecomCustomerExperience";
 import DigitalEngagement from "./pages/solutions/DigitalEngagement";
 import RetailOmnichannel from "./pages/cases/RetailOmnichannel";
-import BankingMobileEngagement from "./pages/cases/BankingMobileEngagement";
-import HospitalityGuestExperience from "./pages/cases/HospitalityGuestExperience";
 import ConversationalAI from "./pages/solutions/ConversationalAI";
-import EcommerceAIChatbot from "./pages/cases/EcommerceAIChatbot";
-import TelecomIntelligentSupport from "./pages/cases/TelecomIntelligentSupport";
 import MobileApps from "./pages/solutions/MobileApps";
-import FitnessAppEngagement from "./pages/cases/FitnessAppEngagement";
 import HeadlessCMS from "./pages/solutions/HeadlessCMS";
 import Personalization from "@/pages/solutions/Personalization";
 import CustomerDataPlatform from "@/pages/solutions/CustomerDataPlatform";
@@ -649,12 +631,6 @@ import LogisticsBrandConsolidation from "./pages/cases/LogisticsBrandConsolidati
 import MarketingConversionBoost from "./pages/cases/MarketingConversionBoost";
 import CustomerProfitability from "./pages/cases/CustomerProfitability";
 import ConsumerDecisionJourney from "./pages/cases/ConsumerDecisionJourney";
-import MediaHeadlessCMS from "./pages/cases/MediaHeadlessCMS";
-import EcommerceHeadlessCMS from "./pages/cases/EcommerceHeadlessCMS";
-import EnterpriseHeadlessCMS from "./pages/cases/EnterpriseHeadlessCMS";
-import DigitalBankMobilePlatform from "./pages/cases/DigitalBankMobilePlatform";
-import FoodDeliveryApp from "./pages/cases/FoodDeliveryApp";
-import HealthcarePatientEngagement from "./pages/cases/HealthcarePatientEngagement";
 import EnergyGridSecurity from "./pages/cases/EnergyGridSecurity";
 import AirlineMaintenance from "./pages/cases/AirlineMaintenance";
 import RetailShrinkage from "./pages/cases/RetailShrinkage";
@@ -1056,7 +1032,6 @@ import ChemicalSupplyChainIndustry from "./pages/cases/industries/ChemicalSupply
 import ChemicalSustainabilityIndustry from "./pages/cases/industries/ChemicalSustainability";
 
 // Consumer Products Case Studies
-import CaseStudyFoodBeverageDemandForecasting from "./pages/cases/CaseStudyFoodBeverageDemandForecasting";
 
 // Whitepaper Download Page
 import WhitepaperDownload from "./pages/WhitepaperDownload";
