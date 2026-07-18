@@ -117,6 +117,48 @@ export async function addToAudience(input: {
   }
 }
 
+/**
+ * Emit a custom event to Resend, which can trigger an Automation (nurture flow).
+ * The automation branches/personalizes off the payload (e.g. magnet slug/title).
+ * No-ops if RESEND_API_KEY is unset. Best-effort: never throws — a nurture
+ * trigger must never fail the capture the visitor just completed.
+ *
+ * Set up the matching automation in Resend (Dashboard → Automations): trigger on
+ * this event name, add Time Delay + Send Email steps. See the Growth & Marketing
+ * playbook (Stage 6) for the exact flow + email copy.
+ */
+export async function emitEvent(input: {
+  event: string;
+  email: string;
+  payload?: Record<string, unknown>;
+}): Promise<boolean> {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.log(`[Event] RESEND_API_KEY unset — would emit "${input.event}" for ${input.email}`);
+    return true;
+  }
+  try {
+    const res = await fetch("https://api.resend.com/events/send", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        event: input.event,
+        email: input.email,
+        payload: input.payload || {},
+      }),
+    });
+    if (res.ok) return true;
+    console.error(`[Event] emit rejected (${res.status}): ${await res.text()}`);
+    return false;
+  } catch (err) {
+    console.error("[Event] emit failed:", err);
+    return false;
+  }
+}
+
 /** Minimal HTML-escape for user-supplied values interpolated into email HTML. */
 export function escapeHtml(value: string): string {
   return value

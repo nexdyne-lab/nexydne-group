@@ -210,22 +210,33 @@ canvas, charcoal dark bands.
 
 ---
 
-## Stage 6 — Nurture: automated email sequence  *(NEXT — to build)*
+## Stage 6 — Nurture: automated email sequence  *(Code shipped · automation = 1 dashboard step)*
 
 **Goal:** turn a download into a conversation, automatically. Educational, not
-four sales emails.
+four sales emails. Built on **Resend Automations** (native event-driven flows).
 
-**Planned sequence**
-1. **Deliver** the magnet (send immediately — already handled at capture).
-2. **The #1 mistake** (a few days later) — the most common failure the magnet warns about.
-3. **How to read your score** — interpret low/medium/high results.
-4. **Invite the next step** — the assessment / diagnostic offer.
+**Architecture:** on capture, our backend emits a Resend event
+`magnet.downloaded` (`emitEvent()` in `email.ts`, called from
+`resources.requestGuide`). A **Resend Automation** listens for it and runs the
+flow — one linear sequence for all magnets, personalized off `firstName` +
+`magnetTitle`.
 
-**How to automate in Resend:** use Resend **Broadcasts/Automations** triggered on
-audience membership, or a scheduled job that sends staged emails to contacts by
-`source` + days-since-signup. Keep templates in one place (extend `email.ts`).
+**The sequence**
+1. **Deliver** the magnet — sent immediately by our code at capture (not in the automation).
+2. **The #1 mistake** — 3 days later.
+3. **How to read your score** — 3 days after that.
+4. **Invite the assessment** — 4 days after that.
 
-**Status:** designed, not yet built.
+**Trigger API:** `POST https://api.resend.com/events/send` with
+`{ event: "magnet.downloaded", email, payload: {slug, magnetTitle, firstName} }`.
+Automations can be built via the dashboard (drag-drop or plain-language AI) or
+the API. Conditional paths can branch on `payload.slug` for per-magnet copy.
+
+**Full copy + build steps:** [`growth-marketing/nurture-sequence.md`](./nurture-sequence.md)
+(3 ready-to-paste email templates + the exact Resend automation flow).
+
+**Status:** ✅ code trigger live. ⏳ automation + 3 templates = a one-time Resend
+dashboard build (events are recorded until it's turned on, so no data is lost).
 
 ---
 
@@ -351,6 +362,6 @@ lead-magnets/
 | 3. Lead magnet asset (PDF pipeline) | ✅ Live (2 magnets) |
 | 4. Gated delivery (private R2 + endpoint) | ✅ Live |
 | 5. Landing page template (config-driven) | ✅ Live |
-| 6. Nurture automation (Resend) | ⏳ Next |
+| 6. Nurture automation (Resend) | 🔨 Code trigger live; automation build pending (dashboard) |
 | 7. Channels / distribution | ⏳ Next |
 | Admin panel (no-code magnet management) | 🔮 Later (when volume justifies) |

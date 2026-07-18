@@ -71,6 +71,20 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-18 — Nurture automation (Stage 6): Resend event trigger shipped
+
+- Added `emitEvent()` to `server/_core/email.ts` — posts a custom event to Resend
+  (`POST /events/send`), best-effort/no-throw like the other email helpers.
+- `resources.requestGuide` now emits **`magnet.downloaded`** on every capture
+  (payload: `slug`, `magnetTitle`, `firstName`) — the trigger for a Resend
+  **Automation** nurture flow. Personalized off firstName + magnetTitle, so one
+  linear sequence serves all magnets.
+- Sequence (deliver now → #2 in 3d → #3 in 3d → #4 in 4d) + 3 ready-to-paste
+  email templates + exact Resend build steps documented in
+  `growth-marketing/nurture-sequence.md`. GROWTH_AND_MARKETING.md Stage 6 updated.
+- **Open:** build the automation + 3 templates in the Resend dashboard (one-time;
+  events are recorded until it's switched on, so nothing is lost meanwhile).
+
 ### 2026-07-18 — Growth & Marketing engine: lead magnets, gated R2 delivery, config-driven landing template + framework doc
 
 Built the full top-of-funnel lead-magnet system and captured it as a **portable

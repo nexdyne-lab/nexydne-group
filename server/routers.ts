@@ -13,7 +13,7 @@ import {
 } from "./db";
 import { notifyOwner } from "./_core/notification";
 import { verifyTurnstile } from "./_core/turnstile";
-import { sendEmail, escapeHtml, addToAudience } from "./_core/email";
+import { sendEmail, escapeHtml, addToAudience, emitEvent } from "./_core/email";
 import { LEAD_MAGNETS } from "./_core/downloads";
 import { z } from "zod";
 
@@ -220,6 +220,20 @@ export const appRouter = router({
           email: input.email,
           firstName: input.firstName || null,
           source: "casestudy",
+        });
+
+        // 2b. Emit a nurture trigger. A Resend Automation listens for
+        //     "magnet.downloaded" and runs the follow-up sequence, personalized
+        //     off firstName + magnetTitle. Best-effort; harmless if no automation
+        //     exists yet. (See Growth & Marketing playbook, Stage 6.)
+        await emitEvent({
+          event: "magnet.downloaded",
+          email: input.email,
+          payload: {
+            slug,
+            magnetTitle: magnet.title,
+            firstName: input.firstName || "there",
+          },
         });
 
         // 3. Track the lead for the admin dashboard (best-effort).
