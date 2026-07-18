@@ -37,6 +37,17 @@ with magnet-specific mistakes, score bands, and offer.
 
 > IDs are Resend-side (not in the repo). Edit copy/timing via API or dashboard.
 
+## Personalization gotcha (important)
+Event-triggered Resend automations **do not** resolve the reserved
+`{{{FIRST_NAME}}}` from the contact record, and event-payload values do **not**
+flow into template variables (both verified via the rendered-email API). So the
+greeting uses a **declared `{{{FNAME}}}` variable with fallback `"there"`** →
+renders **"Hi there,"** reliably (never "Hi ,"). The **delivery email #1** (sent
+by our own code, not the automation) DOES use the real first name.
+To get the literal first name in the nurture too, re-architect to
+**audience-triggered** automations (one Resend Audience per magnet, trigger =
+"contact added"), where `{{{FIRST_NAME}}}` resolves from the contact. Deferred.
+
 ## Adding a magnet later
 Create its 3 tailored templates + one automation on `magnet.downloaded.<its-slug>`.
 Skipping it is harmless — that magnet just gets the delivery email, no follow-ups.
