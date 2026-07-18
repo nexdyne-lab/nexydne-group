@@ -71,6 +71,15 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-18 — Fix: Turnstile "verification could not load" on first modal open
+
+- `TurnstileWidget` lazy-loaded the Cloudflare script only when the capture modal
+  first opened → cold-load race → "could not load", needed a page refresh.
+- Fix: **preload the script at module import** (page load), gate render behind
+  `window.turnstile.ready()`, add `retry:"auto"`, and replace the "please
+  refresh" dead-end with a self-healing **"Try again"** button (re-renders, no
+  reload). Affects every public form (lead magnets, case studies, contact).
+
 ### 2026-07-18 — Nurture branched per-magnet (Stage 6 upgrade)
 
 - Switched nurture from one shared sequence to **per-magnet automations** for
