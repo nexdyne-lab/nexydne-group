@@ -71,6 +71,21 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-18 — Nurture branched per-magnet (Stage 6 upgrade)
+
+- Switched nurture from one shared sequence to **per-magnet automations** for
+  relevance/quality. Code now emits `magnet.downloaded.<slug>` (was
+  `magnet.downloaded`).
+- Deleted the old generic automation + 3 templates. Built via API: **6
+  magnet-specific templates** (`ai-nurture-*`, `ops-nurture-*`) + **2 enabled
+  automations**: `AI Readiness Nurture` (`019f7740-4be0-…`) and `Operations
+  Readiness Nurture` (`019f7740-4cb2-…`). Each: trigger → 3d → 3d → 4d, with
+  tailored mistake / score-band / offer copy (AI Assessment vs Operations
+  Diagnostic).
+- Adding a magnet now includes making its own 3 tailored templates + 1 automation
+  on `magnet.downloaded.<its-slug>`; skipping is harmless (delivery email only).
+- Updated nurture-sequence.md + GROWTH_AND_MARKETING.md.
+
 ### 2026-07-18 — Nurture automation (Stage 6): LIVE — Resend automation built via API + enabled
 
 - Built the full 3-email nurture sequence in Resend **via the API** (not the

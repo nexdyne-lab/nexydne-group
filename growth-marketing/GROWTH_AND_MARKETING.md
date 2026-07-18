@@ -215,11 +215,11 @@ canvas, charcoal dark bands.
 **Goal:** turn a download into a conversation, automatically. Educational, not
 four sales emails. Built on **Resend Automations** (native event-driven flows).
 
-**Architecture:** on capture, our backend emits a Resend event
-`magnet.downloaded` (`emitEvent()` in `email.ts`, called from
-`resources.requestGuide`). A **Resend Automation** listens for it and runs the
-flow — one linear sequence for all magnets, personalized off `firstName` +
-`magnetTitle`.
+**Architecture:** on capture, our backend emits a **per-magnet** Resend event
+`magnet.downloaded.<slug>` (`emitEvent()` in `email.ts`, from
+`resources.requestGuide`). **Each magnet has its own Resend Automation** (its own
+tailored 3 emails — magnet-specific mistake, score bands, and offer),
+personalized off `{{{FIRST_NAME}}}`. More relevant = better conversion.
 
 **The sequence**
 1. **Deliver** the magnet — sent immediately by our code at capture (not in the automation).
@@ -235,10 +235,10 @@ the API. Conditional paths can branch on `payload.slug` for per-magnet copy.
 **Full copy + build steps:** [`growth-marketing/nurture-sequence.md`](./nurture-sequence.md)
 (3 ready-to-paste email templates + the exact Resend automation flow).
 
-**Status:** ✅ **LIVE.** Code trigger deployed; the automation + 3 templates were
-built via the Resend **API** and **enabled** (reproducible script — see the
-"Built via API" section in `nurture-sequence.md`, the fast path for the next
-company). Automation `Lead Magnet Nurture` = `019f7727-8faf-71e8-8825-9f0426a79ab0`.
+**Status:** ✅ **LIVE (per-magnet).** Two enabled automations (`AI Readiness
+Nurture`, `Operations Readiness Nurture`) + 6 published templates, built via the
+Resend **API** (reproducible script — see `nurture-sequence.md`). Adding a magnet
+= its own 3 templates + 1 automation on `magnet.downloaded.<slug>`.
 
 ---
 

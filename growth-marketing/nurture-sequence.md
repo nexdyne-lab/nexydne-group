@@ -1,151 +1,101 @@
 # Stage 6 — Nurture Sequence (Resend Automations)
 
 The automated follow-up that turns a lead-magnet download into a conversation.
-Built on **Resend Automations** (native event-driven flows). Email #1 (delivery)
-is sent immediately by our capture code; this sequence handles the follow-ups.
+Built on **Resend Automations**. Email #1 (delivery) is sent immediately by our
+capture code; this sequence handles the follow-ups.
+
+**Design: one dedicated nurture per magnet** — higher relevance converts better.
+Each magnet emits its own event and has its own automation + its own 3 emails,
+with magnet-specific mistakes, score bands, and offer.
 
 ## How it works
 
-1. On capture, our backend emits a Resend event:
+1. On capture, our backend emits a **per-magnet** event:
    `POST https://api.resend.com/events/send` →
-   `{ event: "magnet.downloaded", email, payload: { slug, magnetTitle, firstName } }`
-   (helper: `emitEvent()` in [`server/_core/email.ts`](../server/_core/email.ts);
-   called in the `resources.requestGuide` mutation.)
-2. A Resend **Automation** listens for `magnet.downloaded` and runs the flow
-   below. One linear flow serves every magnet — personalized off `firstName` +
-   `magnetTitle`. (Add a conditional branch on `payload.slug` later if a magnet
-   needs bespoke copy.)
+   `{ event: "magnet.downloaded.<slug>", email, payload: { slug, magnetTitle, firstName } }`
+   (`emitEvent()` in [`server/_core/email.ts`](../server/_core/email.ts), called
+   from `resources.requestGuide`.)
+2. Each magnet's automation listens for **its** event and runs its tailored flow:
+   `trigger → 3d → email 2 → 3d → email 3 → 4d → email 4`, personalized off
+   `{{{FIRST_NAME}}}`.
 
-## The flow (build this in Resend → Automations)
+**Live automations (enabled):**
 
-```
-Trigger:  Event = "magnet.downloaded"
-   │
-   ├─ Wait 3 days  → Send Email: "Nurture 2 — the #1 mistake"
-   ├─ Wait 3 days  → Send Email: "Nurture 3 — read your score"
-   └─ Wait 4 days  → Send Email: "Nurture 4 — the invite"
-```
-
-**Setup steps (once per project):**
-1. Resend → **Automations → Create** (drag-drop, or the plain-language AI builder:
-   *"When `magnet.downloaded` fires: wait 3 days send template Nurture 2; wait 3
-   days send Nurture 3; wait 4 days send Nurture 4."*).
-2. Set the **Trigger** to the custom event `magnet.downloaded`.
-3. Create the three **Templates** below (subject + body). Use the merge variable
-   for the contact's first name (Resend: `{{{FIRST_NAME}}}`).
-4. Add **Time Delay** + **Send Email** steps per the flow.
-5. **Turn the automation ON.** (It records events even before it's on, so the
-   code trigger can ship first.)
-
-> The delivery email (#1) is NOT in this automation — our code sends it instantly
-> at capture. This flow is only #2–#4.
-
----
-
-## Email templates (ready to paste)
-
-Voice: practical, honest, restrained — no hype. Personalize with `{{{FIRST_NAME}}}`.
-
-### Nurture 2 — the #1 mistake  · *send 3 days after download*
-**Subject:** The #1 reason these projects fail
-
-```
-Hi {{{FIRST_NAME}}},
-
-A few days ago you downloaded one of our readiness tools. Here's the pattern we
-see most often — and it has nothing to do with technology.
-
-The companies that struggle don't fail because they picked the wrong tool. They
-fail because they moved *before* they understood their own operation. They
-automated a workflow nobody had written down. They bought software before
-defining the problem. They handed a decision to a system before deciding what a
-human should still own.
-
-The score you gave yourself is the antidote: it forces the question "are we
-ready?" before the question "what should we buy?"
-
-If any item made you pause, that pause is the useful part. Start there.
-
-— NexDyne Consulting Group
-```
-
-### Nurture 3 — read your score  · *send 3 days later*
-**Subject:** How to actually read your readiness score
-
-```
-Hi {{{FIRST_NAME}}},
-
-Your score isn't a grade — it's a map. Here's how to read it:
-
-• Low / not ready — Good news, honestly. The fixes (clear process, a named
-  owner, one source of truth) are cheaper than the tools and pay off with or
-  without new technology. Do these first.
-
-• Middle / partially ready — The most common place to land, and where the right
-  first move creates the most value. Pick your two or three lowest-scoring areas,
-  close those, then run one narrow pilot.
-
-• High / ready — You're set up to prioritize and build a real plan. Your risk
-  now is doing too much at once. Sequence it, and keep measuring.
-
-Whatever your number, your lowest-scoring items are your roadmap. Fix them in
-order.
-
-— NexDyne Consulting Group
-```
-
-### Nurture 4 — the invite  · *send 4 days later*
-**Subject:** Want us to run this with you?
-
-```
-Hi {{{FIRST_NAME}}},
-
-The tool you downloaded is a self-assessment. The next step, if it's useful, is
-applying it to your business with someone who does this for a living.
-
-That's what our readiness assessment is: we run the framework on your actual
-company, pressure-test the answers, and hand you a prioritized, honest plan —
-what to fix first, what to pilot, and what to leave alone for now. No jargon, no
-sales theater.
-
-If that would help, just reply to this email with "assessment" and we'll set up
-a short call.
-
-Either way — thanks for reading, and good luck with the work.
-
-— NexDyne Consulting Group
-```
-
----
-
-## Status — ✅ LIVE
-
-- ✅ **Code trigger** — `emitEvent("magnet.downloaded")` fires on every capture (deployed).
-- ✅ **Automation + 3 templates** — built via the Resend **API** and **enabled**.
-  - Automation `Lead Magnet Nurture` → id `019f7727-8faf-71e8-8825-9f0426a79ab0`
-  - Templates: `nurture-2-the-mistake`, `nurture-3-read-your-score`, `nurture-4-the-invite`
-  - Flow: trigger `magnet.downloaded` → 3d → N2 → 3d → N3 → 4d → N4
+| Magnet | Trigger event | Automation id |
+|---|---|---|
+| AI Readiness Guide | `magnet.downloaded.ai-readiness-guide` | `019f7740-4be0-7468-a3e0-00734a91f600` |
+| Operations Readiness Checklist | `magnet.downloaded.operations-readiness-checklist` | `019f7740-4cb2-742e-a2bd-2bd126b96a90` |
 
 ## Built via API (reproducible — the fast path for the next company)
 
-Instead of the dashboard, the whole sequence was created programmatically:
-1. `POST https://api.resend.com/templates` for each email → `{name, alias, subject, from, html}`.
-   Use `{{{FIRST_NAME}}}` for personalization — it's **reserved/auto-populated**,
-   so do NOT declare it in a `variables` array (422 if you do). Then
-   `POST /templates/:id/publish`.
-2. `POST https://api.resend.com/automations` with `status:"enabled"`, a `steps`
-   array (`trigger` `{event_name}` · `delay` `{duration:"3 days"}` · `send_email`
-   `{template:{id}}`) and `connections` (`{from,to}`) linking them in order.
+1. `POST /templates` per email → `{name, alias, subject, from, html}`, then
+   `POST /templates/:id/publish`. Personalize with `{{{FIRST_NAME}}}` — it's
+   **reserved/auto-populated**, so do NOT declare it in a `variables` array (422).
+2. `POST /automations` with `status:"enabled"`, `steps` (`trigger`
+   `{event_name}` · `delay` `{duration:"3 days"}` · `send_email` `{template:{id}}`)
+   and `connections` (`{from,to}`).
 
-> IDs above are Resend-side (not in the repo). To edit copy/timing, update the
-> templates/automation via API or the Resend dashboard.
+> IDs are Resend-side (not in the repo). Edit copy/timing via API or dashboard.
 
-## Verify it's working
-Do a real download with your own email → Resend → **Automations → Lead Magnet
-Nurture → Runs**: you'll see your run enrolled and *waiting on the 3-day delay*.
-(Delivery email #1 arrives immediately, separately, from our capture code.)
+## Adding a magnet later
+Create its 3 tailored templates + one automation on `magnet.downloaded.<its-slug>`.
+Skipping it is harmless — that magnet just gets the delivery email, no follow-ups.
+**Write fresh, magnet-specific copy each time** — that's the whole point of
+branching.
+
+---
+
+## Email copy — AI Readiness path
+
+**AI-2 · "the mistake" · +3 days** — *Subject: The #1 reason AI projects fail*
+> Companies don't fail because they picked the wrong model — they point AI at an
+> undocumented process, scattered data, or a decision no human is watching. AI
+> amplifies those gaps. The ten questions force "is the business ready?" before
+> "which tool?" Start where you paused.
+
+**AI-3 · "read your score" · +3 days** — *Subject: How to read your AI readiness score*
+> Score /20 is a map: 0–7 not ready (fix process + ownership first) · 8–14
+> partially (close your lowest 2–3, run one pilot) · 15–20 ready (prioritize +
+> plan; don't do too much at once). Lowest-scoring questions = your roadmap.
+
+**AI-4 · "the invite" · +4 days** — *Subject: Want us to run the AI readiness check with you?*
+> The next step is our **AI & Operations Readiness Assessment** — we pressure-test
+> your answers, find where AI actually pays off, hand you a prioritized plan.
+> Reply "assessment" for a short call.
+
+## Email copy — Operations path
+
+**OPS-2 · "the mistake" · +3 days** — *Subject: The #1 reason scaling breaks operations*
+> Growth doesn't create operational problems — it exposes them. The undocumented
+> process, the report only one person can run, the approval stuck in one inbox:
+> they work at ten people and break at fifty. The fifteen checks surface the
+> cracks before volume widens them.
+
+**OPS-3 · "read your score" · +3 days** — *Subject: How to read your operations readiness score*
+> Score /30 is a map: 0–14 not ready to scale (fix foundations first) · 15–23
+> partially (close your lowest 2–3, then add load) · 24–30 ready to scale (build
+> the plan, keep measuring). Lowest-scoring area = where scaling strains first.
+
+**OPS-4 · "the invite" · +4 days** — *Subject: Want a second set of eyes on your operations?*
+> The next step is our **Operations Diagnostic** — we find the gaps that break
+> first as you grow and hand you a prioritized plan (what to fix now, what can
+> wait). Reply "diagnostic" for a short call.
+
+*(Full HTML for all six lives in the Resend templates, prefixed `ai-nurture-*` /
+`ops-nurture-*`.)*
+
+---
+
+## Status — ✅ LIVE (per-magnet)
+
+- ✅ Code emits `magnet.downloaded.<slug>` on every capture (deployed).
+- ✅ Two enabled automations (AI + Ops), 6 published templates, built via API.
+
+## Verify
+Real download with your own email → Resend → **Automations → [that magnet's
+nurture] → Runs**: your run is enrolled, waiting on the 3-day delay. (Delivery
+email #1 arrives immediately, separately, from the capture code.)
 
 ## Measurement
-
-Watch in Resend: automation runs, per-step opens/clicks, and — the number that
-matters — **replies asking for the assessment**. Tune delays/subjects from there.
+Per automation: runs, step opens/clicks, and the number that matters — **replies
+asking for the assessment/diagnostic.** Tune delays/subjects from there.

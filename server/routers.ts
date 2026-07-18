@@ -222,12 +222,12 @@ export const appRouter = router({
           source: "casestudy",
         });
 
-        // 2b. Emit a nurture trigger. A Resend Automation listens for
-        //     "magnet.downloaded" and runs the follow-up sequence, personalized
-        //     off firstName + magnetTitle. Best-effort; harmless if no automation
-        //     exists yet. (See Growth & Marketing playbook, Stage 6.)
+        // 2b. Emit a PER-MAGNET nurture trigger. Each magnet has its own Resend
+        //     Automation listening for "magnet.downloaded.<slug>", so the
+        //     follow-up sequence is tailored to that magnet. Best-effort; harmless
+        //     if a magnet has no automation yet. (Playbook, Stage 6.)
         await emitEvent({
-          event: "magnet.downloaded",
+          event: `magnet.downloaded.${slug}`,
           email: input.email,
           payload: {
             slug,
