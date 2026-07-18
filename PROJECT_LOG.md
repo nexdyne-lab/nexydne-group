@@ -71,6 +71,36 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-18 — Growth & Marketing engine: lead magnets, gated R2 delivery, config-driven landing template + framework doc
+
+Built the full top-of-funnel lead-magnet system and captured it as a **portable
+playbook** for reuse across other companies.
+
+- **Lead magnets (2 live):** *SMB AI Readiness Guide* (10-question diagnostic) and
+  *Operations Readiness Checklist* (15-point). Authored as self-contained HTML,
+  rendered to PDF via Puppeteer (`lead-magnets/*.html` + `render-*.mjs`).
+- **Gated delivery via private Cloudflare R2** (`nexdyne-assets` bucket): new
+  `GET /api/download/:slug` streams from R2 (`@aws-sdk/client-s3`), soft-gate
+  (raw file never linked; only the endpoint). `server/_core/downloads.ts` holds
+  the `LEAD_MAGNETS` server registry (file + email copy). Env:
+  `R2_ACCOUNT_ID/ACCESS_KEY_ID/SECRET_ACCESS_KEY/BUCKET` (local + Railway; Railway
+  needs a **redeploy** to pick up new vars — that bit us once).
+- **Config-driven landing template** modeled on HubSpot's offer page in NexDyne
+  brand: `client/src/pages/resources/LeadMagnetLanding.tsx` (generic component +
+  capture modal) + `leadMagnets.tsx` (per-magnet config) + dynamic
+  `/resources/:slug` route. **Adding a magnet = R2 upload + 2 config entries + a
+  deploy** (no bespoke page). Design uses the `nx-*` system (not generic Tailwind).
+- **Capture** reused/extended: `resources.requestGuide` mutation is now
+  slug-driven (per-magnet delivery email, audience add, lead tracking, owner
+  notify); Turnstile-gated.
+- **Framework doc:** `growth-marketing/GROWTH_AND_MARKETING.md` — the full
+  step-by-step playbook (email infra → collect → magnet → R2 → template →
+  nurture → channels) with a **port-to-a-new-project checklist**, env reference,
+  and code map. This is the baseline to replicate on the next company.
+- **Open / next:** automated **nurture email sequence** in Resend (4 emails) and
+  **distribution channels** (LinkedIn + on-site promo + SEO). Admin panel for
+  no-code magnet management deferred until volume justifies it.
+
 ### 2026-07-16 — Case-study migration waves 1–3 (12 pages done)
 - Migrating all OLD-template case studies onto the approved IndustryCaseStudyTemplate,
   in reviewed waves. Routes/URLs UNCHANGED; each page's own numbers preserved; no
