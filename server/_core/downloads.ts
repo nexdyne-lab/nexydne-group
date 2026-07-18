@@ -94,6 +94,7 @@ export function registerDownloadRoutes(app: Express): void {
         );
         const body = out.Body as Readable | undefined;
         if (!body) throw new Error("empty R2 response body");
+        res.setHeader("X-Asset-Source", "r2");
         body.on("error", (e) => {
           console.error("[download] R2 stream error:", e);
           if (!res.headersSent) res.status(502).end();
@@ -109,6 +110,7 @@ export function registerDownloadRoutes(app: Express): void {
         res.status(404).send("File not available.");
         return;
       }
+      res.setHeader("X-Asset-Source", "fallback");
       fs.createReadStream(file).pipe(res);
     } catch (e) {
       console.error("[download] failed:", e);
