@@ -71,6 +71,15 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-18 — Funnel tested end-to-end; nurture live at production cadence
+
+- Verified the full lead-magnet funnel in production (real download → gated R2
+  delivery email personalized with the real name → per-magnet nurture with
+  "Hi there," + working unsubscribe). Fixed the greeting + Turnstile issues found
+  during testing (see entries below).
+- Both nurture automations restored from 1-min test mode to **3 days / 3 days /
+  4 days** and enabled. **Stage 6 fully live.** Remaining: Stage 7 (traffic).
+
 ### 2026-07-18 — Fix: Turnstile "verification could not load" on first modal open
 
 - `TurnstileWidget` lazy-loaded the Cloudflare script only when the capture modal
