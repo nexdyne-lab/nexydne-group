@@ -73,21 +73,6 @@ function localCandidates(localFile: string): string[] {
 }
 
 export function registerDownloadRoutes(app: Express): void {
-  // Safe diagnostic: reports only whether each R2 var is present (never values),
-  // so an R2 cutover can be debugged in production. Remove after cutover.
-  app.get("/api/r2-status", (_req: Request, res: Response) => {
-    res.json({
-      r2Configured: r2Configured(),
-      present: {
-        accountId: !!process.env.R2_ACCOUNT_ID,
-        accessKeyId: !!process.env.R2_ACCESS_KEY_ID,
-        secretAccessKey: !!process.env.R2_SECRET_ACCESS_KEY,
-        bucket: !!process.env.R2_BUCKET,
-      },
-      bucket: process.env.R2_BUCKET || null,
-    });
-  });
-
   app.get("/api/download/:slug", async (req: Request, res: Response) => {
     const magnet = LEAD_MAGNETS[req.params.slug];
     if (!magnet) {
