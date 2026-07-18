@@ -235,8 +235,10 @@ the API. Conditional paths can branch on `payload.slug` for per-magnet copy.
 **Full copy + build steps:** [`growth-marketing/nurture-sequence.md`](./nurture-sequence.md)
 (3 ready-to-paste email templates + the exact Resend automation flow).
 
-**Status:** ✅ code trigger live. ⏳ automation + 3 templates = a one-time Resend
-dashboard build (events are recorded until it's turned on, so no data is lost).
+**Status:** ✅ **LIVE.** Code trigger deployed; the automation + 3 templates were
+built via the Resend **API** and **enabled** (reproducible script — see the
+"Built via API" section in `nurture-sequence.md`, the fast path for the next
+company). Automation `Lead Magnet Nurture` = `019f7727-8faf-71e8-8825-9f0426a79ab0`.
 
 ---
 
@@ -362,6 +364,6 @@ lead-magnets/
 | 3. Lead magnet asset (PDF pipeline) | ✅ Live (2 magnets) |
 | 4. Gated delivery (private R2 + endpoint) | ✅ Live |
 | 5. Landing page template (config-driven) | ✅ Live |
-| 6. Nurture automation (Resend) | 🔨 Code trigger live; automation build pending (dashboard) |
+| 6. Nurture automation (Resend) | ✅ Live (event trigger + 3-email automation, enabled via API) |
 | 7. Channels / distribution | ⏳ Next |
 | Admin panel (no-code magnet management) | 🔮 Later (when volume justifies) |

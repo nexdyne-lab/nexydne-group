@@ -118,13 +118,32 @@ Either way — thanks for reading, and good luck with the work.
 
 ---
 
-## Status
+## Status — ✅ LIVE
 
-- ✅ **Code trigger shipped** — `emitEvent("magnet.downloaded")` fires on every
-  capture (deployed).
-- ⏳ **Automation + templates** — build in the Resend dashboard using the steps +
-  copy above (one-time setup). Until then, events are recorded but no follow-ups
-  send.
+- ✅ **Code trigger** — `emitEvent("magnet.downloaded")` fires on every capture (deployed).
+- ✅ **Automation + 3 templates** — built via the Resend **API** and **enabled**.
+  - Automation `Lead Magnet Nurture` → id `019f7727-8faf-71e8-8825-9f0426a79ab0`
+  - Templates: `nurture-2-the-mistake`, `nurture-3-read-your-score`, `nurture-4-the-invite`
+  - Flow: trigger `magnet.downloaded` → 3d → N2 → 3d → N3 → 4d → N4
+
+## Built via API (reproducible — the fast path for the next company)
+
+Instead of the dashboard, the whole sequence was created programmatically:
+1. `POST https://api.resend.com/templates` for each email → `{name, alias, subject, from, html}`.
+   Use `{{{FIRST_NAME}}}` for personalization — it's **reserved/auto-populated**,
+   so do NOT declare it in a `variables` array (422 if you do). Then
+   `POST /templates/:id/publish`.
+2. `POST https://api.resend.com/automations` with `status:"enabled"`, a `steps`
+   array (`trigger` `{event_name}` · `delay` `{duration:"3 days"}` · `send_email`
+   `{template:{id}}`) and `connections` (`{from,to}`) linking them in order.
+
+> IDs above are Resend-side (not in the repo). To edit copy/timing, update the
+> templates/automation via API or the Resend dashboard.
+
+## Verify it's working
+Do a real download with your own email → Resend → **Automations → Lead Magnet
+Nurture → Runs**: you'll see your run enrolled and *waiting on the 3-day delay*.
+(Delivery email #1 arrives immediately, separately, from our capture code.)
 
 ## Measurement
 

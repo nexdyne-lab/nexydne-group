@@ -71,6 +71,20 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-18 — Nurture automation (Stage 6): LIVE — Resend automation built via API + enabled
+
+- Built the full 3-email nurture sequence in Resend **via the API** (not the
+  dashboard): 3 published Templates + one **enabled** Automation `Lead Magnet
+  Nurture` (`019f7727-8faf-71e8-8825-9f0426a79ab0`), triggering on the
+  `magnet.downloaded` event → 3d → N2 → 3d → N3 → 4d → N4.
+- Gotcha logged: `{{{FIRST_NAME}}}` is a **reserved** template variable — reference
+  it in HTML but do NOT declare it in the `variables` array (422). Delay step =
+  `{type:"delay", config:{duration:"3 days"}}`.
+- Reproducible API script + copy + IDs in `growth-marketing/nurture-sequence.md`
+  ("Built via API"). GROWTH_AND_MARKETING.md Stage 6 → ✅ Live.
+- Verify: real download → Resend → Automations → Runs shows enrollment waiting on
+  the 3-day delay. (Delivery email #1 still sent immediately by capture code.)
+
 ### 2026-07-18 — Nurture automation (Stage 6): Resend event trigger shipped
 
 - Added `emitEvent()` to `server/_core/email.ts` — posts a custom event to Resend
