@@ -136,6 +136,121 @@ export const appRouter = router({
         return { success: true };
       }),
   }),
+  // Lead-magnet delivery → emails the guide, adds the contact to the audience,
+  // tracks the lead, and notifies the owner. Turnstile-gated.
+  resources: router({
+    requestGuide: publicProcedure
+      .input(
+        z.object({
+          email: z.string().email(),
+          firstName: z.string().max(120).optional(),
+          company: z.string().max(200).optional(),
+          role: z.string().max(160).optional(),
+          turnstileToken: z.string().optional(),
+        })
+      )
+      .mutation(async ({ input, ctx }) => {
+        const clientIp =
+          (ctx.req.headers["cf-connecting-ip"] as string | undefined) ??
+          ctx.req.ip;
+        const human = await verifyTurnstile(input.turnstileToken, clientIp);
+        if (!human) {
+          throw new Error("Human verification failed. Please try again.");
+        }
+
+        const GUIDE_URL =
+          "https://nexdynegroup.com/downloads/NexDyne-SMB-AI-Readiness-Guide.pdf";
+        const firstName = (input.firstName || "there").trim() || "there";
+
+        // 1. Deliver the guide — the outcome the visitor actually asked for.
+        //    Never let a downstream step (audience/DB/notify) block this.
+        const deliveryHtml = `
+          <div style="font-family:system-ui,-apple-system,sans-serif;color:#1c2128;line-height:1.65;max-width:560px">
+            <p style="margin:0 0 16px">Hi ${escapeHtml(firstName)},</p>
+            <p style="margin:0 0 16px">
+              Thanks for requesting <strong>The SMB AI Readiness Guide</strong>. Here it is —
+              ten questions to answer before investing in AI, automation, or new technology.
+            </p>
+            <p style="margin:0 0 24px">
+              <a href="${GUIDE_URL}"
+                 style="display:inline-block;background:#DE2F23;color:#ffffff;font-weight:700;
+                        text-decoration:none;padding:12px 22px;border-radius:6px">
+                Download your guide &rarr;
+              </a>
+            </p>
+            <p style="margin:0 0 16px">
+              Score yourself honestly, then focus on your lowest-scoring questions first — in order.
+              Most growing companies land in the middle, and the middle is exactly where the right
+              first move creates outsized value.
+            </p>
+            <p style="margin:0 0 16px">
+              When you're ready to apply the framework to your business, we run an
+              <strong>AI &amp; Operations Readiness Assessment</strong> and hand you a prioritized,
+              honest plan. Just reply to this email.
+            </p>
+            <p style="margin:24px 0 4px">Warm regards,</p>
+            <p style="margin:0;font-weight:600">NexDyne Consulting Group</p>
+            <hr style="border:none;border-top:1px solid #E5E7EB;margin:24px 0" />
+            <p style="margin:0;font-size:12px;color:#6B7280">
+              You're receiving this because you requested the guide at nexdynegroup.com.
+              We'll send occasional practical insights for growing companies — unsubscribe anytime.
+            </p>
+          </div>`;
+        const delivered = await sendEmail({
+          to: input.email,
+          from: "NexDyne Consulting Group <insights@nexdynegroup.com>",
+          subject: "Your SMB AI Readiness Guide is inside",
+          html: deliveryHtml,
+        });
+
+        // 2. Add to the marketing audience (best-effort; single opt-in via the
+        //    form's notice that requesting the guide means occasional insights).
+        await addToAudience({
+          email: input.email,
+          firstName: input.firstName || null,
+          source: "casestudy",
+        });
+
+        // 3. Track the lead for the admin dashboard (best-effort).
+        try {
+          await insertLead({
+            email: input.email,
+            firstName: input.firstName || null,
+            lastName: null,
+            company: input.company || null,
+            jobTitle: input.role || null,
+            caseStudyTitle: "SMB AI Readiness Guide",
+            caseStudyIndustry: "Lead Magnet",
+            source: "ai_readiness_guide",
+            marketingConsent: 1,
+          });
+        } catch (e) {
+          console.error("[Guide] lead insert failed:", e);
+        }
+
+        // 4. Notify the owner (best-effort).
+        try {
+          await notifyOwner({
+            title: `New guide download: ${input.email}`,
+            content: `
+**SMB AI Readiness Guide — new download**
+
+- **Email:** ${input.email}
+- **Name:** ${input.firstName || "Not provided"}
+- **Company:** ${input.company || "Not provided"}
+- **Role:** ${input.role || "Not provided"}
+
+Added to the audience and (if DB is up) the leads dashboard.
+            `.trim(),
+          });
+        } catch (e) {
+          console.warn("[Guide] owner notification failed:", e);
+        }
+
+        return { success: true, downloadUrl: GUIDE_URL, delivered };
+      }),
+  }),
+
   auth: router({
     me: publicProcedure.query(opts => opts.ctx.user),
     logout: publicProcedure.mutation(({ ctx }) => {

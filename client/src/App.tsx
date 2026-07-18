@@ -307,6 +307,7 @@ import LeadershipTeam from "./pages/LeadershipTeam";
 import Careers from "@/pages/Careers";
 import Offices from "@/pages/Offices";
 import Contact from "@/pages/Contact";
+import AiReadinessGuide from "@/pages/resources/AiReadinessGuide";
 
 import RPA from "./pages/solutions/RPA";
 import IPaaS from "@/pages/solutions/IPaaS";
@@ -1970,6 +1971,7 @@ function Router() {
         <Route path="/offices" component={Offices} />
         <Route path="/careers" component={Careers} />
         <Route path="/contact" component={Contact} />
+        <Route path="/resources/ai-readiness-guide" component={AiReadinessGuide} />
       
             {/* === Cat 2-4c Phase 2: Operations level-3 leaves (54) === */}
             {/* Operations / Supply Chain Optimization sub-services */}
