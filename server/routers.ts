@@ -14,6 +14,7 @@ import {
 import { notifyOwner } from "./_core/notification";
 import { verifyTurnstile } from "./_core/turnstile";
 import { sendEmail, escapeHtml, addToAudience } from "./_core/email";
+import { LEAD_MAGNETS } from "./_core/downloads";
 import { z } from "zod";
 
 export const appRouter = router({
@@ -142,6 +143,7 @@ export const appRouter = router({
     requestGuide: publicProcedure
       .input(
         z.object({
+          slug: z.string().max(80).optional(),
           email: z.string().email(),
           firstName: z.string().max(120).optional(),
           company: z.string().max(200).optional(),
@@ -158,55 +160,62 @@ export const appRouter = router({
           throw new Error("Human verification failed. Please try again.");
         }
 
-        // Gated download endpoint (streams from private R2 / fallback) — never
-        // the raw file URL, so downloads only follow a completed capture.
-        const GUIDE_URL =
-          "https://nexdynegroup.com/api/download/ai-readiness-guide";
-        const firstName = (input.firstName || "there").trim() || "there";
+        // Resolve the requested magnet from the shared registry. Defaults to the
+        // readiness guide so older clients keep working.
+        const slug = input.slug || "ai-readiness-guide";
+        const magnet = LEAD_MAGNETS[slug];
+        if (!magnet) {
+          throw new Error("Unknown resource.");
+        }
 
-        // 1. Deliver the guide — the outcome the visitor actually asked for.
+        // Gated download endpoint (streams from private R2) — never the raw file
+        // URL, so downloads only follow a completed capture.
+        const GUIDE_URL = `https://nexdynegroup.com/api/download/${slug}`;
+        const firstName = (input.firstName || "there").trim() || "there";
+        const intro = magnet.emailIntro
+          ? ` — ${magnet.emailIntro}`
+          : ".";
+        const body = magnet.emailBody
+          ? `<p style="margin:0 0 16px">${magnet.emailBody}</p>`
+          : "";
+        const nextStep = magnet.emailNextStep
+          ? `<p style="margin:0 0 16px">${magnet.emailNextStep}</p>`
+          : `<p style="margin:0 0 16px">When you're ready to go deeper, just reply to this email.</p>`;
+
+        // 1. Deliver the magnet — the outcome the visitor actually asked for.
         //    Never let a downstream step (audience/DB/notify) block this.
         const deliveryHtml = `
           <div style="font-family:system-ui,-apple-system,sans-serif;color:#1c2128;line-height:1.65;max-width:560px">
             <p style="margin:0 0 16px">Hi ${escapeHtml(firstName)},</p>
             <p style="margin:0 0 16px">
-              Thanks for requesting <strong>The SMB AI Readiness Guide</strong>. Here it is —
-              ten questions to answer before investing in AI, automation, or new technology.
+              Thanks for requesting <strong>The ${escapeHtml(magnet.title)}</strong>${intro}
             </p>
             <p style="margin:0 0 24px">
               <a href="${GUIDE_URL}"
                  style="display:inline-block;background:#DE2F23;color:#ffffff;font-weight:700;
                         text-decoration:none;padding:12px 22px;border-radius:6px">
-                Download your guide &rarr;
+                Download your copy &rarr;
               </a>
             </p>
-            <p style="margin:0 0 16px">
-              Score yourself honestly, then focus on your lowest-scoring questions first — in order.
-              Most growing companies land in the middle, and the middle is exactly where the right
-              first move creates outsized value.
-            </p>
-            <p style="margin:0 0 16px">
-              When you're ready to apply the framework to your business, we run an
-              <strong>AI &amp; Operations Readiness Assessment</strong> and hand you a prioritized,
-              honest plan. Just reply to this email.
-            </p>
+            ${body}
+            ${nextStep}
             <p style="margin:24px 0 4px">Warm regards,</p>
             <p style="margin:0;font-weight:600">NexDyne Consulting Group</p>
             <hr style="border:none;border-top:1px solid #E5E7EB;margin:24px 0" />
             <p style="margin:0;font-size:12px;color:#6B7280">
-              You're receiving this because you requested the guide at nexdynegroup.com.
+              You're receiving this because you requested this resource at nexdynegroup.com.
               We'll send occasional practical insights for growing companies — unsubscribe anytime.
             </p>
           </div>`;
         const delivered = await sendEmail({
           to: input.email,
           from: "NexDyne Consulting Group <insights@nexdynegroup.com>",
-          subject: "Your SMB AI Readiness Guide is inside",
+          subject: `Your ${magnet.title} is inside`,
           html: deliveryHtml,
         });
 
         // 2. Add to the marketing audience (best-effort; single opt-in via the
-        //    form's notice that requesting the guide means occasional insights).
+        //    form's notice that requesting the resource means occasional insights).
         await addToAudience({
           email: input.email,
           firstName: input.firstName || null,
@@ -221,9 +230,9 @@ export const appRouter = router({
             lastName: null,
             company: input.company || null,
             jobTitle: input.role || null,
-            caseStudyTitle: "SMB AI Readiness Guide",
+            caseStudyTitle: magnet.title,
             caseStudyIndustry: "Lead Magnet",
-            source: "ai_readiness_guide",
+            source: magnet.leadSource || "lead_magnet",
             marketingConsent: 1,
           });
         } catch (e) {
@@ -233,9 +242,9 @@ export const appRouter = router({
         // 4. Notify the owner (best-effort).
         try {
           await notifyOwner({
-            title: `New guide download: ${input.email}`,
+            title: `New download: ${magnet.title} — ${input.email}`,
             content: `
-**SMB AI Readiness Guide — new download**
+**${magnet.title} — new download**
 
 - **Email:** ${input.email}
 - **Name:** ${input.firstName || "Not provided"}

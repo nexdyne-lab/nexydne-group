@@ -26,6 +26,12 @@ export interface LeadMagnet {
   /** Filename under dist/public/downloads used as the pre-R2 fallback. */
   localFile: string;
   contentType: string;
+  /** Delivery-email copy (optional; sensible generic defaults apply). */
+  emailIntro?: string; // sentence after the title, describing the magnet
+  emailBody?: string; // a "how to use it" paragraph (HTML allowed)
+  emailNextStep?: string; // soft next-step CTA paragraph (HTML allowed)
+  /** DB `source` tag for lead tracking. */
+  leadSource?: string;
 }
 
 /** The single source of truth for lead magnets. Add an entry per magnet. */
@@ -36,6 +42,13 @@ export const LEAD_MAGNETS: Record<string, LeadMagnet> = {
     r2Key: "lead-magnets/ai-readiness-guide.pdf",
     localFile: "NexDyne-SMB-AI-Readiness-Guide.pdf",
     contentType: "application/pdf",
+    emailIntro:
+      "ten questions to answer before investing in AI, automation, or new technology.",
+    emailBody:
+      "Score yourself honestly, then focus on your lowest-scoring questions first — in order. Most growing companies land in the middle, and the middle is exactly where the right first move creates outsized value.",
+    emailNextStep:
+      "When you're ready to apply the framework to your business, we run an <strong>AI &amp; Operations Readiness Assessment</strong> and hand you a prioritized, honest plan. Just reply to this email.",
+    leadSource: "ai_readiness_guide",
   },
 };
 
