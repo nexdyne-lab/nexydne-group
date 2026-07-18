@@ -216,9 +216,12 @@ export const appRouter = router({
 
         // 2. Add to the marketing audience (best-effort; single opt-in via the
         //    form's notice that requesting the resource means occasional insights).
+        // Default the stored first name to "there" so nurture greetings never
+        // render "Hi ," — templates can't fall back on the reserved
+        // {{{FIRST_NAME}}}, so we guarantee a value on the contact instead.
         await addToAudience({
           email: input.email,
-          firstName: input.firstName || null,
+          firstName: input.firstName || "there",
           source: "casestudy",
         });
 
