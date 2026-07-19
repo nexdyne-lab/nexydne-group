@@ -103,7 +103,12 @@ www.newco.tech** (240 URLs, wrong domain), **SEO.tsx canonicals → nexdyne.tech
   robots/llms/sitemap serve; all internal links in new articles resolve;
   12/12 sitemap URL spot-checks clean; 5 representative existing pages
   regression-checked; "broken images" ruled lazy-load artifact (0 after scroll).
-- Post-deploy (after approval): submit sitemap in Google Search Console.
+- **Post-deploy finding (ACTION FOR DAVID):** Cloudflare injects a *managed
+  robots.txt* ahead of ours — `ai-train=no` + `Disallow: /` for GPTBot,
+  ClaudeBot, Google-Extended, CCBot, etc. The edge is blocking AI crawlers,
+  overriding the GEO policy. Fix in Cloudflare dash: AI Crawl Control /
+  "Block AI bots" → Allow, and disable Managed robots.txt (Content Signals).
+- Post-deploy: submit sitemap in Google Search Console (needs David's Google account).
 
 ### 2026-07-19 — Warm-up underway + Newsletter Issue 01 SENT + Turnstile hotfix
 
