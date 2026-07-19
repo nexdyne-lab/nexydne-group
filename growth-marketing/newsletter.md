@@ -23,6 +23,11 @@ One email a month. Structure — never more:
 **Preview text** extends the subject, never repeats it. One theme per issue,
 alternating AI ↔ operations ↔ finance so it never goes stale.
 
+## Send log
+- **Issue 01 — SENT 2026-07-19** to 7 contacts (warm-up audience, all owned
+  inboxes; insights@ saved to contacts beforehand so it lands in Primary).
+  All 7 delivered. Next: Issue 02 in ~1 month to the fuller list.
+
 ## The 5-issue bank (drafted in Resend, ready to send)
 
 | # | Subject | Lead | Follow-up | CTA | Broadcast id |

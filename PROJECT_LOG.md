@@ -71,6 +71,19 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-19 — Warm-up underway + Newsletter Issue 01 SENT + Turnstile hotfix
+
+- **Turnstile hotfix:** yesterday's preload fix had added `turnstile.ready()`,
+  which throws in explicit-render mode → EVERY capture modal showed "couldn't
+  load verification" in prod. Removed the call (render directly); verified live;
+  security unchanged (client token requirement + server verifyTurnstile intact).
+- **Domain warm-up started:** 3 fresh Gmail inboxes through the funnel (all
+  delivered, in audience — also proves the Turnstile fix in the wild);
+  insights@ saved to contacts in each; ~10 more to go per warmup-emails.md
+  (kept outside the repo).
+- **Newsletter Issue 01 sent** via Broadcast API to the 7-contact warm-up
+  audience — all delivered. Send log in growth-marketing/newsletter.md.
+
 ### 2026-07-19 — Lead-magnet PDFs redesigned: minimal document style (Video-Guide look)
 
 - Both guide PDFs restyled per David's direction: professional/minimal like the

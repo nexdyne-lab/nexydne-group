@@ -442,6 +442,6 @@ lead-magnets/
 | 4. Gated delivery (private R2 + endpoint) | ✅ Live |
 | 5. Landing page template (config-driven) | ✅ Live |
 | 6. Nurture automation (Resend) | ✅ Live (event trigger + 3-email automation, enabled via API) |
-| 6b. Newsletter relationship | ✅ Built — 5 issues drafted in Resend; send monthly after warm-up |
+| 6b. Newsletter relationship | ✅ LIVE — Issue 01 sent 2026-07-19; issues 02–05 banked; monthly cadence |
 | 7. Channels / distribution | 🔨 On-site promo ✅ · LinkedIn ✅ launched (page + post #1 + 6-post queue) · SEO cluster next |
 | Admin panel (no-code magnet management) | 🔮 Later (when volume justifies) |
