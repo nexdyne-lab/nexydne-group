@@ -491,3 +491,21 @@ lead-magnets/
 | 6b. Newsletter relationship | ✅ LIVE — Issue 01 sent 2026-07-19; issues 02–05 banked; monthly cadence |
 | 7. Channels / distribution | ✅ COMPLETE — on-site promo · LinkedIn launched · SEO+GEO live (sitemap in GSC, 1,116 pages discovered; AI crawlers unblocked at the edge) |
 | Admin panel (no-code magnet management) | 🔮 Later (when volume justifies) |
+
+## Stage: Facebook channel (in progress — 2026-07-19)
+
+**Three-style system** (full rationale in `facebook-content/FACEBOOK_STRATEGY.md`):
+1. **Style 1 — bare link post** (HBR model): the OG preview card does the visual
+   work; the caption is a first-person human hook, never a summary. Default,
+   2 of every 3 posts. Zero production cost — this is the payoff of the
+   server-side OG meta system.
+2. **Style 3 — gradient photo tile** (Entrepreneur model): curated photo +
+   charcoal gradient + display-serif headline + wordmark, from the social-tiles
+   pipeline. Weekly flagship.
+3. **Style 2 — numbered infographic tile** (McKinsey model): framework/listicle
+   articles only, 1–2 per month.
+
+**Rhythm:** Mon/Wed/Fri (offset from LinkedIn Tue/Thu). Tracker:
+`facebook-content/Facebook Content Calendar.xlsx` (18 posts prefilled to
+Aug 28). Assets in monthly subfolders. **Template lesson:** invest in OG meta
+first — it makes the highest-volume post style free forever.

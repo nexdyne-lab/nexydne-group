@@ -606,3 +606,13 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   ghosts (SearchDialog + Sitemap) — fixed.
 - QC: tsc clean, build green (guard passes), 34/34 tests, headless sweep of 8
   heaviest-remapped pages → 0 broken scoped links, 0 JS errors.
+
+### 2026-07-19 — Facebook channel: strategy + calendar scaffold
+- New `growth-marketing/facebook-content/` folder: `FACEBOOK_STRATEGY.md` (the
+  approved three-style system — HBR bare-link / Entrepreneur gradient tile /
+  McKinsey infographic, with the weekly rhythm), `Facebook Content Calendar.xlsx`
+  (18 posts prefilled Jul 20 → Aug 28, Mon/Wed/Fri, status dropdown), and
+  monthly asset subfolders `2026-07/`, `2026-08/`.
+- Posting days Mon/Wed/Fri, deliberately offset from LinkedIn (Tue/Thu). All
+  prefilled URLs verified against real routes. Tile templates not built yet —
+  next step on David's go.
