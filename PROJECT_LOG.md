@@ -83,7 +83,8 @@ invisible — every URL would share with a generic card.
   mockup + hook + "free download" meta).
 - **Server-side per-route meta injection:** `scripts/generate-og-meta.mjs`
   extracts route→{title, description, image} from the V2 article components +
-  magnet registry (116 routes) → `og-meta.json`; `serveStatic` rewrites
+  **IndustryCaseStudyTemplate case studies (288)** + magnet registry (**404
+  routes total**; older bespoke case pages fall back to the branded default) → `og-meta.json`; `serveStatic` rewrites
   title/description/og:*/twitter tags in the raw HTML shell per request.
   Crawler-eye verified via curl: articles share with their own hero + title,
   magnets with their custom cards, everything else the branded default.

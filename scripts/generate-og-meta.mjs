@@ -29,18 +29,34 @@ const grab = (src, key) => {
   return m ? m[1] : null;
 };
 
-let articles = 0;
+let articles = 0, cases = 0;
 for (const [route, comp] of routes) {
   const file = imports[comp];
   if (!file || !fs.existsSync(path.join(root, file))) continue;
   const src = read(file);
-  if (!src.includes("InsightArticleV2")) continue; // scope: V2 articles
-  const title = grab(src, "title");
-  const subtitle = grab(src, "subtitle");
-  const hero = grab(src, "heroImage");
-  if (title) {
-    meta[route] = { title, description: subtitle || "", image: hero || "/og-image.jpg" };
-    articles++;
+
+  // V2 insight articles: title/subtitle/heroImage
+  if (src.includes("InsightArticleV2")) {
+    const title = grab(src, "title");
+    const subtitle = grab(src, "subtitle");
+    const hero = grab(src, "heroImage");
+    if (title) {
+      meta[route] = { title, description: subtitle || "", image: hero || "/og-image.jpg" };
+      articles++;
+    }
+    continue;
+  }
+
+  // Case studies (IndustryCaseStudyTemplate): prefer the crafted seoTitle/
+  // seoDescription, fall back to title/subtitle; share with the case's hero.
+  if (src.includes("IndustryCaseStudyTemplate")) {
+    const title = grab(src, "seoTitle") || grab(src, "title");
+    const desc = grab(src, "seoDescription") || grab(src, "subtitle");
+    const hero = grab(src, "heroImage");
+    if (title) {
+      meta[route] = { title, description: desc || "", image: hero || "/og-image.jpg" };
+      cases++;
+    }
   }
 }
 
@@ -55,4 +71,4 @@ for (const block of lm.split(/\n  "(?=[a-z0-9-]+": \{)/).slice(1)) {
 }
 
 fs.writeFileSync(path.join(root, "client/public/og-meta.json"), JSON.stringify(meta, null, 1));
-console.log(`og-meta.json → ${Object.keys(meta).length} routes (${articles} articles + magnets)`);
+console.log(`og-meta.json → ${Object.keys(meta).length} routes (${articles} articles + ${cases} case studies + magnets)`);
