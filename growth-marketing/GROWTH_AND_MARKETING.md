@@ -291,6 +291,16 @@ lead + constructive follow-up), one quiet rotating CTA, reply prompt. **5 issues
 drafted as Resend Broadcasts** (send after warm-up; ~30 min/month to run).
 Format rules, issue bank, workflow, and gotchas: [`newsletter.md`](./newsletter.md).
 
+## Pattern: single-source content registries (learned the hard way)
+
+Any catalog surface (articles, case studies, magnets) must have ONE data file
+as source of truth + a BUILD-TIME GUARD that fails on dangling references.
+NexDyne's insights catalog drifted across 4 unsynced places → 120 broken links.
+Fix: `data/insightsRegistry.ts` (drives landing/filters/rails) +
+`scripts/check-insight-links.mjs` (first step of every build). Adding content =
+component + route + registry entry in one commit; the build fails loudly on
+drift. Port this pattern to every new company from day one.
+
 ## Stage 7 — Drive traffic (channels)  *(On-site promo ✅ · LinkedIn/SEO next)*
 
 A live funnel with no traffic collects nothing. Order of channels:

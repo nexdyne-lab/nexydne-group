@@ -90,9 +90,16 @@ components). Root cause: article inventory duplicated in 4 unsynced places.
   listing any /insights ref that doesn't match a route (runs FIRST in
   `npm run build`). Remapped all 77 unique ghost slugs to closest real
   articles (targets pre-validated); 104 broken refs → 0 across 69 files.
-- Each step verified (tsc/build/tests + headless link-crawl + visual) and
-  committed separately. Steps 4–5 (3 bespoke articles → V2, 404 page rebrand,
-  final QC) follow.
+- **Step 4:** the 3 bespoke articles (digital-channels-growth,
+  subscription-economy-playbook, ecommerce-launch-guide) migrated to
+  InsightArticleV2 (all 96 articles now uniform; invented client anecdotes
+  dropped per no-fabricated-specifics standard; registry synced) + NotFound
+  page rebranded from purple to the charcoal/red editorial system with
+  /resources as top suggestion. Bonus: the 3 now emit proper social cards
+  (og-meta 407 routes).
+- **Step 5 QC×2:** guard 0 broken; landing 96 links/0 broken; fixed
+  capability/solution pages PASS with 0 broken insight links; 0 JS errors;
+  registry↔routes drift NONE; tsc/build/34 tests green twice.
 
 
 ### 2026-07-19 — Social link previews fixed: OG cards + server-side per-route meta
