@@ -110,7 +110,10 @@ www.newco.tech** (240 URLs, wrong domain), **SEO.tsx canonicals → nexdyne.tech
   .env: Zone→Bot Management Edit + Zone Settings Edit). Bot Fight Mode kept ON.
   Verified live: injection gone, GPTBot = Allow only, our GEO policy is the
   sole robots.txt content.
-- Post-deploy: submit sitemap in Google Search Console (needs David's Google account).
+- **Google Search Console — DONE:** domain property auto-verified (Workspace
+  DNS), sitemap submitted as full URL (Domain properties reject bare paths) →
+  **1,116 pages discovered immediately**. Watch Indexing→Pages + Performance
+  over the coming weeks.
 
 ### 2026-07-19 — Warm-up underway + Newsletter Issue 01 SENT + Turnstile hotfix
 

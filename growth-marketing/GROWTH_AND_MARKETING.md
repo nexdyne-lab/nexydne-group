@@ -340,9 +340,14 @@ A live funnel with no traffic collects nothing. Order of channels:
 4. **Later, only once proven:** partnerships (chambers, fractional CFOs), a
    webinar off the diagnostic, then paid (LinkedIn/Google/retargeting).
 
-**Status:** on-site promo live · **LinkedIn launched** (page + post #1 live,
-6-post queue dated through Aug 5 — see `linkedin-launch.md`). Remaining: SEO
-content cluster; keep the posting cadence + domain warm-up (Stage 1b) running.
+**Status: ALL CHANNELS SHIPPED.** On-site promo live · LinkedIn launched (queue
+through Aug 5) · SEO+GEO live: sitemap submitted in Google Search Console
+(1,116 pages discovered), llms.txt + robots.txt + JSON-LD live, **Cloudflare
+edge unblocked for AI crawlers** (gotcha: Cloudflare's "Block AI Bots" +
+managed robots.txt override your robots policy — disable via dashboard or the
+Bot Management API; keep Bot Fight Mode on). GSC tip: Domain properties need
+the FULL sitemap URL. Ongoing: posting cadence, warm-up ramp, monthly
+newsletter, measure GSC Performance.
 
 ---
 
@@ -458,5 +463,5 @@ lead-magnets/
 | 5. Landing page template (config-driven) | ✅ Live |
 | 6. Nurture automation (Resend) | ✅ Live (event trigger + 3-email automation, enabled via API) |
 | 6b. Newsletter relationship | ✅ LIVE — Issue 01 sent 2026-07-19; issues 02–05 banked; monthly cadence |
-| 7. Channels / distribution | 🔨 On-site promo ✅ · LinkedIn ✅ launched (page + post #1 + 6-post queue) · SEO cluster next |
+| 7. Channels / distribution | ✅ COMPLETE — on-site promo · LinkedIn launched · SEO+GEO live (sitemap in GSC, 1,116 pages discovered; AI crawlers unblocked at the edge) |
 | Admin panel (no-code magnet management) | 🔮 Later (when volume justifies) |
