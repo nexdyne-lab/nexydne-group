@@ -17,7 +17,12 @@ reposts. Page assets: `social-tiles/out/linkedin-logo.png` (300×300) +
 
 ---
 
-## Post #1 — Founder launch post (APPROVED · the readiness guide)
+## Post #1 — Founder launch post (✅ PUBLISHED 2026-07-19 · the readiness guide)
+
+*Live from David's personal profile with the @NexDyne tag + site preview card;
+LinkedIn auto-shortened the URL to lnkd.in. Early traction within minutes.
+Coaching note applied: update David's headline to lead with "Founder & CEO,
+NexDyne Consulting Group" — it rides under every post/comment.*
 
 ```
 The most expensive question growing companies are asking right now:
