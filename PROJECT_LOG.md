@@ -71,6 +71,20 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-18 — Deliverability: reply handling, insights@ alias, auth verified, warm-up plan
+
+- **Reply handling:** emails send `From: insights@nexdynegroup.com` with no
+  `reply_to`, so replies route to `insights@` automatically (verified on sent
+  emails). Sending ≠ receiving — so added `insights@` as a **Google Workspace
+  alias** (now receives → David's Gmail) + Gmail "Send mail as" (reply *as*
+  insights@). `insights@` now both sends (Resend) and receives. Matters because
+  nurture #4 asks prospects to reply "assessment".
+- **Email auth verified (the #1 deliverability lever, all in place):** SPF (Resend
+  return-path `send.nexdynegroup.com` via Amazon SES), DKIM (`resend._domainkey`),
+  DMARC (`p=quarantine`). Legit mail passes via DKIM+SPF alignment.
+- **Domain warm-up plan** documented in the playbook (start ~10–20/day to engaged
+  inboxes, ramp over 2–3 weeks) — do before driving real traffic.
+
 ### 2026-07-18 — Funnel tested end-to-end; nurture live at production cadence
 
 - Verified the full lead-magnet funnel in production (real download → gated R2

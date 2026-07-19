@@ -82,6 +82,36 @@ to the user. Capture first, then best-effort the rest.
 
 ---
 
+## Stage 1b — Deliverability, reply handling & warm-up
+
+Sending works ≠ emails reach the inbox, and ≠ you can receive replies. Three
+things to get right per company:
+
+**1. Email authentication (the #1 lever — verify it's live):**
+- **SPF, DKIM, DMARC** on the sending domain. Resend sets SPF (on a
+  `send.<domain>` return-path via Amazon SES) + DKIM (`resend._domainkey`) on
+  domain verification. **Ensure a DMARC record exists** (e.g. `p=quarantine`);
+  legit mail then passes via DKIM/SPF alignment. Check with
+  `dig +short TXT _dmarc.<domain>` etc.
+
+**2. Reply handling — sending address ≠ a mailbox:**
+- You can send `From: insights@<domain>` purely via domain verification — no
+  mailbox needed. But **replies to it go nowhere** unless that address also
+  *receives*. Since we set no `reply_to`, replies route to the `From` address.
+- Fix: add the sending address (e.g. `insights@`) as an **alias** on your mail
+  provider (Google Workspace: Users → Add alternate email) so replies land in a
+  real inbox. Optionally add it as Gmail **"Send mail as"** to reply *as* it.
+- This matters because the nurture invites a reply ("reply 'assessment'") — those
+  are your hottest leads.
+
+**3. Warm up the domain before volume:**
+- New domains land in spam until they build reputation. Start with **~10–20
+  emails/day to engaged inboxes** (people who open, reply, mark "not spam", add
+  the sender to contacts), then ramp: ~30–50/day week 2, ~100+/day week 3, then
+  open real traffic. The clever move: route friendly contacts *through the funnel*
+  so the real sending address gets warmed with genuine engagement. Never blast a
+  cold list on day one.
+
 ## Stage 2 — Collect (forms, verification, storage, notification)
 
 **What:** public forms that capture contacts, block bots, store the lead, and
@@ -278,6 +308,9 @@ Repeating this whole engine on the next company:
 
 **A. Stand up accounts** (once per company)
 - [ ] Resend: verify domain, API key, create Audiences, sender addresses
+- [ ] **Deliverability:** confirm SPF/DKIM/DMARC live; add the sending address
+      (e.g. `insights@`) as a **receiving alias** in the mail provider so replies
+      land in an inbox (see Stage 1b)
 - [ ] Cloudflare: DNS, reverse-proxy Worker, Turnstile keys, **R2 bucket + token**
 - [ ] Railway project (auto-deploy from `main`)
 - [ ] GA4 property
@@ -298,7 +331,9 @@ Repeating this whole engine on the next company:
 
 **E. Produce the first magnet**, run the add-a-magnet recipe, go live
 
-**F. Turn on nurture + channels**
+**F. Warm up the sending domain** (Stage 1b) before driving real traffic
+
+**G. Turn on nurture + channels**
 
 ---
 
