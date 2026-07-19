@@ -120,7 +120,9 @@ export default function InsightArticleV2({
 
   return (
     <div className="min-h-screen bg-white text-charcoal">
-      <SEO title={title} description={subtitle} canonical={canonicalPath} />
+      {/* heroImage doubles as the social-share (og:image) card; SEO falls back
+          to the branded default /og-image.jpg when no hero is set. */}
+      <SEO title={title} description={subtitle} canonical={canonicalPath} ogImage={heroImage} />
 
       {/* Article structured data — search + AI answer engines (GEO). */}
       <Helmet>

@@ -14,6 +14,8 @@ export interface LeadMagnetConfig {
   slug: string;
   seoTitle: string;
   seoDescription: string;
+  /** 1200×630 social-share card (og:image) for link previews. */
+  ogImage?: string;
 
   // Hero
   heroTag: string; // small pill, e.g. "Free Download"
@@ -57,6 +59,7 @@ export const LEAD_MAGNETS: Record<string, LeadMagnetConfig> = {
     seoTitle: "The SMB AI Readiness Guide — Free Download",
     seoDescription:
       "A free 10-question diagnostic for growing companies. Evaluate your processes, data, workforce, and governance before investing in AI or automation.",
+    ogImage: "/images/og/ai-readiness-guide-og.jpg",
 
     heroTag: "Free Download",
     headline: "The SMB AI Readiness Guide",
@@ -108,6 +111,7 @@ export const LEAD_MAGNETS: Record<string, LeadMagnetConfig> = {
     seoTitle: "The Operations Readiness Checklist — Free Download",
     seoDescription:
       "A free 15-point diagnostic for growing companies. Find the operational gaps that break first when you scale — before they cost you.",
+    ogImage: "/images/og/operations-readiness-checklist-og.jpg",
 
     heroTag: "Free Download",
     headline: "The Operations Readiness Checklist",

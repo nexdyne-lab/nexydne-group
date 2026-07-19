@@ -66,7 +66,7 @@ export function LeadMagnetLanding({ config }: { config: LeadMagnetConfig }) {
 
   return (
     <div className="min-h-screen bg-white text-charcoal font-sans">
-      <SEO title={config.seoTitle} description={config.seoDescription} canonical={`/resources/${config.slug}`} />
+      <SEO title={config.seoTitle} description={config.seoDescription} canonical={`/resources/${config.slug}`} ogImage={config.ogImage} />
 
       {/* FAQPage structured data — the page's real FAQ, machine-readable for
           search + AI answer engines (GEO). */}

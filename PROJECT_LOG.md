@@ -71,6 +71,34 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-19 — Social link previews fixed: OG cards + server-side per-route meta
+
+Prep for the Facebook push. Found: the site-wide default og:image (/og-image.jpg)
+didn't exist → every shared link rendered without an image. Deeper: social
+crawlers (FB/LinkedIn/X/Slack) don't run JS, so Helmet-set per-page OG tags were
+invisible — every URL would share with a generic card.
+
+- **3 branded 1200×630 OG cards** rendered via social-tiles pipeline: default
+  site card (`/og-image.jpg`), + per-magnet cards in `/images/og/` (cover
+  mockup + hook + "free download" meta).
+- **Server-side per-route meta injection:** `scripts/generate-og-meta.mjs`
+  extracts route→{title, description, image} from the V2 article components +
+  magnet registry (116 routes) → `og-meta.json`; `serveStatic` rewrites
+  title/description/og:*/twitter tags in the raw HTML shell per request.
+  Crawler-eye verified via curl: articles share with their own hero + title,
+  magnets with their custom cards, everything else the branded default.
+  Bonus: per-page titles/descriptions in raw HTML also helps SEO/GEO (non-JS
+  crawlers).
+- Wired both generators (og-meta + sitemap) into `npm run build` so they
+  refresh on every deploy. index.html got static og:image/twitter defaults.
+- InsightArticleV2 passes heroImage as ogImage; LeadMagnetConfig gained ogImage.
+- QC×2: build/34 tests; all 116 referenced images exist in dist; SPA boots on
+  rewritten shells; unknown routes fall back; curl checks per route. (Note: a
+  local 404 on /api/download was env-only — no R2 vars locally; prod on R2.)
+- After deploy: re-scrape key URLs in Facebook Sharing Debugger
+  (developers.facebook.com/tools/debug) to refresh FB's cache.
+
+
 ### 2026-07-19 — Milestone artifacts (shareables)
 
 - Branded build-report graphic: `social-tiles/out/growth-engine-report.png`
