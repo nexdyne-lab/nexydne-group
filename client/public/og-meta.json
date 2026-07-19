@@ -144,6 +144,21 @@
   "description": "A comprehensive guide to connecting legacy systems with modern cloud platforms while maintaining security and compliance.",
   "image": "/images/capabilities/cap-data-bars.jpg"
  },
+ "/insights/digital-channels-growth": {
+  "title": "Digital channels driving revenue growth: a playbook for growing companies",
+  "description": "Growing companies are discovering that digital channels aren't just a nice-to-have — they're essential for sustainable growth. How leading companies achieve outsized revenue growth through e-commerce, subscriptions, and platform businesses.",
+  "image": "/images/abstract-growth.jpg"
+ },
+ "/insights/subscription-economy-playbook": {
+  "title": "The subscription economy playbook for traditional businesses",
+  "description": "Transform your business from unpredictable one-time sales to sustainable recurring revenue. How traditional companies are successfully adopting subscription models.",
+  "image": "/images/business-strategy-abstract.jpg"
+ },
+ "/insights/ecommerce-launch-guide": {
+  "title": "E-commerce launch guide: from zero to revenue in 90 days",
+  "description": "A practical, week-by-week roadmap for launching e-commerce capabilities quickly and effectively — from platform selection to first revenue.",
+  "image": "/images/adoption-abstract.jpg"
+ },
  "/insights/digital-growth-playbook": {
   "title": "The digital growth playbook for growing companies",
   "description": "How leading growing companies are building digital channels that compete with well-funded startups and enterprise incumbents.",

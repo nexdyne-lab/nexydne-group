@@ -1,6 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { AlertCircle, Home, ArrowRight, Search, FileText, Briefcase } from "lucide-react";
+import { ArrowRight, FileText, Briefcase, Search } from "lucide-react";
 import { useLocation, Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -8,102 +6,72 @@ import Footer from "@/components/Footer";
 export default function NotFound() {
   const [, setLocation] = useLocation();
 
-  const handleGoHome = () => {
-    setLocation("/");
-  };
+  const links = [
+    { href: "/resources", icon: FileText, title: "Free Resources", desc: "Readiness tools for growing companies" },
+    { href: "/solutions/intelligent-process-optimization", icon: Briefcase, title: "Our Solutions", desc: "Explore our capabilities" },
+    { href: "/cases", icon: Search, title: "Case Studies", desc: "See our impact across industries" },
+  ];
 
   return (
-    <div className="min-h-screen w-full bg-background flex flex-col">
+    <div className="min-h-screen w-full bg-white flex flex-col font-sans text-charcoal">
       <Navigation />
-      
-      <div className="flex-grow flex items-center justify-center py-20 px-4">
-        <div className="w-full max-w-4xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
-            {/* Left Column: Error Message */}
-            <div className="text-left space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-border text-secondary text-sm font-medium">
-                <AlertCircle className="w-3 h-3 sm:w-4 sm:h-4" />
-                <span>Error 404</span>
+
+      <div className="flex-grow flex items-center justify-center py-24 px-6">
+        <div className="w-full max-w-5xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            {/* Left: message */}
+            <div>
+              <div className="flex items-center gap-3 mb-5">
+                <span className="block h-[3px] w-9 bg-primary" />
+                <span className="nx-eyebrow text-charcoal/60">Error 404</span>
               </div>
-              
               <h1 className="nx-h1 text-charcoal">
-                Page not <span className="text-secondary">found</span>
+                Page not <span className="text-primary">found</span>
               </h1>
-              
-              <p className="text-lg text-muted-foreground/50 leading-relaxed max-w-md">
-                The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+              <p className="nx-lead text-charcoal/60 mt-6 max-w-md">
+                The page you are looking for might have been removed, had its
+                name changed, or is temporarily unavailable.
               </p>
-              
-              <div className="flex flex-wrap gap-4 pt-2">
-                <Button
-                  onClick={handleGoHome}
-                  className="bg-primary hover:bg-primary-hover text-white font-bold rounded-full px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg shadow-[0_10px_25px_-8px_rgba(224,76,44,0.4)] hover:shadow-[0_14px_30px_-8px_rgba(224,76,44,0.55)] transition"
+              <div className="mt-9 flex flex-wrap items-center gap-4">
+                <button
+                  onClick={() => setLocation("/")}
+                  className="inline-block whitespace-nowrap bg-primary px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] text-white hover:bg-primary-hover transition-colors cursor-pointer"
                 >
-                  <Home className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                   Back to Home
-                </Button>
-                
-                <Button
-                  variant="outline"
+                </button>
+                <button
                   onClick={() => setLocation("/contact")}
-                  className="border-border text-charcoal hover:bg-white/10 hover:text-white rounded-full px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg"
+                  className="inline-block whitespace-nowrap border border-charcoal/30 px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] text-charcoal hover:border-charcoal hover:bg-charcoal hover:text-white transition-colors cursor-pointer"
                 >
                   Contact Support
-                </Button>
+                </button>
               </div>
             </div>
-            
-            {/* Right Column: Helpful Links */}
-            <div className="bg-white/5 backdrop-blur-sm border border-border rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8">
-              <h3 className="text-xl font-semibold text-charcoal mb-6">
-                You might be looking for:
-              </h3>
-              
-              <div className="space-y-4">
-                <Link href="/solutions/intelligent-process-optimization">
-                  <div className="group flex items-center gap-4 p-4 rounded-lg sm:rounded-xl bg-white/5 hover:bg-white/10 border border-border hover:border-secondary/30 transition cursor-pointer">
-                    <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
-                      <Briefcase className="w-4 h-4 sm:w-5 sm:h-5" />
+
+            {/* Right: helpful links — sharp bordered cards, red-on-hover */}
+            <div className="border border-border bg-white p-7 md:p-8">
+              <h3 className="nx-h3 text-charcoal mb-6">You might be looking for:</h3>
+              <div className="space-y-3">
+                {links.map(({ href, icon: Icon, title, desc }) => (
+                  <Link key={href} href={href}>
+                    <div className="group flex items-center gap-4 p-4 border border-border hover:border-primary/50 transition-colors cursor-pointer">
+                      <div className="w-10 h-10 flex-none border border-border flex items-center justify-center text-primary">
+                        <Icon className="w-5 h-5" strokeWidth={1.75} />
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="font-semibold text-charcoal group-hover:text-primary transition-colors">{title}</h4>
+                        <p className="text-sm text-charcoal/55">{desc}</p>
+                      </div>
+                      <ArrowRight className="w-5 h-5 text-charcoal/30 group-hover:text-primary group-hover:translate-x-1 transition-all" />
                     </div>
-                    <div className="flex-1">
-                      <h4 className="text-charcoal font-medium group-hover:text-secondary transition-colors">Our Solutions</h4>
-                      <p className="text-sm text-muted-foreground/70">Explore our enterprise capabilities</p>
-                    </div>
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-secondary group-hover:translate-x-1 transition" />
-                  </div>
-                </Link>
-                
-                <Link href="/insights">
-                  <div className="group flex items-center gap-4 p-4 rounded-lg sm:rounded-xl bg-white/5 hover:bg-white/10 border border-border hover:border-secondary/30 transition cursor-pointer">
-                    <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
-                      <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="text-charcoal font-medium group-hover:text-secondary transition-colors">Latest Insights</h4>
-                      <p className="text-sm text-muted-foreground/70">Read our thought leadership articles</p>
-                    </div>
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-secondary group-hover:translate-x-1 transition" />
-                  </div>
-                </Link>
-                
-                <Link href="/cases">
-                  <div className="group flex items-center gap-4 p-4 rounded-lg sm:rounded-xl bg-white/5 hover:bg-white/10 border border-border hover:border-secondary/30 transition cursor-pointer">
-                    <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
-                      <Search className="w-4 h-4 sm:w-5 sm:h-5" />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="text-charcoal font-medium group-hover:text-secondary transition-colors">Case Studies</h4>
-                      <p className="text-sm text-muted-foreground/70">See our impact across industries</p>
-                    </div>
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-secondary group-hover:translate-x-1 transition" />
-                  </div>
-                </Link>
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </div>
-      
+
       <Footer />
     </div>
   );

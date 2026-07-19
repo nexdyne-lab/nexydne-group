@@ -1,389 +1,133 @@
-import { Link } from "wouter";
-import { motion } from "framer-motion";
-import { ArrowRight, ArrowLeft, Clock, User, Share2, Linkedin, Twitter, Facebook, BookOpen, TrendingUp, Target, Zap, BarChart3 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import { SEO } from "@/components/SEO";
+import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function InsightDigitalChannelsGrowth() {
+  const relatedInsights = [
+    { title: "The Digital Growth Playbook", category: "Growth", link: "/insights/digital-growth-playbook", image: "/images/abstract-growth.jpg" },
+    { title: "The Subscription Economy Playbook", category: "Business Models", link: "/insights/subscription-economy-playbook", image: "/images/business-strategy-abstract.jpg" },
+    { title: "The E-commerce Launch Guide", category: "Digital Commerce", link: "/insights/ecommerce-launch-guide", image: "/images/adoption-abstract.jpg" },
+  ];
+
+  const sections = [
+    { id: "digital-imperative", label: "The digital imperative" },
+    { id: "three-strategies", label: "Three channel strategies" },
+    { id: "implementation", label: "From strategy to execution" },
+    { id: "roadmap", label: "A practical roadmap" },
+  ];
+
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Digital Channels Driving Revenue Growth | Insights" 
-        description="How growing companies are leveraging digital channels to drive 2-5x revenue growth through e-commerce, subscriptions, and platform businesses."
-        canonical="/insights/digital-channels-growth"
-      />
-      <Navigation />
-      
-      {/* Neutral-first editorial hero */}
-      <section className="relative w-full bg-background overflow-hidden">
-        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(70% 60% at 82% 14%, rgba(224,76,44,0.05) 0%, transparent 55%), radial-gradient(55% 55% at 6% 95%, rgba(111,68,163,0.045) 0%, transparent 55%)" }} />
-        <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-          <div className="flex flex-col justify-center min-h-[48vh] py-24 lg:py-28">
-            <div className="max-w-[900px]">
-              <Link href="/solutions/accelerating-business-growth">
-                <span className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-6 cursor-pointer">
-                  <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
-                  Back to Accelerating Business Growth
-                </span>
-              </Link>
-              <div className="flex items-center gap-3 mb-6">
-                <span className="block h-[3px] w-9 bg-primary" />
-                <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Digital Growth · Strategy</span>
-              </div>
-              <h1 className="text-charcoal font-bold tracking-[-0.03em] leading-[1.06] text-[clamp(2.1rem,4.6vw,3.6rem)]">
-                Digital channels driving revenue growth: A playbook for growing companies
-              </h1>
-              <p className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[62ch]">
-                Growing companies are discovering that digital channels aren't just a nice-to-have—they're essential for sustainable growth. Here's how leading companies are achieving 2-5x revenue growth through strategic digital initiatives.
-              </p>
-              <div className="mt-7 flex flex-wrap items-center gap-4 text-muted-foreground text-sm">
-                <div className="flex items-center gap-2">
-                  <Clock className="w-3 h-3 sm:w-4 sm:h-4" />
-                  <span>12 min read</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <User className="w-3 h-3 sm:w-4 sm:h-4" />
-                  <span>NEXDYNE Growth Practice</span>
-                </div>
-                <span>January 2026</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <InsightArticleV2
+      category="Digital Growth"
+      categoryHref="/insights"
+      canonicalPath="/insights/digital-channels-growth"
+      title="Digital channels driving revenue growth: a playbook for growing companies"
+      subtitle="Growing companies are discovering that digital channels aren't just a nice-to-have — they're essential for sustainable growth. How leading companies achieve outsized revenue growth through e-commerce, subscriptions, and platform businesses."
+      heroImage="/images/abstract-growth.jpg"
+      publishDate="January 2026"
+      readTime="12 min"
+      sections={sections}
+      keyTakeaways={[
+        "Companies with mature digital channels consistently outgrow peers and achieve higher customer lifetime value through retention and cross-sell.",
+        "Three strategies drive most of the gains: e-commerce/direct channels, subscription and recurring-revenue models, and platform businesses with network effects.",
+        "Start with customer value, not technology — then launch a minimum viable product in 8–12 weeks and iterate on real feedback.",
+        "The channel is half the battle: pair it with performance marketing, conversion optimization, customer success, and analytics capabilities.",
+      ]}
+      relatedInsights={relatedInsights}
+    >
+      <p>
+        The digital transformation of commerce is no longer a future trend — it's the present reality. Growing
+        companies that embrace digital channels are consistently outperforming their peers, achieving multiples
+        of their prior revenue growth while reducing customer acquisition costs.
+      </p>
 
-      {/* Article Content */}
-      <section className="py-10 sm:py-14 md:py-16 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-24">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="grid lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12">
-            {/* Main Content */}
-            <div className="lg:col-span-8">
-              <motion.article
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="prose prose-lg max-w-none"
-              >
-                <div className="text-charcoal/80 leading-relaxed space-y-6">
-                  <p className="text-xl font-medium text-charcoal">
-                    The digital transformation of commerce is no longer a future trend—it's the present reality. Growing companies that embrace digital channels are consistently outperforming their peers, achieving 2-5x revenue growth while reducing customer acquisition costs by 30-50%.
-                  </p>
+      <h2 id="digital-imperative">The digital imperative for growing companies</h2>
+      <p>
+        For decades, growing companies competed on relationships, local presence, and service quality. These
+        advantages haven't disappeared, but they're no longer sufficient. Today's buyers — whether consumers or
+        business purchasers — expect digital convenience alongside traditional strengths.
+      </p>
+      <p>
+        The divide is stark: companies with mature digital channels grow revenue several times faster than those
+        without. More importantly, they're building sustainable competitive advantages that compound over time —
+        higher customer lifetime value through improved retention and cross-sell opportunities.
+      </p>
 
-                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
-                    The digital imperative for growing companies
-                  </h2>
-                  
-                  <p>
-                    For decades, growing companies competed on relationships, local presence, and service quality. These advantages haven't disappeared, but they're no longer sufficient. Today's buyers—whether consumers or business purchasers—expect digital convenience alongside traditional strengths.
-                  </p>
-                  
-                  <p>
-                    Our research across 200+ growing companies reveals a stark divide: companies with mature digital channels are growing revenue 3.2x faster than those without. More importantly, they're building sustainable competitive advantages that compound over time.
-                  </p>
+      <h2 id="three-strategies">Three digital channel strategies driving growth</h2>
 
-                  <div className="bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
-                    <h3 className="text-xl font-bold text-charcoal mb-4">Key Finding</h3>
-                    <p className="text-charcoal/70 mb-0">
-                      Companies with mature digital channels grow revenue 3.2x faster than peers and achieve 40% higher customer lifetime value through improved retention and cross-sell opportunities.
-                    </p>
-                  </div>
+      <h3>1. E-commerce and direct-to-customer channels</h3>
+      <p>
+        The most immediate opportunity for most growing companies is launching or optimizing e-commerce
+        capabilities. Whether B2C or B2B, digital ordering channels offer multiple benefits:
+      </p>
+      <ul>
+        <li><strong>24/7 availability</strong> — customers can research, compare, and purchase on their schedule.</li>
+        <li><strong>Geographic expansion</strong> — reach customers beyond your physical footprint without opening new locations.</li>
+        <li><strong>Data capture</strong> — every interaction generates insights for personalization and optimization.</li>
+        <li><strong>Margin improvement</strong> — self-service ordering reduces cost-to-serve while maintaining satisfaction.</li>
+      </ul>
 
-                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
-                    Three digital channel strategies driving growth
-                  </h2>
+      <h3>2. Subscription and recurring revenue models</h3>
+      <p>
+        The subscription economy has expanded far beyond software. Companies across industries are transforming
+        one-time transactions into ongoing relationships:
+      </p>
+      <ul>
+        <li><strong>Predictable revenue</strong> — monthly recurring revenue enables better planning and investment.</li>
+        <li><strong>Higher lifetime value</strong> — subscribers typically generate far more revenue than one-time buyers.</li>
+        <li><strong>Reduced acquisition costs</strong> — retention is cheaper than acquisition, and subscriptions incentivize retention.</li>
+        <li><strong>Valuation premium</strong> — investors value recurring-revenue businesses at meaningfully higher multiples.</li>
+      </ul>
 
-                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
-                    1. E-commerce and direct-to-customer channels
-                  </h3>
-                  
-                  <p>
-                    The most immediate opportunity for most growing companies is launching or optimizing e-commerce capabilities. Whether B2C or B2B, digital ordering channels offer multiple benefits:
-                  </p>
-                  
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li><strong>24/7 availability:</strong> Customers can research, compare, and purchase on their schedule</li>
-                    <li><strong>Geographic expansion:</strong> Reach customers beyond your physical footprint without opening new locations</li>
-                    <li><strong>Data capture:</strong> Every interaction generates insights for personalization and optimization</li>
-                    <li><strong>Margin improvement:</strong> Self-service ordering reduces cost-to-serve while maintaining or improving customer satisfaction</li>
-                  </ul>
+      <h3>3. Platform and marketplace businesses</h3>
+      <p>
+        The most ambitious digital strategy involves building platforms that connect buyers and sellers, creating
+        network effects that compound over time:
+      </p>
+      <ul>
+        <li><strong>Network effects</strong> — each new participant makes the platform more valuable for everyone.</li>
+        <li><strong>Asset-light scaling</strong> — grow transaction volume without proportional increases in inventory or headcount.</li>
+        <li><strong>Data advantages</strong> — platform operators see both sides of transactions, enabling superior matching and pricing.</li>
+        <li><strong>Switching costs</strong> — once integrated into workflows, platforms become difficult to replace.</li>
+      </ul>
 
-                  <p>
-                    A specialty retailer we worked with launched e-commerce in 10 weeks and grew online revenue 180% in 18 months—adding $3.2M in incremental revenue while their physical stores continued to perform well.
-                  </p>
+      <h2 id="implementation">Implementation: from strategy to execution</h2>
+      <p>
+        The biggest challenge isn't identifying the opportunity — it's executing effectively. The critical
+        success factors we see across digital growth initiatives:
+      </p>
+      <h3>Start with customer value, not technology</h3>
+      <p>
+        Too many digital initiatives fail because they start with technology decisions rather than customer
+        needs. Before selecting platforms or building features, answer: What friction exists in how customers
+        currently buy from us? What would make their experience significantly better? What would make them choose
+        us over alternatives?
+      </p>
+      <h3>Launch fast, iterate faster</h3>
+      <p>
+        The companies achieving the best results launch minimum viable products in 8–12 weeks, then iterate based
+        on real customer feedback. Perfectionism is the enemy of progress in digital initiatives — rapid
+        validation minimizes risk while maximizing learning.
+      </p>
+      <h3>Invest in growth capabilities</h3>
+      <p>
+        Building the digital channel is only half the battle. You also need <strong>performance marketing</strong> to
+        acquire customers efficiently, <strong>conversion optimization</strong> to maximize conversion rates,
+        <strong> customer success</strong> to maximize lifetime value, and <strong>data and analytics</strong> to
+        guide decision-making.
+      </p>
 
-                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
-                    2. Subscription and recurring revenue models
-                  </h3>
-                  
-                  <p>
-                    The subscription economy has expanded far beyond software. Companies across industries are transforming one-time transactions into ongoing relationships:
-                  </p>
-                  
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li><strong>Predictable revenue:</strong> Monthly recurring revenue (MRR) enables better planning and investment</li>
-                    <li><strong>Higher lifetime value:</strong> Subscribers typically generate 3-5x more revenue than one-time buyers</li>
-                    <li><strong>Reduced acquisition costs:</strong> Retention is cheaper than acquisition, and subscriptions incentivize retention</li>
-                    <li><strong>Valuation premium:</strong> Investors value recurring revenue businesses at 2-3x higher multiples</li>
-                  </ul>
-
-                  <p>
-                    A professional training company we partnered with transformed from one-time workshops to a subscription learning platform. Within 12 months, they had 2,400 active members generating $1.8M in annual recurring revenue with 92% retention.
-                  </p>
-
-                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
-                    3. Platform and marketplace businesses
-                  </h3>
-                  
-                  <p>
-                    The most ambitious digital strategy involves building platforms that connect buyers and sellers, creating network effects that compound over time:
-                  </p>
-                  
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li><strong>Network effects:</strong> Each new participant makes the platform more valuable for everyone</li>
-                    <li><strong>Asset-light scaling:</strong> Grow transaction volume without proportional increases in inventory or headcount</li>
-                    <li><strong>Data advantages:</strong> Platform operators see both sides of transactions, enabling superior matching and pricing</li>
-                    <li><strong>Switching costs:</strong> Once integrated into workflows, platforms become difficult to replace</li>
-                  </ul>
-
-                  <div className="bg-charcoal text-white border-t-2 border-primary p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
-                    <span className="block text-[12px] font-semibold uppercase tracking-[0.18em] text-amber mb-3">Platform Economics</span>
-                    <h3 className="text-xl font-bold mb-4">The Platform Opportunity</h3>
-                    <p className="text-white/80 mb-0">
-                      Companies that successfully build platform businesses often achieve valuations 5-10x higher than traditional businesses in the same industry, due to the scalability and defensibility of network effects.
-                    </p>
-                  </div>
-
-                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
-                    Implementation: From strategy to execution
-                  </h2>
-                  
-                  <p>
-                    The biggest challenge isn't identifying the opportunity—it's executing effectively. Based on our experience with dozens of digital growth initiatives, here are the critical success factors:
-                  </p>
-
-                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
-                    Start with customer value, not technology
-                  </h3>
-                  
-                  <p>
-                    Too many digital initiatives fail because they start with technology decisions rather than customer needs. Before selecting platforms or building features, answer these questions:
-                  </p>
-                  
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>What friction exists in how customers currently buy from us?</li>
-                    <li>What would make their experience significantly better?</li>
-                    <li>What would make them choose us over alternatives?</li>
-                    <li>How can we deliver more value more efficiently?</li>
-                  </ul>
-
-                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
-                    Launch fast, iterate faster
-                  </h3>
-                  
-                  <p>
-                    The companies achieving the best results launch minimum viable products in 8-12 weeks, then iterate based on real customer feedback. Perfectionism is the enemy of progress in digital initiatives.
-                  </p>
-                  
-                  <p>
-                    Our Growth Acceleration Framework emphasizes rapid validation: identify opportunities, build MVPs, test with real customers, and iterate to product-market fit before scaling. This approach minimizes risk while maximizing learning.
-                  </p>
-
-                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
-                    Invest in growth capabilities
-                  </h3>
-                  
-                  <p>
-                    Building the digital channel is only half the battle. You also need capabilities to drive customer acquisition and retention:
-                  </p>
-                  
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li><strong>Performance marketing:</strong> Paid search, social advertising, and retargeting to acquire customers efficiently</li>
-                    <li><strong>Conversion optimization:</strong> A/B testing, user research, and analytics to maximize conversion rates</li>
-                    <li><strong>Customer success:</strong> Onboarding, engagement, and retention programs to maximize lifetime value</li>
-                    <li><strong>Data and analytics:</strong> Dashboards, attribution, and insights to guide decision-making</li>
-                  </ul>
-
-                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
-                    Getting started: A practical roadmap
-                  </h2>
-                  
-                  <p>
-                    For growing companies ready to accelerate digital growth, we recommend a phased approach:
-                  </p>
-
-                  <div className="bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
-                    <div className="space-y-6">
-                      <div className="flex gap-4">
-                        <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
-                        <div>
-                          <h4 className="font-bold text-charcoal mb-1">Assess (2-4 weeks)</h4>
-                          <p className="text-charcoal/70 text-sm mb-0">Evaluate current digital capabilities, identify customer needs, and prioritize opportunities based on impact and feasibility.</p>
-                        </div>
-                      </div>
-                      <div className="flex gap-4">
-                        <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
-                        <div>
-                          <h4 className="font-bold text-charcoal mb-1">Design (4-6 weeks)</h4>
-                          <p className="text-charcoal/70 text-sm mb-0">Define the target customer experience, select technology platforms, and create a detailed implementation roadmap.</p>
-                        </div>
-                      </div>
-                      <div className="flex gap-4">
-                        <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
-                        <div>
-                          <h4 className="font-bold text-charcoal mb-1">Build (8-12 weeks)</h4>
-                          <p className="text-charcoal/70 text-sm mb-0">Develop MVP, integrate with existing systems, and prepare for launch with initial customer cohort.</p>
-                        </div>
-                      </div>
-                      <div className="flex gap-4">
-                        <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
-                        <div>
-                          <h4 className="font-bold text-charcoal mb-1">Scale (Ongoing)</h4>
-                          <p className="text-charcoal/70 text-sm mb-0">Iterate based on feedback, expand customer base, and continuously optimize for growth and efficiency.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <h2 className="nx-h2 text-charcoal mt-12 mb-6">
-                    Conclusion
-                  </h2>
-                  
-                  <p>
-                    Digital channels are no longer optional for growing companies seeking sustainable growth. The companies that move decisively—launching e-commerce, building subscription offerings, or creating platform businesses—are pulling ahead of competitors who wait.
-                  </p>
-                  
-                  <p>
-                    The good news: it's never been easier to launch digital initiatives. Modern platforms, proven playbooks, and experienced partners can compress years of learning into months of execution. The question isn't whether to pursue digital growth, but how quickly you can get started.
-                  </p>
-                </div>
-              </motion.article>
-
-              {/* Author Box */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className="mt-16 p-4 sm:p-6 md:p-8 bg-subtle rounded-lg sm:rounded-xl"
-              >
-                <h3 className="text-lg font-bold mb-4">About the Author</h3>
-                <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
-                    NG
-                  </div>
-                  <div>
-                    <p className="font-bold text-charcoal">NEXDYNE Growth Practice</p>
-                    <p className="text-charcoal/60 text-sm mb-3">Digital Growth & E-Commerce</p>
-                    <p className="text-charcoal/70 text-sm">
-                      Our Growth Practice helps growing companies launch and scale digital channels that drive sustainable revenue growth.
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-
-            {/* Sidebar */}
-            <div className="lg:col-span-4">
-              <div className="sticky top-24 space-y-8">
-                {/* Share */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.3 }}
-                  className="bg-subtle p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
-                >
-                  <h3 className="text-sm font-bold uppercase tracking-wider text-charcoal/60 mb-4">Share this article</h3>
-                  <div className="flex gap-3">
-                    <button className="w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center hover:bg-primary/90 transition-colors">
-                      <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
-                    </button>
-                    <button className="w-10 h-10 bg-[#1DA1F2] text-white rounded-lg flex items-center justify-center hover:bg-charcoal transition-colors">
-                      <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
-                    </button>
-                    <button className="w-10 h-10 bg-[#4267B2] text-white rounded-lg flex items-center justify-center hover:bg-[#4267B2] transition-colors">
-                      <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
-                    </button>
-                  </div>
-                </motion.div>
-
-                {/* Key Takeaways */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.4 }}
-                  className="bg-charcoal text-white border-t-2 border-primary p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
-                >
-                  <h3 className="text-sm font-bold uppercase tracking-wider text-amber mb-4">Key Takeaways</h3>
-                  <ul className="space-y-3">
-                    {[
-                      "Digital channels drive 3.2x faster revenue growth",
-                      "E-commerce can launch in 8-12 weeks",
-                      "Subscriptions increase LTV by 3-5x",
-                      "Start with customer value, not technology"
-                    ].map((item, index) => (
-                      <li key={index} className="flex items-start gap-2 text-sm text-white/80">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </motion.div>
-
-                {/* Related Articles */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.5 }}
-                  className="bg-subtle p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
-                >
-                  <h3 className="text-sm font-bold uppercase tracking-wider text-charcoal/60 mb-4">Related Reading</h3>
-                  <div className="space-y-4">
-                    <Link href="/insights/subscription-economy-playbook">
-                      <div className="group cursor-pointer">
-                        <p className="font-semibold text-charcoal group-hover:text-primary transition-colors text-sm">
-                          The subscription economy playbook for traditional businesses
-                        </p>
-                        <p className="text-xs text-charcoal/60 mt-1">8 min read</p>
-                      </div>
-                    </Link>
-                    <Link href="/insights/ecommerce-launch-guide">
-                      <div className="group cursor-pointer">
-                        <p className="font-semibold text-charcoal group-hover:text-primary transition-colors text-sm">
-                          E-commerce launch guide: From zero to revenue in 90 days
-                        </p>
-                        <p className="text-xs text-charcoal/60 mt-1">10 min read</p>
-                      </div>
-                    </Link>
-                  </div>
-                </motion.div>
-
-                {/* CTA */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.6 }}
-                  className="bg-gradient-to-br from-[#0077B5] to-charcoal text-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
-                >
-                  <h3 className="font-bold text-lg mb-3">Ready to accelerate your digital growth?</h3>
-                  <p className="text-white/80 text-sm mb-4">
-                    Schedule a consultation to discuss your digital growth opportunities.
-                  </p>
-                  <Link href="/contact">
-                    <Button className="w-full bg-white text-primary hover:bg-white/90 font-semibold">
-                      Get Started
-                      <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4" />
-                    </Button>
-                  </Link>
-                </motion.div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <Footer />
-    </div>
+      <h2 id="roadmap">Getting started: a practical roadmap</h2>
+      <ol>
+        <li><strong>Assess (2–4 weeks)</strong> — evaluate current digital capabilities, identify customer needs, and prioritize opportunities by impact and feasibility.</li>
+        <li><strong>Design (4–6 weeks)</strong> — define the target customer experience, select technology platforms, and create a detailed implementation roadmap.</li>
+        <li><strong>Build (8–12 weeks)</strong> — develop the MVP, integrate with existing systems, and prepare for launch with an initial customer cohort.</li>
+        <li><strong>Scale (ongoing)</strong> — iterate based on feedback, expand the customer base, and continuously optimize for growth and efficiency.</li>
+      </ol>
+      <p>
+        Digital channels are no longer optional for growing companies seeking sustainable growth. The companies
+        that move decisively — launching e-commerce, building subscription offerings, or creating platform
+        businesses — are pulling ahead of competitors who wait. The question isn't whether to pursue digital
+        growth, but how quickly you can get started.
+      </p>
+    </InsightArticleV2>
   );
 }
