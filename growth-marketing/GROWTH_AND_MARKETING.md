@@ -305,8 +305,12 @@ A live funnel with no traffic collects nothing. Order of channels:
    - Plus a **footer** "Free Resources" link.
    - *Deferred by choice:* exit-intent/scroll popup (revisit once baseline
      conversion is known).
-2. **LinkedIn (primary external)** — founder posts, insight posts, a "5 signs…"
-   carousel, all pointing at a landing page. (Asset pipeline: `social-tiles/`.)
+2. **LinkedIn (primary external)** — **founder-led**: the founder's personal
+   profile is the posting engine (person-posts get ~5–10× company-page reach);
+   the company page is the trust storefront (logo 300×300, banner 1128×191 —
+   generate via `social-tiles/` pipeline; keep the banner's left third clear of
+   the avatar overlap). Founder posts, insight posts, a "5 signs…" carousel, all
+   pointing at a landing page; company page reposts.
 3. **SEO content cluster** — supporting articles around the magnet's problem,
    each funneling to it.
 4. **Later, only once proven:** partnerships (chambers, fractional CFOs), a

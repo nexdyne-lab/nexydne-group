@@ -71,6 +71,19 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-18 — LinkedIn (Stage 7 pt 2) kickoff: company-page assets + strategy
+
+- Strategy set: **founder-led** — David's personal profile is the posting engine
+  (people-posts get ~5–10× company-page reach); the company page is the trust
+  storefront (reposts + credibility).
+- Generated exact-spec page assets via the social-tiles pipeline (outside repo,
+  in `social-tiles/out/`): `linkedin-banner.png` (1128×191 @2x — charcoal,
+  "Human intelligence. Governed. Scaled.", white wordmark, left third kept clear
+  of the avatar overlap) and `linkedin-logo.png` (300×300 @2x — brand mark on
+  white). Sources: `social-tiles/li-banner.html`, `li-logo.html`, `li-shot.mjs`.
+- Page copy written (tagline + About with /resources link). Next: launch posts
+  (founder post + "5 signs" carousel).
+
 ### 2026-07-18 — Email compliance + format hardening (all sends)
 
 - Audit of the newsletter format surfaced two real gaps; fixed across the board:
