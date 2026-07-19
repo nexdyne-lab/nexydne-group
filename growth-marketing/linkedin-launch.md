@@ -157,6 +157,89 @@ the reporting. Curious if that holds here.
 #Operations #Scaling #SMB #Leadership
 ```
 
+## Post #5 — The 88% problem (READY · post Thu 2026-07-31, 8–10am ET)
+
+*Timely: built on mid-2026 research — Forrester/Anaconda: 88% of AI-agent
+pilots never reach production; Gartner: 40% of agentic projects canceled by
+end-2027; root causes are readiness, not models.*
+
+```
+88% of AI agent pilots never make it to production.
+
+Not 88% of bad ideas. 88% of funded, staffed, announced pilots.
+
+And when researchers traced WHY, the answers had almost nothing to do with
+the technology:
+
+→ 41% failed on unclear success criteria — nobody defined what "working" meant
+→ 33% failed on data and tool access — the AI couldn't reach what it needed
+→ Most of the rest: no owner, no evaluation, no plan past the demo
+
+Read that list again. Those aren't AI failures.
+
+That's an unwritten process. Scattered data. Nobody owning the outcome. No
+number that decides keep-or-kill.
+
+Every one of those is diagnosable BEFORE you spend the money. That's the
+entire point of checking readiness first — the pilot graveyard is full of
+companies that skipped it.
+
+At @NexDyne Consulting Group we use a 10-question readiness check with
+clients for exactly this. It's free, self-scored, and takes 15 minutes:
+https://nexdynegroup.com/resources/ai-readiness-guide
+
+If you've watched an AI pilot die inside a company — what actually killed
+it? I'll bet it's on the list above.
+
+#AIAgents #AIReadiness #SMB #Leadership
+```
+
+## Post #6 — Regulation whiplash (READY · post Tue 2026-08-05, 8–10am ET)
+
+*Timely: Colorado repealed-and-replaced its AI Act in May (now effective
+Jan 1, 2027, with duties when AI touches hiring/lending decisions); the EU
+just deferred its high-risk deadlines to Dec 2027 — but chatbot-disclosure
+and AI-content transparency rules still landed Aug 2, 2026. Post runs 3 days
+after that date.*
+
+```
+AI regulation news from the last 90 days:
+
+→ Colorado repealed its landmark AI law... and replaced it with a new one
+  (live January 2027, with real duties when AI touches hiring or lending)
+→ The EU delayed its "high-risk AI" deadlines by 16 months...
+  ...but its transparency rules still landed this month: chatbots must
+  disclose they're bots, AI-generated content must be labeled
+
+Confused? So is everyone. Deadlines move. Definitions get rewritten.
+Lobbying works, then un-works.
+
+Here's what I tell leaders of growing companies:
+
+If your AI rules only exist because a regulator forces them, you don't have
+governance. You have compliance theater with a moving deadline.
+
+The direction of travel is one-way — every rewrite still assumes you can
+answer basics most companies can't:
+
+→ Which AI tools are we actually using?
+→ What decisions do they touch — especially hiring, pricing, lending?
+→ Who reviews the output before it reaches a customer?
+→ Could we explain a decision if someone asked?
+
+Answer those because it's how you run a well-governed business. The
+compliance falls out for free, whatever the final dates turn out to be.
+
+That's the thinking behind everything we build at @NexDyne Consulting Group —
+start with the free 10-question readiness check if you want to know where
+you stand: https://nexdynegroup.com/resources/ai-readiness-guide
+
+Honest question: could your company answer "which AI tools are we using and
+what do they decide?" today, in writing?
+
+#AIGovernance #AIRegulation #SMB #Leadership
+```
+
 ## Posting schedule
 | Date | What |
 |---|---|
@@ -164,4 +247,6 @@ the reporting. Curious if that holds here.
 | **Tue, Jul 22 2026** · 8–10am ET | Post #2 — carousel (upload PDF as document + caption + link in first comment) |
 | **Thu, Jul 24 2026** · 8–10am ET | Post #3 — Shadow AI |
 | **Tue, Jul 29 2026** · 8–10am ET | Post #4 — Operations |
-| Thu, Jul 31 2026 → | Next batch (draft when post #4 goes up); keep 2/week Tue+Thu, alternate AI ↔ ops ↔ finance, every post ends with a genuine question |
+| **Thu, Jul 31 2026** · 8–10am ET | Post #5 — The 88% problem (timely: agent-pilot failure data) |
+| **Tue, Aug 5 2026** · 8–10am ET | Post #6 — Regulation whiplash (timely: Colorado rewrite + EU Aug 2 transparency rules) |
+| Thu, Aug 7 2026 → | Next batch (draft when post #6 goes up); keep 2/week Tue+Thu, alternate AI ↔ ops ↔ finance ↔ timely-news, every post ends with a genuine question |
