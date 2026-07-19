@@ -305,19 +305,23 @@ A live funnel with no traffic collects nothing. Order of channels:
    - Plus a **footer** "Free Resources" link.
    - *Deferred by choice:* exit-intent/scroll popup (revisit once baseline
      conversion is known).
-2. **LinkedIn (primary external)** — **founder-led**: the founder's personal
-   profile is the posting engine (person-posts get ~5–10× company-page reach);
-   the company page is the trust storefront (logo 300×300, banner 1128×191 —
-   generate via `social-tiles/` pipeline; keep the banner's left third clear of
-   the avatar overlap). Founder posts, insight posts, a "5 signs…" carousel, all
-   pointing at a landing page; company page reposts.
+2. **LinkedIn (primary external) — ✅ LAUNCHED 2026-07-19.** **Founder-led**:
+   the founder's personal profile is the posting engine (person-posts get
+   ~5–10× company-page reach); the company page is the trust storefront (logo
+   300×300, banner 1128×191 via `social-tiles/`; keep the banner's left third
+   clear of the avatar overlap). Live: company page + founder post #1; a
+   **6-post dated queue** (incl. a 7-slide carousel PDF + two researched
+   timely posts) with mechanics + schedule in
+   [`linkedin-launch.md`](./linkedin-launch.md). Cadence 2/week Tue+Thu;
+   refill the queue when 2 posts remain; mine the newsletter issues for angles.
 3. **SEO content cluster** — supporting articles around the magnet's problem,
    each funneling to it.
 4. **Later, only once proven:** partnerships (chambers, fractional CFOs), a
    webinar off the diagnostic, then paid (LinkedIn/Google/retargeting).
 
-**Status:** on-site promo live. LinkedIn + SEO next (start after/with the
-domain warm-up, Stage 1b).
+**Status:** on-site promo live · **LinkedIn launched** (page + post #1 live,
+6-post queue dated through Aug 5 — see `linkedin-launch.md`). Remaining: SEO
+content cluster; keep the posting cadence + domain warm-up (Stage 1b) running.
 
 ---
 
@@ -433,5 +437,5 @@ lead-magnets/
 | 5. Landing page template (config-driven) | ✅ Live |
 | 6. Nurture automation (Resend) | ✅ Live (event trigger + 3-email automation, enabled via API) |
 | 6b. Newsletter relationship | ✅ Built — 5 issues drafted in Resend; send monthly after warm-up |
-| 7. Channels / distribution | 🔨 On-site promo live (nav, /resources hub, homepage band, article CTAs, footer); LinkedIn + SEO next |
+| 7. Channels / distribution | 🔨 On-site promo ✅ · LinkedIn ✅ launched (page + post #1 + 6-post queue) · SEO cluster next |
 | Admin panel (no-code magnet management) | 🔮 Later (when volume justifies) |

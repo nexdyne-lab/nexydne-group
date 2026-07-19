@@ -71,6 +71,23 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-19 — LinkedIn LAUNCHED: page live, post #1 published, 6-post queue built
+
+- **Company page live** (`linkedin.com/company/nexdyne-consulting-group`) with
+  logo, banner, tagline, About (links /resources), location.
+- **Post #1 (founder launch) published from David's profile** — @NexDyne tag,
+  guide link, early traction within minutes. Coaching: David's headline to lead
+  with "Founder & CEO, NexDyne Consulting Group".
+- **Queue built + dated through Aug 5** in `growth-marketing/linkedin-launch.md`:
+  #2 carousel Tue 7/22 (**7-slide PDF rendered** —
+  `social-tiles/out/nexdyne-5-signs-carousel.pdf`, "5 signs you're not ready
+  for AI"), #3 Shadow AI Thu 7/24, #4 Operations Tue 7/29, and **two researched
+  timely posts**: #5 "the 88% problem" Thu 7/31 (agent-pilot failure data →
+  readiness thesis), #6 "regulation whiplash" Tue 8/5 (Colorado AI-law rewrite +
+  EU Aug-2 transparency rules → govern-yourself doctrine).
+- Open: attention images for posts #3–#6 (social-tiles stat/question tiles;
+  David picking reference styles).
+
 ### 2026-07-18 — LinkedIn (Stage 7 pt 2) kickoff: company-page assets + strategy
 
 - Strategy set: **founder-led** — David's personal profile is the posting engine
