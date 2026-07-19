@@ -112,7 +112,7 @@ export default function EcommerceStrategyLaunch() {
         "Heritage brand launches DTC channel that contributes 22 percent of revenue inside year one",
       description:
         "A category-leading consumer brand had spent two years debating an ecommerce launch internally. We sized the opportunity, picked the commercial model, ran the platform selection, and stood up the operating team in eighteen weeks. The DTC channel cleared 22 percent of total revenue contribution by the close of the first fiscal year and reset the brand's customer-data position with retailers.",
-      link: "/cases/consumer-brand-dtc-launch",
+      link: "/cases/consumer-dtc-launch",
     },
     {
       industry: "Industrial Distribution",
@@ -120,7 +120,7 @@ export default function EcommerceStrategyLaunch() {
         "B2B portal replaces 40 percent of inbound order volume in the first six months",
       description:
         "A national industrial distributor was processing the majority of its orders through phone and fax. The launch program covered opportunity sizing, B2B portal model, ERP-integrated stack selection, and the customer-service redesign needed for self-service. Within six months the portal absorbed 40 percent of inbound order volume, freeing the inside-sales team to work the higher-value accounts.",
-      link: "/cases/industrial-b2b-portal-launch",
+      link: "/cases/b2b-ecommerce-launch",
     },
   ];
 

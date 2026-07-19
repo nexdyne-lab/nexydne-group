@@ -8,7 +8,7 @@ export default function NonprofitDigitalTransformation() {
       seoDescription="How a global nonprofit increased donor engagement by 60% through digital transformation and personalized outreach."
       canonical="/cases/nonprofit-digital-transformation"
       industry="Social Impact"
-      industryLink="/industries/social-impact"
+      industryLink="/industries/public-sector"
       title="Global Nonprofit Increases Donor Engagement 60% Through Digital"
       subtitle="How personalized digital experiences and data-driven outreach transformed fundraising and deepened donor relationships."
       heroImage="/images/industries/people-commute.jpg"

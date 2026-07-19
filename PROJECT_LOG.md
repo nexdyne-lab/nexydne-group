@@ -588,3 +588,21 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
 - Insights V2: new InsightArticleV2 long-read template; migrated ~90 legacy
   insight/capability/solution articles onto it; fixed 21 broken article links.
 - Bain-style redesign of Values, Careers, Contact pages.
+
+### 2026-07-19 — Site-wide link remediation (cases/solutions/capabilities/industries)
+- **Deep multi-segment scan** (follow-up to the insights registry work) found **213
+  unique ghost routes / 332 refs across 59 files** in the other four link
+  families — bulk was a never-built `/solutions/<family>/<sub>` architecture,
+  plus phantom case slugs and single-off industry/capability paths.
+- **All 213 remapped to real routes** (token-overlap scorer + ~19 hand overrides,
+  e.g. `/industries/chemicals`→`/industries/manufacturing`,
+  `/cases/payter-platform`→`/cases/bank-app-modernization`). References only —
+  **no templates changed, no pages deleted** per directive.
+- **Guard generalized**: `scripts/check-insight-links.mjs` →
+  `scripts/check-internal-links.mjs`, now validates ALL five families
+  (insights/cases/solutions/capabilities/industries, multi-segment, dynamic-route
+  aware) and fails the build on any dangling ref. Wired into `npm run build`.
+  The stronger regex immediately caught 6 more nested `/insights/<topic>/<slug>`
+  ghosts (SearchDialog + Sitemap) — fixed.
+- QC: tsc clean, build green (guard passes), 34/34 tests, headless sweep of 8
+  heaviest-remapped pages → 0 broken scoped links, 0 JS errors.

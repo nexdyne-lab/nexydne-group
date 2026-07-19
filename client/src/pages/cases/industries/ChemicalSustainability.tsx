@@ -8,7 +8,7 @@ export default function ChemicalSustainability() {
       seoDescription="How a chemical company reduced emissions by 25% through process optimization, energy efficiency, and circular economy initiatives."
       canonical="/cases/chemical-sustainability"
       industry="Chemicals"
-      industryLink="/industries/chemicals"
+      industryLink="/industries/manufacturing"
       title="Chemical Company Reduces Emissions 25% Through Sustainability Transformation"
       subtitle="How process optimization, renewable energy, and circular economy initiatives achieved environmental goals while improving economics."
       heroImage="/images/capabilities/cap-conference-data.jpg"

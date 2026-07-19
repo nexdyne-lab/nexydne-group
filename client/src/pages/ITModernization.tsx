@@ -87,7 +87,7 @@ export default function ITModernization() {
       <SEO
         title="IT Modernization"
         description="Upgrade your IT infrastructure and accelerate your organization with modern, cloud-native architectures."
-        canonical="/capabilities/technology/it-modernization"
+        canonical="/capabilities/technology/modernization-hub"
       />
       <Navbar />
 
@@ -287,7 +287,7 @@ export default function ITModernization() {
                 icon: <RefreshCw className="w-7 h-7" />,
                 title: "Legacy System Replacement",
                 description: "Replace outdated systems with modern, scalable architectures that enable rapid innovation and reduce maintenance burden.",
-                link: "/solutions/legacy-modernization"
+                link: "/solutions/enterprise-transformation/legacy-modernization"
               },
               {
                 icon: <Cpu className="w-7 h-7" />,

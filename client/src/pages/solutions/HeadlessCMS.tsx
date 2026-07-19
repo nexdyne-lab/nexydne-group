@@ -22,37 +22,37 @@ export default function HeadlessCMS() {
       title: "Headless CMS Platform Selection",
       description:
         "Pick the right platform — Contentful, Strapi, Sanity, Contentstack — based on your channel mix, developer experience needs, and editorial workflows. We've shipped on all of them.",
-      link: "/solutions/headless-cms/platform-selection",
+      link: "/solutions/headless-cms",
     },
     {
       title: "Content Modeling & Schema Design",
       description:
         "The schema is the product. We design content models that survive the next redesign, the next channel, and the next acquisition — flexible without becoming chaos.",
-      link: "/solutions/headless-cms/content-modeling",
+      link: "/solutions/headless-cms",
     },
     {
       title: "Headless Migration from Legacy CMS",
       description:
         "Lift content out of WordPress, Drupal, AEM, or Sitecore into a modern headless stack — preserving SEO, redirects, and the editorial muscle memory teams rely on.",
-      link: "/solutions/headless-cms/migration",
+      link: "/solutions/headless-cms",
     },
     {
       title: "Multi-Channel Publishing Architecture",
       description:
         "Web, mobile, in-store, voice, partner APIs — one content source, every surface. We design the delivery layer so a single editorial change ships everywhere consistently.",
-      link: "/solutions/headless-cms/multi-channel",
+      link: "/solutions/headless-cms",
     },
     {
       title: "Headless Commerce Integration",
       description:
         "Compose content and commerce — Shopify, commercetools, BigCommerce — into unified shopping experiences without rebuilding either side from scratch.",
-      link: "/solutions/headless-cms/commerce-integration",
+      link: "/solutions/headless-cms",
     },
     {
       title: "Developer Experience Optimization",
       description:
         "Preview environments, type-safe SDKs, local-first workflows, and CI gates that keep editors productive and engineers shipping. DX is the adoption story.",
-      link: "/solutions/headless-cms/developer-experience",
+      link: "/solutions/headless-cms",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function HeadlessCMS() {
       title: "Audit the Channel Surface",
       description:
         "Map every place content needs to live — web, app, kiosk, partner API, voice — before picking a platform. The channel mix decides the architecture, not the other way around.",
-      link: "/solutions/headless-cms/multi-channel",
+      link: "/solutions/headless-cms",
     },
     {
       title: "Model Content as a Product",
       description:
         "Schemas, references, and validation rules are the long-lived asset. We design content models the way product teams design data models — with versioning, ownership, and intent.",
-      link: "/solutions/headless-cms/content-modeling",
+      link: "/solutions/headless-cms",
     },
     {
       title: "Stage the Migration",
       description:
         "Big-bang headless migrations fail. We carve content domains, ship them in slices, and run legacy and headless in parallel until the cutover is boring.",
-      link: "/solutions/headless-cms/migration",
+      link: "/solutions/headless-cms",
     },
     {
       title: "Engineer the Editor Experience",
       description:
         "Headless wins on developer experience and loses on editor experience by default. We invest equally in both — preview, structured authoring, and the comfort of an editorial home.",
-      link: "/solutions/headless-cms/developer-experience",
+      link: "/solutions/headless-cms",
     },
   ];
 
@@ -120,15 +120,15 @@ export default function HeadlessCMS() {
   const relatedOfferings = [
     {
       title: "Digital Experience Platforms",
-      link: "/solutions/digital-experience-platforms",
+      link: "/solutions/digital-experience-platform",
     },
     {
       title: "Composable Commerce",
-      link: "/solutions/composable-commerce",
+      link: "/solutions/accelerating-business-growth",
     },
     {
       title: "Web Development",
-      link: "/solutions/web-development",
+      link: "/solutions/app-development",
     },
     {
       title: "Content Service Platform",

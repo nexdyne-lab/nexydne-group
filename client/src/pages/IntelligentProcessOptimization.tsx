@@ -100,7 +100,7 @@ export default function IntelligentProcessOptimization() {
       description:
         "The technical capabilities you need to compete in a rapidly evolving market.",
       image: "/images/digital-transformation-abstract.jpg",
-      link: "/capabilities/digital-transformation",
+      link: "/capabilities/business-building/digital-transformation-accelerator",
     },
     {
       title: "People and Organization",

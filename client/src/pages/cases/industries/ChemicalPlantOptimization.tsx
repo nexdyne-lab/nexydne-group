@@ -8,7 +8,7 @@ export default function ChemicalPlantOptimization() {
       seoDescription="How a chemical manufacturer improved plant yield by 12% through AI-powered process optimization and predictive quality control."
       canonical="/cases/chemical-plant-optimization"
       industry="Chemicals"
-      industryLink="/industries/chemicals"
+      industryLink="/industries/manufacturing"
       title="Chemical Manufacturer Improves Yield 12% with AI Optimization"
       subtitle="How machine learning models optimize process parameters in real-time, maximizing yield while maintaining quality and safety."
       heroImage="/images/capabilities/cap-conference-data.jpg"

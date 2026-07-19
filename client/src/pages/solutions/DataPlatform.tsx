@@ -22,37 +22,37 @@ export default function DataPlatform() {
       title: "Lakehouse Architecture",
       description:
         "Databricks and Snowflake-based lakehouses that unify warehousing and lake economics. One platform for BI, ML, and operational analytics.",
-      link: "/solutions/data-platform/lakehouse-architecture",
+      link: "/solutions/data-platform",
     },
     {
       title: "Real-Time Streaming Pipelines",
       description:
         "Kafka, Flink, Spark Streaming. We build streaming pipelines that move events from source to insight in seconds, not overnight.",
-      link: "/solutions/data-platform/streaming-pipelines",
+      link: "/solutions/data-platform",
     },
     {
       title: "Data Mesh Implementation",
       description:
         "Domain-owned data products, federated governance, and self-serve infrastructure. We help you decentralize without losing coherence.",
-      link: "/solutions/data-platform/data-mesh",
+      link: "/solutions/data-platform",
     },
     {
       title: "Data Engineering",
       description:
         "Production-grade pipelines, dbt models, orchestration with Airflow or Dagster. The engineering layer that makes analytics reliable.",
-      link: "/solutions/data-platform/data-engineering",
+      link: "/solutions/enterprise-transformation/data-platform-engineering",
     },
     {
       title: "Platform Observability",
       description:
         "Data quality monitors, lineage tracking, freshness SLAs, alerting. We make the data platform debuggable, not just buildable.",
-      link: "/solutions/data-platform/observability",
+      link: "/solutions/data-platform",
     },
     {
       title: "Cost Optimization (FinOps for Data)",
       description:
         "Cluster sizing, query tuning, storage tiering, contract optimization. We cut data-platform spend while protecting performance.",
-      link: "/solutions/data-platform/finops",
+      link: "/solutions/data-platform",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function DataPlatform() {
       title: "Define the Data Strategy",
       description:
         "Decide what kind of analytics you're actually building for: BI, ML, operational, or all three. The strategy drives the architecture.",
-      link: "/solutions/data-platform/lakehouse-architecture",
+      link: "/solutions/data-platform",
     },
     {
       title: "Architect the Foundation",
       description:
         "Lakehouse, mesh, or hybrid. We pick the architecture that fits your data volumes, team shape, and analytical ambitions.",
-      link: "/solutions/data-platform/data-mesh",
+      link: "/solutions/data-platform",
     },
     {
       title: "Engineer with Discipline",
       description:
         "Idempotent pipelines, contract-tested models, lineage by default. Engineering rigor is what turns a data platform into a reliable platform.",
-      link: "/solutions/data-platform/data-engineering",
+      link: "/solutions/enterprise-transformation/data-platform-engineering",
     },
     {
       title: "Observe and Optimize",
       description:
         "Quality, freshness, cost, performance. The platform team that measures all four beats the team that measures none.",
-      link: "/solutions/data-platform/observability",
+      link: "/solutions/data-platform",
     },
   ];
 
@@ -128,7 +128,7 @@ export default function DataPlatform() {
     },
     {
       title: "AI & Machine Learning",
-      link: "/solutions/ai-machine-learning",
+      link: "/solutions/machine-learning",
     },
     {
       title: "IPaaS",

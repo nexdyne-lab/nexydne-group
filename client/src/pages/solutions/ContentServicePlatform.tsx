@@ -22,37 +22,37 @@ export default function ContentServicePlatform() {
       title: "Document Management Implementation",
       description:
         "Stand up modern document platforms — Box, Microsoft 365, OpenText — with the metadata, taxonomy, and security model that makes content findable on day one.",
-      link: "/solutions/content-service-platform/document-management",
+      link: "/solutions/content-service-platform",
     },
     {
       title: "Content Workflow Automation",
       description:
         "Replace email-and-attachment chaos with structured workflows. Approvals, reviews, and routing that turn unstructured content into a managed business process.",
-      link: "/solutions/content-service-platform/workflow-automation",
+      link: "/solutions/content-service-platform",
     },
     {
       title: "Knowledge Management Systems",
       description:
         "Capture, curate, and surface institutional knowledge before it walks out the door. Knowledge bases that employees actually use because the answers are actually there.",
-      link: "/solutions/content-service-platform/knowledge-management",
+      link: "/solutions/content-service-platform",
     },
     {
       title: "Records Management & Compliance",
       description:
         "Retention schedules, legal holds, and audit trails that satisfy regulators without burying the business in red tape. Compliance designed into the platform, not bolted on later.",
-      link: "/solutions/content-service-platform/records-compliance",
+      link: "/solutions/content-service-platform",
     },
     {
       title: "AI-Powered Content Discovery",
       description:
         "Semantic search, auto-classification, and intelligent extraction that turn dark content into a working asset. Find the answer, not just the document.",
-      link: "/solutions/content-service-platform/ai-discovery",
+      link: "/solutions/content-service-platform",
     },
     {
       title: "CSP Migration & Modernization",
       description:
         "Lift legacy ECM stacks onto modern content service platforms — preserving permissions, metadata, and history while shedding the technical debt of the last decade.",
-      link: "/solutions/content-service-platform/migration-modernization",
+      link: "/solutions/content-service-platform",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function ContentServicePlatform() {
       title: "Inventory Before You Migrate",
       description:
         "Most ECM migrations fail on undiscovered content. We map repositories, classify the long tail, and decide what moves, what archives, and what dies.",
-      link: "/solutions/content-service-platform/migration-modernization",
+      link: "/solutions/content-service-platform",
     },
     {
       title: "Design the Information Architecture",
       description:
         "Taxonomy, metadata, and security models are the platform — the tool is just the rendering engine. Get the IA right and the platform stays useful for a decade.",
-      link: "/solutions/content-service-platform/document-management",
+      link: "/solutions/content-service-platform",
     },
     {
       title: "Automate the Real Workflows",
       description:
         "Pick the workflows that actually consume people's days — contract reviews, onboarding packets, audit responses — and automate those first. Adoption follows visible relief.",
-      link: "/solutions/content-service-platform/workflow-automation",
+      link: "/solutions/content-service-platform",
     },
     {
       title: "Layer Intelligence Last",
       description:
         "AI search and classification deliver real value, but only on top of clean metadata and a coherent IA. We layer intelligence after the foundation, not before.",
-      link: "/solutions/content-service-platform/ai-discovery",
+      link: "/solutions/content-service-platform",
     },
   ];
 
@@ -120,11 +120,11 @@ export default function ContentServicePlatform() {
   const relatedOfferings = [
     {
       title: "Knowledge Management",
-      link: "/solutions/knowledge-management",
+      link: "/solutions/intelligent-process-optimization",
     },
     {
       title: "Workflow Automation",
-      link: "/solutions/workflow-automation",
+      link: "/solutions/intelligent-process-optimization",
     },
     {
       title: "Data Governance",
@@ -132,7 +132,7 @@ export default function ContentServicePlatform() {
     },
     {
       title: "Digital Workplace",
-      link: "/solutions/digital-workplace",
+      link: "/solutions/digital-engagement",
     },
   ];
 

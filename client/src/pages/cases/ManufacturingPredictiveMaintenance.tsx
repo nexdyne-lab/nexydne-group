@@ -80,15 +80,15 @@ export default function ManufacturingPredictiveMaintenance() {
   const capabilities = [
     {
       label: "Predictive Analytics",
-      link: "/capabilities/predictive-analytics",
+      link: "/capabilities/artificial-intelligence/predictive-analytics",
     },
     {
       label: "Data Visualization",
-      link: "/capabilities/data-visualization",
+      link: "/capabilities/data-transformation",
     },
     {
       label: "IoT Integration",
-      link: "/capabilities/iot-integration",
+      link: "/capabilities/artificial-intelligence/digital-twins/iot-integration",
     },
   ];
 

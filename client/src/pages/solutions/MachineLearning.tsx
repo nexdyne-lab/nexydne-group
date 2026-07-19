@@ -22,37 +22,37 @@ export default function MachineLearning() {
       title: "Model Development",
       description:
         "From feature engineering to model selection. We build supervised, unsupervised, and deep-learning models that hold up against the test set that matters: production.",
-      link: "/solutions/machine-learning/model-development",
+      link: "/solutions/machine-learning",
     },
     {
       title: "MLOps & Deployment",
       description:
         "Versioning, CI/CD for models, monitoring, retraining. We treat ML systems as software systems—with the operational discipline production demands.",
-      link: "/solutions/machine-learning/mlops-deployment",
+      link: "/solutions/machine-learning",
     },
     {
       title: "Recommendation Systems",
       description:
         "Collaborative, content-based, and hybrid recommenders that lift conversion measurably. Built for cold-start, scale, and explainability.",
-      link: "/solutions/machine-learning/recommendation-systems",
+      link: "/solutions/machine-learning",
     },
     {
       title: "Fraud & Anomaly Detection",
       description:
         "Real-time fraud, abuse, and anomaly detection with low false-positive rates. We balance precision, recall, and reviewer workload deliberately.",
-      link: "/solutions/machine-learning/fraud-anomaly-detection",
+      link: "/solutions/machine-learning",
     },
     {
       title: "Demand Forecasting",
       description:
         "Hierarchical demand forecasts at SKU, store, and region level. We unify external signals, seasonality, and causal events into one model that drives planning.",
-      link: "/solutions/machine-learning/demand-forecasting",
+      link: "/solutions/machine-learning",
     },
     {
       title: "Computer Vision",
       description:
         "Object detection, defect inspection, document understanding, and visual search. We build vision systems that hold accuracy under real-world variance.",
-      link: "/solutions/machine-learning/computer-vision",
+      link: "/solutions/machine-learning",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function MachineLearning() {
       title: "Start with the Decision",
       description:
         "Before the model, the decision. We map the business decision the model must improve—and the cost of being wrong in either direction.",
-      link: "/solutions/machine-learning/model-development",
+      link: "/solutions/machine-learning",
     },
     {
       title: "Build the Right Baseline",
       description:
         "Heuristic, rule, or simple model. The baseline forces honest measurement of whether ML is actually adding value—or just adding complexity.",
-      link: "/solutions/machine-learning/fraud-anomaly-detection",
+      link: "/solutions/machine-learning",
     },
     {
       title: "Engineer for Production",
       description:
         "Versioning, monitoring, retraining, drift detection. The model that wins the notebook contest rarely wins the production contest—until it's engineered for it.",
-      link: "/solutions/machine-learning/mlops-deployment",
+      link: "/solutions/machine-learning",
     },
     {
       title: "Measure Impact in P&L",
       description:
         "Lift, AUC, and F1 are inputs. Revenue, margin, and cost are outputs. We close the loop on the metric the business actually buys.",
-      link: "/solutions/machine-learning/demand-forecasting",
+      link: "/solutions/machine-learning",
     },
   ];
 

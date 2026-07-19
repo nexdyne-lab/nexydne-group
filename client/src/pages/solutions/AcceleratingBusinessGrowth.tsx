@@ -146,7 +146,7 @@ export default function AcceleratingBusinessGrowth() {
   const relatedOfferings = [
     {
       title: "E-Commerce & Digital Channels",
-      link: "/capabilities/ecommerce",
+      link: "/capabilities/growth-marketing-sales/ecommerce",
     },
     {
       title: "Growth Marketing",

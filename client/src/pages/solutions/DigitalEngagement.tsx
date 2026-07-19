@@ -22,37 +22,37 @@ export default function DigitalEngagement() {
       title: "Marketing Automation",
       description:
         "Implement and optimize Marketo, HubSpot, Braze, or Iterable. We design programs that move customers down the funnel without burning the list.",
-      link: "/solutions/digital-engagement/marketing-automation",
+      link: "/solutions/digital-engagement",
     },
     {
       title: "Lifecycle Messaging",
       description:
         "Onboarding, activation, retention, win-back. We design the full customer lifecycle so each message earns the next one.",
-      link: "/solutions/digital-engagement/lifecycle-messaging",
+      link: "/solutions/digital-engagement",
     },
     {
       title: "Personalization",
       description:
         "From rules-based segmentation to ML-driven recommendations. We deploy personalization that materially moves conversion, not just open rates.",
-      link: "/solutions/digital-engagement/personalization",
+      link: "/solutions/digital-engagement",
     },
     {
       title: "Loyalty Programs",
       description:
         "Design loyalty mechanics that create durable repeat behavior—not just discount addiction. Earn margin, not erode it.",
-      link: "/solutions/digital-engagement/loyalty-programs",
+      link: "/solutions/digital-engagement",
     },
     {
       title: "Web & Mobile Experience",
       description:
         "Conversion-focused web and mobile experiences. We optimize the moments where intent meets product—and revenue follows.",
-      link: "/solutions/digital-engagement/web-mobile-experience",
+      link: "/solutions/digital-engagement",
     },
     {
       title: "A/B Testing & Optimization",
       description:
         "Stand up a real experimentation program: governance, statistical rigor, executive reporting. Decisions get faster and the wins compound.",
-      link: "/solutions/digital-engagement/ab-testing",
+      link: "/solutions/digital-engagement",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function DigitalEngagement() {
       title: "Map the Customer Lifecycle",
       description:
         "We chart the actual journey from first impression to repeat purchase—and find the moments where engagement actually moves revenue.",
-      link: "/solutions/digital-engagement/lifecycle-messaging",
+      link: "/solutions/digital-engagement",
     },
     {
       title: "Wire the Stack",
       description:
         "CDP, ESP, automation, analytics, web, mobile. We connect the systems so a single customer view drives every channel in real time.",
-      link: "/solutions/digital-engagement/marketing-automation",
+      link: "/solutions/digital-engagement",
     },
     {
       title: "Design Programs That Earn",
       description:
         "Onboarding, retention, reactivation. We design programs measured on incremental revenue, not vanity engagement metrics.",
-      link: "/solutions/digital-engagement/personalization",
+      link: "/solutions/digital-engagement",
     },
     {
       title: "Test, Learn, Compound",
       description:
         "Stand up a disciplined experimentation cadence so the program improves every quarter—not every reorg.",
-      link: "/solutions/digital-engagement/ab-testing",
+      link: "/solutions/digital-engagement",
     },
   ];
 

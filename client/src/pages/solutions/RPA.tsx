@@ -22,37 +22,37 @@ export default function RPA() {
       title: "Bot Development",
       description:
         "Production-grade bots built on UiPath, Blue Prism, and Automation Anywhere. We design, code, test, and harden bots that keep running in the wild.",
-      link: "/solutions/rpa/bot-development",
+      link: "/solutions/rpa",
     },
     {
       title: "RPA Strategy & ROI Assessment",
       description:
         "Identify the right processes, quantify the savings, and build a sequenced automation roadmap your CFO can defend.",
-      link: "/solutions/rpa/strategy-roi",
+      link: "/solutions/rpa",
     },
     {
       title: "Attended Bots",
       description:
         "Bots that work alongside humans on the desktop—triggered by the user, sharing the screen, accelerating the moments that matter.",
-      link: "/solutions/rpa/attended-bots",
+      link: "/solutions/rpa",
     },
     {
       title: "Unattended Bots",
       description:
         "Headless, scheduled, autonomous. Server-side bots that run overnight, all weekend, every quarter-close, without supervision.",
-      link: "/solutions/rpa/unattended-bots",
+      link: "/solutions/rpa",
     },
     {
       title: "Intelligent Document Processing",
       description:
         "Combine OCR, NLP, and ML to extract structured data from invoices, claims, and contracts. The bot reads, classifies, and routes.",
-      link: "/solutions/rpa/intelligent-document-processing",
+      link: "/solutions/intelligent-process-optimization/process-automation/rpa",
     },
     {
       title: "RPA Governance & CoE",
       description:
         "Stand up a Center of Excellence: standards, security, change control, and the operating model that turns one bot into an enterprise program.",
-      link: "/solutions/rpa/governance-coe",
+      link: "/solutions/rpa",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function RPA() {
       title: "Discover the Right Processes",
       description:
         "Not every process should be automated. We find the ones with high volume, stable rules, and clear ROI.",
-      link: "/solutions/rpa/strategy-roi",
+      link: "/solutions/rpa",
     },
     {
       title: "Design for the Edge Case",
       description:
         "Bots break on exceptions. We design exception handling and human handoffs into the workflow from day one.",
-      link: "/solutions/rpa/bot-development",
+      link: "/solutions/rpa",
     },
     {
       title: "Deploy with Governance",
       description:
         "Credentials, audit trails, change control. We ship bots that pass IT security review, not just business UAT.",
-      link: "/solutions/rpa/governance-coe",
+      link: "/solutions/rpa",
     },
     {
       title: "Scale to a Program",
       description:
         "One bot is a project. Twenty bots is a program. We build the CoE that turns automation into a repeatable capability.",
-      link: "/solutions/rpa/governance-coe",
+      link: "/solutions/rpa",
     },
   ];
 

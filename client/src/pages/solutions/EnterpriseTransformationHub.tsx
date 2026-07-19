@@ -22,37 +22,37 @@ export default function EnterpriseTransformationHub() {
       title: "Org Design & Change Management",
       description:
         "Redesign reporting lines, decision rights, and accountability structures so the organization can actually execute the transformation it just funded. Change is managed, not announced.",
-      link: "/solutions/enterprise-transformation-hub/org-design",
+      link: "/solutions/enterprise-transformation-hub",
     },
     {
       title: "Technology Modernization Strategy",
       description:
         "Set the multi-year technology agenda that backs the business strategy — platform choices, build-vs-buy posture, and the sequencing that lets the org absorb it.",
-      link: "/solutions/enterprise-transformation-hub/tech-modernization",
+      link: "/solutions/enterprise-transformation-hub",
     },
     {
       title: "Business Process Redesign",
       description:
         "Re-engineer the end-to-end processes that define how value gets created and captured. We design the operating model the new strategy actually requires.",
-      link: "/solutions/enterprise-transformation-hub/process-redesign",
+      link: "/solutions/enterprise-transformation-hub",
     },
     {
       title: "M&A Integration Playbooks",
       description:
         "Pre-close diligence, day-one integration, and the 18-month value capture plan that turns deal logic into realized synergies. Integration done as a discipline, not a project.",
-      link: "/solutions/enterprise-transformation-hub/ma-integration",
+      link: "/solutions/enterprise-transformation-hub",
     },
     {
       title: "Operating Model Design",
       description:
         "Define how the enterprise will be run after the transformation — the structure, capabilities, governance, and cadences that make the new strategy executable in steady state.",
-      link: "/solutions/enterprise-transformation-hub/operating-model",
+      link: "/solutions/enterprise-transformation-hub",
     },
     {
       title: "Transformation Governance & PMO",
       description:
         "Stand up the executive cadence, decision rights, and instrumented PMO that keep a multi-year transformation on track when reality starts pushing back. Governance as the discipline that ships value.",
-      link: "/solutions/enterprise-transformation-hub/governance-pmo",
+      link: "/solutions/enterprise-transformation-hub",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function EnterpriseTransformationHub() {
       title: "Anchor on the Investment Case",
       description:
         "Every transformation has an investment thesis. We make it explicit, instrumentable, and the unit of decision-making for every downstream choice — so the program never drifts from the value.",
-      link: "/solutions/enterprise-transformation-hub/governance-pmo",
+      link: "/solutions/enterprise-transformation-hub",
     },
     {
       title: "Sequence for Absorption",
       description:
         "The org can only absorb so much change at once. We sequence the portfolio of initiatives against organizational capacity, not just dependency graphs — because the second axis is what kills programs.",
-      link: "/solutions/enterprise-transformation-hub/org-design",
+      link: "/solutions/enterprise-transformation-hub",
     },
     {
       title: "Build the Operating Model in Parallel",
       description:
         "Designing the future operating model alongside the transformation — not after — means the org grows into the new shape rather than retrofitting one day before go-live.",
-      link: "/solutions/enterprise-transformation-hub/operating-model",
+      link: "/solutions/enterprise-transformation-hub",
     },
     {
       title: "Govern as a First-Class Capability",
       description:
         "Most transformations underinvest in governance until things slip. We stand up the cadence, the dashboards, and the decision rights up front — so course corrections happen weekly, not quarterly.",
-      link: "/solutions/enterprise-transformation-hub/governance-pmo",
+      link: "/solutions/enterprise-transformation-hub",
     },
   ];
 

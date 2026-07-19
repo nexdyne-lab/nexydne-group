@@ -22,37 +22,37 @@ export default function ProcessOrchestration() {
       title: "BPMN Modeling & Design",
       description:
         "Capture how work actually happens in BPMN 2.0—decision tables, gateways, sub-processes. The model becomes the executable, not just the diagram.",
-      link: "/solutions/process-orchestration/bpmn-design",
+      link: "/solutions/process-orchestration",
     },
     {
       title: "Workflow Automation",
       description:
         "Automate the long-running, multi-step processes that span humans, systems, and partners. We handle the wait states, retries, and exception paths.",
-      link: "/solutions/process-orchestration/workflow-automation",
+      link: "/solutions/intelligent-process-optimization/process-automation/process-orchestration",
     },
     {
       title: "BPM Platform Implementation",
       description:
         "Camunda, IBM BPM, Pega. We stand up the workflow engine, the developer tooling, and the operations model that runs the platform in production.",
-      link: "/solutions/process-orchestration/bpm-platform",
+      link: "/solutions/process-orchestration",
     },
     {
       title: "Human-in-the-Loop Processes",
       description:
         "Approval gates, exception queues, escalation rules. We design the human moments inside automated processes so people stay in control of consequence.",
-      link: "/solutions/process-orchestration/human-in-the-loop",
+      link: "/solutions/process-orchestration",
     },
     {
       title: "Process Intelligence & Mining",
       description:
         "Discover the real process from event logs, not the diagram in the binder. Process mining shows you where the actual time and rework lives.",
-      link: "/solutions/process-orchestration/process-mining",
+      link: "/solutions/process-orchestration",
     },
     {
       title: "Orchestration Governance",
       description:
         "Versioning, deployment, model ownership, KPIs. We build the governance layer that keeps a hundred process models from becoming a hundred problems.",
-      link: "/solutions/process-orchestration/governance",
+      link: "/solutions/process-orchestration",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function ProcessOrchestration() {
       title: "Mine the Real Process",
       description:
         "Start with event-log evidence, not anecdote. Process mining tells the truth about how work actually moves.",
-      link: "/solutions/process-orchestration/process-mining",
+      link: "/solutions/process-orchestration",
     },
     {
       title: "Model the Target State",
       description:
         "BPMN models that are precise enough to execute and clear enough to socialize with the business.",
-      link: "/solutions/process-orchestration/bpmn-design",
+      link: "/solutions/process-orchestration",
     },
     {
       title: "Implement on a Real Engine",
       description:
         "Camunda, IBM BPM, or Pega. We pick the engine that fits your team, your scale, and your operational reality.",
-      link: "/solutions/process-orchestration/bpm-platform",
+      link: "/solutions/process-orchestration",
     },
     {
       title: "Operate and Improve",
       description:
         "Process KPIs, model versioning, continuous mining. The orchestration platform is a living capability, not a project deliverable.",
-      link: "/solutions/process-orchestration/governance",
+      link: "/solutions/process-orchestration",
     },
   ];
 

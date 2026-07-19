@@ -22,37 +22,37 @@ export default function Chatbots() {
       title: "Customer Support Chatbots",
       description:
         "Deflect Tier 1 tickets and resolve common inquiries 24/7. Scripted flows backed by LLM augmentation handle the routine and escalate cleanly when humans are needed.",
-      link: "/solutions/chatbots/customer-support",
+      link: "/solutions/chatbots",
     },
     {
       title: "Lead-Gen and Sales Chatbots",
       description:
         "Qualify, route, and book meetings on the website surface where intent is highest. Bots that capture context and hand sales a warm conversation, not a cold form.",
-      link: "/solutions/chatbots/lead-gen-sales",
+      link: "/solutions/chatbots",
     },
     {
       title: "Internal Helpdesk Chatbots",
       description:
         "IT, HR, and ops self-service inside Slack, Teams, or your portal. Cut ticket volume by answering policy and password questions without a human in the loop.",
-      link: "/solutions/chatbots/internal-helpdesk",
+      link: "/solutions/chatbots",
     },
     {
       title: "Multilingual Chatbots",
       description:
         "Serve global customers in their language with parity quality. Translation pipelines and language-aware intent routing built in from day one.",
-      link: "/solutions/chatbots/multilingual",
+      link: "/solutions/chatbots",
     },
     {
       title: "Voice-Enabled Chatbots",
       description:
         "Conversational voice in IVR, kiosk, and mobile contexts. We design call flows that respect the channel and hand off to live agents without losing state.",
-      link: "/solutions/chatbots/voice-enabled",
+      link: "/solutions/chatbots",
     },
     {
       title: "Bot Orchestration and Handoff",
       description:
         "The hardest part of chatbots is the handoff. We build orchestration layers that route between bots, agents, and systems while keeping the conversation context intact.",
-      link: "/solutions/chatbots/orchestration-handoff",
+      link: "/solutions/chatbots",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function Chatbots() {
       title: "Map the Conversation",
       description:
         "Audit real transcripts and tickets before designing flows. The bot script is shaped by what users actually say, not what we think they will.",
-      link: "/solutions/chatbots/customer-support",
+      link: "/solutions/chatbots",
     },
     {
       title: "Hybrid by Design",
       description:
         "Combine deterministic scripts for compliance-sensitive paths with LLM augmentation for the long tail. Neither approach alone is enough.",
-      link: "/solutions/chatbots/orchestration-handoff",
+      link: "/solutions/chatbots",
     },
     {
       title: "Instrument Every Turn",
       description:
         "Every utterance, intent match, and fallback gets logged. The bot that measures itself improves; the bot that doesn't decays.",
-      link: "/solutions/chatbots/internal-helpdesk",
+      link: "/solutions/chatbots",
     },
     {
       title: "Design the Handoff",
       description:
         "When the bot can't help, the human takeover must feel seamless. We design escalation as a first-class feature, not an afterthought.",
-      link: "/solutions/chatbots/orchestration-handoff",
+      link: "/solutions/chatbots",
     },
   ];
 
@@ -124,11 +124,11 @@ export default function Chatbots() {
     },
     {
       title: "Customer Experience",
-      link: "/solutions/customer-experience",
+      link: "/solutions/customer-portal",
     },
     {
       title: "Contact Center Modernization",
-      link: "/solutions/contact-center-modernization",
+      link: "/solutions/chatbots",
     },
     {
       title: "Digital Engagement",

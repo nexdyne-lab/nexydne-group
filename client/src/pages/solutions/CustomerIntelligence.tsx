@@ -139,7 +139,7 @@ export default function CustomerIntelligence() {
     },
     {
       title: "Personalization",
-      link: "/solutions/personalization",
+      link: "/solutions/customer-intelligence/personalization",
     },
     {
       title: "Customer Journey Map",

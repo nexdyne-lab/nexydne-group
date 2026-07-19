@@ -22,37 +22,37 @@ export default function DigitalExperiencePlatform() {
       title: "DXP Selection & Implementation",
       description:
         "Adobe Experience Cloud, Sitecore, Optimizely, Acquia. We run a structured selection that maps your customer journey, your stack, and your team to the right DXP — and then we build it.",
-      link: "/solutions/digital-experience-platform/selection-implementation",
+      link: "/solutions/digital-experience-platform",
     },
     {
       title: "Content Management",
       description:
         "Headless and hybrid CMS architectures that let marketing ship at the speed of brand without re-deploying the application every time.",
-      link: "/solutions/digital-experience-platform/content-management",
+      link: "/solutions/digital-experience-platform",
     },
     {
       title: "Personalization Engines",
       description:
         "Audience segmentation, decisioning rules, and machine-learned personalization wired into Adobe Target, Sitecore Personalize, or Optimizely Web.",
-      link: "/solutions/digital-experience-platform/personalization-engines",
+      link: "/solutions/digital-experience-platform",
     },
     {
       title: "Omnichannel Orchestration",
       description:
         "Web, mobile, email, push, in-store, contact center — orchestrated as one customer view, with the messaging logic and identity resolution to back it.",
-      link: "/solutions/digital-experience-platform/omnichannel-orchestration",
+      link: "/solutions/digital-experience-platform",
     },
     {
       title: "Journey Orchestration",
       description:
         "Multi-step, multi-channel customer journeys built on Adobe Journey Optimizer, Salesforce Marketing Cloud, or Braze. Designed for the moments that matter.",
-      link: "/solutions/digital-experience-platform/journey-orchestration",
+      link: "/solutions/digital-experience-platform",
     },
     {
       title: "DXP Migration",
       description:
         "Legacy CMS or first-generation DXP migrations onto modern composable platforms. We design the cutover so the marketing calendar never notices.",
-      link: "/solutions/digital-experience-platform/dxp-migration",
+      link: "/solutions/digital-experience-platform",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function DigitalExperiencePlatform() {
       title: "Map the Journey First",
       description:
         "DXPs are bought to enable journeys. We map the customer journey before we map the platform — so the platform serves the experience, not the reverse.",
-      link: "/solutions/digital-experience-platform/journey-orchestration",
+      link: "/solutions/digital-experience-platform",
     },
     {
       title: "Compose, Don't Monolith",
       description:
         "Modern DXP is composable — best-of-breed CMS, CDP, and orchestration. We design the architecture for replacement, because every component will be replaced.",
-      link: "/solutions/digital-experience-platform/selection-implementation",
+      link: "/solutions/digital-experience-platform",
     },
     {
       title: "Personalize with Discipline",
       description:
         "Personalization that doesn't measure is decoration. We design the experimentation framework that proves the lift — and shuts down the variants that don't.",
-      link: "/solutions/digital-experience-platform/personalization-engines",
+      link: "/solutions/digital-experience-platform",
     },
     {
       title: "Hand the Keys to Marketing",
       description:
         "The DXP belongs to marketing. We build the templates, the workflows, and the training that lets the marketing org ship without IT in the loop for every change.",
-      link: "/solutions/digital-experience-platform/content-management",
+      link: "/solutions/digital-experience-platform",
     },
   ];
 
@@ -120,19 +120,19 @@ export default function DigitalExperiencePlatform() {
   const relatedOfferings = [
     {
       title: "Customer Experience",
-      link: "/solutions/customer-experience",
+      link: "/solutions/customer-portal",
     },
     {
       title: "Digital Marketing",
-      link: "/solutions/digital-marketing",
+      link: "/solutions/digital-engagement",
     },
     {
       title: "Customer Data Platform",
-      link: "/solutions/customer-data-platform",
+      link: "/solutions/customer-intelligence/customer-data-platform",
     },
     {
       title: "E-commerce Platforms",
-      link: "/solutions/ecommerce-platforms",
+      link: "/solutions/business-growth/ecommerce-platforms",
     },
   ];
 

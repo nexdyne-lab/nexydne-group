@@ -22,37 +22,37 @@ export default function NativeApps() {
       title: "iOS Native (Swift)",
       description:
         "Swift and SwiftUI engineered for the device. We build apps that feel like first-party Apple — fluid, responsive, and at home on every iPhone and iPad screen size.",
-      link: "/solutions/native-apps/ios-native",
+      link: "/solutions/native-apps",
     },
     {
       title: "Android Native (Kotlin)",
       description:
         "Kotlin and Jetpack Compose for the full Android device matrix. Material 3 fidelity, deep integration with Google services, and the performance ceiling of pure native.",
-      link: "/solutions/native-apps/android-native",
+      link: "/solutions/native-apps",
     },
     {
       title: "Native UX/UI Design",
       description:
         "Platform-respecting interaction design. We design to the Human Interface Guidelines and Material spec — not against them — so the app feels native, not ported.",
-      link: "/solutions/native-apps/native-ux-ui",
+      link: "/solutions/native-apps",
     },
     {
       title: "Native Modernization",
       description:
         "Replatform legacy hybrid or aging Objective-C and Java codebases onto modern Swift and Kotlin. Cut crash rates, restore feature velocity, and unlock platform features.",
-      link: "/solutions/native-apps/native-modernization",
+      link: "/solutions/native-apps",
     },
     {
       title: "Native Performance Optimization",
       description:
         "Frame-by-frame profiling, memory tuning, battery-conscious architecture. When the App Store ranking depends on speed, we deliver the milliseconds that matter.",
-      link: "/solutions/native-apps/performance-optimization",
+      link: "/solutions/native-apps",
     },
     {
       title: "Native App Analytics & Instrumentation",
       description:
         "Crash analytics, funnel telemetry, A/B infrastructure, and event taxonomy. The team that measures the device beats the team that guesses about it.",
-      link: "/solutions/native-apps/analytics-instrumentation",
+      link: "/solutions/native-apps",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function NativeApps() {
       title: "Decide Native, Decide Why",
       description:
         "Native is a choice with cost. We make it for performance, platform integration, or App Store positioning — never by default.",
-      link: "/solutions/native-apps/native-ux-ui",
+      link: "/solutions/native-apps",
     },
     {
       title: "Design to the Platform",
       description:
         "Apple and Google have spent decades shaping interaction patterns. We design with their grain, not against it, for instant familiarity.",
-      link: "/solutions/native-apps/native-ux-ui",
+      link: "/solutions/native-apps",
     },
     {
       title: "Engineer for the Device",
       description:
         "Native means leveraging the device — Metal, Core ML, ARKit, CameraX, sensors. We architect to use what's there, not abstract it away.",
-      link: "/solutions/native-apps/performance-optimization",
+      link: "/solutions/native-apps",
     },
     {
       title: "Instrument Before Launch",
       description:
         "Crash analytics, performance traces, and event telemetry ship with v1. The native app that measures itself improves; the one that doesn't decays.",
-      link: "/solutions/native-apps/analytics-instrumentation",
+      link: "/solutions/native-apps",
     },
   ];
 
@@ -124,15 +124,15 @@ export default function NativeApps() {
     },
     {
       title: "Cross-Platform Apps",
-      link: "/solutions/cross-platform-apps",
+      link: "/solutions/mobile-apps",
     },
     {
       title: "Mobile UX Design",
-      link: "/solutions/mobile-ux-design",
+      link: "/solutions/mobile-apps",
     },
     {
       title: "App Modernization",
-      link: "/solutions/app-modernization",
+      link: "/solutions/intelligent-process-optimization/app-development/it-modernization",
     },
   ];
 

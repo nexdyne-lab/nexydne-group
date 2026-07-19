@@ -154,7 +154,7 @@ export default function DataDrivenCustomerIntelligence() {
   const relatedOfferings = [
     {
       title: "Digital Strategy",
-      link: "/capabilities/digital-transformation",
+      link: "/capabilities/business-building/digital-transformation-accelerator",
     },
     {
       title: "Marketing Analytics",

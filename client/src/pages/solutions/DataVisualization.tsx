@@ -22,37 +22,37 @@ export default function DataVisualization() {
       title: "Executive Dashboards",
       description:
         "Board-grade dashboards that show the few numbers that matter, with the right context, in the right cadence. We design for decision, not display.",
-      link: "/solutions/data-visualization/executive-dashboards",
+      link: "/solutions/data-visualization",
     },
     {
       title: "Self-Service BI",
       description:
         "Tableau, Power BI, and Looker rolled out with the governance, semantic layer, and adoption playbook that turn self-service into actual usage.",
-      link: "/solutions/data-visualization/self-service-bi",
+      link: "/solutions/data-visualization",
     },
     {
       title: "Embedded Analytics",
       description:
         "Charts, dashboards, and reports embedded directly inside your product or portal—native to the user experience, not a separate destination.",
-      link: "/solutions/data-visualization/embedded-analytics",
+      link: "/solutions/data-visualization",
     },
     {
       title: "Real-Time Monitoring Dashboards",
       description:
         "Operational dashboards driven by streaming data—refreshed in seconds, not hours. Built for control rooms, ops centers, and live decisions.",
-      link: "/solutions/data-visualization/real-time-monitoring",
+      link: "/solutions/data-visualization",
     },
     {
       title: "Data Storytelling & Narrative",
       description:
         "The numbers don't speak for themselves. We build the structured narrative that turns a dashboard into an argument leaders can act on.",
-      link: "/solutions/data-visualization/data-storytelling",
+      link: "/solutions/data-visualization",
     },
     {
       title: "Dashboard Design Systems",
       description:
         "Component libraries, color rules, layout grids. The design system that lets a hundred dashboards feel like one product, not a hundred opinions.",
-      link: "/solutions/data-visualization/design-systems",
+      link: "/solutions/data-visualization",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function DataVisualization() {
       title: "Define the Decision",
       description:
         "Every dashboard exists for a decision. We start with the decision—then design backward into the metrics and the visuals.",
-      link: "/solutions/data-visualization/executive-dashboards",
+      link: "/solutions/data-visualization",
     },
     {
       title: "Choose the Right Surface",
       description:
         "Tableau, Power BI, Looker, embedded, real-time. We pick the surface that fits how your audience actually consumes information.",
-      link: "/solutions/data-visualization/self-service-bi",
+      link: "/solutions/data-visualization",
     },
     {
       title: "Design for Comprehension",
       description:
         "Visual hierarchy, restraint, narrative. The dashboard that earns five seconds of attention beats the one that demands fifty.",
-      link: "/solutions/data-visualization/data-storytelling",
+      link: "/solutions/data-visualization",
     },
     {
       title: "Govern and Evolve",
       description:
         "Semantic layers, version control, deprecation discipline. Dashboards die from neglect—we build the operating model that keeps them alive.",
-      link: "/solutions/data-visualization/design-systems",
+      link: "/solutions/data-visualization",
     },
   ];
 
@@ -124,7 +124,7 @@ export default function DataVisualization() {
     },
     {
       title: "AI & Machine Learning",
-      link: "/solutions/ai-machine-learning",
+      link: "/solutions/machine-learning",
     },
     {
       title: "Customer Intelligence",

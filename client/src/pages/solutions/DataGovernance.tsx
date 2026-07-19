@@ -22,37 +22,37 @@ export default function DataGovernance() {
       title: "Governance Framework Design",
       description:
         "Define ownership, decision rights, and policy. We design governance frameworks that fit your operating model — not the textbook one — and that people will actually follow.",
-      link: "/solutions/data-governance/framework-design",
+      link: "/solutions/data-governance",
     },
     {
       title: "Data Lineage & Cataloging",
       description:
         "End-to-end lineage and discoverability across the modern stack. Collibra, Alation, OpenMetadata, Unity Catalog — picked and configured for the platform you actually run.",
-      link: "/solutions/data-governance/lineage-cataloging",
+      link: "/solutions/data-governance",
     },
     {
       title: "Data Quality Programs",
       description:
         "Quality as a managed program — KPIs, ownership, remediation cycles. We build the operating cadence that turns one-off cleanups into sustained data trust.",
-      link: "/solutions/data-governance/quality-programs",
+      link: "/solutions/data-governance",
     },
     {
       title: "Regulatory Compliance (GDPR, CCPA, HIPAA)",
       description:
         "Privacy-by-design controls, subject-rights workflows, retention policies, and audit trails. Compliance built into the platform, not bolted onto the dashboard.",
-      link: "/solutions/data-governance/regulatory-compliance",
+      link: "/solutions/data-governance",
     },
     {
       title: "Data Stewardship Programs",
       description:
         "Stewards who own the data, the definitions, and the remediation. We design the role, the responsibilities, and the working agreements that make stewardship stick.",
-      link: "/solutions/data-governance/stewardship-programs",
+      link: "/solutions/data-governance",
     },
     {
       title: "Governance Maturity Assessment",
       description:
         "Where you are, where peers are, and what the next eighteen months should look like. A baseline assessment that turns governance from theory into a roadmap.",
-      link: "/solutions/data-governance/maturity-assessment",
+      link: "/solutions/data-governance",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function DataGovernance() {
       title: "Start with Trust",
       description:
         "Governance only works if the business trusts the data and the process. We build trust before we build policy — by demonstrating quality wins early.",
-      link: "/solutions/data-governance/quality-programs",
+      link: "/solutions/data-governance",
     },
     {
       title: "Pick the Right Battles",
       description:
         "You can't govern everything at once. We help leaders prioritize the domains that drive the most regulatory, financial, or operational risk first.",
-      link: "/solutions/data-governance/maturity-assessment",
+      link: "/solutions/data-governance",
     },
     {
       title: "Design for the Operator",
       description:
         "The steward, the engineer, and the analyst are the ones living with the policy. We design controls that fit their workflow — not anchor them down.",
-      link: "/solutions/data-governance/stewardship-programs",
+      link: "/solutions/data-governance",
     },
     {
       title: "Wire It Into the Platform",
       description:
         "Governance built into the catalog, the pipeline, and the warehouse — not a separate spreadsheet — is the only governance that survives a re-org.",
-      link: "/solutions/data-governance/lineage-cataloging",
+      link: "/solutions/data-governance",
     },
   ];
 
@@ -128,11 +128,11 @@ export default function DataGovernance() {
     },
     {
       title: "Cybersecurity & Compliance",
-      link: "/solutions/cybersecurity-compliance",
+      link: "/solutions/enterprise-transformation/security-compliance",
     },
     {
       title: "Risk Management",
-      link: "/solutions/risk-management",
+      link: "/solutions/enterprise-transformation/security-compliance",
     },
   ];
 

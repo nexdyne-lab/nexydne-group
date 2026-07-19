@@ -13,12 +13,12 @@ import { OperationalExcellence } from "@/components/OperationalExcellence";
 const capabilities = [
   { id: "artificial-intelligence", title: "Artificial Intelligence", link: "/capabilities/artificial-intelligence" },
   { id: "business-building", title: "Business and Organizational Purpose", link: "/capabilities/business-building" },
-  { id: "business-transformation", title: "Business Transformation", link: "/capabilities/business-transformation" },
-  { id: "digital-technology", title: "Digital, Technology & Data", link: "/capabilities/digital-technology" },
+  { id: "business-transformation", title: "Business Transformation", link: "/capabilities/business-building/digital-transformation-accelerator" },
+  { id: "digital-technology", title: "Digital, Technology & Data", link: "/capabilities/growth-marketing-sales/digital-marketing/marketing-technology" },
   { id: "marketing-sales", title: "Marketing, Sales & Pricing", link: "/capabilities/growth-marketing-sales" },
   { id: "operations", title: "Operations", link: "/capabilities/operations" },
   { id: "strategy", title: "Strategy", link: "/capabilities/strategy-corporate-finance" },
-  { id: "sustainability", title: "Climate Change and Sustainability", link: "/capabilities/sustainability" },
+  { id: "sustainability", title: "Climate Change and Sustainability", link: "/capabilities/growth-marketing-sales/green-growth/sustainability-measurement" },
 ];
 
 const industries = [
@@ -26,10 +26,10 @@ const industries = [
   { id: "automotive", title: "Automotive Industry", link: "/industries/automotive" },
   { id: "consumer-products", title: "Consumer Products Industry", link: "/industries/consumer-products" },
   { id: "education", title: "Education", link: "/industries/education" },
-  { id: "energy", title: "Energy", link: "/industries/energy" },
+  { id: "energy", title: "Energy", link: "/industries/energy-utilities" },
   { id: "financial-institutions", title: "Financial Institutions", link: "/industries/financial-services" },
   { id: "healthcare", title: "Healthcare", link: "/industries/healthcare" },
-  { id: "technology", title: "Technology, Media & Telecommunications", link: "/industries/technology" },
+  { id: "technology", title: "Technology, Media & Telecommunications", link: "/industries/technology-media-telecom" },
 ];
 
 // The six major capabilities — links to their hub pages

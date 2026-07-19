@@ -158,7 +158,7 @@ export default function AppDevelopment() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-6xl mx-auto">
-            <Link href="/cases/tkb-modernization" className="group">
+            <Link href="/cases/bank-app-modernization" className="group">
               <div className="bg-white border-2 border-border hover:border-primary transition duration-300 overflow-hidden h-full">
                 <div className="aspect-video bg-gradient-to-br from-primary to-primary"></div>
                 <div className="p-4 sm:p-6 md:p-8">
@@ -177,7 +177,7 @@ export default function AppDevelopment() {
               </div>
             </Link>
 
-            <Link href="/cases/payter-platform" className="group">
+            <Link href="/cases/bank-app-modernization" className="group">
               <div className="bg-white border-2 border-border hover:border-primary transition duration-300 overflow-hidden h-full">
                 <div className="aspect-video bg-gradient-to-br from-primary to-primary"></div>
                 <div className="p-4 sm:p-6 md:p-8">
@@ -196,7 +196,7 @@ export default function AppDevelopment() {
               </div>
             </Link>
 
-            <Link href="/cases/sanquin-digital" className="group">
+            <Link href="/cases/telehealth-platform" className="group">
               <div className="bg-white border-2 border-border hover:border-primary transition duration-300 overflow-hidden h-full">
                 <div className="aspect-video bg-gradient-to-br from-primary/10 to-primary/10"></div>
                 <div className="p-4 sm:p-6 md:p-8">
@@ -215,7 +215,7 @@ export default function AppDevelopment() {
               </div>
             </Link>
 
-            <Link href="/cases/rai-amsterdam" className="group">
+            <Link href="/cases" className="group">
               <div className="bg-white border-2 border-border hover:border-primary transition duration-300 overflow-hidden h-full">
                 <div className="aspect-video bg-gradient-to-br from-purple/10 to-purple/10"></div>
                 <div className="p-4 sm:p-6 md:p-8">

@@ -22,37 +22,37 @@ export default function IPaaS() {
       title: "Integration Platform Implementation",
       description:
         "Stand up Mulesoft, Boomi, or Informatica with the right architecture, naming conventions, and reusable patterns. Built to scale, not just to work.",
-      link: "/solutions/ipaas/platform-implementation",
+      link: "/solutions/ipaas",
     },
     {
       title: "API Management",
       description:
         "Gateways, developer portals, throttling, versioning. We turn ad-hoc endpoints into a managed API estate your partners can actually consume.",
-      link: "/solutions/ipaas/api-management",
+      link: "/solutions/ipaas",
     },
     {
       title: "Event-Driven Architecture",
       description:
         "Kafka, EventBridge, Pub/Sub. We design event backbones that decouple systems and let your enterprise react in milliseconds, not minutes.",
-      link: "/solutions/ipaas/event-driven",
+      link: "/solutions/ipaas",
     },
     {
       title: "B2B / EDI Integration",
       description:
         "Trading partner onboarding, EDI mapping, AS2 and SFTP. We modernize legacy B2B exchange while keeping the partner ecosystem unbroken.",
-      link: "/solutions/ipaas/b2b-edi",
+      link: "/solutions/ipaas",
     },
     {
       title: "Data Sync & ETL",
       description:
         "Bulk and real-time data movement between SaaS, on-prem, and the warehouse. We build pipelines that survive schema drift and partial failure.",
-      link: "/solutions/ipaas/data-sync-etl",
+      link: "/solutions/ipaas",
     },
     {
       title: "Integration Governance",
       description:
         "Patterns, standards, security review, lifecycle management. The governance model that keeps the integration estate from collapsing under its own weight.",
-      link: "/solutions/ipaas/governance",
+      link: "/solutions/ipaas",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function IPaaS() {
       title: "Map the Integration Estate",
       description:
         "Inventory every connector, every interface, every data flow. You can't modernize what you can't see.",
-      link: "/solutions/ipaas/governance",
+      link: "/solutions/ipaas",
     },
     {
       title: "Choose the Right Patterns",
       description:
         "Point-to-point, hub-and-spoke, event-driven, API-led. We pick the patterns that fit your data, latency, and team shape.",
-      link: "/solutions/ipaas/event-driven",
+      link: "/solutions/ipaas",
     },
     {
       title: "Implement with Reusability",
       description:
         "Every interface a building block. We design assets that the next team can compose, not just inherit.",
-      link: "/solutions/ipaas/platform-implementation",
+      link: "/solutions/ipaas",
     },
     {
       title: "Govern from Day One",
       description:
         "Standards, security, monitoring, deprecation. Integration is a living estate—we treat it that way.",
-      link: "/solutions/ipaas/governance",
+      link: "/solutions/ipaas",
     },
   ];
 

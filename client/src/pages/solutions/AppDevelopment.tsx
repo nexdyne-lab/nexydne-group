@@ -22,37 +22,37 @@ export default function AppDevelopment() {
       title: "Native iOS Development",
       description:
         "Build performant, App Store-grade iOS experiences in Swift and SwiftUI. Engineered for the device, optimized for the user, ready for scale.",
-      link: "/solutions/app-development/native-ios",
+      link: "/solutions/app-development",
     },
     {
       title: "Native Android Development",
       description:
         "Ship Android apps in Kotlin and Jetpack Compose that handle real-world device fragmentation while delivering Material-grade polish.",
-      link: "/solutions/app-development/native-android",
+      link: "/solutions/app-development",
     },
     {
       title: "React Native Cross-Platform",
       description:
         "One codebase, two stores. We build React Native apps that match native feel without doubling your engineering spend.",
-      link: "/solutions/app-development/react-native",
+      link: "/solutions/app-development",
     },
     {
       title: "Progressive Web Apps",
       description:
         "Installable, offline-capable web apps that bypass app-store friction. PWAs give you mobile reach without mobile distribution overhead.",
-      link: "/solutions/app-development/progressive-web-apps",
+      link: "/solutions/app-development",
     },
     {
       title: "App Modernization",
       description:
         "Replatform legacy apps stuck on older frameworks. We modernize the stack, refactor the architecture, and preserve the customer experience.",
-      link: "/solutions/app-development/app-modernization",
+      link: "/solutions/intelligent-process-optimization/app-development/it-modernization",
     },
     {
       title: "App Analytics & Optimization",
       description:
         "Instrument every screen, every event, every funnel. We turn raw app telemetry into product decisions that move retention and revenue.",
-      link: "/solutions/app-development/app-analytics",
+      link: "/solutions/app-development",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function AppDevelopment() {
       title: "Discover the Real Problem",
       description:
         "Before a line of code, we map the actual user job-to-be-done and the business outcome that matters. No solution searches for a problem.",
-      link: "/solutions/app-development/native-ios",
+      link: "/solutions/app-development",
     },
     {
       title: "Architect for Scale",
       description:
         "Design the data model, API contracts, and platform choices for where you'll be at 10x users—not just where you are today.",
-      link: "/solutions/app-development/react-native",
+      link: "/solutions/app-development",
     },
     {
       title: "Ship in Increments",
       description:
         "Two-week increments, every increment shippable. Real users see real progress before the architecture is fully proven.",
-      link: "/solutions/app-development/progressive-web-apps",
+      link: "/solutions/app-development",
     },
     {
       title: "Measure and Iterate",
       description:
         "Instrument behavior from day one. The product team that knows what users do beats the team that guesses every time.",
-      link: "/solutions/app-development/app-analytics",
+      link: "/solutions/app-development",
     },
   ];
 

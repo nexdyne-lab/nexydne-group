@@ -22,37 +22,37 @@ export default function CustomerPortal() {
       title: "Account Self-Service",
       description:
         "Profile, preferences, subscriptions, and account history. Customers manage themselves—and your support team handles the work that actually needs a human.",
-      link: "/solutions/customer-portal/account-self-service",
+      link: "/solutions/customer-portal",
     },
     {
       title: "Knowledge Base",
       description:
         "Searchable, structured help content that deflects tickets without frustrating customers. Built for findability, not just authoring convenience.",
-      link: "/solutions/customer-portal/knowledge-base",
+      link: "/solutions/customer-portal",
     },
     {
       title: "Support Ticketing",
       description:
         "Native ticketing or integrated Zendesk, Salesforce, or ServiceNow. Customers see status. Agents see context. Resolution times drop.",
-      link: "/solutions/customer-portal/support-ticketing",
+      link: "/solutions/customer-portal",
     },
     {
       title: "Billing & Payments",
       description:
         "Invoices, payment methods, dispute flows, and self-service refunds. Reduce billing-related contact volume by half—or more.",
-      link: "/solutions/customer-portal/billing-payments",
+      link: "/solutions/customer-portal",
     },
     {
       title: "Partner & Dealer Portals",
       description:
         "B2B portals for distributors, dealers, brokers, and resellers. Order entry, claims, marketing assets, training—all in one place.",
-      link: "/solutions/customer-portal/partner-dealer-portals",
+      link: "/solutions/customer-portal",
     },
     {
       title: "White-Label Portals",
       description:
         "Multi-tenant, brandable portal platforms for clients who serve clients. Theme, configure, deploy—without rebuilding the core.",
-      link: "/solutions/customer-portal/white-label-portals",
+      link: "/solutions/customer-portal",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function CustomerPortal() {
       title: "Map the Top Reasons Customers Call",
       description:
         "We start with the support data, not the wireframes. Top-15 contact reasons drive what the portal must absorb—and the deflection ROI.",
-      link: "/solutions/customer-portal/support-ticketing",
+      link: "/solutions/customer-portal",
     },
     {
       title: "Design for Self-Service",
       description:
         "Information architecture, navigation, and content design that lets customers find answers in seconds—not search-and-give-up.",
-      link: "/solutions/customer-portal/knowledge-base",
+      link: "/solutions/customer-portal",
     },
     {
       title: "Integrate the Systems of Record",
       description:
         "Billing, CRM, support, identity. We wire the portal into the systems behind it so the customer sees one experience, not five.",
-      link: "/solutions/customer-portal/billing-payments",
+      link: "/solutions/customer-portal",
     },
     {
       title: "Measure Deflection and CSAT",
       description:
         "Instrument every flow. We track contact volume, self-service completion, and CSAT impact so the portal's value is provable, not asserted.",
-      link: "/solutions/customer-portal/account-self-service",
+      link: "/solutions/customer-portal",
     },
   ];
 

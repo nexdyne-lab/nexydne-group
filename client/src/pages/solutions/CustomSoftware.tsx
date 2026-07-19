@@ -22,37 +22,37 @@ export default function CustomSoftware() {
       title: "Custom Enterprise Software",
       description:
         "Bespoke enterprise applications for the workflows COTS doesn't serve well. Designed to fit your operating model — not the other way around.",
-      link: "/solutions/custom-software/custom-enterprise-software",
+      link: "/solutions/custom-software",
     },
     {
       title: "Custom B2B Platforms",
       description:
         "Multi-tenant B2B platforms — partner portals, marketplaces, customer-facing software products. We build for the customers your customers will become.",
-      link: "/solutions/custom-software/custom-b2b-platforms",
+      link: "/solutions/custom-software",
     },
     {
       title: "Software Modernization",
       description:
         "Take aging custom software and modernize the stack, the architecture, and the deployment model — without the rewrite-from-scratch trap.",
-      link: "/solutions/custom-software/software-modernization",
+      link: "/solutions/custom-software",
     },
     {
       title: "Legacy System Replacement",
       description:
         "Phased replacement of legacy core systems — strangler-fig pattern, parallel-run discipline, and the cutover playbook that keeps the business running.",
-      link: "/solutions/custom-software/legacy-system-replacement",
+      link: "/solutions/custom-software",
     },
     {
       title: "Custom Mobile and Web Applications",
       description:
         "Tailored mobile and web apps for the products and operational tools where off-the-shelf simply doesn't fit. Built on modern stacks for the next decade.",
-      link: "/solutions/custom-software/custom-mobile-web-applications",
+      link: "/solutions/custom-software",
     },
     {
       title: "System Integration & APIs",
       description:
         "API design, integration architecture, and the middleware that makes a custom-built system play well with the SAPs, Salesforces, and ServiceNows around it.",
-      link: "/solutions/custom-software/system-integration-apis",
+      link: "/solutions/custom-software",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function CustomSoftware() {
       title: "Earn the Build",
       description:
         "Custom software is expensive. We start by validating that COTS, SaaS, and lowcode genuinely don't fit — so the build that happens is the build worth doing.",
-      link: "/solutions/custom-software/custom-enterprise-software",
+      link: "/solutions/custom-software",
     },
     {
       title: "Architect for the Decade",
       description:
         "The system you build today will run for ten years. We architect for the operations, the integrations, and the team that will inherit it.",
-      link: "/solutions/custom-software/system-integration-apis",
+      link: "/solutions/custom-software",
     },
     {
       title: "Strangle, Don't Rewrite",
       description:
         "Big-bang rewrites fail. We use the strangler-fig pattern to replace legacy systems incrementally — and keep the business running through the transition.",
-      link: "/solutions/custom-software/legacy-system-replacement",
+      link: "/solutions/custom-software",
     },
     {
       title: "Design for Operations",
       description:
         "Custom software lives in operations, not in development. We ship with observability, runbooks, and the support model that lets your team operate it.",
-      link: "/solutions/custom-software/software-modernization",
+      link: "/solutions/custom-software",
     },
   ];
 
@@ -120,7 +120,7 @@ export default function CustomSoftware() {
   const relatedOfferings = [
     {
       title: "Application Modernization",
-      link: "/solutions/application-modernization",
+      link: "/solutions/enterprise-transformation/legacy-modernization",
     },
     {
       title: "Lowcode Development",

@@ -100,7 +100,7 @@ export default function Ecommerce() {
               <BainHoverCard
                 title="Chatbots"
                 description="Enhance customer interactions with custom chatbot technology. We help you create frictionless, smart communication that customers love."
-                link="/solutions/business-growth/chatbots"
+                link="/solutions/business-growth/native-apps"
               />
               <BainHoverCard
                 title="Native apps"

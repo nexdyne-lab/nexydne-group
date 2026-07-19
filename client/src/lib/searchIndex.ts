@@ -34,7 +34,7 @@ export const SEARCH_INDEX: SearchItem[] = [
   { 
     title: "Process Automation", 
     type: "Solution", 
-    href: "/solutions/process-automation",
+    href: "/solutions/process-optimization/intelligent-automation-design",
     description: "Automate repetitive tasks to improve productivity.",
     keywords: ["automation", "rpa", "tasks", "productivity"]
   },
@@ -132,7 +132,7 @@ export const SEARCH_INDEX: SearchItem[] = [
   { 
     title: "Low-Code Development", 
     type: "Solution", 
-    href: "/solutions/low-code-development",
+    href: "/solutions/intelligent-process-optimization/app-development/low-code",
     description: "Accelerate delivery with low-code platforms.",
     keywords: ["low-code", "rapid", "development", "platform"]
   },
@@ -176,7 +176,7 @@ export const SEARCH_INDEX: SearchItem[] = [
   { 
     title: "Risk & Resilience", 
     type: "Capability", 
-    href: "/capabilities/risk-resilience",
+    href: "/capabilities/risk-and-resilience",
     description: "Build resilient operations to withstand disruptions.",
     keywords: ["risk", "resilience", "security", "continuity"]
   },
@@ -506,7 +506,7 @@ export const SEARCH_INDEX: SearchItem[] = [
   { 
     title: "Law Firm Document Intelligence", 
     type: "Case Study", 
-    href: "/cases/law-firm-doc-intel",
+    href: "/cases/law-firm-automation",
     description: "Automating document review with AI.",
     keywords: ["legal", "law", "document", "ai", "automation"]
   },

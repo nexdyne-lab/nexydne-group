@@ -22,14 +22,14 @@ const capabilities = [
     id: "business-transformation",
     title: "Business Transformation",
     description: "We guide enterprises through comprehensive transformation journeys, reimagining operating models and capabilities to thrive in rapidly evolving markets.",
-    link: "/capabilities/business-transformation",
+    link: "/capabilities/business-building/digital-transformation-accelerator",
     image: "/images/capability-technology.jpg"
   },
   {
     id: "digital-technology",
     title: "Digital, Technology & Data",
     description: "We architect modern digital foundations, leveraging cloud, data platforms, and emerging technologies to enable agility and innovation at enterprise scale.",
-    link: "/capabilities/digital-technology",
+    link: "/capabilities/growth-marketing-sales/digital-marketing/marketing-technology",
     image: "/images/solution-enterprise-tech.png"
   },
   {
@@ -57,7 +57,7 @@ const capabilities = [
     id: "sustainability",
     title: "Climate Change and Sustainability",
     description: "We help organizations navigate the transition to sustainable business models, reducing environmental impact while capturing new growth opportunities.",
-    link: "/capabilities/sustainability",
+    link: "/capabilities/growth-marketing-sales/green-growth/sustainability-measurement",
     image: "/images/industry-healthcare.jpg"
   }
 ];
@@ -96,7 +96,7 @@ const industries = [
     id: "energy",
     title: "Energy",
     description: "We guide energy companies through the transition to sustainable operations, optimizing assets and building new capabilities for a decarbonized future.",
-    link: "/industries/energy",
+    link: "/industries/energy-utilities",
     image: "/images/solution-enterprise-tech.png"
   },
   {
@@ -117,7 +117,7 @@ const industries = [
     id: "technology",
     title: "Technology, Media & Telecommunications",
     description: "We help TMT companies accelerate innovation, optimize go-to-market strategies, and build scalable platforms for the digital economy.",
-    link: "/industries/technology",
+    link: "/industries/technology-media-telecom",
     image: "/images/capability-ai.png"
   }
 ];

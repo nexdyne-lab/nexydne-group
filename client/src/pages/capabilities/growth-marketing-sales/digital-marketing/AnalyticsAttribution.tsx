@@ -115,7 +115,7 @@ export default function AnalyticsAttribution() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/capabilities/mckinsey-digital" className="text-muted-foreground hover:text-primary hover:underline flex items-center">
+                  <Link href="/capabilities/technology" className="text-muted-foreground hover:text-primary hover:underline flex items-center">
                     <ArrowRight className="w-3 h-3 mr-2 text-primary" />
                     NexDyne Digital
                   </Link>

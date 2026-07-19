@@ -22,37 +22,37 @@ export default function ConversationalAI() {
       title: "Customer Support Bots",
       description:
         "LLM-powered support agents that resolve—not just deflect. We build with retrieval, guardrails, and graceful handoff so customers get answers, not loops.",
-      link: "/solutions/conversational-ai/customer-support-bots",
+      link: "/solutions/conversational-ai",
     },
     {
       title: "Sales & Lead-Gen Agents",
       description:
         "Conversational agents that qualify leads, book meetings, and surface intent signals. Built to lift pipeline, not annoy prospects.",
-      link: "/solutions/conversational-ai/sales-lead-gen-agents",
+      link: "/solutions/conversational-ai",
     },
     {
       title: "Internal Helpdesk Agents",
       description:
         "IT, HR, finance, and operations agents that absorb repetitive employee requests. Free your specialists for the work that needs them.",
-      link: "/solutions/conversational-ai/internal-helpdesk-agents",
+      link: "/solutions/conversational-ai",
     },
     {
       title: "Voice IVR",
       description:
         "Modern voice-first agents that replace press-1 IVR purgatory. Natural conversation, accurate intent capture, fast resolution.",
-      link: "/solutions/conversational-ai/voice-ivr",
+      link: "/solutions/conversational-ai",
     },
     {
       title: "Multilingual Agents",
       description:
         "Agents that speak your customers' languages—localized, not just translated. Quality bar holds across markets.",
-      link: "/solutions/conversational-ai/multilingual-agents",
+      link: "/solutions/conversational-ai",
     },
     {
       title: "Agent Orchestration & Handoff",
       description:
         "Multi-agent routing, fallback, and human handoff. We design the orchestration layer that turns isolated bots into a coherent service.",
-      link: "/solutions/conversational-ai/agent-orchestration",
+      link: "/solutions/conversational-ai",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function ConversationalAI() {
       title: "Pick the Right First Use Case",
       description:
         "We start where the volume is high, the answers are knowable, and the failure cost is bounded. Bad first use cases poison the program.",
-      link: "/solutions/conversational-ai/customer-support-bots",
+      link: "/solutions/conversational-ai",
     },
     {
       title: "Ground the Model in Truth",
       description:
         "Retrieval-augmented generation, structured knowledge bases, and tight guardrails. The agent answers from your sources—not its training set.",
-      link: "/solutions/conversational-ai/internal-helpdesk-agents",
+      link: "/solutions/conversational-ai",
     },
     {
       title: "Design Graceful Handoff",
       description:
         "When the agent doesn't know, it hands off cleanly with full context. Customers don't repeat themselves; agents don't guess.",
-      link: "/solutions/conversational-ai/agent-orchestration",
+      link: "/solutions/conversational-ai",
     },
     {
       title: "Measure, Tune, Expand",
       description:
         "Track containment, CSAT, and escalation rates. Tune retrieval, prompts, and guardrails on real conversations—then expand the scope.",
-      link: "/solutions/conversational-ai/voice-ivr",
+      link: "/solutions/conversational-ai",
     },
   ];
 

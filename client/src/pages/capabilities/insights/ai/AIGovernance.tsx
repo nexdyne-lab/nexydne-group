@@ -42,7 +42,7 @@ export default function AIGovernance() {
         },
         {
           title: "Machine Learning vs. Rule-Based Automation",
-          href: "/capabilities/artificial-intelligence/insights/ml-vs-rules",
+          href: "/capabilities/artificial-intelligence/insights",
           category: "Technology",
         },
       ]}

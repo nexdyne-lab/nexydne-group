@@ -131,7 +131,7 @@ export default function BrandStrategy() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/capabilities/strategy-finance" className="text-muted-foreground hover:text-primary hover:underline flex items-center">
+                  <Link href="/capabilities/strategy-corporate-finance" className="text-muted-foreground hover:text-primary hover:underline flex items-center">
                     <ArrowRight className="w-3 h-3 mr-2 text-primary" />
                     Strategy & Corporate Finance
                   </Link>

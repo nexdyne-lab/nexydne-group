@@ -22,37 +22,37 @@ export default function DataStrategy() {
       title: "Data Strategy & Roadmap",
       description:
         "A 12-to-36-month data plan tied directly to corporate strategy. Investments, sequencing, dependencies, and the business case the board will fund.",
-      link: "/solutions/data-strategy/strategy-roadmap",
+      link: "/solutions/data-strategy",
     },
     {
       title: "Data Governance Frameworks",
       description:
         "Roles, councils, policies, and decision rights that actually work in your culture—not the textbook version that stalls in committee.",
-      link: "/solutions/data-strategy/governance-frameworks",
+      link: "/solutions/data-strategy",
     },
     {
       title: "Data Org Design",
       description:
         "Centralized, federated, or hybrid? We design the data operating model that fits your scale, autonomy, and accountability constraints.",
-      link: "/solutions/data-strategy/org-design",
+      link: "/solutions/data-strategy",
     },
     {
       title: "Data Monetization",
       description:
         "Internal monetization (better decisions) and external monetization (data products and services). We surface the moves with measurable upside.",
-      link: "/solutions/data-strategy/monetization",
+      link: "/solutions/data-strategy",
     },
     {
       title: "Data Maturity Assessment",
       description:
         "A diagnostic across people, process, platform, and governance. Heat-map the gaps and prioritize the fixes with the highest leverage.",
-      link: "/solutions/data-strategy/maturity-assessment",
+      link: "/solutions/data-strategy",
     },
     {
       title: "Executive Education",
       description:
         "Workshops and immersions that bring the C-suite and board fluent in data—enough to ask the right questions and fund the right work.",
-      link: "/solutions/data-strategy/executive-education",
+      link: "/solutions/data-strategy",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function DataStrategy() {
       title: "Diagnose the Maturity Gap",
       description:
         "We assess people, process, platform, and governance against peers and against your strategic ambition. The gap drives the roadmap.",
-      link: "/solutions/data-strategy/maturity-assessment",
+      link: "/solutions/data-strategy",
     },
     {
       title: "Tie Data to Strategy",
       description:
         "We map data investments to the specific corporate moves they unlock. No data strategy survives if it's parallel to the business strategy.",
-      link: "/solutions/data-strategy/strategy-roadmap",
+      link: "/solutions/data-strategy",
     },
     {
       title: "Design the Operating Model",
       description:
         "Roles, decision rights, governance cadence, and platform ownership. We design the operating model that survives the next reorg.",
-      link: "/solutions/data-strategy/org-design",
+      link: "/solutions/data-strategy",
     },
     {
       title: "Build Executive Fluency",
       description:
         "The strategy holds when the executive team can defend it. We invest in the C-suite and board fluency that turns data from buzzword to lever.",
-      link: "/solutions/data-strategy/executive-education",
+      link: "/solutions/data-strategy",
     },
   ];
 

@@ -19,7 +19,7 @@ export default function ConversionOptimization() {
               Services
             </Link>
             <span>/</span>
-            <Link href="/solutions/business-growth" className="hover:text-white transition-colors">
+            <Link href="/solutions/business-growth/native-apps" className="hover:text-white transition-colors">
               Accelerating Business Growth
             </Link>
             <span>/</span>

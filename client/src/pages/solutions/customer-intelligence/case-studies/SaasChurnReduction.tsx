@@ -8,7 +8,7 @@ export function SaasChurnReduction() {
       seoDescription="A $28M-ARR B2B SaaS platform was losing customers faster than it could replace them. Predictive churn models flagged at-risk accounts 60 days early and saved $890K in ARR."
       canonical="/solutions/data-driven-customer-intelligence/case-studies/saas-churn-reduction"
       industry="Software & Technology"
-      industryLink="/industries/technology-media"
+      industryLink="/industries/technology-media-telecom"
       title="How a B2B SaaS Platform Cut Churn 38% and Saved $890K in ARR"
       subtitle="A 280-employee B2B SaaS platform with $28M in ARR built predictive churn models to identify at-risk accounts 60 days before cancellation — retaining $890K in ARR and making its customer success team 3.2x more efficient."
       heroImage="/images/capabilities/cap-mobile-woman.jpg"

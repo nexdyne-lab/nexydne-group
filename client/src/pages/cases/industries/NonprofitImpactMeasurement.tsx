@@ -8,7 +8,7 @@ export default function NonprofitImpactMeasurement() {
       seoDescription="How a foundation achieved 10x better outcome tracking through a unified impact measurement platform and data-driven program evaluation."
       canonical="/cases/nonprofit-impact-measurement"
       industry="Social Impact"
-      industryLink="/industries/social-impact"
+      industryLink="/industries/public-sector"
       title="Foundation Achieves 10x Better Outcome Tracking with Impact Platform"
       subtitle="How unified data, standardized metrics, and real-time dashboards transformed how a foundation measures and maximizes social impact."
       heroImage="/images/industries/people-commute.jpg"

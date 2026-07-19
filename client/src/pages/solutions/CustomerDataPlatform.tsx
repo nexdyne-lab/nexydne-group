@@ -16,7 +16,7 @@ export default function CustomerDataPlatform() {
             <div className="flex items-center gap-2 text-sm opacity-90">
               <Link href="/"><span className="hover:underline cursor-pointer">Services</span></Link>
               <span>/</span>
-              <Link href="/solutions/personalization"><span className="hover:underline cursor-pointer">Personalization</span></Link>
+              <Link href="/solutions/customer-intelligence/personalization"><span className="hover:underline cursor-pointer">Personalization</span></Link>
               <span>/</span>
               <span>Customer data platform (CDP)</span>
             </div>

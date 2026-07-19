@@ -167,7 +167,7 @@ export default function CloudDataArchitecture() {
               <BainHoverCard
                 title="Legacy System Migration"
                 description="Systematic migration of on-premise systems to cloud infrastructure with zero data loss and minimal downtime. We handle complex dependencies and ensure business continuity throughout the transition."
-                link="/solutions/legacy-modernization"
+                link="/solutions/enterprise-transformation/legacy-modernization"
               />
               <BainHoverCard
                 title="Data Lake & Warehouse Design"

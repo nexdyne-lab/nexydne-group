@@ -22,37 +22,37 @@ export default function DataEngineering() {
       title: "ETL/ELT Pipeline Development",
       description:
         "Production-grade pipelines built on dbt, Airflow, Fivetran, and the modern data stack. Idempotent, observable, and engineered for the schema changes you can't predict.",
-      link: "/solutions/data-engineering/etl-elt-pipelines",
+      link: "/solutions/data-engineering",
     },
     {
       title: "Real-Time Streaming Pipelines",
       description:
         "Kafka, Kinesis, Pub/Sub, and Flink for the use cases where batch isn't fast enough. We design exactly-once semantics, backpressure handling, and replay built in.",
-      link: "/solutions/data-engineering/streaming-pipelines",
+      link: "/solutions/data-engineering",
     },
     {
       title: "Data Ingestion Frameworks",
       description:
         "Reusable ingestion patterns for SaaS, file, database, and event sources. Cut new-source onboarding from weeks to days with frameworks your team can extend.",
-      link: "/solutions/data-engineering/ingestion-frameworks",
+      link: "/solutions/data-engineering",
     },
     {
       title: "Data Quality Engineering",
       description:
         "Tests as a first-class artifact — Great Expectations, dbt tests, and contract enforcement. Catch broken data before it hits the dashboard, not after.",
-      link: "/solutions/data-engineering/data-quality",
+      link: "/solutions/data-engineering",
     },
     {
       title: "Pipeline Observability",
       description:
         "Lineage, freshness SLOs, cost attribution, and incident response — built on Monte Carlo, OpenLineage, and the observability stack your team will actually use.",
-      link: "/solutions/data-engineering/pipeline-observability",
+      link: "/solutions/data-engineering",
     },
     {
       title: "Data Engineering Team Enablement",
       description:
         "Build the in-house team, the standards, and the platform that lets engineers self-serve pipelines without re-inventing the wheel for every new request.",
-      link: "/solutions/data-engineering/team-enablement",
+      link: "/solutions/data-engineering",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function DataEngineering() {
       title: "Design for Idempotency",
       description:
         "Every pipeline we build can re-run safely. The team that re-processes without fear ships faster than the team that fears every backfill.",
-      link: "/solutions/data-engineering/etl-elt-pipelines",
+      link: "/solutions/data-engineering",
     },
     {
       title: "Treat Data as a Contract",
       description:
         "Producers and consumers agree on schema, semantics, and SLA. Contract enforcement turns silent breaks into surfaced incidents.",
-      link: "/solutions/data-engineering/data-quality",
+      link: "/solutions/data-engineering",
     },
     {
       title: "Instrument the Pipeline",
       description:
         "Lineage, freshness, volume, and cost — every pipeline we ship comes with the metrics needed to run it in production at 3am.",
-      link: "/solutions/data-engineering/pipeline-observability",
+      link: "/solutions/data-engineering",
     },
     {
       title: "Hand Off the Platform",
       description:
         "We're not your data team forever. We build standards, templates, and runbooks so your engineers can ship the next hundred pipelines without us.",
-      link: "/solutions/data-engineering/team-enablement",
+      link: "/solutions/data-engineering",
     },
   ];
 
@@ -128,11 +128,11 @@ export default function DataEngineering() {
     },
     {
       title: "Data Analytics",
-      link: "/solutions/data-analytics",
+      link: "/solutions/intelligent-process-optimization/data-solutions/data-analytics",
     },
     {
       title: "Cloud Data Platforms",
-      link: "/solutions/cloud-data-platforms",
+      link: "/solutions/data-driven-customer-intelligence",
     },
   ];
 

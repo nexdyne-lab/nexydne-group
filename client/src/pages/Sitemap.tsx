@@ -57,7 +57,7 @@ const sitemapData: SitemapSection[] = [
       },
       { 
         label: "Risk & Resilience", 
-        href: "/capabilities/risk-resilience",
+        href: "/capabilities/risk-and-resilience",
         description: "Build resilient operations"
       },
       { 
@@ -165,17 +165,17 @@ const sitemapData: SitemapSection[] = [
       },
       { 
         label: "Building Financial Models That Drive Decisions", 
-        href: "/insights/fpa/financial-modeling-best-practices",
+        href: "/insights/rolling-forecasts",
         description: "Best practices for FP&A"
       },
       { 
         label: "Preparing for Series A: A CFO's Perspective", 
-        href: "/insights/capital-raising/series-a-preparation",
+        href: "/insights/series-a-fundraising-guide",
         description: "Fundraising readiness"
       },
       { 
         label: "The Art of M&A Due Diligence", 
-        href: "/insights/ma/due-diligence-guide",
+        href: "/insights/due-diligence-checklist",
         description: "Navigating M&A processes"
       },
     ]

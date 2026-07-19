@@ -131,7 +131,7 @@ export default function PerformanceMarketing() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/capabilities/growth-marketing-sales/pricing" className="text-muted-foreground hover:text-primary hover:underline flex items-center">
+                  <Link href="/capabilities/growth-marketing-sales/pricing-monetization" className="text-muted-foreground hover:text-primary hover:underline flex items-center">
                     <ArrowRight className="w-3 h-3 mr-2 text-primary" />
                     Pricing
                   </Link>

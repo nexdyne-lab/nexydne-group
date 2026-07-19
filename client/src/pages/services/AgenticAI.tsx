@@ -167,7 +167,7 @@ export default function AgenticAI() {
               <BainHoverCard
                 title="Agentic AI Systems"
                 description="Autonomous AI agents that can plan, execute, and adapt to complete complex tasks. These systems handle multi-step workflows, make decisions based on context, and escalate to humans when appropriate."
-                link="/capabilities/agentic-ai"
+                link="/capabilities/artificial-intelligence/agentic-ai"
               />
               <BainHoverCard
                 title="Generative AI Applications"
@@ -177,7 +177,7 @@ export default function AgenticAI() {
               <BainHoverCard
                 title="Intelligent Document Processing"
                 description="AI systems that extract, classify, and process information from unstructured documents. We automate the document-heavy workflows that consume your team's time and introduce errors."
-                link="/capabilities/process-automation"
+                link="/capabilities/operations/process-automation"
               />
               <BainHoverCard
                 title="AI-Powered Decision Support"

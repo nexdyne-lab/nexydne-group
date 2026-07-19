@@ -22,37 +22,37 @@ export default function DataSolutions() {
       title: "Data Warehouse",
       description:
         "Modern cloud warehouses on Snowflake, BigQuery, or Redshift. We model the business, not the source systems—so analysts ask questions and get answers.",
-      link: "/solutions/data-solutions/data-warehouse",
+      link: "/solutions/data-driven-customer-intelligence",
     },
     {
       title: "Data Lake",
       description:
         "Schema-on-read data lakes for raw, semi-structured, and streaming data. Built on open formats so you're never locked into one engine.",
-      link: "/solutions/data-solutions/data-lake",
+      link: "/solutions/data-driven-customer-intelligence",
     },
     {
       title: "Real-Time Pipelines",
       description:
         "Streaming ingestion and CDC pipelines that move data within seconds. Operational use cases stop waiting for the nightly batch.",
-      link: "/solutions/data-solutions/real-time-pipelines",
+      link: "/solutions/data-driven-customer-intelligence",
     },
     {
       title: "BI Dashboards",
       description:
         "Tableau, Looker, and Power BI implementations that executives actually open. Tight semantic layers, governed metrics, no dashboard sprawl.",
-      link: "/solutions/data-solutions/bi-dashboards",
+      link: "/solutions/data-driven-customer-intelligence",
     },
     {
       title: "Data Quality",
       description:
         "Automated quality checks, lineage, and observability. We catch broken data before the executive does—and before the decision goes wrong.",
-      link: "/solutions/data-solutions/data-quality",
+      link: "/solutions/data-driven-customer-intelligence",
     },
     {
       title: "Master Data Management",
       description:
         "One customer, one product, one source of truth. We design MDM that survives org change, M&A, and the inevitable system migration.",
-      link: "/solutions/data-solutions/master-data-management",
+      link: "/solutions/data-driven-customer-intelligence",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function DataSolutions() {
       title: "Audit the Current State",
       description:
         "Map every source, every pipeline, every report. We surface duplication, drift, and silent failures before designing the new platform.",
-      link: "/solutions/data-solutions/data-quality",
+      link: "/solutions/data-driven-customer-intelligence",
     },
     {
       title: "Architect for Trust",
       description:
         "Design the warehouse, governance, and quality layer so every metric has a single defensible definition—reviewable, testable, owned.",
-      link: "/solutions/data-solutions/data-warehouse",
+      link: "/solutions/data-driven-customer-intelligence",
     },
     {
       title: "Deliver in Domains",
       description:
         "Roll out by business domain rather than big-bang. Finance gets clean data first, then sales, then ops—value compounds along the way.",
-      link: "/solutions/data-solutions/bi-dashboards",
+      link: "/solutions/data-driven-customer-intelligence",
     },
     {
       title: "Operate as a Product",
       description:
         "The platform is the product. SLAs, on-call, observability, and a roadmap. Data teams move from order-takers to product owners.",
-      link: "/solutions/data-solutions/real-time-pipelines",
+      link: "/solutions/data-driven-customer-intelligence",
     },
   ];
 

@@ -82,7 +82,7 @@ const searchData: SearchResult[] = [
     type: 'service',
     title: 'Risk & Resilience',
     description: 'Build resilient operations with predictive risk management',
-    url: '/capabilities/risk-resilience',
+    url: '/capabilities/risk-and-resilience',
     tags: ['risk', 'resilience', 'compliance', 'security']
   },
   {
@@ -168,21 +168,21 @@ const searchData: SearchResult[] = [
     type: 'blog',
     title: 'Building Financial Models That Drive Decisions',
     description: 'Best practices for creating actionable financial models',
-    url: '/insights/fpa/financial-modeling-best-practices',
+    url: '/insights/rolling-forecasts',
     tags: ['fpa', 'financial modeling', 'planning', 'best practices']
   },
   {
     type: 'blog',
     title: 'Preparing for Series A: A CFO\'s Perspective',
     description: 'What investors look for in Series A financial readiness',
-    url: '/insights/capital-raising/series-a-preparation',
+    url: '/insights/series-a-fundraising-guide',
     tags: ['capital raising', 'fundraising', 'series a', 'investment']
   },
   {
     type: 'blog',
     title: 'The Art of M&A Due Diligence',
     description: 'Navigating the complexities of merger and acquisition processes',
-    url: '/insights/ma/due-diligence-guide',
+    url: '/insights/due-diligence-checklist',
     tags: ['ma', 'due diligence', 'mergers', 'acquisitions']
   }
 ];

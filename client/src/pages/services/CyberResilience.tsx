@@ -172,7 +172,7 @@ export default function CyberResilience() {
               <BainHoverCard
                 title="Regulatory Compliance"
                 description="Expert guidance on HIPAA, SOC 2, GDPR, CCPA, and industry-specific regulations. We help you achieve and maintain compliance with automated monitoring and streamlined audit processes."
-                link="/solutions/security-compliance"
+                link="/solutions/enterprise-transformation/security-compliance"
               />
               <BainHoverCard
                 title="Identity & Access Management"

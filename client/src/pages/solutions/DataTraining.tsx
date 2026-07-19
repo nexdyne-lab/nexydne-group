@@ -22,37 +22,37 @@ export default function DataTraining() {
       title: "Executive Data Literacy Programs",
       description:
         "Board-ready data fluency for the C-suite. Short-form, business-language curricula that teach leaders to interrogate dashboards, challenge assumptions, and sponsor data investments with confidence.",
-      link: "/solutions/data-training/executive-literacy",
+      link: "/solutions/data-training",
     },
     {
       title: "Business Analyst Training Tracks",
       description:
         "Structured analyst pathways covering SQL, modeling, visualization, and storytelling. We meet teams at their current level and graduate them to true analytical partners for the business.",
-      link: "/solutions/data-training/business-analyst",
+      link: "/solutions/data-training",
     },
     {
       title: "Citizen Data Scientist Programs",
       description:
         "Empower line-of-business power users to build models, automate analysis, and answer their own questions — within governance guardrails that protect production data.",
-      link: "/solutions/data-training/citizen-data-scientist",
+      link: "/solutions/data-training",
     },
     {
       title: "Data Governance Training",
       description:
         "Practical curricula for stewards, owners, and custodians. Policy is only as good as the people enforcing it — we train the humans who make data trustworthy.",
-      link: "/solutions/data-training/governance",
+      link: "/solutions/data-training",
     },
     {
       title: "Technical Data Engineering Training",
       description:
         "Hands-on engineering curricula on modern data stacks — pipelines, warehousing, lakehouse patterns, and orchestration — taught by practitioners who ship production systems.",
-      link: "/solutions/data-training/data-engineering",
+      link: "/solutions/data-training",
     },
     {
       title: "Data Strategy Workshops & Immersives",
       description:
         "Multi-day strategy immersives that align leadership on the data operating model, prioritize use cases, and produce a 12-month roadmap with executive ownership baked in.",
-      link: "/solutions/data-training/strategy-workshops",
+      link: "/solutions/data-training",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function DataTraining() {
       title: "Diagnose the Literacy Gap",
       description:
         "Survey, interview, and assess to map the real distance between current capability and the data culture leadership wants. The curriculum is shaped by evidence, not assumption.",
-      link: "/solutions/data-training/executive-literacy",
+      link: "/solutions/data-training",
     },
     {
       title: "Design Role-Based Curricula",
       description:
         "Executives, analysts, engineers, and stewards learn different things in different formats. We design tracks that respect role, time, and the way adults actually retain.",
-      link: "/solutions/data-training/business-analyst",
+      link: "/solutions/data-training",
     },
     {
       title: "Apply It to Real Work",
       description:
         "Training without application decays in weeks. Every program ties to live business problems so participants leave with shipped artifacts, not just certificates.",
-      link: "/solutions/data-training/citizen-data-scientist",
+      link: "/solutions/data-training",
     },
     {
       title: "Measure and Sustain",
       description:
         "We instrument adoption, retention, and downstream business outcomes — and run cadence sessions that keep momentum after the initial cohort wraps.",
-      link: "/solutions/data-training/strategy-workshops",
+      link: "/solutions/data-training",
     },
   ];
 
@@ -128,7 +128,7 @@ export default function DataTraining() {
     },
     {
       title: "Analytics & Business Intelligence",
-      link: "/solutions/analytics-business-intelligence",
+      link: "/solutions/business-growth/revenue-operations-analytics",
     },
     {
       title: "Change Management",

@@ -43,7 +43,7 @@ export default function FirstAIUseCase() {
         },
         {
           title: "The AI Talent Gap: Strategies for Growing Companies",
-          href: "/capabilities/artificial-intelligence/insights/ai-talent-gap",
+          href: "/capabilities/artificial-intelligence/insights/ai-governance",
           category: "Talent",
         },
       ]}

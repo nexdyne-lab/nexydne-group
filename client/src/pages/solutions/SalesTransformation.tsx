@@ -22,37 +22,37 @@ export default function SalesTransformation() {
       title: "CRM Implementation",
       description:
         "Salesforce, HubSpot, Microsoft Dynamics. We implement CRM with the data model, automation, and adoption playbook that turn it into a real revenue system.",
-      link: "/solutions/sales-transformation/crm-implementation",
+      link: "/solutions/sales-transformation",
     },
     {
       title: "Sales Process Redesign",
       description:
         "MEDDICC, Challenger, value-based selling. We rebuild the sales motion around how your buyers actually buy—not how your reps prefer to sell.",
-      link: "/solutions/sales-transformation/process-redesign",
+      link: "/solutions/sales-transformation",
     },
     {
       title: "RevOps Tech Stack",
       description:
         "CRM, marketing automation, sales engagement, conversation intelligence, CPQ. We design the integrated stack that turns RevOps from idea to capability.",
-      link: "/solutions/sales-transformation/revops-stack",
+      link: "/solutions/sales-transformation",
     },
     {
       title: "Sales Enablement Platforms",
       description:
         "Highspot, Seismic, Showpad. We deploy enablement that gets the right content, training, and coaching to reps inside the moments that matter.",
-      link: "/solutions/sales-transformation/enablement-platforms",
+      link: "/solutions/sales-transformation",
     },
     {
       title: "Pipeline Analytics & Forecasting",
       description:
         "Forecast accuracy, deal scoring, pipeline hygiene. We build the analytics layer that lets RevOps speak the same language as the CFO.",
-      link: "/solutions/sales-transformation/pipeline-analytics",
+      link: "/solutions/sales-transformation",
     },
     {
       title: "Partner & Channel Sales Technology",
       description:
         "PRM platforms, deal registration, channel marketing. We modernize the partner stack and turn channel sales into a predictable revenue line.",
-      link: "/solutions/sales-transformation/partner-channel",
+      link: "/solutions/sales-transformation",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function SalesTransformation() {
       title: "Diagnose the Real Problem",
       description:
         "Most sales problems aren't sales problems. We start with deal data, win/loss, and the actual buyer journey—not opinions.",
-      link: "/solutions/sales-transformation/process-redesign",
+      link: "/solutions/sales-transformation",
     },
     {
       title: "Redesign the Motion",
       description:
         "Buyer-aligned stages, rigorous qualification, and the rep enablement that makes the new motion stick beyond the kickoff offsite.",
-      link: "/solutions/sales-transformation/process-redesign",
+      link: "/solutions/sales-transformation",
     },
     {
       title: "Implement the Stack",
       description:
         "CRM, enablement, conversation intelligence, CPQ. We pick what's right for your team shape—and integrate it so it actually behaves as one system.",
-      link: "/solutions/sales-transformation/revops-stack",
+      link: "/solutions/sales-transformation",
     },
     {
       title: "Operate Through RevOps",
       description:
         "Forecast cadence, pipeline hygiene, deal inspection. RevOps is how the new motion gets measured, defended, and continuously improved.",
-      link: "/solutions/sales-transformation/pipeline-analytics",
+      link: "/solutions/sales-transformation",
     },
   ];
 

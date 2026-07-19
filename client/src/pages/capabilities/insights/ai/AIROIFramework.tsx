@@ -41,7 +41,7 @@ export default function AIROIFramework() {
         },
         {
           title: "Generative AI in Operations",
-          href: "/capabilities/artificial-intelligence/insights/generative-supply-chain",
+          href: "/capabilities/artificial-intelligence/risk-resilience/supply-chain-resilience",
           category: "Operations",
         },
       ]}

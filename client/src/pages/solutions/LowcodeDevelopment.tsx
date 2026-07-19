@@ -22,37 +22,37 @@ export default function LowcodeDevelopment() {
       title: "Platform Selection",
       description:
         "OutSystems, Mendix, PowerApps, Appian, ServiceNow App Engine. We run a structured selection that maps your portfolio, your stack, and your IT operating model to the right platform — not the loudest one.",
-      link: "/solutions/lowcode-development/platform-selection",
+      link: "/solutions/lowcode-development",
     },
     {
       title: "Citizen Developer Enablement",
       description:
         "Training, guardrails, and the support model that turns business analysts into productive app builders — without creating shadow IT.",
-      link: "/solutions/lowcode-development/citizen-developer-enablement",
+      link: "/solutions/lowcode-development",
     },
     {
       title: "Lowcode App Development",
       description:
         "We build production-grade lowcode apps for the use cases where lowcode wins — workflow, internal tools, customer portals, and operational front ends.",
-      link: "/solutions/lowcode-development/app-development",
+      link: "/solutions/app-development",
     },
     {
       title: "Enterprise Integration",
       description:
         "Lowcode apps that talk to SAP, Salesforce, and the rest of your stack. We design the integration layer so apps don't end up as pretty data silos.",
-      link: "/solutions/lowcode-development/enterprise-integration",
+      link: "/solutions/lowcode-development",
     },
     {
       title: "Governance for Lowcode",
       description:
         "Application standards, lifecycle gates, environment management, and the security review process that keeps your lowcode estate auditable.",
-      link: "/solutions/lowcode-development/governance",
+      link: "/solutions/lowcode-development",
     },
     {
       title: "Lowcode CoE Establishment",
       description:
         "Stand up the Center of Excellence — operating model, roles, KPIs, and onboarding — that turns lowcode from a tool into a capability your business can scale.",
-      link: "/solutions/lowcode-development/coe-establishment",
+      link: "/solutions/lowcode-development",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function LowcodeDevelopment() {
       title: "Pick the Right Workload",
       description:
         "Lowcode isn't for everything. We help you identify the apps where lowcode is the right answer — and steer the rest to custom or COTS.",
-      link: "/solutions/lowcode-development/platform-selection",
+      link: "/solutions/lowcode-development",
     },
     {
       title: "Govern from Day One",
       description:
         "Without governance, lowcode becomes shadow IT. We design the lifecycle gates, environment standards, and security reviews up front.",
-      link: "/solutions/lowcode-development/governance",
+      link: "/solutions/lowcode-development",
     },
     {
       title: "Enable, Don't Replace",
       description:
         "Citizen developers and pro developers belong in the same operating model. We design the support and escalation paths that keep both productive.",
-      link: "/solutions/lowcode-development/citizen-developer-enablement",
+      link: "/solutions/lowcode-development",
     },
     {
       title: "Build the CoE",
       description:
         "Sustained lowcode value comes from the Center of Excellence — the standards, the platform team, and the community that holds it all together.",
-      link: "/solutions/lowcode-development/coe-establishment",
+      link: "/solutions/lowcode-development",
     },
   ];
 
@@ -124,15 +124,15 @@ export default function LowcodeDevelopment() {
     },
     {
       title: "Application Modernization",
-      link: "/solutions/application-modernization",
+      link: "/solutions/enterprise-transformation/legacy-modernization",
     },
     {
       title: "Workflow Automation",
-      link: "/solutions/workflow-automation",
+      link: "/solutions/intelligent-process-optimization",
     },
     {
       title: "Enterprise Integration",
-      link: "/solutions/enterprise-integration",
+      link: "/solutions/enterprise-transformation/api-integration",
     },
   ];
 

@@ -8,7 +8,7 @@ export default function ChemicalSupplyChain() {
       seoDescription="How a chemical company reduced supply disruptions by 30% through supply chain visibility, risk management, and alternative sourcing."
       canonical="/cases/chemical-supply-chain"
       industry="Chemicals"
-      industryLink="/industries/chemicals"
+      industryLink="/industries/manufacturing"
       title="Chemical Company Reduces Supply Disruptions 30% with Resilience Program"
       subtitle="How end-to-end visibility, predictive risk management, and strategic sourcing transformed supply chain resilience."
       heroImage="/images/industries/retail-warehouse.jpg"

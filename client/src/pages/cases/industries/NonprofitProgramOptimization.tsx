@@ -8,7 +8,7 @@ export default function NonprofitProgramOptimization() {
       seoDescription="How a nonprofit served 40% more beneficiaries through operational excellence and data-driven program optimization."
       canonical="/cases/nonprofit-program-optimization"
       industry="Social Impact"
-      industryLink="/industries/social-impact"
+      industryLink="/industries/public-sector"
       title="Nonprofit Serves 40% More Beneficiaries Through Optimization"
       subtitle="How operational excellence, data-driven decisions, and process improvement expanded reach without expanding budget."
       heroImage="/images/industries/people-commute.jpg"

@@ -8,7 +8,7 @@ export function EcommerceRepeatPurchase() {
       seoDescription="A $45M specialty retailer was sitting on rich customer data it couldn't activate. A customer data platform and ML personalization lifted repeat purchase 42% and added $1.2M a year."
       canonical="/solutions/data-driven-customer-intelligence/case-studies/ecommerce-repeat-purchase"
       industry="E-commerce & Retail"
-      industryLink="/industries/retail-consumer"
+      industryLink="/industries/retail"
       title="How a Specialty Retailer Lifted Repeat Purchase 42% and Added $1.2M a Year"
       subtitle="A 150-employee specialty online retailer with $45M in revenue deployed predictive analytics and personalized recommendations — raising its repeat-purchase rate from 18% to 25.6% and generating $1.2M in annual revenue lift."
       heroImage="/images/capabilities/cap-celebrate.jpg"

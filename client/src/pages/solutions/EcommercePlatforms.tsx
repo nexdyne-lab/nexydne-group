@@ -16,7 +16,7 @@ export default function EcommercePlatforms() {
             <div className="flex items-center gap-2 text-sm opacity-90">
               <Link href="/"><span className="hover:underline cursor-pointer">Services</span></Link>
               <span>/</span>
-              <Link href="/solutions/business-growth"><span className="hover:underline cursor-pointer">Accelerating Business Growth</span></Link>
+              <Link href="/solutions/business-growth/native-apps"><span className="hover:underline cursor-pointer">Accelerating Business Growth</span></Link>
               <span>/</span>
               <span>E-commerce platforms</span>
             </div>
@@ -319,7 +319,7 @@ export default function EcommercePlatforms() {
           
           <div className="grid md:grid-cols-3 gap-8">
             {/* Case Study 1 */}
-            <Link href="/cases/fashion-retailer-headless-commerce">
+            <Link href="/cases/retailer-headless-omnichannel">
               <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                 <div className="aspect-video overflow-hidden">
                   <img 
@@ -355,7 +355,7 @@ export default function EcommercePlatforms() {
             </Link>
 
             {/* Case Study 2 */}
-            <Link href="/cases/optics-retailer-webshop-platform">
+            <Link href="/cases/global-retailer">
               <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                 <div className="aspect-video overflow-hidden">
                   <img 
@@ -391,7 +391,7 @@ export default function EcommercePlatforms() {
             </Link>
 
             {/* Case Study 3 */}
-            <Link href="/cases/b2b-manufacturer-commerce-platform">
+            <Link href="/cases/b2b-digital-ordering">
               <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                 <div className="aspect-video overflow-hidden">
                   <img 

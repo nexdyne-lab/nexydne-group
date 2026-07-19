@@ -22,37 +22,37 @@ export default function MobileApps() {
       title: "Native iOS Development",
       description:
         "Swift and SwiftUI apps engineered for the device, the App Store, and the high bar of iOS users. Built for performance, polish, and platform parity.",
-      link: "/solutions/mobile-apps/native-ios",
+      link: "/solutions/mobile-apps",
     },
     {
       title: "Native Android Development",
       description:
         "Kotlin and Jetpack Compose apps that handle real-world device fragmentation while delivering Material-grade design and Play Store reliability.",
-      link: "/solutions/mobile-apps/native-android",
+      link: "/solutions/mobile-apps",
     },
     {
       title: "React Native Cross-Platform",
       description:
         "One codebase, two stores, native feel. We use React Native to ship to iOS and Android in lockstep without doubling your engineering spend.",
-      link: "/solutions/mobile-apps/react-native",
+      link: "/solutions/mobile-apps",
     },
     {
       title: "Flutter Cross-Platform",
       description:
         "Flutter apps that share rendering across platforms while preserving native gestures and motion. Ideal for design-forward, animation-rich products.",
-      link: "/solutions/mobile-apps/flutter",
+      link: "/solutions/mobile-apps",
     },
     {
       title: "Mobile UX/UI Design",
       description:
         "Mobile-first design systems, interaction patterns, and prototyping. We design for thumbs, glance, and the moments users actually have.",
-      link: "/solutions/mobile-apps/mobile-ux-ui",
+      link: "/solutions/mobile-apps",
     },
     {
       title: "Mobile App Modernization",
       description:
         "Replatform legacy hybrid or aging native apps onto a modern stack. We refactor architecture, reduce crash rates, and unlock feature velocity.",
-      link: "/solutions/mobile-apps/app-modernization",
+      link: "/solutions/mobile-apps",
     },
   ];
 
@@ -76,25 +76,25 @@ export default function MobileApps() {
       title: "Frame the Mobile Moment",
       description:
         "Define the specific situations users will open the app. Mobile lives or dies on context, not feature count.",
-      link: "/solutions/mobile-apps/mobile-ux-ui",
+      link: "/solutions/mobile-apps",
     },
     {
       title: "Choose the Right Stack",
       description:
         "Native, React Native, or Flutter. We pick the platform mix that fits your team, your roadmap, and your performance ceiling.",
-      link: "/solutions/mobile-apps/react-native",
+      link: "/solutions/mobile-apps",
     },
     {
       title: "Ship in Two-Week Increments",
       description:
         "Real builds in real users' hands every two weeks. Feedback loops beat assumptions, every time.",
-      link: "/solutions/mobile-apps/native-ios",
+      link: "/solutions/mobile-apps",
     },
     {
       title: "Instrument and Iterate",
       description:
         "Crash analytics, funnel telemetry, A/B infrastructure. The team that measures behavior beats the team that guesses.",
-      link: "/solutions/mobile-apps/app-modernization",
+      link: "/solutions/mobile-apps",
     },
   ];
 

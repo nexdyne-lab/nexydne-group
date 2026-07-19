@@ -291,6 +291,14 @@ lead + constructive follow-up), one quiet rotating CTA, reply prompt. **5 issues
 drafted as Resend Broadcasts** (send after warm-up; ~30 min/month to run).
 Format rules, issue bank, workflow, and gotchas: [`newsletter.md`](./newsletter.md).
 
+### Update (2026-07-19): guard extended site-wide
+The build guard now validates **every** internal link family (`/insights`,
+`/cases`, `/solutions`, `/capabilities`, `/industries`) via
+`scripts/check-internal-links.mjs` — multi-segment paths and dynamic routes
+included. A one-time remap fixed 213 ghost routes (332 refs, 59 files) left over
+from earlier scaffolding. Template lesson: ship the guard for ALL families on
+day one; a single-prefix guard hides the rest of the debt.
+
 ## Pattern: single-source content registries (learned the hard way)
 
 Any catalog surface (articles, case studies, magnets) must have ONE data file
