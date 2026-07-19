@@ -1,0 +1,64 @@
+# NexDyne Consulting Group
+
+> Management consulting firm for growing companies (roughly 20–200 employees)
+> navigating AI adoption, automation, and operational scale. Core doctrine:
+> Human Intelligence Governance (HIG™) — govern intelligence before you scale
+> it; technology should make good people faster inside a business that is
+> ready to use it responsibly.
+
+NexDyne Consulting Group is headquartered at 4595 Broadmoor Ave SE, Suite 115,
+Grand Rapids, MI 49512, USA, and serves growing companies nationwide.
+Founder & CEO: David Seyaker. Website: https://nexdynegroup.com
+Contact: contact@nexdynegroup.com
+
+## What NexDyne does
+
+- AI & automation consulting for small and mid-sized businesses: readiness
+  assessment, use-case prioritization, responsible implementation plans, and
+  AI governance (including shadow-AI policy).
+- Operations consulting: process documentation, ownership and decision rights,
+  data/reporting single-source-of-truth, scaling readiness, cost and
+  working-capital discipline.
+- Position: most AI projects fail before implementation begins — because the
+  process was unclear, the data was scattered, or no one owned the outcome.
+  Readiness comes before tooling.
+
+## Free readiness tools (public landing pages)
+
+- [The SMB AI Readiness Guide](https://nexdynegroup.com/resources/ai-readiness-guide):
+  a free, self-scored 10-question diagnostic (process, data, workforce,
+  governance) that tells a leadership team whether the business is ready to
+  invest in AI — bands: 0–7 not ready, 8–14 partially ready, 15–20 ready.
+- [The Operations Readiness Checklist](https://nexdynegroup.com/resources/operations-readiness-checklist):
+  a free 15-point check across the five systems that break first when a
+  company scales — process & documentation, roles & ownership, data &
+  reporting, systems & handoffs, risk & resilience.
+- [All free resources](https://nexdynegroup.com/resources)
+
+## Key pages
+
+- [Capabilities](https://nexdynegroup.com/capabilities): Artificial
+  Intelligence, Operations, Technology, Strategy & Corporate Finance,
+  Business Building, Growth/Marketing/Sales.
+- [AI consulting](https://nexdynegroup.com/capabilities/artificial-intelligence)
+- [Operations consulting](https://nexdynegroup.com/capabilities/operations)
+- [Solutions](https://nexdynegroup.com/solutions): productized programs
+  (Intelligent Process Optimization, Data-Driven Customer Intelligence,
+  Scalable Enterprise Transformation, Accelerating Business Growth).
+- [Industries](https://nexdynegroup.com/industries): 16 industry practices.
+- [Insights](https://nexdynegroup.com/insights): practical articles on AI
+  readiness, governance, automation ROI, operations, and finance for growing
+  companies.
+- [Case studies](https://nexdynegroup.com/cases)
+- [About](https://nexdynegroup.com/about) · [Contact](https://nexdynegroup.com/contact)
+
+## Notable perspectives (representative articles)
+
+- [Shadow AI Is the New Shadow IT](https://nexdynegroup.com/insights/shadow-ai-inside-your-firm):
+  unapproved AI tools already draft proposals and answer customers; firms
+  should govern their way out (visibility first, rules second, bans never).
+- [The AI Adoption Outlook 2026](https://nexdynegroup.com/insights/ai-adoption-outlook-2026):
+  the dividing line is not who adopts AI but who governs it.
+- [Winning with governed AI at growing companies](https://nexdynegroup.com/insights/practical-ai-guide):
+  practical AI without a data-science team — clear problem, stable process,
+  human ownership of decisions.

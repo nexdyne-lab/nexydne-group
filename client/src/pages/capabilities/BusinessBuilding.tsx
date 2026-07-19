@@ -261,7 +261,7 @@ export default function BusinessBuilding() {
           "Head of Business Building, NexDyne Consulting Group",
         leadPhoto:
           "/images/cloud-abstract.jpg",
-        leadEmail: "businessbuilding@nexdyne.tech",
+        leadEmail: "contact@nexdynegroup.com",
         leadLinkedinUrl: "https://www.linkedin.com/company/nexdyne",
       }}
     />

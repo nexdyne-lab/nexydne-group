@@ -71,6 +71,40 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-19 — SEO + GEO build (Stage 7 pt 3) — COMMITTED, NOT PUSHED (awaiting approval)
+
+Audit found serious pre-existing damage, fixed: **sitemap.xml pointed at
+www.newco.tech** (240 URLs, wrong domain), **SEO.tsx canonicals → nexdyne.tech**,
+**no robots.txt**, bare index.html (nothing for non-JS crawlers), and 6
+`@nexdyne.tech` contact emails on capability pages.
+
+- **Domains:** SEO.tsx canonical → https://nexdynegroup.com; all @nexdyne.tech
+  emails → contact@nexdynegroup.com; zero bad-domain refs remain (src + dist).
+- **sitemap.xml regenerated** — `scripts/generate-sitemap.mjs` parses App.tsx
+  literal routes (excl. dynamic/redirect/404) + magnet slugs → **1,116 URLs**
+  on nexdynegroup.com. Re-run the script whenever routes change.
+- **robots.txt** — allow all; explicitly allow AI crawlers (GPTBot, OAI-SearchBot,
+  ClaudeBot, PerplexityBot, Google-Extended, CCBot…); Disallow /api/; sitemap ref.
+- **llms.txt** — GEO flagship: markdown company brief (what NexDyne does, HIG,
+  free tools with descriptions, key pages, notable perspectives) for AI engines.
+- **index.html** — meta description + OG defaults + **Organization + WebSite
+  JSON-LD in raw HTML** (visible to crawlers that don't run JS).
+- **Structured data:** FAQPage JSON-LD on lead-magnet landing pages (from config
+  faqs); Article JSON-LD in InsightArticleV2 (all 115+ articles); new optional
+  `canonicalPath` prop on V2.
+- **GEO content cluster (3 query-targeting articles)**, each with direct-answer
+  capsule, question H2s, cited stats (Gartner 40% cancel, MIT ~95% pilots fail,
+  root causes 41%/33%), canonical, and the auto readiness callout:
+  /insights/is-your-business-ready-for-ai ·
+  /insights/what-should-a-small-business-automate-first ·
+  /insights/ai-readiness-checklist-for-small-business
+- **QC loop 1 + loop 2 (full fresh re-run) both green:** tsc/build/34 tests;
+  JSON-LD parses valid everywhere; sitemap valid XML, 1,116 URLs, right domain;
+  robots/llms/sitemap serve; all internal links in new articles resolve;
+  12/12 sitemap URL spot-checks clean; 5 representative existing pages
+  regression-checked; "broken images" ruled lazy-load artifact (0 after scroll).
+- Post-deploy (after approval): submit sitemap in Google Search Console.
+
 ### 2026-07-19 — Warm-up underway + Newsletter Issue 01 SENT + Turnstile hotfix
 
 - **Turnstile hotfix:** yesterday's preload fix had added `turnstile.ready()`,

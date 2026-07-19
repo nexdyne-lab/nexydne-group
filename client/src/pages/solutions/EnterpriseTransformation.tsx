@@ -252,7 +252,7 @@ export default function EnterpriseTransformation() {
         leadTitle: "Head of Technology, NexDyne Consulting Group",
         leadPhoto:
           "/images/ai-team-collaboration.jpg",
-        leadEmail: "technology@nexdyne.tech",
+        leadEmail: "contact@nexdynegroup.com",
         leadLinkedinUrl: "https://www.linkedin.com/company/nexdyne",
       }}
     />

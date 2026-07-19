@@ -19,7 +19,7 @@ export function SEO({
 }: SEOProps) {
   const siteTitle = 'NexDyne Consulting Group';
   const fullTitle = `${title} | ${siteTitle}`;
-  const siteUrl = 'https://www.nexdyne.tech'; // Replace with actual domain
+  const siteUrl = 'https://nexdynegroup.com'; // canonical domain (apex; www serves too)
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : undefined;
   const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 

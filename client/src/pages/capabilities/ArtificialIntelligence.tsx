@@ -279,7 +279,7 @@ export default function ArtificialIntelligence() {
         leadTitle: "Head of Artificial Intelligence, NexDyne Consulting Group",
         leadPhoto:
           "/images/ai-team-consulting.jpg",
-        leadEmail: "ai@nexdyne.tech",
+        leadEmail: "contact@nexdynegroup.com",
         leadLinkedinUrl: "https://www.linkedin.com/company/nexdyne",
       }}
     />

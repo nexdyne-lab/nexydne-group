@@ -268,7 +268,7 @@ export default function Operations() {
         leadTitle: "Head of Operations, NexDyne Consulting Group",
         leadPhoto:
           "/images/digital-transformation-abstract.jpg",
-        leadEmail: "operations@nexdyne.tech",
+        leadEmail: "contact@nexdynegroup.com",
         leadLinkedinUrl: "https://www.linkedin.com/company/nexdyne",
       }}
     />

@@ -320,8 +320,23 @@ A live funnel with no traffic collects nothing. Order of channels:
    timely posts) with mechanics + schedule in
    [`linkedin-launch.md`](./linkedin-launch.md). Cadence 2/week Tue+Thu;
    refill the queue when 2 posts remain; mine the newsletter issues for angles.
-3. **SEO content cluster** — supporting articles around the magnet's problem,
-   each funneling to it.
+3. **SEO + GEO (search engines AND AI answer engines) — 🔨 built, pending push.**
+   Two layers, both portable to the next company:
+   - **Technical foundation:** correct canonical domain everywhere; generated
+     `sitemap.xml` (script parses the router — re-run on route changes);
+     `robots.txt` explicitly allowing AI crawlers (GPTBot, ClaudeBot,
+     PerplexityBot, OAI-SearchBot, Google-Extended, CCBot); **`llms.txt`**
+     (markdown company brief for AI engines — who we are, tools, key pages);
+     Organization+WebSite JSON-LD in **raw index.html** (non-JS crawlers);
+     FAQPage JSON-LD on magnet landing pages; Article JSON-LD on the article
+     template. GEO principle (per current practice): AI engines cite original,
+     public, well-structured expertise — don't gate everything; give direct
+     answers, stats with citations, quotable definitions.
+   - **Content cluster:** query-targeting articles ("is my business ready for
+     AI", "what should a small business automate first", "AI readiness
+     checklist") — each opens with a direct answer capsule, question-form H2s,
+     cited statistics, canonical URL, and funnels to a magnet via the template
+     callout.
 4. **Later, only once proven:** partnerships (chambers, fractional CFOs), a
    webinar off the diagnostic, then paid (LinkedIn/Google/retargeting).
 

@@ -320,7 +320,7 @@ export default function GrowthMarketingSales() {
           "Head of Growth, Marketing & Sales, NexDyne Consulting Group",
         leadPhoto:
           "/images/hero-team-2.webp",
-        leadEmail: "growth@nexdyne.tech",
+        leadEmail: "contact@nexdynegroup.com",
         leadLinkedinUrl: "https://www.linkedin.com/company/nexdyne",
       }}
     />

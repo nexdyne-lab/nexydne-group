@@ -7,6 +7,7 @@ import { Linkedin, Link2, Check, ArrowRight } from "lucide-react";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import { SEO } from "./SEO";
+import { Helmet } from "react-helmet-async";
 
 interface RelatedInsight {
   title: string;
@@ -18,6 +19,8 @@ interface RelatedInsight {
 interface InsightArticleV2Props {
   category: string;
   categoryHref?: string;
+  /** e.g. "/insights/my-slug" — emitted as the canonical URL (SEO). */
+  canonicalPath?: string;
   title: string;
   subtitle: string;
   heroImage?: string;
@@ -37,6 +40,7 @@ interface InsightArticleV2Props {
 export default function InsightArticleV2({
   category,
   categoryHref = "/insights",
+  canonicalPath,
   title,
   subtitle,
   heroImage,
@@ -116,7 +120,30 @@ export default function InsightArticleV2({
 
   return (
     <div className="min-h-screen bg-white text-charcoal">
-      <SEO title={title} description={subtitle} />
+      <SEO title={title} description={subtitle} canonical={canonicalPath} />
+
+      {/* Article structured data — search + AI answer engines (GEO). */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: title,
+            description: subtitle,
+            ...(displayDate ? { datePublished: displayDate } : {}),
+            author: byline.map((a) => ({
+              "@type": a.name === "NexDyne Consulting Group" ? "Organization" : "Person",
+              name: a.name,
+            })),
+            publisher: {
+              "@type": "Organization",
+              "@id": "https://nexdynegroup.com/#organization",
+              name: "NexDyne Consulting Group",
+            },
+            articleSection: category,
+          })}
+        </script>
+      </Helmet>
 
       {/* Reading-progress bar */}
       <div className="fixed top-0 left-0 right-0 z-[60] h-[3px] bg-transparent">

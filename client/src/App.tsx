@@ -234,6 +234,9 @@ import Insights from "./pages/Insights";
 // Insight Articles
 import MidMarketAIGuide from "./pages/insights/MidMarketAIGuide";
 import ScalingOperationsInsight from "./pages/insights/ScalingOperations";
+import IsYourBusinessReadyForAI from "./pages/insights/IsYourBusinessReadyForAI";
+import WhatToAutomateFirst from "./pages/insights/WhatToAutomateFirst";
+import AIReadinessChecklistSMB from "./pages/insights/AIReadinessChecklistSMB";
 import CustomerIntelligenceInsight from "./pages/insights/CustomerIntelligence";
 import Industries from "./pages/Industries";
 import Sitemap from "./pages/Sitemap";
@@ -1661,6 +1664,10 @@ function Router() {
         <Route path="/insights/operating-model-redesign" component={OperatingModelRedesign} />
         <Route path="/insights/portfolio-management" component={PortfolioManagementInsight} />
         <Route path="/insights/practical-ai-guide" component={MidMarketAIGuide} />
+        {/* GEO/SEO content cluster — query-targeting articles funneling to the readiness tools */}
+        <Route path="/insights/is-your-business-ready-for-ai" component={IsYourBusinessReadyForAI} />
+        <Route path="/insights/what-should-a-small-business-automate-first" component={WhatToAutomateFirst} />
+        <Route path="/insights/ai-readiness-checklist-for-small-business" component={AIReadinessChecklistSMB} />
         <Route path="/insights/mid-market-ai-access">{() => <Redirect to="/insights/ai-access-guide" />}</Route>
         <Route path="/insights/eu-ai-act-mid-market-playbook">{() => <Redirect to="/insights/eu-ai-act-playbook" />}</Route>
         <Route path="/insights/mid-market-ai-guide">{() => <Redirect to="/insights/practical-ai-guide" />}</Route>

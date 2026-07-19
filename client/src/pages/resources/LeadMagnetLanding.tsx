@@ -4,6 +4,7 @@ import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 import { TurnstileWidget } from "@/components/TurnstileWidget";
 import { SEO } from "@/components/SEO";
+import { Helmet } from "react-helmet-async";
 import NotFound from "@/pages/NotFound";
 import {
   CheckCircle2,
@@ -66,6 +67,22 @@ export function LeadMagnetLanding({ config }: { config: LeadMagnetConfig }) {
   return (
     <div className="min-h-screen bg-white text-charcoal font-sans">
       <SEO title={config.seoTitle} description={config.seoDescription} canonical={`/resources/${config.slug}`} />
+
+      {/* FAQPage structured data — the page's real FAQ, machine-readable for
+          search + AI answer engines (GEO). */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: config.faqs.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          })}
+        </script>
+      </Helmet>
 
       {/* Header — minimal, centered wordmark */}
       <header className="border-b border-border bg-white">
