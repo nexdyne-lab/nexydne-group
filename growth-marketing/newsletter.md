@@ -49,6 +49,22 @@ Case-Study Leads** (where all lead-magnet downloaders land).
    draft broadcast via API (`POST /broadcasts {audience_id, from, subject, html,
    name, preview_text}` — drafts don't send until you say so).
 
+## Email-format standards (applied to every send)
+
+- **Table-based HTML skeleton** (600px, role="presentation", Arial stack, all
+  styles inline) — the email-safe way; modern div/flex layouts render
+  unreliably in older Outlook desktop, which B2B audiences still use.
+- **Personalized greeting:** `Hi {{{FIRST_NAME|there}}},` — pipe-fallback works
+  in Broadcasts (NOT in Templates).
+- **CAN-SPAM compliance:** every commercial email carries the physical address
+  (`4595 Broadmoor Ave SE, Suite 115, Grand Rapids, MI 49512, USA`) + working
+  unsubscribe. Applied to the newsletter, all 6 nurture templates, and the
+  delivery email.
+- **Signature block:** company name + tagline + address + site/email links with
+  a red rule — closes every newsletter like a real letter.
+- Before the first-ever send: mail yourself a test from Resend and glance at it
+  in Outlook if available.
+
 ## Gotchas
 - Broadcast HTML supports `{{{RESEND_UNSUBSCRIBE_URL}}}` and pipe-fallback
   merge tags (unlike Templates).

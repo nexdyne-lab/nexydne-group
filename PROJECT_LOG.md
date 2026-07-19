@@ -71,6 +71,19 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-18 — Email compliance + format hardening (all sends)
+
+- Audit of the newsletter format surfaced two real gaps; fixed across the board:
+  - **CAN-SPAM physical address** added to every commercial email footer:
+    5 newsletter drafts (updated in place, still drafts), all 6 nurture
+    templates (re-published), and the delivery email (routers.ts).
+  - **First-name personalization** in the newsletter: `Hi {{{FIRST_NAME|there}}},`
+    (pipe-fallback works in Broadcasts, not Templates).
+- Rebuilt the newsletter skeleton as **table-based email-safe HTML** (600px,
+  Arial stack, inline styles) for old-Outlook reliability, and added a proper
+  **signature block** (name, tagline, address, links).
+- Format standards documented in growth-marketing/newsletter.md.
+
 ### 2026-07-18 — Newsletter (Stage 6b): "NexDyne Insights" — 5 issues drafted in Resend
 
 - Closed the offer-ladder gap between nurture (10-day bridge) and assessment:

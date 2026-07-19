@@ -204,7 +204,8 @@ export const appRouter = router({
             <hr style="border:none;border-top:1px solid #E5E7EB;margin:24px 0" />
             <p style="margin:0;font-size:12px;color:#6B7280">
               You're receiving this because you requested this resource at nexdynegroup.com.
-              We'll send occasional practical insights for growing companies — unsubscribe anytime.
+              We'll send occasional practical insights for growing companies — unsubscribe anytime.<br />
+              NexDyne Consulting Group &middot; 4595 Broadmoor Ave SE, Suite 115, Grand Rapids, MI 49512, USA
             </p>
           </div>`;
         const delivered = await sendEmail({
