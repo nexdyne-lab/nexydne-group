@@ -308,6 +308,7 @@ import Careers from "@/pages/Careers";
 import Offices from "@/pages/Offices";
 import Contact from "@/pages/Contact";
 import { LeadMagnetLandingRoute } from "@/pages/resources/LeadMagnetLanding";
+import ResourcesIndex from "@/pages/resources/ResourcesIndex";
 
 import RPA from "./pages/solutions/RPA";
 import IPaaS from "@/pages/solutions/IPaaS";
@@ -1971,7 +1972,8 @@ function Router() {
         <Route path="/offices" component={Offices} />
         <Route path="/careers" component={Careers} />
         <Route path="/contact" component={Contact} />
-        {/* Config-driven lead-magnet landing pages (see pages/resources/leadMagnets.tsx) */}
+        {/* Resources hub + config-driven lead-magnet landing pages */}
+        <Route path="/resources" component={ResourcesIndex} />
         <Route path="/resources/:slug" component={LeadMagnetLandingRoute} />
       
             {/* === Cat 2-4c Phase 2: Operations level-3 leaves (54) === */}

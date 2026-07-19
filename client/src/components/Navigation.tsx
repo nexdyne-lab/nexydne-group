@@ -581,12 +581,25 @@ export default function Navigation() {
                 </button>
               </div>
 
+              {/* Resources - Direct Link */}
+              <Link
+                href="/resources"
+                className={`px-4 py-2 text-sm font-medium transition-colors ${
+                  isNavbarLight
+                    ? 'text-charcoal hover:text-primary'
+                    : 'text-white hover:text-white/80'
+                }`}
+                onClick={handleNavigation}
+              >
+                Resources
+              </Link>
+
               {/* Careers - Direct Link */}
               <Link
                 href="/careers"
                 className={`px-4 py-2 text-sm font-medium transition-colors ${
-                  isNavbarLight 
-                    ? 'text-charcoal hover:text-primary' 
+                  isNavbarLight
+                    ? 'text-charcoal hover:text-primary'
                     : 'text-white hover:text-white/80'
                 }`}
                 onClick={handleNavigation}
@@ -710,6 +723,14 @@ export default function Navigation() {
                       <ChevronRight className="h-5 w-5 text-charcoal/30 transition-all group-hover:translate-x-0.5 group-hover:text-primary" />
                     </button>
                   ))}
+                  {/* Resources — direct link, no sub-panel */}
+                  <Link
+                    href="/resources"
+                    onClick={handleNavigation}
+                    className="flex w-full items-center rounded-lg px-3 py-3.5 text-[17px] font-medium text-charcoal transition-colors hover:bg-subtle hover:text-primary"
+                  >
+                    Resources
+                  </Link>
                   {/* Careers — direct link, no sub-panel */}
                   <Link
                     href="/careers"

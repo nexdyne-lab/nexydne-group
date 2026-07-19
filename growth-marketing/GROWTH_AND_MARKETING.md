@@ -272,20 +272,29 @@ Resend **API** (reproducible script — see `nurture-sequence.md`). Adding a mag
 
 ---
 
-## Stage 7 — Drive traffic (channels)  *(NEXT — to build)*
+## Stage 7 — Drive traffic (channels)  *(On-site promo ✅ · LinkedIn/SEO next)*
 
 A live funnel with no traffic collects nothing. Order of channels:
 
-1. **LinkedIn (primary)** — founder posts, insight posts, a "5 signs…" carousel,
-   all pointing at a landing page. (Asset pipeline: `social-tiles/`.)
-2. **On-site promo** — homepage, Insights articles, service pages, a "Resources"
-   nav entry → the landing pages.
+1. **On-site promo ✅ (built first — converts traffic you already have, no
+   warm-up dependency).** Four surfaces feed the funnel:
+   - "Resources" **nav entry** (desktop + mobile, direct-link pattern) → `/resources`
+   - **`/resources` hub page** listing all magnets (charcoal hero, cover cards,
+     square CTAs, assessment-ladder close). New magnets: add to its `TOOLS` array.
+   - **Homepage promo band** (charcoal split band + covers) → `/resources`
+   - **Article-end CTA in the insight-article template** — one template edit puts
+     the magnet callout on every article (115 here). The article creates
+     interest; the magnet captures the contact.
+   - Plus a **footer** "Free Resources" link.
+2. **LinkedIn (primary external)** — founder posts, insight posts, a "5 signs…"
+   carousel, all pointing at a landing page. (Asset pipeline: `social-tiles/`.)
 3. **SEO content cluster** — supporting articles around the magnet's problem,
    each funneling to it.
 4. **Later, only once proven:** partnerships (chambers, fractional CFOs), a
    webinar off the diagnostic, then paid (LinkedIn/Google/retargeting).
 
-**Status:** not yet built.
+**Status:** on-site promo live. LinkedIn + SEO next (start after/with the
+domain warm-up, Stage 1b).
 
 ---
 
@@ -400,5 +409,5 @@ lead-magnets/
 | 4. Gated delivery (private R2 + endpoint) | ✅ Live |
 | 5. Landing page template (config-driven) | ✅ Live |
 | 6. Nurture automation (Resend) | ✅ Live (event trigger + 3-email automation, enabled via API) |
-| 7. Channels / distribution | ⏳ Next |
+| 7. Channels / distribution | 🔨 On-site promo live (nav, /resources hub, homepage band, article CTAs, footer); LinkedIn + SEO next |
 | Admin panel (no-code magnet management) | 🔮 Later (when volume justifies) |

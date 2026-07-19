@@ -171,6 +171,7 @@ export default function Footer() {
             <nav className="flex flex-col gap-y-4 sm:flex-row sm:flex-wrap sm:gap-x-8 sm:gap-y-3">
               {[
                 { label: "Careers", href: "/careers" },
+                { label: "Free Resources", href: "/resources" },
                 { label: "Subscribe", href: "/insights" },
                 { label: "Alumni", href: "/alumni" },
                 { label: "About", href: "/about" },

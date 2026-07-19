@@ -337,6 +337,33 @@ export default function InsightArticleV2({
                     <p className="text-[13px] text-muted-foreground">{byline[0].role}</p>
                   </div>
                 </div>
+
+                {/* Free readiness tool — lead-magnet callout (site-wide via template) */}
+                <div className="mt-10 border border-border border-l-[3px] border-l-primary bg-off-white p-7 md:p-8">
+                  <span className="block text-[11px] font-semibold uppercase tracking-[0.16em] text-charcoal/50 mb-3">
+                    Free readiness tool
+                  </span>
+                  <p className="text-[17px] md:text-lg font-semibold text-charcoal leading-snug">
+                    Before you invest in AI or automation, check whether your
+                    business is actually ready.
+                  </p>
+                  <p className="text-[14px] text-charcoal/65 leading-relaxed mt-2">
+                    A free 10-question diagnostic — score yourself in fifteen
+                    minutes and know your next move.
+                  </p>
+                  <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-3">
+                    <Link href="/resources/ai-readiness-guide">
+                      <span className="inline-block bg-primary px-6 py-3 text-[12px] font-semibold uppercase tracking-[0.1em] text-white hover:bg-primary-hover transition-colors cursor-pointer">
+                        Get the free guide
+                      </span>
+                    </Link>
+                    <Link href="/resources">
+                      <span className="text-[12px] font-semibold uppercase tracking-[0.1em] text-charcoal/70 border-b border-charcoal/30 hover:text-primary hover:border-primary transition-colors cursor-pointer pb-0.5">
+                        All free resources
+                      </span>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

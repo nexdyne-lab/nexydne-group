@@ -236,6 +236,65 @@ export default function Home() {
       {/* 4b. NexDyne Spotlight — featured perspectives (BCG stories pattern) */}
       <SpotlightStories />
 
+      {/* 4b. Free readiness tools — lead-magnet promo (dark authority band) */}
+      <section className="w-full bg-charcoal">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.05, margin: "0px 0px 80px 0px" }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            className="px-4 sm:px-8 md:pl-[76px] md:pr-16 lg:pl-[100px] lg:pr-20 py-14 md:py-20"
+          >
+            <div className="flex items-center gap-3 mb-5">
+              <span className="block h-[3px] w-9 bg-primary" />
+              <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-white/60">
+                Free Readiness Tools
+              </span>
+            </div>
+            <h2 className="nx-h2-split text-white mb-6">
+              Know whether you're ready — before you invest.
+            </h2>
+            <p className="text-base md:text-[1.05rem] text-white/70 leading-[1.7] mb-9 max-w-[56ch]">
+              Two free, self-scored diagnostics for growing companies: evaluate
+              your readiness for AI, and your readiness to scale operations —
+              in about fifteen minutes each.
+            </p>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
+              <Link href="/resources">
+                <PrimaryButton>Get the free tools</PrimaryButton>
+              </Link>
+              <Link href="/resources/ai-readiness-guide">
+                <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-primary hover:text-primary transition-colors cursor-pointer pb-1">
+                  The SMB AI Readiness Guide
+                </span>
+              </Link>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, amount: 0.05, margin: "0px 0px 80px 0px" }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="relative flex items-center justify-center py-12 md:py-16 lg:py-0"
+          >
+            <div className="relative">
+              <img
+                src="/images/operations-readiness-checklist-cover.png"
+                alt="The Operations Readiness Checklist — cover"
+                className="absolute -right-16 top-8 w-44 border border-white/15 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.8)] rotate-3 hidden sm:block"
+              />
+              <img
+                src="/images/ai-readiness-guide-cover.png"
+                alt="The SMB AI Readiness Guide — cover"
+                className="relative w-52 border border-white/15 shadow-[0_30px_70px_-24px_rgba(0,0,0,0.85)] -rotate-2"
+              />
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* 5. Careers — preserved split-grid, polished */}
       <section className="w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[300px] md:min-h-[360px]">

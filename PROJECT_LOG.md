@@ -71,6 +71,23 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-18 — Stage 7 (traffic) part 1: on-site promo for the lead magnets
+
+Four surfaces now feed existing site traffic into the funnel (all verified on
+localhost before push; nx-* editorial system throughout):
+
+- **"Resources" nav entry** — desktop bar + mobile drawer (Careers direct-link
+  pattern) → `/resources`.
+- **`/resources` hub page** (`pages/resources/ResourcesIndex.tsx`) — charcoal
+  hero, cards for both magnets (covers, meta, checks, square CTAs), assessment-
+  ladder close. Add future magnets to its `TOOLS` array.
+- **Homepage promo band** — charcoal split band between Spotlight and Careers:
+  "Know whether you're ready — before you invest" + both covers → `/resources`.
+- **Article-end CTA on all 115 Insights articles** — one edit to
+  `InsightArticleV2`: bordered red-rule callout after the byline → AI guide +
+  all resources.
+- **Footer** — "Free Resources" link in the footer nav.
+
 ### 2026-07-18 — Deliverability: reply handling, insights@ alias, auth verified, warm-up plan
 
 - **Reply handling:** emails send `From: insights@nexdynegroup.com` with no
