@@ -109,9 +109,12 @@ export function TurnstileWidget({
           setFailed(true);
           return;
         }
-        // Wait for Turnstile to be fully initialized before rendering.
-        if (window.turnstile.ready) window.turnstile.ready(render);
-        else render();
+        // NOTE: do NOT use turnstile.ready() here — in explicit-render mode it
+        // throws ("turnstile.ready() would break if called before api.js is
+        // loaded"), which nuked every render in production. The script has
+        // already loaded by this point (loadScript resolved + window.turnstile
+        // exists), so rendering directly is correct.
+        render();
       })
       .catch(() => {
         if (!cancelled) setFailed(true);
