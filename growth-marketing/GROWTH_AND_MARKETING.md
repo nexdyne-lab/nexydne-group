@@ -332,6 +332,14 @@ A live funnel with no traffic collects nothing. Order of channels:
      template. GEO principle (per current practice): AI engines cite original,
      public, well-structured expertise — don't gate everything; give direct
      answers, stats with citations, quotable definitions.
+   - **Social link previews (required before any social push):** social
+     crawlers don't run JS — on an SPA, per-page OG tags MUST be injected
+     server-side. Pipeline: branded 1200×630 cards (default `/og-image.jpg` +
+     per-magnet cards in `/images/og/`), `scripts/generate-og-meta.mjs`
+     (route→title/description/image from article components + magnet registry,
+     runs in `npm run build`), and `serveStatic` rewrites the raw-HTML head
+     per request. Articles share with their hero; magnets with custom cards.
+     After deploys, re-scrape changed URLs in Facebook's Sharing Debugger.
    - **Content cluster:** query-targeting articles ("is my business ready for
      AI", "what should a small business automate first", "AI readiness
      checklist") — each opens with a direct answer capsule, question-form H2s,
