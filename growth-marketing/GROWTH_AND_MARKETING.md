@@ -10,7 +10,7 @@ fast.
 > the env vars.* The **Port-to-a-new-project checklist** at the bottom is the
 > fast path when repeating this on the next company.
 
-Last updated: **2026-07-18**
+Last updated: **2026-07-19** — all build stages complete; engine in operating mode.
 
 ---
 
@@ -22,8 +22,8 @@ Growth is a pipeline. Build it in this order; each stage feeds the next:
 2. **Give value** — a lead magnet worth an email address. *Done.*
 3. **Deliver + gate** — the magnet is only reachable after a capture. *Done.*
 4. **Landing pages** — a repeatable, high-converting page per magnet. *Done.*
-5. **Nurture** — an automated email sequence that turns downloads into conversations. *Next.*
-6. **Drive traffic** — channels that send the right people to the landing pages. *Next.*
+5. **Nurture** — an automated email sequence that turns downloads into conversations. *Done.*
+6. **Drive traffic** — channels that send the right people to the landing pages. *Done.*
 7. **Convert** — a low-friction offer ladder from free → paid. *Ongoing.*
 8. **Measure** — track lead quality and conversations booked, not vanity metrics.
 

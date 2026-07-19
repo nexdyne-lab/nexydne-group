@@ -71,6 +71,16 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-19 — Milestone artifacts (shareables)
+
+- Branded build-report graphic: `social-tiles/out/growth-engine-report.png`
+  (source `social-tiles/growth-report.html`) — 7-stage completion report.
+- Working Excel tracker: `NexDyne Growth Engine Tracker.xlsx` (project root,
+  outside repo) — build table + operating-mode items with live statuses;
+  regenerate/extend via openpyxl.
+- Playbook header + funnel-model statuses synced to "all stages complete."
+
+
 ### 2026-07-19 — SEO + GEO build (Stage 7 pt 3) — COMMITTED, NOT PUSHED (awaiting approval)
 
 Audit found serious pre-existing damage, fixed: **sitemap.xml pointed at
