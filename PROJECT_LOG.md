@@ -103,11 +103,13 @@ www.newco.tech** (240 URLs, wrong domain), **SEO.tsx canonicals → nexdyne.tech
   robots/llms/sitemap serve; all internal links in new articles resolve;
   12/12 sitemap URL spot-checks clean; 5 representative existing pages
   regression-checked; "broken images" ruled lazy-load artifact (0 after scroll).
-- **Post-deploy finding (ACTION FOR DAVID):** Cloudflare injects a *managed
-  robots.txt* ahead of ours — `ai-train=no` + `Disallow: /` for GPTBot,
-  ClaudeBot, Google-Extended, CCBot, etc. The edge is blocking AI crawlers,
-  overriding the GEO policy. Fix in Cloudflare dash: AI Crawl Control /
-  "Block AI bots" → Allow, and disable Managed robots.txt (Content Signals).
+- **Cloudflare edge unblock — RESOLVED:** the zone had `ai_bots_protection:
+  block` + `is_robots_txt_managed: true` (managed robots.txt injected
+  `Disallow` for GPTBot/ClaudeBot/CCBot/etc. + `ai-train=no`). Flipped both via
+  the Bot Management API using a new scoped token (`CLOUDFLARE_BOT_TOKEN` in
+  .env: Zone→Bot Management Edit + Zone Settings Edit). Bot Fight Mode kept ON.
+  Verified live: injection gone, GPTBot = Allow only, our GEO policy is the
+  sole robots.txt content.
 - Post-deploy: submit sitemap in Google Search Console (needs David's Google account).
 
 ### 2026-07-19 — Warm-up underway + Newsletter Issue 01 SENT + Turnstile hotfix
