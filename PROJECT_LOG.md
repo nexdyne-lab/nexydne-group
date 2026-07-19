@@ -71,6 +71,23 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-18 — Newsletter (Stage 6b): "NexDyne Insights" — 5 issues drafted in Resend
+
+- Closed the offer-ladder gap between nurture (10-day bridge) and assessment:
+  the **ongoing newsletter relationship**. Monthly "NexDyne Insights": one hook
+  question, two curated reads (problem lead + constructive follow-up), one quiet
+  rotating CTA, reply prompt.
+- **5 issues written** (`growth-marketing/newsletter-issue-01..05.html`) from
+  the existing /insights catalog — issue 1 leads with "Shadow AI Is the New
+  Shadow IT" (sharpest SMB hook in the catalog); then automation ROI, scaling,
+  agentic-AI budget, cash discipline.
+- **All 5 created as DRAFT Broadcasts in Resend** (verified status=draft,
+  nothing sent) targeting the Case-Study Leads audience. Send monthly after the
+  domain warm-up; workflow + issue bank + gotchas in
+  `growth-marketing/newsletter.md`.
+- Gotcha: Broadcasts support `{{{RESEND_UNSUBSCRIBE_URL}}}` + pipe-fallbacks
+  (Templates don't); a broadcast targets one audience.
+
 ### 2026-07-18 — Stage 7 on-site promo: service-page CTAs (plan-compliance gap closed)
 
 - Audit vs. the original lead-magnet plan flagged one missing website channel:

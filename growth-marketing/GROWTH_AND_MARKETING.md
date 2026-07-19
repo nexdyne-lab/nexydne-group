@@ -272,6 +272,19 @@ Resend **API** (reproducible script — see `nurture-sequence.md`). Adding a mag
 
 ---
 
+## Stage 6b — The newsletter relationship (the ladder's long tail)
+
+The offer ladder: free insight → downloadable resource → **newsletter
+relationship** → assessment → strategy session → engagement. The nurture
+sequence (Stage 6) is the finite 10-day bridge; the **newsletter** is the
+indefinite drumbeat for everyone not ready yet — where most consulting revenue
+actually comes from. Without it, contacts go silent after nurture email #4.
+
+**Built:** "NexDyne Insights" — monthly, one theme, two curated reads (problem
+lead + constructive follow-up), one quiet rotating CTA, reply prompt. **5 issues
+drafted as Resend Broadcasts** (send after warm-up; ~30 min/month to run).
+Format rules, issue bank, workflow, and gotchas: [`newsletter.md`](./newsletter.md).
+
 ## Stage 7 — Drive traffic (channels)  *(On-site promo ✅ · LinkedIn/SEO next)*
 
 A live funnel with no traffic collects nothing. Order of channels:
@@ -415,5 +428,6 @@ lead-magnets/
 | 4. Gated delivery (private R2 + endpoint) | ✅ Live |
 | 5. Landing page template (config-driven) | ✅ Live |
 | 6. Nurture automation (Resend) | ✅ Live (event trigger + 3-email automation, enabled via API) |
+| 6b. Newsletter relationship | ✅ Built — 5 issues drafted in Resend; send monthly after warm-up |
 | 7. Channels / distribution | 🔨 On-site promo live (nav, /resources hub, homepage band, article CTAs, footer); LinkedIn + SEO next |
 | Admin panel (no-code magnet management) | 🔮 Later (when volume justifies) |
