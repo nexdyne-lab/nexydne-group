@@ -240,6 +240,13 @@ what do they decide?" today, in writing?
 #AIGovernance #AIRegulation #SMB #Leadership
 ```
 
+## Open: attention images for posts #3–#6
+Posts #3–#6 are text-only (fine, but an image lifts stop-rate). Plan: generate
+branded tiles via the `social-tiles/` pipeline (like the carousel) — e.g. a big
+stat tile for #5 ("88% of AI agent pilots never reach production"), a
+question card for #3 ("Do you know which AI tools your team used this week?").
+David to pick reference styles; render 1200×1200 or 1200×627.
+
 ## Posting schedule
 | Date | What |
 |---|---|
