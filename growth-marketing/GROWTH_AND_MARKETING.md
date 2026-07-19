@@ -157,9 +157,15 @@ top-of-funnel. Marketing-list adds are tied to that notice.
   + landing-page mockups.
 - Pipeline lives in [`lead-magnets/`](../../lead-magnets/): one `*.html` per
   magnet + a small `render-*.mjs`. Serve locally on a port, render, done.
-- Brand system for the PDF: charcoal cover + CTA pages, off-white content,
-  Instrument Sans, Orange-Red `#DE2F23` as **signal only**, amber for scoring
-  bands, printable score boxes.
+- **Design standard (learned): minimal document style.** Charcoal cover + CTA
+  bookends; content pages read like a well-typeset document — white, generous
+  margins, red section heads, **bold lead-ins** ("Why it matters —", red
+  "Warning signs —"), hairline dividers, small inline score boxes, and **no
+  cards/boxes** (HTML-heavy "designed" pages read ugly in PDF). Instrument
+  Sans; red `#DE2F23` as signal only.
+- **Swapping a PDF later = upload to the same R2 key** (live instantly, no
+  deploy) **+ regenerate cover/peek PNGs** into `client/public/images/`
+  (needs a site deploy for the images).
 
 **Built so far:** *The SMB AI Readiness Guide* (10-question diagnostic),
 *The Operations Readiness Checklist* (15-point diagnostic).

@@ -71,6 +71,21 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-19 — Lead-magnet PDFs redesigned: minimal document style (Video-Guide look)
+
+- Both guide PDFs restyled per David's direction: professional/minimal like the
+  NexDyne Video Production Guide — white pages, generous margins, red section
+  heads + bold lead-ins ("Why it matters —", red "Warning signs —"), hairline
+  dividers, NO cards/boxes. Charcoal cover + closing CTA bookends kept. Same
+  content, new typesetting. AI guide now 7pp; Ops checklist 5pp (denser, doc-like).
+- Sources rewritten in `lead-magnets/*.html`; re-rendered; **uploaded to R2 at
+  the same keys** (download endpoints served the new files instantly — no
+  deploy needed for the PDFs). Cover/peek images regenerated into
+  `client/public/images/` (peeks now show the clean typeset pages).
+- CTA pages now also carry the postal address (email-compliance consistency).
+- Note: still interim — the professional design pass David is commissioning
+  will replace these via the same swap (R2 key + images).
+
 ### 2026-07-19 — LinkedIn LAUNCHED: page live, post #1 published, 6-post queue built
 
 - **Company page live** (`linkedin.com/company/nexdyne-consulting-group`) with
