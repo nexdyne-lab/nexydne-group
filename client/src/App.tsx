@@ -1224,7 +1224,6 @@ function Router() {
         <Route path="/solutions/conversational-ai" component={ConversationalAI} />
         <Route path="/solutions/mobile-apps" component={MobileApps} />
         <Route path="/solutions/headless-cms" component={HeadlessCMS} />
-        <Route path="/solutions/intelligent-process-optimization" component={IntelligentProcessOptimization} />
         <Route path="/solutions/data-driven-customer-intelligence" component={DataDrivenCustomerIntelligence} />
         <Route path="/solutions/data-driven-customer-intelligence/case-studies" component={CustomerIntelligenceCaseStudies} />
         <Route path="/solutions/data-driven-customer-intelligence/case-studies/ecommerce-repeat-purchase" component={CIEcommerceRepeatPurchase} />
