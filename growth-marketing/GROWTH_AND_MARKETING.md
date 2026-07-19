@@ -285,7 +285,13 @@ A live funnel with no traffic collects nothing. Order of channels:
    - **Article-end CTA in the insight-article template** — one template edit puts
      the magnet callout on every article (115 here). The article creates
      interest; the magnet captures the contact.
+   - **Service pages**: capability/service-page template takes an optional
+     `readinessTool` prop → black promo band with the magnet cover (on a red
+     offset panel) + CTA. Wired on the AI page (→ AI guide) and Operations page
+     (→ Ops checklist); opt any page in with the same prop.
    - Plus a **footer** "Free Resources" link.
+   - *Deferred by choice:* exit-intent/scroll popup (revisit once baseline
+     conversion is known).
 2. **LinkedIn (primary external)** — founder posts, insight posts, a "5 signs…"
    carousel, all pointing at a landing page. (Asset pipeline: `social-tiles/`.)
 3. **SEO content cluster** — supporting articles around the magnet's problem,

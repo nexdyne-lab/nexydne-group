@@ -71,6 +71,20 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-18 — Stage 7 on-site promo: service-page CTAs (plan-compliance gap closed)
+
+- Audit vs. the original lead-magnet plan flagged one missing website channel:
+  the AI/Operations **service pages** didn't promote the magnets.
+- Added an optional `readinessTool` prop to `MarketingMasterTemplate` — renders a
+  black promo band (red rule + cover on a **red offset panel** so the charcoal
+  booklet reads on black) before the closing CTA.
+- Wired on `/capabilities/artificial-intelligence` (→ AI guide) and
+  `/capabilities/operations` (→ Ops checklist). Any other template page can opt
+  in with the same prop.
+- Remaining plan deltas (deliberate): exit-intent popup deferred until baseline
+  conversion is known; audience tagging lives in the leads DB + per-magnet
+  events (Resend contacts can't hold rich tags).
+
 ### 2026-07-18 — Stage 7 (traffic) part 1: on-site promo for the lead magnets
 
 Four surfaces now feed existing site traffic into the funnel (all verified on

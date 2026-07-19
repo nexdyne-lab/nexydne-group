@@ -18,6 +18,16 @@ export default function ArtificialIntelligence() {
         label: "View Case Studies",
         href: "/cases?capability=artificial-intelligence",
       }}
+      readinessTool={{
+        eyebrow: "Free readiness tool",
+        title: "Is your business actually ready for AI?",
+        description:
+          "Before you invest, score yourself with our free 10-question diagnostic — process, data, workforce, and governance — and know whether AI will pay off before you spend a dollar.",
+        meta: "Free · 10 questions · ~15 minutes",
+        cover: "/images/ai-readiness-guide-cover.png",
+        href: "/resources/ai-readiness-guide",
+        ctaLabel: "Get the free guide",
+      }}
       // 3 OUTCOME metrics (user direction: results like "3.2x ROI", not
       // volume claims like "120+ implementations")
       experienceStats={[

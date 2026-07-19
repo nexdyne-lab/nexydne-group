@@ -55,6 +55,16 @@ export interface MarketingMasterTemplateProps {
     photo: string;
     linkedinUrl?: string;
   }[];
+  /** Optional lead-magnet promo band (rendered before the closing CTA). */
+  readinessTool?: {
+    eyebrow: string; // e.g. "Free readiness tool"
+    title: string;
+    description: string;
+    meta: string; // e.g. "Free · 10 questions · ~15 minutes"
+    cover: string; // cover image path
+    href: string; // landing page, e.g. /resources/ai-readiness-guide
+    ctaLabel: string; // e.g. "Get the free guide"
+  };
   insights: {
     tag: string;
     title: string;
@@ -105,6 +115,7 @@ export default function MarketingMasterTemplate(
     clientResults,
 
     leaders = [],
+    readinessTool,
     insights,
     closingCTA,
   } = props;
@@ -623,6 +634,63 @@ export default function MarketingMasterTemplate(
           </div>
         </div>
       </section>
+
+      {/* 11b. Free readiness tool — lead-magnet promo (dark authority band) */}
+      {readinessTool && (
+        <section className="bg-black text-white">
+          <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-14 md:py-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <motion.div
+                initial={{ opacity: 0, y: 18 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, ease }}
+              >
+                <div className="flex items-center gap-3 mb-5">
+                  <span className="block h-[3px] w-9 bg-primary" />
+                  <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-white/60">
+                    {readinessTool.eyebrow}
+                  </span>
+                </div>
+                <h2 className="nx-h2-split text-white mb-6">{readinessTool.title}</h2>
+                <p className="text-base md:text-[1.05rem] text-white/70 leading-[1.7] mb-4 max-w-[56ch]">
+                  {readinessTool.description}
+                </p>
+                <p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-white/45 mb-9">
+                  {readinessTool.meta}
+                </p>
+                <Link href={readinessTool.href}>
+                  <span className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] transition-colors hover:bg-primary-hover focus-visible:outline-2 focus-visible:outline-white cursor-pointer">
+                    {readinessTool.ctaLabel}
+                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </Link>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, ease, delay: 0.1 }}
+                className="flex justify-center lg:justify-end"
+              >
+                {/* Red offset panel behind the charcoal cover so it reads on black */}
+                <div className="relative lg:mr-8">
+                  <span
+                    aria-hidden
+                    className="absolute -top-6 -right-6 h-full w-full bg-primary"
+                  />
+                  <img
+                    src={readinessTool.cover}
+                    alt={`${readinessTool.title} — cover`}
+                    className="relative w-56 border border-white/25 shadow-[0_30px_70px_-24px_rgba(0,0,0,0.85)]"
+                  />
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* 12. Closing CTA — light canvas */}
       <section className="bg-[#FEFEFE]">

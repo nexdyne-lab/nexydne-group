@@ -17,6 +17,16 @@ export default function Operations() {
         label: "View Case Studies",
         href: "/cases?capability=operations",
       }}
+      readinessTool={{
+        eyebrow: "Free readiness tool",
+        title: "Is your business ready to scale?",
+        description:
+          "Before you add headcount, customers, or complexity, run our free 15-point operations checklist — process, ownership, data, handoffs, and risk — and find the gaps growth will strain first.",
+        meta: "Free · 15 points · ~10 minutes",
+        cover: "/images/operations-readiness-checklist-cover.png",
+        href: "/resources/operations-readiness-checklist",
+        ctaLabel: "Get the free checklist",
+      }}
       experienceStats={[
         {
           number: "200+",
