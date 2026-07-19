@@ -58,11 +58,110 @@ AI plans back more right now, the technology or the operations underneath it?
 #AIReadiness #SMB #Operations #Leadership
 ```
 
-## Queue (to build next)
-- **Carousel:** "5 signs your business isn't ready for AI" — tiles via
-  `social-tiles/` pipeline, last slide = guide CTA
-- **Post #2:** Shadow AI insight post (from the article; hook = "Do you know
-  which AI tools your team used this week?") → guide link
-- **Post #3:** Operations angle — "Growth doesn't create operational problems,
-  it exposes them" → ops checklist link
-- Cadence target: 2 posts/week (Tue + Thu), founder voice
+## Post #2 — Carousel: "5 signs your business isn't ready for AI" (READY)
+
+**File to upload:** `social-tiles/out/nexdyne-5-signs-carousel.pdf` (7 slides,
+1080×1350). Post as a **document**: personal profile → Start a post → **"Add a
+document"** → upload the PDF → paste the caption. Slide previews:
+`social-tiles/out/carousel-slide-1..7.png`; source `social-tiles/li-carousel.html`.
+
+**Caption:**
+```
+I reviewed the AI plans of a lot of growing companies this year.
+
+The ones in trouble all failed the same 5 checks — none of which have anything
+to do with which model they picked.
+
+Swipe through. Count how many describe your business. →
+
+(All 5 come from the free 10-question readiness guide we give away at
+@NexDyne Consulting Group — link in the comments.)
+
+Which of the five is hardest to fix? My vote: #4. Nobody wants to own the
+system after go-live.
+
+#AIReadiness #SMB #Operations #Leadership
+```
+**First comment (post immediately after):**
+```
+The full 10-question guide (free, self-scored, 15 minutes):
+https://nexdynegroup.com/resources/ai-readiness-guide
+```
+
+## Post #3 — Shadow AI (READY)
+
+```
+Do you know which AI tools your team used this week?
+
+Be honest. Most leaders of growing companies don't.
+
+Right now, somewhere in your business, an unapproved AI tool is probably:
+→ drafting a proposal a client will read
+→ summarizing a contract someone will rely on
+→ answering a customer in your company's name
+
+Shadow IT was an unapproved file-share. Annoying, contained.
+Shadow AI is different — it makes decisions.
+
+And here's the trap: you can't block your way out of it. Ban the tools and
+your best people just use them on their phones. The productivity is real —
+that's exactly why they're doing it.
+
+The firms getting this right aren't blocking. They're governing:
+→ Name which tools are approved, and for what
+→ Draw the line: what AI drafts vs. what humans decide
+→ Make it safe to disclose ("I used AI for this") instead of hiding it
+
+Visibility first. Rules second. Bans never.
+
+We wrote up the full playbook at @NexDyne Consulting Group — and if you want
+to know whether your business is ready for the AI it's ALREADY using, our
+free 10-question readiness check is a good place to start:
+https://nexdynegroup.com/resources/ai-readiness-guide
+
+Genuine question: does your company have a written answer to "which AI tools
+are we allowed to use"? Mine didn't either, until we made one.
+
+#ShadowAI #AIGovernance #SMB #Leadership
+```
+
+## Post #4 — Operations / scaling (READY)
+
+```
+Growth doesn't create operational problems.
+
+It exposes the ones you already have.
+
+The process nobody wrote down? Works fine at 10 people. Breaks at 50.
+The report only one person can produce? Fine — until she's on vacation
+during your busiest month.
+The approval that waits on a single inbox? A speed bump at 10 customers.
+A bottleneck at 100.
+
+Scaling multiplies whatever you already have. Clarity compounds. So does mess.
+
+Before you add headcount, customers, or complexity, pressure-test five areas:
+→ Process & documentation — written down, or tribal knowledge?
+→ Ownership — one accountable name per critical process?
+→ Data — one source of truth, or competing spreadsheets?
+→ Handoffs — defined, or "I thought you had it"?
+→ Resilience — if one key person left tomorrow, what stops?
+
+At @NexDyne Consulting Group we turned this into a free 15-point checklist —
+score your operation in about 10 minutes and find the gaps before growth does:
+https://nexdynegroup.com/resources/operations-readiness-checklist
+
+What broke first at your company when you grew? For most people I ask, it's
+the reporting. Curious if that holds here.
+
+#Operations #Scaling #SMB #Leadership
+```
+
+## Posting schedule
+| When | What |
+|---|---|
+| ✅ Sat 2026-07-19 | Post #1 — founder launch (published) |
+| Tue | Post #2 — carousel (document PDF + caption + link-in-comment) |
+| Thu | Post #3 — Shadow AI |
+| next Tue | Post #4 — Operations |
+| ongoing | 2 posts/week Tue+Thu; alternate AI ↔ ops ↔ finance; every post ends with a genuine question |
