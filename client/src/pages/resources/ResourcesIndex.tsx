@@ -73,12 +73,12 @@ export default function ResourcesIndex() {
                 key={t.slug}
                 className="group bg-white border border-border hover:border-primary/50 transition-colors duration-300 flex flex-col"
               >
-                {/* Cover strip */}
-                <div className="bg-charcoal flex items-center justify-center py-10 px-8 overflow-hidden">
+                {/* Cover strip — brand red so the charcoal booklet reads clearly */}
+                <div className="bg-primary flex items-center justify-center py-10 px-8 overflow-hidden">
                   <img
                     src={t.cover}
                     alt={`${t.title} — cover`}
-                    className="w-40 border border-white/15 shadow-[0_24px_50px_-20px_rgba(0,0,0,0.8)] -rotate-2 group-hover:rotate-0 transition-transform duration-500"
+                    className="w-40 border border-white/20 shadow-[0_24px_50px_-16px_rgba(0,0,0,0.55)] -rotate-2 group-hover:rotate-0 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-8 flex flex-col flex-1">
