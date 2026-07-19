@@ -20,7 +20,7 @@ export default function IsYourBusinessReadyForAI() {
   ];
 
   const relatedInsights = [
-    { title: "Shadow AI Is the New Shadow IT", category: "Security & Risk", link: "/insights/shadow-ai-inside-your-firm", image: "/images/cyber-abstract.jpg" },
+    { title: "Shadow AI Is the New Shadow IT", category: "Security & Risk", link: "/insights/shadow-ai-inside-your-firm", image: "/images/insights/shadow-ai-inside-your-firm-hero.jpg" },
     { title: "Winning with governed AI at growing companies", category: "Practical AI", link: "/insights/practical-ai-guide", image: "/images/ai-acceleration-abstract.jpg" },
     { title: "Measuring ROI: your first year of automation", category: "Real numbers", link: "/insights/measuring-automation-roi", image: "/images/business-strategy-abstract.jpg" },
   ];
@@ -40,7 +40,7 @@ export default function IsYourBusinessReadyForAI() {
       canonicalPath="/insights/is-your-business-ready-for-ai"
       title="Is Your Business Ready for AI? A 15-Minute Test for SMB Leaders"
       subtitle="Most AI projects fail before implementation begins — for readiness reasons, not technology reasons. Here is the 10-signal test we use with growing companies, and how to read your result."
-      heroImage="/images/adoption-abstract.jpg"
+      heroImage="/images/insights/is-your-business-ready-for-ai-hero.jpg"
       publishDate="July 19, 2026"
       readTime="7 min"
       sections={sections}

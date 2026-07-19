@@ -66,7 +66,7 @@ export const digitalRelatedItems: RelatedItem[] = [
     title: "The Future of Digital Experience",
     description: "Why seamless, omnichannel experiences are the new battleground for loyalty.",
     readTime: "5 min read",
-    image: "/images/capabilities/cap-presenting-graphs.jpg",
+    image: "/images/insights/digital-channels-growth-hero.jpg",
     link: "/insights/digital-channels-growth",
     category: "CX"
   },
@@ -96,7 +96,7 @@ export const strategyRelatedItems: RelatedItem[] = [
     title: "Navigating Digital Disruption",
     description: "Strategies for incumbents to compete with digital-native challengers.",
     readTime: "8 min read",
-    image: "/images/capabilities/cap-celebrate.jpg",
+    image: "/images/insights/business-transformation-strategy-hero.jpg",
     link: "/insights/business-transformation-strategy",
     category: "Strategy"
   },

@@ -16,7 +16,7 @@ export default function EUAIActMidMarket() {
   const relatedInsights = [
     { title: "The AI Adoption Outlook 2026", category: "Featured Insight", link: "/insights/ai-adoption-outlook-2026", image: "/images/agentic-ai-abstract.jpg" },
     { title: "The Pragmatic CEO's Guide to AI", category: "AI Executive Guide", link: "/insights/ceo-guide-data-modernization", image: "/images/hero-ceo-ai-guide.jpg" },
-    { title: "Shadow AI Is Already Inside Your Firm", category: "Security & Risk", link: "/insights/shadow-ai-inside-your-firm", image: "/images/cyber-abstract.jpg" },
+    { title: "Shadow AI Is Already Inside Your Firm", category: "Security & Risk", link: "/insights/shadow-ai-inside-your-firm", image: "/images/insights/shadow-ai-inside-your-firm-hero.jpg" },
   ];
 
   const sections = [

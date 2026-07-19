@@ -10,9 +10,9 @@ export default function KPIDashboards() {
   ];
 
   const relatedInsights = [
-    { title: "Rolling Forecasts: A Modern Approach", category: "Financial Planning & Analysis", link: "/insights/rolling-forecasts", image: "/images/capabilities/cap-data-bars.jpg" },
+    { title: "Rolling Forecasts: A Modern Approach", category: "Financial Planning & Analysis", link: "/insights/rolling-forecasts", image: "/images/insights/rolling-forecasts-hero.jpg" },
     { title: "CFO Data Integration Strategies", category: "Financial Planning & Analysis", link: "/insights/cfo-data-integration", image: "/images/capabilities/cap-hands-data.jpg" },
-    { title: "FP&A Excellence", category: "Financial Planning & Analysis", link: "/insights/rolling-forecasts", image: "/images/capabilities/cap-presenting-graphs.jpg" },
+    { title: "FP&A Excellence", category: "Financial Planning & Analysis", link: "/insights/rolling-forecasts", image: "/images/insights/rolling-forecasts-hero.jpg" },
   ];
 
   return (

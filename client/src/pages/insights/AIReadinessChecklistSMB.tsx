@@ -19,9 +19,9 @@ export default function AIReadinessChecklistSMB() {
   ];
 
   const relatedInsights = [
-    { title: "Is Your Business Ready for AI? A 15-Minute Test", category: "AI Readiness", link: "/insights/is-your-business-ready-for-ai", image: "/images/adoption-abstract.jpg" },
-    { title: "What Should a Small Business Automate First?", category: "Automation", link: "/insights/what-should-a-small-business-automate-first", image: "/images/abstract-growth.jpg" },
-    { title: "Shadow AI Is the New Shadow IT", category: "Security & Risk", link: "/insights/shadow-ai-inside-your-firm", image: "/images/cyber-abstract.jpg" },
+    { title: "Is Your Business Ready for AI? A 15-Minute Test", category: "AI Readiness", link: "/insights/is-your-business-ready-for-ai", image: "/images/insights/is-your-business-ready-for-ai-hero.jpg" },
+    { title: "What Should a Small Business Automate First?", category: "Automation", link: "/insights/what-should-a-small-business-automate-first", image: "/images/insights/what-should-a-small-business-automate-first-hero.jpg" },
+    { title: "Shadow AI Is the New Shadow IT", category: "Security & Risk", link: "/insights/shadow-ai-inside-your-firm", image: "/images/insights/shadow-ai-inside-your-firm-hero.jpg" },
   ];
 
   const sections = [
@@ -38,7 +38,7 @@ export default function AIReadinessChecklistSMB() {
       canonicalPath="/insights/ai-readiness-checklist-for-small-business"
       title="The AI Readiness Checklist for Small Businesses (2026)"
       subtitle="Ten checks a leadership team can run in fifteen minutes to know whether an AI or automation investment will pay off — with a simple scoring system and honest interpretation bands."
-      heroImage="/images/ai-abstract-visualization.jpg"
+      heroImage="/images/insights/ai-readiness-checklist-for-small-business-hero.jpg"
       publishDate="July 19, 2026"
       readTime="5 min"
       sections={sections}

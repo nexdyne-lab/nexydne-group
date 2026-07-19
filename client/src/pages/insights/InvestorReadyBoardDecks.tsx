@@ -13,7 +13,7 @@ export default function InvestorReadyBoardDecks() {
   const relatedInsights = [
     { title: "Financial Discipline as a Growth Enabler", category: "Fractional CFO Services", link: "/insights/financial-discipline-growth", image: "/images/capabilities/cap-data-bars.jpg" },
     { title: "The CFO's Guide to Cash Flow", category: "Fractional CFO Services", link: "/insights/cfo-cash-flow-guide", image: "/images/capabilities/cap-hands-data.jpg" },
-    { title: "Rolling Forecasts", category: "Fractional CFO Services", link: "/insights/rolling-forecasts", image: "/images/capabilities/cap-conference-data.jpg" },
+    { title: "Rolling Forecasts", category: "Fractional CFO Services", link: "/insights/rolling-forecasts", image: "/images/insights/rolling-forecasts-hero.jpg" },
   ];
 
   return (

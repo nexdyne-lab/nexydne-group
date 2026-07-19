@@ -509,3 +509,13 @@ lead-magnets/
 `facebook-content/Facebook Content Calendar.xlsx` (18 posts prefilled to
 Aug 28). Assets in monthly subfolders. **Template lesson:** invest in OG meta
 first — it makes the highest-volume post style free forever.
+
+### Update (2026-07-19): hero images upgraded for the first FB batch
+All 9 articles in the July–August Facebook calendar got topic-specific,
+editorial hero images from David's curated Drive library (connector-driven
+review: current vs candidates, replace only when clearly better — all 9 were).
+Heroes drive the OG preview card, so Style-1 link posts now look right with
+zero design work. Template lessons: (1) audit heroes BEFORE launching link
+posts — legacy pools hide off-topic images (we found a fitness chart on a
+growth article); (2) never use assets scraped from other firms' sites (ey-*)
+— license risk; keep the library to properly licensed stock.

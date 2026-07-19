@@ -407,7 +407,7 @@ export default function FinancialPlanningAnalysis() {
             title: "Why Rolling Forecasts Outperform Annual Budgets",
             category: "FP&A",
             link: "/insights/rolling-forecasts",
-            image: "/images/industries/fin-monitors.jpg"
+            image: "/images/insights/rolling-forecasts-hero.jpg"
           },
           {
             title: "Building KPI Dashboards That Drive Action",

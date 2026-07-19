@@ -28,7 +28,7 @@ export default function StrategicPlansSuccess() {
       relatedInsights={[
         { title: "Operating Model Redesign", category: "Business Strategy", link: "/insights/operating-model-redesign", image: "/images/business-strategy-abstract.jpg" },
         { title: "Portfolio Management Excellence", category: "Business Strategy", link: "/insights/portfolio-management", image: "/images/approach-strategy.jpg" },
-        { title: "Business Transformation Strategy", category: "Business Strategy", link: "/insights/business-transformation-strategy", image: "/images/digital-transformation-abstract.jpg" },
+        { title: "Business Transformation Strategy", category: "Business Strategy", link: "/insights/business-transformation-strategy", image: "/images/insights/business-transformation-strategy-hero.jpg" },
       ]}
     >
       <h2 id="strategy-execution-gap">The Strategy-Execution Gap</h2>

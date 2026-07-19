@@ -2,8 +2,8 @@ import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function InsightSubscriptionPlaybook() {
   const relatedInsights = [
-    { title: "Digital channels driving revenue growth", category: "Digital Growth", link: "/insights/digital-channels-growth", image: "/images/abstract-growth.jpg" },
-    { title: "E-commerce launch guide: zero to revenue in 90 days", category: "Digital Commerce", link: "/insights/ecommerce-launch-guide", image: "/images/adoption-abstract.jpg" },
+    { title: "Digital channels driving revenue growth", category: "Digital Growth", link: "/insights/digital-channels-growth", image: "/images/insights/digital-channels-growth-hero.jpg" },
+    { title: "E-commerce launch guide: zero to revenue in 90 days", category: "Digital Commerce", link: "/insights/ecommerce-launch-guide", image: "/images/insights/ecommerce-launch-guide-hero.jpg" },
     { title: "Subscription pricing models", category: "Pricing", link: "/insights/subscription-pricing-models", image: "/images/business-strategy-abstract.jpg" },
   ];
 
@@ -21,7 +21,7 @@ export default function InsightSubscriptionPlaybook() {
       canonicalPath="/insights/subscription-economy-playbook"
       title="The subscription economy playbook for traditional businesses"
       subtitle="Transform your business from unpredictable one-time sales to sustainable recurring revenue. How traditional companies are successfully adopting subscription models."
-      heroImage="/images/business-strategy-abstract.jpg"
+      heroImage="/images/insights/subscription-economy-playbook-hero.jpg"
       publishDate="January 2026"
       readTime="8 min"
       sections={sections}

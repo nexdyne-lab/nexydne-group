@@ -32,7 +32,7 @@ export default function ShadowAIInsideYourFirm() {
       categoryHref="/insights"
       title="Shadow AI Is the New Shadow IT — Except This Time It Makes Decisions"
       subtitle="Unapproved AI tools are already drafting your proposals, summarising your contracts, and answering your customers. You can't block your way out — the firms getting this right are governing their way out."
-      heroImage="/images/cyber-abstract.jpg"
+      heroImage="/images/insights/shadow-ai-inside-your-firm-hero.jpg"
       publishDate="July 6, 2026"
       readTime="8 min"
       sections={sections}

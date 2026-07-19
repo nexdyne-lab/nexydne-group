@@ -44,7 +44,7 @@ const stories: Story[] = [
       "Unapproved tools are already drafting your proposals and answering your customers. Bans fail quietly; paved-road governance — sanctioned tools with guardrails — is what actually works.",
     cta: "More on AI risk",
     href: "/insights/shadow-ai-inside-your-firm",
-    image: "/images/spotlight-shadow-ai.jpg",
+    image: "/images/insights/shadow-ai-inside-your-firm-hero.jpg",
   },
   {
     tab: "AI-first customer channels",

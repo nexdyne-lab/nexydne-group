@@ -19,7 +19,7 @@ export default function BusinessTransformationStrategy() {
       category="Business Transformation"
       title="Navigating Business Transformation: A Strategic Framework for Sustainable Change"
       subtitle="A comprehensive guide to planning and executing successful business transformation initiatives that deliver lasting value."
-      heroImage="/images/capabilities/cap-chess.jpg"
+      heroImage="/images/insights/business-transformation-strategy-hero.jpg"
       publishDate="December 20, 2024"
       readTime="8 min"
       sections={sections}

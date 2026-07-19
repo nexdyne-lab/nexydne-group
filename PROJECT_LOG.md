@@ -616,3 +616,23 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
 - Posting days Mon/Wed/Fri, deliberately offset from LinkedIn (Tue/Thu). All
   prefilled URLs verified against real routes. Tile templates not built yet —
   next step on David's go.
+
+### 2026-07-19 — Insight hero-image upgrade from David's Drive library (9 articles)
+- New Google Drive image library (20 topical folders) reviewed via Drive
+  connector for the 9 articles in the first Facebook batch. Every current hero
+  was compared against folder candidates; ALL 9 were replaced — several were
+  badly off-topic (a fitness "push-ups/sit-ups" chart on two growth/automation
+  articles, a family living-room scene on e-commerce, "SEO STRATEGY" slide on
+  subscriptions, hoodie-hacker on Shadow AI).
+- New optimized heroes in `client/public/images/insights/<slug>-hero.jpg`
+  (1600px, q65–78, all ≤334KB). Wired into components + insightsRegistry +
+  22 files of related-article thumbnails. og-meta regenerated → Facebook OG
+  cards now show the new images.
+- Provenance rule applied: `ey-*` files (scraped from ey.com, not licensed to
+  us) were avoided everywhere; all 9 winners are Envato-style stock. NOTE for
+  David: consider removing ey-* files from the Drive library.
+- Known limit: Drive connector fails on files >10MB (and intermittently >5MB) —
+  ~30 large candidates couldn't be reviewed (list in session notes).
+- QC: tsc clean, build+guard green, 34/34 tests, headless: all 9 heroes render
+  (http 200), landing shows new featured hero, 0 JS errors. Committed, NOT
+  pushed — awaiting David's review of the picks.

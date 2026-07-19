@@ -12,7 +12,7 @@ export default function FinancialDisciplineGrowth() {
   const relatedInsights = [
     { title: "The CFO's guide to cash flow", category: "Fractional CFO Services", link: "/insights/cfo-cash-flow-guide", image: "/images/cfo-services-abstract.jpg" },
     { title: "Investor-ready board decks", category: "Fractional CFO Services", link: "/insights/investor-ready-board-decks", image: "/images/capital-raising-abstract.jpg" },
-    { title: "Rolling forecasts", category: "Fractional CFO Services", link: "/insights/rolling-forecasts", image: "/images/fpa-abstract.jpg" },
+    { title: "Rolling forecasts", category: "Fractional CFO Services", link: "/insights/rolling-forecasts", image: "/images/insights/rolling-forecasts-hero.jpg" },
   ];
 
   return (

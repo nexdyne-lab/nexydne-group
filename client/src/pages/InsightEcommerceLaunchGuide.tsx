@@ -2,8 +2,8 @@ import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function InsightEcommerceLaunchGuide() {
   const relatedInsights = [
-    { title: "Digital channels driving revenue growth", category: "Digital Growth", link: "/insights/digital-channels-growth", image: "/images/abstract-growth.jpg" },
-    { title: "The subscription economy playbook", category: "Business Models", link: "/insights/subscription-economy-playbook", image: "/images/business-strategy-abstract.jpg" },
+    { title: "Digital channels driving revenue growth", category: "Digital Growth", link: "/insights/digital-channels-growth", image: "/images/insights/digital-channels-growth-hero.jpg" },
+    { title: "The subscription economy playbook", category: "Business Models", link: "/insights/subscription-economy-playbook", image: "/images/insights/subscription-economy-playbook-hero.jpg" },
     { title: "E-commerce economics", category: "Digital Commerce", link: "/insights/ecommerce-economics", image: "/images/adoption-abstract.jpg" },
   ];
 
@@ -22,7 +22,7 @@ export default function InsightEcommerceLaunchGuide() {
       canonicalPath="/insights/ecommerce-launch-guide"
       title="E-commerce launch guide: from zero to revenue in 90 days"
       subtitle="A practical, week-by-week roadmap for launching e-commerce capabilities quickly and effectively — from platform selection to first revenue."
-      heroImage="/images/adoption-abstract.jpg"
+      heroImage="/images/insights/ecommerce-launch-guide-hero.jpg"
       publishDate="January 2026"
       readTime="10 min"
       sections={sections}

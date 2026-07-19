@@ -21,7 +21,7 @@ export default function RollingForecasts() {
       category="Financial Planning & Analysis"
       title="Rolling Forecasts: A Modern Approach to Financial Planning"
       subtitle="How rolling forecasts can transform your planning process, providing the agility and accuracy needed in today's dynamic business environment."
-      heroImage="/images/capabilities/cap-presenting-graphs.jpg"
+      heroImage="/images/insights/rolling-forecasts-hero.jpg"
       publishDate="December 2024"
       readTime="8 min"
       sections={sections}

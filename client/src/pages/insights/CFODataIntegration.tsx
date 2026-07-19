@@ -11,7 +11,7 @@ export default function CFODataIntegration() {
   ];
 
   const relatedInsights = [
-    { title: "Rolling Forecasts: A Modern Approach", category: "Financial Planning & Analysis", link: "/insights/rolling-forecasts", image: "/images/capabilities/cap-data-bars.jpg" },
+    { title: "Rolling Forecasts: A Modern Approach", category: "Financial Planning & Analysis", link: "/insights/rolling-forecasts", image: "/images/insights/rolling-forecasts-hero.jpg" },
     { title: "Building Effective KPI Dashboards", category: "Financial Planning & Analysis", link: "/insights/kpi-dashboards", image: "/images/industries/fin-monitors.jpg" },
     { title: "The CFO's Guide to Cash Flow Management", category: "Fractional CFO Services", link: "/insights/cfo-cash-flow-guide", image: "/images/capabilities/cap-presenting-graphs.jpg" },
   ];

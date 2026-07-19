@@ -10,7 +10,7 @@ export default function PerformanceImprovementFramework() {
   ];
 
   const relatedInsights = [
-    { title: "Navigating Business Transformation: A Strategic Framework", category: "Business Transformation", link: "/insights/business-transformation-strategy", image: "/images/digital-transformation-abstract.jpg" },
+    { title: "Navigating Business Transformation: A Strategic Framework", category: "Business Transformation", link: "/insights/business-transformation-strategy", image: "/images/insights/business-transformation-strategy-hero.jpg" },
     { title: "The Reality of Efficiency Improvement", category: "Operations", link: "/insights/efficiency-improvement-reality", image: "/images/performance-intelligence-abstract.jpg" },
     { title: "Smart Cost Reduction", category: "Strategy & Finance", link: "/insights/smart-cost-reduction", image: "/images/business-strategy-abstract.jpg" },
   ];

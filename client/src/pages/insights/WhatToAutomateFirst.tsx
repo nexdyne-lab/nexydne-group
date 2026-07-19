@@ -19,7 +19,7 @@ export default function WhatToAutomateFirst() {
   ];
 
   const relatedInsights = [
-    { title: "Is Your Business Ready for AI? A 15-Minute Test", category: "AI Readiness", link: "/insights/is-your-business-ready-for-ai", image: "/images/adoption-abstract.jpg" },
+    { title: "Is Your Business Ready for AI? A 15-Minute Test", category: "AI Readiness", link: "/insights/is-your-business-ready-for-ai", image: "/images/insights/is-your-business-ready-for-ai-hero.jpg" },
     { title: "Measuring ROI: your first year of automation", category: "Real numbers", link: "/insights/measuring-automation-roi", image: "/images/business-strategy-abstract.jpg" },
     { title: "Why Intelligent Automation Isn't Optional Anymore", category: "Automation", link: "/insights/why-intelligent-automation-isnt-optional-anymore", image: "/images/ai-acceleration-abstract.jpg" },
   ];
@@ -39,7 +39,7 @@ export default function WhatToAutomateFirst() {
       canonicalPath="/insights/what-should-a-small-business-automate-first"
       title="What Should a Small Business Automate First?"
       subtitle="Not the flashiest process — the most boring one. A practical filter for choosing your first automation, the usual best candidates, and the processes you should never hand to a machine."
-      heroImage="/images/abstract-growth.jpg"
+      heroImage="/images/insights/what-should-a-small-business-automate-first-hero.jpg"
       publishDate="July 19, 2026"
       readTime="6 min"
       sections={sections}

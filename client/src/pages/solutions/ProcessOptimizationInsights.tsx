@@ -99,7 +99,7 @@ const insightPosts: InsightPost[] = [
     readTime: "6 min read",
     date: "October 30, 2025",
     url: "/insights/business-transformation-strategy",
-    image: "/images/capabilities/cap-robot-factory.jpg",
+    image: "/images/insights/business-transformation-strategy-hero.jpg",
     tags: ["Change Management", "Culture", "People"],
   },
   {

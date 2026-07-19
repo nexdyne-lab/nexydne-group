@@ -11,7 +11,7 @@ export function HeadlessCommerceGuide() {
   const relatedInsights = [
     { title: "The End of the Monolith: Why Composable Architecture Wins", category: "Architecture", link: "/insights/composable-architecture", image: "/images/cloud-abstract.jpg" },
     { title: "Optimizing for the Mobile-First Shopper", category: "Digital Commerce", link: "/insights/mobile-commerce-optimization", image: "/images/case-dxp-retail.jpg" },
-    { title: "E-commerce Launch Guide: From Zero to Revenue in 90 Days", category: "Digital Commerce", link: "/insights/ecommerce-launch-guide", image: "/images/case-bb-ecommerce-platform-launch.jpg" },
+    { title: "E-commerce Launch Guide: From Zero to Revenue in 90 Days", category: "Digital Commerce", link: "/insights/ecommerce-launch-guide", image: "/images/insights/ecommerce-launch-guide-hero.jpg" },
   ];
 
   return (

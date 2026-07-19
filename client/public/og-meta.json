@@ -147,17 +147,17 @@
  "/insights/digital-channels-growth": {
   "title": "Digital channels driving revenue growth: a playbook for growing companies",
   "description": "Growing companies are discovering that digital channels aren't just a nice-to-have — they're essential for sustainable growth. How leading companies achieve outsized revenue growth through e-commerce, subscriptions, and platform businesses.",
-  "image": "/images/abstract-growth.jpg"
+  "image": "/images/insights/digital-channels-growth-hero.jpg"
  },
  "/insights/subscription-economy-playbook": {
   "title": "The subscription economy playbook for traditional businesses",
   "description": "Transform your business from unpredictable one-time sales to sustainable recurring revenue. How traditional companies are successfully adopting subscription models.",
-  "image": "/images/business-strategy-abstract.jpg"
+  "image": "/images/insights/subscription-economy-playbook-hero.jpg"
  },
  "/insights/ecommerce-launch-guide": {
   "title": "E-commerce launch guide: from zero to revenue in 90 days",
   "description": "A practical, week-by-week roadmap for launching e-commerce capabilities quickly and effectively — from platform selection to first revenue.",
-  "image": "/images/adoption-abstract.jpg"
+  "image": "/images/insights/ecommerce-launch-guide-hero.jpg"
  },
  "/insights/digital-growth-playbook": {
   "title": "The digital growth playbook for growing companies",
@@ -637,7 +637,7 @@
  "/insights/shadow-ai-inside-your-firm": {
   "title": "Shadow AI Is the New Shadow IT — Except This Time It Makes Decisions",
   "description": "Unapproved AI tools are already drafting your proposals, summarising your contracts, and answering your customers. You can't block your way out — the firms getting this right are governing their way out.",
-  "image": "/images/cyber-abstract.jpg"
+  "image": "/images/insights/shadow-ai-inside-your-firm-hero.jpg"
  },
  "/insights/ai-answers-first-customer-channels": {
   "title": "The Channel Flip: AI Now Answers First. Your Customers Are Deciding If They Mind.",
@@ -962,7 +962,7 @@
  "/insights/business-transformation-strategy": {
   "title": "Navigating Business Transformation: A Strategic Framework for Sustainable Change",
   "description": "A comprehensive guide to planning and executing successful business transformation initiatives that deliver lasting value.",
-  "image": "/images/capabilities/cap-chess.jpg"
+  "image": "/images/insights/business-transformation-strategy-hero.jpg"
  },
  "/insights/performance-improvement-framework": {
   "title": "Systematic Performance Improvement: From Diagnosis to Sustainable Results",
@@ -972,7 +972,7 @@
  "/insights/rolling-forecasts": {
   "title": "Rolling Forecasts: A Modern Approach to Financial Planning",
   "description": "How rolling forecasts can transform your planning process, providing the agility and accuracy needed in today's dynamic business environment.",
-  "image": "/images/capabilities/cap-presenting-graphs.jpg"
+  "image": "/images/insights/rolling-forecasts-hero.jpg"
  },
  "/insights/kpi-dashboards": {
   "title": "Building Effective KPI Dashboards That Drive Action",
@@ -1037,17 +1037,17 @@
  "/insights/is-your-business-ready-for-ai": {
   "title": "Is Your Business Ready for AI? A 15-Minute Test for SMB Leaders",
   "description": "Most AI projects fail before implementation begins — for readiness reasons, not technology reasons. Here is the 10-signal test we use with growing companies, and how to read your result.",
-  "image": "/images/adoption-abstract.jpg"
+  "image": "/images/insights/is-your-business-ready-for-ai-hero.jpg"
  },
  "/insights/what-should-a-small-business-automate-first": {
   "title": "What Should a Small Business Automate First?",
   "description": "Not the flashiest process — the most boring one. A practical filter for choosing your first automation, the usual best candidates, and the processes you should never hand to a machine.",
-  "image": "/images/abstract-growth.jpg"
+  "image": "/images/insights/what-should-a-small-business-automate-first-hero.jpg"
  },
  "/insights/ai-readiness-checklist-for-small-business": {
   "title": "The AI Readiness Checklist for Small Businesses (2026)",
   "description": "Ten checks a leadership team can run in fifteen minutes to know whether an AI or automation investment will pay off — with a simple scoring system and honest interpretation bands.",
-  "image": "/images/ai-abstract-visualization.jpg"
+  "image": "/images/insights/ai-readiness-checklist-for-small-business-hero.jpg"
  },
  "/insights/scaling-operations": {
   "title": "Scaling Operations Without Breaking the Bank",

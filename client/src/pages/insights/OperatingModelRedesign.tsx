@@ -13,7 +13,7 @@ export default function OperatingModelRedesign() {
   const relatedInsights = [
     { title: "Why Strategic Plans Fail", category: "Business Strategy", link: "/insights/strategic-plans-success", image: "/images/business-strategy-abstract.jpg" },
     { title: "Portfolio Management Excellence", category: "Business Strategy", link: "/insights/portfolio-management", image: "/images/capabilities/cap-strategy-spheres.jpg" },
-    { title: "Business Transformation Strategy", category: "Business Strategy", link: "/insights/business-transformation-strategy", image: "/images/approach-strategy.jpg" },
+    { title: "Business Transformation Strategy", category: "Business Strategy", link: "/insights/business-transformation-strategy", image: "/images/insights/business-transformation-strategy-hero.jpg" },
   ];
 
   return (
