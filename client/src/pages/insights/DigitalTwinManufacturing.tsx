@@ -10,7 +10,7 @@ export default function DigitalTwinManufacturing() {
   const relatedInsights = [
     { title: "IoT and the Resilient Supply Chain", category: "Operations", link: "/insights/iot-resilient-supply-chain", image: "/images/industries/mfg-robotics.jpg" },
     { title: "The Executive's Guide to Process Mining", category: "Operations", link: "/insights/process-mining-guide", image: "/images/capabilities/cap-battery-factory.jpg" },
-    { title: "Lean Operations at Scale", category: "Operations", link: "/insights/lean-operations", image: "/images/capabilities/cap-robot-factory.jpg" },
+    { title: "Lean Operations at Scale", category: "Operations", link: "/insights/lean-operations-scale", image: "/images/capabilities/cap-robot-factory.jpg" },
   ];
 
   return (

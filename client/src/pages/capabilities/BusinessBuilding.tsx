@@ -52,7 +52,7 @@ export default function BusinessBuilding() {
             tag: "Strategy",
             title:
               "The hidden advantage of building during uncertainty",
-            href: "/insights/building-during-uncertainty",
+            href: "/insights/business-transformation-strategy",
           },
           {
             tag: "Product",
@@ -244,7 +244,7 @@ export default function BusinessBuilding() {
           title: "The hidden advantage of building during uncertainty",
           readTime: "6 min read",
           image: "/images/insight-building-during-uncertainty.jpg",
-          href: "/insights/building-during-uncertainty",
+          href: "/insights/business-transformation-strategy",
         },
         {
           tag: "Product",

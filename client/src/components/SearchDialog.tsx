@@ -147,21 +147,21 @@ const searchData: SearchResult[] = [
     type: 'blog',
     title: 'Why Intelligent Automation Isn\'t Optional Anymore',
     description: 'The competitive imperative driving automation adoption among growing companies',
-    url: '/insights/intelligent-automation-imperative',
+    url: '/insights/why-intelligent-automation-isnt-optional-anymore',
     tags: ['automation', 'strategy', 'competitive advantage', 'digital transformation']
   },
   {
     type: 'blog',
     title: 'How AI Agents Transform Enterprise Operations',
     description: 'Understanding the impact of autonomous AI agents on business processes',
-    url: '/insights/ai-agents-enterprise-operations',
+    url: '/insights/how-ai-agents-transform-enterprise-operations',
     tags: ['ai', 'automation', 'agents', 'operations']
   },
   {
     type: 'blog',
     title: 'The Complete Guide to Process Mining and Optimization',
     description: 'A comprehensive whitepaper on process mining methodologies',
-    url: '/insights/process-mining-optimization-guide',
+    url: '/insights/complete-guide-process-mining',
     tags: ['process mining', 'optimization', 'methodology', 'whitepaper']
   },
   {

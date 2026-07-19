@@ -27,7 +27,7 @@ export default function AutomationROI() {
       relatedContent={[
         {
           title: "Lean Operations for Mid-Size Companies: Beyond the Basics",
-          href: "/capabilities/operations/insights/lean-operations",
+          href: "/capabilities/operations/insights/lean-operations-scale",
           category: "Lean",
         },
         {

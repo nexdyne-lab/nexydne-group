@@ -385,13 +385,13 @@ export default function ProcessAutomation() {
           {
             title: "RPA vs Intelligent Automation: What's Right for You?",
             category: "Technology",
-            link: "/insights/rpa-vs-intelligent-automation",
+            link: "/insights/why-intelligent-automation",
             image: "/images/capabilities/cap-circuit-green.jpg"
           },
           {
             title: "Building an Automation Center of Excellence",
             category: "Strategy",
-            link: "/insights/automation-center-of-excellence",
+            link: "/insights/why-intelligent-automation-isnt-optional-anymore",
             image: "/images/capabilities/cap-ai-search.jpg"
           }
         ]}

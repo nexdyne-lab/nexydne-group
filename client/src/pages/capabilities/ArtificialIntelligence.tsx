@@ -60,12 +60,12 @@ export default function ArtificialIntelligence() {
           {
             tag: "Technology",
             title: "Generative AI for Operations: Beyond the Hype",
-            href: "/insights/generative-ai-operations",
+            href: "/insights/generative-supply-chain",
           },
           {
             tag: "Implementation",
             title: "Building Your First AI Use Case: A Practical Framework",
-            href: "/insights/first-ai-use-case",
+            href: "/insights/practical-ai-guide",
           },
         ],
       }}
@@ -263,14 +263,14 @@ export default function ArtificialIntelligence() {
           title: "Generative AI for Operations: Beyond the Hype",
           readTime: "6 min read",
           image: "/images/insight-genai-operations.jpg",
-          href: "/insights/generative-ai-operations",
+          href: "/insights/generative-supply-chain",
         },
         {
           tag: "Implementation",
           title: "Building Your First AI Use Case: A Practical Framework",
           readTime: "10 min read",
           image: "/images/insight-first-ai-usecase.jpg",
-          href: "/insights/first-ai-use-case",
+          href: "/insights/practical-ai-guide",
         },
       ]}
       // AUTHORED — source closing CTA was generic "Ready to explore AI" copy (no named lead)

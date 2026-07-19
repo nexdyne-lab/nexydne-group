@@ -1072,7 +1072,7 @@ function Router() {
         <Route path="/capabilities/artificial-intelligence/case-studies" component={AICaseStudies} />
         <Route path="/capabilities/artificial-intelligence/insights/ai-roi-framework" component={AIROIFramework} />
         <Route path="/capabilities/artificial-intelligence/case-studies/insurance-document-ai" component={InsuranceDocumentAI} />
-        <Route path="/capabilities/artificial-intelligence/insights/first-ai-use-case" component={FirstAIUseCase} />
+        <Route path="/capabilities/artificial-intelligence/insights/practical-ai-guide" component={FirstAIUseCase} />
         <Route path="/capabilities/artificial-intelligence/insights/ai-governance" component={AIGovernance} />
         <Route path="/capabilities/artificial-intelligence/case-studies/manufacturing-predictive-maintenance" component={ManufacturingPredictiveMaintenanceAI} />
         <Route path="/capabilities/artificial-intelligence/case-studies/saas-customer-service-ai" component={SaaSCustomerServiceAI} />
@@ -1233,7 +1233,7 @@ function Router() {
         <Route path="/solutions/data-driven-customer-intelligence/insights" component={CustomerIntelligenceInsights} />
         <Route path="/solutions/data-driven-customer-intelligence/insights/beyond-segmentation" component={CIBeyondSegmentation} />
         <Route path="/solutions/data-driven-customer-intelligence/insights/churn-prediction-playbook" component={CIChurnPredictionPlaybook} />
-        <Route path="/solutions/data-driven-customer-intelligence/insights/hyper-personalization" component={CIHyperPersonalization} />
+        <Route path="/solutions/data-driven-customer-intelligence/insights/hyper-personalization-at-scale" component={CIHyperPersonalization} />
         <Route path="/solutions/customer-intelligence/predictive-analytics-modeling" component={CIPredictiveAnalyticsModeling} />
         <Route path="/solutions/customer-intelligence/behavioral-segmentation" component={CIBehavioralSegmentation} />
         <Route path="/solutions/customer-intelligence/journey-analytics-optimization" component={CIJourneyAnalyticsOptimization} />
@@ -1570,10 +1570,10 @@ function Router() {
           <Route path="/capabilities/strategy-corporate-finance/case-studies" component={StrategyFinanceCaseStudies} />
           <Route path="/capabilities/strategy-corporate-finance/insights/cfo-guide-ai-investment" component={CFOGuideAIInvestment} />
           <Route path="/capabilities/strategy-corporate-finance/insights/strategic-finance-guide" component={StrategicFinanceGuide} />
-          <Route path="/capabilities/strategy-corporate-finance/insights/capital-raising-2026" component={CapitalRaising2026} />
-          <Route path="/capabilities/strategy-corporate-finance/insights/ma-playbook" component={MAPlaybook} />
-          <Route path="/capabilities/strategy-corporate-finance/insights/fpa-excellence" component={FPAExcellence} />
-          <Route path="/capabilities/strategy-corporate-finance/insights/pricing-strategy" component={PricingStrategy} />
+          <Route path="/capabilities/strategy-corporate-finance/insights/series-a-fundraising-guide" component={CapitalRaising2026} />
+          <Route path="/capabilities/strategy-corporate-finance/insights/ma-commercial-due-diligence" component={MAPlaybook} />
+          <Route path="/capabilities/strategy-corporate-finance/insights/rolling-forecasts" component={FPAExcellence} />
+          <Route path="/capabilities/strategy-corporate-finance/insights/psychology-of-value" component={PricingStrategy} />
           <Route path="/capabilities/strategy-corporate-finance/insights/working-capital" component={WorkingCapital} />
           <Route path="/capabilities/strategy-corporate-finance/case-studies/pe-growth-healthcare" component={PEGrowthHealthcare} />
           <Route path="/capabilities/strategy-corporate-finance/case-studies/manufacturing-acquisition" component={ManufacturingAcquisition} />
@@ -1590,8 +1590,8 @@ function Router() {
           <Route path="/capabilities/operations/case-studies/distribution-warehouse" component={DistributionWarehouse} />
           <Route path="/capabilities/operations/case-studies/food-production-planning" component={FoodProductionPlanning} />
           <Route path="/capabilities/operations/case-studies/healthcare-workforce" component={HealthcareWorkforce} />
-          <Route path="/capabilities/operations/insights/supply-chain-resilience" component={SupplyChainResilience} />
-          <Route path="/capabilities/operations/insights/lean-operations" component={LeanOperations} />
+          <Route path="/capabilities/operations/insights/iot-resilient-supply-chain" component={SupplyChainResilience} />
+          <Route path="/capabilities/operations/insights/lean-operations-scale" component={LeanOperations} />
           <Route path="/capabilities/operations/insights/automation-roi" component={AutomationROI} />
           <Route path="/capabilities/operations/insights/quality-systems" component={QualitySystems} />
           <Route path="/capabilities/operations/insights/workforce-planning" component={WorkforcePlanning} />

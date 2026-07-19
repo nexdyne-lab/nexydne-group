@@ -48,7 +48,7 @@ export default function EnterpriseTransformation() {
           summary:
             "Technology has shifted from a back-office function to the engine that decides whether a company can grow at all. We outline how growth-stage leaders are rebuilding the technology operating model around platform thinking, paved-path engineering, and FinOps discipline so technology compounds rather than drags on the P&L.",
           image: "/images/insight-technology-operating-model.jpg",
-          href: "/insights/technology-operating-model",
+          href: "/insights/operating-model-redesign",
         },
         secondary: [
           {
@@ -61,7 +61,7 @@ export default function EnterpriseTransformation() {
             tag: "Platform Engineering",
             title:
               "Why your internal developer platform is a product, not a project",
-            href: "/insights/platform-engineering-as-product",
+            href: "/insights/scalable-data-architecture",
           },
         ],
       }}
@@ -227,7 +227,7 @@ export default function EnterpriseTransformation() {
             "From cost center to growth engine: rebuilding the technology operating model",
           readTime: "8 min read",
           image: "/images/insight-technology-operating-model.jpg",
-          href: "/insights/technology-operating-model",
+          href: "/insights/operating-model-redesign",
         },
         {
           tag: "Cloud",
@@ -243,7 +243,7 @@ export default function EnterpriseTransformation() {
             "Why your internal developer platform is a product, not a project",
           readTime: "5 min read",
           image: "/images/insight-platform-engineering-product.jpg",
-          href: "/insights/platform-engineering-as-product",
+          href: "/insights/scalable-data-architecture",
         },
       ]}
       // AUTHORED — source closing CTA was a generic two-column form ("Let's talk about your modernization roadmap") with no named lead

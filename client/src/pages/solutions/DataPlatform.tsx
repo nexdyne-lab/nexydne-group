@@ -185,7 +185,7 @@ export default function DataPlatform() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/lakehouse-vs-mesh"
+                  href="/insights/scalable-data-architecture"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   data platform consultants

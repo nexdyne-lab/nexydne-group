@@ -185,7 +185,7 @@ export default function LowcodeDevelopment() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/lowcode-platform-selection"
+                  href="/insights/no-code-marketing-automation"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   lowcode consultants

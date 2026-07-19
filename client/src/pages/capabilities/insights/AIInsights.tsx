@@ -14,7 +14,7 @@ const insights = [
     title: "Building Your First AI Use Case: A Step-by-Step Guide",
     excerpt:
       "How to identify, validate, and implement your organization's first AI initiative without enterprise-level resources.",
-    href: "/capabilities/artificial-intelligence/insights/first-ai-use-case",
+    href: "/capabilities/artificial-intelligence/insights/practical-ai-guide",
     date: "January 2026",
     readTime: "12 min",
     category: "Implementation",

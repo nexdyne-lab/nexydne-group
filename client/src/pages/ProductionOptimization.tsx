@@ -385,13 +385,13 @@ export default function ProductionOptimization() {
           {
             title: "IoT for Predictive Maintenance",
             category: "Technology",
-            link: "/insights/iot-predictive-maintenance",
+            link: "/insights/iot-resilient-supply-chain",
             image: "/images/industries/mfg-robot-arm.jpg"
           },
           {
             title: "Digital Twins in Manufacturing",
             category: "Innovation",
-            link: "/insights/digital-twins-manufacturing",
+            link: "/insights/digital-twin-manufacturing",
             image: "/images/capabilities/cap-robot-factory.jpg"
           }
         ]}

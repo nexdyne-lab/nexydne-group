@@ -30,7 +30,7 @@ export default function SynergyCapture() {
         "Aggressive cost cutting destroys value when it drives customer attrition and talent flight—protect the business while capturing gains.",
       ]}
       relatedInsights={[
-        { title: "The M&A Integration Playbook", category: "M&A Strategy", link: "/insights/ma-playbook", image: "/images/mergers-acquisitions-abstract.jpg" },
+        { title: "The M&A Integration Playbook", category: "M&A Strategy", link: "/insights/ma-commercial-due-diligence", image: "/images/mergers-acquisitions-abstract.jpg" },
         { title: "Why M&A Deals Fail", category: "M&A Strategy", link: "/insights/ma-failure-analysis", image: "/images/ma-partnerships-abstract.jpg" },
         { title: "Commercial Due Diligence", category: "M&A Strategy", link: "/insights/ma-commercial-due-diligence", image: "/images/capital-raising-abstract.jpg" },
       ]}

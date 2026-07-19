@@ -14,7 +14,7 @@ const insights = [
     title: "Capital Raising in 2026: What Growing Companies Need to Know",
     excerpt:
       "Current market conditions, investor expectations, and strategies for successful fundraising.",
-    href: "/capabilities/strategy-corporate-finance/insights/capital-raising-2026",
+    href: "/capabilities/strategy-corporate-finance/insights/series-a-fundraising-guide",
     date: "January 2026",
     readTime: "9 min",
     category: "Capital",
@@ -23,7 +23,7 @@ const insights = [
     title: "M&A for Growth: A Strategic Buyer's Playbook",
     excerpt:
       "How to identify, evaluate, and integrate acquisitions that accelerate your strategic objectives.",
-    href: "/capabilities/strategy-corporate-finance/insights/ma-playbook",
+    href: "/capabilities/strategy-corporate-finance/insights/ma-commercial-due-diligence",
     date: "December 2025",
     readTime: "12 min",
     category: "M&A",
@@ -32,7 +32,7 @@ const insights = [
     title: "Building a World-Class FP&A Function",
     excerpt:
       "The capabilities, tools, and processes that separate good FP&A from great FP&A.",
-    href: "/capabilities/strategy-corporate-finance/insights/fpa-excellence",
+    href: "/capabilities/strategy-corporate-finance/insights/rolling-forecasts",
     date: "December 2025",
     readTime: "8 min",
     category: "FP&A",
@@ -41,7 +41,7 @@ const insights = [
     title: "Pricing Strategy for Profitable Growth",
     excerpt:
       "How to optimize pricing without losing customers, with frameworks for different business models.",
-    href: "/capabilities/strategy-corporate-finance/insights/pricing-strategy",
+    href: "/capabilities/strategy-corporate-finance/insights/psychology-of-value",
     date: "November 2025",
     readTime: "7 min",
     category: "Pricing",

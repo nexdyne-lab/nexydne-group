@@ -24,7 +24,7 @@ const carouselItems: CarouselItem[] = [
     title: "How AI Agents Are Reshaping Enterprise Operations",
     description: "Discover how autonomous AI agents are transforming business workflows and decision-making.",
     image: "/images/capability-ai.png",
-    link: "/insights/ai-agents-enterprise-operations",
+    link: "/insights/how-ai-agents-transform-enterprise-operations",
     orientation: "portrait"
   },
   {
@@ -46,7 +46,7 @@ const carouselItems: CarouselItem[] = [
     title: "Building a Data-Driven Culture",
     description: "Learn the key steps to embed data literacy across your organization.",
     image: "/images/hero-team-2.webp",
-    link: "/insights/data-driven-culture",
+    link: "/insights/building-data-culture",
     orientation: "portrait"
   },
   {
@@ -90,7 +90,7 @@ const carouselItems: CarouselItem[] = [
     title: "Digital Transformation Roadmap for SMBs",
     description: "A practical guide to modernizing your business operations.",
     image: "/images/solution-enterprise-tech.png",
-    link: "/insights/digital-transformation-roadmap",
+    link: "/insights/digital-transformation-readiness",
     orientation: "landscape"
   }
 ];

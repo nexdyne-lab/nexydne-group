@@ -150,17 +150,17 @@ const sitemapData: SitemapSection[] = [
       },
       { 
         label: "Why Intelligent Automation Isn't Optional Anymore", 
-        href: "/insights/intelligent-automation-imperative",
+        href: "/insights/why-intelligent-automation-isnt-optional-anymore",
         description: "The competitive imperative"
       },
       { 
         label: "How AI Agents Transform Enterprise Operations", 
-        href: "/insights/ai-agents-enterprise-operations",
+        href: "/insights/how-ai-agents-transform-enterprise-operations",
         description: "Understanding autonomous AI agents"
       },
       { 
         label: "The Complete Guide to Process Mining and Optimization", 
-        href: "/insights/process-mining-optimization-guide",
+        href: "/insights/complete-guide-process-mining",
         description: "Comprehensive whitepaper"
       },
       { 

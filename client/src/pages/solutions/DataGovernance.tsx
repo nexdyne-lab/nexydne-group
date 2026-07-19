@@ -184,7 +184,7 @@ export default function DataGovernance() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/data-governance-that-sticks"
+                  href="/insights/building-data-culture"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   data governance consultants

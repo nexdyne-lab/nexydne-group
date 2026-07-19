@@ -26,7 +26,7 @@ export default function SubscriptionPricingModels() {
       relatedInsights={[
         { title: "The Psychology of Value", category: "Pricing Strategy", link: "/insights/psychology-of-value", image: "/images/insight-pricing-psychology.jpg" },
         { title: "Algorithmic Pricing for Growing Companies", category: "Pricing Strategy", link: "/insights/algorithmic-pricing-smes", image: "/images/insight-algo-pricing.jpg" },
-        { title: "Pricing Strategy", category: "Business Models", link: "/insights/pricing-strategy", image: "/images/insights-pricing-strategy.jpg" },
+        { title: "Pricing Strategy", category: "Business Models", link: "/insights/psychology-of-value", image: "/images/insights-pricing-strategy.jpg" },
       ]}
     >
       <p>

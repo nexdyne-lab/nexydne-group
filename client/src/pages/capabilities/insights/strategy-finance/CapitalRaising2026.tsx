@@ -34,7 +34,7 @@ export default function CapitalRaising2026() {
         },
         {
           title: "M&A for Growth: A Strategic Buyer's Playbook",
-          href: "/capabilities/strategy-corporate-finance/insights/ma-playbook",
+          href: "/capabilities/strategy-corporate-finance/insights/ma-commercial-due-diligence",
           category: "M&A",
         },
       ]}

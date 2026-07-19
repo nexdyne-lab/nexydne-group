@@ -5,7 +5,7 @@ const insights = [
     title: "Lean Operations for Mid-Size Companies: Beyond the Basics",
     excerpt:
       "Advanced lean techniques adapted for companies without dedicated continuous improvement teams.",
-    href: "/capabilities/operations/insights/lean-operations",
+    href: "/capabilities/operations/insights/lean-operations-scale",
     date: "January 2026",
     readTime: "9 min",
     category: "Lean",
@@ -14,7 +14,7 @@ const insights = [
     title: "Building Supply Chain Resilience Without Breaking the Bank",
     excerpt:
       "Practical strategies for growing companies to strengthen supply chain resilience while managing costs.",
-    href: "/capabilities/operations/insights/supply-chain-resilience",
+    href: "/capabilities/operations/insights/iot-resilient-supply-chain",
     date: "January 2026",
     readTime: "11 min",
     category: "Supply Chain",

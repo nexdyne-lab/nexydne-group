@@ -29,7 +29,7 @@ export default function ValuationMistakes() {
       relatedInsights={[
         { title: "The Complete Guide to Series A Fundraising Preparation", category: "Capital Raising", link: "/insights/series-a-fundraising-guide", image: "/images/capital-raising-abstract.jpg" },
         { title: "Due Diligence Checklist for Growth-Stage Companies", category: "Capital Raising", link: "/insights/due-diligence-checklist", image: "/images/cfo-services-abstract.jpg" },
-        { title: "Capital Raising in 2026", category: "Capital Raising", link: "/insights/capital-raising-2026", image: "/images/ai-powered-finance-abstract.jpg" },
+        { title: "Capital Raising in 2026", category: "Capital Raising", link: "/insights/series-a-fundraising-guide", image: "/images/ai-powered-finance-abstract.jpg" },
       ]}
     >
       <p>

@@ -344,25 +344,25 @@ export default function CampaignAnalytics() {
                 title: "Beyond Last-Click: Modern Attribution Models",
                 description: "Why single-touch attribution fails and how multi-touch models reveal the true drivers of conversion.",
                 image: "/images/capabilities/cap-conference-data.jpg",
-                link: "/insights/modern-attribution"
+                link: "/insights/marketing-data-roi"
               },
               {
                 title: "The Metrics That Matter",
                 description: "Cutting through vanity metrics to identify the KPIs that actually predict business outcomes.",
                 image: "/images/industries/meeting-topview.jpg",
-                link: "/insights/metrics-that-matter"
+                link: "/insights/kpi-dashboards"
               },
               {
                 title: "Building a Data-Driven Marketing Culture",
                 description: "How to move from gut-feel decision making to evidence-based optimization.",
                 image: "/images/capabilities/cap-hands-data.jpg",
-                link: "/insights/data-driven-culture"
+                link: "/insights/building-data-culture"
               },
               {
                 title: "Privacy-First Analytics in 2026",
                 description: "Adapting your measurement strategy for a cookieless world without losing insight.",
                 image: "/images/capabilities/cap-team-screens.jpg",
-                link: "/insights/privacy-first-analytics"
+                link: "/insights/privacy-by-design"
               }
             ].map((item, index) => (
               <motion.div

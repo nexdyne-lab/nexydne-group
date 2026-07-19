@@ -186,7 +186,7 @@ export default function ProcessOrchestration() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/orchestration-vs-automation"
+                  href="/insights/enterprise-integration-playbook"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   orchestration consultants

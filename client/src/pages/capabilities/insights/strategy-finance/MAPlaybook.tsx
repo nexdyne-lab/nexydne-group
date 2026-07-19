@@ -30,7 +30,7 @@ export default function MAPlaybook() {
       relatedContent={[
         {
           title: "Capital Raising in 2026: What Mid-Size Companies Need to Know",
-          href: "/capabilities/strategy-corporate-finance/insights/capital-raising-2026",
+          href: "/capabilities/strategy-corporate-finance/insights/series-a-fundraising-guide",
           category: "Capital",
         },
         {

@@ -186,7 +186,7 @@ export default function RPA() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/rpa-coe-playbook"
+                  href="/insights/why-intelligent-automation"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   RPA consultants

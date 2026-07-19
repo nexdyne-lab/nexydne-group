@@ -33,7 +33,7 @@ export default function WorkingCapital() {
         },
         {
           title: "Building a World-Class FP&A Function",
-          href: "/capabilities/strategy-corporate-finance/insights/fpa-excellence",
+          href: "/capabilities/strategy-corporate-finance/insights/rolling-forecasts",
           category: "FP&A",
         },
       ]}

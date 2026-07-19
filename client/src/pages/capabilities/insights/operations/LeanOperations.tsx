@@ -28,7 +28,7 @@ export default function LeanOperations() {
       relatedContent={[
         {
           title: "Supply Chain Resilience: Lessons from Recent Disruptions",
-          href: "/capabilities/operations/insights/supply-chain-resilience",
+          href: "/capabilities/operations/insights/iot-resilient-supply-chain",
           category: "Supply Chain",
         },
         {

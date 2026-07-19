@@ -16,7 +16,7 @@ export const blogRelatedContent: Record<string, RelatedContentItem[]> = {
     {
       title: 'Measuring ROI on digital transformation initiatives',
       description: 'A practical framework for quantifying the business impact of technology investments and building stakeholder confidence.',
-      link: '/insights/measuring-roi-digital-transformation',
+      link: '/insights/measuring-automation-roi',
       readTime: '6 min read',
       category: 'Strategy',
       type: 'Article',
@@ -25,7 +25,7 @@ export const blogRelatedContent: Record<string, RelatedContentItem[]> = {
     {
       title: 'The complete guide to digital transformation for growing companies',
       description: 'Navigate the complexities of enterprise-wide change with proven strategies from successful transformations.',
-      link: '/insights/digital-transformation-guide',
+      link: '/insights/digital-transformation-readiness',
       readTime: '8 min read',
       category: 'Transformation',
       type: 'Article',
@@ -45,7 +45,7 @@ export const blogRelatedContent: Record<string, RelatedContentItem[]> = {
     {
       title: 'How AI and automation are reshaping business operations',
       description: 'Explore the technologies driving operational excellence and the strategies companies use to implement them successfully.',
-      link: '/insights/ai-automation-business-operations',
+      link: '/insights/ai-automation-reshaping-business',
       readTime: '5 min read',
       category: 'Automation',
       type: 'Article',
@@ -54,7 +54,7 @@ export const blogRelatedContent: Record<string, RelatedContentItem[]> = {
     {
       title: 'Measuring ROI on digital transformation initiatives',
       description: 'A practical framework for quantifying the business impact of technology investments and building stakeholder confidence.',
-      link: '/insights/measuring-roi-digital-transformation',
+      link: '/insights/measuring-automation-roi',
       readTime: '6 min read',
       category: 'Strategy',
       type: 'Article',
@@ -74,7 +74,7 @@ export const blogRelatedContent: Record<string, RelatedContentItem[]> = {
     {
       title: 'How AI and automation are reshaping business operations',
       description: 'Explore the technologies driving operational excellence and the strategies companies use to implement them successfully.',
-      link: '/insights/ai-automation-business-operations',
+      link: '/insights/ai-automation-reshaping-business',
       readTime: '5 min read',
       category: 'Automation',
       type: 'Article',
@@ -83,7 +83,7 @@ export const blogRelatedContent: Record<string, RelatedContentItem[]> = {
     {
       title: 'The complete guide to digital transformation for growing companies',
       description: 'Navigate the complexities of enterprise-wide change with proven strategies from successful transformations.',
-      link: '/insights/digital-transformation-guide',
+      link: '/insights/digital-transformation-readiness',
       readTime: '8 min read',
       category: 'Transformation',
       type: 'Article',
@@ -125,7 +125,7 @@ export const caseStudyRelatedContent: Record<string, RelatedContentItem[]> = {
     {
       title: 'How AI and automation are reshaping business operations',
       description: 'Explore the technologies driving operational excellence and the strategies companies use to implement them successfully.',
-      link: '/insights/ai-automation-business-operations',
+      link: '/insights/ai-automation-reshaping-business',
       readTime: '5 min read',
       category: 'Insights',
       type: 'Article',
@@ -154,7 +154,7 @@ export const caseStudyRelatedContent: Record<string, RelatedContentItem[]> = {
     {
       title: 'Measuring ROI on digital transformation initiatives',
       description: 'A practical framework for quantifying the business impact of technology investments and building stakeholder confidence.',
-      link: '/insights/measuring-roi-digital-transformation',
+      link: '/insights/measuring-automation-roi',
       readTime: '6 min read',
       category: 'Insights',
       type: 'Article',
@@ -183,7 +183,7 @@ export const caseStudyRelatedContent: Record<string, RelatedContentItem[]> = {
     {
       title: 'The complete guide to digital transformation for growing companies',
       description: 'Navigate the complexities of enterprise-wide change with proven strategies from successful transformations.',
-      link: '/insights/digital-transformation-guide',
+      link: '/insights/digital-transformation-readiness',
       readTime: '8 min read',
       category: 'Insights',
       type: 'Article',

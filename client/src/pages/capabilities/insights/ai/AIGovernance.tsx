@@ -37,7 +37,7 @@ export default function AIGovernance() {
         },
         {
           title: "Building Your First AI Use Case",
-          href: "/capabilities/artificial-intelligence/insights/first-ai-use-case",
+          href: "/capabilities/artificial-intelligence/insights/practical-ai-guide",
           category: "Implementation",
         },
         {

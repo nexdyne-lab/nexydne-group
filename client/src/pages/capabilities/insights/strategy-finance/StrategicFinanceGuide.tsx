@@ -31,12 +31,12 @@ export default function StrategicFinanceGuide() {
       relatedContent={[
         {
           title: "Capital Raising in 2026: What Mid-Size Companies Need to Know",
-          href: "/capabilities/strategy-corporate-finance/insights/capital-raising-2026",
+          href: "/capabilities/strategy-corporate-finance/insights/series-a-fundraising-guide",
           category: "Capital",
         },
         {
           title: "Building a World-Class FP&A Function",
-          href: "/capabilities/strategy-corporate-finance/insights/fpa-excellence",
+          href: "/capabilities/strategy-corporate-finance/insights/rolling-forecasts",
           category: "FP&A",
         },
         {

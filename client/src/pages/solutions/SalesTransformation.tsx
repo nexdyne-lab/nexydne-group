@@ -187,7 +187,7 @@ export default function SalesTransformation() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/revops-as-operating-system"
+                  href="/insights/modern-sales-stack"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   sales transformation consultants

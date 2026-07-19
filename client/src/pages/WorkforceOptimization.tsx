@@ -379,19 +379,19 @@ export default function WorkforceOptimization() {
           {
             title: "Building a High-Performance Culture",
             category: "Leadership",
-            link: "/insights/high-performance-culture",
+            link: "/insights/hiring-for-builders",
             image: "/images/capabilities/cap-team-screens.jpg"
           },
           {
             title: "The Future of Work: Trends and Strategies",
             category: "Workforce",
-            link: "/insights/future-of-work",
+            link: "/insights/hiring-for-builders",
             image: "/images/industries/ops-gears.jpg"
           },
           {
             title: "Employee Engagement Best Practices",
             category: "HR",
-            link: "/insights/employee-engagement-best-practices",
+            link: "/insights/hiring-for-builders",
             image: "/images/capabilities/cap-data-bars.jpg"
           }
         ]}

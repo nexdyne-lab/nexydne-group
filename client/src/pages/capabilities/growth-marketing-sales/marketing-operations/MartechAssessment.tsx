@@ -344,25 +344,25 @@ export default function MartechAssessment() {
                 title: "The Hidden Cost of MarTech Sprawl",
                 description: "Why adding more tools often makes marketing less effective—and how to break the cycle.",
                 image: "/images/capabilities/cap-coder.jpg",
-                link: "/insights/martech-sprawl"
+                link: "/insights/future-of-marketing-ops"
               },
               {
                 title: "Build vs. Buy: The Integration Decision",
                 description: "When to invest in custom integrations versus adopting all-in-one platforms.",
                 image: "/images/capabilities/cap-conference-data.jpg",
-                link: "/insights/build-vs-buy"
+                link: "/insights/vendor-selection"
               },
               {
                 title: "Data Quality: The Foundation of MarTech ROI",
                 description: "Why the best tools fail without clean data—and how to fix it.",
                 image: "/images/industries/meeting-topview.jpg",
-                link: "/insights/data-quality-martech"
+                link: "/insights/marketing-data-roi"
               },
               {
                 title: "The 2026 MarTech Landscape",
                 description: "Key trends shaping marketing technology and what they mean for your stack.",
                 image: "/images/capabilities/cap-hands-data.jpg",
-                link: "/insights/martech-landscape-2026"
+                link: "/insights/future-of-marketing-ops"
               }
             ].map((item, index) => (
               <motion.div

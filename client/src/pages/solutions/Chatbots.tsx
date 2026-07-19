@@ -184,7 +184,7 @@ export default function Chatbots() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/chatbot-design-guide"
+                  href="/insights/ai-answers-first-customer-channels"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   chatbot design consultants

@@ -47,20 +47,20 @@ export default function GrowthMarketingSales() {
           summary:
             "Most growing marketing teams are stuck between scrappy execution and enterprise overhead. We outline the operating model, technology choices, and measurement discipline that let growing companies build a marketing engine that scales without the enterprise complexity or budget.",
           image: "/images/insight-marketing-operations.jpg",
-          href: "/insights/marketing-operations",
+          href: "/insights/future-of-marketing-ops",
         },
         secondary: [
           {
             tag: "Customer Experience",
             title:
               "Personalization that pays: A practical guide for growing companies",
-            href: "/insights/personalization-guide",
+            href: "/insights/hyper-personalization-at-scale",
           },
           {
             tag: "Pricing Strategy",
             title:
               "Pricing for growth: Capturing value without losing customers",
-            href: "/insights/pricing-strategy",
+            href: "/insights/psychology-of-value",
           },
         ],
       }}
@@ -292,7 +292,7 @@ export default function GrowthMarketingSales() {
           readTime: "8 min read",
           image:
             "/images/capabilities/cap-data-bars.jpg",
-          href: "/insights/ai-in-sales",
+          href: "/insights/ai-sales-forecasting",
         },
         {
           tag: "Customer Experience",
@@ -301,7 +301,7 @@ export default function GrowthMarketingSales() {
           readTime: "7 min read",
           image:
             "/images/capabilities/cap-celebrate.jpg",
-          href: "/insights/personalization-guide",
+          href: "/insights/hyper-personalization-at-scale",
         },
         {
           tag: "Pricing Strategy",
@@ -310,7 +310,7 @@ export default function GrowthMarketingSales() {
           readTime: "9 min read",
           image:
             "/images/capabilities/cap-retail-apparel.jpg",
-          href: "/insights/pricing-strategy",
+          href: "/insights/psychology-of-value",
         },
       ]}
       // AUTHORED — source closing CTA was generic 'Ready to accelerate your growth' copy (no named lead)

@@ -29,7 +29,7 @@ const insights = [
   },
   {
     id: "hyper-personalization",
-    href: "/solutions/data-driven-customer-intelligence/insights/hyper-personalization",
+    href: "/solutions/data-driven-customer-intelligence/insights/hyper-personalization-at-scale",
     title: "Hyper-Personalization at Scale: A Practical Guide",
     category: "Marketing",
     description: "How to move from basic segmentation to true 1:1 personalization without drowning in complexity or burning through your marketing budget.",

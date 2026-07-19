@@ -186,7 +186,7 @@ export default function DataVisualization() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/dashboard-design-principles"
+                  href="/insights/kpi-dashboards"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   data visualization consultants

@@ -185,7 +185,7 @@ export default function AppDevelopment() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/app-architecture-debt"
+                  href="/insights/composable-architecture"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   app development consultants

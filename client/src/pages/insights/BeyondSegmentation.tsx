@@ -11,7 +11,7 @@ export default function BeyondSegmentation() {
   const relatedInsights = [
     { title: "Privacy by Design: Building Trust in the Age of AI", category: "Marketing", link: "/insights/privacy-by-design", image: "/images/capabilities/cap-retail-apparel.jpg" },
     { title: "The Millisecond Imperative: Real-Time Decision Architectures", category: "Marketing", link: "/insights/real-time-decision-architectures", image: "/images/capabilities/cap-retail-data.jpg" },
-    { title: "Hyper-Personalization at Scale", category: "Marketing", link: "/insights/hyper-personalization", image: "/images/industries/fin-monitors.jpg" },
+    { title: "Hyper-Personalization at Scale", category: "Marketing", link: "/insights/hyper-personalization-at-scale", image: "/images/industries/fin-monitors.jpg" },
   ];
 
   return (

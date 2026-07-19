@@ -31,7 +31,7 @@ export default function AIROIFramework() {
       relatedContent={[
         {
           title: "Building Your First AI Use Case",
-          href: "/capabilities/artificial-intelligence/insights/first-ai-use-case",
+          href: "/capabilities/artificial-intelligence/insights/practical-ai-guide",
           category: "Implementation",
         },
         {
@@ -41,7 +41,7 @@ export default function AIROIFramework() {
         },
         {
           title: "Generative AI in Operations",
-          href: "/capabilities/artificial-intelligence/insights/generative-ai-operations",
+          href: "/capabilities/artificial-intelligence/insights/generative-supply-chain",
           category: "Operations",
         },
       ]}

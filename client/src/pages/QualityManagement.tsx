@@ -387,13 +387,13 @@ export default function QualityManagement() {
           {
             title: "Building a Culture of Continuous Improvement",
             category: "Quality",
-            link: "/insights/continuous-improvement-culture",
+            link: "/insights/performance-improvement-framework",
             image: "/images/industries/mfg-robot-arm.jpg"
           },
           {
             title: "ISO Certification: A Strategic Advantage",
             category: "Compliance",
-            link: "/insights/iso-certification-advantage",
+            link: "/insights/performance-improvement-framework",
             image: "/images/capabilities/cap-robot-factory.jpg"
           }
         ]}

@@ -185,7 +185,7 @@ export default function DataStrategy() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/data-strategy-coupling"
+                  href="/insights/ceo-guide-data-modernization"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   data strategy partners

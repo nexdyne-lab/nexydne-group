@@ -185,7 +185,7 @@ export default function NativeApps() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/native-vs-cross-platform"
+                  href="/insights/composable-architecture"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   native mobile consultants

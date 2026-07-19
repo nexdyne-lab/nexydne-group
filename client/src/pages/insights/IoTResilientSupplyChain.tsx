@@ -10,7 +10,7 @@ export default function IoTResilientSupplyChain() {
   const relatedInsights = [
     { title: "Digital Twins in Manufacturing: From Hype to ROI", category: "Operations", link: "/insights/digital-twin-manufacturing", image: "/images/industries/retail-warehouse.jpg" },
     { title: "The Generative Supply Chain: Scaling Creative with AI", category: "Operations", link: "/insights/generative-supply-chain", image: "/images/capabilities/cap-warehouse-robot.jpg" },
-    { title: "Building Supply Chain Resilience", category: "Operations", link: "/insights/supply-chain-resilience", image: "/images/capabilities/cap-iot-network.jpg" },
+    { title: "Building Supply Chain Resilience", category: "Operations", link: "/insights/iot-resilient-supply-chain", image: "/images/capabilities/cap-iot-network.jpg" },
   ];
 
   return (

@@ -21,7 +21,7 @@ export default function ChurnPredictionPlaybook() {
     {
       title: "Hyper-Personalization at Scale: A Practical Guide",
       category: "Marketing",
-      link: "/solutions/data-driven-customer-intelligence/insights/hyper-personalization",
+      link: "/solutions/data-driven-customer-intelligence/insights/hyper-personalization-at-scale",
       image: "/images/capabilities/cap-colleagues-smile.jpg",
     },
     {

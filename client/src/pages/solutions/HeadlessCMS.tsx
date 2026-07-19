@@ -180,7 +180,7 @@ export default function HeadlessCMS() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/headless-cms-playbook"
+                  href="/insights/headless-commerce-guide"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   headless CMS consultants

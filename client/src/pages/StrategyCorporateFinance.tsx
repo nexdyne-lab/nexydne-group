@@ -48,14 +48,14 @@ export default function StrategyCorporateFinance() {
           summary:
             "Financial leadership has shifted from reactive number-management to building proactive strategic finance functions that turn capital into competitive advantage. We outline how top-performing CFOs are balancing risk management with growth ambition — combining real-time visibility, predictive decision-making, and capital optimization to compete and win in an era of economic uncertainty.",
           image: "/images/insight-cfo-strategic-growth.jpg",
-          href: "/insights/cfo-strategic-growth",
+          href: "/insights/cfo-cash-flow-guide",
         },
         secondary: [
           {
             tag: "Capital Markets",
             title:
               "Preparing for Your Series B: Lessons from 50+ Funding Rounds",
-            href: "/insights/series-b-lessons",
+            href: "/insights/series-a-fundraising-guide",
           },
           {
             tag: "Performance",
@@ -236,7 +236,7 @@ export default function StrategyCorporateFinance() {
             "The CFO's Guide to Strategic Growth in Uncertain Markets",
           readTime: "8 min read",
           image: "/images/insight-cfo-strategic-growth.jpg",
-          href: "/insights/cfo-strategic-growth",
+          href: "/insights/cfo-cash-flow-guide",
         },
         {
           tag: "Capital Markets",
@@ -244,7 +244,7 @@ export default function StrategyCorporateFinance() {
             "Preparing for Your Series B: Lessons from 50+ Funding Rounds",
           readTime: "6 min read",
           image: "/images/insight-series-b-lessons.jpg",
-          href: "/insights/series-b-lessons",
+          href: "/insights/series-a-fundraising-guide",
         },
         {
           tag: "Performance",

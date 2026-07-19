@@ -186,7 +186,7 @@ export default function MachineLearning() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/ml-production-gap"
+                  href="/insights/real-time-decision-architectures"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   machine learning consultants

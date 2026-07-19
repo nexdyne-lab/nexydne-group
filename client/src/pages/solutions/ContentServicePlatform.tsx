@@ -180,7 +180,7 @@ export default function ContentServicePlatform() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/content-service-platform-guide"
+                  href="/insights/headless-commerce-guide"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   content service platform consultants

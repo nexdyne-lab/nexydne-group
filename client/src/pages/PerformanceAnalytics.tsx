@@ -387,13 +387,13 @@ export default function PerformanceAnalytics() {
           {
             title: "Building a Data-Driven Culture",
             category: "Analytics",
-            link: "/insights/data-driven-culture",
+            link: "/insights/building-data-culture",
             image: "/images/capabilities/cap-data-presentation.jpg"
           },
           {
             title: "KPI Frameworks That Drive Results",
             category: "Performance",
-            link: "/insights/kpi-frameworks",
+            link: "/insights/kpi-dashboards",
             image: "/images/industries/fin-monitors.jpg"
           }
         ]}

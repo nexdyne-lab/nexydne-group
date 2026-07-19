@@ -17,14 +17,14 @@ const featuredInsights: InsightCard[] = [
     date: "January 2026",
     title: "How AI Agents Are Reshaping Enterprise Operations",
     description: "Discover how autonomous AI agents are transforming business workflows and decision-making.",
-    link: "/insights/ai-agents-enterprise-operations"
+    link: "/insights/how-ai-agents-transform-enterprise-operations"
   },
   {
     category: "STRATEGY",
     date: "December 2025",
     title: "Building a Data-Driven Culture",
     description: "Learn the key steps to embed data literacy across your organization.",
-    link: "/insights/data-driven-culture"
+    link: "/insights/building-data-culture"
   },
   {
     category: "TECHNOLOGY",

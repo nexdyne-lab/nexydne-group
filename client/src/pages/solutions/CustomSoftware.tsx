@@ -185,7 +185,7 @@ export default function CustomSoftware() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/build-vs-buy-framework"
+                  href="/insights/vendor-selection"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   custom software consultants

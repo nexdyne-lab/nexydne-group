@@ -49,7 +49,7 @@
   "description": "A 200-employee P&C insurer's adjusters spent 60% of their time on document review, stretching claims to 12 days. Intelligent document processing cut it to 3.2 days and saved $1.2M.",
   "image": "/case-insurance-office.f039a4a1.jpg"
  },
- "/capabilities/artificial-intelligence/insights/first-ai-use-case": {
+ "/capabilities/artificial-intelligence/insights/practical-ai-guide": {
   "title": "Building Your First AI Use Case: A Step-by-Step Guide",
   "description": "How to identify, validate, and implement your organization's first AI initiative without enterprise-level resources.",
   "image": "/og-image.jpg"
@@ -109,7 +109,7 @@
   "description": "A practical guide to building and deploying churn prediction models that actually drive retention—from feature engineering to intervention automation.",
   "image": "/images/capabilities/cap-mobile-woman.jpg"
  },
- "/solutions/data-driven-customer-intelligence/insights/hyper-personalization": {
+ "/solutions/data-driven-customer-intelligence/insights/hyper-personalization-at-scale": {
   "title": "Hyper-Personalization at Scale: A Practical Guide",
   "description": "How to move from basic segmentation to true 1:1 personalization without drowning in complexity or burning through your marketing budget.",
   "image": "/images/capabilities/cap-mobile-woman.jpg"
@@ -769,22 +769,22 @@
   "description": "How CFOs at growing companies can shift from financial reporting to strategic business partnership.",
   "image": "/images/cfo-services-abstract.jpg"
  },
- "/capabilities/strategy-corporate-finance/insights/capital-raising-2026": {
+ "/capabilities/strategy-corporate-finance/insights/series-a-fundraising-guide": {
   "title": "Capital Raising in 2026: What Mid-Size Companies Need to Know",
   "description": "Current market conditions, investor expectations, and strategies for successful fundraising.",
   "image": "/images/capital-raising-abstract.jpg"
  },
- "/capabilities/strategy-corporate-finance/insights/ma-playbook": {
+ "/capabilities/strategy-corporate-finance/insights/ma-commercial-due-diligence": {
   "title": "M&A for Growth: A Strategic Buyer's Playbook",
   "description": "How to identify, evaluate, and integrate acquisitions that accelerate your strategic objectives.",
   "image": "/images/mergers-acquisitions-abstract.jpg"
  },
- "/capabilities/strategy-corporate-finance/insights/fpa-excellence": {
+ "/capabilities/strategy-corporate-finance/insights/rolling-forecasts": {
   "title": "Building a World-Class FP&A Function",
   "description": "The capabilities, tools, and processes that separate good FP&A from great FP&A.",
   "image": "/images/fpa-abstract.jpg"
  },
- "/capabilities/strategy-corporate-finance/insights/pricing-strategy": {
+ "/capabilities/strategy-corporate-finance/insights/psychology-of-value": {
   "title": "Pricing Strategy for Profitable Growth",
   "description": "How to optimize pricing without losing customers, with frameworks for different business models.",
   "image": "/images/insights-pricing-strategy.jpg"
@@ -854,12 +854,12 @@
   "description": "A $48M home-health company spent 72% of revenue on labor with clinicians driving 35% of the day and 35% turnover. Scheduling optimization lifted productivity 28% and saved $1.4M.",
   "image": "/case-medical-collaboration.9602cc8c.jpg"
  },
- "/capabilities/operations/insights/supply-chain-resilience": {
+ "/capabilities/operations/insights/iot-resilient-supply-chain": {
   "title": "Building Supply Chain Resilience Without Breaking the Bank",
   "description": "Practical strategies for mid-size companies to strengthen supply chain resilience while managing costs.",
   "image": "/images/supply-chain-optimization-abstract.jpg"
  },
- "/capabilities/operations/insights/lean-operations": {
+ "/capabilities/operations/insights/lean-operations-scale": {
   "title": "Lean Operations for Mid-Size Companies: Beyond the Basics",
   "description": "Advanced lean techniques adapted for companies without dedicated continuous improvement teams.",
   "image": "/og-image.jpg"

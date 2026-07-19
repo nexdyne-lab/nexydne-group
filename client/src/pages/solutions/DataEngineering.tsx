@@ -184,7 +184,7 @@ export default function DataEngineering() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/data-pipeline-reliability"
+                  href="/insights/data-lake-to-value-stream"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   data engineering consultants

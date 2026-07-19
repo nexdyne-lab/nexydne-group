@@ -187,7 +187,7 @@ export default function IPaaS() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/ipaas-modernization-playbook"
+                  href="/insights/integration-playbook"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   integration consultants

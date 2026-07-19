@@ -185,7 +185,7 @@ export default function DigitalEngagement() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/lifecycle-economics"
+                  href="/insights/economics-of-loyalty"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   digital engagement consultants

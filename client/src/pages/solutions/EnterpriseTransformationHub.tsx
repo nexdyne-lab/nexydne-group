@@ -180,7 +180,7 @@ export default function EnterpriseTransformationHub() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 The Enterprise Transformation Hub is the executive starting point — broader than any single technology cluster, narrower than generic strategy. NexDyne's{" "}
                 <Link
-                  href="/insights/enterprise-transformation-playbook"
+                  href="/insights/enterprise-transformation-ai"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   transformation strategy advisors

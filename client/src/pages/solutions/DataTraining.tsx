@@ -180,7 +180,7 @@ export default function DataTraining() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/data-literacy-playbook"
+                  href="/insights/building-data-culture"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   data training consultants

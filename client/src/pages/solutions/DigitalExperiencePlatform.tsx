@@ -184,7 +184,7 @@ export default function DigitalExperiencePlatform() {
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
-                  href="/insights/dxp-implementation-playbook"
+                  href="/insights/headless-commerce-guide"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   digital experience platform consultants

@@ -37,7 +37,7 @@ export const aiRelatedItems: RelatedItem[] = [
     description: "Practical applications of LLMs in enterprise workflows.",
     readTime: "6 min read",
     image: "/images/capabilities/cap-data-presentation.jpg",
-    link: "/insights/generative-ai-enterprise",
+    link: "/insights/enterprise-transformation-ai",
     category: "Innovation"
   },
   {
@@ -55,7 +55,7 @@ export const aiRelatedItems: RelatedItem[] = [
     description: "Frameworks for responsible AI deployment in regulated industries.",
     readTime: "15 min read",
     image: "/images/capabilities/cap-mobile-woman.jpg",
-    link: "/insights/ai-ethics-framework",
+    link: "/insights/eu-ai-act-playbook",
     category: "Governance"
   }
 ];
@@ -67,7 +67,7 @@ export const digitalRelatedItems: RelatedItem[] = [
     description: "Why seamless, omnichannel experiences are the new battleground for loyalty.",
     readTime: "5 min read",
     image: "/images/capabilities/cap-presenting-graphs.jpg",
-    link: "/insights/future-digital-experience",
+    link: "/insights/digital-channels-growth",
     category: "CX"
   },
   {
@@ -76,7 +76,7 @@ export const digitalRelatedItems: RelatedItem[] = [
     description: "Creating intuitive interfaces for the next billion users.",
     readTime: "10 min watch",
     image: "/images/industries/meeting-topview.jpg",
-    link: "/insights/mobile-first-design",
+    link: "/insights/mobile-commerce-optimization",
     category: "Design"
   },
   {
@@ -97,7 +97,7 @@ export const strategyRelatedItems: RelatedItem[] = [
     description: "Strategies for incumbents to compete with digital-native challengers.",
     readTime: "8 min read",
     image: "/images/capabilities/cap-celebrate.jpg",
-    link: "/insights/navigating-disruption",
+    link: "/insights/business-transformation-strategy",
     category: "Strategy"
   },
   {
@@ -106,7 +106,7 @@ export const strategyRelatedItems: RelatedItem[] = [
     description: "Moving from waterfall to agile at an organizational level.",
     readTime: "12 min read",
     image: "/images/industries/advisor-charts.jpg",
-    link: "/insights/agile-enterprise",
+    link: "/insights/operating-model-redesign",
     category: "Transformation"
   },
   {
@@ -115,7 +115,7 @@ export const strategyRelatedItems: RelatedItem[] = [
     description: "How to track and validate returns on innovation investments.",
     readTime: "6 min read",
     image: "/images/capabilities/cap-hands-data.jpg",
-    link: "/insights/innovation-roi",
+    link: "/insights/measuring-automation-roi",
     category: "Finance"
   }
 ];
