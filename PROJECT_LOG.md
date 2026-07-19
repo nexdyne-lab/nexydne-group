@@ -71,6 +71,30 @@ See **`TODO-LATER.md`** for the actionable list. Summary of what's pending:
 
 ## Changelog (newest first)
 
+### 2026-07-19 — Insights catalog refactor: single-source registry + build guard (steps 1–3)
+
+Audit found the /insights landing page linking 16 ghost articles (404s, incl.
+the Editor's Pick) while hiding ~96 real ones — plus 104 more broken /insights
+refs across 69 files site-wide (capabilities, solutions, industries, shared
+components). Root cause: article inventory duplicated in 4 unsynced places.
+
+- **Step 1 — Registry:** `client/src/data/insightsRegistry.ts` = single source
+  of truth (96 entries seeded from the real article components; 1:1 verified
+  against routes; featured/editorsPick flags on real articles). Adding an
+  article = component + route + registry entry, same commit.
+- **Step 2 — Landing page:** /insights fully registry-driven (hero, Editor's
+  Pick, grid of all 96, slug-addressed rails, 7 normalized topic filter groups
+  from 61 raw categories). Removed the data-less industry filter; wired the
+  page's fake newsletter stub to the real trpc subscribe.
+- **Step 3 — Guard + fixes:** `scripts/check-insight-links.mjs` fails the build
+  listing any /insights ref that doesn't match a route (runs FIRST in
+  `npm run build`). Remapped all 77 unique ghost slugs to closest real
+  articles (targets pre-validated); 104 broken refs → 0 across 69 files.
+- Each step verified (tsc/build/tests + headless link-crawl + visual) and
+  committed separately. Steps 4–5 (3 bespoke articles → V2, 404 page rebrand,
+  final QC) follow.
+
+
 ### 2026-07-19 — Social link previews fixed: OG cards + server-side per-route meta
 
 Prep for the Facebook push. Found: the site-wide default og:image (/og-image.jpg)
