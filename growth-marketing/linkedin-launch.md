@@ -58,7 +58,7 @@ AI plans back more right now, the technology or the operations underneath it?
 #AIReadiness #SMB #Operations #Leadership
 ```
 
-## Post #2 — Carousel: "5 signs your business isn't ready for AI" (READY)
+## Post #2 — Carousel: "5 signs your business isn't ready for AI" (READY · post Tue 2026-07-22, 8–10am ET)
 
 **File to upload:** `social-tiles/out/nexdyne-5-signs-carousel.pdf` (7 slides,
 1080×1350). Post as a **document**: personal profile → Start a post → **"Add a
@@ -88,7 +88,7 @@ The full 10-question guide (free, self-scored, 15 minutes):
 https://nexdynegroup.com/resources/ai-readiness-guide
 ```
 
-## Post #3 — Shadow AI (READY)
+## Post #3 — Shadow AI (READY · post Thu 2026-07-24, 8–10am ET)
 
 ```
 Do you know which AI tools your team used this week?
@@ -125,7 +125,7 @@ are we allowed to use"? Mine didn't either, until we made one.
 #ShadowAI #AIGovernance #SMB #Leadership
 ```
 
-## Post #4 — Operations / scaling (READY)
+## Post #4 — Operations / scaling (READY · post Tue 2026-07-29, 8–10am ET)
 
 ```
 Growth doesn't create operational problems.
@@ -158,10 +158,10 @@ the reporting. Curious if that holds here.
 ```
 
 ## Posting schedule
-| When | What |
+| Date | What |
 |---|---|
-| ✅ Sat 2026-07-19 | Post #1 — founder launch (published) |
-| Tue | Post #2 — carousel (document PDF + caption + link-in-comment) |
-| Thu | Post #3 — Shadow AI |
-| next Tue | Post #4 — Operations |
-| ongoing | 2 posts/week Tue+Thu; alternate AI ↔ ops ↔ finance; every post ends with a genuine question |
+| ✅ Sat, Jul 19 2026 | Post #1 — founder launch (published) |
+| **Tue, Jul 22 2026** · 8–10am ET | Post #2 — carousel (upload PDF as document + caption + link in first comment) |
+| **Thu, Jul 24 2026** · 8–10am ET | Post #3 — Shadow AI |
+| **Tue, Jul 29 2026** · 8–10am ET | Post #4 — Operations |
+| Thu, Jul 31 2026 → | Next batch (draft when post #4 goes up); keep 2/week Tue+Thu, alternate AI ↔ ops ↔ finance, every post ends with a genuine question |
