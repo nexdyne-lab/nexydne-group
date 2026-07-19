@@ -5,59 +5,66 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import InsightsFeaturedHero from "@/components/insights/InsightsFeaturedHero";
 import { SEO } from "@/components/SEO";
+import { INSIGHTS } from "@/data/insightsRegistry";
+import { trpc } from "@/lib/trpc";
 
 export default function Insights() {
   // ── Filter + UI state ──────────────────────────────────────────────────────
   const [topicFilter, setTopicFilter] = useState<string>("all");
-  const [industryFilter, setIndustryFilter] = useState<string>("all");
   const [contentTypeFilter, setContentTypeFilter] = useState<string>("articles");
   const [tilesShown, setTilesShown] = useState<number>(12);
   const [email, setEmail] = useState<string>("");
   const [isSubmittingNewsletter, setIsSubmittingNewsletter] = useState<boolean>(false);
   const [newsletterStatus, setNewsletterStatus] = useState<"idle" | "success">("idle");
 
-  // ── Featured article (drives Section 1 hero) ───────────────────────────────
-  const featuredArticle = {
-    slug: "business-transformation-strategy",
-    title: "The HIG Framework: why transformation at growing companies needs more than strategy.",
-    dek: "Most consulting models stop at the deck. NexDyne builds, governs, and scales — across every vertical. Here's the doctrine behind it.",
-    heroImage: "/images/insights-featured-hig.jpg",
-    topic: "Strategy",
-    readTime: "8 min read",
-    date: "April 2026",
+  // ═══════════════════════════════════════════════════════════════════════
+  // CATALOG — everything below derives from the single-source registry
+  // (client/src/data/insightsRegistry.ts). No hardcoded article lists.
+  // ═══════════════════════════════════════════════════════════════════════
+  const withRead = (rt: string) => (rt.trim().endsWith("read") ? rt : `${rt} read`);
+
+  /** Normalize 60+ raw article categories into 7 filterable groups. */
+  const topicGroup = (t: string): string => {
+    const x = t.toLowerCase();
+    if (/governance|risk|security|regulation|compliance|ethic/.test(x)) return "Governance & Risk";
+    if (/\bai\b|automation|agent|intelligen|machine|generative/.test(x)) return "AI & Automation";
+    if (/financ|cfo|capital|fp&a|m&a|valuation|invest|fundrais|working capital/.test(x)) return "Finance";
+    if (/operat|supply|process|lean|quality|manufactur|performance improvement|workforce/.test(x)) return "Operations";
+    if (/market|sales|growth|customer|brand|pricing|loyalty|subscription|revenue|commerce|personali/.test(x)) return "Growth & Customers";
+    if (/tech|data|architect|platform|engineer|cloud|digital|software|integration|analytics/.test(x)) return "Technology & Data";
+    return "Strategy & Leadership";
   };
 
-  // ── Editor's Pick (drives Section 5 signal section — DIFFERENT article) ────
-  const editorsPick = {
-    slug: "ai-governance-the-quiet-discipline-that-makes-transformation-stick",
-    title: "AI governance: the quiet discipline that makes transformation stick.",
-    dek: "Most AI deployments fail not at launch but at month 18. Governance is what turns a one-time deployment into lasting organizational change.",
-    topic: "Governance",
-    readTime: "12 min read",
-    date: "April 2026",
-  };
+  const catalog = INSIGHTS.map((a) => ({
+    ...a,
+    readTime: withRead(a.readTime),
+    group: topicGroup(a.topic),
+  }));
+  const bySlug = new Map(catalog.map((a) => [a.slug, a]));
+  /** Curated rails reference articles BY SLUG (never by index). */
+  const pick = (slugs: string[]) => slugs.map((s) => bySlug.get(s)!).filter(Boolean);
 
-  // ── Filter pill option lists ───────────────────────────────────────────────
+  // ── Featured article (Section 1 hero) — flagged in the registry ────────────
+  const featuredArticle = catalog.find((a) => a.featured) ?? catalog[0];
+
+  // ── Editor's Pick (Section 5) — flagged in the registry ────────────────────
+  const editorsPick = catalog.find((a) => a.editorsPick) ?? catalog[1];
+
+  // ── Filter pill option lists (derived from real data) ──────────────────────
+  const groupOrder = [
+    "AI & Automation",
+    "Governance & Risk",
+    "Operations",
+    "Technology & Data",
+    "Growth & Customers",
+    "Finance",
+    "Strategy & Leadership",
+  ];
   const topicOptions = [
     { value: "all", label: "All" },
-    { value: "Strategy", label: "Strategy" },
-    { value: "Governance", label: "Governance" },
-    { value: "Customer Intelligence", label: "Customer Intelligence" },
-    { value: "Process Optimization", label: "Process Optimization" },
-    { value: "Enterprise Transformation", label: "Enterprise Transformation" },
-    { value: "Business Growth", label: "Business Growth" },
-  ];
-
-  const industryOptions = [
-    { value: "all", label: "All Industries" },
-    { value: "Education", label: "Education" },
-    { value: "Government & Public Sector", label: "Government & Public Sector" },
-    { value: "Agriculture & AgTech", label: "Agriculture & AgTech" },
-    { value: "Healthcare & Life Sciences", label: "Healthcare & Life Sciences" },
-    { value: "Financial Services", label: "Financial Services" },
-    { value: "Manufacturing", label: "Manufacturing" },
-    { value: "Retail & Consumer Goods", label: "Retail & Consumer Goods" },
-    { value: "Professional Services", label: "Professional Services" },
+    ...groupOrder
+      .filter((g) => catalog.some((a) => a.group === g))
+      .map((g) => ({ value: g, label: g })),
   ];
 
   const contentTypeOptions = [
@@ -66,267 +73,53 @@ export default function Insights() {
     { value: "podcasts", label: "Podcasts", disabled: true },
   ];
 
-  // ── Article catalog (primary grid source; spotlight stories first) ─────────
-  const articles = [
-    {
-      slug: "agentic-ai-budget-line",
-      title: "Agentic AI just got a budget line. Most of it will be wasted.",
-      dek: "Agents moved from demo to P&L in one planning cycle. What separates the funded-and-working deployments from the quietly cancelled ones is governance set before the spend.",
-      heroImage: "/images/ai-acceleration-abstract.jpg",
-      topic: "Enterprise Transformation",
-      industry: "Professional Services",
-      readTime: "10 min read",
-      date: "July 2026",
-    },
-    {
-      slug: "eu-ai-act-playbook",
-      title: "The EU AI Act is enforcing in stages — August 2026 is the big one.",
-      dek: "You don't have to build AI to be covered; deploying it is enough. A 90-day compliance posture for growing firms that use AI in hiring, credit, or customer decisions.",
-      heroImage: "/images/business-strategy-abstract.jpg",
-      topic: "Governance",
-      industry: "Financial Services",
-      readTime: "12 min read",
-      date: "July 2026",
-    },
-    {
-      slug: "shadow-ai-inside-your-firm",
-      title: "Shadow AI is the new shadow IT — except this time it makes decisions.",
-      dek: "Unapproved tools are already drafting your proposals and answering your customers. Bans fail quietly; paved-road governance is what actually works.",
-      heroImage: "/images/cyber-abstract.jpg",
-      topic: "Governance",
-      industry: "Professional Services",
-      readTime: "9 min read",
-      date: "July 2026",
-    },
-    {
-      slug: "ai-answers-first-customer-channels",
-      title: "The channel flip: AI now answers first. Customers are deciding if they mind.",
-      dek: "AI has become the first responder in customer channels. Resolution beats deflection — and the human tier is becoming the premium product your best customers pay for.",
-      heroImage: "/images/ai-team-collaboration.jpg",
-      topic: "Customer Intelligence",
-      industry: "Retail & Consumer Goods",
-      readTime: "10 min read",
-      date: "July 2026",
-    },
-    {
-      slug: "predictive-analytics-the-quiet-edge-in-customer-retention",
-      title: "Predictive analytics: the quiet edge in customer retention.",
-      dek: "Most retention programs react to churn. Predictive models intervene before the customer has decided to leave — and the math behind that gap is where margin lives.",
-      heroImage: "/images/insights-predictive-retention.jpg",
-      topic: "Customer Intelligence",
-      industry: "Financial Services",
-      readTime: "9 min read",
-      date: "April 2026",
-    },
-    {
-      slug: "process-mining-what-the-logs-actually-tell-you",
-      title: "Process mining: what the logs actually tell you.",
-      dek: "Workflow diagrams describe what should happen. Process mining surfaces what does. The gap between the two is the cost center most operators can't see.",
-      heroImage: "/images/insights-process-mining.jpg",
-      topic: "Process Optimization",
-      industry: "Manufacturing",
-      readTime: "11 min read",
-      date: "April 2026",
-    },
-    {
-      slug: "ai-pilots-to-platform-the-month-18-problem",
-      title: "From AI pilots to platform: the month-18 problem.",
-      dek: "Most enterprises can ship a successful AI pilot. Far fewer turn it into a platform. The transition is where transformation actually happens — or quietly stalls.",
-      heroImage: "/images/insights-ai-platform.jpg",
-      topic: "Enterprise Transformation",
-      industry: "Healthcare & Life Sciences",
-      readTime: "13 min read",
-      date: "March 2026",
-    },
-    {
-      slug: "behavioral-segmentation-beyond-the-persona-deck",
-      title: "Behavioral segmentation beyond the persona deck.",
-      dek: "Persona decks describe who the customer was last quarter. Behavioral segmentation reveals what they're about to do. Three case studies on the difference.",
-      heroImage: "/images/insights-behavioral-segmentation.jpg",
-      topic: "Customer Intelligence",
-      industry: "Retail & Consumer Goods",
-      readTime: "7 min read",
-      date: "March 2026",
-    },
-    {
-      slug: "the-governance-gap-why-most-ai-policies-fail-quietly",
-      title: "The governance gap: why most AI policies fail quietly.",
-      dek: "Boards approve AI governance frameworks. Practitioners route around them. What separates the policies that hold from the ones that fold.",
-      heroImage: "/images/insights-governance-gap.jpg",
-      topic: "Governance",
-      industry: "Government & Public Sector",
-      readTime: "10 min read",
-      date: "March 2026",
-    },
-    {
-      slug: "growth-after-product-market-fit-the-second-curve",
-      title: "Growth after product-market fit: the second curve.",
-      dek: "The first curve is finding what customers want. The second is engineering the systems that scale it. Most growth stalls happen between the two.",
-      heroImage: "/images/insights-second-curve.jpg",
-      topic: "Business Growth",
-      industry: "Professional Services",
-      readTime: "8 min read",
-      date: "March 2026",
-    },
-    {
-      slug: "modernizing-legacy-without-the-rip-and-replace-trap",
-      title: "Modernizing legacy without the rip-and-replace trap.",
-      dek: "Wholesale replacement is the most expensive form of risk transfer. There's a quieter path that compounds — and it starts with the parts you don't replace.",
-      heroImage: "/images/insights-legacy-modernization.jpg",
-      topic: "Enterprise Transformation",
-      industry: "Manufacturing",
-      readTime: "12 min read",
-      date: "February 2026",
-    },
-    {
-      slug: "customer-data-platforms-when-they-pay-back",
-      title: "Customer data platforms: when they actually pay back.",
-      dek: "CDPs ship with a payback narrative the vendor wrote. The real economics depend on three operational variables most evaluations skip.",
-      heroImage: "/images/insights-cdp-payback.jpg",
-      topic: "Customer Intelligence",
-      industry: "Retail & Consumer Goods",
-      readTime: "9 min read",
-      date: "February 2026",
-    },
-    {
-      slug: "intelligent-automation-stop-automating-the-wrong-work",
-      title: "Intelligent automation: stop automating the wrong work.",
-      dek: "Automation ROI hinges on what you choose not to automate. A field guide to the diagnostic our process leads run before any RPA brief gets written.",
-      heroImage: "/images/insights-intelligent-automation.jpg",
-      topic: "Process Optimization",
-      industry: "Financial Services",
-      readTime: "10 min read",
-      date: "February 2026",
-    },
-    {
-      slug: "the-board-conversation-about-ai-that-isnt-happening",
-      title: "The board conversation about AI that isn't happening.",
-      dek: "Most boards are asking about AI strategy. Few are asking about AI accountability. The strategic risk lives almost entirely in the second question.",
-      heroImage: "/images/insights-board-ai-conversation.jpg",
-      topic: "Governance",
-      industry: "Financial Services",
-      readTime: "6 min read",
-      date: "February 2026",
-    },
-    {
-      slug: "go-to-market-acceleration-when-speed-helps-and-when-it-burns",
-      title: "Go-to-market acceleration: when speed helps and when it burns.",
-      dek: "Faster GTM works only when the underlying offer is repeatable. A practical test for distinguishing acceleration from premature scaling.",
-      heroImage: "/images/insights-gtm-acceleration.jpg",
-      topic: "Business Growth",
-      industry: "Education",
-      readTime: "7 min read",
-      date: "January 2026",
-    },
-    {
-      slug: "data-platform-engineering-the-foundation-everyone-skips",
-      title: "Data platform engineering: the foundation everyone skips.",
-      dek: "Analytics dashboards get the budget. The platform underneath them gets the postmortem. Why the order needs to flip — and what it takes to flip it.",
-      heroImage: "/images/insights-data-platform.jpg",
-      topic: "Enterprise Transformation",
-      industry: "Healthcare & Life Sciences",
-      readTime: "11 min read",
-      date: "January 2026",
-    },
-    {
-      slug: "voice-of-customer-programs-that-actually-change-the-product",
-      title: "Voice-of-customer programs that actually change the product.",
-      dek: "VoC programs collect signal at industrial scale and convert almost none of it into product change. The conversion mechanism is the program — not the survey.",
-      heroImage: "/images/insights-voc-product.jpg",
-      topic: "Customer Intelligence",
-      industry: "Agriculture & AgTech",
-      readTime: "8 min read",
-      date: "January 2026",
-    },
-    {
-      slug: "workflow-optimization-the-hidden-cost-of-context-switching",
-      title: "Workflow optimization: the hidden cost of context switching.",
-      dek: "The biggest productivity tax in modern operations is the switch between systems. Three patterns that quietly reclaim 15-25% of operator time.",
-      heroImage: "/images/insights-context-switching.jpg",
-      topic: "Process Optimization",
-      industry: "Professional Services",
-      readTime: "5 min read",
-      date: "January 2026",
-    },
-    {
-      slug: "algorithmic-pricing-smes",
-      title: "Pricing strategy: the discipline most growing companies defer.",
-      dek: "Pricing is the highest-leverage decision a growing company makes — and the one most often delegated to spreadsheets. Why the delegation costs more than it saves.",
-      heroImage: "/images/insights-pricing-strategy.jpg",
-      topic: "Business Growth",
-      industry: "Manufacturing",
-      readTime: "9 min read",
-      date: "January 2026",
-    },
-    {
-      slug: "building-a-case-for-change-without-a-burning-platform",
-      title: "Building a case for change without a burning platform.",
-      dek: "Crisis-driven transformation is overpriced. The harder, more durable mandate is one built before the crisis. A field-tested narrative architecture.",
-      heroImage: "/images/insights-case-for-change.jpg",
-      topic: "Strategy",
-      industry: "Education",
-      readTime: "14 min read",
-      date: "January 2026",
-    },
-  ];
+  // ── Article grid source: the full catalog minus the hero feature ───────────
+  const articles = catalog.filter((a) => a.slug !== featuredArticle.slug);
 
-  // ── Curated topic rails (3 hand-picked clusters, 3 articles each) ──────────
+  // ── Curated rails (slug-addressed — a bad slug is dropped, never a crash) ──
   const topicRails = [
     {
-      eyebrow: "DEEP DIVE",
-      title: "Customer intelligence done right",
-      articles: [
-        articles[4], // predictive analytics
-        articles[7], // behavioral segmentation
-        articles[11], // CDP payback
-      ],
+      eyebrow: "THE AI AGENDA",
+      title: "Govern first, then scale",
+      articles: pick(["shadow-ai-inside-your-firm", "agentic-ai-budget-line", "ai-adoption-outlook-2026"]),
     },
     {
-      eyebrow: "NEW POV",
-      title: "Process optimization at scale",
-      articles: [
-        articles[5], // process mining
-        articles[12], // intelligent automation
-        articles[17], // workflow optimization
-      ],
+      eyebrow: "START HERE",
+      title: "Readiness before investment",
+      articles: pick(["is-your-business-ready-for-ai", "what-should-a-small-business-automate-first", "ai-readiness-checklist-for-small-business"]),
     },
     {
       eyebrow: "FROM THE FIELD",
-      title: "Enterprise transformation playbooks",
-      articles: [
-        articles[6], // ai pilots to platform
-        articles[10], // legacy modernization
-        articles[15], // data platform engineering
-      ],
+      title: "Operations that scale",
+      articles: pick(["scaling-operations", "measuring-automation-roi", "efficiency-improvement-reality"]),
     },
   ];
 
   // ── Filter + pagination logic ──────────────────────────────────────────────
   const filteredArticles = articles.filter((article) => {
-    if (topicFilter !== "all" && article.topic !== topicFilter) return false;
-    if (industryFilter !== "all" && article.industry !== industryFilter) return false;
+    if (topicFilter !== "all" && article.group !== topicFilter) return false;
     // contentTypeFilter is "articles" by default; reports/podcasts are disabled at v1
     return true;
   });
   const visibleArticles = filteredArticles.slice(0, tilesShown);
-  const hasFiltersActive = topicFilter !== "all" || industryFilter !== "all";
+  const hasFiltersActive = topicFilter !== "all";
 
   const resetFilters = () => {
     setTopicFilter("all");
-    setIndustryFilter("all");
     setTilesShown(12);
   };
 
   // ── Newsletter submit handler (stub — backend wiring is a follow-up) ───────
+  const subscribeNewsletter = trpc.newsletter.subscribe.useMutation();
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmittingNewsletter(true);
-
-    // Example: await fetch('/api/newsletter', { method: 'POST', body: JSON.stringify({ email }) });
-    await new Promise((resolve) => setTimeout(resolve, 600));
-
-    setIsSubmittingNewsletter(false);
-    setNewsletterStatus("success");
+    try {
+      await subscribeNewsletter.mutateAsync({ email });
+      setNewsletterStatus("success");
+    } finally {
+      setIsSubmittingNewsletter(false);
+    }
   };
 
   return (
@@ -390,33 +183,6 @@ export default function Insights() {
                       type="button"
                       onClick={() => {
                         setTopicFilter(opt.value);
-                        setTilesShown(12);
-                      }}
-                      className={
-                        isActive
-                          ? "inline-flex items-center rounded-full px-4 py-2 text-[12px] uppercase tracking-[0.1em] bg-primary text-white cursor-pointer transition-colors"
-                          : "inline-flex items-center rounded-full px-4 py-2 text-[12px] uppercase tracking-[0.1em] border border-border text-charcoal/70 hover:border-charcoal hover:text-charcoal transition-colors cursor-pointer"
-                      }
-                    >
-                      {opt.label}
-                    </button>
-                  );
-                })}
-              </div>
-
-              {/* Industry pills */}
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/50 mr-2">
-                  Industry
-                </span>
-                {industryOptions.map((opt) => {
-                  const isActive = industryFilter === opt.value;
-                  return (
-                    <button
-                      key={opt.value}
-                      type="button"
-                      onClick={() => {
-                        setIndustryFilter(opt.value);
                         setTilesShown(12);
                       }}
                       className={
