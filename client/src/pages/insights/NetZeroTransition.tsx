@@ -8,9 +8,9 @@ export default function NetZeroTransition() {
   ];
 
   const relatedInsights = [
-    { title: "Making Sense of Carbon Markets", category: "Sustainability", link: "/insights/carbon-markets", image: "/images/insight-carbon-markets.jpg" },
-    { title: "The Green Growth Imperative", category: "Sustainability", link: "/insights/green-growth-imperative", image: "/images/green-growth-hero.jpg" },
-    { title: "The Rise of Green Materials", category: "Sustainability", link: "/insights/green-materials", image: "/images/insight-green-materials.jpg" },
+    { title: "Making Sense of Carbon Markets", category: "Sustainability", link: "/insights/carbon-markets", image: "/images/insights/carbon-markets-hero.jpg" },
+    { title: "The Green Growth Imperative", category: "Sustainability", link: "/insights/green-growth-imperative", image: "/images/insights/green-growth-imperative-hero.jpg" },
+    { title: "The Rise of Green Materials", category: "Sustainability", link: "/insights/green-materials", image: "/images/insights/green-materials-hero.jpg" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function NetZeroTransition() {
       category="Report"
       title="The Net Zero Transition: What it would cost, what it could bring"
       subtitle="A comprehensive analysis of the economic transformation required to achieve net-zero emissions by 2050."
-      heroImage="/images/insight-net-zero.jpg"
+      heroImage="/images/insights/net-zero-transition-hero.jpg"
       readTime="6 min"
       sections={sections}
       keyTakeaways={[

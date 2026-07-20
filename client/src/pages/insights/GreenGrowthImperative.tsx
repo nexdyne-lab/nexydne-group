@@ -9,9 +9,9 @@ export default function GreenGrowthImperative() {
   ];
 
   const relatedInsights = [
-    { title: "The Net Zero Transition: What it would cost, what it could bring", category: "Sustainability", link: "/insights/net-zero-transition", image: "/images/insight-net-zero.jpg" },
-    { title: "Carbon Markets 2025: From Voluntary to Compliance", category: "Sustainability", link: "/insights/carbon-markets", image: "/images/insight-carbon-markets.jpg" },
-    { title: "The Green Materials Revolution", category: "Sustainability", link: "/insights/green-materials", image: "/images/insight-green-materials.jpg" },
+    { title: "The Net Zero Transition: What it would cost, what it could bring", category: "Sustainability", link: "/insights/net-zero-transition", image: "/images/insights/net-zero-transition-hero.jpg" },
+    { title: "Carbon Markets 2025: From Voluntary to Compliance", category: "Sustainability", link: "/insights/carbon-markets", image: "/images/insights/carbon-markets-hero.jpg" },
+    { title: "The Green Materials Revolution", category: "Sustainability", link: "/insights/green-materials", image: "/images/insights/green-materials-hero.jpg" },
   ];
 
   return (
@@ -20,7 +20,7 @@ export default function GreenGrowthImperative() {
       categoryHref="/insights"
       title="Green Growth"
       subtitle="Companies don't have to choose between sustainability and growth—they can have both."
-      heroImage="/images/green-growth-hero.jpg"
+      heroImage="/images/insights/green-growth-imperative-hero.jpg"
       readTime="6 min"
       sections={sections}
       keyTakeaways={[

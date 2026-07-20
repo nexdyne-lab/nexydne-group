@@ -9,8 +9,8 @@ export default function FutureOfMarketingOps() {
   ];
 
   const relatedInsights = [
-    { title: "No-code marketing automation", category: "Marketing Operations", link: "/insights/no-code-marketing-automation", image: "/images/go-to-market-abstract.jpg" },
-    { title: "Marketing data ROI", category: "Marketing Operations", link: "/insights/marketing-data-roi", image: "/images/performance-intelligence-abstract.jpg" },
+    { title: "No-code marketing automation", category: "Marketing Operations", link: "/insights/no-code-marketing-automation", image: "/images/insights/no-code-marketing-automation-hero.jpg" },
+    { title: "Marketing data ROI", category: "Marketing Operations", link: "/insights/marketing-data-roi", image: "/images/insights/marketing-data-roi-hero.jpg" },
     { title: "Growth in the age of generative AI", category: "Growth & Marketing", link: "/insights/growth-marketing", image: "/images/abstract-growth.jpg" },
   ];
 
@@ -19,7 +19,7 @@ export default function FutureOfMarketingOps() {
       category="Marketing Operations"
       title="The future of marketing operations: from support function to strategic engine"
       subtitle="Marketing Operations (MOPs) is no longer just about managing tools. It's about orchestrating the entire customer lifecycle."
-      heroImage="/images/insight-marketing-operations.jpg"
+      heroImage="/images/insights/future-of-marketing-ops-hero.jpg"
       publishDate="January 12, 2026"
       readTime="6 min"
       sections={sections}

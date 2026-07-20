@@ -11,9 +11,9 @@ export default function CloudNativeArchitecture() {
   ];
 
   const relatedInsights = [
-    { title: "Building a Data-Driven Culture", category: "Insight", link: "/insights/building-data-culture", image: "/images/insight-data-culture.jpg" },
-    { title: "The CEO's Guide to Digital Growth", category: "Article", link: "/insights/digital-growth-playbook", image: "/images/digital-transformation-abstract.jpg" },
-    { title: "How AI Agents Transform Enterprise Operations", category: "Insight", link: "/insights/ai-agents-transform-operations", image: "/images/insight-ai-powered-operations.jpg" },
+    { title: "Building a Data-Driven Culture", category: "Insight", link: "/insights/building-data-culture", image: "/images/insights/building-data-culture-hero.jpg" },
+    { title: "The CEO's Guide to Digital Growth", category: "Article", link: "/insights/digital-growth-playbook", image: "/images/insights/digital-growth-playbook-hero.jpg" },
+    { title: "How AI Agents Transform Enterprise Operations", category: "Insight", link: "/insights/ai-agents-transform-operations", image: "/images/insights/ai-agents-transform-operations-hero.jpg" },
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function CloudNativeArchitecture() {
       category="Technology"
       title="Cloud-Native Architecture for Scale: Building Infrastructure That Grows With Your Ambition"
       subtitle="Modern enterprises need infrastructure that scales with ambition. Explore the principles of building resilient, scalable cloud-native systems for sustainable growth."
-      heroImage="/hero-architecture-new.8c87389d.png"
+      heroImage="/images/insights/cloud-native-architecture-hero.jpg"
       heroCaption="Cloud-native architecture enables organizations to build systems that are resilient, scalable, and continuously improving."
       publishDate="August 2025"
       readTime="18 min"

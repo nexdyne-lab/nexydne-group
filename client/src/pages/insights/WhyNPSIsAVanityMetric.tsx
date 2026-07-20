@@ -9,9 +9,9 @@ export default function WhyNPSIsAVanityMetric() {
   ];
 
   const relatedInsights = [
-    { title: "The Churn Prediction Playbook", category: "Technical Guide", link: "/insights/churn-prediction-playbook", image: "/images/case-data-retail.jpg" },
-    { title: "The Economics of Loyalty", category: "Unit Economics", link: "/insights/economics-of-loyalty", image: "/images/business-strategy-abstract.jpg" },
-    { title: "Customer Intelligence at Scale", category: "Data Science", link: "/insights/customer-intelligence", image: "/images/data-abstract.jpg" },
+    { title: "The Churn Prediction Playbook", category: "Technical Guide", link: "/insights/churn-prediction-playbook", image: "/images/insights/churn-prediction-playbook-hero.jpg" },
+    { title: "The Economics of Loyalty", category: "Unit Economics", link: "/insights/economics-of-loyalty", image: "/images/insights/economics-of-loyalty-hero.jpg" },
+    { title: "Customer Intelligence at Scale", category: "Data Science", link: "/insights/customer-intelligence", image: "/images/insights/customer-intelligence-hero.jpg" },
   ];
 
   return (
@@ -20,7 +20,7 @@ export default function WhyNPSIsAVanityMetric() {
       categoryHref="/insights"
       title="Why NPS is a Vanity Metric (And What to Track Instead)"
       subtitle="Net Promoter Score tells you how customers felt yesterday. It doesn't tell you who will leave tomorrow. Here is the engineering approach to health scoring."
-      heroImage="/images/capabilities/cap-retail-data.jpg"
+      heroImage="/images/insights/why-nps-is-a-vanity-metric-hero.jpg"
       publishDate="February 28, 2025"
       readTime="6 min"
       sections={sections}

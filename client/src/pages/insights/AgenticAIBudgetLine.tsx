@@ -15,8 +15,8 @@ export default function AgenticAIBudgetLine() {
   ];
 
   const relatedInsights = [
-    { title: "The AI Adoption Outlook 2026", category: "Featured Insight", link: "/insights/ai-adoption-outlook-2026", image: "/images/agentic-ai-abstract.jpg" },
-    { title: "How AI Agents Are Reshaping Enterprise Operations", category: "AI in Enterprise", link: "/insights/ai-agents-transform-operations", image: "/images/ai-in-enterprises.jpg" },
+    { title: "The AI Adoption Outlook 2026", category: "Featured Insight", link: "/insights/ai-adoption-outlook-2026", image: "/images/insights/ai-adoption-outlook-2026-hero.jpg" },
+    { title: "How AI Agents Are Reshaping Enterprise Operations", category: "AI in Enterprise", link: "/insights/ai-agents-transform-operations", image: "/images/insights/ai-agents-transform-operations-hero.jpg" },
     { title: "AI in the CFO's Office", category: "Strategy & Finance", link: "/insights/strategy-finance", image: "/images/ai-powered-finance-abstract.jpg" },
   ];
 
@@ -33,7 +33,7 @@ export default function AgenticAIBudgetLine() {
       categoryHref="/insights"
       title="Agentic AI Just Got a Budget Line. Most of It Will Be Wasted."
       subtitle="Autonomous agents have moved from demo to P&L in a single planning cycle. The firms that get a return will be the ones that fund workflows, not pilots — and govern agents like employees, not software."
-      heroImage="/images/ai-acceleration-abstract.jpg"
+      heroImage="/images/insights/agentic-ai-budget-line-hero.jpg"
       publishDate="July 6, 2026"
       readTime="8 min"
       sections={sections}

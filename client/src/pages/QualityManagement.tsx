@@ -382,19 +382,19 @@ export default function QualityManagement() {
             title: "The Complete Guide to Process Mining",
             category: "Operations",
             link: "/insights/complete-guide-process-mining",
-            image: "/images/capabilities/cap-battery-factory.jpg"
+            image: "/images/insights/complete-guide-process-mining-hero.jpg"
           },
           {
             title: "Building a Culture of Continuous Improvement",
             category: "Quality",
             link: "/insights/performance-improvement-framework",
-            image: "/images/industries/mfg-robot-arm.jpg"
+            image: "/images/insights/performance-improvement-framework-hero.jpg"
           },
           {
             title: "ISO Certification: A Strategic Advantage",
             category: "Compliance",
             link: "/insights/performance-improvement-framework",
-            image: "/images/capabilities/cap-robot-factory.jpg"
+            image: "/images/insights/performance-improvement-framework-hero.jpg"
           }
         ]}
       />

@@ -9,9 +9,9 @@ export default function BusinessTransformationStrategy() {
   ];
 
   const relatedInsights = [
-    { title: "The Performance Improvement Framework", category: "Performance", link: "/insights/performance-improvement-framework", image: "/images/capabilities/cap-telescope.jpg" },
-    { title: "Synergy Capture: From Promise to Reality", category: "M&A", link: "/insights/synergy-capture", image: "/images/industries/team-strategy-board.jpg" },
-    { title: "The Series A Fundraising Guide", category: "Fundraising", link: "/insights/series-a-fundraising-guide", image: "/images/capabilities/cap-aerial-grid.jpg" },
+    { title: "The Performance Improvement Framework", category: "Performance", link: "/insights/performance-improvement-framework", image: "/images/insights/performance-improvement-framework-hero.jpg" },
+    { title: "Synergy Capture: From Promise to Reality", category: "M&A", link: "/insights/synergy-capture", image: "/images/insights/synergy-capture-hero.jpg" },
+    { title: "The Series A Fundraising Guide", category: "Fundraising", link: "/insights/series-a-fundraising-guide", image: "/images/insights/series-a-fundraising-guide-hero.jpg" },
   ];
 
   return (

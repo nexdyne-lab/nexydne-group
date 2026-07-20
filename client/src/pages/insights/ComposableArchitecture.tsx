@@ -8,9 +8,9 @@ export default function ComposableArchitecture() {
   ];
 
   const relatedInsights = [
-    { title: "Cloud-Native Architecture", category: "Technology", link: "/insights/cloud-native-architecture", image: "/images/cloud-abstract.jpg" },
-    { title: "The Headless Commerce Guide", category: "Architecture", link: "/insights/headless-commerce-guide", image: "/images/capabilities/cap-retail-data.jpg" },
-    { title: "The Enterprise Integration Playbook", category: "Integration", link: "/insights/enterprise-integration-playbook", image: "/images/devops-automation-hub-abstract.jpg" },
+    { title: "Cloud-Native Architecture", category: "Technology", link: "/insights/cloud-native-architecture", image: "/images/insights/cloud-native-architecture-hero.jpg" },
+    { title: "The Headless Commerce Guide", category: "Architecture", link: "/insights/headless-commerce-guide", image: "/images/insights/headless-commerce-guide-hero.jpg" },
+    { title: "The Enterprise Integration Playbook", category: "Integration", link: "/insights/enterprise-integration-playbook", image: "/images/insights/enterprise-integration-playbook-hero.jpg" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function ComposableArchitecture() {
       category="Architecture"
       title="The End of the Monolith: Why Composable Architecture Wins"
       subtitle="The shift from all-in-one suites to best-of-breed stacks is accelerating. Here's why 'composable' is the future of enterprise tech."
-      heroImage="/images/cloud-infrastructure-hub-abstract.jpg"
+      heroImage="/images/insights/composable-architecture-hero.jpg"
       publishDate="April 14, 2026"
       readTime="8 min"
       sections={sections}

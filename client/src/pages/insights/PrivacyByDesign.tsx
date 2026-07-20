@@ -9,9 +9,9 @@ export default function PrivacyByDesign() {
   ];
 
   const relatedInsights = [
-    { title: "Beyond Segmentation: The Era of N=1 Marketing", category: "Growth & Marketing", link: "/insights/beyond-segmentation", image: "/images/capabilities/cap-data-bars.jpg" },
-    { title: "Building a Data-Driven Culture: Beyond the Tools", category: "Data & Analytics", link: "/insights/building-data-culture", image: "/images/capabilities/cap-data-presentation.jpg" },
-    { title: "Hyper-Personalization at Scale", category: "Growth & Marketing", link: "/insights/hyper-personalization-at-scale", image: "/images/insight-data-culture.jpg" },
+    { title: "Beyond Segmentation: The Era of N=1 Marketing", category: "Growth & Marketing", link: "/insights/beyond-segmentation", image: "/images/insights/beyond-segmentation-hero.jpg" },
+    { title: "Building a Data-Driven Culture: Beyond the Tools", category: "Data & Analytics", link: "/insights/building-data-culture", image: "/images/insights/building-data-culture-hero.jpg" },
+    { title: "Hyper-Personalization at Scale", category: "Growth & Marketing", link: "/insights/hyper-personalization-at-scale", image: "/images/insights/hyper-personalization-at-scale-hero.jpg" },
   ];
 
   return (
@@ -19,7 +19,7 @@ export default function PrivacyByDesign() {
       category="Data Privacy"
       title="Privacy by Design: Building Trust in the Age of AI"
       subtitle="Navigating the paradox of personalization: how to deliver hyper-relevant experiences while adhering to the strictest data privacy standards."
-      heroImage="/images/cyber-abstract.jpg"
+      heroImage="/images/insights/privacy-by-design-hero.jpg"
       publishDate="January 15, 2026"
       readTime="8 min"
       sections={sections}

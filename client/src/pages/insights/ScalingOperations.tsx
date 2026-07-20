@@ -6,19 +6,19 @@ export default function ScalingOperations() {
       title: "How Growing Companies Are Winning with AI",
       category: "Featured",
       link: "/insights/practical-ai-guide",
-      image: "/images/insight-ai-midmarket.jpg"
+      image: "/images/insights/practical-ai-guide-hero.jpg"
     },
     {
       title: "5 Signs Your Business Is Ready for Digital Transformation",
       category: "Digital Strategy",
       link: "/insights/digital-transformation-readiness",
-      image: "/images/insight-digital-transform.jpg"
+      image: "/images/insights/digital-transformation-readiness-hero.jpg"
     },
     {
       title: "Customer Intelligence for Growing Businesses",
       category: "Customer Strategy",
       link: "/insights/customer-intelligence",
-      image: "/images/insight-customer-intel.jpg"
+      image: "/images/insights/customer-intelligence-hero.jpg"
     }
   ];
 
@@ -38,7 +38,7 @@ export default function ScalingOperations() {
       category="Operations"
       title="Scaling Operations Without Breaking the Bank"
       subtitle="Cost-effective strategies for growing companies looking to grow efficiently."
-      heroImage="/images/insight-scaling-ops.jpg"
+      heroImage="/images/insights/scaling-operations-hero.jpg"
       readTime="7 min"
       publishDate="January 5, 2026"
       sections={sections}

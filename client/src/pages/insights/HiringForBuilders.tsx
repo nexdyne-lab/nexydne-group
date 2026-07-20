@@ -9,9 +9,9 @@ export default function HiringForBuilders() {
   ];
 
   const relatedInsights = [
-    { title: "The Corporate Venture Advantage", category: "Venture Building", link: "/insights/corporate-venture-advantage", image: "/images/capabilities/cap-lightbulb-idea.jpg" },
-    { title: "From MVP to Scale", category: "Venture Building", link: "/insights/from-mvp-to-scale", image: "/images/capabilities/cap-venturing.jpg" },
-    { title: "Building a Data-First Culture", category: "Culture", link: "/insights/building-data-culture", image: "/images/capabilities/cap-telescope.jpg" },
+    { title: "The Corporate Venture Advantage", category: "Venture Building", link: "/insights/corporate-venture-advantage", image: "/images/insights/corporate-venture-advantage-hero.jpg" },
+    { title: "From MVP to Scale", category: "Venture Building", link: "/insights/from-mvp-to-scale", image: "/images/insights/from-mvp-to-scale-hero.jpg" },
+    { title: "Building a Data-First Culture", category: "Culture", link: "/insights/building-data-culture", image: "/images/insights/building-data-culture-hero.jpg" },
   ];
 
   return (
@@ -20,7 +20,7 @@ export default function HiringForBuilders() {
       categoryHref="/insights"
       title="Hiring for Builders: Attracting Entrepreneurial Talent to Corporate Ventures"
       subtitle="The type of person who thrives in a structured corporate hierarchy is rarely the same person who can build a business from zero to one. Here is how to find, hire, and retain the 'builders.'"
-      heroImage="/images/industries/team-strategy-board.jpg"
+      heroImage="/images/insights/hiring-for-builders-hero.jpg"
       publishDate="October 15, 2024"
       readTime="5 min"
       sections={sections}

@@ -15,13 +15,13 @@ export default function BlogDigitalTransformation() {
       title: "How AI and automation are reshaping business operations",
       category: "Intelligent Automation",
       link: "/insights/ai-automation-reshaping-business",
-      image: "/blog-team-collaboration.913d82ea.jpg",
+      image: "/images/insights/ai-automation-reshaping-business-hero.jpg",
     },
     {
       title: "Measuring ROI: What to expect in your first year of automation",
       category: "Automation ROI",
       link: "/insights/measuring-automation-roi",
-      image: "/blog-roi-measurement.1514df48.jpg",
+      image: "/images/insights/measuring-automation-roi-hero.jpg",
     },
   ];
 
@@ -31,7 +31,7 @@ export default function BlogDigitalTransformation() {
       categoryHref="/insights"
       title="5 signs your business is ready for digital transformation"
       subtitle="Not every business needs automation right now. But if you're seeing these five indicators, it's time to seriously evaluate how technology can accelerate your growth."
-      heroImage="/blog-strategy-meeting.2402f79c.jpg"
+      heroImage="/images/insights/digital-transformation-readiness-hero.jpg"
       publishDate="November 18, 2024"
       readTime="5 min"
       sections={sections}

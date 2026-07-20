@@ -11,9 +11,9 @@ export default function ChurnPredictionPlaybook() {
   ];
 
   const relatedInsights = [
-    { title: "Why NPS Is a Vanity Metric", category: "Data Science", link: "/insights/why-nps-is-a-vanity-metric", image: "/images/insights-predictive-retention.jpg" },
-    { title: "The Economics of Loyalty", category: "Unit Economics", link: "/insights/economics-of-loyalty", image: "/images/insight-subscription-models.jpg" },
-    { title: "Customer Intelligence", category: "Data Science", link: "/insights/customer-intelligence", image: "/images/insight-customer-intel.jpg" },
+    { title: "Why NPS Is a Vanity Metric", category: "Data Science", link: "/insights/why-nps-is-a-vanity-metric", image: "/images/insights/why-nps-is-a-vanity-metric-hero.jpg" },
+    { title: "The Economics of Loyalty", category: "Unit Economics", link: "/insights/economics-of-loyalty", image: "/images/insights/economics-of-loyalty-hero.jpg" },
+    { title: "Customer Intelligence", category: "Data Science", link: "/insights/customer-intelligence", image: "/images/insights/customer-intelligence-hero.jpg" },
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function ChurnPredictionPlaybook() {
       category="Technical Guide"
       title="The Churn Prediction Playbook: From Random Forest to Production"
       subtitle="A technical walkthrough of building, training, and deploying a churn prediction model that actually integrates with your CRM."
-      heroImage="/images/industries/meeting-topview.jpg"
+      heroImage="/images/insights/churn-prediction-playbook-hero.jpg"
       publishDate="March 5, 2025"
       readTime="12 min"
       sections={sections}

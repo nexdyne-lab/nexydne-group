@@ -4,7 +4,7 @@ export default function InsightEcommerceLaunchGuide() {
   const relatedInsights = [
     { title: "Digital channels driving revenue growth", category: "Digital Growth", link: "/insights/digital-channels-growth", image: "/images/insights/digital-channels-growth-hero.jpg" },
     { title: "The subscription economy playbook", category: "Business Models", link: "/insights/subscription-economy-playbook", image: "/images/insights/subscription-economy-playbook-hero.jpg" },
-    { title: "E-commerce economics", category: "Digital Commerce", link: "/insights/ecommerce-economics", image: "/images/adoption-abstract.jpg" },
+    { title: "E-commerce economics", category: "Digital Commerce", link: "/insights/ecommerce-economics", image: "/images/insights/ecommerce-economics-hero.jpg" },
   ];
 
   const sections = [

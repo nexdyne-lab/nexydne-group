@@ -11,9 +11,9 @@ export default function WorkingCapitalOptimization() {
   ];
 
   const relatedInsights = [
-    { title: "Smart Cost Reduction", category: "Performance Improvement", link: "/insights/smart-cost-reduction", image: "/images/cfo-services-abstract.jpg" },
-    { title: "Lean Operations at Scale", category: "Performance Improvement", link: "/insights/lean-operations-scale", image: "/images/insight-scaling-ops.jpg" },
-    { title: "The CFO's Cash Flow Guide", category: "Strategy & Finance", link: "/insights/cfo-cash-flow-guide", image: "/images/fpa-abstract.jpg" },
+    { title: "Smart Cost Reduction", category: "Performance Improvement", link: "/insights/smart-cost-reduction", image: "/images/insights/smart-cost-reduction-hero.jpg" },
+    { title: "Lean Operations at Scale", category: "Performance Improvement", link: "/insights/lean-operations-scale", image: "/images/insights/lean-operations-scale-hero.jpg" },
+    { title: "The CFO's Cash Flow Guide", category: "Strategy & Finance", link: "/insights/cfo-cash-flow-guide", image: "/images/insights/cfo-cash-flow-guide-hero.jpg" },
   ];
 
   return (
@@ -22,7 +22,7 @@ export default function WorkingCapitalOptimization() {
       categoryHref="/insights"
       title="Working Capital Optimization"
       subtitle="How to unlock cash trapped in your balance sheet through strategic working capital management and process improvement."
-      heroImage="/images/capabilities/cap-presenting-graphs.jpg"
+      heroImage="/images/insights/working-capital-optimization-hero.jpg"
       publishDate="December 2024"
       readTime="9 min"
       sections={sections}

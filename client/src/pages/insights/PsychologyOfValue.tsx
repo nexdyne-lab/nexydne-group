@@ -9,9 +9,9 @@ export default function PsychologyOfValue() {
   ];
 
   const relatedInsights = [
-    { title: "Algorithmic Pricing for Growing Companies", category: "Pricing Strategy", link: "/insights/algorithmic-pricing-smes", image: "/images/insight-algo-pricing.jpg" },
-    { title: "Optimizing Subscription Models", category: "Pricing Strategy", link: "/insights/subscription-pricing-models", image: "/images/insight-subscription-models.jpg" },
-    { title: "Value Proposition Design", category: "Growth & Marketing", link: "/insights/value-proposition-design", image: "/images/insights-pricing-strategy.jpg" },
+    { title: "Algorithmic Pricing for Growing Companies", category: "Pricing Strategy", link: "/insights/algorithmic-pricing-smes", image: "/images/insights/algorithmic-pricing-smes-hero.jpg" },
+    { title: "Optimizing Subscription Models", category: "Pricing Strategy", link: "/insights/subscription-pricing-models", image: "/images/insights/subscription-pricing-models-hero.jpg" },
+    { title: "Value Proposition Design", category: "Growth & Marketing", link: "/insights/value-proposition-design", image: "/images/insights/value-proposition-design-hero.jpg" },
   ];
 
   return (
@@ -19,7 +19,7 @@ export default function PsychologyOfValue() {
       category="Pricing Strategy"
       title={'The Psychology of Value: Why "Cost-Plus" Fails in the Digital Age'}
       subtitle="Customers don't care about your margins; they care about their own utility. To win in a crowded market, companies must shift their pricing paradigm from internal costs to external willingness-to-pay."
-      heroImage="/images/insight-pricing-psychology.jpg"
+      heroImage="/images/insights/psychology-of-value-hero.jpg"
       publishDate="October 12, 2024"
       readTime="8 min"
       sections={sections}

@@ -2,7 +2,7 @@ import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function InsightDigitalChannelsGrowth() {
   const relatedInsights = [
-    { title: "The Digital Growth Playbook", category: "Growth", link: "/insights/digital-growth-playbook", image: "/images/abstract-growth.jpg" },
+    { title: "The Digital Growth Playbook", category: "Growth", link: "/insights/digital-growth-playbook", image: "/images/insights/digital-growth-playbook-hero.jpg" },
     { title: "The Subscription Economy Playbook", category: "Business Models", link: "/insights/subscription-economy-playbook", image: "/images/insights/subscription-economy-playbook-hero.jpg" },
     { title: "The E-commerce Launch Guide", category: "Digital Commerce", link: "/insights/ecommerce-launch-guide", image: "/images/insights/ecommerce-launch-guide-hero.jpg" },
   ];

@@ -11,9 +11,9 @@ export default function SmartCostReduction() {
   ];
 
   const relatedInsights = [
-    { title: "Working Capital Optimization", category: "Performance Improvement", link: "/insights/working-capital-optimization", image: "/images/capabilities/cap-data-bars.jpg" },
-    { title: "Lean Operations at Scale", category: "Performance Improvement", link: "/insights/lean-operations-scale", image: "/images/capabilities/cap-hands-data.jpg" },
-    { title: "A Performance Improvement Framework", category: "Performance Improvement", link: "/insights/performance-improvement-framework", image: "/images/capabilities/cap-presenting-graphs.jpg" },
+    { title: "Working Capital Optimization", category: "Performance Improvement", link: "/insights/working-capital-optimization", image: "/images/insights/working-capital-optimization-hero.jpg" },
+    { title: "Lean Operations at Scale", category: "Performance Improvement", link: "/insights/lean-operations-scale", image: "/images/insights/lean-operations-scale-hero.jpg" },
+    { title: "A Performance Improvement Framework", category: "Performance Improvement", link: "/insights/performance-improvement-framework", image: "/images/insights/performance-improvement-framework-hero.jpg" },
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function SmartCostReduction() {
       category="Performance Improvement"
       title="Smart Cost Reduction: Beyond the Cuts"
       subtitle="How to reduce costs strategically without damaging your business. A framework for sustainable cost optimization that preserves competitive advantage."
-      heroImage="/images/capabilities/cap-team-screens.jpg"
+      heroImage="/images/insights/smart-cost-reduction-hero.jpg"
       publishDate="December 2024"
       readTime="10 min"
       sections={sections}

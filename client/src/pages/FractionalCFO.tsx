@@ -408,19 +408,19 @@ export default function FractionalCFO() {
             title: "How Top Performers Use Financial Discipline to Grow",
             category: "Strategy",
             link: "/insights/financial-discipline-growth",
-            image: "/images/capabilities/cap-celebrate.jpg"
+            image: "/images/insights/financial-discipline-growth-hero.jpg"
           },
           {
             title: "The CFO's Guide to Cash Flow Management",
             category: "Cash Flow",
             link: "/insights/cfo-cash-flow-guide",
-            image: "/images/capabilities/cap-presenting-graphs.jpg"
+            image: "/images/insights/cfo-cash-flow-guide-hero.jpg"
           },
           {
             title: "Building Investor-Ready Board Decks",
             category: "Governance",
             link: "/insights/investor-ready-board-decks",
-            image: "/images/industries/fin-monitors.jpg"
+            image: "/images/insights/investor-ready-board-decks-hero.jpg"
           }
         ]}
       />

@@ -13,9 +13,9 @@ export default function SeriesAFundraisingGuide() {
   ];
 
   const relatedInsights = [
-    { title: "Five Valuation Mistakes That Cost Founders Millions", category: "Capital Raising", link: "/insights/valuation-mistakes", image: "/images/capabilities/cap-presenting-graphs.jpg" },
-    { title: "Due Diligence Checklist for Growth-Stage Companies", category: "Capital Raising", link: "/insights/due-diligence-checklist", image: "/images/capabilities/cap-data-bars.jpg" },
-    { title: "Designing a Pitch Deck That Wins", category: "Capital Raising", link: "/insights/pitch-deck-design", image: "/images/capabilities/cap-data-presentation.jpg" },
+    { title: "Five Valuation Mistakes That Cost Founders Millions", category: "Capital Raising", link: "/insights/valuation-mistakes", image: "/images/insights/valuation-mistakes-hero.jpg" },
+    { title: "Due Diligence Checklist for Growth-Stage Companies", category: "Capital Raising", link: "/insights/due-diligence-checklist", image: "/images/insights/due-diligence-checklist-hero.jpg" },
+    { title: "Designing a Pitch Deck That Wins", category: "Capital Raising", link: "/insights/pitch-deck-design", image: "/images/insights/pitch-deck-design-hero.jpg" },
   ];
 
   return (
@@ -23,7 +23,7 @@ export default function SeriesAFundraisingGuide() {
       category="Capital Raising"
       title="The Complete Guide to Series A Fundraising Preparation"
       subtitle="Series A fundraising represents a critical inflection point for growth-stage companies. The gap between seed funding and institutional capital is wider than most founders anticipate, and preparation determines outcomes more than any other factor."
-      heroImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/insights/series-a-fundraising-guide-hero.jpg"
       publishDate="December 20, 2025"
       readTime="12 min"
       sections={sections}

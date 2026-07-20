@@ -12,9 +12,9 @@ export default function EnterpriseIntegrationPlaybook() {
   ];
 
   const relatedInsights = [
-    { title: "Enterprise transformation in the AI era", category: "Report", link: "/insights/enterprise-transformation-ai", image: "/images/industries/tech-datacenter.jpg" },
-    { title: "Building scalable data architectures", category: "Article", link: "/insights/scalable-data-architecture", image: "/images/capabilities/cap-circuit-green.jpg" },
-    { title: "Cloud-native architecture", category: "Technology", link: "/insights/cloud-native-architecture", image: "/images/cloud-abstract.jpg" },
+    { title: "Enterprise transformation in the AI era", category: "Report", link: "/insights/enterprise-transformation-ai", image: "/images/insights/enterprise-transformation-ai-hero.jpg" },
+    { title: "Building scalable data architectures", category: "Article", link: "/insights/scalable-data-architecture", image: "/images/insights/scalable-data-architecture-hero.jpg" },
+    { title: "Cloud-native architecture", category: "Technology", link: "/insights/cloud-native-architecture", image: "/images/insights/cloud-native-architecture-hero.jpg" },
   ];
 
   return (
@@ -22,7 +22,7 @@ export default function EnterpriseIntegrationPlaybook() {
       category="Whitepaper"
       title="The modern enterprise integration playbook"
       subtitle="A comprehensive guide to connecting legacy systems with modern cloud platforms while maintaining security and compliance."
-      heroImage="/images/capabilities/cap-data-bars.jpg"
+      heroImage="/images/insights/enterprise-integration-playbook-hero.jpg"
       publishDate="August 19, 2025"
       readTime="15 min"
       sections={sections}

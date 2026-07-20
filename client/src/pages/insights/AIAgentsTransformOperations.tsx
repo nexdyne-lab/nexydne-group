@@ -16,19 +16,19 @@ export default function AIAgentsTransformOperations() {
       title: "The $15 Trillion Question: How AI Will Reshape the Global Economy",
       category: "Economic Impact",
       link: "/insights/ai-economic-impact",
-      image: "/images/hero-ai-global-economy.jpg"
+      image: "/images/insights/ai-economic-impact-hero.jpg"
     },
     {
       title: "The Complete Guide to Process Mining",
       category: "Technology Strategy",
       link: "/insights/process-mining-guide",
-      image: "/images/hero-process-mining.jpg"
+      image: "/images/insights/process-mining-guide-hero.jpg"
     },
     {
       title: "The Pragmatic CEO's Guide to AI",
       category: "AI Executive Guide",
       link: "/insights/ceo-guide-data-modernization",
-      image: "/images/hero-ceo-ai-guide.jpg"
+      image: "/images/insights/ceo-guide-data-modernization-hero.jpg"
     }
   ];
 
@@ -38,7 +38,7 @@ export default function AIAgentsTransformOperations() {
       categoryHref="/insights"
       title="How AI Agents Are Reshaping Enterprise Operations"
       subtitle="Autonomous AI agents are transforming how enterprises operate, from customer service to supply chain management. Learn how leading organizations are deploying these intelligent systems."
-      heroImage="/images/hero-ai-enterprise.webp"
+      heroImage="/images/insights/ai-agents-transform-operations-hero.jpg"
       publishDate="January 20, 2026"
       readTime="10 min"
       sections={sections}

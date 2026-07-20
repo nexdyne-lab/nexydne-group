@@ -407,19 +407,19 @@ export default function PerformanceImprovement() {
             title: "The Smart Cost Reduction Playbook",
             category: "Cost Management",
             link: "/insights/smart-cost-reduction",
-            image: "/images/industries/meeting-topview.jpg"
+            image: "/images/insights/smart-cost-reduction-hero.jpg"
           },
           {
             title: "Unlocking Cash: Working Capital Optimization",
             category: "Cash Flow",
             link: "/insights/working-capital-optimization",
-            image: "/images/capabilities/cap-team-screens.jpg"
+            image: "/images/insights/working-capital-optimization-hero.jpg"
           },
           {
             title: "Building Lean Operations That Scale",
             category: "Process Excellence",
             link: "/insights/lean-operations-scale",
-            image: "/images/industries/ops-gears.jpg"
+            image: "/images/insights/lean-operations-scale-hero.jpg"
           }
         ]}
       />

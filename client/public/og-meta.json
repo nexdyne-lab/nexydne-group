@@ -27,17 +27,17 @@
  "/insights/ai-access-guide": {
   "title": "AI Access: How growing businesses can compete with enterprise technology",
   "description": "The democratization of AI is creating unprecedented opportunities for growing organizations. This report examines how companies with 50-200 employees can leverage intelligent automation to compete effectively against larger enterprises.",
-  "image": "/images/insight-ai-midmarket.jpg"
+  "image": "/images/insights/ai-access-guide-hero.jpg"
  },
  "/insights/efficiency-improvement-reality": {
   "title": "The 85% efficiency improvement: What our clients actually experience",
   "description": "Behind the headline metrics lies a more nuanced story. This article examines what efficiency improvements really look like in practice—and what it takes to achieve them.",
-  "image": "/images/ai-acceleration-abstract.jpg"
+  "image": "/images/insights/efficiency-improvement-reality-hero.jpg"
  },
  "/insights/change-management-ai-success": {
   "title": "Why change management determines AI project success",
   "description": "Technology is the easy part. The human element—adoption, behavior change, cultural alignment—determines whether AI investments deliver returns or become expensive shelfware.",
-  "image": "/images/change-management-abstract.jpg"
+  "image": "/images/insights/change-management-ai-success-hero.jpg"
  },
  "/capabilities/artificial-intelligence/insights/ai-roi-framework": {
   "title": "The ROI of AI: What Mid-Size Companies Need to Know",
@@ -132,17 +132,17 @@
  "/insights/enterprise-transformation-ai": {
   "title": "Enterprise transformation in the AI era",
   "description": "How leading enterprises are reimagining their operating models to harness AI and achieve sustainable competitive advantage.",
-  "image": "/images/industries/tech-datacenter.jpg"
+  "image": "/images/insights/enterprise-transformation-ai-hero.jpg"
  },
  "/insights/scalable-data-architecture": {
   "title": "Building scalable data architectures",
   "description": "The architectural patterns and technology choices that enable enterprises to scale data operations from millions to billions of events.",
-  "image": "/images/capabilities/cap-data-bars.jpg"
+  "image": "/images/insights/scalable-data-architecture-hero.jpg"
  },
  "/insights/enterprise-integration-playbook": {
   "title": "The modern enterprise integration playbook",
   "description": "A comprehensive guide to connecting legacy systems with modern cloud platforms while maintaining security and compliance.",
-  "image": "/images/capabilities/cap-data-bars.jpg"
+  "image": "/images/insights/enterprise-integration-playbook-hero.jpg"
  },
  "/insights/digital-channels-growth": {
   "title": "Digital channels driving revenue growth: a playbook for growing companies",
@@ -162,17 +162,17 @@
  "/insights/digital-growth-playbook": {
   "title": "The digital growth playbook for growing companies",
   "description": "How leading growing companies are building digital channels that compete with well-funded startups and enterprise incumbents.",
-  "image": "/images/industries/deal-handshake.jpg"
+  "image": "/images/insights/digital-growth-playbook-hero.jpg"
  },
  "/insights/ecommerce-economics": {
   "title": "E-commerce economics: Building profitable D2C channels",
   "description": "The unit economics, technology choices, and operational considerations that determine D2C success.",
-  "image": "/images/capabilities/cap-retail-apparel.jpg"
+  "image": "/images/insights/ecommerce-economics-hero.jpg"
  },
  "/insights/marketplace-playbook": {
   "title": "The marketplace playbook: Building network effects",
   "description": "A comprehensive guide to launching and scaling two-sided marketplaces that create sustainable competitive advantages.",
-  "image": "/images/capabilities/cap-retail-apparel.jpg"
+  "image": "/images/insights/marketplace-playbook-hero.jpg"
  },
  "/capabilities/business-building/insights/digital-venture-playbook": {
   "title": "The Digital Venture Playbook for Mid-Size Companies",
@@ -244,50 +244,65 @@
   "description": "A $42M automation vendor's inbound engine couldn't reach enterprise buyers. A rigorous ABM program created $18M in pipeline, closed 12 enterprise wins, and grew deal size 4x.",
   "image": "/images/industries/tech-datacenter.jpg"
  },
+ "/insights/headless-commerce-guide": {
+  "title": "The Engineering Case for Headless Commerce",
+  "description": "Why decoupling your frontend from your backend is the key to agility, speed, and unlimited UX flexibility in the modern digital economy.",
+  "image": "/images/insights/headless-commerce-guide-hero.jpg"
+ },
+ "/insights/ai-in-ecommerce": {
+  "title": "AI-Driven Merchandising: Beyond Recommendations",
+  "description": "How machine learning is transforming inventory management, dynamic pricing, and personalized search results to drive profitability.",
+  "image": "/images/insights/ai-in-ecommerce-hero.jpg"
+ },
+ "/insights/mobile-commerce-optimization": {
+  "title": "Optimizing for the Mobile-First Shopper",
+  "description": "Mobile traffic has overtaken desktop, but conversion rates still lag. Here are the technical strategies to close the gap and capture revenue on the small screen.",
+  "image": "/images/insights/mobile-commerce-optimization-hero.jpg"
+ },
  "/insights/future-of-performance-marketing": {
   "title": "The Future of Performance Marketing: Privacy, AI, and Precision",
   "description": "As third-party cookies vanish and privacy regulations tighten, performance marketing is undergoing a radical transformation. Here's how leading brands are adapting.",
-  "image": "/images/insight-marketing-operations.jpg"
+  "image": "/images/insights/future-of-performance-marketing-hero.jpg"
  },
  "/insights/ai-driven-brand-strategy": {
   "title": "AI-Driven Brand Strategy: From Intuition to Intelligence",
   "description": "Brand building has traditionally been an art. Today, AI is turning it into a science, allowing companies to measure brand equity in real-time and predict the impact of creative decisions.",
-  "image": "/images/abstract-growth.jpg"
+  "image": "/images/insights/ai-driven-brand-strategy-hero.jpg"
  },
  "/insights/hyper-personalization-at-scale": {
   "title": "True personalization isn't just about knowing a customer's name. It's about anticipating their needs, respecting their context, and delivering value in the moment.",
   "description": "True personalization isn't just about knowing a customer's name. It's about anticipating their needs, respecting their context, and delivering value in the moment.",
-  "image": "/images/capabilities/cap-mobile-woman.jpg"
+  "image": "/images/insights/hyper-personalization-at-scale-hero.jpg"
  },
  "/insights/psychology-of-value": {
   "title": "Customers don't care about your margins; they care about their own utility. To win in a crowded market, companies must shift their pricing paradigm from internal costs to external willingness-to-pay.",
   "description": "Customers don't care about your margins; they care about their own utility. To win in a crowded market, companies must shift their pricing paradigm from internal costs to external willingness-to-pay.",
-  "image": "/images/insight-pricing-psychology.jpg"
+  "image": "/images/insights/psychology-of-value-hero.jpg"
  },
  "/insights/algorithmic-pricing-smes": {
   "title": "Algorithmic Pricing for Growing Companies: It's Not Just for Amazon Anymore",
   "description": "Dynamic pricing technology was once the exclusive domain of tech giants. Today, accessible AI tools are democratizing yield management for growing companies.",
-  "image": "/images/insight-algo-pricing.jpg"
+  "image": "/images/insights/algorithmic-pricing-smes-hero.jpg"
  },
  "/insights/subscription-pricing-models": {
   "title": "Beyond the Flat Rate: Optimizing Subscription Models for Growth",
   "description": "",
-  "image": "/images/insight-subscription-models.jpg"
+  "image": "/images/insights/subscription-pricing-models-hero.jpg"
  },
  "/insights/ai-sales-forecasting": {
   "title": "For decades, sales forecasting was an exercise in political negotiation. Today, predictive AI is turning it into a data science discipline, replacing human bias with algorithmic certainty.",
   "description": "For decades, sales forecasting was an exercise in political negotiation. Today, predictive AI is turning it into a data science discipline, replacing human bias with algorithmic certainty.",
-  "image": "/images/capabilities/cap-presenting-graphs.jpg"
+  "image": "/images/insights/ai-sales-forecasting-hero.jpg"
  },
  "/insights/modern-sales-stack": {
   "title": "Architecting the Modern Sales Stack: Consolidation is the New Innovation",
   "description": "The average sales organization uses 14 different tools. The result? Data silos, context switching, and 'swivel chair' inefficiency. It's time to refactor the stack.",
-  "image": "/images/industries/deal-handshake.jpg"
+  "image": "/images/insights/modern-sales-stack-hero.jpg"
  },
  "/insights/algorithmic-territory-planning": {
   "title": "Algorithmic Territory Planning: Optimizing Coverage with Geospatial Data",
   "description": "Territory planning is often an annual exercise in spreadsheet wrestling and political infighting. By applying geospatial algorithms and propensity modeling, we can turn it into a continuous optimization process.",
-  "image": "/images/industries/deal-handshake.jpg"
+  "image": "/images/insights/algorithmic-territory-planning-hero.jpg"
  },
  "/cases/healthcare-data-platform": {
   "title": "Unifying 15+ Systems Into a 360° Patient Record | Healthcare Case Study",
@@ -397,17 +412,17 @@
  "/insights/ai-automation-reshaping-business": {
   "title": "How AI and automation are reshaping business operations",
   "description": "The automation revolution is no longer coming—it's here. Mid-sized businesses across the United States are discovering that intelligent automation isn't just for Fortune 500 companies anymore.",
-  "image": "/blog-team-collaboration.913d82ea.jpg"
+  "image": "/images/insights/ai-automation-reshaping-business-hero.jpg"
  },
  "/insights/digital-transformation-readiness": {
   "title": "5 signs your business is ready for digital transformation",
   "description": "Not every business needs automation right now. But if you're seeing these five indicators, it's time to seriously evaluate how technology can accelerate your growth.",
-  "image": "/blog-strategy-meeting.2402f79c.jpg"
+  "image": "/images/insights/digital-transformation-readiness-hero.jpg"
  },
  "/insights/measuring-automation-roi": {
   "title": "Measuring ROI: What to expect in your first year of automation",
   "description": "Based on analysis of 42 automation deployments across professional services, healthcare, and financial services companies from 2022–2024, here's what realistic ROI looks like — and how to measure it accurately.",
-  "image": "/og-image.jpg"
+  "image": "/images/insights/measuring-automation-roi-hero.jpg"
  },
  "/cases/financial-services-sql-bootcamp": {
   "title": "Upskilling 50 Analysts with a SQL & Python Bootcamp | Financial Services Case Study",
@@ -569,40 +584,55 @@
   "description": "A 125,000-member credit union was losing young members to big-bank apps. A new mobile banking app hit 78% adoption and a 4.8-star rating in six months.",
   "image": "/images/industries/fin-monitors.jpg"
  },
+ "/cases/insurance-claims-portal": {
+  "title": "Launching a Digital Claims Portal in 8 Weeks | Insurance Case Study",
+  "description": "A 75-year-old P&C insurer processed paper claims in 14 days and lost 12% of policyholders a year. A Mendix low-code portal cut processing to 2 hours and lifted satisfaction 42 points.",
+  "image": "/case-insurance-office.f039a4a1.jpg"
+ },
+ "/cases/logistics-tracking-app": {
+  "title": "Building a Real-Time Tracking App for 500 Drivers | Logistics Case Study",
+  "description": "A 3PL running 500 vehicles relied on paper manifests and phone check-ins, stuck at 82% on-time. An OutSystems mobile app lifted on-time delivery to 96% and saved $850K in annual fuel.",
+  "image": "/images/industries/retail-warehouse.jpg"
+ },
+ "/cases/municipal-permit-system": {
+  "title": "Modernizing a City Permit System for 250K Residents | Public Sector Case Study",
+  "description": "A city's 30-year-old permit system took 45 days and paper visits across 12 departments. A Microsoft Power Platform build cut approval to 7 days and lifted citizen satisfaction 58 points.",
+  "image": "/images/capabilities/cap-conference-data.jpg"
+ },
  "/insights/why-intelligent-automation": {
   "title": "Why Intelligent Automation Isn't Optional Anymore",
   "description": "The conversation around intelligent automation has shifted dramatically. What was once positioned as a competitive advantage has become table stakes for survival in modern business.",
-  "image": "/images/insight-automation.jpg"
+  "image": "/images/insights/why-intelligent-automation-hero.jpg"
  },
  "/insights/ai-agents-transform-operations": {
   "title": "How AI Agents Are Reshaping Enterprise Operations",
   "description": "Autonomous AI agents are transforming how enterprises operate, from customer service to supply chain management. Learn how leading organizations are deploying these intelligent systems.",
-  "image": "/images/hero-ai-enterprise.webp"
+  "image": "/images/insights/ai-agents-transform-operations-hero.jpg"
  },
  "/insights/ai-economic-impact": {
   "title": "The $15 Trillion Question: How AI Will Reshape the Global Economy",
   "description": "Artificial intelligence is poised to add $15.7 trillion to the global economy by 2030. Understanding where this value will be created—and captured—is essential for business leaders.",
-  "image": "/images/hero-ai-global-economy.jpg"
+  "image": "/images/insights/ai-economic-impact-hero.jpg"
  },
  "/insights/process-mining-guide": {
   "title": "The Complete Guide to Process Mining",
   "description": "Process mining reveals the hidden reality of how your business actually operates—not how you think it operates. Learn how to leverage this powerful technology for operational excellence.",
-  "image": "/images/hero-process-mining.jpg"
+  "image": "/images/insights/process-mining-guide-hero.jpg"
  },
  "/insights/why-intelligent-automation-isnt-optional-anymore": {
   "title": "Why Intelligent Automation Isn't Optional Anymore",
   "description": "The competitive landscape has fundamentally shifted. Organizations that fail to embrace intelligent automation aren't just missing an opportunity—they're actively falling behind.",
-  "image": "/images/ai-acceleration-abstract.jpg"
+  "image": "/images/insights/why-intelligent-automation-isnt-optional-anymore-hero.jpg"
  },
  "/insights/how-ai-agents-transform-enterprise-operations": {
   "title": "How AI Agents Transform Enterprise Operations",
   "description": "AI agents represent the next evolution in enterprise automation—moving from rule-based systems to intelligent, autonomous entities that can reason, learn, and act independently.",
-  "image": "/images/capabilities/cap-hologram.jpg"
+  "image": "/images/insights/how-ai-agents-transform-enterprise-operations-hero.jpg"
  },
  "/insights/complete-guide-process-mining": {
   "title": "The Complete Guide to Process Mining",
   "description": "Process mining bridges the gap between traditional process analysis and data science, providing unprecedented visibility into how your processes actually work—not how you think they work.",
-  "image": "/images/data-abstract.jpg"
+  "image": "/images/insights/complete-guide-process-mining-hero.jpg"
  },
  "/insights/strategy-finance": {
   "title": "AI in the CFO's Office: Closing the Gap Between Adoption and Advantage",
@@ -622,17 +652,17 @@
  "/insights/ai-adoption-outlook-2026": {
   "title": "The AI Adoption Outlook 2026: Why the Winners Will Govern First",
   "description": "AI is now everywhere and delivering almost nowhere at scale. As the agentic era arrives, the organizations that pull ahead won't be the ones that adopt the most—they'll be the ones that govern first.",
-  "image": "/images/agentic-ai-abstract.jpg"
+  "image": "/images/insights/ai-adoption-outlook-2026-hero.jpg"
  },
  "/insights/agentic-ai-budget-line": {
   "title": "Agentic AI Just Got a Budget Line. Most of It Will Be Wasted.",
   "description": "Autonomous agents have moved from demo to P&L in a single planning cycle. The firms that get a return will be the ones that fund workflows, not pilots — and govern agents like employees, not software.",
-  "image": "/images/ai-acceleration-abstract.jpg"
+  "image": "/images/insights/agentic-ai-budget-line-hero.jpg"
  },
  "/insights/eu-ai-act-playbook": {
   "title": "The EU AI Act Is Enforcing in Stages — and August 2026 Is the Big One",
   "description": "Prohibited practices and AI-literacy duties have applied since February 2025; obligations for general-purpose AI since August 2025. The high-risk regime lands in August 2026 — and it reaches far more growing firms than most of them assume.",
-  "image": "/images/business-strategy-abstract.jpg"
+  "image": "/images/insights/eu-ai-act-playbook-hero.jpg"
  },
  "/insights/shadow-ai-inside-your-firm": {
   "title": "Shadow AI Is the New Shadow IT — Except This Time It Makes Decisions",
@@ -642,137 +672,137 @@
  "/insights/ai-answers-first-customer-channels": {
   "title": "The Channel Flip: AI Now Answers First. Your Customers Are Deciding If They Mind.",
   "description": "Service organizations are quietly inverting a decades-old design: AI resolves first, humans handle what escalates. Done well, customers get instant resolution and your best people do their best work. Done badly, it's a maze with a chatbot at the door.",
-  "image": "/images/ai-team-collaboration.jpg"
+  "image": "/images/insights/ai-answers-first-customer-channels-hero.jpg"
  },
  "/insights/ceo-guide-data-modernization": {
   "title": "The Pragmatic CEO's Guide to AI",
   "description": "Cut through the hype. A practical framework for business leaders to evaluate AI opportunities, avoid common pitfalls, and drive real value from artificial intelligence investments.",
-  "image": "/images/hero-ceo-ai-guide.jpg"
+  "image": "/images/insights/ceo-guide-data-modernization-hero.jpg"
  },
  "/insights/building-data-culture": {
   "title": "Building a Data-First Culture",
   "description": "NexDyne's Chief Data Officer discusses the human side of digital change and why culture eats strategy for breakfast.",
-  "image": "/images/capabilities/cap-hands-data.jpg"
+  "image": "/images/insights/building-data-culture-hero.jpg"
  },
  "/insights/cloud-native-architecture": {
   "title": "Cloud-Native Architecture for Scale: Building Infrastructure That Grows With Your Ambition",
   "description": "Modern enterprises need infrastructure that scales with ambition. Explore the principles of building resilient, scalable cloud-native systems for sustainable growth.",
-  "image": "/hero-architecture-new.8c87389d.png"
+  "image": "/images/insights/cloud-native-architecture-hero.jpg"
  },
  "/insights/data-lake-to-value-stream": {
   "title": "From Data Lake to Value Stream: A Technical Deep Dive",
   "description": "Your data lake is full. Now what? A technical exploration of modern data mesh architectures and how to turn raw data into actionable business value.",
-  "image": "/images/capabilities/cap-hands-data.jpg"
+  "image": "/images/insights/data-lake-to-value-stream-hero.jpg"
  },
  "/insights/corporate-venture-advantage": {
   "title": "The Corporate Venture Advantage: Why Established Assets + Startup Speed Wins",
   "description": "In the race for digital dominance, incumbents often fear they're too slow. But when they learn to leverage their unfair advantages—data, distribution, and domain expertise—they don't just compete with startups; they crush them.",
-  "image": "/images/industries/team-strategy-board.jpg"
+  "image": "/images/insights/corporate-venture-advantage-hero.jpg"
  },
  "/insights/from-mvp-to-scale": {
   "title": "From MVP to scale: navigating the 'Valley of Death'",
   "description": "Building a Minimum Viable Product is easy. Turning it into a scalable, revenue-generating business is where 90% of corporate ventures fail. Here is the operational playbook for crossing the chasm.",
-  "image": "/images/industries/team-strategy-board.jpg"
+  "image": "/images/insights/from-mvp-to-scale-hero.jpg"
  },
  "/insights/hiring-for-builders": {
   "title": "Hiring for Builders: Attracting Entrepreneurial Talent to Corporate Ventures",
   "description": "The type of person who thrives in a structured corporate hierarchy is rarely the same person who can build a business from zero to one. Here is how to find, hire, and retain the 'builders.'",
-  "image": "/images/industries/team-strategy-board.jpg"
+  "image": "/images/insights/hiring-for-builders-hero.jpg"
  },
  "/insights/generative-supply-chain": {
   "title": "The Generative Supply Chain: Scaling Creative with AI",
   "description": "How a global retailer reduced content production costs by 60% while increasing engagement by using GenAI for asset variation.",
-  "image": "/images/ai-abstract-visualization.jpg"
+  "image": "/images/insights/generative-supply-chain-hero.jpg"
  },
  "/insights/digital-twin-manufacturing": {
   "title": "Digital Twins in Manufacturing: From Hype to ROI",
   "description": "How leading manufacturers are using digital twins to simulate production lines, predict failures, and optimize throughput before a single machine is turned on.",
-  "image": "/images/industries/mfg-robotics.jpg"
+  "image": "/images/insights/digital-twin-manufacturing-hero.jpg"
  },
  "/insights/iot-resilient-supply-chain": {
   "title": "IoT and the Resilient Supply Chain: Visibility is Victory",
   "description": "In an era of global disruption, knowing where your goods are isn't enough. You need to know their condition, their context, and their risk profile in real-time.",
-  "image": "/images/industries/retail-warehouse.jpg"
+  "image": "/images/insights/iot-resilient-supply-chain-hero.jpg"
  },
  "/insights/beyond-segmentation": {
   "title": "Beyond Segmentation: The Era of N=1 Marketing",
   "description": "Why traditional audience segments are failing, and how to build a marketing engine that treats every customer as a market of one.",
-  "image": "/images/capabilities/cap-retail-data.jpg"
+  "image": "/images/insights/beyond-segmentation-hero.jpg"
  },
  "/insights/privacy-by-design": {
   "title": "Privacy by Design: Building Trust in the Age of AI",
   "description": "Navigating the paradox of personalization: how to deliver hyper-relevant experiences while adhering to the strictest data privacy standards.",
-  "image": "/images/cyber-abstract.jpg"
+  "image": "/images/insights/privacy-by-design-hero.jpg"
  },
  "/insights/real-time-decision-architectures": {
   "title": "The Millisecond Imperative: Real-Time Decision Architectures",
   "description": "A deep dive into the technical stack required to process user signals and serve personalized recommendations in under 50ms.",
-  "image": "/images/capabilities/cap-data-bars.jpg"
+  "image": "/images/insights/real-time-decision-architectures-hero.jpg"
  },
  "/insights/green-growth-imperative": {
   "title": "Green Growth",
   "description": "Companies don't have to choose between sustainability and growth—they can have both.",
-  "image": "/images/green-growth-hero.jpg"
+  "image": "/images/insights/green-growth-imperative-hero.jpg"
  },
  "/insights/net-zero-transition": {
   "title": "The Net Zero Transition: What it would cost, what it could bring",
   "description": "A comprehensive analysis of the economic transformation required to achieve net-zero emissions by 2050.",
-  "image": "/images/insight-net-zero.jpg"
+  "image": "/images/insights/net-zero-transition-hero.jpg"
  },
  "/insights/carbon-markets": {
   "title": "Carbon Markets 2025: From Voluntary to Compliance",
   "description": "As regulatory frameworks tighten, the distinction between voluntary and compliance carbon markets is blurring. Here is what business leaders need to know.",
-  "image": "/images/insight-carbon-markets.jpg"
+  "image": "/images/insights/carbon-markets-hero.jpg"
  },
  "/insights/green-materials": {
   "title": "The Green Materials Revolution",
   "description": "From green steel to bio-based plastics, a wave of material innovation is reshaping industrial supply chains.",
-  "image": "/images/insight-green-materials.jpg"
+  "image": "/images/insights/green-materials-hero.jpg"
  },
  "/insights/market-entry-architecture": {
   "title": "Market Entry Architecture: Designing for Scalability from Day One",
   "description": "",
-  "image": "/images/go-to-market-abstract.jpg"
+  "image": "/images/insights/market-entry-architecture-hero.jpg"
  },
  "/insights/commercial-due-diligence": {
   "title": "Commercial Due Diligence: Debugging the Business Model",
   "description": "Moving beyond financial audits to stress-test the underlying commercial code of a target acquisition.",
-  "image": "/images/mergers-acquisitions-abstract.jpg"
+  "image": "/images/insights/commercial-due-diligence-hero.jpg"
  },
  "/insights/value-proposition-design": {
   "title": "Value Proposition Design: The API Between Product and Market",
   "description": "",
-  "image": "/images/product-strategy-abstract.jpg"
+  "image": "/images/insights/value-proposition-design-hero.jpg"
  },
  "/insights/future-of-marketing-ops": {
   "title": "The future of marketing operations: from support function to strategic engine",
   "description": "Marketing Operations (MOPs) is no longer just about managing tools. It's about orchestrating the entire customer lifecycle.",
-  "image": "/images/insight-marketing-operations.jpg"
+  "image": "/images/insights/future-of-marketing-ops-hero.jpg"
  },
  "/insights/no-code-marketing-automation": {
   "title": "The No-Code Revolution: Democratizing Marketing Automation",
   "description": "How low-code and no-code platforms are empowering marketing teams to build complex workflows without engineering support.",
-  "image": "/images/insight-automation.jpg"
+  "image": "/images/insights/no-code-marketing-automation-hero.jpg"
  },
  "/insights/marketing-data-roi": {
   "title": "The ROI of Clean Data: Why Hygiene is Your Best Investment",
   "description": "Bad data costs U.S. businesses $3 trillion annually. Here's how to turn data quality into a competitive advantage.",
-  "image": "/images/data-abstract.jpg"
+  "image": "/images/insights/marketing-data-roi-hero.jpg"
  },
  "/insights/composable-architecture": {
   "title": "The End of the Monolith: Why Composable Architecture Wins",
   "description": "The shift from all-in-one suites to best-of-breed stacks is accelerating. Here's why 'composable' is the future of enterprise tech.",
-  "image": "/images/cloud-infrastructure-hub-abstract.jpg"
+  "image": "/images/insights/composable-architecture-hero.jpg"
  },
  "/insights/middleware-patterns": {
   "title": "Middleware Patterns for Scale: Beyond Point-to-Point Integration",
   "description": "Why direct API connections fail at scale, and how to implement event-driven architectures that handle millions of transactions.",
-  "image": "/images/enterprise-architecture.jpg"
+  "image": "/images/insights/middleware-patterns-hero.jpg"
  },
  "/insights/vendor-selection": {
   "title": "The Vendor Selection Matrix: How to Choose Tech That Actually Fits",
   "description": "Stop buying shelfware. A structured approach to evaluating software vendors ensures you buy what you need, not what the salesperson wants to sell.",
-  "image": "/images/approach-technology.jpg"
+  "image": "/images/insights/vendor-selection-hero.jpg"
  },
  "/capabilities/strategy-corporate-finance/insights/cfo-guide-ai-investment": {
   "title": "The CFO's Guide to AI Investment Decisions",
@@ -907,57 +937,57 @@
  "/insights/why-nps-is-a-vanity-metric": {
   "title": "Why NPS is a Vanity Metric (And What to Track Instead)",
   "description": "Net Promoter Score tells you how customers felt yesterday. It doesn't tell you who will leave tomorrow. Here is the engineering approach to health scoring.",
-  "image": "/images/capabilities/cap-retail-data.jpg"
+  "image": "/images/insights/why-nps-is-a-vanity-metric-hero.jpg"
  },
  "/insights/churn-prediction-playbook": {
   "title": "The Churn Prediction Playbook: From Random Forest to Production",
   "description": "A technical walkthrough of building, training, and deploying a churn prediction model that actually integrates with your CRM.",
-  "image": "/images/industries/meeting-topview.jpg"
+  "image": "/images/insights/churn-prediction-playbook-hero.jpg"
  },
  "/insights/economics-of-loyalty": {
   "title": "The Economics of Loyalty: Why Points Programs Fail",
   "description": "Most loyalty programs are just disguised price cuts. We analyze the math behind successful behavioral rewards vs. margin-killing discounts.",
-  "image": "/images/capabilities/cap-retail-data.jpg"
+  "image": "/images/insights/economics-of-loyalty-hero.jpg"
  },
  "/insights/series-a-fundraising-guide": {
   "title": "The Complete Guide to Series A Fundraising Preparation",
   "description": "Series A fundraising represents a critical inflection point for growth-stage companies. The gap between seed funding and institutional capital is wider than most founders anticipate, and preparation determines outcomes more than any other factor.",
-  "image": "/images/industries/fin-monitors.jpg"
+  "image": "/images/insights/series-a-fundraising-guide-hero.jpg"
  },
  "/insights/valuation-mistakes": {
   "title": "Five Valuation Mistakes That Cost Founders Millions",
   "description": "Valuation errors compound over time, creating long-term consequences that extend far beyond a single financing round. Understanding these common mistakes can save founders from dilution disasters and misaligned cap tables.",
-  "image": "/images/industries/fin-handshake-city.jpg"
+  "image": "/images/insights/valuation-mistakes-hero.jpg"
  },
  "/insights/pitch-deck-design": {
   "title": "How to Design Pitch Decks That Close Institutional Rounds",
   "description": "The difference between pitch decks that generate term sheets and those that generate polite passes often comes down to narrative structure, visual clarity, and strategic emphasis rather than the underlying business quality.",
-  "image": "/images/abstract-growth.jpg"
+  "image": "/images/insights/pitch-deck-design-hero.jpg"
  },
  "/insights/due-diligence-checklist": {
   "title": "The Investor Due Diligence Checklist",
   "description": "Due diligence can make or break fundraising momentum. Companies that prepare comprehensive documentation before starting conversations close rounds faster and maintain better negotiating positions throughout the process.",
-  "image": "/images/industries/fin-handshake-city.jpg"
+  "image": "/images/insights/due-diligence-checklist-hero.jpg"
  },
  "/insights/ma-failure-analysis": {
   "title": "Why Most Acquisitions Fail and How to Beat the Odds",
   "description": "Research consistently shows that 70-90% of acquisitions fail to create value for the acquiring company. Understanding the root causes of M&A failure and implementing disciplined processes can dramatically improve your odds of success.",
-  "image": "/images/industries/tech-datacenter.jpg"
+  "image": "/images/insights/ma-failure-analysis-hero.jpg"
  },
  "/insights/integration-playbook": {
   "title": "The 100-Day Integration Playbook for Successful M&A",
   "description": "The first 100 days after acquisition close determine whether you'll capture the value you paid for or watch it evaporate through poor execution. A structured playbook ensures nothing critical falls through the cracks.",
-  "image": "/images/capabilities/cap-data-presentation.jpg"
+  "image": "/images/insights/integration-playbook-hero.jpg"
  },
  "/insights/ma-commercial-due-diligence": {
   "title": "Commercial Due Diligence: The Questions That Matter Most",
   "description": "Financial due diligence tells you what happened. Commercial due diligence tells you what will happen. Understanding market dynamics, competitive positioning, and customer relationships determines whether projected growth is achievable or aspirational.",
-  "image": "/images/industries/deal-handshake.jpg"
+  "image": "/images/insights/ma-commercial-due-diligence-hero.jpg"
  },
  "/insights/synergy-capture": {
   "title": "How to Capture Synergies Without Destroying Value",
   "description": "Synergies justify acquisition premiums, but most companies capture less than 50% of projected synergies. The difference between success and failure lies in systematic planning, disciplined execution, and avoiding the traps that destroy value in pursuit of cost savings.",
-  "image": "/images/ai-acceleration-abstract.jpg"
+  "image": "/images/insights/synergy-capture-hero.jpg"
  },
  "/insights/business-transformation-strategy": {
   "title": "Navigating Business Transformation: A Strategic Framework for Sustainable Change",
@@ -967,7 +997,7 @@
  "/insights/performance-improvement-framework": {
   "title": "Systematic Performance Improvement: From Diagnosis to Sustainable Results",
   "description": "Performance improvement initiatives often begin with ambitious goals and genuine commitment, yet many fail to deliver lasting results. The challenge lies not in identifying what needs to improve, but in designing interventions that create sustainable change.",
-  "image": "/images/performance-improvement-abstract.jpg"
+  "image": "/images/insights/performance-improvement-framework-hero.jpg"
  },
  "/insights/rolling-forecasts": {
   "title": "Rolling Forecasts: A Modern Approach to Financial Planning",
@@ -977,62 +1007,62 @@
  "/insights/kpi-dashboards": {
   "title": "Building Effective KPI Dashboards That Drive Action",
   "description": "How to design dashboards that move beyond vanity metrics to provide actionable insights that improve decision-making across your organization.",
-  "image": "/images/capabilities/cap-data-bars.jpg"
+  "image": "/images/insights/kpi-dashboards-hero.jpg"
  },
  "/insights/cfo-data-integration": {
   "title": "CFO Data Integration Strategies",
   "description": "How to connect financial and operational data to enable better decision-making and drive business performance across your organization.",
-  "image": "/images/capabilities/cap-presenting-graphs.jpg"
+  "image": "/images/insights/cfo-data-integration-hero.jpg"
  },
  "/insights/smart-cost-reduction": {
   "title": "Smart Cost Reduction: Beyond the Cuts",
   "description": "How to reduce costs strategically without damaging your business. A framework for sustainable cost optimization that preserves competitive advantage.",
-  "image": "/images/capabilities/cap-team-screens.jpg"
+  "image": "/images/insights/smart-cost-reduction-hero.jpg"
  },
  "/insights/working-capital-optimization": {
   "title": "Working Capital Optimization",
   "description": "How to unlock cash trapped in your balance sheet through strategic working capital management and process improvement.",
-  "image": "/images/capabilities/cap-presenting-graphs.jpg"
+  "image": "/images/insights/working-capital-optimization-hero.jpg"
  },
  "/insights/lean-operations-scale": {
   "title": "Lean Operations at Scale",
   "description": "How to apply lean principles to complex organizations for sustainable operational excellence and continuous improvement.",
-  "image": "/images/capabilities/cap-team-screens.jpg"
+  "image": "/images/insights/lean-operations-scale-hero.jpg"
  },
  "/insights/financial-discipline-growth": {
   "title": "Financial discipline as a growth enabler",
   "description": "How financial discipline accelerates growth rather than constraining it. Building the financial foundations that enable sustainable scaling.",
-  "image": "/images/industries/fin-monitors.jpg"
+  "image": "/images/insights/financial-discipline-growth-hero.jpg"
  },
  "/insights/cfo-cash-flow-guide": {
   "title": "The CFO's Guide to Cash Flow Management",
   "description": "Master cash flow management with proven techniques for forecasting, working capital optimization, and navigating cash crunches.",
-  "image": "/images/capabilities/cap-presenting-graphs.jpg"
+  "image": "/images/insights/cfo-cash-flow-guide-hero.jpg"
  },
  "/insights/investor-ready-board-decks": {
   "title": "Building Investor-Ready Board Decks",
   "description": "How to create board materials that impress investors, drive productive discussions, and demonstrate financial sophistication.",
-  "image": "/images/capabilities/cap-presenting-graphs.jpg"
+  "image": "/images/insights/investor-ready-board-decks-hero.jpg"
  },
  "/insights/strategic-plans-success": {
   "title": "Why Strategic Plans Fail—And How to Succeed",
   "description": "Most strategic plans gather dust on shelves. Learn why strategies fail to deliver and discover a framework for building plans that actually get executed.",
-  "image": "/images/capabilities/cap-chess.jpg"
+  "image": "/images/insights/strategic-plans-success-hero.jpg"
  },
  "/insights/operating-model-redesign": {
   "title": "Operating Model Redesign",
   "description": "How to redesign your operating model to enable strategy execution. Aligning structure, processes, and capabilities with strategic intent.",
-  "image": "/images/capabilities/cap-chess.jpg"
+  "image": "/images/insights/operating-model-redesign-hero.jpg"
  },
  "/insights/portfolio-management": {
   "title": "Portfolio Management Excellence",
   "description": "How to manage your portfolio of strategic initiatives for maximum impact. A framework for prioritization, resource allocation, and governance.",
-  "image": "/images/capabilities/cap-chess.jpg"
+  "image": "/images/insights/portfolio-management-hero.jpg"
  },
  "/insights/practical-ai-guide": {
   "title": "How Growing Companies Are Winning with AI: A Practical Guide",
   "description": "Discover how growing businesses are leveraging artificial intelligence to compete with larger enterprises—without the enterprise budget.",
-  "image": "/images/insight-ai-midmarket.jpg"
+  "image": "/images/insights/practical-ai-guide-hero.jpg"
  },
  "/insights/is-your-business-ready-for-ai": {
   "title": "Is Your Business Ready for AI? A 15-Minute Test for SMB Leaders",
@@ -1052,12 +1082,12 @@
  "/insights/scaling-operations": {
   "title": "Scaling Operations Without Breaking the Bank",
   "description": "Cost-effective strategies for growing companies looking to grow efficiently.",
-  "image": "/images/insight-scaling-ops.jpg"
+  "image": "/images/insights/scaling-operations-hero.jpg"
  },
  "/insights/customer-intelligence": {
   "title": "Customer Intelligence for Growing Businesses",
   "description": "How to build data-driven customer insights that drive retention and revenue.",
-  "image": "/images/insight-customer-intel.jpg"
+  "image": "/images/insights/customer-intelligence-hero.jpg"
  },
  "/cases/financial-fraud-detection": {
   "title": "Catching Card Fraud Before the Money Moves | Financial Services Case Study",

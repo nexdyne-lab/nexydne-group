@@ -8,9 +8,9 @@ export default function AlgorithmicTerritoryPlanning() {
   ];
 
   const relatedInsights = [
-    { title: "The End of \"Gut Feel\" Forecasting", category: "Sales Operations", link: "/insights/ai-sales-forecasting", image: "/images/capabilities/cap-presenting-graphs.jpg" },
-    { title: "Architecting the Modern Sales Stack", category: "Sales Operations", link: "/insights/modern-sales-stack", image: "/images/industries/advisor-charts.jpg" },
-    { title: "Algorithmic Pricing for Growing Companies", category: "Technology", link: "/insights/algorithmic-pricing-smes", image: "/images/insight-algo-pricing.jpg" },
+    { title: "The End of \"Gut Feel\" Forecasting", category: "Sales Operations", link: "/insights/ai-sales-forecasting", image: "/images/insights/ai-sales-forecasting-hero.jpg" },
+    { title: "Architecting the Modern Sales Stack", category: "Sales Operations", link: "/insights/modern-sales-stack", image: "/images/insights/modern-sales-stack-hero.jpg" },
+    { title: "Algorithmic Pricing for Growing Companies", category: "Technology", link: "/insights/algorithmic-pricing-smes", image: "/images/insights/algorithmic-pricing-smes-hero.jpg" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function AlgorithmicTerritoryPlanning() {
       category="Sales Strategy"
       title="Algorithmic Territory Planning: Optimizing Coverage with Geospatial Data"
       subtitle="Territory planning is often an annual exercise in spreadsheet wrestling and political infighting. By applying geospatial algorithms and propensity modeling, we can turn it into a continuous optimization process."
-      heroImage="/images/industries/deal-handshake.jpg"
+      heroImage="/images/insights/algorithmic-territory-planning-hero.jpg"
       publishDate="February 28, 2025"
       readTime="7 min"
       sections={sections}

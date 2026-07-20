@@ -10,8 +10,8 @@ export default function FinancialDisciplineGrowth() {
   ];
 
   const relatedInsights = [
-    { title: "The CFO's guide to cash flow", category: "Fractional CFO Services", link: "/insights/cfo-cash-flow-guide", image: "/images/cfo-services-abstract.jpg" },
-    { title: "Investor-ready board decks", category: "Fractional CFO Services", link: "/insights/investor-ready-board-decks", image: "/images/capital-raising-abstract.jpg" },
+    { title: "The CFO's guide to cash flow", category: "Fractional CFO Services", link: "/insights/cfo-cash-flow-guide", image: "/images/insights/cfo-cash-flow-guide-hero.jpg" },
+    { title: "Investor-ready board decks", category: "Fractional CFO Services", link: "/insights/investor-ready-board-decks", image: "/images/insights/investor-ready-board-decks-hero.jpg" },
     { title: "Rolling forecasts", category: "Fractional CFO Services", link: "/insights/rolling-forecasts", image: "/images/insights/rolling-forecasts-hero.jpg" },
   ];
 
@@ -20,7 +20,7 @@ export default function FinancialDisciplineGrowth() {
       category="Fractional CFO Services"
       title="Financial discipline as a growth enabler"
       subtitle="How financial discipline accelerates growth rather than constraining it. Building the financial foundations that enable sustainable scaling."
-      heroImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/insights/financial-discipline-growth-hero.jpg"
       publishDate="December 2024"
       readTime="8 min"
       sections={sections}

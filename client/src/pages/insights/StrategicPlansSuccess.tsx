@@ -15,7 +15,7 @@ export default function StrategicPlansSuccess() {
       category="Business Strategy"
       title="Why Strategic Plans Fail—And How to Succeed"
       subtitle="Most strategic plans gather dust on shelves. Learn why strategies fail to deliver and discover a framework for building plans that actually get executed."
-      heroImage="/images/capabilities/cap-chess.jpg"
+      heroImage="/images/insights/strategic-plans-success-hero.jpg"
       publishDate="December 2024"
       readTime="11 min"
       sections={sections}
@@ -26,8 +26,8 @@ export default function StrategicPlansSuccess() {
         "Leaders close the gap by communicating relentlessly, allocating resources, removing obstacles, and cascading strategy to every level.",
       ]}
       relatedInsights={[
-        { title: "Operating Model Redesign", category: "Business Strategy", link: "/insights/operating-model-redesign", image: "/images/business-strategy-abstract.jpg" },
-        { title: "Portfolio Management Excellence", category: "Business Strategy", link: "/insights/portfolio-management", image: "/images/approach-strategy.jpg" },
+        { title: "Operating Model Redesign", category: "Business Strategy", link: "/insights/operating-model-redesign", image: "/images/insights/operating-model-redesign-hero.jpg" },
+        { title: "Portfolio Management Excellence", category: "Business Strategy", link: "/insights/portfolio-management", image: "/images/insights/portfolio-management-hero.jpg" },
         { title: "Business Transformation Strategy", category: "Business Strategy", link: "/insights/business-transformation-strategy", image: "/images/insights/business-transformation-strategy-hero.jpg" },
       ]}
     >

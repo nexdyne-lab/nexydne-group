@@ -4,7 +4,7 @@ export default function CFOGuideAIInvestment() {
   const relatedInsights = [
     { title: "The ROI of AI: What Mid-Size Companies Need to Know", category: "AI", link: "/capabilities/artificial-intelligence/insights/ai-roi-framework", image: "/images/ai-powered-finance-abstract.jpg" },
     { title: "Rolling Forecasts: The CFO's Secret Weapon", category: "FP&A", link: "/insights/rolling-forecasts", image: "/images/insights/rolling-forecasts-hero.jpg" },
-    { title: "Financial Discipline During Growth", category: "Growth", link: "/insights/financial-discipline-growth", image: "/images/growth-scaling-abstract.jpg" },
+    { title: "Financial Discipline During Growth", category: "Growth", link: "/insights/financial-discipline-growth", image: "/images/insights/financial-discipline-growth-hero.jpg" },
   ];
 
   const sections = [

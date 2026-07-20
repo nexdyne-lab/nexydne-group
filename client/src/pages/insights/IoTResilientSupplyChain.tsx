@@ -8,9 +8,9 @@ export default function IoTResilientSupplyChain() {
   ];
 
   const relatedInsights = [
-    { title: "Digital Twins in Manufacturing: From Hype to ROI", category: "Operations", link: "/insights/digital-twin-manufacturing", image: "/images/industries/retail-warehouse.jpg" },
-    { title: "The Generative Supply Chain: Scaling Creative with AI", category: "Operations", link: "/insights/generative-supply-chain", image: "/images/capabilities/cap-warehouse-robot.jpg" },
-    { title: "Building Supply Chain Resilience", category: "Operations", link: "/insights/iot-resilient-supply-chain", image: "/images/capabilities/cap-iot-network.jpg" },
+    { title: "Digital Twins in Manufacturing: From Hype to ROI", category: "Operations", link: "/insights/digital-twin-manufacturing", image: "/images/insights/digital-twin-manufacturing-hero.jpg" },
+    { title: "The Generative Supply Chain: Scaling Creative with AI", category: "Operations", link: "/insights/generative-supply-chain", image: "/images/insights/generative-supply-chain-hero.jpg" },
+    { title: "Building Supply Chain Resilience", category: "Operations", link: "/insights/iot-resilient-supply-chain", image: "/images/insights/iot-resilient-supply-chain-hero.jpg" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function IoTResilientSupplyChain() {
       category="IoT & Supply Chain"
       title="IoT and the Resilient Supply Chain: Visibility is Victory"
       subtitle="In an era of global disruption, knowing where your goods are isn't enough. You need to know their condition, their context, and their risk profile in real-time."
-      heroImage="/images/industries/retail-warehouse.jpg"
+      heroImage="/images/insights/iot-resilient-supply-chain-hero.jpg"
       publishDate="January 15, 2026"
       readTime="6 min"
       sections={sections}

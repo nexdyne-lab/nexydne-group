@@ -33,7 +33,7 @@ const insightPosts: InsightPost[] = [
     readTime: "5 min read",
     date: "November 30, 2025",
     url: "/insights/why-intelligent-automation",
-    image: "/images/capabilities/cap-robot-factory.jpg",
+    image: "/images/insights/why-intelligent-automation-hero.jpg",
     tags: ["Automation", "Strategy", "Digital Transformation"],
   },
   {
@@ -44,7 +44,7 @@ const insightPosts: InsightPost[] = [
     readTime: "8 min read",
     date: "November 25, 2025",
     url: "/insights/ai-agents-transform-operations",
-    image: "/images/capabilities/cap-warehouse-robot.jpg",
+    image: "/images/insights/ai-agents-transform-operations-hero.jpg",
     tags: ["AI Agents", "Enterprise", "Workflow Automation"],
   },
   {
@@ -55,7 +55,7 @@ const insightPosts: InsightPost[] = [
     readTime: "15 min read",
     date: "November 20, 2025",
     url: "/insights/process-mining-guide",
-    image: "/images/industries/ops-gears.jpg",
+    image: "/images/insights/process-mining-guide-hero.jpg",
     tags: ["Process Mining", "Analytics", "Operations"],
   },
   {
@@ -66,7 +66,7 @@ const insightPosts: InsightPost[] = [
     readTime: "6 min read",
     date: "November 15, 2025",
     url: "/insights/ai-automation-reshaping-business",
-    image: "/images/capabilities/cap-circuit-green.jpg",
+    image: "/images/insights/ai-automation-reshaping-business-hero.jpg",
     tags: ["RPA", "Intelligent Automation", "Technology"],
   },
   {
@@ -77,7 +77,7 @@ const insightPosts: InsightPost[] = [
     readTime: "20 min read",
     date: "November 10, 2025",
     url: "/insights/measuring-automation-roi",
-    image: "/images/industries/mfg-robotics.jpg",
+    image: "/images/insights/measuring-automation-roi-hero.jpg",
     tags: ["ROI", "Business Case", "Strategy"],
   },
   {
@@ -88,7 +88,7 @@ const insightPosts: InsightPost[] = [
     readTime: "7 min read",
     date: "November 5, 2025",
     url: "/insights/digital-transformation-readiness",
-    image: "/images/industries/ops-monitors-dark.jpg",
+    image: "/images/insights/digital-transformation-readiness-hero.jpg",
     tags: ["IDP", "Document Processing", "AI"],
   },
   {
@@ -110,7 +110,7 @@ const insightPosts: InsightPost[] = [
     readTime: "12 min read",
     date: "October 25, 2025",
     url: "/insights/composable-architecture",
-    image: "/images/capabilities/cap-warehouse-robot.jpg",
+    image: "/images/insights/composable-architecture-hero.jpg",
     tags: ["iPaaS", "Integration", "Architecture"],
   },
   {
@@ -121,7 +121,7 @@ const insightPosts: InsightPost[] = [
     readTime: "8 min read",
     date: "October 20, 2025",
     url: "/insights/performance-improvement-framework",
-    image: "/images/industries/ops-gears.jpg",
+    image: "/images/insights/performance-improvement-framework-hero.jpg",
     tags: ["Metrics", "KPIs", "Value Measurement"],
   },
 ];

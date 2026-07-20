@@ -8,9 +8,9 @@ export default function FromMVPToScale() {
   ];
 
   const relatedInsights = [
-    { title: "The Corporate Venture Advantage", category: "Article", link: "/insights/corporate-venture-advantage", image: "/images/capabilities/cap-lightbulb-idea.jpg" },
-    { title: "Hiring for Builders", category: "Talent", link: "/insights/hiring-for-builders", image: "/images/capabilities/cap-venturing.jpg" },
-    { title: "The CEO's Guide to Data Modernization", category: "Strategy", link: "/insights/ceo-guide-data-modernization", image: "/images/capabilities/cap-telescope.jpg" },
+    { title: "The Corporate Venture Advantage", category: "Article", link: "/insights/corporate-venture-advantage", image: "/images/insights/corporate-venture-advantage-hero.jpg" },
+    { title: "Hiring for Builders", category: "Talent", link: "/insights/hiring-for-builders", image: "/images/insights/hiring-for-builders-hero.jpg" },
+    { title: "The CEO's Guide to Data Modernization", category: "Strategy", link: "/insights/ceo-guide-data-modernization", image: "/images/insights/ceo-guide-data-modernization-hero.jpg" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function FromMVPToScale() {
       category="Guide"
       title="From MVP to scale: navigating the 'Valley of Death'"
       subtitle="Building a Minimum Viable Product is easy. Turning it into a scalable, revenue-generating business is where 90% of corporate ventures fail. Here is the operational playbook for crossing the chasm."
-      heroImage="/images/industries/team-strategy-board.jpg"
+      heroImage="/images/insights/from-mvp-to-scale-hero.jpg"
       publishDate="November 28, 2024"
       readTime="10 min"
       sections={sections}

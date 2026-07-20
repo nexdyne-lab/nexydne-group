@@ -13,9 +13,9 @@ export default function MACommercialDueDiligence() {
   ];
 
   const relatedInsights = [
-    { title: "Why M&A Deals Fail: Lessons from Integration Disasters", category: "M&A Strategy", link: "/insights/ma-failure-analysis", image: "/images/industries/tech-datacenter.jpg" },
-    { title: "The Integration Playbook: First 100 Days", category: "M&A Strategy", link: "/insights/integration-playbook", image: "/images/industries/biz-meeting.jpg" },
-    { title: "Synergy Capture", category: "M&A Strategy", link: "/insights/synergy-capture", image: "/images/industries/fin-monitors.jpg" },
+    { title: "Why M&A Deals Fail: Lessons from Integration Disasters", category: "M&A Strategy", link: "/insights/ma-failure-analysis", image: "/images/insights/ma-failure-analysis-hero.jpg" },
+    { title: "The Integration Playbook: First 100 Days", category: "M&A Strategy", link: "/insights/integration-playbook", image: "/images/insights/integration-playbook-hero.jpg" },
+    { title: "Synergy Capture", category: "M&A Strategy", link: "/insights/synergy-capture", image: "/images/insights/synergy-capture-hero.jpg" },
   ];
 
   return (
@@ -23,7 +23,7 @@ export default function MACommercialDueDiligence() {
       category="M&A Strategy"
       title="Commercial Due Diligence: The Questions That Matter Most"
       subtitle="Financial due diligence tells you what happened. Commercial due diligence tells you what will happen. Understanding market dynamics, competitive positioning, and customer relationships determines whether projected growth is achievable or aspirational."
-      heroImage="/images/industries/deal-handshake.jpg"
+      heroImage="/images/insights/ma-commercial-due-diligence-hero.jpg"
       publishDate="December 8, 2025"
       readTime="13 min"
       sections={sections}

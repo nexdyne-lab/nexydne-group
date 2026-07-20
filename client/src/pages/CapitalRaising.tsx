@@ -408,19 +408,19 @@ export default function CapitalRaising() {
             title: "Series A Fundraising Guide",
             category: "Capital Raising",
             link: "/insights/series-a-fundraising-guide",
-            image: "/images/capabilities/cap-celebrate.jpg"
+            image: "/images/insights/series-a-fundraising-guide-hero.jpg"
           },
           {
             title: "Five Valuation Mistakes That Cost Founders Millions",
             category: "Valuation",
             link: "/insights/valuation-mistakes",
-            image: "/images/capabilities/cap-presenting-graphs.jpg"
+            image: "/images/insights/valuation-mistakes-hero.jpg"
           },
           {
             title: "The Investor Due Diligence Checklist",
             category: "Due Diligence",
             link: "/insights/due-diligence-checklist",
-            image: "/images/industries/fin-monitors.jpg"
+            image: "/images/insights/due-diligence-checklist-hero.jpg"
           }
         ]}
       />

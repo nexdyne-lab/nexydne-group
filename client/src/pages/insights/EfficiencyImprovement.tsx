@@ -10,9 +10,9 @@ export default function EfficiencyImprovement() {
   ];
 
   const relatedInsights = [
-    { title: "AI Access: How growing businesses can compete with enterprise technology", category: "Report", link: "/insights/ai-access-guide", image: "/images/ai-in-enterprises.jpg" },
-    { title: "Process mining fundamentals: From operational mapping to AI automation", category: "Whitepaper", link: "/insights/process-mining-guide", image: "/images/capabilities/cap-data-bars.jpg" },
-    { title: "Why change management determines AI project success", category: "Article", link: "/insights/change-management-ai-success", image: "/images/change-management-abstract.jpg" },
+    { title: "AI Access: How growing businesses can compete with enterprise technology", category: "Report", link: "/insights/ai-access-guide", image: "/images/insights/ai-access-guide-hero.jpg" },
+    { title: "Process mining fundamentals: From operational mapping to AI automation", category: "Whitepaper", link: "/insights/process-mining-guide", image: "/images/insights/process-mining-guide-hero.jpg" },
+    { title: "Why change management determines AI project success", category: "Article", link: "/insights/change-management-ai-success", image: "/images/insights/change-management-ai-success-hero.jpg" },
   ];
 
   return (
@@ -20,7 +20,7 @@ export default function EfficiencyImprovement() {
       category="Intelligent Automation"
       title="The 85% efficiency improvement: What our clients actually experience"
       subtitle="Behind the headline metrics lies a more nuanced story. This article examines what efficiency improvements really look like in practice—and what it takes to achieve them."
-      heroImage="/images/ai-acceleration-abstract.jpg"
+      heroImage="/images/insights/efficiency-improvement-reality-hero.jpg"
       publishDate="January 2026"
       readTime="8 min"
       sections={sections}

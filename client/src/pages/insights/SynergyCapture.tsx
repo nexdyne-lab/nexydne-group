@@ -19,7 +19,7 @@ export default function SynergyCapture() {
       category="M&A Strategy"
       title="How to Capture Synergies Without Destroying Value"
       subtitle="Synergies justify acquisition premiums, but most companies capture less than 50% of projected synergies. The difference between success and failure lies in systematic planning, disciplined execution, and avoiding the traps that destroy value in pursuit of cost savings."
-      heroImage="/images/ai-acceleration-abstract.jpg"
+      heroImage="/images/insights/synergy-capture-hero.jpg"
       publishDate="December 6, 2025"
       readTime="12 min"
       sections={sections}
@@ -30,9 +30,9 @@ export default function SynergyCapture() {
         "Aggressive cost cutting destroys value when it drives customer attrition and talent flight—protect the business while capturing gains.",
       ]}
       relatedInsights={[
-        { title: "The M&A Integration Playbook", category: "M&A Strategy", link: "/insights/ma-commercial-due-diligence", image: "/images/mergers-acquisitions-abstract.jpg" },
-        { title: "Why M&A Deals Fail", category: "M&A Strategy", link: "/insights/ma-failure-analysis", image: "/images/ma-partnerships-abstract.jpg" },
-        { title: "Commercial Due Diligence", category: "M&A Strategy", link: "/insights/ma-commercial-due-diligence", image: "/images/capital-raising-abstract.jpg" },
+        { title: "The M&A Integration Playbook", category: "M&A Strategy", link: "/insights/ma-commercial-due-diligence", image: "/images/insights/ma-commercial-due-diligence-hero.jpg" },
+        { title: "Why M&A Deals Fail", category: "M&A Strategy", link: "/insights/ma-failure-analysis", image: "/images/insights/ma-failure-analysis-hero.jpg" },
+        { title: "Commercial Due Diligence", category: "M&A Strategy", link: "/insights/ma-commercial-due-diligence", image: "/images/insights/ma-commercial-due-diligence-hero.jpg" },
       ]}
     >
       <p>

@@ -9,9 +9,9 @@ export function AIInEcommerce() {
   ];
 
   const relatedInsights = [
-    { title: "Algorithmic Pricing for Growing Companies", category: "Technology", link: "/insights/algorithmic-pricing-smes", image: "/images/insight-algo-pricing.jpg" },
-    { title: "The End of \"Gut Feel\" Forecasting", category: "Sales Operations", link: "/insights/ai-sales-forecasting", image: "/images/capabilities/cap-presenting-graphs.jpg" },
-    { title: "AI-Driven Brand Strategy: From Intuition to Intelligence", category: "Brand Strategy", link: "/insights/ai-driven-brand-strategy", image: "/images/abstract-growth.jpg" },
+    { title: "Algorithmic Pricing for Growing Companies", category: "Technology", link: "/insights/algorithmic-pricing-smes", image: "/images/insights/algorithmic-pricing-smes-hero.jpg" },
+    { title: "The End of \"Gut Feel\" Forecasting", category: "Sales Operations", link: "/insights/ai-sales-forecasting", image: "/images/insights/ai-sales-forecasting-hero.jpg" },
+    { title: "AI-Driven Brand Strategy: From Intuition to Intelligence", category: "Brand Strategy", link: "/insights/ai-driven-brand-strategy", image: "/images/insights/ai-driven-brand-strategy-hero.jpg" },
   ];
 
   return (
@@ -19,7 +19,7 @@ export function AIInEcommerce() {
       category="Artificial Intelligence"
       title="AI-Driven Merchandising: Beyond Recommendations"
       subtitle="How machine learning is transforming inventory management, dynamic pricing, and personalized search results to drive profitability."
-      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroImage="/images/insights/ai-in-ecommerce-hero.jpg"
       publishDate="November 3, 2025"
       readTime="8 min"
       sections={sections}

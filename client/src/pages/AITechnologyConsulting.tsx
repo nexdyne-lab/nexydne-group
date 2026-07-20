@@ -140,25 +140,25 @@ const insights = [
   {
     type: "Report",
     title: "AI Access: How growing businesses can compete with enterprise technology",
-    image: "/images/insight-ai-state.jpg",
+    image: "/images/insights/ai-access-guide-hero.jpg",
     link: "/insights/ai-access-guide"
   },
   {
     type: "Article",
     title: "The 85% efficiency improvement: What our clients actually experience",
-    image: "/images/insight-automation.jpg",
+    image: "/images/insights/efficiency-improvement-reality-hero.jpg",
     link: "/insights/efficiency-improvement-reality"
   },
   {
     type: "Whitepaper",
     title: "Process mining fundamentals: From operational mapping to AI automation",
-    image: "/images/insight-process-mining.jpg",
+    image: "/images/insights/process-mining-guide-hero.jpg",
     link: "/insights/process-mining-guide"
   },
   {
     type: "Article",
     title: "Why change management determines AI project success",
-    image: "/images/insight-data-culture.jpg",
+    image: "/images/insights/change-management-ai-success-hero.jpg",
     link: "/insights/change-management-ai-success"
   }
 ];

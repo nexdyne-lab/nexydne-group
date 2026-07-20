@@ -13,7 +13,7 @@ export default function SubscriptionPricingModels() {
       category="Business Models"
       title="Beyond the Flat Rate: Optimizing Subscription Models for Growth"
       subtitle={'The "all-you-can-eat" subscription model is simple, but it often leaves money on the table. Advanced recurring revenue models align pricing with customer success.'}
-      heroImage="/images/insight-subscription-models.jpg"
+      heroImage="/images/insights/subscription-pricing-models-hero.jpg"
       publishDate="September 18, 2024"
       readTime="7 min"
       sections={sections}
@@ -24,9 +24,9 @@ export default function SubscriptionPricingModels() {
         "Effective tiering locks 'fence' features behind higher plans, and per-seat pricing can suppress the adoption that defends against churn.",
       ]}
       relatedInsights={[
-        { title: "The Psychology of Value", category: "Pricing Strategy", link: "/insights/psychology-of-value", image: "/images/insight-pricing-psychology.jpg" },
-        { title: "Algorithmic Pricing for Growing Companies", category: "Pricing Strategy", link: "/insights/algorithmic-pricing-smes", image: "/images/insight-algo-pricing.jpg" },
-        { title: "Pricing Strategy", category: "Business Models", link: "/insights/psychology-of-value", image: "/images/insights-pricing-strategy.jpg" },
+        { title: "The Psychology of Value", category: "Pricing Strategy", link: "/insights/psychology-of-value", image: "/images/insights/psychology-of-value-hero.jpg" },
+        { title: "Algorithmic Pricing for Growing Companies", category: "Pricing Strategy", link: "/insights/algorithmic-pricing-smes", image: "/images/insights/algorithmic-pricing-smes-hero.jpg" },
+        { title: "Pricing Strategy", category: "Business Models", link: "/insights/psychology-of-value", image: "/images/insights/psychology-of-value-hero.jpg" },
       ]}
     >
       <p>

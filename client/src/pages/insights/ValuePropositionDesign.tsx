@@ -12,7 +12,7 @@ export default function ValuePropositionDesign() {
       category="Product Strategy"
       title="Value Proposition Design: The API Between Product and Market"
       subtitle={'Why great products fail to find traction, and how to define a clear "interface contract" with your customers.'}
-      heroImage="/images/product-strategy-abstract.jpg"
+      heroImage="/images/insights/value-proposition-design-hero.jpg"
       publishDate="December 10, 2025"
       readTime="6 min"
       sections={sections}
@@ -23,9 +23,9 @@ export default function ValuePropositionDesign() {
         "Markets shift, so version your value proposition and build feedback loops to keep it in sync with reality.",
       ]}
       relatedInsights={[
-        { title: "Why NPS Is a Vanity Metric", category: "Growth & Marketing", link: "/insights/why-nps-is-a-vanity-metric", image: "/images/insights-voc-product.jpg" },
-        { title: "Beyond Segmentation", category: "Growth & Marketing", link: "/insights/beyond-segmentation", image: "/images/insights-behavioral-segmentation.jpg" },
-        { title: "The Psychology of Value", category: "Pricing Strategy", link: "/insights/psychology-of-value", image: "/images/insight-pricing-psychology.jpg" },
+        { title: "Why NPS Is a Vanity Metric", category: "Growth & Marketing", link: "/insights/why-nps-is-a-vanity-metric", image: "/images/insights/why-nps-is-a-vanity-metric-hero.jpg" },
+        { title: "Beyond Segmentation", category: "Growth & Marketing", link: "/insights/beyond-segmentation", image: "/images/insights/beyond-segmentation-hero.jpg" },
+        { title: "The Psychology of Value", category: "Pricing Strategy", link: "/insights/psychology-of-value", image: "/images/insights/psychology-of-value-hero.jpg" },
       ]}
     >
       <p>

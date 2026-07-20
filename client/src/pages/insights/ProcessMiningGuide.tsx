@@ -6,19 +6,19 @@ export default function ProcessMiningGuide() {
       title: "How AI Agents Are Reshaping Enterprise Operations",
       category: "AI in Enterprise",
       link: "/insights/ai-agents-transform-operations",
-      image: "/images/hero-ai-enterprise.webp"
+      image: "/images/insights/ai-agents-transform-operations-hero.jpg"
     },
     {
       title: "The $15 Trillion Question: How AI Will Reshape the Global Economy",
       category: "Economic Impact",
       link: "/insights/ai-economic-impact",
-      image: "/images/hero-ai-global-economy.jpg"
+      image: "/images/insights/ai-economic-impact-hero.jpg"
     },
     {
       title: "The Pragmatic CEO's Guide to AI",
       category: "AI Executive Guide",
       link: "/insights/ceo-guide-data-modernization",
-      image: "/images/hero-ceo-ai-guide.jpg"
+      image: "/images/insights/ceo-guide-data-modernization-hero.jpg"
     }
   ];
 
@@ -39,7 +39,7 @@ export default function ProcessMiningGuide() {
       categoryHref="/insights"
       title="The Complete Guide to Process Mining"
       subtitle="Process mining reveals the hidden reality of how your business actually operates—not how you think it operates. Learn how to leverage this powerful technology for operational excellence."
-      heroImage="/images/hero-process-mining.jpg"
+      heroImage="/images/insights/process-mining-guide-hero.jpg"
       publishDate="January 12, 2026"
       readTime="9 min"
       sections={sections}

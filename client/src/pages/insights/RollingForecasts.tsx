@@ -11,9 +11,9 @@ export default function RollingForecasts() {
   ];
 
   const relatedInsights = [
-    { title: "Building Effective KPI Dashboards", category: "Financial Planning & Analysis", link: "/insights/kpi-dashboards", image: "/images/capabilities/cap-data-bars.jpg" },
-    { title: "CFO Data Integration Strategies", category: "Financial Planning & Analysis", link: "/insights/cfo-data-integration", image: "/images/capabilities/cap-data-presentation.jpg" },
-    { title: "The CFO's Cash Flow Guide", category: "Financial Planning & Analysis", link: "/insights/cfo-cash-flow-guide", image: "/images/industries/fin-monitors.jpg" },
+    { title: "Building Effective KPI Dashboards", category: "Financial Planning & Analysis", link: "/insights/kpi-dashboards", image: "/images/insights/kpi-dashboards-hero.jpg" },
+    { title: "CFO Data Integration Strategies", category: "Financial Planning & Analysis", link: "/insights/cfo-data-integration", image: "/images/insights/cfo-data-integration-hero.jpg" },
+    { title: "The CFO's Cash Flow Guide", category: "Financial Planning & Analysis", link: "/insights/cfo-cash-flow-guide", image: "/images/insights/cfo-cash-flow-guide-hero.jpg" },
   ];
 
   return (

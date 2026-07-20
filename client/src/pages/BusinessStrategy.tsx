@@ -405,19 +405,19 @@ export default function BusinessStrategy() {
             title: "Why Strategic Plans Fail and How to Ensure Yours Succeeds",
             category: "Strategy",
             link: "/insights/strategic-plans-success",
-            image: "/images/capabilities/cap-chess.jpg"
+            image: "/images/insights/strategic-plans-success-hero.jpg"
           },
           {
             title: "The Operating Model Redesign Playbook",
             category: "Transformation",
             link: "/insights/operating-model-redesign",
-            image: "/images/capabilities/cap-telescope.jpg"
+            image: "/images/insights/operating-model-redesign-hero.jpg"
           },
           {
             title: "Portfolio Management for Strategic Initiatives",
             category: "Execution",
             link: "/insights/portfolio-management",
-            image: "/images/industries/team-strategy-board.jpg"
+            image: "/images/insights/portfolio-management-hero.jpg"
           }
         ]}
       />

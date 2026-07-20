@@ -16,7 +16,7 @@ export default function ValuationMistakes() {
       category="Capital Raising"
       title="Five Valuation Mistakes That Cost Founders Millions"
       subtitle="Valuation errors compound over time, creating long-term consequences that extend far beyond a single financing round. Understanding these common mistakes can save founders from dilution disasters and misaligned cap tables."
-      heroImage="/images/industries/fin-handshake-city.jpg"
+      heroImage="/images/insights/valuation-mistakes-hero.jpg"
       publishDate="December 18, 2025"
       readTime="10 min"
       sections={sections}
@@ -27,9 +27,9 @@ export default function ValuationMistakes() {
         "Run exit scenarios so that even a modest outcome still delivers meaningful founder proceeds.",
       ]}
       relatedInsights={[
-        { title: "The Complete Guide to Series A Fundraising Preparation", category: "Capital Raising", link: "/insights/series-a-fundraising-guide", image: "/images/capital-raising-abstract.jpg" },
-        { title: "Due Diligence Checklist for Growth-Stage Companies", category: "Capital Raising", link: "/insights/due-diligence-checklist", image: "/images/cfo-services-abstract.jpg" },
-        { title: "Capital Raising in 2026", category: "Capital Raising", link: "/insights/series-a-fundraising-guide", image: "/images/ai-powered-finance-abstract.jpg" },
+        { title: "The Complete Guide to Series A Fundraising Preparation", category: "Capital Raising", link: "/insights/series-a-fundraising-guide", image: "/images/insights/series-a-fundraising-guide-hero.jpg" },
+        { title: "Due Diligence Checklist for Growth-Stage Companies", category: "Capital Raising", link: "/insights/due-diligence-checklist", image: "/images/insights/due-diligence-checklist-hero.jpg" },
+        { title: "Capital Raising in 2026", category: "Capital Raising", link: "/insights/series-a-fundraising-guide", image: "/images/insights/series-a-fundraising-guide-hero.jpg" },
       ]}
     >
       <p>

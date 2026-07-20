@@ -8,9 +8,9 @@ export default function AISalesForecasting() {
   ];
 
   const relatedInsights = [
-    { title: "Architecting the Modern Sales Stack", category: "Sales Operations", link: "/insights/modern-sales-stack", image: "/images/industries/advisor-charts.jpg" },
-    { title: "Algorithmic Territory Planning", category: "Sales Strategy", link: "/insights/algorithmic-territory-planning", image: "/images/capabilities/cap-data-bars.jpg" },
-    { title: "Algorithmic Pricing for Growing Companies", category: "Technology", link: "/insights/algorithmic-pricing-smes", image: "/images/insight-algo-pricing.jpg" },
+    { title: "Architecting the Modern Sales Stack", category: "Sales Operations", link: "/insights/modern-sales-stack", image: "/images/insights/modern-sales-stack-hero.jpg" },
+    { title: "Algorithmic Territory Planning", category: "Sales Strategy", link: "/insights/algorithmic-territory-planning", image: "/images/insights/algorithmic-territory-planning-hero.jpg" },
+    { title: "Algorithmic Pricing for Growing Companies", category: "Technology", link: "/insights/algorithmic-pricing-smes", image: "/images/insights/algorithmic-pricing-smes-hero.jpg" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function AISalesForecasting() {
       category="Sales Operations"
       title={"The End of \"Gut Feel\" Forecasting: Why AI is the New CRO"}
       subtitle="For decades, sales forecasting was an exercise in political negotiation. Today, predictive AI is turning it into a data science discipline, replacing human bias with algorithmic certainty."
-      heroImage="/images/capabilities/cap-presenting-graphs.jpg"
+      heroImage="/images/insights/ai-sales-forecasting-hero.jpg"
       publishDate="February 14, 2025"
       readTime="5 min"
       sections={sections}

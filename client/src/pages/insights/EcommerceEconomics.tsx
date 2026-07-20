@@ -11,9 +11,9 @@ export default function EcommerceEconomics() {
   ];
 
   const relatedInsights = [
-    { title: "The digital growth playbook for growing companies", category: "Growth & Marketing", link: "/insights/digital-growth-playbook", image: "/images/capabilities/cap-retail-data.jpg" },
-    { title: "The marketplace playbook: Building network effects", category: "Growth & Marketing", link: "/insights/marketplace-playbook", image: "/images/capabilities/cap-mobile-woman.jpg" },
-    { title: "Headless commerce: The engineering case", category: "Technology", link: "/insights/headless-commerce-guide", image: "/images/industries/retail-shelves.jpg" },
+    { title: "The digital growth playbook for growing companies", category: "Growth & Marketing", link: "/insights/digital-growth-playbook", image: "/images/insights/digital-growth-playbook-hero.jpg" },
+    { title: "The marketplace playbook: Building network effects", category: "Growth & Marketing", link: "/insights/marketplace-playbook", image: "/images/insights/marketplace-playbook-hero.jpg" },
+    { title: "Headless commerce: The engineering case", category: "Technology", link: "/insights/headless-commerce-guide", image: "/images/insights/headless-commerce-guide-hero.jpg" },
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function EcommerceEconomics() {
       category="Growth & Marketing"
       title="E-commerce economics: Building profitable D2C channels"
       subtitle="The unit economics, technology choices, and operational considerations that determine D2C success."
-      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroImage="/images/insights/ecommerce-economics-hero.jpg"
       publishDate="November 28, 2025"
       readTime="10 min"
       sections={sections}

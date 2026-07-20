@@ -14,9 +14,9 @@ export default function MAFailureAnalysis() {
   ];
 
   const relatedInsights = [
-    { title: "Commercial Due Diligence: The Questions That Matter Most", category: "M&A Strategy", link: "/insights/ma-commercial-due-diligence", image: "/images/industries/deal-handshake.jpg" },
-    { title: "The Integration Playbook: First 100 Days", category: "M&A Strategy", link: "/insights/integration-playbook", image: "/images/industries/biz-meeting.jpg" },
-    { title: "Synergy Capture", category: "M&A Strategy", link: "/insights/synergy-capture", image: "/images/industries/fin-monitors.jpg" },
+    { title: "Commercial Due Diligence: The Questions That Matter Most", category: "M&A Strategy", link: "/insights/ma-commercial-due-diligence", image: "/images/insights/ma-commercial-due-diligence-hero.jpg" },
+    { title: "The Integration Playbook: First 100 Days", category: "M&A Strategy", link: "/insights/integration-playbook", image: "/images/insights/integration-playbook-hero.jpg" },
+    { title: "Synergy Capture", category: "M&A Strategy", link: "/insights/synergy-capture", image: "/images/insights/synergy-capture-hero.jpg" },
   ];
 
   return (
@@ -24,7 +24,7 @@ export default function MAFailureAnalysis() {
       category="M&A Strategy"
       title="Why Most Acquisitions Fail and How to Beat the Odds"
       subtitle="Research consistently shows that 70-90% of acquisitions fail to create value for the acquiring company. Understanding the root causes of M&A failure and implementing disciplined processes can dramatically improve your odds of success."
-      heroImage="/images/industries/tech-datacenter.jpg"
+      heroImage="/images/insights/ma-failure-analysis-hero.jpg"
       publishDate="December 12, 2025"
       readTime="14 min"
       sections={sections}

@@ -12,9 +12,9 @@ export default function DigitalGrowthPlaybook() {
   ];
 
   const relatedInsights = [
-    { title: "E-commerce Economics: Building Profitable D2C Channels", category: "Article", link: "/insights/ecommerce-economics", image: "/images/capabilities/cap-presenting-graphs.jpg" },
-    { title: "The Marketplace Playbook: Building Network Effects", category: "Whitepaper", link: "/insights/marketplace-playbook", image: "/images/capabilities/cap-retail-data.jpg" },
-    { title: "From MVP to Scale: The Startup Growth Journey", category: "Article", link: "/insights/from-mvp-to-scale", image: "/images/capabilities/cap-lightbulb-idea.jpg" },
+    { title: "E-commerce Economics: Building Profitable D2C Channels", category: "Article", link: "/insights/ecommerce-economics", image: "/images/insights/ecommerce-economics-hero.jpg" },
+    { title: "The Marketplace Playbook: Building Network Effects", category: "Whitepaper", link: "/insights/marketplace-playbook", image: "/images/insights/marketplace-playbook-hero.jpg" },
+    { title: "From MVP to Scale: The Startup Growth Journey", category: "Article", link: "/insights/from-mvp-to-scale", image: "/images/insights/from-mvp-to-scale-hero.jpg" },
   ];
 
   return (
@@ -22,7 +22,7 @@ export default function DigitalGrowthPlaybook() {
       category="Growth"
       title="The digital growth playbook for growing companies"
       subtitle="How leading growing companies are building digital channels that compete with well-funded startups and enterprise incumbents."
-      heroImage="/images/industries/deal-handshake.jpg"
+      heroImage="/images/insights/digital-growth-playbook-hero.jpg"
       publishDate="December 15, 2025"
       readTime="8 min"
       sections={sections}

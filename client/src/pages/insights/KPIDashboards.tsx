@@ -11,7 +11,7 @@ export default function KPIDashboards() {
 
   const relatedInsights = [
     { title: "Rolling Forecasts: A Modern Approach", category: "Financial Planning & Analysis", link: "/insights/rolling-forecasts", image: "/images/insights/rolling-forecasts-hero.jpg" },
-    { title: "CFO Data Integration Strategies", category: "Financial Planning & Analysis", link: "/insights/cfo-data-integration", image: "/images/capabilities/cap-hands-data.jpg" },
+    { title: "CFO Data Integration Strategies", category: "Financial Planning & Analysis", link: "/insights/cfo-data-integration", image: "/images/insights/cfo-data-integration-hero.jpg" },
     { title: "FP&A Excellence", category: "Financial Planning & Analysis", link: "/insights/rolling-forecasts", image: "/images/insights/rolling-forecasts-hero.jpg" },
   ];
 
@@ -20,7 +20,7 @@ export default function KPIDashboards() {
       category="Financial Planning & Analysis"
       title="Building Effective KPI Dashboards That Drive Action"
       subtitle="How to design dashboards that move beyond vanity metrics to provide actionable insights that improve decision-making across your organization."
-      heroImage="/images/capabilities/cap-data-bars.jpg"
+      heroImage="/images/insights/kpi-dashboards-hero.jpg"
       publishDate="December 2024"
       readTime="10 min"
       sections={sections}

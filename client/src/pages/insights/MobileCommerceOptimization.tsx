@@ -9,9 +9,9 @@ export function MobileCommerceOptimization() {
   ];
 
   const relatedInsights = [
-    { title: "The Headless Commerce Guide", category: "E-Commerce", link: "/insights/headless-commerce-guide", image: "/images/capabilities/cap-retail-data.jpg" },
-    { title: "The Economics of E-Commerce", category: "Growth & Marketing", link: "/insights/ecommerce-economics", image: "/images/case-bb-ecommerce-platform-launch.jpg" },
-    { title: "AI in E-Commerce", category: "Growth & Marketing", link: "/insights/ai-in-ecommerce", image: "/images/case-data-retail.jpg" },
+    { title: "The Headless Commerce Guide", category: "E-Commerce", link: "/insights/headless-commerce-guide", image: "/images/insights/headless-commerce-guide-hero.jpg" },
+    { title: "The Economics of E-Commerce", category: "Growth & Marketing", link: "/insights/ecommerce-economics", image: "/images/insights/ecommerce-economics-hero.jpg" },
+    { title: "AI in E-Commerce", category: "Growth & Marketing", link: "/insights/ai-in-ecommerce", image: "/images/insights/ai-in-ecommerce-hero.jpg" },
   ];
 
   return (
@@ -19,7 +19,7 @@ export function MobileCommerceOptimization() {
       category="Mobile Strategy"
       title="Optimizing for the Mobile-First Shopper"
       subtitle="Mobile traffic has overtaken desktop, but conversion rates still lag. Here are the technical strategies to close the gap and capture revenue on the small screen."
-      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroImage="/images/insights/mobile-commerce-optimization-hero.jpg"
       publishDate="September 28, 2025"
       readTime="6 min"
       sections={sections}

@@ -53,7 +53,7 @@ export default function ArtificialIntelligence() {
             "The AI Playbook: Where to Start and How to Scale",
           summary:
             "Most AI programs stall between proof-of-concept and production. We outline the practical sequencing, governance, and team model that separates the firms that scale AI from those that abandon it after the first pilot.",
-          image: "/images/insight-ai-playbook.jpg",
+          image: "/images/insights/practical-ai-guide-hero.jpg",
           href: "/insights/practical-ai-guide",
         },
         secondary: [
@@ -255,21 +255,21 @@ export default function ArtificialIntelligence() {
           title:
             "The AI Playbook: Where to Start and How to Scale",
           readTime: "8 min read",
-          image: "/images/insight-ai-playbook.jpg",
+          image: "/images/insights/practical-ai-guide-hero.jpg",
           href: "/insights/practical-ai-guide",
         },
         {
           tag: "Technology",
           title: "Generative AI for Operations: Beyond the Hype",
           readTime: "6 min read",
-          image: "/images/insight-genai-operations.jpg",
+          image: "/images/insights/generative-supply-chain-hero.jpg",
           href: "/insights/generative-supply-chain",
         },
         {
           tag: "Implementation",
           title: "Building Your First AI Use Case: A Practical Framework",
           readTime: "10 min read",
-          image: "/images/insight-first-ai-usecase.jpg",
+          image: "/images/insights/practical-ai-guide-hero.jpg",
           href: "/insights/practical-ai-guide",
         },
       ]}

@@ -8,9 +8,9 @@ export default function MarketingDataROI() {
   ];
 
   const relatedInsights = [
-    { title: "Building a data-driven culture", category: "Data & Analytics", link: "/insights/building-data-culture", image: "/images/data-driven-culture.png" },
-    { title: "Scalable data architecture", category: "Data & Analytics", link: "/insights/scalable-data-architecture", image: "/images/cloud-data-abstract.jpg" },
-    { title: "Customer intelligence", category: "Data & Analytics", link: "/insights/customer-intelligence", image: "/images/insight-customer-intel.jpg" },
+    { title: "Building a data-driven culture", category: "Data & Analytics", link: "/insights/building-data-culture", image: "/images/insights/building-data-culture-hero.jpg" },
+    { title: "Scalable data architecture", category: "Data & Analytics", link: "/insights/scalable-data-architecture", image: "/images/insights/scalable-data-architecture-hero.jpg" },
+    { title: "Customer intelligence", category: "Data & Analytics", link: "/insights/customer-intelligence", image: "/images/insights/customer-intelligence-hero.jpg" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function MarketingDataROI() {
       category="Analytics & ROI"
       title="The ROI of Clean Data: Why Hygiene is Your Best Investment"
       subtitle="Bad data costs U.S. businesses $3 trillion annually. Here's how to turn data quality into a competitive advantage."
-      heroImage="/images/data-abstract.jpg"
+      heroImage="/images/insights/marketing-data-roi-hero.jpg"
       publishDate="March 10, 2026"
       readTime="7 min"
       sections={sections}

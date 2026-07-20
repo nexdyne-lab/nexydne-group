@@ -12,8 +12,8 @@ export default function CFODataIntegration() {
 
   const relatedInsights = [
     { title: "Rolling Forecasts: A Modern Approach", category: "Financial Planning & Analysis", link: "/insights/rolling-forecasts", image: "/images/insights/rolling-forecasts-hero.jpg" },
-    { title: "Building Effective KPI Dashboards", category: "Financial Planning & Analysis", link: "/insights/kpi-dashboards", image: "/images/industries/fin-monitors.jpg" },
-    { title: "The CFO's Guide to Cash Flow Management", category: "Fractional CFO Services", link: "/insights/cfo-cash-flow-guide", image: "/images/capabilities/cap-presenting-graphs.jpg" },
+    { title: "Building Effective KPI Dashboards", category: "Financial Planning & Analysis", link: "/insights/kpi-dashboards", image: "/images/insights/kpi-dashboards-hero.jpg" },
+    { title: "The CFO's Guide to Cash Flow Management", category: "Fractional CFO Services", link: "/insights/cfo-cash-flow-guide", image: "/images/insights/cfo-cash-flow-guide-hero.jpg" },
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function CFODataIntegration() {
       category="Financial Planning & Analysis"
       title="CFO Data Integration Strategies"
       subtitle="How to connect financial and operational data to enable better decision-making and drive business performance across your organization."
-      heroImage="/images/capabilities/cap-presenting-graphs.jpg"
+      heroImage="/images/insights/cfo-data-integration-hero.jpg"
       publishDate="December 2024"
       readTime="12 min"
       sections={sections}

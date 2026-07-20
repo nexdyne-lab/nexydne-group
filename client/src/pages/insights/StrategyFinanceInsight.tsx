@@ -18,9 +18,9 @@ export default function StrategyFinanceInsight() {
   ];
 
   const relatedInsights = [
-    { title: "The Pragmatic CEO's Guide to AI", category: "AI Executive Guide", link: "/insights/ceo-guide-data-modernization", image: "/images/hero-ceo-ai-guide.jpg" },
+    { title: "The Pragmatic CEO's Guide to AI", category: "AI Executive Guide", link: "/insights/ceo-guide-data-modernization", image: "/images/insights/ceo-guide-data-modernization-hero.jpg" },
     { title: "How AI Agents Transform Enterprise Operations", category: "Operations", link: "/insights/operations", image: "/images/ai-acceleration-abstract.jpg" },
-    { title: "The Complete Guide to Process Mining", category: "Technology Strategy", link: "/insights/process-mining-guide", image: "/images/hero-process-mining.jpg" },
+    { title: "The Complete Guide to Process Mining", category: "Technology Strategy", link: "/insights/process-mining-guide", image: "/images/insights/process-mining-guide-hero.jpg" },
   ];
 
   const sections = [

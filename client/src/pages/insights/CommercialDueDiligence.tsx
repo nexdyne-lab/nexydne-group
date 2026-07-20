@@ -8,9 +8,9 @@ export default function CommercialDueDiligence() {
   ];
 
   const relatedInsights = [
-    { title: "The Due Diligence Checklist", category: "M&A", link: "/insights/due-diligence-checklist", image: "/images/business-strategy-abstract.jpg" },
-    { title: "M&A Failure Analysis", category: "M&A", link: "/insights/ma-failure-analysis", image: "/images/capital-raising-abstract.jpg" },
-    { title: "Synergy Capture", category: "M&A", link: "/insights/synergy-capture", image: "/images/digital-venture-abstract.jpg" },
+    { title: "The Due Diligence Checklist", category: "M&A", link: "/insights/due-diligence-checklist", image: "/images/insights/due-diligence-checklist-hero.jpg" },
+    { title: "M&A Failure Analysis", category: "M&A", link: "/insights/ma-failure-analysis", image: "/images/insights/ma-failure-analysis-hero.jpg" },
+    { title: "Synergy Capture", category: "M&A", link: "/insights/synergy-capture", image: "/images/insights/synergy-capture-hero.jpg" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function CommercialDueDiligence() {
       category="M&A"
       title="Commercial Due Diligence: Debugging the Business Model"
       subtitle="Moving beyond financial audits to stress-test the underlying commercial code of a target acquisition."
-      heroImage="/images/mergers-acquisitions-abstract.jpg"
+      heroImage="/images/insights/commercial-due-diligence-hero.jpg"
       publishDate="December 15, 2025"
       readTime="5 min"
       sections={sections}

@@ -6,7 +6,7 @@ export const dataRelatedItems: RelatedItem[] = [
     title: "The CEO's Guide to Data Modernization",
     description: "Why 70% of transformations fail and how to be in the 30% that succeed.",
     readTime: "5 min read",
-    image: "/images/capabilities/cap-data-bars.jpg",
+    image: "/images/insights/ceo-guide-data-modernization-hero.jpg",
     link: "/insights/ceo-guide-data-modernization",
     category: "Strategy"
   },
@@ -15,7 +15,7 @@ export const dataRelatedItems: RelatedItem[] = [
     title: "Building a Data-First Culture",
     description: "NewCo's Chief Data Officer discusses the human side of digital change.",
     readTime: "12 min watch",
-    image: "/images/capabilities/cap-conference-data.jpg",
+    image: "/images/insights/building-data-culture-hero.jpg",
     link: "/insights/building-data-culture",
     category: "Culture"
   },
@@ -24,7 +24,7 @@ export const dataRelatedItems: RelatedItem[] = [
     title: "From Data Lake to Value Stream",
     description: "A technical deep dive into modern data mesh architectures.",
     readTime: "8 min read",
-    image: "/images/capabilities/cap-coder.jpg",
+    image: "/images/insights/data-lake-to-value-stream-hero.jpg",
     link: "/insights/data-lake-to-value-stream",
     category: "Technology"
   }
@@ -36,7 +36,7 @@ export const aiRelatedItems: RelatedItem[] = [
     title: "Generative AI: Beyond the Hype",
     description: "Practical applications of LLMs in enterprise workflows.",
     readTime: "6 min read",
-    image: "/images/capabilities/cap-data-presentation.jpg",
+    image: "/images/insights/enterprise-transformation-ai-hero.jpg",
     link: "/insights/enterprise-transformation-ai",
     category: "Innovation"
   },
@@ -54,7 +54,7 @@ export const aiRelatedItems: RelatedItem[] = [
     title: "The Ethics of AI in Decision Making",
     description: "Frameworks for responsible AI deployment in regulated industries.",
     readTime: "15 min read",
-    image: "/images/capabilities/cap-mobile-woman.jpg",
+    image: "/images/insights/eu-ai-act-playbook-hero.jpg",
     link: "/insights/eu-ai-act-playbook",
     category: "Governance"
   }
@@ -75,7 +75,7 @@ export const digitalRelatedItems: RelatedItem[] = [
     title: "Mobile-First Design Principles",
     description: "Creating intuitive interfaces for the next billion users.",
     readTime: "10 min watch",
-    image: "/images/industries/meeting-topview.jpg",
+    image: "/images/insights/mobile-commerce-optimization-hero.jpg",
     link: "/insights/mobile-commerce-optimization",
     category: "Design"
   },
@@ -105,7 +105,7 @@ export const strategyRelatedItems: RelatedItem[] = [
     title: "The Agile Enterprise",
     description: "Moving from waterfall to agile at an organizational level.",
     readTime: "12 min read",
-    image: "/images/industries/advisor-charts.jpg",
+    image: "/images/insights/operating-model-redesign-hero.jpg",
     link: "/insights/operating-model-redesign",
     category: "Transformation"
   },
@@ -114,7 +114,7 @@ export const strategyRelatedItems: RelatedItem[] = [
     title: "Measuring Innovation ROI",
     description: "How to track and validate returns on innovation investments.",
     readTime: "6 min read",
-    image: "/images/capabilities/cap-hands-data.jpg",
+    image: "/images/insights/measuring-automation-roi-hero.jpg",
     link: "/insights/measuring-automation-roi",
     category: "Finance"
   }

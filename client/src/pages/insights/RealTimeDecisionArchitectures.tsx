@@ -9,9 +9,9 @@ export default function RealTimeDecisionArchitectures() {
   ];
 
   const relatedInsights = [
-    { title: "From Data Lake to Value Stream", category: "Technology", link: "/insights/data-lake-to-value-stream", image: "/images/capabilities/cap-data-presentation.jpg" },
-    { title: "The Generative Supply Chain: Scaling Creative with AI", category: "Technology", link: "/insights/generative-supply-chain", image: "/images/capabilities/cap-hands-data.jpg" },
-    { title: "Building Scalable Data Architectures", category: "Technology", link: "/insights/scalable-data-architecture", image: "/images/capabilities/cap-team-screens.jpg" },
+    { title: "From Data Lake to Value Stream", category: "Technology", link: "/insights/data-lake-to-value-stream", image: "/images/insights/data-lake-to-value-stream-hero.jpg" },
+    { title: "The Generative Supply Chain: Scaling Creative with AI", category: "Technology", link: "/insights/generative-supply-chain", image: "/images/insights/generative-supply-chain-hero.jpg" },
+    { title: "Building Scalable Data Architectures", category: "Technology", link: "/insights/scalable-data-architecture", image: "/images/insights/scalable-data-architecture-hero.jpg" },
   ];
 
   return (
@@ -19,7 +19,7 @@ export default function RealTimeDecisionArchitectures() {
       category="Technology"
       title="The Millisecond Imperative: Real-Time Decision Architectures"
       subtitle="A deep dive into the technical stack required to process user signals and serve personalized recommendations in under 50ms."
-      heroImage="/images/capabilities/cap-data-bars.jpg"
+      heroImage="/images/insights/real-time-decision-architectures-hero.jpg"
       publishDate="March 10, 2026"
       readTime="10 min"
       sections={sections}

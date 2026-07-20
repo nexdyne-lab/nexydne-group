@@ -9,8 +9,8 @@ export function HeadlessCommerceGuide() {
   ];
 
   const relatedInsights = [
-    { title: "The End of the Monolith: Why Composable Architecture Wins", category: "Architecture", link: "/insights/composable-architecture", image: "/images/cloud-abstract.jpg" },
-    { title: "Optimizing for the Mobile-First Shopper", category: "Digital Commerce", link: "/insights/mobile-commerce-optimization", image: "/images/case-dxp-retail.jpg" },
+    { title: "The End of the Monolith: Why Composable Architecture Wins", category: "Architecture", link: "/insights/composable-architecture", image: "/images/insights/composable-architecture-hero.jpg" },
+    { title: "Optimizing for the Mobile-First Shopper", category: "Digital Commerce", link: "/insights/mobile-commerce-optimization", image: "/images/insights/mobile-commerce-optimization-hero.jpg" },
     { title: "E-commerce Launch Guide: From Zero to Revenue in 90 Days", category: "Digital Commerce", link: "/insights/ecommerce-launch-guide", image: "/images/insights/ecommerce-launch-guide-hero.jpg" },
   ];
 
@@ -20,7 +20,7 @@ export function HeadlessCommerceGuide() {
       categoryHref="/insights"
       title="The Engineering Case for Headless Commerce"
       subtitle="Why decoupling your frontend from your backend is the key to agility, speed, and unlimited UX flexibility in the modern digital economy."
-      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroImage="/images/insights/headless-commerce-guide-hero.jpg"
       publishDate="October 12, 2025"
       readTime="10 min"
       sections={sections}

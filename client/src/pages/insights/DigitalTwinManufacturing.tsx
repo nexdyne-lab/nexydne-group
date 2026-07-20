@@ -8,9 +8,9 @@ export default function DigitalTwinManufacturing() {
   ];
 
   const relatedInsights = [
-    { title: "IoT and the Resilient Supply Chain", category: "Operations", link: "/insights/iot-resilient-supply-chain", image: "/images/industries/mfg-robotics.jpg" },
-    { title: "The Executive's Guide to Process Mining", category: "Operations", link: "/insights/process-mining-guide", image: "/images/capabilities/cap-battery-factory.jpg" },
-    { title: "Lean Operations at Scale", category: "Operations", link: "/insights/lean-operations-scale", image: "/images/capabilities/cap-robot-factory.jpg" },
+    { title: "IoT and the Resilient Supply Chain", category: "Operations", link: "/insights/iot-resilient-supply-chain", image: "/images/insights/iot-resilient-supply-chain-hero.jpg" },
+    { title: "The Executive's Guide to Process Mining", category: "Operations", link: "/insights/process-mining-guide", image: "/images/insights/process-mining-guide-hero.jpg" },
+    { title: "Lean Operations at Scale", category: "Operations", link: "/insights/lean-operations-scale", image: "/images/insights/lean-operations-scale-hero.jpg" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function DigitalTwinManufacturing() {
       category="Digital Twins"
       title="Digital Twins in Manufacturing: From Hype to ROI"
       subtitle="How leading manufacturers are using digital twins to simulate production lines, predict failures, and optimize throughput before a single machine is turned on."
-      heroImage="/images/industries/mfg-robotics.jpg"
+      heroImage="/images/insights/digital-twin-manufacturing-hero.jpg"
       publishDate="January 28, 2026"
       readTime="8 min"
       sections={sections}

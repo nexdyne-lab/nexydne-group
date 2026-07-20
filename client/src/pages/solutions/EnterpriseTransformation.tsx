@@ -47,7 +47,7 @@ export default function EnterpriseTransformation() {
             "From cost center to growth engine: rebuilding the technology operating model",
           summary:
             "Technology has shifted from a back-office function to the engine that decides whether a company can grow at all. We outline how growth-stage leaders are rebuilding the technology operating model around platform thinking, paved-path engineering, and FinOps discipline so technology compounds rather than drags on the P&L.",
-          image: "/images/insight-technology-operating-model.jpg",
+          image: "/images/insights/operating-model-redesign-hero.jpg",
           href: "/insights/operating-model-redesign",
         },
         secondary: [
@@ -226,7 +226,7 @@ export default function EnterpriseTransformation() {
           title:
             "From cost center to growth engine: rebuilding the technology operating model",
           readTime: "8 min read",
-          image: "/images/insight-technology-operating-model.jpg",
+          image: "/images/insights/operating-model-redesign-hero.jpg",
           href: "/insights/operating-model-redesign",
         },
         {
@@ -234,7 +234,7 @@ export default function EnterpriseTransformation() {
           title:
             "The 6Rs decision that decides whether your cloud migration ships",
           readTime: "6 min read",
-          image: "/images/insight-cloud-6rs.jpg",
+          image: "/images/insights/scalable-data-architecture-hero.jpg",
           href: "/insights/scalable-data-architecture",
         },
         {
@@ -242,7 +242,7 @@ export default function EnterpriseTransformation() {
           title:
             "Why your internal developer platform is a product, not a project",
           readTime: "5 min read",
-          image: "/images/insight-platform-engineering-product.jpg",
+          image: "/images/insights/scalable-data-architecture-hero.jpg",
           href: "/insights/scalable-data-architecture",
         },
       ]}

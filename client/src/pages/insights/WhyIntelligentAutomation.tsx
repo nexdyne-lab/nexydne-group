@@ -11,9 +11,9 @@ export default function WhyIntelligentAutomation() {
   ];
 
   const relatedInsights = [
-    { title: "How AI Agents Transform Enterprise Operations", category: "AI & Machine Learning", link: "/insights/ai-agents-transform-operations", image: "/images/ai-acceleration-abstract.jpg" },
-    { title: "The Complete Guide to Process Mining and Optimization", category: "Process Optimization", link: "/insights/process-mining-guide", image: "/images/hero-process-mining.jpg" },
-    { title: "Measuring Automation ROI", category: "Operations", link: "/insights/measuring-automation-roi", image: "/images/data-abstract.jpg" },
+    { title: "How AI Agents Transform Enterprise Operations", category: "AI & Machine Learning", link: "/insights/ai-agents-transform-operations", image: "/images/insights/ai-agents-transform-operations-hero.jpg" },
+    { title: "The Complete Guide to Process Mining and Optimization", category: "Process Optimization", link: "/insights/process-mining-guide", image: "/images/insights/process-mining-guide-hero.jpg" },
+    { title: "Measuring Automation ROI", category: "Operations", link: "/insights/measuring-automation-roi", image: "/images/insights/measuring-automation-roi-hero.jpg" },
   ];
 
   return (
@@ -22,7 +22,7 @@ export default function WhyIntelligentAutomation() {
       categoryHref="/insights"
       title="Why Intelligent Automation Isn't Optional Anymore"
       subtitle="The conversation around intelligent automation has shifted dramatically. What was once positioned as a competitive advantage has become table stakes for survival in modern business."
-      heroImage="/images/insight-automation.jpg"
+      heroImage="/images/insights/why-intelligent-automation-hero.jpg"
       publishDate="November 30, 2025"
       readTime="5 min"
       sections={sections}

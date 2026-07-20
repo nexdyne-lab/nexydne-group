@@ -11,8 +11,8 @@ export default function OperatingModelRedesign() {
   ];
 
   const relatedInsights = [
-    { title: "Why Strategic Plans Fail", category: "Business Strategy", link: "/insights/strategic-plans-success", image: "/images/business-strategy-abstract.jpg" },
-    { title: "Portfolio Management Excellence", category: "Business Strategy", link: "/insights/portfolio-management", image: "/images/capabilities/cap-strategy-spheres.jpg" },
+    { title: "Why Strategic Plans Fail", category: "Business Strategy", link: "/insights/strategic-plans-success", image: "/images/insights/strategic-plans-success-hero.jpg" },
+    { title: "Portfolio Management Excellence", category: "Business Strategy", link: "/insights/portfolio-management", image: "/images/insights/portfolio-management-hero.jpg" },
     { title: "Business Transformation Strategy", category: "Business Strategy", link: "/insights/business-transformation-strategy", image: "/images/insights/business-transformation-strategy-hero.jpg" },
   ];
 
@@ -21,7 +21,7 @@ export default function OperatingModelRedesign() {
       category="Business Strategy"
       title="Operating Model Redesign"
       subtitle="How to redesign your operating model to enable strategy execution. Aligning structure, processes, and capabilities with strategic intent."
-      heroImage="/images/capabilities/cap-chess.jpg"
+      heroImage="/images/insights/operating-model-redesign-hero.jpg"
       publishDate="December 2024"
       readTime="10 min"
       sections={sections}

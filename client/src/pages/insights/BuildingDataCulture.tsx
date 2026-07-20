@@ -6,9 +6,9 @@ export default function BuildingDataCulture() {
   ];
 
   const relatedInsights = [
-    { title: "The CEO's Guide to Data Modernization", category: "Strategy", link: "/insights/ceo-guide-data-modernization", image: "/images/capabilities/cap-data-bars.jpg" },
-    { title: "From Data Lake to Value Stream", category: "Technology", link: "/insights/data-lake-to-value-stream", image: "/images/capabilities/cap-data-presentation.jpg" },
-    { title: "The Corporate Venture Advantage", category: "Article", link: "/insights/corporate-venture-advantage", image: "/images/industries/fin-monitors.jpg" },
+    { title: "The CEO's Guide to Data Modernization", category: "Strategy", link: "/insights/ceo-guide-data-modernization", image: "/images/insights/ceo-guide-data-modernization-hero.jpg" },
+    { title: "From Data Lake to Value Stream", category: "Technology", link: "/insights/data-lake-to-value-stream", image: "/images/insights/data-lake-to-value-stream-hero.jpg" },
+    { title: "The Corporate Venture Advantage", category: "Article", link: "/insights/corporate-venture-advantage", image: "/images/insights/corporate-venture-advantage-hero.jpg" },
   ];
 
   return (
@@ -16,7 +16,7 @@ export default function BuildingDataCulture() {
       category="Culture"
       title="Building a Data-First Culture"
       subtitle="NexDyne's Chief Data Officer discusses the human side of digital change and why culture eats strategy for breakfast."
-      heroImage="/images/capabilities/cap-hands-data.jpg"
+      heroImage="/images/insights/building-data-culture-hero.jpg"
       publishDate="November 05, 2025"
       readTime="12 min"
       sections={sections}

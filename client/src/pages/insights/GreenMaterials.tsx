@@ -9,9 +9,9 @@ export default function GreenMaterials() {
   ];
 
   const relatedInsights = [
-    { title: "Green Growth", category: "Sustainability", link: "/insights/green-growth-imperative", image: "/images/green-growth-hero.jpg" },
-    { title: "The Net Zero Transition: What it would cost, what it could bring", category: "Sustainability", link: "/insights/net-zero-transition", image: "/images/insight-net-zero.jpg" },
-    { title: "Carbon Markets 2025: From Voluntary to Compliance", category: "Sustainability", link: "/insights/carbon-markets", image: "/images/insight-carbon-markets.jpg" },
+    { title: "Green Growth", category: "Sustainability", link: "/insights/green-growth-imperative", image: "/images/insights/green-growth-imperative-hero.jpg" },
+    { title: "The Net Zero Transition: What it would cost, what it could bring", category: "Sustainability", link: "/insights/net-zero-transition", image: "/images/insights/net-zero-transition-hero.jpg" },
+    { title: "Carbon Markets 2025: From Voluntary to Compliance", category: "Sustainability", link: "/insights/carbon-markets", image: "/images/insights/carbon-markets-hero.jpg" },
   ];
 
   return (
@@ -20,7 +20,7 @@ export default function GreenMaterials() {
       categoryHref="/insights"
       title="The Green Materials Revolution"
       subtitle="From green steel to bio-based plastics, a wave of material innovation is reshaping industrial supply chains."
-      heroImage="/images/insight-green-materials.jpg"
+      heroImage="/images/insights/green-materials-hero.jpg"
       readTime="5 min"
       sections={sections}
       keyTakeaways={[

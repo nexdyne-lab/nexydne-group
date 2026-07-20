@@ -519,3 +519,13 @@ zero design work. Template lessons: (1) audit heroes BEFORE launching link
 posts — legacy pools hide off-topic images (we found a fitness chart on a
 growth article); (2) never use assets scraped from other firms' sites (ey-*)
 — license risk; keep the library to properly licensed stock.
+
+### Update (2026-07-20): every insight article got a bespoke on-brand hero
+Process that scaled: (1) catalog the whole image library once — every usable
+image downloaded, viewed, tagged (subject, palette, quality, provenance);
+(2) hand-assign article-by-article from the catalog (unique image per article,
+palette-first); (3) mechanical optimize/wire/QC in parallel; (4) contact-sheet
+review before ship. Template lessons: catalog-then-assign beats per-article
+searching; contact sheets catch assignment errors cheaply; and check your OG
+generator parses ALL import styles — 6 routes were silently missing social
+cards until this pass.

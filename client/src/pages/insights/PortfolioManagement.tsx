@@ -10,8 +10,8 @@ export default function PortfolioManagement() {
   ];
 
   const relatedInsights = [
-    { title: "Why Strategic Plans Fail", category: "Business Strategy", link: "/insights/strategic-plans-success", image: "/images/approach-strategy.jpg" },
-    { title: "Operating Model Redesign", category: "Business Strategy", link: "/insights/operating-model-redesign", image: "/images/business-strategy-abstract.jpg" },
+    { title: "Why Strategic Plans Fail", category: "Business Strategy", link: "/insights/strategic-plans-success", image: "/images/insights/strategic-plans-success-hero.jpg" },
+    { title: "Operating Model Redesign", category: "Business Strategy", link: "/insights/operating-model-redesign", image: "/images/insights/operating-model-redesign-hero.jpg" },
     { title: "Navigating Business Transformation", category: "Business Transformation", link: "/insights/business-transformation-strategy", image: "/images/insights/business-transformation-strategy-hero.jpg" },
   ];
 
@@ -20,7 +20,7 @@ export default function PortfolioManagement() {
       category="Business Strategy"
       title="Portfolio Management Excellence"
       subtitle="How to manage your portfolio of strategic initiatives for maximum impact. A framework for prioritization, resource allocation, and governance."
-      heroImage="/images/capabilities/cap-chess.jpg"
+      heroImage="/images/insights/portfolio-management-hero.jpg"
       publishDate="December 2024"
       readTime="9 min"
       sections={sections}

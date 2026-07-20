@@ -15,18 +15,19 @@ export default function BlogROIMeasurement() {
       title: "How AI and automation are reshaping business operations",
       category: "Intelligent Automation",
       link: "/insights/ai-automation-reshaping-business",
-      image: "/blog-team-collaboration.913d82ea.jpg",
+      image: "/images/insights/ai-automation-reshaping-business-hero.jpg",
     },
     {
       title: "Digital transformation readiness: five signs your business is ready",
       category: "Transformation",
       link: "/insights/digital-transformation-readiness",
-      image: "/blog-digital-transformation.a3f57989.jpg",
+      image: "/images/insights/digital-transformation-readiness-hero.jpg",
     },
   ];
 
   return (
     <InsightArticleV2
+      heroImage="/images/insights/measuring-automation-roi-hero.jpg"
       category="Automation ROI"
       categoryHref="/insights"
       title="Measuring ROI: What to expect in your first year of automation"

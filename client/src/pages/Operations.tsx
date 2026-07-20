@@ -53,7 +53,7 @@ export default function Operations() {
           title: "The Future of Operations: AI-Powered Excellence",
           summary:
             "Operational excellence has shifted from incremental improvement to building adaptive systems that learn, optimize, and evolve. We outline how leading operators are deploying AI across the value chain — from predictive maintenance to autonomous decisioning — to turn operations from a cost center into a competitive weapon.",
-          image: "/images/insight-ai-powered-operations.jpg",
+          image: "/images/insights/ai-agents-transform-operations-hero.jpg",
           href: "/insights/ai-agents-transform-operations",
         },
         secondary: [
@@ -244,21 +244,21 @@ export default function Operations() {
           tag: "Operations Strategy",
           title: "The Future of Operations: AI-Powered Excellence",
           readTime: "6 min read",
-          image: "/images/insight-ai-powered-operations.jpg",
+          image: "/images/insights/ai-agents-transform-operations-hero.jpg",
           href: "/insights/ai-agents-transform-operations",
         },
         {
           tag: "Supply Chain",
           title: "Building Resilient Supply Chains in an Uncertain World",
           readTime: "5 min read",
-          image: "/images/insight-resilient-supply-chains.jpg",
+          image: "/images/insights/iot-resilient-supply-chain-hero.jpg",
           href: "/insights/iot-resilient-supply-chain",
         },
         {
           tag: "Lean Operations",
           title: "Lean at Scale: Beyond the Factory Floor",
           readTime: "7 min read",
-          image: "/images/insight-lean-at-scale.jpg",
+          image: "/images/insights/lean-operations-scale-hero.jpg",
           href: "/insights/lean-operations-scale",
         },
       ]}

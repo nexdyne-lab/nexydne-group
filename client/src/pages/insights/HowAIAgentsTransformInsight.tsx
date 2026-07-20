@@ -10,9 +10,9 @@ export default function HowAIAgentsTransformInsight() {
   ];
 
   const relatedInsights = [
-    { title: "Why Intelligent Automation Isn't Optional Anymore", category: "Strategy", link: "/insights/why-intelligent-automation-isnt-optional-anymore", image: "/images/capabilities/cap-iot-network.jpg" },
-    { title: "The Complete Guide to Process Mining", category: "Operations", link: "/insights/complete-guide-process-mining", image: "/images/capabilities/cap-hands-data.jpg" },
-    { title: "Building a Data-Driven Culture", category: "Data", link: "/insights/building-data-culture", image: "/images/capabilities/cap-telescope.jpg" },
+    { title: "Why Intelligent Automation Isn't Optional Anymore", category: "Strategy", link: "/insights/why-intelligent-automation-isnt-optional-anymore", image: "/images/insights/why-intelligent-automation-isnt-optional-anymore-hero.jpg" },
+    { title: "The Complete Guide to Process Mining", category: "Operations", link: "/insights/complete-guide-process-mining", image: "/images/insights/complete-guide-process-mining-hero.jpg" },
+    { title: "Building a Data-Driven Culture", category: "Data", link: "/insights/building-data-culture", image: "/images/insights/building-data-culture-hero.jpg" },
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function HowAIAgentsTransformInsight() {
       categoryHref="/insights"
       title="How AI Agents Transform Enterprise Operations"
       subtitle="AI agents represent the next evolution in enterprise automation—moving from rule-based systems to intelligent, autonomous entities that can reason, learn, and act independently."
-      heroImage="/images/capabilities/cap-hologram.jpg"
+      heroImage="/images/insights/how-ai-agents-transform-enterprise-operations-hero.jpg"
       publishDate="December 10, 2025"
       readTime="7 min"
       sections={sections}

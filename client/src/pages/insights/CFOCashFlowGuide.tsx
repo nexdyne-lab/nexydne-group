@@ -11,9 +11,9 @@ export default function CFOCashFlowGuide() {
   ];
 
   const relatedInsights = [
-    { title: "Financial Discipline as a Growth Enabler", category: "Fractional CFO Services", link: "/insights/financial-discipline-growth", image: "/images/capabilities/cap-presenting-graphs.jpg" },
-    { title: "Investor-Ready Board Decks", category: "Fractional CFO Services", link: "/insights/investor-ready-board-decks", image: "/images/industries/fin-monitors.jpg" },
-    { title: "CFO Data Integration Strategies", category: "Financial Planning & Analysis", link: "/insights/cfo-data-integration", image: "/images/capabilities/cap-data-bars.jpg" },
+    { title: "Financial Discipline as a Growth Enabler", category: "Fractional CFO Services", link: "/insights/financial-discipline-growth", image: "/images/insights/financial-discipline-growth-hero.jpg" },
+    { title: "Investor-Ready Board Decks", category: "Fractional CFO Services", link: "/insights/investor-ready-board-decks", image: "/images/insights/investor-ready-board-decks-hero.jpg" },
+    { title: "CFO Data Integration Strategies", category: "Financial Planning & Analysis", link: "/insights/cfo-data-integration", image: "/images/insights/cfo-data-integration-hero.jpg" },
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function CFOCashFlowGuide() {
       category="Fractional CFO Services"
       title="The CFO's Guide to Cash Flow Management"
       subtitle="Master cash flow management with proven techniques for forecasting, working capital optimization, and navigating cash crunches."
-      heroImage="/images/capabilities/cap-presenting-graphs.jpg"
+      heroImage="/images/insights/cfo-cash-flow-guide-hero.jpg"
       publishDate="December 2024"
       readTime="12 min"
       sections={sections}

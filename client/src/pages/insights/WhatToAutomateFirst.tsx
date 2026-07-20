@@ -20,8 +20,8 @@ export default function WhatToAutomateFirst() {
 
   const relatedInsights = [
     { title: "Is Your Business Ready for AI? A 15-Minute Test", category: "AI Readiness", link: "/insights/is-your-business-ready-for-ai", image: "/images/insights/is-your-business-ready-for-ai-hero.jpg" },
-    { title: "Measuring ROI: your first year of automation", category: "Real numbers", link: "/insights/measuring-automation-roi", image: "/images/business-strategy-abstract.jpg" },
-    { title: "Why Intelligent Automation Isn't Optional Anymore", category: "Automation", link: "/insights/why-intelligent-automation-isnt-optional-anymore", image: "/images/ai-acceleration-abstract.jpg" },
+    { title: "Measuring ROI: your first year of automation", category: "Real numbers", link: "/insights/measuring-automation-roi", image: "/images/insights/measuring-automation-roi-hero.jpg" },
+    { title: "Why Intelligent Automation Isn't Optional Anymore", category: "Automation", link: "/insights/why-intelligent-automation-isnt-optional-anymore", image: "/images/insights/why-intelligent-automation-isnt-optional-anymore-hero.jpg" },
   ];
 
   const sections = [

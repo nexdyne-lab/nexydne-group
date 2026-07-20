@@ -14,19 +14,19 @@ export default function CloudMigrationRoadmap() {
       title: "Cloud-Native Architecture Patterns",
       category: "Architecture",
       link: "/insights/cloud-native-architecture",
-      image: "/images/capabilities/cap-hologram.jpg",
+      image: "/images/insights/cloud-native-architecture-hero.jpg",
     },
     {
       title: "CEO's Guide to Data Modernization",
       category: "Data",
       link: "/insights/ceo-guide-data-modernization",
-      image: "/images/capabilities/cap-data-bars.jpg",
+      image: "/images/insights/ceo-guide-data-modernization-hero.jpg",
     },
     {
       title: "Building a Data-Driven Culture",
       category: "Culture",
       link: "/insights/building-data-culture",
-      image: "/images/capabilities/cap-conference-data.jpg",
+      image: "/images/insights/building-data-culture-hero.jpg",
     },
   ];
 

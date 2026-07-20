@@ -9,9 +9,9 @@ export default function GenerativeSupplyChain() {
   ];
 
   const relatedInsights = [
-    { title: "Beyond Segmentation: The Era of N=1 Marketing", category: "Growth & Marketing", link: "/insights/beyond-segmentation", image: "/images/insight-customer-intel.jpg" },
-    { title: "Why Intelligent Automation Isn't Optional Anymore", category: "Operations", link: "/insights/why-intelligent-automation", image: "/images/ai-acceleration-abstract.jpg" },
-    { title: "Hyper-Personalization at Scale: Beyond \"Hi [First Name]\"", category: "Digital Marketing", link: "/insights/hyper-personalization-at-scale", image: "/images/go-to-market-abstract.jpg" },
+    { title: "Beyond Segmentation: The Era of N=1 Marketing", category: "Growth & Marketing", link: "/insights/beyond-segmentation", image: "/images/insights/beyond-segmentation-hero.jpg" },
+    { title: "Why Intelligent Automation Isn't Optional Anymore", category: "Operations", link: "/insights/why-intelligent-automation", image: "/images/insights/why-intelligent-automation-hero.jpg" },
+    { title: "Hyper-Personalization at Scale: Beyond \"Hi [First Name]\"", category: "Digital Marketing", link: "/insights/hyper-personalization-at-scale", image: "/images/insights/hyper-personalization-at-scale-hero.jpg" },
   ];
 
   return (
@@ -20,7 +20,7 @@ export default function GenerativeSupplyChain() {
       categoryHref="/insights"
       title="The Generative Supply Chain: Scaling Creative with AI"
       subtitle="How a global retailer reduced content production costs by 60% while increasing engagement by using GenAI for asset variation."
-      heroImage="/images/ai-abstract-visualization.jpg"
+      heroImage="/images/insights/generative-supply-chain-hero.jpg"
       publishDate="February 2, 2026"
       readTime="7 min"
       sections={sections}

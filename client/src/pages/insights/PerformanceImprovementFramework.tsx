@@ -11,8 +11,8 @@ export default function PerformanceImprovementFramework() {
 
   const relatedInsights = [
     { title: "Navigating Business Transformation: A Strategic Framework", category: "Business Transformation", link: "/insights/business-transformation-strategy", image: "/images/insights/business-transformation-strategy-hero.jpg" },
-    { title: "The Reality of Efficiency Improvement", category: "Operations", link: "/insights/efficiency-improvement-reality", image: "/images/performance-intelligence-abstract.jpg" },
-    { title: "Smart Cost Reduction", category: "Strategy & Finance", link: "/insights/smart-cost-reduction", image: "/images/business-strategy-abstract.jpg" },
+    { title: "The Reality of Efficiency Improvement", category: "Operations", link: "/insights/efficiency-improvement-reality", image: "/images/insights/efficiency-improvement-reality-hero.jpg" },
+    { title: "Smart Cost Reduction", category: "Strategy & Finance", link: "/insights/smart-cost-reduction", image: "/images/insights/smart-cost-reduction-hero.jpg" },
   ];
 
   return (
@@ -20,7 +20,7 @@ export default function PerformanceImprovementFramework() {
       category="Performance Improvement"
       title="Systematic Performance Improvement: From Diagnosis to Sustainable Results"
       subtitle="Performance improvement initiatives often begin with ambitious goals and genuine commitment, yet many fail to deliver lasting results. The challenge lies not in identifying what needs to improve, but in designing interventions that create sustainable change."
-      heroImage="/images/performance-improvement-abstract.jpg"
+      heroImage="/images/insights/performance-improvement-framework-hero.jpg"
       publishDate="December 18, 2024"
       readTime="7 min"
       sections={sections}

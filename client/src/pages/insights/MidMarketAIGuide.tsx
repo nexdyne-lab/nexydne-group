@@ -14,19 +14,19 @@ export default function MidMarketAIGuide() {
       title: "5 Signs Your Business Is Ready for Digital Transformation",
       category: "Digital Strategy",
       link: "/insights/digital-transformation-readiness",
-      image: "/images/insight-digital-transform.jpg"
+      image: "/images/insights/digital-transformation-readiness-hero.jpg"
     },
     {
       title: "Scaling Operations Without Breaking the Bank",
       category: "Operations",
       link: "/insights/scaling-operations",
-      image: "/images/insight-scaling-ops.jpg"
+      image: "/images/insights/scaling-operations-hero.jpg"
     },
     {
       title: "Customer Intelligence for Growing Businesses",
       category: "Customer Strategy",
       link: "/insights/customer-intelligence",
-      image: "/images/insight-customer-intel.jpg"
+      image: "/images/insights/customer-intelligence-hero.jpg"
     }
   ];
 
@@ -35,7 +35,7 @@ export default function MidMarketAIGuide() {
       category="Featured"
       title="How Growing Companies Are Winning with AI: A Practical Guide"
       subtitle="Discover how growing businesses are leveraging artificial intelligence to compete with larger enterprises—without the enterprise budget."
-      heroImage="/images/insight-ai-midmarket.jpg"
+      heroImage="/images/insights/practical-ai-guide-hero.jpg"
       readTime="8 min"
       publishDate="January 15, 2026"
       sections={sections}

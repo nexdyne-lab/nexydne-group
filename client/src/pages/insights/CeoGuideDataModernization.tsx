@@ -16,19 +16,19 @@ export default function CEOGuideDataModernization() {
       title: "How AI Agents Are Reshaping Enterprise Operations",
       category: "AI in Enterprise",
       link: "/insights/ai-agents-transform-operations",
-      image: "/images/hero-ai-enterprise.webp"
+      image: "/images/insights/ai-agents-transform-operations-hero.jpg"
     },
     {
       title: "The $15 Trillion Question: How AI Will Reshape the Global Economy",
       category: "Economic Impact",
       link: "/insights/ai-economic-impact",
-      image: "/images/hero-ai-global-economy.jpg"
+      image: "/images/insights/ai-economic-impact-hero.jpg"
     },
     {
       title: "The Complete Guide to Process Mining",
       category: "Technology Strategy",
       link: "/insights/process-mining-guide",
-      image: "/images/hero-process-mining.jpg"
+      image: "/images/insights/process-mining-guide-hero.jpg"
     }
   ];
 
@@ -38,7 +38,7 @@ export default function CEOGuideDataModernization() {
       categoryHref="/insights"
       title="The Pragmatic CEO's Guide to AI"
       subtitle="Cut through the hype. A practical framework for business leaders to evaluate AI opportunities, avoid common pitfalls, and drive real value from artificial intelligence investments."
-      heroImage="/images/hero-ceo-ai-guide.jpg"
+      heroImage="/images/insights/ceo-guide-data-modernization-hero.jpg"
       publishDate="January 8, 2026"
       readTime="11 min"
       sections={sections}

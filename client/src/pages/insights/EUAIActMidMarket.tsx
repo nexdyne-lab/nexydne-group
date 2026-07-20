@@ -14,8 +14,8 @@ export default function EUAIActMidMarket() {
   ];
 
   const relatedInsights = [
-    { title: "The AI Adoption Outlook 2026", category: "Featured Insight", link: "/insights/ai-adoption-outlook-2026", image: "/images/agentic-ai-abstract.jpg" },
-    { title: "The Pragmatic CEO's Guide to AI", category: "AI Executive Guide", link: "/insights/ceo-guide-data-modernization", image: "/images/hero-ceo-ai-guide.jpg" },
+    { title: "The AI Adoption Outlook 2026", category: "Featured Insight", link: "/insights/ai-adoption-outlook-2026", image: "/images/insights/ai-adoption-outlook-2026-hero.jpg" },
+    { title: "The Pragmatic CEO's Guide to AI", category: "AI Executive Guide", link: "/insights/ceo-guide-data-modernization", image: "/images/insights/ceo-guide-data-modernization-hero.jpg" },
     { title: "Shadow AI Is Already Inside Your Firm", category: "Security & Risk", link: "/insights/shadow-ai-inside-your-firm", image: "/images/insights/shadow-ai-inside-your-firm-hero.jpg" },
   ];
 
@@ -32,7 +32,7 @@ export default function EUAIActMidMarket() {
       categoryHref="/insights"
       title="The EU AI Act Is Enforcing in Stages — and August 2026 Is the Big One"
       subtitle="Prohibited practices and AI-literacy duties have applied since February 2025; obligations for general-purpose AI since August 2025. The high-risk regime lands in August 2026 — and it reaches far more growing firms than most of them assume."
-      heroImage="/images/business-strategy-abstract.jpg"
+      heroImage="/images/insights/eu-ai-act-playbook-hero.jpg"
       publishDate="July 6, 2026"
       readTime="9 min"
       sections={sections}

@@ -382,19 +382,19 @@ export default function PerformanceAnalytics() {
             title: "The Complete Guide to Process Mining",
             category: "Operations",
             link: "/insights/complete-guide-process-mining",
-            image: "/images/capabilities/cap-data-bars.jpg"
+            image: "/images/insights/complete-guide-process-mining-hero.jpg"
           },
           {
             title: "Building a Data-Driven Culture",
             category: "Analytics",
             link: "/insights/building-data-culture",
-            image: "/images/capabilities/cap-data-presentation.jpg"
+            image: "/images/insights/building-data-culture-hero.jpg"
           },
           {
             title: "KPI Frameworks That Drive Results",
             category: "Performance",
             link: "/insights/kpi-dashboards",
-            image: "/images/industries/fin-monitors.jpg"
+            image: "/images/insights/kpi-dashboards-hero.jpg"
           }
         ]}
       />

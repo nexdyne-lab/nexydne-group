@@ -9,9 +9,9 @@ export default function BeyondSegmentation() {
   ];
 
   const relatedInsights = [
-    { title: "Privacy by Design: Building Trust in the Age of AI", category: "Marketing", link: "/insights/privacy-by-design", image: "/images/capabilities/cap-retail-apparel.jpg" },
-    { title: "The Millisecond Imperative: Real-Time Decision Architectures", category: "Marketing", link: "/insights/real-time-decision-architectures", image: "/images/capabilities/cap-retail-data.jpg" },
-    { title: "Hyper-Personalization at Scale", category: "Marketing", link: "/insights/hyper-personalization-at-scale", image: "/images/industries/fin-monitors.jpg" },
+    { title: "Privacy by Design: Building Trust in the Age of AI", category: "Marketing", link: "/insights/privacy-by-design", image: "/images/insights/privacy-by-design-hero.jpg" },
+    { title: "The Millisecond Imperative: Real-Time Decision Architectures", category: "Marketing", link: "/insights/real-time-decision-architectures", image: "/images/insights/real-time-decision-architectures-hero.jpg" },
+    { title: "Hyper-Personalization at Scale", category: "Marketing", link: "/insights/hyper-personalization-at-scale", image: "/images/insights/hyper-personalization-at-scale-hero.jpg" },
   ];
 
   return (
@@ -19,7 +19,7 @@ export default function BeyondSegmentation() {
       category="Marketing"
       title="Beyond Segmentation: The Era of N=1 Marketing"
       subtitle="Why traditional audience segments are failing, and how to build a marketing engine that treats every customer as a market of one."
-      heroImage="/images/capabilities/cap-retail-data.jpg"
+      heroImage="/images/insights/beyond-segmentation-hero.jpg"
       publishDate="December 12, 2025"
       readTime="6 min"
       sections={sections}

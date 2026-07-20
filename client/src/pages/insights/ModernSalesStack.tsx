@@ -8,9 +8,9 @@ export default function ModernSalesStack() {
   ];
 
   const relatedInsights = [
-    { title: "The End of \"Gut Feel\" Forecasting", category: "Sales Technology", link: "/insights/ai-sales-forecasting", image: "/images/case-sales-saas.jpg" },
-    { title: "Algorithmic Territory Planning", category: "Sales Technology", link: "/insights/algorithmic-territory-planning", image: "/images/case-sales-channel.jpg" },
-    { title: "Marketing Data ROI", category: "Growth & Marketing", link: "/insights/marketing-data-roi", image: "/images/insight-marketing-operations.jpg" },
+    { title: "The End of \"Gut Feel\" Forecasting", category: "Sales Technology", link: "/insights/ai-sales-forecasting", image: "/images/insights/ai-sales-forecasting-hero.jpg" },
+    { title: "Algorithmic Territory Planning", category: "Sales Technology", link: "/insights/algorithmic-territory-planning", image: "/images/insights/algorithmic-territory-planning-hero.jpg" },
+    { title: "Marketing Data ROI", category: "Growth & Marketing", link: "/insights/marketing-data-roi", image: "/images/insights/marketing-data-roi-hero.jpg" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function ModernSalesStack() {
       category="Sales Technology"
       title="Architecting the Modern Sales Stack: Consolidation is the New Innovation"
       subtitle="The average sales organization uses 14 different tools. The result? Data silos, context switching, and 'swivel chair' inefficiency. It's time to refactor the stack."
-      heroImage="/images/industries/deal-handshake.jpg"
+      heroImage="/images/insights/modern-sales-stack-hero.jpg"
       publishDate="February 21, 2025"
       readTime="6 min"
       sections={sections}

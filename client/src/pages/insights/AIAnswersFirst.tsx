@@ -14,9 +14,9 @@ export default function AIAnswersFirst() {
   ];
 
   const relatedInsights = [
-    { title: "Why NPS Is a Vanity Metric", category: "Customer Strategy", link: "/insights/why-nps-is-a-vanity-metric", image: "/images/insight-ai-midmarket.jpg" },
-    { title: "Agentic AI Just Got a Budget Line", category: "The AI Agenda", link: "/insights/agentic-ai-budget-line", image: "/images/ai-acceleration-abstract.jpg" },
-    { title: "How AI Agents Are Reshaping Enterprise Operations", category: "AI in Enterprise", link: "/insights/ai-agents-transform-operations", image: "/images/ai-in-enterprises.jpg" },
+    { title: "Why NPS Is a Vanity Metric", category: "Customer Strategy", link: "/insights/why-nps-is-a-vanity-metric", image: "/images/insights/why-nps-is-a-vanity-metric-hero.jpg" },
+    { title: "Agentic AI Just Got a Budget Line", category: "The AI Agenda", link: "/insights/agentic-ai-budget-line", image: "/images/insights/agentic-ai-budget-line-hero.jpg" },
+    { title: "How AI Agents Are Reshaping Enterprise Operations", category: "AI in Enterprise", link: "/insights/ai-agents-transform-operations", image: "/images/insights/ai-agents-transform-operations-hero.jpg" },
   ];
 
   const sections = [
@@ -32,7 +32,7 @@ export default function AIAnswersFirst() {
       categoryHref="/insights"
       title="The Channel Flip: AI Now Answers First. Your Customers Are Deciding If They Mind."
       subtitle="Service organizations are quietly inverting a decades-old design: AI resolves first, humans handle what escalates. Done well, customers get instant resolution and your best people do their best work. Done badly, it's a maze with a chatbot at the door."
-      heroImage="/images/ai-team-collaboration.jpg"
+      heroImage="/images/insights/ai-answers-first-customer-channels-hero.jpg"
       publishDate="July 6, 2026"
       readTime="8 min"
       sections={sections}

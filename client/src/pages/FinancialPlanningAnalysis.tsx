@@ -413,13 +413,13 @@ export default function FinancialPlanningAnalysis() {
             title: "Building KPI Dashboards That Drive Action",
             category: "Analytics",
             link: "/insights/kpi-dashboards",
-            image: "/images/industries/fin-trader.jpg"
+            image: "/images/insights/kpi-dashboards-hero.jpg"
           },
           {
             title: "The CFO's Guide to Data Integration",
             category: "Technology",
             link: "/insights/cfo-data-integration",
-            image: "/images/industries/fin-handshake-city.jpg"
+            image: "/images/insights/cfo-data-integration-hero.jpg"
           }
         ]}
       />

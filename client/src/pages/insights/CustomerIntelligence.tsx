@@ -15,19 +15,19 @@ export default function CustomerIntelligence() {
       title: "How Growing Companies Are Winning with AI",
       category: "Featured",
       link: "/insights/practical-ai-guide",
-      image: "/images/insight-ai-midmarket.jpg"
+      image: "/images/insights/practical-ai-guide-hero.jpg"
     },
     {
       title: "5 Signs Your Business Is Ready for Digital Transformation",
       category: "Digital Strategy",
       link: "/insights/digital-transformation-readiness",
-      image: "/images/insight-digital-transform.jpg"
+      image: "/images/insights/digital-transformation-readiness-hero.jpg"
     },
     {
       title: "Scaling Operations Without Breaking the Bank",
       category: "Operations",
       link: "/insights/scaling-operations",
-      image: "/images/insight-scaling-ops.jpg"
+      image: "/images/insights/scaling-operations-hero.jpg"
     }
   ];
 
@@ -36,7 +36,7 @@ export default function CustomerIntelligence() {
       category="Customer Strategy"
       title="Customer Intelligence for Growing Businesses"
       subtitle="How to build data-driven customer insights that drive retention and revenue."
-      heroImage="/images/insight-customer-intel.jpg"
+      heroImage="/images/insights/customer-intelligence-hero.jpg"
       readTime="7 min"
       publishDate="December 28, 2025"
       sections={sections}

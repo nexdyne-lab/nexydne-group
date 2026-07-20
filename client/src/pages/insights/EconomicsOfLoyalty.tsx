@@ -9,9 +9,9 @@ export default function EconomicsOfLoyalty() {
   ];
 
   const relatedInsights = [
-    { title: "Why NPS is a Vanity Metric", category: "Data Science", link: "/insights/why-nps-is-a-vanity-metric", image: "/images/industries/retail-shelves.jpg" },
-    { title: "The Churn Prediction Playbook", category: "Technical Guide", link: "/insights/churn-prediction-playbook", image: "/images/capabilities/cap-colleagues-smile.jpg" },
-    { title: "Subscription Pricing Models", category: "Unit Economics", link: "/insights/subscription-pricing-models", image: "/images/capabilities/cap-retail-apparel.jpg" },
+    { title: "Why NPS is a Vanity Metric", category: "Data Science", link: "/insights/why-nps-is-a-vanity-metric", image: "/images/insights/why-nps-is-a-vanity-metric-hero.jpg" },
+    { title: "The Churn Prediction Playbook", category: "Technical Guide", link: "/insights/churn-prediction-playbook", image: "/images/insights/churn-prediction-playbook-hero.jpg" },
+    { title: "Subscription Pricing Models", category: "Unit Economics", link: "/insights/subscription-pricing-models", image: "/images/insights/subscription-pricing-models-hero.jpg" },
   ];
 
   return (
@@ -19,7 +19,7 @@ export default function EconomicsOfLoyalty() {
       category="Unit Economics"
       title="The Economics of Loyalty: Why Points Programs Fail"
       subtitle="Most loyalty programs are just disguised price cuts. We analyze the math behind successful behavioral rewards vs. margin-killing discounts."
-      heroImage="/images/capabilities/cap-retail-data.jpg"
+      heroImage="/images/insights/economics-of-loyalty-hero.jpg"
       publishDate="March 12, 2025"
       readTime="8 min"
       sections={sections}

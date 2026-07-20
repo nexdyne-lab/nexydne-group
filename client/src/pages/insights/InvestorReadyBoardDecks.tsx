@@ -11,8 +11,8 @@ export default function InvestorReadyBoardDecks() {
   ];
 
   const relatedInsights = [
-    { title: "Financial Discipline as a Growth Enabler", category: "Fractional CFO Services", link: "/insights/financial-discipline-growth", image: "/images/capabilities/cap-data-bars.jpg" },
-    { title: "The CFO's Guide to Cash Flow", category: "Fractional CFO Services", link: "/insights/cfo-cash-flow-guide", image: "/images/capabilities/cap-hands-data.jpg" },
+    { title: "Financial Discipline as a Growth Enabler", category: "Fractional CFO Services", link: "/insights/financial-discipline-growth", image: "/images/insights/financial-discipline-growth-hero.jpg" },
+    { title: "The CFO's Guide to Cash Flow", category: "Fractional CFO Services", link: "/insights/cfo-cash-flow-guide", image: "/images/insights/cfo-cash-flow-guide-hero.jpg" },
     { title: "Rolling Forecasts", category: "Fractional CFO Services", link: "/insights/rolling-forecasts", image: "/images/insights/rolling-forecasts-hero.jpg" },
   ];
 
@@ -22,7 +22,7 @@ export default function InvestorReadyBoardDecks() {
       categoryHref="/insights"
       title="Building Investor-Ready Board Decks"
       subtitle="How to create board materials that impress investors, drive productive discussions, and demonstrate financial sophistication."
-      heroImage="/images/capabilities/cap-presenting-graphs.jpg"
+      heroImage="/images/insights/investor-ready-board-decks-hero.jpg"
       publishDate="December 2024"
       readTime="10 min"
       sections={sections}

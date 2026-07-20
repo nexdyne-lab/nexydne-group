@@ -380,19 +380,19 @@ export default function ProductionOptimization() {
             title: "The Complete Guide to Process Mining",
             category: "Operations",
             link: "/insights/complete-guide-process-mining",
-            image: "/images/capabilities/cap-battery-factory.jpg"
+            image: "/images/insights/complete-guide-process-mining-hero.jpg"
           },
           {
             title: "IoT for Predictive Maintenance",
             category: "Technology",
             link: "/insights/iot-resilient-supply-chain",
-            image: "/images/industries/mfg-robot-arm.jpg"
+            image: "/images/insights/iot-resilient-supply-chain-hero.jpg"
           },
           {
             title: "Digital Twins in Manufacturing",
             category: "Innovation",
             link: "/insights/digital-twin-manufacturing",
-            image: "/images/capabilities/cap-robot-factory.jpg"
+            image: "/images/insights/digital-twin-manufacturing-hero.jpg"
           }
         ]}
       />

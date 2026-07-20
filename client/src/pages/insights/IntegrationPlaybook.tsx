@@ -17,9 +17,9 @@ export default function IntegrationPlaybook() {
   ];
 
   const relatedInsights = [
-    { title: "Commercial Due Diligence: The Questions That Matter Most", category: "M&A Strategy", link: "/insights/ma-commercial-due-diligence", image: "/images/capabilities/cap-chess.jpg" },
-    { title: "Why Most Acquisitions Fail and How to Beat the Odds", category: "M&A Strategy", link: "/insights/ma-failure-analysis", image: "/images/capabilities/cap-strategy-spheres.jpg" },
-    { title: "Synergy Capture: From Theory to Reality", category: "M&A Strategy", link: "/insights/synergy-capture", image: "/images/capabilities/cap-conference-data.jpg" },
+    { title: "Commercial Due Diligence: The Questions That Matter Most", category: "M&A Strategy", link: "/insights/ma-commercial-due-diligence", image: "/images/insights/ma-commercial-due-diligence-hero.jpg" },
+    { title: "Why Most Acquisitions Fail and How to Beat the Odds", category: "M&A Strategy", link: "/insights/ma-failure-analysis", image: "/images/insights/ma-failure-analysis-hero.jpg" },
+    { title: "Synergy Capture: From Theory to Reality", category: "M&A Strategy", link: "/insights/synergy-capture", image: "/images/insights/synergy-capture-hero.jpg" },
   ];
 
   return (
@@ -28,7 +28,7 @@ export default function IntegrationPlaybook() {
       categoryHref="/insights"
       title="The 100-Day Integration Playbook for Successful M&A"
       subtitle="The first 100 days after acquisition close determine whether you'll capture the value you paid for or watch it evaporate through poor execution. A structured playbook ensures nothing critical falls through the cracks."
-      heroImage="/images/capabilities/cap-data-presentation.jpg"
+      heroImage="/images/insights/integration-playbook-hero.jpg"
       publishDate="December 10, 2025"
       readTime="15 min"
       sections={sections}

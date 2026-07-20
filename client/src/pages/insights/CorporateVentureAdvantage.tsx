@@ -8,9 +8,9 @@ export default function CorporateVentureAdvantage() {
   ];
 
   const relatedInsights = [
-    { title: "From MVP to Scale", category: "Guide", link: "/insights/from-mvp-to-scale", image: "/images/capabilities/cap-lightbulb-idea.jpg" },
-    { title: "Hiring for Builders", category: "Talent", link: "/insights/hiring-for-builders", image: "/images/capabilities/cap-diverse-team.jpg" },
-    { title: "The CEO's Guide to Data Modernization", category: "Strategy", link: "/insights/ceo-guide-data-modernization", image: "/images/capabilities/cap-telescope.jpg" },
+    { title: "From MVP to Scale", category: "Guide", link: "/insights/from-mvp-to-scale", image: "/images/insights/from-mvp-to-scale-hero.jpg" },
+    { title: "Hiring for Builders", category: "Talent", link: "/insights/hiring-for-builders", image: "/images/insights/hiring-for-builders-hero.jpg" },
+    { title: "The CEO's Guide to Data Modernization", category: "Strategy", link: "/insights/ceo-guide-data-modernization", image: "/images/insights/ceo-guide-data-modernization-hero.jpg" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function CorporateVentureAdvantage() {
       category="Strategy"
       title="The Corporate Venture Advantage: Why Established Assets + Startup Speed Wins"
       subtitle="In the race for digital dominance, incumbents often fear they're too slow. But when they learn to leverage their unfair advantages—data, distribution, and domain expertise—they don't just compete with startups; they crush them."
-      heroImage="/images/industries/team-strategy-board.jpg"
+      heroImage="/images/insights/corporate-venture-advantage-hero.jpg"
       publishDate="December 12, 2024"
       readTime="6 min"
       sections={sections}

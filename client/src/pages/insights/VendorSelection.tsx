@@ -9,9 +9,9 @@ export default function VendorSelection() {
   ];
 
   const relatedInsights = [
-    { title: "Composable Architecture for Growing Companies", category: "Technology", link: "/insights/composable-architecture", image: "/images/cloud-abstract.jpg" },
-    { title: "The Enterprise Integration Playbook", category: "Integration", link: "/insights/enterprise-integration-playbook", image: "/images/digital-transformation-abstract.jpg" },
-    { title: "Measuring Automation ROI", category: "Operations", link: "/insights/measuring-automation-roi", image: "/images/data-abstract.jpg" },
+    { title: "Composable Architecture for Growing Companies", category: "Technology", link: "/insights/composable-architecture", image: "/images/insights/composable-architecture-hero.jpg" },
+    { title: "The Enterprise Integration Playbook", category: "Integration", link: "/insights/enterprise-integration-playbook", image: "/images/insights/enterprise-integration-playbook-hero.jpg" },
+    { title: "Measuring Automation ROI", category: "Operations", link: "/insights/measuring-automation-roi", image: "/images/insights/measuring-automation-roi-hero.jpg" },
   ];
 
   return (
@@ -20,7 +20,7 @@ export default function VendorSelection() {
       categoryHref="/insights"
       title="The Vendor Selection Matrix: How to Choose Tech That Actually Fits"
       subtitle="Stop buying shelfware. A structured approach to evaluating software vendors ensures you buy what you need, not what the salesperson wants to sell."
-      heroImage="/images/approach-technology.jpg"
+      heroImage="/images/insights/vendor-selection-hero.jpg"
       publishDate="June 18, 2026"
       readTime="6 min"
       sections={sections}

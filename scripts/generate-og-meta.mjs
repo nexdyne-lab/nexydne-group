@@ -19,7 +19,7 @@ for (const line of app.split("\n")) {
 }
 // component name -> import file
 const imports = {};
-for (const m of app.matchAll(/import (\w+) from "(?:@\/|\.\/)?(pages\/[^"]+)"/g)) {
+for (const m of app.matchAll(/import \{?\s*(\w+)\s*\}? from "(?:@\/|\.\/)?(pages\/[^"]+)"/g)) {
   imports[m[1]] = "client/src/" + m[2] + (m[2].endsWith(".tsx") ? "" : ".tsx");
 }
 

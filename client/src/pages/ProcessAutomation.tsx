@@ -380,19 +380,19 @@ export default function ProcessAutomation() {
             title: "The Complete Guide to Process Mining",
             category: "Operations",
             link: "/insights/complete-guide-process-mining",
-            image: "/images/industries/tech-datacenter.jpg"
+            image: "/images/insights/complete-guide-process-mining-hero.jpg"
           },
           {
             title: "RPA vs Intelligent Automation: What's Right for You?",
             category: "Technology",
             link: "/insights/why-intelligent-automation",
-            image: "/images/capabilities/cap-circuit-green.jpg"
+            image: "/images/insights/why-intelligent-automation-hero.jpg"
           },
           {
             title: "Building an Automation Center of Excellence",
             category: "Strategy",
             link: "/insights/why-intelligent-automation-isnt-optional-anymore",
-            image: "/images/capabilities/cap-ai-search.jpg"
+            image: "/images/insights/why-intelligent-automation-isnt-optional-anymore-hero.jpg"
           }
         ]}
       />

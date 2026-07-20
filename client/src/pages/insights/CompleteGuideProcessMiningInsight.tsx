@@ -11,9 +11,9 @@ export default function CompleteGuideProcessMiningInsight() {
   ];
 
   const relatedInsights = [
-    { title: "Why Intelligent Automation Isn't Optional Anymore", category: "Strategy", link: "/insights/why-intelligent-automation-isnt-optional-anymore", image: "/images/case-bank-process-automation.jpg" },
-    { title: "How AI Agents Transform Enterprise Operations", category: "Technology", link: "/insights/how-ai-agents-transform-enterprise-operations", image: "/images/ai-acceleration-abstract.jpg" },
-    { title: "Building a Data-Driven Culture", category: "Data", link: "/insights/building-data-culture", image: "/images/capabilities/cap-data-presentation.jpg" },
+    { title: "Why Intelligent Automation Isn't Optional Anymore", category: "Strategy", link: "/insights/why-intelligent-automation-isnt-optional-anymore", image: "/images/insights/why-intelligent-automation-isnt-optional-anymore-hero.jpg" },
+    { title: "How AI Agents Transform Enterprise Operations", category: "Technology", link: "/insights/how-ai-agents-transform-enterprise-operations", image: "/images/insights/how-ai-agents-transform-enterprise-operations-hero.jpg" },
+    { title: "Building a Data-Driven Culture", category: "Data", link: "/insights/building-data-culture", image: "/images/insights/building-data-culture-hero.jpg" },
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function CompleteGuideProcessMiningInsight() {
       category="Operations"
       title="The Complete Guide to Process Mining"
       subtitle="Process mining bridges the gap between traditional process analysis and data science, providing unprecedented visibility into how your processes actually work—not how you think they work."
-      heroImage="/images/data-abstract.jpg"
+      heroImage="/images/insights/complete-guide-process-mining-hero.jpg"
       publishDate="December 5, 2025"
       readTime="10 min"
       sections={sections}

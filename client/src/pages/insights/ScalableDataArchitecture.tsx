@@ -11,9 +11,9 @@ export default function ScalableDataArchitecture() {
   ];
 
   const relatedInsights = [
-    { title: "Enterprise transformation in the AI era", category: "Technology", link: "/insights/enterprise-transformation-ai", image: "/images/capabilities/cap-data-presentation.jpg" },
-    { title: "The Modern Enterprise Integration Playbook", category: "Technology", link: "/insights/enterprise-integration-playbook", image: "/images/industries/fin-monitors.jpg" },
-    { title: "From Data Lake to Value Stream", category: "Technology", link: "/insights/data-lake-to-value-stream", image: "/images/capabilities/cap-hands-data.jpg" },
+    { title: "Enterprise transformation in the AI era", category: "Technology", link: "/insights/enterprise-transformation-ai", image: "/images/insights/enterprise-transformation-ai-hero.jpg" },
+    { title: "The Modern Enterprise Integration Playbook", category: "Technology", link: "/insights/enterprise-integration-playbook", image: "/images/insights/enterprise-integration-playbook-hero.jpg" },
+    { title: "From Data Lake to Value Stream", category: "Technology", link: "/insights/data-lake-to-value-stream", image: "/images/insights/data-lake-to-value-stream-hero.jpg" },
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function ScalableDataArchitecture() {
       category="Technology"
       title="Building scalable data architectures"
       subtitle="The architectural patterns and technology choices that enable enterprises to scale data operations from millions to billions of events."
-      heroImage="/images/capabilities/cap-data-bars.jpg"
+      heroImage="/images/insights/scalable-data-architecture-hero.jpg"
       publishDate="September 14, 2025"
       readTime="8 min"
       sections={sections}

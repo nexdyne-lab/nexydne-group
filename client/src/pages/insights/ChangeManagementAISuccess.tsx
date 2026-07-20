@@ -12,9 +12,9 @@ export default function ChangeManagementAISuccess() {
   ];
 
   const relatedInsights = [
-    { title: "AI Access: How Growing Businesses Can Compete With Enterprise Technology", category: "Report", link: "/insights/ai-access-guide", image: "/images/insight-ai-midmarket.jpg" },
-    { title: "The 85% Efficiency Improvement: What Our Clients Actually Experience", category: "Article", link: "/insights/efficiency-improvement-reality", image: "/images/insights-intelligent-automation.jpg" },
-    { title: "Process Mining Fundamentals: From Operational Mapping to AI Automation", category: "Whitepaper", link: "/insights/process-mining-guide", image: "/images/insight-process-mining.jpg" },
+    { title: "AI Access: How Growing Businesses Can Compete With Enterprise Technology", category: "Report", link: "/insights/ai-access-guide", image: "/images/insights/ai-access-guide-hero.jpg" },
+    { title: "The 85% Efficiency Improvement: What Our Clients Actually Experience", category: "Article", link: "/insights/efficiency-improvement-reality", image: "/images/insights/efficiency-improvement-reality-hero.jpg" },
+    { title: "Process Mining Fundamentals: From Operational Mapping to AI Automation", category: "Whitepaper", link: "/insights/process-mining-guide", image: "/images/insights/process-mining-guide-hero.jpg" },
   ];
 
   return (
@@ -22,7 +22,7 @@ export default function ChangeManagementAISuccess() {
       category="AI & Technology"
       title="Why change management determines AI project success"
       subtitle="Technology is the easy part. The human element—adoption, behavior change, cultural alignment—determines whether AI investments deliver returns or become expensive shelfware."
-      heroImage="/images/change-management-abstract.jpg"
+      heroImage="/images/insights/change-management-ai-success-hero.jpg"
       publishDate="January 2026"
       readTime="10 min"
       sections={sections}

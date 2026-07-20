@@ -46,7 +46,7 @@ export default function GrowthMarketingSales() {
             "Building a scalable marketing engine for growing companies",
           summary:
             "Most growing marketing teams are stuck between scrappy execution and enterprise overhead. We outline the operating model, technology choices, and measurement discipline that let growing companies build a marketing engine that scales without the enterprise complexity or budget.",
-          image: "/images/insight-marketing-operations.jpg",
+          image: "/images/insights/future-of-marketing-ops-hero.jpg",
           href: "/insights/future-of-marketing-ops",
         },
         secondary: [
@@ -291,7 +291,7 @@ export default function GrowthMarketingSales() {
           title: "The AI advantage in sales: Moving from pilots to scale",
           readTime: "8 min read",
           image:
-            "/images/capabilities/cap-data-bars.jpg",
+            "/images/insights/ai-sales-forecasting-hero.jpg",
           href: "/insights/ai-sales-forecasting",
         },
         {
@@ -300,7 +300,7 @@ export default function GrowthMarketingSales() {
             "Personalization that pays: A practical guide for growing companies",
           readTime: "7 min read",
           image:
-            "/images/capabilities/cap-celebrate.jpg",
+            "/images/insights/hyper-personalization-at-scale-hero.jpg",
           href: "/insights/hyper-personalization-at-scale",
         },
         {
@@ -309,7 +309,7 @@ export default function GrowthMarketingSales() {
             "Pricing for growth: Capturing value without losing customers",
           readTime: "9 min read",
           image:
-            "/images/capabilities/cap-retail-apparel.jpg",
+            "/images/insights/psychology-of-value-hero.jpg",
           href: "/insights/psychology-of-value",
         },
       ]}

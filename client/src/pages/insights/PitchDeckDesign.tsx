@@ -16,9 +16,9 @@ export default function PitchDeckDesign() {
   ];
 
   const relatedInsights = [
-    { title: "The Series A Fundraising Guide", category: "Capital Raising", link: "/insights/series-a-fundraising-guide", image: "/images/capital-raising-abstract.jpg" },
-    { title: "Investor-Ready Board Decks", category: "Strategy & Finance", link: "/insights/investor-ready-board-decks", image: "/images/business-strategy-abstract.jpg" },
-    { title: "The Valuation Mistakes Founders Make", category: "Strategy & Finance", link: "/insights/valuation-mistakes", image: "/images/cfo-services-abstract.jpg" },
+    { title: "The Series A Fundraising Guide", category: "Capital Raising", link: "/insights/series-a-fundraising-guide", image: "/images/insights/series-a-fundraising-guide-hero.jpg" },
+    { title: "Investor-Ready Board Decks", category: "Strategy & Finance", link: "/insights/investor-ready-board-decks", image: "/images/insights/investor-ready-board-decks-hero.jpg" },
+    { title: "The Valuation Mistakes Founders Make", category: "Strategy & Finance", link: "/insights/valuation-mistakes", image: "/images/insights/valuation-mistakes-hero.jpg" },
   ];
 
   return (
@@ -26,7 +26,7 @@ export default function PitchDeckDesign() {
       category="Capital Raising"
       title="How to Design Pitch Decks That Close Institutional Rounds"
       subtitle="The difference between pitch decks that generate term sheets and those that generate polite passes often comes down to narrative structure, visual clarity, and strategic emphasis rather than the underlying business quality."
-      heroImage="/images/abstract-growth.jpg"
+      heroImage="/images/insights/pitch-deck-design-hero.jpg"
       publishDate="December 16, 2025"
       readTime="11 min"
       sections={sections}

@@ -8,9 +8,9 @@ export default function MarketEntryArchitecture() {
   ];
 
   const relatedInsights = [
-    { title: "The digital growth playbook for growing companies", category: "Growth", link: "/insights/digital-growth-playbook", image: "/images/growth-scaling-abstract.jpg" },
-    { title: "From MVP to scale: The startup growth journey", category: "Growth", link: "/insights/from-mvp-to-scale", image: "/images/insight-mvp-myths-mid-market.jpg" },
-    { title: "Value proposition design", category: "Strategy", link: "/insights/value-proposition-design", image: "/images/business-strategy-abstract.jpg" },
+    { title: "The digital growth playbook for growing companies", category: "Growth", link: "/insights/digital-growth-playbook", image: "/images/insights/digital-growth-playbook-hero.jpg" },
+    { title: "From MVP to scale: The startup growth journey", category: "Growth", link: "/insights/from-mvp-to-scale", image: "/images/insights/from-mvp-to-scale-hero.jpg" },
+    { title: "Value proposition design", category: "Strategy", link: "/insights/value-proposition-design", image: "/images/insights/value-proposition-design-hero.jpg" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function MarketEntryArchitecture() {
       category="Strategy"
       title="Market Entry Architecture: Designing for Scalability from Day One"
       subtitle='Why most market entries fail due to "strategic debt," and how to architect a go-to-market motion that scales like software.'
-      heroImage="/images/go-to-market-abstract.jpg"
+      heroImage="/images/insights/market-entry-architecture-hero.jpg"
       publishDate="December 18, 2025"
       readTime="6 min"
       sections={sections}

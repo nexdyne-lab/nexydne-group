@@ -4,7 +4,7 @@ export default function InsightSubscriptionPlaybook() {
   const relatedInsights = [
     { title: "Digital channels driving revenue growth", category: "Digital Growth", link: "/insights/digital-channels-growth", image: "/images/insights/digital-channels-growth-hero.jpg" },
     { title: "E-commerce launch guide: zero to revenue in 90 days", category: "Digital Commerce", link: "/insights/ecommerce-launch-guide", image: "/images/insights/ecommerce-launch-guide-hero.jpg" },
-    { title: "Subscription pricing models", category: "Pricing", link: "/insights/subscription-pricing-models", image: "/images/business-strategy-abstract.jpg" },
+    { title: "Subscription pricing models", category: "Pricing", link: "/insights/subscription-pricing-models", image: "/images/insights/subscription-pricing-models-hero.jpg" },
   ];
 
   const sections = [

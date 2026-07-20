@@ -10,9 +10,9 @@ export default function MidMarketAIAccess() {
   ];
 
   const relatedInsights = [
-    { title: "The 85% efficiency improvement: What our clients actually experience", category: "Operations", link: "/insights/efficiency-improvement-reality", image: "/images/insight-automation.jpg" },
-    { title: "Process mining fundamentals: From operational mapping to AI automation", category: "Operations", link: "/insights/process-mining-guide", image: "/images/insight-process-mining.jpg" },
-    { title: "Why change management determines AI project success", category: "Operations", link: "/insights/change-management-ai-success", image: "/images/change-management-abstract.jpg" },
+    { title: "The 85% efficiency improvement: What our clients actually experience", category: "Operations", link: "/insights/efficiency-improvement-reality", image: "/images/insights/efficiency-improvement-reality-hero.jpg" },
+    { title: "Process mining fundamentals: From operational mapping to AI automation", category: "Operations", link: "/insights/process-mining-guide", image: "/images/insights/process-mining-guide-hero.jpg" },
+    { title: "Why change management determines AI project success", category: "Operations", link: "/insights/change-management-ai-success", image: "/images/insights/change-management-ai-success-hero.jpg" },
   ];
 
   return (
@@ -20,7 +20,7 @@ export default function MidMarketAIAccess() {
       category="Report"
       title="AI Access: How growing businesses can compete with enterprise technology"
       subtitle="The democratization of AI is creating unprecedented opportunities for growing organizations. This report examines how companies with 50-200 employees can leverage intelligent automation to compete effectively against larger enterprises."
-      heroImage="/images/insight-ai-midmarket.jpg"
+      heroImage="/images/insights/ai-access-guide-hero.jpg"
       publishDate="January 2026"
       readTime="12 min"
       sections={sections}

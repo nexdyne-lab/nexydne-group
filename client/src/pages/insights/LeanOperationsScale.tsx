@@ -12,9 +12,9 @@ export default function LeanOperationsScale() {
   ];
 
   const relatedInsights = [
-    { title: "Smart Cost Reduction", category: "Performance Improvement", link: "/insights/smart-cost-reduction", image: "/images/capabilities/cap-strategy-spheres.jpg" },
-    { title: "Working Capital Optimization", category: "Performance Improvement", link: "/insights/working-capital-optimization", image: "/images/capabilities/cap-hands-data.jpg" },
-    { title: "Performance Improvement Framework", category: "Performance Improvement", link: "/insights/performance-improvement-framework", image: "/images/industries/ops-gears.jpg" },
+    { title: "Smart Cost Reduction", category: "Performance Improvement", link: "/insights/smart-cost-reduction", image: "/images/insights/smart-cost-reduction-hero.jpg" },
+    { title: "Working Capital Optimization", category: "Performance Improvement", link: "/insights/working-capital-optimization", image: "/images/insights/working-capital-optimization-hero.jpg" },
+    { title: "Performance Improvement Framework", category: "Performance Improvement", link: "/insights/performance-improvement-framework", image: "/images/insights/performance-improvement-framework-hero.jpg" },
   ];
 
   return (
@@ -22,7 +22,7 @@ export default function LeanOperationsScale() {
       category="Performance Improvement"
       title="Lean Operations at Scale"
       subtitle="How to apply lean principles to complex organizations for sustainable operational excellence and continuous improvement."
-      heroImage="/images/capabilities/cap-team-screens.jpg"
+      heroImage="/images/insights/lean-operations-scale-hero.jpg"
       publishDate="December 2024"
       readTime="11 min"
       sections={sections}

@@ -408,19 +408,19 @@ export default function MergersAcquisitions() {
             title: "M&A Commercial Due Diligence Best Practices",
             category: "M&A",
             link: "/insights/ma-commercial-due-diligence",
-            image: "/images/industries/deal-handshake.jpg"
+            image: "/images/insights/ma-commercial-due-diligence-hero.jpg"
           },
           {
             title: "Why Most M&A Deals Fail to Deliver Value",
             category: "Strategy",
             link: "/insights/ma-failure-analysis",
-            image: "/images/industries/fin-handshake-city.jpg"
+            image: "/images/insights/ma-failure-analysis-hero.jpg"
           },
           {
             title: "The Integration Playbook: 100-Day Plan",
             category: "Integration",
             link: "/insights/integration-playbook",
-            image: "/images/industries/meeting-topview.jpg"
+            image: "/images/insights/integration-playbook-hero.jpg"
           }
         ]}
       />

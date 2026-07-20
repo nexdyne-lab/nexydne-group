@@ -39,7 +39,7 @@ export default function AIAdoptionOutlook2026() {
       categoryHref="/insights"
       title="The AI Adoption Outlook 2026: Why the Winners Will Govern First"
       subtitle="AI is now everywhere and delivering almost nowhere at scale. As the agentic era arrives, the organizations that pull ahead won't be the ones that adopt the most—they'll be the ones that govern first."
-      heroImage="/images/agentic-ai-abstract.jpg"
+      heroImage="/images/insights/ai-adoption-outlook-2026-hero.jpg"
       publishDate="July 1, 2026"
       readTime="11 min"
       sections={sections}

@@ -19,7 +19,7 @@ export default function GrowthMarketingInsight() {
   const relatedInsights = [
     { title: "AI in the CFO's Office", category: "Strategy & Finance", link: "/insights/strategy-finance", image: "/images/ai-powered-finance-abstract.jpg" },
     { title: "From Automation to Agentic Operations", category: "Operations", link: "/insights/operations", image: "/images/ai-acceleration-abstract.jpg" },
-    { title: "The Pragmatic CEO's Guide to AI", category: "AI Executive Guide", link: "/insights/ceo-guide-data-modernization", image: "/images/hero-ceo-ai-guide.jpg" },
+    { title: "The Pragmatic CEO's Guide to AI", category: "AI Executive Guide", link: "/insights/ceo-guide-data-modernization", image: "/images/insights/ceo-guide-data-modernization-hero.jpg" },
   ];
 
   const sections = [

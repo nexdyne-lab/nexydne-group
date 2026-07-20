@@ -181,7 +181,7 @@ export default function Cases() {
                 date: "December 1, 2024",
                 readTime: "6 min read",
                 description: "Exploring the rapid adoption of intelligent automation across mid-sized US businesses and what it means for competitive advantage.",
-                image: "/blog-ai-automation.3be6f720.jpg",
+                image: "/images/insights/ai-automation-reshaping-business-hero.jpg",
                 link: "/insights/ai-automation-reshaping-business"
               },
               {
@@ -189,7 +189,7 @@ export default function Cases() {
                 date: "November 18, 2024",
                 readTime: "5 min read",
                 description: "Key indicators that signal it's time to automate manual processes, from growing operational costs to scaling challenges and compliance pressures.",
-                image: "/blog-digital-transformation.a3f57989.jpg",
+                image: "/images/insights/digital-transformation-readiness-hero.jpg",
                 link: "/insights/digital-transformation-readiness"
               },
               {
@@ -197,7 +197,7 @@ export default function Cases() {
                 date: "November 5, 2024",
                 readTime: "7 min read",
                 description: "Real metrics from our clients showing typical time savings, cost reductions, and accuracy improvements in the first 12 months of deployment.",
-                image: "/blog-roi-measurement.1514df48.jpg",
+                image: "/images/insights/measuring-automation-roi-hero.jpg",
                 link: "/insights/measuring-automation-roi"
               }
             ].map((post, index) => (

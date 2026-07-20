@@ -15,19 +15,19 @@ export default function DigitalTransformationReadiness() {
       title: "How Growing Companies Are Winning with AI",
       category: "Featured",
       link: "/insights/practical-ai-guide",
-      image: "/images/insight-ai-midmarket.jpg"
+      image: "/images/insights/practical-ai-guide-hero.jpg"
     },
     {
       title: "Scaling Operations Without Breaking the Bank",
       category: "Operations",
       link: "/insights/scaling-operations",
-      image: "/images/insight-scaling-ops.jpg"
+      image: "/images/insights/scaling-operations-hero.jpg"
     },
     {
       title: "Customer Intelligence for Growing Businesses",
       category: "Customer Strategy",
       link: "/insights/customer-intelligence",
-      image: "/images/insight-customer-intel.jpg"
+      image: "/images/insights/customer-intelligence-hero.jpg"
     }
   ];
 

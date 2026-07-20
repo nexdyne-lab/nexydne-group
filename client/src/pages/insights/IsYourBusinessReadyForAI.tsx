@@ -21,8 +21,8 @@ export default function IsYourBusinessReadyForAI() {
 
   const relatedInsights = [
     { title: "Shadow AI Is the New Shadow IT", category: "Security & Risk", link: "/insights/shadow-ai-inside-your-firm", image: "/images/insights/shadow-ai-inside-your-firm-hero.jpg" },
-    { title: "Winning with governed AI at growing companies", category: "Practical AI", link: "/insights/practical-ai-guide", image: "/images/ai-acceleration-abstract.jpg" },
-    { title: "Measuring ROI: your first year of automation", category: "Real numbers", link: "/insights/measuring-automation-roi", image: "/images/business-strategy-abstract.jpg" },
+    { title: "Winning with governed AI at growing companies", category: "Practical AI", link: "/insights/practical-ai-guide", image: "/images/insights/practical-ai-guide-hero.jpg" },
+    { title: "Measuring ROI: your first year of automation", category: "Real numbers", link: "/insights/measuring-automation-roi", image: "/images/insights/measuring-automation-roi-hero.jpg" },
   ];
 
   const sections = [

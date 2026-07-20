@@ -9,9 +9,9 @@ export default function MiddlewarePatterns() {
   ];
 
   const relatedInsights = [
-    { title: "The enterprise integration playbook", category: "Engineering", link: "/insights/enterprise-integration-playbook", image: "/images/processflow-abstract.jpg" },
-    { title: "Composable architecture", category: "Engineering", link: "/insights/composable-architecture", image: "/images/devops-automation-hub-abstract.jpg" },
-    { title: "Cloud-native architecture", category: "Engineering", link: "/insights/cloud-native-architecture", image: "/images/cloud-abstract.jpg" },
+    { title: "The enterprise integration playbook", category: "Engineering", link: "/insights/enterprise-integration-playbook", image: "/images/insights/enterprise-integration-playbook-hero.jpg" },
+    { title: "Composable architecture", category: "Engineering", link: "/insights/composable-architecture", image: "/images/insights/composable-architecture-hero.jpg" },
+    { title: "Cloud-native architecture", category: "Engineering", link: "/insights/cloud-native-architecture", image: "/images/insights/cloud-native-architecture-hero.jpg" },
   ];
 
   return (
@@ -19,7 +19,7 @@ export default function MiddlewarePatterns() {
       category="Engineering"
       title="Middleware Patterns for Scale: Beyond Point-to-Point Integration"
       subtitle="Why direct API connections fail at scale, and how to implement event-driven architectures that handle millions of transactions."
-      heroImage="/images/enterprise-architecture.jpg"
+      heroImage="/images/insights/middleware-patterns-hero.jpg"
       publishDate="May 22, 2026"
       readTime="10 min"
       sections={sections}

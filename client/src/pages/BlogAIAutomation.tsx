@@ -12,13 +12,13 @@ export default function BlogAIAutomation() {
       title: "Measuring automation ROI: what to expect in your first year",
       category: "Strategy",
       link: "/insights/measuring-automation-roi",
-      image: "/blog-roi-measurement.1514df48.jpg",
+      image: "/images/insights/measuring-automation-roi-hero.jpg",
     },
     {
       title: "Digital transformation readiness: five signs your business is ready",
       category: "Transformation",
       link: "/insights/digital-transformation-readiness",
-      image: "/blog-digital-transformation.a3f57989.jpg",
+      image: "/images/insights/digital-transformation-readiness-hero.jpg",
     },
   ];
 
@@ -28,7 +28,7 @@ export default function BlogAIAutomation() {
       categoryHref="/insights"
       title="How AI and automation are reshaping business operations"
       subtitle="The automation revolution is no longer coming—it's here. Mid-sized businesses across the United States are discovering that intelligent automation isn't just for Fortune 500 companies anymore."
-      heroImage="/blog-team-collaboration.913d82ea.jpg"
+      heroImage="/images/insights/ai-automation-reshaping-business-hero.jpg"
       publishDate="December 1, 2024"
       readTime="6 min"
       sections={sections}

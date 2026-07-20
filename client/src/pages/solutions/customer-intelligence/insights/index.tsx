@@ -44,7 +44,7 @@ const insights = [
     category: "Customer Strategy",
     description: "How to build data-driven customer insights that drive retention and revenue without enterprise-scale complexity.",
     readTime: "7 min read",
-    image: "/images/capabilities/cap-colleagues-smile.jpg",
+    image: "/images/insights/customer-intelligence-hero.jpg",
     featured: false
   },
   {
@@ -54,7 +54,7 @@ const insights = [
     category: "Analytics",
     description: "Net Promoter Score tells you how customers felt yesterday. It doesn't tell you who will leave tomorrow. Here is the engineering approach to health scoring.",
     readTime: "6 min read",
-    image: "/images/capabilities/cap-ai-search.jpg",
+    image: "/images/insights/why-nps-is-a-vanity-metric-hero.jpg",
     featured: false
   },
   {
@@ -64,7 +64,7 @@ const insights = [
     category: "Marketing",
     description: "Most loyalty programs are just disguised price cuts. We analyze the math behind behavioral rewards versus margin-killing discounts.",
     readTime: "8 min read",
-    image: "/images/capabilities/cap-conference-data.jpg",
+    image: "/images/insights/economics-of-loyalty-hero.jpg",
     featured: false
   }
 ];

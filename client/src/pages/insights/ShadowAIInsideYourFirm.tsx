@@ -14,9 +14,9 @@ export default function ShadowAIInsideYourFirm() {
   ];
 
   const relatedInsights = [
-    { title: "The EU AI Act Is Enforcing in Stages", category: "Regulation & Governance", link: "/insights/eu-ai-act-playbook", image: "/images/business-strategy-abstract.jpg" },
-    { title: "Agentic AI Just Got a Budget Line", category: "The AI Agenda", link: "/insights/agentic-ai-budget-line", image: "/images/ai-acceleration-abstract.jpg" },
-    { title: "The AI Adoption Outlook 2026", category: "Featured Insight", link: "/insights/ai-adoption-outlook-2026", image: "/images/agentic-ai-abstract.jpg" },
+    { title: "The EU AI Act Is Enforcing in Stages", category: "Regulation & Governance", link: "/insights/eu-ai-act-playbook", image: "/images/insights/eu-ai-act-playbook-hero.jpg" },
+    { title: "Agentic AI Just Got a Budget Line", category: "The AI Agenda", link: "/insights/agentic-ai-budget-line", image: "/images/insights/agentic-ai-budget-line-hero.jpg" },
+    { title: "The AI Adoption Outlook 2026", category: "Featured Insight", link: "/insights/ai-adoption-outlook-2026", image: "/images/insights/ai-adoption-outlook-2026-hero.jpg" },
   ];
 
   const sections = [

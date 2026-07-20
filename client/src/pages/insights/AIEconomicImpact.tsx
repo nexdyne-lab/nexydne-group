@@ -17,19 +17,19 @@ export default function AIEconomicImpact() {
       title: "How AI Agents Are Reshaping Enterprise Operations",
       category: "AI in Enterprise",
       link: "/insights/ai-agents-transform-operations",
-      image: "/images/hero-ai-enterprise.webp"
+      image: "/images/insights/ai-agents-transform-operations-hero.jpg"
     },
     {
       title: "The Complete Guide to Process Mining",
       category: "Technology Strategy",
       link: "/insights/process-mining-guide",
-      image: "/images/hero-process-mining.jpg"
+      image: "/images/insights/process-mining-guide-hero.jpg"
     },
     {
       title: "The Pragmatic CEO's Guide to AI",
       category: "AI Executive Guide",
       link: "/insights/ceo-guide-data-modernization",
-      image: "/images/hero-ceo-ai-guide.jpg"
+      image: "/images/insights/ceo-guide-data-modernization-hero.jpg"
     }
   ];
 
@@ -39,7 +39,7 @@ export default function AIEconomicImpact() {
       categoryHref="/insights"
       title="The $15 Trillion Question: How AI Will Reshape the Global Economy"
       subtitle="Artificial intelligence is poised to add $15.7 trillion to the global economy by 2030. Understanding where this value will be created—and captured—is essential for business leaders."
-      heroImage="/images/hero-ai-global-economy.jpg"
+      heroImage="/images/insights/ai-economic-impact-hero.jpg"
       publishDate="January 18, 2026"
       readTime="12 min"
       sections={sections}

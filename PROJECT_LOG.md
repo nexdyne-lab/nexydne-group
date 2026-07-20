@@ -636,3 +636,22 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
 - QC: tsc clean, build+guard green, 34/34 tests, headless: all 9 heroes render
   (http 200), landing shows new featured hero, 0 JS errors. Committed, NOT
   pushed — awaiting David's review of the picks.
+
+### 2026-07-20 — Bespoke hero images for ALL 96 insight articles (Drive library)
+- Full visual catalog built of David's Drive image library: all 20 folders, 400
+  images downloaded via the Drive connector, individually viewed and tagged
+  (desc + palette + quality 1-5 + provenance). 351 files over the connector's
+  ~6.3MB ceiling logged by name for a future pass after Drive downsizing.
+- All 96 insight articles now have a UNIQUE, topic-matched, brand-palette hero
+  (charcoal/red/amber/purple leading, blue mixed in; 40+ five-star picks; no
+  image reused). 87 new in this pass + the 9 from yesterday. Assignment done
+  by hand article-by-article; one misassignment caught in contact-sheet review
+  (valuation-mistakes) and fixed.
+- Wired: 87 components + insightsRegistry + relatedInsights thumbnails in 133
+  files; heroes optimized to 1600px ≤~420KB in /images/insights/.
+- BONUS FIX: generate-og-meta.mjs didn't parse named imports — 6 routes were
+  silently missing OG data (3 commerce insights + 3 case studies). Fixed;
+  og-meta now covers 413 routes (was 407).
+- QC: tsc, build+guard, 34/34 tests, headless 10-article sample + landing all
+  green, contact sheets reviewed (4 sheets × 24). Committed, NOT pushed —
+  awaiting David's contact-sheet review.

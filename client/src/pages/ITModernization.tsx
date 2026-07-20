@@ -554,19 +554,19 @@ export default function ITModernization() {
             title: "CEO Guide to Data Modernization",
             category: "Technology",
             link: "/insights/ceo-guide-data-modernization",
-            image: "/images/capabilities/cap-presenting-graphs.jpg"
+            image: "/images/insights/ceo-guide-data-modernization-hero.jpg"
           },
           {
             title: "Composable Architecture Guide",
             category: "Architecture",
             link: "/insights/composable-architecture",
-            image: "/images/industries/advisor-charts.jpg"
+            image: "/images/insights/composable-architecture-hero.jpg"
           },
           {
             title: "Integration Playbook",
             category: "Integration",
             link: "/insights/integration-playbook",
-            image: "/images/capabilities/cap-celebrate.jpg"
+            image: "/images/insights/integration-playbook-hero.jpg"
           }
         ]}
       />

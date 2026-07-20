@@ -380,19 +380,19 @@ export default function SupplyChainOptimization() {
             title: "Generative AI in Supply Chain",
             category: "Technology",
             link: "/insights/generative-supply-chain",
-            image: "/images/capabilities/cap-warehouse-robot.jpg"
+            image: "/images/insights/generative-supply-chain-hero.jpg"
           },
           {
             title: "IoT for Resilient Supply Chains",
             category: "Innovation",
             link: "/insights/iot-resilient-supply-chain",
-            image: "/images/industries/transport-bridge.jpg"
+            image: "/images/insights/iot-resilient-supply-chain-hero.jpg"
           },
           {
             title: "The Complete Guide to Process Mining",
             category: "Operations",
             link: "/insights/complete-guide-process-mining",
-            image: "/images/industries/transport-traffic.jpg"
+            image: "/images/insights/complete-guide-process-mining-hero.jpg"
           }
         ]}
       />

@@ -8,9 +8,9 @@ export default function DataLakeToValueStream() {
   ];
 
   const relatedInsights = [
-    { title: "The CEO's Guide to Data Modernization", category: "Strategy", link: "/insights/ceo-guide-data-modernization", image: "/images/capabilities/cap-data-bars.jpg" },
-    { title: "Building a Data-First Culture", category: "Culture", link: "/insights/building-data-culture", image: "/images/capabilities/cap-data-presentation.jpg" },
-    { title: "The Corporate Venture Advantage", category: "Strategy", link: "/insights/corporate-venture-advantage", image: "/images/industries/team-strategy-board.jpg" },
+    { title: "The CEO's Guide to Data Modernization", category: "Strategy", link: "/insights/ceo-guide-data-modernization", image: "/images/insights/ceo-guide-data-modernization-hero.jpg" },
+    { title: "Building a Data-First Culture", category: "Culture", link: "/insights/building-data-culture", image: "/images/insights/building-data-culture-hero.jpg" },
+    { title: "The Corporate Venture Advantage", category: "Strategy", link: "/insights/corporate-venture-advantage", image: "/images/insights/corporate-venture-advantage-hero.jpg" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function DataLakeToValueStream() {
       category="Technology"
       title="From Data Lake to Value Stream: A Technical Deep Dive"
       subtitle="Your data lake is full. Now what? A technical exploration of modern data mesh architectures and how to turn raw data into actionable business value."
-      heroImage="/images/capabilities/cap-hands-data.jpg"
+      heroImage="/images/insights/data-lake-to-value-stream-hero.jpg"
       publishDate="September 20, 2024"
       readTime="8 min"
       sections={sections}

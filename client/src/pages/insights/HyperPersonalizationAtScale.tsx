@@ -8,9 +8,9 @@ export default function HyperPersonalizationAtScale() {
   ];
 
   const relatedInsights = [
-    { title: "Beyond Segmentation", category: "Customer Experience", link: "/insights/beyond-segmentation", image: "/images/capabilities/cap-retail-data.jpg" },
-    { title: "Why NPS Is a Vanity Metric", category: "Customer Experience", link: "/insights/why-nps-is-a-vanity-metric", image: "/images/capabilities/cap-tablet-woman.jpg" },
-    { title: "The Economics of Loyalty", category: "Growth & Marketing", link: "/insights/economics-of-loyalty", image: "/images/capabilities/cap-retail-apparel.jpg" },
+    { title: "Beyond Segmentation", category: "Customer Experience", link: "/insights/beyond-segmentation", image: "/images/insights/beyond-segmentation-hero.jpg" },
+    { title: "Why NPS Is a Vanity Metric", category: "Customer Experience", link: "/insights/why-nps-is-a-vanity-metric", image: "/images/insights/why-nps-is-a-vanity-metric-hero.jpg" },
+    { title: "The Economics of Loyalty", category: "Growth & Marketing", link: "/insights/economics-of-loyalty", image: "/images/insights/economics-of-loyalty-hero.jpg" },
   ];
 
   return (
@@ -19,7 +19,7 @@ export default function HyperPersonalizationAtScale() {
       categoryHref="/insights"
       title={'Hyper-Personalization at Scale: Beyond "Hi [First Name]"'}
       subtitle="True personalization isn't just about knowing a customer's name. It's about anticipating their needs, respecting their context, and delivering value in the moment."
-      heroImage="/images/capabilities/cap-mobile-woman.jpg"
+      heroImage="/images/insights/hyper-personalization-at-scale-hero.jpg"
       publishDate="October 28, 2025"
       readTime="6 min"
       sections={sections}

@@ -14,9 +14,9 @@ export default function MarketplacePlaybook() {
   ];
 
   const relatedInsights = [
-    { title: "The digital growth playbook for growing companies", category: "Growth", link: "/insights/digital-growth-playbook", image: "/images/capabilities/cap-retail-data.jpg" },
-    { title: "E-commerce economics: Building profitable D2C channels", category: "Growth", link: "/insights/ecommerce-economics", image: "/images/capabilities/cap-mobile-woman.jpg" },
-    { title: "From MVP to scale: The startup growth journey", category: "Growth", link: "/insights/from-mvp-to-scale", image: "/images/industries/retail-shelves.jpg" },
+    { title: "The digital growth playbook for growing companies", category: "Growth", link: "/insights/digital-growth-playbook", image: "/images/insights/digital-growth-playbook-hero.jpg" },
+    { title: "E-commerce economics: Building profitable D2C channels", category: "Growth", link: "/insights/ecommerce-economics", image: "/images/insights/ecommerce-economics-hero.jpg" },
+    { title: "From MVP to scale: The startup growth journey", category: "Growth", link: "/insights/from-mvp-to-scale", image: "/images/insights/from-mvp-to-scale-hero.jpg" },
   ];
 
   return (
@@ -24,7 +24,7 @@ export default function MarketplacePlaybook() {
       category="Whitepaper"
       title="The marketplace playbook: Building network effects"
       subtitle="A comprehensive guide to launching and scaling two-sided marketplaces that create sustainable competitive advantages."
-      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroImage="/images/insights/marketplace-playbook-hero.jpg"
       publishDate="October 15, 2025"
       readTime="15 min"
       sections={sections}

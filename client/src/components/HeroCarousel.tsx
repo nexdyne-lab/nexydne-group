@@ -22,7 +22,7 @@ const carouselData: CarouselCard[] = [
     date: "December 2025",
     title: "How AI Agents Transform Enterprise Operations",
     description: "AI agents are revolutionizing how businesses operate. Learn how autonomous systems can handle complex workflows, make decisions, and drive efficiency at scale.",
-    image: "/images/ai-neural-network.jpg",
+    image: "/images/insights/ai-agents-transform-operations-hero.jpg",
     link: "/insights/ai-agents-transform-operations"
   },
   {
@@ -42,7 +42,7 @@ const carouselData: CarouselCard[] = [
     date: "October 2025",
     title: "Building a Data-Driven Culture",
     description: "Transform your organization's relationship with data. Our guide to establishing data literacy, governance, and analytics capabilities that drive real business value.",
-    image: "/data-driven-culture.png",
+    image: "/images/insights/building-data-culture-hero.jpg",
     link: "/insights/building-data-culture"
   },
   {
@@ -52,7 +52,7 @@ const carouselData: CarouselCard[] = [
     date: "September 2025",
     title: "The CEO's Guide to Digital Growth",
     description: "Navigate the complexities of digital transformation with strategic clarity. A framework for leaders driving sustainable growth in the digital age.",
-    image: "/ceo-digital-growth.webp",
+    image: "/images/insights/digital-growth-playbook-hero.jpg",
     link: "/insights/digital-growth-playbook"
   },
   {
@@ -62,7 +62,7 @@ const carouselData: CarouselCard[] = [
     date: "August 2025",
     title: "Cloud-Native Architecture for Scale",
     description: "Modern enterprises need infrastructure that scales with ambition. Explore the principles of building resilient, scalable cloud-native systems.",
-    image: "/hero-architecture-new.8c87389d.png",
+    image: "/images/insights/cloud-native-architecture-hero.jpg",
     link: "/insights/cloud-native-architecture"
   }
 ];

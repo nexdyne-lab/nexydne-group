@@ -8,9 +8,9 @@ export default function NoCodeMarketingAutomation() {
   ];
 
   const relatedInsights = [
-    { title: "Why Intelligent Automation Isn't Optional Anymore", category: "Operations", link: "/insights/why-intelligent-automation", image: "/images/insights-intelligent-automation.jpg" },
-    { title: "Measuring Automation ROI", category: "Operations", link: "/insights/measuring-automation-roi", image: "/images/insight-automation.jpg" },
-    { title: "Marketing Data ROI", category: "Growth & Marketing", link: "/insights/marketing-data-roi", image: "/images/insight-marketing-operations.jpg" },
+    { title: "Why Intelligent Automation Isn't Optional Anymore", category: "Operations", link: "/insights/why-intelligent-automation", image: "/images/insights/why-intelligent-automation-hero.jpg" },
+    { title: "Measuring Automation ROI", category: "Operations", link: "/insights/measuring-automation-roi", image: "/images/insights/measuring-automation-roi-hero.jpg" },
+    { title: "Marketing Data ROI", category: "Growth & Marketing", link: "/insights/marketing-data-roi", image: "/images/insights/marketing-data-roi-hero.jpg" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function NoCodeMarketingAutomation() {
       category="Automation"
       title="The No-Code Revolution: Democratizing Marketing Automation"
       subtitle="How low-code and no-code platforms are empowering marketing teams to build complex workflows without engineering support."
-      heroImage="/images/insight-automation.jpg"
+      heroImage="/images/insights/no-code-marketing-automation-hero.jpg"
       publishDate="February 3, 2026"
       readTime="5 min"
       sections={sections}

@@ -2,9 +2,9 @@ import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function SupplyChainResilience() {
   const relatedInsights = [
-    { title: "Generative AI in Supply Chain", category: "AI", link: "/insights/generative-supply-chain", image: "/images/insight-genai-operations.jpg" },
-    { title: "Digital Twins in Manufacturing", category: "Technology", link: "/insights/digital-twin-manufacturing", image: "/images/sector-manufacturing.jpg" },
-    { title: "Lean Operations at Scale", category: "Operations", link: "/insights/lean-operations-scale", image: "/images/insight-lean-at-scale.jpg" },
+    { title: "Generative AI in Supply Chain", category: "AI", link: "/insights/generative-supply-chain", image: "/images/insights/generative-supply-chain-hero.jpg" },
+    { title: "Digital Twins in Manufacturing", category: "Technology", link: "/insights/digital-twin-manufacturing", image: "/images/insights/digital-twin-manufacturing-hero.jpg" },
+    { title: "Lean Operations at Scale", category: "Operations", link: "/insights/lean-operations-scale", image: "/images/insights/lean-operations-scale-hero.jpg" },
   ];
 
   const sections = [

@@ -47,7 +47,7 @@ export default function StrategyCorporateFinance() {
             "The CFO's Guide to Strategic Growth in Uncertain Markets",
           summary:
             "Financial leadership has shifted from reactive number-management to building proactive strategic finance functions that turn capital into competitive advantage. We outline how top-performing CFOs are balancing risk management with growth ambition — combining real-time visibility, predictive decision-making, and capital optimization to compete and win in an era of economic uncertainty.",
-          image: "/images/insight-cfo-strategic-growth.jpg",
+          image: "/images/insights/cfo-cash-flow-guide-hero.jpg",
           href: "/insights/cfo-cash-flow-guide",
         },
         secondary: [
@@ -235,7 +235,7 @@ export default function StrategyCorporateFinance() {
           title:
             "The CFO's Guide to Strategic Growth in Uncertain Markets",
           readTime: "8 min read",
-          image: "/images/insight-cfo-strategic-growth.jpg",
+          image: "/images/insights/cfo-cash-flow-guide-hero.jpg",
           href: "/insights/cfo-cash-flow-guide",
         },
         {
@@ -243,7 +243,7 @@ export default function StrategyCorporateFinance() {
           title:
             "Preparing for Your Series B: Lessons from 50+ Funding Rounds",
           readTime: "6 min read",
-          image: "/images/insight-series-b-lessons.jpg",
+          image: "/images/insights/series-a-fundraising-guide-hero.jpg",
           href: "/insights/series-a-fundraising-guide",
         },
         {
@@ -251,7 +251,7 @@ export default function StrategyCorporateFinance() {
           title:
             "Working Capital Optimization: Quick Wins for Cash Flow",
           readTime: "5 min read",
-          image: "/images/insight-working-capital-optimization.jpg",
+          image: "/images/insights/working-capital-optimization-hero.jpg",
           href: "/insights/working-capital-optimization",
         },
       ]}

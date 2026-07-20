@@ -8,9 +8,9 @@ export default function CarbonMarkets() {
   ];
 
   const relatedInsights = [
-    { title: "The Net-Zero Transition", category: "Sustainability", link: "/insights/net-zero-transition", image: "/images/insight-net-zero.jpg" },
-    { title: "Green Materials", category: "Sustainability", link: "/insights/green-materials", image: "/images/insight-green-materials.jpg" },
-    { title: "The Green Growth Imperative", category: "Sustainability", link: "/insights/green-growth-imperative", image: "/images/green-growth-hero.jpg" },
+    { title: "The Net-Zero Transition", category: "Sustainability", link: "/insights/net-zero-transition", image: "/images/insights/net-zero-transition-hero.jpg" },
+    { title: "Green Materials", category: "Sustainability", link: "/insights/green-materials", image: "/images/insights/green-materials-hero.jpg" },
+    { title: "The Green Growth Imperative", category: "Sustainability", link: "/insights/green-growth-imperative", image: "/images/insights/green-growth-imperative-hero.jpg" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function CarbonMarkets() {
       category="Sustainability"
       title="Carbon Markets 2025: From Voluntary to Compliance"
       subtitle="As regulatory frameworks tighten, the distinction between voluntary and compliance carbon markets is blurring. Here is what business leaders need to know."
-      heroImage="/images/insight-carbon-markets.jpg"
+      heroImage="/images/insights/carbon-markets-hero.jpg"
       readTime="6 min"
       sections={sections}
       keyTakeaways={[

@@ -9,9 +9,9 @@ export default function WhyIntelligentAutomationInsight() {
   ];
 
   const relatedInsights = [
-    { title: "How AI Agents Transform Enterprise Operations", category: "Technology", link: "/insights/how-ai-agents-transform-enterprise-operations", image: "/images/ai-acceleration-abstract.jpg" },
-    { title: "The Complete Guide to Process Mining", category: "Operations", link: "/insights/complete-guide-process-mining", image: "/images/hero-process-mining.jpg" },
-    { title: "Building a Data-Driven Culture", category: "Data", link: "/insights/building-data-culture", image: "/images/insight-data-culture.jpg" },
+    { title: "How AI Agents Transform Enterprise Operations", category: "Technology", link: "/insights/how-ai-agents-transform-enterprise-operations", image: "/images/insights/how-ai-agents-transform-enterprise-operations-hero.jpg" },
+    { title: "The Complete Guide to Process Mining", category: "Operations", link: "/insights/complete-guide-process-mining", image: "/images/insights/complete-guide-process-mining-hero.jpg" },
+    { title: "Building a Data-Driven Culture", category: "Data", link: "/insights/building-data-culture", image: "/images/insights/building-data-culture-hero.jpg" },
   ];
 
   return (
@@ -20,7 +20,7 @@ export default function WhyIntelligentAutomationInsight() {
       categoryHref="/insights"
       title="Why Intelligent Automation Isn't Optional Anymore"
       subtitle="The competitive landscape has fundamentally shifted. Organizations that fail to embrace intelligent automation aren't just missing an opportunity—they're actively falling behind."
-      heroImage="/images/ai-acceleration-abstract.jpg"
+      heroImage="/images/insights/why-intelligent-automation-isnt-optional-anymore-hero.jpg"
       publishDate="December 15, 2025"
       readTime="5 min"
       sections={sections}

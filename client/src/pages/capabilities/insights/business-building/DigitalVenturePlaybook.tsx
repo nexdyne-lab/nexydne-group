@@ -2,9 +2,9 @@ import InsightArticleV2 from "@/components/InsightArticleV2";
 
 export default function DigitalVenturePlaybook() {
   const relatedInsights = [
-    { title: "From MVP to Scale: The Growth Inflection Point", category: "Scaling", link: "/insights/from-mvp-to-scale", image: "/images/growth-scaling-abstract.jpg" },
-    { title: "The Corporate Venture Advantage", category: "Strategy", link: "/insights/corporate-venture-advantage", image: "/images/business-strategy-abstract.jpg" },
-    { title: "Hiring for Builders: The Venture Talent Playbook", category: "Talent", link: "/insights/hiring-for-builders", image: "/images/ai-team-collaboration.jpg" },
+    { title: "From MVP to Scale: The Growth Inflection Point", category: "Scaling", link: "/insights/from-mvp-to-scale", image: "/images/insights/from-mvp-to-scale-hero.jpg" },
+    { title: "The Corporate Venture Advantage", category: "Strategy", link: "/insights/corporate-venture-advantage", image: "/images/insights/corporate-venture-advantage-hero.jpg" },
+    { title: "Hiring for Builders: The Venture Talent Playbook", category: "Talent", link: "/insights/hiring-for-builders", image: "/images/insights/hiring-for-builders-hero.jpg" },
   ];
 
   const sections = [

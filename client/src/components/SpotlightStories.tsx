@@ -26,7 +26,7 @@ const stories: Story[] = [
       "Agents moved from demo to P&L in one planning cycle. What separates the funded-and-working deployments from the quietly cancelled ones is governance set before the spend — not after.",
     cta: "More on agentic AI",
     href: "/insights/agentic-ai-budget-line",
-    image: "/images/spotlight-agentic-ai.jpg",
+    image: "/images/insights/agentic-ai-budget-line-hero.jpg",
   },
   {
     tab: "EU AI Act enforcement",
@@ -35,7 +35,7 @@ const stories: Story[] = [
       "You don't have to build AI to be covered; deploying it is enough. A 90-day compliance posture for growing firms that use AI in hiring, credit, or customer decisions.",
     cta: "More on AI regulation",
     href: "/insights/eu-ai-act-playbook",
-    image: "/images/spotlight-eu-ai-act.jpg",
+    image: "/images/insights/eu-ai-act-playbook-hero.jpg",
   },
   {
     tab: "Shadow AI & security",
@@ -53,7 +53,7 @@ const stories: Story[] = [
       "AI has become the first responder in customer channels. Resolution beats deflection — and the human tier is becoming the premium product your best customers pay for.",
     cta: "More on customer channels",
     href: "/insights/ai-answers-first-customer-channels",
-    image: "/images/spotlight-customer-channels.jpg",
+    image: "/images/insights/ai-answers-first-customer-channels-hero.jpg",
   },
 ];
 

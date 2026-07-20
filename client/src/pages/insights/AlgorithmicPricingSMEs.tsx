@@ -9,9 +9,9 @@ export default function AlgorithmicPricingSMEs() {
   ];
 
   const relatedInsights = [
-    { title: "The Psychology of Value", category: "Pricing", link: "/insights/psychology-of-value", image: "/images/insight-pricing-psychology.jpg" },
-    { title: "Optimizing Subscription Models", category: "Pricing", link: "/insights/subscription-pricing-models", image: "/images/insight-subscription-models.jpg" },
-    { title: "AI-Driven Merchandising: Beyond Recommendations", category: "Artificial Intelligence", link: "/insights/ai-in-ecommerce", image: "/images/capabilities/cap-retail-apparel.jpg" },
+    { title: "The Psychology of Value", category: "Pricing", link: "/insights/psychology-of-value", image: "/images/insights/psychology-of-value-hero.jpg" },
+    { title: "Optimizing Subscription Models", category: "Pricing", link: "/insights/subscription-pricing-models", image: "/images/insights/subscription-pricing-models-hero.jpg" },
+    { title: "AI-Driven Merchandising: Beyond Recommendations", category: "Artificial Intelligence", link: "/insights/ai-in-ecommerce", image: "/images/insights/ai-in-ecommerce-hero.jpg" },
   ];
 
   return (
@@ -19,7 +19,7 @@ export default function AlgorithmicPricingSMEs() {
       category="Technology"
       title="Algorithmic Pricing for Growing Companies: It's Not Just for Amazon Anymore"
       subtitle="Dynamic pricing technology was once the exclusive domain of tech giants. Today, accessible AI tools are democratizing yield management for growing companies."
-      heroImage="/images/insight-algo-pricing.jpg"
+      heroImage="/images/insights/algorithmic-pricing-smes-hero.jpg"
       publishDate="November 05, 2024"
       readTime="6 min"
       sections={sections}

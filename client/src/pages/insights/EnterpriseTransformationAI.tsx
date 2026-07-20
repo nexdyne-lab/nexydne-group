@@ -10,9 +10,9 @@ export default function EnterpriseTransformationAI() {
   ];
 
   const relatedInsights = [
-    { title: "The modern enterprise integration playbook", category: "Whitepaper", link: "/insights/enterprise-integration-playbook", image: "/images/capabilities/cap-data-bars.jpg" },
-    { title: "Building scalable data architectures", category: "Article", link: "/insights/scalable-data-architecture", image: "/images/capabilities/cap-circuit-green.jpg" },
-    { title: "Cloud-native architecture", category: "Technology", link: "/insights/cloud-native-architecture", image: "/images/cloud-abstract.jpg" },
+    { title: "The modern enterprise integration playbook", category: "Whitepaper", link: "/insights/enterprise-integration-playbook", image: "/images/insights/enterprise-integration-playbook-hero.jpg" },
+    { title: "Building scalable data architectures", category: "Article", link: "/insights/scalable-data-architecture", image: "/images/insights/scalable-data-architecture-hero.jpg" },
+    { title: "Cloud-native architecture", category: "Technology", link: "/insights/cloud-native-architecture", image: "/images/insights/cloud-native-architecture-hero.jpg" },
   ];
 
   return (
@@ -20,7 +20,7 @@ export default function EnterpriseTransformationAI() {
       category="Report"
       title="Enterprise transformation in the AI era"
       subtitle="How leading enterprises are reimagining their operating models to harness AI and achieve sustainable competitive advantage."
-      heroImage="/images/industries/tech-datacenter.jpg"
+      heroImage="/images/insights/enterprise-transformation-ai-hero.jpg"
       publishDate="October 28, 2025"
       readTime="12 min"
       sections={sections}

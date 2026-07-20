@@ -15,9 +15,9 @@ export default function DueDiligenceChecklist() {
   ];
 
   const relatedInsights = [
-    { title: "The Complete Guide to Series A Fundraising Preparation", category: "Capital Raising", link: "/insights/series-a-fundraising-guide", image: "/images/capital-raising-abstract.jpg" },
-    { title: "Five Valuation Mistakes That Cost Founders Millions", category: "Capital Raising", link: "/insights/valuation-mistakes", image: "/images/industries/fin-trader.jpg" },
-    { title: "Commercial Due Diligence", category: "M&A", link: "/insights/commercial-due-diligence", image: "/images/industries/deal-handshake.jpg" },
+    { title: "The Complete Guide to Series A Fundraising Preparation", category: "Capital Raising", link: "/insights/series-a-fundraising-guide", image: "/images/insights/series-a-fundraising-guide-hero.jpg" },
+    { title: "Five Valuation Mistakes That Cost Founders Millions", category: "Capital Raising", link: "/insights/valuation-mistakes", image: "/images/insights/valuation-mistakes-hero.jpg" },
+    { title: "Commercial Due Diligence", category: "M&A", link: "/insights/commercial-due-diligence", image: "/images/insights/commercial-due-diligence-hero.jpg" },
   ];
 
   return (
@@ -25,7 +25,7 @@ export default function DueDiligenceChecklist() {
       category="Capital Raising"
       title="The Investor Due Diligence Checklist"
       subtitle="Due diligence can make or break fundraising momentum. Companies that prepare comprehensive documentation before starting conversations close rounds faster and maintain better negotiating positions throughout the process."
-      heroImage="/images/industries/fin-handshake-city.jpg"
+      heroImage="/images/insights/due-diligence-checklist-hero.jpg"
       publishDate="December 14, 2025"
       readTime="13 min"
       sections={sections}

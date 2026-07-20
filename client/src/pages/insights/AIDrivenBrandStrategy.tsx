@@ -9,8 +9,8 @@ export default function AIDrivenBrandStrategy() {
   ];
 
   const relatedInsights = [
-    { title: "AI-Driven Merchandising: Beyond Recommendations", category: "Artificial Intelligence", link: "/insights/ai-in-ecommerce", image: "/images/capabilities/cap-retail-apparel.jpg" },
-    { title: "The End of \"Gut Feel\" Forecasting", category: "Sales Operations", link: "/insights/ai-sales-forecasting", image: "/images/capabilities/cap-presenting-graphs.jpg" },
+    { title: "AI-Driven Merchandising: Beyond Recommendations", category: "Artificial Intelligence", link: "/insights/ai-in-ecommerce", image: "/images/insights/ai-in-ecommerce-hero.jpg" },
+    { title: "The End of \"Gut Feel\" Forecasting", category: "Sales Operations", link: "/insights/ai-sales-forecasting", image: "/images/insights/ai-sales-forecasting-hero.jpg" },
     { title: "Growth in the Age of Generative AI", category: "Growth & Marketing", link: "/insights/growth-marketing", image: "/images/ai-acceleration-abstract.jpg" },
   ];
 
@@ -19,7 +19,7 @@ export default function AIDrivenBrandStrategy() {
       category="Brand Strategy"
       title="AI-Driven Brand Strategy: From Intuition to Intelligence"
       subtitle="Brand building has traditionally been an art. Today, AI is turning it into a science, allowing companies to measure brand equity in real-time and predict the impact of creative decisions."
-      heroImage="/images/abstract-growth.jpg"
+      heroImage="/images/insights/ai-driven-brand-strategy-hero.jpg"
       publishDate="November 12, 2025"
       readTime="4 min"
       sections={sections}

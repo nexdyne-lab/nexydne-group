@@ -9,9 +9,9 @@ export default function FutureOfPerformanceMarketing() {
   ];
 
   const relatedInsights = [
-    { title: "The ROI of Clean Data: Why Hygiene is Your Best Investment", category: "Digital Marketing", link: "/insights/marketing-data-roi", image: "/images/insight-marketing-operations.jpg" },
-    { title: "Hyper-Personalization at Scale: Beyond \"Hi [First Name]\"", category: "Digital Marketing", link: "/insights/hyper-personalization-at-scale", image: "/images/insight-customer-intel.jpg" },
-    { title: "The Future of Marketing Operations: From Support Function to Strategic Engine", category: "Digital Marketing", link: "/insights/future-of-marketing-ops", image: "/images/go-to-market-abstract.jpg" },
+    { title: "The ROI of Clean Data: Why Hygiene is Your Best Investment", category: "Digital Marketing", link: "/insights/marketing-data-roi", image: "/images/insights/marketing-data-roi-hero.jpg" },
+    { title: "Hyper-Personalization at Scale: Beyond \"Hi [First Name]\"", category: "Digital Marketing", link: "/insights/hyper-personalization-at-scale", image: "/images/insights/hyper-personalization-at-scale-hero.jpg" },
+    { title: "The Future of Marketing Operations: From Support Function to Strategic Engine", category: "Digital Marketing", link: "/insights/future-of-marketing-ops", image: "/images/insights/future-of-marketing-ops-hero.jpg" },
   ];
 
   return (
@@ -20,7 +20,7 @@ export default function FutureOfPerformanceMarketing() {
       categoryHref="/insights"
       title="The Future of Performance Marketing: Privacy, AI, and Precision"
       subtitle="As third-party cookies vanish and privacy regulations tighten, performance marketing is undergoing a radical transformation. Here's how leading brands are adapting."
-      heroImage="/images/insight-marketing-operations.jpg"
+      heroImage="/images/insights/future-of-performance-marketing-hero.jpg"
       publishDate="December 15, 2025"
       readTime="5 min"
       sections={sections}
