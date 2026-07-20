@@ -54,7 +54,7 @@ export default function ManufacturingPredictiveMaintenanceFeature() {
       quoteAuthor="Director of Manufacturing Operations"
       quoteRole="Manufacturer"
       relatedStudies={[
-        { title: "How a Hospital Gained 45% Clinical Efficiency by Automating Its Workflows", metric: "45%", label: "clinical efficiency gain", link: "/cases/hospital-workflow-automation", image: "/case-healthcare-team.5797392b.jpg" },
+        { title: "How a Hospital Gained 45% Clinical Efficiency by Automating Its Workflows", metric: "45%", label: "clinical efficiency gain", link: "/cases/hospital-workflow-automation", image: "/images/cases/hospital-workflow-automation-hero.jpg" },
         { title: "How a Logistics Company Scaled 10x in 18 Months", metric: "10x", label: "growth in 18 months", link: "/cases/logistics-scale", image: "/images/capabilities/cap-coder.jpg" }
       ]}
       ctaTitle="Is unplanned downtime disrupting your production?"

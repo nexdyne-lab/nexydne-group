@@ -11,7 +11,7 @@ export default function RenewableEnergyForecasting() {
       industryLink="/industries/energy-utilities"
       title="How a Renewables Developer Made Its Forecasts 25% Sharper"
       subtitle="A wind and solar developer paid a penalty every time its output missed what it had promised the grid — and those misses were costing millions a year. Learning the quirks of each site, and improving with every week of data, closed the gap."
-      heroImage="/images/industries/energy-wind.jpg"
+      heroImage="/images/cases/renewable-energy-forecasting-hero.jpg"
       metrics={[
         { value: "25%", label: "Sharper Forecasts" },
         { value: "$5M", label: "Saved Each Year" },
@@ -111,7 +111,7 @@ export default function RenewableEnergyForecasting() {
           metric: "45%",
           label: "shorter outages",
           link: "/cases/utility-grid-modernization",
-          image: "/images/industries/energy-solar.jpg"
+          image: "/images/cases/utility-grid-modernization-hero.jpg"
         },
         {
           title: "Halving Unplanned Outages at a Power Generator",

@@ -111,14 +111,14 @@ export default function RetailDemandForecasting() {
           metric: "30%",
           label: "forecast improvement",
           link: "/cases/food-beverage-demand-forecasting",
-          image: "/images/capabilities/cap-retail-data.jpg"
+          image: "/images/cases/food-beverage-demand-forecasting-hero.jpg"
         },
         {
           title: "Demand Optimization for Consumer Electronics",
           metric: "40%",
           label: "inventory reduction",
           link: "/cases/consumer-electronics-demand-optimization",
-          image: "/images/industries/retail-shelves.jpg"
+          image: "/images/cases/consumer-electronics-demand-optimization-hero.jpg"
         }
       ]}
       ctaTitle="Ready to See Through to the Shelf?"

@@ -111,14 +111,14 @@ export default function HealthcareRevenueCycle() {
           metric: "35%",
           label: "better patient outcomes",
           link: "/cases/healthcare-transformation",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-transformation-hero.jpg"
         },
         {
           title: "Cutting Avoidable Readmissions by 42%",
           metric: "42%",
           label: "fewer avoidable readmissions",
           link: "/cases/healthcare-readmission",
-          image: "/case-doctor-consultation.799c1562.jpg"
+          image: "/images/cases/healthcare-readmission-hero.jpg"
         }
       ]}
       ctaTitle="Ready to collect what you've already earned?"

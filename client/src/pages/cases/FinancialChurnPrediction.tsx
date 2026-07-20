@@ -111,7 +111,7 @@ export default function FinancialChurnPrediction() {
           metric: "40%",
           label: "faster fraud detection",
           link: "/cases/financial-fraud-detection-ml",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/financial-fraud-detection-ml-hero.jpg"
         }
       ]}
       ctaTitle="Ready to see churn 90 days before it happens?"

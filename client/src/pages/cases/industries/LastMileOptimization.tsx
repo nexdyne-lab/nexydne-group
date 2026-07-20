@@ -111,7 +111,7 @@ export default function LastMileOptimization() {
           metric: "45%",
           label: "higher productivity",
           link: "/cases/warehouse-optimization",
-          image: "/images/industries/retail-warehouse.jpg"
+          image: "/images/cases/warehouse-optimization-hero.jpg"
         },
         {
           title: "Cutting Freight Costs 18% Across the Network",

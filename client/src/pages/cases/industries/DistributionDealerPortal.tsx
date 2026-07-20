@@ -54,8 +54,8 @@ export default function DistributionDealerPortal() {
       quoteAuthor="VP of Sales"
       quoteRole="Industrial distributor"
       relatedStudies={[
-        { title: "How a Consumer-Finance CMO Turned a 92-Page Pack Nobody Read Into Six Decisions a Quarter", metric: "38%", label: "less executive review time", link: "/cases/financial-services-insight-redesign", image: "/images/industries/fin-monitors.jpg" },
-        { title: "How a Retailer Recovered 14 Weeks of Analyst Time by Fixing Its Insight Cadence", metric: "3x", label: "higher brief engagement", link: "/cases/retail-insight-cadence", image: "/images/industries/retail-shelves.jpg" }
+        { title: "How a Consumer-Finance CMO Turned a 92-Page Pack Nobody Read Into Six Decisions a Quarter", metric: "38%", label: "less executive review time", link: "/cases/financial-services-insight-redesign", image: "/images/cases/financial-services-insight-redesign-hero.jpg" },
+        { title: "How a Retailer Recovered 14 Weeks of Analyst Time by Fixing Its Insight Cadence", metric: "3x", label: "higher brief engagement", link: "/cases/retail-insight-cadence", image: "/images/cases/retail-insight-cadence-hero.jpg" }
       ]}
       ctaTitle="Is manual reordering suppressing your repeat business?"
       ctaDescription="Let's build a dealer portal that makes reordering effortless and drives durable growth."

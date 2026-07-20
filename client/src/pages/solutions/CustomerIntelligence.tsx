@@ -111,7 +111,7 @@ export default function CustomerIntelligence() {
       title: "National Retailer Drives 34% Revenue Lift with AI Personalization",
       description:
         "Real-time recommendation engine increases conversion and average order value across digital channels.",
-      image: "/case-study-retail.webp",
+      image: "/images/capabilities/cap-retail-apparel.jpg",
       link: "/cases/retail-personalization",
     },
     {
@@ -127,7 +127,7 @@ export default function CustomerIntelligence() {
       title: "Telecom Provider Improves NPS by 23 Points Through Customer Intelligence",
       description:
         "Unified customer data platform enables proactive service and personalized engagement.",
-      image: "/images/ai-team-consulting.jpg",
+      image: "/images/cases/telecom-customer-experience-hero.jpg",
       link: "/cases/telecom-customer-experience",
     },
   ];

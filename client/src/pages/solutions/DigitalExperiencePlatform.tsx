@@ -104,7 +104,7 @@ export default function DigitalExperiencePlatform() {
       title: "Specialty Retailer Lifts Conversion 31% with Adobe Personalization",
       description:
         "An audience-driven personalization program on Adobe Experience Cloud delivered double-digit conversion lift across the top three customer segments.",
-      image: "/images/case-dxp-retail.jpg",
+      image: "/images/capabilities/cap-retail-apparel.jpg",
       link: "/cases/retail-dxp-personalization",
     },
     {
@@ -112,7 +112,7 @@ export default function DigitalExperiencePlatform() {
       title: "National Insurer Migrates to Sitecore Composable in Twelve Months",
       description:
         "A staged migration from a legacy monolithic CMS to Sitecore's composable stack cut content publishing cycle time by more than half.",
-      image: "/images/case-dxp-insurer.jpg",
+      image: "/images/cases/insurer-sitecore-migration-hero.jpg",
       link: "/cases/insurer-sitecore-migration",
     },
   ];

@@ -11,7 +11,7 @@ export default function ManufacturerChannelTransformation() {
       industryLink="/industries/manufacturing"
       title="How a Manufacturer Turned a Stagnant Partner Program Into a Growth Engine"
       subtitle="The partner channel had drifted into neglect — no modern tools, no deal discipline, no marketing support. Rebuilding the channel infrastructure lifted partner revenue 31%."
-      heroImage="/images/industries/mfg-robot-arm.jpg"
+      heroImage="/images/cases/manufacturer-channel-transformation-hero.jpg"
       metrics={[
         { value: "31%", label: "Higher Partner Revenue" },
         { value: "PRM", label: "Deployed" },
@@ -55,7 +55,7 @@ export default function ManufacturerChannelTransformation() {
       quoteRole="Industrial manufacturer"
       relatedStudies={[
         { title: "How a National Retailer Deflected 68% of Support Tickets With a Hybrid Bot", metric: "68%", label: "of tickets deflected", link: "/cases/retail-chatbot-deflection", image: "/images/capabilities/cap-retail-data.jpg" },
-        { title: "How a Regional Bank Booked 4x More Demos With a Lead-Gen Chatbot", metric: "4x", label: "more qualified demos", link: "/cases/bank-chatbot-leadgen", image: "/images/industries/fin-monitors.jpg" }
+        { title: "How a Regional Bank Booked 4x More Demos With a Lead-Gen Chatbot", metric: "4x", label: "more qualified demos", link: "/cases/bank-chatbot-leadgen", image: "/images/cases/bank-chatbot-leadgen-hero.jpg" }
       ]}
       ctaTitle="Has your partner channel been left to drift?"
       ctaDescription="Let's modernize the channel end to end and turn it back into a growth engine."

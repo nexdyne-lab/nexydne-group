@@ -104,7 +104,7 @@ export default function ProcessOrchestration() {
       title: "National Insurer Orchestrates Claims End-to-End and Cuts Cycle Time by 47%",
       description:
         "A Camunda-based orchestration layer replaced six disconnected tools with a single executable model spanning intake to payout.",
-      image: "/images/case-orchestration-claims.jpg",
+      image: "/images/cases/insurer-claims-orchestration-hero.jpg",
       link: "/cases/insurer-claims-orchestration",
     },
     {
@@ -112,7 +112,7 @@ export default function ProcessOrchestration() {
       title: "Bank Automates Loan Origination Workflow Across Twelve Systems",
       description:
         "Human-in-the-loop orchestration with policy gates and audit trails turned a fourteen-day origination process into three.",
-      image: "/images/case-orchestration-loan.jpg",
+      image: "/images/cases/bank-loan-orchestration-hero.jpg",
       link: "/cases/bank-loan-orchestration",
     },
   ];

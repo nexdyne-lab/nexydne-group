@@ -54,8 +54,8 @@ export default function EcommercePersonalizationExecution() {
       quoteAuthor="VP of Growth"
       quoteRole="E-commerce operator"
       relatedStudies={[
-        { title: "How a Hospitality Loyalty Program Raised Booking Conversion 14%", metric: "14%", label: "higher booking conversion", link: "/cases/hospitality-personalization-execution", image: "/images/industries/travel-city-twilight.jpg" },
-        { title: "How a Specialty Retailer Lifted Lifecycle Revenue 38% in Two Quarters", metric: "38%", label: "higher lifecycle revenue", link: "/cases/retail-engagement", image: "/images/capabilities/cap-retail-apparel.jpg" }
+        { title: "How a Hospitality Loyalty Program Raised Booking Conversion 14%", metric: "14%", label: "higher booking conversion", link: "/cases/hospitality-personalization-execution", image: "/images/cases/hospitality-personalization-execution-hero.jpg" },
+        { title: "How a Specialty Retailer Lifted Lifecycle Revenue 38% in Two Quarters", metric: "38%", label: "higher lifecycle revenue", link: "/cases/retail-engagement", image: "/images/cases/retail-engagement-hero.jpg" }
       ]}
       ctaTitle="Do you have the signals but not the personalization?"
       ctaDescription="Let's map the use-cases, build a reusable library, and integrate to execute."

@@ -11,7 +11,7 @@ export default function HealthcareReadmission() {
       industryLink="/industries/healthcare"
       title="How a Hospital Network Cut Avoidable Readmissions by 42%"
       subtitle="The network was paying millions in penalties for patients who returned within weeks of going home. Learning to tell — before a patient left — who was genuinely at risk let its care teams put their effort where it would do the most good."
-      heroImage="/case-doctor-consultation.799c1562.jpg"
+      heroImage="/images/cases/healthcare-readmission-hero.jpg"
       metrics={[
         { value: "42%", label: "Fewer Readmissions" },
         { value: "85%", label: "Prediction Accuracy" },
@@ -111,7 +111,7 @@ export default function HealthcareReadmission() {
           metric: "35%",
           label: "better patient outcomes",
           link: "/cases/healthcare-transformation",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-transformation-hero.jpg"
         },
         {
           title: "Recovering $32M in Lost Revenue",

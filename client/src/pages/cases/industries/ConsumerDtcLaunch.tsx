@@ -11,7 +11,7 @@ export default function ConsumerDtcLaunch() {
       industryLink="/industries/consumer-products"
       title="How a Heritage Brand Launched an $18M DTC Business Without Hurting Wholesale"
       subtitle="Wholesale still produced 80% of revenue, so a direct-to-consumer launch had to grow the pie, not split it. A channel-respecting commercial model made both channels win."
-      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroImage="/images/cases/consumer-dtc-launch-hero.jpg"
       metrics={[
         { value: "$18M", label: "Year-One DTC Revenue" },
         { value: "80%", label: "Revenue Still Wholesale" },
@@ -54,7 +54,7 @@ export default function ConsumerDtcLaunch() {
       quoteAuthor="Chief Commercial Officer"
       quoteRole="Heritage consumer brand"
       relatedStudies={[
-        { title: "How a B2B Distributor Moved a Third of Its Order Entry Off the Sales Desk", metric: "31%", label: "of order entry self-served", link: "/cases/b2b-ecommerce-launch", image: "/images/capabilities/cap-warehouse-robot.jpg" },
+        { title: "How a B2B Distributor Moved a Third of Its Order Entry Off the Sales Desk", metric: "31%", label: "of order entry self-served", link: "/cases/b2b-ecommerce-launch", image: "/images/cases/b2b-ecommerce-launch-hero.jpg" },
         { title: "How a Specialty Retailer Cut Six Weeks of Publishing Delay to Days", metric: "67%", label: "faster time-to-publish", link: "/cases/specialty-retail-headless", image: "/images/industries/retail-shelves.jpg" }
       ]}
       ctaTitle="Want to launch DTC without triggering channel conflict?"

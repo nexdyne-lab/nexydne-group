@@ -55,7 +55,7 @@ export default function SustainableFoodSystemsFeature() {
       quoteRole="Public-private food-systems initiative"
       relatedStudies={[
         { title: "How Predictive Maintenance Cut Unplanned Downtime by 67%", metric: "67%", label: "less unplanned downtime", link: "/case-studies/manufacturing-predictive-maintenance", image: "/images/capabilities/cap-battery-factory.jpg" },
-        { title: "How a Hospital Gained 45% Clinical Efficiency by Automating Its Workflows", metric: "45%", label: "clinical efficiency gain", link: "/cases/hospital-workflow-automation", image: "/case-healthcare-team.5797392b.jpg" }
+        { title: "How a Hospital Gained 45% Clinical Efficiency by Automating Its Workflows", metric: "45%", label: "clinical efficiency gain", link: "/cases/hospital-workflow-automation", image: "/images/cases/hospital-workflow-automation-hero.jpg" }
       ]}
       ctaTitle="Is a multi-stakeholder initiative struggling to coordinate?"
       ctaDescription="Let's align the stakeholders and build the operating model that turns ambition into progress."

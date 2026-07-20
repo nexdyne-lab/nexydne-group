@@ -11,7 +11,7 @@ export default function GroceryDemandForecasting() {
       industryLink="/industries/retail"
       title="How a Regional Grocer Cut Fresh-Food Waste by a Third"
       subtitle="A well-run grocery chain was throwing away fresh food in some stores while running out of the same items in others. Learning to predict demand store by store turned a costly guessing game into something close to a science."
-      heroImage="/images/capabilities/cap-food.jpg"
+      heroImage="/images/cases/grocery-demand-forecasting-hero.jpg"
       metrics={[
         { value: "35%", label: "Less Waste" },
         { value: "96%", label: "On-Shelf Availability" },
@@ -111,7 +111,7 @@ export default function GroceryDemandForecasting() {
           metric: "85%",
           label: "online sales growth",
           link: "/cases/fashion-retail-digital-transformation",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/fashion-retail-digital-transformation-hero.jpg"
         },
         {
           title: "Turning a Stale Loyalty Program Into Growth",

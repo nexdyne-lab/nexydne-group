@@ -11,7 +11,7 @@ export default function IndustrialDataMonetization() {
       industryLink="/industries/manufacturing"
       title="How an Industrial Holding Company Turned Its Data Into a Third Revenue Stream"
       subtitle="The company generated operational data that its markets would pay for, and captured none of that value. Packaging it into a real product created an entirely new line of revenue."
-      heroImage="/images/capabilities/cap-battery-factory.jpg"
+      heroImage="/images/cases/industrial-data-monetization-hero.jpg"
       metrics={[
         { value: "3rd", label: "Revenue Stream" },
         { value: "18 Mo", label: "To Measurable Revenue" },
@@ -54,7 +54,7 @@ export default function IndustrialDataMonetization() {
       quoteAuthor="Chief Strategy Officer"
       quoteRole="Industrial holding company"
       relatedStudies={[
-        { title: "How a Regional Bank Tripled Self-Service Reporting by Training 600 People", metric: "3x", label: "more self-service reporting", link: "/cases/bank-data-literacy", image: "/images/industries/fin-monitors.jpg" },
+        { title: "How a Regional Bank Tripled Self-Service Reporting by Training 600 People", metric: "3x", label: "more self-service reporting", link: "/cases/bank-data-literacy", image: "/images/cases/bank-data-literacy-hero.jpg" },
         { title: "How a Health System Built an Internal Bench of 80 Citizen Data Scientists", metric: "80", label: "citizen data scientists trained", link: "/cases/health-citizen-data-scientist", image: "/case-medical-collaboration.9602cc8c.jpg" }
       ]}
       ctaTitle="Are you sitting on data your market would pay for?"

@@ -104,7 +104,7 @@ export default function CustomerPortal() {
       title: "Regional Insurer Cuts Inbound Call Volume by 47% with Portal Launch",
       description:
         "Self-service claims status, billing, and document upload absorbed the top three contact reasons within the first six months in market.",
-      image: "/images/case-portal-insurance.jpg",
+      image: "/images/cases/insurance-portal-hero.jpg",
       link: "/cases/insurance-portal",
     },
     {

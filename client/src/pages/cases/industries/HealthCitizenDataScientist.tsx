@@ -55,7 +55,7 @@ export default function HealthCitizenDataScientist() {
       quoteRole="Regional health system"
       relatedStudies={[
         { title: "How a Manufacturer Cut Executive Close-to-Decision Time From 6 Days to 6 Hours", metric: "6 days → 6 hrs", label: "close-to-decision time", link: "/cases/manufacturer-exec-dashboard", image: "/images/capabilities/cap-robot-factory.jpg" },
-        { title: "How a Health System Lifted Analytics Adoption 4x by Embedding It in the EHR", metric: "4x", label: "higher analytics adoption", link: "/cases/health-embedded-analytics", image: "/case-healthcare-team.5797392b.jpg" }
+        { title: "How a Health System Lifted Analytics Adoption 4x by Embedding It in the EHR", metric: "4x", label: "higher analytics adoption", link: "/cases/health-embedded-analytics", image: "/images/cases/health-embedded-analytics-hero.jpg" }
       ]}
       ctaTitle="Is your best insight stuck behind one data team?"
       ctaDescription="Let's build a governed citizen-data-scientist bench so the front line can act safely."

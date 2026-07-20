@@ -54,7 +54,7 @@ export default function IndustrialMaIntegration() {
       quoteAuthor="Chief Executive Officer"
       quoteRole="Industrial holding company"
       relatedStudies={[
-        { title: "How a Health-Tech Startup Scaled From 10K to 2M Users on a Single Codebase", metric: "10K → 2M", label: "users on one codebase", link: "/cases/healthtech-react-native", image: "/images/capabilities/cap-coder.jpg" },
+        { title: "How a Health-Tech Startup Scaled From 10K to 2M Users on a Single Codebase", metric: "10K → 2M", label: "users on one codebase", link: "/cases/healthtech-react-native", image: "/images/cases/healthtech-react-native-hero.jpg" },
         { title: "How a Regional Bank Cut Its Mobile App Crash Rate by 71%", metric: "71%", label: "lower crash rate", link: "/cases/bank-app-modernization", image: "/images/industries/fin-monitors.jpg" }
       ]}
       ctaTitle="Facing multiple integrations at once?"

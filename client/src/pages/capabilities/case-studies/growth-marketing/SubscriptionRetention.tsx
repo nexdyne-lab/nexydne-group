@@ -105,7 +105,7 @@ export function SubscriptionRetention() {
           metric: "22%",
           label: "lower churn",
           link: "/cases/telecom-churn-prediction",
-          image: "/images/industries/tech-datacenter.jpg"
+          image: "/images/cases/telecom-churn-prediction-hero.jpg"
         },
         {
           title: "Scaling Support With AI, Deflecting 60% of Tickets",

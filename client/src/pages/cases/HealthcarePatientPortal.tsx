@@ -11,7 +11,7 @@ export function HealthcarePatientPortal() {
       industryLink="/industries/healthcare"
       title="How a Hospital Cut Administrative Calls 65% With a New Patient Portal"
       subtitle="A regional hospital system built a mobile-first patient portal for scheduling, test results, and refills — cutting phone volume 65%, reaching 72% adoption, and saving $420K a year."
-      heroImage="/case-medical-collaboration.9602cc8c.jpg"
+      heroImage="/images/cases/healthcare-patient-portal-hero.jpg"
       metrics={[
         { value: "65%", label: "Fewer Admin Calls" },
         { value: "72%", label: "Portal Adoption" },
@@ -111,7 +111,7 @@ export function HealthcarePatientPortal() {
           metric: "40%",
           label: "less admin overhead",
           link: "/cases/healthcare-provider",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-provider-hero.jpg"
         }
       ]}
       ctaTitle="Ready to give patients self-service they'll use?"

@@ -11,7 +11,7 @@ export default function RetailDataPipelineReliability() {
       industryLink="/industries/retail"
       title="How a National Retailer Cut Data-Pipeline Failures by 84%"
       subtitle="Analysts started every morning wondering whether the dashboards were even right. Schema contracts and freshness SLOs turned a fragile pipeline graph into a system the business could trust."
-      heroImage="/images/capabilities/cap-retail-data.jpg"
+      heroImage="/images/cases/retail-data-pipeline-reliability-hero.jpg"
       metrics={[
         { value: "84%", label: "Fewer Pipeline Failures" },
         { value: "SLO", label: "Freshness Guaranteed" },
@@ -54,8 +54,8 @@ export default function RetailDataPipelineReliability() {
       quoteAuthor="Head of Data Engineering"
       quoteRole="National retailer"
       relatedStudies={[
-        { title: "How an Insurer Moved 1,400 Pipelines to the Cloud Without the Business Noticing", metric: "1,400", label: "pipelines migrated to cloud", link: "/cases/insurer-pipeline-migration", image: "/images/industries/fin-monitors.jpg" },
-        { title: "How a Health System Passed Its HIPAA Audit With Zero Findings", metric: "Zero", label: "audit findings", link: "/cases/health-hipaa-audit", image: "/case-healthcare-team.5797392b.jpg" }
+        { title: "How an Insurer Moved 1,400 Pipelines to the Cloud Without the Business Noticing", metric: "1,400", label: "pipelines migrated to cloud", link: "/cases/insurer-pipeline-migration", image: "/images/cases/insurer-pipeline-migration-hero.jpg" },
+        { title: "How a Health System Passed Its HIPAA Audit With Zero Findings", metric: "Zero", label: "audit findings", link: "/cases/health-hipaa-audit", image: "/images/cases/health-hipaa-audit-hero.jpg" }
       ]}
       ctaTitle="Do your pipelines break more than they should?"
       ctaDescription="Let's engineer contracts and freshness SLOs so the numbers are trustworthy before the standup."

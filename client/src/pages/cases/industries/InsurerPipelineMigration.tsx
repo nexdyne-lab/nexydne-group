@@ -11,7 +11,7 @@ export default function InsurerPipelineMigration() {
       industryLink="/industries/financial-services"
       title="How an Insurer Moved 1,400 Pipelines to the Cloud Without the Business Noticing"
       subtitle="An entire on-prem ETL estate had to move to the cloud without a downtime window the business could feel. A phased lift-shift-modernize program made the migration invisible."
-      heroImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/cases/insurer-pipeline-migration-hero.jpg"
       metrics={[
         { value: "1,400", label: "Pipelines Migrated" },
         { value: "8 Mo", label: "To Complete" },
@@ -54,7 +54,7 @@ export default function InsurerPipelineMigration() {
       quoteAuthor="VP of Data Platform"
       quoteRole="Insurance carrier"
       relatedStudies={[
-        { title: "How a Health System Passed Its HIPAA Audit With Zero Findings", metric: "Zero", label: "audit findings", link: "/cases/health-hipaa-audit", image: "/case-healthcare-team.5797392b.jpg" },
+        { title: "How a Health System Passed Its HIPAA Audit With Zero Findings", metric: "Zero", label: "audit findings", link: "/cases/health-hipaa-audit", image: "/images/cases/health-hipaa-audit-hero.jpg" },
         { title: "How a Regional Bank Cut Data Subject Request Turnaround by 79%", metric: "79%", label: "faster subject-rights turnaround", link: "/cases/bank-subject-rights", image: "/images/industries/fin-trader.jpg" }
       ]}
       ctaTitle="Facing a large cloud migration you can't afford to disrupt?"

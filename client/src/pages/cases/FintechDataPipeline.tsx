@@ -11,7 +11,7 @@ export default function FintechDataPipeline() {
       industryLink="/industries/financial-services"
       title="How a Payment Processor Scaled Real-Time Transactions 10x"
       subtitle="A payment processor rebuilt its transaction pipeline on Kafka streaming — handling 50,000 transactions per second at 99.99% uptime and sub-100ms latency, all PCI-DSS compliant."
-      heroImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/cases/fintech-data-pipeline-hero.jpg"
       metrics={[
         { value: "10x", label: "Transaction Capacity" },
         { value: "99.99%", label: "Uptime" },
@@ -104,14 +104,14 @@ export default function FintechDataPipeline() {
           metric: "50M",
           label: "daily transactions",
           link: "/cases/fintech-microservices",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/fintech-microservices-hero.jpg"
         },
         {
           title: "Detecting Fraud 40% Faster with ML",
           metric: "40%",
           label: "faster fraud detection",
           link: "/cases/financial-fraud-detection-ml",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/financial-fraud-detection-ml-hero.jpg"
         }
       ]}
       ctaTitle="Ready to scale your transactions without breaking?"

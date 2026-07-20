@@ -54,8 +54,8 @@ export default function LogisticsCustomTms() {
       quoteAuthor="VP of Operations"
       quoteRole="National logistics provider"
       relatedStudies={[
-        { title: "How a Manufacturer Cleared an 18-Month IT Backlog by Building a Low-Code CoE", metric: "28", label: "apps shipped in 18 months", link: "/cases/mfg-lowcode-coe", image: "/images/industries/mfg-robot-arm.jpg" },
-        { title: "How a Regional Insurer Cut Claims Triage Time 64% Without Replacing Its Core System", metric: "64%", label: "faster claims triage", link: "/cases/insurer-lowcode-claims", image: "/images/industries/fin-monitors.jpg" }
+        { title: "How a Manufacturer Cleared an 18-Month IT Backlog by Building a Low-Code CoE", metric: "28", label: "apps shipped in 18 months", link: "/cases/mfg-lowcode-coe", image: "/images/cases/mfg-lowcode-coe-hero.jpg" },
+        { title: "How a Regional Insurer Cut Claims Triage Time 64% Without Replacing Its Core System", metric: "64%", label: "faster claims triage", link: "/cases/insurer-lowcode-claims", image: "/images/cases/insurer-lowcode-claims-hero.jpg" }
       ]}
       ctaTitle="Are disconnected tools slowing your operation?"
       ctaDescription="Let's build one platform around how your business actually runs."

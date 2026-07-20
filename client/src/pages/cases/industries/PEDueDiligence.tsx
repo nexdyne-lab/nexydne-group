@@ -11,7 +11,7 @@ export default function PEDueDiligence() {
       industryLink="/industries/private-equity"
       title="How a Fund Cut Healthcare Diligence Time by 40%"
       subtitle="A private equity fund saw far more healthcare deals than it could properly assess. A faster, more consistent way to run commercial diligence let it move quickly on the right ones — and walk away from the wrong ones with conviction."
-      heroImage="/images/capabilities/cap-conference-data.jpg"
+      heroImage="/images/cases/pe-healthcare-diligence-hero.jpg"
       metrics={[
         { value: "40%", label: "Faster Diligence" },
         { value: "3x", label: "More Targets Screened" },
@@ -111,14 +111,14 @@ export default function PEDueDiligence() {
           metric: "$18M",
           label: "added EBITDA",
           link: "/cases/pe-industrial-transformation",
-          image: "/images/industries/transport-traffic.jpg"
+          image: "/images/cases/pe-industrial-transformation-hero.jpg"
         },
         {
           title: "Standing Up a Carved-Out Distributor in Six Months",
           metric: "6 Months",
           label: "to standalone operations",
           link: "/cases/pe-distribution-digital",
-          image: "/images/industries/deal-handshake.jpg"
+          image: "/images/cases/pe-distribution-digital-hero.jpg"
         }
       ]}
       ctaTitle="Ready to move faster on the right deals?"

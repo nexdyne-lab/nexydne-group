@@ -11,7 +11,7 @@ export default function RetailPdpRecommender() {
       industryLink="/industries/retail"
       title="How a Specialty Retailer Lifted Product-Page Revenue per Session by 23%"
       subtitle="The product detail page was recommending category best-sellers to everyone, ignoring what each shopper had actually looked at. A retrieval model that reads the session changed what the page could earn."
-      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroImage="/images/cases/retail-pdp-recommender-hero.jpg"
       metrics={[
         { value: "23%", label: "More Revenue per Session" },
         { value: "2x", label: "Long-Tail Catalog Coverage" },

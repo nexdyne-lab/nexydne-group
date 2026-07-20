@@ -104,7 +104,7 @@ export default function LowcodeDevelopment() {
       title: "Industrial Manufacturer Ships 28 OutSystems Apps in Eighteen Months",
       description:
         "A new lowcode CoE plus a citizen-developer cohort cleared an eighteen-month IT backlog and shipped twenty-eight production apps in the same window.",
-      image: "/images/case-lowcode-mfg.jpg",
+      image: "/images/cases/mfg-lowcode-coe-hero.jpg",
       link: "/cases/mfg-lowcode-coe",
     },
     {
@@ -112,7 +112,7 @@ export default function LowcodeDevelopment() {
       title: "Regional Insurer Cuts Claims Triage Time by 64% with PowerApps",
       description:
         "A targeted PowerApps build wrapped around the existing core system delivered claims-triage automation in twelve weeks — without a system replacement.",
-      image: "/images/case-lowcode-insurer.jpg",
+      image: "/images/cases/insurer-lowcode-claims-hero.jpg",
       link: "/cases/insurer-lowcode-claims",
     },
   ];

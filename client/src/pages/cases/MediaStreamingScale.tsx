@@ -11,7 +11,7 @@ export function MediaStreamingScale() {
       industryLink="/industries/technology-media-telecom"
       title="How a Streaming Platform Handled a 10x Traffic Spike at Launch"
       subtitle="StreamVault deployed elastic, multi-CDN infrastructure with predictive auto-scaling — delivering broadcast-quality streaming to 520,000 concurrent viewers with zero downtime, built in 6 weeks."
-      heroImage="/images/industries/tech-datacenter.jpg"
+      heroImage="/images/cases/media-streaming-scale-hero.jpg"
       metrics={[
         { value: "10x", label: "Traffic Spike Handled" },
         { value: "Zero", label: "Downtime at Launch" },
@@ -112,7 +112,7 @@ export function MediaStreamingScale() {
           metric: "99.99%",
           label: "uptime",
           link: "/cases/healthcare-cloud-migration",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-cloud-migration-hero.jpg"
         }
       ]}
       ctaTitle="Ready for your make-or-break moment?"

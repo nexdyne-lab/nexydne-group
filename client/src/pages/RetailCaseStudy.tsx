@@ -105,7 +105,7 @@ export function RetailCaseStudy() {
           metric: "35%",
           label: "fewer stockouts",
           link: "/cases/retail-demand-forecasting",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/retail-demand-forecasting-hero.jpg"
         },
         {
           title: "Automating Order Fulfillment to Triple Capacity",

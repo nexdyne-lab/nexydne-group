@@ -11,7 +11,7 @@ export default function DefenseSupplyChain() {
       industryLink="/industries/aerospace-defense"
       title="Getting the Right Part to the Right Base: 98% Fleet Readiness for a Defense Prime"
       subtitle="A defense sustainment provider was grounding aircraft for want of parts while spare inventory sat in the wrong warehouses. Anticipating demand instead of reacting to it lifted readiness and freed capital at the same time."
-      heroImage="/images/industries/retail-warehouse.jpg"
+      heroImage="/images/cases/supply-chain-visibility-hero.jpg"
       metrics={[
         { value: "98%", label: "Mission Readiness" },
         { value: "35%", label: "Better Availability" },

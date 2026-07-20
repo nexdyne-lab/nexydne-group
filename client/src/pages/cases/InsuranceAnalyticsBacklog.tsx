@@ -11,7 +11,7 @@ export function InsuranceAnalyticsBacklog() {
       industryLink="/industries/insurance"
       title="How an Insurance Carrier Prioritized a $12M Analytics Backlog in 6 Weeks"
       subtitle="A data-strategy sprint identified high-ROI use cases, killed projects that wouldn't move the needle, and built an executable roadmap — aligning the analytics team with $13.3M in prioritized value."
-      heroImage="/case-insurance-office.f039a4a1.jpg"
+      heroImage="/images/cases/insurance-analytics-backlog-hero.jpg"
       metrics={[
         { value: "$13.3M", label: "Value From 8 Prioritized Projects" },
         { value: "49%", label: "Backlog Reduction" },

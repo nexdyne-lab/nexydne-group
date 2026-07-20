@@ -11,7 +11,7 @@ export default function AerospaceCiPipelineRebuild() {
       industryLink="/industries/aerospace-defense"
       title="How an Aerospace Manufacturer Unclogged Its Improvement Pipeline"
       subtitle="Employees kept submitting good improvement ideas, and almost none of them ever got done. The problem was not the ideas — it was the pipeline that was supposed to turn them into results."
-      heroImage="/images/capabilities/cap-battery-factory.jpg"
+      heroImage="/images/cases/aerospace-ci-pipeline-rebuild-hero.jpg"
       metrics={[
         { value: "8→71", label: "Closures per Quarter" },
         { value: "12 Mo", label: "To the Turnaround" },
@@ -55,7 +55,7 @@ export default function AerospaceCiPipelineRebuild() {
       quoteRole="Aerospace manufacturer"
       relatedStudies={[
         { title: "How a Retail Bank Took Continuous Improvement Out of the Center and Into the Branches", metric: "380", label: "practitioners trained", link: "/cases/retail-banking-ci-capability-scaling", image: "/images/industries/fin-trader.jpg" },
-        { title: "How a P&C Carrier Moved From 4% to 38% Straight-Through Claims", metric: "4→38%", label: "straight-through processing", link: "/cases/insurance-hybrid-claims-automation", image: "/images/industries/fin-handshake-city.jpg" }
+        { title: "How a P&C Carrier Moved From 4% to 38% Straight-Through Claims", metric: "4→38%", label: "straight-through processing", link: "/cases/insurance-hybrid-claims-automation", image: "/images/cases/insurance-hybrid-claims-automation-hero.jpg" }
       ]}
       ctaTitle="Are good improvement ideas dying in your pipeline?"
       ctaDescription="Let's rebuild the machinery between a raised idea and a delivered result."

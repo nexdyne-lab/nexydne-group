@@ -11,7 +11,7 @@ export default function AutomotiveSupplyResilience() {
       industryLink="/industries/automotive"
       title="De-Risking Parts Supply and Recall Traceability for a Components Supplier"
       subtitle="A supplier kept losing production when a single chip or component ran short, and when a quality issue surfaced it could not tell exactly which parts were affected. Getting ahead of supply and knowing where every part went changed both."
-      heroImage="/images/industries/mfg-robot-arm.jpg"
+      heroImage="/images/cases/automotive-supply-resilience-hero.jpg"
       metrics={[
         { value: "80%", label: "Fewer Line Stoppages" },
         { value: "90%", label: "Faster Recall Tracing" },
@@ -111,14 +111,14 @@ export default function AutomotiveSupplyResilience() {
           metric: "45%",
           label: "fewer launch defects",
           link: "/cases/automotive-ev-transition",
-          image: "/images/industries/auto-robotics-team.jpg"
+          image: "/images/cases/automotive-ev-transition-hero.jpg"
         },
         {
           title: "Turning Connected-Vehicle Data into Fewer Warranty Claims",
           metric: "30%",
           label: "fewer warranty claims",
           link: "/cases/automotive-connected-vehicle",
-          image: "/images/industries/tech-datacenter.jpg"
+          image: "/images/cases/automotive-connected-vehicle-hero.jpg"
         }
       ]}
       ctaTitle="Ready to take control of your supply risk?"

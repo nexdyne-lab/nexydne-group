@@ -22,7 +22,7 @@ export default function CaseStudyRetailEcommerce() {
       <section className="relative min-h-[55vh] sm:min-h-[65vh] md:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center pt-16 sm:pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/capabilities/cap-retail-apparel.jpg" 
+            src="/images/cases/retail-ecommerce-growth-hero.jpg" 
             alt="Retail Store Interior" 
             className="w-full h-full object-cover opacity-30"
           />

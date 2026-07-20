@@ -55,7 +55,7 @@ export default function SaasCrossFunctionalJourney() {
       quoteRole="B2B SaaS company"
       relatedStudies={[
         { title: "How an E-Commerce Operator Lifted Revenue per Customer 21% With Real Personalization", metric: "21%", label: "more revenue per customer", link: "/cases/ecommerce-personalization-execution", image: "/images/capabilities/cap-retail-data.jpg" },
-        { title: "How a Hospitality Loyalty Program Raised Booking Conversion 14%", metric: "14%", label: "higher booking conversion", link: "/cases/hospitality-personalization-execution", image: "/images/industries/travel-city-twilight.jpg" }
+        { title: "How a Hospitality Loyalty Program Raised Booking Conversion 14%", metric: "14%", label: "higher booking conversion", link: "/cases/hospitality-personalization-execution", image: "/images/cases/hospitality-personalization-execution-hero.jpg" }
       ]}
       ctaTitle="Do your teams each see a different customer?"
       ctaDescription="Let's converge them on shared moments of truth and act where it matters."

@@ -54,7 +54,7 @@ export default function SaasMeddiccTransformation() {
       quoteAuthor="Chief Revenue Officer"
       quoteRole="Growth-stage SaaS company"
       relatedStudies={[
-        { title: "How a Manufacturer Turned a Stagnant Partner Program Into a Growth Engine", metric: "31%", label: "higher partner revenue", link: "/cases/manufacturer-channel-transformation", image: "/images/industries/mfg-robot-arm.jpg" },
+        { title: "How a Manufacturer Turned a Stagnant Partner Program Into a Growth Engine", metric: "31%", label: "higher partner revenue", link: "/cases/manufacturer-channel-transformation", image: "/images/cases/manufacturer-channel-transformation-hero.jpg" },
         { title: "How a National Retailer Deflected 68% of Support Tickets With a Hybrid Bot", metric: "68%", label: "of tickets deflected", link: "/cases/retail-chatbot-deflection", image: "/images/capabilities/cap-retail-data.jpg" }
       ]}
       ctaTitle="Is your team chasing deals it can't win?"

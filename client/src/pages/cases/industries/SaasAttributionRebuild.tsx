@@ -55,7 +55,7 @@ export default function SaasAttributionRebuild() {
       quoteRole="Growth-stage SaaS"
       relatedStudies={[
         { title: "How a Streaming Service Cut App Startup Time by 62% With a Native Rewrite", metric: "62%", label: "faster startup time", link: "/cases/streaming-native-rewrite", image: "/images/industries/tech-datacenter.jpg" },
-        { title: "How a Medical Device App Hit Sub-100ms Response With Pure Kotlin Native", metric: "<100ms", label: "response time", link: "/cases/medical-native-kotlin", image: "/case-medical-collaboration.9602cc8c.jpg" }
+        { title: "How a Medical Device App Hit Sub-100ms Response With Pure Kotlin Native", metric: "<100ms", label: "response time", link: "/cases/medical-native-kotlin", image: "/images/cases/medical-native-kotlin-hero.jpg" }
       ]}
       ctaTitle="Is last-click hiding your wasted spend?"
       ctaDescription="Let's rebuild attribution on first-party data and incrementality so you can cut waste, not pipeline."

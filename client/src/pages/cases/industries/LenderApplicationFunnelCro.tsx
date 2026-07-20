@@ -55,7 +55,7 @@ export default function LenderApplicationFunnelCro() {
       quoteRole="Digital lender"
       relatedStudies={[
         { title: "How a Vertical SaaS Operator Finally Launched the Product It Had Killed Twice", metric: "1,200", label: "paying accounts in 3 quarters", link: "/cases/saas-adjacent-product-mvp", image: "/images/capabilities/cap-coder.jpg" },
-        { title: "How a Wealth Manager Saved Nine Months of Build by Validating in 90 Days", metric: "90 days", label: "to validate the product", link: "/cases/wealth-digital-advisory-mvp", image: "/images/industries/fin-handshake-city.jpg" }
+        { title: "How a Wealth Manager Saved Nine Months of Build by Validating in 90 Days", metric: "90 days", label: "to validate the product", link: "/cases/wealth-digital-advisory-mvp", image: "/images/cases/wealth-digital-advisory-mvp-hero.jpg" }
       ]}
       ctaTitle="Losing applicants inside your own funnel?"
       ctaDescription="Let's diagnose the leaks and work them on a cadence — conversion is usually the cheapest growth you have."

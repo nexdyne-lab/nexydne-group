@@ -54,8 +54,8 @@ export default function GlobalProfessionalServicesErpAdoption() {
       quoteAuthor="Global Program Director"
       quoteRole="Professional-services firm"
       relatedStudies={[
-        { title: "How a Federal Agency Made Its Process Gains Actually Stick", metric: "88%", label: "of gains sustained", link: "/cases/public-sector-sustained-adoption", image: "/images/industries/city-night.jpg" },
-        { title: "How an Aerospace Manufacturer Unclogged Its Improvement Pipeline", metric: "8→71", label: "idea closures per quarter", link: "/cases/aerospace-ci-pipeline-rebuild", image: "/images/capabilities/cap-battery-factory.jpg" }
+        { title: "How a Federal Agency Made Its Process Gains Actually Stick", metric: "88%", label: "of gains sustained", link: "/cases/public-sector-sustained-adoption", image: "/images/cases/public-sector-sustained-adoption-hero.jpg" },
+        { title: "How an Aerospace Manufacturer Unclogged Its Improvement Pipeline", metric: "8→71", label: "idea closures per quarter", link: "/cases/aerospace-ci-pipeline-rebuild", image: "/images/cases/aerospace-ci-pipeline-rebuild-hero.jpg" }
       ]}
       ctaTitle="Does your adoption stall while the old process lingers?"
       ctaDescription="Let's build a readiness-first rollout that measures and drives adoption from day one."

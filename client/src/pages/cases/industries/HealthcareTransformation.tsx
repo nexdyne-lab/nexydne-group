@@ -11,7 +11,7 @@ export default function HealthcareTransformation() {
       industryLink="/industries/healthcare"
       title="How a Regional Health System Improved Patient Outcomes by 35%"
       subtitle="The system had spent years digitising its records, yet its clinicians still could not see the whole patient. Bringing that information together — and putting it in front of the care team when it mattered — changed the quality of care it could deliver."
-      heroImage="/case-medical-collaboration.9602cc8c.jpg"
+      heroImage="/images/cases/healthcare-transformation-hero.jpg"
       metrics={[
         { value: "35%", label: "Better Patient Outcomes" },
         { value: "28%", label: "Fewer Readmissions" },
@@ -111,7 +111,7 @@ export default function HealthcareTransformation() {
           metric: "42%",
           label: "fewer avoidable readmissions",
           link: "/cases/healthcare-readmission",
-          image: "/case-doctor-consultation.799c1562.jpg"
+          image: "/images/cases/healthcare-readmission-hero.jpg"
         },
         {
           title: "Recovering $32M in Lost Revenue",

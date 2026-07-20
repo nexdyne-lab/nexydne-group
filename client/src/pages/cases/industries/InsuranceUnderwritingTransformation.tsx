@@ -11,7 +11,7 @@ export default function InsuranceUnderwritingTransformation() {
       industryLink="/industries/insurance"
       title="How a Commercial Insurer Started Quoting in a Day Instead of a Week"
       subtitle="A commercial lines carrier was losing broker business because it was slow to quote. Letting software handle the routine risks — and freeing underwriters for the hard ones — turned speed into an advantage."
-      heroImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/cases/insurance-ai-underwriting-hero.jpg"
       metrics={[
         { value: "40%", label: "Faster Quotes" },
         { value: "70%", label: "Quoted Automatically" },
@@ -111,14 +111,14 @@ export default function InsuranceUnderwritingTransformation() {
           metric: "60%",
           label: "faster claims processing",
           link: "/cases/insurance-claims-automation",
-          image: "/case-insurance-claims.399e5d4b.jpg"
+          image: "/images/cases/insurance-claims-automation-hero.jpg"
         },
         {
           title: "Turning a Call-Center Insurer Into a Digital One",
           metric: "50%",
           label: "digital adoption",
           link: "/cases/insurance-digital-distribution",
-          image: "/images/industries/fin-handshake-city.jpg"
+          image: "/images/cases/insurance-digital-distribution-hero.jpg"
         }
       ]}
       ctaTitle="Ready to quote faster without adding risk?"

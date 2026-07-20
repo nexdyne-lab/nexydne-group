@@ -104,7 +104,7 @@ export default function MobileApps() {
       title: "Health-Tech Scale-Up Hits 2M Users on a Single React Native Codebase",
       description:
         "Modular architecture and feature-flag discipline let one team ship to iOS and Android in lockstep through hypergrowth.",
-      image: "/images/case-mobile-health.jpg",
+      image: "/images/cases/healthtech-mobile-scale-hero.jpg",
       link: "/cases/healthtech-mobile-scale",
     },
     {

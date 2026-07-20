@@ -105,14 +105,14 @@ function GlobalRetailerEcommerce() {
           metric: "45%",
           label: "faster processing",
           link: "/cases/global-retailer",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/global-retailer-hero.jpg"
         },
         {
           title: "Migrating a Retailer to Snowflake",
           metric: "85%",
           label: "faster queries",
           link: "/cases/ecommerce-data-warehouse",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/ecommerce-data-warehouse-hero.jpg"
         }
       ]}
       ctaTitle="Ready to personalize at scale?"

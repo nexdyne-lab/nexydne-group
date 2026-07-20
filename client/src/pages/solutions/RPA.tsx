@@ -104,7 +104,7 @@ export default function RPA() {
       title: "Insurer Automates Claims Triage and Cuts Handle Time by 68%",
       description:
         "Forty-two unattended bots process claim intake, classification, and routing—freeing adjusters for the complex cases that need them.",
-      image: "/images/case-rpa-claims.jpg",
+      image: "/images/cases/insurer-claims-rpa-hero.jpg",
       link: "/cases/insurer-claims-rpa",
     },
     {
@@ -112,7 +112,7 @@ export default function RPA() {
       title: "Provider Network Reclaims 90,000 Hours a Year on Eligibility Checks",
       description:
         "Attended bots and IDP collapsed a multi-step manual eligibility process into a single screen for revenue-cycle staff.",
-      image: "/images/case-rpa-healthcare.jpg",
+      image: "/images/cases/healthcare-eligibility-rpa-hero.jpg",
       link: "/cases/healthcare-eligibility-rpa",
     },
   ];

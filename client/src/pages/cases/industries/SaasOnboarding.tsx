@@ -55,7 +55,7 @@ export default function SaasOnboarding() {
       quoteRole="B2B SaaS company"
       relatedStudies={[
         { title: "How a Growth-Stage SaaS Company Doubled Its Win Rate", metric: "18% → 37%", label: "win rate", link: "/cases/saas-meddicc-transformation", image: "/images/capabilities/cap-conference-data.jpg" },
-        { title: "How a Manufacturer Turned a Stagnant Partner Program Into a Growth Engine", metric: "31%", label: "higher partner revenue", link: "/cases/manufacturer-channel-transformation", image: "/images/industries/mfg-robot-arm.jpg" }
+        { title: "How a Manufacturer Turned a Stagnant Partner Program Into a Growth Engine", metric: "31%", label: "higher partner revenue", link: "/cases/manufacturer-channel-transformation", image: "/images/cases/manufacturer-channel-transformation-hero.jpg" }
       ]}
       ctaTitle="Is static onboarding letting trials drift?"
       ctaDescription="Let's build behavior-triggered journeys that convert trials faster and pull revenue forward."

@@ -54,8 +54,8 @@ export default function RetailBankingCiCapabilityScaling() {
       quoteAuthor="Head of Operational Excellence"
       quoteRole="Retail bank"
       relatedStudies={[
-        { title: "How a P&C Carrier Moved From 4% to 38% Straight-Through Claims", metric: "4→38%", label: "straight-through processing", link: "/cases/insurance-hybrid-claims-automation", image: "/images/industries/fin-handshake-city.jpg" },
-        { title: "How a Health Plan Turned 12 Orphaned Bots Into 140 Working Automations", metric: "12→140", label: "automations in 18 months", link: "/cases/payer-automation-coe-scale", image: "/case-healthcare-team.5797392b.jpg" }
+        { title: "How a P&C Carrier Moved From 4% to 38% Straight-Through Claims", metric: "4→38%", label: "straight-through processing", link: "/cases/insurance-hybrid-claims-automation", image: "/images/cases/insurance-hybrid-claims-automation-hero.jpg" },
+        { title: "How a Health Plan Turned 12 Orphaned Bots Into 140 Working Automations", metric: "12→140", label: "automations in 18 months", link: "/cases/payer-automation-coe-scale", image: "/images/cases/payer-automation-coe-scale-hero.jpg" }
       ]}
       ctaTitle="Is your improvement capability stuck in a central team?"
       ctaDescription="Let's scale it into the operating teams and embed problem-solving where the work happens."

@@ -54,7 +54,7 @@ export default function BankAppModernization() {
       quoteAuthor="Head of Digital Banking"
       quoteRole="Regional bank"
       relatedStudies={[
-        { title: "How a Health-Tech Scale-Up Reached 2M Users With One Mobile Team", metric: "2M", label: "users on one team", link: "/cases/healthtech-mobile-scale", image: "/case-healthcare-team.5797392b.jpg" },
+        { title: "How a Health-Tech Scale-Up Reached 2M Users With One Mobile Team", metric: "2M", label: "users on one team", link: "/cases/healthtech-mobile-scale", image: "/images/cases/healthtech-mobile-scale-hero.jpg" },
         { title: "How a Regional Bank Modernized Its Mobile App and Cut Crashes 71%", metric: "71%", label: "lower crash rate", link: "/cases/bank-mobile-modernization", image: "/images/industries/fin-trader.jpg" }
       ]}
       ctaTitle="Is an aging hybrid app costing you stability and speed?"

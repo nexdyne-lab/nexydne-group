@@ -11,7 +11,7 @@ export default function ConsumerDecisionJourney() {
       industryLink="/industries/consumer-products"
       title="How a Consumer Electronics Giant Sold Out a Launch with AI Journey Orchestration"
       subtitle="Granular data and AI mapped the decision journey — reallocating media spend to the moments that mattered and selling out flagship inventory in record time."
-      heroImage="/images/capabilities/cap-office-women.jpg"
+      heroImage="/images/cases/consumer-decision-journey-hero.jpg"
       metrics={[
         { value: "Sold Out", label: "Inventory in 2 Weeks" },
         { value: "3x", label: "ROAS vs. Previous Launch" },

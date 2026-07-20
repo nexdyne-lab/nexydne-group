@@ -111,14 +111,14 @@ export default function FpaForecastingTransformation() {
           metric: "Above",
           label: "target, less dilution",
           link: "/cases/capital-raise-series-b",
-          image: "/images/industries/deal-handshake.jpg"
+          image: "/images/cases/capital-raise-series-b-hero.jpg"
         },
         {
           title: "Adding $18M in EBITDA at an industrial manufacturer",
           metric: "$18M",
           label: "added EBITDA",
           link: "/cases/pe-industrial-transformation",
-          image: "/images/industries/transport-traffic.jpg"
+          image: "/images/cases/pe-industrial-transformation-hero.jpg"
         }
       ]}
       ctaTitle="Ready to plan on what actually moves your business?"

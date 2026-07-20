@@ -54,7 +54,7 @@ export default function ManufacturingDataPlatform() {
       quoteAuthor="VP of Finance"
       quoteRole="Industrial manufacturer"
       relatedStudies={[
-        { title: "How a Health System Recovered $9M a Year by Fixing Its Data Quality", metric: "$9M", label: "recovered annually", link: "/cases/healthcare-data-quality", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { title: "How a Health System Recovered $9M a Year by Fixing Its Data Quality", metric: "$9M", label: "recovered annually", link: "/cases/healthcare-data-quality", image: "/images/cases/healthcare-data-quality-hero.jpg" },
         { title: "How a Health System Turned Data From Overhead Into $42M of Advantage", metric: "$42M", label: "in decision value unlocked", link: "/cases/health-system-data-strategy", image: "/case-healthcare-team.5797392b.jpg" }
       ]}
       ctaTitle="Is your reporting old before anyone reads it?"

@@ -118,7 +118,7 @@ export default function SmartCityInfrastructure() {
           metric: "50%",
           label: "faster processing",
           link: "/cases/government-benefits-modernization",
-          image: "/images/industries/people-commute.jpg"
+          image: "/images/cases/government-benefits-modernization-hero.jpg"
         }
       ]}
       ctaTitle="Ready to get your city moving again?"

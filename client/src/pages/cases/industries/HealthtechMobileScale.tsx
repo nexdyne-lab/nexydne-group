@@ -11,7 +11,7 @@ export default function HealthtechMobileScale() {
       industryLink="/industries/healthcare"
       title="How a Health-Tech Scale-Up Reached 2M Users With One Mobile Team"
       subtitle="Explosive growth demanded iOS and Android move together, but a scale-up cannot run two mobile teams. Modular architecture and feature-flag discipline let one team carry the whole load."
-      heroImage="/case-healthcare-team.5797392b.jpg"
+      heroImage="/images/cases/healthtech-mobile-scale-hero.jpg"
       metrics={[
         { value: "2M", label: "Users Reached" },
         { value: "1", label: "Mobile Team" },
@@ -55,7 +55,7 @@ export default function HealthtechMobileScale() {
       quoteRole="Health-tech scale-up"
       relatedStudies={[
         { title: "How a Regional Bank Modernized Its Mobile App and Cut Crashes 71%", metric: "71%", label: "lower crash rate", link: "/cases/bank-mobile-modernization", image: "/images/industries/fin-trader.jpg" },
-        { title: "How a Specialty Insurer Replaced a 22-Year-Old Policy System Without an Outage", metric: "Zero", label: "business-impacting outages", link: "/cases/insurer-policy-strangler", image: "/images/industries/fin-handshake-city.jpg" }
+        { title: "How a Specialty Insurer Replaced a 22-Year-Old Policy System Without an Outage", metric: "Zero", label: "business-impacting outages", link: "/cases/insurer-policy-strangler", image: "/images/cases/insurer-policy-strangler-hero.jpg" }
       ]}
       ctaTitle="Growing faster than you can staff mobile?"
       ctaDescription="Let's build the modular architecture and release discipline to scale on one team."

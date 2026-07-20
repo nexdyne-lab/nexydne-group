@@ -11,7 +11,7 @@ export default function InsurancePortal() {
       industryLink="/industries/insurance"
       title="How a Regional Insurer Cut Inbound Calls 47% With a Self-Service Portal"
       subtitle="Customers called for the same three things — claim status, billing, documents — because there was no other way to get them. A self-service portal absorbed that volume within six months."
-      heroImage="/images/industries/fin-handshake-city.jpg"
+      heroImage="/images/cases/insurance-portal-hero.jpg"
       metrics={[
         { value: "47%", label: "Lower Call Volume" },
         { value: "Top 3", label: "Reasons Absorbed" },
@@ -55,7 +55,7 @@ export default function InsurancePortal() {
       quoteRole="Regional insurer"
       relatedStudies={[
         { title: "How a B2B Distributor Lifted Repeat Orders 23% With a Dealer Portal", metric: "23%", label: "higher repeat order rate", link: "/cases/distribution-dealer-portal", image: "/images/capabilities/cap-warehouse-robot.jpg" },
-        { title: "How a Consumer-Finance CMO Turned a 92-Page Pack Nobody Read Into Six Decisions a Quarter", metric: "38%", label: "less executive review time", link: "/cases/financial-services-insight-redesign", image: "/images/industries/fin-monitors.jpg" }
+        { title: "How a Consumer-Finance CMO Turned a 92-Page Pack Nobody Read Into Six Decisions a Quarter", metric: "38%", label: "less executive review time", link: "/cases/financial-services-insight-redesign", image: "/images/cases/financial-services-insight-redesign-hero.jpg" }
       ]}
       ctaTitle="Is your call center flooded with routine requests?"
       ctaDescription="Let's launch self-service for the top contact reasons and take that volume off the phones."

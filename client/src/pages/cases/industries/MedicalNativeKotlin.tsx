@@ -11,7 +11,7 @@ export default function MedicalNativeKotlin() {
       industryLink="/industries/healthcare"
       title="How a Medical Device App Hit Sub-100ms Response With Pure Kotlin Native"
       subtitle="Real-time sensor fusion in a regulated device leaves no room for the timing variability of a cross-platform layer. Building natively in Kotlin delivered the precision — and the auditability — the context demanded."
-      heroImage="/case-medical-collaboration.9602cc8c.jpg"
+      heroImage="/images/cases/medical-native-kotlin-hero.jpg"
       metrics={[
         { value: "<100ms", label: "Response Time" },
         { value: "Real-Time", label: "Sensor Fusion" },

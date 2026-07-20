@@ -112,7 +112,7 @@ export function LenderAIUnderwriting() {
           metric: "90%",
           label: "process automation",
           link: "/cases/financial-institution-automation",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/financial-institution-automation-hero.jpg"
         }
       ]}
       ctaTitle="Ready to scale underwriting without adding risk?"

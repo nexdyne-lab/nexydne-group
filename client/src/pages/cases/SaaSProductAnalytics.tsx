@@ -11,7 +11,7 @@ export function SaaSProductAnalytics() {
       industryLink="/industries/technology-media-telecom"
       title="How a SaaS Company Lifted Trial-to-Paid Conversion 28%"
       subtitle="Usage analytics identified friction points in the onboarding flow — driving targeted improvements that raised trial-to-paid conversion from 18% to 23% and added $3.2M in ARR."
-      heroImage="/images/industries/tech-datacenter.jpg"
+      heroImage="/images/cases/saas-product-analytics-hero.jpg"
       metrics={[
         { value: "28%", label: "Higher Trial-to-Paid Conversion" },
         { value: "23%", label: "Conversion Rate Achieved" },

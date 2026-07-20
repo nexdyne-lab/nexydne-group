@@ -11,7 +11,7 @@ export function HealthcareDashboardTraining() {
       industryLink="/industries/healthcare"
       title="How a Healthcare Network Trained 200 Clinicians to Build Their Own Dashboards"
       subtitle="Half-day, healthcare-specific workshops taught clinical staff to build Tableau dashboards for patient outcomes — improving visibility 45% and eliminating 30 hours a week of manual reporting."
-      heroImage="/case-medical-collaboration.9602cc8c.jpg"
+      heroImage="/images/cases/healthcare-dashboard-training-hero.jpg"
       metrics={[
         { value: "200", label: "Clinicians Trained" },
         { value: "45%", label: "Better Outcome Visibility" },
@@ -105,14 +105,14 @@ export function HealthcareDashboardTraining() {
           metric: "60%",
           label: "smaller IT backlog",
           link: "/cases/financial-services-sql-bootcamp",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/financial-services-sql-bootcamp-hero.jpg"
         },
         {
           title: "Launching a Patient Portal That Cut Admin Calls 65%",
           metric: "65%",
           label: "fewer admin calls",
           link: "/cases/healthcare-patient-portal",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-patient-portal-hero.jpg"
         }
       ]}
       ctaTitle="Ready to put analytics in your clinicians' hands?"

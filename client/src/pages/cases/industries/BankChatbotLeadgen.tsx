@@ -11,7 +11,7 @@ export default function BankChatbotLeadgen() {
       industryLink="/industries/financial-services"
       title="How a Regional Bank Booked 4x More Demos With a Lead-Gen Chatbot"
       subtitle="Anonymous visitors came to the site, found no fast path to talk to someone, and left. A qualification bot engaged them in seconds and turned traffic into booked meetings."
-      heroImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/cases/bank-chatbot-leadgen-hero.jpg"
       metrics={[
         { value: "4x", label: "More Demos Booked" },
         { value: "<30s", label: "To Qualify" },

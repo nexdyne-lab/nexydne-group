@@ -105,7 +105,7 @@ export function HealthcareSystemModernization() {
           metric: "99.99%",
           label: "uptime",
           link: "/cases/healthcare-cloud-migration",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-cloud-migration-hero.jpg"
         },
         {
           title: "Transforming DevOps to Cut Deployment Time 82%",

@@ -54,8 +54,8 @@ export default function SaasAdjacentProductMvp() {
       quoteAuthor="Chief Product Officer"
       quoteRole="Vertical SaaS operator"
       relatedStudies={[
-        { title: "How a Wealth Manager Saved Nine Months of Build by Validating in 90 Days", metric: "90 days", label: "to validate the product", link: "/cases/wealth-digital-advisory-mvp", image: "/images/industries/fin-handshake-city.jpg" },
-        { title: "How a Heritage Brand Launched an $18M DTC Business Without Hurting Wholesale", metric: "$18M", label: "first-year DTC revenue", link: "/cases/consumer-dtc-launch", image: "/images/capabilities/cap-retail-apparel.jpg" }
+        { title: "How a Wealth Manager Saved Nine Months of Build by Validating in 90 Days", metric: "90 days", label: "to validate the product", link: "/cases/wealth-digital-advisory-mvp", image: "/images/cases/wealth-digital-advisory-mvp-hero.jpg" },
+        { title: "How a Heritage Brand Launched an $18M DTC Business Without Hurting Wholesale", metric: "$18M", label: "first-year DTC revenue", link: "/cases/consumer-dtc-launch", image: "/images/cases/consumer-dtc-launch-hero.jpg" }
       ]}
       ctaTitle="Is a good product idea stuck in planning?"
       ctaDescription="Let's narrow the brief and ship an instrumented MVP that lets the market answer the question."

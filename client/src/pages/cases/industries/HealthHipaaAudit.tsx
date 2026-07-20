@@ -11,7 +11,7 @@ export default function HealthHipaaAudit() {
       industryLink="/industries/healthcare"
       title="How a Health System Passed Its HIPAA Audit With Zero Findings"
       subtitle="A HIPAA audit was looming and governance was scattered across systems no one fully controlled. Rebuilding it around lineage, access, and accountable stewards cleared the audit clean."
-      heroImage="/case-healthcare-team.5797392b.jpg"
+      heroImage="/images/cases/health-hipaa-audit-hero.jpg"
       metrics={[
         { value: "Zero", label: "Audit Findings" },
         { value: "Full", label: "Regulator Approval" },

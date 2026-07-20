@@ -11,7 +11,7 @@ export default function B2bEcommerceLaunch() {
       industryLink="/industries/manufacturing"
       title="How a B2B Distributor Moved a Third of Its Order Entry Off the Sales Desk"
       subtitle="Inside sales was keying thousands of routine re-orders a month that never needed a human. A self-service channel for the recurring catalog freed the team for the accounts that did."
-      heroImage="/images/capabilities/cap-warehouse-robot.jpg"
+      heroImage="/images/cases/b2b-ecommerce-launch-hero.jpg"
       metrics={[
         { value: "31%", label: "Of Order Entry Migrated" },
         { value: "4,200", label: "Monthly Orders Keyed" },

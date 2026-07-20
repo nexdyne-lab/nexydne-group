@@ -111,7 +111,7 @@ export default function FintechMobileBanking() {
           metric: "50M",
           label: "daily transactions",
           link: "/cases/fintech-microservices",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/fintech-microservices-hero.jpg"
         }
       ]}
       ctaTitle="Ready to give your members an app they'll love?"

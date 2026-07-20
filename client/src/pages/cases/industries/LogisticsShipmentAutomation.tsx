@@ -54,7 +54,7 @@ export default function LogisticsShipmentAutomation() {
       quoteAuthor="Chief Operating Officer"
       quoteRole="Regional manufacturer"
       relatedStudies={[
-        { title: "How a Professional-Services Firm Won Back Its Leadership Position", metric: "40%", label: "faster delivery cycle", link: "/cases/saas-customer-onboarding", image: "/images/capabilities/cap-conference-data.jpg" },
+        { title: "How a Professional-Services Firm Won Back Its Leadership Position", metric: "40%", label: "faster delivery cycle", link: "/cases/saas-customer-onboarding", image: "/images/cases/saas-customer-onboarding-hero.jpg" },
         { title: "How a B2B Distributor Built a Direct-to-Consumer Engine From Scratch", metric: "340%", label: "DTC channel growth", link: "/cases/b2b-distributor-dtc-launch", image: "/images/capabilities/cap-warehouse-robot.jpg" }
       ]}
       ctaTitle="Is a manual order process holding you back?"

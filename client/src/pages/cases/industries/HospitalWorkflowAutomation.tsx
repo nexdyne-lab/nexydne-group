@@ -11,7 +11,7 @@ export default function HospitalWorkflowAutomation() {
       industryLink="/industries/healthcare"
       title="How a Hospital Gained 45% Clinical Efficiency by Automating Its Workflows"
       subtitle="Clinical staff spent too much of their day on manual administrative steps instead of patients. Automating the routine clinical workflows gave that time back."
-      heroImage="/case-healthcare-team.5797392b.jpg"
+      heroImage="/images/cases/hospital-workflow-automation-hero.jpg"
       metrics={[
         { value: "45%", label: "Efficiency Gain" },
         { value: "Automated", label: "Clinical Workflows" },
@@ -55,7 +55,7 @@ export default function HospitalWorkflowAutomation() {
       quoteRole="Hospital"
       relatedStudies={[
         { title: "How a Logistics Company Scaled 10x in 18 Months", metric: "10x", label: "growth in 18 months", link: "/cases/logistics-scale", image: "/images/capabilities/cap-coder.jpg" },
-        { title: "How a Retailer Built a 360° Customer View Across 50+ Touchpoints", metric: "360°", label: "customer view", link: "/cases/retail-omnichannel", image: "/images/capabilities/cap-retail-data.jpg" }
+        { title: "How a Retailer Built a 360° Customer View Across 50+ Touchpoints", metric: "360°", label: "customer view", link: "/cases/retail-omnichannel", image: "/images/cases/retail-omnichannel-hero.jpg" }
       ]}
       ctaTitle="Is administrative work pulling clinicians from care?"
       ctaDescription="Let's automate the routine clinical workflows and return time to patients."

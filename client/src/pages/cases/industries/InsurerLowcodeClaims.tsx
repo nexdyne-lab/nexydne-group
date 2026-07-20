@@ -11,7 +11,7 @@ export default function InsurerLowcodeClaims() {
       industryLink="/industries/insurance"
       title="How a Regional Insurer Cut Claims Triage Time 64% Without Replacing Its Core System"
       subtitle="Faster triage seemed to require a core-system replacement the insurer could not take on. A targeted low-code app wrapped around the existing system delivered the gain in twelve weeks."
-      heroImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/cases/insurer-lowcode-claims-hero.jpg"
       metrics={[
         { value: "64%", label: "Faster Triage" },
         { value: "12 Wks", label: "To Delivery" },
@@ -54,8 +54,8 @@ export default function InsurerLowcodeClaims() {
       quoteAuthor="VP of Claims"
       quoteRole="Regional insurer"
       relatedStudies={[
-        { title: "How an Omnichannel Retailer Collapsed Three Editorial Pipelines Into One", metric: "80%", label: "faster publishing", link: "/cases/retailer-headless-omnichannel", image: "/images/capabilities/cap-retail-data.jpg" },
-        { title: "How a Digital Publisher Halved Page Load Time With a Jamstack Rebuild", metric: "50%", label: "faster page loads", link: "/cases/publisher-headless-jamstack", image: "/images/industries/tech-datacenter.jpg" }
+        { title: "How an Omnichannel Retailer Collapsed Three Editorial Pipelines Into One", metric: "80%", label: "faster publishing", link: "/cases/retailer-headless-omnichannel", image: "/images/cases/retailer-headless-omnichannel-hero.jpg" },
+        { title: "How a Digital Publisher Halved Page Load Time With a Jamstack Rebuild", metric: "50%", label: "faster page loads", link: "/cases/publisher-headless-jamstack", image: "/images/cases/publisher-headless-jamstack-hero.jpg" }
       ]}
       ctaTitle="Do you need a fast win without a core replacement?"
       ctaDescription="Let's wrap your existing system with a targeted low-code app and capture the gain in weeks."

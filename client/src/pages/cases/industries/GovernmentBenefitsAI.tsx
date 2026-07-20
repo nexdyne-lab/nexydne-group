@@ -11,7 +11,7 @@ export default function GovernmentBenefitsAI() {
       industryLink="/industries/public-sector"
       title="Helping a County Get Benefits to Residents Weeks Sooner"
       subtitle="Deciding a single application meant a caseworker gathering documents and checking records by hand for hours. Letting software handle the routine paperwork freed staff to spend their time on the people who needed them most."
-      heroImage="/images/industries/people-commute.jpg"
+      heroImage="/images/cases/government-benefits-modernization-hero.jpg"
       metrics={[
         { value: "50%", label: "Faster Decisions" },
         { value: "95%", label: "Accuracy Rate" },

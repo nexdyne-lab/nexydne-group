@@ -11,7 +11,7 @@ export default function FinancialServicesInsightRedesign() {
       industryLink="/industries/financial-services"
       title="How a Consumer-Finance CMO Turned a 92-Page Pack Nobody Read Into Six Decisions a Quarter"
       subtitle="The monthly insight pack ran to 92 pages and nobody read it end to end. Rebuilding the function around six decisions, not a deck, made insight something executives actually used."
-      heroImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/cases/financial-services-insight-redesign-hero.jpg"
       metrics={[
         { value: "38%", label: "Less Review Time" },
         { value: "92 → 1", label: "Pages" },
@@ -54,7 +54,7 @@ export default function FinancialServicesInsightRedesign() {
       quoteAuthor="Chief Marketing Officer"
       quoteRole="Consumer financial-services firm"
       relatedStudies={[
-        { title: "How a Retailer Recovered 14 Weeks of Analyst Time by Fixing Its Insight Cadence", metric: "3x", label: "higher brief engagement", link: "/cases/retail-insight-cadence", image: "/images/industries/retail-shelves.jpg" },
+        { title: "How a Retailer Recovered 14 Weeks of Analyst Time by Fixing Its Insight Cadence", metric: "3x", label: "higher brief engagement", link: "/cases/retail-insight-cadence", image: "/images/cases/retail-insight-cadence-hero.jpg" },
         { title: "How a National Retailer Drove a 34% Revenue Lift With AI Personalization", metric: "34%", label: "revenue lift", link: "/cases/retail-personalization", image: "/images/capabilities/cap-retail-apparel.jpg" }
       ]}
       ctaTitle="Does your insight function produce packs nobody reads?"

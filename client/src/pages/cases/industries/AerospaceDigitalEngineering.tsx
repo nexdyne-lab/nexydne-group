@@ -111,7 +111,7 @@ export default function AerospaceDigitalEngineering() {
           metric: "98%",
           label: "mission-ready aircraft",
           link: "/cases/supply-chain-visibility",
-          image: "/images/industries/retail-warehouse.jpg"
+          image: "/images/cases/supply-chain-visibility-hero.jpg"
         },
         {
           title: "Halving Surprise Groundings for an Airline",

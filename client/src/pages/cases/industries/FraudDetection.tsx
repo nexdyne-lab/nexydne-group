@@ -55,7 +55,7 @@ export default function FraudDetection() {
       quoteRole="Card issuer"
       relatedStudies={[
         { title: "How a Manufacturer Replaced 47 Point-to-Point Integrations With an API-Led Architecture", metric: "12 wks → 3 wks", label: "per integration", link: "/cases/manufacturer-mulesoft", image: "/images/capabilities/cap-warehouse-robot.jpg" },
-        { title: "How a Health System United 12 Systems Behind One API Layer", metric: "12", label: "systems unified behind one API layer", link: "/cases/health-system-boomi", image: "/case-medical-collaboration.9602cc8c.jpg" }
+        { title: "How a Health System United 12 Systems Behind One API Layer", metric: "12", label: "systems unified behind one API layer", link: "/cases/health-system-boomi", image: "/images/cases/health-system-boomi-hero.jpg" }
       ]}
       ctaTitle="Is your fraud system forcing a bad trade-off?"
       ctaDescription="Let's build a model that catches more fraud and approves more good customers at once."

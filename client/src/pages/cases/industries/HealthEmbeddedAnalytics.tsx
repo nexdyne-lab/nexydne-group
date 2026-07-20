@@ -11,7 +11,7 @@ export default function HealthEmbeddedAnalytics() {
       industryLink="/industries/healthcare"
       title="How a Health System Lifted Analytics Adoption 4x by Embedding It in the EHR"
       subtitle="A standalone BI portal sat unused because it lived outside the workflow. Putting the charts inside the EHR, where clinicians actually work, changed whether analytics got used at all."
-      heroImage="/case-healthcare-team.5797392b.jpg"
+      heroImage="/images/cases/health-embedded-analytics-hero.jpg"
       metrics={[
         { value: "4x", label: "Higher Adoption" },
         { value: "In-EHR", label: "Embedded" },

@@ -713,3 +713,19 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   the Capabilities nav one-liners verbatim (one voice everywhere).
 - Hero: slow Ken Burns zoom (scale 1→1.12 over 26s, transform-only,
   prefers-reduced-motion honored). Localhost-reviewed, approved.
+
+### 2026-07-20 — Case-study imagery overhaul (245 pages reviewed, 113 upgraded)
+- Full /cases sweep like the insights pass: 245 unique case routes inventoried,
+  scored against the whole Drive catalog (industry→folder + keyword match),
+  165 candidates produced+verified by agents, then EVERY pick reviewed on
+  contact sheets: 113 clear upgrades shipped, 40 stretch-picks reverted to
+  their existing images, 80 kept current from the start (pool exhausted for
+  their niche), 12 pages have no hero slot / share components.
+- Wired: 153 components (prop + inline modes) + case cards in 232 files +
+  Cases.tsx landing (30 cards) . og-meta: 109/113 template pages carry the new
+  hero as og:image (4 legacy non-template pages keep the site default card).
+- Catalog gotcha logged: cross-folder duplicate images caused 2 near-duplicate
+  assignments — caught in review (subscription-cdp + homepage-hero twin).
+- QC: tsc, build+guard, 34/34 tests, headless 10-page sample + landing
+  (30 new cards render), 0 JS errors. Committed, NOT pushed — review sheets in
+  growth-marketing/case-sheets/ (5 sheets).

@@ -11,7 +11,7 @@ export default function FinancialServicesSQLBootcamp() {
       industryLink="/industries/financial-services"
       title="How an Investment Firm Upskilled 50 Analysts with a SQL & Python Bootcamp"
       subtitle="An 8-week intensive turned business analysts into self-sufficient data practitioners — cutting the IT backlog 60% and accelerating insight delivery from weeks to hours."
-      heroImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/cases/financial-services-sql-bootcamp-hero.jpg"
       metrics={[
         { value: "60%", label: "Smaller IT Backlog" },
         { value: "85%", label: "Analysts Writing SQL" },
@@ -111,7 +111,7 @@ export default function FinancialServicesSQLBootcamp() {
           metric: "85%",
           label: "faster queries",
           link: "/cases/ecommerce-data-warehouse",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/ecommerce-data-warehouse-hero.jpg"
         }
       ]}
       ctaTitle="Ready to make your analysts self-sufficient?"

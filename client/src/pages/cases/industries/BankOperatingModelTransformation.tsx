@@ -55,7 +55,7 @@ export default function BankOperatingModelTransformation() {
       quoteRole="Global bank"
       relatedStudies={[
         { title: "How an Industrial Holding Company Integrated Three Acquisitions and Beat Its Synergy Targets", metric: "110%", label: "of synergy targets captured", link: "/cases/industrial-ma-integration", image: "/images/capabilities/cap-battery-factory.jpg" },
-        { title: "How a Health-Tech Startup Scaled From 10K to 2M Users on a Single Codebase", metric: "10K → 2M", label: "users on one codebase", link: "/cases/healthtech-react-native", image: "/images/capabilities/cap-coder.jpg" }
+        { title: "How a Health-Tech Startup Scaled From 10K to 2M Users on a Single Codebase", metric: "10K → 2M", label: "users on one codebase", link: "/cases/healthtech-react-native", image: "/images/cases/healthtech-react-native-hero.jpg" }
       ]}
       ctaTitle="Is a functional structure trapping value between silos?"
       ctaDescription="Let's reorganize around customer journeys and put an owner on the end-to-end experience."

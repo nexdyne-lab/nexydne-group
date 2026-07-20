@@ -111,14 +111,14 @@ export default function UniversityOnlinePrograms() {
           metric: "18%",
           label: "higher graduation rate",
           link: "/cases/university-student-success",
-          image: "/images/industries/edu-whiteboard.jpg"
+          image: "/images/cases/university-student-success-hero.jpg"
         },
         {
           title: "Personalized Learning Lifts District Outcomes 25%",
           metric: "25%",
           label: "better learning outcomes",
           link: "/cases/k12-adaptive-learning",
-          image: "/images/industries/team-strategy-board.jpg"
+          image: "/images/cases/k12-adaptive-learning-hero.jpg"
         }
       ]}
       ctaTitle="Ready to grow your online programs?"

@@ -104,7 +104,7 @@ export default function DataEngineering() {
       title: "National Retailer Cuts Pipeline Failure Rate by 84% with Contract Testing",
       description:
         "Schema contracts and freshness SLOs turned a fragile pipeline graph into a system the analytics team could trust before the morning standup.",
-      image: "/images/case-data-retail.jpg",
+      image: "/images/cases/retail-data-pipeline-reliability-hero.jpg",
       link: "/cases/retail-data-pipeline-reliability",
     },
     {
@@ -112,7 +112,7 @@ export default function DataEngineering() {
       title: "Insurer Migrates 1,400 Pipelines from On-Prem to Cloud in Eight Months",
       description:
         "A phased lift-shift-modernize program moved an entire ETL estate to dbt and Snowflake without a downtime window the business noticed.",
-      image: "/images/case-data-insurer.jpg",
+      image: "/images/cases/insurer-pipeline-migration-hero.jpg",
       link: "/cases/insurer-pipeline-migration",
     },
   ];

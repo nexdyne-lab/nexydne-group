@@ -112,7 +112,7 @@ export default function DataSolutions() {
       title: "Health System Recovers $9M Annually from Data-Quality Fixes",
       description:
         "End-to-end lineage and automated quality monitoring stopped silent revenue leakage in claims and patient billing data.",
-      image: "/images/case-data-healthcare.jpg",
+      image: "/images/cases/healthcare-data-quality-hero.jpg",
       link: "/cases/healthcare-data-quality",
     },
   ];

@@ -11,7 +11,7 @@ export default function RetailInsightCadence() {
       industryLink="/industries/retail"
       title="How a Retailer Recovered 14 Weeks of Analyst Time by Fixing Its Insight Cadence"
       subtitle="Twelve dashboards and a quarterly readout produced a lot of work and almost no engagement. Switching to weekly operator briefs and monthly readouts changed what got used — and freed the team."
-      heroImage="/images/industries/retail-shelves.jpg"
+      heroImage="/images/cases/retail-insight-cadence-hero.jpg"
       metrics={[
         { value: "3x", label: "Higher Engagement" },
         { value: "14 Wks", label: "Analyst Time Recovered" },

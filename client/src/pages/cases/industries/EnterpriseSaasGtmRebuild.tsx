@@ -55,7 +55,7 @@ export default function EnterpriseSaasGtmRebuild() {
       quoteRole="Enterprise SaaS operator"
       relatedStudies={[
         { title: "How an Industrial Technology Leader Stopped Leaking Deals at the Sales Handoff", metric: "31%", label: "less handoff leakage", link: "/cases/industrial-tech-gtm-alignment", image: "/images/industries/mfg-robot-arm.jpg" },
-        { title: "How a DTC Operator Lifted New-Customer Margin 38% Without Spending a Dollar More", metric: "38%", label: "higher contribution margin", link: "/cases/dtc-channel-reallocation", image: "/images/capabilities/cap-retail-apparel.jpg" }
+        { title: "How a DTC Operator Lifted New-Customer Margin 38% Without Spending a Dollar More", metric: "38%", label: "higher contribution margin", link: "/cases/dtc-channel-reallocation", image: "/images/cases/dtc-channel-reallocation-hero.jpg" }
       ]}
       ctaTitle="Is chasing every deal stretching your team thin?"
       ctaDescription="Let's rebuild the ICP, retire what doesn't pay, and refocus the motion on the segments you win."

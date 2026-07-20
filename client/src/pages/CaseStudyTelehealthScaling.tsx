@@ -383,7 +383,7 @@ export default function CaseStudyTelehealthScaling() {
                 industry: "Healthcare",
                 metric: "68%",
                 metricLabel: "Less documentation time",
-                image: "/case-clinical-workflow.ca226f80.jpg",
+                image: "/images/cases/hospital-workflow-automation-hero.jpg",
                 link: "/cases/hospital-workflow-automation"
               },
               {

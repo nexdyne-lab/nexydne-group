@@ -11,7 +11,7 @@ export default function SaasCustomerOnboarding() {
       industryLink="/industries"
       title="How a Professional-Services Firm Won Back Its Leadership Position"
       subtitle="Complexity had made a once-leading firm slow and hard to work with, and nimbler rivals were taking its clients. A holistic transformation — simpler, more disciplined, more digital — restored its edge."
-      heroImage="/images/capabilities/cap-conference-data.jpg"
+      heroImage="/images/cases/saas-customer-onboarding-hero.jpg"
       metrics={[
         { value: "40%", label: "Faster Delivery Cycle" },
         { value: "Simpler", label: "Service Portfolio" },
@@ -55,7 +55,7 @@ export default function SaasCustomerOnboarding() {
       quoteRole="Professional-services firm"
       relatedStudies={[
         { title: "How a B2B Distributor Built a Direct-to-Consumer Engine From Scratch", metric: "340%", label: "DTC channel growth", link: "/cases/b2b-distributor-dtc-launch", image: "/images/capabilities/cap-warehouse-robot.jpg" },
-        { title: "How a Professional-Services Firm Turned Its Methodology Into Recurring Revenue", metric: "35%", label: "revenue now recurring", link: "/cases/services-saas-productization", image: "/images/capabilities/cap-coder.jpg" }
+        { title: "How a Professional-Services Firm Turned Its Methodology Into Recurring Revenue", metric: "35%", label: "revenue now recurring", link: "/cases/services-saas-productization", image: "/images/cases/services-saas-productization-hero.jpg" }
       ]}
       ctaTitle="Has complexity made your firm slow to deliver?"
       ctaDescription="Let's simplify, instill execution discipline, and digitalize delivery to win back your edge."

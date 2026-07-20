@@ -11,7 +11,7 @@ export function LogisticsOperationsDashboard() {
       industryLink="/industries/transportation-logistics"
       title="How a Logistics Company Cut Delivery Delays 40% With a Real-Time Dashboard"
       subtitle="A custom real-time operations dashboard surfaced capacity bottlenecks and route inefficiencies for proactive intervention — improving on-time delivery from 78% to 92% and saving $1.8M a year."
-      heroImage="/images/industries/retail-warehouse.jpg"
+      heroImage="/images/cases/logistics-operations-dashboard-hero.jpg"
       metrics={[
         { value: "40%", label: "Fewer Delivery Delays" },
         { value: "92%", label: "On-Time Delivery" },
@@ -111,7 +111,7 @@ export function LogisticsOperationsDashboard() {
           metric: "$55M",
           label: "operational savings",
           link: "/cases/logistics-brand-consolidation",
-          image: "/images/industries/retail-warehouse.jpg"
+          image: "/images/cases/logistics-brand-consolidation-hero.jpg"
         }
       ]}
       ctaTitle="Ready to see delays before they happen?"

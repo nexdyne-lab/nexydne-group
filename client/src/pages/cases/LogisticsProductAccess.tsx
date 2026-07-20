@@ -11,7 +11,7 @@ export function LogisticsProductAccess() {
       industryLink="/industries/transportation-logistics"
       title="How an Industrial Distributor Enabled 3.2x Faster Product Access"
       subtitle="A national industrial-supply distributor deployed AI-powered search, merchandising, and personalization — helping B2B buyers find the right products 3.2x faster, driving 68% higher search conversion and $12M in revenue."
-      heroImage="/images/industries/retail-warehouse.jpg"
+      heroImage="/images/cases/logistics-product-access-hero.jpg"
       metrics={[
         { value: "3.2x", label: "Faster Product Discovery" },
         { value: "68%", label: "Higher Search Conversion" },
@@ -105,7 +105,7 @@ export function LogisticsProductAccess() {
           metric: "$55M",
           label: "operational savings",
           link: "/cases/logistics-brand-consolidation",
-          image: "/images/industries/retail-warehouse.jpg"
+          image: "/images/cases/logistics-brand-consolidation-hero.jpg"
         },
         {
           title: "Scaling E-Commerce Revenue 40% With AI Personalization",

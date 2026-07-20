@@ -11,7 +11,7 @@ export default function PECarveoutExecution() {
       industryLink="/industries/private-equity"
       title="How a Fund Made a Carved-Out Distributor Independent in 6 Months"
       subtitle="A private equity fund bought a distribution business that was deeply tangled up in its former parent. Standing it up on its own — new systems included — quickly, cleanly and without disrupting customers was the whole game."
-      heroImage="/images/industries/deal-handshake.jpg"
+      heroImage="/images/cases/pe-distribution-digital-hero.jpg"
       metrics={[
         { value: "6 Months", label: "To Standalone" },
         { value: "$7M", label: "Separation Costs Avoided" },
@@ -111,14 +111,14 @@ export default function PECarveoutExecution() {
           metric: "$18M",
           label: "added EBITDA",
           link: "/cases/pe-industrial-transformation",
-          image: "/images/industries/transport-traffic.jpg"
+          image: "/images/cases/pe-industrial-transformation-hero.jpg"
         },
         {
           title: "Cutting Healthcare Diligence Time by 40%",
           metric: "40%",
           label: "faster diligence",
           link: "/cases/pe-healthcare-diligence",
-          image: "/images/capabilities/cap-conference-data.jpg"
+          image: "/images/cases/pe-healthcare-diligence-hero.jpg"
         }
       ]}
       ctaTitle="Ready to separate cleanly and fast?"

@@ -11,7 +11,7 @@ export default function RetailAssortmentOptimization() {
       industryLink="/industries/consumer-products"
       title="How a Retailer Lifted Sales 12% by Tailoring Each Store's Range"
       subtitle="Every store carried the same products regardless of who shopped there — so items that flew off the shelves in one neighbourhood gathered dust in another. Matching the range to the customer changed that."
-      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroImage="/images/cases/retail-assortment-optimization-hero.jpg"
       metrics={[
         { value: "12%", label: "Sales Lift" },
         { value: "15%", label: "Less Inventory" },
@@ -111,14 +111,14 @@ export default function RetailAssortmentOptimization() {
           metric: "40%",
           label: "less inventory",
           link: "/cases/consumer-electronics-demand-optimization",
-          image: "/images/capabilities/cap-conference-data.jpg"
+          image: "/images/cases/consumer-electronics-demand-optimization-hero.jpg"
         },
         {
           title: "Sharper Demand Forecasting for a Food and Beverage Maker",
           metric: "30%",
           label: "better forecasting",
           link: "/cases/food-beverage-demand-forecasting",
-          image: "/images/capabilities/cap-food.jpg"
+          image: "/images/cases/food-beverage-demand-forecasting-hero.jpg"
         }
       ]}
       ctaTitle="Ready to stock each store for its own customers?"

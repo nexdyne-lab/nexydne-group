@@ -11,7 +11,7 @@ export default function HealthSystemBoomi() {
       industryLink="/industries/healthcare"
       title="How a Health System United 12 Systems Behind One API Layer"
       subtitle="Registration, claims, and analytics each ran on their own systems that didn't share data cleanly. A unified integration platform made them one orchestrated source of truth."
-      heroImage="/case-medical-collaboration.9602cc8c.jpg"
+      heroImage="/images/cases/health-system-boomi-hero.jpg"
       metrics={[
         { value: "12", label: "Systems Unified" },
         { value: "One", label: "API Layer" },
@@ -54,8 +54,8 @@ export default function HealthSystemBoomi() {
       quoteAuthor="VP of Information Technology"
       quoteRole="Regional health system"
       relatedStudies={[
-        { title: "How a National Retailer Cut Data-Pipeline Failures by 84%", metric: "84%", label: "fewer pipeline failures", link: "/cases/retail-data-pipeline-reliability", image: "/images/capabilities/cap-retail-data.jpg" },
-        { title: "How an Insurer Moved 1,400 Pipelines to the Cloud Without the Business Noticing", metric: "1,400", label: "pipelines migrated to cloud", link: "/cases/insurer-pipeline-migration", image: "/images/industries/fin-monitors.jpg" }
+        { title: "How a National Retailer Cut Data-Pipeline Failures by 84%", metric: "84%", label: "fewer pipeline failures", link: "/cases/retail-data-pipeline-reliability", image: "/images/cases/retail-data-pipeline-reliability-hero.jpg" },
+        { title: "How an Insurer Moved 1,400 Pipelines to the Cloud Without the Business Noticing", metric: "1,400", label: "pipelines migrated to cloud", link: "/cases/insurer-pipeline-migration", image: "/images/cases/insurer-pipeline-migration-hero.jpg" }
       ]}
       ctaTitle="Do your core systems each hold a different version of the truth?"
       ctaDescription="Let's unify them behind one orchestrated API layer with a single source of truth."

@@ -11,7 +11,7 @@ export default function FashionRetailTransformation() {
       industryLink="/industries/retail"
       title="How a Regional Fashion Retailer Grew Its Online Sales by 85%"
       subtitle="A well-known apparel chain was losing a generation of digital-first shoppers to online-only rivals. Bringing its stores and website together into a single experience changed how — and how much — its customers bought."
-      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroImage="/images/cases/fashion-retail-digital-transformation-hero.jpg"
       metrics={[
         { value: "85%", label: "E-Commerce Growth" },
         { value: "32%", label: "Higher Conversion" },
@@ -111,7 +111,7 @@ export default function FashionRetailTransformation() {
           metric: "35%",
           label: "less fresh-food waste",
           link: "/cases/grocery-demand-forecasting",
-          image: "/images/capabilities/cap-food.jpg"
+          image: "/images/cases/grocery-demand-forecasting-hero.jpg"
         },
         {
           title: "Turning a Stale Loyalty Program Into Growth",

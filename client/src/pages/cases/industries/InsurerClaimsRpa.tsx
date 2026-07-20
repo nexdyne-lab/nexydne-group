@@ -11,7 +11,7 @@ export default function InsurerClaimsRpa() {
       industryLink="/industries/insurance"
       title="How an Insurer Cut Claims Handle Time 68% With Unattended Bots"
       subtitle="Skilled adjusters were spending their days keying and routing routine claims instead of adjudicating the complex ones. A fleet of bots took over the repetitive intake work."
-      heroImage="/images/industries/fin-handshake-city.jpg"
+      heroImage="/images/cases/insurer-claims-rpa-hero.jpg"
       metrics={[
         { value: "68%", label: "Less Handle Time" },
         { value: "42", label: "Unattended Bots" },
@@ -54,7 +54,7 @@ export default function InsurerClaimsRpa() {
       quoteAuthor="VP of Claims"
       quoteRole="Insurance carrier"
       relatedStudies={[
-        { title: "How a Provider Network Reclaimed 90,000 Hours a Year on Eligibility Checks", metric: "90,000", label: "hours reclaimed a year", link: "/cases/healthcare-eligibility-rpa", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { title: "How a Provider Network Reclaimed 90,000 Hours a Year on Eligibility Checks", metric: "90,000", label: "hours reclaimed a year", link: "/cases/healthcare-eligibility-rpa", image: "/images/cases/healthcare-eligibility-rpa-hero.jpg" },
         { title: "How a Global Bank Captured $400M in Value by Reorganizing Around Customer Journeys", metric: "$400M", label: "in annual value", link: "/cases/bank-operating-model-transformation", image: "/images/industries/fin-monitors.jpg" }
       ]}
       ctaTitle="Are your experts stuck on repetitive work?"

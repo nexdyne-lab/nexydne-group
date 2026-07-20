@@ -54,7 +54,7 @@ export default function StreamingNativeRewrite() {
       quoteAuthor="VP of Product"
       quoteRole="Streaming media service"
       relatedStudies={[
-        { title: "How a Medical Device App Hit Sub-100ms Response With Pure Kotlin Native", metric: "<100ms", label: "response time", link: "/cases/medical-native-kotlin", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { title: "How a Medical Device App Hit Sub-100ms Response With Pure Kotlin Native", metric: "<100ms", label: "response time", link: "/cases/medical-native-kotlin", image: "/images/cases/medical-native-kotlin-hero.jpg" },
         { title: "How an Enterprise Software Operator Lifted Realized ASP 19% Without Losing a Renewal", metric: "19%", label: "higher realized ASP", link: "/cases/enterprise-software-pricing-rebuild", image: "/images/capabilities/cap-coder.jpg" }
       ]}
       ctaTitle="Is a slow app losing users at the door?"

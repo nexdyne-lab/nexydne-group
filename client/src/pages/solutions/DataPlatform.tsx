@@ -112,7 +112,7 @@ export default function DataPlatform() {
       title: "Asset Manager Stands Up Real-Time Data Mesh Across Five Domains",
       description:
         "Domain-owned Snowflake data products with federated governance let portfolio teams ship analytics in days instead of quarters.",
-      image: "/images/case-data-asset.jpg",
+      image: "/images/industries/fin-handshake-city.jpg",
       link: "/cases/asset-manager-data-mesh",
     },
   ];

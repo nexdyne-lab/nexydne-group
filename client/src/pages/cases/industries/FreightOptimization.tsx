@@ -111,7 +111,7 @@ export default function FreightOptimization() {
           metric: "45%",
           label: "higher productivity",
           link: "/cases/warehouse-optimization",
-          image: "/images/industries/retail-warehouse.jpg"
+          image: "/images/cases/warehouse-optimization-hero.jpg"
         },
         {
           title: "Making Every Delivery Route Pay",

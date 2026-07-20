@@ -11,7 +11,7 @@ export function HealthcareCloudMigration() {
       industryLink="/industries/healthcare"
       title="How a Health-Tech Platform Reached 99.99% Uptime After Migrating to AWS"
       subtitle="A 240-employee healthcare SaaS company moved off legacy on-prem infrastructure to a multi-region AWS architecture — achieving enterprise-grade reliability and a 65% cost reduction in nine months."
-      heroImage="/case-medical-collaboration.9602cc8c.jpg"
+      heroImage="/images/cases/healthcare-cloud-migration-hero.jpg"
       metrics={[
         { value: "99.99%", label: "Uptime Achieved" },
         { value: "65%", label: "Lower Infrastructure Cost" },
@@ -105,14 +105,14 @@ export function HealthcareCloudMigration() {
           metric: "40%",
           label: "less admin overhead",
           link: "/cases/healthcare-provider",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-provider-hero.jpg"
         },
         {
           title: "Launching a Patient Portal That Cut Admin Calls 65%",
           metric: "65%",
           label: "fewer admin calls",
           link: "/cases/healthcare-patient-portal",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-patient-portal-hero.jpg"
         }
       ]}
       ctaTitle="Ready to modernize without downtime?"

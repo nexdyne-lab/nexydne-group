@@ -288,7 +288,7 @@ export default function CaseStudyBankCoreModernization() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 sm:p-6 md:p-8 lg:gap-5 sm:p-7 md:p-5 sm:p-7 md:p-10">
             {[
               {
-                image: "/images/industries/fin-trader.jpg",
+                image: "/images/cases/healthcare-ehr-modernization-hero.jpg",
                 category: "Healthcare",
                 title: "Interoperable EHR Platform",
                 description: "Unifying patient data across 12 locations for real-time access.",

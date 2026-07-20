@@ -11,7 +11,7 @@ export default function CapitalRaiseSeriesB() {
       industryLink="/industries/technology-media-telecom"
       title="How a Software Company Closed Its Growth Round Faster, on Better Terms, and Gave Up Less"
       subtitle="A growing software company had a genuinely good business but a financial story investors could pick apart. Rebuilding the model and sharpening the narrative changed the outcome of the raise itself."
-      heroImage="/images/industries/deal-handshake.jpg"
+      heroImage="/images/cases/capital-raise-series-b-hero.jpg"
       metrics={[
         { value: "1.3x", label: "Over Target Raised" },
         { value: "6", label: "Weeks to Close" },
@@ -118,7 +118,7 @@ export default function CapitalRaiseSeriesB() {
           metric: "$18M",
           label: "added EBITDA",
           link: "/cases/pe-industrial-transformation",
-          image: "/images/industries/transport-traffic.jpg"
+          image: "/images/cases/pe-industrial-transformation-hero.jpg"
         }
       ]}
       ctaTitle="Ready to raise on your own terms?"

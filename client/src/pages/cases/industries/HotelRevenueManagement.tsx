@@ -11,7 +11,7 @@ export default function HotelRevenueManagement() {
       industryLink="/industries/travel-hospitality"
       title="How a Regional Hotel Group Lifted Revenue per Room by 18%"
       subtitle="A hotel group was pricing its rooms by hand and leaving money on the table almost every night. Letting prices respond to real demand, property by property, changed the economics of the whole portfolio."
-      heroImage="/images/industries/travel-city-twilight.jpg"
+      heroImage="/images/cases/hotel-revenue-transformation-hero.jpg"
       metrics={[
         { value: "18%", label: "More Revenue per Room" },
         { value: "$14M", label: "Added Revenue a Year" },
@@ -111,14 +111,14 @@ export default function HotelRevenueManagement() {
           metric: "40%",
           label: "more active members",
           link: "/cases/airline-loyalty-redesign",
-          image: "/images/industries/transport-bridge.jpg"
+          image: "/images/cases/airline-loyalty-redesign-hero.jpg"
         },
         {
           title: "Restoring Personal Service Across a Hotel Group",
           metric: "+25pts",
           label: "guest recommendation score",
           link: "/cases/hotel-guest-experience",
-          image: "/images/industries/city-night.jpg"
+          image: "/images/cases/hotel-guest-experience-hero.jpg"
         }
       ]}
       ctaTitle="Ready to price for the demand you already have?"

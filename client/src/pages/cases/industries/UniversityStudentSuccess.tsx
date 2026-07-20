@@ -11,7 +11,7 @@ export default function UniversityStudentSuccess() {
       industryLink="/industries/education"
       title="How a Regional University Helped 18% More Students Reach Graduation"
       subtitle="A regional public university was losing capable students long before they earned a degree — usually before anyone noticed they were struggling. Seeing trouble early, and reaching out in time, changed the odds for thousands of them."
-      heroImage="/images/industries/edu-whiteboard.jpg"
+      heroImage="/images/cases/university-student-success-hero.jpg"
       metrics={[
         { value: "18%", label: "Higher Graduation Rate" },
         { value: "85%", label: "Early-Warning Accuracy" },
@@ -118,7 +118,7 @@ export default function UniversityStudentSuccess() {
           metric: "25%",
           label: "better learning outcomes",
           link: "/cases/k12-adaptive-learning",
-          image: "/images/industries/team-strategy-board.jpg"
+          image: "/images/cases/k12-adaptive-learning-hero.jpg"
         }
       ]}
       ctaTitle="Ready to help more of your students graduate?"

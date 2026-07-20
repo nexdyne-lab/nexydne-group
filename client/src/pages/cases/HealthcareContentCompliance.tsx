@@ -112,7 +112,7 @@ export function HealthcareContentCompliance() {
           metric: "40%",
           label: "less admin overhead",
           link: "/cases/healthcare-provider",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-provider-hero.jpg"
         }
       ]}
       ctaTitle="Ready to make compliance the default?"

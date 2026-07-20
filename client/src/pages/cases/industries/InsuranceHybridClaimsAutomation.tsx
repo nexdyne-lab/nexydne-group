@@ -11,7 +11,7 @@ export default function InsuranceHybridClaimsAutomation() {
       industryLink="/industries/insurance"
       title="How a P&C Carrier Moved From 4% to 38% Straight-Through Claims"
       subtitle="Years of bolting robots onto a broken process had barely moved the needle. The problem was the pattern, not the effort — claims needed more than RPA to flow through on their own."
-      heroImage="/images/industries/fin-handshake-city.jpg"
+      heroImage="/images/cases/insurance-hybrid-claims-automation-hero.jpg"
       metrics={[
         { value: "4→38%", label: "Straight-Through Rate" },
         { value: "9 Mo", label: "To the Result" },
@@ -54,7 +54,7 @@ export default function InsuranceHybridClaimsAutomation() {
       quoteAuthor="SVP of Claims"
       quoteRole="National P&C carrier"
       relatedStudies={[
-        { title: "How a Health Plan Turned 12 Orphaned Bots Into 140 Working Automations", metric: "12→140", label: "automations in 18 months", link: "/cases/payer-automation-coe-scale", image: "/case-healthcare-team.5797392b.jpg" },
+        { title: "How a Health Plan Turned 12 Orphaned Bots Into 140 Working Automations", metric: "12→140", label: "automations in 18 months", link: "/cases/payer-automation-coe-scale", image: "/images/cases/payer-automation-coe-scale-hero.jpg" },
         { title: "How a Specialty Distributor Cut Order Cycle Time From 9 Days to Under Six", metric: "41%", label: "faster order cycle", link: "/cases/distribution-order-fulfillment-redesign", image: "/images/capabilities/cap-warehouse-robot.jpg" }
       ]}
       ctaTitle="Has pure RPA stalled your automation?"

@@ -111,7 +111,7 @@ export default function AutomotiveSmartFactory() {
           metric: "92%",
           label: "defect prediction accuracy",
           link: "/cases/semiconductor-quality-prediction",
-          image: "/images/industries/mfg-robot-arm.jpg"
+          image: "/images/cases/semiconductor-quality-prediction-hero.jpg"
         },
         {
           title: "Turning an Equipment Maker into a Services Business",

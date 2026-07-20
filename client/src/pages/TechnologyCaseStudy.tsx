@@ -112,7 +112,7 @@ export function TechnologyCaseStudy() {
           metric: "50M",
           label: "daily transactions",
           link: "/cases/fintech-microservices",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/fintech-microservices-hero.jpg"
         }
       ]}
       ctaTitle="Ready to ship with confidence?"

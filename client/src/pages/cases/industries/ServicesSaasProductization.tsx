@@ -11,7 +11,7 @@ export default function ServicesSaasProductization() {
       industryLink="/industries"
       title="How a Professional-Services Firm Turned Its Methodology Into Recurring Revenue"
       subtitle="The firm's expertise was trapped in one-off projects that reset to zero each quarter. Productizing its methodology into software converted hard-won know-how into predictable, recurring revenue."
-      heroImage="/images/capabilities/cap-coder.jpg"
+      heroImage="/images/cases/services-saas-productization-hero.jpg"
       metrics={[
         { value: "35%", label: "Revenue Now Recurring" },
         { value: "Project→SaaS", label: "Revenue Model Shift" },
@@ -55,7 +55,7 @@ export default function ServicesSaasProductization() {
       quoteRole="Professional-services firm"
       relatedStudies={[
         { title: "How a Regional Manufacturer Cut Order Processing Time by 78%", metric: "78%", label: "faster order processing", link: "/cases/logistics-shipment-automation", image: "/images/capabilities/cap-robot-factory.jpg" },
-        { title: "How a Professional-Services Firm Won Back Its Leadership Position", metric: "40%", label: "faster delivery cycle", link: "/cases/saas-customer-onboarding", image: "/images/capabilities/cap-conference-data.jpg" }
+        { title: "How a Professional-Services Firm Won Back Its Leadership Position", metric: "40%", label: "faster delivery cycle", link: "/cases/saas-customer-onboarding", image: "/images/cases/saas-customer-onboarding-hero.jpg" }
       ]}
       ctaTitle="Is your expertise trapped in one-off projects?"
       ctaDescription="Let's validate and productize your methodology into predictable recurring revenue."

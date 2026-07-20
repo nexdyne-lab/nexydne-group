@@ -11,7 +11,7 @@ export default function HealthcareEligibilityRpa() {
       industryLink="/industries/healthcare"
       title="How a Provider Network Reclaimed 90,000 Hours a Year on Eligibility Checks"
       subtitle="Verifying a patient's insurance eligibility meant staff toggling between systems through a multi-step manual process. Bots and document automation collapsed it into a single screen."
-      heroImage="/case-medical-collaboration.9602cc8c.jpg"
+      heroImage="/images/cases/healthcare-eligibility-rpa-hero.jpg"
       metrics={[
         { value: "90,000", label: "Hours Reclaimed / Yr" },
         { value: "Single", label: "Screen" },

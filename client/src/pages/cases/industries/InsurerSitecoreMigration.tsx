@@ -11,7 +11,7 @@ export default function InsurerSitecoreMigration() {
       industryLink="/industries/insurance"
       title="How a National Insurer Halved Publishing Time With a Composable Migration"
       subtitle="A legacy monolithic CMS made every content change slow and risky. A staged migration to Sitecore's composable stack cut publishing cycle time by more than half."
-      heroImage="/images/industries/fin-handshake-city.jpg"
+      heroImage="/images/cases/insurer-sitecore-migration-hero.jpg"
       metrics={[
         { value: "50%+", label: "Faster Publishing" },
         { value: "12 Mo", label: "Staged Migration" },

@@ -104,7 +104,7 @@ export default function DataTraining() {
       title: "Regional Bank Trains 600 Employees and Triples Self-Service Reporting",
       description:
         "A tiered literacy program reached executives, analysts, and front-line staff — and reduced ad-hoc report requests to the data team by more than 60%.",
-      image: "/images/case-data-training-bank.jpg",
+      image: "/images/cases/bank-data-literacy-hero.jpg",
       link: "/cases/bank-data-literacy",
     },
     {
@@ -112,7 +112,7 @@ export default function DataTraining() {
       title: "Health System Builds an Internal Citizen Data Scientist Bench",
       description:
         "A 12-week immersive trained 80 clinicians and operations leads to build governed models, freeing the central data team to tackle higher-leverage work.",
-      image: "/images/case-data-training-health.jpg",
+      image: "/case-medical-collaboration.9602cc8c.jpg",
       link: "/cases/health-citizen-data-scientist",
     },
   ];

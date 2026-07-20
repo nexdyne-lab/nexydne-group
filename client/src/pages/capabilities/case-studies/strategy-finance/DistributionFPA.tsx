@@ -112,7 +112,7 @@ export function DistributionFPA() {
           metric: "60%",
           label: "smaller IT backlog",
           link: "/cases/financial-services-sql-bootcamp",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/financial-services-sql-bootcamp-hero.jpg"
         }
       ]}
       ctaTitle="Ready to close faster and see clearly?"

@@ -111,14 +111,14 @@ export default function FinancialFraudDetection() {
           metric: "$24M",
           label: "in new revenue",
           link: "/cases/bank-cross-sell",
-          image: "/images/industries/fin-trader.jpg"
+          image: "/images/cases/bank-cross-sell-hero.jpg"
         },
         {
           title: "Cutting Wealth Onboarding from Weeks to Days",
           metric: "60%",
           label: "faster onboarding",
           link: "/cases/wealth-onboarding",
-          image: "/images/industries/fin-handshake-city.jpg"
+          image: "/images/cases/wealth-onboarding-hero.jpg"
         }
       ]}
       ctaTitle="Ready to catch fraud before the money moves?"

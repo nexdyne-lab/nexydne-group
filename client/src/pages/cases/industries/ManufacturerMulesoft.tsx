@@ -54,8 +54,8 @@ export default function ManufacturerMulesoft() {
       quoteAuthor="VP of IT"
       quoteRole="Industrial manufacturer"
       relatedStudies={[
-        { title: "How a Health System United 12 Systems Behind One API Layer", metric: "12", label: "systems unified behind one API layer", link: "/cases/health-system-boomi", image: "/case-medical-collaboration.9602cc8c.jpg" },
-        { title: "How a National Retailer Cut Data-Pipeline Failures by 84%", metric: "84%", label: "fewer pipeline failures", link: "/cases/retail-data-pipeline-reliability", image: "/images/capabilities/cap-retail-data.jpg" }
+        { title: "How a Health System United 12 Systems Behind One API Layer", metric: "12", label: "systems unified behind one API layer", link: "/cases/health-system-boomi", image: "/images/cases/health-system-boomi-hero.jpg" },
+        { title: "How a National Retailer Cut Data-Pipeline Failures by 84%", metric: "84%", label: "fewer pipeline failures", link: "/cases/retail-data-pipeline-reliability", image: "/images/cases/retail-data-pipeline-reliability-hero.jpg" }
       ]}
       ctaTitle="Is a tangle of point-to-point integrations slowing you down?"
       ctaDescription="Let's move to an API-led architecture that makes integration fast, safe, and reusable."

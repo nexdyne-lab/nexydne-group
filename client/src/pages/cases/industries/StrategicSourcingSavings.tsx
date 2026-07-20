@@ -111,7 +111,7 @@ export default function StrategicSourcingSavings() {
           metric: "Less",
           label: "overtime and understaffing",
           link: "/cases/workforce-scheduling-optimization",
-          image: "/images/industries/people-commute.jpg"
+          image: "/images/cases/workforce-scheduling-optimization-hero.jpg"
         },
         {
           title: "Lifting plant productivity by 40% at a vehicle maker",

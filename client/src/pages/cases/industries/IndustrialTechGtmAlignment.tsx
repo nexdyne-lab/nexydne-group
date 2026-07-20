@@ -54,7 +54,7 @@ export default function IndustrialTechGtmAlignment() {
       quoteAuthor="VP of Revenue"
       quoteRole="Industrial technology firm"
       relatedStudies={[
-        { title: "How a DTC Operator Lifted New-Customer Margin 38% Without Spending a Dollar More", metric: "38%", label: "higher contribution margin", link: "/cases/dtc-channel-reallocation", image: "/images/capabilities/cap-retail-apparel.jpg" },
+        { title: "How a DTC Operator Lifted New-Customer Margin 38% Without Spending a Dollar More", metric: "38%", label: "higher contribution margin", link: "/cases/dtc-channel-reallocation", image: "/images/cases/dtc-channel-reallocation-hero.jpg" },
         { title: "How a Growth-Stage SaaS Team Cut a Quarter of Its Wasted Spend by Fixing Attribution", metric: "24%", label: "less wasted spend", link: "/cases/saas-attribution-rebuild", image: "/images/industries/tech-datacenter.jpg" }
       ]}
       ctaTitle="Are deals leaking at your sales-marketing handoff?"

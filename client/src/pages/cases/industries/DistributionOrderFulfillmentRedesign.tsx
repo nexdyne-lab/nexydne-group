@@ -54,7 +54,7 @@ export default function DistributionOrderFulfillmentRedesign() {
       quoteAuthor="VP of Operations"
       quoteRole="Specialty distributor"
       relatedStudies={[
-        { title: "How a Hospital System Freed a Quarter of Its Bed-Day Capacity by Redesigning Discharge", metric: "28%", label: "more bed-day capacity", link: "/cases/hospital-discharge-workflow-redesign", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { title: "How a Hospital System Freed a Quarter of Its Bed-Day Capacity by Redesigning Discharge", metric: "28%", label: "more bed-day capacity", link: "/cases/hospital-discharge-workflow-redesign", image: "/images/cases/hospital-discharge-workflow-redesign-hero.jpg" },
         { title: "How a Manufacturer Cut Production Cycle Time by 22% Without New Equipment", metric: "22%", label: "faster production cycle", link: "/cases/manufacturing-optimization", image: "/images/capabilities/cap-robot-factory.jpg" }
       ]}
       ctaTitle="Do you know where your cycle time actually goes?"

@@ -54,7 +54,7 @@ export default function BankMobileModernization() {
       quoteAuthor="VP of Digital Channels"
       quoteRole="Regional bank"
       relatedStudies={[
-        { title: "How a Specialty Insurer Replaced a 22-Year-Old Policy System Without an Outage", metric: "Zero", label: "business-impacting outages", link: "/cases/insurer-policy-strangler", image: "/images/industries/fin-handshake-city.jpg" },
+        { title: "How a Specialty Insurer Replaced a 22-Year-Old Policy System Without an Outage", metric: "Zero", label: "business-impacting outages", link: "/cases/insurer-policy-strangler", image: "/images/cases/insurer-policy-strangler-hero.jpg" },
         { title: "How a Logistics Provider Replaced Three Legacy Tools With One Custom TMS", metric: "58%", label: "faster load planning", link: "/cases/logistics-custom-tms", image: "/images/capabilities/cap-warehouse-robot.jpg" }
       ]}
       ctaTitle="Has a legacy mobile codebase stalled your roadmap?"

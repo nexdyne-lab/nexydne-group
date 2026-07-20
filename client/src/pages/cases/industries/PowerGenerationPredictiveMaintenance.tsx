@@ -111,14 +111,14 @@ export default function PowerGenerationPredictiveMaintenance() {
           metric: "45%",
           label: "shorter outages",
           link: "/cases/utility-grid-modernization",
-          image: "/images/industries/energy-solar.jpg"
+          image: "/images/cases/utility-grid-modernization-hero.jpg"
         },
         {
           title: "Sharper Generation Forecasts for a Renewables Developer",
           metric: "25%",
           label: "better forecast accuracy",
           link: "/cases/renewable-energy-forecasting",
-          image: "/images/industries/energy-wind.jpg"
+          image: "/images/cases/renewable-energy-forecasting-hero.jpg"
         }
       ]}
       ctaTitle="Ready to see failures before they cost you?"

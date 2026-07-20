@@ -11,7 +11,7 @@ export default function WealthDigitalAdvisoryMvp() {
       industryLink="/industries/financial-services"
       title="How a Wealth Manager Saved Nine Months of Build by Validating in 90 Days"
       subtitle="The plan was to invest heavily in a digital advisory product built to a fixed feature list. Testing the core experience under controlled exposure proved what was worth building — and what was not."
-      heroImage="/images/industries/fin-handshake-city.jpg"
+      heroImage="/images/cases/wealth-digital-advisory-mvp-hero.jpg"
       metrics={[
         { value: "90 Days", label: "To Validation" },
         { value: "2 of 4", label: "Features Killed" },
@@ -54,8 +54,8 @@ export default function WealthDigitalAdvisoryMvp() {
       quoteAuthor="Head of Digital"
       quoteRole="Wealth manager"
       relatedStudies={[
-        { title: "How a Heritage Brand Launched an $18M DTC Business Without Hurting Wholesale", metric: "$18M", label: "first-year DTC revenue", link: "/cases/consumer-dtc-launch", image: "/images/capabilities/cap-retail-apparel.jpg" },
-        { title: "How a B2B Distributor Moved a Third of Its Order Entry Off the Sales Desk", metric: "31%", label: "of order entry self-served", link: "/cases/b2b-ecommerce-launch", image: "/images/capabilities/cap-warehouse-robot.jpg" }
+        { title: "How a Heritage Brand Launched an $18M DTC Business Without Hurting Wholesale", metric: "$18M", label: "first-year DTC revenue", link: "/cases/consumer-dtc-launch", image: "/images/cases/consumer-dtc-launch-hero.jpg" },
+        { title: "How a B2B Distributor Moved a Third of Its Order Entry Off the Sales Desk", metric: "31%", label: "of order entry self-served", link: "/cases/b2b-ecommerce-launch", image: "/images/cases/b2b-ecommerce-launch-hero.jpg" }
       ]}
       ctaTitle="About to build a product on assumptions?"
       ctaDescription="Let's validate the core and the feature set with real users before you commit the capital."

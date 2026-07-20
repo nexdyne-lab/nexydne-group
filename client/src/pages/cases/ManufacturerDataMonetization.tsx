@@ -111,7 +111,7 @@ export function ManufacturerDataMonetization() {
           metric: "$13.3M",
           label: "prioritized value",
           link: "/cases/insurance-analytics-backlog",
-          image: "/case-insurance-office.f039a4a1.jpg"
+          image: "/images/cases/insurance-analytics-backlog-hero.jpg"
         }
       ]}
       ctaTitle="Ready to monetize your data?"

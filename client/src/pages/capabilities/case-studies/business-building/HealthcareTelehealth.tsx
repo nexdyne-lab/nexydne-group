@@ -105,14 +105,14 @@ export function HealthcareTelehealth() {
           metric: "65%",
           label: "fewer admin calls",
           link: "/cases/healthcare-patient-portal",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-patient-portal-hero.jpg"
         },
         {
           title: "Reducing Patient Wait Times 35% With Predictive Analytics",
           metric: "35%",
           label: "shorter waits",
           link: "/cases/healthcare-provider-ai",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-provider-ai-hero.jpg"
         }
       ]}
       ctaTitle="Ready to expand access without expanding facilities?"

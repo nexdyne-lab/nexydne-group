@@ -11,7 +11,7 @@ export function InsuranceClaimsPortal() {
       industryLink="/industries/insurance"
       title="How an Insurer Launched a Digital Claims Portal in 8 Weeks"
       subtitle="A regional insurer replaced paper-based claims with a Mendix low-code portal — cutting processing time from 14 days to 2 hours and improving customer satisfaction by 42 points."
-      heroImage="/case-insurance-office.f039a4a1.jpg"
+      heroImage="/images/cases/insurance-claims-portal-hero.jpg"
       metrics={[
         { value: "86%", label: "Digital Claims Adoption" },
         { value: "2 hrs", label: "Processing Time (from 14 days)" },

@@ -54,8 +54,8 @@ export default function LogisticsScale() {
       quoteAuthor="Chief Executive Officer"
       quoteRole="Logistics company"
       relatedStudies={[
-        { title: "How a Retailer Built a 360° Customer View Across 50+ Touchpoints", metric: "360°", label: "customer view", link: "/cases/retail-omnichannel", image: "/images/capabilities/cap-retail-data.jpg" },
-        { title: "How a Wealth Manager Cut Client Onboarding Time by 80%", metric: "80%", label: "faster client onboarding", link: "/cases/wealth-management-onboarding", image: "/images/industries/fin-handshake-city.jpg" }
+        { title: "How a Retailer Built a 360° Customer View Across 50+ Touchpoints", metric: "360°", label: "customer view", link: "/cases/retail-omnichannel", image: "/images/cases/retail-omnichannel-hero.jpg" },
+        { title: "How a Wealth Manager Cut Client Onboarding Time by 80%", metric: "80%", label: "faster client onboarding", link: "/cases/wealth-management-onboarding", image: "/images/cases/wealth-management-onboarding-hero.jpg" }
       ]}
       ctaTitle="Is rapid growth straining your foundation?"
       ctaDescription="Let's make the technology and organizational decisions that let you scale without breaking."

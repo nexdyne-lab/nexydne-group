@@ -104,7 +104,7 @@ export default function Chatbots() {
       title: "National Retailer Deflects 68% of Support Tickets with a Hybrid Bot",
       description:
         "A scripted-plus-LLM chatbot handled order status, returns, and store hours, freeing live agents for high-value conversations.",
-      image: "/images/case-chatbot-retail.jpg",
+      image: "/images/capabilities/cap-retail-data.jpg",
       link: "/cases/retail-chatbot-deflection",
     },
     {
@@ -112,7 +112,7 @@ export default function Chatbots() {
       title: "Regional Bank Books 4x More Demos with a Lead-Gen Chatbot",
       description:
         "An on-site qualification bot turned anonymous traffic into qualified pipeline by routing intent in under thirty seconds.",
-      image: "/images/case-chatbot-bank.jpg",
+      image: "/images/cases/bank-chatbot-leadgen-hero.jpg",
       link: "/cases/bank-chatbot-leadgen",
     },
   ];

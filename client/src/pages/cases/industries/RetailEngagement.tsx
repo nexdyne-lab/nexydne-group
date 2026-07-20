@@ -11,7 +11,7 @@ export default function RetailEngagement() {
       industryLink="/industries/retail"
       title="How a Specialty Retailer Lifted Lifecycle Revenue 38% in Two Quarters"
       subtitle="Lifecycle marketing ran on static, one-size-fits-all drips and unreliable automation. Rebuilding the automation and personalizing the programs unlocked durable repeat-purchase behavior."
-      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroImage="/images/cases/retail-engagement-hero.jpg"
       metrics={[
         { value: "38%", label: "Higher Lifecycle Revenue" },
         { value: "2 Qtrs", label: "To the Lift" },

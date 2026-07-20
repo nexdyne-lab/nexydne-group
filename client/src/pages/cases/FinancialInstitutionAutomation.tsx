@@ -11,7 +11,7 @@ export function FinancialInstitutionAutomation() {
       industryLink="/industries/financial-services"
       title="How a Regional Bank Automated 90% of Its Loan Processing"
       subtitle="Intelligent document processing and workflow automation transformed lending operations — cutting standard decisions from 5–7 days to under 4 hours at 99.2% extraction accuracy, saving $12M a year."
-      heroImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/cases/financial-institution-automation-hero.jpg"
       metrics={[
         { value: "90%", label: "Process Automation" },
         { value: "85%", label: "Less Processing Time" },
@@ -112,7 +112,7 @@ export function FinancialInstitutionAutomation() {
           metric: "50M",
           label: "daily transactions",
           link: "/cases/fintech-microservices",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/fintech-microservices-hero.jpg"
         }
       ]}
       ctaTitle="Ready to automate your lending?"

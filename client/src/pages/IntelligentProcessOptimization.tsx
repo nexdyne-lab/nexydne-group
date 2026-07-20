@@ -140,7 +140,7 @@ export default function IntelligentProcessOptimization() {
         "A Bold New Strategy Restores a Firm to a Leadership Position",
       description:
         "Its holistic approach to simplification, execution discipline, and digitalization has proved transformational.",
-      image: "/images/case-saas.jpg",
+      image: "/images/cases/saas-customer-onboarding-hero.jpg",
       link: "/cases/saas-customer-onboarding",
     },
   ];

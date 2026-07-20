@@ -11,7 +11,7 @@ export default function SecurityComplianceHardening() {
       industryLink="/industries/financial-services"
       title="Turning the Annual Audit Scramble Into a Non-Event for a Financial Services Firm"
       subtitle="A financial services firm treated security and compliance as a periodic fire drill — every audit a scramble, gaps found late, controls proven by hand. Building those controls into how the business actually runs made the firm audit-ready every day."
-      heroImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/cases/security-compliance-hardening-hero.jpg"
       metrics={[
         { value: "Audit-ready", label: "Every Day, Not Once a Year" },
         { value: "80%", label: "Less Audit Prep Time" },

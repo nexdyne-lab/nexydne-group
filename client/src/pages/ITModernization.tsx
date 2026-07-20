@@ -383,7 +383,7 @@ export default function ITModernization() {
                 title: "Interoperable EHR Platform",
                 category: "Healthcare",
                 description: "Unifying patient data across 12 locations for real-time access.",
-                image: "/images/industries/meeting-topview.jpg",
+                image: "/images/cases/healthcare-ehr-modernization-hero.jpg",
                 link: "/cases/healthcare-ehr-modernization"
               },
               {

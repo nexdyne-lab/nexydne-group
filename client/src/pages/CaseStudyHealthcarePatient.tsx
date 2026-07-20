@@ -369,7 +369,7 @@ export default function CaseStudyHealthcarePatient() {
                 industry: "Healthcare",
                 metric: "60%",
                 metricLabel: "Less admin work",
-                image: "/case-medical-collaboration.9602cc8c.jpg",
+                image: "/images/cases/hospital-workflow-automation-hero.jpg",
                 link: "/cases/hospital-workflow-automation"
               },
               {

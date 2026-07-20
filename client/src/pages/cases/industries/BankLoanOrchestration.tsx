@@ -11,7 +11,7 @@ export default function BankLoanOrchestration() {
       industryLink="/industries/financial-services"
       title="How a Bank Cut Loan Origination From 14 Days to 3"
       subtitle="Originating a loan meant threading twelve systems over two weeks, with people manually moving each application along. Orchestration with policy gates automated the flow while keeping control."
-      heroImage="/images/industries/fin-trader.jpg"
+      heroImage="/images/cases/bank-loan-orchestration-hero.jpg"
       metrics={[
         { value: "14 → 3", label: "Days to Originate" },
         { value: "12", label: "Systems Orchestrated" },
@@ -54,8 +54,8 @@ export default function BankLoanOrchestration() {
       quoteAuthor="Head of Lending"
       quoteRole="Bank"
       relatedStudies={[
-        { title: "How an Insurer Cut Claims Handle Time 68% With Unattended Bots", metric: "68%", label: "less handle time", link: "/cases/insurer-claims-rpa", image: "/images/industries/fin-handshake-city.jpg" },
-        { title: "How a Provider Network Reclaimed 90,000 Hours a Year on Eligibility Checks", metric: "90,000", label: "hours reclaimed a year", link: "/cases/healthcare-eligibility-rpa", image: "/case-medical-collaboration.9602cc8c.jpg" }
+        { title: "How an Insurer Cut Claims Handle Time 68% With Unattended Bots", metric: "68%", label: "less handle time", link: "/cases/insurer-claims-rpa", image: "/images/cases/insurer-claims-rpa-hero.jpg" },
+        { title: "How a Provider Network Reclaimed 90,000 Hours a Year on Eligibility Checks", metric: "90,000", label: "hours reclaimed a year", link: "/cases/healthcare-eligibility-rpa", image: "/images/cases/healthcare-eligibility-rpa-hero.jpg" }
       ]}
       ctaTitle="Is a multi-system process taking too long?"
       ctaDescription="Let's orchestrate the flow with policy gates and audit trails — faster without losing control."

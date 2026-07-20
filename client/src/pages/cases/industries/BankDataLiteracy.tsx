@@ -11,7 +11,7 @@ export default function BankDataLiteracy() {
       industryLink="/industries/financial-services"
       title="How a Regional Bank Tripled Self-Service Reporting by Training 600 People"
       subtitle="The data team was a bottleneck, buried under ad-hoc report requests it could never clear. Teaching the whole organization to answer its own questions changed who did the work."
-      heroImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/cases/bank-data-literacy-hero.jpg"
       metrics={[
         { value: "3x", label: "More Self-Service" },
         { value: "600", label: "Employees Trained" },

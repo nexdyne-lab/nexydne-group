@@ -11,7 +11,7 @@ export default function PublicSectorSustainedAdoption() {
       industryLink="/industries/public-sector"
       title="How a Federal Agency Made Its Process Gains Actually Stick"
       subtitle="The agency was good at redesigning processes and bad at keeping the improvements. A year later, staff had usually drifted back to the old workarounds. This time the gains held."
-      heroImage="/images/industries/city-night.jpg"
+      heroImage="/images/cases/public-sector-sustained-adoption-hero.jpg"
       metrics={[
         { value: "88%", label: "Of Gains Sustained" },
         { value: "12 Mo", label: "Past Go-Live" },
@@ -54,7 +54,7 @@ export default function PublicSectorSustainedAdoption() {
       quoteAuthor="Deputy Director of Operations"
       quoteRole="Federal agency"
       relatedStudies={[
-        { title: "How an Aerospace Manufacturer Unclogged Its Improvement Pipeline", metric: "8→71", label: "idea closures per quarter", link: "/cases/aerospace-ci-pipeline-rebuild", image: "/images/capabilities/cap-battery-factory.jpg" },
+        { title: "How an Aerospace Manufacturer Unclogged Its Improvement Pipeline", metric: "8→71", label: "idea closures per quarter", link: "/cases/aerospace-ci-pipeline-rebuild", image: "/images/cases/aerospace-ci-pipeline-rebuild-hero.jpg" },
         { title: "How a Retail Bank Took Continuous Improvement Out of the Center and Into the Branches", metric: "380", label: "practitioners trained", link: "/cases/retail-banking-ci-capability-scaling", image: "/images/industries/fin-trader.jpg" }
       ]}
       ctaTitle="Do your process gains fade within the year?"

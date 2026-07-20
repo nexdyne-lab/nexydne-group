@@ -111,14 +111,14 @@ export default function DigitalTwinPredictiveOperations() {
           metric: "60%",
           label: "resolved without a handoff",
           link: "/cases/agentic-ai-service-resolution",
-          image: "/images/industries/fin-trader.jpg"
+          image: "/images/cases/agentic-ai-service-resolution-hero.jpg"
         },
         {
           title: "Coding claims accurately with a model trained on its own records",
           metric: "40%",
           label: "fewer denials",
           link: "/cases/custom-model-clinical-coding",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/custom-model-clinical-coding-hero.jpg"
         }
       ]}
       ctaTitle="Ready to see your breakdowns coming?"

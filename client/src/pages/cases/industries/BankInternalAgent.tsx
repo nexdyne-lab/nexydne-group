@@ -54,7 +54,7 @@ export default function BankInternalAgent() {
       quoteAuthor="Chief Information Officer"
       quoteRole="Regional bank"
       relatedStudies={[
-        { title: "How a Regional Insurer Cut Inbound Calls 47% With a Self-Service Portal", metric: "47%", label: "lower inbound call volume", link: "/cases/insurance-portal", image: "/images/industries/fin-handshake-city.jpg" },
+        { title: "How a Regional Insurer Cut Inbound Calls 47% With a Self-Service Portal", metric: "47%", label: "lower inbound call volume", link: "/cases/insurance-portal", image: "/images/cases/insurance-portal-hero.jpg" },
         { title: "How a B2B Distributor Lifted Repeat Orders 23% With a Dealer Portal", metric: "23%", label: "higher repeat order rate", link: "/cases/distribution-dealer-portal", image: "/images/capabilities/cap-warehouse-robot.jpg" }
       ]}
       ctaTitle="Is your IT team buried in routine requests?"

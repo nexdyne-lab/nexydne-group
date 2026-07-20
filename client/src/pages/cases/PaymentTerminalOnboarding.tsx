@@ -112,7 +112,7 @@ export function PaymentTerminalOnboarding() {
           metric: "3.2x",
           label: "faster discovery",
           link: "/cases/logistics-product-access",
-          image: "/images/industries/retail-warehouse.jpg"
+          image: "/images/cases/logistics-product-access-hero.jpg"
         }
       ]}
       ctaTitle="Ready to make onboarding effortless?"

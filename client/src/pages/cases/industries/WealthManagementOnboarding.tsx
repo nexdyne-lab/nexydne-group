@@ -11,7 +11,7 @@ export default function WealthManagementOnboarding() {
       industryLink="/industries/financial-services"
       title="How a Wealth Manager Cut Client Onboarding Time by 80%"
       subtitle="Onboarding a new client meant weeks of paperwork and back-and-forth — a poor first impression for a high-touch relationship. A streamlined digital process changed that."
-      heroImage="/images/industries/fin-handshake-city.jpg"
+      heroImage="/images/cases/wealth-management-onboarding-hero.jpg"
       metrics={[
         { value: "80%", label: "Faster Onboarding" },
         { value: "Digital", label: "Process" },

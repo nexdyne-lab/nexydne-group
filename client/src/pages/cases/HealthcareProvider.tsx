@@ -11,7 +11,7 @@ export function HealthcareProvider() {
       industryLink="/industries/healthcare"
       title="How a Provider Network Cut Administrative Overhead 40% With Automation"
       subtitle="Intelligent automation streamlined patient-record management and insurance claims across 12 locations — cutting administrative overhead 40% while lifting data accuracy to 95%."
-      heroImage="/case-medical-collaboration.9602cc8c.jpg"
+      heroImage="/images/cases/healthcare-provider-hero.jpg"
       metrics={[
         { value: "40%", label: "Less Admin Overhead" },
         { value: "50%", label: "Faster Claim Processing" },
@@ -104,7 +104,7 @@ export function HealthcareProvider() {
           metric: "65%",
           label: "fewer admin calls",
           link: "/cases/healthcare-patient-portal",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-patient-portal-hero.jpg"
         },
         {
           title: "Automating KYC Compliance With RPA",

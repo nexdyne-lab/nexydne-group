@@ -11,7 +11,7 @@ export default function HospitalityPersonalizationExecution() {
       industryLink="/industries/travel-hospitality"
       title="How a Hospitality Loyalty Program Raised Booking Conversion 14%"
       subtitle="The team had the data to personalize and no way to act on it — every variant needed an engineering ticket. Rebuilding the pipeline took them from one experiment a quarter to nine."
-      heroImage="/images/industries/travel-city-twilight.jpg"
+      heroImage="/images/cases/hospitality-personalization-execution-hero.jpg"
       metrics={[
         { value: "14%", label: "Higher Conversion" },
         { value: "1 → 9", label: "Variants / Quarter" },
@@ -54,7 +54,7 @@ export default function HospitalityPersonalizationExecution() {
       quoteAuthor="VP of Loyalty Marketing"
       quoteRole="Hospitality loyalty program"
       relatedStudies={[
-        { title: "How a Specialty Retailer Lifted Lifecycle Revenue 38% in Two Quarters", metric: "38%", label: "higher lifecycle revenue", link: "/cases/retail-engagement", image: "/images/capabilities/cap-retail-apparel.jpg" },
+        { title: "How a Specialty Retailer Lifted Lifecycle Revenue 38% in Two Quarters", metric: "38%", label: "higher lifecycle revenue", link: "/cases/retail-engagement", image: "/images/cases/retail-engagement-hero.jpg" },
         { title: "How a B2B SaaS Company Cut Trial-to-Paid Lag by 44%", metric: "44%", label: "shorter trial-to-paid lag", link: "/cases/saas-onboarding", image: "/images/capabilities/cap-coder.jpg" }
       ]}
       ctaTitle="Can your team ship personalization without engineering?"

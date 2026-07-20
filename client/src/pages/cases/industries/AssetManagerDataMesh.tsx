@@ -55,7 +55,7 @@ export default function AssetManagerDataMesh() {
       quoteRole="Asset manager"
       relatedStudies={[
         { title: "How a Manufacturer Cut Its Reporting Cycle From 14 Days to 6 Hours", metric: "14 days → 6 hrs", label: "reporting cycle", link: "/cases/manufacturing-data-platform", image: "/images/industries/mfg-robot-arm.jpg" },
-        { title: "How a Health System Recovered $9M a Year by Fixing Its Data Quality", metric: "$9M", label: "recovered annually", link: "/cases/healthcare-data-quality", image: "/case-medical-collaboration.9602cc8c.jpg" }
+        { title: "How a Health System Recovered $9M a Year by Fixing Its Data Quality", metric: "$9M", label: "recovered annually", link: "/cases/healthcare-data-quality", image: "/images/cases/healthcare-data-quality-hero.jpg" }
       ]}
       ctaTitle="Is a central data team your bottleneck?"
       ctaDescription="Let's stand up a governed data mesh so domains ship analytics in days, not quarters."

@@ -118,7 +118,7 @@ export default function PlatformEngineeringDeveloperVelocity() {
           metric: "Audit-ready",
           label: "not a periodic scramble",
           link: "/cases/security-compliance-hardening",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/security-compliance-hardening-hero.jpg"
         }
       ]}
       ctaTitle="Ready to give your engineers their week back?"

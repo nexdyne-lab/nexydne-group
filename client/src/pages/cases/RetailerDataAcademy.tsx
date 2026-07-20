@@ -11,7 +11,7 @@ export function RetailerDataAcademy() {
       industryLink="/industries/retail"
       title="How a Retailer Built an Internal Data Academy to Train 120 Employees"
       subtitle="A custom, role-specific curriculum — from analytics fundamentals to ML deployment — trained employees across 6 departments in 12 months, taking data usage from 15% to 68% of the workforce."
-      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroImage="/images/cases/retailer-data-academy-hero.jpg"
       metrics={[
         { value: "120", label: "Employees Trained" },
         { value: "68%", label: "Using Data Daily (from 15%)" },
@@ -104,14 +104,14 @@ export function RetailerDataAcademy() {
           metric: "60%",
           label: "smaller IT backlog",
           link: "/cases/financial-services-sql-bootcamp",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/financial-services-sql-bootcamp-hero.jpg"
         },
         {
           title: "Training 200 Clinicians to Build Their Own Dashboards",
           metric: "45%",
           label: "better visibility",
           link: "/cases/healthcare-dashboard-training",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-dashboard-training-hero.jpg"
         }
       ]}
       ctaTitle="Ready to build a data-driven culture?"

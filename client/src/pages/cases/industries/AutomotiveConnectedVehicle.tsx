@@ -11,7 +11,7 @@ export default function AutomotiveConnectedVehicle() {
       industryLink="/industries/automotive"
       title="Turning Connected-Vehicle Data into Fewer Warranty Claims — and a New Revenue Line"
       subtitle="A vehicle manufacturer was already collecting data from the vehicles it sold, but doing almost nothing with it. Reading those signals cut its warranty bill and opened a service business it had never had before."
-      heroImage="/images/industries/tech-datacenter.jpg"
+      heroImage="/images/cases/automotive-connected-vehicle-hero.jpg"
       metrics={[
         { value: "30%", label: "Fewer Warranty Claims" },
         { value: "$9M", label: "New Annual Revenue" },
@@ -111,14 +111,14 @@ export default function AutomotiveConnectedVehicle() {
           metric: "45%",
           label: "fewer launch defects",
           link: "/cases/automotive-ev-transition",
-          image: "/images/industries/auto-robotics-team.jpg"
+          image: "/images/cases/automotive-ev-transition-hero.jpg"
         },
         {
           title: "De-Risking Parts Supply and Recall Traceability",
           metric: "80%",
           label: "fewer line stoppages",
           link: "/cases/automotive-supply-resilience",
-          image: "/images/industries/mfg-robot-arm.jpg"
+          image: "/images/cases/automotive-supply-resilience-hero.jpg"
         }
       ]}
       ctaTitle="Ready to put your vehicle data to work?"

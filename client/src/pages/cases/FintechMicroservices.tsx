@@ -11,7 +11,7 @@ export default function FintechMicroservices() {
       industryLink="/industries/financial-services"
       title="How PayStream Scaled to 50M Transactions a Day with Microservices"
       subtitle="A 190-employee fintech rebuilt its core platform with microservices and event-driven processing — scaling 8x while cutting P99 latency from 800ms to 45ms and deploying 10x more often."
-      heroImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/cases/fintech-microservices-hero.jpg"
       metrics={[
         { value: "50M", label: "Daily Transactions (8x)" },
         { value: "45ms", label: "P99 Latency (from 800ms)" },
@@ -104,7 +104,7 @@ export default function FintechMicroservices() {
           metric: "10x",
           label: "transaction capacity",
           link: "/cases/fintech-data-pipeline",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/fintech-data-pipeline-hero.jpg"
         },
         {
           title: "Launching a Credit Union Mobile App to 78% Adoption",

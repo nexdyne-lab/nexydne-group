@@ -54,7 +54,7 @@ export default function B2bDistributorDtcLaunch() {
       quoteAuthor="Chief Commercial Officer"
       quoteRole="B2B distributor"
       relatedStudies={[
-        { title: "How a Professional-Services Firm Turned Its Methodology Into Recurring Revenue", metric: "35%", label: "revenue now recurring", link: "/cases/services-saas-productization", image: "/images/capabilities/cap-coder.jpg" },
+        { title: "How a Professional-Services Firm Turned Its Methodology Into Recurring Revenue", metric: "35%", label: "revenue now recurring", link: "/cases/services-saas-productization", image: "/images/cases/services-saas-productization-hero.jpg" },
         { title: "How a Regional Manufacturer Cut Order Processing Time by 78%", metric: "78%", label: "faster order processing", link: "/cases/logistics-shipment-automation", image: "/images/capabilities/cap-robot-factory.jpg" }
       ]}
       ctaTitle="Are digital natives taking your end customer?"

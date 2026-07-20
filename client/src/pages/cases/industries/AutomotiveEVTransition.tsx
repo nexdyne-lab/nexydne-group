@@ -11,7 +11,7 @@ export default function AutomotiveEVTransition() {
       industryLink="/industries/automotive"
       title="Retooling a Supplier Line for Electric-Vehicle Parts — Without a Rough Launch"
       subtitle="A components maker had to convert an existing line to electric-vehicle parts while its old business still had to ship every day. Treating the switch as an engineering problem, not a scramble, changed the economics of the launch."
-      heroImage="/images/industries/auto-robotics-team.jpg"
+      heroImage="/images/cases/automotive-ev-transition-hero.jpg"
       metrics={[
         { value: "45%", label: "Fewer Launch Defects" },
         { value: "22%", label: "Lower Unit Cost" },
@@ -111,14 +111,14 @@ export default function AutomotiveEVTransition() {
           metric: "30%",
           label: "fewer warranty claims",
           link: "/cases/automotive-connected-vehicle",
-          image: "/images/industries/tech-datacenter.jpg"
+          image: "/images/cases/automotive-connected-vehicle-hero.jpg"
         },
         {
           title: "De-Risking Parts Supply and Recall Traceability",
           metric: "80%",
           label: "fewer line stoppages",
           link: "/cases/automotive-supply-resilience",
-          image: "/images/industries/mfg-robot-arm.jpg"
+          image: "/images/cases/automotive-supply-resilience-hero.jpg"
         }
       ]}
       ctaTitle="Ready to launch a new program cleanly?"

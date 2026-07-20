@@ -11,7 +11,7 @@ export default function FoodBeverageDemandForecasting() {
       industryLink="/industries/consumer-products"
       title="How a Food and Beverage Maker Forecast Demand 30% More Accurately"
       subtitle="The same misread on demand produced two problems at once — perfectly good product thrown away, and shelves empty when customers came looking. A better read on demand eased both."
-      heroImage="/images/capabilities/cap-food.jpg"
+      heroImage="/images/cases/food-beverage-demand-forecasting-hero.jpg"
       metrics={[
         { value: "30%", label: "Better Forecasting" },
         { value: "98.5%", label: "Service Level" },
@@ -111,14 +111,14 @@ export default function FoodBeverageDemandForecasting() {
           metric: "40%",
           label: "less inventory",
           link: "/cases/consumer-electronics-demand-optimization",
-          image: "/images/capabilities/cap-conference-data.jpg"
+          image: "/images/cases/consumer-electronics-demand-optimization-hero.jpg"
         },
         {
           title: "Tailoring Store Assortments Lifts a Retailer's Sales",
           metric: "12%",
           label: "sales lift",
           link: "/cases/retail-assortment-optimization",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/retail-assortment-optimization-hero.jpg"
         }
       ]}
       ctaTitle="Ready to get ahead of demand?"

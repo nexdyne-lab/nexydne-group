@@ -11,7 +11,7 @@ export default function K12AdaptiveLearning() {
       industryLink="/industries/education"
       title="How a School District Lifted Learning Outcomes 25% by Teaching Each Student Where They Are"
       subtitle="A district was designing lessons for the average student — leaving stronger ones unchallenged and struggling ones further behind. Helping teachers meet each child at their own level lifted results and began to close a stubborn gap."
-      heroImage="/images/industries/team-strategy-board.jpg"
+      heroImage="/images/cases/k12-adaptive-learning-hero.jpg"
       metrics={[
         { value: "25%", label: "Better Outcomes" },
         { value: "40%", label: "Gap Narrowed" },
@@ -111,7 +111,7 @@ export default function K12AdaptiveLearning() {
           metric: "18%",
           label: "higher graduation rate",
           link: "/cases/university-student-success",
-          image: "/images/industries/edu-whiteboard.jpg"
+          image: "/images/cases/university-student-success-hero.jpg"
         },
         {
           title: "Growing a University's Online Programs Threefold",

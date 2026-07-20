@@ -104,7 +104,7 @@ export function RetailPersonalization() {
           metric: "156%",
           label: "higher engagement",
           link: "/cases/retail-omnichannel",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/retail-omnichannel-hero.jpg"
         },
         {
           title: "Scaling E-Commerce Revenue 40% With AI Personalization",

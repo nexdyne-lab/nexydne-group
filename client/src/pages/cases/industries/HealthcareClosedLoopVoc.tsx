@@ -11,7 +11,7 @@ export default function HealthcareClosedLoopVoc() {
       industryLink="/industries/healthcare"
       title="How a Health System Turned a Dormant NPS Score Into Fewer Escalations"
       subtitle="The voice-of-customer program produced a number every quarter and changed nothing. Rebuilding it so that every detractor was reached and every theme owned made it start moving the outcomes that mattered."
-      heroImage="/case-healthcare-team.5797392b.jpg"
+      heroImage="/images/cases/healthcare-closed-loop-voc-hero.jpg"
       metrics={[
         { value: "-34%", label: "Fewer Escalations" },
         { value: "+9 pts", label: "Patient-Reported NPS" },
@@ -55,7 +55,7 @@ export default function HealthcareClosedLoopVoc() {
       quoteRole="Regional health system"
       relatedStudies={[
         { title: "How a B2B SaaS Provider Reordered Its Roadmap and Lifted Expansion Revenue 19%", metric: "19%", label: "more expansion revenue", link: "/cases/saas-voc-roadmap-reorder", image: "/images/capabilities/cap-conference-data.jpg" },
-        { title: "How a Specialty Retailer Lifted Product-Page Revenue per Session by 23%", metric: "23%", label: "more PDP revenue per session", link: "/cases/retail-pdp-recommender", image: "/images/capabilities/cap-retail-apparel.jpg" }
+        { title: "How a Specialty Retailer Lifted Product-Page Revenue per Session by 23%", metric: "23%", label: "more PDP revenue per session", link: "/cases/retail-pdp-recommender", image: "/images/cases/retail-pdp-recommender-hero.jpg" }
       ]}
       ctaTitle="Does your VoC program produce a score or drive action?"
       ctaDescription="Let's rebuild it around closed-loop response so feedback actually changes the experience."

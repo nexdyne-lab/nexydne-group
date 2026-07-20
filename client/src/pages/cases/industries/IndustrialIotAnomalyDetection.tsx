@@ -55,7 +55,7 @@ export default function IndustrialIotAnomalyDetection() {
       quoteRole="Heavy-industry manufacturer"
       relatedStudies={[
         { title: "How a Global Firm Got 92% of 38 Countries Using a New ERP in 60 Days", metric: "92%", label: "adoption in 60 days", link: "/cases/global-professional-services-erp-adoption", image: "/images/capabilities/cap-conference-data.jpg" },
-        { title: "How a Federal Agency Made Its Process Gains Actually Stick", metric: "88%", label: "of gains sustained", link: "/cases/public-sector-sustained-adoption", image: "/images/industries/city-night.jpg" }
+        { title: "How a Federal Agency Made Its Process Gains Actually Stick", metric: "88%", label: "of gains sustained", link: "/cases/public-sector-sustained-adoption", image: "/images/cases/public-sector-sustained-adoption-hero.jpg" }
       ]}
       ctaTitle="Is your plant data sitting on dashboards no one watches?"
       ctaDescription="Let's turn your equipment telemetry into scheduled work in the maintenance queue."

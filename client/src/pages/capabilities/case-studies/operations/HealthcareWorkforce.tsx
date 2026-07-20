@@ -105,14 +105,14 @@ export function HealthcareWorkforce() {
           metric: "35%",
           label: "shorter waits",
           link: "/cases/healthcare-provider-ai",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-provider-ai-hero.jpg"
         },
         {
           title: "Automating Patient Data Management, Cutting Admin Work 40%",
           metric: "40%",
           label: "less admin overhead",
           link: "/cases/healthcare-provider",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-provider-hero.jpg"
         }
       ]}
       ctaTitle="Ready to get more from your workforce?"

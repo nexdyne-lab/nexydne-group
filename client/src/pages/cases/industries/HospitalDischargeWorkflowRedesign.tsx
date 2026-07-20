@@ -11,7 +11,7 @@ export default function HospitalDischargeWorkflowRedesign() {
       industryLink="/industries/healthcare"
       title="How a Hospital System Freed a Quarter of Its Bed-Day Capacity by Redesigning Discharge"
       subtitle="Patients ready to leave were waiting on approvals that happened one after another. Running those steps in parallel — and doing the pharmacy review the afternoon before — opened up capacity the hospital thought it had to build."
-      heroImage="/case-medical-collaboration.9602cc8c.jpg"
+      heroImage="/images/cases/hospital-discharge-workflow-redesign-hero.jpg"
       metrics={[
         { value: "28%", label: "Bed-Day Capacity Freed" },
         { value: "Parallel", label: "Clearance Steps" },

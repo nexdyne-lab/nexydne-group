@@ -54,7 +54,7 @@ export default function SaasVocRoadmapReorder() {
       quoteAuthor="VP of Product"
       quoteRole="B2B SaaS provider"
       relatedStudies={[
-        { title: "How a Specialty Retailer Lifted Product-Page Revenue per Session by 23%", metric: "23%", label: "more PDP revenue per session", link: "/cases/retail-pdp-recommender", image: "/images/capabilities/cap-retail-apparel.jpg" },
+        { title: "How a Specialty Retailer Lifted Product-Page Revenue per Session by 23%", metric: "23%", label: "more PDP revenue per session", link: "/cases/retail-pdp-recommender", image: "/images/cases/retail-pdp-recommender-hero.jpg" },
         { title: "How a Streaming Operator Gave New Releases a Fair Shot at Their Audience", metric: "17%", label: "higher week-one engagement", link: "/cases/streaming-hybrid-recommender", image: "/images/industries/tech-datacenter.jpg" }
       ]}
       ctaTitle="Is your roadmap set by evidence or by whoever asks loudest?"

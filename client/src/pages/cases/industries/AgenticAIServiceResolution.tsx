@@ -11,7 +11,7 @@ export default function AgenticAIServiceResolution() {
       industryLink="/industries/financial-services"
       title="How a Regional Bank Resolved 60% of Everyday Requests Without a Human Handoff"
       subtitle="Routine service requests were being passed to a person even when the answer was obvious and the action was simple. AI agents that could act on the customer's behalf, not just answer questions, changed what the bank could handle on its own."
-      heroImage="/images/industries/fin-trader.jpg"
+      heroImage="/images/cases/agentic-ai-service-resolution-hero.jpg"
       metrics={[
         { value: "60%", label: "Resolved Without a Handoff" },
         { value: "70%", label: "Faster Resolution" },

@@ -111,14 +111,14 @@ export default function RetailLoyaltyTransformation() {
           metric: "85%",
           label: "online sales growth",
           link: "/cases/fashion-retail-digital-transformation",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/fashion-retail-digital-transformation-hero.jpg"
         },
         {
           title: "Cutting a Grocer's Fresh-Food Waste by a Third",
           metric: "35%",
           label: "less fresh-food waste",
           link: "/cases/grocery-demand-forecasting",
-          image: "/images/capabilities/cap-food.jpg"
+          image: "/images/cases/grocery-demand-forecasting-hero.jpg"
         }
       ]}
       ctaTitle="Ready to make your loyalty program earn its keep?"

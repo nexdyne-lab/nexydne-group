@@ -104,7 +104,7 @@ export default function AppDevelopment() {
       title: "Health-Tech Startup Scales from 10K to 2M Users on Single Codebase",
       description:
         "React Native architecture and modular feature flags let one team ship to iOS and Android in lockstep through hypergrowth.",
-      image: "/images/case-app-health.jpg",
+      image: "/images/cases/healthtech-react-native-hero.jpg",
       link: "/cases/healthtech-react-native",
     },
     {

@@ -11,7 +11,7 @@ export default function WarehouseAutomation() {
       industryLink="/industries/transportation-logistics"
       title="How a Regional Distributor Lifted Warehouse Productivity by 45%"
       subtitle="A distributor's warehouses were built for pallets, not the single-item online orders now flooding in — and every peak meant hiring workers it could not find. Rethinking how work moved through the buildings changed the economics of fulfillment."
-      heroImage="/images/industries/retail-warehouse.jpg"
+      heroImage="/images/cases/warehouse-optimization-hero.jpg"
       metrics={[
         { value: "45%", label: "Productivity Gain" },
         { value: "99.8%", label: "Order Accuracy" },

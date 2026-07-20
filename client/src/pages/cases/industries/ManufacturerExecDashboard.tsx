@@ -54,7 +54,7 @@ export default function ManufacturerExecDashboard() {
       quoteAuthor="VP of Finance"
       quoteRole="Industrial manufacturer"
       relatedStudies={[
-        { title: "How a Health System Lifted Analytics Adoption 4x by Embedding It in the EHR", metric: "4x", label: "higher analytics adoption", link: "/cases/health-embedded-analytics", image: "/case-healthcare-team.5797392b.jpg" },
+        { title: "How a Health System Lifted Analytics Adoption 4x by Embedding It in the EHR", metric: "4x", label: "higher analytics adoption", link: "/cases/health-embedded-analytics", image: "/images/cases/health-embedded-analytics-hero.jpg" },
         { title: "How a National Retailer Lifted Recommendation Revenue by 31%", metric: "31%", label: "more recommendation revenue", link: "/cases/retail-recommendations", image: "/images/capabilities/cap-retail-apparel.jpg" }
       ]}
       ctaTitle="Does your board pack take days and still not tell a story?"

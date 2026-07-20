@@ -54,7 +54,7 @@ export default function TelecomActivationJourneyRedesign() {
       quoteAuthor="Director of Digital Operations"
       quoteRole="National telecom carrier"
       relatedStudies={[
-        { title: "How a Consumer-Finance App Lifted Product Attach 22% by Personalizing the Right Moments", metric: "22%", label: "higher product attach", link: "/cases/finance-personalization-strategy-reroute", image: "/images/industries/fin-monitors.jpg" },
+        { title: "How a Consumer-Finance App Lifted Product Attach 22% by Personalizing the Right Moments", metric: "22%", label: "higher product attach", link: "/cases/finance-personalization-strategy-reroute", image: "/images/cases/finance-personalization-strategy-reroute-hero.jpg" },
         { title: "How a DTC Retailer Went From One Personalization Release a Month to Nine", metric: "9x", label: "more releases per month", link: "/cases/dtc-personalization-stack-redesign", image: "/images/capabilities/cap-retail-apparel.jpg" }
       ]}
       ctaTitle="Do you know which two moments are driving your calls?"

@@ -11,7 +11,7 @@ export function RetailDemandForecasting() {
       industryLink="/industries/retail"
       title="How a Specialty Retailer Cut Stockouts 35% With ML Demand Forecasting"
       subtitle="A multi-location forecasting model predicts SKU-level demand eight weeks ahead across 200 stores — cutting stockouts 35%, overstock 28%, and saving $8.5M a year."
-      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroImage="/images/cases/retail-demand-forecasting-hero.jpg"
       metrics={[
         { value: "35%", label: "Fewer Stockouts" },
         { value: "28%", label: "Less Overstock" },
@@ -112,7 +112,7 @@ export function RetailDemandForecasting() {
           metric: "45%",
           label: "faster processing",
           link: "/cases/global-retailer",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/global-retailer-hero.jpg"
         }
       ]}
       ctaTitle="Ready to stop guessing at demand?"

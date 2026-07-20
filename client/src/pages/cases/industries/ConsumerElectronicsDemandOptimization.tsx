@@ -11,7 +11,7 @@ export default function ConsumerElectronicsDemandOptimization() {
       industryLink="/industries/consumer-products"
       title="How a Consumer Electronics Brand Cut Excess Stock by 40%"
       subtitle="Every new product had to be ordered before anyone knew how it would sell — and by the time demand was clear, the model was already halfway to retirement. Learning from similar products changed those odds."
-      heroImage="/images/capabilities/cap-conference-data.jpg"
+      heroImage="/images/cases/consumer-electronics-demand-optimization-hero.jpg"
       metrics={[
         { value: "40%", label: "Less Inventory" },
         { value: "97%", label: "In-Stock Rate" },
@@ -111,14 +111,14 @@ export default function ConsumerElectronicsDemandOptimization() {
           metric: "30%",
           label: "better forecasting",
           link: "/cases/food-beverage-demand-forecasting",
-          image: "/images/capabilities/cap-food.jpg"
+          image: "/images/cases/food-beverage-demand-forecasting-hero.jpg"
         },
         {
           title: "Tailoring Store Assortments Lifts a Retailer's Sales",
           metric: "12%",
           label: "sales lift",
           link: "/cases/retail-assortment-optimization",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/retail-assortment-optimization-hero.jpg"
         }
       ]}
       ctaTitle="Ready to stop guessing on new products?"

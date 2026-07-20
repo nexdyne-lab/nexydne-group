@@ -54,8 +54,8 @@ export default function ManufacturerContentDiscovery() {
       quoteAuthor="VP of Engineering"
       quoteRole="Industrial manufacturer"
       relatedStudies={[
-        { title: "How a National Insurer Cut Claims Cycle Time 47% With End-to-End Orchestration", metric: "47%", label: "faster claims cycle", link: "/cases/insurer-claims-orchestration", image: "/images/industries/fin-monitors.jpg" },
-        { title: "How a Bank Cut Loan Origination From 14 Days to 3", metric: "14 → 3 days", label: "loan origination", link: "/cases/bank-loan-orchestration", image: "/images/industries/fin-trader.jpg" }
+        { title: "How a National Insurer Cut Claims Cycle Time 47% With End-to-End Orchestration", metric: "47%", label: "faster claims cycle", link: "/cases/insurer-claims-orchestration", image: "/images/cases/insurer-claims-orchestration-hero.jpg" },
+        { title: "How a Bank Cut Loan Origination From 14 Days to 3", metric: "14 → 3 days", label: "loan origination", link: "/cases/bank-loan-orchestration", image: "/images/cases/bank-loan-orchestration-hero.jpg" }
       ]}
       ctaTitle="Are your experts hunting for documents that already exist?"
       ctaDescription="Let's turn your archive into a self-service surface with AI classification and semantic search."

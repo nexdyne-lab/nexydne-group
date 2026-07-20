@@ -8,7 +8,7 @@ export function LogisticsDriverExperience() {
       industry="Logistics & Supply Chain"
       title="Empowering the Last Mile: Driver Experience Overhaul"
       subtitle="Reducing delivery errors and improving retention by treating drivers as the primary user."
-      heroImage="/images/industries/retail-warehouse.jpg"
+      heroImage="/images/cases/logistics-driver-experience-hero.jpg"
       challenge={`In the high-pressure world of last-mile delivery, driver retention is a constant struggle. Our client was facing a turnover rate of 60% annually, costing millions in recruitment and training.
       
       Drivers reported that their delivery app was clunky, inaccurate, and disconnected from the reality of their routes. It forced them to switch between multiple devices for navigation, scanning, and proof-of-delivery, leading to errors and frustration. The disconnect between the digital tools and the physical warehouse operations meant that drivers often spent unpaid time searching for packages that were loaded incorrectly.`}

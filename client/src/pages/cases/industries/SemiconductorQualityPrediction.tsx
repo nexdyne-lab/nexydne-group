@@ -11,7 +11,7 @@ export default function SemiconductorQualityPrediction() {
       industryLink="/industries/manufacturing"
       title="Helping a Chipmaker Catch Defects Weeks Earlier"
       subtitle="A semiconductor manufacturer was scrapping millions of dollars of silicon because flaws only revealed themselves at the very end of a process hundreds of steps long. Reading the warning signs early turned quality from a post-mortem into a forecast."
-      heroImage="/images/industries/mfg-robot-arm.jpg"
+      heroImage="/images/cases/semiconductor-quality-prediction-hero.jpg"
       metrics={[
         { value: "92%", label: "Defects Caught Early" },
         { value: "$25M", label: "Less Scrap Each Year" },

@@ -11,7 +11,7 @@ export default function FinancialFraudDetectionML() {
       industryLink="/industries/financial-services"
       title="How a Bank Detects Fraud 40% Faster with ML Anomaly Detection"
       subtitle="A graph neural network identifies suspicious transaction patterns in real time — reducing false positives 65% while catching fraud earlier and uncovering rings the rules missed."
-      heroImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/cases/financial-fraud-detection-ml-hero.jpg"
       metrics={[
         { value: "40%", label: "Faster Fraud Detection" },
         { value: "65%", label: "Fewer False Positives" },

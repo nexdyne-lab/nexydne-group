@@ -104,7 +104,7 @@ export default function DataStrategy() {
       title: "Health System Resets Data Strategy and Unlocks $42M in Decision Value",
       description:
         "A 24-month data roadmap, governance council, and federated org model turned data from compliance overhead into operational advantage.",
-      image: "/images/case-strategy-health.jpg",
+      image: "/case-healthcare-team.5797392b.jpg",
       link: "/cases/health-system-data-strategy",
     },
     {
@@ -112,7 +112,7 @@ export default function DataStrategy() {
       title: "Industrial Holding Company Monetizes Data as New Revenue Line",
       description:
         "We surfaced and packaged anonymized operational data into a productized offer that became a measurable third revenue stream within 18 months.",
-      image: "/images/case-strategy-industrial.jpg",
+      image: "/images/cases/industrial-data-monetization-hero.jpg",
       link: "/cases/industrial-data-monetization",
     },
   ];

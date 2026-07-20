@@ -11,7 +11,7 @@ export default function RetailerHeadlessOmnichannel() {
       industryLink="/industries/retail"
       title="How an Omnichannel Retailer Collapsed Three Editorial Pipelines Into One"
       subtitle="Web, app, and in-store screens each had their own content pipeline on a monolithic CMS, so every campaign was published three times. A headless platform made it one."
-      heroImage="/images/capabilities/cap-retail-data.jpg"
+      heroImage="/images/cases/retailer-headless-omnichannel-hero.jpg"
       metrics={[
         { value: "80%", label: "Faster Publishing" },
         { value: "3 → 1", label: "Editorial Pipelines" },
@@ -54,7 +54,7 @@ export default function RetailerHeadlessOmnichannel() {
       quoteAuthor="VP of Digital"
       quoteRole="Multi-brand retailer"
       relatedStudies={[
-        { title: "How a Digital Publisher Halved Page Load Time With a Jamstack Rebuild", metric: "50%", label: "faster page loads", link: "/cases/publisher-headless-jamstack", image: "/images/industries/tech-datacenter.jpg" },
+        { title: "How a Digital Publisher Halved Page Load Time With a Jamstack Rebuild", metric: "50%", label: "faster page loads", link: "/cases/publisher-headless-jamstack", image: "/images/cases/publisher-headless-jamstack-hero.jpg" },
         { title: "How a Specialty Retailer Lifted Conversion 31% With Audience-Driven Personalization", metric: "31%", label: "higher conversion", link: "/cases/retail-dxp-personalization", image: "/images/capabilities/cap-retail-apparel.jpg" }
       ]}
       ctaTitle="Are you publishing the same content to every channel by hand?"

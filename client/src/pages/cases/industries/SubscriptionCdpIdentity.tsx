@@ -54,7 +54,7 @@ export default function SubscriptionCdpIdentity() {
       quoteAuthor="Head of Data Platform"
       quoteRole="Subscription services operator"
       relatedStudies={[
-        { title: "How a Hotel Brand Recovered 18% of Its Abandoned Bookings", metric: "18%", label: "cart abandonment recovered", link: "/cases/hospitality-booking-journey-optimization", image: "/images/industries/travel-city-twilight.jpg" },
+        { title: "How a Hotel Brand Recovered 18% of Its Abandoned Bookings", metric: "18%", label: "cart abandonment recovered", link: "/cases/hospitality-booking-journey-optimization", image: "/images/cases/hospitality-booking-journey-optimization-hero.jpg" },
         { title: "How a Telecom Carrier Cut Repeat Activation Calls by 27%", metric: "27%", label: "fewer repeat calls", link: "/cases/telecom-activation-journey-redesign", image: "/images/industries/city-night.jpg" }
       ]}
       ctaTitle="Is your CDP stalled inside identity?"

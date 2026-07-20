@@ -11,7 +11,7 @@ export default function UtilityGridModernization() {
       industryLink="/industries/energy-utilities"
       title="How a Regional Utility Cut the Length of an Outage Nearly in Half"
       subtitle="A regional electric utility could not see its own network — it learned about outages when the phone rang. Giving operators a live picture of the grid, and letting it heal the simplest faults on its own, changed how quickly the lights came back on."
-      heroImage="/images/industries/energy-solar.jpg"
+      heroImage="/images/cases/utility-grid-modernization-hero.jpg"
       metrics={[
         { value: "45%", label: "Shorter Outages" },
         { value: "99.98%", label: "Grid Reliability" },
@@ -111,7 +111,7 @@ export default function UtilityGridModernization() {
           metric: "25%",
           label: "better forecast accuracy",
           link: "/cases/renewable-energy-forecasting",
-          image: "/images/industries/energy-wind.jpg"
+          image: "/images/cases/renewable-energy-forecasting-hero.jpg"
         },
         {
           title: "Halving Unplanned Outages at a Power Generator",

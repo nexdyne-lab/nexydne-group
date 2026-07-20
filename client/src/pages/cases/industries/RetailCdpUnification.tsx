@@ -55,7 +55,7 @@ export default function RetailCdpUnification() {
       quoteRole="Multi-brand retailer"
       relatedStudies={[
         { title: "How a Subscription Operator Recovered a Fifth of Its Lost Customer Journeys", metric: "22%", label: "journeys recovered", link: "/cases/subscription-cdp-identity", image: "/images/capabilities/cap-iot-network.jpg" },
-        { title: "How a Hotel Brand Recovered 18% of Its Abandoned Bookings", metric: "18%", label: "cart abandonment recovered", link: "/cases/hospitality-booking-journey-optimization", image: "/images/industries/travel-city-twilight.jpg" }
+        { title: "How a Hotel Brand Recovered 18% of Its Abandoned Bookings", metric: "18%", label: "cart abandonment recovered", link: "/cases/hospitality-booking-journey-optimization", image: "/images/cases/hospitality-booking-journey-optimization-hero.jpg" }
       ]}
       ctaTitle="Are you paying to reach customers you already have?"
       ctaDescription="Let's talk about a CDP program that ships activation in a quarter, not a platform you activate later."

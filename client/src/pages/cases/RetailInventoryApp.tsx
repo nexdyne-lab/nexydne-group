@@ -104,14 +104,14 @@ export function RetailInventoryApp() {
           metric: "35%",
           label: "fewer stockouts",
           link: "/cases/retail-demand-forecasting",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/retail-demand-forecasting-hero.jpg"
         },
         {
           title: "Automating a Retailer's Supply Chain With RPA",
           metric: "45%",
           label: "faster processing",
           link: "/cases/global-retailer",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/global-retailer-hero.jpg"
         }
       ]}
       ctaTitle="Ready to get inventory right?"

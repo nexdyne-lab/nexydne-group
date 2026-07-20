@@ -54,7 +54,7 @@ export default function BankingClvAcquisitionRouting() {
       quoteAuthor="Head of Acquisition Marketing"
       quoteRole="Regional retail bank"
       relatedStudies={[
-        { title: "How a Health System Turned a Dormant NPS Score Into Fewer Escalations", metric: "34%", label: "fewer experience escalations", link: "/cases/healthcare-closed-loop-voc", image: "/case-healthcare-team.5797392b.jpg" },
+        { title: "How a Health System Turned a Dormant NPS Score Into Fewer Escalations", metric: "34%", label: "fewer experience escalations", link: "/cases/healthcare-closed-loop-voc", image: "/images/cases/healthcare-closed-loop-voc-hero.jpg" },
         { title: "How a B2B SaaS Provider Reordered Its Roadmap and Lifted Expansion Revenue 19%", metric: "19%", label: "more expansion revenue", link: "/cases/saas-voc-roadmap-reorder", image: "/images/capabilities/cap-conference-data.jpg" }
       ]}
       ctaTitle="Is your acquisition budget optimizing cost or value?"

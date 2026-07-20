@@ -54,7 +54,7 @@ export default function RetailChatbotDeflection() {
       quoteAuthor="VP of Customer Experience"
       quoteRole="National retailer"
       relatedStudies={[
-        { title: "How a Regional Bank Booked 4x More Demos With a Lead-Gen Chatbot", metric: "4x", label: "more qualified demos", link: "/cases/bank-chatbot-leadgen", image: "/images/industries/fin-monitors.jpg" },
+        { title: "How a Regional Bank Booked 4x More Demos With a Lead-Gen Chatbot", metric: "4x", label: "more qualified demos", link: "/cases/bank-chatbot-leadgen", image: "/images/cases/bank-chatbot-leadgen-hero.jpg" },
         { title: "How a Telecom Provider Reached 64% Containment on Tier-1 Support", metric: "64%", label: "containment on tier-1 support", link: "/cases/telecom-conversational-ai", image: "/images/capabilities/cap-iot-network.jpg" }
       ]}
       ctaTitle="Are agents buried in routine questions?"

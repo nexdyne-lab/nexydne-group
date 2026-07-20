@@ -11,7 +11,7 @@ export default function PayerAutomationCoeScale() {
       industryLink="/industries/healthcare"
       title="How a Health Plan Turned 12 Orphaned Bots Into 140 Working Automations"
       subtitle="The automation portfolio had stalled at a dozen bots nobody clearly owned. Building the operating model — not buying more tools — let it scale more than tenfold on the same team."
-      heroImage="/case-healthcare-team.5797392b.jpg"
+      heroImage="/images/cases/payer-automation-coe-scale-hero.jpg"
       metrics={[
         { value: "12→140", label: "Production Automations" },
         { value: "18 Mo", label: "To Scale" },
@@ -55,7 +55,7 @@ export default function PayerAutomationCoeScale() {
       quoteRole="Regional health plan"
       relatedStudies={[
         { title: "How a Specialty Distributor Cut Order Cycle Time From 9 Days to Under Six", metric: "41%", label: "faster order cycle", link: "/cases/distribution-order-fulfillment-redesign", image: "/images/capabilities/cap-warehouse-robot.jpg" },
-        { title: "How a Hospital System Freed a Quarter of Its Bed-Day Capacity by Redesigning Discharge", metric: "28%", label: "more bed-day capacity", link: "/cases/hospital-discharge-workflow-redesign", image: "/case-medical-collaboration.9602cc8c.jpg" }
+        { title: "How a Hospital System Freed a Quarter of Its Bed-Day Capacity by Redesigning Discharge", metric: "28%", label: "more bed-day capacity", link: "/cases/hospital-discharge-workflow-redesign", image: "/images/cases/hospital-discharge-workflow-redesign-hero.jpg" }
       ]}
       ctaTitle="Is your automation portfolio stalled at a handful of bots?"
       ctaDescription="Let's build the operating model that scales scattered automations into a real capability."

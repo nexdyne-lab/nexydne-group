@@ -11,7 +11,7 @@ export default function WealthOnboarding() {
       industryLink="/industries/financial-services"
       title="How a Wealth Manager Cut Client Onboarding from Weeks to Days"
       subtitle="A wealth manager built its name on personal service, then made every new client begin with three weeks of paperwork. Rebuilding that first experience freed advisers to do what clients actually pay them for."
-      heroImage="/images/industries/fin-handshake-city.jpg"
+      heroImage="/images/cases/wealth-onboarding-hero.jpg"
       metrics={[
         { value: "60%", label: "Faster Onboarding" },
         { value: "95%", label: "Documents Right First Time" },
@@ -118,7 +118,7 @@ export default function WealthOnboarding() {
           metric: "$24M",
           label: "in new revenue",
           link: "/cases/bank-cross-sell",
-          image: "/images/industries/fin-trader.jpg"
+          image: "/images/cases/bank-cross-sell-hero.jpg"
         }
       ]}
       ctaTitle="Ready to make the first weeks feel as good as the advice?"

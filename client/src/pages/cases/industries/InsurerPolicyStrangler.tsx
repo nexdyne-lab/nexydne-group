@@ -11,7 +11,7 @@ export default function InsurerPolicyStrangler() {
       industryLink="/industries/insurance"
       title="How a Specialty Insurer Replaced a 22-Year-Old Policy System Without an Outage"
       subtitle="A mainframe policy system had run the business for two decades and was too risky to replace in one move. An incremental strangler build retired it piece by piece, safely."
-      heroImage="/images/industries/fin-handshake-city.jpg"
+      heroImage="/images/cases/insurer-policy-strangler-hero.jpg"
       metrics={[
         { value: "Zero", label: "Impacting Outages" },
         { value: "22-Yr", label: "System Retired" },
@@ -55,7 +55,7 @@ export default function InsurerPolicyStrangler() {
       quoteRole="Specialty insurer"
       relatedStudies={[
         { title: "How a Logistics Provider Replaced Three Legacy Tools With One Custom TMS", metric: "58%", label: "faster load planning", link: "/cases/logistics-custom-tms", image: "/images/capabilities/cap-warehouse-robot.jpg" },
-        { title: "How a Manufacturer Cleared an 18-Month IT Backlog by Building a Low-Code CoE", metric: "28", label: "apps shipped in 18 months", link: "/cases/mfg-lowcode-coe", image: "/images/industries/mfg-robot-arm.jpg" }
+        { title: "How a Manufacturer Cleared an 18-Month IT Backlog by Building a Low-Code CoE", metric: "28", label: "apps shipped in 18 months", link: "/cases/mfg-lowcode-coe", image: "/images/cases/mfg-lowcode-coe-hero.jpg" }
       ]}
       ctaTitle="Is a critical legacy system too risky to replace?"
       ctaDescription="Let's strangle it incrementally and retire it without a business-impacting outage."

@@ -104,14 +104,14 @@ export function ManufacturingIoTPipeline() {
           metric: "35%",
           label: "fewer stockouts",
           link: "/cases/retail-demand-forecasting",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/retail-demand-forecasting-hero.jpg"
         },
         {
           title: "Scaling Real-Time Payment Processing 10x",
           metric: "10x",
           label: "transaction capacity",
           link: "/cases/fintech-data-pipeline",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/fintech-data-pipeline-hero.jpg"
         }
       ]}
       ctaTitle="Ready to predict failures before they happen?"

@@ -246,7 +246,7 @@ export default function CaseStudyHealthcareEHRModernization() {
             </blockquote>
             <div className="flex items-center justify-center space-x-4">
               <div className="w-14 h-14 bg-charcoal/10 rounded-full overflow-hidden">
-                <img src="/case-medical-collaboration.9602cc8c.jpg" alt="CMO" className="w-full h-full object-cover" />
+                <img src="/images/cases/healthcare-ehr-modernization-hero.jpg" alt="CMO" className="w-full h-full object-cover" />
               </div>
               <div className="text-left">
                 <div className="text-charcoal font-bold">Dr. Sarah Jenkins</div>

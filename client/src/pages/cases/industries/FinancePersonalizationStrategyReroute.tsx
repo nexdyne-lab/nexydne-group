@@ -11,7 +11,7 @@ export default function FinancePersonalizationStrategyReroute() {
       industryLink="/industries/financial-services"
       title="How a Consumer-Finance App Lifted Product Attach 22% by Personalizing the Right Moments"
       subtitle="The personalization budget was going into email subject lines and a homepage banner — neither of which was where customers actually made decisions. Moving it to three in-app moments changed the outcome."
-      heroImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/cases/finance-personalization-strategy-reroute-hero.jpg"
       metrics={[
         { value: "22%", label: "Higher Product Attach" },
         { value: "3", label: "In-App Moments" },

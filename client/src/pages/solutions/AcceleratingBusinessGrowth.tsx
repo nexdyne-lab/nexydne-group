@@ -138,7 +138,7 @@ export default function AcceleratingBusinessGrowth() {
       title: "SaaS productization creates recurring revenue",
       description:
         "A professional services firm transformed their methodology into a software product, shifting from project-based revenue to predictable recurring streams.",
-      image: "/images/case-sales-saas.jpg",
+      image: "/images/cases/services-saas-productization-hero.jpg",
       link: "/cases/services-saas-productization",
     },
   ];

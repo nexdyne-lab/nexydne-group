@@ -104,7 +104,7 @@ export default function DigitalEngagement() {
       title: "Specialty Retailer Lifts Lifecycle Revenue 38% in Two Quarters",
       description:
         "End-to-end automation rebuild plus personalized lifecycle programs unlocked durable repeat-purchase behavior across email and SMS.",
-      image: "/images/case-engage-retail.jpg",
+      image: "/images/cases/retail-engagement-hero.jpg",
       link: "/cases/retail-engagement",
     },
     {

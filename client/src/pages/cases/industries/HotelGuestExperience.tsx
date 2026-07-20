@@ -11,7 +11,7 @@ export default function HotelGuestExperience() {
       industryLink="/industries/travel-hospitality"
       title="Restoring Personal Service Across a Growing Hotel Group"
       subtitle="An upscale hotel group had built its name on knowing its guests — and was quietly losing that as it grew. Giving every property one clear view of each guest brought the personal touch back at scale."
-      heroImage="/images/industries/city-night.jpg"
+      heroImage="/images/cases/hotel-guest-experience-hero.jpg"
       metrics={[
         { value: "+25pts", label: "Guest Recommendation Score" },
         { value: "40%", label: "More Loyalty Sign-Ups" },
@@ -111,14 +111,14 @@ export default function HotelGuestExperience() {
           metric: "18%",
           label: "more revenue per room",
           link: "/cases/hotel-revenue-transformation",
-          image: "/images/industries/travel-city-twilight.jpg"
+          image: "/images/cases/hotel-revenue-transformation-hero.jpg"
         },
         {
           title: "Reviving a Regional Airline's Loyalty Program",
           metric: "40%",
           label: "more active members",
           link: "/cases/airline-loyalty-redesign",
-          image: "/images/industries/transport-bridge.jpg"
+          image: "/images/cases/airline-loyalty-redesign-hero.jpg"
         }
       ]}
       ctaTitle="Ready to make every guest feel remembered?"

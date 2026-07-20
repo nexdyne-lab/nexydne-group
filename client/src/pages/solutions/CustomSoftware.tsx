@@ -104,7 +104,7 @@ export default function CustomSoftware() {
       title: "Specialty Insurer Replaces 22-Year-Old Policy System with Phased Strangler Build",
       description:
         "An incremental strangler-fig replacement decommissioned a mainframe-era policy admin system over twenty months — without a single business-impacting outage.",
-      image: "/images/case-custom-insurer.jpg",
+      image: "/images/cases/insurer-policy-strangler-hero.jpg",
       link: "/cases/insurer-policy-strangler",
     },
     {

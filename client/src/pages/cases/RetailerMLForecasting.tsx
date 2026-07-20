@@ -104,7 +104,7 @@ export function RetailerMLForecasting() {
           metric: "35%",
           label: "fewer stockouts",
           link: "/cases/retail-demand-forecasting",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/retail-demand-forecasting-hero.jpg"
         },
         {
           title: "AI Demand Forecasting That Cut Inventory 35%",

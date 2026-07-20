@@ -11,7 +11,7 @@ export default function PublisherHeadlessJamstack() {
       industryLink="/industries/technology-media-telecom"
       title="How a Digital Publisher Halved Page Load Time With a Jamstack Rebuild"
       subtitle="A slow, aging site was costing the publisher readers, search ranking, and ad revenue. A headless CMS with static delivery made pages fast again — and opened new ways to monetize."
-      heroImage="/images/industries/tech-datacenter.jpg"
+      heroImage="/images/cases/publisher-headless-jamstack-hero.jpg"
       metrics={[
         { value: "50%", label: "Faster Page Loads" },
         { value: "Better", label: "Core Web Vitals" },
@@ -55,7 +55,7 @@ export default function PublisherHeadlessJamstack() {
       quoteRole="Digital publisher"
       relatedStudies={[
         { title: "How a Specialty Retailer Lifted Conversion 31% With Audience-Driven Personalization", metric: "31%", label: "higher conversion", link: "/cases/retail-dxp-personalization", image: "/images/capabilities/cap-retail-apparel.jpg" },
-        { title: "How a National Insurer Halved Publishing Time With a Composable Migration", metric: "50%+", label: "faster publishing", link: "/cases/insurer-sitecore-migration", image: "/images/industries/fin-handshake-city.jpg" }
+        { title: "How a National Insurer Halved Publishing Time With a Composable Migration", metric: "50%+", label: "faster publishing", link: "/cases/insurer-sitecore-migration", image: "/images/cases/insurer-sitecore-migration-hero.jpg" }
       ]}
       ctaTitle="Is a slow site costing you readers and revenue?"
       ctaDescription="Let's rebuild on headless Jamstack for speed, ranking, and new monetization."

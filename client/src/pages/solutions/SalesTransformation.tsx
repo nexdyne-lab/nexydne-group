@@ -112,7 +112,7 @@ export default function SalesTransformation() {
       title: "Industrial Manufacturer Modernizes Channel Sales and Lifts Partner Revenue 31%",
       description:
         "A new PRM, deal-registration discipline, and channel-marketing platform turned a stagnant partner program into a growth engine.",
-      image: "/images/case-sales-channel.jpg",
+      image: "/images/cases/manufacturer-channel-transformation-hero.jpg",
       link: "/cases/manufacturer-channel-transformation",
     },
   ];

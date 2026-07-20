@@ -104,7 +104,7 @@ export default function HeadlessCMS() {
       title: "Omnichannel Retailer Ships Web, App, and In-Store from One Headless Stack",
       description:
         "A multi-brand retailer migrated from monolithic CMS to a composable headless platform — collapsing three editorial pipelines into one and cutting publish time by 80%.",
-      image: "/images/case-headless-retail.jpg",
+      image: "/images/cases/retailer-headless-omnichannel-hero.jpg",
       link: "/cases/retailer-headless-omnichannel",
     },
     {
@@ -112,7 +112,7 @@ export default function HeadlessCMS() {
       title: "Publisher Cuts Page Load Time in Half with Jamstack Headless Rebuild",
       description:
         "A digital publisher rebuilt on a headless CMS plus static delivery — restoring editorial velocity, improving Core Web Vitals, and unlocking new monetization surfaces.",
-      image: "/images/case-headless-media.jpg",
+      image: "/images/cases/publisher-headless-jamstack-hero.jpg",
       link: "/cases/publisher-headless-jamstack",
     },
   ];

@@ -112,7 +112,7 @@ export function LogisticsTechSpinoff() {
           metric: "$55M",
           label: "operational savings",
           link: "/cases/logistics-brand-consolidation",
-          image: "/images/industries/retail-warehouse.jpg"
+          image: "/images/cases/logistics-brand-consolidation-hero.jpg"
         }
       ]}
       ctaTitle="Ready to commercialize your technology?"

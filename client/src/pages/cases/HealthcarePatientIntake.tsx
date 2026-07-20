@@ -8,7 +8,7 @@ export function HealthcarePatientIntake() {
       industry="Healthcare"
       title="Redesigning the Patient Intake Experience"
       subtitle="How a seamless blend of digital pre-check and physical workflow optimization reduced wait times by 35%."
-      heroImage="/case-medical-collaboration.9602cc8c.jpg"
+      heroImage="/images/cases/healthcare-patient-intake-hero.jpg"
       challenge={`The client, a national healthcare provider with over 200 clinics, was facing a critical bottleneck: patient intake. The process was paper-heavy, redundant, and frustrating for both patients and staff.
       
       Patients spent an average of 20 minutes filling out forms in the waiting room, often repeating information they had already provided. This administrative burden delayed appointments, reduced clinician utilization, and resulted in a Net Promoter Score (NPS) that was lagging behind industry benchmarks. The challenge was to modernize the intake process without alienating older patient demographics who were less comfortable with technology.`}

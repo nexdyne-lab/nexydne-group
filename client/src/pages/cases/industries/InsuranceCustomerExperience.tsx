@@ -11,7 +11,7 @@ export default function InsuranceCustomerExperience() {
       industryLink="/industries/insurance"
       title="How a Personal Lines Insurer Moved Half Its Customers Online"
       subtitle="A regional carrier still ran on phone calls and paper forms while newer rivals sold and served entirely online. Rebuilding its digital channels let customers do for themselves what they used to have to call about."
-      heroImage="/images/industries/fin-handshake-city.jpg"
+      heroImage="/images/cases/insurance-digital-distribution-hero.jpg"
       metrics={[
         { value: "50%", label: "Now Self-Serve" },
         { value: "+28pts", label: "Satisfaction Gain" },
@@ -111,14 +111,14 @@ export default function InsuranceCustomerExperience() {
           metric: "40%",
           label: "faster quote turnaround",
           link: "/cases/insurance-ai-underwriting",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/insurance-ai-underwriting-hero.jpg"
         },
         {
           title: "Settling Straightforward Claims in Hours, Not Weeks",
           metric: "60%",
           label: "faster claims processing",
           link: "/cases/insurance-claims-automation",
-          image: "/case-insurance-claims.399e5d4b.jpg"
+          image: "/images/cases/insurance-claims-automation-hero.jpg"
         }
       ]}
       ctaTitle="Ready to make digital the easy choice?"

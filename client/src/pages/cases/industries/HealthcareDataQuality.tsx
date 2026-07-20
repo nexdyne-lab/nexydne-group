@@ -11,7 +11,7 @@ export default function HealthcareDataQuality() {
       industryLink="/industries/healthcare"
       title="How a Health System Recovered $9M a Year by Fixing Its Data Quality"
       subtitle="Revenue was leaking silently through data errors in claims and billing that no one could see. Lineage and automated quality monitoring turned invisible losses into recovered dollars."
-      heroImage="/case-medical-collaboration.9602cc8c.jpg"
+      heroImage="/images/cases/healthcare-data-quality-hero.jpg"
       metrics={[
         { value: "$9M", label: "Recovered Annually" },
         { value: "Silent", label: "Leakage Stopped" },
@@ -55,7 +55,7 @@ export default function HealthcareDataQuality() {
       quoteRole="Regional health system"
       relatedStudies={[
         { title: "How a Health System Turned Data From Overhead Into $42M of Advantage", metric: "$42M", label: "in decision value unlocked", link: "/cases/health-system-data-strategy", image: "/case-healthcare-team.5797392b.jpg" },
-        { title: "How an Industrial Holding Company Turned Its Data Into a Third Revenue Stream", metric: "3rd", label: "revenue stream created", link: "/cases/industrial-data-monetization", image: "/images/capabilities/cap-battery-factory.jpg" }
+        { title: "How an Industrial Holding Company Turned Its Data Into a Third Revenue Stream", metric: "3rd", label: "revenue stream created", link: "/cases/industrial-data-monetization", image: "/images/cases/industrial-data-monetization-hero.jpg" }
       ]}
       ctaTitle="Is poor data quality quietly costing you revenue?"
       ctaDescription="Let's build lineage and monitoring that turn invisible leakage into recovered dollars."

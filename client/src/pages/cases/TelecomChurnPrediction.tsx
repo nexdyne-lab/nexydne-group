@@ -11,7 +11,7 @@ export function TelecomChurnPrediction() {
       industryLink="/industries/technology-media-telecom"
       title="How a Telecom Provider Cut Churn 22% With a Predictive Model"
       subtitle="Real-time churn scoring identified at-risk customers 60 days before cancellation — enabling targeted retention that cut churn 22% and saved $12M in annual recurring revenue."
-      heroImage="/images/industries/tech-datacenter.jpg"
+      heroImage="/images/cases/telecom-churn-prediction-hero.jpg"
       metrics={[
         { value: "22%", label: "Churn Reduction" },
         { value: "$12M", label: "Annual Revenue Saved" },
@@ -112,7 +112,7 @@ export function TelecomChurnPrediction() {
           metric: "35%",
           label: "fewer stockouts",
           link: "/cases/retail-demand-forecasting",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/retail-demand-forecasting-hero.jpg"
         }
       ]}
       ctaTitle="Ready to get ahead of churn?"

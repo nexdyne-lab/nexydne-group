@@ -112,7 +112,7 @@ export default function NativeApps() {
       title: "Medical Device App Achieves Sub-100ms Response on Kotlin Native",
       description:
         "A regulated Android app demanding real-time sensor fusion required pure Kotlin native — and the precision it delivered.",
-      image: "/images/case-native-medical.jpg",
+      image: "/images/cases/medical-native-kotlin-hero.jpg",
       link: "/cases/medical-native-kotlin",
     },
   ];

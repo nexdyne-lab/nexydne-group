@@ -112,7 +112,7 @@ export default function DataVisualization() {
       title: "Health System Embeds Analytics in Clinician Workflow and Lifts Adoption 4x",
       description:
         "Real-time embedded charts inside the EHR replaced an unused standalone BI portal—putting insight where decisions actually happen.",
-      image: "/images/case-viz-health.jpg",
+      image: "/images/cases/health-embedded-analytics-hero.jpg",
       link: "/cases/health-embedded-analytics",
     },
   ];

@@ -118,7 +118,7 @@ export default function LegacyCoreModernization() {
           metric: "Audit-ready",
           label: "not a periodic scramble",
           link: "/cases/security-compliance-hardening",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/security-compliance-hardening-hero.jpg"
         }
       ]}
       ctaTitle="Ready to modernize your core without betting the business?"

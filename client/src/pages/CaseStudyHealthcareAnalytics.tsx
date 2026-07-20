@@ -302,7 +302,7 @@ export default function CaseStudyHealthcareAnalytics() {
                 industry: "Healthcare",
                 metric: "45%",
                 metricLabel: "Efficiency gain",
-                image: "/case-clinical-workflow.ca226f80.jpg",
+                image: "/images/cases/hospital-workflow-automation-hero.jpg",
                 link: "/cases/hospital-workflow-automation"
               },
               {

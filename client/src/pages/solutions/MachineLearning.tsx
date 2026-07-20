@@ -112,7 +112,7 @@ export default function MachineLearning() {
       title: "Card Issuer Cuts Fraud Losses 44% While Reducing False Positives",
       description:
         "Gradient-boosted ensemble plus reviewer-in-the-loop tuning shifted the precision-recall curve in both dimensions at once.",
-      image: "/images/case-ml-fraud.jpg",
+      image: "/images/industries/fin-trader.jpg",
       link: "/cases/fraud-detection",
     },
   ];

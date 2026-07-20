@@ -105,7 +105,7 @@ export function MediaCompanyDAM() {
           metric: "10x",
           label: "traffic handled",
           link: "/cases/media-streaming-scale",
-          image: "/images/industries/tech-datacenter.jpg"
+          image: "/images/cases/media-streaming-scale-hero.jpg"
         },
         {
           title: "Cutting Content Compliance Review From 3 Weeks to 4 Days",

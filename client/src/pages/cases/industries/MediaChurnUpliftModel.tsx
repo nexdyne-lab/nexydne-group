@@ -55,7 +55,7 @@ export default function MediaChurnUpliftModel() {
       quoteRole="Streaming media operator"
       relatedStudies={[
         { title: "How a Regional Bank Sent Its Acquisition Budget to the Customers Worth Having", metric: "71%", label: "spend to top value deciles", link: "/cases/banking-clv-acquisition-routing", image: "/images/industries/fin-trader.jpg" },
-        { title: "How a Health System Turned a Dormant NPS Score Into Fewer Escalations", metric: "34%", label: "fewer experience escalations", link: "/cases/healthcare-closed-loop-voc", image: "/case-healthcare-team.5797392b.jpg" }
+        { title: "How a Health System Turned a Dormant NPS Score Into Fewer Escalations", metric: "34%", label: "fewer experience escalations", link: "/cases/healthcare-closed-loop-voc", image: "/images/cases/healthcare-closed-loop-voc-hero.jpg" }
       ]}
       ctaTitle="Is your retention team working the wrong list?"
       ctaDescription="Let's build an uplift model that targets the customers a save attempt will actually move."

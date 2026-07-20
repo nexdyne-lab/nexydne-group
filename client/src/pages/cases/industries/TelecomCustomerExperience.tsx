@@ -11,7 +11,7 @@ export default function TelecomCustomerExperience() {
       industryLink="/industries/technology-media-telecom"
       title="How a Regional Carrier Cut Customer Churn by 40%"
       subtitle="A mobile carrier was losing customers faster than its competitors and only found out they were unhappy after they had already decided to leave. Seeing trouble coming — and acting on it early — turned defection into loyalty."
-      heroImage="/images/capabilities/cap-iot-network.jpg"
+      heroImage="/images/cases/telecom-customer-experience-hero.jpg"
       metrics={[
         { value: "40%", label: "Lower Churn" },
         { value: "35pts", label: "Higher Satisfaction" },

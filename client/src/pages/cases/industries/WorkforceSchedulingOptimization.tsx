@@ -11,7 +11,7 @@ export default function WorkforceSchedulingOptimization() {
       industryLink="/industries/transportation-logistics"
       title="Ending the Overtime-and-Gaps Cycle: Matching Staffing to Demand for a Regional Logistics Operator"
       subtitle="A regional distribution operator kept paying for overtime one week and running short-staffed the next, because schedules were built on gut feel days ahead of the work. Matching people to predicted demand, shift by shift, cut the overtime and closed the gaps at the same time."
-      heroImage="/images/industries/people-commute.jpg"
+      heroImage="/images/cases/workforce-scheduling-optimization-hero.jpg"
       metrics={[
         { value: "22%", label: "Less Overtime" },
         { value: "31%", label: "Fewer Coverage Gaps" },
@@ -118,7 +118,7 @@ export default function WorkforceSchedulingOptimization() {
           metric: "45%",
           label: "more productive",
           link: "/cases/warehouse-optimization",
-          image: "/images/industries/retail-warehouse.jpg"
+          image: "/images/cases/warehouse-optimization-hero.jpg"
         }
       ]}
       ctaTitle="Ready to stop paying for overtime and gaps at once?"

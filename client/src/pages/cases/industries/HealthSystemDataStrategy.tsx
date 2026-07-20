@@ -54,8 +54,8 @@ export default function HealthSystemDataStrategy() {
       quoteAuthor="Chief Operating Officer"
       quoteRole="Regional health system"
       relatedStudies={[
-        { title: "How an Industrial Holding Company Turned Its Data Into a Third Revenue Stream", metric: "3rd", label: "revenue stream created", link: "/cases/industrial-data-monetization", image: "/images/capabilities/cap-battery-factory.jpg" },
-        { title: "How a Regional Bank Tripled Self-Service Reporting by Training 600 People", metric: "3x", label: "more self-service reporting", link: "/cases/bank-data-literacy", image: "/images/industries/fin-monitors.jpg" }
+        { title: "How an Industrial Holding Company Turned Its Data Into a Third Revenue Stream", metric: "3rd", label: "revenue stream created", link: "/cases/industrial-data-monetization", image: "/images/cases/industrial-data-monetization-hero.jpg" },
+        { title: "How a Regional Bank Tripled Self-Service Reporting by Training 600 People", metric: "3x", label: "more self-service reporting", link: "/cases/bank-data-literacy", image: "/images/cases/bank-data-literacy-hero.jpg" }
       ]}
       ctaTitle="Is your data managed as overhead instead of an asset?"
       ctaDescription="Let's reset the strategy, governance, and operating model to unlock its decision value."

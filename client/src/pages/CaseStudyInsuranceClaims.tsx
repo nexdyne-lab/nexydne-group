@@ -379,7 +379,7 @@ export default function CaseStudyInsuranceClaims() {
                 industry: "Financial Services",
                 metric: "80%",
                 metricLabel: "Faster onboarding",
-                image: "/case-advisor-client.eb15e04e.jpg",
+                image: "/images/cases/wealth-management-onboarding-hero.jpg",
                 link: "/cases/wealth-management-onboarding"
               },
               {

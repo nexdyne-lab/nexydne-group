@@ -118,7 +118,7 @@ export default function GovernmentDigitalServices() {
           metric: "50%",
           label: "faster processing",
           link: "/cases/government-benefits-modernization",
-          image: "/images/industries/people-commute.jpg"
+          image: "/images/cases/government-benefits-modernization-hero.jpg"
         }
       ]}
       ctaTitle="Ready to make your services easier to use?"

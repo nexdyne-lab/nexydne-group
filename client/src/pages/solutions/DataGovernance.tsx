@@ -104,7 +104,7 @@ export default function DataGovernance() {
       title: "Health System Achieves HIPAA Audit Pass with Zero Findings",
       description:
         "A governance framework rebuilt around lineage, access controls, and steward-led remediation cleared the audit window with the regulator's full approval.",
-      image: "/images/case-governance-health.jpg",
+      image: "/images/cases/health-hipaa-audit-hero.jpg",
       link: "/cases/health-hipaa-audit",
     },
     {

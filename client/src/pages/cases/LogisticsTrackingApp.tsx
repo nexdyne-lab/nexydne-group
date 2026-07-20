@@ -104,14 +104,14 @@ export function LogisticsTrackingApp() {
           metric: "40%",
           label: "fewer delays",
           link: "/cases/logistics-operations-dashboard",
-          image: "/images/industries/retail-warehouse.jpg"
+          image: "/images/cases/logistics-operations-dashboard-hero.jpg"
         },
         {
           title: "Launching a Digital Claims Portal in 8 Weeks",
           metric: "2 hrs",
           label: "processing time",
           link: "/cases/insurance-claims-portal",
-          image: "/case-insurance-office.f039a4a1.jpg"
+          image: "/images/cases/insurance-claims-portal-hero.jpg"
         }
       ]}
       ctaTitle="Ready to give clients real-time visibility?"

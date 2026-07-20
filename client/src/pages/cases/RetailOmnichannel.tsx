@@ -11,7 +11,7 @@ export function RetailOmnichannel() {
       industryLink="/industries/retail"
       title="How a Specialty Retailer Increased Customer Engagement 156% With Omnichannel"
       subtitle="A mobile-first engagement platform unified app, email, SMS, push, and in-store touchpoints — driving a 43% rise in app usage and a 31% lift in customer lifetime value."
-      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroImage="/images/cases/retail-omnichannel-hero.jpg"
       metrics={[
         { value: "156%", label: "Engagement Increase" },
         { value: "43%", label: "Higher App Usage" },

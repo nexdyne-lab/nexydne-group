@@ -529,3 +529,10 @@ review before ship. Template lessons: catalog-then-assign beats per-article
 searching; contact sheets catch assignment errors cheaply; and check your OG
 generator parses ALL import styles — 6 routes were silently missing social
 cards until this pass.
+
+### Update (2026-07-20): case-study imagery at scale
+245 case pages processed with the catalog-then-assign pipeline plus a decisive
+human review: ship only clear upgrades (113), revert stretch-picks (40), keep
+what already worked (80). Template lessons: at scale, an automated scorer plus
+contact-sheet veto beats hand-assigning everything; and dedupe your image
+catalog across folders first — duplicate files produce duplicate assignments.

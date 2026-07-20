@@ -11,7 +11,7 @@ export default function MfgLowcodeCoe() {
       industryLink="/industries/manufacturing"
       title="How a Manufacturer Cleared an 18-Month IT Backlog by Building a Low-Code CoE"
       subtitle="IT could not keep up, and a long queue of needed apps kept growing. A low-code center of excellence and trained citizen developers turned the backlog into 28 shipped apps."
-      heroImage="/images/industries/mfg-robot-arm.jpg"
+      heroImage="/images/cases/mfg-lowcode-coe-hero.jpg"
       metrics={[
         { value: "28", label: "Apps Shipped" },
         { value: "18 Mo", label: "Backlog Cleared" },
@@ -54,8 +54,8 @@ export default function MfgLowcodeCoe() {
       quoteAuthor="Chief Information Officer"
       quoteRole="Industrial manufacturer"
       relatedStudies={[
-        { title: "How a Regional Insurer Cut Claims Triage Time 64% Without Replacing Its Core System", metric: "64%", label: "faster claims triage", link: "/cases/insurer-lowcode-claims", image: "/images/industries/fin-monitors.jpg" },
-        { title: "How an Omnichannel Retailer Collapsed Three Editorial Pipelines Into One", metric: "80%", label: "faster publishing", link: "/cases/retailer-headless-omnichannel", image: "/images/capabilities/cap-retail-data.jpg" }
+        { title: "How a Regional Insurer Cut Claims Triage Time 64% Without Replacing Its Core System", metric: "64%", label: "faster claims triage", link: "/cases/insurer-lowcode-claims", image: "/images/cases/insurer-lowcode-claims-hero.jpg" },
+        { title: "How an Omnichannel Retailer Collapsed Three Editorial Pipelines Into One", metric: "80%", label: "faster publishing", link: "/cases/retailer-headless-omnichannel", image: "/images/cases/retailer-headless-omnichannel-hero.jpg" }
       ]}
       ctaTitle="Is an IT backlog holding your operation back?"
       ctaDescription="Let's build a governed low-code CoE that safely multiplies your delivery capacity."

@@ -112,7 +112,7 @@ export function SaaSCustomerServiceAI() {
           metric: "22%",
           label: "lower churn",
           link: "/cases/telecom-churn-prediction",
-          image: "/images/industries/tech-datacenter.jpg"
+          image: "/images/cases/telecom-churn-prediction-hero.jpg"
         }
       ]}
       ctaTitle="Ready to scale support without scaling headcount?"

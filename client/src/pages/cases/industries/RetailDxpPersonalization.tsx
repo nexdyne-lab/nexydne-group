@@ -54,7 +54,7 @@ export default function RetailDxpPersonalization() {
       quoteAuthor="VP of E-commerce"
       quoteRole="Specialty retailer"
       relatedStudies={[
-        { title: "How a National Insurer Halved Publishing Time With a Composable Migration", metric: "50%+", label: "faster publishing", link: "/cases/insurer-sitecore-migration", image: "/images/industries/fin-handshake-city.jpg" },
+        { title: "How a National Insurer Halved Publishing Time With a Composable Migration", metric: "50%+", label: "faster publishing", link: "/cases/insurer-sitecore-migration", image: "/images/cases/insurer-sitecore-migration-hero.jpg" },
         { title: "How a Global Law Firm Migrated 12M Documents Without Losing a Single Ethical Wall", metric: "12M", label: "documents migrated", link: "/cases/law-firm-csp-migration", image: "/images/capabilities/cap-conference-data.jpg" }
       ]}
       ctaTitle="Is your experience platform running as a glorified CMS?"

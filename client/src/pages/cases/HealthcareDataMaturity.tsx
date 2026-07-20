@@ -11,7 +11,7 @@ export function HealthcareDataMaturity() {
       industryLink="/industries/healthcare"
       title="How a Healthcare System Reached Level 3 Data Maturity in 18 Months"
       subtitle="A maturity assessment and phased roadmap turned an ad-hoc reporting culture into a self-service analytics organization — cutting IT reporting requests 75% and embedding predictive models in care."
-      heroImage="/case-medical-collaboration.9602cc8c.jpg"
+      heroImage="/images/cases/healthcare-data-maturity-hero.jpg"
       metrics={[
         { value: "Level 3", label: "Data Maturity (from Level 1)" },
         { value: "75%", label: "Fewer IT Reporting Requests" },
@@ -104,14 +104,14 @@ export function HealthcareDataMaturity() {
           metric: "20%",
           label: "fewer readmissions",
           link: "/cases/healthcare-data-platform",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-data-platform-hero.jpg"
         },
         {
           title: "Training 200 Clinicians to Build Their Own Dashboards",
           metric: "45%",
           label: "better visibility",
           link: "/cases/healthcare-dashboard-training",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-dashboard-training-hero.jpg"
         }
       ]}
       ctaTitle="Ready to move up the maturity curve?"

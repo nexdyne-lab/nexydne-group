@@ -112,7 +112,7 @@ export function RetailModernizationPersonalization() {
           metric: "156%",
           label: "higher engagement",
           link: "/cases/retail-omnichannel",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/retail-omnichannel-hero.jpg"
         }
       ]}
       ctaTitle="Ready to personalize in real time?"

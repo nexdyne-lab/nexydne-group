@@ -11,7 +11,7 @@ export default function AirlineLoyaltyRedesign() {
       industryLink="/industries/travel-hospitality"
       title="Reviving a Regional Airline's Loyalty Program: 40% More Active Members"
       subtitle="A regional airline had millions of loyalty members but only a fraction who still cared. Making the rewards fit the traveler — not the other way round — turned a dormant program into a reason to keep flying."
-      heroImage="/images/industries/transport-bridge.jpg"
+      heroImage="/images/cases/airline-loyalty-redesign-hero.jpg"
       metrics={[
         { value: "40%", label: "More Active Members" },
         { value: "25%", label: "More Rewards Redeemed" },
@@ -111,14 +111,14 @@ export default function AirlineLoyaltyRedesign() {
           metric: "18%",
           label: "more revenue per room",
           link: "/cases/hotel-revenue-transformation",
-          image: "/images/industries/travel-city-twilight.jpg"
+          image: "/images/cases/hotel-revenue-transformation-hero.jpg"
         },
         {
           title: "Restoring Personal Service Across a Hotel Group",
           metric: "+25pts",
           label: "guest recommendation score",
           link: "/cases/hotel-guest-experience",
-          image: "/images/industries/city-night.jpg"
+          image: "/images/cases/hotel-guest-experience-hero.jpg"
         }
       ]}
       ctaTitle="Ready to make your loyalty program worth caring about?"

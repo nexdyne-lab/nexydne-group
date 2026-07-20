@@ -11,7 +11,7 @@ export default function EcommerceDataWarehouse() {
       industryLink="/industries/retail"
       title="How a Multi-Brand Retailer Migrated to Snowflake and Cut Query Times 85%"
       subtitle="A multi-brand e-commerce retailer modernized its legacy data warehouse — reducing query times 85% and infrastructure costs 40%, with zero downtime for business-critical reporting."
-      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroImage="/images/cases/ecommerce-data-warehouse-hero.jpg"
       metrics={[
         { value: "85%", label: "Faster Queries" },
         { value: "40%", label: "Lower Infra Cost" },

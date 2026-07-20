@@ -11,7 +11,7 @@ export function LogisticsBrandConsolidation() {
       industryLink="/industries/transportation-logistics"
       title="How a Global Logistics Provider Unified 30+ Brands and Saved $55M"
       subtitle="A dual-track transformation — data-driven brand consolidation plus AI route optimization — unified 30+ regional brands into one network, reaching a Top 50 global ranking and $55M in operational savings."
-      heroImage="/images/industries/retail-warehouse.jpg"
+      heroImage="/images/cases/logistics-brand-consolidation-hero.jpg"
       metrics={[
         { value: "Top 50", label: "Global Brand Ranking" },
         { value: "18%", label: "More Cross-Selling" },
@@ -104,14 +104,14 @@ export function LogisticsBrandConsolidation() {
           metric: "3.2x",
           label: "faster discovery",
           link: "/cases/logistics-product-access",
-          image: "/images/industries/retail-warehouse.jpg"
+          image: "/images/cases/logistics-product-access-hero.jpg"
         },
         {
           title: "Automating a Retailer's Supply Chain With RPA",
           metric: "45%",
           label: "faster processing",
           link: "/cases/global-retailer",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/global-retailer-hero.jpg"
         }
       ]}
       ctaTitle="Ready to turn scale into advantage?"

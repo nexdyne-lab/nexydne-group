@@ -11,7 +11,7 @@ export default function HealthOnboardingJourneyMap() {
       industryLink="/industries/healthcare"
       title="How a Health Insurer Found 11 Broken Handoffs and Lifted Early Retention 19%"
       subtitle="Onboarding satisfaction had slid for a year and no one could agree why. Reconstructing the new-member journey exposed eleven broken handoffs that no single team could see."
-      heroImage="/case-healthcare-team.5797392b.jpg"
+      heroImage="/images/cases/health-onboarding-journey-map-hero.jpg"
       metrics={[
         { value: "19%", label: "Higher 90-Day Retention" },
         { value: "11", label: "Broken Handoffs Found" },

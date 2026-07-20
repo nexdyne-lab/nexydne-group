@@ -112,7 +112,7 @@ export default function IPaaS() {
       title: "Health System Connects Twelve Systems Behind a Unified API Layer",
       description:
         "Boomi-based integration platform now powers patient registration, claims, and analytics from a single source of orchestrated truth.",
-      image: "/images/case-ipaas-health.jpg",
+      image: "/images/cases/health-system-boomi-hero.jpg",
       link: "/cases/health-system-boomi",
     },
   ];

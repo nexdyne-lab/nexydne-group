@@ -55,7 +55,7 @@ export default function TelecomConversationalAi() {
       quoteRole="Telecom provider"
       relatedStudies={[
         { title: "How a Regional Bank Cut IT Helpdesk Volume by 53%", metric: "53%", label: "lower IT helpdesk volume", link: "/cases/bank-internal-agent", image: "/images/industries/fin-trader.jpg" },
-        { title: "How a Regional Insurer Cut Inbound Calls 47% With a Self-Service Portal", metric: "47%", label: "lower inbound call volume", link: "/cases/insurance-portal", image: "/images/industries/fin-handshake-city.jpg" }
+        { title: "How a Regional Insurer Cut Inbound Calls 47% With a Self-Service Portal", metric: "47%", label: "lower inbound call volume", link: "/cases/insurance-portal", image: "/images/cases/insurance-portal-hero.jpg" }
       ]}
       ctaTitle="Want to automate support without hurting CSAT?"
       ctaDescription="Let's build a grounded agent with strict handoffs that contains volume and protects the experience."

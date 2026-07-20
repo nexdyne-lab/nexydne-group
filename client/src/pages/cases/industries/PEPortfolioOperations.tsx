@@ -11,7 +11,7 @@ export default function PEPortfolioOperations() {
       industryLink="/industries/private-equity"
       title="How a Fund Added $18M in EBITDA at an Industrial Manufacturer"
       subtitle="A private equity fund had bought a solid industrial business that had quietly stopped getting better. A focused program of operational improvement changed the trajectory of the hold — and the return."
-      heroImage="/images/industries/transport-traffic.jpg"
+      heroImage="/images/cases/pe-industrial-transformation-hero.jpg"
       metrics={[
         { value: "700bps", label: "Margin Improvement" },
         { value: "$18M", label: "EBITDA Growth" },
@@ -111,14 +111,14 @@ export default function PEPortfolioOperations() {
           metric: "40%",
           label: "faster diligence",
           link: "/cases/pe-healthcare-diligence",
-          image: "/images/capabilities/cap-conference-data.jpg"
+          image: "/images/cases/pe-healthcare-diligence-hero.jpg"
         },
         {
           title: "Standing Up a Carved-Out Distributor in Six Months",
           metric: "6 Months",
           label: "to standalone operations",
           link: "/cases/pe-distribution-digital",
-          image: "/images/industries/deal-handshake.jpg"
+          image: "/images/cases/pe-distribution-digital-hero.jpg"
         }
       ]}
       ctaTitle="Ready to lift value in the hold?"

@@ -11,7 +11,7 @@ export default function CustomModelClinicalCoding() {
       industryLink="/industries/healthcare"
       title="How a Regional Health System Cut Claim Denials 40% by Training a Model on Its Own Records"
       subtitle="Denied claims and slow, inconsistent coding were quietly draining millions each year. A model built on the system's own clinical documentation made coding faster and more consistent — while coders kept the final say on every claim."
-      heroImage="/case-medical-collaboration.9602cc8c.jpg"
+      heroImage="/images/cases/custom-model-clinical-coding-hero.jpg"
       metrics={[
         { value: "40%", label: "Fewer Denials" },
         { value: "55%", label: "Faster Coding" },
@@ -118,7 +118,7 @@ export default function CustomModelClinicalCoding() {
           metric: "60%",
           label: "resolved without a handoff",
           link: "/cases/agentic-ai-service-resolution",
-          image: "/images/industries/fin-trader.jpg"
+          image: "/images/cases/agentic-ai-service-resolution-hero.jpg"
         }
       ]}
       ctaTitle="Ready to stop leaving earned revenue on the table?"

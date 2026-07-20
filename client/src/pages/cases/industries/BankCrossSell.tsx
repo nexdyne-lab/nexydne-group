@@ -11,7 +11,7 @@ export default function BankCrossSell() {
       industryLink="/industries/financial-services"
       title="How a Regional Bank Turned Single Accounts into $24M of New Relationships"
       subtitle="A regional bank held years of insight about its customers, but it sat locked in separate systems that never spoke to one another. Bringing it into one view let the bank serve people at the moments that mattered."
-      heroImage="/images/industries/fin-trader.jpg"
+      heroImage="/images/cases/bank-cross-sell-hero.jpg"
       metrics={[
         { value: "$24M", label: "New Annual Revenue" },
         { value: "40%", label: "More Products Per Customer" },
@@ -118,7 +118,7 @@ export default function BankCrossSell() {
           metric: "60%",
           label: "faster onboarding",
           link: "/cases/wealth-onboarding",
-          image: "/images/industries/fin-handshake-city.jpg"
+          image: "/images/cases/wealth-onboarding-hero.jpg"
         }
       ]}
       ctaTitle="Ready to earn more from the customers you already have?"

@@ -11,7 +11,7 @@ export default function DtcChannelReallocation() {
       industryLink="/industries/retail"
       title="How a DTC Operator Lifted New-Customer Margin 38% Without Spending a Dollar More"
       subtitle="Seventy percent of the acquisition budget sat in two channels that had stopped being efficient a year and a half ago. Moving money to channels with intact economics changed the math."
-      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroImage="/images/cases/dtc-channel-reallocation-hero.jpg"
       metrics={[
         { value: "38%", label: "Higher Contribution Margin" },
         { value: "Flat", label: "Total Spend" },

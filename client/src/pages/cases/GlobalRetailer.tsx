@@ -11,7 +11,7 @@ export default function GlobalRetailer() {
       industryLink="/industries/retail"
       title="How a Global Retailer Automated Its Supply Chain with RPA"
       subtitle="RPA bots automated order processing and inventory management across 200+ locations — eliminating manual data entry and reducing processing time 45% without waiting on a new ERP."
-      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroImage="/images/cases/global-retailer-hero.jpg"
       metrics={[
         { value: "45%", label: "Faster Processing" },
         { value: "60%", label: "Fewer Order Errors" },

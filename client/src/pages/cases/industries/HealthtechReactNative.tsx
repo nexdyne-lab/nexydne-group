@@ -11,7 +11,7 @@ export default function HealthtechReactNative() {
       industryLink="/industries/healthcare"
       title="How a Health-Tech Startup Scaled From 10K to 2M Users on a Single Codebase"
       subtitle="Hypergrowth meant shipping to iOS and Android in perfect lockstep, and the startup could not afford a separate team for each. One React Native codebase let a single team keep pace."
-      heroImage="/images/capabilities/cap-coder.jpg"
+      heroImage="/images/cases/healthtech-react-native-hero.jpg"
       metrics={[
         { value: "10K → 2M", label: "Users" },
         { value: "1", label: "Codebase" },
@@ -55,7 +55,7 @@ export default function HealthtechReactNative() {
       quoteRole="Health-tech startup"
       relatedStudies={[
         { title: "How a Regional Bank Cut Its Mobile App Crash Rate by 71%", metric: "71%", label: "lower crash rate", link: "/cases/bank-app-modernization", image: "/images/industries/fin-monitors.jpg" },
-        { title: "How a Health-Tech Scale-Up Reached 2M Users With One Mobile Team", metric: "2M", label: "users on one team", link: "/cases/healthtech-mobile-scale", image: "/case-healthcare-team.5797392b.jpg" }
+        { title: "How a Health-Tech Scale-Up Reached 2M Users With One Mobile Team", metric: "2M", label: "users on one team", link: "/cases/healthtech-mobile-scale", image: "/images/cases/healthtech-mobile-scale-hero.jpg" }
       ]}
       ctaTitle="Need to ship to both platforms without two teams?"
       ctaDescription="Let's architect a single codebase that keeps iOS and Android in lockstep as you scale."

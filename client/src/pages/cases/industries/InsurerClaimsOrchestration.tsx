@@ -11,7 +11,7 @@ export default function InsurerClaimsOrchestration() {
       industryLink="/industries/insurance"
       title="How a National Insurer Cut Claims Cycle Time 47% With End-to-End Orchestration"
       subtitle="A claim passed through six disconnected tools with no one system owning the whole journey. A single executable orchestration model spanned intake to payout and cut cycle time nearly in half."
-      heroImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/cases/insurer-claims-orchestration-hero.jpg"
       metrics={[
         { value: "47%", label: "Faster Claims Cycle" },
         { value: "6 → 1", label: "Tools Orchestrated" },
@@ -54,8 +54,8 @@ export default function InsurerClaimsOrchestration() {
       quoteAuthor="SVP of Claims Operations"
       quoteRole="National insurer"
       relatedStudies={[
-        { title: "How a Bank Cut Loan Origination From 14 Days to 3", metric: "14 → 3 days", label: "loan origination", link: "/cases/bank-loan-orchestration", image: "/images/industries/fin-trader.jpg" },
-        { title: "How an Insurer Cut Claims Handle Time 68% With Unattended Bots", metric: "68%", label: "less handle time", link: "/cases/insurer-claims-rpa", image: "/images/industries/fin-handshake-city.jpg" }
+        { title: "How a Bank Cut Loan Origination From 14 Days to 3", metric: "14 → 3 days", label: "loan origination", link: "/cases/bank-loan-orchestration", image: "/images/cases/bank-loan-orchestration-hero.jpg" },
+        { title: "How an Insurer Cut Claims Handle Time 68% With Unattended Bots", metric: "68%", label: "less handle time", link: "/cases/insurer-claims-rpa", image: "/images/cases/insurer-claims-rpa-hero.jpg" }
       ]}
       ctaTitle="Does your process span disconnected tools with no owner?"
       ctaDescription="Let's orchestrate the whole journey as one model and take control end to end."

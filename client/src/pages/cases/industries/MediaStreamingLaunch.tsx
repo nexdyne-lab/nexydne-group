@@ -118,7 +118,7 @@ export default function MediaStreamingLaunch() {
           metric: "40%",
           label: "lower customer churn",
           link: "/cases/telecom-customer-experience",
-          image: "/images/capabilities/cap-iot-network.jpg"
+          image: "/images/cases/telecom-customer-experience-hero.jpg"
         }
       ]}
       ctaTitle="Ready to reach your audience directly?"

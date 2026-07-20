@@ -11,7 +11,7 @@ export default function InsuranceClaimsAutomation() {
       industryLink="/industries/insurance"
       title="How a P&C Insurer Cut Its Claims Cycle by 60%"
       subtitle="A property and casualty carrier was settling even simple claims in two weeks while nimbler rivals paid in hours. Handling the routine claims automatically freed adjusters for the cases that needed them."
-      heroImage="/case-insurance-claims.399e5d4b.jpg"
+      heroImage="/images/cases/insurance-claims-automation-hero.jpg"
       metrics={[
         { value: "60%", label: "Faster Processing" },
         { value: "85%", label: "Settled Automatically" },
@@ -111,14 +111,14 @@ export default function InsuranceClaimsAutomation() {
           metric: "40%",
           label: "faster quote turnaround",
           link: "/cases/insurance-ai-underwriting",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/insurance-ai-underwriting-hero.jpg"
         },
         {
           title: "Turning a Call-Center Insurer Into a Digital One",
           metric: "50%",
           label: "digital adoption",
           link: "/cases/insurance-digital-distribution",
-          image: "/images/industries/fin-handshake-city.jpg"
+          image: "/images/cases/insurance-digital-distribution-hero.jpg"
         }
       ]}
       ctaTitle="Ready to settle the easy claims in hours?"

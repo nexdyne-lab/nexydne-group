@@ -118,7 +118,7 @@ export default function IndustrialConnectedProducts() {
           metric: "92%",
           label: "defect prediction accuracy",
           link: "/cases/semiconductor-quality-prediction",
-          image: "/images/industries/mfg-robot-arm.jpg"
+          image: "/images/cases/semiconductor-quality-prediction-hero.jpg"
         }
       ]}
       ctaTitle="Ready to build a business on what you've already sold?"

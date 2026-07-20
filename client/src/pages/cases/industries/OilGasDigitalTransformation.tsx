@@ -11,7 +11,7 @@ export default function OilGasDigitalTransformation() {
       industryLink="/industries/energy-utilities"
       title="Oil & Gas Company Saves $150M Through Digital Transformation"
       subtitle="How digital oilfield technology, AI-powered optimization, and predictive maintenance transformed upstream operations."
-      heroImage="/images/industries/energy-wind.jpg"
+      heroImage="/images/cases/oil-gas-digital-transformation-hero.jpg"
       metrics={[
         { value: "$150M", label: "Annual Savings" },
         { value: "8%", label: "Production Increase" },
@@ -111,14 +111,14 @@ export default function OilGasDigitalTransformation() {
           metric: "45%",
           label: "reduction in outage duration",
           link: "/cases/utility-grid-modernization",
-          image: "/images/industries/energy-powerplant.jpg"
+          image: "/images/cases/utility-grid-modernization-hero.jpg"
         },
         {
           title: "AI Forecasting for Renewable Energy",
           metric: "25%",
           label: "improvement in forecast accuracy",
           link: "/cases/renewable-energy-forecasting",
-          image: "/images/industries/energy-solar.jpg"
+          image: "/images/cases/renewable-energy-forecasting-hero.jpg"
         }
       ]}
       ctaTitle="Ready to Digitize Your Operations?"

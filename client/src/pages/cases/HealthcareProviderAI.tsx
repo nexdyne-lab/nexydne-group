@@ -11,7 +11,7 @@ export function HealthcareProviderAI() {
       industryLink="/industries/healthcare"
       title="How a Healthcare System Cut Patient Wait Times 35% With Predictive Analytics"
       subtitle="AI-powered scheduling and patient-flow forecasting transformed operations across the network — cutting wait times 35%, lifting throughput 28%, and creating $24M in annual value."
-      heroImage="/case-medical-collaboration.9602cc8c.jpg"
+      heroImage="/images/cases/healthcare-provider-ai-hero.jpg"
       metrics={[
         { value: "35%", label: "Shorter Wait Times" },
         { value: "28%", label: "Higher Throughput" },
@@ -105,14 +105,14 @@ export function HealthcareProviderAI() {
           metric: "40%",
           label: "less admin overhead",
           link: "/cases/healthcare-provider",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-provider-hero.jpg"
         },
         {
           title: "Launching a Patient Portal That Cut Admin Calls 65%",
           metric: "65%",
           label: "fewer admin calls",
           link: "/cases/healthcare-patient-portal",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-patient-portal-hero.jpg"
         }
       ]}
       ctaTitle="Ready to get ahead of patient demand?"

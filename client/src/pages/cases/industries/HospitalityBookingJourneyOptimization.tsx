@@ -11,7 +11,7 @@ export default function HospitalityBookingJourneyOptimization() {
       industryLink="/industries/travel-hospitality"
       title="How a Hotel Brand Recovered 18% of Its Abandoned Bookings"
       subtitle="The booking funnel was leaking at three specific moments, and the journey slide on the wall named none of them. Rebuilding the journey from real event data showed exactly where the revenue was going."
-      heroImage="/images/industries/travel-city-twilight.jpg"
+      heroImage="/images/cases/hospitality-booking-journey-optimization-hero.jpg"
       metrics={[
         { value: "18%", label: "Abandonment Recovered" },
         { value: "3", label: "Friction Points Found" },
@@ -55,7 +55,7 @@ export default function HospitalityBookingJourneyOptimization() {
       quoteRole="Global hotel brand"
       relatedStudies={[
         { title: "How a Telecom Carrier Cut Repeat Activation Calls by 27%", metric: "27%", label: "fewer repeat calls", link: "/cases/telecom-activation-journey-redesign", image: "/images/industries/city-night.jpg" },
-        { title: "How a Consumer-Finance App Lifted Product Attach 22% by Personalizing the Right Moments", metric: "22%", label: "higher product attach", link: "/cases/finance-personalization-strategy-reroute", image: "/images/industries/fin-monitors.jpg" }
+        { title: "How a Consumer-Finance App Lifted Product Attach 22% by Personalizing the Right Moments", metric: "22%", label: "higher product attach", link: "/cases/finance-personalization-strategy-reroute", image: "/images/cases/finance-personalization-strategy-reroute-hero.jpg" }
       ]}
       ctaTitle="Is your journey map built on data or on assumptions?"
       ctaDescription="Let's rebuild your funnel from real behavior and quantify what each leak is costing you."

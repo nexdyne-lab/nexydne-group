@@ -55,7 +55,7 @@ export default function LawFirmCspMigration() {
       quoteRole="Global law firm"
       relatedStudies={[
         { title: "How a Manufacturer Cut Engineering Document Search Time by Two-Thirds", metric: "2/3", label: "less document search time", link: "/cases/manufacturer-content-discovery", image: "/images/capabilities/cap-robot-factory.jpg" },
-        { title: "How a National Insurer Cut Claims Cycle Time 47% With End-to-End Orchestration", metric: "47%", label: "faster claims cycle", link: "/cases/insurer-claims-orchestration", image: "/images/industries/fin-monitors.jpg" }
+        { title: "How a National Insurer Cut Claims Cycle Time 47% With End-to-End Orchestration", metric: "47%", label: "faster claims cycle", link: "/cases/insurer-claims-orchestration", image: "/images/cases/insurer-claims-orchestration-hero.jpg" }
       ]}
       ctaTitle="Facing a migration where nothing can be lost?"
       ctaDescription="Let's plan a phased, preservation-first migration that keeps every rule and record intact."

@@ -11,7 +11,7 @@ export function MunicipalPermitSystem() {
       industryLink="/industries/public-sector"
       title="How a City Modernized Its Permit System for 250K Residents"
       subtitle="A municipal government replaced a 30-year-old legacy system with a Microsoft Power Platform solution — cutting permit approval time from 45 days to 7 and improving citizen satisfaction by 58 points."
-      heroImage="/images/capabilities/cap-conference-data.jpg"
+      heroImage="/images/cases/municipal-permit-system-hero.jpg"
       metrics={[
         { value: "7 days", label: "Approval Time (from 45 days)" },
         { value: "82%", label: "Online Submission Rate" },
@@ -104,7 +104,7 @@ export function MunicipalPermitSystem() {
           metric: "2 hrs",
           label: "processing time",
           link: "/cases/insurance-claims-portal",
-          image: "/case-insurance-office.f039a4a1.jpg"
+          image: "/images/cases/insurance-claims-portal-hero.jpg"
         },
         {
           title: "Building a Real-Time Tracking App for 500 Drivers",

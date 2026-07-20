@@ -11,7 +11,7 @@ export function HealthcareDataPlatform() {
       industryLink="/industries/healthcare"
       title="How a Hospital Network Unified Patient Records for Better Outcomes"
       subtitle="A regional hospital network integrated 15+ legacy systems into a secure, HIPAA-compliant data lakehouse — creating a 360-degree patient view and driving a 20% reduction in readmissions."
-      heroImage="/case-medical-collaboration.9602cc8c.jpg"
+      heroImage="/images/cases/healthcare-data-platform-hero.jpg"
       metrics={[
         { value: "15+", label: "Legacy Systems Integrated" },
         { value: "360°", label: "Patient View (< 1 sec)" },
@@ -104,14 +104,14 @@ export function HealthcareDataPlatform() {
           metric: "75%",
           label: "fewer IT requests",
           link: "/cases/healthcare-data-maturity",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-data-maturity-hero.jpg"
         },
         {
           title: "Reaching 99.99% Uptime After Migrating to AWS",
           metric: "99.99%",
           label: "uptime",
           link: "/cases/healthcare-cloud-migration",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-cloud-migration-hero.jpg"
         }
       ]}
       ctaTitle="Ready to unify your patient data?"
