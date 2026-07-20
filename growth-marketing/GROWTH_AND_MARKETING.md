@@ -558,3 +558,11 @@ First FB post (Shadow AI) published from the new system: calendar -> captions.md
 -> paste; tiles pre-rendered for the image days. Backlog: branded short links
 (go.<domain> on Cloudflare redirect rules + UTMs) for per-post click
 attribution — the McKinsey pattern, free on our stack.
+
+### Update (2026-07-21): LinkedIn consolidated into a single-source folder
+All LinkedIn work now lives in `growth-marketing/linkedin/` mirroring the
+Facebook folder: LINKEDIN_STRATEGY.md (founder-led strategy + mechanics +
+render pipeline), linkedin-posts.md (master post copy #1–#6 + bespoke),
+LinkedIn Content Calendar.xlsx, monthly folders (2026-07/, 2026-08/) with
+visual assets by post date, and assets/ (page logo+banner, hero backgrounds,
+extra visuals). Render machinery stays in social-tiles/. Portable template.

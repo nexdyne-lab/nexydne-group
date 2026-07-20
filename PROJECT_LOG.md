@@ -834,3 +834,11 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   large and bled off the right edge Stanford-style; tagline quote top-left; NO
   gradients. Template social-tiles/fb-cover2.html; output
   facebook-content/fb-cover.png.
+
+### 2026-07-21 — LinkedIn single-source folder
+- Consolidated all LinkedIn assets into growth-marketing/linkedin/ (mirrors
+  facebook-content/): LINKEDIN_STRATEGY.md, linkedin-posts.md (moved from
+  linkedin-launch.md), LinkedIn Content Calendar.xlsx, 2026-07/ + 2026-08/
+  monthly folders (carousel PDF + 7 slides in July, POSTS.md indexes),
+  assets/{page,hero-backgrounds,extra-visuals}, README. Render pipeline stays
+  in social-tiles/.
