@@ -693,3 +693,15 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   /images/capabilities/cap2-*. Localhost-reviewed, approved.
 - Note: template's "Technology performs. Humans govern." perspective statement
   is hardcoded across all 6 pages — flagged for a per-page line later.
+
+### 2026-07-20 — /capabilities landing page redesign
+- Hero rebuilt McKinsey-style: split PageHero → full-bleed dark paint-galaxy
+  abstract (/images/capabilities-hero-abstract.jpg) with one huge white
+  "Capabilities" low in frame. No eyebrow/subtitle/card.
+- Six pillar cards now reuse their own capability pages' heroes (cap2-*-hero)
+  for click-through continuity.
+- AI & Technology overview: robot-hand render → AR-glasses woman in dark car
+  (/images/capabilities-overview-ai.jpg); removed the "Powered by Advanced AI"
+  floating badge (filler). NOTE: overview CTA points at
+  /capabilities/ai-technology-consulting — confirm destination later.
+- Localhost-reviewed, approved.

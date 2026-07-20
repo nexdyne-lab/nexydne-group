@@ -3,7 +3,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
 import { SEO } from "@/components/SEO";
-import PageHero from "@/components/PageHero";
 
 const capabilities = [
   {
@@ -11,42 +10,42 @@ const capabilities = [
     title: "Artificial Intelligence",
     description: "Harness the power of generative AI and machine learning to automate complex workflows and create competitive advantages for your organization.",
     link: "/capabilities/artificial-intelligence",
-    image: "/images/capability-ai.png"
+    image: "/images/capabilities/cap2-ai-hero.jpg"
   },
   {
     id: "02",
     title: "Business Building",
     description: "Launch new digital ventures and revenue streams with our proven playbook for rapid scaling and market validation.",
     link: "/capabilities/business-building",
-    image: "/images/capability-business.jpg"
+    image: "/images/capabilities/cap2-business-building-hero.jpg"
   },
   {
     id: "03",
     title: "Technology",
     description: "Modernize your legacy systems with cloud-native architectures that ensure security, scalability, and operational resilience.",
     link: "/capabilities/technology",
-    image: "/images/capability-technology.jpg"
+    image: "/images/capabilities/cap2-technology-hero.jpg"
   },
   {
     id: "04",
     title: "Growth, Marketing & Sales",
     description: "Drive customer acquisition and retention through data-driven marketing strategies and precision sales enablement tools.",
     link: "/capabilities/growth-marketing-sales",
-    image: "/images/solution-growth.png"
+    image: "/images/capabilities/cap2-growth-marketing-hero.jpg"
   },
   {
     id: "05",
     title: "Strategy & Corporate Finance",
     description: "Align your financial resources with strategic goals to maximize ROI and secure sustainable long-term growth.",
     link: "/capabilities/strategy-corporate-finance",
-    image: "/images/financial-analysis.jpg"
+    image: "/images/capabilities/cap2-strategy-finance-hero.jpg"
   },
   {
     id: "06",
     title: "Operations",
     description: "Streamline end-to-end operations to reduce waste, improve quality, and accelerate delivery times across your organization.",
     link: "/capabilities/operations",
-    image: "/images/solution-process.png"
+    image: "/images/capabilities/cap2-operations-hero.jpg"
   }
 ];
 
@@ -115,12 +114,26 @@ export default function Capabilities() {
       />
       <Navigation />
 
-      <PageHero
-        eyebrow="CAPABILITIES"
-        title="Capabilities"
-        subtitle="Transformative solutions that bridge strategy and execution, powered by cutting-edge technology and deep industry expertise."
-        heroImage="/images/industries/tech-datacenter.jpg"
-      />
+      {/* Full-bleed hero — McKinsey-style: one image, one word, low in frame */}
+      <section
+        className="relative w-full overflow-hidden"
+        style={{ height: "52vh", minHeight: 420, backgroundColor: "#000" }}
+      >
+        <img
+          src="/images/capabilities-hero-abstract.jpg"
+          alt=""
+          aria-hidden
+          className="absolute inset-0 h-full w-full object-cover"
+          style={{ objectPosition: "60% 40%" }}
+        />
+        <div className="relative z-10 flex h-full items-end">
+          <div className="container px-4 sm:px-6 md:px-12 pb-10 md:pb-14">
+            <h1 className="font-bold text-white tracking-[-0.035em] leading-[1.02] text-[clamp(2.8rem,6.5vw,5.2rem)] drop-shadow-[0_2px_20px_rgba(0,0,0,0.45)]">
+              Capabilities
+            </h1>
+          </div>
+        </div>
+      </section>
 
       {/* Capabilities Grid with solutions-style cards */}
       <section className="nx-section bg-white">
@@ -168,27 +181,13 @@ export default function Capabilities() {
               <div className="relative">
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <img
-                    src="/images/capability-ai.png"
+                    src="/images/capabilities-overview-ai.jpg"
                     alt="AI and Technology Consulting"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   />
                 </div>
 
-                {/* Floating badge */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.4, duration: 0.5 }}
-                  className="absolute -bottom-6 -right-6 bg-white p-4 border border-border/50"
-                >
-                  <div className="flex items-center gap-3">
-                    <div>
-                      <div className="text-xs text-muted-foreground font-medium">Powered by</div>
-                      <div className="text-sm text-charcoal">Advanced AI</div>
-                    </div>
-                  </div>
-                </motion.div>
+
               </div>
             </motion.div>
 
