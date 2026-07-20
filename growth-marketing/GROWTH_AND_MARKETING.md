@@ -552,3 +552,9 @@ templates in social-tiles/ rendered by fb-shot.mjs into the monthly content
 folders. New post = add a line to fb-shot.mjs (photo/title/kicker) and run it.
 Reusing each article's hero as the tile photo keeps tile, OG card, and
 article visually continuous — template pattern worth replicating.
+
+### Update (2026-07-21): Facebook goes live + short-link backlog
+First FB post (Shadow AI) published from the new system: calendar -> captions.md
+-> paste; tiles pre-rendered for the image days. Backlog: branded short links
+(go.<domain> on Cloudflare redirect rules + UTMs) for per-post click
+attribution — the McKinsey pattern, free on our stack.

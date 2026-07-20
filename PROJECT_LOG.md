@@ -817,3 +817,12 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   checklist infographic), Aug 5 (digital channels), Aug 12 (ecommerce).
   Calendar rows marked Ready. Photos = the articles' own heroes, so tile,
   OG card, and article all match.
+
+### 2026-07-21 — Facebook channel launch night
+- First Facebook post (Shadow AI, Style 1 link post) prepared and handed to
+  David to publish; captions + 5 tiles staged through Aug 12.
+- Observation from McKinsey's feed logged as backlog: branded short links
+  (mck.co style). Plan when wanted: go.nexdynegroup.com via Cloudflare
+  redirect rules + UTM tags = per-post click attribution, zero cost.
+- Facebook Page cover image being produced (charcoal brand cover,
+  fb-cover.html in social-tiles).
