@@ -851,3 +851,12 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   reframed as the governance HOW not the daily WHY.
 - growth-marketing/positioning/: stanford-hai-research + nexdyne-positioning,
   each as .md/.docx/.pdf from one build_docs.py source; README.
+
+### 2026-07-21 — GROWTH_AND_MARKETING.md made truly portable (Stage 8)
+- Audit found the content/brand work (imagery, FB/LinkedIn systems, positioning,
+  no-financials rule) was captured only as trailing dated "Update" notes — good
+  as history, not portable. Consolidated into a reusable **Stage 8 — the content
+  & brand engine** (8.1 positioning, 8.2 imagery pipeline, 8.3 social channels,
+  8.4 content integrity) + wired into the Port-to-a-new-project checklist (item
+  H) + pointer note over the dated updates. PROJECT_LOG stays the changelog;
+  GROWTH doc is now the replication template.

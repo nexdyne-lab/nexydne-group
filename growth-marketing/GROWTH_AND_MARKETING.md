@@ -10,7 +10,7 @@ fast.
 > the env vars.* The **Port-to-a-new-project checklist** at the bottom is the
 > fast path when repeating this on the next company.
 
-Last updated: **2026-07-19** — all build stages complete; engine in operating mode.
+Last updated: **2026-07-21** — engine live; Stage 8 (content & brand) added for portability.
 
 ---
 
@@ -423,6 +423,68 @@ Repeating this whole engine on the next company:
 
 **G. Turn on nurture + channels**
 
+**H. Stand up the content & brand engine** — Stage 8 below (positioning first, then imagery, then social channels, then the content-integrity rule)
+
+---
+
+## Stage 8 — The content & brand engine (portable recipes)
+
+*The reusable version of everything the 2026-07 dated updates below describe. Do
+these in order; positioning drives every downstream choice. All of it is
+design/content work — no new infrastructure.*
+
+### 8.1 — Brand positioning FIRST (the daily lead)
+Before any content, write the one-line proposition the brand leads with every
+day — the WHY, separate from any framework (the HOW). Method that worked:
+1. Pick the closest respected reference brand; WebFetch their real public
+   positioning; write a short competitive-research doc (what to borrow, what NOT
+   to copy). 2. Craft the daily lead as a *statement a corporation asserts*, not
+   a question an institution asks. 3. Ship it as `positioning/*.md/.docx/.pdf`
+   from a single `build_docs.py` (one source → three formats, never drift).
+Lesson: lead with the value proposition; a governance/methodology framework is
+support, never the opener.
+
+### 8.2 — Site imagery system (catalog → assign → wire → QC)
+To re-image a whole site from a client's own image library:
+1. **Catalog once** — parallel agents download + VIEW every reachable image,
+   emit a JSONL catalog (desc, palette, quality 1–5, provenance). Dedupe across
+   folders (duplicate files → duplicate assignments).
+2. **Assign** — hand- or scorer-match one UNIQUE image per page (palette-first),
+   maintaining a **ledger** (page → old/new) so every surface stays consistent.
+3. **Apply in parallel** — optimize (sips, ≤~350KB), wire component + registry +
+   every card that references the page (grep ALL object shapes: `link:`, `href:`,
+   `slug:`, `id:`), regenerate OG meta.
+4. **QC gauntlet** — tsc, build+link-guard, tests, headless render check, then a
+   **contact-sheet human review** (catches scorer misfires cheaply).
+Gotchas: connectors often cap file size (downsize originals first); avoid images
+scraped from other firms' sites (license risk).
+
+### 8.3 — Social channels (single-source folder per channel)
+One folder per channel under `growth-marketing/` (`facebook-content/`,
+`linkedin/`), each with: `*_STRATEGY.md` (voice + mechanics + cadence),
+`* Content Calendar.xlsx` (status-tracked), post copy (captions/posts .md),
+monthly asset subfolders, a page cover + logo/banner. Render machinery
+(parameterized HTML + Puppeteer) lives in `social-tiles/`; deliverables render
+INTO the monthly folders.
+- **Facebook:** 3-style system — Style 1 bare link (the OG card does the work,
+  caption is a human hook; default 2/3), Style 3 gradient photo tile, Style 2
+  numbered framework tile. Reuse each article's own hero as the tile photo so
+  tile + OG card + article stay continuous. Posting cadence Mon/Wed/Fri.
+- **LinkedIn:** founder-led (personal profile posts, company page reposts ~2h
+  later), Tue–Thu 8–10am ET, carousels as native PDFs, reply in the first hour.
+- **Branded short links** (`go.<domain>` via a redirect rule + UTMs) give
+  per-post click attribution for free — set up once, use on every channel.
+
+### 8.4 — Content integrity: no unverifiable claims
+For a young firm, remove ALL client-financial claims ($ revenue/savings, "seven-
+figure", aggregate "$X delivered") — they compound into an undefendable track
+record and contradict client confidentiality. Replace with multiples,
+percentages, time, operational counts, payback framing. Keep cited market stats
+and educational examples. Method: ledger-driven agent rewrite + **adversarial
+QC** (a second agent that assumes defects exist) — the adversarial pass caught
+what tsc/build never could. Sales line it earns: "we never discuss client
+financials, even directionally."
+
 ---
 
 ## Environment variable reference
@@ -491,6 +553,11 @@ lead-magnets/
 | 6b. Newsletter relationship | ✅ LIVE — Issue 01 sent 2026-07-19; issues 02–05 banked; monthly cadence |
 | 7. Channels / distribution | ✅ COMPLETE — on-site promo · LinkedIn launched · SEO+GEO live (sitemap in GSC, 1,116 pages discovered; AI crawlers unblocked at the edge) |
 | Admin panel (no-code magnet management) | 🔮 Later (when volume justifies) |
+
+>
+> **Note:** the dated entries below are the chronological audit trail. The
+> *reusable* version of this content/brand work is consolidated in **Stage 8**
+> above — read that when porting to a new project.
 
 ## Stage: Facebook channel (in progress — 2026-07-19)
 
