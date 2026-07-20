@@ -316,7 +316,7 @@ export default function InsightArticleV2({
                     prose-headings:font-medium prose-headings:tracking-[-0.01em] prose-headings:text-charcoal
                     prose-h2:text-[1.6rem] prose-h2:md:text-[1.9rem] prose-h2:leading-[1.2] prose-h2:mt-14 prose-h2:mb-5 prose-h2:scroll-mt-28
                     prose-h3:text-[1.2rem] prose-h3:md:text-[1.35rem] prose-h3:mt-10 prose-h3:mb-3
-                    prose-p:text-charcoal/80 prose-p:leading-[1.8] prose-p:text-[1.05rem]
+                    prose-p:text-charcoal/80 prose-p:leading-[1.8]
                     prose-strong:text-charcoal prose-strong:font-semibold
                     prose-a:text-primary prose-a:no-underline hover:prose-a:underline
                     prose-blockquote:border-l-2 prose-blockquote:border-primary prose-blockquote:not-italic

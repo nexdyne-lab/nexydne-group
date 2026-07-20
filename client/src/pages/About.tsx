@@ -258,7 +258,7 @@ export default function About() {
                 <span className="absolute top-0 left-0 h-px w-16 bg-primary scale-x-100 md:scale-x-0 md:group-hover:scale-x-100 origin-left transition-transform duration-500" />
                 <div className="text-[2.4rem] leading-none font-semibold text-white/20 mb-6">{p.no}</div>
                 <h3 className="nx-h3 text-white mb-4 group-hover:text-primary transition-colors">{p.title}</h3>
-                <p className="text-[15px] text-white/60 leading-[1.7]">{p.body}</p>
+                <p className="nx-body text-white/60">{p.body}</p>
               </motion.div>
             ))}
           </div>
@@ -340,7 +340,7 @@ export default function About() {
                 </blockquote>
               </figure>
 
-              <p className="text-[15px] text-muted-foreground leading-[1.75] mb-9 max-w-2xl">
+              <p className="nx-body text-muted-foreground mb-9 max-w-2xl">
                 We deploy AI and agentic systems where they create real advantage, always inside a
                 human system we design and govern first. Today we continue to push boundaries —
                 combining deep expertise with frontier technology to help our clients not just
@@ -378,7 +378,7 @@ export default function About() {
                       <h3 className="text-[1.4rem] lg:text-[1.55rem] font-semibold text-charcoal leading-tight tracking-[-0.015em]">{f.name}</h3>
                       <p className="text-[12px] font-semibold uppercase tracking-[0.08em] text-charcoal/70 mt-2">{f.role}</p>
                       <span aria-hidden className="block h-[2px] w-9 bg-primary mt-3" />
-                      <p className="text-[15px] text-muted-foreground leading-[1.7] mt-4">{f.focus}</p>
+                      <p className="nx-body text-muted-foreground mt-4">{f.focus}</p>
                       <div className="flex items-center gap-3 mt-6">
                         <Link href="/contact">
                           <span aria-label={`Contact ${f.name}`} className="h-10 w-10 rounded-full bg-charcoal text-white flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
@@ -465,7 +465,7 @@ export default function About() {
                   Bold ambition. Governed outcomes.
                   <span className="text-primary transition-transform inline-block group-hover:translate-x-1"> →</span>
                 </h2>
-                <p className="text-white/75 text-[15px] md:text-[16px] mt-4 max-w-lg">
+                <p className="nx-body text-white/75 mt-4 max-w-lg">
                   Build your career where human judgment leads the technology, not the other way around.
                 </p>
               </div>
@@ -486,7 +486,7 @@ export default function About() {
             <motion.div {...fadeUp} className="lg:col-span-4">
               <span className="nx-eyebrow text-white/45">Ecosystem</span>
               <h2 className="nx-h2 text-white mt-4">Built on frontier platforms.</h2>
-              <p className="text-[15px] text-white/60 leading-[1.7] mt-5 max-w-md">
+              <p className="nx-body text-white/60 mt-5 max-w-md">
                 We deploy real technology, not slideware — building on the AI and cloud platforms our
                 clients can trust and scale.
               </p>

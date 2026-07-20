@@ -218,6 +218,14 @@
   }
   @media (min-width: 768px) { .nx-lead { font-size: 1.25rem; } }  /* 20 · md+ — more readable intro */
 
+  /* Standard reading paragraph — the body-copy floor. Long-form text on any
+     surface uses this (labels/captions/meta stay smaller by design). */
+  .nx-body {
+    font-size: 1.0625rem;              /* 17 · mobile */
+    line-height: 1.7;
+  }
+  @media (min-width: 768px) { .nx-body { font-size: 1.125rem; } }  /* 18 · md+ */
+
   /* Standard vertical rhythm for full-width stacked sections. Replaces the old
      `py-20 lg:py-28` (which doubled to ~224px of dead space at every seam).
      Two stacked .nx-section blocks now meet at ~144px — clear separation,
@@ -653,7 +661,7 @@
    `prose` defaults. Applied via the `.nx-article` class in InsightArticle.tsx.
    ───────────────────────────────────────────────────────────────────────── */
 .nx-article p {
-  font-size: 1.0625rem;      /* 17px */
+  font-size: 1.125rem;       /* 18px — long-read body (nx-body scale) */
   line-height: 1.8;
   margin-top: 0;
   margin-bottom: 2rem;        /* 32px — clear separation between paragraphs */
@@ -678,7 +686,7 @@
   padding-left: 1.35rem;
 }
 .nx-article li {
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   line-height: 1.8;
   margin: 0.6rem 0;
   padding-left: 0.35rem;

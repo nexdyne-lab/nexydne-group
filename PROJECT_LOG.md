@@ -753,3 +753,11 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
 - Split PageHero → full-bleed top-down cruise-ship ocean image, huge white
   "Industries" low-left, 26s Ken Burns zoom (matches /capabilities hero).
   Localhost-reviewed, approved.
+
+### 2026-07-20 — Typography audit + body-copy floor
+- Site-wide type audit (rendered sizes measured headlessly across 8 page
+  types): heading scale + nx-lead healthy; drift found in exactly two places.
+- Fixes: new `.nx-body` standard (17/18px, lh 1.7) added to index.css; About's
+  eleven 15px paragraphs → nx-body; `.nx-article p/li` 17→18px (upgrades all
+  ~116 long-read articles via one CSS rule). Cards/labels/menus stay small by
+  design. Solutions "14px paragraphs" were hidden menu/footer text (no fix).
