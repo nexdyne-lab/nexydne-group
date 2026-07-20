@@ -826,3 +826,11 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   redirect rules + UTM tags = per-post click attribution, zero cost.
 - Facebook Page cover image being produced (charcoal brand cover,
   fb-cover.html in social-tiles).
+
+### 2026-07-21 — Facebook cover v2 (Stanford HAI pattern)
+- Cover rebuilt on David's direction: his night-skyline photo (red-lit towers,
+  on-brand) + the NexDyne quarter-circle pattern recolored old-orange → brand
+  red #DE2F23 with transparent ground (pattern-red.png in cover page/), scaled
+  large and bled off the right edge Stanford-style; tagline quote top-left; NO
+  gradients. Template social-tiles/fb-cover2.html; output
+  facebook-content/fb-cover.png.
