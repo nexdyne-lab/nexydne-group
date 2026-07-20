@@ -8,97 +8,72 @@ const capabilities = [
   {
     id: "01",
     title: "Artificial Intelligence",
-    description: "Harness the power of generative AI and machine learning to automate complex workflows and create competitive advantages for your organization.",
+    description: "Governed AI that scales judgment — not just automation.",
     link: "/capabilities/artificial-intelligence",
     image: "/images/capabilities/cap2-ai-hero.jpg"
   },
   {
     id: "02",
     title: "Business Building",
-    description: "Launch new digital ventures and revenue streams with our proven playbook for rapid scaling and market validation.",
+    description: "Launch new ventures and revenue engines from inside the core.",
     link: "/capabilities/business-building",
     image: "/images/capabilities/cap2-business-building-hero.jpg"
   },
   {
     id: "03",
     title: "Technology",
-    description: "Modernize your legacy systems with cloud-native architectures that ensure security, scalability, and operational resilience.",
+    description: "Modern, cloud-native platforms built to scale with ambition.",
     link: "/capabilities/technology",
     image: "/images/capabilities/cap2-technology-hero.jpg"
   },
   {
     id: "04",
     title: "Growth, Marketing & Sales",
-    description: "Drive customer acquisition and retention through data-driven marketing strategies and precision sales enablement tools.",
+    description: "Convert capability into demand, pipeline, and revenue.",
     link: "/capabilities/growth-marketing-sales",
     image: "/images/capabilities/cap2-growth-marketing-hero.jpg"
   },
   {
     id: "05",
     title: "Strategy & Corporate Finance",
-    description: "Align your financial resources with strategic goals to maximize ROI and secure sustainable long-term growth.",
+    description: "Sharper strategy and capital decisions that compound value.",
     link: "/capabilities/strategy-corporate-finance",
     image: "/images/capabilities/cap2-strategy-finance-hero.jpg"
   },
   {
     id: "06",
     title: "Operations",
-    description: "Streamline end-to-end operations to reduce waste, improve quality, and accelerate delivery times across your organization.",
+    description: "Turn manual operations into governed, autonomous execution.",
     link: "/capabilities/operations",
     image: "/images/capabilities/cap2-operations-hero.jpg"
   }
 ];
 
-// Capability card with hover effect - image disappears, description appears
+// Flat spotlight-style card: image, topic, one short line — no box, no hover-flip
 function CapabilityCard({ capability, index }: { capability: typeof capabilities[0], index: number }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.6, delay: index * 0.1 }}
-      className="group"
+      transition={{ duration: 0.55, delay: index * 0.08 }}
     >
       <Link href={capability.link}>
-        <div className="cursor-pointer bg-white border border-border overflow-hidden transition duration-500 h-full">
-          {/* Card content container with fixed height */}
-          <div className="relative aspect-[4/3] overflow-hidden">
-            {/* Image - visible by default, hidden on hover */}
-            <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0">
-              <img
-                src={capability.image}
-                alt={capability.title}
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Description overlay - hidden by default, visible on hover */}
-            <div className="absolute inset-0 bg-white p-6 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-              <div>
-                <h3 className="text-lg font-semibold text-charcoal mb-3">
-                  {capability.title}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {capability.description}
-                </p>
-              </div>
-
-              {/* Learn More button */}
-              <div className="mt-4">
-                <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground text-sm font-medium hover:bg-[var(--color-primary-hover)] transition duration-200 ease-in-out focus-visible:outline focus-visible:ring-2 focus-visible:ring-secondary">
-                  LEARN MORE
-                </span>
-              </div>
-            </div>
-          </div>
-
-          {/* Title Container - always visible below */}
-          <div className="p-4 bg-white border-t border-border/50 group-hover:bg-subtle transition-colors duration-300">
-            <h3 className="text-base font-medium text-charcoal">
-              {capability.title}
-            </h3>
-          </div>
-        </div>
+        <span className="group block cursor-pointer">
+          <span className="block aspect-[4/3] overflow-hidden">
+            <img
+              src={capability.image}
+              alt={capability.title}
+              className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+            />
+          </span>
+          <h3 className="mt-5 text-[1.35rem] lg:text-[1.5rem] font-semibold tracking-[-0.015em] leading-[1.25] text-charcoal group-hover:text-primary transition-colors">
+            {capability.title}
+          </h3>
+          <p className="mt-3 text-[0.95rem] leading-[1.6] text-muted-foreground">
+            {capability.description}
+          </p>
+        </span>
       </Link>
     </motion.div>
   );
@@ -123,9 +98,22 @@ export default function Capabilities() {
           src="/images/capabilities-hero-abstract.jpg"
           alt=""
           aria-hidden
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover capabilities-hero-zoom"
           style={{ objectPosition: "60% 40%" }}
         />
+        <style>{`
+          @keyframes capHeroZoom {
+            from { transform: scale(1); }
+            to { transform: scale(1.12); }
+          }
+          .capabilities-hero-zoom {
+            transform-origin: 62% 45%;
+            animation: capHeroZoom 26s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .capabilities-hero-zoom { animation: none; }
+          }
+        `}</style>
         <div className="relative z-10 flex h-full items-end">
           <div className="container px-4 sm:px-6 md:px-12 pb-10 md:pb-14">
             <h1 className="font-bold text-white tracking-[-0.035em] leading-[1.02] text-[clamp(2.8rem,6.5vw,5.2rem)] drop-shadow-[0_2px_20px_rgba(0,0,0,0.45)]">
@@ -158,7 +146,7 @@ export default function Capabilities() {
           </motion.div>
 
           {/* Solutions-style card grid - 3 columns */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 md:gap-x-10">
             {capabilities.map((cap, index) => (
               <CapabilityCard key={cap.id} capability={cap} index={index} />
             ))}

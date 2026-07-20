@@ -705,3 +705,11 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   floating badge (filler). NOTE: overview CTA points at
   /capabilities/ai-technology-consulting — confirm destination later.
 - Localhost-reviewed, approved.
+
+### 2026-07-20 — /capabilities cards flattened + hero Ken Burns
+- Six pillar cards: hover-flip/LEARN-MORE card retired → flat Spotlight-style
+  card (image, topic, one-line description; type sizes matched exactly to
+  SpotlightStories: 1.35/1.5rem title, 0.95rem desc). Descriptions now reuse
+  the Capabilities nav one-liners verbatim (one voice everywhere).
+- Hero: slow Ken Burns zoom (scale 1→1.12 over 26s, transform-only,
+  prefers-reduced-motion honored). Localhost-reviewed, approved.
