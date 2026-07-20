@@ -867,3 +867,12 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   human+cobot build → governed server engine → red light-trail momentum) +
   brand band "Using human intelligence to drive innovations." Template
   social-tiles/fb-collage.html; output + caption in facebook-content/.
+
+### 2026-07-21 — Homepage hero slide 1 swapped (A/B decision)
+- Slide 1 (HIG "Human intelligence. Governed. Scaled.") image changed from the
+  red-teal linemen silhouettes to the light-painting figure (lone human amid
+  teal/red/amber light ribbons, id 361) — David chose it over the engineer/
+  pylons option after a two-port localhost A/B. Rationale: near-perfect visual
+  of the daily-lead proposition (human as still center, tech swirling around),
+  strongest brand-palette match, non-sector, distinctive. Reused canonical
+  filename hero2-hig.jpg (centered focal, zoom 1.0). Temp candidates removed.

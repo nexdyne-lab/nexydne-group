@@ -102,9 +102,9 @@ const slides: Slide[] = [
     sub: "HIG™ — the operating discipline for leaders who scale judgment, not just software.",
     href: "/about",
     image: "/images/hero/hero2-hig.jpg",
-    focal: "78% 40%",
-    zoom: 1.02,
-    mobileFocal: "72% 45%",
+    focal: "50% 45%",
+    zoom: 1.0,
+    mobileFocal: "50% 48%",
   },
   {
     // Highway light trails — the market in motion; orange streaks echo the
