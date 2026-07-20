@@ -76,17 +76,28 @@ export default function Cases() {
       />
       <Navigation />
       
-      {/* Hero Section - Neutral-first */}
-      <section className="relative w-full bg-background overflow-hidden">
-        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(70% 60% at 82% 14%, rgba(224,76,44,0.05) 0%, transparent 55%), radial-gradient(55% 55% at 6% 95%, rgba(111,68,163,0.045) 0%, transparent 55%)" }} />
-        <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-          <div className="pt-8"><Breadcrumbs /></div>
-          <div className="flex flex-col justify-center min-h-[46vh] py-20 lg:py-24">
-            <div className="max-w-[920px]">
-              <div className="flex items-center gap-3 mb-6"><span className="block h-[3px] w-9 bg-primary" /><span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">CASE STUDIES</span></div>
-              <h1 className="text-charcoal font-bold tracking-[-0.035em] leading-[1.0] text-[clamp(2.4rem,5.4vw,4.2rem)]">Case Studies</h1>
-              <p className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[60ch]">Our clients are achieving enduring change in their capabilities and performance. Leading with technology, we partner with them to eliminate manual work, accelerate execution, and build capabilities across their entire organization.</p>
-            </div>
+      {/* Full-bleed hero — one image, one title, low in frame (matches /capabilities + /industries) */}
+      <section
+        className="relative w-full overflow-hidden"
+        style={{ height: "52vh", minHeight: 420, backgroundColor: "#000" }}
+      >
+        <img
+          src="/images/cases-hero-abstract.jpg"
+          alt=""
+          aria-hidden
+          className="absolute inset-0 h-full w-full object-cover cases-hero-zoom"
+          style={{ objectPosition: "50% 60%" }}
+        />
+        <style>{`
+          @keyframes casesHeroZoom { from { transform: scale(1); } to { transform: scale(1.12); } }
+          .cases-hero-zoom { transform-origin: 50% 55%; animation: casesHeroZoom 26s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+          @media (prefers-reduced-motion: reduce) { .cases-hero-zoom { animation: none; } }
+        `}</style>
+        <div className="relative z-10 flex h-full items-end">
+          <div className="mx-auto w-full max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 pb-10 md:pb-14">
+            <h1 className="font-bold text-white tracking-[-0.035em] leading-[1.02] text-[clamp(2.8rem,6.5vw,5.2rem)] drop-shadow-[0_2px_20px_rgba(0,0,0,0.45)]">
+              Case Studies
+            </h1>
           </div>
         </div>
       </section>

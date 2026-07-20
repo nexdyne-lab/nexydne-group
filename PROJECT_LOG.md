@@ -761,3 +761,8 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   eleven 15px paragraphs → nx-body; `.nx-article p/li` 17→18px (upgrades all
   ~116 long-read articles via one CSS rule). Cards/labels/menus stay small by
   design. Solutions "14px paragraphs" were hidden menu/footer text (no fix).
+
+### 2026-07-20 — /cases landing hero: full-bleed cinematic
+- Text-on-canvas hero → full-bleed dark aerial-city dusk image, huge white
+  "Case Studies" low-left, 26s Ken Burns zoom (matches /capabilities and
+  /industries). Localhost-reviewed, approved.
