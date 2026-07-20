@@ -655,3 +655,13 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
 - QC: tsc, build+guard, 34/34 tests, headless 10-article sample + landing all
   green, contact sheets reviewed (4 sheets × 24). Committed, NOT pushed —
   awaiting David's contact-sheet review.
+
+### 2026-07-20 — Homepage hero carousel: new photography from Drive library
+- All 4 BainHeroCarousel slides re-shot from the full Drive catalog sweep (110
+  dark hero-grade candidates screened across all 20 folders):
+  HIG™ → red-teal linemen silhouettes; AI Adoption 2026 → red/white highway
+  light trails; Operational Excellence → engineer at monitor over pylon field
+  at dusk; Cloud → fog rolling over lit coastal city. New files
+  /images/hero/hero2-*.jpg (2400px); old hero-*.jpg left in place.
+- Focal/zoom/mobileFocal re-tuned per slide. Reviewed on localhost:31000
+  (4-slide screenshot pass) and approved by David before push.

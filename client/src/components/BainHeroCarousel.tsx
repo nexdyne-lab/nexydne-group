@@ -101,10 +101,10 @@ const slides: Slide[] = [
     headline: "Human intelligence.\nGoverned. Scaled.",
     sub: "HIG™ — the operating discipline for leaders who scale judgment, not just software.",
     href: "/about",
-    image: "/images/hero/hero-shuttle.jpg",
-    focal: "100% 45%",
-    zoom: 1.04,
-    mobileFocal: "76% 42%",
+    image: "/images/hero/hero2-hig.jpg",
+    focal: "78% 40%",
+    zoom: 1.02,
+    mobileFocal: "72% 45%",
   },
   {
     // Highway light trails — the market in motion; orange streaks echo the
@@ -113,10 +113,10 @@ const slides: Slide[] = [
     headline: "AI Adoption Outlook 2026",
     sub: "A winner's paradox — the firms moving fastest are the ones governing hardest.",
     href: "/capabilities/artificial-intelligence",
-    image: "/images/hero/hero-city.jpg",
-    focal: "50% 50%",
+    image: "/images/hero/hero2-ai.jpg",
+    focal: "55% 45%",
     zoom: 1.0,
-    mobileFocal: "52% 50%",
+    mobileFocal: "55% 45%",
   },
   {
     // Tanker docked at a lit terminal, from above — a precision night
@@ -125,10 +125,10 @@ const slides: Slide[] = [
     headline: "From chaos to governed execution",
     sub: "Operational excellence that scales with ambition — bottlenecks out, oversight in.",
     href: "/solutions/intelligent-process-optimization",
-    image: "/images/hero/hero-terminal.jpg",
-    focal: "100% 25%",
-    zoom: 1.22,
-    mobileFocal: "58% 40%",
+    image: "/images/hero/hero2-ops.jpg",
+    focal: "70% 42%",
+    zoom: 1.05,
+    mobileFocal: "62% 45%",
   },
   {
     // Satellite in orbit — infrastructure above the clouds; the near-black
@@ -138,10 +138,10 @@ const slides: Slide[] = [
     headline: "Accelerating AI in the cloud",
     sub: "Partnerships that move adoption from pilot to production — safely, and at speed.",
     href: "/capabilities/technology",
-    image: "/images/hero/hero-satellite.jpg",
-    focal: "50% 0%",
-    zoom: 1.06,
-    mobileFocal: "42% 26%",
+    image: "/images/hero/hero2-cloud.jpg",
+    focal: "50% 42%",
+    zoom: 1.0,
+    mobileFocal: "50% 55%",
   },
 ];
 
