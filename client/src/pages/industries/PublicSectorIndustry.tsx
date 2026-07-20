@@ -9,8 +9,8 @@ export default function PublicSectorIndustry() {
       industry="Public Sector"
       slug="public-sector"
       heroSubtitle="We help federal, state, and local government leaders deliver more capability with the resources they have — using digital service design, back-office automation, and data and AI capabilities tuned to the realities of public-sector procurement and accountability."
-      heroImage="/images/industries/people-commute.jpg"
-      perspectiveImage="/images/industries/city-digital.jpg"
+      heroImage="/images/industries2/public-sector-hero.jpg"
+      perspectiveImage="/images/industries2/public-sector-pov.jpg"
       quoteImage="/images/industries/skyscraper.jpg"
       heroFocal="58% 45%"
       povParagraphs={[

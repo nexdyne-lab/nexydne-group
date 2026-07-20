@@ -737,3 +737,14 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   sweep missed. All 771 updated; re-audit shows 0 stale; tsc/build/guard/tests
   green. LESSON: card-image sweeps must match every object shape (link:,
   href:, slug:, id:) — grep the data shapes before sweeping.
+
+### 2026-07-20 — Industries: hero + perspective imagery (16 pages) + landing redesign
+- All 16 industry pages: hero + "Our Perspective" images updated (31 swaps;
+  manufacturing hero kept — already right). David's new "More industries
+  images" Drive folder cataloged: only 7 of 57 under the connector's 6.3MB
+  ceiling (used: shuttle + soldier on Aerospace & Defense, science classroom
+  on Education, boutique handover on Retail); 50 oversized logged for a
+  second pass after downsizing.
+- /industries landing: boxed orange-glow cards → flat spotlight cards
+  (capabilities-landing style), images now mirror each detail page's hero
+  (15/16 new). Files /images/industries2/. Localhost-reviewed, approved.

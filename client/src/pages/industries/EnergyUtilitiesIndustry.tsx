@@ -9,8 +9,8 @@ export default function EnergyUtilitiesIndustry() {
       industry="Energy & Utilities"
       slug="energy-utilities"
       heroSubtitle="We help utilities, oil-and-gas operators, and renewables developers run the energy transition as a transformation program — using AI-powered asset performance, smart grid technologies, and operating discipline tuned to the realities of a regulated capital-heavy industry."
-      heroImage="/images/industries/energy-wind.jpg"
-      perspectiveImage="/images/industries/energy-solar.jpg"
+      heroImage="/images/industries2/energy-utilities-hero.jpg"
+      perspectiveImage="/images/industries2/energy-utilities-pov.jpg"
       quoteImage="/images/industries/energy-powerplant.jpg"
       heroFocal="55% 50%"
       povParagraphs={[

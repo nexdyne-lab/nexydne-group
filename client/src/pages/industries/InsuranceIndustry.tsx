@@ -9,8 +9,8 @@ export default function InsuranceIndustry() {
       industry="Insurance"
       slug="insurance"
       heroSubtitle="We help carriers, brokers, and reinsurers build the digital capabilities the next decade demands — AI-powered underwriting, automated claims, embedded distribution, and the data infrastructure to make all of it auditable and explainable."
-      heroImage="/images/industries/fin-handshake-city.jpg"
-      perspectiveImage="/images/industries/advisor-charts.jpg"
+      heroImage="/images/industries2/insurance-hero.jpg"
+      perspectiveImage="/images/industries2/insurance-pov.jpg"
       quoteImage="/images/industries/fin-monitors.jpg"
       heroFocal="55% 50%"
       povParagraphs={[

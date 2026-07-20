@@ -10,8 +10,8 @@ export default function FinancialServicesIndustry() {
       industry="Financial Services"
       slug="financial-services"
       heroSubtitle="We help banks, insurers, and fintech leaders prove how data, AI, and digital channels create value before they are scaled across the operating model — automating what is transactional and rewiring teams to meet customers' changing demands."
-      heroImage="/images/industries/fin-trader.jpg"
-      perspectiveImage="/images/industries/fin-monitors.jpg"
+      heroImage="/images/industries2/financial-services-hero.jpg"
+      perspectiveImage="/images/industries2/financial-services-pov.jpg"
       quoteImage="/images/industries/advisor-charts.jpg"
       heroFocal="62% 45%"
       povParagraphs={[

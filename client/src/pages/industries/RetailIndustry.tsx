@@ -9,8 +9,8 @@ export default function RetailIndustry() {
       industry="Retail"
       slug="retail"
       heroSubtitle="We help retailers win the unified-commerce era — using AI-powered personalization, intelligent supply chains, and modernized merchandising to protect margin, lift conversion, and meet customers wherever they choose to shop."
-      heroImage="/images/industries/retail-warehouse.jpg"
-      perspectiveImage="/images/industries/retail-shelves.jpg"
+      heroImage="/images/industries2/retail-hero.jpg"
+      perspectiveImage="/images/industries2/retail-pov.jpg"
       quoteImage="/images/industries/women-laptops.jpg"
       heroFocal="58% 50%"
       povParagraphs={[

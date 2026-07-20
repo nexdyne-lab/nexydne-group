@@ -9,8 +9,8 @@ export default function TechnologyMediaTelecomIndustry() {
       industry="Technology, Media & Telecommunications"
       slug="technology-media-telecom"
       heroSubtitle="We help technology, media, and telecom leaders win the convergence — accelerating product velocity, modernizing networks, and building the data and AI capabilities needed to compete at the pace the next cycle is going to demand."
-      heroImage="/images/industries/tech-datacenter.jpg"
-      perspectiveImage="/images/industries/tech-circuit.jpg"
+      heroImage="/images/industries2/technology-media-telecom-hero.jpg"
+      perspectiveImage="/images/industries2/technology-media-telecom-pov.jpg"
       quoteImage="/images/industries/tech-glasses.jpg"
       heroFocal="62% 45%"
       povParagraphs={[

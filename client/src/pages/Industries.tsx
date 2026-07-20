@@ -10,97 +10,97 @@ const industries = [
   {
     title: "Aerospace & Defense",
     description: "Digital engineering, AI-powered operations, and resilient supply chains that compress cycle times without compromising security or compliance.",
-    image: "/hero-bg-aerial.1d9ee9e9.jpg",
+    image: "/images/industries2/aerospace-defense-hero.jpg",
     href: "/industries/aerospace-defense",
   },
   {
     title: "Automotive",
     description: "Navigating the CASE shift — software-defined vehicles, EV programs, and smart factories — without losing operational discipline.",
-    image: "/case-study-manufacturing.8d72bf05.jpg",
+    image: "/images/industries2/automotive-hero.jpg",
     href: "/industries/automotive",
   },
   {
     title: "Consumer Products",
     description: "Turning data, AI, and a more direct customer relationship into growth and margin that move in the same direction.",
-    image: "/case-strategy-consulting.dfdd1294.jpg",
+    image: "/images/industries2/consumer-products-hero.jpg",
     href: "/industries/consumer-products",
   },
   {
     title: "Education",
     description: "AI-powered personalization and modern student-success infrastructure that improve learning outcomes while respecting the mission.",
-    image: "/blog-team-collaboration.913d82ea.jpg",
+    image: "/images/industries2/education-hero.jpg",
     href: "/industries/education",
   },
   {
     title: "Energy & Utilities",
     description: "Running the energy transition as a transformation program — AI-powered asset performance and smart-grid technologies.",
-    image: "/hero-cityscape.b7c4f9e2.png",
+    image: "/images/industries2/energy-utilities-hero.jpg",
     href: "/industries/energy-utilities",
   },
   {
     title: "Financial Services",
     description: "Proving how data, AI, and digital channels create value before scaling them across the operating model.",
-    image: "/case-banker-meeting.c53f3999.jpg",
+    image: "/images/industries2/financial-services-hero.jpg",
     href: "/industries/financial-services",
   },
   {
     title: "Healthcare",
     description: "Pairing clinical insight with AI-powered operations to improve outcomes and lift the care experience.",
-    image: "/case-medical-collaboration.9602cc8c.jpg",
+    image: "/images/industries2/healthcare-hero.jpg",
     href: "/industries/healthcare",
   },
   {
     title: "Insurance",
     description: "AI-powered underwriting, automated claims, and embedded distribution — all auditable and explainable.",
-    image: "/case-insurance-office.f039a4a1.jpg",
+    image: "/images/industries2/insurance-hero.jpg",
     href: "/industries/insurance",
   },
   {
     title: "Manufacturing",
     description: "Digital twins, predictive maintenance, and AI-powered planning that turn factories into a source of advantage.",
-    image: "/case-study-manufacturing.8d72bf05.jpg",
+    image: "/images/industries/mfg-robotics.jpg",
     href: "/industries/manufacturing",
   },
   {
     title: "Private Equity",
     description: "Operational value across diligence, hold, and exit — rigorous tech diligence and value-creation playbooks.",
-    image: "/case-strategy-consulting.dfdd1294.jpg",
+    image: "/images/industries2/private-equity-hero.jpg",
     href: "/industries/private-equity",
   },
   {
     title: "Public Sector",
     description: "Digital service design, back-office automation, and AI tuned to the realities of public-sector accountability.",
-    image: "/case-study-government.03f0e049.png",
+    image: "/images/industries2/public-sector-hero.jpg",
     href: "/industries/public-sector",
   },
   {
     title: "Retail",
     description: "AI-powered personalization, intelligent supply chains, and modern merchandising that protect margin and lift conversion.",
-    image: "/case-study-retail.webp",
+    image: "/images/industries2/retail-hero.jpg",
     href: "/industries/retail",
   },
   {
     title: "Technology, Media & Telecommunications",
     description: "Accelerating product velocity, modernizing networks, and building the data and AI capabilities the next cycle demands.",
-    image: "/hero-ai-brain.738a6c59.jpg",
+    image: "/images/industries2/technology-media-telecom-hero.jpg",
     href: "/industries/technology-media-telecom",
   },
   {
     title: "Transportation & Logistics",
     description: "AI-powered visibility, route optimization, and modern operating models that deliver both service and margin.",
-    image: "/process-orchestration-workflow.a6bc5b2e.jpg",
+    image: "/images/industries2/transportation-logistics-hero.jpg",
     href: "/industries/transportation-logistics",
   },
   {
     title: "Travel & Hospitality",
     description: "AI-powered revenue management and modern guest data that protect unit economics while lifting the experience.",
-    image: "/hero-cityscape.b7c4f9e2.png",
+    image: "/images/industries2/travel-hospitality-hero.jpg",
     href: "/industries/travel-hospitality",
   },
   {
     title: "Urban Development",
     description: "Smart-city platforms, sustainable design, and modern citizen engagement with real operating discipline.",
-    image: "/cityscape-hero.2b50986e.png",
+    image: "/images/industries2/urban-development-hero.jpg",
     href: "/industries/urban-development",
   },
 ];
@@ -132,39 +132,24 @@ export default function Industries() {
       {/* Industries Grid */}
       <section className="nx-section bg-subtle border-t border-border">
         <div className="container">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-7">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 lg:gap-x-10">
             {industries.map((industry) => (
               <Link key={industry.title} href={industry.href}>
-                <article className="group relative h-full flex flex-col bg-card border border-border overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-[0_24px_50px_-28px_rgba(224,76,44,0.4)]">
-                  {/* brand-gradient accent bar — grows on hover */}
-                  <div
-                    className="absolute top-0 left-0 right-0 h-[3px] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 z-10"
-                    style={{ backgroundImage: "linear-gradient(90deg, #DE2F23 0%, #FFB41D 100%)" }}
-                  />
-                  <div className="relative aspect-[16/10] overflow-hidden">
+                <span className="group block cursor-pointer">
+                  <span className="block aspect-[16/10] overflow-hidden">
                     <img
                       src={industry.image}
                       alt={industry.title}
-                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.05]"
+                      className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                     />
-                    <div
-                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mix-blend-multiply"
-                      style={{ backgroundImage: "linear-gradient(to top, rgba(224,76,44,0.55) 0%, transparent 60%)" }}
-                    />
-                  </div>
-                  <div className="flex flex-col flex-1 p-6">
-                    <h3 className="nx-h3 text-charcoal group-hover:text-primary transition-colors">
-                      {industry.title}
-                    </h3>
-                    <p className="mt-3 text-[0.95rem] leading-[1.55] text-muted-foreground">
-                      {industry.description}
-                    </p>
-                    <span className="mt-5 pt-4 border-t border-border inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.1em] text-charcoal">
-                      Explore
-                      <ArrowRight className="w-3.5 h-3.5 text-primary transition-transform duration-300 group-hover:translate-x-1" />
-                    </span>
-                  </div>
-                </article>
+                  </span>
+                  <h3 className="mt-5 text-[1.35rem] lg:text-[1.5rem] font-semibold tracking-[-0.015em] leading-[1.25] text-charcoal group-hover:text-primary transition-colors">
+                    {industry.title}
+                  </h3>
+                  <p className="mt-3 text-[0.95rem] leading-[1.6] text-muted-foreground">
+                    {industry.description}
+                  </p>
+                </span>
               </Link>
             ))}
           </div>

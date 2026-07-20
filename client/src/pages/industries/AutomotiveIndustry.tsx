@@ -9,8 +9,8 @@ export default function AutomotiveIndustry() {
       industry="Automotive"
       slug="automotive"
       heroSubtitle="We help OEMs, suppliers, and mobility platforms move with the CASE shift — software-defined vehicles, EV programs, smart factories, and new mobility services — without losing the operational discipline that defines the industry."
-      heroImage="/images/industries/auto-robotics-team.jpg"
-      perspectiveImage="/images/industries/mfg-robotics-tablet.jpg"
+      heroImage="/images/industries2/automotive-hero.jpg"
+      perspectiveImage="/images/industries2/automotive-pov.jpg"
       quoteImage="/images/industries/mfg-robot-arm.jpg"
       heroFocal="60% 45%"
       povParagraphs={[

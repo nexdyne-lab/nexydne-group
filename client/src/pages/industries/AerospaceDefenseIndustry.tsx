@@ -9,8 +9,8 @@ export default function AerospaceDefenseIndustry() {
       industry="Aerospace & Defense"
       slug="aerospace-defense"
       heroSubtitle="We help A&D primes, suppliers, and government programs deliver more capability, faster — using digital engineering, AI-powered operations, and resilient supply chains to compress cycle times without compromising security or compliance."
-      heroImage="/images/industries/aero-rocket.jpg"
-      perspectiveImage="/images/industries/aero-astronaut.jpg"
+      heroImage="/images/industries2/aerospace-defense-hero.jpg"
+      perspectiveImage="/images/industries2/aerospace-defense-pov.jpg"
       quoteImage="/images/industries/ops-monitors-dark.jpg"
       heroFocal="55% 40%"
       povParagraphs={[

@@ -9,9 +9,9 @@ export default function ConsumerProductsIndustry() {
       industry="Consumer Products"
       slug="consumer-products"
       heroSubtitle="We help CPG and consumer-products leaders prove how data, AI, and a more direct customer relationship create value — before they are scaled across brand, channel, and supply chain — so growth and margin move in the same direction."
-      heroImage="/images/industries/biz-team-bright.jpg"
+      heroImage="/images/industries2/consumer-products-hero.jpg"
       heroFocal="65% 45%"
-      perspectiveImage="/images/sector-consumer.jpg"
+      perspectiveImage="/images/industries2/consumer-products-pov.jpg"
       quoteImage="/images/case-study-retail.8af31c13.jpg"
       povParagraphs={[
         "We begin our consumer-products engagements by partnering with you to define, test, and prove how data, AI, digital supply chain, and a more direct customer relationship will create value — before embedding those capabilities across the operating model. The point is to compound proof, not pilots.",

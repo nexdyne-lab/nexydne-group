@@ -9,8 +9,8 @@ export default function UrbanDevelopmentIndustry() {
       industry="Urban Development"
       slug="urban-development"
       heroSubtitle="We help cities, developers, and infrastructure providers build more livable communities — pairing smart-city platforms, sustainable design, and modern citizen engagement with the operating discipline urban transformation actually requires."
-      heroImage="/images/industries/eng-designers.jpg"
-      perspectiveImage="/images/industries/skyscraper.jpg"
+      heroImage="/images/industries2/urban-development-hero.jpg"
+      perspectiveImage="/images/industries2/urban-development-pov.jpg"
       quoteImage="/images/industries/city-digital.jpg"
       heroFocal="55% 45%"
       povParagraphs={[

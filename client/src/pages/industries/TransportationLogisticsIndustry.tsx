@@ -9,8 +9,8 @@ export default function TransportationLogisticsIndustry() {
       industry="Transportation & Logistics"
       slug="transportation-logistics"
       heroSubtitle="We help carriers, 3PLs, and shippers turn supply-chain volatility into advantage — using AI-powered visibility, route optimization, and modern operating models that deliver both service and margin in an industry historically forced to choose."
-      heroImage="/images/industries/transport-traffic.jpg"
-      perspectiveImage="/images/industries/transport-bridge.jpg"
+      heroImage="/images/industries2/transportation-logistics-hero.jpg"
+      perspectiveImage="/images/industries2/transportation-logistics-pov.jpg"
       quoteImage="/images/industries/ops-monitors-dark.jpg"
       heroFocal="55% 45%"
       povParagraphs={[

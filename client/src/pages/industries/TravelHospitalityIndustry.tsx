@@ -9,8 +9,8 @@ export default function TravelHospitalityIndustry() {
       industry="Travel & Hospitality"
       slug="travel-hospitality"
       heroSubtitle="We help airlines, hotels, cruise lines, and OTAs run leaner, more personalized operations — using AI-powered revenue management, modern guest data, and digital service design that protects unit economics while lifting the experience travelers actually remember."
-      heroImage="/images/industries/travel-city-twilight.jpg"
-      perspectiveImage="/images/industries/city-night.jpg"
+      heroImage="/images/industries2/travel-hospitality-hero.jpg"
+      perspectiveImage="/images/industries2/travel-hospitality-pov.jpg"
       quoteImage="/images/industries/colleagues-walking.jpg"
       heroFocal="55% 50%"
       povParagraphs={[

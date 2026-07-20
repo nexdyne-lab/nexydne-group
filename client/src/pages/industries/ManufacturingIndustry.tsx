@@ -10,7 +10,7 @@ export default function ManufacturingIndustry() {
       slug="manufacturing"
       heroSubtitle="We help manufacturers build the smart, resilient operations the next cycle demands — using digital twins, predictive maintenance, and AI-powered planning to lift uptime, compress lead times, and turn factories into a source of advantage rather than a cost line."
       heroImage="/images/industries/mfg-robotics.jpg"
-      perspectiveImage="/images/industries/mfg-robot-arm-team.jpg"
+      perspectiveImage="/images/industries2/manufacturing-pov.jpg"
       quoteImage="/images/industries/ops-gears.jpg"
       heroFocal="60% 45%"
       povParagraphs={[

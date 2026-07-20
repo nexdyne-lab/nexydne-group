@@ -9,8 +9,8 @@ export default function PrivateEquityIndustry() {
       industry="Private Equity"
       slug="private-equity"
       heroSubtitle="We help private equity firms create operational value — across diligence, hold, and exit — with rigorous tech and data diligence, value-creation playbooks, and the digital execution muscle today's hold periods demand."
-      heroImage="/images/industries/deal-handshake.jpg"
-      perspectiveImage="/images/industries/advisor-charts.jpg"
+      heroImage="/images/industries2/private-equity-hero.jpg"
+      perspectiveImage="/images/industries2/private-equity-pov.jpg"
       quoteImage="/images/industries/biz-meeting.jpg"
       heroFocal="55% 50%"
       povParagraphs={[

@@ -9,8 +9,8 @@ export default function HealthcareIndustry() {
       industry="Healthcare"
       slug="healthcare"
       heroSubtitle="We help health systems, payers, and life-sciences leaders move beyond fee-for-service — pairing clinical insight with AI-powered operations to improve outcomes, lift the care experience, and build the data foundations the next decade of healthcare will demand."
-      heroImage="/case-medical-collaboration.9602cc8c.jpg"
-      perspectiveImage="/images/industries/meeting-topview.jpg"
+      heroImage="/images/industries2/healthcare-hero.jpg"
+      perspectiveImage="/images/industries2/healthcare-pov.jpg"
       quoteImage="/images/industries/women-laptops.jpg"
       heroFocal="60% 40%"
       povParagraphs={[

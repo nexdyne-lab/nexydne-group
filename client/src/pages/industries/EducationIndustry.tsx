@@ -9,8 +9,8 @@ export default function EducationIndustry() {
       industry="Education"
       slug="education"
       heroSubtitle="We help K-12 systems, universities, and learning platforms build digital and operating capabilities that improve learning outcomes — using AI-powered personalization, modern student-success infrastructure, and operating discipline that respects the mission."
-      heroImage="/images/industries/team-strategy-board.jpg"
-      perspectiveImage="/images/industries/edu-whiteboard.jpg"
+      heroImage="/images/industries2/education-hero.jpg"
+      perspectiveImage="/images/industries2/education-pov.jpg"
       quoteImage="/images/industries/women-laptops.jpg"
       heroFocal="60% 45%"
       povParagraphs={[
