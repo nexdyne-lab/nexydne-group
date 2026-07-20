@@ -22,7 +22,7 @@ The highest effort and only fits certain content: framework and listicle pieces 
 
 One practical note: Facebook is not yet connected in Spool, so posting is manual until that's linked.
 
-Next step when ready: build the Style 3 and Style 2 templates into the social-tiles pipeline and produce the first batch (one gradient tile + captions for the first week of posts) for review before anything goes out.
+Templates are BUILT (2026-07-21): `social-tiles/fb-style3.html` (gradient photo tile — pass photo/title/kicker as URL params) and `social-tiles/fb-style2.html` (numbered framework tile). Render queue tiles with `node social-tiles/fb-shot.mjs` — outputs land in the monthly folders here, named by post date. First five tiles produced (Jul 22/29/31, Aug 5/12).
 
 ## How this folder works
 

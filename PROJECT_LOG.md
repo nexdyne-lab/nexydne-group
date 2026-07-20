@@ -806,3 +806,14 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   md 76px / lg 100px, full-width, no centering cap). Measured 100/100/100/100
   (hero/discover/explore/logo) at 1440. Chosen over the 56px variant after a
   two-port A/B on localhost (headline no longer juts left of the wordmark).
+
+### 2026-07-21 — Facebook tile templates built + first batch rendered
+- social-tiles/fb-style3.html (Entrepreneur-style gradient photo tile,
+  1080×1350@2x: article hero + charcoal shade + amber kicker + red rule +
+  serif headline + wordmark) and fb-style2.html (McKinsey-style numbered
+  framework tile) + fb-shot.mjs renderer (self-serving, no port-3000 dep).
+- First 5 queue tiles rendered into facebook-content monthly folders:
+  Jul 22 (AI readiness), Jul 29 (rolling forecasts), Jul 31 (10-point
+  checklist infographic), Aug 5 (digital channels), Aug 12 (ecommerce).
+  Calendar rows marked Ready. Photos = the articles' own heroes, so tile,
+  OG card, and article all match.

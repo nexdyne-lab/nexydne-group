@@ -545,3 +545,10 @@ anonymized cases + exact dollars contradict each other — ratios survive the
 "says who?" question and invite a methodology conversation instead. Keep-list:
 cited market stats, educational worked examples, own pricing. Sales line this
 enables: "we never discuss client financials — even directionally."
+
+### Update (2026-07-21): FB tile production is now a command
+Style 3 gradient tiles + Style 2 framework tiles are parameterized HTML
+templates in social-tiles/ rendered by fb-shot.mjs into the monthly content
+folders. New post = add a line to fb-shot.mjs (photo/title/kicker) and run it.
+Reusing each article's hero as the tile photo keeps tile, OG card, and
+article visually continuous — template pattern worth replicating.
