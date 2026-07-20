@@ -566,3 +566,12 @@ render pipeline), linkedin-posts.md (master post copy #1–#6 + bespoke),
 LinkedIn Content Calendar.xlsx, monthly folders (2026-07/, 2026-08/) with
 visual assets by post date, and assets/ (page logo+banner, hero backgrounds,
 extra visuals). Render machinery stays in social-tiles/. Portable template.
+
+### Update (2026-07-21): brand positioning — the daily lead
+New growth-marketing/positioning/ folder. Competitive research on Stanford HAI
+(md/docx/pdf) + NexDyne's positioning (md/docx/pdf). Key doctrine: HIG is the
+governance HOW, not the daily WHY. Daily lead = "We enhance human intelligence
+to drive innovation in the age of AI." Differentiators: assert-&-advance (vs
+institutions that study & reassure), human-as-protagonist (vs AI vendors),
+install-a-capability (vs deck-and-leave consultancies). build_docs.py = single
+source -> md/docx/pdf.

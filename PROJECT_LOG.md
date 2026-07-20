@@ -842,3 +842,12 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   monthly folders (carousel PDF + 7 slides in July, POSTS.md indexes),
   assets/{page,hero-backgrounds,extra-visuals}, README. Render pipeline stays
   in social-tiles/.
+
+### 2026-07-21 — Brand positioning docs (Stanford HAI research + NexDyne daily lead)
+- Researched Stanford HAI positioning (WebFetch on hai.stanford.edu): mission
+  "improve the human condition", "augment, not replace", question-led voice.
+- Crafted NexDyne's daily-lead proposition distinct from an institution's:
+  "enhance human intelligence to drive innovation in the age of AI"; HIG
+  reframed as the governance HOW not the daily WHY.
+- growth-marketing/positioning/: stanford-hai-research + nexdyne-positioning,
+  each as .md/.docx/.pdf from one build_docs.py source; README.
