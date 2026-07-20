@@ -7,7 +7,7 @@ export default function Operations() {
       capabilitySlug="operations"
       // PRESERVED VERBATIM from source hero subtitle
       heroSubtitle="Transform your operational infrastructure to reduce waste, improve quality, and deliver results faster. Build efficient, scalable operations that drive competitive advantage."
-      heroImage="/images/hero-team.jpg"
+      heroImage="/images/capabilities/cap2-operations-hero.jpg"
       // PRESERVED CTA labels from source (Start Your Transformation + View Case Studies)
       heroPrimaryCTA={{
         label: "Start Your Transformation",
@@ -131,7 +131,7 @@ export default function Operations() {
       // realOutcomes / howWeHelp DISTILLED from source case studies + approach copy
       inPractice={{
         image:
-          "/images/capabilities/cap-team-screens.jpg",
+          "/images/capabilities/cap2-operations-pov.jpg",
         intro:
           "In the era of algorithmic supply chains and intelligent automation, operational excellence is no longer about incremental improvement — it is about building adaptive systems that learn, optimize, and evolve. The most successful operations organizations have moved beyond siloed optimization to integrated systems where data flows seamlessly from demand signal to delivery, with real-time visibility, predictive decision-making, and autonomous execution. We don't just implement tools; we refactor the entire operational stack — from production scheduling algorithms to resilient supply networks — so your operations engine runs with the precision of a well-tuned system.",
         realOutcomes: [

@@ -7,7 +7,7 @@ export default function ArtificialIntelligence() {
       capabilitySlug="artificial-intelligence"
       // PRESERVED VERBATIM from source hero subtitle
       heroSubtitle="Practical AI for growing companies. We help you harness AI to automate operations, unlock insights, and compete with larger rivals."
-      heroImage="/images/industries/tech-glasses.jpg"
+      heroImage="/images/capabilities/cap2-ai-hero.jpg"
       heroFocal="55% 45%"
       // PRESERVED CTA labels from source (Start Your AI Journey + View Case Studies)
       heroPrimaryCTA={{
@@ -129,7 +129,7 @@ export default function ArtificialIntelligence() {
       // PRESERVED in-practice intro + bullets verbatim from source
       inPractice={{
         // dusk boardroom — dark/warm zones hold the overlaid text without a scrim
-        image: "/images/hero/hero-ai.jpg",
+        image: "/images/capabilities/cap2-ai-pov.jpg",
         intro:
           "The hype around generative AI is real—but so is the confusion. Most companies are stuck between \"we should do something\" and \"we don't know where to start.\" We cut through the noise with a practical approach: identify high-impact use cases, start with quick wins, and build toward enterprise-scale deployment. No science projects. No endless pilots. Just AI that works.",
         realOutcomes: [

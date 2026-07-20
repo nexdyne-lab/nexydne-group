@@ -7,7 +7,7 @@ export default function EnterpriseTransformation() {
       capabilitySlug="technology"
       // PRESERVED VERBATIM from source hero subtitle
       heroSubtitle="Companies with a strategic focus on technology outperform across industries. Stay ahead with tech foundations that fuel lasting growth."
-      heroImage="/images/technology-hero-abstract.jpg"
+      heroImage="/images/capabilities/cap2-technology-hero.jpg"
       // PRESERVED CTA labels from source (Talk to an Expert + See Client Results) — repointed to canonical /capabilities/technology paths
       heroPrimaryCTA={{
         label: "Talk to an Expert",
@@ -128,7 +128,7 @@ export default function EnterpriseTransformation() {
       // howWeHelp mined from source SLOT 5 approach pillars verbatim
       inPractice={{
         image:
-          "/images/capabilities/cap-aerial-grid.jpg",
+          "/images/capabilities/cap2-technology-pov.jpg",
         intro:
           "For most growing companies, technology is the bottleneck rather than the growth engine — aging systems that cannot scale, data trapped in silos, and IT teams stretched thin just keeping the lights on. We work with companies who have outgrown their starter tech stack but are not ready for the complexity and cost of enterprise solutions. We modernize systems in phases, align technology strategy with where the business is heading, and build foundations that support AI without a Fortune 500 budget.",
         realOutcomes: [

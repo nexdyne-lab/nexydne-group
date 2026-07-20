@@ -7,7 +7,7 @@ export default function GrowthMarketingSales() {
       capabilitySlug="growth-marketing-sales"
       // PRESERVED VERBATIM from source hero subtitle
       heroSubtitle="Drive sustainable revenue growth by aligning strategy, customer experience, and commercial execution with data-driven precision. We help growing companies outperform their larger competitors."
-      heroImage="/images/capabilities/cap-mobile-woman.jpg"
+      heroImage="/images/capabilities/cap2-growth-marketing-hero.jpg"
       heroFocal="50% 50%"
       // PRESERVED CTA labels from source (Accelerate Growth + View Case Studies)
       heroPrimaryCTA={{
@@ -125,7 +125,7 @@ export default function GrowthMarketingSales() {
       // realOutcomes + howWeHelp distilled from source AI use-case bullets
       inPractice={{
         image:
-          "/images/capabilities/cap-peacock.jpg",
+          "/images/capabilities/cap2-growth-marketing-pov.jpg",
         intro:
           "Growth in today's market requires more than good products and aggressive targets. It demands a clear understanding of where your customers are, what drives their decisions, and how to reach them efficiently across an increasingly fragmented landscape. We connect customer insights, marketing operations, and sales execution into a unified growth system—one that delivers predictable revenue without burning through budget on tactics that don't work.",
         realOutcomes: [

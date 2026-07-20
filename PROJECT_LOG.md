@@ -679,3 +679,17 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   ma-failure-analysis article hero) with amber-teal glass-lobby professionals
   in motion (/images/careers-hero2.jpg, q5 Drive pick). Localhost-reviewed,
   approved.
+
+### 2026-07-20 — Capability pages: hero + perspective imagery (6 pages, 12 images)
+- All 6 capability hubs re-imaged from the Drive catalog: AI (code-in-glasses
+  close-up / pixel-wall analyst), Technology (Meydan bridge / server-aisle
+  engineer), Operations (solar-array contractor / control-room engineers),
+  Business Building (night crane forest / purple crane skyline), Strategy &
+  Corp Finance (balloon over Manhattan / blue-hour tablet), Growth Marketing
+  Sales (neon rails to skyline / pink-dusk silhouette).
+- 4 candidates rejected in the screenshot pass: 3 heroes with bright zones
+  under the template's white featured-text overlay, 1 low-res (767px) file.
+  Legibility verified on-page for all 12 finals. Files
+  /images/capabilities/cap2-*. Localhost-reviewed, approved.
+- Note: template's "Technology performs. Humans govern." perspective statement
+  is hardcoded across all 6 pages — flagged for a per-page line later.

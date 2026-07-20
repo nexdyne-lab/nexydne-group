@@ -7,7 +7,7 @@ export default function BusinessBuilding() {
       capabilitySlug="business-building"
       // PRESERVED VERBATIM from source hero subtitle
       heroSubtitle="Your core business runs well. Now you need new revenue streams. We help growing companies design, build, and launch new digital products and services that actually make money."
-      heroImage="/images/capabilities/cap-venturing.jpg"
+      heroImage="/images/capabilities/cap2-business-building-hero.jpg"
       heroFocal="55% 50%"
       // PRESERVED CTA labels from source (Schedule a Consultation + View Case Studies)
       heroPrimaryCTA={{
@@ -122,7 +122,7 @@ export default function BusinessBuilding() {
       // PRESERVED in-practice intro (distilled from source "How AI is Transforming Business Building" + "Real Outcomes" + "How We Help" sections)
       // realOutcomes / howWeHelp bullets PRESERVED verbatim from source where present; remainder DISTILLED
       inPractice={{
-        image: "/images/capabilities/cap-lightbulb-idea.jpg",
+        image: "/images/capabilities/cap2-business-building-pov.jpg",
         intro:
           "We are helping growing companies move quickly from experimentation to scale and generate real value from new ventures. Working closely with leadership teams, we identify where to accelerate venture development, build a clear roadmap for impact across product, customer experience, and operational efficiency, and treat AI as a business accelerator rather than a technology deployment — so you ship AI-native products that create sustainable competitive advantage.",
         realOutcomes: [
