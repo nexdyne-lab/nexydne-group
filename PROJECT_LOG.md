@@ -665,3 +665,11 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   /images/hero/hero2-*.jpg (2400px); old hero-*.jpg left in place.
 - Focal/zoom/mobileFocal re-tuned per slide. Reviewed on localhost:31000
   (4-slide screenshot pass) and approved by David before push.
+
+### 2026-07-20 — Homepage solutions cards: dark-authority tiles
+- The 4 OperationalExcellence cards re-imaged from the Drive catalog (all
+  unused q5 picks, one brand accent each): Process → red-amber supercomputer
+  technician; Customer Intelligence → purple fiber-optic LED visor; Enterprise
+  → electric-blue Meydan bridge; Growth → amber Saigon roundabout light-trails.
+  Old tiles were bright/off-spec vs the component's stated "charcoal dark
+  authority" intent. Files /images/sol-card-*.jpg. Localhost-reviewed, approved.

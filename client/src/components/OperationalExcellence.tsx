@@ -22,7 +22,7 @@ const services: Service[] = [
     description:
       "We turn manual operations into governed, autonomous systems — removing bottlenecks and accelerating execution without losing oversight.",
     link: "/solutions/intelligent-process-optimization",
-    image: "/images/intelligent-process.jpg",
+    image: "/images/sol-card-process.jpg",
   },
   {
     category: "Intelligence",
@@ -30,7 +30,7 @@ const services: Service[] = [
     description:
       "We turn data into governed customer insight — predicting behavior and compounding loyalty at scale.",
     link: "/solutions/data-driven-customer-intelligence",
-    image: "/images/solution-customer-intelligence.jpg",
+    image: "/images/sol-card-customer.jpg",
   },
   {
     category: "Technology",
@@ -38,7 +38,7 @@ const services: Service[] = [
     description:
       "We modernize the core — cloud-native infrastructure and operating models built to scale with ambition.",
     link: "/solutions/scalable-enterprise-transformation",
-    image: "/images/enterprise-architecture.jpg",
+    image: "/images/sol-card-enterprise.jpg",
   },
   {
     category: "Growth",
@@ -46,7 +46,7 @@ const services: Service[] = [
     description:
       "We launch the digital products, platforms, and channels that turn capability into revenue.",
     link: "/solutions/accelerating-business-growth",
-    image: "/images/growth-motion.jpg",
+    image: "/images/sol-card-growth.jpg",
   },
 ];
 
