@@ -748,3 +748,8 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
 - /industries landing: boxed orange-glow cards → flat spotlight cards
   (capabilities-landing style), images now mirror each detail page's hero
   (15/16 new). Files /images/industries2/. Localhost-reviewed, approved.
+
+### 2026-07-20 — /industries landing hero: full-bleed McKinsey style
+- Split PageHero → full-bleed top-down cruise-ship ocean image, huge white
+  "Industries" low-left, 26s Ken Burns zoom (matches /capabilities hero).
+  Localhost-reviewed, approved.

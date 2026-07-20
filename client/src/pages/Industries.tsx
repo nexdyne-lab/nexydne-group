@@ -110,12 +110,31 @@ export default function Industries() {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      <PageHero
-        eyebrow="INDUSTRIES"
-        title="Industries We Serve"
-        subtitle="Deep expertise across sectors, delivering tailored solutions that address your industry's unique challenges and opportunities."
-        heroImage="/images/industries/mfg-robotics.jpg"
-      />
+      {/* Full-bleed hero — one image, one title, low in frame (matches /capabilities) */}
+      <section
+        className="relative w-full overflow-hidden"
+        style={{ height: "52vh", minHeight: 420, backgroundColor: "#000" }}
+      >
+        <img
+          src="/images/industries-hero-abstract.jpg"
+          alt=""
+          aria-hidden
+          className="absolute inset-0 h-full w-full object-cover industries-hero-zoom"
+          style={{ objectPosition: "55% 45%" }}
+        />
+        <style>{`
+          @keyframes indHeroZoom { from { transform: scale(1); } to { transform: scale(1.12); } }
+          .industries-hero-zoom { transform-origin: 55% 40%; animation: indHeroZoom 26s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+          @media (prefers-reduced-motion: reduce) { .industries-hero-zoom { animation: none; } }
+        `}</style>
+        <div className="relative z-10 flex h-full items-end">
+          <div className="container px-4 sm:px-6 md:px-12 pb-10 md:pb-14">
+            <h1 className="font-bold text-white tracking-[-0.035em] leading-[1.02] text-[clamp(2.8rem,6.5vw,5.2rem)] drop-shadow-[0_2px_20px_rgba(0,0,0,0.45)]">
+              Industries
+            </h1>
+          </div>
+        </div>
+      </section>
 
       {/* Overview */}
       <section className="nx-section bg-white">
