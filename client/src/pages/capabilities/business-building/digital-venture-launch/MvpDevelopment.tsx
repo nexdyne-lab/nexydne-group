@@ -47,8 +47,8 @@ export default function MvpDevelopment() {
       ]}
             featuredCases={[
         { slug: "media-streaming-launch", title: "Launching a streaming service that won 750K subscribers", industry: "Technology, Media & Telecom", metric: "750K", image: "/images/industries/tech-datacenter.jpg" },
-        { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", industry: "Retail", metric: "85%", image: "/images/capabilities/cap-retail-apparel.jpg" },
-        { slug: "capital-raise-series-b", title: "Raising a growth round on stronger terms", industry: "Technology, Media & Telecom", metric: "1.3x", image: "/images/industries/deal-handshake.jpg" },
+        { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", industry: "Retail", metric: "85%", image: "/images/cases/fashion-retail-digital-transformation-hero.jpg" },
+        { slug: "capital-raise-series-b", title: "Raising a growth round on stronger terms", industry: "Technology, Media & Telecom", metric: "1.3x", image: "/images/cases/capital-raise-series-b-hero.jpg" },
       ]}
       relatedServices={[
         { slug: "opportunity-identification", name: "Opportunity Identification", href: "/capabilities/business-building/digital-venture-launch/opportunity-identification" },

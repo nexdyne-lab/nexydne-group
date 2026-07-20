@@ -6,7 +6,7 @@ const cases = [
     title: "Lifting warehouse productivity 45% for a regional distributor",
     industry: "Transportation & Logistics",
     metric: "45%",
-    image: "/images/industries/retail-warehouse.jpg",
+    image: "/images/cases/warehouse-optimization-hero.jpg",
   },
   {
     slug: "freight-optimization",

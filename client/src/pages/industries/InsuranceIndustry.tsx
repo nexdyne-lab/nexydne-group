@@ -75,21 +75,21 @@ export default function InsuranceIndustry() {
           title: "Quoting Commercial Business in a Day, Not a Week",
           industry: "Insurance",
           metric: "40%",
-          image: "/images/industries/fin-monitors.jpg"
+          image: "/images/cases/insurance-ai-underwriting-hero.jpg"
         },
         {
           slug: "insurance-claims-automation",
           title: "Settling Straightforward Claims in Hours, Not Weeks",
           industry: "Insurance",
           metric: "60%",
-          image: "/case-insurance-claims.399e5d4b.jpg"
+          image: "/images/cases/insurance-claims-automation-hero.jpg"
         },
         {
           slug: "insurance-digital-distribution",
           title: "Turning a Call-Center Insurer Into a Digital One",
           industry: "Insurance",
           metric: "50%",
-          image: "/images/industries/fin-handshake-city.jpg"
+          image: "/images/cases/insurance-digital-distribution-hero.jpg"
         }
       ]}
     />

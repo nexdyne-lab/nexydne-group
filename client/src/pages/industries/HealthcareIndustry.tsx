@@ -75,14 +75,14 @@ export default function HealthcareIndustry() {
           title: "Unifying scattered patient data to improve outcomes 35%",
           industry: "Healthcare",
           metric: "35%",
-          image: "/case-medical-collaboration.9602cc8c.jpg"
+          image: "/images/cases/healthcare-transformation-hero.jpg"
         },
         {
           slug: "healthcare-readmission",
           title: "Cutting avoidable readmissions by 42% with better prediction",
           industry: "Healthcare",
           metric: "42%",
-          image: "/case-doctor-consultation.799c1562.jpg"
+          image: "/images/cases/healthcare-readmission-hero.jpg"
         },
         {
           slug: "healthcare-revenue-cycle",

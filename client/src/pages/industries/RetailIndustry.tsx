@@ -75,14 +75,14 @@ export default function RetailIndustry() {
           title: "Growing a fashion retailer's online sales by 85%",
           industry: "Retail",
           metric: "85%",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/fashion-retail-digital-transformation-hero.jpg"
         },
         {
           slug: "grocery-demand-forecasting",
           title: "Cutting a grocer's fresh-food waste by a third",
           industry: "Retail",
           metric: "35%",
-          image: "/images/capabilities/cap-food.jpg"
+          image: "/images/cases/grocery-demand-forecasting-hero.jpg"
         },
         {
           slug: "retail-loyalty-transformation",

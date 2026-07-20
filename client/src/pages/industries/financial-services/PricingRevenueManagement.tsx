@@ -13,14 +13,14 @@ const cases = [
     title: "Turning single accounts into real relationships",
     industry: "Financial Services",
     metric: "$24M",
-    image: "/images/industries/fin-trader.jpg",
+    image: "/images/cases/bank-cross-sell-hero.jpg",
   },
   {
     slug: "wealth-onboarding",
     title: "Cutting wealth onboarding from weeks to days",
     industry: "Financial Services",
     metric: "60%",
-    image: "/images/industries/fin-handshake-city.jpg",
+    image: "/images/cases/wealth-onboarding-hero.jpg",
   },
 ];
 

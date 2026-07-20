@@ -20,7 +20,7 @@ const cases = [
     title: "Getting benefits to residents weeks sooner at a county agency",
     industry: "Public Sector",
     metric: "50%",
-    image: "/images/industries/people-commute.jpg",
+    image: "/images/cases/government-benefits-modernization-hero.jpg",
   },
 ];
 

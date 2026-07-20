@@ -75,21 +75,21 @@ export default function ConsumerProductsIndustry() {
           title: "Cutting Excess Stock for a Consumer Electronics Brand",
           industry: "Consumer Products",
           metric: "40%",
-          image: "/images/capabilities/cap-conference-data.jpg"
+          image: "/images/cases/consumer-electronics-demand-optimization-hero.jpg"
         },
         {
           slug: "food-beverage-demand-forecasting",
           title: "Sharper Demand Forecasting for a Food and Beverage Maker",
           industry: "Consumer Products",
           metric: "30%",
-          image: "/images/capabilities/cap-food.jpg"
+          image: "/images/cases/food-beverage-demand-forecasting-hero.jpg"
         },
         {
           slug: "retail-assortment-optimization",
           title: "Tailoring Store Assortments Lifts a Retailer's Sales",
           industry: "Consumer Products",
           metric: "12%",
-          image: "/images/capabilities/cap-retail-apparel.jpg"
+          image: "/images/cases/retail-assortment-optimization-hero.jpg"
         }
       ]}
     />

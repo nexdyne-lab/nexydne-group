@@ -75,7 +75,7 @@ export default function EducationIndustry() {
           title: "Helping 18% more students reach graduation",
           industry: "Education",
           metric: "18%",
-          image: "/images/industries/edu-whiteboard.jpg"
+          image: "/images/cases/university-student-success-hero.jpg"
         },
         {
           slug: "university-online-programs",
@@ -89,7 +89,7 @@ export default function EducationIndustry() {
           title: "Personalized learning lifts district outcomes 25%",
           industry: "Education",
           metric: "25%",
-          image: "/images/industries/team-strategy-board.jpg"
+          image: "/images/cases/k12-adaptive-learning-hero.jpg"
         }
       ]}
     />

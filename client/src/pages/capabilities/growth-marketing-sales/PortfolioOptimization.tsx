@@ -106,9 +106,9 @@ export default function PortfolioOptimization() {
         },
       ]}
       featuredCases={[
-        { slug: "hotel-revenue-transformation", title: "Lifting hotel revenue per room by 18%", industry: "Travel & Hospitality", metric: "18%", image: "/images/industries/travel-city-twilight.jpg" },
-        { slug: "retail-assortment-optimization", title: "Tailoring store assortments to lift a retailer's sales", industry: "Retail", metric: "12%", image: "/images/industries/retail-shelves.jpg" },
-        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "hotel-revenue-transformation", title: "Lifting hotel revenue per room by 18%", industry: "Travel & Hospitality", metric: "18%", image: "/images/cases/hotel-revenue-transformation-hero.jpg" },
+        { slug: "retail-assortment-optimization", title: "Tailoring store assortments to lift a retailer's sales", industry: "Retail", metric: "12%", image: "/images/cases/retail-assortment-optimization-hero.jpg" },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/cases/insurance-ai-underwriting-hero.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

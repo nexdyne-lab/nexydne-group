@@ -106,9 +106,9 @@ export default function InsightsAnalytics() {
         },
       ]}
       featuredCases={[
-        { slug: "grocery-demand-forecasting", title: "Cutting a grocer's fresh-food waste by a third", industry: "Retail", metric: "35%", image: "/images/capabilities/cap-food.jpg" },
+        { slug: "grocery-demand-forecasting", title: "Cutting a grocer's fresh-food waste by a third", industry: "Retail", metric: "35%", image: "/images/cases/grocery-demand-forecasting-hero.jpg" },
         { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
-        { slug: "consumer-electronics-demand-optimization", title: "Cutting excess stock for a consumer electronics brand", industry: "Consumer Products", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "consumer-electronics-demand-optimization", title: "Cutting excess stock for a consumer electronics brand", industry: "Consumer Products", metric: "40%", image: "/images/cases/consumer-electronics-demand-optimization-hero.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

@@ -259,23 +259,23 @@ export default function GrowthMarketingSales() {
           industry: "Customer & Loyalty",
           cases: [
             { slug: "retail-loyalty-transformation", title: "Turning a stale loyalty program into 45% more spend", metric: "45%", image: "/images/capabilities/cap-retail-data.jpg" },
-            { slug: "telecom-customer-experience", title: "Cutting a regional carrier's churn by 40%", metric: "40%", image: "/images/capabilities/cap-iot-network.jpg" },
-            { slug: "hotel-guest-experience", title: "Restoring personal service across a hotel group", metric: "+25pts", image: "/images/industries/city-night.jpg" },
+            { slug: "telecom-customer-experience", title: "Cutting a regional carrier's churn by 40%", metric: "40%", image: "/images/cases/telecom-customer-experience-hero.jpg" },
+            { slug: "hotel-guest-experience", title: "Restoring personal service across a hotel group", metric: "+25pts", image: "/images/cases/hotel-guest-experience-hero.jpg" },
           ],
         },
         {
           industry: "Pricing & Revenue",
           cases: [
-            { slug: "hotel-revenue-transformation", title: "Lifting hotel revenue per room by 18%", metric: "18%", image: "/images/industries/travel-city-twilight.jpg" },
-            { slug: "retail-assortment-optimization", title: "Tailoring store assortments to lift a retailer's sales", metric: "12%", image: "/images/industries/retail-shelves.jpg" },
-            { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", metric: "40%", image: "/images/industries/fin-handshake-city.jpg" },
+            { slug: "hotel-revenue-transformation", title: "Lifting hotel revenue per room by 18%", metric: "18%", image: "/images/cases/hotel-revenue-transformation-hero.jpg" },
+            { slug: "retail-assortment-optimization", title: "Tailoring store assortments to lift a retailer's sales", metric: "12%", image: "/images/cases/retail-assortment-optimization-hero.jpg" },
+            { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", metric: "40%", image: "/images/cases/insurance-ai-underwriting-hero.jpg" },
           ],
         },
         {
           industry: "Growth & Commerce",
           cases: [
-            { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", metric: "85%", image: "/images/capabilities/cap-retail-apparel.jpg" },
-            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+            { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", metric: "85%", image: "/images/cases/fashion-retail-digital-transformation-hero.jpg" },
+            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M", image: "/images/cases/bank-cross-sell-hero.jpg" },
             { slug: "media-streaming-launch", title: "Launching a streaming service that won 750K subscribers", metric: "750K", image: "/images/industries/tech-datacenter.jpg" },
           ],
         },

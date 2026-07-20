@@ -207,8 +207,8 @@ export default function EnterpriseTransformation() {
         {
           industry: "Security & Data",
           cases: [
-            { slug: "security-compliance-hardening", title: "Turning compliance into an always-on posture", metric: "Audit-ready", image: "/images/industries/fin-monitors.jpg" },
-            { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+            { slug: "security-compliance-hardening", title: "Turning compliance into an always-on posture", metric: "Audit-ready", image: "/images/cases/security-compliance-hardening-hero.jpg" },
+            { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", metric: "35%", image: "/images/cases/healthcare-transformation-hero.jpg" },
             { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", metric: "73%", image: "/images/industries/fin-trader.jpg" },
           ],
         },

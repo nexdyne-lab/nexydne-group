@@ -48,7 +48,7 @@ export default function InfrastructureModernization() {
       featuredCases={[
         { slug: "legacy-core-modernization", title: "Modernizing a legacy core without a big-bang rewrite", industry: "Insurance", metric: "70%", image: "/images/industries/ops-monitors-dark.jpg" },
         { slug: "cloud-migration-health-system", title: "Moving core systems to the cloud without disruption", industry: "Healthcare", metric: "35%", image: "/images/industries/tech-datacenter.jpg" },
-        { slug: "security-compliance-hardening", title: "Turning compliance into an always-on posture", industry: "Financial Services", metric: "Audit-ready", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "security-compliance-hardening", title: "Turning compliance into an always-on posture", industry: "Financial Services", metric: "Audit-ready", image: "/images/cases/security-compliance-hardening-hero.jpg" },
       ]}
       relatedServices={[
         { slug: "cloud-migration-architecture", name: "Cloud Migration Architecture", href: "/capabilities/technology/cloud-migration-architecture" },

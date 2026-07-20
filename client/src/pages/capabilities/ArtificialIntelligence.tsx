@@ -214,16 +214,16 @@ export default function ArtificialIntelligence() {
           industry: "Generative & Agentic AI",
           cases: [
             { slug: "generative-ai-document-automation", title: "Drafting policy documents in minutes with generative AI", metric: "85%", image: "/images/industries/fin-monitors.jpg" },
-            { slug: "agentic-ai-service-resolution", title: "Resolving service requests end to end with AI agents", metric: "60%", image: "/images/industries/fin-trader.jpg" },
-            { slug: "custom-model-clinical-coding", title: "Coding claims with a model trained on its own records", metric: "40%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+            { slug: "agentic-ai-service-resolution", title: "Resolving service requests end to end with AI agents", metric: "60%", image: "/images/cases/agentic-ai-service-resolution-hero.jpg" },
+            { slug: "custom-model-clinical-coding", title: "Coding claims with a model trained on its own records", metric: "40%", image: "/images/cases/custom-model-clinical-coding-hero.jpg" },
           ],
         },
         {
           industry: "Predictive & Decision AI",
           cases: [
             { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
-            { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", metric: "92%", image: "/images/industries/mfg-robot-arm.jpg" },
-            { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", metric: "40%", image: "/images/industries/fin-handshake-city.jpg" },
+            { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", metric: "92%", image: "/images/cases/semiconductor-quality-prediction-hero.jpg" },
+            { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", metric: "40%", image: "/images/cases/insurance-ai-underwriting-hero.jpg" },
           ],
         },
         {

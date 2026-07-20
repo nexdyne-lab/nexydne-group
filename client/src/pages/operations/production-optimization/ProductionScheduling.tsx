@@ -47,7 +47,7 @@ export default function OperationsProductionOptimizationProductionScheduling() {
       ]}
             featuredCases={[
         { slug: "automotive-smart-factory", title: "Lifting plant productivity by 40% at a vehicle maker", industry: "Manufacturing", metric: "40%", image: "/images/industries/mfg-robotics.jpg" },
-        { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", industry: "Manufacturing", metric: "92%", image: "/images/industries/mfg-robot-arm.jpg" },
+        { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", industry: "Manufacturing", metric: "92%", image: "/images/cases/semiconductor-quality-prediction-hero.jpg" },
         { slug: "strategic-sourcing-savings", title: "Cutting materials cost with strategic sourcing", industry: "Manufacturing", metric: "12%", image: "/images/industries/ops-gears.jpg" },
       ]}
       relatedServices={[

@@ -75,14 +75,14 @@ export default function EnergyUtilitiesIndustry() {
           title: "Cutting outage time nearly in half for a regional utility",
           industry: "Energy & Utilities",
           metric: "45%",
-          image: "/images/industries/energy-solar.jpg"
+          image: "/images/cases/utility-grid-modernization-hero.jpg"
         },
         {
           slug: "renewable-energy-forecasting",
           title: "Sharper generation forecasts for a renewables developer",
           industry: "Energy & Utilities",
           metric: "25%",
-          image: "/images/industries/energy-wind.jpg"
+          image: "/images/cases/renewable-energy-forecasting-hero.jpg"
         },
         {
           slug: "power-generation-predictive-maintenance",

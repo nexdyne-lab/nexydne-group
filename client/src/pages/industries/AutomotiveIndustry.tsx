@@ -75,21 +75,21 @@ export default function AutomotiveIndustry() {
           title: "Retooling a supplier line for electric-vehicle parts",
           industry: "Automotive",
           metric: "45%",
-          image: "/images/industries/auto-robotics-team.jpg"
+          image: "/images/cases/automotive-ev-transition-hero.jpg"
         },
         {
           slug: "automotive-connected-vehicle",
           title: "Turning connected-vehicle data into fewer warranty claims",
           industry: "Automotive",
           metric: "30%",
-          image: "/images/industries/tech-datacenter.jpg"
+          image: "/images/cases/automotive-connected-vehicle-hero.jpg"
         },
         {
           slug: "automotive-supply-resilience",
           title: "De-risking parts supply and recall traceability for a supplier",
           industry: "Automotive",
           metric: "80%",
-          image: "/images/industries/mfg-robot-arm.jpg"
+          image: "/images/cases/automotive-supply-resilience-hero.jpg"
         }
       ]}
     />

@@ -46,9 +46,9 @@ export default function StrategyCorporateFinanceMergersAcquisitionsMaStrategy() 
         "Internal Mergers & Acquisitions capability uplift that compounds value beyond the engagement",
       ]}
             featuredCases={[
-        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
-        { slug: "pe-distribution-digital", title: "Standing up a carved-out distributor in six months", industry: "Private Equity", metric: "6 Months", image: "/images/industries/skyscraper.jpg" },
-        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/cases/pe-healthcare-diligence-hero.jpg" },
+        { slug: "pe-distribution-digital", title: "Standing up a carved-out distributor in six months", industry: "Private Equity", metric: "6 Months", image: "/images/cases/pe-distribution-digital-hero.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/cases/pe-industrial-transformation-hero.jpg" },
       ]}
       relatedServices={[
         { slug: "target-identification", name: "Target Identification", href: "/capabilities/strategy-corporate-finance/mergers-acquisitions/target-identification" },

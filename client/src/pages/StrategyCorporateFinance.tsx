@@ -201,7 +201,7 @@ export default function StrategyCorporateFinance() {
         {
           industry: "Value Creation & Performance",
           cases: [
-            { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+            { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", metric: "$18M", image: "/images/cases/pe-industrial-transformation-hero.jpg" },
             { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
             { slug: "automotive-smart-factory", title: "Lifting plant productivity by 40% at a vehicle maker", metric: "40%", image: "/images/industries/mfg-robotics.jpg" },
           ],
@@ -209,9 +209,9 @@ export default function StrategyCorporateFinance() {
         {
           industry: "M&A & Capital",
           cases: [
-            { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
-            { slug: "pe-distribution-digital", title: "Standing up a carved-out distributor in six months", metric: "6 Months", image: "/images/industries/skyscraper.jpg" },
-            { slug: "capital-raise-series-b", title: "Raising a growth round on stronger terms", metric: "1.3x", image: "/images/industries/deal-handshake.jpg" },
+            { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", metric: "40%", image: "/images/cases/pe-healthcare-diligence-hero.jpg" },
+            { slug: "pe-distribution-digital", title: "Standing up a carved-out distributor in six months", metric: "6 Months", image: "/images/cases/pe-distribution-digital-hero.jpg" },
+            { slug: "capital-raise-series-b", title: "Raising a growth round on stronger terms", metric: "1.3x", image: "/images/cases/capital-raise-series-b-hero.jpg" },
           ],
         },
         {
@@ -219,7 +219,7 @@ export default function StrategyCorporateFinance() {
           cases: [
             { slug: "fpa-forecasting-transformation", title: "Turning finance into a forecasting engine", metric: "Days", image: "/images/industries/advisor-charts.jpg" },
             { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
-            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M", image: "/images/cases/bank-cross-sell-hero.jpg" },
           ],
         },
       ]}

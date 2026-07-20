@@ -107,8 +107,8 @@ export default function RetentionLoyalty() {
       ]}
       featuredCases={[
         { slug: "retail-loyalty-transformation", title: "Turning a stale loyalty program into 45% more spend", industry: "Retail", metric: "45%", image: "/images/capabilities/cap-retail-data.jpg" },
-        { slug: "airline-loyalty-redesign", title: "Reviving a regional airline's loyalty program", industry: "Travel & Hospitality", metric: "40%", image: "/images/industries/transport-bridge.jpg" },
-        { slug: "telecom-customer-experience", title: "Cutting a regional carrier's churn by 40%", industry: "Technology, Media & Telecom", metric: "40%", image: "/images/capabilities/cap-iot-network.jpg" },
+        { slug: "airline-loyalty-redesign", title: "Reviving a regional airline's loyalty program", industry: "Travel & Hospitality", metric: "40%", image: "/images/cases/airline-loyalty-redesign-hero.jpg" },
+        { slug: "telecom-customer-experience", title: "Cutting a regional carrier's churn by 40%", industry: "Technology, Media & Telecom", metric: "40%", image: "/images/cases/telecom-customer-experience-hero.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

@@ -104,9 +104,9 @@ export default function MAPartnerships() {
         },
       ]}
       featuredCases={[
-        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
-        { slug: "pe-distribution-digital", title: "Standing up a carved-out distributor in six months", industry: "Private Equity", metric: "6 Months", image: "/images/industries/skyscraper.jpg" },
-        { slug: "capital-raise-series-b", title: "Raising a growth round on stronger terms", industry: "Technology, Media & Telecom", metric: "1.3x", image: "/images/industries/deal-handshake.jpg" },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/cases/pe-healthcare-diligence-hero.jpg" },
+        { slug: "pe-distribution-digital", title: "Standing up a carved-out distributor in six months", industry: "Private Equity", metric: "6 Months", image: "/images/cases/pe-distribution-digital-hero.jpg" },
+        { slug: "capital-raise-series-b", title: "Raising a growth round on stronger terms", industry: "Technology, Media & Telecom", metric: "1.3x", image: "/images/cases/capital-raise-series-b-hero.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance/mergers-acquisitions", name: "Mergers & Acquisitions Advisory" },

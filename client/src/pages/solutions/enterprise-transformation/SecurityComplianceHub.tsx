@@ -80,7 +80,7 @@ export default function SecurityComplianceHub() {
         },
       ]}
       featuredCases={[
-        { slug: "security-compliance-hardening", title: "Turning compliance into an always-on posture", industry: "Financial Services", metric: "Audit-ready", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "security-compliance-hardening", title: "Turning compliance into an always-on posture", industry: "Financial Services", metric: "Audit-ready", image: "/images/cases/security-compliance-hardening-hero.jpg" },
         { slug: "legacy-core-modernization", title: "Modernizing a legacy core without a big-bang rewrite", industry: "Insurance", metric: "70%", image: "/images/industries/ops-monitors-dark.jpg" },
         { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-trader.jpg" },
       ]}

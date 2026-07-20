@@ -82,7 +82,7 @@ export default function AerospaceDefenseIndustry() {
           title: "98% fleet readiness for a defense prime by getting ahead of demand",
           industry: "Aerospace & Defense",
           metric: "98%",
-          image: "/images/industries/retail-warehouse.jpg"
+          image: "/images/cases/supply-chain-visibility-hero.jpg"
         },
         {
           slug: "logistics-optimization",

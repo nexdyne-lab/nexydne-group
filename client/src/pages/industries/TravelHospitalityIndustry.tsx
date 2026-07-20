@@ -75,21 +75,21 @@ export default function TravelHospitalityIndustry() {
           title: "Lifting hotel revenue per room by 18%",
           industry: "Travel & Hospitality",
           metric: "18%",
-          image: "/images/industries/travel-city-twilight.jpg"
+          image: "/images/cases/hotel-revenue-transformation-hero.jpg"
         },
         {
           slug: "airline-loyalty-redesign",
           title: "Reviving a regional airline's loyalty program",
           industry: "Travel & Hospitality",
           metric: "40%",
-          image: "/images/industries/transport-bridge.jpg"
+          image: "/images/cases/airline-loyalty-redesign-hero.jpg"
         },
         {
           slug: "hotel-guest-experience",
           title: "Restoring personal service across a hotel group",
           industry: "Travel & Hospitality",
           metric: "+25pts",
-          image: "/images/industries/city-night.jpg"
+          image: "/images/cases/hotel-guest-experience-hero.jpg"
         }
       ]}
     />

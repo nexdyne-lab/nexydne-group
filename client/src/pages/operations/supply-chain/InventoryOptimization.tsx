@@ -46,7 +46,7 @@ export default function OperationsSupplyChainInventoryOptimization() {
         "Internal Supply Chain Optimization capability uplift that compounds value beyond the engagement",
       ]}
             featuredCases={[
-        { slug: "warehouse-optimization", title: "Lifting warehouse productivity 45% for a regional distributor", industry: "Transportation & Logistics", metric: "45%", image: "/images/industries/retail-warehouse.jpg" },
+        { slug: "warehouse-optimization", title: "Lifting warehouse productivity 45% for a regional distributor", industry: "Transportation & Logistics", metric: "45%", image: "/images/cases/warehouse-optimization-hero.jpg" },
         { slug: "freight-optimization", title: "Cutting freight costs 18% for a consumer-goods shipper", industry: "Transportation & Logistics", metric: "18%", image: "/images/industries/transport-traffic.jpg" },
         { slug: "last-mile-optimization", title: "Cutting last-mile delivery costs 30% for a regional carrier", industry: "Transportation & Logistics", metric: "30%", image: "/images/industries/transport-bridge.jpg" },
       ]}

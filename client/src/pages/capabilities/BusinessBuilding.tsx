@@ -203,7 +203,7 @@ export default function BusinessBuilding() {
           industry: "Launch New Ventures",
           cases: [
             { slug: "media-streaming-launch", title: "Launching a streaming service that won 750K subscribers", metric: "750K", image: "/images/industries/tech-datacenter.jpg" },
-            { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", metric: "85%", image: "/images/capabilities/cap-retail-apparel.jpg" },
+            { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", metric: "85%", image: "/images/cases/fashion-retail-digital-transformation-hero.jpg" },
             { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
           ],
         },
@@ -212,15 +212,15 @@ export default function BusinessBuilding() {
           cases: [
             { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", metric: "3x", image: "/images/capabilities/cap-conference-data.jpg" },
             { slug: "platform-engineering-developer-velocity", title: "Shipping faster with an internal developer platform", metric: "3x", image: "/images/capabilities/cap-coder.jpg" },
-            { slug: "automotive-ev-transition", title: "Retooling a supplier line for electric-vehicle parts", metric: "45%", image: "/images/industries/auto-robotics-team.jpg" },
+            { slug: "automotive-ev-transition", title: "Retooling a supplier line for electric-vehicle parts", metric: "45%", image: "/images/cases/automotive-ev-transition-hero.jpg" },
           ],
         },
         {
           industry: "Scale & Grow",
           cases: [
-            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M", image: "/images/cases/bank-cross-sell-hero.jpg" },
             { slug: "retail-loyalty-transformation", title: "Turning a stale loyalty program into 45% more spend", metric: "45%", image: "/images/capabilities/cap-retail-data.jpg" },
-            { slug: "capital-raise-series-b", title: "Raising a growth round on stronger terms", metric: "1.3x", image: "/images/industries/deal-handshake.jpg" },
+            { slug: "capital-raise-series-b", title: "Raising a growth round on stronger terms", metric: "1.3x", image: "/images/cases/capital-raise-series-b-hero.jpg" },
           ],
         },
       ]}

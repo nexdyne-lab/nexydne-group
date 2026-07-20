@@ -82,7 +82,7 @@ export default function ManufacturingIndustry() {
           title: "Catching chip defects weeks before they appear",
           industry: "Manufacturing",
           metric: "92%",
-          image: "/images/industries/mfg-robot-arm.jpg"
+          image: "/images/cases/semiconductor-quality-prediction-hero.jpg"
         },
         {
           slug: "industrial-connected-products",

@@ -212,23 +212,23 @@ export default function Operations() {
           industry: "Manufacturing & Production",
           cases: [
             { slug: "automotive-smart-factory", title: "Lifting plant productivity by 40% at a vehicle maker", metric: "40%", image: "/images/industries/mfg-robotics.jpg" },
-            { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", metric: "92%", image: "/images/industries/mfg-robot-arm.jpg" },
+            { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", metric: "92%", image: "/images/cases/semiconductor-quality-prediction-hero.jpg" },
             { slug: "strategic-sourcing-savings", title: "Cutting materials cost with strategic sourcing", metric: "12%", image: "/images/industries/ops-gears.jpg" },
           ],
         },
         {
           industry: "Supply Chain & Logistics",
           cases: [
-            { slug: "warehouse-optimization", title: "Lifting warehouse productivity 45% for a regional distributor", metric: "45%", image: "/images/industries/retail-warehouse.jpg" },
+            { slug: "warehouse-optimization", title: "Lifting warehouse productivity 45% for a regional distributor", metric: "45%", image: "/images/cases/warehouse-optimization-hero.jpg" },
             { slug: "freight-optimization", title: "Cutting freight costs 18% for a consumer-goods shipper", metric: "18%", image: "/images/industries/transport-traffic.jpg" },
-            { slug: "workforce-scheduling-optimization", title: "Matching staffing to demand, shift by shift", metric: "22%", image: "/images/industries/people-commute.jpg" },
+            { slug: "workforce-scheduling-optimization", title: "Matching staffing to demand, shift by shift", metric: "22%", image: "/images/cases/workforce-scheduling-optimization-hero.jpg" },
           ],
         },
         {
           industry: "Service Operations",
           cases: [
             { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
-            { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
+            { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", metric: "60%", image: "/images/cases/insurance-claims-automation-hero.jpg" },
             { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
           ],
         },

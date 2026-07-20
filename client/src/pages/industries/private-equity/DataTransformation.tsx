@@ -6,21 +6,21 @@ const cases = [
     title: "Adding $18M in EBITDA at an industrial manufacturer",
     industry: "Private Equity",
     metric: "$18M",
-    image: "/images/industries/transport-traffic.jpg",
+    image: "/images/cases/pe-industrial-transformation-hero.jpg",
   },
   {
     slug: "pe-healthcare-diligence",
     title: "Cutting healthcare diligence time by 40%",
     industry: "Private Equity",
     metric: "40%",
-    image: "/images/capabilities/cap-conference-data.jpg",
+    image: "/images/cases/pe-healthcare-diligence-hero.jpg",
   },
   {
     slug: "pe-distribution-digital",
     title: "Standing up a carved-out distributor in six months",
     industry: "Private Equity",
     metric: "6 Months",
-    image: "/images/industries/deal-handshake.jpg",
+    image: "/images/cases/pe-distribution-digital-hero.jpg",
   },
 ];
 

@@ -46,9 +46,9 @@ export default function StrategyCorporateFinanceCapitalRaisingInvestorRelations(
         "Internal Capital Raising capability uplift that compounds value beyond the engagement",
       ]}
             featuredCases={[
-        { slug: "capital-raise-series-b", title: "Raising a growth round on stronger terms", industry: "Technology, Media & Telecom", metric: "1.3x", image: "/images/industries/deal-handshake.jpg" },
-        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
-        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "capital-raise-series-b", title: "Raising a growth round on stronger terms", industry: "Technology, Media & Telecom", metric: "1.3x", image: "/images/cases/capital-raise-series-b-hero.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/cases/pe-industrial-transformation-hero.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/cases/bank-cross-sell-hero.jpg" },
       ]}
       relatedServices={[
         { slug: "equity-financing", name: "Equity Financing", href: "/capabilities/strategy-corporate-finance/capital-raising/equity-financing" },

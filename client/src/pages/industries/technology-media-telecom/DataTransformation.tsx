@@ -20,7 +20,7 @@ const cases = [
     title: "Cutting a regional carrier's churn by 40%",
     industry: "Technology, Media & Telecom",
     metric: "40%",
-    image: "/images/capabilities/cap-iot-network.jpg",
+    image: "/images/cases/telecom-customer-experience-hero.jpg",
   },
 ];
 

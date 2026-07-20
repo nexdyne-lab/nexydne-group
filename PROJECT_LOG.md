@@ -729,3 +729,11 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
 - QC: tsc, build+guard, 34/34 tests, headless 10-page sample + landing
   (30 new cards render), 0 JS errors. Committed, NOT pushed — review sheets in
   growth-marketing/case-sheets/ (5 sheets).
+
+### 2026-07-20 — Case-card completeness sweep (David's catch)
+- David asked whether case cards on solutions/capability/industry pages got the
+  new imagery — audit found 771 stale cards across 406 files using a
+  bare-slug object shape (slug:/id: without "/cases/" link) that the first
+  sweep missed. All 771 updated; re-audit shows 0 stale; tsc/build/guard/tests
+  green. LESSON: card-image sweeps must match every object shape (link:,
+  href:, slug:, id:) — grep the data shapes before sweeping.

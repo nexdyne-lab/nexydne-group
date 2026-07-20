@@ -46,8 +46,8 @@ export default function MlopsDeployment() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        { slug: "custom-model-clinical-coding", title: "Coding claims with a model trained on its own records", industry: "Healthcare", metric: "40%", image: "/case-medical-collaboration.9602cc8c.jpg" },
-        { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", industry: "Manufacturing", metric: "92%", image: "/images/industries/mfg-robot-arm.jpg" },
+        { slug: "custom-model-clinical-coding", title: "Coding claims with a model trained on its own records", industry: "Healthcare", metric: "40%", image: "/images/cases/custom-model-clinical-coding-hero.jpg" },
+        { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", industry: "Manufacturing", metric: "92%", image: "/images/cases/semiconductor-quality-prediction-hero.jpg" },
         { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedServices={[
