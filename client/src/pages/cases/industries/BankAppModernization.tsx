@@ -23,7 +23,7 @@ export default function BankAppModernization() {
       clientContextBody="The hybrid architecture that once accelerated delivery now blocked it. Layers of abstraction between the app and the device made the app unstable and slow, and every fix or feature was a gamble against regressions. For a bank, an unreliable app is a trust problem — customers checking balances or moving money need it to just work. The bank had reached the point where patching the hybrid app cost more than modernizing it. It needed a rebuild on native Swift and Kotlin to restore stability and let the roadmap move again."
       clientProfile={{
         industry: "Regional Bank",
-        companySize: "~$430M Annual Revenue",
+        companySize: "900,000+ Customers",
         projectDuration: "7 Months",
         additionalInfo: "iOS + Android Modernization",
         additionalLabel: "Mobile Banking"

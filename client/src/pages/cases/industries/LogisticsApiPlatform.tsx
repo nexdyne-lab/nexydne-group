@@ -55,7 +55,7 @@ export default function LogisticsApiPlatform() {
       quoteRole="Logistics company"
       relatedStudies={[
         { title: "How a Healthcare Services Company Achieved Zero Incidents and Full HIPAA Compliance", metric: "Zero", label: "security incidents", link: "/capabilities/technology/case-studies/healthcare-security", image: "/case-healthcare-team.5797392b.jpg" },
-        { title: "How a Specialty Insurer Sped Processing 70% and Saved $2.1M a Year", metric: "$2.1M", label: "annual savings", link: "/capabilities/technology/case-studies/insurance-modernization", image: "/images/industries/fin-handshake-city.jpg" }
+        { title: "How a Specialty Insurer Sped Processing 70% and Cut Maintenance Cost 40%", metric: "70%", label: "faster processing", link: "/capabilities/technology/case-studies/insurance-modernization", image: "/images/industries/fin-handshake-city.jpg" }
       ]}
       ctaTitle="Is bespoke integration capping your partner growth?"
       ctaDescription="Let's build an API platform that makes onboarding fast and repeatable."

@@ -135,7 +135,7 @@ export default function EnterpriseTransformation() {
           "Healthcare network migrated to AWS without disruption — infrastructure cost cut by 38% with improved uptime",
           "Fintech replatformed monolith into microservices — release cycles accelerated from quarterly to weekly",
           "Media streaming platform re-architected for elastic scale — peak-hour latency reduced 62% during major live events",
-          "~$15M in operational savings delivered to clients across the past three years",
+          "Double-digit run-cost reductions delivered to clients across the past three years",
         ],
         howWeHelp: [
           "Map current systems, identify pain points, and quantify the cost of doing nothing — no assumptions, just data",
@@ -193,7 +193,7 @@ export default function EnterpriseTransformation() {
           cases: [
             { slug: "cloud-migration-health-system", title: "Moving core systems to the cloud without disruption", metric: "35%", image: "/images/industries/tech-datacenter.jpg" },
             { slug: "legacy-core-modernization", title: "Modernizing a legacy core without a big-bang rewrite", metric: "70%", image: "/images/industries/ops-monitors-dark.jpg" },
-            { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
+            { slug: "industrial-connected-products", title: "Building a Recurring Services Business on Machines Already Sold", metric: "2,700 machines on connected services", image: "/images/capabilities/cap-battery-factory.jpg" },
           ],
         },
         {

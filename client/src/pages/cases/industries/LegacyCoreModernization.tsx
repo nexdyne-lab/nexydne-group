@@ -15,15 +15,15 @@ export default function LegacyCoreModernization() {
       metrics={[
         { value: "0", label: "Big-Bang Cutovers" },
         { value: "70%", label: "Faster Product Changes" },
-        { value: "$6M", label: "Lower Annual Maintenance" },
+        { value: "60%", label: "Lower Annual Maintenance" },
         { value: "100%", label: "Uptime Through the Move" }
       ]}
       clientContextTitle="A System Almost No One Still Understood"
       clientContextIntro="A regional insurance carrier ran its entire business — every policy it issued and every claim it paid — on a core system built decades earlier. It had worked reliably for years, but the people who originally built it had long since retired, and the handful of specialists who still understood it were nearing the end of their careers. The system had become a black box: essential to the company, yet understood by almost no one inside it."
-      clientContextBody="The cost of that dependence showed up everywhere. Launching a new insurance product or adjusting pricing meant painstaking changes to code that no one fully trusted, so work that should have taken weeks stretched into many months. Modern tools — a customer web portal, a mobile claims app, analytics — could not easily connect to the old core, so the company kept falling further behind competitors. Maintenance alone consumed millions of dollars a year. Leadership knew the system had to go, but the obvious path — a complete rewrite switched on overnight — was exactly the kind of high-stakes gamble that has sunk insurers before. One bad weekend could mean policies that could not be issued or claims that could not be paid."
+      clientContextBody="The cost of that dependence showed up everywhere. Launching a new insurance product or adjusting pricing meant painstaking changes to code that no one fully trusted, so work that should have taken weeks stretched into many months. Modern tools — a customer web portal, a mobile claims app, analytics — could not easily connect to the old core, so the company kept falling further behind competitors. Maintenance alone consumed a growing share of the technology budget every year. Leadership knew the system had to go, but the obvious path — a complete rewrite switched on overnight — was exactly the kind of high-stakes gamble that has sunk insurers before. One bad weekend could mean policies that could not be issued or claims that could not be paid."
       clientProfile={{
         industry: "Regional Insurance Carrier",
-        companySize: "~$400M Annual Revenue",
+        companySize: "Full Policy & Claims Book",
         projectDuration: "24 Months",
         additionalInfo: "Policy & Claims Core",
         additionalLabel: "System Replaced"
@@ -47,8 +47,8 @@ export default function LegacyCoreModernization() {
         },
         {
           icon: DollarSign,
-          title: "Millions Just to Stand Still",
-          description: "Keeping the aging system running consumed millions of dollars a year — money spent maintaining the past rather than building the future."
+          title: "Paying Heavily Just to Stand Still",
+          description: "Keeping the aging system running consumed a heavy annual maintenance bill — money spent maintaining the past rather than building the future."
         }
       ]}
       approachTitle="Replacing the Engine While the Car Kept Driving"
@@ -72,7 +72,7 @@ export default function LegacyCoreModernization() {
         {
           step: "04",
           title: "Retire the Old Core for Good",
-          description: "As each capability moved across and ran cleanly in real use, the old system quietly did less and less. Once nothing depended on it any longer, the company could finally shut it down — ending years of risk and millions in annual cost."
+          description: "As each capability moved across and ran cleanly in real use, the old system quietly did less and less. Once nothing depended on it any longer, the company could finally shut it down — ending years of risk and a heavy annual maintenance cost."
         }
       ]}
       resultsTitle="A Modern Core, Delivered Without Drama"
@@ -91,7 +91,7 @@ export default function LegacyCoreModernization() {
         },
         {
           icon: DollarSign,
-          value: "$6M",
+          value: "60%",
           label: "Lower annual maintenance",
           detail: "Saved once the old system was retired"
         },

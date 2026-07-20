@@ -5,25 +5,25 @@ function GlobalRetailerEcommerce() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Scaling E-Commerce Revenue 40% with AI Personalization | Retail Case Study"
-      seoDescription="A Fortune 500 retailer's online growth stalled at 12% with 78% cart abandonment. AI personalization across 2M+ SKUs lifted e-commerce revenue 40% and added $180M a year."
+      seoDescription="A Fortune 500 retailer's online growth stalled at 12% with 78% cart abandonment. AI personalization across 2M+ SKUs lifted e-commerce revenue 40% within 12 months."
       canonical="/cases/global-retailer-ecommerce"
       industry="Retail"
       industryLink="/industries/retail"
       title="How a Global Retailer Scaled E-Commerce Revenue 40% with AI Personalization"
-      subtitle="A Fortune 500 retailer unified 12 data sources and deployed AI personalization across 2M+ SKUs and five channels — lifting revenue 40% and generating $180M in additional annual revenue within 12 months."
+      subtitle="A Fortune 500 retailer unified 12 data sources and deployed AI personalization across 2M+ SKUs and five channels — lifting e-commerce revenue 40% within 12 months."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
       metrics={[
         { value: "40%", label: "Revenue Growth" },
         { value: "3.2x", label: "Conversion Rate Lift" },
         { value: "65%", label: "Higher Retention" },
-        { value: "$180M", label: "Added Annual Revenue" }
+        { value: "2M+", label: "SKUs Personalized" }
       ]}
       clientContextTitle="Growth That Plateaued"
-      clientContextIntro="A global retailer with annual revenues exceeding $15 billion faced a fundamental shift in consumer behavior. Its physical stores stayed profitable, but e-commerce growth had plateaued at 12% year-over-year — well below the 25–30% industry benchmark."
+      clientContextIntro="A Fortune 500 global retailer faced a fundamental shift in consumer behavior. Its physical stores stayed profitable, but e-commerce growth had plateaued at 12% year-over-year — well below the 25–30% industry benchmark."
       clientContextBody="Generic product recommendations failed to engage customers, driving cart-abandonment rates averaging 78%. Limited visibility into customer-journey touchpoints and data siloed across marketing, sales, and operations blocked growth. With millions of SKUs, the inability to personalize at scale had become an existential threat as digital-native competitors captured share. The board set an ambitious target: 35% e-commerce revenue growth within 18 months, while maintaining profitability."
       clientProfile={{
         industry: "Fortune 500 Retailer",
-        companySize: "$15B+ Revenue",
+        companySize: "2M+ SKUs, Five Channels",
         projectDuration: "16-Week Program",
         additionalInfo: "45M Active Customers",
         additionalLabel: "Scale"
@@ -91,9 +91,9 @@ function GlobalRetailerEcommerce() {
         },
         {
           icon: DollarSign,
-          value: "$180M",
-          label: "Additional annual revenue",
-          detail: "A 4.2x ROI, with cart abandonment down 52%"
+          value: "52%",
+          label: "Lower cart abandonment",
+          detail: "With the program returning several times its cost in year one"
         }
       ]}
       quote="NEXDYNE didn't just implement technology — they transformed how we think about customer relationships. The AI personalization engine has become a core competitive advantage that continues to drive growth quarter after quarter."

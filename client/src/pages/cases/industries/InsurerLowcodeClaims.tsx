@@ -23,7 +23,7 @@ export default function InsurerLowcodeClaims() {
       clientContextBody="The core system worked for what it did; the problem was the manual triage layer wrapped around it. But the assumption inside the organization was that improving triage meant touching the core, and no one wanted to open that box. That assumption had frozen the process in place. In reality, the triage gain could be captured by a focused low-code application that sat on top of the existing system — automating classification and routing — without disturbing the core at all. The insurer needed that targeted build delivered fast, to prove value without a risky replacement."
       clientProfile={{
         industry: "Regional Insurer",
-        companySize: "~$470M Annual Revenue",
+        companySize: "~150,000 Claims a Year",
         projectDuration: "12 Weeks",
         additionalInfo: "PowerApps Triage Layer",
         additionalLabel: "Claims Operations"

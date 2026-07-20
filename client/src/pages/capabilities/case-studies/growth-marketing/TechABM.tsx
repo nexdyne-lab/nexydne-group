@@ -5,25 +5,24 @@ export function TechABM() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Landing Enterprise Clients With Account-Based Marketing | Technology Case Study"
-      seoDescription="A $42M automation vendor's inbound engine couldn't reach enterprise buyers. A rigorous ABM program created $18M in pipeline, closed 12 enterprise wins, and grew deal size 4x."
+      seoDescription="An automation vendor's inbound engine couldn't reach enterprise buyers. A rigorous ABM program engaged 65% of target accounts, closed 12 enterprise wins, and grew deal size 4x."
       canonical="/capabilities/growth-marketing-sales/case-studies/tech-abm"
       industry="Technology, Media & Telecom"
       industryLink="/industries/technology-media-telecom"
       title="How a Tech Company Landed Enterprise Clients With ABM"
-      subtitle="A workflow-automation vendor moved upmarket with rigorous account-based marketing — creating $18M in enterprise pipeline, closing 12 enterprise wins, and growing average deal size 4x."
+      subtitle="A workflow-automation vendor moved upmarket with rigorous account-based marketing — engaging 65% of priority accounts, closing 12 enterprise wins, and growing average deal size 4x."
       heroImage="/images/industries/tech-datacenter.jpg"
       metrics={[
         { value: "12", label: "Enterprise Wins" },
         { value: "4x", label: "Deal Size Increase" },
-        { value: "$18M", label: "Pipeline Created" },
         { value: "65%", label: "Target Account Engagement" }
       ]}
       clientContextTitle="Inbound Couldn't Reach the Enterprise"
-      clientContextIntro="A 140-employee technology company with $42M in revenue sells workflow-automation software to mid-size businesses and wanted to expand into enterprise accounts. Its inbound-heavy go-to-market couldn't reach enterprise decision-makers."
+      clientContextIntro="A 140-employee technology company sells workflow-automation software to mid-size businesses and wanted to expand into enterprise accounts. Its inbound-heavy go-to-market couldn't reach enterprise decision-makers."
       clientContextBody="Enterprise buying was fundamentally different: longer timelines, committee decisions, multiple stakeholders to align, and an expectation of proactive outreach rather than passive content consumption. The sales team lacked the relationships and credibility to access C-suite executives, and inbound demos alone wouldn't move upmarket buyers."
       clientProfile={{
         industry: "Automation Software Company",
-        companySize: "$42M Revenue",
+        companySize: "140 Employees",
         projectDuration: "Tiered ABM",
         additionalInfo: "Enterprise Move",
         additionalLabel: "Goal"
@@ -79,9 +78,9 @@ export function TechABM() {
       results={[
         {
           icon: Megaphone,
-          value: "$18M",
-          label: "Enterprise pipeline",
-          detail: "With 65% of priority accounts meaningfully engaged"
+          value: "65%",
+          label: "Priority accounts engaged",
+          detail: "Building enterprise pipeline where none existed before"
         },
         {
           icon: Trophy,

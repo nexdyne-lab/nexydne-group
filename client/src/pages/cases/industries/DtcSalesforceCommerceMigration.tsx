@@ -23,7 +23,7 @@ export default function DtcSalesforceCommerceMigration() {
       clientContextBody="Replatforming is where good brands lose ground. A rushed cutover can drop the organic search rankings built over years, break the integrations that feed the order-management and customer-data systems, and greet launch weekend with a wave of customer-visible failures. The brand could not afford any of that. It needed disciplined ownership of the whole migration — requirements, platform selection, integration architecture across OMS and CDP, and the cutover plan — plus a redirect strategy engineered to protect the organic traffic that drove the business."
       clientProfile={{
         industry: "Direct-to-Consumer Brand",
-        companySize: "~$320M Annual Revenue",
+        companySize: "2M+ Annual Orders",
         projectDuration: "6 Months",
         additionalInfo: "Custom-to-Salesforce Migration",
         additionalLabel: "Replatform"

@@ -8,7 +8,7 @@ const caseStudies = [
     href: "/capabilities/business-building/case-studies/distributor-marketplace",
     industry: "Distribution",
     metrics: [
-      { value: "$4.2M", label: "New Revenue (Year 1)" },
+      { value: "9%", label: "Added to Revenue (Year 1)" },
       { value: "340", label: "Marketplace Sellers" },
     ],
   },
@@ -30,7 +30,7 @@ const caseStudies = [
     href: "/capabilities/business-building/case-studies/manufacturer-dtc",
     industry: "Manufacturing",
     metrics: [
-      { value: "$8M", label: "D2C Revenue" },
+      { value: "45K", label: "Direct Customers" },
       { value: "28%", label: "Higher Margins" },
     ],
   },
@@ -52,7 +52,7 @@ const caseStudies = [
     href: "/capabilities/business-building/case-studies/logistics-tech-spinoff",
     industry: "Logistics",
     metrics: [
-      { value: "$12M", label: "Spin-Off Valuation" },
+      { value: "2 yrs", label: "To Standalone Scale" },
       { value: "18", label: "Enterprise Clients" },
     ],
   },

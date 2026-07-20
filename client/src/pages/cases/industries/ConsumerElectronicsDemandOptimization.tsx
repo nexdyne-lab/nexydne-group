@@ -15,7 +15,7 @@ export default function ConsumerElectronicsDemandOptimization() {
       metrics={[
         { value: "40%", label: "Less Inventory" },
         { value: "97%", label: "In-Stock Rate" },
-        { value: "$14M", label: "Working Capital Freed" },
+        { value: "<1 Year", label: "To Pay for Itself" },
         { value: "60%", label: "Less Obsolescence" }
       ]}
       clientContextTitle="Forecasting Products That Have No History"
@@ -23,7 +23,7 @@ export default function ConsumerElectronicsDemandOptimization() {
       clientContextBody="Because product lives were so short, mistakes were permanent. By the time real demand became visible, the model was already being phased out, and there was no second chance to correct the order. The pattern repeated with every launch: excess inventory tied up capital and warehouse space, while end-of-life write-offs quietly erased margin. Leadership had come to treat forecasting as guesswork — and the company was paying for the guesses in cash it could not put to better use."
       clientProfile={{
         industry: "Consumer Electronics Brand",
-        companySize: "~$400M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "12 Months",
         additionalInfo: "~60 New Products a Year",
         additionalLabel: "Launch Cadence"
@@ -33,7 +33,7 @@ export default function ConsumerElectronicsDemandOptimization() {
         {
           icon: Package,
           title: "Capital Locked in Excess Stock",
-          description: "Over-ordering left millions in unsold product sitting in warehouses — cash and space the business could not use elsewhere."
+          description: "Over-ordering left warehouses full of unsold product — cash and space the business could not use elsewhere."
         },
         {
           icon: Clock,
@@ -91,9 +91,9 @@ export default function ConsumerElectronicsDemandOptimization() {
         },
         {
           icon: DollarSign,
-          value: "$14M",
-          label: "Working capital freed",
-          detail: "Cash redeployed into growth"
+          value: "<1 Year",
+          label: "To pay for itself",
+          detail: "Freed working capital redeployed into growth"
         },
         {
           icon: TrendingUp,

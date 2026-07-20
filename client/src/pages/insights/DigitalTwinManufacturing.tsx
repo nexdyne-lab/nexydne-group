@@ -25,7 +25,7 @@ export default function DigitalTwinManufacturing() {
       keyTakeaways={[
         "A true digital twin is dynamic and connected to the physical world through IoT sensors—not a static 3D CAD model. The value comes from moving descriptive twins to predictive and prescriptive ones.",
         "For a Tier 1 automotive supplier, a physics-based twin traced assembly micro-stoppages to a robotic arm's path planning that misaligned only when ambient temperature rose above 28°C.",
-        "The engagement lifted OEE 15%, saved $2M annually, and cut new-product ramp-up time 40% through virtual commissioning.",
+        "The engagement lifted OEE 15%, materially cut scrap and unplanned-downtime costs, and cut new-product ramp-up time 40% through virtual commissioning.",
         "Start small: pick your biggest bottleneck asset, connect reliable operational data, and focus on a single outcome first.",
       ]}
       relatedInsights={relatedInsights}
@@ -79,7 +79,7 @@ export default function DigitalTwinManufacturing() {
       <h3>The impact</h3>
       <ul>
         <li><strong>15% increase in OEE:</strong> By optimizing the robot's path and adding cooling, throughput stabilized.</li>
-        <li><strong>$2M annual savings:</strong> Reduced scrap rates and avoided unscheduled downtime.</li>
+        <li><strong>Lower cost of quality:</strong> Reduced scrap rates and avoided unscheduled downtime.</li>
         <li><strong>Virtual commissioning:</strong> The company now tests all line changes in the twin before deploying to the floor, reducing ramp-up time for new products by 40%.</li>
       </ul>
 

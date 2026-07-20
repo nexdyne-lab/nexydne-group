@@ -5,7 +5,7 @@ export default function TelecomCustomerExperience() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Cutting a Regional Carrier's Churn by 40% | Technology, Media & Telecom Case Study"
-      seoDescription="A regional mobile carrier was losing customers faster than its rivals and only learned they were unhappy once they complained. Getting ahead of problems cut churn by 40% and protected millions in revenue."
+      seoDescription="A regional mobile carrier was losing customers faster than its rivals and only learned they were unhappy once they complained. Getting ahead of problems cut churn by 40% and complaints by 60%."
       canonical="/cases/telecom-customer-experience"
       industry="Technology, Media & Telecom"
       industryLink="/industries/technology-media-telecom"
@@ -15,15 +15,15 @@ export default function TelecomCustomerExperience() {
       metrics={[
         { value: "40%", label: "Lower Churn" },
         { value: "35pts", label: "Higher Satisfaction" },
-        { value: "$14M", label: "Revenue Protected" },
+        { value: "2.0% → 1.2%", label: "Monthly Churn" },
         { value: "60%", label: "Fewer Complaints" }
       ]}
       clientContextTitle="Learning Customers Were Unhappy Only Once They Left"
-      clientContextIntro="A regional mobile carrier served around 1.5 million customers and was losing too many of them. Every month it lost about 2% of its base, while the strongest operators in the market held that figure closer to 1.2%. On a business this size, each point of monthly churn was worth roughly $12 million a year in revenue. Its customer satisfaction trailed the wider industry by a wide margin, and the carrier could feel it in the numbers."
+      clientContextIntro="A regional mobile carrier served around 1.5 million customers and was losing too many of them. Every month it lost about 2% of its base, while the strongest operators in the market held that figure closer to 1.2%. On a business this size, each point of monthly churn represented a serious share of annual revenue. Its customer satisfaction trailed the wider industry by a wide margin, and the carrier could feel it in the numbers."
       clientContextBody="The pattern was always the same, and always too late. Network problems went unnoticed until a customer rang to complain. Billing mistakes bred frustration before anyone spotted them. Service was something the carrier did in response to a problem, never ahead of one. The company could tell you exactly who had left, but not who was about to — and by the time a retention offer reached a wavering customer, that customer had usually already made up their mind."
       clientProfile={{
         industry: "Wireless Telecommunications",
-        companySize: "~$700M Annual Revenue",
+        companySize: "Regional Mobile Carrier",
         projectDuration: "18 Months",
         additionalInfo: "~1.5M Customers",
         additionalLabel: "Subscriber Base"
@@ -33,7 +33,7 @@ export default function TelecomCustomerExperience() {
         {
           icon: TrendingDown,
           title: "Churn Above the Market",
-          description: "Monthly losses ran at 2% against 1.2% for the best operators — with each point worth about $12M in annual revenue."
+          description: "Monthly losses ran at 2% against 1.2% for the best operators — with each point of churn a serious drag on annual revenue."
         },
         {
           icon: Users,
@@ -81,7 +81,7 @@ export default function TelecomCustomerExperience() {
           icon: TrendingDown,
           value: "40%",
           label: "Lower churn",
-          detail: "From 2.0% to 1.2% a month"
+          detail: "Trouble spotted and fixed before customers decided to leave"
         },
         {
           icon: Heart,
@@ -91,9 +91,9 @@ export default function TelecomCustomerExperience() {
         },
         {
           icon: DollarSign,
-          value: "$14M",
-          label: "Annual revenue protected",
-          detail: "From customers who stayed"
+          value: "2.0% → 1.2%",
+          label: "Monthly churn",
+          detail: "Revenue protected as customers stayed"
         },
         {
           icon: Star,

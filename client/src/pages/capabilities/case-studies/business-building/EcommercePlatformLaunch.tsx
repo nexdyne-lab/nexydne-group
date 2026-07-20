@@ -5,25 +5,25 @@ export function EcommercePlatformLaunch() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Launching a B2B E-Commerce Platform That Drives 35% of Revenue | Business Building Case Study"
-      seoDescription="A $200M industrial distributor took orders by phone and fax as Amazon Business took share. A venture-style e-commerce MVP built in 20 weeks now drives 35% of revenue and $28M in sales."
+      seoDescription="A regional industrial distributor took orders by phone and fax as Amazon Business took share. A venture-style e-commerce MVP built in 20 weeks now drives 35% of revenue at 2.4x the average order value."
       canonical="/capabilities/business-building/case-studies/ecommerce-platform-launch"
       industry="Transportation & Logistics"
       industryLink="/industries/transportation-logistics"
       title="How an Industrial Distributor Built a B2B E-Commerce Platform"
-      subtitle="A $200M distributor built and scaled a digital commerce platform in months, not years — now driving 35% of revenue and $28M in annual sales at 2.4x the average order value of traditional channels."
+      subtitle="A regional distributor built and scaled a digital commerce platform in months, not years — digital now drives 35% of revenue at 2.4x the average order value of traditional channels."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
       metrics={[
         { value: "35%", label: "Revenue Through Digital" },
-        { value: "$28M", label: "New Annual Revenue" },
+        { value: "340", label: "New Accounts Won" },
         { value: "2.4x", label: "Average Order Value" },
         { value: "18 mo", label: "Time to Profitability" }
       ]}
       clientContextTitle="An Existential Digital Threat"
-      clientContextIntro="A regional industrial distributor with $200M in revenue faced an existential threat. Amazon Business and other digital-first competitors were capturing share, especially among younger procurement professionals who expected consumer-grade digital experiences."
-      clientContextBody="The company's digital presence was a basic product catalog with no e-commerce. Orders came via phone, fax, and email — slow, error-prone, and out of step with expectations. Leadership recognized the need but faced real constraints: no internal digital expertise, limited IT infrastructure, and no appetite for the multi-year, multi-million-dollar implementations typical of enterprise e-commerce."
+      clientContextIntro="A regional industrial distributor faced an existential threat. Amazon Business and other digital-first competitors were capturing share, especially among younger procurement professionals who expected consumer-grade digital experiences."
+      clientContextBody="The company's digital presence was a basic product catalog with no e-commerce. Orders came via phone, fax, and email — slow, error-prone, and out of step with expectations. Leadership recognized the need but faced real constraints: no internal digital expertise, limited IT infrastructure, and no appetite for the multi-year mega-implementations typical of enterprise e-commerce."
       clientProfile={{
         industry: "Industrial Distributor",
-        companySize: "$200M Revenue",
+        companySize: "Regional Mid-Market",
         projectDuration: "20-Week MVP",
         additionalInfo: "50,000+ SKUs",
         additionalLabel: "Catalog"
@@ -81,7 +81,7 @@ export function EcommercePlatformLaunch() {
           icon: TrendingUp,
           value: "35%",
           label: "Of revenue through digital",
-          detail: "$28M in annual sales within 18 months"
+          detail: "Digital became the company's fastest-growing order channel within 18 months"
         },
         {
           icon: SearchCheck,
@@ -102,8 +102,8 @@ export function EcommercePlatformLaunch() {
       relatedStudies={[
         {
           title: "Launching a B2B Marketplace for a Distributor",
-          metric: "$4.2M",
-          label: "new revenue",
+          metric: "9%",
+          label: "added to revenue",
           link: "/capabilities/business-building/case-studies/distributor-marketplace",
           image: "/images/industries/retail-warehouse.jpg"
         },

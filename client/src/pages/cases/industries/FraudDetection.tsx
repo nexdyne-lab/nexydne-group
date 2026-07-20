@@ -23,7 +23,7 @@ export default function FraudDetection() {
       clientContextBody="Both sides of that trade-off were expensive. Fraud losses hit the bottom line directly, while false positives — good customers declined at the register — drove complaints, attrition, and lost interchange. The legacy rules-and-simple-model approach could only slide along a single unfavorable curve. The issuer needed a fundamentally better model that could shift the entire precision-recall frontier — catching more fraud while approving more good transactions — and a way to keep it sharp using the judgment of its human reviewers."
       clientProfile={{
         industry: "Card Issuer",
-        companySize: "~$450M Annual Revenue",
+        companySize: "8M+ Transactions / Month",
         projectDuration: "6 Months",
         additionalInfo: "Transaction Fraud Detection",
         additionalLabel: "Risk Operations"

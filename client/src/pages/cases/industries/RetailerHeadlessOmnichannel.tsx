@@ -23,7 +23,7 @@ export default function RetailerHeadlessOmnichannel() {
       clientContextBody="The triplication was slow and error-prone. The same content diverged across channels, campaigns launched unevenly, and the editorial team spent its energy on mechanical re-publishing instead of actual merchandising. The monolithic CMS coupled content to presentation, so there was no way to author once and deliver everywhere. The retailer needed a composable headless platform that separated content from channel — letting the team author content once and publish it to web, app, and in-store from a single pipeline."
       clientProfile={{
         industry: "Multi-Brand Retailer",
-        companySize: "~$620M Annual Revenue",
+        companySize: "~140 Stores",
         projectDuration: "6 Months",
         additionalInfo: "Web + App + In-Store",
         additionalLabel: "Content Channels"

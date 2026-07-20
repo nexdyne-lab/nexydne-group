@@ -187,7 +187,7 @@ export default function CaseStudyConsultingKnowledge() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="prose prose-lg max-w-none">
             <p className="text-xl leading-relaxed text-charcoal/80 mb-6">
-              We partnered with the firm's leadership to design and implement an AI-powered knowledge management platform that would automatically capture, organize, and surface relevant insights from past engagements. The $58,000 investment focused on creating a system that required minimal manual input while delivering maximum value to consultants.
+              We partnered with the firm's leadership to design and implement an AI-powered knowledge management platform that would automatically capture, organize, and surface relevant insights from past engagements. The engagement focused on creating a system that required minimal manual input while delivering maximum value to consultants.
             </p>
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Automated knowledge capture</h3>
@@ -266,7 +266,7 @@ export default function CaseStudyConsultingKnowledge() {
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Proposal development and win rates</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
-              Proposal development time dropped from an average of 60 hours to 22 hours, enabling the firm to pursue 35% more opportunities without adding staff. More importantly, proposal win rates increased from 28% to 42%, driven by higher-quality submissions that drew on the firm's full expertise. The firm attributes three major client wins worth $1.8 million in combined fees directly to the improved proposal process.
+              Proposal development time dropped from an average of 60 hours to 22 hours, enabling the firm to pursue 35% more opportunities without adding staff. More importantly, proposal win rates increased from 28% to 42%, driven by higher-quality submissions that drew on the firm's full expertise. The firm attributes three major client wins directly to the improved proposal process.
             </p>
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Knowledge retention and institutional learning</h3>
@@ -276,7 +276,7 @@ export default function CaseStudyConsultingKnowledge() {
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Financial performance</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
-              The $58,000 investment in the platform generated $420,000 in value during the first 18 months through a combination of increased billable hours (2,800 hours at average billing rates), improved win rates (three major engagements), and avoided hiring costs (handling 35% more proposals without adding staff). This represents a 315% ROI over 18 months. The managing partners view the platform as fundamental infrastructure that will continue generating value as the firm grows, with benefits compounding as more knowledge is captured and more consultants adopt the system.
+              The platform paid for itself inside the first year through a combination of increased billable hours (2,800 hours recovered annually), improved win rates (three major engagements), and avoided hiring costs (handling 35% more proposals without adding staff). The managing partners view the platform as fundamental infrastructure that will continue generating value as the firm grows, with benefits compounding as more knowledge is captured and more consultants adopt the system.
             </p>
           </div>
         </div>

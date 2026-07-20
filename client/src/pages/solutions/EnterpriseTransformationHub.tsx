@@ -101,7 +101,7 @@ export default function EnterpriseTransformationHub() {
   const cases = [
     {
       industry: "Financial Services",
-      title: "Global Bank Reorganizes Around Customer Journeys and Captures $400M in Annual Value",
+      title: "How a Global Bank Took Four Points Off Its Cost-to-Income Ratio by Reorganizing Around Customer Journeys",
       description:
         "A multi-year operating model transformation reshaped product, technology, and operations into journey-aligned teams — unlocking value the legacy structure could never reach.",
       image: "/images/case-eth-bank.jpg",

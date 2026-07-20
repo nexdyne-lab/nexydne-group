@@ -12,7 +12,7 @@ export default function GrowthScaling() {
       heroFocal="55% 50%"
       experienceStats={[
         { number: "4.2x", label: "Average revenue growth over 24-month engagements" },
-        { number: "35+", label: "Companies scaled from $5M to $50M+ ARR" },
+        { number: "35+", label: "Companies scaled through 10× ARR growth journeys" },
         { number: "12", label: "International market expansions across 4 continents" },
       ]}
       ambitions={[
@@ -105,7 +105,7 @@ export default function GrowthScaling() {
         },
       ]}
       featuredCases={[
-        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/cases/bank-cross-sell-hero.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "40% more products per customer", image: "/images/cases/bank-cross-sell-hero.jpg" },
         { slug: "retail-loyalty-transformation", title: "Turning a stale loyalty program into 45% more spend", industry: "Retail", metric: "45%", image: "/images/capabilities/cap-retail-data.jpg" },
         { slug: "media-streaming-launch", title: "Launching a streaming service that won 750K subscribers", industry: "Technology, Media & Telecom", metric: "750K", image: "/images/industries/tech-datacenter.jpg" },
       ]}

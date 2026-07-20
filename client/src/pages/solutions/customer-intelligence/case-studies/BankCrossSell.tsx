@@ -5,25 +5,25 @@ export function BankCrossSell() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Doubling Cross-Sell for a Community Bank | Financial Services Case Study"
-      seoDescription="A $1.2B community bank was stuck at 2.1 products per customer. Next-best-action models doubled cross-sell conversion and added $640K in first-year revenue."
+      seoDescription="A community bank was stuck at 2.1 products per customer. Next-best-action models doubled cross-sell conversion and lifted products per customer to 2.8."
       canonical="/solutions/data-driven-customer-intelligence/case-studies/bank-cross-sell"
       industry="Financial Services"
       industryLink="/industries/financial-services"
-      title="How a Community Bank Doubled Cross-Sell and Added $640K in Revenue"
-      subtitle="A 120-employee community bank with $1.2B in assets implemented next-best-action models to personalize product recommendations — doubling cross-sell conversion and generating $640K in new revenue."
+      title="How a Community Bank Doubled Cross-Sell Conversion"
+      subtitle="A 120-employee community bank implemented next-best-action models to personalize product recommendations — doubling cross-sell conversion, with the program paying for itself inside the first year."
       heroImage="/images/capabilities/cap-mobile-woman.jpg"
       metrics={[
         { value: "2.1x", label: "Cross-Sell Conversion" },
-        { value: "$640K", label: "New Revenue" },
+        { value: "Year 1", label: "Paid for Itself" },
         { value: "45%", label: "Engagement Increase" },
         { value: "2.8", label: "Products per Customer" }
       ]}
       clientContextTitle="A Loyal Customer Base It Couldn't Fully Serve"
-      clientContextIntro="A regional community bank with 120 employees and $1.2B in assets was struggling to deepen relationships with its existing customers. Despite a loyal base with an average tenure of eight years or more, its cross-sell ratio of 2.1 products per customer lagged well behind the industry benchmark of 3.5."
+      clientContextIntro="A regional community bank with 120 employees was struggling to deepen relationships with its existing customers. Despite a loyal base with an average tenure of eight years or more, its cross-sell ratio of 2.1 products per customer lagged well behind the industry benchmark of 3.5."
       clientContextBody="The bank's approach to cross-selling was fundamentally broken. Branch staff made generic product recommendations based on intuition rather than data, and marketing campaigns promoted the same products to everyone regardless of individual needs or financial situations. Customers felt marketed to rather than understood — and the bank had no view of which product each customer was actually most likely to need."
       clientProfile={{
         industry: "Regional Community Bank",
-        companySize: "$1.2B in Assets",
+        companySize: "Regional Footprint",
         projectDuration: "First-Year Impact",
         additionalInfo: "120 Employees",
         additionalLabel: "Team Size"
@@ -85,9 +85,9 @@ export function BankCrossSell() {
         },
         {
           icon: DollarSign,
-          value: "$640K",
-          label: "New first-year revenue",
-          detail: "Generated from personalized recommendations"
+          value: "Year 1",
+          label: "Program paid for itself",
+          detail: "New cross-sell revenue covered the build cost inside twelve months"
         },
         {
           icon: Sparkles,

@@ -1,20 +1,20 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Target, TrendingUp, Users, Sparkles, Database, DollarSign } from "lucide-react";
+import { Target, TrendingUp, Users, Sparkles, Database } from "lucide-react";
 
 export default function BankCrossSell() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Turning Single Accounts into Real Relationships | Financial Services Case Study"
-      seoDescription="A regional bank knew its customers well on paper but couldn't act on it. Bringing scattered records into one view added $24M in new revenue and deepened relationships."
+      seoDescription="A regional bank knew its customers well on paper but couldn't act on it. Bringing scattered records into one view lifted products per customer 40% and deepened relationships."
       canonical="/cases/bank-cross-sell"
       industry="Financial Services"
       industryLink="/industries/financial-services"
-      title="How a Regional Bank Turned Single Accounts into $24M of New Relationships"
+      title="How a Regional Bank Turned Single Accounts into Lasting Relationships"
       subtitle="A regional bank held years of insight about its customers, but it sat locked in separate systems that never spoke to one another. Bringing it into one view let the bank serve people at the moments that mattered."
       heroImage="/images/cases/bank-cross-sell-hero.jpg"
       metrics={[
-        { value: "$24M", label: "New Annual Revenue" },
         { value: "40%", label: "More Products Per Customer" },
+        { value: "25%", label: "Less Customer Churn" },
         { value: "600K", label: "Customers Understood" },
         { value: "3.2x", label: "Return on Campaigns" }
       ]}
@@ -23,7 +23,7 @@ export default function BankCrossSell() {
       clientContextBody="The reason was that what the bank knew about each customer was scattered. Everyday transactions lived in the core banking system, card activity in another platform, mortgage records in a third — and nothing tied them together into a single picture of a person. Marketing therefore ran on blunt information, targeting broad age and income groups rather than the everyday signals that reveal when someone is actually ready for a new product. A customer whose spending pointed clearly toward a first home might get a credit-card offer instead of a mortgage conversation. The relationships were real; the ability to act on them was not."
       clientProfile={{
         industry: "Regional Retail Bank",
-        companySize: "~$600M Annual Revenue",
+        companySize: "Full-Service Retail Bank",
         projectDuration: "18 Months",
         additionalInfo: "~600,000 Households",
         additionalLabel: "Customers Served"
@@ -78,10 +78,10 @@ export default function BankCrossSell() {
       resultsTitle="From Scattered Records to Deeper Relationships"
       results={[
         {
-          icon: DollarSign,
-          value: "$24M",
-          label: "New annual revenue",
-          detail: "From customers taking up products that genuinely fit them"
+          icon: Database,
+          value: "600K",
+          label: "Customers in a single view",
+          detail: "Every account, transaction and history tied to one person"
         },
         {
           icon: Target,

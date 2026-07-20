@@ -239,9 +239,9 @@ export default function MergersAcquisitions() {
               className="grid grid-cols-2 gap-4"
             >
               {[
-                { metric: "$500M+", label: "Transaction Value" },
+                { metric: "15+", label: "Industries Served" },
                 { metric: "50+", label: "Deals Completed" },
-                { metric: "$12M", label: "Avg. Synergies Captured" },
+                { metric: "18 mo", label: "Avg. Time to Full Synergy Capture" },
                 { metric: "90%", label: "Integration Success Rate" }
               ].map((item, index) => (
                 <motion.div 
@@ -288,7 +288,7 @@ export default function MergersAcquisitions() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 sm:p-6 md:p-8 lg:gap-5 sm:p-7 md:p-5 sm:p-7 md:p-10">
             {[
               {
-                title: "Post-merger integration delivers $12M in synergies",
+                title: "Post-merger integration delivers full synergy target ahead of plan",
                 category: "Manufacturing",
                 image: "/images/industries/fin-handshake-city.jpg",
                 link: "/case-studies/post-merger-integration"
@@ -300,7 +300,7 @@ export default function MergersAcquisitions() {
                 link: "/case-studies/strategic-acquisition"
               },
               {
-                title: "Carve-out transaction unlocks $50M in shareholder value",
+                title: "Carve-out transaction unlocks standalone value for shareholders",
                 category: "Healthcare",
                 image: "/images/industries/biz-meeting.jpg",
                 link: "/case-studies/carve-out-transaction"

@@ -23,7 +23,7 @@ export default function PayerAutomationCoeScale() {
       clientContextBody="Each bot had been built in isolation, so nothing was reusable — every new automation started from scratch, and every broken one became a mystery. Without intake, prioritization, or benefits tracking, the program had no way to demonstrate value or decide where to invest, and no guardrails for the business users who wanted to build their own automations safely. The health plan did not need a bigger technology stack; it needed the operating model that turns scattered bots into a scalable capability."
       clientProfile={{
         industry: "Regional Health Plan",
-        companySize: "~$700M Annual Revenue",
+        companySize: "Upper Mid-Market",
         projectDuration: "18 Months",
         additionalInfo: "Shared-Services Operations",
         additionalLabel: "Automation Home"

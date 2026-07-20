@@ -23,7 +23,7 @@ export default function ManufacturerExecDashboard() {
       clientContextBody="The manual assembly was slow and error-prone, and because every analyst pulled metrics their own way, the figures in the board pack could not always be reconciled with the figures in operational reports. Executives received data late and had to interpret it themselves, with no consistent story tying the numbers to decisions. A decade of accumulated workarounds made the whole thing fragile. The manufacturer needed a semantic layer to define metrics once and consistently, and a board-grade narrative structure, so executive reporting became fast, trustworthy, and genuinely useful for decisions."
       clientProfile={{
         industry: "Industrial Manufacturer",
-        companySize: "~$540M Annual Revenue",
+        companySize: "9 Plants",
         projectDuration: "4 Months",
         additionalInfo: "Executive Reporting",
         additionalLabel: "Leadership Cadence"

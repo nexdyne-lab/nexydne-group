@@ -23,7 +23,7 @@ export default function SaasOnboarding() {
       clientContextBody="Static onboarding ignores the one thing that predicts conversion: what the user actually does. A trial user who hits an activation milestone is ready for a different message than one who is stuck, but the fixed sequence could not tell the difference. So users who were close to converting were not nudged at the right moment, and stuck users were not helped, and the average trial took far longer to convert than it should — delaying revenue recognition cohort after cohort. The company needed behavior-triggered onboarding journeys that responded to each user's actions in real time, moving them to paid faster."
       clientProfile={{
         industry: "B2B SaaS Company",
-        companySize: "~$180M ARR",
+        companySize: "~1,800 Customers",
         projectDuration: "4 Months",
         additionalInfo: "Trial Onboarding",
         additionalLabel: "Activation Program"

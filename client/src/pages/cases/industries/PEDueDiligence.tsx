@@ -16,14 +16,14 @@ export default function PEDueDiligence() {
         { value: "40%", label: "Faster Diligence" },
         { value: "3x", label: "More Targets Screened" },
         { value: "3 Weeks", label: "To a Clear Read" },
-        { value: "$6M", label: "Loss Avoided" }
+        { value: "1", label: "Bad Deal Avoided" }
       ]}
       clientContextTitle="More Deals Than It Could Properly Assess"
       clientContextIntro="A private equity fund investing in healthcare services reviewed well over a hundred opportunities a year but could run deep commercial diligence on only a handful. Each deep review took six to eight weeks and leaned heavily on outside consultants at a cost of several hundred thousand dollars. Good targets were lost to faster buyers, while effort was spent on deals that should have been set aside sooner."
-      clientContextBody="The work was also inconsistent. Every deal team built its diligence from scratch — sizing the market from costly research reports, gathering customer views ad hoc, and reaching a judgment in its own way. On a live acquisition — a multi-site provider of outpatient care with around $180 million in revenue — the fund wanted a clear, well-supported read in weeks rather than months, and it was not willing to lower the bar on rigour to get there."
+      clientContextBody="The work was also inconsistent. Every deal team built its diligence from scratch — sizing the market from costly research reports, gathering customer views ad hoc, and reaching a judgment in its own way. On a live acquisition — a multi-site provider of outpatient care — the fund wanted a clear, well-supported read in weeks rather than months, and it was not willing to lower the bar on rigour to get there."
       clientProfile={{
         industry: "Healthcare-Focused Private Equity",
-        companySize: "~$180M Target Revenue",
+        companySize: "Multi-Site Outpatient Target",
         projectDuration: "12 Months",
         additionalInfo: "100+ Deals Screened / Year",
         additionalLabel: "Deal Flow"
@@ -97,9 +97,9 @@ export default function PEDueDiligence() {
         },
         {
           icon: Shield,
-          value: "$6M",
-          label: "Loss avoided",
-          detail: "By passing on a deal the review flagged"
+          value: "1",
+          label: "Bad deal avoided",
+          detail: "The fund passed on a deal the review flagged"
         }
       ]}
       quote="We were losing deals we wanted and spending money on deals we didn't. A faster, more consistent way to run diligence changed both. On the healthcare deal we had a clear, well-supported read in three weeks — and the confidence to move before anyone else could."
@@ -107,8 +107,8 @@ export default function PEDueDiligence() {
       quoteRole="Healthcare-focused private equity fund"
       relatedStudies={[
         {
-          title: "Adding $18M in EBITDA at an Industrial Manufacturer",
-          metric: "$18M",
+          title: "Adding Seven Points of EBITDA Margin at an Industrial Manufacturer",
+          metric: "7 pts",
           label: "added EBITDA",
           link: "/cases/pe-industrial-transformation",
           image: "/images/cases/pe-industrial-transformation-hero.jpg"

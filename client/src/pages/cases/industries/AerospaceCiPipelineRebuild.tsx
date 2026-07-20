@@ -23,7 +23,7 @@ export default function AerospaceCiPipelineRebuild() {
       clientContextBody="The bottleneck was the pipeline, not the people. Ideas entered an intake with no consistent sizing or prioritization, stalled in unclear governance where no one owned the decision to proceed, and competed for attention through a recognition program that rewarded submission rather than results. Good ideas died waiting. Leadership knew the program was worth saving — engagement was real — but it needed the machinery between submission and closure rebuilt so that raising an idea actually led somewhere."
       clientProfile={{
         industry: "Aerospace Manufacturer",
-        companySize: "~$620M Annual Revenue",
+        companySize: "Upper Mid-Market",
         projectDuration: "12 Months",
         additionalInfo: "Multi-Site CI Program",
         additionalLabel: "Improvement Function"

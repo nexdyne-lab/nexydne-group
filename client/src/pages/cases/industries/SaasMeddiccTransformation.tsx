@@ -23,7 +23,7 @@ export default function SaasMeddiccTransformation() {
       clientContextBody="The two problems compounded each other. Without a trustworthy CRM, leadership had no clear view of the pipeline and could not coach effectively, and without a shared qualification discipline, reps could not consistently tell a winnable deal from a time-sink. The result was effort spread across too many low-probability opportunities and a win rate that reflected it. The company needed to rebuild Salesforce into a system reps would actually use, and to instill a rigorous qualification methodology — MEDDICC — so the team focused its energy on the deals it could genuinely win."
       clientProfile={{
         industry: "Growth-Stage SaaS Company",
-        companySize: "~$180M ARR",
+        companySize: "~800 Employees",
         projectDuration: "3 Quarters",
         additionalInfo: "CRM Rebuild + MEDDICC",
         additionalLabel: "Sales Transformation"

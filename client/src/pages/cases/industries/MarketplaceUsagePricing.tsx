@@ -23,7 +23,7 @@ export default function MarketplaceUsagePricing() {
       clientContextBody="Flat-rate pricing had been simple to sell in the early days, but at scale it had become a structural cap on growth. As customers grew and used the marketplace more, the marketplace saw none of that expansion in its revenue — net revenue retention was stuck at 108 percent, respectable but far below what a value-aligned model could produce. The challenge was to move to usage-based pricing and redesign the packaging without spooking customers into churn. Growth had to come from expansion within accounts, not at the cost of losing them."
       clientProfile={{
         industry: "B2B Marketplace",
-        companySize: "~$300M Annual Revenue",
+        companySize: "20,000+ Marketplace Sellers",
         projectDuration: "7 Months",
         additionalInfo: "Flat-to-Usage Transition",
         additionalLabel: "Pricing Model"

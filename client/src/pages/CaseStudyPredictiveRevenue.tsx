@@ -71,7 +71,7 @@ export default function CaseStudyPredictiveRevenue() {
             {[
               { metric: "35%", label: "Forecast accuracy improvement" },
               { metric: "15 days", label: "Saved in monthly planning cycle" },
-              { metric: "$2.4M", label: "Additional ARR captured" },
+              { metric: "9%", label: "Incremental ARR captured" },
               { metric: "3 months", label: "Time to full implementation" }
             ].map((stat, index) => (
               <motion.div
@@ -119,7 +119,7 @@ export default function CaseStudyPredictiveRevenue() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a rapidly growing B2B SaaS company providing workflow automation tools to growing enterprises. With 180 employees and $28M in annual recurring revenue, they were experiencing 40% year-over-year growth but struggling to forecast revenue accurately enough to make confident hiring and investment decisions.
+                Our client is a rapidly growing B2B SaaS company providing workflow automation tools to growing enterprises. With 180 employees, they were experiencing 40% year-over-year growth but struggling to forecast revenue accurately enough to make confident hiring and investment decisions.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 The company had recently raised a Series B round and was under pressure from the board to demonstrate predictable, sustainable growth. Their existing financial planning process relied heavily on static annual budgets with quarterly adjustments, which left leadership constantly reacting to surprises rather than proactively managing the business.
@@ -136,8 +136,8 @@ export default function CaseStudyPredictiveRevenue() {
                 <div className="text-charcoal font-medium">180 employees</div>
               </div>
               <div>
-                <div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div>
-                <div className="text-charcoal font-medium">$28M ARR</div>
+                <div className="text-sm font-semibold text-primary mb-2">Growth Rate</div>
+                <div className="text-charcoal font-medium">40% YoY</div>
               </div>
             </div>
           </motion.div>
@@ -383,11 +383,11 @@ export default function CaseStudyPredictiveRevenue() {
                 Enabled proactive resource allocation
               </h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">
-                With early visibility into pipeline health and conversion trends, the company was able to reallocate sales resources to high-performing territories and products before the quarter ended. This proactive approach helped them capture an additional $2.4M in ARR that would have been missed under the old reactive planning model.
+                With early visibility into pipeline health and conversion trends, the company was able to reallocate sales resources to high-performing territories and products before the quarter ended. This proactive approach helped them capture roughly 9% more ARR than they would have under the old reactive planning model.
               </p>
               <div className="p-4 sm:p-5 md:p-6 bg-charcoal/5 rounded-lg sm:rounded-xl">
-                <div className="text-3xl font-bold text-charcoal mb-2">$2.4M</div>
-                <div className="text-sm text-charcoal/60">Additional ARR captured through proactive territory management</div>
+                <div className="text-3xl font-bold text-charcoal mb-2">9%</div>
+                <div className="text-sm text-charcoal/60">Incremental ARR captured through proactive territory management</div>
               </div>
             </div>
 

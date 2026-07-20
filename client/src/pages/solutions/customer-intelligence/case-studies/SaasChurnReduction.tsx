@@ -5,25 +5,25 @@ export function SaasChurnReduction() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Cutting SaaS Churn 38% with Predictive Intelligence | Technology Case Study"
-      seoDescription="A $28M-ARR B2B SaaS platform was losing customers faster than it could replace them. Predictive churn models flagged at-risk accounts 60 days early and saved $890K in ARR."
+      seoDescription="A B2B SaaS platform was losing customers faster than it could replace them. Predictive churn models flagged at-risk accounts 60 days early and cut annual churn 38%."
       canonical="/solutions/data-driven-customer-intelligence/case-studies/saas-churn-reduction"
       industry="Software & Technology"
       industryLink="/industries/technology-media-telecom"
-      title="How a B2B SaaS Platform Cut Churn 38% and Saved $890K in ARR"
-      subtitle="A 280-employee B2B SaaS platform with $28M in ARR built predictive churn models to identify at-risk accounts 60 days before cancellation — retaining $890K in ARR and making its customer success team 3.2x more efficient."
+      title="How a B2B SaaS Platform Cut Churn 38% with 60 Days of Early Warning"
+      subtitle="A 280-employee B2B SaaS platform built predictive churn models to identify at-risk accounts 60 days before cancellation — cutting annual churn from 18% to roughly 11% and making its customer success team 3.2x more efficient."
       heroImage="/images/capabilities/cap-mobile-woman.jpg"
       metrics={[
         { value: "38%", label: "Lower Annual Churn" },
-        { value: "$890K", label: "Retained ARR" },
+        { value: "7 pts", label: "Churn-Rate Reduction" },
         { value: "60 days", label: "Early-Warning Lead Time" },
         { value: "3.2x", label: "CS Team Efficiency" }
       ]}
       clientContextTitle="Growing Fast, but Leaking Customers"
-      clientContextIntro="A B2B SaaS platform serving growing companies was experiencing annual churn of 18% — well above the 10–12% industry benchmark. With $28M in ARR and aggressive growth targets, the company was losing ground: for every two new customers it acquired, one walked out the door."
+      clientContextIntro="A B2B SaaS platform serving growing companies was experiencing annual churn of 18% — well above the 10–12% industry benchmark. With aggressive growth targets, the company was losing ground: for every two new customers it acquired, one walked out the door."
       clientContextBody="The customer success team was operating reactively, only engaging once a customer explicitly signaled dissatisfaction or asked to cancel — by which point it was usually too late. The team had no visibility into which accounts were at risk, no early-warning system, and no data-driven playbooks for intervention, all while stretched thin across more than 800 accounts."
       clientProfile={{
         industry: "B2B SaaS Platform",
-        companySize: "$28M ARR",
+        companySize: "800+ Accounts",
         projectDuration: "First-Year Impact",
         additionalInfo: "280 Employees",
         additionalLabel: "Team Size"
@@ -85,9 +85,9 @@ export function SaasChurnReduction() {
         },
         {
           icon: DollarSign,
-          value: "$890K",
-          label: "Retained ARR",
-          detail: "Revenue that would otherwise have been lost to cancellations"
+          value: "7 pts",
+          label: "Churn-rate reduction",
+          detail: "Recurring revenue that would otherwise have been lost to cancellations"
         },
         {
           icon: Clock,
@@ -102,7 +102,7 @@ export function SaasChurnReduction() {
           detail: "More accounts managed per rep as playbooks handled routine cases"
         }
       ]}
-      quote="NEXDYNE's Customer Intelligence Maturity Model gave us a clear roadmap from fragmented data to predictive insights. We reduced churn by 38% and identified $890K in at-risk ARR before customers even thought about canceling."
+      quote="NEXDYNE's Customer Intelligence Maturity Model gave us a clear roadmap from fragmented data to predictive insights. We reduced churn by 38% and were flagging at-risk accounts before customers even thought about canceling."
       quoteAuthor="David Kim"
       quoteRole="Chief Revenue Officer"
       relatedStudies={[

@@ -2,7 +2,7 @@ import CaseStudiesListing from "@/components/CaseStudiesListing";
 
 const caseStudies = [
   {
-    title: "Private Equity-Backed Growth: From $40M to $120M Revenue",
+    title: "Private Equity-Backed Growth: Tripling Revenue in 18 Months",
     client:
       "A 150-employee healthcare services company executing post-acquisition growth plan",
     href: "/capabilities/strategy-corporate-finance/case-studies/pe-growth-healthcare",
@@ -20,7 +20,7 @@ const caseStudies = [
     industry: "Manufacturing",
     metrics: [
       { value: "2x", label: "Market Share" },
-      { value: "$45M", label: "Deal Value" },
+      { value: "95%", label: "Customer Retention" },
     ],
   },
   {
@@ -41,7 +41,7 @@ const caseStudies = [
     href: "/capabilities/strategy-corporate-finance/case-studies/saas-series-b",
     industry: "Technology",
     metrics: [
-      { value: "$35M", label: "Capital Raised" },
+      { value: "12 weeks", label: "Raise Completed" },
       { value: "8x", label: "Revenue Multiple" },
     ],
   },
@@ -53,7 +53,7 @@ const caseStudies = [
     industry: "Retail",
     metrics: [
       { value: "15%", label: "EBITDA Margin Restored" },
-      { value: "$8M", label: "Cost Reduction" },
+      { value: "20%", label: "Lower Operating Costs" },
     ],
   },
   {

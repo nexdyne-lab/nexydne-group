@@ -66,8 +66,8 @@ export default function ProcessOrchestration() {
       label: "average reduction in end-to-end cycle time on orchestrated processes",
     },
     {
-      stat: "$8M+",
-      label: "annual savings unlocked on a single insurer's claims-orchestration program",
+      stat: "30%",
+      label: "lower handling cost on a single insurer's claims-orchestration program",
     },
   ];
 
@@ -373,8 +373,8 @@ export default function ProcessOrchestration() {
               className="nx-h2 text-white mb-8"
             >
               Orchestration that makes the process the system. NexDyne clients
-              have cut multi-week processes to days and unlocked eight-figure
-              operating savings.
+              have cut multi-week processes to days and taken double-digit
+              percentages out of operating cost.
             </h2>
             <p className="nx-lead text-white/85 max-w-[60ch] mb-8">
               We've orchestrated claims, loan origination, customer

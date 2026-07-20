@@ -15,7 +15,7 @@ export default function AutomotiveEVTransition() {
       metrics={[
         { value: "45%", label: "Fewer Launch Defects" },
         { value: "22%", label: "Lower Unit Cost" },
-        { value: "$6M", label: "Cost Avoided" },
+        { value: "Zero", label: "Launch Delays" },
         { value: "3 mo", label: "Faster to Full Rate" }
       ]}
       clientContextTitle="A New Product on an Old Line, With No Room to Fail"
@@ -23,7 +23,7 @@ export default function AutomotiveEVTransition() {
       clientContextBody="Early builds went badly. The first electric-vehicle parts came off the line with defect rates several times higher than the plant's mature products, and every reject was expensive scrap. Getting to an acceptable quality level was taking far longer than the program plan allowed, and the cost of each good part was running well above the price the supplier had quoted to win the work. Left alone, the program would have launched late, missed its margins, and put the customer relationship at risk. Leadership recognized that the problem was not the workforce's effort but the way the line had been set up to learn — slowly, and only after mistakes had already been made."
       clientProfile={{
         industry: "Automotive Components Supplier",
-        companySize: "~$380M Annual Revenue",
+        companySize: "Mid-Market Manufacturer",
         projectDuration: "14 Months",
         additionalInfo: "2 Plants",
         additionalLabel: "Manufacturing Footprint"
@@ -91,9 +91,9 @@ export default function AutomotiveEVTransition() {
         },
         {
           icon: DollarSign,
-          value: "$6M",
-          label: "Cost avoided",
-          detail: "Largely from scrap and delay that never happened"
+          value: "Zero",
+          label: "Launch delays",
+          detail: "Scrap and delay costs that never happened"
         },
         {
           icon: Zap,

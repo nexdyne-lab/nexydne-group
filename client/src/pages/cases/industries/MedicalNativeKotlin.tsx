@@ -23,7 +23,7 @@ export default function MedicalNativeKotlin() {
       clientContextBody="The tempting path was a cross-platform framework to share code and speed delivery. But a cross-platform abstraction introduces timing variability and a runtime layer between the app and the device — exactly what a real-time sensor-fusion workload cannot tolerate, and exactly the kind of non-determinism that makes regulatory validation harder. The company needed guaranteed sub-100ms response and an implementation clean enough to audit. That ruled out compromise: the app had to be built in pure Kotlin native, close to the platform, where the precision could be delivered and demonstrated."
       clientProfile={{
         industry: "Medical Device Company",
-        companySize: "~$350M Annual Revenue",
+        companySize: "1,200 Employees",
         projectDuration: "7 Months",
         additionalInfo: "Regulated Android App",
         additionalLabel: "Device Software"

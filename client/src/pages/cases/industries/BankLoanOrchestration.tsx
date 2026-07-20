@@ -23,7 +23,7 @@ export default function BankLoanOrchestration() {
       clientContextBody="The length and manual nature of the process cost the bank on every dimension. Borrowers waited two weeks and some abandoned; staff spent their time shepherding applications rather than making decisions; and the manual policy checks were inconsistent and hard to audit — a real concern in a regulated lending process. Speeding it up naively by removing checks was not an option, because the policy gates and audit trail existed for good reason. The bank needed orchestration that automated the flow across the twelve systems while keeping humans in the loop where judgment mattered, enforcing policy gates, and capturing a full audit trail."
       clientProfile={{
         industry: "Bank",
-        companySize: "~$430M Annual Revenue",
+        companySize: "~60 Branches",
         projectDuration: "7 Months",
         additionalInfo: "Loan Origination",
         additionalLabel: "Lending Operations"

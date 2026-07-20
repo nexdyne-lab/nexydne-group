@@ -278,7 +278,7 @@ export default function CaseStudyHealthcarePatient() {
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Financial performance</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
-              The reduction in no-shows generated an additional $280,000 in annual revenue by improving clinic utilization. Administrative cost savings from automation totaled $165,000 annually. The $72,000 investment in the platform achieved a 320% ROI over 18 months, with ongoing benefits continuing to compound. The provider is now exploring expansion to additional communication use cases, including chronic disease management programs and wellness initiatives.
+              The reduction in no-shows meaningfully improved clinic utilization, recovering appointment capacity that had previously gone unused. Automation also cut administrative costs substantially. The platform paid for itself well inside the first year, with ongoing benefits continuing to compound. The provider is now exploring expansion to additional communication use cases, including chronic disease management programs and wellness initiatives.
             </p>
           </div>
         </div>

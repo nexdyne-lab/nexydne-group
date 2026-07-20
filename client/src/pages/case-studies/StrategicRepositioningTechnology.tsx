@@ -67,7 +67,7 @@ export default function StrategicRepositioningTechnology() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
             {[
               { metric: "3x", label: "Revenue Growth" },
-              { metric: "$28M", label: "ARR Achieved" },
+              { metric: "SaaS", label: "Recurring-Revenue Model" },
               { metric: "24 mo", label: "Transformation Timeline" },
               { metric: "92%", label: "Customer Retention" }
             ].map((stat, index) => (
@@ -116,7 +116,7 @@ export default function StrategicRepositioningTechnology() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Background</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client had built a successful business over 18 years providing on-premise enterprise resource planning software to growth-stage manufacturing companies. With 220 employees and approximately 300 enterprise customers, the company generated $9M in annual recurring revenue primarily from maintenance contracts and professional services.
+                Our client had built a successful business over 18 years providing on-premise enterprise resource planning software to growth-stage manufacturing companies. With 220 employees and approximately 300 enterprise customers, the company's recurring revenue came primarily from maintenance contracts and professional services.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 However, the company faced an existential challenge: the market was rapidly shifting to cloud-based SaaS solutions, and the company's on-premise architecture was increasingly viewed as outdated. New customer acquisition had declined 40% over three years, and existing customers were beginning to evaluate cloud alternatives. Without fundamental strategic repositioning, the company risked becoming irrelevant in a market it had once dominated.
@@ -147,8 +147,8 @@ export default function StrategicRepositioningTechnology() {
                   <TrendingUp className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-primary mb-1">Starting Revenue</div>
-                  <div className="text-charcoal font-medium">$9M ARR</div>
+                  <div className="text-sm font-semibold text-primary mb-1">Customer Base</div>
+                  <div className="text-charcoal font-medium">~300 Enterprise</div>
                 </div>
               </div>
             </div>
@@ -414,8 +414,8 @@ export default function StrategicRepositioningTechnology() {
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-charcoal/5 rounded-xl">
-                  <div className="text-2xl font-bold text-charcoal mb-1">$28M ARR</div>
-                  <div className="text-sm text-charcoal/60">Up from $9M at transformation start</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">80%</div>
+                  <div className="text-sm text-charcoal/60">Of revenue now recurring SaaS</div>
                 </div>
                 <div className="p-4 bg-charcoal/5 rounded-xl">
                   <div className="text-2xl font-bold text-charcoal mb-1">3x</div>
@@ -485,8 +485,8 @@ export default function StrategicRepositioningTechnology() {
                   <div className="text-sm text-charcoal/60">Employee engagement score</div>
                 </div>
                 <div className="p-4 bg-charcoal/5 rounded-xl">
-                  <div className="text-2xl font-bold text-charcoal mb-1">$15M</div>
-                  <div className="text-sm text-charcoal/60">Growth capital raised</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">Funded</div>
+                  <div className="text-sm text-charcoal/60">Growth capital raised for the shift</div>
                 </div>
               </div>
             </div>

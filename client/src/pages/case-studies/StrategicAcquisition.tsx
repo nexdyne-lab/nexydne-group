@@ -61,7 +61,7 @@ export default function StrategicAcquisition() {
             {[
               { metric: "3 years", label: "Market entry acceleration" },
               { metric: "200+", label: "Targets screened" },
-              { metric: "$85M", label: "Transaction value" },
+              { metric: "Closed", label: "Platform acquisition" },
               { metric: "65%", label: "Revenue growth Year 1" }
             ].map((stat, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }} className="border-l-2 border-primary/50 pl-8">
@@ -91,7 +91,7 @@ export default function StrategicAcquisition() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a B2B software company with $150M in revenue, providing enterprise solutions to the financial services industry. They had built a strong position in their core market but recognized that adjacent markets represented significant growth opportunities.
+                Our client is a B2B software company providing enterprise solutions to the financial services industry. They had built a strong position in their core market but recognized that adjacent markets represented significant growth opportunities.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 The leadership team had identified the insurance technology sector as a strategic priority but lacked the domain expertise and customer relationships to enter organically. They engaged us to help evaluate build vs. buy options and, if appropriate, identify and execute an acquisition.
@@ -100,7 +100,7 @@ export default function StrategicAcquisition() {
             <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-charcoal/5 rounded-xl">
               <div><div className="text-sm font-semibold text-primary mb-2">Industry</div><div className="text-charcoal font-medium">Enterprise Software</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">Employees</div><div className="text-charcoal font-medium">650</div></div>
-              <div><div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div><div className="text-charcoal font-medium">$150M</div></div>
+              <div><div className="text-sm font-semibold text-primary mb-2">Core Market</div><div className="text-charcoal font-medium">Financial services software</div></div>
             </div>
           </motion.div>
         </div>
@@ -216,10 +216,10 @@ export default function StrategicAcquisition() {
           <div className="space-y-8">
             <div>
               <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Target className="w-6 h-6 text-primary" />Successful acquisition completed</h3>
-              <p className="text-charcoal/70 leading-relaxed mb-4">The company completed an $85M acquisition of a leading insurance technology provider with strong customer relationships and complementary capabilities.</p>
+              <p className="text-charcoal/70 leading-relaxed mb-4">The company completed the acquisition of a leading insurance technology provider with strong customer relationships and complementary capabilities.</p>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$85M</div><div className="text-sm text-charcoal/60">Transaction value</div></div>
-                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$35M</div><div className="text-sm text-charcoal/60">Target ARR</div></div>
+                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">Closed</div><div className="text-sm text-charcoal/60">Platform acquisition completed</div></div>
+                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">200+</div><div className="text-sm text-charcoal/60">Targets screened to find it</div></div>
               </div>
             </div>
             <div>

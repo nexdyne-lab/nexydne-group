@@ -4,26 +4,26 @@ import { AlertTriangle, FileWarning, ClipboardX, GraduationCap, FileCheck2, Line
 export function AerospaceQuality() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Achieving ISO 9001 and AS9100 to Save $15M in Contracts | Aerospace Case Study"
-      seoDescription="A customer audit put $15M in contracts at risk with 90 days to show progress toward AS9100. A rebuilt quality system earned ISO 9001 and AS9100 certification and cut defects 45%."
+      seoTitle="Achieving ISO 9001 and AS9100 to Keep At-Risk Contracts | Aerospace Case Study"
+      seoDescription="A customer audit put the company's largest contracts at risk with 90 days to show progress toward AS9100. A rebuilt quality system earned ISO 9001 and AS9100 certification and cut defects 45%."
       canonical="/capabilities/operations/case-studies/aerospace-quality"
       industry="Aerospace & Defense"
       industryLink="/industries/aerospace-defense"
       title="How an Aerospace Supplier Achieved ISO and AS9100 Certification"
-      subtitle="An aerospace precision-components supplier built a world-class quality management system under audit pressure — earning ISO 9001 and AS9100 certification, cutting defects 45%, and saving $15M in contracts."
+      subtitle="An aerospace precision-components supplier built a world-class quality management system under audit pressure — earning ISO 9001 and AS9100 certification, cutting defects 45%, and keeping every at-risk contract."
       heroImage="/images/industries/aero-rocket.jpg"
       metrics={[
         { value: "ISO 9001", label: "Certification Achieved" },
         { value: "AS9100", label: "Certification Achieved" },
         { value: "45%", label: "Defect Reduction" },
-        { value: "$15M", label: "Contracts Retained" }
+        { value: "100%", label: "Contracts Retained" }
       ]}
       clientContextTitle="An Audit With Everything at Stake"
-      clientContextIntro="A 150-employee aerospace supplier with $55M in revenue manufactures precision-machined components for commercial and defense aircraft. A major customer audit revealed significant quality-system gaps, putting $15M in annual contracts at risk — with 90 days to show substantial progress toward ISO 9001 and AS9100 or face disqualification."
+      clientContextIntro="A 150-employee aerospace supplier manufactures precision-machined components for commercial and defense aircraft. A major customer audit revealed significant quality-system gaps, putting its largest customer contracts at risk — with 90 days to show substantial progress toward ISO 9001 and AS9100 or face disqualification."
       clientContextBody="The rapid assessment revealed a quality system that existed on paper but wasn't consistently followed: outdated documentation not reflecting actual processes, incomplete inspection records making traceability impossible, corrective actions piling up without resolution, and training records unable to demonstrate competency for critical operations."
       clientProfile={{
         industry: "Aerospace Components Supplier",
-        companySize: "$55M Revenue",
+        companySize: "150 Employees",
         projectDuration: "9-Month Certification",
         additionalInfo: "AS9100",
         additionalLabel: "Standard"
@@ -32,7 +32,7 @@ export function AerospaceQuality() {
       challenges={[
         {
           icon: AlertTriangle,
-          title: "$15M in contracts on the line",
+          title: "Major contracts on the line",
           description: "A failed audit meant disqualification from the approved supplier list within 90 days."
         },
         {

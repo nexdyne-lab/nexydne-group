@@ -23,7 +23,7 @@ export default function RetailBankingCiCapabilityScaling() {
       clientContextBody="The CoE model had a hard ceiling. A central team, however capable, could only touch a fraction of the bank's processes, and every improvement had to route through it. The people closest to the problems — branch staff who saw the same friction every day — had neither the tools nor the training to fix them. The bank did not need a bigger central team; it needed the capability distributed into the operating teams, with everyday problem-solving embedded where the work happened, so improvement stopped being something a special unit did and became something everyone did."
       clientProfile={{
         industry: "Retail Bank",
-        companySize: "~$780M Annual Revenue",
+        companySize: "Upper Mid-Market",
         projectDuration: "18 Months",
         additionalInfo: "Branch & Back-Office Network",
         additionalLabel: "Operating Base"

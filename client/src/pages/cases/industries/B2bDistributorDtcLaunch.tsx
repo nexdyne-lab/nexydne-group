@@ -23,7 +23,7 @@ export default function B2bDistributorDtcLaunch() {
       clientContextBody="The distributor had never sold direct and had no infrastructure, model, or muscle for it. Launching a direct-to-consumer channel carelessly risked wasting capital on an experience that could not compete with the digital natives, or straining the intermediary relationships that still carried the core business. But standing still meant ceding the customer relationship entirely. The distributor needed to launch its first direct channel deliberately — a validated commercial model, the right commerce technology, and a disciplined go-to-market — so the new channel could grow into a genuine revenue engine rather than an expensive experiment."
       clientProfile={{
         industry: "B2B Distributor",
-        companySize: "~$450M Annual Revenue",
+        companySize: "15,000+ SKUs",
         projectDuration: "8 Months",
         additionalInfo: "First Direct Channel",
         additionalLabel: "Growth Bet"

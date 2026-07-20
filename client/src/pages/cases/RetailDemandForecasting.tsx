@@ -5,22 +5,22 @@ export function RetailDemandForecasting() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Cutting Stockouts 35% With ML Demand Forecasting | Retail Case Study"
-      seoDescription="A 200-store specialty retailer lost $12M to stockouts while overstock piled up. An explainable ML model forecasting SKU-store demand 8 weeks out cut stockouts 35% and saved $8.5M."
+      seoDescription="A 200-store specialty retailer bled sales to stockouts while overstock piled up. An explainable ML model forecasting SKU-store demand 8 weeks out cut stockouts 35% and overstock 28%."
       canonical="/cases/retail-demand-forecasting"
       industry="Retail"
       industryLink="/industries/retail"
       title="How a Specialty Retailer Cut Stockouts 35% With ML Demand Forecasting"
-      subtitle="A multi-location forecasting model predicts SKU-level demand eight weeks ahead across 200 stores — cutting stockouts 35%, overstock 28%, and saving $8.5M a year."
+      subtitle="A multi-location forecasting model predicts SKU-level demand eight weeks ahead across 200 stores — cutting stockouts 35%, overstock 28%, and forecast error by more than half."
       heroImage="/images/cases/retail-demand-forecasting-hero.jpg"
       metrics={[
         { value: "35%", label: "Fewer Stockouts" },
         { value: "28%", label: "Less Overstock" },
-        { value: "$8.5M", label: "Annual Savings" },
+        { value: "2×", label: "More Accurate Forecasts" },
         { value: "200", label: "Stores Optimized" }
       ]}
       clientContextTitle="Guessing at Demand"
       clientContextIntro="A mid-sized specialty retailer with 200 locations faced chronic inventory problems. Popular items sold out before replenishment arrived, while slow movers piled up in back rooms. Managers ordered on gut feel, buyers relied on last year's sales, and nobody predicted seasonal spikes accurately."
-      clientContextBody="The impact was severe: $12M in lost sales from stockouts, $6M in markdowns to clear excess, and eroding customer trust as shoppers stopped relying on availability. The legacy system used simple moving averages that couldn't handle regional variation, promotional effects, or weather-driven demand. The retailer needed forecasting at SKU-store-week granularity, incorporating external signals — and it had to be explainable, so buyers understood every recommendation."
+      clientContextBody="The impact was severe: chronic lost sales from stockouts, heavy markdowns to clear excess, and eroding customer trust as shoppers stopped relying on availability. The legacy system used simple moving averages that couldn't handle regional variation, promotional effects, or weather-driven demand. The retailer needed forecasting at SKU-store-week granularity, incorporating external signals — and it had to be explainable, so buyers understood every recommendation."
       clientProfile={{
         industry: "Specialty Retailer",
         companySize: "200 Locations",
@@ -32,12 +32,12 @@ export function RetailDemandForecasting() {
       challenges={[
         {
           icon: PackageX,
-          title: "$12M in lost sales",
+          title: "Chronic lost sales",
           description: "Popular items sold out before replenishment arrived, driving stockouts and customer frustration."
         },
         {
           icon: Boxes,
-          title: "$6M in markdowns",
+          title: "Heavy markdowns",
           description: "Slow-moving SKUs accumulated in back rooms, forcing discounts to clear excess inventory."
         },
         {
@@ -91,9 +91,9 @@ export function RetailDemandForecasting() {
         },
         {
           icon: DollarSign,
-          value: "$8.5M",
-          label: "Annual savings",
-          detail: "From lower markdowns, carrying costs, and recaptured sales"
+          value: "Year one",
+          label: "Payback on the program",
+          detail: "Through lower markdowns, carrying costs, and recaptured sales"
         }
       ]}
       quote=""

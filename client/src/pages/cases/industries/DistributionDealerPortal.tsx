@@ -23,7 +23,7 @@ export default function DistributionDealerPortal() {
       clientContextBody="The manual reorder process quietly suppressed repeat business. A dealer who wanted to place a quick reorder had to reach a rep, confirm pricing, and wait for the order to be entered — enough friction that reordering was a chore rather than a habit. Dealers also lacked visibility into their own account history and pricing, which slowed decisions and eroded trust. The distributor needed a dealer portal offering self-service reorder, account history, and pricing transparency — removing the friction so reordering became easy and frequent across the 1,200-dealer network."
       clientProfile={{
         industry: "Industrial Distributor",
-        companySize: "~$470M Annual Revenue",
+        companySize: "~900 Employees",
         projectDuration: "6 Months",
         additionalInfo: "1,200-Dealer Portal",
         additionalLabel: "Channel Platform"

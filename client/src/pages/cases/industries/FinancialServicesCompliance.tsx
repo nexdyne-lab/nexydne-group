@@ -23,7 +23,7 @@ export default function FinancialServicesCompliance() {
       clientContextBody="Every deviation carried regulatory risk and consumed time in remediation, and because the underlying process was undocumented, the firm was fixing symptoms rather than the cause. Controls existed on paper but were applied unevenly, and there was no reliable record that each step had been completed correctly — which made audits painful and outcomes unpredictable. The firm needed the real process discovered and documented, then standardized into a single controlled workflow with the compliance checks built into the steps rather than bolted on after."
       clientProfile={{
         industry: "Financial-Services Firm",
-        companySize: "~$350M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "6 Months",
         additionalInfo: "Regulated Core Process",
         additionalLabel: "Compliance Environment"

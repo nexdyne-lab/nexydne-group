@@ -23,7 +23,7 @@ export default function EnterpriseSaasGtmRebuild() {
       clientContextBody="The absence of focus was the problem. Some segments the team pursued had win rates below the cost of pursuing them, quietly consuming capacity that the winnable segments needed. Because everyone chased everything, the go-to-market motion was a compromise that fit no segment well. The operator did not need more leads or more reps; it needed to decide who it was actually built to win, retire the segments that did not pay, and re-engineer the motion around the ones that did."
       clientProfile={{
         industry: "Enterprise SaaS Operator",
-        companySize: "~$260M ARR",
+        companySize: "1,500+ Enterprise Customers",
         projectDuration: "6 Months",
         additionalInfo: "Multi-Segment Sales Motion",
         additionalLabel: "GTM Model"

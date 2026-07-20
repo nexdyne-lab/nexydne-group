@@ -23,7 +23,7 @@ export default function HospitalWorkflowAutomation() {
       clientContextBody="Much of the administrative work wrapped around clinical care is routine and rules-based, yet it was being performed manually by the very people whose time is most valuable and most needed at the bedside. The manual steps were slow, prone to error, and demoralizing, and they capped how much patient-facing time the staff could offer. The hospital needed to automate the routine clinical workflows so the administrative burden lifted, returning clinician time to care and improving the efficiency of the whole operation."
       clientProfile={{
         industry: "Hospital",
-        companySize: "~$680M Annual Revenue",
+        companySize: "~450 Beds",
         projectDuration: "6 Months",
         additionalInfo: "Clinical Workflow Automation",
         additionalLabel: "Care Operations"

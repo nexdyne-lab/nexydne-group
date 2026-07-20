@@ -23,7 +23,7 @@ export default function StreamingNativeRewrite() {
       clientContextBody="In streaming, startup time is a retention feature. The hybrid architecture that once looked economical now imposed a performance tax the service could not afford: layers of abstraction between the app and the device meant every launch dragged. Viewers had come to expect near-instant playback from the category leaders, and this app no longer delivered it. The service needed the launch experience rebuilt natively, close to the metal, to reclaim the speed that kept viewers from leaving in the first place."
       clientProfile={{
         industry: "Streaming Media Service",
-        companySize: "~$480M Annual Revenue",
+        companySize: "5M+ Subscribers",
         projectDuration: "6 Months",
         additionalInfo: "iOS Native Rebuild",
         additionalLabel: "App Platform"

@@ -5,25 +5,25 @@ export default function PowerGenerationPredictiveMaintenance() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Halving Unplanned Outages at a Power Generator | Energy & Utilities Case Study"
-      seoDescription="A power generator kept losing turbines without warning, at roughly $500,000 a trip. Reading the signals its machines were already sending cut unplanned outages by 60%."
+      seoDescription="A power generator kept losing turbines without warning, and every trip meant lost revenue plus an emergency repair. Reading the signals its machines were already sending cut unplanned outages by 60%."
       canonical="/cases/power-generation-predictive-maintenance"
       industry="Energy & Utilities"
       industryLink="/industries/energy-utilities"
       title="How a Power Generator Halved Its Unplanned Outages"
-      subtitle="A mid-sized generator kept losing turbines without warning, each trip costing around $500,000 in lost revenue and emergency repairs. Reading the signals its machines were already sending let it fix problems on a plan instead of in a panic."
+      subtitle="A mid-sized generator kept losing turbines without warning, each trip bringing lost revenue and an emergency repair bill. Reading the signals its machines were already sending let it fix problems on a plan instead of in a panic."
       heroImage="/images/industries/energy-powerplant.jpg"
       metrics={[
         { value: "60%", label: "Fewer Unplanned Outages" },
         { value: "95%", label: "Fleet Availability" },
-        { value: "$9M", label: "Saved Each Year" },
+        { value: "<1 Year", label: "To Pay for Itself" },
         { value: "~3 Weeks", label: "Advance Warning" }
       ]}
       clientContextTitle="Turbines That Failed Without Warning"
-      clientContextIntro="An independent power producer ran a fleet of about a dozen gas turbines across six plants, together capable of producing roughly three gigawatts. In this business an unplanned outage is expensive twice over: a turbine that trips offline stops earning revenue and then has to be repaired in a hurry. Each such trip cost the company around $500,000, and it was absorbing roughly fifteen of them a year — close to $18 million in all."
+      clientContextIntro="An independent power producer ran a fleet of about a dozen gas turbines across six plants, together capable of producing roughly three gigawatts. In this business an unplanned outage is expensive twice over: a turbine that trips offline stops earning revenue and then has to be repaired in a hurry. The company was absorbing roughly fifteen such trips a year — a heavy, recurring drag it had come to treat as a cost of doing business."
       clientContextBody="The maintenance approach was largely to blame. Turbines were overhauled on a fixed calendar rather than by their actual condition, which meant a healthy machine might be opened up early while a struggling one ran on until it failed. Meanwhile each turbine streamed thousands of sensor readings, far more than any engineer could watch, so the subtle early signs of trouble slipped past unnoticed until something broke. The producer wanted to see failures coming while there was still time to plan around them."
       clientProfile={{
         industry: "Independent Power Producer",
-        companySize: "~$550M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "16 Months",
         additionalInfo: "~12 Gas Turbines",
         additionalLabel: "Generating Fleet"
@@ -33,7 +33,7 @@ export default function PowerGenerationPredictiveMaintenance() {
         {
           icon: Zap,
           title: "Costly Surprise Trips",
-          description: "About fifteen unplanned outages a year, at roughly $500,000 each, added up to close to $18 million in lost revenue and emergency repairs."
+          description: "About fifteen unplanned outages a year, each bringing lost revenue and an emergency repair bill, made surprise failures the fleet's biggest avoidable cost."
         },
         {
           icon: Clock,
@@ -91,9 +91,9 @@ export default function PowerGenerationPredictiveMaintenance() {
         },
         {
           icon: DollarSign,
-          value: "$9M",
-          label: "Saved each year",
-          detail: "From avoided outages and better-timed maintenance"
+          value: "<1 Year",
+          label: "To pay for itself",
+          detail: "Avoided outages and better-timed maintenance covered the cost"
         },
         {
           icon: Clock,

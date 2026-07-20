@@ -196,8 +196,8 @@ export default function IntelligentProcessOptimizationNew() {
                   <p className="text-muted-foreground">Faster processing</p>
                 </div>
                 <div>
-                  <p className="text-4xl font-bold text-primary mb-2">$420K</p>
-                  <p className="text-muted-foreground">Annual savings</p>
+                  <p className="text-4xl font-bold text-primary mb-2">&lt;1 yr</p>
+                  <p className="text-muted-foreground">Payback period</p>
                 </div>
                 <div>
                   <p className="text-4xl font-bold text-primary mb-2">95%</p>

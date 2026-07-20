@@ -5,12 +5,12 @@ export function HealthcarePatientPortal() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Launching a Patient Portal That Cut Admin Calls 65% | Healthcare Case Study"
-      seoDescription="A 450-bed hospital system fielded 8,500 calls a week with 12-minute holds. A mobile-first patient portal cut admin calls 65%, hit 72% adoption, and saved $420K a year."
+      seoDescription="A 450-bed hospital system fielded 8,500 calls a week with 12-minute holds. A mobile-first patient portal cut admin calls 65%, hit 72% adoption, and cut refill turnaround from 48 hours to 6."
       canonical="/cases/healthcare-patient-portal"
       industry="Healthcare"
       industryLink="/industries/healthcare"
       title="How a Hospital Cut Administrative Calls 65% With a New Patient Portal"
-      subtitle="A regional hospital system built a mobile-first patient portal for scheduling, test results, and refills — cutting phone volume 65%, reaching 72% adoption, and saving $420K a year."
+      subtitle="A regional hospital system built a mobile-first patient portal for scheduling, test results, and refills — cutting phone volume 65%, reaching 72% adoption, and taking refill turnaround from 48 hours to 6."
       heroImage="/images/cases/healthcare-patient-portal-hero.jpg"
       metrics={[
         { value: "65%", label: "Fewer Admin Calls" },
@@ -90,9 +90,9 @@ export function HealthcarePatientPortal() {
         },
         {
           icon: HeartPulse,
-          value: "$420K",
-          label: "Annual savings",
-          detail: "With refill turnaround down from 48 hours to 6"
+          value: "48h → 6h",
+          label: "Refill turnaround",
+          detail: "Freeing staff from routine administrative work"
         }
       ]}
       quote=""

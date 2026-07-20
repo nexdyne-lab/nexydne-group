@@ -23,7 +23,7 @@ export default function DtcChannelReallocation() {
       clientContextBody="Budgets are sticky, and these two channels had inertia on their side: they were familiar, they were measurable, and they had once been the engine of growth. But the operator was pouring marginal spend into diminishing returns while two other channels with intact unit economics sat underfunded, starved of the budget that would have grown them profitably. The fix required no new money — only an honest model of channel economics and the discipline to move spend from where it no longer paid to where it did."
       clientProfile={{
         industry: "Direct-to-Consumer Operator",
-        companySize: "~$310M Annual Revenue",
+        companySize: "1M+ Active Customers",
         projectDuration: "6 Months",
         additionalInfo: "Multi-Channel Acquisition",
         additionalLabel: "Growth Engine"

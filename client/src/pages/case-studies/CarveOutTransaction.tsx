@@ -30,7 +30,7 @@ export default function CarveOutTransaction() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">Case Study · Industrial</span>
             <h1 className="nx-h1 mb-4">
-              <span className="text-primary">$220M</span> carve-out creates standalone success
+              <span className="text-primary">Day 1</span> ready: a carve-out built to stand alone
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
               How we helped an industrial division successfully separate from its parent company, establish standalone operations, and position for accelerated growth under new ownership.
@@ -38,7 +38,7 @@ export default function CarveOutTransaction() {
             
             {/* PDF Download Button */}
             <CaseStudyPDFButton
-              title="$220M carve-out creates standalone success"
+              title="Carve-out creates standalone success from Day 1"
               industry="Industrial"
               summary="How we helped an industrial division successfully separate from its parent company, establish standalone operations, and position for accelerated growth under new ownership."
               challenge="See full case study for detailed challenge description."
@@ -59,7 +59,7 @@ export default function CarveOutTransaction() {
         <div className="container px-4 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             {[
-              { metric: "$220M", label: "Transaction value" },
+              { metric: "850", label: "Employees transitioned" },
               { metric: "Day 1", label: "Standalone operations ready" },
               { metric: "100%", label: "TSA exit within 12 months" },
               { metric: "35%", label: "EBITDA improvement Year 2" }
@@ -91,7 +91,7 @@ export default function CarveOutTransaction() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client was an industrial components division of a large conglomerate with $180M in revenue and 850 employees. The parent company had decided to divest non-core assets, and the division was being sold to a private equity firm.
+                Our client was an industrial components division of a large conglomerate with 850 employees. The parent company had decided to divest non-core assets, and the division was being sold to a private equity firm.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 The division had operated as part of the larger organization for decades and relied heavily on shared services for IT, HR, finance, and other functions. Creating a standalone company capable of operating independently was a complex undertaking.
@@ -100,7 +100,7 @@ export default function CarveOutTransaction() {
             <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-charcoal/5 rounded-xl">
               <div><div className="text-sm font-semibold text-primary mb-2">Industry</div><div className="text-charcoal font-medium">Industrial Components</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">Employees</div><div className="text-charcoal font-medium">850</div></div>
-              <div><div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div><div className="text-charcoal font-medium">$180M</div></div>
+              <div><div className="text-sm font-semibold text-primary mb-2">Divestiture Type</div><div className="text-charcoal font-medium">PE carve-out</div></div>
             </div>
           </motion.div>
         </div>
@@ -216,9 +216,9 @@ export default function CarveOutTransaction() {
           <div className="space-y-8">
             <div>
               <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Target className="w-6 h-6 text-primary" />Successful transaction close</h3>
-              <p className="text-charcoal/70 leading-relaxed mb-4">The $220M transaction closed on schedule with the company fully ready to operate independently on Day 1, with no disruption to customers or operations.</p>
+              <p className="text-charcoal/70 leading-relaxed mb-4">The transaction closed on schedule with the company fully ready to operate independently on Day 1, with no disruption to customers or operations.</p>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$220M</div><div className="text-sm text-charcoal/60">Transaction value</div></div>
+                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">On plan</div><div className="text-sm text-charcoal/60">Close with full Day-1 readiness</div></div>
                 <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">Day 1</div><div className="text-sm text-charcoal/60">Standalone operations ready</div></div>
               </div>
             </div>

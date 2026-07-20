@@ -28,7 +28,7 @@ const caseStudies: CaseStudy[] = [
     id: 2,
     industry: "Retail",
     company: "National Retailer",
-    title: "AI Center of Excellence Drives $500M in Annual Value",
+    title: "AI Center of Excellence Drives Value Across Merchandising, Supply Chain, and CX",
     description: "A national retailer established an AI CoE that standardized tools, training, and deployment processes, enabling rapid scaling of AI initiatives across merchandising, supply chain, and customer experience.",
     image: "/images/capabilities/cap-ai-search.jpg",
     hasVideo: true

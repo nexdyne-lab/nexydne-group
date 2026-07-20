@@ -5,25 +5,25 @@ export function EcommerceRepeatPurchase() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Lifting Repeat Purchase 42% for an E-commerce Brand | Retail Case Study"
-      seoDescription="A $45M specialty retailer was sitting on rich customer data it couldn't activate. A customer data platform and ML personalization lifted repeat purchase 42% and added $1.2M a year."
+      seoDescription="A specialty retailer was sitting on rich customer data it couldn't activate. A customer data platform and ML personalization lifted repeat purchase 42% at 3.2x campaign ROI."
       canonical="/solutions/data-driven-customer-intelligence/case-studies/ecommerce-repeat-purchase"
       industry="E-commerce & Retail"
       industryLink="/industries/retail"
-      title="How a Specialty Retailer Lifted Repeat Purchase 42% and Added $1.2M a Year"
-      subtitle="A 150-employee specialty online retailer with $45M in revenue deployed predictive analytics and personalized recommendations — raising its repeat-purchase rate from 18% to 25.6% and generating $1.2M in annual revenue lift."
+      title="How a Specialty Retailer Lifted Repeat Purchase 42%"
+      subtitle="A 150-employee specialty online retailer deployed predictive analytics and personalized recommendations — raising its repeat-purchase rate from 18% to 25.6% at a 3.2x campaign ROI."
       heroImage="/images/capabilities/cap-celebrate.jpg"
       metrics={[
         { value: "42%", label: "Repeat-Purchase Lift" },
-        { value: "$1.2M", label: "Annual Revenue Lift" },
+        { value: "25.6%", label: "Repeat Rate, Up From 18%" },
         { value: "3.2x", label: "Campaign ROI" },
         { value: "28%", label: "Email Engagement" }
       ]}
       clientContextTitle="Rich Data It Couldn't Turn Into Growth"
-      clientContextIntro="A specialty e-commerce retailer with 150 employees and $45M in annual revenue was struggling to turn its customer data into growth. Despite collecting extensive transaction histories, browsing behavior, and customer feedback, its marketing team relied on generic batch-and-blast campaigns that treated every customer the same."
+      clientContextIntro="A specialty e-commerce retailer with 150 employees was struggling to turn its customer data into growth. Despite collecting extensive transaction histories, browsing behavior, and customer feedback, its marketing team relied on generic batch-and-blast campaigns that treated every customer the same."
       clientContextBody="The company's repeat-purchase rate had stagnated at 18% — well below the 27% industry benchmark. Acquisition costs were rising, but lifetime value wasn't keeping pace. The team knew it was sitting on valuable data, but that data was siloed across the e-commerce platform, email system, and customer-service tools, with no view of customer lifetime value or purchase propensity."
       clientProfile={{
         industry: "Specialty E-commerce Retailer",
-        companySize: "$45M Revenue",
+        companySize: "Mid-Market Retailer",
         projectDuration: "First-Year Impact",
         additionalInfo: "150 Employees",
         additionalLabel: "Team Size"
@@ -85,9 +85,9 @@ export function EcommerceRepeatPurchase() {
         },
         {
           icon: DollarSign,
-          value: "$1.2M",
-          label: "Annual revenue lift",
-          detail: "Incremental revenue from higher retention"
+          value: "7.6 pts",
+          label: "Repeat-rate gain",
+          detail: "Meaningfully more revenue from customers the company already had"
         },
         {
           icon: TrendingUp,

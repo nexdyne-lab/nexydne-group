@@ -15,7 +15,7 @@ export default function DistributionWorkingCapital() {
     <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Working Capital Optimization | Case Study | NexDyne Technologies" 
-        description="How we helped a distribution company free up $12M in working capital through inventory optimization and process improvement."
+        description="How we helped a distribution company free up 20% of its working capital through inventory optimization and process improvement."
         canonical="/case-studies/distribution-working-capital"
       />
       <Navigation />
@@ -30,7 +30,7 @@ export default function DistributionWorkingCapital() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">Case Study · Distribution</span>
             <h1 className="nx-h1 mb-4">
-              <span className="text-primary">$12M</span> freed through working capital optimization
+              <span className="text-primary">20%</span> of working capital freed through optimization
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
               How we helped a distribution company unlock significant cash through inventory optimization, receivables management, and process improvement.
@@ -38,7 +38,7 @@ export default function DistributionWorkingCapital() {
             
             {/* PDF Download Button */}
             <CaseStudyPDFButton
-              title="$12M freed through working capital optimization"
+              title="20% of working capital freed through optimization"
               industry="Distribution"
               summary="How we helped a distribution company unlock significant cash through inventory optimization, receivables management, and process improvement."
               challenge="See full case study for detailed challenge description."
@@ -59,7 +59,7 @@ export default function DistributionWorkingCapital() {
         <div className="container px-4 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             {[
-              { metric: "$12M", label: "Working capital freed" },
+              { metric: "20%", label: "Working capital freed" },
               { metric: "35%", label: "Inventory reduction" },
               { metric: "12 days", label: "DSO improvement" },
               { metric: "99.5%", label: "Service level maintained" }
@@ -91,7 +91,7 @@ export default function DistributionWorkingCapital() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a specialty distribution company with $180M in revenue, serving industrial and commercial customers with a catalog of over 50,000 SKUs. The company had grown rapidly through acquisition but hadn't optimized working capital management.
+                Our client is a specialty distribution company serving industrial and commercial customers with a catalog of over 50,000 SKUs. The company had grown rapidly through acquisition but hadn't optimized working capital management.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 With significant debt from recent acquisitions, the company needed to free up cash to fund growth initiatives and reduce leverage. Working capital optimization represented the largest opportunity to generate cash without impacting operations.
@@ -100,7 +100,7 @@ export default function DistributionWorkingCapital() {
             <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-charcoal/5 rounded-xl">
               <div><div className="text-sm font-semibold text-primary mb-2">Industry</div><div className="text-charcoal font-medium">Specialty Distribution</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">SKUs</div><div className="text-charcoal font-medium">50,000+</div></div>
-              <div><div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div><div className="text-charcoal font-medium">$180M</div></div>
+              <div><div className="text-sm font-semibold text-primary mb-2">Catalog Size</div><div className="text-charcoal font-medium">50,000+ SKUs</div></div>
             </div>
           </motion.div>
         </div>
@@ -216,9 +216,9 @@ export default function DistributionWorkingCapital() {
           <div className="space-y-8">
             <div>
               <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><DollarSign className="w-6 h-6 text-primary" />Significant cash release</h3>
-              <p className="text-charcoal/70 leading-relaxed mb-4">The program freed up $12M in working capital, enabling the company to pay down debt and fund growth initiatives without external financing.</p>
+              <p className="text-charcoal/70 leading-relaxed mb-4">The program freed up 20% of working capital, enabling the company to pay down debt and fund growth initiatives without external financing.</p>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$12M</div><div className="text-sm text-charcoal/60">Working capital freed</div></div>
+                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">20%</div><div className="text-sm text-charcoal/60">Working capital freed</div></div>
                 <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">35%</div><div className="text-sm text-charcoal/60">Inventory reduction</div></div>
               </div>
             </div>
@@ -241,7 +241,7 @@ export default function DistributionWorkingCapital() {
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
-              "The results exceeded our expectations. We freed up $12M in cash while actually improving service levels. NexDyne's data-driven approach gave us confidence to make changes we wouldn't have made on our own."
+              "The results exceeded our expectations. We freed up a fifth of our working capital while actually improving service levels. NexDyne's data-driven approach gave us confidence to make changes we wouldn't have made on our own."
             </blockquote>
             <div className="text-base text-charcoal"><div className="font-semibold">— Jennifer Davis</div><div className="text-muted-foreground">CFO, Client Company</div></div>
           </motion.div>
@@ -264,7 +264,7 @@ export default function DistributionWorkingCapital() {
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
             {[
-              { title: "Manufacturing cost reduction", industry: "Manufacturing", description: "How we helped achieve $18M in annual savings", link: "/case-studies/manufacturing-cost-reduction" },
+              { title: "Manufacturing cost reduction", industry: "Manufacturing", description: "How we helped cut COGS 15% through operational excellence", link: "/case-studies/manufacturing-cost-reduction" },
               { title: "E-commerce operations transformation", industry: "E-commerce", description: "How we helped scale operations 3x", link: "/case-studies/ecommerce-operations" }
             ].map((item, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>

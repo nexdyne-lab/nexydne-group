@@ -5,16 +5,16 @@ export function RetailTurnaround() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="A Turnaround That Restored Profitability in 6 Months | Retail Case Study"
-      seoDescription="A 12-store specialty retailer lost 25% of revenue to a new competitor as EBITDA turned negative and the bank threatened its loan. A turnaround restored profitability and cut $8M in costs."
+      seoDescription="A 12-store specialty retailer lost 25% of revenue to a new competitor as EBITDA turned negative and the bank threatened its loan. A turnaround restored profitability and cut operating costs 20%."
       canonical="/capabilities/strategy-corporate-finance/case-studies/retail-turnaround"
       industry="Retail"
       industryLink="/industries/retail"
       title="How a Specialty Retailer Restored Profitability in 6 Months"
-      subtitle="A specialty retailer recovered from market disruption through stabilization, footprint restructuring, and revenue revitalization — restoring a 15% EBITDA margin, capturing $8M in savings, and fully restructuring its debt."
+      subtitle="A specialty retailer recovered from market disruption through stabilization, footprint restructuring, and revenue revitalization — restoring a 15% EBITDA margin, cutting operating costs 20%, and fully restructuring its debt."
       heroImage="/images/industries/retail-shelves.jpg"
       metrics={[
         { value: "15%", label: "EBITDA Margin Restored" },
-        { value: "$8M", label: "Annual Cost Reduction" },
+        { value: "20%", label: "Lower Operating Costs" },
         { value: "6 mo", label: "To Profitability" },
         { value: "100%", label: "Debt Restructured" }
       ]}
@@ -67,7 +67,7 @@ export function RetailTurnaround() {
         {
           step: "03",
           title: "Take out cost",
-          description: "$8M in annual savings came from renegotiated vendor contracts, 30% lower corporate overhead, and lease renegotiation."
+          description: "A 20% reduction in operating costs came from renegotiated vendor contracts, 30% lower corporate overhead, and lease renegotiation."
         },
         {
           step: "04",
@@ -85,8 +85,8 @@ export function RetailTurnaround() {
         },
         {
           icon: Scissors,
-          value: "$8M",
-          label: "Annual cost reduction",
+          value: "20%",
+          label: "Lower operating costs",
           detail: "From closures, vendor renegotiations, and overhead cuts"
         },
         {

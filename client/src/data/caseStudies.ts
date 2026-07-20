@@ -149,7 +149,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Smart city optimizes traffic flow with connected sensors",
     clientIndustry: "Public Sector / Smart Cities",
     summary: "A major metropolitan city faced severe congestion. We deployed a network of smart traffic lights and road sensors connected to a central AI platform that adjusted signal timing in real-time.",
-    challenge: "Traffic congestion was costing the city billions in lost productivity and contributing to poor air quality. Static traffic light timers were inefficient, unable to adapt to accidents, weather, or special events. The city needed a dynamic solution that could optimize flow without building new roads.",
+    challenge: "Traffic congestion was a heavy drag on the city's productivity and a contributor to poor air quality. Static traffic light timers were inefficient, unable to adapt to accidents, weather, or special events. The city needed a dynamic solution that could optimize flow without building new roads.",
     solution: "We deployed an IoT network of 5,000+ sensors, including induction loops and smart cameras. These fed data into a central 'Traffic Management AI' that adjusted signal phases in real-time based on actual flow. The system prioritized emergency vehicles and public transit, creating 'green waves' to reduce stops.",
     results: [
       "20% decrease in average commute times",
@@ -169,7 +169,7 @@ export const caseStudies: CaseStudy[] = [
     solution: "We installed IoT sensors capable of detecting high-frequency electrical disturbances (arcing) and vibration anomalies. These edge devices processed data locally and sent alerts via satellite connection only when potential hazards were detected. This allowed for 'condition-based maintenance' rather than scheduled patrols.",
     results: [
       "Identified 95% of potential ignition sources pre-failure",
-      "Saved millions in potential wildfire damages and liability",
+      "Averted costly wildfire damages and liability exposure",
       "Reduced manual inspection costs by 40%",
       "Enhanced public safety and community trust"
     ],
@@ -197,12 +197,12 @@ export const caseStudies: CaseStudy[] = [
     title: "Manufacturing plant cuts downtime 35% with predictive maintenance dashboard",
     clientIndustry: "Manufacturing",
     summary: "A 24/7 food processing plant moved from reactive to condition-based maintenance. NexDyne built an ML-augmented dashboard that predicted equipment failures 2-4 weeks in advance across 150 critical assets, replacing emergency repairs with scheduled work during planned downtime.",
-    challenge: "A food processing plant operating 24/7 with 150 pieces of critical equipment lost an average of 12 hours per week to unplanned downtime — at $15K per hour in lost production. Maintenance was reactive: a conveyor motor would burn out mid-shift, a refrigeration compressor would fail overnight, a packaging line would jam from worn components. Sensor data existed but no one analyzed it until after failures occurred.",
+    challenge: "A food processing plant operating 24/7 with 150 pieces of critical equipment lost an average of 12 hours per week to unplanned downtime — with every hour carrying a heavy cost in lost production. Maintenance was reactive: a conveyor motor would burn out mid-shift, a refrigeration compressor would fail overnight, a packaging line would jam from worn components. Sensor data existed but no one analyzed it until after failures occurred.",
     solution: "NexDyne built a predictive maintenance dashboard using IoT sensor data and ML models trained on 18 months of operational history. A real-time equipment health heatmap color-coded all 150 assets by risk score; a failure-prediction timeline forecast component failures 2-4 weeks ahead with confidence intervals; the dashboard auto-generated work orders with mobile notifications, recommended actions, and asset locations for the maintenance team.",
     results: [
       "35% reduction in unplanned downtime across critical equipment",
       "85% failure prediction accuracy on a 30-day horizon",
-      "$2.4M in annual operational savings",
+      "2-4 weeks early failure warning across critical assets",
       "Maintenance shifted from emergency reactive to scheduled condition-based work"
     ],
     techStack: ["Python", "Scikit-learn", "TensorFlow", "Time-series ML", "IoT sensors", "React"],
@@ -267,7 +267,7 @@ export const caseStudies: CaseStudy[] = [
     solution: "We created a Digital Twin for each aircraft in the fleet, aggregating data from flight logs, sensor telemetry, and maintenance records. We built predictive models to forecast component wear. The system optimized the maintenance schedule, grouping tasks to minimize hangar time and maximize fleet availability.",
     results: [
       "Predicted 40% to 60% of AOG events",
-      "Impact of roughly $100 million in combined value",
+      "Paid for itself inside the first year of operation",
       "Reduced spare parts inventory costs by 15%",
       "Increased fleet availability for peak travel seasons"
     ],
@@ -281,7 +281,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Bank secures digital payments with AI fraud detection",
     clientIndustry: "Financial Services",
     summary: "A multinational bank faced rising fraud rates in its digital payment channels. We implemented a real-time fraud detection system using deep learning to analyze transaction patterns and user behavior.",
-    challenge: "Sophisticated fraud rings were bypassing traditional rule-based filters. The bank was losing millions to account takeovers and synthetic identity fraud. At the same time, aggressive fraud rules were blocking legitimate customers, causing frustration and churn.",
+    challenge: "Sophisticated fraud rings were bypassing traditional rule-based filters. The bank was sustaining heavy losses to account takeovers and synthetic identity fraud. At the same time, aggressive fraud rules were blocking legitimate customers, causing frustration and churn.",
     solution: "We deployed a deep learning model (Graph Neural Network) that analyzed the relationships between entities (users, devices, accounts). The model scored every transaction in milliseconds. We also implemented 'step-up authentication'—only high-risk transactions triggered a biometric check, keeping the experience smooth for genuine users.",
     results: [
       "60% reduction in fraud losses within 6 months",
@@ -401,7 +401,7 @@ export const caseStudies: CaseStudy[] = [
       "Automated 90% of copywriting workload",
       "40% increase in organic search traffic (SEO)",
       "Consistent brand voice across 5 million SKUs",
-      "Reduced cost per description from $5 to $0.02"
+      "Cost per description cut by over 99%"
     ],
     techStack: ["Mistral 7B", "LoRA", "Python", "Next.js", "PostgreSQL"],
     capability: "Custom Model Tuning"

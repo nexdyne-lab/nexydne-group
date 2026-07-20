@@ -215,9 +215,9 @@ export default function CampaignAnalytics() {
               },
               {
                 title: "Enterprise Demand Gen Analytics",
-                description: "Developed full-funnel reporting for an enterprise software company. Connected marketing activities to $12M in influenced pipeline and enabled precise ROI measurement by channel.",
-                metric: "$12M",
-                metricLabel: "Pipeline attributed"
+                description: "Developed full-funnel reporting for an enterprise software company. Connected every marketing activity to influenced pipeline and enabled precise ROI measurement by channel.",
+                metric: "100%",
+                metricLabel: "of pipeline attributed by channel"
               }
             ].map((item, index) => (
               <motion.div

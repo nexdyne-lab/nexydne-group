@@ -5,24 +5,24 @@ export default function FinancialChurnPrediction() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Cutting Customer Churn 28% with Predictive Analytics | Financial Services Case Study"
-      seoDescription="A $12B financial services firm was losing customers to reactive retention. ML models flagged defection 90 days early, cut churn 28%, and saved $47M a year."
+      seoDescription="A regional financial services firm was losing customers to reactive retention. ML models flagged defection 90 days early, cut churn 28%, and nearly tripled retention save rates."
       canonical="/cases/financial-churn-prediction"
       industry="Financial Services"
       industryLink="/industries/financial-services"
       title="How a Financial Services Firm Cut Churn 28% with Predictive Analytics"
-      subtitle="Machine-learning models identified at-risk customers 90 days before defection and triggered automated retention campaigns — saving $47M in annual revenue."
+      subtitle="Machine-learning models identified at-risk customers 90 days before defection and triggered automated retention campaigns — cutting annual churn 28% in the first year."
       heroImage="/images/industries/fin-monitors.jpg"
       metrics={[
         { value: "28%", label: "Lower Churn" },
-        { value: "$47M", label: "Revenue Saved / Year" },
+        { value: "90 Days", label: "Early Warning" },
         { value: "87%", label: "Prediction Accuracy" }
       ]}
       clientContextTitle="Retention That Always Ran Late"
-      clientContextIntro="A regional financial services firm managing $12 billion in assets faced escalating attrition that threatened long-term profitability. Annual churn had climbed to 14.2% — well above benchmark — costing roughly $168 million in lost revenue and forcing aggressive acquisition spending just to hold growth."
+      clientContextIntro="A regional financial services firm faced escalating attrition that threatened long-term profitability. Annual churn had climbed to 14.2% — well above benchmark — creating a heavy annual revenue drag and forcing aggressive acquisition spending just to hold growth."
       clientContextBody="The core problem was reactive retention: the firm relied on lagging indicators like account-closure requests and complaint escalations — signals that appeared only after customers had already researched alternatives and decided to switch. Relationship managers had no visibility into early dissatisfaction, and retention offers were generic rather than tailored to each customer's needs and value."
       clientProfile={{
         industry: "Regional Financial Services Firm",
-        companySize: "$12B in Assets",
+        companySize: "~400,000 Customers",
         projectDuration: "First-Year Impact",
         additionalInfo: "200+ Signals Modeled",
         additionalLabel: "Data Depth"
@@ -83,10 +83,10 @@ export default function FinancialChurnPrediction() {
           detail: "From 14.2% down to 10.2%"
         },
         {
-          icon: DollarSign,
-          value: "$47M",
-          label: "Revenue saved annually",
-          detail: "By retaining customers who would have left"
+          icon: Eye,
+          value: "90 Days",
+          label: "Of early warning",
+          detail: "Flagging at-risk customers before they decided to leave"
         },
         {
           icon: Gauge,

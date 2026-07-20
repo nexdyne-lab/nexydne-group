@@ -23,7 +23,7 @@ export default function SaasCustomerOnboarding() {
       clientContextBody="The firm's problem was not talent or reputation; it was drag. Every engagement navigated a tangle of overlapping services and inconsistent delivery, so work took longer and cost more than it should, and clients felt the friction. Execution had grown undisciplined, with commitments slipping and no shared standard for how work got done. And while competitors digitalized their delivery, the firm still ran on manual effort. Leadership recognized that reclaiming its position required a holistic change — simplifying what it offered, instilling execution discipline, and digitalizing how it delivered — not another incremental initiative."
       clientProfile={{
         industry: "Professional-Services Firm",
-        companySize: "~$380M Annual Revenue",
+        companySize: "2,000 Employees",
         projectDuration: "10 Months",
         additionalInfo: "Multi-Practice Delivery",
         additionalLabel: "Operating Model"

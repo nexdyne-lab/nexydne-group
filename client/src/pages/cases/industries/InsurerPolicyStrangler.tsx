@@ -23,7 +23,7 @@ export default function InsurerPolicyStrangler() {
       clientContextBody="The classic trap of legacy replacement is the big-bang cutover: rebuild the whole system, switch over one weekend, and pray. For a system that touches every policy the insurer holds, that risk was unacceptable — a failed cutover could halt underwriting and servicing across the book. Yet doing nothing meant the costs and fragility kept mounting. The insurer needed a way to replace the old system incrementally, routing functionality to new components piece by piece while the old system kept running, so the mainframe could be decommissioned without a single business-impacting outage."
       clientProfile={{
         industry: "Specialty Insurer",
-        companySize: "~$470M Annual Revenue",
+        companySize: "~350,000 Policies in Force",
         projectDuration: "20 Months",
         additionalInfo: "Policy Administration",
         additionalLabel: "Core System"

@@ -1,19 +1,19 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Target, BarChart3, Users, TrendingDown, DollarSign, CheckCircle } from "lucide-react";
+import { Target, BarChart3, Users, TrendingDown, CheckCircle } from "lucide-react";
 
 export default function HealthSystemDataStrategy() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Health System Resets Data Strategy, Unlocks $42M in Decision Value | Data Strategy Case Study"
-      seoDescription="A health system treated data as compliance overhead. A 24-month roadmap, governance council, and federated operating model turned data into operational advantage worth $42M in decision value."
+      seoTitle="Health System Resets Data Strategy, Puts 12 Decision Use Cases Into Production | Data Strategy Case Study"
+      seoDescription="A health system treated data as compliance overhead. A 24-month roadmap, governance council, and federated operating model turned data into operational advantage — 12 decision use cases in production."
       canonical="/cases/health-system-data-strategy"
       industry="Healthcare"
       industryLink="/industries/healthcare"
-      title="How a Health System Turned Data From Overhead Into $42M of Advantage"
+      title="How a Health System Turned Data From Overhead Into Operational Advantage"
       subtitle="Data was managed as a compliance cost, not an asset, so its value went untapped. A reset strategy, real governance, and a federated model turned it into operational advantage."
       heroImage="/case-healthcare-team.5797392b.jpg"
       metrics={[
-        { value: "$42M", label: "Decision Value Unlocked" },
+        { value: "12", label: "Decision Use Cases in Production" },
         { value: "24 Mo", label: "Data Roadmap" },
         { value: "Council", label: "Governance Established" },
         { value: "Federated", label: "Operating Model" }
@@ -23,7 +23,7 @@ export default function HealthSystemDataStrategy() {
       clientContextBody="Without a strategy, data investment was defensive and fragmented: each department solved its own reporting need in isolation, governance was thin, and there was no shared roadmap or ownership model. The organization sat on data that could have improved throughput, staffing, and outcomes, but had no way to turn it into decisions. Leadership wanted to reset the relationship with data entirely — a clear multi-year roadmap, real governance, and an operating model that made data an operational advantage rather than a cost center."
       clientProfile={{
         industry: "Regional Health System",
-        companySize: "~$680M Annual Revenue",
+        companySize: "6 Hospitals, 40+ Clinics",
         projectDuration: "24 Months",
         additionalInfo: "Enterprise Data Strategy",
         additionalLabel: "Transformation Scope"
@@ -36,7 +36,7 @@ export default function HealthSystemDataStrategy() {
         { icon: TrendingDown, title: "Advantage Left on the Table", description: "Data that could improve throughput, staffing, and outcomes was never turned into decisions." }
       ]}
       approachTitle="Reset the Strategy, Build the Model"
-      approachIntro="We built a 24-month data roadmap, established a governance council, and stood up a federated operating model — turning data from compliance overhead into operational advantage worth $42M in decision value."
+      approachIntro="We built a 24-month data roadmap, established a governance council, and stood up a federated operating model — turning data from compliance overhead into operational advantage, with 12 decision use cases in production."
       steps={[
         { step: "01", title: "Setting a 24-Month Roadmap", description: "We defined a clear multi-year roadmap that sequenced data investment against the decisions it would enable, not just compliance needs." },
         { step: "02", title: "Establishing a Governance Council", description: "We stood up a governance council to steward data as an enterprise asset, with real ownership and standards." },
@@ -45,12 +45,12 @@ export default function HealthSystemDataStrategy() {
       ]}
       resultsTitle="Data as an Operational Advantage"
       results={[
-        { icon: DollarSign, value: "$42M", label: "Decision value", detail: "Unlocked from existing data" },
+        { icon: BarChart3, value: "12", label: "Decision use cases", detail: "In production on existing data" },
         { icon: CheckCircle, value: "24 Mo", label: "Roadmap", detail: "Investment tied to decisions" },
         { icon: Users, value: "Council", label: "Governance", detail: "Data stewarded as an asset" },
         { icon: Target, value: "Federated", label: "Model", detail: "Local use, enterprise standards" }
       ]}
-      quote="We had been treating our data as a box to check for regulators. Resetting the whole strategy — a real roadmap, actual governance, and a model that let departments use data within guardrails — turned that overhead into forty-two million dollars of better decisions. Data went from a cost we managed to an advantage we compete on."
+      quote="We had been treating our data as a box to check for regulators. Resetting the whole strategy — a real roadmap, actual governance, and a model that let departments use data within guardrails — turned that overhead into a dozen production use cases driving better decisions every day. Data went from a cost we managed to an advantage we compete on."
       quoteAuthor="Chief Operating Officer"
       quoteRole="Regional health system"
       relatedStudies={[

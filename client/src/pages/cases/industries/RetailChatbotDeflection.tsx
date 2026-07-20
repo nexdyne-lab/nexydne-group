@@ -23,7 +23,7 @@ export default function RetailChatbotDeflection() {
       clientContextBody="The retailer had tried a purely scripted chatbot before and abandoned it — rigid decision trees frustrated customers and deflected little. A purely generative bot, on the other hand, risked giving wrong or off-brand answers on transactional questions where accuracy matters. The retailer needed a hybrid: scripted, reliable flows for the transactional questions with clear answers, and an LLM to handle the natural, varied ways customers actually ask — deflecting the routine volume without frustrating customers or risking bad answers."
       clientProfile={{
         industry: "National Retailer",
-        companySize: "~$620M Annual Revenue",
+        companySize: "~130 Stores",
         projectDuration: "5 Months",
         additionalInfo: "Customer Support Automation",
         additionalLabel: "Service Operations"

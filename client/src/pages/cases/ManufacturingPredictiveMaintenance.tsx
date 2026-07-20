@@ -37,8 +37,8 @@ export default function ManufacturingPredictiveMaintenance() {
       label: "Failure prediction accuracy on 30-day horizon",
     },
     {
-      number: "$2.4M",
-      label: "Annual operational savings",
+      number: "2–4 wks",
+      label: "Early warning before equipment failures",
     },
   ];
 
@@ -96,7 +96,7 @@ export default function ManufacturingPredictiveMaintenance() {
     <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO
         title="Manufacturing Plant Cuts Downtime 35% with Predictive Maintenance Dashboard"
-        description="A 24/7 food processing plant moved from reactive to condition-based maintenance — 35% downtime reduction, 85% failure prediction accuracy, $2.4M in annual savings."
+        description="A 24/7 food processing plant moved from reactive to condition-based maintenance — 35% downtime reduction, 85% failure prediction accuracy, and 2–4 weeks of early warning before failures."
         canonical="/cases/ManufacturingPredictiveMaintenance"
       />
       <Navigation />
@@ -164,14 +164,14 @@ export default function ManufacturingPredictiveMaintenance() {
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              Unplanned downtime cost the plant $15K an hour. The team had no early warning.
+              Every hour of unplanned downtime meant costly lost production. The team had no early warning.
             </h3>
             <div className="space-y-6">
               <p className="text-base md:text-lg text-charcoal/85 leading-[1.65]">
                 A food processing plant operating 24/7 with 150 pieces of critical equipment struggled with unplanned downtime that disrupted production schedules and increased maintenance costs. Equipment failures occurred without warning — a conveyor belt motor burned out during peak production, a refrigeration compressor failed overnight, a packaging line jammed due to worn components.
               </p>
               <p className="text-base md:text-lg text-charcoal/85 leading-[1.65]">
-                Unplanned downtime averaged 12 hours per week, costing $15K per hour in lost production. Maintenance operated reactively — fixing equipment after it broke instead of preventing failures. The maintenance team lacked visibility into equipment health. Sensors captured vibration, temperature, and pressure data, but no one analyzed it until after failures occurred.
+                Unplanned downtime averaged 12 hours per week, each hour a heavy hit in lost production. Maintenance operated reactively — fixing equipment after it broke instead of preventing failures. The maintenance team lacked visibility into equipment health. Sensors captured vibration, temperature, and pressure data, but no one analyzed it until after failures occurred.
               </p>
               <p className="text-base md:text-lg text-charcoal/85 leading-[1.65]">
                 The plant manager needed a predictive maintenance dashboard that surfaced early warning signs of equipment degradation, enabling scheduled maintenance during planned downtime instead of emergency repairs during production runs. The dashboard had to integrate sensor data from 150 assets and predict failures weeks in advance with sufficient accuracy to justify maintenance interventions.
@@ -295,7 +295,7 @@ export default function ManufacturingPredictiveMaintenance() {
             className="text-3xl md:text-4xl text-charcoal leading-[1.2] mb-8"
             style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
           >
-            Before the dashboard, we fixed equipment after it broke — always during production runs, always costing us $15K per hour in lost output. The predictive maintenance dashboard gave us 2-4 weeks warning before failures. We scheduled maintenance during planned downtime instead of emergency repairs during production. Unplanned downtime dropped 35%, saving $2.4M annually. The model predicted 85% of failures accurately — a conveyor motor, two compressors, and a packaging line all flagged weeks before they would have failed. We caught issues early and fixed them on our schedule, not the equipment's.
+            Before the dashboard, we fixed equipment after it broke — always during production runs, always costing us dearly in lost output. The predictive maintenance dashboard gave us 2-4 weeks warning before failures. We scheduled maintenance during planned downtime instead of emergency repairs during production. Unplanned downtime dropped 35%, and costly emergency repairs largely disappeared. The model predicted 85% of failures accurately — a conveyor motor, two compressors, and a packaging line all flagged weeks before they would have failed. We caught issues early and fixed them on our schedule, not the equipment's.
           </motion.blockquote>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

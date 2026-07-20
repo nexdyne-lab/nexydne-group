@@ -5,7 +5,7 @@ export default function RetailLoyaltyTransformation() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Turning a Stale Loyalty Program Into Growth | Retail Case Study"
-      seoDescription="A retailer's loyalty program had become an expensive discount habit. Rebuilding it around what each member actually valued lifted member spend 45% and added $30M in revenue."
+      seoDescription="A retailer's loyalty program had become an expensive discount habit. Rebuilding it around what each member actually valued lifted member spend 45% and more than doubled active membership."
       canonical="/cases/retail-loyalty-transformation"
       industry="Retail"
       industryLink="/industries/retail"
@@ -16,11 +16,11 @@ export default function RetailLoyaltyTransformation() {
         { value: "45%", label: "Higher Member Spend" },
         { value: "3.2x", label: "More Engagement" },
         { value: "28%", label: "Member Growth" },
-        { value: "$30M", label: "Added Revenue" }
+        { value: "72", label: "Advocacy Score (from 34)" }
       ]}
       clientContextTitle="A Loyalty Program That Wasn't Earning Much Loyalty"
       clientContextIntro="A regional retailer's loyalty program had about 1.5 million members on paper, but only around three in ten were active in any given month. Redemptions were falling year after year, and the scheme had drifted into being little more than a way to hand out discounts — not the relationship with customers it was meant to be. Newer programs from competitors were making it look tired."
-      clientContextBody="Every member, whatever they bought or valued, received the same points and the same offers. The app was purely functional — check a balance, find a coupon — with nothing to make anyone want to open it. The retailer was spending around $20 million a year on a program that, by its own analysis, was doing little to change what customers actually did. The question leadership put to us was blunt: was the money buying any real loyalty at all, and if not, could the program be rebuilt into something that did?"
+      clientContextBody="Every member, whatever they bought or valued, received the same points and the same offers. The app was purely functional — check a balance, find a coupon — with nothing to make anyone want to open it. The retailer was spending heavily on a program that, by its own analysis, was doing little to change what customers actually did. The question leadership put to us was blunt: was the money buying any real loyalty at all, and if not, could the program be rebuilt into something that did?"
       clientProfile={{
         industry: "Retail",
         companySize: "~1.5M Loyalty Members",
@@ -48,7 +48,7 @@ export default function RetailLoyaltyTransformation() {
         {
           icon: DollarSign,
           title: "Spending Without a Return",
-          description: "The program cost roughly $20 million a year, with little clear evidence it changed how members shopped."
+          description: "The program was a heavy annual expense, with little clear evidence it changed how members shopped."
         }
       ]}
       approachTitle="From a Discount Scheme to a Relationship"

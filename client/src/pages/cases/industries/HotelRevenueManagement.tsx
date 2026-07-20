@@ -14,16 +14,16 @@ export default function HotelRevenueManagement() {
       heroImage="/images/cases/hotel-revenue-transformation-hero.jpg"
       metrics={[
         { value: "18%", label: "More Revenue per Room" },
-        { value: "$14M", label: "Added Revenue a Year" },
+        { value: "80%", label: "Less Manual Rate-Setting" },
         { value: "95%", label: "Demand Forecast Accuracy" },
         { value: "40", label: "Properties Optimized" }
       ]}
       clientContextTitle="When Rates Are Set by Hand, the Best Nights Are the Ones You Miss"
       clientContextIntro="A regional hotel group ran 40 properties across a handful of markets, and priced almost all of them the same way it always had. A small team of revenue managers set room rates by experience and a few standing rules, each of them juggling several hotels at once and making thousands of small pricing decisions a week. It was careful, capable work — but it could not keep pace with how quickly demand actually moved."
-      clientContextBody="The cost showed up on the busiest and quietest nights alike. When a nearby event or a spell of good weather sent demand up, rates lagged behind and rooms sold too cheaply; when demand softened, prices held too high and rooms sat empty. Similar hotels in the same city often carried very different rates for no reason a guest would understand. Taken together, the group was leaving an estimated $12 million a year unclaimed — not for want of demand, but because no team working by hand could price 40 properties fast enough to catch it."
+      clientContextBody="The cost showed up on the busiest and quietest nights alike. When a nearby event or a spell of good weather sent demand up, rates lagged behind and rooms sold too cheaply; when demand softened, prices held too high and rooms sat empty. Similar hotels in the same city often carried very different rates for no reason a guest would understand. Taken together, the group was leaving a meaningful share of its room revenue unclaimed — not for want of demand, but because no team working by hand could price 40 properties fast enough to catch it."
       clientProfile={{
         industry: "Hotel Group",
-        companySize: "~$420M Annual Revenue",
+        companySize: "40-Property Group",
         projectDuration: "16 Months",
         additionalInfo: "40 Properties",
         additionalLabel: "Portfolio Size"
@@ -33,7 +33,7 @@ export default function HotelRevenueManagement() {
         {
           icon: DollarSign,
           title: "Money Left on the Table",
-          description: "Rates set by hand meant rooms often sold too cheap on strong nights and too dear on weak ones — an estimated $12M a year unclaimed."
+          description: "Rates set by hand meant rooms often sold too cheap on strong nights and too dear on weak ones — revenue left unclaimed night after night."
         },
         {
           icon: Clock,
@@ -85,9 +85,9 @@ export default function HotelRevenueManagement() {
         },
         {
           icon: DollarSign,
-          value: "$14M",
-          label: "Added revenue a year",
-          detail: "From pricing that keeps pace with demand"
+          value: "Nightly",
+          label: "Rates refreshed automatically",
+          detail: "Pricing that keeps pace with demand"
         },
         {
           icon: Target,

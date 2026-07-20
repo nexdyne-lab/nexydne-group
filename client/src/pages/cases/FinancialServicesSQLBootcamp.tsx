@@ -1,11 +1,11 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Users, DollarSign, Code2, Clock, Boxes, GraduationCap, Gauge } from "lucide-react";
+import { Users, Code2, Clock, Boxes, GraduationCap, Gauge } from "lucide-react";
 
 export default function FinancialServicesSQLBootcamp() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Upskilling 50 Analysts with a SQL & Python Bootcamp | Financial Services Case Study"
-      seoDescription="An $8B investment firm's analysts waited weeks on IT for every data request. An 8-week bootcamp made them self-sufficient, cutting the IT backlog 60% and saving $400K a year."
+      seoDescription="A growing investment firm's analysts waited weeks on IT for every data request. An 8-week bootcamp made them self-sufficient, cutting the IT backlog 60% and turning weeks-long requests into same-day answers."
       canonical="/cases/financial-services-sql-bootcamp"
       industry="Financial Services"
       industryLink="/industries/financial-services"
@@ -15,14 +15,14 @@ export default function FinancialServicesSQLBootcamp() {
       metrics={[
         { value: "60%", label: "Smaller IT Backlog" },
         { value: "85%", label: "Analysts Writing SQL" },
-        { value: "$400K", label: "Annual Savings" }
+        { value: "Weeks → Hours", label: "Time to Insight" }
       ]}
       clientContextTitle="Domain Experts, Blocked by IT"
-      clientContextIntro="A growing investment firm with $8B AUM faced a critical bottleneck: business analysts relied entirely on IT for data extraction and analysis. Simple requests — portfolio performance by sector, client segmentation, risk exposure — required tickets that took 2–3 weeks to fulfill."
+      clientContextIntro="A growing mid-market investment firm faced a critical bottleneck: business analysts relied entirely on IT for data extraction and analysis. Simple requests — portfolio performance by sector, client segmentation, risk exposure — required tickets that took 2–3 weeks to fulfill."
       clientContextBody="IT carried a backlog of 200+ data requests, prioritizing infrastructure and compliance over ad-hoc analytics, while analysts hand-copied data from PDFs and Excel, introducing errors and missing time-sensitive opportunities. Analysts had the domain expertise but not the technical skills to reach data directly — and hiring more engineers wasn't the answer. The firm needed to upskill the people it already had."
       clientProfile={{
         industry: "Growing Investment Firm",
-        companySize: "$8B AUM",
+        companySize: "50+ Business Analysts",
         projectDuration: "8-Week Bootcamp",
         additionalInfo: "Cohorts of 10",
         additionalLabel: "Format"
@@ -89,10 +89,10 @@ export default function FinancialServicesSQLBootcamp() {
           detail: "By analysts in the six months after"
         },
         {
-          icon: DollarSign,
-          value: "$400K",
-          label: "Annual savings",
-          detail: "From reduced manual data processing"
+          icon: Clock,
+          value: "Weeks → Hours",
+          label: "Time to insight",
+          detail: "Manual data processing largely eliminated"
         }
       ]}
       quote=""

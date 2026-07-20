@@ -23,7 +23,7 @@ export default function ManufacturerMulesoft() {
       clientContextBody="With point-to-point integration, nothing was reusable: each new connection was built from scratch, taking about twelve weeks, and changing any system risked breaking every integration that touched it. The brittleness also meant the manufacturer had no reliable real-time view across its supply chain, because the connections could not be trusted to carry current data consistently. The manufacturer needed an API-led architecture — reusable APIs instead of one-off connections — so integration became fast and safe, and real-time visibility became possible."
       clientProfile={{
         industry: "Industrial Manufacturer",
-        companySize: "~$540M Annual Revenue",
+        companySize: "9 Plants",
         projectDuration: "7 Months",
         additionalInfo: "47 Legacy Integrations",
         additionalLabel: "Integration Estate"

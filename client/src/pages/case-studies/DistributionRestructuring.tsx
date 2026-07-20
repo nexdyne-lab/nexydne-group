@@ -91,7 +91,7 @@ export default function DistributionRestructuring() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a regional distribution company with $95M in revenue, serving industrial customers across the Midwest. The company had grown through acquisition over the past decade, resulting in a fragmented operational footprint.
+                Our client is a regional distribution company serving industrial customers across the Midwest. The company had grown through acquisition over the past decade, resulting in a fragmented operational footprint.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 Despite strong revenue, profitability had declined as operational complexity increased. The leadership team recognized the need for fundamental restructuring to improve margins and create a platform for future growth.
@@ -100,7 +100,7 @@ export default function DistributionRestructuring() {
             <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-charcoal/5 rounded-xl">
               <div><div className="text-sm font-semibold text-primary mb-2">Industry</div><div className="text-charcoal font-medium">Industrial Distribution</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">Employees</div><div className="text-charcoal font-medium">320</div></div>
-              <div><div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div><div className="text-charcoal font-medium">$95M</div></div>
+              <div><div className="text-sm font-semibold text-primary mb-2">Footprint</div><div className="text-charcoal font-medium">Midwest, multi-site</div></div>
             </div>
           </motion.div>
         </div>
@@ -219,7 +219,7 @@ export default function DistributionRestructuring() {
               <p className="text-charcoal/70 leading-relaxed mb-4">Operating margins improved by 40% through reduced fixed costs, lower logistics expenses, and improved operational efficiency.</p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">40%</div><div className="text-sm text-charcoal/60">Operating margin improvement</div></div>
-                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$8M</div><div className="text-sm text-charcoal/60">Annual cost savings</div></div>
+                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">&lt;1 yr</div><div className="text-sm text-charcoal/60">Payback on restructuring</div></div>
               </div>
             </div>
             <div>

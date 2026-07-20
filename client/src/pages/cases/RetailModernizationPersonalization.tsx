@@ -5,16 +5,16 @@ export function RetailModernizationPersonalization() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Unlocking 34% Revenue Growth With AI Personalization | Retail Case Study"
-      seoDescription="A 150-store home-goods retailer's batch systems made real-time personalization impossible. A Bloomreach CDP drove $18M in incremental revenue and a 47% conversion lift."
+      seoDescription="A 150-store home-goods retailer's batch systems made real-time personalization impossible. A Bloomreach CDP drove 34% revenue growth and a 47% conversion lift."
       canonical="/cases/retail-modernization-personalization"
       industry="Retail"
       industryLink="/industries/retail"
       title="How a Home-Goods Retailer Modernized Legacy Systems for 34% Revenue Growth"
-      subtitle="A national home-goods retailer deployed a Bloomreach CDP for individualized recommendations and personalized email — driving $18M in incremental annual revenue and a 47% conversion lift."
+      subtitle="A national home-goods retailer deployed a Bloomreach CDP for individualized recommendations and personalized email — driving 34% incremental revenue growth and a 47% conversion lift."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
       metrics={[
         { value: "34%", label: "Revenue Increase" },
-        { value: "$18M", label: "Incremental Revenue" },
+        { value: "47%", label: "Conversion Lift" },
         { value: "2.8x", label: "Email CTR Improvement" },
         { value: "47%", label: "Conversion Lift" }
       ]}
@@ -79,9 +79,9 @@ export function RetailModernizationPersonalization() {
       results={[
         {
           icon: DollarSign,
-          value: "$18M",
-          label: "Incremental annual revenue",
-          detail: "A 34% year-over-year increase from personalization"
+          value: "34%",
+          label: "Revenue growth",
+          detail: "Year-over-year, driven by personalization"
         },
         {
           icon: Sparkles,
@@ -93,7 +93,7 @@ export function RetailModernizationPersonalization() {
           icon: Mail,
           value: "23%",
           label: "Abandoned-cart recovery",
-          detail: "Up from 8%, recovering $4.2M in lost revenue"
+          detail: "Up from 8%, turning abandoned carts back into completed orders"
         }
       ]}
       quote=""

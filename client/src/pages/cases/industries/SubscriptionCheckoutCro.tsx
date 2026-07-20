@@ -23,7 +23,7 @@ export default function SubscriptionCheckoutCro() {
       clientContextBody="Three things were quietly broken. The diagnostic that was supposed to point tests at real friction was thin, so hypotheses came from opinion rather than evidence. The hypothesis backlog was a long, unprioritized wish-list with no anchor in segment behavior. And the test infrastructure had no discipline around minimum detectable effect, so experiments were underpowered and their results were noise. The operator did not need more tests; it needed a program engineered to actually detect a win when one existed."
       clientProfile={{
         industry: "Subscription Commerce Operator",
-        companySize: "~$280M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "6 Months",
         additionalInfo: "Desktop & Mobile Checkout",
         additionalLabel: "Conversion Surface"

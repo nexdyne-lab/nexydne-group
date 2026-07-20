@@ -128,7 +128,7 @@ export default function CaseStudyAccountingAudit() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="prose prose-lg max-w-none">
             <p className="text-xl leading-relaxed text-charcoal/80 mb-6">
-              A Minneapolis-based accounting firm with 280 employees and $85 million in annual revenue specialized in audits for growing companies and private equity portfolio companies. While the firm's technical expertise and client service were excellent, audit economics were under pressure from Big Four competitors deploying sophisticated automation technologies.
+              A Minneapolis-based accounting firm with 280 employees specialized in audits for growing companies and private equity portfolio companies. While the firm's technical expertise and client service were excellent, audit economics were under pressure from Big Four competitors deploying sophisticated automation technologies.
             </p>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Audit staff spent 60-70% of their time on routine testing procedures including transaction sampling, account reconciliation verification, and compliance testing. Senior auditors and partners devoted significant time to reviewing work papers and ensuring consistent application of audit procedures across engagements. The manual processes limited the firm's capacity to accept new audit clients without proportional staff increases, constraining growth and profitability.
@@ -183,7 +183,7 @@ export default function CaseStudyAccountingAudit() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="prose prose-lg max-w-none">
             <p className="text-xl leading-relaxed text-charcoal/80 mb-6">
-              We partnered with the accounting firm to design and implement a comprehensive audit automation platform that handled routine testing procedures while preserving auditor oversight and professional judgment. The $185,000 investment focused on creating sophisticated automation capabilities while ensuring compliance with PCAOB and AICPA standards.
+              We partnered with the accounting firm to design and implement a comprehensive audit automation platform that handled routine testing procedures while preserving auditor oversight and professional judgment. The investment focused on creating sophisticated automation capabilities while ensuring compliance with PCAOB and AICPA standards.
             </p>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The platform automated data extraction from client accounting systems, performing comprehensive population testing rather than statistical sampling. Machine learning algorithms identified anomalies, unusual transactions, and potential misstatements for auditor review. The system generated standardized work papers with complete documentation of testing procedures and results, significantly reducing review time. Continuous auditing capabilities enabled real-time monitoring of client financial data throughout the year rather than point-in-time annual testing.
@@ -218,7 +218,7 @@ export default function CaseStudyAccountingAudit() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="prose prose-lg max-w-none">
             <p className="text-xl leading-relaxed text-charcoal/80 mb-6">
-              Within 30 months, the audit automation platform transformed the firm's service delivery and competitive positioning, delivering a 62% reduction in audit completion time and 85% increase in capacity. The $185,000 investment generated annual benefits of $4.8 million through increased audit capacity ($3.2M in additional revenue), efficiency improvements ($1.4M in time savings), and improved quality ($200K in avoided review costs), representing a 225% ROI over 30 months. The firm won 18 competitive audit engagements against Big Four competitors, with clients specifically citing audit efficiency and value as decision factors.
+              Within 30 months, the audit automation platform transformed the firm's service delivery and competitive positioning, delivering a 62% reduction in audit completion time and 85% increase in capacity. Through increased audit capacity, efficiency improvements, and higher quality, the platform repaid its cost several times over within 30 months. The firm won 18 competitive audit engagements against Big Four competitors, with clients specifically citing audit efficiency and value as decision factors.
             </p>
           </div>
         </div>

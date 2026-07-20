@@ -23,7 +23,7 @@ export default function InsurancePortal() {
       clientContextBody="The call volume was expensive and largely avoidable. Agents spent their days reading out claim statuses and taking billing questions that a portal could answer instantly, while customers waited on hold for information that should have been a click away. The top three contact reasons alone accounted for a huge share of the volume. The insurer needed a self-service portal that let customers check claim status, manage billing, and upload documents themselves — absorbing the routine contact reasons and freeing agents for the interactions that genuinely need a person."
       clientProfile={{
         industry: "Regional Insurer",
-        companySize: "~$470M Annual Revenue",
+        companySize: "~400,000 Policyholders",
         projectDuration: "6 Months",
         additionalInfo: "Self-Service Portal",
         additionalLabel: "Customer Operations"

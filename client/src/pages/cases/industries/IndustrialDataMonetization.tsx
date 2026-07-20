@@ -23,7 +23,7 @@ export default function IndustrialDataMonetization() {
       clientContextBody="The data was treated as exhaust, a byproduct of running the operating businesses rather than an asset in its own right. There was no view of which data had external market value, no product wrapped around it, no pricing, and no route to market. Turning data into revenue is also fraught — it has to be anonymized and packaged carefully to be both valuable and safe to sell. The company wanted to surface where its data had real market value and build a productized offering that could stand as a genuine, measurable revenue stream alongside its operating businesses."
       clientProfile={{
         industry: "Industrial Holding Company",
-        companySize: "~$800M Annual Revenue",
+        companySize: "12 Operating Companies",
         projectDuration: "18 Months",
         additionalInfo: "Portfolio Operational Data",
         additionalLabel: "New Revenue Line"

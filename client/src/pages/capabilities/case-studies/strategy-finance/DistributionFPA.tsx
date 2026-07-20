@@ -5,7 +5,7 @@ export function DistributionFPA() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="FP&A Transformation That Cut Monthly Close to 5 Days | Distribution Case Study"
-      seoDescription="A $75M distributor took 20+ days to close the books, deciding on intuition while finance drowned in data entry. A cloud ERP and analytics cut close to 5 days and tripled finance productivity."
+      seoDescription="A 200-employee distributor took 20+ days to close the books, deciding on intuition while finance drowned in data entry. A cloud ERP and analytics cut close to 5 days and tripled finance productivity."
       canonical="/capabilities/strategy-corporate-finance/case-studies/distribution-fpa"
       industry="Transportation & Logistics"
       industryLink="/industries/transportation-logistics"
@@ -19,11 +19,11 @@ export function DistributionFPA() {
         { value: "3x", label: "Finance Productivity" }
       ]}
       clientContextTitle="Growing, but Flying Blind"
-      clientContextIntro="A 200-employee industrial distribution company with $75M in revenue operates 8 Midwest warehouses serving manufacturing customers. It was growing rapidly but flying blind — monthly financials took 20+ days to close, making it impossible to respond to market changes."
+      clientContextIntro="A 200-employee industrial distribution company operates 8 Midwest warehouses serving manufacturing customers. It was growing rapidly but flying blind — monthly financials took 20+ days to close, making it impossible to respond to market changes."
       clientContextBody="Leadership decided on intuition rather than data, and finance spent all its time on transaction processing. The diagnostic found a function overwhelmed by manual work: 80% of team time on data entry and reconciliation, multiple disconnected systems, no standardized chart of accounts across locations, monthly-only inventory valuation, and unknown customer profitability at the account level."
       clientProfile={{
         industry: "Industrial Distributor",
-        companySize: "$75M Revenue",
+        companySize: "200 Employees",
         projectDuration: "8 Warehouses",
         additionalInfo: "Cloud ERP",
         additionalLabel: "Platform"
@@ -101,7 +101,7 @@ export function DistributionFPA() {
       quoteRole=""
       relatedStudies={[
         {
-          title: "Tripling Revenue From $40M to $120M Post-Acquisition",
+          title: "Tripling Revenue in 18 Months Post-Acquisition",
           metric: "3x",
           label: "revenue growth",
           link: "/capabilities/strategy-corporate-finance/case-studies/pe-growth-healthcare",

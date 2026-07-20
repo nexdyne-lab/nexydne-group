@@ -4,26 +4,26 @@ import { TrendingDown, EyeOff, Swords, Users, Gem, Megaphone, Database, Repeat }
 export function ManufacturerEcommerce() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="E-Commerce Launch That Drove $5M in New Revenue | Manufacturing Case Study"
-      seoDescription="A $95M outdoor-equipment maker sold only through retailers, with no consumer data and squeezed margins. A DTC e-commerce launch drove $5M in year-one revenue at 45% gross margin."
+      seoTitle="An E-Commerce Launch That Won 15,000 Direct Customers | Manufacturing Case Study"
+      seoDescription="A specialty outdoor-equipment maker sold only through retailers, with no consumer data and squeezed margins. A DTC e-commerce launch won 15,000 direct customers in year one at 45% gross margin."
       canonical="/capabilities/growth-marketing-sales/case-studies/manufacturer-ecommerce"
       industry="Manufacturing"
       industryLink="/industries/manufacturing"
-      title="How a Manufacturer's E-Commerce Launch Drove $5M in New Revenue"
-      subtitle="A specialty outdoor-equipment maker launched a direct-to-consumer channel to diversify revenue and capture higher margins — generating $5M in year-one revenue from 15,000 customers at 45% gross margin."
+      title="How a Manufacturer's E-Commerce Launch Won 15,000 Direct Customers"
+      subtitle="A specialty outdoor-equipment maker launched a direct-to-consumer channel to diversify revenue and capture higher margins — winning 15,000 customers in year one at 45% gross margin."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
       metrics={[
-        { value: "$5M", label: "Year 1 DTC Revenue" },
+        { value: "Days", label: "To Product Feedback" },
         { value: "15K", label: "New Direct Customers" },
         { value: "45%", label: "Gross Margin" },
         { value: "12%", label: "Repeat Purchase Rate" }
       ]}
       clientContextTitle="Squeezed by the Middle"
-      clientContextIntro="A 200-employee manufacturer with $95M in revenue produces specialty outdoor equipment sold through distributors and retailers. It had strong brand recognition but no direct relationship with end consumers — product feedback arrived weeks late through retailer sell-through data."
+      clientContextIntro="A 200-employee manufacturer produces specialty outdoor equipment sold through distributors and retailers. It had strong brand recognition but no direct relationship with end consumers — product feedback arrived weeks late through retailer sell-through data."
       clientContextBody="Marketing was filtered through third-party brand representations, and margin was perpetually squeezed by retail intermediaries whose consolidation gave them growing leverage. Competitors were launching DTC channels and building brand loyalty. The company needed to establish e-commerce without alienating existing channel partners."
       clientProfile={{
         industry: "Outdoor Equipment Manufacturer",
-        companySize: "$95M Revenue",
+        companySize: "200 Employees",
         projectDuration: "DTC Launch",
         additionalInfo: "Channel Parity",
         additionalLabel: "Strategy"
@@ -79,9 +79,9 @@ export function ManufacturerEcommerce() {
       results={[
         {
           icon: Gem,
-          value: "$5M",
-          label: "Year-one DTC revenue",
-          detail: "From 15,000 direct customers at 45% gross margin"
+          value: "15,000",
+          label: "Direct customers in year one",
+          detail: "Buying at 45% gross margin — well above wholesale"
         },
         {
           icon: Database,
@@ -102,8 +102,8 @@ export function ManufacturerEcommerce() {
       relatedStudies={[
         {
           title: "Building a Direct-to-Consumer Channel for a Manufacturer",
-          metric: "$8M",
-          label: "D2C revenue",
+          metric: "45K",
+          label: "direct customers",
           link: "/capabilities/business-building/case-studies/manufacturer-dtc",
           image: "/images/industries/mfg-robot-arm.jpg"
         },

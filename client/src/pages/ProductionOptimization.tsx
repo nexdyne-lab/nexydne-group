@@ -355,7 +355,7 @@ export default function ProductionOptimization() {
             {[
               { metric: "75+", label: "Production Projects" },
               { metric: "25%", label: "Average OEE Improvement" },
-              { metric: "$150M+", label: "Capacity Value Unlocked" },
+              { metric: "20%+", label: "Capacity Unlocked, No New Capital" },
               { metric: "15+", label: "Industries Served" }
             ].map((item, index) => (
               <motion.div

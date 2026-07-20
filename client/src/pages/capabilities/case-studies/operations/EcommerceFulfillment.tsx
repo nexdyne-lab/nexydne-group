@@ -5,7 +5,7 @@ export function EcommerceFulfillment() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Automating Order Fulfillment to Triple Capacity | E-Commerce Case Study"
-      seoDescription="A $65M home-goods e-tailer's manual fulfillment couldn't scale as volume doubled, with workers walking 8 miles a shift. Phased automation tripled capacity and cut labor cost per order 60%."
+      seoDescription="A home-goods e-tailer's manual fulfillment couldn't scale as volume doubled, with workers walking 8 miles a shift. Phased automation tripled capacity and cut labor cost per order 60%."
       canonical="/capabilities/operations/case-studies/ecommerce-fulfillment"
       industry="Retail"
       industryLink="/industries/retail"
@@ -19,7 +19,7 @@ export function EcommerceFulfillment() {
         { value: "4 hrs", label: "Avg Ship Time" }
       ]}
       clientContextTitle="Held Together by Heroics"
-      clientContextIntro="A 175-employee e-commerce company with $65M in revenue specializing in home goods operates a single 200,000-square-foot fulfillment center. Order volume had doubled in 18 months, but largely manual processes couldn't scale — peak season required hiring 50+ temporary workers with inconsistent training and spiking error rates."
+      clientContextIntro="A 175-employee e-commerce company specializing in home goods operates a single 200,000-square-foot fulfillment center. Order volume had doubled in 18 months, but largely manual processes couldn't scale — peak season required hiring 50+ temporary workers with inconsistent training and spiking error rates."
       clientContextBody="The diagnostic revealed an operation held together by effort rather than systems: picking from paper lists with workers walking 8 miles a shift, packing stations with no standardization, inconsistent quality checks, and a 12-year-old warehouse management system incapable of supporting modern automation. The company needed to triple capacity without proportionally growing headcount."
       clientProfile={{
         industry: "Home-Goods E-Commerce",

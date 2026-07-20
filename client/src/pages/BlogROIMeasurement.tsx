@@ -54,8 +54,8 @@ export default function BlogROIMeasurement() {
       </p>
       <p>
         We analyzed financial results from 42 automation projects we've
-        implemented over the past three years, ranging from $45K to $220K in
-        investment. Here's what the data actually shows about ROI timelines,
+        implemented over the past three years, ranging from single-process
+        pilots to enterprise-wide programs. Here's what the data actually shows about ROI timelines,
         benefit realization, and realistic expectations.
       </p>
 
@@ -76,19 +76,19 @@ export default function BlogROIMeasurement() {
         </thead>
         <tbody>
           <tr>
-            <td><strong>Tier 1</strong><br />$45K–$85K</td>
+            <td><strong>Tier 1</strong></td>
             <td>Single process automation</td>
             <td>~Month 11</td>
             <td>280–340% (18-month)</td>
           </tr>
           <tr>
-            <td><strong>Tier 2</strong><br />$90K–$150K</td>
+            <td><strong>Tier 2</strong></td>
             <td>Multi-system integration</td>
             <td>~Month 16</td>
             <td>240–300% (24-month)</td>
           </tr>
           <tr>
-            <td><strong>Tier 3</strong><br />$160K–$250K</td>
+            <td><strong>Tier 3</strong></td>
             <td>Enterprise-wide transformation</td>
             <td>~Month 20</td>
             <td>200–280% (30-month)</td>
@@ -97,19 +97,19 @@ export default function BlogROIMeasurement() {
       </table>
 
       <p>
-        <strong>Tier 1 example:</strong> a $68K law-firm contract-automation
-        project delivered $45K in year-one benefits, reaching breakeven at month
-        11. By month 18, cumulative benefits totaled $195K for 285% ROI.
+        <strong>Tier 1 example:</strong> a law-firm contract-automation
+        project reached breakeven at month 11. By month 18, cumulative
+        benefits reached 285% ROI.
       </p>
       <p>
-        <strong>Tier 2 example:</strong> a $135K bank compliance-automation project
-        delivered $85K in year-one benefits, reaching breakeven at month 16. By
-        month 24, cumulative benefits totaled $360K for 265% ROI.
+        <strong>Tier 2 example:</strong> a bank compliance-automation project
+        reached breakeven at month 16. By month 24, cumulative benefits
+        reached 265% ROI.
       </p>
       <p>
-        <strong>Tier 3 example:</strong> a $220K hospital clinical-workflow project
-        delivered $165K in year-one benefits, reaching breakeven at month 20. By
-        month 30, cumulative benefits totaled $530K for 240% ROI.
+        <strong>Tier 3 example:</strong> a hospital clinical-workflow project
+        reached breakeven at month 20. By month 30, cumulative benefits
+        reached 240% ROI.
       </p>
 
       <h2 id="benefits">Where the benefits actually come from</h2>

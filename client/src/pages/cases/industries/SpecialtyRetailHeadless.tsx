@@ -23,7 +23,7 @@ export default function SpecialtyRetailHeadless() {
       clientContextBody="The monolith coupled everything together, so a change to one brand risked the others and had to crawl through a slow, cautious release process. The brand-marketing team had been promised, three years earlier, the ability to move quickly and independently; instead it queued behind a release train it did not control. The retailer needed to decouple the brands from one another and from the front end, without a risky big-bang cutover across fourteen live sites."
       clientProfile={{
         industry: "Specialty Retailer",
-        companySize: "~$430M Annual Revenue",
+        companySize: "14 Brand Sites",
         projectDuration: "5 Months",
         additionalInfo: "14 Brand Storefronts",
         additionalLabel: "Digital Estate"

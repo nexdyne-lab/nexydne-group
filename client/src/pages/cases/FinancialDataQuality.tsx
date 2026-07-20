@@ -5,7 +5,7 @@ export default function FinancialDataQuality() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Cutting Data-Quality Issues 78% for Regulatory Reporting | Banking Case Study"
-      seoDescription="A $45B bank spent 3 weeks a quarter reconciling regulatory data and had resubmitted 4 reports in a year. Automated validation cut quality issues 78% and reconciliation to 2 days."
+      seoDescription="A regional bank spent 3 weeks a quarter reconciling regulatory data and had resubmitted 4 reports in a year. Automated validation cut quality issues 78% and reconciliation to 2 days."
       canonical="/cases/financial-data-quality"
       industry="Financial Services"
       industryLink="/industries/financial-services"
@@ -14,15 +14,15 @@ export default function FinancialDataQuality() {
       heroImage="/images/industries/fin-monitors.jpg"
       metrics={[
         { value: "78%", label: "Fewer Quality Issues" },
-        { value: "$4.2M", label: "Annual Savings" },
+        { value: "Year One", label: "Program Payback" },
         { value: "2 days", label: "Reconciliation (from 3 wks)" }
       ]}
       clientContextTitle="Bad Data, Discovered Too Late"
-      clientContextIntro="A regional bank with $45B in assets struggled with data-quality problems that cascaded through its regulatory reporting. Monthly Call Reports, quarterly stress-test data, and annual CCAR submissions all drew from 200+ source systems — and quality issues surfaced late in each cycle, hours before deadlines."
+      clientContextIntro="A regional bank struggled with data-quality problems that cascaded through its regulatory reporting. Monthly Call Reports, quarterly stress-test data, and annual CCAR submissions all drew from 200+ source systems — and quality issues surfaced late in each cycle, hours before deadlines."
       clientContextBody="The governance team spent three weeks a quarter manually reconciling mismatched totals, missing fields, invalid formats, and duplicate records — and had resubmitted four regulatory reports in the past year, drawing examiner scrutiny. The root cause was a lack of upstream validation: source systems accepted bad data, from negative interest rates to mismatched SSNs, that then propagated everywhere."
       clientProfile={{
         industry: "Regional Bank",
-        companySize: "$45B in Assets",
+        companySize: "Multi-State Regional Bank",
         projectDuration: "First-Year Impact",
         additionalInfo: "200+ Source Systems",
         additionalLabel: "Data Estate"
@@ -84,9 +84,9 @@ export default function FinancialDataQuality() {
         },
         {
           icon: DollarSign,
-          value: "$4.2M",
-          label: "Annual operational savings",
-          detail: "From less manual work and avoided fines"
+          value: "Year one",
+          label: "Payback on the program",
+          detail: "From less manual work and avoided penalties"
         },
         {
           icon: GaugeCircle,

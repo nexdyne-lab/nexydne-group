@@ -5,7 +5,7 @@ export default function UrbanCapitalProjects() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Delivering Capital Projects On Time and On Budget | Urban Development Case Study"
-      seoDescription="A developer kept learning about delays and cost overruns only after they had happened. Getting ahead of change orders and schedule slips lifted on-time delivery to 95% and avoided $11M in overruns."
+      seoDescription="A developer kept learning about delays and cost overruns only after they had happened. Getting ahead of change orders and schedule slips lifted on-time delivery to 95% and kept the program on budget."
       canonical="/cases/urban-capital-projects"
       industry="Urban Development"
       industryLink="/industries/urban-development"
@@ -15,15 +15,15 @@ export default function UrbanCapitalProjects() {
       metrics={[
         { value: "95%", label: "On-Time Delivery" },
         { value: "35%", label: "Fewer Change Orders" },
-        { value: "$11M", label: "Overruns Avoided" },
+        { value: "On Budget", label: "Across the Program" },
         { value: "6 Wks", label: "Earlier Warning" }
       ]}
       clientContextTitle="Always the Last to Know"
-      clientContextIntro="A developer had roughly a dozen construction projects underway at any given time — apartments, offices and public spaces spread across a program worth around $250 million. Each project was run by its own team, its own contractors and its own set of spreadsheets, and progress was reported up to leadership in monthly meetings. On paper it was organized. In practice, by the time a problem reached those meetings it had usually been growing for weeks, and the moment to do something cheap about it had already passed."
+      clientContextIntro="A developer had roughly a dozen construction projects underway at any given time — apartments, offices and public spaces spread across a broad, multi-year program. Each project was run by its own team, its own contractors and its own set of spreadsheets, and progress was reported up to leadership in monthly meetings. On paper it was organized. In practice, by the time a problem reached those meetings it had usually been growing for weeks, and the moment to do something cheap about it had already passed."
       clientContextBody="Two problems did most of the damage. Schedules slipped quietly — a late permit here, a delayed delivery there — and because no one saw the slip until it showed up in a monthly report, small delays compounded into missed opening dates. And change orders, the mid-project revisions that are a normal part of construction, were being approved one at a time without anyone seeing the pattern or the mounting cost. Projects that had looked healthy would suddenly land months late and well over budget. Leadership was not short of information; it was short of information in time to act on it."
       clientProfile={{
         industry: "Real-Estate Developer",
-        companySize: "~$350M Annual Revenue",
+        companySize: "~12 Concurrent Projects",
         projectDuration: "14 Months",
         additionalInfo: "~12 Active Projects",
         additionalLabel: "Construction Program"
@@ -91,9 +91,9 @@ export default function UrbanCapitalProjects() {
         },
         {
           icon: DollarSign,
-          value: "$11M",
-          label: "Overruns avoided",
-          detail: "Across the program of projects"
+          value: "On Budget",
+          label: "Program delivery",
+          detail: "Overruns headed off across the portfolio"
         },
         {
           icon: Clock,

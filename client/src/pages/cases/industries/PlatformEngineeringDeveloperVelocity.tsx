@@ -16,14 +16,14 @@ export default function PlatformEngineeringDeveloperVelocity() {
         { value: "3x", label: "More Frequent Releases" },
         { value: "60%", label: "Shorter Lead Time" },
         { value: "50%", label: "Fewer Failed Deploys" },
-        { value: "$6M", label: "Engineering Time Recovered" }
+        { value: "2x", label: "More Time on Product" }
       ]}
       clientContextTitle="When Every Team Rebuilds the Same Plumbing"
-      clientContextIntro="A software company — one whose products serve businesses across the country, with revenue in the hundreds of millions — had grown fast, and its engineering had grown with it. But every team had built its own way of getting software into customers' hands. Each had its own setup for servers, testing and releases, cobbled together over years and understood by only a handful of people. What worked when the company was small had quietly become a tax on everything it now wanted to do."
+      clientContextIntro="A software company — one whose products serve businesses across the country — had grown fast, and its engineering had grown with it. But every team had built its own way of getting software into customers' hands. Each had its own setup for servers, testing and releases, cobbled together over years and understood by only a handful of people. What worked when the company was small had quietly become a tax on everything it now wanted to do."
       clientContextBody="The cost showed up in the calendar. A new engineer could wait days to get a working environment. Shipping a change meant navigating a maze of manual approvals and hand-configured steps that differed from one team to the next, and when something broke, no two teams debugged it the same way. Engineers the company had hired to build product were instead spending as much as half their week on infrastructure and process. Leadership recognized the pattern: the problem was not the people or their tools, but that there was no shared, reliable path for getting software out the door — so everyone kept reinventing it."
       clientProfile={{
         industry: "Software Company",
-        companySize: "~$400M Annual Revenue",
+        companySize: "National Customer Base",
         projectDuration: "12 Months",
         additionalInfo: "~500 Engineers",
         additionalLabel: "Engineering Workforce"
@@ -97,8 +97,8 @@ export default function PlatformEngineeringDeveloperVelocity() {
         },
         {
           icon: DollarSign,
-          value: "$6M",
-          label: "Engineering time recovered",
+          value: "2x",
+          label: "More time on product",
           detail: "Hours returned from plumbing to product"
         }
       ]}

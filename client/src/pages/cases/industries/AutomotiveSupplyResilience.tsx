@@ -15,7 +15,7 @@ export default function AutomotiveSupplyResilience() {
       metrics={[
         { value: "80%", label: "Fewer Line Stoppages" },
         { value: "90%", label: "Faster Recall Tracing" },
-        { value: "$7M", label: "Saved Each Year" },
+        { value: "<1 Year", label: "Full Payback" },
         { value: "100%", label: "Parts Traceable" }
       ]}
       clientContextTitle="When One Missing Chip Stops the Whole Line"
@@ -23,7 +23,7 @@ export default function AutomotiveSupplyResilience() {
       clientContextBody="A second, quieter risk sat alongside the first. When a quality problem turned up in the field, the supplier struggled to say precisely which finished assemblies contained the suspect batch of parts. Records were incomplete and spread across systems, so the only safe answer was to cast a wide net — recalling or quarantining far more product than was actually affected, at considerable cost and to the alarm of its customers. The company was exposed on both ends: it could not keep the line reliably fed, and it could not quickly prove where its parts had gone."
       clientProfile={{
         industry: "Automotive Components Supplier",
-        companySize: "~$540M Annual Revenue",
+        companySize: "Multi-Plant Manufacturer",
         projectDuration: "15 Months",
         additionalInfo: "3 Plants",
         additionalLabel: "Manufacturing Footprint"
@@ -91,9 +91,9 @@ export default function AutomotiveSupplyResilience() {
         },
         {
           icon: DollarSign,
-          value: "$7M",
-          label: "Saved each year",
-          detail: "From avoided downtime and far narrower recalls"
+          value: "<1 Year",
+          label: "Full payback",
+          detail: "Recovered from avoided downtime and narrower recalls"
         },
         {
           icon: ShieldCheck,

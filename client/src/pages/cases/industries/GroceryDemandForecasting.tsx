@@ -5,7 +5,7 @@ export default function GroceryDemandForecasting() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Cutting a Grocer's Fresh-Food Waste by a Third | Retail Case Study"
-      seoDescription="A regional grocery chain was throwing away fresh food while shelves sat empty elsewhere. Predicting demand store by store, day by day, cut waste by 35% and saved $28M a year."
+      seoDescription="A regional grocery chain was throwing away fresh food while shelves sat empty elsewhere. Predicting demand store by store, day by day, cut waste by 35% and lifted on-shelf availability to 96%."
       canonical="/cases/grocery-demand-forecasting"
       industry="Retail"
       industryLink="/industries/retail"
@@ -15,15 +15,15 @@ export default function GroceryDemandForecasting() {
       metrics={[
         { value: "35%", label: "Less Waste" },
         { value: "96%", label: "On-Shelf Availability" },
-        { value: "$28M", label: "Annual Savings" },
+        { value: "85%", label: "Forecast Accuracy" },
         { value: "50K", label: "Products Forecast" }
       ]}
       clientContextTitle="Too Much of One Thing, Too Little of Another"
       clientContextIntro="A regional grocery chain of around 90 stores faced a problem every grocer knows well: too much of the slow-selling items, which ended up in the bin, and too little of the fast-selling ones, which left shelves empty and shoppers disappointed. Fresh food made the stakes highest — it was a large share of sales but by far the biggest source of waste, because anything unsold had only days before it had to be thrown out."
-      clientContextBody="The chain planned its orders using simple averages of past sales and the judgment of experienced buyers. That approach could not take account of the things that really move grocery demand — a change in the weather, a local event, a holiday, or the way shoppers switch to a substitute when their first choice is missing. The result was roughly $28 million of fresh food written off each year, and a further stream of sales quietly lost whenever a popular item ran out. The company was convinced both numbers could be far lower."
+      clientContextBody="The chain planned its orders using simple averages of past sales and the judgment of experienced buyers. That approach could not take account of the things that really move grocery demand — a change in the weather, a local event, a holiday, or the way shoppers switch to a substitute when their first choice is missing. The result was roughly a third of all fresh food written off each year, and a further stream of sales quietly lost whenever a popular item ran out. The company was convinced both numbers could be far lower."
       clientProfile={{
         industry: "Grocery Retail",
-        companySize: "~$700M Annual Revenue",
+        companySize: "Regional Grocery Chain",
         projectDuration: "12 Months",
         additionalInfo: "~90 Stores",
         additionalLabel: "Store Network"
@@ -33,12 +33,12 @@ export default function GroceryDemandForecasting() {
         {
           icon: Leaf,
           title: "Fresh Food in the Bin",
-          description: "About $28 million of unsold perishables were thrown away each year — roughly a third of everything fresh that came through the door."
+          description: "Roughly a third of everything fresh that came through the door was thrown away unsold each year."
         },
         {
           icon: Package,
           title: "Empty Shelves, Lost Sales",
-          description: "When popular items ran out, shoppers simply left without them, costing millions in sales the chain never saw."
+          description: "When popular items ran out, shoppers simply left without them — a steady stream of sales the chain never saw."
         },
         {
           icon: Brain,
@@ -81,7 +81,7 @@ export default function GroceryDemandForecasting() {
           icon: Leaf,
           value: "35%",
           label: "Less fresh-food waste",
-          detail: "From about $28M to $18M written off each year"
+          detail: "A third less fresh food written off each year"
         },
         {
           icon: Package,
@@ -91,8 +91,8 @@ export default function GroceryDemandForecasting() {
         },
         {
           icon: DollarSign,
-          value: "$28M",
-          label: "Saved each year",
+          value: "Year one",
+          label: "Payback on the program",
           detail: "From less waste and recovered sales together"
         },
         {

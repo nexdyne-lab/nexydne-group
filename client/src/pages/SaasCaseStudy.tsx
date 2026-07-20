@@ -5,17 +5,17 @@ export function SaasCaseStudy() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Cutting Customer Onboarding Time 78% With AI | SaaS Case Study"
-      seoDescription="A B2B SaaS platform's manual onboarding took 5 days and backlogged 3 weeks as it scaled from 80 to 400+ customers a quarter. AI automation cut setup to 26 hours and saved $420K."
+      seoDescription="A B2B SaaS platform's manual onboarding took 5 days and backlogged 3 weeks as it scaled from 80 to 400+ customers a quarter. AI automation cut setup to 26 hours while absorbing 5x customer volume."
       canonical="/cases/saas-platform-optimization"
       industry="Technology, Media & Telecom"
       industryLink="/industries/technology-media-telecom"
       title="How a B2B SaaS Platform Cut Onboarding Time 78%"
-      subtitle="A fast-growing B2B SaaS platform automated onboarding and provisioning with AI agents — cutting setup from 5 days to 26 hours while scaling to 400+ new customers a quarter and saving $420K."
+      subtitle="A fast-growing B2B SaaS platform automated onboarding and provisioning with AI agents — cutting setup from 5 days to 26 hours while scaling to 400+ new customers a quarter with no added onboarding headcount."
       heroImage="/images/capabilities/cap-conference-data.jpg"
       metrics={[
         { value: "78%", label: "Faster Onboarding" },
         { value: "26 hrs", label: "Setup Time" },
-        { value: "$420K", label: "Annual Savings" },
+        { value: "5x", label: "Volume, Same Team" },
         { value: "400+", label: "Quarterly Customers" }
       ]}
       clientContextTitle="Onboarding Couldn't Keep Up"
@@ -91,9 +91,9 @@ export function SaasCaseStudy() {
         },
         {
           icon: DollarSign,
-          value: "$420K",
-          label: "Annual savings",
-          detail: "With customer-success capacity effectively up 5x, no new headcount"
+          value: "5x",
+          label: "Capacity, same team",
+          detail: "Customer-success capacity effectively up 5x with no new headcount"
         }
       ]}
       quote=""

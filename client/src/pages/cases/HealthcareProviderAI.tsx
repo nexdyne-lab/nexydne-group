@@ -5,18 +5,18 @@ export function HealthcareProviderAI() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Reducing Patient Wait Times 35% With Predictive Analytics | Healthcare Case Study"
-      seoDescription="A healthcare system serving 2M patients saw satisfaction fall three years running on 4+ hour ED waits. AI scheduling and forecasting cut waits 35% and created $24M in annual value."
+      seoDescription="A healthcare system serving 2M patients saw satisfaction fall three years running on 4+ hour ED waits. AI scheduling and forecasting cut waits 35% and lifted throughput 28%."
       canonical="/cases/healthcare-provider-ai"
       industry="Healthcare"
       industryLink="/industries/healthcare"
       title="How a Healthcare System Cut Patient Wait Times 35% With Predictive Analytics"
-      subtitle="AI-powered scheduling and patient-flow forecasting transformed operations across the network — cutting wait times 35%, lifting throughput 28%, and creating $24M in annual value."
+      subtitle="AI-powered scheduling and patient-flow forecasting transformed operations across the network — cutting wait times 35% and lifting throughput 28% without adding staff or facilities."
       heroImage="/images/cases/healthcare-provider-ai-hero.jpg"
       metrics={[
         { value: "35%", label: "Shorter Wait Times" },
         { value: "28%", label: "Higher Throughput" },
         { value: "92%", label: "Patient Satisfaction" },
-        { value: "$24M", label: "Annual Value Created" }
+        { value: "28%", label: "Higher Throughput" }
       ]}
       clientContextTitle="Satisfaction in Decline"
       clientContextIntro="A regional healthcare system serving 2 million patients a year had seen satisfaction fall for three straight years, with wait times cited as the primary concern. Emergency department waits exceeded four hours at peak, and outpatient no-show rates had climbed to 22%."
@@ -91,9 +91,9 @@ export function HealthcareProviderAI() {
         },
         {
           icon: HeartPulse,
-          value: "$24M",
-          label: "Annual value created",
-          detail: "A 6x ROI, with satisfaction from the 45th to 82nd percentile"
+          value: "82nd",
+          label: "Satisfaction percentile",
+          detail: "Up from the 45th, with the program repaying its cost many times over"
         }
       ]}
       quote="The predictive analytics platform has transformed how we think about operations. We've moved from reactive firefighting to proactive management. Our staff are happier, our patients are happier, and our financial performance has never been stronger."

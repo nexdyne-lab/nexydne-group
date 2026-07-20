@@ -4,18 +4,18 @@ import { Waves, UserCog, Ban, Shield, SlidersHorizontal, BarChart3, Users, Perce
 export function ConsultingSaaS() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Turning a Consulting Methodology Into a $3.2M ARR SaaS Product | Business Building Case Study"
-      seoDescription="A consulting firm's project-based revenue swung feast-or-famine and priced out smaller clients. Productizing its methodology reached 2,400 subscribers and $3.2M ARR at 92% retention."
+      seoTitle="Turning a Consulting Methodology Into a 2,400-Subscriber SaaS Product | Business Building Case Study"
+      seoDescription="A consulting firm's project-based revenue swung feast-or-famine and priced out smaller clients. Productizing its methodology reached 2,400 subscribers at 92% retention within two years."
       canonical="/capabilities/business-building/case-studies/consulting-saas"
       industry="Professional Services"
       industryLink="/industries"
-      title="How a Consulting Firm Built a $3.2M ARR SaaS Product"
-      subtitle="A management consulting firm productized its 15-year methodology into subscription software — reaching 2,400 subscribers and $3.2M ARR at 45% gross margin and 92% retention, without cannibalizing its core business."
+      title="How a Consulting Firm Built a 2,400-Subscriber SaaS Product"
+      subtitle="A management consulting firm productized its 15-year methodology into subscription software — reaching 2,400 subscribers at 45% gross margin and 92% retention within two years, without cannibalizing its core business."
       heroImage="/images/capabilities/cap-team-screens.jpg"
       metrics={[
         { value: "2,400", label: "Paying Subscribers" },
         { value: "45%", label: "Gross Margin" },
-        { value: "$3.2M", label: "ARR" },
+        { value: "2 yrs", label: "Launch to Scale" },
         { value: "92%", label: "Retention Rate" }
       ]}
       clientContextTitle="Valuable Methodology, Volatile Revenue"
@@ -81,7 +81,7 @@ export function ConsultingSaaS() {
           icon: Users,
           value: "2,400",
           label: "Paying subscribers",
-          detail: "Generating $3.2M ARR within two years of launch"
+          detail: "Building a material recurring-revenue stream within two years of launch"
         },
         {
           icon: Percent,
@@ -101,16 +101,16 @@ export function ConsultingSaaS() {
       quoteRole=""
       relatedStudies={[
         {
-          title: "Commercializing Internal Tech Into a $12M Spin-Off",
-          metric: "$12M",
-          label: "spin-off valuation",
+          title: "Commercializing Internal Tech Into a Standalone Spin-Off",
+          metric: "18",
+          label: "enterprise clients",
           link: "/capabilities/business-building/case-studies/logistics-tech-spinoff",
           image: "/images/industries/transport-bridge.jpg"
         },
         {
           title: "Launching a B2B Marketplace for a Distributor",
-          metric: "$4.2M",
-          label: "new revenue",
+          metric: "9%",
+          label: "added to revenue",
           link: "/capabilities/business-building/case-studies/distributor-marketplace",
           image: "/images/industries/retail-warehouse.jpg"
         }

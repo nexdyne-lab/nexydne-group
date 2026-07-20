@@ -13,7 +13,7 @@ export function Ecommerce() {
       experienceStats={[
         { number: "250+", label: "e-commerce transformations delivered across B2B and B2C" },
         { number: "40%", label: "average increase in conversion rates within 6 months" },
-        { number: "$2.5B+", label: "in GMV enabled through our platform implementations" },
+        { number: "3×", label: "median GMV growth across our platform implementations" },
         { number: "Senior-led", label: "Every engagement led by a partner with deep practitioner experience" },
       ]}
       ambitions={[

@@ -1,22 +1,22 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { FolderX, Search, Copy, ShieldAlert, Database, Tags, Send, DollarSign } from "lucide-react";
+import { FolderX, Search, Copy, ShieldAlert, Database, Tags, Send } from "lucide-react";
 
 export function MediaCompanyDAM() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Centralizing 2M Media Assets With a DAM Platform | Media Case Study"
-      seoDescription="A broadcaster's 2M assets were scattered with no metadata, and producers spent 45 minutes finding clips. A DAM platform cut search to 30 seconds and saved $3.2M a year."
+      seoDescription="A broadcaster's 2M assets were scattered with no metadata, and producers spent 45 minutes finding clips. A DAM platform cut search to 30 seconds and ended on-air rights violations."
       canonical="/cases/media-company-dam"
       industry="Technology, Media & Telecom"
       industryLink="/industries/technology-media-telecom"
       title="How a Media Company Centralized 2M Assets With a DAM Platform"
-      subtitle="A unified digital-asset library for video, audio, and images across 12 production teams and 40 channels cut asset search time from 45 minutes to 30 seconds — and saved $3.2M a year."
+      subtitle="A unified digital-asset library for video, audio, and images across 12 production teams and 40 channels cut asset search time from 45 minutes to 30 seconds — and ended costly on-air rights violations."
       heroImage="/images/industries/tech-datacenter.jpg"
       metrics={[
         { value: "2M", label: "Assets Centralized" },
         { value: "30 sec", label: "Search Time (from 45 min)" },
         { value: "40", label: "Channels Automated" },
-        { value: "$3.2M", label: "Annual Savings" }
+        { value: "Zero", label: "Rights Violations" }
       ]}
       clientContextTitle="Content Chaos"
       clientContextIntro="A regional broadcast media company with 12 production teams and 40 distribution channels struggled with content chaos. Its 2 million digital assets — raw footage, edited segments, B-roll, graphics, audio, and promos — were scattered across workstations, network drives, and cloud accounts with inconsistent naming and zero metadata."
@@ -90,10 +90,10 @@ export function MediaCompanyDAM() {
           detail: "Down from 2 hours, beating competitors to air"
         },
         {
-          icon: DollarSign,
-          value: "$3.2M",
-          label: "Annual savings",
-          detail: "From storage, duplicate production, and zero rights violations"
+          icon: ShieldAlert,
+          value: "Zero",
+          label: "Rights violations since launch",
+          detail: "After three on-air violations the prior year, with duplicate re-shoots eliminated"
         }
       ]}
       quote=""

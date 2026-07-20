@@ -16,7 +16,7 @@ const CASE_STUDIES = {
     challenge: "A regional logistics carrier was losing market share to digital-first competitors. Their manual brokerage process resulted in high overhead, slow quotes, and 40% empty miles for their fleet.",
     solution: "A proprietary digital freight marketplace was developed to connect shippers directly with drivers. The platform features an algorithmic pricing engine, real-time route optimization, and automated document handling, effectively removing the middleman.",
     impact: [
-      { value: "$12M", label: "GMV in Year 1" },
+      { value: "5,000+", label: "Loads Moved in Year 1" },
       { value: "40%", label: "Reduction in Empty Miles" },
       { value: "2hrs", label: "Avg. Quote Time (down from 2 days)" }
     ],

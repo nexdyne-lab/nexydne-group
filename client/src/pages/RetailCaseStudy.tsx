@@ -10,12 +10,12 @@ export function RetailCaseStudy() {
       industry="Retail"
       industryLink="/industries/retail"
       title="How a Specialty Retailer Cut Inventory Carrying Costs 47%"
-      subtitle="A 28-store specialty home-goods retailer deployed AI-driven inventory optimization with real-time visibility — cutting carrying costs 47%, stockouts 68%, and saving $2.1M a year."
+      subtitle="A 28-store specialty home-goods retailer deployed AI-driven inventory optimization with real-time visibility — cutting carrying costs 47%, stockouts 68%, and seasonal markdowns from 28% to 11%."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
       metrics={[
         { value: "47%", label: "Lower Carrying Costs" },
         { value: "68%", label: "Fewer Stockouts" },
-        { value: "$2.1M", label: "Annual Savings" },
+        { value: "11%", label: "Seasonal Markdown Rate" },
         { value: "28", label: "Store Locations" }
       ]}
       clientContextTitle="Excess and Stockouts at Once"
@@ -81,7 +81,7 @@ export function RetailCaseStudy() {
           icon: DollarSign,
           value: "47%",
           label: "Lower carrying costs",
-          detail: "From $4.2M to $2.2M, with turnover from 4.2x to 6.1x"
+          detail: "With inventory turnover up from 4.2x to 6.1x"
         },
         {
           icon: PackageX,

@@ -16,7 +16,7 @@ export default function GovernmentBenefitsAI() {
         { value: "50%", label: "Faster Decisions" },
         { value: "95%", label: "Accuracy Rate" },
         { value: "40K", label: "More Residents Served" },
-        { value: "$4M", label: "Saved Each Year" }
+        { value: "Hours", label: "Saved Per Case" }
       ]}
       clientContextTitle="An Agency Buried in Paperwork"
       clientContextIntro="A county human-services agency handled roughly 180,000 applications a year for programs that people genuinely depend on — health coverage, food assistance, childcare support. But a decision that should have taken days was taking closer to six weeks, and a backlog of tens of thousands of cases kept growing. Behind every one of those cases was a family waiting on help they had already applied for and needed now."
@@ -97,9 +97,9 @@ export default function GovernmentBenefitsAI() {
         },
         {
           icon: DollarSign,
-          value: "$4M",
-          label: "Saved each year",
-          detail: "From work no longer done by hand"
+          value: "Hours",
+          label: "Saved on every routine case",
+          detail: "Data entry and cross-checks no longer done by hand"
         }
       ]}
       quote="Our caseworkers came here to help people, and they were spending their days keying in pay stubs instead. Handing the routine paperwork to software gave them their real job back — sitting with the families whose situations are complicated. We are deciding faster, getting it right more often, and helping more residents than we ever could before."

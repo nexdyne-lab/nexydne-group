@@ -19,11 +19,11 @@ export default function TechEngineeringTransformation() {
         { value: "2 wks", label: "To Full Productivity" }
       ]}
       clientContextTitle="Success Had Made the Software Slow to Change"
-      clientContextIntro="A software company had grown quickly, reaching a few hundred million dollars in annual recurring revenue in only five years. But the speed that built the business had faded. A single, sprawling codebase, deployments done largely by hand, and engineers who spent more of their week keeping the lights on than building new things had all conspired to slow the company down. What had once been a weekly release cadence had stretched to roughly once a month."
+      clientContextIntro="A software company had grown quickly, scaling from a startup to an established enterprise vendor in only five years. But the speed that built the business had faded. A single, sprawling codebase, deployments done largely by hand, and engineers who spent more of their week keeping the lights on than building new things had all conspired to slow the company down. What had once been a weekly release cadence had stretched to roughly once a month."
       clientContextBody="The costs showed up everywhere. New engineers took about three months to find their feet. Every deployment was a tense, all-hands affair that often had to be undone. The team that owned the shared infrastructure had become a bottleneck, and product teams could wait weeks for a change they needed. Smaller, more agile competitors were shipping features faster, and the company could feel its early advantage slipping. Leadership concluded that the problem was not the people; it was the way the company built and released its software."
       clientProfile={{
         industry: "Enterprise Software",
-        companySize: "~$400M Annual Recurring Revenue",
+        companySize: "Enterprise SaaS Vendor",
         projectDuration: "12 Months",
         additionalInfo: "~400 Engineers",
         additionalLabel: "Engineering Team"

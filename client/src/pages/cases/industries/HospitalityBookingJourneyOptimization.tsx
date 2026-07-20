@@ -23,7 +23,7 @@ export default function HospitalityBookingJourneyOptimization() {
       clientContextBody="Traffic to the booking engine was healthy; conversion was not. Because the team's mental model of the journey came from a slide rather than from behavior, every fix they tried addressed a friction point that was not really costing them much, while the real leaks kept running. Revenue leadership was tired of debating opinions about the funnel and wanted the losses quantified in dollars, at each step, so the team could work the problems in the order that mattered."
       clientProfile={{
         industry: "Global Hotel Brand",
-        companySize: "~$850M Annual Revenue",
+        companySize: "Upper Mid-Market",
         projectDuration: "5 Months",
         additionalInfo: "Direct Booking Engine",
         additionalLabel: "Primary Channel"

@@ -23,7 +23,7 @@ export default function LogisticsCustomTms() {
       clientContextBody="The fragmentation made load planning slow and error-prone. Because no tool held the whole picture, planners rekeyed information across systems, worked from data that was often stale, and could not optimize across the full operation. Off-the-shelf products did not fit the provider's specific network and rules, which is why it had ended up with three partial tools in the first place. It needed a bespoke transportation management system that consolidated orders, routing, and fleet into one operating platform built around how the business actually ran."
       clientProfile={{
         industry: "National Logistics Provider",
-        companySize: "~$460M Annual Revenue",
+        companySize: "~1,200 Loads a Day",
         projectDuration: "9 Months",
         additionalInfo: "Custom TMS Build",
         additionalLabel: "Operating Platform"

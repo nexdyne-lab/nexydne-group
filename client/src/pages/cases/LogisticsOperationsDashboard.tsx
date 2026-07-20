@@ -10,12 +10,12 @@ export function LogisticsOperationsDashboard() {
       industry="Transportation & Logistics"
       industryLink="/industries/transportation-logistics"
       title="How a Logistics Company Cut Delivery Delays 40% With a Real-Time Dashboard"
-      subtitle="A custom real-time operations dashboard surfaced capacity bottlenecks and route inefficiencies for proactive intervention — improving on-time delivery from 78% to 92% and saving $1.8M a year."
+      subtitle="A custom real-time operations dashboard surfaced capacity bottlenecks and route inefficiencies for proactive intervention — improving on-time delivery from 78% to 92% with a dashboard that paid for itself in four months."
       heroImage="/images/cases/logistics-operations-dashboard-hero.jpg"
       metrics={[
         { value: "40%", label: "Fewer Delivery Delays" },
         { value: "92%", label: "On-Time Delivery" },
-        { value: "$1.8M", label: "Annual Savings" }
+        { value: "4 mo", label: "Payback Period" }
       ]}
       clientContextTitle="Blind to Delays Until Too Late"
       clientContextIntro="A regional logistics company managing 200 trucks and 50 distribution centers struggled with delivery delays that damaged relationships and raised costs. On-time delivery hovered at 78% — below the 90%+ industry standard — and delays cascaded: one late pickup caused missed windows at three downstream stops."
@@ -84,9 +84,9 @@ export function LogisticsOperationsDashboard() {
         },
         {
           icon: DollarSign,
-          value: "$1.8M",
-          label: "Annual savings",
-          detail: "From reduced expedited shipping and avoided penalties"
+          value: "4 mo",
+          label: "Payback period",
+          detail: "Driven by reduced expedited shipping and avoided penalties"
         },
         {
           icon: MapPinned,
@@ -108,8 +108,8 @@ export function LogisticsOperationsDashboard() {
         },
         {
           title: "Unifying 30+ Regional Brands With AI Optimization",
-          metric: "$55M",
-          label: "operational savings",
+          metric: "12%",
+          label: "lower operating costs",
           link: "/cases/logistics-brand-consolidation",
           image: "/images/cases/logistics-brand-consolidation-hero.jpg"
         }

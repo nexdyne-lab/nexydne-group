@@ -5,7 +5,7 @@ export default function EcommerceDataWarehouse() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Migrating a Retailer to Snowflake | E-Commerce Data Engineering Case Study"
-      seoDescription="A multi-brand retailer's legacy Oracle warehouse cost $180K a year and ran 4–6 hour ETL. A Snowflake + dbt migration cut query times 85% and infrastructure cost 40% with zero downtime."
+      seoDescription="A multi-brand retailer's legacy Oracle warehouse was costly to run and took 4–6 hours for ETL. A Snowflake + dbt migration cut query times 85% and infrastructure cost 40% with zero downtime."
       canonical="/cases/ecommerce-data-warehouse"
       industry="Retail"
       industryLink="/industries/retail"
@@ -18,11 +18,11 @@ export default function EcommerceDataWarehouse() {
         { value: "30 min", label: "ETL (from 4–6 hrs)" }
       ]}
       clientContextTitle="Fifteen Years of Data, Stuck on Oracle"
-      clientContextIntro="A multi-brand e-commerce retailer running six storefronts with $450M in annual revenue struggled with a legacy on-premise warehouse on Oracle Exadata. It needed three full-time DBAs, cost $180K a year in licensing and hardware, and took 4–6 hours to run nightly ETL — while analysts waited 15–30 seconds for basic queries."
+      clientContextIntro="A multi-brand e-commerce retailer running six storefronts struggled with a legacy on-premise warehouse on Oracle Exadata. It needed three full-time DBAs, carried heavy annual licensing and hardware costs, and took 4–6 hours to run nightly ETL — while analysts waited 15–30 seconds for basic queries."
       clientContextBody="The marketing team couldn't access customer-behavior data for same-day campaign optimization, and the five-person data team lacked cloud-warehouse and modern ELT experience. A previous in-house modernization attempt stalled after eight months against the complexity of migrating 15 years of history, rewriting 200+ ETL jobs, and guaranteeing zero downtime for critical reporting."
       clientProfile={{
         industry: "Multi-Brand E-Commerce Retailer",
-        companySize: "$450M Revenue · 6 Storefronts",
+        companySize: "6 Storefronts",
         projectDuration: "7-Month Engagement",
         additionalInfo: "Snowflake + dbt",
         additionalLabel: "Modern Stack"
@@ -37,7 +37,7 @@ export default function EcommerceDataWarehouse() {
         {
           icon: DollarSign,
           title: "Costly to run",
-          description: "The Oracle Exadata warehouse cost $180K a year and required three full-time DBAs just to keep running."
+          description: "The Oracle Exadata warehouse carried heavy annual licensing costs and required three full-time DBAs just to keep running."
         },
         {
           icon: RefreshCw,
@@ -86,7 +86,7 @@ export default function EcommerceDataWarehouse() {
           icon: DollarSign,
           value: "40%",
           label: "Lower infrastructure cost",
-          detail: "$72K a year, with DBA headcount from 3 to 1"
+          detail: "With DBA headcount down from 3 to 1"
         },
         {
           icon: GraduationCap,

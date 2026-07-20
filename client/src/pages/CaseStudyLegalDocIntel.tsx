@@ -54,7 +54,7 @@ export default function CaseStudyLegalDocIntel() {
                 "72% reduction in legal research and document review time across all workstreams",
                 "40% increase in cases per attorney without sacrificing quality or client service",
                 "95% accuracy in document classification, validated by senior-attorney review",
-                "Outside-counsel spend reduced by mid-seven figures annually as work returned in-house"
+                "Outside-counsel spend cut sharply as the majority of overflow work returned in-house"
               ]}
               variant="hero"
             />
@@ -187,7 +187,7 @@ export default function CaseStudyLegalDocIntel() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="prose prose-lg max-w-none">
             <p className="text-xl leading-relaxed text-charcoal/80 mb-6">
-              We designed and implemented an AI-powered legal intelligence platform tailored to the firm's litigation practice. The $65,000 investment focused on creating sophisticated document analysis capabilities while maintaining the security and privilege requirements essential to legal practice.
+              We designed and implemented an AI-powered legal intelligence platform tailored to the firm's litigation practice. The investment focused on creating sophisticated document analysis capabilities while maintaining the security and privilege requirements essential to legal practice.
             </p>
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Intelligent document processing and classification</h3>
@@ -271,12 +271,12 @@ export default function CaseStudyLegalDocIntel() {
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Economic model transformation</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
-              The improved efficiency enabled the firm to offer competitive alternative fee arrangements while maintaining profitability. Fixed-fee and contingency matters increased from 15% to 42% of the firm's revenue mix, opening new market opportunities. The platform's cost savings of $425,000 annually through reduced research time and avoided associate hiring exceeded the technology investment by a factor of six. The firm's realization rates improved by 12 percentage points as clients perceived greater value in the work product.
+              The improved efficiency enabled the firm to offer competitive alternative fee arrangements while maintaining profitability. Fixed-fee and contingency matters increased from 15% to 42% of the firm's revenue mix, opening new market opportunities. The platform's annual savings from reduced research time and avoided associate hiring exceeded the technology investment by a factor of six. The firm's realization rates improved by 12 percentage points as clients perceived greater value in the work product.
             </p>
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Competitive positioning and growth</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
-              The $65,000 investment generated annual benefits of $620,000 through increased capacity ($195,000), research cost savings ($425,000), representing a 300% ROI over 18 months. More strategically, the platform enabled the firm to compete effectively against organizations ten times its size. The firm's reputation for combining boutique expertise with sophisticated technology capabilities attracted lateral partner candidates from larger firms. Management views the platform as fundamental infrastructure that will support the firm's planned growth from 55 to 85 attorneys over the next three years without proportional increases in research staff. The technology has become a key differentiator in new business pitches, with prospective clients specifically asking about the firm's legal technology capabilities.
+              Through increased capacity and research cost savings, the platform repaid its cost several times over within 18 months. More strategically, the platform enabled the firm to compete effectively against organizations ten times its size. The firm's reputation for combining boutique expertise with sophisticated technology capabilities attracted lateral partner candidates from larger firms. Management views the platform as fundamental infrastructure that will support the firm's planned growth from 55 to 85 attorneys over the next three years without proportional increases in research staff. The technology has become a key differentiator in new business pitches, with prospective clients specifically asking about the firm's legal technology capabilities.
             </p>
           </div>
         </div>

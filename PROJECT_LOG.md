@@ -766,3 +766,23 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
 - Text-on-canvas hero → full-bleed dark aerial-city dusk image, huge white
   "Case Studies" low-left, 26s Ken Burns zoom (matches /capabilities and
   /industries). Localhost-reviewed, approved.
+
+### 2026-07-21 — De-monetization: all client-financial claims removed site-wide
+- David's call: a young firm publishing exact client dollar impacts ($9M revenue,
+  $5M saved, "$2B+ raised") is unjustifiable when questioned and contradicts
+  client-confidentiality norms. New firm rule: NO client financials, even
+  directionally. Replacement vocabulary: multiples, percentages, time,
+  operational counts, "paid for itself inside the first year".
+- Scale: 1,711 $-claims in 556 files → 145 remaining, ALL whitelisted (cited
+  market stats like PwC $15.7T; educational worked examples in valuation/unit-
+  economics guides; program eligibility ranges; own product pricing).
+- Method: 10 rewrite agents + a metric LEDGER (242 /cases files → old/new title
+  + metric pairs) driving a mechanical card sweep (265 cards, 207 files) so
+  every surface tells the same story; 74 non-/cases case studies same scrub;
+  33 editorial files judgment pass (18 fabricated client claims removed, ~100
+  legitimate figures kept); aggregate firm credentials ($150M+ delivered etc.)
+  → operational credentials. Spelled-out money in quotes caught too.
+- QC: banned-phrase sweep clean, tsc, build+guard, 34/34 tests, headless
+  rendered-text dollar scan on 8 pages (clean except whitelisted second-person
+  growth framing on one solutions page), 0 JS errors. Committed for David's
+  review before push.

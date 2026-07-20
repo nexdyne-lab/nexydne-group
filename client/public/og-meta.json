@@ -46,7 +46,7 @@
  },
  "/capabilities/artificial-intelligence/case-studies/insurance-document-ai": {
   "title": "Cutting Claims Processing Time 73% With Document AI | Insurance Case Study",
-  "description": "A 200-employee P&C insurer's adjusters spent 60% of their time on document review, stretching claims to 12 days. Intelligent document processing cut it to 3.2 days and saved $1.2M.",
+  "description": "A 200-employee P&C insurer's adjusters spent 60% of their time on document review, stretching claims to 12 days. Intelligent document processing cut it to 3.2 days and lifted first-touch resolution from 23% to 41%.",
   "image": "/case-insurance-office.f039a4a1.jpg"
  },
  "/capabilities/artificial-intelligence/insights/practical-ai-guide": {
@@ -61,7 +61,7 @@
  },
  "/capabilities/artificial-intelligence/case-studies/manufacturing-predictive-maintenance": {
   "title": "Predictive Maintenance That Cut Downtime 45% | Manufacturing Case Study",
-  "description": "A metal fabricator spent 40% of its maintenance budget on reactive repairs with 8 breakdowns a month. AI predictive maintenance cut unplanned downtime 45% and saved $680K a year.",
+  "description": "A metal fabricator spent 40% of its maintenance budget on reactive repairs with 8 breakdowns a month. AI predictive maintenance cut unplanned downtime 45% and maintenance costs 28%.",
   "image": "/images/industries/mfg-robotics.jpg"
  },
  "/capabilities/artificial-intelligence/case-studies/saas-customer-service-ai": {
@@ -71,32 +71,32 @@
  },
  "/capabilities/artificial-intelligence/case-studies/distributor-demand-forecasting": {
   "title": "AI Demand Forecasting That Cut Inventory 35% | Distribution Case Study",
-  "description": "A $75M distributor's carrying costs ate 18% of margin and 8% of orders stocked out across 15,000 SKUs. AI forecasting cut inventory 35% and freed $2.8M in working capital.",
+  "description": "A regional distributor's carrying costs ate 18% of margin and 8% of orders stocked out across 15,000 SKUs. AI forecasting cut inventory 35% and stockouts to 2.1% of orders.",
   "image": "/images/industries/retail-warehouse.jpg"
  },
  "/capabilities/artificial-intelligence/case-studies/lender-ai-underwriting": {
   "title": "AI-Driven Underwriting That Accelerated a Lender 5x | Financial Services Case Study",
-  "description": "A specialty lender was capped at 200 applications a month with inconsistent decisions. An explainable ML credit model lifted throughput 5x, cut defaults 22%, and enabled $45M in new volume.",
+  "description": "A specialty lender was capped at 200 applications a month with inconsistent decisions. An explainable ML credit model lifted throughput 5x and cut defaults 22% — with decisions in 4 hours.",
   "image": "/images/industries/fin-handshake-city.jpg"
  },
  "/capabilities/artificial-intelligence/case-studies/food-quality-ai": {
   "title": "Computer Vision Quality Inspection That Lifted Yield 18% | Food Processing Case Study",
-  "description": "A food processor's manual inspection missed defects and wasted 12% of production. A computer-vision system improved defect detection 40%, lifted yield 18%, and saved $1.8M a year.",
+  "description": "A food processor's manual inspection missed defects and wasted 12% of production. A computer-vision system improved defect detection 40%, lifted yield 18%, and cut complaints 65%.",
   "image": "/images/capabilities/cap-food.jpg"
  },
  "/solutions/data-driven-customer-intelligence/case-studies/ecommerce-repeat-purchase": {
   "title": "Lifting Repeat Purchase 42% for an E-commerce Brand | Retail Case Study",
-  "description": "A $45M specialty retailer was sitting on rich customer data it couldn't activate. A customer data platform and ML personalization lifted repeat purchase 42% and added $1.2M a year.",
+  "description": "A specialty retailer was sitting on rich customer data it couldn't activate. A customer data platform and ML personalization lifted repeat purchase 42% at 3.2x campaign ROI.",
   "image": "/images/capabilities/cap-celebrate.jpg"
  },
  "/solutions/data-driven-customer-intelligence/case-studies/saas-churn-reduction": {
   "title": "Cutting SaaS Churn 38% with Predictive Intelligence | Technology Case Study",
-  "description": "A $28M-ARR B2B SaaS platform was losing customers faster than it could replace them. Predictive churn models flagged at-risk accounts 60 days early and saved $890K in ARR.",
+  "description": "A B2B SaaS platform was losing customers faster than it could replace them. Predictive churn models flagged at-risk accounts 60 days early and cut annual churn 38%.",
   "image": "/images/capabilities/cap-mobile-woman.jpg"
  },
  "/solutions/data-driven-customer-intelligence/case-studies/bank-cross-sell": {
   "title": "Doubling Cross-Sell for a Community Bank | Financial Services Case Study",
-  "description": "A $1.2B community bank was stuck at 2.1 products per customer. Next-best-action models doubled cross-sell conversion and added $640K in first-year revenue.",
+  "description": "A community bank was stuck at 2.1 products per customer. Next-best-action models doubled cross-sell conversion and lifted products per customer to 2.8.",
   "image": "/images/capabilities/cap-mobile-woman.jpg"
  },
  "/solutions/data-driven-customer-intelligence/insights/beyond-segmentation": {
@@ -181,22 +181,22 @@
  },
  "/capabilities/business-building/case-studies/ecommerce-platform-launch": {
   "title": "Launching a B2B E-Commerce Platform That Drives 35% of Revenue | Business Building Case Study",
-  "description": "A $200M industrial distributor took orders by phone and fax as Amazon Business took share. A venture-style e-commerce MVP built in 20 weeks now drives 35% of revenue and $28M in sales.",
+  "description": "A regional industrial distributor took orders by phone and fax as Amazon Business took share. A venture-style e-commerce MVP built in 20 weeks now drives 35% of revenue at 2.4x the average order value.",
   "image": "/images/capabilities/cap-retail-apparel.jpg"
  },
  "/capabilities/business-building/case-studies/distributor-marketplace": {
   "title": "Launching a B2B Marketplace for a Distributor | Business Building Case Study",
-  "description": "A $45M distributor faced eroding margins and a catalog it couldn't match. A curated B2B marketplace generated $4.2M in year-one revenue from 340 sellers and 2,800 buyers at an 18% take rate.",
+  "description": "A regional distributor faced eroding margins and a catalog it couldn't match. A curated B2B marketplace added revenue equal to 9% of the core business in year one from 340 sellers and 2,800 buyers.",
   "image": "/images/industries/retail-warehouse.jpg"
  },
  "/capabilities/business-building/case-studies/consulting-saas": {
-  "title": "Turning a Consulting Methodology Into a $3.2M ARR SaaS Product | Business Building Case Study",
-  "description": "A consulting firm's project-based revenue swung feast-or-famine and priced out smaller clients. Productizing its methodology reached 2,400 subscribers and $3.2M ARR at 92% retention.",
+  "title": "Turning a Consulting Methodology Into a 2,400-Subscriber SaaS Product | Business Building Case Study",
+  "description": "A consulting firm's project-based revenue swung feast-or-famine and priced out smaller clients. Productizing its methodology reached 2,400 subscribers at 92% retention within two years.",
   "image": "/images/capabilities/cap-team-screens.jpg"
  },
  "/capabilities/business-building/case-studies/manufacturer-dtc": {
   "title": "Building a Direct-to-Consumer Channel for a Manufacturer | Business Building Case Study",
-  "description": "A premium outdoor-equipment maker sold only through retailers, with no customer data and squeezed margins. A D2C channel generated $8M in year one at 28% higher margins from 45,000 customers.",
+  "description": "A premium outdoor-equipment maker sold only through retailers, with no customer data and squeezed margins. A D2C channel won 45,000 direct customers in its first year at 28% higher margins than wholesale.",
   "image": "/images/industries/mfg-robot-arm.jpg"
  },
  "/capabilities/business-building/case-studies/healthcare-telehealth": {
@@ -205,18 +205,18 @@
   "image": "/case-doctor-consultation.799c1562.jpg"
  },
  "/capabilities/business-building/case-studies/logistics-tech-spinoff": {
-  "title": "Commercializing Internal Tech Into a $12M Spin-Off | Business Building Case Study",
-  "description": "A logistics firm's route-optimization software was a competitive advantage locked inside operations. A spin-off reached a $12M valuation with 18 enterprise clients and $2.4M ARR in two years.",
+  "title": "Commercializing Internal Tech Into a Standalone Spin-Off | Business Building Case Study",
+  "description": "A logistics firm's route-optimization software was a competitive advantage locked inside operations. A spin-off signed 18 enterprise clients — delivering 35% efficiency gains — within two years.",
   "image": "/images/industries/transport-bridge.jpg"
  },
  "/capabilities/business-building/case-studies/wealth-adjacent": {
   "title": "Entering an Adjacent Market to Grow Revenue 35% | Business Building Case Study",
-  "description": "A wealth firm's growth was capped by the personal-wealth market while business-owner clients used separate advisors. Expanding into business financial services grew revenue 35% and added $85M AUM.",
+  "description": "A wealth firm's growth was capped by the personal-wealth market while business-owner clients used separate advisors. Expanding into business financial services grew revenue 35% and made business services the firm's fastest-growing practice.",
   "image": "/images/industries/deal-handshake.jpg"
  },
  "/capabilities/growth-marketing-sales/case-studies/b2b-digital-marketing": {
   "title": "Digital Marketing Transformation That Doubled Lead Generation | B2B Case Study",
-  "description": "A $45M B2B services firm relied on fading referrals and events, generating under 50 leads a month. A modern digital engine doubled leads to 150+ and cut acquisition cost 35%.",
+  "description": "A 150-employee B2B services firm relied on fading referrals and events, generating under 50 leads a month. A modern digital engine doubled leads to 150+ and cut acquisition cost 35%.",
   "image": "/images/capabilities/cap-mobile-woman.jpg"
  },
  "/capabilities/growth-marketing-sales/case-studies/software-sales-optimization": {
@@ -226,22 +226,22 @@
  },
  "/capabilities/growth-marketing-sales/case-studies/subscription-retention": {
   "title": "A Retention Program That Cut Churn 40% | Subscription Case Study",
-  "description": "A $38M subscription business saw churn creep to 4.5% with reactive, complaint-driven success. A health-score model and proactive engagement cut churn 40% and retained $2.4M in ARR.",
+  "description": "A subscription business saw churn creep to 4.5% with reactive, complaint-driven success. A health-score model and proactive engagement cut monthly churn 40%, from 4.5% to 2.7%.",
   "image": "/images/capabilities/cap-colleagues-smile.jpg"
  },
  "/capabilities/growth-marketing-sales/case-studies/manufacturer-ecommerce": {
-  "title": "E-Commerce Launch That Drove $5M in New Revenue | Manufacturing Case Study",
-  "description": "A $95M outdoor-equipment maker sold only through retailers, with no consumer data and squeezed margins. A DTC e-commerce launch drove $5M in year-one revenue at 45% gross margin.",
+  "title": "An E-Commerce Launch That Won 15,000 Direct Customers | Manufacturing Case Study",
+  "description": "A specialty outdoor-equipment maker sold only through retailers, with no consumer data and squeezed margins. A DTC e-commerce launch won 15,000 direct customers in year one at 45% gross margin.",
   "image": "/images/capabilities/cap-retail-apparel.jpg"
  },
  "/capabilities/growth-marketing-sales/case-studies/distribution-pricing": {
   "title": "Pricing Optimization That Improved Margins 8 Points | Distribution Case Study",
-  "description": "A $125M distributor's margins eroded from 28% to 22% amid ad-hoc discounting. Systematic, value-based pricing recovered 8 margin points and $10M in profit — while lifting retention 3%.",
+  "description": "An industrial distributor's margins eroded from 28% to 22% amid ad-hoc discounting. Systematic, value-based pricing recovered 8 points of gross margin — while lifting retention 3%.",
   "image": "/images/capabilities/cap-chess.jpg"
  },
  "/capabilities/growth-marketing-sales/case-studies/tech-abm": {
   "title": "Landing Enterprise Clients With Account-Based Marketing | Technology Case Study",
-  "description": "A $42M automation vendor's inbound engine couldn't reach enterprise buyers. A rigorous ABM program created $18M in pipeline, closed 12 enterprise wins, and grew deal size 4x.",
+  "description": "An automation vendor's inbound engine couldn't reach enterprise buyers. A rigorous ABM program engaged 65% of target accounts, closed 12 enterprise wins, and grew deal size 4x.",
   "image": "/images/industries/tech-datacenter.jpg"
  },
  "/insights/headless-commerce-guide": {
@@ -315,13 +315,13 @@
   "image": "/images/capabilities/cap-retail-apparel.jpg"
  },
  "/cases/manufacturer-data-monetization": {
-  "title": "Finding a $4M Revenue Opportunity Through Data Monetization | Manufacturing Case Study",
-  "description": "A $200M manufacturer collected telemetry from 8,000 machines but used it only for warranty claims. A 6-week data-strategy sprint mapped a $4M predictive-maintenance subscription opportunity.",
+  "title": "Finding a New Recurring-Revenue Line Through Data Monetization | Manufacturing Case Study",
+  "description": "A manufacturer collected telemetry from 8,000 machines but used it only for warranty claims. A 6-week data-strategy sprint mapped a predictive-maintenance subscription opportunity — funded on the spot.",
   "image": "/images/industries/mfg-robotics.jpg"
  },
  "/cases/insurance-analytics-backlog": {
-  "title": "Prioritizing a $12M Analytics Backlog in 6 Weeks | Insurance Case Study",
-  "description": "A P&C carrier's 8-person analytics team faced a 47-project, $12M backlog with no way to prioritize. A 6-week data-strategy sprint killed 23 projects and built a $13.3M roadmap.",
+  "title": "Prioritizing a 47-Project Analytics Backlog in 6 Weeks | Insurance Case Study",
+  "description": "A P&C carrier's 8-person analytics team faced a 47-project backlog with no way to prioritize. A 6-week data-strategy sprint killed 23 projects and built a roadmap around the 8 highest-ROI initiatives.",
   "image": "/images/cases/insurance-analytics-backlog-hero.jpg"
  },
  "/cases/healthcare-data-maturity": {
@@ -336,12 +336,12 @@
  },
  "/cases/saas-product-analytics": {
   "title": "Lifting Trial-to-Paid Conversion 28% With Product Analytics | SaaS Case Study",
-  "description": "A B2B SaaS company converted only 18% of trials, blind to user behavior. A product-analytics dashboard found the onboarding friction, lifting conversion to 23% and adding $3.2M ARR.",
+  "description": "A B2B SaaS company converted only 18% of trials, blind to user behavior. A product-analytics dashboard found the onboarding friction, lifting conversion to 23% and adding 50 paying customers a month.",
   "image": "/images/cases/saas-product-analytics-hero.jpg"
  },
  "/cases/global-retailer": {
   "title": "Automating Supply-Chain Order Processing with RPA | Retail Case Study",
-  "description": "A 200-location retailer's procurement team spent 40+ hours a week re-keying orders across three systems. RPA cut processing time 45%, errors 60%, and saved $1.8M a year.",
+  "description": "A 200-location retailer's procurement team spent 40+ hours a week re-keying orders across three systems. RPA cut processing time 45%, errors 60%, and paid for itself in 7 months.",
   "image": "/images/cases/global-retailer-hero.jpg"
  },
  "/cases/financial-institution": {
@@ -356,27 +356,27 @@
  },
  "/cases/global-retailer-ecommerce": {
   "title": "Scaling E-Commerce Revenue 40% with AI Personalization | Retail Case Study",
-  "description": "A Fortune 500 retailer's online growth stalled at 12% with 78% cart abandonment. AI personalization across 2M+ SKUs lifted e-commerce revenue 40% and added $180M a year.",
+  "description": "A Fortune 500 retailer's online growth stalled at 12% with 78% cart abandonment. AI personalization across 2M+ SKUs lifted e-commerce revenue 40% within 12 months.",
   "image": "/images/capabilities/cap-retail-apparel.jpg"
  },
  "/cases/financial-institution-automation": {
   "title": "Automating 90% of Loan Processing Workflows | Banking Case Study",
-  "description": "A $45B regional bank took 5–7 days to process loans with 15% error rates. Intelligent document processing automated 90% of workflows, cut decisions to under 4 hours, and saved $12M.",
+  "description": "A regional bank took 5–7 days to process loans with 15% error rates. Intelligent document processing automated 90% of workflows, cut decisions to under 4 hours, and freed 200+ FTEs for higher-value work.",
   "image": "/images/cases/financial-institution-automation-hero.jpg"
  },
  "/cases/healthcare-provider-ai": {
   "title": "Reducing Patient Wait Times 35% With Predictive Analytics | Healthcare Case Study",
-  "description": "A healthcare system serving 2M patients saw satisfaction fall three years running on 4+ hour ED waits. AI scheduling and forecasting cut waits 35% and created $24M in annual value.",
+  "description": "A healthcare system serving 2M patients saw satisfaction fall three years running on 4+ hour ED waits. AI scheduling and forecasting cut waits 35% and lifted throughput 28%.",
   "image": "/images/cases/healthcare-provider-ai-hero.jpg"
  },
  "/cases/saas-platform-optimization": {
   "title": "Cutting Customer Onboarding Time 78% With AI | SaaS Case Study",
-  "description": "A B2B SaaS platform's manual onboarding took 5 days and backlogged 3 weeks as it scaled from 80 to 400+ customers a quarter. AI automation cut setup to 26 hours and saved $420K.",
+  "description": "A B2B SaaS platform's manual onboarding took 5 days and backlogged 3 weeks as it scaled from 80 to 400+ customers a quarter. AI automation cut setup to 26 hours while absorbing 5x customer volume.",
   "image": "/images/capabilities/cap-conference-data.jpg"
  },
  "/cases/retail-modernization-personalization": {
   "title": "Unlocking 34% Revenue Growth With AI Personalization | Retail Case Study",
-  "description": "A 150-store home-goods retailer's batch systems made real-time personalization impossible. A Bloomreach CDP drove $18M in incremental revenue and a 47% conversion lift.",
+  "description": "A 150-store home-goods retailer's batch systems made real-time personalization impossible. A Bloomreach CDP drove 34% revenue growth and a 47% conversion lift.",
   "image": "/images/capabilities/cap-retail-apparel.jpg"
  },
  "/cases/payment-terminal-onboarding": {
@@ -386,12 +386,12 @@
  },
  "/cases/logistics-product-access": {
   "title": "Enabling 3.2x Faster Product Access With Personalized Search | Logistics Case Study",
-  "description": "An industrial distributor's 180,000-SKU catalog overwhelmed B2B buyers, with 42% of orders needing rep help. AI search and personalization drove 3.2x faster discovery and $12M in revenue.",
+  "description": "An industrial distributor's 180,000-SKU catalog overwhelmed B2B buyers, with 42% of orders needing rep help. AI search and personalization drove 3.2x faster discovery and 68% higher search conversion.",
   "image": "/images/cases/logistics-product-access-hero.jpg"
  },
  "/cases/logistics-brand-consolidation": {
   "title": "Unifying 30+ Regional Brands With AI-Driven Optimization | Logistics Case Study",
-  "description": "A global logistics provider had diluted its equity across 30+ acquired brands. A dual-track brand consolidation and AI route optimization reached a Top 50 global ranking and $55M in savings.",
+  "description": "A global logistics provider had diluted its equity across 30+ acquired brands. A dual-track brand consolidation and AI route optimization reached a Top 50 global ranking and cut operating costs 12%.",
   "image": "/images/cases/logistics-brand-consolidation-hero.jpg"
  },
  "/cases/marketing-conversion-boost": {
@@ -426,12 +426,12 @@
  },
  "/cases/financial-services-sql-bootcamp": {
   "title": "Upskilling 50 Analysts with a SQL & Python Bootcamp | Financial Services Case Study",
-  "description": "An $8B investment firm's analysts waited weeks on IT for every data request. An 8-week bootcamp made them self-sufficient, cutting the IT backlog 60% and saving $400K a year.",
+  "description": "A growing investment firm's analysts waited weeks on IT for every data request. An 8-week bootcamp made them self-sufficient, cutting the IT backlog 60% and turning weeks-long requests into same-day answers.",
   "image": "/images/cases/financial-services-sql-bootcamp-hero.jpg"
  },
  "/cases/retailer-data-academy": {
   "title": "Building an Internal Data Academy to Train 120 Employees | Retail Case Study",
-  "description": "A retail chain invested in a data warehouse but only 15% of staff used data. A tiered, role-specific Data Academy lifted data usage to 68% and saved $1.2M in consulting a year.",
+  "description": "A retail chain invested in a data warehouse but only 15% of staff used data. A tiered, role-specific Data Academy lifted data usage to 68% and brought campaign analytics fully in-house.",
   "image": "/images/cases/retailer-data-academy-hero.jpg"
  },
  "/cases/healthcare-dashboard-training": {
@@ -441,12 +441,12 @@
  },
  "/cases/retail-demand-forecasting": {
   "title": "Cutting Stockouts 35% With ML Demand Forecasting | Retail Case Study",
-  "description": "A 200-store specialty retailer lost $12M to stockouts while overstock piled up. An explainable ML model forecasting SKU-store demand 8 weeks out cut stockouts 35% and saved $8.5M.",
+  "description": "A 200-store specialty retailer bled sales to stockouts while overstock piled up. An explainable ML model forecasting SKU-store demand 8 weeks out cut stockouts 35% and overstock 28%.",
   "image": "/images/cases/retail-demand-forecasting-hero.jpg"
  },
  "/cases/telecom-churn-prediction": {
   "title": "Cutting Churn 22% With a Predictive Model | Telecom Case Study",
-  "description": "A telecom's manual rules caught churn too late and wasted retention budget. A nightly ML model scoring 2.8M subscribers cut churn 22% and saved $12M in annual recurring revenue.",
+  "description": "A telecom's manual rules caught churn too late and wasted retention budget. A nightly ML model scoring 2.8M subscribers cut churn 22% and lifted customer lifetime value 18%.",
   "image": "/images/cases/telecom-churn-prediction-hero.jpg"
  },
  "/cases/financial-fraud-detection-ml": {
@@ -461,7 +461,7 @@
  },
  "/cases/financial-data-quality": {
   "title": "Cutting Data-Quality Issues 78% for Regulatory Reporting | Banking Case Study",
-  "description": "A $45B bank spent 3 weeks a quarter reconciling regulatory data and had resubmitted 4 reports in a year. Automated validation cut quality issues 78% and reconciliation to 2 days.",
+  "description": "A regional bank spent 3 weeks a quarter reconciling regulatory data and had resubmitted 4 reports in a year. Automated validation cut quality issues 78% and reconciliation to 2 days.",
   "image": "/images/industries/fin-monitors.jpg"
  },
  "/cases/retail-gdpr-compliance": {
@@ -471,12 +471,12 @@
  },
  "/cases/media-company-dam": {
   "title": "Centralizing 2M Media Assets With a DAM Platform | Media Case Study",
-  "description": "A broadcaster's 2M assets were scattered with no metadata, and producers spent 45 minutes finding clips. A DAM platform cut search to 30 seconds and saved $3.2M a year.",
+  "description": "A broadcaster's 2M assets were scattered with no metadata, and producers spent 45 minutes finding clips. A DAM platform cut search to 30 seconds and ended on-air rights violations.",
   "image": "/images/industries/tech-datacenter.jpg"
  },
  "/cases/retail-product-content": {
   "title": "Launching Products 60% Faster With a Content Platform | Retail Case Study",
-  "description": "A home-goods retailer's product launches took 6 weeks across spreadsheets, drives, and email, with 15% missing launch day. A PIM platform cut launch time to 2.5 weeks and added $2.8M.",
+  "description": "A home-goods retailer's product launches took 6 weeks across spreadsheets, drives, and email, with 15% missing launch day. A PIM platform cut launch time to 2.5 weeks and made room for two extra collections a year.",
   "image": "/images/capabilities/cap-retail-apparel.jpg"
  },
  "/cases/healthcare-content-compliance": {
@@ -491,17 +491,17 @@
  },
  "/cases/ecommerce-data-warehouse": {
   "title": "Migrating a Retailer to Snowflake | E-Commerce Data Engineering Case Study",
-  "description": "A multi-brand retailer's legacy Oracle warehouse cost $180K a year and ran 4–6 hour ETL. A Snowflake + dbt migration cut query times 85% and infrastructure cost 40% with zero downtime.",
+  "description": "A multi-brand retailer's legacy Oracle warehouse was costly to run and took 4–6 hours for ETL. A Snowflake + dbt migration cut query times 85% and infrastructure cost 40% with zero downtime.",
   "image": "/images/cases/ecommerce-data-warehouse-hero.jpg"
  },
  "/cases/manufacturing-iot-pipeline": {
   "title": "Building an IoT Sensor Platform for Predictive Maintenance | Manufacturing Case Study",
-  "description": "A manufacturer's 450 machines logged sensor data nobody analyzed, with downtime costing $85K/hour. An IoT platform ingesting 2M events/hour cut downtime 30% and saved $1.8M a year.",
+  "description": "A manufacturer's 450 machines logged sensor data nobody analyzed, while every hour of downtime halted production. An IoT platform ingesting 2M events/hour cut unplanned downtime 30%.",
   "image": "/images/industries/mfg-robotics.jpg"
  },
  "/case-studies/energy-grid-security": {
   "title": "Preventing Blackouts and Wildfires with Predictive Grid Maintenance | Energy Case Study",
-  "description": "A major utility faced wildfire liability from aging infrastructure. AI-driven monitoring now catches 95% of ignition sources before they spark — saving $12M a year.",
+  "description": "A major utility faced wildfire liability from aging infrastructure. AI-driven monitoring now catches 95% of ignition sources before they spark — at 30% lower inspection cost.",
   "image": "/images/industries/energy-wind.jpg"
  },
  "/case-studies/airline-maintenance-analytics": {
@@ -541,7 +541,7 @@
  },
  "/case-studies/logistics-cold-chain": {
   "title": "Ensuring Vaccine Safety with an IoT Cold Chain | Transportation & Logistics Case Study",
-  "description": "A pharma logistics firm only learned a shipment had spoiled after it arrived. Real-time IoT monitoring and predictive alerts cut spoilage 90% and saved $5M a year.",
+  "description": "A pharma logistics firm only learned a shipment had spoiled after it arrived. Real-time IoT monitoring and predictive alerts cut spoilage 90% and lowered risk premiums.",
   "image": "/images/industries/retail-warehouse.jpg"
  },
  "/case-studies/financial-compliance-automation": {
@@ -561,17 +561,17 @@
  },
  "/case-studies/insurance-claims-automation": {
   "title": "Cutting the Claims Cycle 73% With Intelligent Automation | Insurance Case Study",
-  "description": "A $340M P&C insurer's claims took 14 days across manual channels with inconsistent decisions. Intelligent automation cut cycle time to 3.8 days, auto-adjudicated 85%, and saved $1.8M.",
+  "description": "A regional P&C insurer's claims took 14 days across manual channels with inconsistent decisions. Intelligent automation cut cycle time to 3.8 days, auto-adjudicated 85%, and paid for itself inside the first year.",
   "image": "/case-insurance-office.f039a4a1.jpg"
  },
  "/case-studies/technology-devops-transformation": {
   "title": "Cutting Deployment Time 82% With a DevOps Transformation | Technology Case Study",
-  "description": "A $28M ARR SaaS company deployed twice a month through a 2-person bottleneck, losing 30% of engineering to rollbacks. A DevOps transformation cut deployment time 82% at 99.95% uptime.",
+  "description": "A 400-customer enterprise SaaS company deployed twice a month through a 2-person bottleneck, losing 30% of engineering to rollbacks. A DevOps transformation cut deployment time 82% at 99.95% uptime.",
   "image": "/images/industries/tech-datacenter.jpg"
  },
  "/cases/healthcare-patient-portal": {
   "title": "Launching a Patient Portal That Cut Admin Calls 65% | Healthcare Case Study",
-  "description": "A 450-bed hospital system fielded 8,500 calls a week with 12-minute holds. A mobile-first patient portal cut admin calls 65%, hit 72% adoption, and saved $420K a year.",
+  "description": "A 450-bed hospital system fielded 8,500 calls a week with 12-minute holds. A mobile-first patient portal cut admin calls 65%, hit 72% adoption, and cut refill turnaround from 48 hours to 6.",
   "image": "/images/cases/healthcare-patient-portal-hero.jpg"
  },
  "/cases/retail-inventory-app": {
@@ -591,7 +591,7 @@
  },
  "/cases/logistics-tracking-app": {
   "title": "Building a Real-Time Tracking App for 500 Drivers | Logistics Case Study",
-  "description": "A 3PL running 500 vehicles relied on paper manifests and phone check-ins, stuck at 82% on-time. An OutSystems mobile app lifted on-time delivery to 96% and saved $850K in annual fuel.",
+  "description": "A 3PL running 500 vehicles relied on paper manifests and phone check-ins, stuck at 82% on-time. An OutSystems mobile app lifted on-time delivery to 96% and cut daily miles driven 18%.",
   "image": "/images/industries/retail-warehouse.jpg"
  },
  "/cases/municipal-permit-system": {
@@ -840,63 +840,63 @@
   "image": "/images/insight-working-capital-optimization.jpg"
  },
  "/capabilities/strategy-corporate-finance/case-studies/pe-growth-healthcare": {
-  "title": "Tripling Revenue From $40M to $120M Post-Acquisition | Healthcare Case Study",
-  "description": "A PE-backed home-health company had clinical depth but 15-day closes, no CRM, and uncollected revenue. A post-acquisition growth program tripled revenue to $120M in 18 months.",
+  "title": "Tripling Revenue in 18 Months Post-Acquisition | Healthcare Case Study",
+  "description": "A PE-backed home-health company had clinical depth but 15-day closes, no CRM, and uncollected revenue. A post-acquisition growth program tripled revenue in 18 months.",
   "image": "/case-healthcare-team.5797392b.jpg"
  },
  "/capabilities/strategy-corporate-finance/case-studies/manufacturing-acquisition": {
   "title": "A Strategic Acquisition That Doubled Market Presence | Manufacturing Case Study",
-  "description": "A $45M aerospace manufacturer was losing share to larger rivals but had no M&A experience. A screened, well-integrated acquisition doubled market share at 95% customer retention.",
+  "description": "A mid-size aerospace manufacturer was losing share to larger rivals but had no M&A experience. A screened, well-integrated acquisition doubled market share at 95% customer retention.",
   "image": "/images/industries/mfg-robot-arm-team.jpg"
  },
  "/capabilities/strategy-corporate-finance/case-studies/distribution-fpa": {
   "title": "FP&A Transformation That Cut Monthly Close to 5 Days | Distribution Case Study",
-  "description": "A $75M distributor took 20+ days to close the books, deciding on intuition while finance drowned in data entry. A cloud ERP and analytics cut close to 5 days and tripled finance productivity.",
+  "description": "A 200-employee distributor took 20+ days to close the books, deciding on intuition while finance drowned in data entry. A cloud ERP and analytics cut close to 5 days and tripled finance productivity.",
   "image": "/images/industries/fin-monitors.jpg"
  },
  "/capabilities/strategy-corporate-finance/case-studies/saas-series-b": {
-  "title": "A Series B Raise of $35M at an 8x Revenue Multiple | SaaS Case Study",
-  "description": "A $15M ARR B2B SaaS company had product-market fit but no institutional fundraising experience. A structured process closed $35M at an 8x multiple with three competing term sheets.",
+  "title": "A Series B Raise at an 8x Revenue Multiple | SaaS Case Study",
+  "description": "A B2B SaaS company had product-market fit but no institutional fundraising experience. A structured process closed its Series B at an 8x multiple with three competing term sheets.",
   "image": "/images/capabilities/cap-celebrate.jpg"
  },
  "/capabilities/strategy-corporate-finance/case-studies/retail-turnaround": {
   "title": "A Turnaround That Restored Profitability in 6 Months | Retail Case Study",
-  "description": "A 12-store specialty retailer lost 25% of revenue to a new competitor as EBITDA turned negative and the bank threatened its loan. A turnaround restored profitability and cut $8M in costs.",
+  "description": "A 12-store specialty retailer lost 25% of revenue to a new competitor as EBITDA turned negative and the bank threatened its loan. A turnaround restored profitability and cut operating costs 20%.",
   "image": "/images/industries/retail-shelves.jpg"
  },
  "/capabilities/strategy-corporate-finance/case-studies/services-exit": {
   "title": "Exit Preparation That Won a 40% Valuation Premium | Professional Services Case Study",
-  "description": "A $20M environmental consulting firm had 60% client concentration and a founder tied to every relationship. An 18-month exit-prep program won a 40% valuation premium at a 5x EBITDA multiple.",
+  "description": "A 140-employee environmental consulting firm had 60% client concentration and a founder tied to every relationship. An 18-month exit-prep program won a 40% valuation premium at a 5x EBITDA multiple.",
   "image": "/images/industries/meeting-topview.jpg"
  },
  "/capabilities/operations/case-studies/consumer-goods-supply-chain": {
   "title": "Supply Chain Optimization That Cut Costs 25% | Consumer Goods Case Study",
-  "description": "An $85M consumer-goods maker had 150 suppliers, freight 18% above benchmark, and forecasts on spreadsheets. Demand-driven planning cut supply-chain costs 25% and saved $3.2M.",
+  "description": "A consumer-goods maker had 150 suppliers, freight 18% above benchmark, and forecasts on spreadsheets. Demand-driven planning cut supply-chain costs 25% and lifted on-time delivery to 98%.",
   "image": "/images/industries/retail-warehouse.jpg"
  },
  "/capabilities/operations/case-studies/ecommerce-fulfillment": {
   "title": "Automating Order Fulfillment to Triple Capacity | E-Commerce Case Study",
-  "description": "A $65M home-goods e-tailer's manual fulfillment couldn't scale as volume doubled, with workers walking 8 miles a shift. Phased automation tripled capacity and cut labor cost per order 60%.",
+  "description": "A home-goods e-tailer's manual fulfillment couldn't scale as volume doubled, with workers walking 8 miles a shift. Phased automation tripled capacity and cut labor cost per order 60%.",
   "image": "/images/industries/retail-warehouse.jpg"
  },
  "/capabilities/operations/case-studies/aerospace-quality": {
-  "title": "Achieving ISO 9001 and AS9100 to Save $15M in Contracts | Aerospace Case Study",
-  "description": "A customer audit put $15M in contracts at risk with 90 days to show progress toward AS9100. A rebuilt quality system earned ISO 9001 and AS9100 certification and cut defects 45%.",
+  "title": "Achieving ISO 9001 and AS9100 to Keep At-Risk Contracts | Aerospace Case Study",
+  "description": "A customer audit put the company's largest contracts at risk with 90 days to show progress toward AS9100. A rebuilt quality system earned ISO 9001 and AS9100 certification and cut defects 45%.",
   "image": "/images/industries/aero-rocket.jpg"
  },
  "/capabilities/operations/case-studies/distribution-warehouse": {
   "title": "Doubling Warehouse Throughput Without Expanding | Distribution Case Study",
-  "description": "A $95M distributor was planning a $12M warehouse expansion, but the facility wasn't at physical capacity — it was at process capacity. Optimization doubled throughput and avoided the expansion.",
+  "description": "A regional distributor was planning a major warehouse expansion, but the facility wasn't at physical capacity — it was at process capacity. Optimization doubled throughput and avoided the expansion.",
   "image": "/images/capabilities/cap-warehouse-robot.jpg"
  },
  "/capabilities/operations/case-studies/food-production-planning": {
   "title": "Production Planning That Cut Inventory 35% | Food Manufacturing Case Study",
-  "description": "A $72M specialty-food maker was caught between high inventory and regular stockouts, with 4-hour changeovers forcing big batches. New planning cut inventory 35% and freed $2.8M.",
+  "description": "A specialty-food maker was caught between high inventory and regular stockouts, with 4-hour changeovers forcing big batches. New planning cut inventory 35%, freeing a third of tied-up working capital.",
   "image": "/images/capabilities/cap-agriculture.jpg"
  },
  "/capabilities/operations/case-studies/healthcare-workforce": {
   "title": "Workforce Optimization That Improved Productivity 28% | Healthcare Case Study",
-  "description": "A $48M home-health company spent 72% of revenue on labor with clinicians driving 35% of the day and 35% turnover. Scheduling optimization lifted productivity 28% and saved $1.4M.",
+  "description": "A home-health company spent 72% of revenue on labor with clinicians driving 35% of the day and 35% turnover. Scheduling optimization lifted productivity 28% and cut overtime 15%.",
   "image": "/case-medical-collaboration.9602cc8c.jpg"
  },
  "/capabilities/operations/insights/iot-resilient-supply-chain": {
@@ -930,8 +930,8 @@
   "image": "/images/performance-intelligence-abstract.jpg"
  },
  "/case-studies/fpa-scenario-planning": {
-  "title": "Scenario Planning That Avoided $2.4M in Costs | SaaS FP&A Case Study",
-  "description": "A $12M ARR SaaS company ran static Excel budgets that went stale in weeks and couldn't model churn or hiring scenarios. Driver-based FP&A cut forecast error 35% and avoided $2.4M in costs.",
+  "title": "Scenario Planning That Headed Off a Costly Hiring Misstep | SaaS FP&A Case Study",
+  "description": "A growth-stage SaaS company ran static Excel budgets that went stale in weeks and couldn't model churn or hiring scenarios. Driver-based FP&A cut forecast error 35% and headed off a costly hiring misstep.",
   "image": "/images/capabilities/cap-presenting-graphs.jpg"
  },
  "/insights/why-nps-is-a-vanity-metric": {
@@ -1096,7 +1096,7 @@
  },
  "/cases/bank-cross-sell": {
   "title": "Turning Single Accounts into Real Relationships | Financial Services Case Study",
-  "description": "A regional bank knew its customers well on paper but couldn't act on it. Bringing scattered records into one view added $24M in new revenue and deepened relationships.",
+  "description": "A regional bank knew its customers well on paper but couldn't act on it. Bringing scattered records into one view lifted products per customer 40% and deepened relationships.",
   "image": "/images/cases/bank-cross-sell-hero.jpg"
  },
  "/cases/wealth-onboarding": {
@@ -1111,27 +1111,27 @@
  },
  "/cases/healthcare-readmission": {
   "title": "Cutting Avoidable Readmissions by 42% | Healthcare Case Study",
-  "description": "A community hospital network was paying millions in penalties for patients who kept coming back. Predicting who was truly at risk — and acting before discharge — cut avoidable readmissions by 42%.",
+  "description": "A community hospital network was paying heavy federal penalties for patients who kept coming back. Predicting who was truly at risk — and acting before discharge — cut avoidable readmissions by 42%.",
   "image": "/images/cases/healthcare-readmission-hero.jpg"
  },
  "/cases/healthcare-revenue-cycle": {
-  "title": "Recovering $32M in Lost Revenue | Healthcare Case Study",
-  "description": "A regional health system was earning far less than it should on the care it delivered — bills rejected, payments delayed, work done twice. Fixing how it billed and collected recovered $32M a year.",
+  "title": "Collecting Revenue Already Earned | Healthcare Case Study",
+  "description": "A regional health system was earning far less than it should on the care it delivered — bills rejected, payments delayed, work done twice. Fixing how it billed and collected cut rejected claims 45% and sped payment by 12 days.",
   "image": "/case-healthcare-team.5797392b.jpg"
  },
  "/cases/automotive-smart-factory": {
   "title": "Turning an Aging Plant into a Smart Factory | Manufacturing Case Study",
-  "description": "A vehicle manufacturer had watched output from its flagship plant plateau for years. Connecting the line and acting on its equipment's own signals lifted productivity by 40% and avoided $18M a year.",
+  "description": "A vehicle manufacturer had watched output from its flagship plant plateau for years. Connecting the line and acting on its equipment's own signals lifted productivity by 40% and cut unplanned downtime 65%.",
   "image": "/images/industries/mfg-robotics.jpg"
  },
  "/cases/semiconductor-quality-prediction": {
   "title": "Catching Chip Defects Before They Happen | Manufacturing Case Study",
-  "description": "A specialty chipmaker was scrapping millions in silicon because flaws showed up only at the very end of a process hundreds of steps long. Spotting the warning signs early cut scrap by $25M and lifted yield.",
+  "description": "A specialty chipmaker was scrapping wafer after wafer because flaws showed up only at the very end of a process hundreds of steps long. Spotting the warning signs early lifted yield 15% and cut scrap sharply.",
   "image": "/images/cases/semiconductor-quality-prediction-hero.jpg"
  },
  "/cases/industrial-connected-products": {
   "title": "Turning an Equipment Maker into a Services Business | Manufacturing Case Study",
-  "description": "An industrial equipment manufacturer sold machines and lost touch the moment they left the factory. Staying connected to them in the field built a $30M recurring-services business.",
+  "description": "An industrial equipment manufacturer sold machines and lost touch the moment they left the factory. Staying connected to them in the field built a fast-growing recurring-services business at 40% margins.",
   "image": "/images/capabilities/cap-battery-factory.jpg"
  },
  "/cases/fashion-retail-digital-transformation": {
@@ -1141,12 +1141,12 @@
  },
  "/cases/grocery-demand-forecasting": {
   "title": "Cutting a Grocer's Fresh-Food Waste by a Third | Retail Case Study",
-  "description": "A regional grocery chain was throwing away fresh food while shelves sat empty elsewhere. Predicting demand store by store, day by day, cut waste by 35% and saved $28M a year.",
+  "description": "A regional grocery chain was throwing away fresh food while shelves sat empty elsewhere. Predicting demand store by store, day by day, cut waste by 35% and lifted on-shelf availability to 96%.",
   "image": "/images/cases/grocery-demand-forecasting-hero.jpg"
  },
  "/cases/retail-loyalty-transformation": {
   "title": "Turning a Stale Loyalty Program Into Growth | Retail Case Study",
-  "description": "A retailer's loyalty program had become an expensive discount habit. Rebuilding it around what each member actually valued lifted member spend 45% and added $30M in revenue.",
+  "description": "A retailer's loyalty program had become an expensive discount habit. Rebuilding it around what each member actually valued lifted member spend 45% and more than doubled active membership.",
   "image": "/images/capabilities/cap-retail-data.jpg"
  },
  "/cases/media-streaming-launch": {
@@ -1161,7 +1161,7 @@
  },
  "/cases/telecom-customer-experience": {
   "title": "Cutting a Regional Carrier's Churn by 40% | Technology, Media & Telecom Case Study",
-  "description": "A regional mobile carrier was losing customers faster than its rivals and only learned they were unhappy once they complained. Getting ahead of problems cut churn by 40% and protected millions in revenue.",
+  "description": "A regional mobile carrier was losing customers faster than its rivals and only learned they were unhappy once they complained. Getting ahead of problems cut churn by 40% and complaints by 60%.",
   "image": "/images/cases/telecom-customer-experience-hero.jpg"
  },
  "/cases/utility-grid-modernization": {
@@ -1171,17 +1171,17 @@
  },
  "/cases/renewable-energy-forecasting": {
   "title": "Sharper Generation Forecasts for a Renewables Developer | Energy & Utilities Case Study",
-  "description": "A renewables developer paid millions in penalties whenever its wind and solar output missed the promises it made to the grid. Better forecasting cut those errors by 25%.",
+  "description": "A renewables developer paid heavy penalties whenever its wind and solar output missed the promises it made to the grid. Better forecasting cut those errors by 25%.",
   "image": "/images/cases/renewable-energy-forecasting-hero.jpg"
  },
  "/cases/oil-gas-digital-transformation": {
   "title": "Digital Transformation for Oil & Gas | Energy Case Study",
-  "description": "How an oil and gas company achieved $150M in operational savings through digital oilfield technology and AI-powered production optimization.",
+  "description": "How an oil and gas company cut lifting costs 25% and lifted production 8% through digital oilfield technology and AI-powered production optimization.",
   "image": "/images/cases/oil-gas-digital-transformation-hero.jpg"
  },
  "/cases/power-generation-predictive-maintenance": {
   "title": "Halving Unplanned Outages at a Power Generator | Energy & Utilities Case Study",
-  "description": "A power generator kept losing turbines without warning, at roughly $500,000 a trip. Reading the signals its machines were already sending cut unplanned outages by 60%.",
+  "description": "A power generator kept losing turbines without warning, and every trip meant lost revenue plus an emergency repair. Reading the signals its machines were already sending cut unplanned outages by 60%.",
   "image": "/images/industries/energy-powerplant.jpg"
  },
  "/cases/food-beverage-demand-forecasting": {
@@ -1201,7 +1201,7 @@
  },
  "/cases/university-student-success": {
   "title": "Helping More Students Reach Graduation | Education Case Study",
-  "description": "A regional university was losing capable students before they finished. Seeing who needed help early — and acting in time — lifted its graduation rate and retained millions in tuition.",
+  "description": "A regional university was losing capable students before they finished. Seeing who needed help early — and acting in time — lifted its graduation rate from 52% to 61%.",
   "image": "/images/cases/university-student-success-hero.jpg"
  },
  "/cases/k12-adaptive-learning": {
@@ -1221,7 +1221,7 @@
  },
  "/cases/city-digital-services": {
   "title": "Making Everyday Services Simple for a County's Residents | Public Sector Case Study",
-  "description": "A county government made residents navigate a different website and process for every service. Bringing those services together behind one front door lifted satisfaction by 40% and saved millions.",
+  "description": "A county government made residents navigate a different website and process for every service. Bringing those services together behind one front door lifted satisfaction by 40% and cut routine processing from weeks to days.",
   "image": "/images/industries/city-digital.jpg"
  },
  "/cases/government-benefits-modernization": {
@@ -1246,7 +1246,7 @@
  },
  "/cases/aerospace-digital-engineering": {
   "title": "Bringing Aircraft Programs to Market Faster | Aerospace & Defense Case Study",
-  "description": "An aerospace and defense supplier was losing years and tens of millions to late-stage design changes. Connecting its engineering work end to end cut development time by 40%.",
+  "description": "An aerospace and defense supplier was losing years of schedule to late-stage design changes. Connecting its engineering work end to end cut development time by 40%.",
   "image": "/images/industries/aero-rocket.jpg"
  },
  "/cases/retail-pdp-recommender": {
@@ -1400,8 +1400,8 @@
   "image": "/images/cases/wealth-digital-advisory-mvp-hero.jpg"
  },
  "/cases/consumer-dtc-launch": {
-  "title": "DTC Launch Clears $18M in Year One Without Cannibalizing Wholesale | Consumer Case Study",
-  "description": "A heritage consumer brand needed to launch DTC across two new categories without hurting the wholesale channel that drove 80% of revenue. A channel-respecting model and headless stack cleared $18M year-one DTC — and wholesale grew.",
+  "title": "DTC Launch Hits Twice Its Year-One Plan Without Cannibalizing Wholesale | Consumer Case Study",
+  "description": "A heritage consumer brand needed to launch DTC across two new categories without hurting the wholesale channel that drove 80% of revenue. A channel-respecting model and headless stack took year-one DTC to twice plan — and wholesale grew.",
   "image": "/images/cases/consumer-dtc-launch-hero.jpg"
  },
  "/cases/b2b-ecommerce-launch": {
@@ -1525,13 +1525,13 @@
   "image": "/images/industries/mfg-robot-arm.jpg"
  },
  "/cases/healthcare-data-quality": {
-  "title": "Health System Recovers $9M a Year From Data-Quality Fixes | Data Solutions Case Study",
-  "description": "A health system was silently losing revenue to poor data quality in claims and billing. End-to-end lineage and automated quality monitoring recovered $9M annually.",
+  "title": "Health System Recovers 1.3% of Net Revenue a Year From Data-Quality Fixes | Data Solutions Case Study",
+  "description": "A health system was silently losing revenue to poor data quality in claims and billing. End-to-end lineage and automated quality monitoring recovered 1.3% of net revenue annually.",
   "image": "/images/cases/healthcare-data-quality-hero.jpg"
  },
  "/cases/health-system-data-strategy": {
-  "title": "Health System Resets Data Strategy, Unlocks $42M in Decision Value | Data Strategy Case Study",
-  "description": "A health system treated data as compliance overhead. A 24-month roadmap, governance council, and federated operating model turned data into operational advantage worth $42M in decision value.",
+  "title": "Health System Resets Data Strategy, Puts 12 Decision Use Cases Into Production | Data Strategy Case Study",
+  "description": "A health system treated data as compliance overhead. A 24-month roadmap, governance council, and federated operating model turned data into operational advantage — 12 decision use cases in production.",
   "image": "/case-healthcare-team.5797392b.jpg"
  },
  "/cases/industrial-data-monetization": {
@@ -1670,8 +1670,8 @@
   "image": "/images/cases/healthcare-eligibility-rpa-hero.jpg"
  },
  "/cases/bank-operating-model-transformation": {
-  "title": "Global Bank Reorganizes Around Customer Journeys, Captures $400M | Enterprise Transformation Case Study",
-  "description": "A global bank's siloed functional structure blocked value. A multi-year operating-model transformation reshaped product, technology, and operations into journey-aligned teams and captured $400M in annual value.",
+  "title": "Global Bank Reorganizes Around Customer Journeys, Cuts Cost-to-Income 4 Points | Enterprise Transformation Case Study",
+  "description": "A global bank's siloed functional structure blocked value. A multi-year operating-model transformation reshaped product, technology, and operations into journey-aligned teams and took four points off the bank's cost-to-income ratio.",
   "image": "/images/industries/fin-monitors.jpg"
  },
  "/cases/industrial-ma-integration": {
@@ -1721,12 +1721,12 @@
  },
  "/cases/retail-personalization": {
   "title": "Driving a 34% Revenue Lift With AI Personalization | Retail Case Study",
-  "description": "A 450-store, $2.8B retailer's online conversion trailed benchmarks by 35%. A real-time recommendation engine lifted revenue 34%, conversion 42%, and average order value 27%.",
+  "description": "A 450-store national specialty retailer's online conversion trailed benchmarks by 35%. A real-time recommendation engine lifted revenue 34%, conversion 42%, and average order value 27%.",
   "image": "/images/capabilities/cap-retail-apparel.jpg"
  },
  "/cases/financial-churn-prediction": {
   "title": "Cutting Customer Churn 28% with Predictive Analytics | Financial Services Case Study",
-  "description": "A $12B financial services firm was losing customers to reactive retention. ML models flagged defection 90 days early, cut churn 28%, and saved $47M a year.",
+  "description": "A regional financial services firm was losing customers to reactive retention. ML models flagged defection 90 days early, cut churn 28%, and nearly tripled retention save rates.",
   "image": "/images/industries/fin-monitors.jpg"
  },
  "/cases/health-onboarding-journey-map": {
@@ -1791,7 +1791,7 @@
  },
  "/capabilities/technology/case-studies/insurance-modernization": {
   "title": "Legacy System Modernization for Insurance Carrier | Technology Case Study",
-  "description": "A 175-employee specialty insurer's aging core systems were slow and costly. A modernization improved processing speed 70% and delivered $2.1M in annual savings.",
+  "description": "A 175-employee specialty insurer's aging core systems were slow and costly. A modernization improved processing speed 70% and cut annual maintenance cost 40%.",
   "image": "/images/industries/fin-handshake-city.jpg"
  },
  "/capabilities/technology/case-studies/retail-data-platform": {
@@ -1856,7 +1856,7 @@
  },
  "/cases/retail-omnichannel": {
   "title": "Increasing Customer Engagement 156% With an Omnichannel Platform | Retail Case Study",
-  "description": "A 380-store, $1.9B specialty retailer ran mobile, email, and loyalty in silos. A unified omnichannel platform lifted engagement 156%, app usage 43%, and lifetime value 31%.",
+  "description": "A 380-store national specialty retailer ran mobile, email, and loyalty in silos. A unified omnichannel platform lifted engagement 156%, app usage 43%, and lifetime value 31%.",
   "image": "/images/cases/retail-omnichannel-hero.jpg"
  },
  "/cases/wealth-management-onboarding": {
@@ -1901,7 +1901,7 @@
  },
  "/cases/fpa-forecasting-transformation": {
   "title": "Turning Month-Long Budgets into Real-Time Answers | Retail Finance Case Study",
-  "description": "A growing retailer ran its planning on a maze of spreadsheets — a month-long close and a budget out of date the day it was set. Building a real planning capability cut the close to days and freed millions in working capital.",
+  "description": "A growing retailer ran its planning on a maze of spreadsheets — a month-long close and a budget out of date the day it was set. Building a real planning capability cut the close to days and freed working capital across the chain.",
   "image": "/images/industries/advisor-charts.jpg"
  },
  "/cases/cloud-migration-health-system": {
@@ -1946,17 +1946,17 @@
  },
  "/cases/custom-model-clinical-coding": {
   "title": "Cutting Claim Denials 40% with a Model Trained on Its Own Records | Healthcare Case Study",
-  "description": "A regional health system was losing millions to denied claims and slow, inconsistent coding. A model trained on its own clinical records cut denials 40% and recovered revenue in the millions — with coders still in control.",
+  "description": "A regional health system was losing revenue to denied claims and slow, inconsistent coding. A model trained on its own clinical records cut denials 40% and took nine days out of A/R — with coders still in control.",
   "image": "/images/cases/custom-model-clinical-coding-hero.jpg"
  },
  "/cases/digital-twin-predictive-operations": {
   "title": "Seeing Breakdowns Before They Happen | Manufacturing Case Study",
-  "description": "A mid-sized manufacturer kept losing production to machines that failed without warning. A live digital replica of its line cut unplanned downtime by 45% and saved millions.",
+  "description": "A mid-sized manufacturer kept losing production to machines that failed without warning. A live digital replica of its line cut unplanned downtime by 45% and lifted throughput 12%.",
   "image": "/images/industries/mfg-robot-arm.jpg"
  },
  "/cases/logistics-optimization": {
   "title": "Halving Surprise Aircraft Groundings for an Airline | Aerospace & Defense Case Study",
-  "description": "Every unplanned grounding cost a regional carrier six figures and a plane full of disrupted passengers. Reading the signals its aircraft already sent cut surprise groundings in half.",
+  "description": "Every unplanned grounding left a regional carrier with a plane full of disrupted passengers and a day of scrambled schedules. Reading the signals its aircraft already sent cut surprise groundings in half.",
   "image": "/images/industries/ops-monitors-dark.jpg"
  },
  "/cases/hotel-revenue-transformation": {
@@ -1966,7 +1966,7 @@
  },
  "/cases/pe-industrial-transformation": {
   "title": "Turning Around an Industrial Manufacturer in the Hold | Private Equity Case Study",
-  "description": "A private equity fund owned a profitable industrial manufacturer that had quietly stopped improving. A disciplined value-creation program lifted margins by seven points and added $18M in EBITDA.",
+  "description": "A private equity fund owned a profitable industrial manufacturer that had quietly stopped improving. A disciplined value-creation program lifted EBITDA margins by seven points.",
   "image": "/images/cases/pe-industrial-transformation-hero.jpg"
  },
  "/cases/pe-healthcare-diligence": {
@@ -1981,7 +1981,7 @@
  },
  "/cases/insurance-claims-automation": {
   "title": "Settling Straightforward Claims in Hours, Not Weeks | Insurance Case Study",
-  "description": "A property and casualty insurer took two weeks to settle even simple claims while rivals paid in hours. Automating the routine claims cut cycle time by 60% and saved $14M a year.",
+  "description": "A property and casualty insurer took two weeks to settle even simple claims while rivals paid in hours. Automating the routine claims cut cycle time by 60% and cut handling costs by 30%.",
   "image": "/images/cases/insurance-claims-automation-hero.jpg"
  },
  "/cases/insurance-ai-underwriting": {
@@ -2001,7 +2001,7 @@
  },
  "/cases/automotive-ev-platform": {
   "title": "Turning an Aging Plant into a Smart Factory | Manufacturing Case Study",
-  "description": "A vehicle manufacturer had watched output from its flagship plant plateau for years. Connecting the line and acting on its equipment's own signals lifted productivity by 40% and avoided $18M a year.",
+  "description": "A vehicle manufacturer had watched output from its flagship plant plateau for years. Connecting the line and acting on its equipment's own signals lifted productivity by 40% and cut unplanned downtime 65%.",
   "image": "/images/industries/mfg-robotics.jpg"
  },
  "/cases/freight-optimization": {
@@ -2031,7 +2031,7 @@
  },
  "/cases/automotive-connected-vehicle": {
   "title": "Turning Connected-Vehicle Data into Value | Automotive Case Study",
-  "description": "A vehicle manufacturer was collecting data from its connected vehicles but doing little with it. Reading those signals cut warranty claims by 30% and opened a new service revenue line worth $9M a year.",
+  "description": "A vehicle manufacturer was collecting data from its connected vehicles but doing little with it. Reading those signals cut warranty claims by 30% and opened an entirely new recurring service revenue line.",
   "image": "/images/cases/automotive-connected-vehicle-hero.jpg"
  },
  "/cases/automotive-supply-resilience": {
@@ -2051,7 +2051,7 @@
  },
  "/cases/urban-capital-projects": {
   "title": "Delivering Capital Projects On Time and On Budget | Urban Development Case Study",
-  "description": "A developer kept learning about delays and cost overruns only after they had happened. Getting ahead of change orders and schedule slips lifted on-time delivery to 95% and avoided $11M in overruns.",
+  "description": "A developer kept learning about delays and cost overruns only after they had happened. Getting ahead of change orders and schedule slips lifted on-time delivery to 95% and kept the program on budget.",
   "image": "/images/industries/city-digital.jpg"
  },
  "/resources/ai-readiness-guide": {

@@ -10,7 +10,7 @@ export default function StrategyAdvisoryHub() {
       heroImage="/images/capabilities/cap-aerial-grid.jpg"
       experienceStats={[
         { number: "50+", label: "Technology strategy and advisory engagements delivered for CIO and CTO leadership" },
-        { number: "~$15M", label: "Operational savings delivered through strategy and cost optimization in the last three years" },
+        { number: "Double-digit", label: "Run-cost reductions delivered through strategy and cost optimization in the last three years" },
         { number: "20+", label: "Technology due diligence assessments delivered for PE and corporate development teams" },
         { number: "Decision-led", label: "Strategy delivered as a body of executable decisions, not a deck on the shelf" },
       ]}

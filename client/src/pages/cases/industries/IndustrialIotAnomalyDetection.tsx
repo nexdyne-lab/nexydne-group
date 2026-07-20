@@ -23,7 +23,7 @@ export default function IndustrialIotAnomalyDetection() {
       clientContextBody="The plant was already instrumented; telemetry poured off the equipment continuously. But that data flowed into dashboards nobody had time to watch, not into the maintenance-planning workflow where it could change what got scheduled. The team did not need another screen of charts; it needed the machines' early warning signs to arrive as actionable work in the planner's queue, with enough context that a planner could trust it — and with a way to feed back what turned out to be a false alarm so the system got smarter."
       clientProfile={{
         industry: "Heavy-Industry Manufacturer",
-        companySize: "~$540M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "12 Months",
         additionalInfo: "Multiple Production Lines",
         additionalLabel: "Operating Footprint"

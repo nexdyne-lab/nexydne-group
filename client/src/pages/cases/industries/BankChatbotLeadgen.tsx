@@ -23,7 +23,7 @@ export default function BankChatbotLeadgen() {
       clientContextBody="The gap was speed and routing. A prospect ready to talk had to fill out a form and wait for a callback, by which point the moment of intent had passed. And even when someone did reach out, they were not always routed to the right specialist quickly. The bank was paying to attract this traffic and capturing almost none of its value. It needed an on-site qualification chatbot that engaged visitors the instant they showed intent, qualified them in seconds, and routed them to the right person — turning anonymous traffic into booked demos."
       clientProfile={{
         industry: "Regional Bank",
-        companySize: "~$430M Annual Revenue",
+        companySize: "~55 Branches",
         projectDuration: "4 Months",
         additionalInfo: "Lead-Gen Chatbot",
         additionalLabel: "Commercial Growth"

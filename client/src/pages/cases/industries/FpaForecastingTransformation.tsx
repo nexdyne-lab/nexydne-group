@@ -5,7 +5,7 @@ export default function FpaForecastingTransformation() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Turning Month-Long Budgets into Real-Time Answers | Retail Finance Case Study"
-      seoDescription="A growing retailer ran its planning on a maze of spreadsheets — a month-long close and a budget out of date the day it was set. Building a real planning capability cut the close to days and freed millions in working capital."
+      seoDescription="A growing retailer ran its planning on a maze of spreadsheets — a month-long close and a budget out of date the day it was set. Building a real planning capability cut the close to days and freed working capital across the chain."
       canonical="/cases/fpa-forecasting-transformation"
       industry="Retail"
       industryLink="/industries/retail"
@@ -16,14 +16,14 @@ export default function FpaForecastingTransformation() {
         { value: "Days", label: "Close, Down From Weeks" },
         { value: "+12pts", label: "Forecast Accuracy" },
         { value: "Hours", label: "Scenario Answers" },
-        { value: "$14M", label: "Working Capital Freed" }
+        { value: "12%", label: "Working Capital Freed" }
       ]}
       clientContextTitle="When Planning Lives in a Maze of Spreadsheets"
-      clientContextIntro="A regional retailer — a growing chain with a few hundred million in revenue and stores across several states — ran its entire planning process on spreadsheets. Every budget, forecast and board report was stitched together by hand from dozens of files that different people owned and few fully understood. The finance team was capable and hard-working, but it spent its days assembling numbers rather than making sense of them."
+      clientContextIntro="A regional retailer — a growing chain with stores across several states — ran its entire planning process on spreadsheets. Every budget, forecast and board report was stitched together by hand from dozens of files that different people owned and few fully understood. The finance team was capable and hard-working, but it spent its days assembling numbers rather than making sense of them."
       clientContextBody="The costs showed up everywhere. Closing the books took the better part of a month, so by the time leaders saw a result the quarter was already well underway. The annual budget was effectively out of date the day it was approved — locked in for twelve months while the business kept moving. And when a merchant or an executive asked a simple 'what happens if' question — a slower season, a price change, a new store — answering it meant days of rebuilding spreadsheets. Leadership was steering the company by looking in the rearview mirror, and everyone knew it."
       clientProfile={{
         industry: "Regional Retailer",
-        companySize: "~$400M Annual Revenue",
+        companySize: "Multi-State Retail Chain",
         projectDuration: "10 Months",
         additionalInfo: "~120 Stores",
         additionalLabel: "Locations Served"
@@ -97,7 +97,7 @@ export default function FpaForecastingTransformation() {
         },
         {
           icon: DollarSign,
-          value: "$14M",
+          value: "12%",
           label: "Working capital freed",
           detail: "Better-timed inventory and spend"
         }
@@ -114,8 +114,8 @@ export default function FpaForecastingTransformation() {
           image: "/images/cases/capital-raise-series-b-hero.jpg"
         },
         {
-          title: "Adding $18M in EBITDA at an industrial manufacturer",
-          metric: "$18M",
+          title: "Adding seven points of EBITDA margin at an industrial manufacturer",
+          metric: "7 pts",
           label: "added EBITDA",
           link: "/cases/pe-industrial-transformation",
           image: "/images/cases/pe-industrial-transformation-hero.jpg"

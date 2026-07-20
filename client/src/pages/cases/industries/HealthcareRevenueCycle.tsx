@@ -4,26 +4,26 @@ import { DollarSign, Clock, FileCheck, TrendingUp, Zap, Target, Shield } from "l
 export default function HealthcareRevenueCycle() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Recovering $32M in Lost Revenue | Healthcare Case Study"
-      seoDescription="A regional health system was earning far less than it should on the care it delivered — bills rejected, payments delayed, work done twice. Fixing how it billed and collected recovered $32M a year."
+      seoTitle="Collecting Revenue Already Earned | Healthcare Case Study"
+      seoDescription="A regional health system was earning far less than it should on the care it delivered — bills rejected, payments delayed, work done twice. Fixing how it billed and collected cut rejected claims 45% and sped payment by 12 days."
       canonical="/cases/healthcare-revenue-cycle"
       industry="Healthcare"
       industryLink="/industries/healthcare"
-      title="How a Health System Recovered $32M It Was Already Owed"
+      title="How a Health System Started Collecting What It Was Already Owed"
       subtitle="The system was doing the work but not being paid for all of it — claims rejected by insurers, payments dragging out for weeks, staff redoing work that should have been right the first time. Fixing how it billed and collected turned that leak into recovered revenue."
       heroImage="/case-healthcare-team.5797392b.jpg"
       metrics={[
-        { value: "$32M", label: "Revenue Recovered" },
         { value: "45%", label: "Fewer Rejected Claims" },
+        { value: "9 in 10", label: "Would-Be Denials Caught" },
         { value: "12 Days", label: "Faster Payment" },
         { value: "98.5%", label: "Bills Right First Time" }
       ]}
       clientContextTitle="Doing the Work, but Not Getting Paid for It"
       clientContextIntro="A regional health system was delivering excellent care but capturing far less of the revenue it had earned than it should. More than one claim in eight was rejected by insurers on first submission, payments took nearly two months to arrive, and the way care was translated into billing codes was inconsistent — sometimes understating the work and losing revenue, sometimes overstating it and creating compliance risk."
-      clientContextBody="Behind the numbers was a team buried in manual work: reviewing rejections, appealing claims, correcting billing errors and chasing payments that should have arrived weeks earlier. Despite roughly 120 people dedicated to billing and collections, performance kept slipping. Leadership estimated the system was leaving more than $12 million on the table every year — money it had already earned, simply never collected."
+      clientContextBody="Behind the numbers was a team buried in manual work: reviewing rejections, appealing claims, correcting billing errors and chasing payments that should have arrived weeks earlier. Despite roughly 120 people dedicated to billing and collections, performance kept slipping. Leadership estimated the system was leaving several points of revenue on the table every year — money it had already earned, simply never collected."
       clientProfile={{
         industry: "Regional Health System",
-        companySize: "~$700M Annual Revenue",
+        companySize: "Multi-Hospital System",
         projectDuration: "18 Months",
         additionalInfo: "~120 Billing Staff",
         additionalLabel: "Team Size"
@@ -38,7 +38,7 @@ export default function HealthcareRevenueCycle() {
         {
           icon: Clock,
           title: "Payments Arriving Late",
-          description: "Money owed took an average of 52 days to collect against a 38-day benchmark, tying up roughly $30 million the system could have been using."
+          description: "Money owed took an average of 52 days to collect against a 38-day benchmark, tying up cash the system could have been putting to work."
         },
         {
           icon: FileCheck,
@@ -79,9 +79,9 @@ export default function HealthcareRevenueCycle() {
       results={[
         {
           icon: DollarSign,
-          value: "$32M",
-          label: "Revenue recovered each year",
-          detail: "From more accurate billing and fewer rejected claims"
+          value: "9 in 10",
+          label: "Would-be denials caught first",
+          detail: "Risky claims corrected before they were ever submitted"
         },
         {
           icon: TrendingUp,

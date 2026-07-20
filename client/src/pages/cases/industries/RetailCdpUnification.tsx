@@ -23,7 +23,7 @@ export default function RetailCdpUnification() {
       clientContextBody="The most expensive consequence was invisible: the retailer was paying to advertise to people it had already acquired. Because no destination could reliably recognize an existing customer, suppression never worked cleanly, and prospecting budgets bled into audiences that were already loyal. Marketing wanted personalization and smarter acquisition, but every initiative stalled on the same rock — there was no single, trustworthy customer record to build on. Analysts spent their time reconciling exports instead of activating audiences."
       clientProfile={{
         industry: "Multi-Brand Retailer",
-        companySize: "~$720M Annual Revenue",
+        companySize: "Upper Mid-Market",
         projectDuration: "5 Months",
         additionalInfo: "4 Loyalty Programs",
         additionalLabel: "Legacy Estate"

@@ -5,25 +5,25 @@ export function FoodProductionPlanning() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Production Planning That Cut Inventory 35% | Food Manufacturing Case Study"
-      seoDescription="A $72M specialty-food maker was caught between high inventory and regular stockouts, with 4-hour changeovers forcing big batches. New planning cut inventory 35% and freed $2.8M."
+      seoDescription="A specialty-food maker was caught between high inventory and regular stockouts, with 4-hour changeovers forcing big batches. New planning cut inventory 35%, freeing a third of tied-up working capital."
       canonical="/capabilities/operations/case-studies/food-production-planning"
       industry="Consumer Products"
       industryLink="/industries/consumer-products"
       title="How a Food Manufacturer Cut Inventory 35% With Better Planning"
-      subtitle="A specialty-food manufacturer moved from reactive to proactive planning — demand sensing, S&OP, and 50% faster changeovers — cutting inventory 35%, freeing $2.8M, and reaching 98% on-time delivery."
+      subtitle="A specialty-food manufacturer moved from reactive to proactive planning — demand sensing, S&OP, and 50% faster changeovers — cutting inventory 35%, freeing a third of tied-up working capital, and reaching 98% on-time delivery."
       heroImage="/images/capabilities/cap-agriculture.jpg"
       metrics={[
         { value: "35%", label: "Inventory Reduction" },
         { value: "98%", label: "On-Time Delivery" },
-        { value: "$2.8M", label: "Working Capital Freed" },
+        { value: "1/3", label: "Working Capital Freed" },
         { value: "50%", label: "Changeover Reduction" }
       ]}
       clientContextTitle="A Vicious Cycle"
-      clientContextIntro="A 160-employee food manufacturer with $72M in revenue produces specialty sauces and condiments for foodservice and retail across two facilities and 200+ SKUs. It was caught in a vicious cycle: high inventory tied up working capital, yet stockouts still occurred regularly."
+      clientContextIntro="A 160-employee food manufacturer produces specialty sauces and condiments for foodservice and retail across two facilities and 200+ SKUs. It was caught in a vicious cycle: high inventory tied up working capital, yet stockouts still occurred regularly."
       clientContextBody="Planning was reactive — driven by urgent customer requests rather than systematic forecasting — and long changeover times forced large batches that fed excess inventory. Demand forecasts updated only quarterly and quickly became obsolete, production schedules changed daily based on the loudest complaint, changeovers ran 4+ hours making small batches uneconomical, and safety-stock levels were set arbitrarily and unreviewed for years."
       clientProfile={{
         industry: "Specialty Food Manufacturer",
-        companySize: "$72M Revenue",
+        companySize: "160 Employees",
         projectDuration: "2 Facilities",
         additionalInfo: "SMED + S&OP",
         additionalLabel: "Method"
@@ -81,7 +81,7 @@ export function FoodProductionPlanning() {
           icon: DollarSign,
           value: "35%",
           label: "Less inventory",
-          detail: "Freeing $2.8M in working capital while improving service"
+          detail: "Freeing a third of tied-up working capital while improving service"
         },
         {
           icon: LineChart,

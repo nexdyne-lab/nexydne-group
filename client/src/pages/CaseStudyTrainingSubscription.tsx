@@ -12,7 +12,7 @@ export default function CaseStudyTrainingSubscription() {
     <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Case Study: Training Company Subscription Platform" 
-        description="How a professional services training company launched a subscription platform and grew to 2,400 active members with $1.8M annual recurring revenue."
+        description="How a professional services training company launched a subscription platform, grew to 2,400 active members, and now earns 30% of its revenue from recurring subscriptions."
         canonical="/cases/training-subscription-platform"
       />
       <Navigation />
@@ -53,8 +53,8 @@ export default function CaseStudyTrainingSubscription() {
                     <p className="text-muted-foreground text-sm">Active Members</p>
                   </div>
                   <div>
-                    <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary">$1.8M</p>
-                    <p className="text-muted-foreground text-sm">Annual MRR</p>
+                    <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary">30%</p>
+                    <p className="text-muted-foreground text-sm">Of Revenue Now Recurring</p>
                   </div>
                   <div>
                     <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary">92%</p>
@@ -72,12 +72,12 @@ export default function CaseStudyTrainingSubscription() {
               solution="Built a comprehensive subscription platform with on-demand content, live sessions, and community features to create recurring revenue."
               results={[
                 "2,400 active members",
-                "$1.8M annual recurring revenue",
+                "30% of revenue now recurring",
                 "92% retention rate"
               ]}
               metrics={[
                 { value: "2,400", label: "Active Members" },
-                { value: "$1.8M", label: "Annual MRR" },
+                { value: "30%", label: "Of Revenue Now Recurring" },
                 { value: "92%", label: "Retention Rate" }
               ]}
                   variant="hero"
@@ -107,7 +107,7 @@ export default function CaseStudyTrainingSubscription() {
               
               <div className="space-y-6 text-lg text-charcoal/70 leading-relaxed">
                 <p>
-                  This professional services training company had built a strong reputation over 15 years, delivering in-person workshops to accounting, legal, and consulting firms. With 45 employees and $6M in annual revenue, they were the go-to provider for continuing professional education in their niche.
+                  This professional services training company had built a strong reputation over 15 years, delivering in-person workshops to accounting, legal, and consulting firms. With 45 employees, they were the go-to provider for continuing professional education in their niche.
                 </p>
                 <p>
                   However, the business model had fundamental limitations. Revenue was unpredictable—dependent on booking enough workshops each quarter. Scaling required hiring more trainers and traveling to more cities. And the pandemic had exposed the fragility of an entirely in-person model.
@@ -133,8 +133,8 @@ export default function CaseStudyTrainingSubscription() {
                   <span className="font-semibold">45</span>
                 </div>
                 <div className="flex justify-between py-3 border-b border-border">
-                  <span className="text-charcoal/60">Annual Revenue</span>
-                  <span className="font-semibold">$6M (pre-project)</span>
+                  <span className="text-charcoal/60">Track Record</span>
+                  <span className="font-semibold">15 years in market</span>
                 </div>
                 <div className="flex justify-between py-3 border-b border-border">
                   <span className="text-charcoal/60">Business Model</span>
@@ -376,7 +376,7 @@ export default function CaseStudyTrainingSubscription() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16">
             {[
               { stat: "2,400", label: "Active members", description: "Paying subscribers on the platform" },
-              { stat: "$1.8M", label: "Annual MRR", description: "Predictable recurring revenue" },
+              { stat: "30%", label: "Of revenue now recurring", description: "Predictable subscription income" },
               { stat: "92%", label: "Retention rate", description: "Annual subscription renewal rate" },
               { stat: "3.2x", label: "LTV increase", description: "Customer lifetime value vs. workshops" }
             ].map((item, index) => (
@@ -443,14 +443,14 @@ export default function CaseStudyTrainingSubscription() {
               {
                 category: "Specialty Retail",
                 title: "Outdoor gear retailer grows online revenue 180% in 18 months",
-                stats: [{ value: "180%", label: "Revenue growth" }, { value: "$3.2M", label: "New revenue" }],
+                stats: [{ value: "180%", label: "Revenue growth" }, { value: "0→11%", label: "Share of sales now digital" }],
                 color: "from-amber to-primary",
                 link: "/cases/retail-ecommerce-growth"
               },
               {
                 category: "B2B Manufacturing",
-                title: "Industrial supplier adds $4.5M revenue through digital ordering",
-                stats: [{ value: "$4.5M", label: "New revenue" }, { value: "58%", label: "Self-service orders" }],
+                title: "Industrial supplier lifts revenue 5% through digital ordering",
+                stats: [{ value: "5%", label: "Revenue lift" }, { value: "58%", label: "Self-service orders" }],
                 color: "from-[#0077B5] to-secondary",
                 link: "/cases/b2b-digital-ordering"
               }

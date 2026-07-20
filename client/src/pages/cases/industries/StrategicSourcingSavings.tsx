@@ -14,16 +14,16 @@ export default function StrategicSourcingSavings() {
       heroImage="/images/industries/mfg-robotics.jpg"
       metrics={[
         { value: "12%", label: "Lower Materials Cost" },
-        { value: "$14M", label: "Annual Savings" },
+        { value: "<1 year", label: "Program Payback" },
         { value: "40%", label: "Fewer Suppliers" },
         { value: "0", label: "Critical Single-Source Parts" }
       ]}
       clientContextTitle="Buying the Same Thing a Dozen Different Ways"
-      clientContextIntro="A manufacturer with a few hundred million dollars in revenue and two production plants bought thousands of different materials and components every year — everything from raw metal and packaging to specialized parts. Over time, and without anyone deciding it should happen, that buying had spread across hundreds of suppliers. Different plants, and even different people within the same plant, purchased the same items from different vendors at different prices, often unaware the others existed."
+      clientContextIntro="A manufacturer with two production plants bought thousands of different materials and components every year — everything from raw metal and packaging to specialized parts. Over time, and without anyone deciding it should happen, that buying had spread across hundreds of suppliers. Different plants, and even different people within the same plant, purchased the same items from different vendors at different prices, often unaware the others existed."
       clientContextBody="The result was the worst of both worlds. On everyday items the company had scattered its buying so widely that it had almost no negotiating power — it was a small customer to everyone and an important one to no one. Yet on a handful of critical parts it had drifted into the opposite trap, depending entirely on a single supplier with no backup. If one of those suppliers had a fire, a strike or a bad quarter, a plant could stop. Leadership knew materials were its single largest cost, but no one could say, in one place, exactly what the company was buying, from whom, or for how much."
       clientProfile={{
         industry: "Industrial Manufacturer",
-        companySize: "~$400M Annual Revenue",
+        companySize: "Mid-Market Manufacturer",
         projectDuration: "12 Months",
         additionalInfo: "2 Plants",
         additionalLabel: "Production Sites"
@@ -81,7 +81,7 @@ export default function StrategicSourcingSavings() {
           icon: DollarSign,
           value: "12%",
           label: "Lower materials cost",
-          detail: "About $14M saved every year"
+          detail: "Savings that recur every year"
         },
         {
           icon: Layers,

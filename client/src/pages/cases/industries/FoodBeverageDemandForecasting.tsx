@@ -15,7 +15,7 @@ export default function FoodBeverageDemandForecasting() {
       metrics={[
         { value: "30%", label: "Better Forecasting" },
         { value: "98.5%", label: "Service Level" },
-        { value: "$8M", label: "Working Capital Freed" },
+        { value: "15%", label: "Leaner Inventory" },
         { value: "25%", label: "Less Waste" }
       ]}
       clientContextTitle="When a Wrong Forecast Costs You Twice"
@@ -23,7 +23,7 @@ export default function FoodBeverageDemandForecasting() {
       clientContextBody="Planning still ran on statistical models and the judgment of experienced planners. Neither could keep up with everything that actually moved demand — a heatwave, a competitor's promotion, a local event, a shift in what shoppers were talking about. Worse, the planners spent the bulk of their week simply gathering data and stitching together spreadsheets, leaving little room for the judgment that was supposed to be their real contribution. The company was working hard at forecasting and still getting it wrong."
       clientProfile={{
         industry: "Food and Beverage Maker",
-        companySize: "~$500M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "15 Months",
         additionalInfo: "~2,000 Products",
         additionalLabel: "Product Range"
@@ -91,9 +91,9 @@ export default function FoodBeverageDemandForecasting() {
         },
         {
           icon: DollarSign,
-          value: "$8M",
-          label: "Working capital freed",
-          detail: "From leaner, better-matched inventory"
+          value: "15%",
+          label: "Leaner inventory",
+          detail: "Working capital freed by better-matched stock"
         },
         {
           icon: Leaf,

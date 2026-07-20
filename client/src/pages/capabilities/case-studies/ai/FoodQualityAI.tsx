@@ -5,18 +5,18 @@ export function FoodQualityAI() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Computer Vision Quality Inspection That Lifted Yield 18% | Food Processing Case Study"
-      seoDescription="A food processor's manual inspection missed defects and wasted 12% of production. A computer-vision system improved defect detection 40%, lifted yield 18%, and saved $1.8M a year."
+      seoDescription="A food processor's manual inspection missed defects and wasted 12% of production. A computer-vision system improved defect detection 40%, lifted yield 18%, and cut complaints 65%."
       canonical="/capabilities/artificial-intelligence/case-studies/food-quality-ai"
       industry="Consumer Products"
       industryLink="/industries/consumer-products"
       title="How a Food Processor Improved Yield 18% With Computer Vision"
-      subtitle="A regional food processor deployed computer-vision quality inspection integrated with its production lines — improving defect detection 40%, lifting yield 18%, and saving $1.8M a year."
+      subtitle="A regional food processor deployed computer-vision quality inspection integrated with its production lines — improving defect detection 40%, lifting yield 18%, and cutting customer complaints 65%."
       heroImage="/images/capabilities/cap-food.jpg"
       metrics={[
         { value: "40%", label: "Better Defect Detection" },
         { value: "18%", label: "Yield Increase" },
         { value: "65%", label: "Fewer Complaints" },
-        { value: "$1.8M", label: "Annual Savings" }
+        { value: "<1 yr", label: "Payback Period" }
       ]}
       clientContextTitle="Inspection That Couldn't Keep Pace"
       clientContextIntro="A regional food processing company with 200 employees processes fresh produce for retail and foodservice customers, with quality as a critical differentiator. Manual inspection was inconsistent and couldn't keep pace with production speeds — and product waste from quality issues ran at 12% of production."
@@ -91,8 +91,8 @@ export function FoodQualityAI() {
         },
         {
           icon: DollarSign,
-          value: "$1.8M",
-          label: "Annual savings",
+          value: "<1 yr",
+          label: "Payback period",
           detail: "With customer complaints down 65%"
         }
       ]}

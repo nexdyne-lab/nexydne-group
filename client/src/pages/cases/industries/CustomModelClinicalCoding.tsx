@@ -5,17 +5,17 @@ export default function CustomModelClinicalCoding() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Cutting Claim Denials 40% with a Model Trained on Its Own Records | Healthcare Case Study"
-      seoDescription="A regional health system was losing millions to denied claims and slow, inconsistent coding. A model trained on its own clinical records cut denials 40% and recovered revenue in the millions — with coders still in control."
+      seoDescription="A regional health system was losing revenue to denied claims and slow, inconsistent coding. A model trained on its own clinical records cut denials 40% and took nine days out of A/R — with coders still in control."
       canonical="/cases/custom-model-clinical-coding"
       industry="Healthcare"
       industryLink="/industries/healthcare"
       title="How a Regional Health System Cut Claim Denials 40% by Training a Model on Its Own Records"
-      subtitle="Denied claims and slow, inconsistent coding were quietly draining millions each year. A model built on the system's own clinical documentation made coding faster and more consistent — while coders kept the final say on every claim."
+      subtitle="Denied claims and slow, inconsistent coding were quietly draining revenue each year. A model built on the system's own clinical documentation made coding faster and more consistent — while coders kept the final say on every claim."
       heroImage="/images/cases/custom-model-clinical-coding-hero.jpg"
       metrics={[
         { value: "40%", label: "Fewer Denials" },
         { value: "55%", label: "Faster Coding" },
-        { value: "$6.5M", label: "Revenue Recovered" },
+        { value: "<1 Year", label: "Full Payback" },
         { value: "9 Days", label: "Off Days in A/R" }
       ]}
       clientContextTitle="When Every Claim Is Coded a Little Differently"
@@ -23,7 +23,7 @@ export default function CustomModelClinicalCoding() {
       clientContextBody="The system's coders were skilled, but they were carrying more than they could keep up with. Coding standards shifted, documentation varied from one physician to the next, and two equally experienced coders could read the same chart and land on different codes. The result was a steady stream of denied claims — nearly one in eight — each of which had to be reworked and resubmitted by hand. Cash that the system had already earned sat waiting for weeks, and a meaningful share of it was never collected at all. Leadership saw the pattern clearly: the problem was not effort or expertise, it was that no single coder could hold the system's entire history of correctly paid claims in their head."
       clientProfile={{
         industry: "Regional Health System",
-        companySize: "~$700M Annual Revenue",
+        companySize: "Multi-Hospital System",
         projectDuration: "12 Months",
         additionalInfo: "~120 Coders",
         additionalLabel: "Coding & Revenue Cycle Staff"
@@ -91,9 +91,9 @@ export default function CustomModelClinicalCoding() {
         },
         {
           icon: DollarSign,
-          value: "$6.5M",
-          label: "Revenue recovered",
-          detail: "Cash that had been slipping away each year"
+          value: "<1 Year",
+          label: "Full payback",
+          detail: "Recovered collections covered the build inside the first year"
         },
         {
           icon: Target,

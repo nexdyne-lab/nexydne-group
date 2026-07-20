@@ -88,7 +88,7 @@ export default function BlogDigitalTransformation() {
       <p>
         Manual processes inevitably produce errors, especially when staff are
         rushing to keep up with volume. A 180-employee community bank we worked
-        with was spending $240K annually on compliance review and error
+        with was carrying a heavy annual cost in compliance review and error
         correction. Automation reduced error rates from 2.3% to 0.1% while cutting
         review time by 80%.
       </p>

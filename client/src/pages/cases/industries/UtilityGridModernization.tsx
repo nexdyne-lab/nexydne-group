@@ -15,15 +15,15 @@ export default function UtilityGridModernization() {
       metrics={[
         { value: "45%", label: "Shorter Outages" },
         { value: "99.98%", label: "Grid Reliability" },
-        { value: "$14M", label: "Saved Each Year" },
+        { value: "90 → 50 min", label: "Average Outage" },
         { value: "30%", label: "Rooftop Solar Hosted" }
       ]}
       clientContextTitle="A Grid That Could Not See Itself"
       clientContextIntro="A regional electric utility delivered power to around 600,000 homes and businesses across roughly 9,000 miles of distribution lines. Its network had been built for a simpler era — power flowing one way, from a handful of plants out to customers who did little more than switch on a light. That world was gone. Rooftop solar was now pushing power back the other way, electric vehicles were adding load, and customers who tracked a package to the minute expected the same from their utility."
-      clientContextBody="The deeper problem was that the utility could barely see its own grid. Operators usually learned about an outage only when customers began calling, and crews then had to drive the lines to find where the fault actually was — which is why the average outage stretched to about 90 minutes. Voltage swings from all that rooftop solar caused power-quality complaints the network had never been designed to handle. With outages costing the business roughly $30 million a year and regulators pressing for better reliability, leadership concluded it could no longer run a modern grid half-blind."
+      clientContextBody="The deeper problem was that the utility could barely see its own grid. Operators usually learned about an outage only when customers began calling, and crews then had to drive the lines to find where the fault actually was — which is why the average outage stretched to about 90 minutes. Voltage swings from all that rooftop solar caused power-quality complaints the network had never been designed to handle. With outages a heavy and growing cost to the business and regulators pressing for better reliability, leadership concluded it could no longer run a modern grid half-blind."
       clientProfile={{
         industry: "Regional Electric Utility",
-        companySize: "~$650M Annual Revenue",
+        companySize: "~9,000 Miles of Lines",
         projectDuration: "18 Months",
         additionalInfo: "~600,000 Customers",
         additionalLabel: "Customers Served"
@@ -91,8 +91,8 @@ export default function UtilityGridModernization() {
         },
         {
           icon: DollarSign,
-          value: "$14M",
-          label: "Saved each year",
+          value: "Year one",
+          label: "Payback on the program",
           detail: "From fewer, shorter outages and leaner maintenance"
         },
         {

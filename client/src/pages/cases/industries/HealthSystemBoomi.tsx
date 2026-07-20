@@ -23,7 +23,7 @@ export default function HealthSystemBoomi() {
       clientContextBody="The lack of clean integration meant data had to be reconciled by hand, errors crept in at the seams, and there was no single orchestrated source of truth spanning registration through claims to analytics. Every new connection was bespoke, and the fragility slowed any change. Patient registration, claims processing, and analytics each operated on their own version of reality. The health system needed an integration platform to connect the twelve systems behind a unified API layer, so data flowed cleanly and every function worked from one orchestrated source of truth."
       clientProfile={{
         industry: "Regional Health System",
-        companySize: "~$680M Annual Revenue",
+        companySize: "6 Hospitals, 40+ Clinics",
         projectDuration: "6 Months",
         additionalInfo: "12 Core Systems",
         additionalLabel: "Integration Estate"

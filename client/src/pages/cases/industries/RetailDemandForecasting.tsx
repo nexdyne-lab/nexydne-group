@@ -15,15 +15,15 @@ export default function RetailDemandForecasting() {
       metrics={[
         { value: "35%", label: "Forecast Improvement" },
         { value: "50%", label: "Fewer Out-of-Stocks" },
-        { value: "$65M", label: "Revenue Recovered" },
+        { value: "70%", label: "Of Sales on Shared Demand Data" },
         { value: "4.2%", label: "Market Share Gain" }
       ]}
       clientContextTitle="A CPG Company Losing at the Shelf"
-      clientContextIntro="A major consumer packaged goods company sold through 50,000 retail locations but had limited visibility into what happened after products left their warehouses. Out-of-stocks at retail were costing $200M in lost sales annually—customers who couldn't find products switched to competitors."
+      clientContextIntro="A major consumer packaged goods company sold through 50,000 retail locations but had limited visibility into what happened after products left their warehouses. Out-of-stocks at retail were draining several points of sales a year—customers who couldn't find products switched to competitors."
       clientContextBody="The company forecasted shipments to retailers, not consumer demand at shelf. By the time they learned about out-of-stocks, sales were already lost. Promotional planning was disconnected from inventory—big promotions often ran out of stock, wasting marketing spend. The company needed to see through to the shelf."
       clientProfile={{
         industry: "Consumer Packaged Goods",
-        companySize: "$15B Annual Revenue",
+        companySize: "Multinational CPG",
         projectDuration: "18 Months",
         additionalInfo: "50,000 Retail Locations",
         additionalLabel: "Distribution"
@@ -33,7 +33,7 @@ export default function RetailDemandForecasting() {
         {
           icon: Package,
           title: "Out-of-Stock Losses",
-          description: "$200M in annual lost sales from retail out-of-stocks—invisible until too late."
+          description: "A heavy annual drain of lost sales from retail out-of-stocks—invisible until too late."
         },
         {
           icon: Target,
@@ -87,13 +87,13 @@ export default function RetailDemandForecasting() {
           icon: Package,
           value: "50%",
           label: "Reduction in out-of-stocks",
-          detail: "$100M in recovered sales"
+          detail: "Recovering roughly half the sales previously lost at the shelf"
         },
         {
           icon: DollarSign,
-          value: "$65M",
-          label: "Net revenue increase",
-          detail: "From improved availability"
+          value: "70%",
+          label: "Of sales on shared demand data",
+          detail: "Top-20 retailer partnerships driving availability"
         },
         {
           icon: TrendingUp,

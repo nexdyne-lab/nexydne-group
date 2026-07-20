@@ -23,7 +23,7 @@ export default function BankMobileModernization() {
       clientContextBody="The hybrid foundation had reached the end of its useful life. Its abstraction layers made the app slow and crash-prone, and its accumulated complexity meant that adding a feature could destabilize the whole app. The mobile roadmap had effectively stalled because every change was too risky. For a bank, that is a serious problem: the app is the primary way many customers interact, and it has to be dependable. The bank needed to migrate off the hybrid codebase to native Swift and Kotlin to reclaim stability and momentum."
       clientProfile={{
         industry: "Regional Bank",
-        companySize: "~$430M Annual Revenue",
+        companySize: "900,000+ Customers",
         projectDuration: "7 Months",
         additionalInfo: "Hybrid-to-Native Migration",
         additionalLabel: "Mobile Banking"

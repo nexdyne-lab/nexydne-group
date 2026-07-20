@@ -23,7 +23,7 @@ export default function HealthCitizenDataScientist() {
       clientContextBody="Every idea from the front line joined the central team's queue, and most never rose to the top. The result was a narrow throughput of data-science work, gated entirely by one team's capacity. But letting clinicians build models freely carried its own risk: ungoverned models in a clinical setting are dangerous. The health system needed to build a bench of capable citizen data scientists among its clinicians and operations leads — trained not just to build models, but to build governed ones — so the front line could act on its own insight safely, freeing the central team for the hardest problems."
       clientProfile={{
         industry: "Regional Health System",
-        companySize: "~$680M Annual Revenue",
+        companySize: "6 Hospitals, 40+ Clinics",
         projectDuration: "4 Months",
         additionalInfo: "80-Person Immersive",
         additionalLabel: "Capability Build"

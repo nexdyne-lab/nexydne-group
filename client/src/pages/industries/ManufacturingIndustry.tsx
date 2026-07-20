@@ -86,9 +86,9 @@ export default function ManufacturingIndustry() {
         },
         {
           slug: "industrial-connected-products",
-          title: "Building a $30M services business on installed machines",
+          title: "Building a Recurring Services Business on Machines Already Sold",
           industry: "Manufacturing",
-          metric: "$30M",
+          metric: "2,700 machines on connected services",
           image: "/images/capabilities/cap-battery-factory.jpg"
         }
       ]}

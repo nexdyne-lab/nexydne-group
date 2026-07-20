@@ -9,7 +9,7 @@ const caseStudies = [
     industry: "Insurance",
     metrics: [
       { value: "73%", label: "Faster Processing" },
-      { value: "$1.2M", label: "Annual Savings" },
+      { value: "41%", label: "First-Touch Resolution" },
     ],
   },
   {
@@ -37,7 +37,7 @@ const caseStudies = [
   {
     title: "Demand Forecasting AI Optimizes Inventory for Regional Distributor",
     client:
-      "A wholesale distribution company with 180 employees and $75M annual revenue",
+      "A wholesale distribution company with 180 employees serving 3,000+ customers",
     href: "/capabilities/artificial-intelligence/case-studies/distributor-demand-forecasting",
     industry: "Distribution",
     metrics: [

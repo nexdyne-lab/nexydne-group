@@ -23,7 +23,7 @@ export default function RetailerDatabricksLakehouse() {
       clientContextBody="The fragmentation slowed everything. Every cross-functional question required stitching data across three platforms with subtly different definitions, so answers took weeks and rarely agreed. The forecasting and personalization teams could not easily use the same features, and the cost of running three warehouses was substantial. The retailer needed to consolidate onto a single platform that could serve BI, machine learning, and personalization from one copy of the data — collapsing the reconciliation tax and speeding up how fast the business could learn."
       clientProfile={{
         industry: "National Retailer",
-        companySize: "~$700M Annual Revenue",
+        companySize: "500+ Stores",
         projectDuration: "6 Months",
         additionalInfo: "3 Legacy Warehouses",
         additionalLabel: "Analytics Estate"

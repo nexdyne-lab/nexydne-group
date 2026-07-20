@@ -23,7 +23,7 @@ export default function AssetManagerDataMesh() {
       clientContextBody="The centralized model did not scale with the firm's ambitions. Portfolio teams understood their own data best but could not act on it without routing through the central team, and the central team could not possibly know every domain deeply enough to serve them all quickly. The result was slow analytics and frustrated investors-facing teams. The firm needed to distribute ownership — letting each domain own and publish its own governed data products — while keeping governance coherent across the whole, so speed did not come at the cost of control."
       clientProfile={{
         industry: "Asset Manager",
-        companySize: "~$520M Annual Revenue",
+        companySize: "300+ Institutional Clients",
         projectDuration: "7 Months",
         additionalInfo: "5 Data Domains",
         additionalLabel: "Operating Model"
@@ -55,7 +55,7 @@ export default function AssetManagerDataMesh() {
       quoteRole="Asset manager"
       relatedStudies={[
         { title: "How a Manufacturer Cut Its Reporting Cycle From 14 Days to 6 Hours", metric: "14 days → 6 hrs", label: "reporting cycle", link: "/cases/manufacturing-data-platform", image: "/images/industries/mfg-robot-arm.jpg" },
-        { title: "How a Health System Recovered $9M a Year by Fixing Its Data Quality", metric: "$9M", label: "recovered annually", link: "/cases/healthcare-data-quality", image: "/images/cases/healthcare-data-quality-hero.jpg" }
+        { title: "How a Health System Recovered 1.3% of Net Revenue a Year by Fixing Its Data Quality", metric: "1.3%", label: "of net revenue recovered annually", link: "/cases/healthcare-data-quality", image: "/images/cases/healthcare-data-quality-hero.jpg" }
       ]}
       ctaTitle="Is a central data team your bottleneck?"
       ctaDescription="Let's stand up a governed data mesh so domains ship analytics in days, not quarters."

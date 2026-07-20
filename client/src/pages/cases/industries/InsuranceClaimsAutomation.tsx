@@ -5,7 +5,7 @@ export default function InsuranceClaimsAutomation() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Settling Straightforward Claims in Hours, Not Weeks | Insurance Case Study"
-      seoDescription="A property and casualty insurer took two weeks to settle even simple claims while rivals paid in hours. Automating the routine claims cut cycle time by 60% and saved $14M a year."
+      seoDescription="A property and casualty insurer took two weeks to settle even simple claims while rivals paid in hours. Automating the routine claims cut cycle time by 60% and cut handling costs by 30%."
       canonical="/cases/insurance-claims-automation"
       industry="Insurance"
       industryLink="/industries/insurance"
@@ -15,7 +15,7 @@ export default function InsuranceClaimsAutomation() {
       metrics={[
         { value: "60%", label: "Faster Processing" },
         { value: "85%", label: "Settled Automatically" },
-        { value: "$14M", label: "Saved Each Year" },
+        { value: "30%", label: "Lower Handling Cost" },
         { value: "+30pts", label: "Satisfaction Gain" }
       ]}
       clientContextTitle="Simple Claims Stuck in the Same Line as Hard Ones"
@@ -91,9 +91,9 @@ export default function InsuranceClaimsAutomation() {
         },
         {
           icon: DollarSign,
-          value: "$14M",
-          label: "Saved each year",
-          detail: "From lower handling cost and fewer errors"
+          value: "30%",
+          label: "Lower handling cost",
+          detail: "From automated settlement and fewer errors"
         },
         {
           icon: Shield,

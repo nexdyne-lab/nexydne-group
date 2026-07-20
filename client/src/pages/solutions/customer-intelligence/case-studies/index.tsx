@@ -14,7 +14,7 @@ const caseStudies = [
     description: "150-employee online retailer deployed predictive analytics to identify high-value customers and personalize product recommendations, resulting in significant revenue growth.",
     stats: [
       { value: "42%", label: "Repeat purchase increase" },
-      { value: "$1.2M", label: "Annual revenue lift" },
+      { value: "3.2x", label: "Campaign ROI" },
       { value: "3.2x", label: "Campaign ROI improvement" }
     ],
     image: "/images/capabilities/cap-mobile-woman.jpg",
@@ -27,8 +27,8 @@ const caseStudies = [
     description: "280-employee SaaS platform built predictive churn models to identify at-risk accounts 60 days before cancellation, enabling proactive retention interventions.",
     stats: [
       { value: "38%", label: "Churn reduction" },
-      { value: "$890K", label: "Retained ARR" },
-      { value: "60 days", label: "Early warning lead time" }
+      { value: "60 days", label: "Early warning lead time" },
+      { value: "3.2x", label: "CS team efficiency" }
     ],
     image: "/images/capabilities/cap-office-women.jpg",
     featured: true
@@ -40,7 +40,7 @@ const caseStudies = [
     description: "120-employee community bank implemented next-best-action models to personalize product recommendations for existing customers.",
     stats: [
       { value: "2.1x", label: "Cross-sell conversion" },
-      { value: "$640K", label: "New revenue generated" },
+      { value: "2.8", label: "Products per customer" },
       { value: "45%", label: "Customer engagement increase" }
     ],
     image: "/images/capabilities/cap-hologram.jpg",
@@ -54,7 +54,7 @@ const caseStudies = [
     stats: [
       { value: "28%", label: "Patient retention" },
       { value: "35%", label: "Appointment adherence" },
-      { value: "$2.1M", label: "Revenue protected" }
+      { value: "Year 1", label: "Program paid for itself" }
     ],
     image: "/images/capabilities/cap-colleagues-smile.jpg",
     featured: false
@@ -80,7 +80,7 @@ const caseStudies = [
     stats: [
       { value: "56%", label: "Lead conversion" },
       { value: "40%", label: "Sales cycle reduction" },
-      { value: "$3.4M", label: "Pipeline generated" }
+      { value: "45%", label: "More qualified pipeline" }
     ],
     image: "/images/capabilities/cap-conference-data.jpg",
     featured: false

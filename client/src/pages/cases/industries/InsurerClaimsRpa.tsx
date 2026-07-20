@@ -23,7 +23,7 @@ export default function InsurerClaimsRpa() {
       clientContextBody="The intake and routing steps were rules-based and repetitive, exactly the kind of work that consumes expensive expertise for no good reason. Because adjusters did it manually, handle time was long, throughput was capped by headcount, and the complex claims that drive cost and customer experience got less attention than they deserved. The insurer needed to automate the deterministic intake, classification, and routing so its adjusters could focus on the claims that genuinely required judgment — using a fleet of unattended bots to carry the repetitive load."
       clientProfile={{
         industry: "Insurance Carrier",
-        companySize: "~$470M Annual Revenue",
+        companySize: "~250,000 Claims a Year",
         projectDuration: "6 Months",
         additionalInfo: "42 Unattended Bots",
         additionalLabel: "Claims Automation"
@@ -55,7 +55,7 @@ export default function InsurerClaimsRpa() {
       quoteRole="Insurance carrier"
       relatedStudies={[
         { title: "How a Provider Network Reclaimed 90,000 Hours a Year on Eligibility Checks", metric: "90,000", label: "hours reclaimed a year", link: "/cases/healthcare-eligibility-rpa", image: "/images/cases/healthcare-eligibility-rpa-hero.jpg" },
-        { title: "How a Global Bank Captured $400M in Value by Reorganizing Around Customer Journeys", metric: "$400M", label: "in annual value", link: "/cases/bank-operating-model-transformation", image: "/images/industries/fin-monitors.jpg" }
+        { title: "How a Global Bank Took Four Points Off Its Cost-to-Income Ratio by Reorganizing Around Customer Journeys", metric: "4 pts", label: "off cost-to-income ratio", link: "/cases/bank-operating-model-transformation", image: "/images/industries/fin-monitors.jpg" }
       ]}
       ctaTitle="Are your experts stuck on repetitive work?"
       ctaDescription="Let's automate the routine with bots and free your people for the work that needs them."

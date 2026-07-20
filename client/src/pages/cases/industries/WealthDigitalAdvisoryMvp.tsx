@@ -23,7 +23,7 @@ export default function WealthDigitalAdvisoryMvp() {
       clientContextBody="The default path was to build the full feature set and launch, discovering only afterward which parts clients actually valued. That path risked spending most of a year constructing features that would prove unnecessary, and betting the product's success on a retention curve that existed only in a spreadsheet. The firm wanted to know, before the heavy investment, whether the core experience retained clients and which of the four planned features were worth building at all."
       clientProfile={{
         industry: "Wealth Manager",
-        companySize: "~$420M Annual Revenue",
+        companySize: "200+ Advisors",
         projectDuration: "4 Months",
         additionalInfo: "Digital Advisory Product",
         additionalLabel: "New Offering"
@@ -54,7 +54,7 @@ export default function WealthDigitalAdvisoryMvp() {
       quoteAuthor="Head of Digital"
       quoteRole="Wealth manager"
       relatedStudies={[
-        { title: "How a Heritage Brand Launched an $18M DTC Business Without Hurting Wholesale", metric: "$18M", label: "first-year DTC revenue", link: "/cases/consumer-dtc-launch", image: "/images/cases/consumer-dtc-launch-hero.jpg" },
+        { title: "How a Heritage Brand Launched a DTC Business at Twice Plan Without Hurting Wholesale", metric: "2×", label: "year-one DTC plan", link: "/cases/consumer-dtc-launch", image: "/images/cases/consumer-dtc-launch-hero.jpg" },
         { title: "How a B2B Distributor Moved a Third of Its Order Entry Off the Sales Desk", metric: "31%", label: "of order entry self-served", link: "/cases/b2b-ecommerce-launch", image: "/images/cases/b2b-ecommerce-launch-hero.jpg" }
       ]}
       ctaTitle="About to build a product on assumptions?"

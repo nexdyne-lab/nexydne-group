@@ -5,17 +5,17 @@ export function WealthAdjacent() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Entering an Adjacent Market to Grow Revenue 35% | Business Building Case Study"
-      seoDescription="A wealth firm's growth was capped by the personal-wealth market while business-owner clients used separate advisors. Expanding into business financial services grew revenue 35% and added $85M AUM."
+      seoDescription="A wealth firm's growth was capped by the personal-wealth market while business-owner clients used separate advisors. Expanding into business financial services grew revenue 35% and made business services the firm's fastest-growing practice."
       canonical="/capabilities/business-building/case-studies/wealth-adjacent"
       industry="Financial Services"
       industryLink="/industries/financial-services"
       title="How a Wealth Management Firm Entered an Adjacent Market"
-      subtitle="A wealth management firm expanded into business financial services — leveraging existing relationships to grow revenue 35%, add $85M in business AUM, and reach a 78% cross-sell rate."
+      subtitle="A wealth management firm expanded into business financial services — leveraging existing relationships to grow revenue 35%, build a meaningful business-services book, and reach a 78% cross-sell rate."
       heroImage="/images/industries/deal-handshake.jpg"
       metrics={[
         { value: "35%", label: "Revenue Growth" },
         { value: "220", label: "New Business Clients" },
-        { value: "$85M", label: "Business AUM" },
+        { value: "#1", label: "Fastest-Growing Practice" },
         { value: "78%", label: "Cross-Sell Rate" }
       ]}
       clientContextTitle="Capped by the Core Market"
@@ -81,7 +81,7 @@ export function WealthAdjacent() {
           icon: UserPlus,
           value: "220",
           label: "New business clients",
-          detail: "Generating $85M in business assets under management"
+          detail: "Making business financial services the firm's fastest-growing practice"
         },
         {
           icon: Percent,
@@ -108,9 +108,9 @@ export function WealthAdjacent() {
           image: "/images/industries/fin-handshake-city.jpg"
         },
         {
-          title: "Turning a Consulting Methodology Into a $3.2M ARR Product",
-          metric: "$3.2M",
-          label: "ARR",
+          title: "Turning a Consulting Methodology Into a 2,400-Subscriber SaaS Product",
+          metric: "2,400",
+          label: "paying subscribers",
           link: "/capabilities/business-building/case-studies/consulting-saas",
           image: "/images/capabilities/cap-team-screens.jpg"
         }

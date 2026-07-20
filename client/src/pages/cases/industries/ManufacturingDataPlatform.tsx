@@ -23,7 +23,7 @@ export default function ManufacturingDataPlatform() {
       clientContextBody="The delay came from fragmentation and manual work. Data lived in disconnected systems, metrics were defined differently in different reports, and analysts spent two weeks each month stitching and reconciling by hand. There was no shared definition of a metric, so figures disagreed and trust eroded. Daily operational visibility was simply impossible. The manufacturer needed a unified warehouse and a governed metric layer so reporting could collapse from a two-week manual ordeal into a near-real-time capability — and unlock the daily dashboards operations had never had."
       clientProfile={{
         industry: "Industrial Manufacturer",
-        companySize: "~$540M Annual Revenue",
+        companySize: "9 Plants",
         projectDuration: "6 Months",
         additionalInfo: "Monthly Close Reporting",
         additionalLabel: "Finance & Operations"
@@ -54,8 +54,8 @@ export default function ManufacturingDataPlatform() {
       quoteAuthor="VP of Finance"
       quoteRole="Industrial manufacturer"
       relatedStudies={[
-        { title: "How a Health System Recovered $9M a Year by Fixing Its Data Quality", metric: "$9M", label: "recovered annually", link: "/cases/healthcare-data-quality", image: "/images/cases/healthcare-data-quality-hero.jpg" },
-        { title: "How a Health System Turned Data From Overhead Into $42M of Advantage", metric: "$42M", label: "in decision value unlocked", link: "/cases/health-system-data-strategy", image: "/case-healthcare-team.5797392b.jpg" }
+        { title: "How a Health System Recovered 1.3% of Net Revenue a Year by Fixing Its Data Quality", metric: "1.3%", label: "of net revenue recovered annually", link: "/cases/healthcare-data-quality", image: "/images/cases/healthcare-data-quality-hero.jpg" },
+        { title: "How a Health System Turned Data From Overhead Into Operational Advantage", metric: "12", label: "decision use cases in production", link: "/cases/health-system-data-strategy", image: "/case-healthcare-team.5797392b.jpg" }
       ]}
       ctaTitle="Is your reporting old before anyone reads it?"
       ctaDescription="Let's unify the warehouse and govern the metrics so reporting becomes near-real-time."

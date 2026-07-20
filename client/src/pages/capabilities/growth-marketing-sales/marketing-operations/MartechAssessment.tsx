@@ -203,9 +203,9 @@ export default function MartechAssessment() {
             {[
               {
                 title: "SaaS Company Stack Consolidation",
-                description: "Audited a 17-tool martech stack for a growing SaaS company. Consolidated to 8 core platforms, eliminated $180K in annual licensing costs, and improved data quality across the board.",
-                metric: "$180K",
-                metricLabel: "Annual savings achieved"
+                description: "Audited a 17-tool martech stack for a growing SaaS company. Consolidated to 8 core platforms, cut annual licensing costs by half, and improved data quality across the board.",
+                metric: "17→8",
+                metricLabel: "Tools consolidated"
               },
               {
                 title: "E-commerce Integration Overhaul",

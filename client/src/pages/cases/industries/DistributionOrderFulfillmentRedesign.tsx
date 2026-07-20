@@ -23,7 +23,7 @@ export default function DistributionOrderFulfillmentRedesign() {
       clientContextBody="The workflow had accreted over years, each hand-off and approval added for a reason that had since been forgotten. Orders passed between teams with no service-level expectations, waited in queues nobody monitored, and — most damaging — sat through a credit check that ran in series with picking rather than alongside it, so every order paid for the delay whether or not it needed the check. The distributor wanted the cycle time cut meaningfully and fast, without hiring, and without the disruption of a systems overhaul."
       clientProfile={{
         industry: "Specialty Distributor",
-        companySize: "~$460M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "14 Weeks",
         additionalInfo: "Multiple Distribution Centers",
         additionalLabel: "Fulfillment Network"

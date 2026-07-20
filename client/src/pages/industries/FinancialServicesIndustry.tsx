@@ -82,7 +82,7 @@ export default function FinancialServicesIndustry() {
           slug: "bank-cross-sell",
           title: "Turning single accounts into real relationships",
           industry: "Financial Services",
-          metric: "$24M",
+          metric: "40% more products per customer",
           image: "/images/cases/bank-cross-sell-hero.jpg"
         },
         {

@@ -132,7 +132,7 @@ export default function StrategyCorporateFinance() {
           "In today's complex business environment, financial leadership is not just about managing numbers — it is about aligning resources with strategic vision to unlock sustainable growth. The most successful organizations have moved beyond reactive financial management to build proactive strategic finance functions that operate with the precision of a well-tuned engine, combining real-time visibility, predictive decision-making, and capital optimization. We don't just implement tools; we refactor the entire financial operating model — from capital structure to performance management — so finance becomes a competitive weapon, not a cost center.",
         realOutcomes: [
           "Logistics tech company secured Series B at a valuation 40% above target through rigorous financial modeling and investor positioning",
-          "Regional manufacturing merger captured $12M in synergies within 18 months via integrated cost optimization and operational alignment",
+          "Regional manufacturing merger captured its full synergy target within 18 months via integrated cost optimization and operational alignment",
           "Growing companies consistently achieve 40% average valuation uplift through our strategic finance interventions",
           "Capital raised across equity, debt, and hybrid instruments — with most rounds closing at or above target",
         ],
@@ -201,8 +201,8 @@ export default function StrategyCorporateFinance() {
         {
           industry: "Value Creation & Performance",
           cases: [
-            { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", metric: "$18M", image: "/images/cases/pe-industrial-transformation-hero.jpg" },
-            { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+            { slug: "pe-industrial-transformation", title: "How a Fund Added Seven Points of EBITDA Margin at an Industrial Manufacturer", metric: "7 pts EBITDA margin", image: "/images/cases/pe-industrial-transformation-hero.jpg" },
+            { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", metric: "45% fewer rejected claims", image: "/case-healthcare-team.5797392b.jpg" },
             { slug: "automotive-smart-factory", title: "Lifting plant productivity by 40% at a vehicle maker", metric: "40%", image: "/images/industries/mfg-robotics.jpg" },
           ],
         },
@@ -219,7 +219,7 @@ export default function StrategyCorporateFinance() {
           cases: [
             { slug: "fpa-forecasting-transformation", title: "Turning finance into a forecasting engine", metric: "Days", image: "/images/industries/advisor-charts.jpg" },
             { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
-            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M", image: "/images/cases/bank-cross-sell-hero.jpg" },
+            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "40% more products per customer", image: "/images/cases/bank-cross-sell-hero.jpg" },
           ],
         },
       ]}

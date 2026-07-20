@@ -23,7 +23,7 @@ export default function RetailDxpPersonalization() {
       clientContextBody="The capability was sitting idle. The retailer had the audiences, the data, and the tools to tailor the experience to different customer segments, but no program to actually do it, so the investment delivered a fraction of its potential. The homepage, the merchandising, and the offers were identical for everyone, which meant the retailer was leaving conversion on the table with every visit. It needed an audience-driven personalization program on the platform it already owned — targeting its most valuable segments with tailored experiences — to finally realize the platform's promise."
       clientProfile={{
         industry: "Specialty Retailer",
-        companySize: "~$430M Annual Revenue",
+        companySize: "~95 Stores",
         projectDuration: "5 Months",
         additionalInfo: "Adobe Experience Cloud",
         additionalLabel: "Experience Platform"

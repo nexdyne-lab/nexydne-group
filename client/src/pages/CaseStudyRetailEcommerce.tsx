@@ -62,8 +62,8 @@ export default function CaseStudyRetailEcommerce() {
                 <p className="text-muted-foreground text-sm">Revenue Growth</p>
               </div>
               <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-amber">$3.2M</p>
-                <p className="text-muted-foreground text-sm">New Digital Revenue</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-amber">0→11%</p>
+                <p className="text-muted-foreground text-sm">Share of Sales Now Digital</p>
               </div>
               <div>
                 <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-amber">10 Weeks</p>
@@ -81,12 +81,12 @@ export default function CaseStudyRetailEcommerce() {
               solution="Launched a comprehensive e-commerce platform with personalized recommendations, omnichannel fulfillment, and seamless integration with existing store operations."
               results={[
                 "180% revenue growth",
-                "$3.2M in new digital revenue",
+                "Digital channel built from zero to 11% of total sales",
                 "10 weeks to launch"
               ]}
               metrics={[
                 { value: "180%", label: "Revenue Growth" },
-                { value: "$3.2M", label: "New Digital Revenue" },
+                { value: "0→11%", label: "Share of Sales Now Digital" },
                 { value: "10 Weeks", label: "Time to Launch" }
               ]}
               variant="hero"
@@ -114,7 +114,7 @@ export default function CaseStudyRetailEcommerce() {
               
               <div className="space-y-6 text-lg text-charcoal/70 leading-relaxed">
                 <p>
-                  Founded in 1998, this specialty outdoor gear retailer had built a loyal customer base across 12 physical locations in the Pacific Northwest. With 135 employees and $28M in annual revenue, the company was known for expert staff, curated product selection, and exceptional in-store experiences.
+                  Founded in 1998, this specialty outdoor gear retailer had built a loyal customer base across 12 physical locations in the Pacific Northwest. With 135 employees, the company was known for expert staff, curated product selection, and exceptional in-store experiences.
                 </p>
                 <p>
                   However, the retail landscape was shifting. Customers increasingly researched products online before visiting stores, and competitors were capturing sales through digital channels. The company's website was purely informational—no e-commerce capability, no inventory visibility, and no way to serve customers beyond their geographic footprint.
@@ -140,8 +140,8 @@ export default function CaseStudyRetailEcommerce() {
                   <span className="font-semibold">135</span>
                 </div>
                 <div className="flex justify-between py-3 border-b border-border">
-                  <span className="text-charcoal/60">Annual Revenue</span>
-                  <span className="font-semibold">$28M (pre-project)</span>
+                  <span className="text-charcoal/60">Founded</span>
+                  <span className="font-semibold">1998</span>
                 </div>
                 <div className="flex justify-between py-3 border-b border-border">
                   <span className="text-charcoal/60">Locations</span>
@@ -179,7 +179,7 @@ export default function CaseStudyRetailEcommerce() {
                 The CEO recognized that the company was leaving significant revenue on the table. Customers were asking for online purchasing options, and the company was losing sales to competitors who offered e-commerce. Market research showed that 68% of their target customers researched products online before purchasing—but only 12% of those researchers ended up in their stores.
               </p>
               <p>
-                Previous attempts to launch e-commerce had stalled. An internal IT project had consumed 18 months and $400K without delivering a working platform. The company needed a partner who could execute quickly while integrating with their existing POS system, inventory management, and fulfillment operations.
+                Previous attempts to launch e-commerce had stalled. An internal IT project had consumed 18 months and a substantial budget without delivering a working platform. The company needed a partner who could execute quickly while integrating with their existing POS system, inventory management, and fulfillment operations.
               </p>
             </div>
 
@@ -383,7 +383,7 @@ export default function CaseStudyRetailEcommerce() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16">
             {[
               { stat: "180%", label: "Online revenue growth", description: "Year-over-year increase in digital sales" },
-              { stat: "$3.2M", label: "New digital revenue", description: "Incremental revenue from e-commerce channel" },
+              { stat: "0→11%", label: "Share of sales now digital", description: "E-commerce channel built from a standing start" },
               { stat: "42%", label: "BOPIS adoption", description: "Of online orders picked up in-store" },
               { stat: "28%", label: "New customer acquisition", description: "Customers outside traditional geography" }
             ].map((item, index) => (
@@ -450,14 +450,14 @@ export default function CaseStudyRetailEcommerce() {
               {
                 category: "Professional Services",
                 title: "Training company launches subscription platform with 2,400 members",
-                stats: [{ value: "2,400", label: "Active members" }, { value: "$1.8M", label: "Annual MRR" }],
+                stats: [{ value: "2,400", label: "Active members" }, { value: "30%", label: "Of revenue now recurring" }],
                 color: "from-purple to-purple",
                 link: "/cases/training-subscription-platform"
               },
               {
                 category: "B2B Manufacturing",
-                title: "Industrial supplier adds $4.5M revenue through digital ordering",
-                stats: [{ value: "$4.5M", label: "New revenue" }, { value: "58%", label: "Self-service orders" }],
+                title: "Industrial supplier lifts revenue 5% through digital ordering",
+                stats: [{ value: "5%", label: "Revenue lift" }, { value: "58%", label: "Self-service orders" }],
                 color: "from-[#0077B5] to-secondary",
                 link: "/cases/b2b-digital-ordering"
               }

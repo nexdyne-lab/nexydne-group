@@ -23,7 +23,7 @@ export default function InsuranceHybridClaimsAutomation() {
       clientContextBody="Every one of those pushes had reached for the same tool: robotic process automation. RPA is excellent at deterministic, rule-based actions, but a claim is not a deterministic thing. It arrives as unstructured documents, needs orchestration across systems, and carries genuine risk on high-severity cases. Bolting robots onto that reality automated the easy 4 percent and left the rest exactly as manual as before. The carrier needed to stop treating claims automation as a single-technique problem and start matching the right technique to each part of the process."
       clientProfile={{
         industry: "National P&C Carrier",
-        companySize: "~$1.1B Annual Revenue",
+        companySize: "Upper Mid-Market",
         projectDuration: "9 Months",
         additionalInfo: "High-Volume Claims Operation",
         additionalLabel: "Process Scope"

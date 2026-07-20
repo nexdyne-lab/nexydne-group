@@ -5,17 +5,17 @@ export default function AerospaceDigitalEngineering() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Bringing Aircraft Programs to Market Faster | Aerospace & Defense Case Study"
-      seoDescription="An aerospace and defense supplier was losing years and tens of millions to late-stage design changes. Connecting its engineering work end to end cut development time by 40%."
+      seoDescription="An aerospace and defense supplier was losing years of schedule to late-stage design changes. Connecting its engineering work end to end cut development time by 40%."
       canonical="/cases/aerospace-digital-engineering"
       industry="Aerospace & Defense"
       industryLink="/industries/aerospace-defense"
       title="How a Global Aircraft Maker Brought New Programs to Market 40% Faster"
-      subtitle="An aerospace and defense supplier was losing years and tens of millions to problems found late in testing. Connecting its engineering work end to end changed the economics of every program."
+      subtitle="An aerospace and defense supplier was losing years of schedule — and a heavy rework bill — to problems found late in testing. Connecting its engineering work end to end changed the economics of every program."
       heroImage="/images/industries/aero-rocket.jpg"
       metrics={[
         { value: "40%", label: "Faster Development" },
         { value: "60%", label: "Fewer Late Changes" },
-        { value: "$18M", label: "Cost Avoided" },
+        { value: "On Budget", label: "Program Delivery" },
         { value: "90%", label: "Right First Time" }
       ]}
       clientContextTitle="When Engineering Runs on Documents, Everything Slows Down"
@@ -23,7 +23,7 @@ export default function AerospaceDigitalEngineering() {
       clientContextBody="The consequences surfaced at the worst possible moment. Problems that could have been caught early were instead discovered late in testing, when the only fix was to rework finished designs and slip the schedule. Programs routinely ran a year or more late and roughly a third over budget — enough, on a company this size, to put a flagship contract at risk. Engineers spent more of their week reconciling out-of-date documents than actually engineering. Leadership concluded the issue was not talent or effort; it was that the company's engineering knowledge was scattered across systems that could not keep up with the complexity of the work."
       clientProfile={{
         industry: "Aerospace & Defense Supplier",
-        companySize: "~$650M Annual Revenue",
+        companySize: "Upper Mid-Market",
         projectDuration: "18 Months",
         additionalInfo: "~400 Engineers",
         additionalLabel: "Engineering Workforce"
@@ -91,9 +91,9 @@ export default function AerospaceDigitalEngineering() {
         },
         {
           icon: DollarSign,
-          value: "$18M",
-          label: "Cost avoided",
-          detail: "Largely from eliminated rework"
+          value: "On Budget",
+          label: "Program delivery",
+          detail: "Overruns of roughly a third largely eliminated with the rework"
         },
         {
           icon: Zap,
@@ -102,7 +102,7 @@ export default function AerospaceDigitalEngineering() {
           detail: "Systems that worked as designed on first integration"
         }
       ]}
-      quote="We used to find our integration problems on the test floor — at the worst possible time and the highest possible cost. Now we find them in simulation, weeks earlier. Nothing about our ambition changed. Connecting our engineering simply gave us back years and tens of millions of dollars."
+      quote="We used to find our integration problems on the test floor — at the worst possible time and the highest possible cost. Now we find them in simulation, weeks earlier. Nothing about our ambition changed. Connecting our engineering simply gave us back years of schedule — and the rework budgets that went with them."
       quoteAuthor="Vice President, Engineering"
       quoteRole="Global aerospace manufacturer"
       relatedStudies={[

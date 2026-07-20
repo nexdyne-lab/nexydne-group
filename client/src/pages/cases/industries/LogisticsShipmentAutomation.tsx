@@ -23,7 +23,7 @@ export default function LogisticsShipmentAutomation() {
       clientContextBody="Every order passed through the same gauntlet — manual entry, manual validation, manual routing — and every hand-off was a chance for a delay or an error. Customers noticed the slow acknowledgements and the mistakes, and competitors with tighter operations were winning on responsiveness. The manufacturer had squeezed the existing process as hard as it could; the constraint was the process itself, not the people running it. Leadership wanted order processing dramatically faster and more reliable, achieved through a genuine redesign rather than another round of working harder."
       clientProfile={{
         industry: "Regional Manufacturer",
-        companySize: "~$410M Annual Revenue",
+        companySize: "500,000+ Shipments / Year",
         projectDuration: "8 Months",
         additionalInfo: "Order-to-Fulfillment Process",
         additionalLabel: "Operating Scope"

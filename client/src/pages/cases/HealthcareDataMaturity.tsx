@@ -84,9 +84,9 @@ export function HealthcareDataMaturity() {
         },
         {
           icon: Brain,
-          value: "$2.8M",
-          label: "Saved by readmission model",
-          detail: "Identifying high-risk patients before discharge"
+          value: "24%",
+          label: "Fewer avoidable readmissions",
+          detail: "By flagging high-risk patients before discharge"
         },
         {
           icon: BookOpen,
@@ -95,7 +95,7 @@ export function HealthcareDataMaturity() {
           detail: "Down from 3 weeks, with data errors down 65%"
         }
       ]}
-      quote="The maturity assessment was a wake-up call. We were at Level 1 — every analysis required IT support, data definitions were inconsistent, no one could answer their own questions. The roadmap gave us a clear path to Level 3. In 18 months we built a data warehouse, launched self-service dashboards, and deployed predictive models for readmission risk. IT reporting requests dropped 75%, and the readmission prediction model alone saved $2.8M by identifying high-risk patients before discharge."
+      quote="The maturity assessment was a wake-up call. We were at Level 1 — every analysis required IT support, data definitions were inconsistent, no one could answer their own questions. The roadmap gave us a clear path to Level 3. In 18 months we built a data warehouse, launched self-service dashboards, and deployed predictive models for readmission risk. IT reporting requests dropped 75%, and the readmission prediction model alone cut avoidable readmissions 24% by identifying high-risk patients before discharge."
       quoteAuthor="Dr. Michael Rodriguez"
       quoteRole="Chief Medical Information Officer"
       relatedStudies={[

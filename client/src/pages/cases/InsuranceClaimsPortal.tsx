@@ -92,7 +92,7 @@ export function InsuranceClaimsPortal() {
           icon: Smile,
           value: "94%",
           label: "Retention",
-          detail: "Up from 88%, saving $2.8M a year in processing costs"
+          detail: "Up from 88%, with claim-processing costs down sharply"
         }
       ]}
       quote=""

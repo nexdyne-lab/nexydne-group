@@ -5,17 +5,17 @@ export function LogisticsBrandConsolidation() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Unifying 30+ Regional Brands With AI-Driven Optimization | Logistics Case Study"
-      seoDescription="A global logistics provider had diluted its equity across 30+ acquired brands. A dual-track brand consolidation and AI route optimization reached a Top 50 global ranking and $55M in savings."
+      seoDescription="A global logistics provider had diluted its equity across 30+ acquired brands. A dual-track brand consolidation and AI route optimization reached a Top 50 global ranking and cut operating costs 12%."
       canonical="/cases/logistics-brand-consolidation"
       industry="Transportation & Logistics"
       industryLink="/industries/transportation-logistics"
-      title="How a Global Logistics Provider Unified 30+ Brands and Saved $55M"
-      subtitle="A dual-track transformation — data-driven brand consolidation plus AI route optimization — unified 30+ regional brands into one network, reaching a Top 50 global ranking and $55M in operational savings."
+      title="How a Global Logistics Provider Unified 30+ Brands and Cut Operating Costs 12%"
+      subtitle="A dual-track transformation — data-driven brand consolidation plus AI route optimization — unified 30+ regional brands into one network, reaching a Top 50 global ranking and cutting operating costs 12%."
       heroImage="/images/cases/logistics-brand-consolidation-hero.jpg"
       metrics={[
         { value: "Top 50", label: "Global Brand Ranking" },
         { value: "18%", label: "More Cross-Selling" },
-        { value: "$55M", label: "Operational Savings" }
+        { value: "12%", label: "Lower Operating Costs" }
       ]}
       clientContextTitle="Scale Without a Brand"
       clientContextIntro="A global logistics provider had grown rapidly through aggressive acquisitions, leaving a fragmented portfolio of 30+ regional brands. Despite significant global reach, its brand equity was diluted across these disparate entities."
@@ -90,8 +90,8 @@ export function LogisticsBrandConsolidation() {
         },
         {
           icon: Route,
-          value: "$55M",
-          label: "Operational savings",
+          value: "12%",
+          label: "Lower operating costs",
           detail: "From AI-optimized routing and harmonized service portfolios"
         }
       ]}

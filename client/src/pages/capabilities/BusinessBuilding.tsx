@@ -127,7 +127,7 @@ export default function BusinessBuilding() {
           "We are helping growing companies move quickly from experimentation to scale and generate real value from new ventures. Working closely with leadership teams, we identify where to accelerate venture development, build a clear roadmap for impact across product, customer experience, and operational efficiency, and treat AI as a business accelerator rather than a technology deployment — so you ship AI-native products that create sustainable competitive advantage.",
         realOutcomes: [
           "A regional bank cut loan origination from 14 days to 4 hours by re-platforming the front office around AI document review",
-          "A regional credit union launched a digital lending product that generated $28M in new loans within 14 months",
+          "A regional credit union launched a digital lending product that grew to a double-digit share of new originations within 14 months",
           "A regional food distributor built a B2B e-commerce platform and grew order volume by 47% in its first year",
           "Growing companies consistently reach profitability within 18 months on new venture launches",
         ],
@@ -204,7 +204,7 @@ export default function BusinessBuilding() {
           cases: [
             { slug: "media-streaming-launch", title: "Launching a streaming service that won 750K subscribers", metric: "750K", image: "/images/industries/tech-datacenter.jpg" },
             { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", metric: "85%", image: "/images/cases/fashion-retail-digital-transformation-hero.jpg" },
-            { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
+            { slug: "industrial-connected-products", title: "Building a Recurring Services Business on Machines Already Sold", metric: "2,700 machines on connected services", image: "/images/capabilities/cap-battery-factory.jpg" },
           ],
         },
         {
@@ -218,7 +218,7 @@ export default function BusinessBuilding() {
         {
           industry: "Scale & Grow",
           cases: [
-            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M", image: "/images/cases/bank-cross-sell-hero.jpg" },
+            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "40% more products per customer", image: "/images/cases/bank-cross-sell-hero.jpg" },
             { slug: "retail-loyalty-transformation", title: "Turning a stale loyalty program into 45% more spend", metric: "45%", image: "/images/capabilities/cap-retail-data.jpg" },
             { slug: "capital-raise-series-b", title: "Raising a growth round on stronger terms", metric: "1.3x", image: "/images/cases/capital-raise-series-b-hero.jpg" },
           ],

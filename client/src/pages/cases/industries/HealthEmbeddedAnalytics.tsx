@@ -23,7 +23,7 @@ export default function HealthEmbeddedAnalytics() {
       clientContextBody="In a clinical workflow, every extra click and context-switch is a barrier, and a separate portal was a barrier too high. Clinicians made decisions inside the EHR and had neither the time nor the habit to break out to another system to check a dashboard. So the analytics investment sat idle, and decisions were made without the insight that was technically available. The health system needed to bring the analytics to where the work already happened — embedded, real-time, inside the EHR — rather than asking clinicians to come to the analytics."
       clientProfile={{
         industry: "Regional Health System",
-        companySize: "~$680M Annual Revenue",
+        companySize: "6 Hospitals, 40+ Clinics",
         projectDuration: "5 Months",
         additionalInfo: "EHR-Embedded Analytics",
         additionalLabel: "Point of Care"

@@ -71,8 +71,8 @@ export default function CorporateVentureAdvantage() {
 
       <p>
         Because they could guarantee load volume from day one (something no startup could do), they attracted carriers
-        instantly. The result? A $50M new revenue stream in year one, achieved with 1/10th the marketing spend of their
-        venture-backed competitors.
+        instantly. The result? A new revenue stream that reached meaningful scale in year one, achieved with 1/10th the
+        marketing spend of their venture-backed competitors.
       </p>
 
       <h2 id="governance-trap">The governance trap</h2>

@@ -4,17 +4,17 @@ import { CalendarClock, BarChart3, UserSquare, Receipt, LineChart, Workflow, Bui
 export function PEGrowthHealthcare() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Tripling Revenue From $40M to $120M Post-Acquisition | Healthcare Case Study"
-      seoDescription="A PE-backed home-health company had clinical depth but 15-day closes, no CRM, and uncollected revenue. A post-acquisition growth program tripled revenue to $120M in 18 months."
+      seoTitle="Tripling Revenue in 18 Months Post-Acquisition | Healthcare Case Study"
+      seoDescription="A PE-backed home-health company had clinical depth but 15-day closes, no CRM, and uncollected revenue. A post-acquisition growth program tripled revenue in 18 months."
       canonical="/capabilities/strategy-corporate-finance/case-studies/pe-growth-healthcare"
       industry="Healthcare"
       industryLink="/industries/healthcare"
       title="How a PE-Backed Healthcare Company Tripled Revenue in 18 Months"
-      subtitle="A private-equity-backed home-health company executed a comprehensive post-acquisition growth strategy — a new FP&A function, a scalable sales engine, and revenue-cycle fixes — tripling revenue from $40M to $120M."
+      subtitle="A private-equity-backed home-health company executed a comprehensive post-acquisition growth strategy — a new FP&A function, a scalable sales engine, and revenue-cycle fixes — tripling revenue in 18 months."
       heroImage="/case-healthcare-team.5797392b.jpg"
       metrics={[
         { value: "3x", label: "Revenue Growth" },
-        { value: "$80M", label: "Revenue Added" },
+        { value: "60%", label: "Fewer Claim Denials" },
         { value: "18 mo", label: "Timeline" },
         { value: "14%", label: "EBITDA Margin" }
       ]}
@@ -67,21 +67,21 @@ export function PEGrowthHealthcare() {
         {
           step: "03",
           title: "Fix the revenue cycle",
-          description: "Restructuring cut claim denials 60%, improved DSO from 65 to 42 days, and recovered $1.2M in written-off receivables."
+          description: "Restructuring cut claim denials 60%, improved DSO from 65 to 42 days, and recovered a substantial pool of written-off receivables."
         },
         {
           step: "04",
           title: "Execute tuck-ins",
-          description: "Two acquisitions adding $25M in revenue covered targeting, diligence, integration, and synergy realization."
+          description: "Two tuck-in acquisitions — together contributing roughly a fifth of final revenue — covered targeting, diligence, integration, and synergy realization."
         }
       ]}
       resultsTitle="The Payoff"
       results={[
         {
           icon: TrendingUp,
-          value: "$120M",
-          label: "Revenue, up from $40M",
-          detail: "Adding $80M through organic growth and two acquisitions"
+          value: "3x",
+          label: "Revenue growth in 18 months",
+          detail: "Through organic growth and two tuck-in acquisitions"
         },
         {
           icon: Building2,

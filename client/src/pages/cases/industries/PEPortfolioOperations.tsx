@@ -5,25 +5,25 @@ export default function PEPortfolioOperations() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Turning Around an Industrial Manufacturer in the Hold | Private Equity Case Study"
-      seoDescription="A private equity fund owned a profitable industrial manufacturer that had quietly stopped improving. A disciplined value-creation program lifted margins by seven points and added $18M in EBITDA."
+      seoDescription="A private equity fund owned a profitable industrial manufacturer that had quietly stopped improving. A disciplined value-creation program lifted EBITDA margins by seven points."
       canonical="/cases/pe-industrial-transformation"
       industry="Private Equity"
       industryLink="/industries/private-equity"
-      title="How a Fund Added $18M in EBITDA at an Industrial Manufacturer"
+      title="How a Fund Added Seven Points of EBITDA Margin at an Industrial Manufacturer"
       subtitle="A private equity fund had bought a solid industrial business that had quietly stopped getting better. A focused program of operational improvement changed the trajectory of the hold — and the return."
       heroImage="/images/cases/pe-industrial-transformation-hero.jpg"
       metrics={[
         { value: "700bps", label: "Margin Improvement" },
-        { value: "$18M", label: "EBITDA Growth" },
+        { value: "1.6x", label: "EBITDA Growth" },
         { value: "40%", label: "Faster Value Capture" },
         { value: "3.2x", label: "Projected Return" }
       ]}
       clientContextTitle="A Good Company That Had Stopped Improving"
-      clientContextIntro="A private equity fund owned an industrial components manufacturer — a business of around $280 million in revenue, roughly 1,100 people and five plants. It was a genuinely good company: strong products, loyal customers and steady profits. The trouble was that, a year into the fund's ownership, the numbers had barely moved from where they were at purchase."
+      clientContextIntro="A private equity fund owned an industrial components manufacturer — a business of roughly 1,100 people and five plants. It was a genuinely good company: strong products, loyal customers and steady profits. The trouble was that, a year into the fund's ownership, the numbers had barely moved from where they were at purchase."
       clientContextBody="The fund had bought the business on a clear thesis — a solid core with real room to run — but the improvement it had underwritten was not showing up. The operating team knew opportunities existed, yet had no systematic way to find and capture them. Progress happened project by project, driven by whoever pushed hardest, and a good idea proven at one plant was often unknown at the other four. Leadership eventually concluded that this was not a talent problem. It was a method problem: the company simply had no repeatable way of getting better."
       clientProfile={{
         industry: "Industrial Manufacturing (PE-Owned)",
-        companySize: "~$280M Portfolio-Company Revenue",
+        companySize: "~1,100 Employees",
         projectDuration: "18 Months",
         additionalInfo: "5 Manufacturing Plants",
         additionalLabel: "Operational Footprint"
@@ -85,8 +85,8 @@ export default function PEPortfolioOperations() {
         },
         {
           icon: DollarSign,
-          value: "$18M",
-          label: "Added annual EBITDA",
+          value: "1.6x",
+          label: "EBITDA growth",
           detail: "From pricing, purchasing and plant efficiency"
         },
         {

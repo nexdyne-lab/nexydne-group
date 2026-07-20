@@ -23,7 +23,7 @@ export default function LenderApplicationFunnelCro() {
       clientContextBody="Every point of conversion left on the table was expensive, because the acquisition cost had already been paid. The application funnel was long and friction-heavy, but the team had no rigorous read on which steps were doing the damage, and no disciplined program to fix them. Improving conversion, not buying more traffic, was the cheapest growth available — the lender just needed a diagnostic to find the leaks and a cadence to close them."
       clientProfile={{
         industry: "Digital Lender",
-        companySize: "~$300M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "6 Months",
         additionalInfo: "Online Application Funnel",
         additionalLabel: "Growth Surface"

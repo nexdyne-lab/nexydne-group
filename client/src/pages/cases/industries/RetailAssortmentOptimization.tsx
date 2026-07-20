@@ -15,7 +15,7 @@ export default function RetailAssortmentOptimization() {
       metrics={[
         { value: "12%", label: "Sales Lift" },
         { value: "15%", label: "Less Inventory" },
-        { value: "$22M", label: "Added Revenue" },
+        { value: "80", label: "Stores on Tailored Ranges" },
         { value: "25%", label: "Fewer SKUs" }
       ]}
       clientContextTitle="One Assortment for Every Kind of Shopper"
@@ -91,9 +91,9 @@ export default function RetailAssortmentOptimization() {
         },
         {
           icon: DollarSign,
-          value: "$22M",
-          label: "Added revenue a year",
-          detail: "From assortments tuned to each store"
+          value: "80",
+          label: "Stores on tailored ranges",
+          detail: "Every location stocked for its own shoppers"
         },
         {
           icon: Sparkles,

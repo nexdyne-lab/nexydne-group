@@ -14,16 +14,16 @@ export default function PECarveoutExecution() {
       heroImage="/images/cases/pe-distribution-digital-hero.jpg"
       metrics={[
         { value: "6 Months", label: "To Standalone" },
-        { value: "$7M", label: "Separation Costs Avoided" },
+        { value: "12+ Months", label: "Early Off Parent Support" },
         { value: "Zero", label: "Customer Disruption" },
         { value: "100%", label: "Off Parent Systems" }
       ]}
       clientContextTitle="A Business Still Wired Into Its Old Owner"
-      clientContextIntro="A private equity fund bought a distribution business — around $220 million in revenue, roughly 900 employees, serving customers from a network of regional depots — out of a much larger parent. On paper it was a clean sale. In practice the business was still wired into the parent for almost everything: its order and warehouse systems, its finance and HR, even parts of its supply chain."
-      clientContextBody="A temporary support arrangement let the parent keep the lights on after close, but it cost around $600,000 a month and, more importantly, held up the value the fund had bought the business to create. Separations like this often run eighteen months or more. The fund wanted to move faster — off the parent's systems and standing on its own — without a single customer ever feeling the change."
+      clientContextIntro="A private equity fund bought a distribution business — roughly 900 employees, serving customers from a network of regional depots — out of a much larger parent. On paper it was a clean sale. In practice the business was still wired into the parent for almost everything: its order and warehouse systems, its finance and HR, even parts of its supply chain."
+      clientContextBody="A temporary support arrangement let the parent keep the lights on after close, but it carried a heavy monthly fee and, more importantly, held up the value the fund had bought the business to create. Separations like this often run eighteen months or more. The fund wanted to move faster — off the parent's systems and standing on its own — without a single customer ever feeling the change."
       clientProfile={{
         industry: "Distribution (PE Carve-Out)",
-        companySize: "~$220M Carve-Out Revenue",
+        companySize: "~900 Employees",
         projectDuration: "6 Months",
         additionalInfo: "~900 Employees",
         additionalLabel: "Carved-Out Business"
@@ -33,7 +33,7 @@ export default function PECarveoutExecution() {
         {
           icon: Clock,
           title: "A Meter Running",
-          description: "Roughly $600,000 a month for temporary parent support — every month of delay eroding the return."
+          description: "A heavy monthly fee for temporary parent support — every month of delay eroding the return."
         },
         {
           icon: Cog,
@@ -85,9 +85,9 @@ export default function PECarveoutExecution() {
         },
         {
           icon: DollarSign,
-          value: "$7M",
-          label: "Separation costs avoided",
-          detail: "From an early exit off parent support"
+          value: "12+ Months",
+          label: "Earlier off parent support",
+          detail: "An early exit that stopped the monthly support fees"
         },
         {
           icon: Shield,
@@ -107,8 +107,8 @@ export default function PECarveoutExecution() {
       quoteRole="Private equity fund"
       relatedStudies={[
         {
-          title: "Adding $18M in EBITDA at an Industrial Manufacturer",
-          metric: "$18M",
+          title: "Adding Seven Points of EBITDA Margin at an Industrial Manufacturer",
+          metric: "7 pts",
           label: "added EBITDA",
           link: "/cases/pe-industrial-transformation",
           image: "/images/cases/pe-industrial-transformation-hero.jpg"

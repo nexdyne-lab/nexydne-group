@@ -5,25 +5,25 @@ export function ConsumerGoodsSupplyChain() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Supply Chain Optimization That Cut Costs 25% | Consumer Goods Case Study"
-      seoDescription="An $85M consumer-goods maker had 150 suppliers, freight 18% above benchmark, and forecasts on spreadsheets. Demand-driven planning cut supply-chain costs 25% and saved $3.2M."
+      seoDescription="A consumer-goods maker had 150 suppliers, freight 18% above benchmark, and forecasts on spreadsheets. Demand-driven planning cut supply-chain costs 25% and lifted on-time delivery to 98%."
       canonical="/capabilities/operations/case-studies/consumer-goods-supply-chain"
       industry="Manufacturing"
       industryLink="/industries/manufacturing"
       title="How a Consumer-Goods Maker Cut Supply-Chain Costs 25%"
-      subtitle="A consumer-goods manufacturer transformed a fragmented supply chain with demand-driven planning, supplier consolidation, and network redesign — cutting costs 25%, saving $3.2M, and reaching 98% on-time delivery."
+      subtitle="A consumer-goods manufacturer transformed a fragmented supply chain with demand-driven planning, supplier consolidation, and network redesign — cutting costs 25% and reaching 98% on-time delivery."
       heroImage="/images/industries/retail-warehouse.jpg"
       metrics={[
         { value: "25%", label: "Cost Reduction" },
         { value: "40%", label: "Lead Time Improvement" },
-        { value: "$3.2M", label: "Annual Savings" },
+        { value: "<1 yr", label: "Payback Period" },
         { value: "98%", label: "On-Time Delivery" }
       ]}
       clientContextTitle="Costs Eroding Margins"
-      clientContextIntro="A 200-employee consumer-goods manufacturer with $85M in revenue operates three Midwest facilities producing household cleaning products for major retailers. Raw-material costs had risen 15% over two years while customer demands for faster delivery intensified — and the fragmented supply chain had little inventory visibility and no systematic demand planning."
+      clientContextIntro="A 200-employee consumer-goods manufacturer operates three Midwest facilities producing household cleaning products for major retailers. Raw-material costs had risen 15% over two years while customer demands for faster delivery intensified — and the fragmented supply chain had little inventory visibility and no systematic demand planning."
       clientContextBody="The diagnostic revealed interconnected issues: inventory distributed unevenly (some sites holding 90+ days of stock, others facing stockouts), 150+ suppliers with no formal management, transportation costs 18% above benchmark from inefficient routing, and demand forecasting relying on spreadsheets and sales intuition."
       clientProfile={{
         industry: "Consumer-Goods Manufacturer",
-        companySize: "$85M Revenue",
+        companySize: "200 Employees",
         projectDuration: "3 Facilities",
         additionalInfo: "S&OP Process",
         additionalLabel: "Capability"
@@ -81,7 +81,7 @@ export function ConsumerGoodsSupplyChain() {
           icon: DollarSign,
           value: "25%",
           label: "Lower supply-chain costs",
-          detail: "$3.2M in annual savings"
+          detail: "The program paid for itself inside the first year"
         },
         {
           icon: TrendingUp,

@@ -3,7 +3,7 @@ import IndustryCapabilityTemplate from "@/components/IndustryCapabilityTemplate"
 const cases = [
   { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes 35%", industry: "Healthcare", metric: "35%", image: "/images/cases/healthcare-transformation-hero.jpg" },
   { slug: "healthcare-readmission", title: "Cutting avoidable readmissions by 42% with better prediction", industry: "Healthcare", metric: "42%", image: "/images/cases/healthcare-readmission-hero.jpg" },
-  { slug: "healthcare-revenue-cycle", title: "Recovering $32M a year in revenue already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+  { slug: "healthcare-revenue-cycle", title: "How a Health System Started Collecting What It Was Already Owed", industry: "Healthcare", metric: "45% fewer rejected claims", image: "/case-healthcare-team.5797392b.jpg" },
 ];
 
 const related = [

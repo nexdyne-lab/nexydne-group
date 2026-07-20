@@ -23,7 +23,7 @@ export default function FinancePersonalizationStrategyReroute() {
       clientContextBody="The decisions that drove product attach happened inside the app, in a handful of specific moments — reviewing a balance, completing a transaction, hitting a savings milestone. But the personalization strategy had grown up around the marketing channels the team already controlled, not around where customer intent was highest. The result was a busy, expensive program that touched customers constantly and moved the business very little. Leadership wanted the strategy rebuilt around where decisions were actually made, without simply spending more."
       clientProfile={{
         industry: "Consumer Finance App",
-        companySize: "~$260M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "4 Months",
         additionalInfo: "Several Million App Users",
         additionalLabel: "Active Base"

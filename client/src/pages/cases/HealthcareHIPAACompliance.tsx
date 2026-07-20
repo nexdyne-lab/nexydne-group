@@ -20,7 +20,7 @@ export function HealthcareHIPAACompliance() {
       ]}
       clientContextTitle="Broad Access, Mounting Risk"
       clientContextIntro="A regional hospital system with 8 facilities and 12,000 employees faced mounting HIPAA risk. Its legacy EHR granted broad permissions — nurses could view records for patients they'd never treated, billing staff saw clinical notes, and IT admins had unrestricted access to everything."
-      clientContextBody="Audit logs existed but were scattered across systems, making investigations take weeks. The Office for Civil Rights had cited the system after a breach revealed a terminated employee's credentials stayed active for six weeks, exposing 2,400 patient records — a potential $1.5M fine plus reputational damage. The system needed governance that enforced role-based access automatically, logged every access event immutably, detected anomalies in real time, and produced audit reports non-technical officers could read — all without disrupting clinical workflows in Epic."
+      clientContextBody="Audit logs existed but were scattered across systems, making investigations take weeks. The Office for Civil Rights had cited the system after a breach revealed a terminated employee's credentials stayed active for six weeks, exposing 2,400 patient records — a potentially heavy fine plus reputational damage. The system needed governance that enforced role-based access automatically, logged every access event immutably, detected anomalies in real time, and produced audit reports non-technical officers could read — all without disrupting clinical workflows in Epic."
       clientProfile={{
         industry: "Regional Hospital System",
         companySize: "12,000 Employees",
@@ -48,7 +48,7 @@ export function HealthcareHIPAACompliance() {
         {
           icon: ShieldAlert,
           title: "An OCR citation and fine exposure",
-          description: "Insufficient access controls drew a regulatory citation and up to $1.5M in potential fines."
+          description: "Insufficient access controls drew a regulatory citation and exposure to heavy potential fines."
         }
       ]}
       approachTitle="A Governance Layer Between Users and the EHR"

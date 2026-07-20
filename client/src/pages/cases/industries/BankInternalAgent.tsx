@@ -23,7 +23,7 @@ export default function BankInternalAgent() {
       clientContextBody="The volume was high and overwhelmingly repetitive. Each password reset or access request was a small task, but multiplied across the whole bank they added up to thousands of specialist hours a year spent on work that required no specialist at all. Employees lost productive time waiting, and the IT team could not get to the strategic work only it could do. The bank needed an internal conversational agent that could resolve these routine queries directly for employees — reclaiming specialist capacity and giving staff instant answers."
       clientProfile={{
         industry: "Regional Bank",
-        companySize: "~$430M Annual Revenue",
+        companySize: "~2,800 Employees",
         projectDuration: "5 Months",
         additionalInfo: "Internal IT Agent",
         additionalLabel: "Employee Support"

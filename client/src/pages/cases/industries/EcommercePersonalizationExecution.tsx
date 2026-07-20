@@ -23,7 +23,7 @@ export default function EcommercePersonalizationExecution() {
       clientContextBody="The gap was execution, not data or intent. The operator knew personalization mattered but had no use-case map to prioritize what to build, no reusable library to build variants efficiently, and no integration wiring the customer data platform to the email service and content system so experiences could actually be delivered. The most valuable moments — post-purchase and replenishment, where a well-timed message drives real revenue — were entirely unaddressed. The operator needed a structured personalization program: a prioritized use-case map, a reusable variant library, and the integration to execute across CDP, ESP, and CMS."
       clientProfile={{
         industry: "E-Commerce Operator",
-        companySize: "~$310M Annual Revenue",
+        companySize: "~2M Active Customers",
         projectDuration: "5 Months",
         additionalInfo: "Personalization Execution",
         additionalLabel: "Lifecycle Program"

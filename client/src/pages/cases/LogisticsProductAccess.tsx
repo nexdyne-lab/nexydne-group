@@ -5,18 +5,18 @@ export function LogisticsProductAccess() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Enabling 3.2x Faster Product Access With Personalized Search | Logistics Case Study"
-      seoDescription="An industrial distributor's 180,000-SKU catalog overwhelmed B2B buyers, with 42% of orders needing rep help. AI search and personalization drove 3.2x faster discovery and $12M in revenue."
+      seoDescription="An industrial distributor's 180,000-SKU catalog overwhelmed B2B buyers, with 42% of orders needing rep help. AI search and personalization drove 3.2x faster discovery and 68% higher search conversion."
       canonical="/cases/logistics-product-access"
       industry="Transportation & Logistics"
       industryLink="/industries/transportation-logistics"
       title="How an Industrial Distributor Enabled 3.2x Faster Product Access"
-      subtitle="A national industrial-supply distributor deployed AI-powered search, merchandising, and personalization — helping B2B buyers find the right products 3.2x faster, driving 68% higher search conversion and $12M in revenue."
+      subtitle="A national industrial-supply distributor deployed AI-powered search, merchandising, and personalization — helping B2B buyers find the right products 3.2x faster and driving 68% higher search conversion."
       heroImage="/images/cases/logistics-product-access-hero.jpg"
       metrics={[
         { value: "3.2x", label: "Faster Product Discovery" },
         { value: "68%", label: "Higher Search Conversion" },
         { value: "41%", label: "Larger Average Order" },
-        { value: "$12M", label: "Incremental Revenue" }
+        { value: "68%", label: "Higher Search Conversion" }
       ]}
       clientContextTitle="A Catalog Too Big to Search"
       clientContextIntro="A national industrial-supply distributor with 180,000+ SKUs serving construction, manufacturing, and facilities customers faced a critical e-commerce problem: its vast catalog overwhelmed customers. Generic keyword search returned hundreds of irrelevant results, forcing buyers to filter through pages or call sales reps."
@@ -87,13 +87,13 @@ export function LogisticsProductAccess() {
           icon: ShoppingCart,
           value: "87%",
           label: "Self-service orders",
-          detail: "Up from 58%, cutting sales-support cost $1.8M a year"
+          detail: "Up from 58%, sharply cutting sales-support cost"
         },
         {
           icon: TrendingUp,
-          value: "$12M",
-          label: "Incremental revenue",
-          detail: "With average order value up 41% and satisfaction from 3.2 to 4.6"
+          value: "41%",
+          label: "Larger average order",
+          detail: "With customer satisfaction up from 3.2 to 4.6"
         }
       ]}
       quote=""
@@ -102,8 +102,8 @@ export function LogisticsProductAccess() {
       relatedStudies={[
         {
           title: "Unifying 30+ Regional Brands With AI Optimization",
-          metric: "$55M",
-          label: "operational savings",
+          metric: "12%",
+          label: "lower operating costs",
           link: "/cases/logistics-brand-consolidation",
           image: "/images/cases/logistics-brand-consolidation-hero.jpg"
         },

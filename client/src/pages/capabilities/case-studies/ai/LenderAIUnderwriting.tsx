@@ -5,21 +5,21 @@ export function LenderAIUnderwriting() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="AI-Driven Underwriting That Accelerated a Lender 5x | Financial Services Case Study"
-      seoDescription="A specialty lender was capped at 200 applications a month with inconsistent decisions. An explainable ML credit model lifted throughput 5x, cut defaults 22%, and enabled $45M in new volume."
+      seoDescription="A specialty lender was capped at 200 applications a month with inconsistent decisions. An explainable ML credit model lifted throughput 5x and cut defaults 22% — with decisions in 4 hours."
       canonical="/capabilities/artificial-intelligence/case-studies/lender-ai-underwriting"
       industry="Financial Services"
       industryLink="/industries/financial-services"
       title="How a Specialty Lender Accelerated Underwriting 5x With AI"
-      subtitle="A specialty lending firm deployed an explainable ML credit model with tiered human oversight — processing 5x more applications while cutting default rates 22% and enabling $45M in new loan volume."
+      subtitle="A specialty lending firm deployed an explainable ML credit model with tiered human oversight — processing 5x more applications while cutting default rates 22%, with decisions in 4 hours instead of days."
       heroImage="/images/industries/fin-handshake-city.jpg"
       metrics={[
         { value: "5x", label: "Application Throughput" },
         { value: "22%", label: "Lower Default Rate" },
         { value: "4 hrs", label: "Decision Time" },
-        { value: "$45M", label: "New Loan Volume" }
+        { value: "1,000+", label: "Applications a Month" }
       ]}
       clientContextTitle="Underwriting as the Bottleneck"
-      clientContextIntro="A specialty lending firm with 100 employees provides working-capital loans of $25,000–$500,000 to small businesses with 2–10 years of history. Manual underwriting capped the company at 200 applications a month — underwriter capacity was the bottleneck to growth."
+      clientContextIntro="A specialty lending firm with 100 employees provides working-capital loans to established small businesses with 2–10 years of operating history. Manual underwriting capped the company at 200 applications a month — underwriter capacity was the bottleneck to growth."
       clientContextBody="Inconsistent decision-making led to higher-than-expected default rates. Yet analysis of five years of loan performance revealed patterns humans couldn't consistently identify: certain combinations of financial metrics predicted default better than credit scores, industry-specific factors influenced repayment, and cash-flow patterns beat balance-sheet metrics for small businesses. The company needed to scale while maintaining or improving credit quality."
       clientProfile={{
         industry: "Specialty Lending Firm",
@@ -91,9 +91,9 @@ export function LenderAIUnderwriting() {
         },
         {
           icon: DollarSign,
-          value: "$45M",
-          label: "New loan volume",
-          detail: "In year one, with credit quality improving alongside growth"
+          value: "4 hrs",
+          label: "Decision time",
+          detail: "Down from days, with credit quality improving alongside growth"
         }
       ]}
       quote=""

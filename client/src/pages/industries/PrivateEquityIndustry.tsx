@@ -72,9 +72,9 @@ export default function PrivateEquityIndustry() {
       featuredCases={[
         {
           slug: "pe-industrial-transformation",
-          title: "Adding $18M in EBITDA at an industrial manufacturer",
+          title: "How a Fund Added Seven Points of EBITDA Margin at an Industrial Manufacturer",
           industry: "Private Equity",
-          metric: "$18M",
+          metric: "7 pts EBITDA margin",
           image: "/images/cases/pe-industrial-transformation-hero.jpg"
         },
         {

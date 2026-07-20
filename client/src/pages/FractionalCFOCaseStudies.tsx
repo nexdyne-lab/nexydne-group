@@ -45,10 +45,10 @@ export default function FractionalCFOCaseStudies() {
       company: 'B2B SaaS Platform',
       industry: 'Software & Technology',
       challenge: 'Stuck as a fast follower, needed to transition to category leadership',
-      result: 'Funded breakthrough product pipeline with 5+ new revenue streams generating $50M+ ARR potential',
+      result: 'Funded breakthrough product pipeline with 5+ new revenue streams positioned to double the company\'s ARR',
       metrics: [
         { label: 'New Revenue Streams', value: '5+' },
-        { label: 'Potential ARR', value: '$50M+' },
+        { label: 'ARR Growth Potential', value: '2×' },
         { label: 'Strategic Shift', value: 'Follower → Leader' }
       ],
       image: '/images/case-studies/saas-leadership.jpg',

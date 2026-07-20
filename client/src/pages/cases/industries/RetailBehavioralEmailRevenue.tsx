@@ -23,7 +23,7 @@ export default function RetailBehavioralEmailRevenue() {
       clientContextBody="The personas were built on who customers were, not on what they did. A shopper who browsed daily and a shopper who had not visited in six months could sit in the same persona and receive the same message. The marketing team knew the segments were stale, but rebuilding them meant untangling browse and purchase data that lived in systems that did not talk to each other. Meanwhile every extra send eroded list health, pushing the most valuable customers toward the unsubscribe button."
       clientProfile={{
         industry: "Specialty Retailer",
-        companySize: "~$350M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "4 Months",
         additionalInfo: "Email as Top Channel",
         additionalLabel: "Owned Marketing"

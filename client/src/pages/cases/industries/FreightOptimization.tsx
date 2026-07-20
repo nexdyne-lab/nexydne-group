@@ -15,15 +15,15 @@ export default function FreightOptimization() {
       metrics={[
         { value: "18%", label: "Lower Freight Cost" },
         { value: "95%", label: "On-Time Delivery" },
-        { value: "$14M", label: "Saved Each Year" },
+        { value: "<1 Year", label: "Full Payback" },
         { value: "20%", label: "Fewer Emissions" }
       ]}
       clientContextTitle="A Freight Bill Rising Faster Than the Business"
-      clientContextIntro="A consumer-goods manufacturer moved its products from eight distribution centers to roughly twelve hundred retail and wholesale destinations across the country. Its annual freight bill had grown to around $80 million and had climbed by a quarter in three years — faster than sales — even as on-time delivery slipped. Every day, planners decided by hand how thousands of shipments should travel, and the network had simply grown too complex to route well that way."
+      clientContextIntro="A consumer-goods manufacturer moved its products from eight distribution centers to roughly twelve hundred retail and wholesale destinations across the country. Its freight bill had climbed by a quarter in three years — faster than sales — even as on-time delivery slipped. Every day, planners decided by hand how thousands of shipments should travel, and the network had simply grown too complex to route well that way."
       clientContextBody="The planning was reactive and rested on rules of thumb. Shipments that could have travelled together moved separately. Trucks were the default choice even on routes where rail, or a mix of modes, would have been cheaper and still arrived on time. Because each decision was made in isolation, the savings that come only from looking at the whole network at once were left on the table — and service suffered alongside cost."
       clientProfile={{
         industry: "Consumer-Goods Manufacturer",
-        companySize: "~$600M Annual Revenue",
+        companySize: "8 Distribution Centers",
         projectDuration: "12 Months",
         additionalInfo: "8 DCs, ~1,200 Destinations",
         additionalLabel: "Network Size"
@@ -91,9 +91,9 @@ export default function FreightOptimization() {
         },
         {
           icon: TrendingUp,
-          value: "$14M",
-          label: "Saved each year",
-          detail: "Across the freight network"
+          value: "<1 Year",
+          label: "Full payback",
+          detail: "Recovered across the freight network"
         },
         {
           icon: Leaf,

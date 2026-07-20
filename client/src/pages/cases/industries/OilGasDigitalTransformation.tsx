@@ -5,18 +5,18 @@ export default function OilGasDigitalTransformation() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Digital Transformation for Oil & Gas | Energy Case Study"
-      seoDescription="How an oil and gas company achieved $150M in operational savings through digital oilfield technology and AI-powered production optimization."
+      seoDescription="How an oil and gas company cut lifting costs 25% and lifted production 8% through digital oilfield technology and AI-powered production optimization."
       canonical="/cases/oil-gas-digital-transformation"
       industry="Energy & Utilities"
       industryLink="/industries/energy-utilities"
-      title="Oil & Gas Company Saves $150M Through Digital Transformation"
+      title="Oil & Gas Company Cuts Lifting Costs 25% Through Digital Transformation"
       subtitle="How digital oilfield technology, AI-powered optimization, and predictive maintenance transformed upstream operations."
       heroImage="/images/cases/oil-gas-digital-transformation-hero.jpg"
       metrics={[
-        { value: "$150M", label: "Annual Savings" },
+        { value: "25%", label: "Lower Lifting Costs" },
         { value: "8%", label: "Production Increase" },
         { value: "40%", label: "Less Downtime" },
-        { value: "25%", label: "Lower Lifting Costs" }
+        { value: "2–4 wks", label: "Failure Warning Lead Time" }
       ]}
       clientContextTitle="An Operator Seeking Efficiency in a Low-Price World"
       clientContextIntro="A major independent oil and gas company operated 15,000 wells across multiple basins. With commodity prices volatile and margins compressed, the company needed to reduce operating costs while maintaining production. Traditional approaches—cutting headcount, deferring maintenance—had reached their limits."
@@ -33,7 +33,7 @@ export default function OilGasDigitalTransformation() {
         {
           icon: DollarSign,
           title: "High Lifting Costs",
-          description: "$12/BOE lifting costs—20% above efficient operators, eroding margins in low-price environment."
+          description: "Lifting costs ran 20% above efficient operators, eroding margins in a low-price environment."
         },
         {
           icon: Cog,
@@ -79,9 +79,9 @@ export default function OilGasDigitalTransformation() {
       results={[
         {
           icon: DollarSign,
-          value: "$150M",
-          label: "Annual savings",
-          detail: "From reduced costs and increased production"
+          value: "2–4 wks",
+          label: "Failure warning lead time",
+          detail: "Equipment problems fixed before they cost production"
         },
         {
           icon: TrendingUp,
@@ -99,7 +99,7 @@ export default function OilGasDigitalTransformation() {
           icon: Target,
           value: "25%",
           label: "Lower lifting costs",
-          detail: "From $12 to $9/BOE"
+          detail: "Closing the gap to the most efficient operators"
         }
       ]}
       quote="Digital transformation changed how we operate. We went from engineers analyzing spreadsheets to AI optimizing 15,000 wells in real-time. We're producing more oil with less cost, and our teams focus on high-value decisions instead of data gathering. This is what modern oil and gas operations look like."

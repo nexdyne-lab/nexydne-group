@@ -275,7 +275,7 @@ export default function GrowthMarketingSales() {
           industry: "Growth & Commerce",
           cases: [
             { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", metric: "85%", image: "/images/cases/fashion-retail-digital-transformation-hero.jpg" },
-            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M", image: "/images/cases/bank-cross-sell-hero.jpg" },
+            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "40% more products per customer", image: "/images/cases/bank-cross-sell-hero.jpg" },
             { slug: "media-streaming-launch", title: "Launching a streaming service that won 750K subscribers", metric: "750K", image: "/images/industries/tech-datacenter.jpg" },
           ],
         },

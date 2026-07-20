@@ -4,25 +4,25 @@ import { FileSpreadsheet, Clock, HelpCircle, LineChart, GitBranch, Layers, Gauge
 export function FPACaseStudy() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Scenario Planning That Avoided $2.4M in Costs | SaaS FP&A Case Study"
-      seoDescription="A $12M ARR SaaS company ran static Excel budgets that went stale in weeks and couldn't model churn or hiring scenarios. Driver-based FP&A cut forecast error 35% and avoided $2.4M in costs."
+      seoTitle="Scenario Planning That Headed Off a Costly Hiring Misstep | SaaS FP&A Case Study"
+      seoDescription="A growth-stage SaaS company ran static Excel budgets that went stale in weeks and couldn't model churn or hiring scenarios. Driver-based FP&A cut forecast error 35% and headed off a costly hiring misstep."
       canonical="/case-studies/fpa-scenario-planning"
       industry="Technology, Media & Telecom"
       industryLink="/industries/technology-media-telecom"
       title="How Scenario Planning Helped a SaaS Company Navigate Uncertainty"
-      subtitle="A growth-stage B2B SaaS company moved from reactive budgeting to driver-based scenario modeling — improving forecast accuracy 35%, accelerating decisions by 10 days, and avoiding $2.4M in costs."
+      subtitle="A growth-stage B2B SaaS company moved from reactive budgeting to driver-based scenario modeling — improving forecast accuracy 35%, accelerating decisions by 10 days, and heading off a hiring plan that would have shortened runway."
       heroImage="/images/capabilities/cap-presenting-graphs.jpg"
       metrics={[
         { value: "35%", label: "Better Forecast Accuracy" },
         { value: "10 days", label: "Faster Strategic Response" },
-        { value: "$2.4M", label: "Cost Avoidance in Year 1" }
+        { value: "< 2 days", label: "Monthly Forecast Prep" }
       ]}
       clientContextTitle="Budgets Obsolete in Weeks"
-      clientContextIntro="A growth-stage B2B SaaS company providing marketing-automation software — 85–110 employees and $12M ARR — was scaling from product-market fit to market leadership post-Series B. But its financial planning hadn't evolved: static annual Excel budgets were disconnected from real-time drivers and obsolete within weeks of approval."
+      clientContextIntro="A growth-stage B2B SaaS company providing marketing-automation software — 85–110 employees — was scaling from product-market fit to market leadership post-Series B. But its financial planning hadn't evolved: static annual Excel budgets were disconnected from real-time drivers and obsolete within weeks of approval."
       clientContextBody="Revenue forecasts lived in the CRM, expense budgets in Excel, and actuals in the accounting system — consolidating for variance analysis took 5–7 days a month, leaving no time for strategy. Leadership couldn't answer critical questions: what happens if churn rises 2%? How does a 20% sales-hiring acceleration hit runway? Board meetings explained historical variances from outdated budgets instead of discussing strategic options."
       clientProfile={{
         industry: "B2B SaaS Company",
-        companySize: "$12M ARR",
+        companySize: "85–110 Employees",
         projectDuration: "Driver-Based Model",
         additionalInfo: "3-Scenario Framework",
         additionalLabel: "Planning"
@@ -84,15 +84,15 @@ export function FPACaseStudy() {
         },
         {
           icon: DollarSign,
-          value: "$2.4M",
-          label: "Costs avoided",
-          detail: "By deferring a hiring plan that barely extended runway"
+          value: "10 days",
+          label: "Faster strategic decisions",
+          detail: "Including deferring a hiring plan that barely extended runway"
         },
         {
           icon: Layers,
           value: "< 2 days",
           label: "Monthly forecast prep",
-          detail: "Down from 7, and the foundation for a $25M Series C"
+          detail: "Down from 7, and the foundation for a successful Series C"
         }
       ]}
       quote=""
@@ -100,9 +100,9 @@ export function FPACaseStudy() {
       quoteRole=""
       relatedStudies={[
         {
-          title: "A Series B Raise of $35M at an 8x Revenue Multiple",
-          metric: "$35M",
-          label: "capital raised",
+          title: "A Series B Raise at an 8x Revenue Multiple",
+          metric: "8x",
+          label: "revenue multiple",
           link: "/capabilities/strategy-corporate-finance/case-studies/saas-series-b",
           image: "/images/capabilities/cap-celebrate.jpg"
         },

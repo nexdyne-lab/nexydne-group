@@ -102,8 +102,8 @@ export function MediaStreamingScale() {
       relatedStudies={[
         {
           title: "Centralizing 2M Media Assets With a DAM Platform",
-          metric: "$3.2M",
-          label: "annual savings",
+          metric: "2M",
+          label: "assets centralized",
           link: "/cases/media-company-dam",
           image: "/images/industries/tech-datacenter.jpg"
         },

@@ -128,7 +128,7 @@ export default function EnergyMaterials() {
                     Optimizing a Global Refinery Network
                   </h3>
                   <p className="text-muted-foreground/50 text-lg mb-5 sm:mb-6 md:mb-8 max-w-2xl">
-                    A major energy company used NexDyne's digital twin technology to optimize energy use across 5 refineries, reducing carbon emissions by 12% and saving $45M annually.
+                    A major energy company used NexDyne's digital twin technology to optimize energy use across 5 refineries, reducing carbon emissions by 12% and cutting energy spend in step.
                   </p>
                   
                   <div className="grid grid-cols-2 gap-4 sm:p-6 md:p-8 mb-5 sm:mb-6 md:mb-8 border-t border-white/10 pt-8">
@@ -137,8 +137,8 @@ export default function EnergyMaterials() {
                       <div className="text-sm text-muted-foreground/70">Reduction in CO2e</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-bold text-white mb-1">$45M</div>
-                      <div className="text-sm text-muted-foreground/70">Annual Savings</div>
+                      <div className="text-3xl font-bold text-white mb-1">5</div>
+                      <div className="text-sm text-muted-foreground/70">Refineries Optimized</div>
                     </div>
                   </div>
 

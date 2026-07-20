@@ -47,11 +47,11 @@ export default function CaseStudyHealthcareAnalytics() {
               title="Reducing hospital readmissions by 34% through predictive analytics"
               industry="Healthcare"
               summary="A 210-employee accountable care organization deployed advanced analytics to identify high-risk patients, reducing readmissions by 34% and improving quality scores."
-              challenge="An integrated health system with 8 hospitals and a Medicare Shared Savings Program ACO was losing money on value-based contracts because it could not see population health risk in time to act on it. Clinical, claims, social-determinants, and operational data lived in eleven separate systems, and analytics teams produced retrospective reports that arrived weeks after the events they described. Care managers were assigning patients to chronic disease programs based on stale risk scores, readmissions in the post-acute window were running 4 percentage points above the system's target, and CMS penalties had crossed seven figures for the second year running. The Chief Medical Officer and Chief Analytics Officer needed a single source of truth for population health that integrated clinical and financial signals, surfaced rising-risk patients before they decompensated, and gave care managers actionable workflows rather than another dashboard nobody opened."
+              challenge="An integrated health system with 8 hospitals and a Medicare Shared Savings Program ACO was losing money on value-based contracts because it could not see population health risk in time to act on it. Clinical, claims, social-determinants, and operational data lived in eleven separate systems, and analytics teams produced retrospective reports that arrived weeks after the events they described. Care managers were assigning patients to chronic disease programs based on stale risk scores, readmissions in the post-acute window were running 4 percentage points above the system's target, and CMS penalties had recurred at a heavy cost for the second year running. The Chief Medical Officer and Chief Analytics Officer needed a single source of truth for population health that integrated clinical and financial signals, surfaced rising-risk patients before they decompensated, and gave care managers actionable workflows rather than another dashboard nobody opened."
               solution="NexDyne built a real-time healthcare data analytics platform that unifies the system's clinical, claims, and operational data and embeds predictive risk models into care-management workflows. We started with a data engineering effort to land all eleven source systems into a governed lakehouse, with master patient indexing, terminology normalization, and a clinical data model aligned to USCDI. Predictive models trained on the system's own outcomes identify rising-risk patients across readmission, deterioration, and high-cost-claimant trajectories, with explainable feature contributions so care managers understand why a patient surfaced. The platform pushes patient-level recommendations directly into the EHR's care-management module rather than asking clinicians to log into yet another tool, and a population-health dashboard gives leadership real-time visibility into ACO performance against CMS benchmarks. Implementation followed a service-line-based rollout — heart failure first, then COPD, diabetes, and oncology — with workflow co-design alongside the actual care managers using the tools."
               results={[
                 "34% reduction in 30-day readmissions across participating service lines",
-                "$3.2M annual savings from avoided CMS penalties and improved value-based contract performance",
+                "CMS readmission penalties avoided entirely, with improved value-based contract performance",
                 "92% accuracy in high-risk patient identification, validated against six months of outcomes",
                 "Care-management caseloads grew without adding staff thanks to better patient targeting"
               ]}
@@ -68,7 +68,7 @@ export default function CaseStudyHealthcareAnalytics() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
             {[
               { metric: "34%", label: "reduction", sublabel: "in 30-day readmissions" },
-              { metric: "$3.2M", label: "annual savings", sublabel: "from avoided penalties and improved outcomes" },
+              { metric: "Top decile", label: "CMS quality", sublabel: "with readmission penalties avoided entirely" },
               { metric: "92%", label: "accuracy", sublabel: "in high-risk patient identification" }
             ].map((stat, index) => (
               <motion.div
@@ -183,7 +183,7 @@ export default function CaseStudyHealthcareAnalytics() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="prose prose-lg max-w-none">
             <p className="text-xl leading-relaxed text-charcoal/80 mb-6">
-              We designed and implemented a comprehensive population health analytics platform that integrated data from multiple sources and provided predictive insights to care teams. The $115,000 investment focused on creating sophisticated risk models while ensuring HIPAA compliance and seamless integration with clinical workflows.
+              We designed and implemented a comprehensive population health analytics platform that integrated data from multiple sources and provided predictive insights to care teams. The investment focused on creating sophisticated risk models while ensuring HIPAA compliance and seamless integration with clinical workflows.
             </p>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The platform aggregated data from EHRs, claims systems, lab results, pharmacy records, and social services databases into a unified patient view. Machine learning models analyzed patterns across demographics, diagnoses, medications, utilization history, and social determinants to predict readmission risk with 92% accuracy. Care managers received daily prioritized lists of high-risk patients with specific intervention recommendations based on identified risk factors.
@@ -218,7 +218,7 @@ export default function CaseStudyHealthcareAnalytics() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="prose prose-lg max-w-none">
             <p className="text-xl leading-relaxed text-charcoal/80 mb-6">
-              Within 24 months, the analytics platform transformed the organization's population health capabilities, delivering a 34% reduction in 30-day readmissions and $3.2 million in annual savings. The $115,000 investment generated a 270% ROI over 24 months through avoided CMS penalties ($1.8M), shared savings from payer contracts ($1.1M), and care management efficiency ($300K). The organization achieved top-decile performance in CMS quality metrics, positioning it for expanded value-based contracts representing $45 million in additional revenue opportunity.
+              Within 24 months, the analytics platform transformed the organization's population health capabilities, delivering a 34% reduction in 30-day readmissions. Through avoided CMS penalties, shared savings from payer contracts, and care management efficiency, the platform repaid its cost several times over. The organization achieved top-decile performance in CMS quality metrics, positioning it for a substantially expanded portfolio of value-based contracts.
             </p>
           </div>
         </div>

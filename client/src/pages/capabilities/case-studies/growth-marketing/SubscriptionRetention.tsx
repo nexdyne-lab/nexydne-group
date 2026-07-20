@@ -5,25 +5,25 @@ export function SubscriptionRetention() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="A Retention Program That Cut Churn 40% | Subscription Case Study"
-      seoDescription="A $38M subscription business saw churn creep to 4.5% with reactive, complaint-driven success. A health-score model and proactive engagement cut churn 40% and retained $2.4M in ARR."
+      seoDescription="A subscription business saw churn creep to 4.5% with reactive, complaint-driven success. A health-score model and proactive engagement cut monthly churn 40%, from 4.5% to 2.7%."
       canonical="/capabilities/growth-marketing-sales/case-studies/subscription-retention"
       industry="Technology, Media & Telecom"
       industryLink="/industries/technology-media-telecom"
       title="How a Subscription Business Cut Churn 40%"
-      subtitle="A digital-content subscription company shifted from reactive support to proactive customer success — using a health-score model and redesigned onboarding to cut monthly churn 40% and retain $2.4M in ARR."
+      subtitle="A digital-content subscription company shifted from reactive support to proactive customer success — using a health-score model and redesigned onboarding to cut monthly churn 40%, from 4.5% to 2.7%."
       heroImage="/images/capabilities/cap-colleagues-smile.jpg"
       metrics={[
         { value: "40%", label: "Churn Reduction" },
-        { value: "$2.4M", label: "Retained Revenue" },
+        { value: "Weeks", label: "Of Early Churn Warning" },
         { value: "2.7%", label: "New Monthly Churn" },
         { value: "18 mo", label: "Avg Customer Lifetime" }
       ]}
       clientContextTitle="Churning Before Anyone Noticed"
-      clientContextIntro="A 120-employee subscription business with $38M in ARR provides digital content and tools to creative professionals. Monthly churn had crept up to 4.5%, threatening growth, while customer success was reactive — engaging only when customers complained or cancelled."
+      clientContextIntro="A 120-employee subscription business provides digital content and tools to creative professionals. Monthly churn had crept up to 4.5%, threatening growth, while customer success was reactive — engaging only when customers complained or cancelled."
       clientContextBody="There was no systematic way to identify at-risk customers, and inconsistent onboarding left many never fully adopting the product. Analysis of exit surveys and behavior revealed that most churned customers had disengaged weeks before cancelling, that low product usage was the strongest churn predictor, and that customers who didn't complete onboarding churned at 3x the rate — while price was rarely the primary reason."
       clientProfile={{
         industry: "Digital Content Subscription",
-        companySize: "$38M ARR",
+        companySize: "120 Employees",
         projectDuration: "Health-Score Model",
         additionalInfo: "Proactive Success",
         additionalLabel: "Shift"
@@ -81,7 +81,7 @@ export function SubscriptionRetention() {
           icon: HeartPulse,
           value: "2.7%",
           label: "Monthly churn",
-          detail: "Down from 4.5%, retaining $2.4M in ARR"
+          detail: "Down from 4.5%, compounding directly into ARR growth"
         },
         {
           icon: Rocket,

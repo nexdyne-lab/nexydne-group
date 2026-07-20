@@ -23,7 +23,7 @@ export default function SaasAttributionRebuild() {
       clientContextBody="Last-click flattered the bottom of the funnel and starved the top, over-crediting campaigns that merely caught demand others had created. Worse, it hid cannibalization: campaigns that claimed conversions they had not actually caused looked like winners and kept their budget. The team was optimizing confidently against a distorted picture. To spend better, it needed attribution rebuilt on first-party behavioral data and validated with incrementality testing — a read clean enough to reveal which spend was actually doing work."
       clientProfile={{
         industry: "Growth-Stage SaaS",
-        companySize: "~$180M ARR",
+        companySize: "4,000+ Customers",
         projectDuration: "4 Months",
         additionalInfo: "Multi-Channel Demand Gen",
         additionalLabel: "Marketing Model"

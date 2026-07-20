@@ -23,7 +23,7 @@ export default function ManufacturerChannelTransformation() {
       clientContextBody="Neglect had made the channel underperform and frustrated the partners. Without a PRM, partners had a poor experience working with the manufacturer; without deal registration, partners competed with each other and with the direct team, discouraging investment in deals; and without channel marketing, partners lacked the materials and demand generation to sell effectively. The channel that should have been a growth engine had become an afterthought. The manufacturer needed to modernize the channel end to end — a new PRM, deal-registration discipline, and a channel-marketing platform — to re-energize its partners and grow partner revenue."
       clientProfile={{
         industry: "Industrial Manufacturer",
-        companySize: "~$540M Annual Revenue",
+        companySize: "~2,600 Employees",
         projectDuration: "7 Months",
         additionalInfo: "Channel Modernization",
         additionalLabel: "Partner Program"

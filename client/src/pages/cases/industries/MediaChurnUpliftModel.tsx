@@ -23,7 +23,7 @@ export default function MediaChurnUpliftModel() {
       clientContextBody="The retention team was working hard against a bad list. Long-tenured but perfectly happy customers were being interrupted with save offers they did not need, while genuinely at-risk viewers slipped away unflagged. Worse, the program was measuring the wrong thing — who churned — rather than who could be persuaded to stay by an intervention. Leadership wanted the team pointed at the customers where a save attempt would actually change the outcome, and wanted to stop bothering the customers who were never going to leave."
       clientProfile={{
         industry: "Streaming Media Operator",
-        companySize: "~$540M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "5 Months",
         additionalInfo: "Weekly Retention Program",
         additionalLabel: "Lifecycle Motion"

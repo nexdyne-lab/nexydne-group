@@ -16,14 +16,14 @@ export default function FinancialFraudDetection() {
         { value: "73%", label: "Lower Fraud Losses" },
         { value: "85%", label: "Fewer False Alarms" },
         { value: "<100ms", label: "Time to Decide" },
-        { value: "$12M", label: "Saved Each Year" }
+        { value: "70%", label: "Less Manual Review" }
       ]}
       clientContextTitle="Finding Fraud a Day After the Money Was Gone"
       clientContextIntro="A regional bank ran the card payments for a large base of local businesses and consumers. Its defense against fraud worked in overnight batches: transactions were gathered up and examined together the next morning, which meant a fraudulent charge was typically caught twelve to twenty-four hours after it had already cleared. By then the money had moved and the loss was, in most cases, simply written off."
-      clientContextBody="The team's alerts were driven by fixed rules, and roughly four out of five turned out to be false alarms — busy work that consumed analysts while genuine fraud, which rarely fit an old rule neatly, slipped past. The costs pulled in two directions at once. Honest customers had good purchases declined and grew frustrated, while the bank absorbed around $15 million a year in fraud losses on top of the expense of chasing thousands of alerts that led nowhere. Leadership recognized the real problem was timing: the bank was always looking at yesterday's fraud with yesterday's tools."
+      clientContextBody="The team's alerts were driven by fixed rules, and roughly four out of five turned out to be false alarms — busy work that consumed analysts while genuine fraud, which rarely fit an old rule neatly, slipped past. The costs pulled in two directions at once. Honest customers had good purchases declined and grew frustrated, while the bank absorbed heavy fraud losses year after year on top of the expense of chasing thousands of alerts that led nowhere. Leadership recognized the real problem was timing: the bank was always looking at yesterday's fraud with yesterday's tools."
       clientProfile={{
         industry: "Regional Bank",
-        companySize: "~$6B in Assets",
+        companySize: "Mid-Market Regional Bank",
         projectDuration: "14 Months",
         additionalInfo: "Card Payments",
         additionalLabel: "Line of Business"
@@ -43,7 +43,7 @@ export default function FinancialFraudDetection() {
         {
           icon: TrendingUp,
           title: "Losses That Kept Climbing",
-          description: "Around $15 million a year went to fraud, on top of the cost of investigating thousands of alerts that led nowhere."
+          description: "A heavy annual toll went to fraud, on top of the cost of investigating thousands of alerts that led nowhere."
         },
         {
           icon: Users,
@@ -81,7 +81,7 @@ export default function FinancialFraudDetection() {
           icon: Shield,
           value: "73%",
           label: "Lower fraud losses",
-          detail: "Around $12M in fraud stopped before the money moved"
+          detail: "Nearly three in four fraud dollars stopped before the money moved"
         },
         {
           icon: TrendingUp,
@@ -108,8 +108,8 @@ export default function FinancialFraudDetection() {
       relatedStudies={[
         {
           title: "Turning One Product Per Customer into Lasting Relationships",
-          metric: "$24M",
-          label: "in new revenue",
+          metric: "40%",
+          label: "more products per customer",
           link: "/cases/bank-cross-sell",
           image: "/images/cases/bank-cross-sell-hero.jpg"
         },

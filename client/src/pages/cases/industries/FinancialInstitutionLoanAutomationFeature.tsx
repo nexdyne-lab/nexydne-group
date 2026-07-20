@@ -23,7 +23,7 @@ export default function FinancialInstitutionLoanAutomationFeature() {
       clientContextBody="Most of the loan workflow was deterministic and rules-based, exactly the kind of work that does not require human judgment yet was being done entirely by people. The manual approach made processing slow, capped throughput at the team's capacity, and introduced errors that caused rework. Borrowers waited days for decisions, and some abandoned the process for faster competitors. The institution needed to automate the large majority of the workflow — the deterministic steps — so processing collapsed from days to hours while people focused on the exceptions that genuinely needed them."
       clientProfile={{
         industry: "Financial Institution",
-        companySize: "~$400M Annual Revenue",
+        companySize: "~1,500 Employees",
         projectDuration: "6 Months",
         additionalInfo: "Loan Processing Automation",
         additionalLabel: "Lending Operations"

@@ -119,7 +119,7 @@ export default function CaseStudyVarianceAnalysis() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a regional logistics and warehousing company operating 12 facilities across the Southeast United States. With 220 employees and $45M in annual revenue, they provide third-party logistics services to manufacturers, distributors, and e-commerce companies. The business operates on thin margins typical of the logistics industry, making tight financial control essential for profitability.
+                Our client is a regional logistics and warehousing company operating 12 facilities across the Southeast United States. With 220 employees, they provide third-party logistics services to manufacturers, distributors, and e-commerce companies. The business operates on thin margins typical of the logistics industry, making tight financial control essential for profitability.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 The company had grown through a combination of organic expansion and strategic acquisitions, which created a complex operational structure with multiple business units, cost centers, and service lines. This complexity made monthly financial close and variance analysis increasingly time-consuming and error-prone.
@@ -136,8 +136,8 @@ export default function CaseStudyVarianceAnalysis() {
                 <div className="text-charcoal font-medium">220 employees</div>
               </div>
               <div>
-                <div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div>
-                <div className="text-charcoal font-medium">$45M</div>
+                <div className="text-sm font-semibold text-primary mb-2">Footprint</div>
+                <div className="text-charcoal font-medium">12 facilities</div>
               </div>
             </div>
           </motion.div>
@@ -169,7 +169,7 @@ export default function CaseStudyVarianceAnalysis() {
             <div>
               <h3 className="text-xl font-bold text-charcoal mb-4">Manual variance analysis consumed weeks each month</h3>
               <p className="text-charcoal/70 leading-relaxed">
-                The finance team spent the first 15 days of each month closing the books and preparing variance analysis reports. This involved manually extracting data from the ERP system, building complex Excel workbooks to compare actuals against budget and prior year, investigating every variance over $5,000, and writing narrative explanations for each significant difference. By the time the analysis was complete, the information was already outdated and the team had no time left for forward-looking planning.
+                The finance team spent the first 15 days of each month closing the books and preparing variance analysis reports. This involved manually extracting data from the ERP system, building complex Excel workbooks to compare actuals against budget and prior year, investigating every variance above a fixed materiality threshold, and writing narrative explanations for each significant difference. By the time the analysis was complete, the information was already outdated and the team had no time left for forward-looking planning.
               </p>
             </div>
 

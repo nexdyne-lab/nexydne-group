@@ -137,7 +137,7 @@ export default function DataDrivenCustomerIntelligence() {
       industry: "Retail & E-commerce",
       title: "E-commerce Retailer Stops the Bleeding",
       description:
-        "Identified at-risk customers 45 days before typical churn, reduced monthly churn rate from 8% to 5%, and generated $2.4M in retained revenue.",
+        "Identified at-risk customers 45 days before typical churn, reduced monthly churn rate from 8% to 5%, and protected the revenue those customers represented.",
       image: "/images/abstract-growth.jpg",
       link: "/solutions/data-driven-customer-intelligence/case-studies/ecommerce-repeat-purchase",
     },
@@ -145,7 +145,7 @@ export default function DataDrivenCustomerIntelligence() {
       industry: "Healthcare",
       title: "Healthcare Network Personalizes Patient Outreach",
       description:
-        "Created 8 distinct patient segments based on behavior, reduced no-show rates from 22% to 14%, and saved $1.8M annually in lost appointment revenue.",
+        "Created 8 distinct patient segments based on behavior, reduced no-show rates from 22% to 14%, and recovered a third of previously lost appointment revenue.",
       image: "/images/ai-team-collaboration.jpg",
       link: "/solutions/data-driven-customer-intelligence/case-studies/saas-churn-reduction",
     },

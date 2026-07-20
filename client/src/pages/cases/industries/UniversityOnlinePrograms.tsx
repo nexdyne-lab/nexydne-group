@@ -15,7 +15,7 @@ export default function UniversityOnlinePrograms() {
       metrics={[
         { value: "3x", label: "Enrollment Growth" },
         { value: "88%", label: "Completion Rate" },
-        { value: "$45M", label: "New Revenue" },
+        { value: "15,000", label: "Online Students" },
         { value: "4.6/5", label: "Student Satisfaction" }
       ]}
       clientContextTitle="A Strong Campus, a Neglected Online Offering"
@@ -91,9 +91,9 @@ export default function UniversityOnlinePrograms() {
         },
         {
           icon: DollarSign,
-          value: "$45M",
-          label: "New annual revenue",
-          detail: "From the expanded online programs"
+          value: "15,000",
+          label: "Online students enrolled",
+          detail: "Tuition growth that now funds further program investment"
         },
         {
           icon: Target,

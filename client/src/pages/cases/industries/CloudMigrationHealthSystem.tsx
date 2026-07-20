@@ -16,14 +16,14 @@ export default function CloudMigrationHealthSystem() {
         { value: "35%", label: "Lower Infrastructure Cost" },
         { value: "99.95%", label: "Core System Uptime" },
         { value: "0", label: "Care Disruptions" },
-        { value: "$6M", label: "Saved Over Three Years" }
+        { value: "40+", label: "Applications Migrated" }
       ]}
       clientContextTitle="When the Data Center Becomes the Bottleneck"
       clientContextIntro="A regional health system — a group of hospitals and clinics serving communities across several counties — ran its most important systems on servers it owned and managed in its own data centers. Those systems had been dependable for years, but they were aging. The hardware was near the end of its life, capacity was fixed, and every burst of demand — a busy flu season, a new clinic coming online — meant either buying more equipment months in advance or living with systems that slowed to a crawl."
       clientContextBody="The cost was mounting on two fronts. The obvious one was money: maintaining the hardware, the data-center space, the licenses and the specialists who kept it all running consumed a growing share of the technology budget every year. The quieter cost was risk. A single failed component could take a clinical application offline, and a health system cannot simply wait for a replacement part while clinicians are seeing patients. Leadership wanted the flexibility and resilience of the cloud — but they were unwilling to accept even a minute of downtime in systems that care depended on. That tension, not the technology, was the real challenge."
       clientProfile={{
         industry: "Regional Health System",
-        companySize: "~$700M Annual Revenue",
+        companySize: "Multi-Hospital System",
         projectDuration: "20 Months",
         additionalInfo: "40+ Core Applications",
         additionalLabel: "Systems Migrated"
@@ -81,7 +81,7 @@ export default function CloudMigrationHealthSystem() {
           icon: DollarSign,
           value: "35%",
           label: "Lower infrastructure cost",
-          detail: "About $6M saved over three years"
+          detail: "Sustained savings over three years"
         },
         {
           icon: ShieldCheck,

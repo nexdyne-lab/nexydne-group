@@ -19,7 +19,7 @@ export function HealthcareProvider() {
       ]}
       clientContextTitle="Buried in Manual Data Entry"
       clientContextIntro="A multi-location healthcare network serving 50,000+ patients a year was overwhelmed by administrative burden. Staff spent 300+ hours a week manually transferring patient data between the EHR, insurance portals, and billing — re-entering each visit across four systems."
-      clientContextBody="Manual entry introduced errors that cascaded through the revenue cycle: wrong insurance information, missing authorizations, duplicate claims — costing $3M+ a year in denials, delayed reimbursements, and appeals. The repetitive work drove staff burnout and pushed turnover above 40%, adding recruitment and training cost on top."
+      clientContextBody="Manual entry introduced errors that cascaded through the revenue cycle: wrong insurance information, missing authorizations, duplicate claims — a heavy annual cost in denials, delayed reimbursements, and appeals. The repetitive work drove staff burnout and pushed turnover above 40%, adding recruitment and training cost on top."
       clientProfile={{
         industry: "Healthcare Provider Network",
         companySize: "12 Locations",
@@ -36,7 +36,7 @@ export function HealthcareProvider() {
         },
         {
           icon: DollarSign,
-          title: "$3M+ a year in denials",
+          title: "A mounting cost of denials",
           description: "Cascading entry errors drove claim denials, reimbursement delays, and costly appeals."
         },
         {

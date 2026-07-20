@@ -5,7 +5,7 @@ export function RetailPersonalization() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Driving a 34% Revenue Lift With AI Personalization | Retail Case Study"
-      seoDescription="A 450-store, $2.8B retailer's online conversion trailed benchmarks by 35%. A real-time recommendation engine lifted revenue 34%, conversion 42%, and average order value 27%."
+      seoDescription="A 450-store national specialty retailer's online conversion trailed benchmarks by 35%. A real-time recommendation engine lifted revenue 34%, conversion 42%, and average order value 27%."
       canonical="/cases/retail-personalization"
       industry="Retail"
       industryLink="/industries/retail"
@@ -18,13 +18,13 @@ export function RetailPersonalization() {
         { value: "27%", label: "Larger Average Order" }
       ]}
       clientContextTitle="One Experience for Everyone"
-      clientContextIntro="A national specialty retailer with 450 stores and $2.8B in revenue faced a critical digital-commerce challenge. Despite heavy e-commerce investment, online conversion trailed benchmarks by 35% and average order value stayed flat — the result of a one-size-fits-all experience that ignored individual preferences and behavior."
+      clientContextIntro="A national specialty retailer with 450 stores faced a critical digital-commerce challenge. Despite heavy e-commerce investment, online conversion trailed benchmarks by 35% and average order value stayed flat — the result of a one-size-fits-all experience that ignored individual preferences and behavior."
       clientContextBody="The existing recommendation system used basic collaborative filtering — showing “products others bought” with no individual context, seasonality, or real-time signal. The generic suggestions were ignored, driving abandoned carts and missed cross-sell. Competitors with sophisticated personalization captured share, while marketing lacked customer insight, planners couldn't predict demand, and service fielded complaints about irrelevant promotions."
       clientProfile={{
         industry: "Specialty Retailer",
         companySize: "450 Stores",
         projectDuration: "Real-Time Engine",
-        additionalInfo: "$2.8B Revenue",
+        additionalInfo: "National Footprint",
         additionalLabel: "Scale"
       }}
       challengeTitle="Why the Old Engine Fell Flat"

@@ -23,7 +23,7 @@ export default function SaasCrossFunctionalJourney() {
       clientContextBody="The fragmentation had real consequences. Because the three teams operated on different mental models, they missed the moments that actually mattered to the customer — the points in the relationship where satisfaction and renewal were won or lost. Customer success, in particular, triggered its outreach on signals that did not reliably predict trouble, so renewals were escalating into crises that could have been prevented. The company needed persona-level journey maps that converged the three teams on a shared, small set of moments of truth — so everyone was watching, and acting on, the same critical points."
       clientProfile={{
         industry: "B2B SaaS Company",
-        companySize: "~$240M ARR",
+        companySize: "~2,000 Enterprise Customers",
         projectDuration: "4 Months",
         additionalInfo: "Cross-Functional Journey Maps",
         additionalLabel: "Customer Operations"

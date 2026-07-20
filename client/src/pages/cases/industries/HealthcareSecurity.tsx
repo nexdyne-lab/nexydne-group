@@ -54,7 +54,7 @@ export default function HealthcareSecurity() {
       quoteAuthor="Chief Information Security Officer"
       quoteRole="Healthcare services company"
       relatedStudies={[
-        { title: "How a Specialty Insurer Sped Processing 70% and Saved $2.1M a Year", metric: "$2.1M", label: "annual savings", link: "/capabilities/technology/case-studies/insurance-modernization", image: "/images/industries/fin-handshake-city.jpg" },
+        { title: "How a Specialty Insurer Sped Processing 70% and Cut Maintenance Cost 40%", metric: "70%", label: "faster processing", link: "/capabilities/technology/case-studies/insurance-modernization", image: "/images/industries/fin-handshake-city.jpg" },
         { title: "How a Retail Chain Cut Stockouts 25% With Real-Time Inventory Visibility", metric: "25%", label: "fewer stockouts", link: "/capabilities/technology/case-studies/retail-data-platform", image: "/images/capabilities/cap-retail-data.jpg" }
       ]}
       ctaTitle="Are there gaps in your security posture?"

@@ -23,7 +23,7 @@ export default function DtcPersonalizationStackRedesign() {
       clientContextBody="The team was capable and the ideas were plentiful, but shipping a single personalization change meant negotiating four systems with unclear ownership, no shared content model, and no governance for who decided what. Throughput had fallen to roughly one release a month, and the instinctive fix — buy a fifth tool to tie the others together — would only have deepened the problem. What the program needed was less: a clear decisioning layer, modular content, and a cadence that let the team ship."
       clientProfile={{
         industry: "Direct-to-Consumer Retailer",
-        companySize: "~$310M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "5 Months",
         additionalInfo: "In-House Growth Team",
         additionalLabel: "Delivery Model"

@@ -5,7 +5,7 @@ export default function DigitalTwinPredictiveOperations() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Seeing Breakdowns Before They Happen | Manufacturing Case Study"
-      seoDescription="A mid-sized manufacturer kept losing production to machines that failed without warning. A live digital replica of its line cut unplanned downtime by 45% and saved millions."
+      seoDescription="A mid-sized manufacturer kept losing production to machines that failed without warning. A live digital replica of its line cut unplanned downtime by 45% and lifted throughput 12%."
       canonical="/cases/digital-twin-predictive-operations"
       industry="Manufacturing"
       industryLink="/industries/manufacturing"
@@ -15,7 +15,7 @@ export default function DigitalTwinPredictiveOperations() {
       metrics={[
         { value: "45%", label: "Less Unplanned Downtime" },
         { value: "12%", label: "More Throughput" },
-        { value: "$6M", label: "Saved Each Year" },
+        { value: "<1 Year", label: "Full Payback" },
         { value: "30%", label: "Less Scrap" }
       ]}
       clientContextTitle="When a Line Stops Without Warning, Everything Downstream Pays"
@@ -23,7 +23,7 @@ export default function DigitalTwinPredictiveOperations() {
       clientContextBody="Each stoppage was expensive in ways that compounded. Maintenance crews scrambled to diagnose the fault, orders backed up behind the idle machine, and the parts already in progress often had to be scrapped. The company's answer had been to service equipment on a fixed calendar — every so many weeks, whether a machine needed it or not — which meant it was simultaneously doing maintenance that wasn't needed and still being blindsided by the failures that mattered. Leadership knew the machines were generating a constant stream of data about their own condition; the trouble was that almost none of it was being used."
       clientProfile={{
         industry: "Industrial Manufacturer",
-        companySize: "~$400M Annual Revenue",
+        companySize: "Mid-Sized Manufacturer",
         projectDuration: "12 Months",
         additionalInfo: "1 Plant",
         additionalLabel: "Production Site"
@@ -97,9 +97,9 @@ export default function DigitalTwinPredictiveOperations() {
         },
         {
           icon: DollarSign,
-          value: "$6M",
-          label: "Saved each year",
-          detail: "Across downtime, scrap and maintenance"
+          value: "<1 Year",
+          label: "Full payback",
+          detail: "Recovered across downtime, scrap and maintenance"
         }
       ]}
       quote="We used to find out a machine was failing when it stopped the line — and by then it was already costing us. Now the replica tells us a week ahead, and we plan the fix into a gap in the schedule. Nothing about the machines changed. We just finally started using what they were already telling us."

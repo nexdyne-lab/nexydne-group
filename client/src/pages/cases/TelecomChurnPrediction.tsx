@@ -1,20 +1,20 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Clock, Filter, TrendingDown, Users, BrainCircuit, Target, Workflow, DollarSign } from "lucide-react";
+import { Clock, Filter, TrendingDown, Users, BrainCircuit, Target, Workflow, TrendingUp } from "lucide-react";
 
 export function TelecomChurnPrediction() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Cutting Churn 22% With a Predictive Model | Telecom Case Study"
-      seoDescription="A telecom's manual rules caught churn too late and wasted retention budget. A nightly ML model scoring 2.8M subscribers cut churn 22% and saved $12M in annual recurring revenue."
+      seoDescription="A telecom's manual rules caught churn too late and wasted retention budget. A nightly ML model scoring 2.8M subscribers cut churn 22% and lifted customer lifetime value 18%."
       canonical="/cases/telecom-churn-prediction"
       industry="Technology, Media & Telecom"
       industryLink="/industries/technology-media-telecom"
       title="How a Telecom Provider Cut Churn 22% With a Predictive Model"
-      subtitle="Real-time churn scoring identified at-risk customers 60 days before cancellation — enabling targeted retention that cut churn 22% and saved $12M in annual recurring revenue."
+      subtitle="Real-time churn scoring identified at-risk customers 60 days before cancellation — enabling targeted retention that cut churn 22% and lifted customer lifetime value 18%."
       heroImage="/images/cases/telecom-churn-prediction-hero.jpg"
       metrics={[
         { value: "22%", label: "Churn Reduction" },
-        { value: "$12M", label: "Annual Revenue Saved" },
+        { value: "18%", label: "Higher Lifetime Value" },
         { value: "60 days", label: "Early Warning Window" },
         { value: "2.8M", label: "Customers Scored Daily" }
       ]}
@@ -90,10 +90,10 @@ export function TelecomChurnPrediction() {
           detail: "Up from 23% by addressing specific pain points"
         },
         {
-          icon: DollarSign,
-          value: "$12M",
-          label: "Annual revenue saved",
-          detail: "With customer lifetime value up 18%"
+          icon: TrendingUp,
+          value: "18%",
+          label: "Higher customer lifetime value",
+          detail: "With retention spend focused on customers genuinely at risk"
         }
       ]}
       quote=""

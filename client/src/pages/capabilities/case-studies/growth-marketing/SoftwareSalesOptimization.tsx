@@ -15,15 +15,15 @@ export function SoftwareSalesOptimization() {
       metrics={[
         { value: "45%", label: "Win Rate Improvement" },
         { value: "28%", label: "Shorter Sales Cycle" },
-        { value: "$8.2M", label: "Revenue Impact" },
+        { value: "90%", label: "Forecast Accuracy" },
         { value: "4 mo", label: "New-Hire Ramp" }
       ]}
       clientContextTitle="Inconsistent by Rep"
-      clientContextIntro="A 180-employee software company with $52M in revenue sells enterprise software to mid-size businesses. It had grown rapidly, but sales productivity was declining as the team scaled — top performers closed at 35% while others struggled at 15%."
+      clientContextIntro="A 180-employee software company sells enterprise software to mid-size businesses. It had grown rapidly, but sales productivity was declining as the team scaled — top performers closed at 35% while others struggled at 15%."
       clientContextBody="Sales cycles had lengthened from 60 to 90 days as deals stalled, the CRM was poorly adopted so pipeline visibility was unreliable, and new-hire ramp had stretched to 9 months. Analysis of top-performer behavior revealed a fundamentally different approach: more time on discovery and qualification, earlier multi-stakeholder engagement, effective use of ROI models and success stories, and disciplined follow-up."
       clientProfile={{
         industry: "Enterprise Software Company",
-        companySize: "$52M Revenue",
+        companySize: "180 Employees",
         projectDuration: "Playbook + Coaching",
         additionalInfo: "Repeatable Method",
         additionalLabel: "Output"
@@ -93,7 +93,7 @@ export function SoftwareSalesOptimization() {
           icon: BookOpen,
           value: "4 mo",
           label: "New-hire ramp",
-          detail: "Down from 9, with $8.2M in first-year revenue impact"
+          detail: "Down from 9, with the playbook now standard for every new hire"
         }
       ]}
       quote=""
@@ -102,8 +102,8 @@ export function SoftwareSalesOptimization() {
       relatedStudies={[
         {
           title: "Landing Enterprise Clients With Account-Based Marketing",
-          metric: "$18M",
-          label: "pipeline created",
+          metric: "12",
+          label: "enterprise wins",
           link: "/capabilities/growth-marketing-sales/case-studies/tech-abm",
           image: "/images/industries/tech-datacenter.jpg"
         },

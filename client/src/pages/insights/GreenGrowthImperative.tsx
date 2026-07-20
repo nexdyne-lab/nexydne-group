@@ -84,8 +84,8 @@ export default function GreenGrowthImperative() {
       <p>Real results from our green growth transformations.</p>
       <ul>
         <li><strong>10%+ green willingness to pay:</strong> Identified in selected customer segments and regions for B2B corporations.</li>
-        <li><strong>$50bn risk assessment:</strong> Potential green value pools identified through TCFD assessment.</li>
-        <li><strong>$3bn decarbonization:</strong> Potential value found for a client in Asia accelerating their net-zero race.</li>
+        <li><strong>Portfolio-wide risk assessment:</strong> Potential green value pools identified through TCFD assessment.</li>
+        <li><strong>Decarbonization upside:</strong> Material potential value found for a client in Asia accelerating their net-zero race.</li>
         <li><strong>30-50% sustainable materials:</strong> Potential premium compared to conventional incumbent products.</li>
       </ul>
     </InsightArticleV2>

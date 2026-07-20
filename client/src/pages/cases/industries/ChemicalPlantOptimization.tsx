@@ -1,5 +1,5 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Factory, TrendingUp, DollarSign, Target, Cog, Leaf, Shield, Zap } from "lucide-react";
+import { Factory, TrendingUp, Target, Cog, Leaf, Shield, Zap } from "lucide-react";
 
 export default function ChemicalPlantOptimization() {
   return (
@@ -14,16 +14,16 @@ export default function ChemicalPlantOptimization() {
       heroImage="/images/capabilities/cap-conference-data.jpg"
       metrics={[
         { value: "12%", label: "Yield Improvement" },
-        { value: "$95M", label: "Annual Savings" },
+        { value: "95%", label: "Final Yield" },
         { value: "40%", label: "Less Off-Spec" },
         { value: "99.5%", label: "Quality Rate" }
       ]}
       clientContextTitle="A Chemical Plant Leaving Yield on the Table"
-      clientContextIntro="A specialty chemicals manufacturer operated a complex continuous process producing $800M in products annually. Yield averaged 85%—industry benchmarks suggested 92% was achievable. That 7-point gap represented $50M+ in lost value annually. Operators ran the plant conservatively, leaving optimization potential untapped."
+      clientContextIntro="A specialty chemicals manufacturer operated a complex continuous process at industrial scale. Yield averaged 85%—industry benchmarks suggested 92% was achievable. That 7-point gap represented a heavy annual value loss. Operators ran the plant conservatively, leaving optimization potential untapped."
       clientContextBody="The process had thousands of variables interacting in complex ways. Operators relied on experience and standard operating procedures. When conditions changed, they adjusted based on intuition. The plant generated terabytes of data, but it sat unused. The manufacturer needed AI to unlock the optimization potential."
       clientProfile={{
         industry: "Specialty Chemicals",
-        companySize: "$800M Annual Production",
+        companySize: "24/7 Continuous Process",
         projectDuration: "18 Months",
         additionalInfo: "85% Starting Yield",
         additionalLabel: "Baseline Performance"
@@ -33,7 +33,7 @@ export default function ChemicalPlantOptimization() {
         {
           icon: TrendingUp,
           title: "Suboptimal Yield",
-          description: "85% yield vs. 92% benchmark—$50M+ annual value gap."
+          description: "85% yield vs. 92% benchmark—a seven-point value gap, year after year."
         },
         {
           icon: Cog,
@@ -84,10 +84,10 @@ export default function ChemicalPlantOptimization() {
           detail: "From 85% to 95%—exceeding benchmark"
         },
         {
-          icon: DollarSign,
-          value: "$95M",
-          label: "Annual savings",
-          detail: "From yield and quality improvements"
+          icon: Zap,
+          value: "95%",
+          label: "Final yield",
+          detail: "Up from 85%—above the 92% benchmark"
         },
         {
           icon: Target,

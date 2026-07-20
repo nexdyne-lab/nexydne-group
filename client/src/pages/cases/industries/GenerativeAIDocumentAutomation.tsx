@@ -16,14 +16,14 @@ export default function GenerativeAIDocumentAutomation() {
         { value: "85%", label: "Less Drafting Time" },
         { value: "3x", label: "More Documents Handled" },
         { value: "70%", label: "Less Rework" },
-        { value: "$4M", label: "Saved Each Year" }
+        { value: "Same-day", label: "Routine Turnaround" }
       ]}
       clientContextTitle="When Every Document Is Written by Hand, the Business Can Only Move So Fast"
       clientContextIntro="A regional insurance carrier — a company that writes commercial policies for businesses across several states — produced almost everything in writing. Policy documents, the endorsements that change a policy mid-term, renewal letters and answers to customer questions were all drafted from scratch by underwriters and support staff, often by copying an old document and editing it line by line. Each one had to be accurate, consistent and worded in a way the company's compliance team and its regulators would accept."
       clientContextBody="The work was slow and easy to get wrong. A single endorsement could take an experienced underwriter the better part of a day, and a complex new policy several days. Because everyone started from a different old document, wording drifted over time, and small errors — a wrong date, an out-of-date clause, a figure that did not match the quote — slipped through and had to be caught and corrected later. As the business grew, the backlog of documents grew with it, and customers waited longer for the paperwork that let them get covered. Leadership was clear that the answer was not to lower its standards or add headcount indefinitely; it was to give its people a faster way to produce the same trustworthy documents."
       clientProfile={{
         industry: "Commercial Insurance Carrier",
-        companySize: "~$300M Annual Revenue",
+        companySize: "Mid-Market Carrier",
         projectDuration: "10 Months",
         additionalInfo: "~200 Underwriters & Staff",
         additionalLabel: "Document Workforce"
@@ -97,9 +97,9 @@ export default function GenerativeAIDocumentAutomation() {
         },
         {
           icon: DollarSign,
-          value: "$4M",
-          label: "Saved each year",
-          detail: "Across faster turnaround and reduced rework"
+          value: "Same-day",
+          label: "Routine turnaround",
+          detail: "Customers covered without waiting on paperwork"
         }
       ]}
       quote="Our standards never moved — every document still gets read and approved by one of our people, and it still has to satisfy every rule we answer to. What changed is that our underwriters no longer spend their days typing. The AI writes the first draft from our own approved language, and they do what they are actually good at: reviewing it and making the call."

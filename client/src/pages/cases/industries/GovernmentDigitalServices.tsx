@@ -5,7 +5,7 @@ export default function GovernmentDigitalServices() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Making Everyday Services Simple for a County's Residents | Public Sector Case Study"
-      seoDescription="A county government made residents navigate a different website and process for every service. Bringing those services together behind one front door lifted satisfaction by 40% and saved millions."
+      seoDescription="A county government made residents navigate a different website and process for every service. Bringing those services together behind one front door lifted satisfaction by 40% and cut routine processing from weeks to days."
       canonical="/cases/city-digital-services"
       industry="Public Sector"
       industryLink="/industries/public-sector"
@@ -16,7 +16,7 @@ export default function GovernmentDigitalServices() {
         { value: "40%", label: "Higher Satisfaction" },
         { value: "70%", label: "Services Used Online" },
         { value: "60%", label: "Faster Processing" },
-        { value: "$6M", label: "Saved Each Year" }
+        { value: "45%", label: "Fewer Calls and Visits" }
       ]}
       clientContextTitle="When Every Department Is Its Own Island"
       clientContextIntro="A county government served around 450,000 residents through dozens of separate departments, and each one had grown up on its own. A resident who wanted to renew a permit, apply for assistance and report a pothole had to find three different websites, create three different logins and learn three different processes — none of which spoke to one another. For anything complicated, the reliable path was still a phone call or a trip downtown."
@@ -97,9 +97,9 @@ export default function GovernmentDigitalServices() {
         },
         {
           icon: DollarSign,
-          value: "$6M",
-          label: "Saved each year",
-          detail: "From lighter call-center and service-counter volumes"
+          value: "45%",
+          label: "Fewer calls and visits",
+          detail: "Routine demand moved online, easing costly counter volumes"
         }
       ]}
       quote="We stopped asking residents to understand how the county is organized and started meeting them where they already are. One front door means a person doesn't need to know which department does what — they just get what they came for. That is how you earn back a little trust: by making the ordinary things work."

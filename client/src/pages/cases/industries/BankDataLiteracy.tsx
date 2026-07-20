@@ -23,7 +23,7 @@ export default function BankDataLiteracy() {
       clientContextBody="The bottleneck was a skills problem, not a tooling one. The bank had reporting tools, but most employees lacked the literacy to use them, so they defaulted to asking the data team. That kept the data team stuck on low-value request-fulfillment instead of the higher-leverage work only it could do, and it left decision-makers waiting on simple answers. The bank needed to raise data literacy across the whole organization — with training pitched appropriately for executives, analysts, and front-line staff alike — so people could answer their own questions."
       clientProfile={{
         industry: "Regional Bank",
-        companySize: "~$430M Annual Revenue",
+        companySize: "900,000+ Customers",
         projectDuration: "6 Months",
         additionalInfo: "600-Employee Program",
         additionalLabel: "Enablement Scope"

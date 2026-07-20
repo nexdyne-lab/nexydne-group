@@ -23,7 +23,7 @@ export default function SaasAdjacentProductMvp() {
       clientContextBody="The instinct each time had been to design the complete product, which made the opportunity case fragile and the build daunting. Nobody could prove the idea would work, so it was safer to shelve it — again. The operator did not need more conviction; it needed a narrower bet. If the brief could be drawn around a single, sharp job-to-be-done and shipped as an instrumented MVP, the market could answer the question that two planning cycles never could."
       clientProfile={{
         industry: "Vertical SaaS Operator",
-        companySize: "~$240M ARR",
+        companySize: "Mid-Market SaaS",
         projectDuration: "6 Months",
         additionalInfo: "Adjacent-Workflow Extension",
         additionalLabel: "Growth Bet"
@@ -55,7 +55,7 @@ export default function SaasAdjacentProductMvp() {
       quoteRole="Vertical SaaS operator"
       relatedStudies={[
         { title: "How a Wealth Manager Saved Nine Months of Build by Validating in 90 Days", metric: "90 days", label: "to validate the product", link: "/cases/wealth-digital-advisory-mvp", image: "/images/cases/wealth-digital-advisory-mvp-hero.jpg" },
-        { title: "How a Heritage Brand Launched an $18M DTC Business Without Hurting Wholesale", metric: "$18M", label: "first-year DTC revenue", link: "/cases/consumer-dtc-launch", image: "/images/cases/consumer-dtc-launch-hero.jpg" }
+        { title: "How a Heritage Brand Launched a Thriving DTC Business Without Hurting Wholesale", metric: "Both", label: "channels grew in year one", link: "/cases/consumer-dtc-launch", image: "/images/cases/consumer-dtc-launch-hero.jpg" }
       ]}
       ctaTitle="Is a good product idea stuck in planning?"
       ctaDescription="Let's narrow the brief and ship an instrumented MVP that lets the market answer the question."

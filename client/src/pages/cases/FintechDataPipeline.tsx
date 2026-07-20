@@ -1,5 +1,5 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Gauge, ShieldCheck, Timer, Zap, Layers, Boxes, DollarSign } from "lucide-react";
+import { Gauge, ShieldCheck, Timer, Zap, Layers, Boxes } from "lucide-react";
 
 export default function FintechDataPipeline() {
   return (
@@ -89,10 +89,10 @@ export default function FintechDataPipeline() {
           detail: "At sub-100ms end-to-end latency"
         },
         {
-          icon: DollarSign,
-          value: "$2.4M",
-          label: "Costs avoided",
-          detail: "Over 3 years, plus a PCI-DSS audit with zero findings"
+          icon: ShieldCheck,
+          value: "Zero",
+          label: "PCI-DSS audit findings",
+          detail: "While avoiding heavy infrastructure costs over three years"
         }
       ]}
       quote=""

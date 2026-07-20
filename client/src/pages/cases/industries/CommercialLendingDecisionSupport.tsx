@@ -23,7 +23,7 @@ export default function CommercialLendingDecisionSupport() {
       clientContextBody="The team had experimented with the obvious fix — automating the decision outright — and hit two walls. Underwriters distrusted a black box that overrode their judgment, and model-risk and compliance had no way to sign off on a system that made credit decisions no one could explain. The lender did not want to remove underwriters from the loop; it wanted every underwriter to reason from the same well-calibrated starting point, and it needed whatever it built to satisfy a regulator who would ask exactly how each decision was reached."
       clientProfile={{
         industry: "Commercial Lender",
-        companySize: "~$310M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "7 Months",
         additionalInfo: "Regulated Credit Portfolio",
         additionalLabel: "Risk Environment"

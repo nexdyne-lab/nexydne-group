@@ -5,7 +5,7 @@ export function RetailerDataAcademy() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Building an Internal Data Academy to Train 120 Employees | Retail Case Study"
-      seoDescription="A retail chain invested in a data warehouse but only 15% of staff used data. A tiered, role-specific Data Academy lifted data usage to 68% and saved $1.2M in consulting a year."
+      seoDescription="A retail chain invested in a data warehouse but only 15% of staff used data. A tiered, role-specific Data Academy lifted data usage to 68% and brought campaign analytics fully in-house."
       canonical="/cases/retailer-data-academy"
       industry="Retail"
       industryLink="/industries/retail"
@@ -15,10 +15,10 @@ export function RetailerDataAcademy() {
       metrics={[
         { value: "120", label: "Employees Trained" },
         { value: "68%", label: "Using Data Daily (from 15%)" },
-        { value: "$1.2M", label: "Annual Consulting Savings" }
+        { value: "In-House", label: "Campaign Analytics, No Agencies" }
       ]}
       clientContextTitle="Tools, But No Capability"
-      clientContextIntro="A regional retail chain with 85 stores and $450M in revenue recognized data literacy as a competitive differentiator. It had invested in a modern data warehouse and BI tools — but adoption stayed low, with only 15% of employees using data to inform decisions."
+      clientContextIntro="A regional retail chain with 85 stores recognized data literacy as a competitive differentiator. It had invested in a modern data warehouse and BI tools — but adoption stayed low, with only 15% of employees using data to inform decisions."
       clientContextBody="The problem wasn't technology, it was capability. Store managers couldn't interpret sales dashboards, merchandising couldn't build custom reports, and marketing relied on external agencies for campaign analysis. Leadership wanted a data-driven culture, but one-off training hadn't worked: employees attended generic webinars, forgot the content within weeks, and reverted to gut-feel decisions. The company needed a structured, ongoing program that built real capability."
       clientProfile={{
         industry: "Regional Retail Chain",
@@ -42,7 +42,7 @@ export function RetailerDataAcademy() {
         {
           icon: DollarSign,
           title: "Reliance on agencies",
-          description: "Marketing paid external agencies $50K per campaign for analysis internal teams couldn't do."
+          description: "Marketing paid external agencies for every campaign analysis internal teams couldn't do."
         },
         {
           icon: Repeat,
@@ -89,9 +89,9 @@ export function RetailerDataAcademy() {
           detail: "Reducing dependence on the central data team"
         },
         {
-          icon: DollarSign,
-          value: "$1.2M",
-          label: "Annual consulting savings",
+          icon: GraduationCap,
+          value: "In-house",
+          label: "Campaign analytics, agency spend eliminated",
           detail: "As the academy became a permanent talent-development fixture"
         }
       ]}

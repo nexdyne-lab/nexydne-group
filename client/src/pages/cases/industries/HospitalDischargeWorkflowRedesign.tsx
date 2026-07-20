@@ -23,7 +23,7 @@ export default function HospitalDischargeWorkflowRedesign() {
       clientContextBody="Discharge required clearance from pharmacy, transport, and case management, and the workflow ran those steps in series: case management would finish, then pharmacy would begin, then transport would be arranged. Each hand-off added hours, and because the pharmacy review only started on the day of discharge, it routinely became the bottleneck that held a bed past noon. Every delayed discharge occupied a bed a waiting patient needed, so the hospital was effectively short of capacity it already had. Leadership wanted the length-of-stay drift addressed without adding beds or staff."
       clientProfile={{
         industry: "Regional Hospital System",
-        companySize: "~$680M Annual Revenue",
+        companySize: "Upper Mid-Market",
         projectDuration: "6 Months",
         additionalInfo: "Multi-Unit Inpatient Base",
         additionalLabel: "Care Setting"

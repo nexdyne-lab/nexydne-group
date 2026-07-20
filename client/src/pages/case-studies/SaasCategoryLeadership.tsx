@@ -15,7 +15,7 @@ export default function SaasCategoryLeadership() {
     <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Shifting Mindsets to Drive Performance | Case Study | NexDyne Technologies" 
-        description="How an 'insights to action' financial approach helped a B2B SaaS platform transition from fast follower to category leader with $50M+ in new ARR potential."
+        description="How an 'insights to action' financial approach helped a B2B SaaS platform transition from fast follower to category leader with five new revenue streams funded and the potential to double ARR."
         canonical="/case-studies/saas-category-leadership"
       />
       <Navigation />
@@ -40,14 +40,14 @@ export default function SaasCategoryLeadership() {
               Shifting Mindsets to <span className="text-primary">Drive Performance</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
-              How an "insights to action" financial approach helped a B2B SaaS platform transition from fast follower to category leader with $50M+ in new ARR potential.
+              How an "insights to action" financial approach helped a B2B SaaS platform transition from fast follower to category leader with five new revenue streams funded and the potential to double ARR.
             </p>
             
             {/* PDF Download Button */}
             <CaseStudyPDFButton
               title="Shifting Mindsets to Drive Performance"
               industry="Software & Technology"
-              summary="How an insights to action financial approach helped a B2B SaaS platform transition from fast follower to category leader with $50M+ in new ARR potential."
+              summary="How an insights to action financial approach helped a B2B SaaS platform transition from fast follower to category leader with five new revenue streams funded and the potential to double ARR."
               challenge="See full case study for detailed challenge description."
               solution="See full case study for detailed solution description."
               results={[
@@ -67,7 +67,7 @@ export default function SaasCategoryLeadership() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               { metric: "5+", label: "New Revenue Streams" },
-              { metric: "$50M+", label: "Potential ARR" },
+              { metric: "2x", label: "ARR Growth Potential" },
               { metric: "Follower → Leader", label: "Strategic Shift" }
             ].map((stat, index) => (
               <motion.div
@@ -316,7 +316,7 @@ export default function SaasCategoryLeadership() {
                   Capital Allocation & Funding
                 </h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
-                  Based on our portfolio analysis, we identified five high-potential new revenue streams that collectively represented over $50 million in potential annual recurring revenue. We developed detailed financial models for each opportunity, including development costs, go-to-market expenses, revenue ramps, and profitability trajectories.
+                  Based on our portfolio analysis, we identified five high-potential new revenue streams that together could roughly double annual recurring revenue over time. We developed detailed financial models for each opportunity, including development costs, go-to-market expenses, revenue ramps, and profitability trajectories.
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
@@ -398,7 +398,7 @@ export default function SaasCategoryLeadership() {
                 Breakthrough Product Pipeline
               </h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">
-                Funded development of five new revenue streams with potential to generate over $50 million in annual recurring revenue, diversifying the company's product portfolio.
+                Funded development of five new revenue streams with the potential to roughly double annual recurring revenue, diversifying the company's product portfolio.
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="p-6 bg-charcoal/5 rounded-xl">
@@ -406,8 +406,8 @@ export default function SaasCategoryLeadership() {
                   <div className="text-sm text-charcoal/60">New revenue streams funded</div>
                 </div>
                 <div className="p-6 bg-charcoal/5 rounded-xl">
-                  <div className="text-3xl font-bold text-charcoal mb-2">$50M+</div>
-                  <div className="text-sm text-charcoal/60">Potential ARR from new products</div>
+                  <div className="text-3xl font-bold text-charcoal mb-2">2x</div>
+                  <div className="text-sm text-charcoal/60">ARR potential from new products</div>
                 </div>
               </div>
             </div>

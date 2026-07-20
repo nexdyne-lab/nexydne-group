@@ -15,7 +15,7 @@ export default function SeriesBFunding() {
     <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Series B Funding Success | Case Study | NexDyne Technologies" 
-        description="How we helped a healthtech startup secure $45M Series B funding at a 3x valuation premium through strategic positioning and investor preparation."
+        description="How we helped a healthtech startup close an oversubscribed Series B at a 3x valuation premium through strategic positioning and investor preparation."
         canonical="/case-studies/series-b-funding"
       />
       <Navigation />
@@ -37,7 +37,7 @@ export default function SeriesBFunding() {
               Case Study · HealthTech
             </span>
             <h1 className="nx-h1 mb-4">
-              <span className="text-primary">$45M</span> Series B at 3x valuation premium
+              <span className="text-primary">3x</span> valuation premium on an oversubscribed Series B
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
               How we helped a healthtech startup secure Series B funding at a significant valuation premium through strategic positioning, financial modeling, and comprehensive investor preparation.
@@ -45,7 +45,7 @@ export default function SeriesBFunding() {
             
             {/* PDF Download Button */}
             <CaseStudyPDFButton
-              title="$45M Series B at 3x valuation premium"
+              title="Series B closed at a 3x valuation premium"
               industry="HealthTech"
               summary="How we helped a healthtech startup secure Series B funding at a significant valuation premium through strategic positioning, financial modeling, and comprehensive investor preparation."
               challenge="See full case study for detailed challenge description."
@@ -66,7 +66,7 @@ export default function SeriesBFunding() {
         <div className="container px-4 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             {[
-              { metric: "$45M", label: "Series B raised" },
+              { metric: "150%", label: "YoY revenue growth" },
               { metric: "3x", label: "Valuation premium vs. initial target" },
               { metric: "12", label: "Term sheets received" },
               { metric: "8 weeks", label: "From launch to close" }
@@ -116,7 +116,7 @@ export default function SeriesBFunding() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a healthtech company that developed an AI-powered platform for chronic disease management. With $8M in ARR and 150% year-over-year growth, they had proven product-market fit and were ready to scale. The company had raised a $12M Series A two years prior and was seeking Series B funding to accelerate growth.
+                Our client is a healthtech company that developed an AI-powered platform for chronic disease management. With ARR growing 150% year over year, they had proven product-market fit and were ready to scale. The company had raised a Series A two years prior and was seeking Series B funding to accelerate growth.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 The founding team had deep domain expertise in healthcare but limited experience with institutional fundraising at the growth stage. They needed help positioning the company, building investor materials, and navigating the fundraising process.
@@ -133,8 +133,8 @@ export default function SeriesBFunding() {
                 <div className="text-charcoal font-medium">Series B</div>
               </div>
               <div>
-                <div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div>
-                <div className="text-charcoal font-medium">$8M ARR</div>
+                <div className="text-sm font-semibold text-primary mb-2">Revenue Growth</div>
+                <div className="text-charcoal font-medium">150% YoY</div>
               </div>
             </div>
           </motion.div>
@@ -392,12 +392,12 @@ export default function SeriesBFunding() {
                 Oversubscribed round at premium valuation
               </h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">
-                The company received 12 term sheets and ultimately raised $45M at a valuation 3x higher than their initial target. The round was led by a top-tier healthcare-focused growth fund with participation from strategic investors.
+                The company received 12 term sheets and ultimately closed an oversubscribed round at a valuation 3x higher than their initial target. The round was led by a top-tier healthcare-focused growth fund with participation from strategic investors.
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="p-6 bg-charcoal/5 rounded-xl">
-                  <div className="text-3xl font-bold text-charcoal mb-2">$45M</div>
-                  <div className="text-sm text-charcoal/60">Series B raised (vs. $25M target)</div>
+                  <div className="text-3xl font-bold text-charcoal mb-2">3x</div>
+                  <div className="text-sm text-charcoal/60">Valuation vs. initial target</div>
                 </div>
                 <div className="p-6 bg-charcoal/5 rounded-xl">
                   <div className="text-3xl font-bold text-charcoal mb-2">12</div>

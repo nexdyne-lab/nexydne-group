@@ -536,3 +536,12 @@ human review: ship only clear upgrades (113), revert stretch-picks (40), keep
 what already worked (80). Template lessons: at scale, an automated scorer plus
 contact-sheet veto beats hand-assigning everything; and dedupe your image
 catalog across folders first — duplicate files produce duplicate assignments.
+
+### Update (2026-07-21): the no-client-financials rule
+All client dollar claims removed site-wide (1,711 instances) in favor of
+multiples/percentages/time/operational counts. Rationale for the playbook: for
+a young firm, dollar claims compound into an unverifiable track record, and
+anonymized cases + exact dollars contradict each other — ratios survive the
+"says who?" question and invite a methodology conversation instead. Keep-list:
+cited market stats, educational worked examples, own pricing. Sales line this
+enables: "we never discuss client financials — even directionally."

@@ -4,18 +4,18 @@ import { Link2, DollarSign, Headphones, Swords, Building2, PlugZap, Rocket, Tren
 export function LogisticsTechSpinoff() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Commercializing Internal Tech Into a $12M Spin-Off | Business Building Case Study"
-      seoDescription="A logistics firm's route-optimization software was a competitive advantage locked inside operations. A spin-off reached a $12M valuation with 18 enterprise clients and $2.4M ARR in two years."
+      seoTitle="Commercializing Internal Tech Into a Standalone Spin-Off | Business Building Case Study"
+      seoDescription="A logistics firm's route-optimization software was a competitive advantage locked inside operations. A spin-off signed 18 enterprise clients — delivering 35% efficiency gains — within two years."
       canonical="/capabilities/business-building/case-studies/logistics-tech-spinoff"
       industry="Transportation & Logistics"
       industryLink="/industries/transportation-logistics"
-      title="How a Logistics Firm Built a $12M Technology Spin-Off"
-      subtitle="A last-mile logistics firm commercialized its internal route-optimization software into a standalone SaaS company — reaching a $12M valuation, 18 enterprise clients, and $2.4M ARR in two years."
+      title="How a Logistics Firm Turned Internal Tech Into a Standalone Spin-Off"
+      subtitle="A last-mile logistics firm commercialized its internal route-optimization software into a standalone SaaS company — signing 18 enterprise clients within two years, with the parent retaining full technology access plus equity upside."
       heroImage="/images/industries/transport-bridge.jpg"
       metrics={[
-        { value: "$12M", label: "Spin-Off Valuation" },
+        { value: "2 yrs", label: "To Standalone Scale" },
         { value: "18", label: "Enterprise Clients" },
-        { value: "$2.4M", label: "ARR" },
+        { value: "10 yrs", label: "Of IP Commercialized" },
         { value: "35%", label: "Client Efficiency Gain" }
       ]}
       clientContextTitle="Advantage Locked Inside Operations"
@@ -79,9 +79,9 @@ export function LogisticsTechSpinoff() {
       results={[
         {
           icon: Building2,
-          value: "$12M",
-          label: "Spin-off valuation",
-          detail: "Within two years, with 18 enterprise clients"
+          value: "18",
+          label: "Enterprise clients",
+          detail: "Signed within two years of launch"
         },
         {
           icon: TrendingUp,
@@ -101,15 +101,15 @@ export function LogisticsTechSpinoff() {
       quoteRole=""
       relatedStudies={[
         {
-          title: "Turning a Consulting Methodology Into a $3.2M ARR Product",
-          metric: "$3.2M",
-          label: "ARR",
+          title: "Turning a Consulting Methodology Into a 2,400-Subscriber SaaS Product",
+          metric: "2,400",
+          label: "subscribers",
           link: "/capabilities/business-building/case-studies/consulting-saas",
           image: "/images/capabilities/cap-team-screens.jpg"
         },
         {
           title: "Unifying 30+ Regional Brands With AI Optimization",
-          metric: "$55M",
+          metric: "12% lower operating costs",
           label: "operational savings",
           link: "/cases/logistics-brand-consolidation",
           image: "/images/cases/logistics-brand-consolidation-hero.jpg"

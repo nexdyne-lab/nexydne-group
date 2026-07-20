@@ -4,26 +4,26 @@ import { LineChart, Users, ClipboardList, Scale, Calculator, BookOpen, Handshake
 export function SaaSSeriesB() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="A Series B Raise of $35M at an 8x Revenue Multiple | SaaS Case Study"
-      seoDescription="A $15M ARR B2B SaaS company had product-market fit but no institutional fundraising experience. A structured process closed $35M at an 8x multiple with three competing term sheets."
+      seoTitle="A Series B Raise at an 8x Revenue Multiple | SaaS Case Study"
+      seoDescription="A B2B SaaS company had product-market fit but no institutional fundraising experience. A structured process closed its Series B at an 8x multiple with three competing term sheets."
       canonical="/capabilities/strategy-corporate-finance/case-studies/saas-series-b"
       industry="Technology, Media & Telecom"
       industryLink="/industries/technology-media-telecom"
-      title="How a SaaS Company Raised $35M at an 8x Revenue Multiple"
-      subtitle="A B2B SaaS company prepared for and executed a Series B growth raise — closing $35M at an 8x revenue multiple in 12 weeks, with three competing term sheets and founder-friendly governance."
+      title="How a SaaS Company Raised Its Series B at an 8x Revenue Multiple"
+      subtitle="A B2B SaaS company prepared for and executed a Series B growth raise — closing at an 8x revenue multiple in 12 weeks, with three competing term sheets and founder-friendly governance."
       heroImage="/images/capabilities/cap-celebrate.jpg"
       metrics={[
-        { value: "$35M", label: "Capital Raised" },
+        { value: "50+", label: "Investors Engaged" },
         { value: "8x", label: "Revenue Multiple" },
         { value: "12 wks", label: "Process Duration" },
         { value: "3", label: "Competing Term Sheets" }
       ]}
       clientContextTitle="Ready to Scale, New to Raising"
-      clientContextIntro="A 120-employee B2B SaaS company providing workflow automation to mid-size professional-services firms had $15M ARR and strong unit economics. It had achieved product-market fit and was ready to accelerate — but the founders had never raised institutional capital."
+      clientContextIntro="A 120-employee B2B SaaS company providing workflow automation to mid-size professional-services firms had fast-growing ARR and strong unit economics. It had achieved product-market fit and was ready to accelerate — but the founders had never raised institutional capital."
       clientContextBody="The readiness assessment revealed several areas requiring attention before approaching investors: financial reporting that didn't clearly show SaaS metrics, incomplete customer cohort data, a sales pipeline not systematically tracked, and legal housekeeping including option grants and IP assignments."
       clientProfile={{
         industry: "B2B SaaS Company",
-        companySize: "$15M ARR",
+        companySize: "120 Employees",
         projectDuration: "12-Week Raise",
         additionalInfo: "Series B",
         additionalLabel: "Round"
@@ -79,8 +79,8 @@ export function SaaSSeriesB() {
       results={[
         {
           icon: TrendingUp,
-          value: "$35M",
-          label: "Raised at 8x revenue",
+          value: "8x",
+          label: "Revenue multiple at close",
           detail: "Closed within 12 weeks of launching the process"
         },
         {
@@ -108,9 +108,9 @@ export function SaaSSeriesB() {
           image: "/images/industries/meeting-topview.jpg"
         },
         {
-          title: "Turning a Consulting Methodology Into a $3.2M ARR Product",
-          metric: "$3.2M",
-          label: "ARR",
+          title: "Turning a Consulting Methodology Into a 2,400-Subscriber SaaS Product",
+          metric: "2,400",
+          label: "subscribers",
           link: "/capabilities/business-building/case-studies/consulting-saas",
           image: "/images/capabilities/cap-team-screens.jpg"
         }

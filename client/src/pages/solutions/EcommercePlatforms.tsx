@@ -418,8 +418,8 @@ export default function EcommercePlatforms() {
                       <div className="text-muted-foreground">Faster Orders</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-primary">$2M</div>
-                      <div className="text-muted-foreground">Cost Savings</div>
+                      <div className="text-2xl font-bold text-primary">5%</div>
+                      <div className="text-muted-foreground">Revenue Lift</div>
                     </div>
                   </div>
                 </div>

@@ -23,7 +23,7 @@ export default function TelecomConversationalAi() {
       clientContextBody="The tension was real. Automating tier-1 support could remove enormous cost, but a bot that hallucinated answers or trapped customers in loops would damage CSAT more than the savings were worth, and telecom customers are quick to churn. The provider needed an agent that was grounded in its actual knowledge base rather than making things up, and that handed off to a human cleanly the moment it was out of its depth — absorbing the routine volume while protecting the customer experience through every release."
       clientProfile={{
         industry: "Telecom Provider",
-        companySize: "~$1.1B Annual Revenue",
+        companySize: "~2M Subscribers",
         projectDuration: "6 Months",
         additionalInfo: "Tier-1 Support Automation",
         additionalLabel: "Contact Center"

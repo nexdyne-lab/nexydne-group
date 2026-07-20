@@ -19,11 +19,11 @@ export default function NonprofitImpactMeasurement() {
         { value: "30%", label: "More Effective Grants" }
       ]}
       clientContextTitle="A Foundation Flying Blind on Impact"
-      clientContextIntro="A major foundation distributed $500M annually to 200+ grantees across education, health, and economic development. But measuring impact was nearly impossible. Each grantee reported differently. Data sat in spreadsheets and PDFs. The foundation couldn't answer basic questions about what was working and what wasn't."
+      clientContextIntro="A major foundation made annual grants to 200+ grantees across education, health, and economic development. But measuring impact was nearly impossible. Each grantee reported differently. Data sat in spreadsheets and PDFs. The foundation couldn't answer basic questions about what was working and what wasn't."
       clientContextBody="Board members asked about outcomes; staff could only report outputs. Grants were renewed based on relationships, not results. High-performing programs looked the same as struggling ones in the data. The foundation needed to transform how it measured, learned, and improved."
       clientProfile={{
         industry: "Private Foundation",
-        companySize: "$500M Annual Grants",
+        companySize: "200+ Grantees",
         projectDuration: "24 Months",
         additionalInfo: "200+ Grantees",
         additionalLabel: "Portfolio Size"

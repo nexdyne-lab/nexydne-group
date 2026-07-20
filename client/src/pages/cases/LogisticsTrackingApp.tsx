@@ -5,16 +5,16 @@ export function LogisticsTrackingApp() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Building a Real-Time Tracking App for 500 Drivers | Logistics Case Study"
-      seoDescription="A 3PL running 500 vehicles relied on paper manifests and phone check-ins, stuck at 82% on-time. An OutSystems mobile app lifted on-time delivery to 96% and saved $850K in annual fuel."
+      seoDescription="A 3PL running 500 vehicles relied on paper manifests and phone check-ins, stuck at 82% on-time. An OutSystems mobile app lifted on-time delivery to 96% and cut daily miles driven 18%."
       canonical="/cases/logistics-tracking-app"
       industry="Transportation & Logistics"
       industryLink="/industries/transportation-logistics"
       title="How a 3PL Built a Real-Time Tracking App for 500 Drivers"
-      subtitle="A third-party logistics provider deployed an OutSystems mobile app for package tracking and route optimization — improving on-time delivery from 82% to 96% and cutting fuel costs $850K a year."
+      subtitle="A third-party logistics provider deployed an OutSystems mobile app for package tracking and route optimization — improving on-time delivery from 82% to 96% and cutting daily miles driven 18%."
       heroImage="/images/industries/retail-warehouse.jpg"
       metrics={[
         { value: "96%", label: "On-Time Delivery (from 82%)" },
-        { value: "$850K", label: "Annual Fuel Savings" },
+        { value: "18%", label: "Fewer Miles Driven" },
         { value: "78%", label: "Fewer Customer Calls" }
       ]}
       clientContextTitle="Paper Manifests in an Amazon World"
@@ -84,15 +84,15 @@ export function LogisticsTrackingApp() {
         },
         {
           icon: DollarSign,
-          value: "$850K",
-          label: "Annual fuel savings",
-          detail: "From an 18% reduction in daily miles driven"
+          value: "18%",
+          label: "Fewer miles driven daily",
+          detail: "Cutting fuel costs and vehicle wear across the fleet"
         },
         {
           icon: Smartphone,
           value: "78%",
           label: "Fewer customer calls",
-          detail: "As clients gained real-time tracking, winning $12M in new contracts"
+          detail: "As clients gained real-time tracking, helping win a wave of new contracts"
         }
       ]}
       quote=""

@@ -5,25 +5,25 @@ export default function SemiconductorQualityPrediction() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Catching Chip Defects Before They Happen | Manufacturing Case Study"
-      seoDescription="A specialty chipmaker was scrapping millions in silicon because flaws showed up only at the very end of a process hundreds of steps long. Spotting the warning signs early cut scrap by $25M and lifted yield."
+      seoDescription="A specialty chipmaker was scrapping wafer after wafer because flaws showed up only at the very end of a process hundreds of steps long. Spotting the warning signs early lifted yield 15% and cut scrap sharply."
       canonical="/cases/semiconductor-quality-prediction"
       industry="Manufacturing"
       industryLink="/industries/manufacturing"
       title="Helping a Chipmaker Catch Defects Weeks Earlier"
-      subtitle="A semiconductor manufacturer was scrapping millions of dollars of silicon because flaws only revealed themselves at the very end of a process hundreds of steps long. Reading the warning signs early turned quality from a post-mortem into a forecast."
+      subtitle="A semiconductor manufacturer was scrapping wafer after wafer of finished silicon because flaws only revealed themselves at the very end of a process hundreds of steps long. Reading the warning signs early turned quality from a post-mortem into a forecast."
       heroImage="/images/cases/semiconductor-quality-prediction-hero.jpg"
       metrics={[
         { value: "92%", label: "Defects Caught Early" },
-        { value: "$25M", label: "Less Scrap Each Year" },
+        { value: "Half", label: "Of the Yield Gap Closed" },
         { value: "15%", label: "Higher Yield" },
         { value: "2hrs", label: "Earlier Warning" }
       ]}
       clientContextTitle="Flaws That Only Showed Up at the Finish Line"
-      clientContextIntro="A semiconductor manufacturer built advanced chips at a single fabrication plant. Each chip is layered up over hundreds of separate steps onto a wafer — the thin silicon disc that carries hundreds of chips at once — and every wafer is worth thousands of dollars by the time it is finished. In a process that unforgiving, even a small dip in the share of chips that come out good translates into serious money: the plant was running a few points below its yield target, and the gap was costing it tens of millions of dollars a year."
+      clientContextIntro="A semiconductor manufacturer built advanced chips at a single fabrication plant. Each chip is layered up over hundreds of separate steps onto a wafer — the thin silicon disc that carries hundreds of chips at once — and enormous value is locked into every wafer by the time it is finished. In a process that unforgiving, even a small dip in the share of chips that come out good is punishing: the plant was running a few points below its yield target, and the gap had become one of its largest avoidable costs."
       clientContextBody="The deeper problem was timing. A defect might be created early in the process but stay invisible until the very last test, days or even weeks later — by which point thousands of flawed wafers had already been pushed through the plant's most expensive stages. Engineers then spent weeks combing through data to find the root cause, while the same fault kept recurring. The plant did not need to detect defects better; it needed to see them coming."
       clientProfile={{
         industry: "Semiconductor Manufacturing",
-        companySize: "~$700M Annual Revenue",
+        companySize: "Single Advanced Fab",
         projectDuration: "12 Months",
         additionalInfo: "Hundreds of Process Steps",
         additionalLabel: "Process Complexity"
@@ -43,7 +43,7 @@ export default function SemiconductorQualityPrediction() {
         {
           icon: DollarSign,
           title: "Costly Scrap",
-          description: "With each finished wafer worth thousands of dollars, a yield gap of a few points was quietly costing tens of millions a year."
+          description: "With so much value locked into each finished wafer, a yield gap of a few points was among the plant's largest avoidable costs."
         },
         {
           icon: Cpu,
@@ -85,8 +85,8 @@ export default function SemiconductorQualityPrediction() {
         },
         {
           icon: DollarSign,
-          value: "$25M",
-          label: "Less scrap each year",
+          value: "Year one",
+          label: "Payback on the program",
           detail: "Catching faults early keeps flawed wafers out of costly later steps"
         },
         {
@@ -115,8 +115,8 @@ export default function SemiconductorQualityPrediction() {
         },
         {
           title: "Turning an Equipment Maker into a Services Business",
-          metric: "$30M",
-          label: "new service revenue",
+          metric: "2,700",
+          label: "machines on connected services",
           link: "/cases/industrial-connected-products",
           image: "/images/capabilities/cap-battery-factory.jpg"
         }

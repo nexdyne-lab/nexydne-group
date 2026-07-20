@@ -23,7 +23,7 @@ export default function InsurerPipelineMigration() {
       clientContextBody="The risk was disruption. A migration of this size, done as a big-bang cutover, could take down reporting the business relied on and stall operations for days. And a naive lift-and-shift would simply move the technical debt to the cloud without capturing any of the modernization benefit. The insurer needed the estate moved to dbt and Snowflake in a way that was invisible to the business — phased, sequenced by dependency, and modernizing the pipelines as they moved rather than after."
       clientProfile={{
         industry: "Insurance Carrier",
-        companySize: "~$900M Annual Revenue",
+        companySize: "2M+ Policies in Force",
         projectDuration: "8 Months",
         additionalInfo: "1,400-Pipeline ETL Estate",
         additionalLabel: "Data Platform"

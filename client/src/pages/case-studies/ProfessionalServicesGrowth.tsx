@@ -91,7 +91,7 @@ export default function ProfessionalServicesGrowth() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a growth-stage professional services firm with $45M in revenue and 200 employees. They had built a solid reputation for technical excellence but were struggling to grow in an increasingly competitive market.
+                Our client is a growth-stage professional services firm with 200 employees. They had built a solid reputation for technical excellence but were struggling to grow in an increasingly competitive market.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 The firm's partners recognized that their traditional approach—competing on technical expertise and relationships—was no longer sufficient. They needed to transform their market positioning and go-to-market approach to drive growth.
@@ -100,7 +100,7 @@ export default function ProfessionalServicesGrowth() {
             <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-charcoal/5 rounded-xl">
               <div><div className="text-sm font-semibold text-primary mb-2">Industry</div><div className="text-charcoal font-medium">Professional Services</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">Employees</div><div className="text-charcoal font-medium">200</div></div>
-              <div><div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div><div className="text-charcoal font-medium">$45M</div></div>
+              <div><div className="text-sm font-semibold text-primary mb-2">Market Position</div><div className="text-charcoal font-medium">Technical specialist</div></div>
             </div>
           </motion.div>
         </div>
@@ -219,7 +219,7 @@ export default function ProfessionalServicesGrowth() {
               <p className="text-charcoal/70 leading-relaxed mb-4">The firm achieved 85% revenue growth over three years, significantly outpacing market growth and peer firms.</p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">85%</div><div className="text-sm text-charcoal/60">Revenue growth over 3 years</div></div>
-                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$83M</div><div className="text-sm text-charcoal/60">Revenue in Year 3</div></div>
+                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">3 yrs</div><div className="text-sm text-charcoal/60">To nearly double revenue</div></div>
               </div>
             </div>
             <div>

@@ -23,7 +23,7 @@ export default function RetailDataPipelineReliability() {
       clientContextBody="The pipelines had grown organically, with no contracts governing what each source was supposed to deliver and no service levels on when the data had to land. A silent schema change upstream would break a downstream table without warning, and the failure only surfaced when an analyst noticed a number looked wrong. Leadership was making decisions on data it could not fully trust, and the data team spent its time firefighting rather than building. The retailer needed reliability engineered into the pipelines, not bolted on after each break."
       clientProfile={{
         industry: "National Retailer",
-        companySize: "~$620M Annual Revenue",
+        companySize: "400+ Stores",
         projectDuration: "5 Months",
         additionalInfo: "Analytics Pipeline Estate",
         additionalLabel: "Data Platform"

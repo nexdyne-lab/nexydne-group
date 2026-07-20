@@ -23,7 +23,7 @@ export default function HospitalityPersonalizationExecution() {
       clientContextBody="The bottleneck was operational, not strategic. Because marketing could not ship a variant without engineering, the team managed roughly one experiment a quarter — far too slow to learn or capture value. Good ideas queued behind engineering priorities and mostly never shipped. Meanwhile returning members, the program's most valuable audience, saw generic experiences the team knew it could improve. The program needed a rebuilt variant pipeline — one that let marketing create and ship personalized experiences without an engineering ticket each — plus the integration and testing framework to do it safely and measure the result."
       clientProfile={{
         industry: "Hospitality Loyalty Program",
-        companySize: "~$850M Annual Revenue",
+        companySize: "~3M Loyalty Members",
         projectDuration: "5 Months",
         additionalInfo: "Personalization Execution",
         additionalLabel: "Loyalty Marketing"

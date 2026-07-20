@@ -128,7 +128,7 @@ export default function ConsumerGoods() {
                     Reinventing Packaging for a Global FMCG Giant
                   </h3>
                   <p className="text-muted-foreground/50 text-lg mb-5 sm:mb-6 md:mb-8 max-w-2xl">
-                    We helped a multinational consumer goods company redesign its packaging portfolio, reducing plastic usage by 25% and saving $12M in material costs annually.
+                    We helped a multinational consumer goods company redesign its packaging portfolio, reducing plastic usage by 25% and cutting material costs by 8% annually.
                   </p>
                   
                   <div className="grid grid-cols-2 gap-4 sm:p-6 md:p-8 mb-5 sm:mb-6 md:mb-8 border-t border-white/10 pt-8">
@@ -137,8 +137,8 @@ export default function ConsumerGoods() {
                       <div className="text-sm text-muted-foreground/70">Less Plastic</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-bold text-white mb-1">$12M</div>
-                      <div className="text-sm text-muted-foreground/70">Annual Savings</div>
+                      <div className="text-3xl font-bold text-white mb-1">8%</div>
+                      <div className="text-sm text-muted-foreground/70">Lower Material Cost</div>
                     </div>
                   </div>
 

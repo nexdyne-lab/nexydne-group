@@ -53,7 +53,7 @@ export default function CaseStudyHospitalWorkflow() {
               results={[
                 "68% reduction in clinical documentation time across all participating physicians",
                 "42% improvement in physician satisfaction scores in the annual medical staff survey",
-                "$4.8M annual benefit from efficiency gains, retention, and reclaimed clinic capacity",
+                "Physician turnover cut from 18% to 6%, with reclaimed clinic capacity and efficiency gains",
                 "15 hours saved per physician per week, redirected to patient care and same-day access"
               ]}
               variant="hero"
@@ -71,7 +71,7 @@ export default function CaseStudyHospitalWorkflow() {
             {[
               { metric: "68%", label: "reduction", sublabel: "in clinical documentation time" },
               { metric: "42%", label: "improvement", sublabel: "in physician satisfaction scores" },
-              { metric: "$4.8M", label: "annual benefit", sublabel: "from efficiency and quality improvements" }
+              { metric: "18%→6%", label: "physician turnover", sublabel: "after documentation burden fell" }
             ].map((stat, index) => (
               <motion.div
                 key={index}
@@ -185,7 +185,7 @@ export default function CaseStudyHospitalWorkflow() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="prose prose-lg max-w-none">
             <p className="text-xl leading-relaxed text-charcoal/80 mb-6">
-              We partnered with the hospital to design and implement an intelligent clinical workflow platform that automated documentation while preserving physician control and clinical judgment. The $220,000 investment focused on creating sophisticated natural language processing capabilities while ensuring seamless Epic integration and HIPAA compliance.
+              We partnered with the hospital to design and implement an intelligent clinical workflow platform that automated documentation while preserving physician control and clinical judgment. The investment focused on creating sophisticated natural language processing capabilities while ensuring seamless Epic integration and HIPAA compliance.
             </p>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The platform used ambient clinical intelligence to transcribe physician-patient conversations in real-time, generating structured clinical notes that physicians could review and approve. Machine learning extracted relevant information including chief complaints, history of present illness, physical exam findings, assessments, and treatment plans, automatically populating Epic templates. The system suggested appropriate diagnosis codes, quality measures, and clinical decision support alerts based on conversation content.
@@ -220,7 +220,7 @@ export default function CaseStudyHospitalWorkflow() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="prose prose-lg max-w-none">
             <p className="text-xl leading-relaxed text-charcoal/80 mb-6">
-              Within 30 months, the clinical workflow platform transformed physician satisfaction and hospital performance, delivering a 68% reduction in documentation time and 42% improvement in physician satisfaction scores. The $220,000 investment generated annual benefits of $4.8 million through improved physician productivity ($2.8M), reduced turnover and recruitment costs ($1.4M), and improved quality metrics ($600K), representing a 240% ROI over 30 months. Physician turnover decreased from 18% to 6% annually, saving the hospital an estimated $2.1 million in recruitment and onboarding costs while improving continuity of care.
+              Within 30 months, the clinical workflow platform transformed physician satisfaction and hospital performance, delivering a 68% reduction in documentation time and 42% improvement in physician satisfaction scores. Through improved physician productivity, reduced turnover and recruitment costs, and better quality metrics, the platform repaid its cost several times over within 30 months. Physician turnover decreased from 18% to 6% annually, sharply cutting recruitment and onboarding costs while improving continuity of care.
             </p>
           </div>
         </div>

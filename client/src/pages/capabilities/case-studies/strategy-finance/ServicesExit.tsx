@@ -5,7 +5,7 @@ export function ServicesExit() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Exit Preparation That Won a 40% Valuation Premium | Professional Services Case Study"
-      seoDescription="A $20M environmental consulting firm had 60% client concentration and a founder tied to every relationship. An 18-month exit-prep program won a 40% valuation premium at a 5x EBITDA multiple."
+      seoDescription="A 140-employee environmental consulting firm had 60% client concentration and a founder tied to every relationship. An 18-month exit-prep program won a 40% valuation premium at a 5x EBITDA multiple."
       canonical="/capabilities/strategy-corporate-finance/case-studies/services-exit"
       industry="Professional Services"
       industryLink="/industries"
@@ -19,11 +19,11 @@ export function ServicesExit() {
         { value: "100%", label: "Founder Exit Completed" }
       ]}
       clientContextTitle="Not Ready for Sale"
-      clientContextIntro="A 140-employee environmental consulting firm with $20M in revenue had a founder approaching retirement who wanted to exit within 2–3 years — but the company wasn't ready. Revenue was concentrated in a few large clients, key relationships were tied to the founder personally, and financials didn't present the business well."
+      clientContextIntro="A 140-employee environmental consulting firm had a founder approaching retirement who wanted to exit within 2–3 years — but the company wasn't ready. Revenue was concentrated in a few large clients, key relationships were tied to the founder personally, and financials didn't present the business well."
       clientContextBody="The sale-readiness assessment identified value-reducing issues: the top 3 clients represented 60% of revenue, the founder was personally involved in most client relationships, EBITDA was understated due to above-market owner compensation, and there was no clear leadership succession plan."
       clientProfile={{
         industry: "Environmental Consulting Firm",
-        companySize: "$20M Revenue",
+        companySize: "140 Employees",
         projectDuration: "18-Month Prep",
         additionalInfo: "Competitive Process",
         additionalLabel: "Sale"
@@ -108,9 +108,9 @@ export function ServicesExit() {
           image: "/images/industries/mfg-robot-arm-team.jpg"
         },
         {
-          title: "A Series B Raise of $35M at an 8x Revenue Multiple",
-          metric: "$35M",
-          label: "capital raised",
+          title: "A Series B Raise at an 8x Revenue Multiple",
+          metric: "8x",
+          label: "revenue multiple",
           link: "/capabilities/strategy-corporate-finance/case-studies/saas-series-b",
           image: "/images/capabilities/cap-celebrate.jpg"
         }

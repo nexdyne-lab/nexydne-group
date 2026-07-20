@@ -239,7 +239,7 @@ export default function CapitalRaising() {
               className="grid grid-cols-2 gap-4"
             >
               {[
-                { metric: "$2B+", label: "Capital Raised" },
+                { metric: "60+", label: "Capital Raises Completed" },
                 { metric: "40%", label: "Above Target Valuations" },
                 { metric: "85%", label: "Success Rate" },
                 { metric: "45", label: "Days Avg. Timeline" }
@@ -294,7 +294,7 @@ export default function CapitalRaising() {
                 link: "/case-studies/series-b-funding"
               },
               {
-                title: "Healthcare tech startup closes $25M growth round in 6 weeks",
+                title: "Healthcare tech startup closes oversubscribed growth round in 6 weeks",
                 category: "Healthcare Technology",
                 image: "/images/industries/advisor-charts.jpg",
                 link: "/case-studies/healthcare-funding"

@@ -23,7 +23,7 @@ export default function WealthManagementOnboarding() {
       clientContextBody="For a wealth manager, onboarding is the first real experience a new client has of the firm, and a slow, cumbersome process sends exactly the wrong signal at the worst moment. The delays came from manual, sequential steps and paper forms that could not keep pace with client expectations, and every day of friction risked the relationship before it began. The wealth manager needed to digitize and streamline onboarding — collapsing weeks of paperwork into a fast, smooth process — so the first impression matched the premium relationship the firm promised."
       clientProfile={{
         industry: "Wealth Manager",
-        companySize: "~$420M Annual Revenue",
+        companySize: "~30,000 Client Households",
         projectDuration: "5 Months",
         additionalInfo: "Client Onboarding",
         additionalLabel: "Client Experience"

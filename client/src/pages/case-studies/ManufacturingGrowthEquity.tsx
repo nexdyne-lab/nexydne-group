@@ -15,7 +15,7 @@ export default function ManufacturingGrowthEquity() {
     <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Manufacturing Growth Equity | Case Study | NexDyne Technologies" 
-        description="How we helped a precision manufacturing company secure $35M growth equity to fund capacity expansion and geographic diversification."
+        description="How we helped a precision manufacturing company secure growth equity to double capacity and fund geographic diversification."
         canonical="/case-studies/manufacturing-growth-equity"
       />
       <Navigation />
@@ -30,7 +30,7 @@ export default function ManufacturingGrowthEquity() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">Case Study · Precision Manufacturing</span>
             <h1 className="nx-h1 mb-4">
-              <span className="text-primary">$35M</span> growth equity for capacity expansion
+              <span className="text-primary">2x</span> capacity funded with growth equity
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
               How we helped a precision manufacturing company secure growth equity funding to expand production capacity, diversify geographically, and capture market share in aerospace and defense.
@@ -38,7 +38,7 @@ export default function ManufacturingGrowthEquity() {
             
             {/* PDF Download Button */}
             <CaseStudyPDFButton
-              title="$35M growth equity for capacity expansion"
+              title="Growth equity secured to double capacity"
               industry="Precision Manufacturing"
               summary="How we helped a precision manufacturing company secure growth equity funding to expand production capacity, diversify geographically, and capture market share in aerospace and defense."
               challenge="See full case study for detailed challenge description."
@@ -59,7 +59,7 @@ export default function ManufacturingGrowthEquity() {
         <div className="container px-4 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             {[
-              { metric: "$35M", label: "Growth equity secured" },
+              { metric: "2x", label: "Capacity funded" },
               { metric: "2x", label: "Production capacity increase" },
               { metric: "3", label: "New facility locations" },
               { metric: "45%", label: "Revenue growth in Year 1" }
@@ -91,7 +91,7 @@ export default function ManufacturingGrowthEquity() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a precision manufacturing company specializing in complex machined components for aerospace and defense applications. With $42M in revenue and a reputation for exceptional quality, they had built strong relationships with major OEMs but were capacity-constrained and unable to take on new business.
+                Our client is a precision manufacturing company specializing in complex machined components for aerospace and defense applications. With a reputation for exceptional quality, they had built strong relationships with major OEMs but were capacity-constrained and unable to take on new business.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 The founders, both engineers with deep technical expertise, recognized the need for growth capital to expand capacity and diversify their geographic footprint. They wanted a partner who understood manufacturing and could support operational improvements alongside growth.
@@ -100,7 +100,7 @@ export default function ManufacturingGrowthEquity() {
             <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-charcoal/5 rounded-xl">
               <div><div className="text-sm font-semibold text-primary mb-2">Industry</div><div className="text-charcoal font-medium">Precision Manufacturing</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">Employees</div><div className="text-charcoal font-medium">185</div></div>
-              <div><div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div><div className="text-charcoal font-medium">$42M</div></div>
+              <div><div className="text-sm font-semibold text-primary mb-2">End Markets</div><div className="text-charcoal font-medium">Aerospace & Defense</div></div>
             </div>
           </motion.div>
         </div>
@@ -129,7 +129,7 @@ export default function ManufacturingGrowthEquity() {
             </div>
             <div>
               <h3 className="text-xl font-bold text-charcoal mb-4">Capital requirements beyond internal resources</h3>
-              <p className="text-charcoal/70 leading-relaxed">The expansion plan required $35M in capital for new facilities, equipment, and working capital—far beyond what the company could fund through operations or traditional bank financing. They needed an equity partner.</p>
+              <p className="text-charcoal/70 leading-relaxed">The expansion plan required capital for new facilities, equipment, and working capital on a scale far beyond what the company could fund through operations or traditional bank financing. They needed an equity partner.</p>
             </div>
           </div>
         </div>
@@ -216,9 +216,9 @@ export default function ManufacturingGrowthEquity() {
           <div className="space-y-8">
             <div>
               <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><DollarSign className="w-6 h-6 text-primary" />Growth equity secured at attractive terms</h3>
-              <p className="text-charcoal/70 leading-relaxed mb-4">The company secured $35M in growth equity from a manufacturing-focused fund with deep operational expertise and a track record of supporting similar expansions.</p>
+              <p className="text-charcoal/70 leading-relaxed mb-4">The company secured growth equity from a manufacturing-focused fund with deep operational expertise and a track record of supporting similar expansions.</p>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$35M</div><div className="text-sm text-charcoal/60">Growth equity secured</div></div>
+                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">2x</div><div className="text-sm text-charcoal/60">Capacity funded</div></div>
                 <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">6</div><div className="text-sm text-charcoal/60">Term sheets received</div></div>
               </div>
             </div>
@@ -264,7 +264,7 @@ export default function ManufacturingGrowthEquity() {
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
             {[
-              { title: "$45M Series B at 3x valuation premium", industry: "HealthTech", description: "How we helped a healthtech startup secure Series B funding", link: "/case-studies/series-b-funding" },
+              { title: "Series B closed at a 3x valuation premium", industry: "HealthTech", description: "How we helped a healthtech startup secure Series B funding", link: "/case-studies/series-b-funding" },
               { title: "Healthcare strategic funding", industry: "Medical Devices", description: "How we helped a medical device company secure strategic investment", link: "/case-studies/healthcare-funding" }
             ].map((item, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>

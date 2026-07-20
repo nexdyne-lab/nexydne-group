@@ -127,7 +127,7 @@ const teamMembers = [
     expertise: ["Enterprise Applications", "Digital Product Strategy", "Mobile Development"],
     industries: ["Financial Services", "Telecommunications", "Healthcare"],
     bio: "Drives enterprise digital solutions for leading African businesses and multinational corporations",
-    fullBio: "Amara's work focuses on enterprise application development and digital product strategy that drives business transformation. She specializes in helping organizations build scalable, user-centric digital solutions that solve complex business challenges and create competitive advantages in rapidly evolving markets.\n\nIn the enterprise applications space, Amara's recent projects include leading the development of a custom supply chain management platform for a pan-African logistics company that improved delivery accuracy by 45 percent and reduced operational costs by 30 percent, designing and implementing a mobile-first banking application for a leading financial institution that onboarded 500,000 new customers in its first year, and building an integrated customer relationship management system for a telecommunications provider that unified data from 12 legacy systems and improved customer service response times by 60 percent.\n\nAmara's recent client work in digital product development includes helping a retail conglomerate launch an e-commerce platform that achieved $10 million in revenue within six months, as well as advising a healthcare provider on developing a telemedicine application that expanded their patient reach by 200 percent across underserved regions.\n\nBefore joining NexDyne, Amara was the head of digital products at a leading African technology company, where she built and scaled multiple successful digital platforms. She holds a master's degree in software engineering from the University of Oxford and an MBA from INSEAD.",
+    fullBio: "Amara's work focuses on enterprise application development and digital product strategy that drives business transformation. She specializes in helping organizations build scalable, user-centric digital solutions that solve complex business challenges and create competitive advantages in rapidly evolving markets.\n\nIn the enterprise applications space, Amara's recent projects include leading the development of a custom supply chain management platform for a pan-African logistics company that improved delivery accuracy by 45 percent and reduced operational costs by 30 percent, designing and implementing a mobile-first banking application for a leading financial institution that onboarded 500,000 new customers in its first year, and building an integrated customer relationship management system for a telecommunications provider that unified data from 12 legacy systems and improved customer service response times by 60 percent.\n\nAmara's recent client work in digital product development includes helping a retail conglomerate launch an e-commerce platform that hit its first-year revenue target within six months, as well as advising a healthcare provider on developing a telemedicine application that expanded their patient reach by 200 percent across underserved regions.\n\nBefore joining NexDyne, Amara was the head of digital products at a leading African technology company, where she built and scaled multiple successful digital platforms. She holds a master's degree in software engineering from the University of Oxford and an MBA from INSEAD.",
     publications: [
       {
         title: "Building digital products for emerging markets",
@@ -210,7 +210,7 @@ const teamMembers = [
         industry: "Healthcare",
         challenge: "Managing 10,000+ contracts with manual tracking and renewal processes",
         solution: "Deployed contract lifecycle management system with automated alerts and analytics",
-        result: "Prevented $2.3M in missed renewal opportunities, reduced contract risk by 75%"
+        result: "Cut missed renewal opportunities to near zero, reduced contract risk by 75%"
       }
     ]
   },
@@ -352,14 +352,14 @@ const teamMembers = [
         industry: "Financial Services",
         challenge: "Unable to quantify impact of automation investments for board reporting",
         solution: "Developed comprehensive ROI framework and executive dashboard tracking 15+ KPIs",
-        result: "Demonstrated 340% ROI over 18 months, secured $5M additional funding for expansion"
+        result: "Demonstrated 340% ROI over 18 months, secured follow-on funding for expansion"
       },
       {
         client: "SaaS Company",
         industry: "Technology",
         challenge: "Customer churn analysis limited to basic metrics, missing root causes",
         solution: "Built predictive churn model and implemented early warning system with intervention workflows",
-        result: "Reduced churn by 32%, identified $2.8M in at-risk revenue, improved retention strategies"
+        result: "Reduced churn by 32%, flagged at-risk accounts before they churned, improved retention strategies"
       },
       {
         client: "Consulting Firm",
@@ -407,7 +407,7 @@ const teamMembers = [
         industry: "Healthcare",
         challenge: "Patient scheduling inefficiencies leading to 20% no-show rate and revenue loss",
         solution: "Deployed AI-powered scheduling optimization with automated reminders and waitlist management",
-        result: "Reduced no-shows to 8%, increased appointment utilization by 35%, added $1.2M annual revenue"
+        result: "Reduced no-shows to 8%, increased appointment utilization by 35%, turned empty slots into billable capacity"
       },
       {
         client: "Medical Device Company",

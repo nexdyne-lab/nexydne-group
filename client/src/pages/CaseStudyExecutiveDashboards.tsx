@@ -123,7 +123,7 @@ export default function CaseStudyExecutiveDashboards() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a professional services firm specializing in management consulting and organizational transformation. With 150 consultants across 8 offices and $32M in annual revenue, they serve Fortune 500 clients in financial services, healthcare, and technology sectors. The firm operates on a project-based model with complex resource allocation, utilization tracking, and profitability analysis requirements.
+                Our client is a professional services firm specializing in management consulting and organizational transformation. With 150 consultants across 8 offices, they serve Fortune 500 clients in financial services, healthcare, and technology sectors. The firm operates on a project-based model with complex resource allocation, utilization tracking, and profitability analysis requirements.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 As a partnership, the firm's board consists of senior partners who meet monthly to review performance and make strategic decisions about hiring, compensation, and business development. However, the existing reporting process was overwhelming board members with data rather than insights, leading to long, unfocused meetings and delayed decision-making.
@@ -140,8 +140,8 @@ export default function CaseStudyExecutiveDashboards() {
                 <div className="text-charcoal font-medium">150 consultants</div>
               </div>
               <div>
-                <div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div>
-                <div className="text-charcoal font-medium">$32M</div>
+                <div className="text-sm font-semibold text-primary mb-2">Footprint</div>
+                <div className="text-charcoal font-medium">8 offices</div>
               </div>
             </div>
           </motion.div>

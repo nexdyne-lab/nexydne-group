@@ -101,7 +101,7 @@ export default function DataStrategy() {
   const cases = [
     {
       industry: "Healthcare",
-      title: "Health System Resets Data Strategy and Unlocks $42M in Decision Value",
+      title: "How a Health System Turned Data From Overhead Into Operational Advantage",
       description:
         "A 24-month data roadmap, governance council, and federated org model turned data from compliance overhead into operational advantage.",
       image: "/case-healthcare-team.5797392b.jpg",

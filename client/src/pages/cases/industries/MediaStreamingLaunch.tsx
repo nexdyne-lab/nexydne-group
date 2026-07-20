@@ -16,14 +16,14 @@ export default function MediaStreamingLaunch() {
         { value: "750K", label: "Subscribers in Year 1" },
         { value: "4.2hrs", label: "Weekly Engagement" },
         { value: "92%", label: "Retention Rate" },
-        { value: "$65M", label: "First-Year Revenue" }
+        { value: "Ahead", label: "Of the Year-1 Business Plan" }
       ]}
       clientContextTitle="A Strong Catalogue With No Way to Reach Viewers Directly"
       clientContextIntro="A regional broadcaster had spent decades building a library of well-loved programming and a loyal audience. But that audience was moving online faster than the company could follow. Viewers were cancelling cable in favor of streaming, and the broadcaster had no service of its own to keep them. Its content was strong; its ability to deliver it directly to a viewer's television or phone was not."
       clientContextBody="Earlier attempts at a digital product had disappointed. The app was slow, the recommendations were crude, and technical faults drove people away almost as quickly as they arrived. The organization had been built to make and broadcast programs, not to run a consumer technology product, and it lacked the engineering and data skills that a modern streaming service depends on. Leadership decided that owning the direct relationship with its viewers was no longer optional — and that the company would have to build the capability to do it, largely from scratch."
       clientProfile={{
         industry: "Media & Entertainment",
-        companySize: "~$600M Annual Revenue",
+        companySize: "Regional Broadcaster",
         projectDuration: "18 Months",
         additionalInfo: "~15,000 Content Hours",
         additionalLabel: "Programming Library"
@@ -97,9 +97,9 @@ export default function MediaStreamingLaunch() {
         },
         {
           icon: DollarSign,
-          value: "$65M",
-          label: "First-year revenue",
-          detail: "Ahead of the business plan"
+          value: "Ahead",
+          label: "Of the year-one business plan",
+          detail: "Subscription revenue outpacing the launch case"
         }
       ]}
       quote="For the first time we own the relationship with the people who watch us, rather than renting it from someone else's platform. The service is fast, the recommendations keep people coming back, and the experience holds its own against far bigger names. We stopped watching our audience drift away and started growing it again."

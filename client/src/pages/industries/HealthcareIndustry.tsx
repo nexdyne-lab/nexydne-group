@@ -86,9 +86,9 @@ export default function HealthcareIndustry() {
         },
         {
           slug: "healthcare-revenue-cycle",
-          title: "Recovering $32M a year in revenue already earned",
+          title: "How a Health System Started Collecting What It Was Already Owed",
           industry: "Healthcare",
-          metric: "$32M",
+          metric: "45% fewer rejected claims",
           image: "/case-healthcare-team.5797392b.jpg"
         }
       ]}

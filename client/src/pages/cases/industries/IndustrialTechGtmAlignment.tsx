@@ -23,7 +23,7 @@ export default function IndustrialTechGtmAlignment() {
       clientContextBody="Marketing and sales operated on different definitions of a good lead, different expectations of follow-up, and no shared accountability for what happened at the seam. Leads passed from one function to the other and simply evaporated — not because they were bad, but because nothing held the handoff together. The firm did not need more leads; it needed the two functions aligned around a shared definition of the customer, clear service levels, and a rhythm that made the handoff a managed process instead of a hopeful toss over the wall."
       clientProfile={{
         industry: "Industrial Technology Firm",
-        companySize: "~$550M Annual Revenue",
+        companySize: "1,800 Employees",
         projectDuration: "4 Months",
         additionalInfo: "Marketing-to-Sales Handoff",
         additionalLabel: "Revenue Seam"

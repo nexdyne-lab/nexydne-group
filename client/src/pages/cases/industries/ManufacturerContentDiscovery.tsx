@@ -23,7 +23,7 @@ export default function ManufacturerContentDiscovery() {
       clientContextBody="The archive had grown far faster than any organizing scheme could keep up with. Documents were inconsistently named and filed, keyword search returned too much or nothing, and institutional knowledge about where things lived walked out the door with retiring staff. The cost was engineering time — expensive people spending hours searching instead of designing — and the risk of work being duplicated or done against outdated specs. The manufacturer needed AI-powered classification and semantic search to transform the sprawling archive into a surface engineers could actually self-serve from."
       clientProfile={{
         industry: "Industrial Manufacturer",
-        companySize: "~$540M Annual Revenue",
+        companySize: "~2,200 Employees",
         projectDuration: "5 Months",
         additionalInfo: "Engineering Document Archive",
         additionalLabel: "Knowledge Estate"

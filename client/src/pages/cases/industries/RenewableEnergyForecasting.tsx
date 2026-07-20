@@ -5,25 +5,25 @@ export default function RenewableEnergyForecasting() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Sharper Generation Forecasts for a Renewables Developer | Energy & Utilities Case Study"
-      seoDescription="A renewables developer paid millions in penalties whenever its wind and solar output missed the promises it made to the grid. Better forecasting cut those errors by 25%."
+      seoDescription="A renewables developer paid heavy penalties whenever its wind and solar output missed the promises it made to the grid. Better forecasting cut those errors by 25%."
       canonical="/cases/renewable-energy-forecasting"
       industry="Energy & Utilities"
       industryLink="/industries/energy-utilities"
       title="How a Renewables Developer Made Its Forecasts 25% Sharper"
-      subtitle="A wind and solar developer paid a penalty every time its output missed what it had promised the grid — and those misses were costing millions a year. Learning the quirks of each site, and improving with every week of data, closed the gap."
+      subtitle="A wind and solar developer paid a penalty every time its output missed what it had promised the grid — and those misses had become a heavy annual cost. Learning the quirks of each site, and improving with every week of data, closed the gap."
       heroImage="/images/cases/renewable-energy-forecasting-hero.jpg"
       metrics={[
         { value: "25%", label: "Sharper Forecasts" },
-        { value: "$5M", label: "Saved Each Year" },
+        { value: "15%", label: "Higher Prices Captured" },
         { value: "92%", label: "Day-Ahead Accuracy" },
         { value: "1.5 GW", label: "Portfolio Forecasted" }
       ]}
       clientContextTitle="Paying for Being Wrong About the Weather"
-      clientContextIntro="A renewables developer owned and ran about 1.5 gigawatts of wind and solar spread across roughly 20 projects. Each day it had to tell grid operators how much power each site would produce — and every time reality came in above or below that promise, it paid a penalty. As the portfolio grew, so did the bill: those imbalance penalties were running to around $8 million a year and climbing."
-      clientContextBody="The trouble was that the company's forecasts were built on generic weather models that treated every site much the same. But a wind farm tucked behind a ridge and a solar site on the coast do not behave alike, and a forecast that is off by even a tenth on a large wind farm can mean thousands of dollars an hour in penalties. The developer did not need a better weather map in general — it needed a forecast that understood the particular behavior of each of its sites, at every timescale the market cared about."
+      clientContextIntro="A renewables developer owned and ran about 1.5 gigawatts of wind and solar spread across roughly 20 projects. Each day it had to tell grid operators how much power each site would produce — and every time reality came in above or below that promise, it paid a penalty. As the portfolio grew, so did the bill: those imbalance penalties had become a heavy annual cost, and it was climbing."
+      clientContextBody="The trouble was that the company's forecasts were built on generic weather models that treated every site much the same. But a wind farm tucked behind a ridge and a solar site on the coast do not behave alike, and a forecast that is off by even a tenth on a large wind farm racks up penalties by the hour. The developer did not need a better weather map in general — it needed a forecast that understood the particular behavior of each of its sites, at every timescale the market cared about."
       clientProfile={{
         industry: "Renewables Developer",
-        companySize: "~$400M Annual Revenue",
+        companySize: "~1.5 GW Owned Capacity",
         projectDuration: "10 Months",
         additionalInfo: "~20 Wind and Solar Projects",
         additionalLabel: "Portfolio"
@@ -33,7 +33,7 @@ export default function RenewableEnergyForecasting() {
         {
           icon: Target,
           title: "Penalties for Missing the Mark",
-          description: "When output differed from what the company had promised the grid, it paid — about $8 million a year, eating directly into project returns."
+          description: "When output differed from what the company had promised the grid, it paid — a heavy annual bill eating directly into project returns."
         },
         {
           icon: Wind,
@@ -85,9 +85,9 @@ export default function RenewableEnergyForecasting() {
         },
         {
           icon: DollarSign,
-          value: "$5M",
-          label: "Saved each year",
-          detail: "From far lower imbalance penalties"
+          value: "60%",
+          label: "Lower imbalance penalties",
+          detail: "Misses against grid commitments far less frequent and less severe"
         },
         {
           icon: BarChart3,

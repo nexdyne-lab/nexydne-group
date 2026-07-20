@@ -5,7 +5,7 @@ export default function LogisticsColdChain() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Ensuring Vaccine Safety with an IoT Cold Chain | Transportation & Logistics Case Study"
-      seoDescription="A pharma logistics firm only learned a shipment had spoiled after it arrived. Real-time IoT monitoring and predictive alerts cut spoilage 90% and saved $5M a year."
+      seoDescription="A pharma logistics firm only learned a shipment had spoiled after it arrived. Real-time IoT monitoring and predictive alerts cut spoilage 90% and lowered risk premiums."
       canonical="/case-studies/logistics-cold-chain"
       industry="Transportation & Logistics"
       industryLink="/industries/transportation-logistics"
@@ -15,10 +15,10 @@ export default function LogisticsColdChain() {
       metrics={[
         { value: "90%", label: "Less Product Spoilage" },
         { value: "100%", label: "Compliance Visibility" },
-        { value: "$5M", label: "Annual Insurance Savings" }
+        { value: "20%", label: "Lower Insurance Premiums" }
       ]}
       clientContextTitle="Finding Out Too Late"
-      clientContextIntro="A global logistics provider specializing in pharmaceuticals faced strict regulatory requirements for transporting temperature-sensitive vaccines and biologics. Even a minor temperature excursion could ruin an entire shipment — costing millions and endangering public health."
+      clientContextIntro="A global logistics provider specializing in pharmaceuticals faced strict regulatory requirements for transporting temperature-sensitive vaccines and biologics. Even a minor temperature excursion could ruin an entire shipment — a heavy loss, and a public-health risk."
       clientContextBody="Their existing data loggers only provided retrospective data, telling them a shipment had spoiled only after it arrived. They needed real-time monitoring that could alert drivers and dispatchers to deviations immediately, allowing corrective action before spoilage occurred rather than a post-mortem once the damage was done."
       clientProfile={{
         industry: "Pharma Logistics Provider",
@@ -37,7 +37,7 @@ export default function LogisticsColdChain() {
         {
           icon: Snowflake,
           title: "Zero tolerance for excursions",
-          description: "A single deviation could ruin an entire load of vaccines or biologics, costing millions and risking public health."
+          description: "A single deviation could ruin an entire load of vaccines or biologics — a heavy loss and a public-health risk."
         },
         {
           icon: BellRing,
@@ -90,9 +90,9 @@ export default function LogisticsColdChain() {
         },
         {
           icon: DollarSign,
-          value: "$5M",
-          label: "Annual insurance savings",
-          detail: "As a documented integrity record cut risk premiums"
+          value: "20%",
+          label: "Lower insurance premiums",
+          detail: "As a documented integrity record re-rated the risk"
         }
       ]}
       quote=""

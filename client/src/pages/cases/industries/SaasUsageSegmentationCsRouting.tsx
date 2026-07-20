@@ -23,7 +23,7 @@ export default function SaasUsageSegmentationCsRouting() {
       clientContextBody="The team was working hard against the wrong map. A large, healthy account with deep product adoption absorbed a dedicated success manager it did not need, while a mid-sized account quietly sliding toward cancellation — logins falling, integrations going dormant — sat unattended in the shared queue until the renewal was already lost. Leadership could see net revenue retention softening but had no systematic way to point their finite success capacity at the accounts where it would actually move the number."
       clientProfile={{
         industry: "B2B Software Provider",
-        companySize: "~$220M ARR",
+        companySize: "Mid-Market SaaS",
         projectDuration: "6 Months",
         additionalInfo: "Mid-Market & Enterprise Book",
         additionalLabel: "Customer Base"

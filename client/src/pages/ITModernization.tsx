@@ -237,7 +237,7 @@ export default function ITModernization() {
             >
               <div className="p-4 sm:p-6 md:p-8 bg-white rounded-xl sm:rounded-2xl border border-border">
                 <p className="text-xl text-charcoal italic mb-6 leading-relaxed">
-                  "Our 15-year-old ERP system was costing us $200K annually in maintenance and preventing us from launching new products. Modernization cut our IT costs in half and reduced our product launch cycle from 9 months to 6 weeks."
+                  "Our 15-year-old ERP system carried a heavy annual maintenance bill and prevented us from launching new products. Modernization cut our IT costs in half and reduced our product launch cycle from 9 months to 6 weeks."
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-charcoal font-bold">

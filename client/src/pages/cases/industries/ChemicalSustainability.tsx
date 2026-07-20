@@ -15,7 +15,7 @@ export default function ChemicalSustainability() {
       metrics={[
         { value: "25%", label: "Emissions Reduction" },
         { value: "30%", label: "Energy Savings" },
-        { value: "$60M", label: "Annual Benefit" },
+        { value: "50%", label: "Renewable Energy" },
         { value: "40%", label: "Waste Reduction" }
       ]}
       clientContextTitle="A Chemical Company Facing Sustainability Pressure"
@@ -23,7 +23,7 @@ export default function ChemicalSustainability() {
       clientContextBody="Operations were energy-intensive with significant emissions. Waste streams were disposed, not recycled. Products were designed for performance, not sustainability. The company needed a comprehensive transformation that achieved environmental goals while maintaining—or improving—economic performance."
       clientProfile={{
         industry: "Commodity Chemicals",
-        companySize: "$5B Revenue",
+        companySize: "~7,500 Employees",
         projectDuration: "36 Months",
         additionalInfo: "2M Tons CO2/Year",
         additionalLabel: "Starting Emissions"
@@ -90,10 +90,10 @@ export default function ChemicalSustainability() {
           detail: "From optimization and efficiency"
         },
         {
-          icon: DollarSign,
-          value: "$60M",
-          label: "Annual benefit",
-          detail: "Sustainability improving economics"
+          icon: Zap,
+          value: "50%",
+          label: "Renewable energy",
+          detail: "PPAs, on-site generation, and electrification"
         },
         {
           icon: Globe,

@@ -5,7 +5,7 @@ export default function UniversityStudentSuccess() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Helping More Students Reach Graduation | Education Case Study"
-      seoDescription="A regional university was losing capable students before they finished. Seeing who needed help early — and acting in time — lifted its graduation rate and retained millions in tuition."
+      seoDescription="A regional university was losing capable students before they finished. Seeing who needed help early — and acting in time — lifted its graduation rate from 52% to 61%."
       canonical="/cases/university-student-success"
       industry="Education"
       industryLink="/industries/education"
@@ -16,7 +16,7 @@ export default function UniversityStudentSuccess() {
         { value: "18%", label: "Higher Graduation Rate" },
         { value: "85%", label: "Early-Warning Accuracy" },
         { value: "40%", label: "Fewer Dropouts" },
-        { value: "$25M", label: "Tuition Retained" }
+        { value: "<1 Year", label: "To Pay for Itself" }
       ]}
       clientContextTitle="When Help Arrives Too Late to Matter"
       clientContextIntro="A regional public university educated around 12,000 students, many of them the first in their families to attend college. Its people cared deeply about those students, yet only a little over half earned a degree within six years — short of comparable universities and well short of the university's own ambitions. Every student who left partway through was a personal setback, a future unrealized, and tuition the institution would never recover."
@@ -97,9 +97,9 @@ export default function UniversityStudentSuccess() {
         },
         {
           icon: Award,
-          value: "$25M",
-          label: "Tuition retained",
-          detail: "From students who stayed enrolled through graduation"
+          value: "<1 Year",
+          label: "To pay for itself",
+          detail: "Covered by tuition from students who stayed through graduation"
         }
       ]}
       quote="We used to wait for a student to fail before we knew they needed us — and by then it was often too late. Now our advisors can see who is beginning to struggle and reach out while it still makes a difference. We are not just moving a graduation rate. We are changing what happens to real students' lives."

@@ -23,7 +23,7 @@ export default function InfraForecastRebuild() {
       clientContextBody="The forecast was built on optimistic, one-size-fits-all assumptions rather than on how deals actually converted and aged by segment. Because it was unreliable, sales leaders had accumulated a set of side reports they used to override it — which meant there was no single number anyone stood behind, and no cadence that held people to it. The operator did not need a fancier forecasting tool; it needed the model rebuilt on real conversion and stage-aging data, the override reports retired, and an operating rhythm that made the rebuilt forecast the number of record."
       clientProfile={{
         industry: "Software Infrastructure Operator",
-        companySize: "~$310M ARR",
+        companySize: "1,000 Employees",
         projectDuration: "4 Months",
         additionalInfo: "Multi-Segment Pipeline",
         additionalLabel: "Revenue Forecast"

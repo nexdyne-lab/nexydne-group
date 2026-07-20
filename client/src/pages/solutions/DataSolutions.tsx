@@ -66,8 +66,8 @@ export default function DataSolutions() {
       label: "average reduction in time-to-insight after platform modernization",
     },
     {
-      stat: "$12M",
-      label: "median annualized value unlocked from cleaner, trusted data",
+      stat: "<1 yr",
+      label: "typical payback on platform modernization programs",
     },
   ];
 
@@ -109,7 +109,7 @@ export default function DataSolutions() {
     },
     {
       industry: "Healthcare",
-      title: "Health System Recovers $9M Annually from Data-Quality Fixes",
+      title: "How a Health System Recovered 1.3% of Net Revenue a Year by Fixing Its Data Quality",
       description:
         "End-to-end lineage and automated quality monitoring stopped silent revenue leakage in claims and patient billing data.",
       image: "/images/cases/healthcare-data-quality-hero.jpg",
@@ -371,8 +371,8 @@ export default function DataSolutions() {
               className="nx-h2 text-white mb-8"
             >
               Trusted data, faster decisions. NexDyne clients have collapsed
-              reporting cycles by more than half and unlocked tens of millions
-              in value from data they already owned.
+              reporting cycles by more than half and unlocked step-change
+              value from data they already owned.
             </h2>
             <p className="nx-lead text-white/85 max-w-[60ch] mb-8">
               We've modernized data platforms across manufacturing,

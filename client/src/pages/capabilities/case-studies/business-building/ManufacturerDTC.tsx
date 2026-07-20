@@ -5,15 +5,15 @@ export function ManufacturerDTC() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Building a Direct-to-Consumer Channel for a Manufacturer | Business Building Case Study"
-      seoDescription="A premium outdoor-equipment maker sold only through retailers, with no customer data and squeezed margins. A D2C channel generated $8M in year one at 28% higher margins from 45,000 customers."
+      seoDescription="A premium outdoor-equipment maker sold only through retailers, with no customer data and squeezed margins. A D2C channel won 45,000 direct customers in its first year at 28% higher margins than wholesale."
       canonical="/capabilities/business-building/case-studies/manufacturer-dtc"
       industry="Manufacturing"
       industryLink="/industries/manufacturing"
       title="How a Manufacturer Built a Direct-to-Consumer Channel"
-      subtitle="A specialty outdoor-equipment maker built a D2C business alongside its B2B channel — capturing $8M in year-one revenue at 28% higher margins from 45,000 direct customers, without alienating retail partners."
+      subtitle="A specialty outdoor-equipment maker built a D2C business alongside its B2B channel — winning 45,000 direct customers in year one at 28% higher margins than wholesale, without alienating retail partners."
       heroImage="/images/industries/mfg-robot-arm.jpg"
       metrics={[
-        { value: "$8M", label: "D2C Revenue" },
+        { value: "Year 1", label: "Channel Profitable" },
         { value: "28%", label: "Higher Margins vs. Wholesale" },
         { value: "45K", label: "Direct Customers" },
         { value: "4.8", label: "Customer Rating" }
@@ -79,9 +79,9 @@ export function ManufacturerDTC() {
       results={[
         {
           icon: Gem,
-          value: "$8M",
-          label: "D2C revenue in year one",
-          detail: "At 28% higher margins than wholesale, from 45,000 customers"
+          value: "45K",
+          label: "Direct customers in year one",
+          detail: "At 28% higher margins than wholesale, with the channel profitable inside its first year"
         },
         {
           icon: Star,
@@ -101,9 +101,9 @@ export function ManufacturerDTC() {
       quoteRole=""
       relatedStudies={[
         {
-          title: "Building a DTC Channel for a Manufacturer",
-          metric: "40%",
-          label: "revenue growth",
+          title: "How a Manufacturer's E-Commerce Launch Won 15,000 Direct Customers",
+          metric: "15K",
+          label: "direct customers",
           link: "/capabilities/growth-marketing-sales/case-studies/manufacturer-ecommerce",
           image: "/images/industries/mfg-robotics.jpg"
         },

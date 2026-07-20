@@ -16,14 +16,14 @@ export default function WarehouseAutomation() {
         { value: "45%", label: "Productivity Gain" },
         { value: "99.8%", label: "Order Accuracy" },
         { value: "3x", label: "Peak Throughput" },
-        { value: "$8M", label: "Annual Savings" }
+        { value: "25%", label: "Lower Cost per Order" }
       ]}
       clientContextTitle="Warehouses Built for a Business That No Longer Existed"
       clientContextIntro="A regional distributor supplied retailers and, increasingly, shoppers ordering online direct. Its online orders had roughly tripled in three years, but the warehouses handling them had been designed for a different era — receiving goods by the pallet and shipping them out the same way. Filling an order for a single item meant a worker walking the length of the building to a shelf and back, and at peak the company simply could not hire enough of those workers to keep up."
       clientContextBody="The strain showed everywhere that mattered. Orders that competitors shipped the same day took the distributor two or three, and customers noticed. The fastest-moving products were often stored in the farthest corners, so staff walked miles each shift to pick them. Errors crept in under the pressure, and every holiday season became a scramble for temporary labor that was harder to find and more expensive than the year before. Leadership concluded that the problem was not how hard people worked; it was that the buildings, and the way work flowed through them, had never been rethought for the orders now coming in."
       clientProfile={{
         industry: "Wholesale Distribution",
-        companySize: "~$550M Annual Revenue",
+        companySize: "Multi-Warehouse Network",
         projectDuration: "18 Months",
         additionalInfo: "4 Distribution Centers",
         additionalLabel: "Network Footprint"
@@ -97,8 +97,8 @@ export default function WarehouseAutomation() {
         },
         {
           icon: DollarSign,
-          value: "$8M",
-          label: "Saved each year",
+          value: "25%",
+          label: "Lower cost per order",
           detail: "From labor and efficiency gains"
         }
       ]}

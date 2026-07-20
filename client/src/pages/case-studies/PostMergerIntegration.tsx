@@ -91,7 +91,7 @@ export default function PostMergerIntegration() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a growth-stage professional services firm with $120M in revenue and 450 employees. They had recently completed the acquisition of a complementary firm with $45M in revenue and 180 employees, creating a combined entity with enhanced capabilities and geographic reach.
+                Our client is a growth-stage professional services firm with 450 employees. They had recently completed the acquisition of a complementary firm with 180 employees, creating a combined entity with enhanced capabilities and geographic reach.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 The acquisition thesis was compelling, but the real work was just beginning. The two firms had different cultures, systems, and ways of working. Without careful integration, the expected synergies would never materialize and key talent would depart.
@@ -100,7 +100,7 @@ export default function PostMergerIntegration() {
             <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-charcoal/5 rounded-xl">
               <div><div className="text-sm font-semibold text-primary mb-2">Industry</div><div className="text-charcoal font-medium">Professional Services</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">Combined Employees</div><div className="text-charcoal font-medium">630</div></div>
-              <div><div className="text-sm font-semibold text-primary mb-2">Combined Revenue</div><div className="text-charcoal font-medium">$165M</div></div>
+              <div><div className="text-sm font-semibold text-primary mb-2">Combined Team</div><div className="text-charcoal font-medium">630 Employees</div></div>
             </div>
           </motion.div>
         </div>
@@ -219,7 +219,7 @@ export default function PostMergerIntegration() {
               <p className="text-charcoal/70 leading-relaxed mb-4">The integration captured 120% of projected synergies within 18 months, driven by both cost savings and revenue synergies from cross-selling and combined capabilities.</p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">120%</div><div className="text-sm text-charcoal/60">Synergy target achieved</div></div>
-                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$12M</div><div className="text-sm text-charcoal/60">Annual run-rate synergies</div></div>
+                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">18 mo</div><div className="text-sm text-charcoal/60">To full run-rate synergies</div></div>
               </div>
             </div>
             <div>

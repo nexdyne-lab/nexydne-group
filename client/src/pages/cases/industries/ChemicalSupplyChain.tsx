@@ -1,5 +1,5 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Package, Shield, Clock, DollarSign, Target, TrendingUp, Globe, Zap } from "lucide-react";
+import { Package, Shield, Clock, Target, TrendingUp, Globe, Zap } from "lucide-react";
 
 export default function ChemicalSupplyChain() {
   return (
@@ -15,15 +15,15 @@ export default function ChemicalSupplyChain() {
       metrics={[
         { value: "30%", label: "Fewer Disruptions" },
         { value: "99%", label: "Customer OTIF" },
-        { value: "$45M", label: "Avoided Costs" },
+        { value: "40%→15%", label: "Single-Source Spend" },
         { value: "15 Days", label: "Earlier Warning" }
       ]}
       clientContextTitle="A Chemical Company Vulnerable to Disruptions"
-      clientContextIntro="A global chemical company sourced raw materials from 500+ suppliers across 40 countries. Supply disruptions were becoming more frequent—natural disasters, geopolitical events, and supplier failures. Each major disruption cost $5-10M in expediting, lost sales, and customer penalties. The company needed to build resilience."
+      clientContextIntro="A global chemical company sourced raw materials from 500+ suppliers across 40 countries. Supply disruptions were becoming more frequent—natural disasters, geopolitical events, and supplier failures. Each major disruption brought heavy expediting costs, lost sales, and customer penalties. The company needed to build resilience."
       clientContextBody="The supply chain was optimized for cost, not resilience. Single-source suppliers, long lead times, and minimal inventory left no buffer for disruptions. When problems occurred, the company scrambled reactively. There was no visibility into supplier risks or early warning of emerging issues."
       clientProfile={{
         industry: "Specialty Chemicals",
-        companySize: "$3B Revenue",
+        companySize: "Sourcing in 40 Countries",
         projectDuration: "18 Months",
         additionalInfo: "500+ Suppliers",
         additionalLabel: "Supply Base"
@@ -33,7 +33,7 @@ export default function ChemicalSupplyChain() {
         {
           icon: Shield,
           title: "Frequent Disruptions",
-          description: "10+ major disruptions annually—each costing $5-10M."
+          description: "10+ major disruptions annually—each one costly to expedite and recover from."
         },
         {
           icon: Target,
@@ -90,10 +90,10 @@ export default function ChemicalSupplyChain() {
           detail: "Even during supply challenges"
         },
         {
-          icon: DollarSign,
-          value: "$45M",
-          label: "Avoided costs",
-          detail: "From prevented disruptions"
+          icon: TrendingUp,
+          value: "40%→15%",
+          label: "Single-source spend",
+          detail: "Alternative suppliers qualified for critical materials"
         },
         {
           icon: Clock,

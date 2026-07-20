@@ -19,11 +19,11 @@ export default function LastMileOptimization() {
         { value: "35%", label: "Fewer Emissions" }
       ]}
       clientContextTitle="Losing Money on the Last Mile"
-      clientContextIntro="A regional carrier ran a fleet of around 120 vehicles making roughly eight thousand deliveries a day across a dense urban market. The final leg to the customer's door — always the most expensive part of any delivery — had turned unprofitable: it cost the company about $8 to complete a delivery that brought in $10, and rising traffic and tighter customer time windows were making the gap worse."
+      clientContextIntro="A regional carrier ran a fleet of around 120 vehicles making roughly eight thousand deliveries a day across a dense urban market. The final leg to the customer's door — always the most expensive part of any delivery — had become the problem: completing a delivery consumed about 80% of the revenue it brought in, and rising traffic and tighter customer time windows were making the squeeze worse."
       clientContextBody="Each evening, the next day's routes were planned on fixed assumptions and then locked. When traffic built up, the weather turned or a customer changed an order, the routes could not respond — drivers followed paths that no longer made sense while dispatchers spent the day handling exceptions by phone. The company needed its routes to adjust to the real world as it changed, rather than being set in stone before the day had even begun."
       clientProfile={{
         industry: "Last-Mile Delivery Carrier",
-        companySize: "~$180M Annual Revenue",
+        companySize: "~120-Vehicle Fleet",
         projectDuration: "12 Months",
         additionalInfo: "~120 Vehicles",
         additionalLabel: "Delivery Fleet"
@@ -33,7 +33,7 @@ export default function LastMileOptimization() {
         {
           icon: DollarSign,
           title: "Costing More Than It Earned",
-          description: "Each delivery cost around $8 to complete against $10 of revenue, and at that spread the business could not sustain itself."
+          description: "Each delivery consumed about 80% of the revenue it brought in, and at that spread the business could not sustain itself."
         },
         {
           icon: Clock,
@@ -81,7 +81,7 @@ export default function LastMileOptimization() {
           icon: DollarSign,
           value: "30%",
           label: "Lower cost per delivery",
-          detail: "From about $8 to $5.60"
+          detail: "From denser routes and fewer wasted miles"
         },
         {
           icon: Clock,

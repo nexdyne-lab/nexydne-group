@@ -91,7 +91,7 @@ export default function EcommerceOperations() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a direct-to-consumer e-commerce company with $65M in revenue, selling specialty consumer products through their website and marketplace channels. The company had experienced rapid growth but operations were struggling to keep pace.
+                Our client is a direct-to-consumer e-commerce company selling specialty consumer products through their website and marketplace channels. The company had experienced rapid growth but operations were struggling to keep pace.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 With plans to triple order volume over the next two years, the company needed to fundamentally transform operations to handle growth while improving unit economics. The existing operation was already at capacity and costs were rising.
@@ -100,7 +100,7 @@ export default function EcommerceOperations() {
             <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-charcoal/5 rounded-xl">
               <div><div className="text-sm font-semibold text-primary mb-2">Industry</div><div className="text-charcoal font-medium">E-commerce / DTC</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">Daily Orders</div><div className="text-charcoal font-medium">5,000+</div></div>
-              <div><div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div><div className="text-charcoal font-medium">$65M</div></div>
+              <div><div className="text-sm font-semibold text-primary mb-2">Channels</div><div className="text-charcoal font-medium">DTC + Marketplaces</div></div>
             </div>
           </motion.div>
         </div>
@@ -264,8 +264,8 @@ export default function EcommerceOperations() {
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
             {[
-              { title: "Manufacturing cost reduction", industry: "Manufacturing", description: "How we helped achieve $18M in annual savings", link: "/case-studies/manufacturing-cost-reduction" },
-              { title: "Distribution working capital optimization", industry: "Distribution", description: "How we helped free up $12M in working capital", link: "/case-studies/distribution-working-capital" }
+              { title: "Manufacturing cost reduction", industry: "Manufacturing", description: "How we helped cut COGS 15% through operational excellence", link: "/case-studies/manufacturing-cost-reduction" },
+              { title: "Distribution working capital optimization", industry: "Distribution", description: "How we helped free up 20% of working capital", link: "/case-studies/distribution-working-capital" }
             ].map((item, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">

@@ -5,25 +5,25 @@ export function InsuranceCaseStudy() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Cutting the Claims Cycle 73% With Intelligent Automation | Insurance Case Study"
-      seoDescription="A $340M P&C insurer's claims took 14 days across manual channels with inconsistent decisions. Intelligent automation cut cycle time to 3.8 days, auto-adjudicated 85%, and saved $1.8M."
+      seoDescription="A regional P&C insurer's claims took 14 days across manual channels with inconsistent decisions. Intelligent automation cut cycle time to 3.8 days, auto-adjudicated 85%, and paid for itself inside the first year."
       canonical="/case-studies/insurance-claims-automation"
       industry="Insurance"
       industryLink="/industries/insurance"
       title="How a P&C Insurer Cut Its Claims Cycle 73%"
-      subtitle="A regional property & casualty insurer automated claims intake and adjudication — cutting average processing time from 14 days to 3.8, auto-adjudicating 85% of claims, and saving $1.8M a year."
+      subtitle="A regional property & casualty insurer automated claims intake and adjudication — cutting average processing time from 14 days to 3.8, auto-adjudicating 85% of claims, and paying for the platform inside its first year."
       heroImage="/case-insurance-office.f039a4a1.jpg"
       metrics={[
         { value: "73%", label: "Faster Processing" },
         { value: "85%", label: "Auto-Adjudication Rate" },
-        { value: "$1.8M", label: "Annual Savings" },
+        { value: "<1 yr", label: "Payback Period" },
         { value: "45K+", label: "Claims Per Year" }
       ]}
       clientContextTitle="Volume Growing Faster Than Staff"
-      clientContextIntro="A regional property & casualty insurer serving homeowners and businesses across six Southeastern states — 280 employees and $340M in annual premiums — processed roughly 45,000 claims a year. Claims arrived through email, fax, mail, and agent portals, requiring 45–60 minutes of manual data entry before adjudication could even begin."
+      clientContextIntro="A regional property & casualty insurer serving homeowners and businesses across six Southeastern states — 280 employees — processed roughly 45,000 claims a year. Claims arrived through email, fax, mail, and agent portals, requiring 45–60 minutes of manual data entry before adjudication could even begin."
       clientContextBody="With 18 adjusters across lines, decisions varied significantly — similar claims received different outcomes depending on the reviewer, creating compliance and fairness risks. As the company expanded, claims volume grew 60% over three years while staffing rose only 15%, creating backlogs. Fraud detection sat below 40% despite an estimated 3–4% of claims involving fraud, causing significant leakage."
       clientProfile={{
         industry: "P&C Insurance Company",
-        companySize: "$340M Premiums",
+        companySize: "280 Employees",
         projectDuration: "45,000 Claims/Year",
         additionalInfo: "Document AI + ML",
         additionalLabel: "Solution"
@@ -87,12 +87,12 @@ export function InsuranceCaseStudy() {
           icon: ShieldCheck,
           value: "87%",
           label: "Fraud detection rate",
-          detail: "Up from 38%, recovering ~$420K a year"
+          detail: "Up from 38%, closing a long-standing leakage gap"
         },
         {
           icon: DollarSign,
-          value: "$1.8M",
-          label: "Annual savings",
+          value: "<1 yr",
+          label: "Payback period",
           detail: "With NPS up from 72 to 89 and call volume down 54%"
         }
       ]}

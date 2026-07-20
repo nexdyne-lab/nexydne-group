@@ -167,18 +167,18 @@ export default function DigitalGrowthPlaybook() {
 
       <h3>Specialty retail: 180% online revenue growth</h3>
       <p>
-        A 135-employee outdoor gear retailer launched e-commerce in 10 weeks, growing from $0 to $3.2M in digital
-        revenue within 18 months. Key success factors: omnichannel inventory, personalized recommendations, and
+        A 135-employee outdoor gear retailer launched e-commerce in 10 weeks and grew online revenue 180% within
+        18 months. Key success factors: omnichannel inventory, personalized recommendations, and
         buy-online-pickup-in-store.
       </p>
 
-      <h3>B2B distribution: $4.5M new revenue</h3>
+      <h3>B2B distribution: 58% of orders now self-serve</h3>
       <p>
         A 220-employee industrial supplier built a B2B ordering platform with customer-specific pricing and real-time
         inventory. 58% of orders now come through self-service, freeing sales reps to focus on new business.
       </p>
 
-      <h3>Professional services: $1.8M ARR subscription platform</h3>
+      <h3>Professional services: from one-time workshops to recurring revenue</h3>
       <p>
         A training company transformed from one-time workshops to a subscription model with 2,400 active members. The
         platform now generates predictable recurring revenue and has tripled company valuation.

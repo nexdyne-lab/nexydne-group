@@ -23,7 +23,7 @@ export default function ManufacturingPredictiveMaintenanceFeature() {
       clientContextBody="Reactive maintenance is expensive on every axis. Unplanned downtime halts production at the worst possible moments, emergency repairs cost more than planned ones, and the unpredictability makes scheduling and staffing difficult. The equipment generated data that carried early warning signs of impending failure, but that data was not being used to anticipate problems. The manufacturer needed predictive maintenance that read the equipment signals, anticipated failures before they happened, and converted surprise breakdowns into scheduled maintenance — dramatically reducing unplanned downtime."
       clientProfile={{
         industry: "Manufacturer",
-        companySize: "~$540M Annual Revenue",
+        companySize: "9 Plants",
         projectDuration: "7 Months",
         additionalInfo: "Predictive Maintenance",
         additionalLabel: "Production Reliability"

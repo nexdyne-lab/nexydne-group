@@ -16,14 +16,14 @@ export default function InsuranceUnderwritingTransformation() {
         { value: "40%", label: "Faster Quotes" },
         { value: "70%", label: "Quoted Automatically" },
         { value: "15%", label: "Better Loss Ratio" },
-        { value: "$85M", label: "Premium Growth" }
+        { value: "19%", label: "Premium Growth" }
       ]}
       clientContextTitle="Losing Business Not on Price, but on Speed"
       clientContextIntro="A commercial lines insurer — a carrier that writes property and liability coverage for businesses, sold through independent brokers — was steadily losing accounts to quicker rivals. A broker with a client to place would send the same submission to several carriers and generally bind with whoever came back first with a workable quote. This insurer took five days on average. By the time its quote arrived, the business was often already placed elsewhere."
       clientContextBody="Behind the delay was a process that had barely changed in years. Every submission arrived as a stack of documents, and an underwriter had to assemble the full picture by hand — pulling financials, loss history and property details from separate sources before any real judgment could begin. Underwriters spent the bulk of their week gathering information rather than weighing risk. Worse, with no shared method, two underwriters could look at near-identical accounts and price them differently, so the carrier was sometimes winning the risks it should have declined and losing the ones it wanted. Leadership saw that the problem was not the quality of its underwriters but the amount of routine work standing between them and a decision."
       clientProfile={{
         industry: "Commercial Lines Insurer",
-        companySize: "~$450M in Premium",
+        companySize: "Mid-Market Carrier",
         projectDuration: "15 Months",
         additionalInfo: "~90 Underwriters",
         additionalLabel: "Underwriting Team"
@@ -97,7 +97,7 @@ export default function InsuranceUnderwritingTransformation() {
         },
         {
           icon: DollarSign,
-          value: "$85M",
+          value: "19%",
           label: "Premium growth",
           detail: "As the carrier won more of the business it wanted"
         }

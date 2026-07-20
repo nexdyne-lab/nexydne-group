@@ -92,9 +92,9 @@ export default function ECommerceStrategyLaunch() {
         {
           industry: "Consumer Brand",
           title:
-            "DTC launch clears $18M of first-year revenue across two new product categories",
+            "How a Heritage Brand Launched a DTC Business at Twice Plan Without Hurting Wholesale",
           description:
-            "A heritage consumer brand needed to launch DTC across two new product categories without cannibalizing the wholesale channel that still produced 80 percent of revenue. We sized the opportunity, designed the channel-respecting commercial model, selected the headless commerce stack, and stood up the launch operating model. Year-one DTC revenue cleared $18M and the wholesale channel finished the year up, not down.",
+            "A heritage consumer brand needed to launch DTC across two new product categories without cannibalizing the wholesale channel that still produced 80 percent of revenue. We sized the opportunity, designed the channel-respecting commercial model, selected the headless commerce stack, and stood up the launch operating model. Year-one DTC revenue came in at twice plan and the wholesale channel finished the year up, not down.",
           link: "/cases/consumer-dtc-launch",
         },
         {

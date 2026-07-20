@@ -23,7 +23,7 @@ export default function StreamingHybridRecommender() {
       clientContextBody="This was not a small problem. The operator was spending heavily to acquire and produce new titles, then watching the very system meant to surface them push them to the bottom of every rail. New releases needed viewing history to be recommended, but they could not build viewing history if they were never recommended — a cold-start trap that quietly undercut the content investment. Programming leadership wanted new titles to reach the right audience in their first week, when marketing momentum was highest, without cannibalizing the back catalog that kept existing subscribers engaged."
       clientProfile={{
         industry: "Subscription Streaming Operator",
-        companySize: "~$610M Annual Revenue",
+        companySize: "Upper Mid-Market",
         projectDuration: "4 Months",
         additionalInfo: "Several Million Subscribers",
         additionalLabel: "Active Base"

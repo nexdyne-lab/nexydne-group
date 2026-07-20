@@ -15,11 +15,11 @@ export default function AirlineLoyaltyRedesign() {
       metrics={[
         { value: "40%", label: "More Active Members" },
         { value: "25%", label: "More Rewards Redeemed" },
-        { value: "$22M", label: "Revenue Impact" },
+        { value: "12%", label: "More Member Revenue" },
         { value: "3.5x", label: "Spend vs. Non-Members" }
       ]}
       clientContextTitle="Millions of Members, Few Who Still Cared"
-      clientContextIntro="A regional airline had built a frequent-flyer program with around 4 million members over the years. On paper it looked healthy; in practice it was fading. Only about one member in five was still active, and the miles people had earned mostly sat untouched — roughly $60 million worth of unredeemed rewards on the books — because members no longer saw what they were worth. Newer competitors were launching programs that felt fresh, while this one felt frozen in an earlier decade."
+      clientContextIntro="A regional airline had built a frequent-flyer program with around 4 million members over the years. On paper it looked healthy; in practice it was fading. Only about one member in five was still active, and the miles people had earned mostly sat untouched — years of unredeemed rewards accumulating on the books — because members no longer saw what they were worth. Newer competitors were launching programs that felt fresh, while this one felt frozen in an earlier decade."
       clientContextBody="At heart the program did only one thing: you flew, you earned miles, you redeemed them for another flight. There was no sense that the airline knew who you were. A member who flew every week for work received the same generic emails as someone who took one holiday a year, and neither was offered anything that felt made for them. The program had become a line of cost rather than a reason to choose the airline — and leadership wanted it to earn its keep."
       clientProfile={{
         industry: "Regional Airline",
@@ -38,7 +38,7 @@ export default function AirlineLoyaltyRedesign() {
         {
           icon: Gift,
           title: "Rewards Left Unclaimed",
-          description: "Around $60M in earned miles sat unredeemed, because members no longer saw enough value in earning or spending them."
+          description: "Years of earned miles sat unredeemed, because members no longer saw enough value in earning or spending them."
         },
         {
           icon: Target,
@@ -91,8 +91,8 @@ export default function AirlineLoyaltyRedesign() {
         },
         {
           icon: DollarSign,
-          value: "$22M",
-          label: "Revenue impact",
+          value: "12%",
+          label: "More member revenue",
           detail: "From higher member spend and retention"
         },
         {

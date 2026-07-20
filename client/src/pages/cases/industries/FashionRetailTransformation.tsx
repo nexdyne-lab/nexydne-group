@@ -15,15 +15,15 @@ export default function FashionRetailTransformation() {
       metrics={[
         { value: "85%", label: "E-Commerce Growth" },
         { value: "32%", label: "Higher Conversion" },
-        { value: "$40M", label: "Revenue Gain" },
+        { value: "+10 pts", label: "Online Share of Revenue" },
         { value: "4.6/5", label: "Customer Rating" }
       ]}
       clientContextTitle="A Trusted Brand That Shoppers Could No Longer Reach Easily"
-      clientContextIntro="A regional fashion retailer with roughly 120 stores had built a loyal following over decades, but its online business had never kept pace. The website was slow, the mobile app was poorly rated, and the recommendations shown to shoppers felt generic. Online sales accounted for only about one dollar in eight — well below what comparable retailers were seeing."
+      clientContextIntro="A regional fashion retailer with roughly 120 stores had built a loyal following over decades, but its online business had never kept pace. The website was slow, the mobile app was poorly rated, and the recommendations shown to shoppers felt generic. Online sales accounted for barely an eighth of the business — well below what comparable retailers were seeing."
       clientContextBody="The deeper problem was that the company's stores and its website behaved as if they belonged to two different businesses. A customer could not buy online and collect in a store, could not return a website order at the counter, and could not tell from either channel what was actually in stock nearby. Younger, digital-first shoppers — the very customers the brand needed to keep — were quietly drifting to online-only competitors that made buying effortless. Leadership was clear that the answer was not a flashier website but a single, joined-up experience across everywhere the brand met its customers."
       clientProfile={{
         industry: "Fashion Retail",
-        companySize: "~$600M Annual Revenue",
+        companySize: "Regional Apparel Chain",
         projectDuration: "18 Months",
         additionalInfo: "~120 Stores",
         additionalLabel: "Store Network"
@@ -43,7 +43,7 @@ export default function FashionRetailTransformation() {
         {
           icon: Target,
           title: "Conversion Left on the Table",
-          description: "Barely three in a hundred website visits ended in a purchase — well short of what comparable retailers achieved, and worth millions in missed sales each year."
+          description: "Barely three in a hundred website visits ended in a purchase — well short of what comparable retailers achieved, and a steady stream of missed sales every year."
         },
         {
           icon: Users,
@@ -81,7 +81,7 @@ export default function FashionRetailTransformation() {
           icon: TrendingUp,
           value: "85%",
           label: "Growth in online sales",
-          detail: "Online rose from about 12% to 22% of total revenue"
+          detail: "As the joined-up experience won back digital-first shoppers"
         },
         {
           icon: Target,
@@ -91,9 +91,9 @@ export default function FashionRetailTransformation() {
         },
         {
           icon: DollarSign,
-          value: "$40M",
-          label: "Additional revenue",
-          detail: "From digital growth and better conversion"
+          value: "+10 pts",
+          label: "Online share of revenue",
+          detail: "From about 12% to 22% of total sales"
         },
         {
           icon: Star,

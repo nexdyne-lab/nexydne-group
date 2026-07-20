@@ -5,7 +5,7 @@ export default function AutomotiveConnectedVehicle() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Turning Connected-Vehicle Data into Value | Automotive Case Study"
-      seoDescription="A vehicle manufacturer was collecting data from its connected vehicles but doing little with it. Reading those signals cut warranty claims by 30% and opened a new service revenue line worth $9M a year."
+      seoDescription="A vehicle manufacturer was collecting data from its connected vehicles but doing little with it. Reading those signals cut warranty claims by 30% and opened an entirely new recurring service revenue line."
       canonical="/cases/automotive-connected-vehicle"
       industry="Automotive"
       industryLink="/industries/automotive"
@@ -14,8 +14,8 @@ export default function AutomotiveConnectedVehicle() {
       heroImage="/images/cases/automotive-connected-vehicle-hero.jpg"
       metrics={[
         { value: "30%", label: "Fewer Warranty Claims" },
-        { value: "$9M", label: "New Annual Revenue" },
-        { value: "$5M", label: "Warranty Cost Saved" },
+        { value: "New", label: "Subscription Revenue Line" },
+        { value: "25%", label: "Lower Warranty Cost" },
         { value: "~25 Days", label: "Earlier Fault Warning" }
       ]}
       clientContextTitle="Data Coming In, and Nowhere to Go"
@@ -23,7 +23,7 @@ export default function AutomotiveConnectedVehicle() {
       clientContextBody="Meanwhile two problems were costing the company real money. Warranty was one: components failed in the field, customers brought vehicles in for repairs the manufacturer paid for, and each of those failures was a surprise that could have been seen coming. The other was a missed opportunity — the manufacturer sold a vehicle once and then had little to offer its customers afterward, even though those customers would happily have paid to keep their vehicles running reliably. The information needed to solve both problems was already arriving every day; the company just was not reading it."
       clientProfile={{
         industry: "Vehicle Manufacturer",
-        companySize: "~$620M Annual Revenue",
+        companySize: "Mid-Sized Vehicle Maker",
         projectDuration: "16 Months",
         additionalInfo: "~40,000 Connected Vehicles",
         additionalLabel: "In-Service Fleet"
@@ -85,14 +85,14 @@ export default function AutomotiveConnectedVehicle() {
         },
         {
           icon: TrendingUp,
-          value: "$9M",
-          label: "New annual revenue",
-          detail: "From a subscription service that did not exist before"
+          value: "New",
+          label: "Subscription revenue line",
+          detail: "A recurring service business that did not exist before"
         },
         {
           icon: DollarSign,
-          value: "$5M",
-          label: "Warranty cost saved each year",
+          value: "25%",
+          label: "Lower warranty cost each year",
           detail: "Repairs prevented rather than paid for"
         },
         {

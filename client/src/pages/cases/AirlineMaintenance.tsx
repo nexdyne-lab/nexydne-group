@@ -95,7 +95,7 @@ export default function AirlineMaintenance() {
           detail: "Aircraft-on-ground downtime cut, protecting schedules"
         }
       ]}
-      quote="The digital twin allows us to run experiments without risking operations. We've optimized our spare-parts inventory and maintenance intervals in ways we never thought possible, saving millions while keeping our fleet in the air."
+      quote="The digital twin allows us to run experiments without risking operations. We've optimized our spare-parts inventory and maintenance intervals in ways we never thought possible, cutting maintenance costs sharply while keeping our fleet in the air."
       quoteAuthor="VP of Engineering & Maintenance"
       quoteRole="Global Airline"
       relatedStudies={[

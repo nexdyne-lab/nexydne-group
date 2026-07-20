@@ -1,19 +1,19 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Target, Users, TrendingDown, AlertTriangle, DollarSign, CheckCircle } from "lucide-react";
+import { Target, Users, TrendingDown, AlertTriangle, CheckCircle } from "lucide-react";
 
 export default function BankOperatingModelTransformation() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Global Bank Reorganizes Around Customer Journeys, Captures $400M | Enterprise Transformation Case Study"
-      seoDescription="A global bank's siloed functional structure blocked value. A multi-year operating-model transformation reshaped product, technology, and operations into journey-aligned teams and captured $400M in annual value."
+      seoTitle="Global Bank Reorganizes Around Customer Journeys, Cuts Cost-to-Income 4 Points | Enterprise Transformation Case Study"
+      seoDescription="A global bank's siloed functional structure blocked value. A multi-year operating-model transformation reshaped product, technology, and operations into journey-aligned teams and took four points off the bank's cost-to-income ratio."
       canonical="/cases/bank-operating-model-transformation"
       industry="Financial Services"
       industryLink="/industries/financial-services"
-      title="How a Global Bank Captured $400M in Value by Reorganizing Around Customer Journeys"
+      title="How a Global Bank Took Four Points Off Its Cost-to-Income Ratio by Reorganizing Around Customer Journeys"
       subtitle="A traditional functional structure meant no one owned the customer's end-to-end experience, and value fell through the cracks between silos. Reorganizing around journeys captured it."
       heroImage="/images/industries/fin-monitors.jpg"
       metrics={[
-        { value: "$400M", label: "Annual Value" },
+        { value: "4 pts", label: "Off Cost-to-Income" },
         { value: "Journey", label: "Aligned Teams" },
         { value: "Multi-Year", label: "Transformation" },
         { value: "Product+Tech+Ops", label: "Reshaped" }
@@ -36,21 +36,21 @@ export default function BankOperatingModelTransformation() {
         { icon: AlertTriangle, title: "A Structure at Its Ceiling", description: "The legacy functional model could not reach the value trapped across it." }
       ]}
       approachTitle="Reorganize Around Journeys"
-      approachIntro="We led a multi-year operating-model transformation that reshaped product, technology, and operations into journey-aligned teams — putting an owner on each customer journey and capturing $400M in annual value."
+      approachIntro="We led a multi-year operating-model transformation that reshaped product, technology, and operations into journey-aligned teams — putting an owner on each customer journey and taking four points off the bank's cost-to-income ratio."
       steps={[
         { step: "01", title: "Mapping the Customer Journeys", description: "We defined the end-to-end customer journeys that cut across the bank's functional silos." },
         { step: "02", title: "Designing Journey-Aligned Teams", description: "We reshaped product, technology, and operations into cross-functional teams organized around those journeys." },
         { step: "03", title: "Putting Owners on Journeys", description: "We gave each journey a clear owner accountable for the end-to-end experience and its value." },
-        { step: "04", title: "Capturing the Trapped Value", description: "We executed the transformation over multiple years, unlocking $400M in annual value the silos had blocked." }
+        { step: "04", title: "Capturing the Trapped Value", description: "We executed the transformation over multiple years, unlocking the trapped value the silos had blocked — four points off the cost-to-income ratio." }
       ]}
       resultsTitle="Value the Silos Could Never Reach"
       results={[
-        { icon: DollarSign, value: "$400M", label: "Annual value", detail: "Captured from the transformation" },
+        { icon: TrendingDown, value: "4 pts", label: "Cost-to-income", detail: "Taken off the ratio by the transformation" },
         { icon: Users, value: "Journey", label: "Aligned teams", detail: "Cross-functional ownership" },
         { icon: CheckCircle, value: "Owned", label: "Every journey", detail: "End-to-end accountability" },
         { icon: Target, value: "Reshaped", label: "Operating model", detail: "Product, tech, and ops" }
       ]}
-      quote="We were organized by function, and our customers experienced us horizontally — so nobody owned their journey and value quietly leaked through every hand-off. Reorganizing product, technology, and operations around the customer's journeys, with a real owner on each, unlocked four hundred million dollars a year our old structure simply could not reach."
+      quote="We were organized by function, and our customers experienced us horizontally — so nobody owned their journey and value quietly leaked through every hand-off. Reorganizing product, technology, and operations around the customer's journeys, with a real owner on each, took four points off our cost-to-income ratio — value our old structure simply could not reach."
       quoteAuthor="Chief Operating Officer"
       quoteRole="Global bank"
       relatedStudies={[

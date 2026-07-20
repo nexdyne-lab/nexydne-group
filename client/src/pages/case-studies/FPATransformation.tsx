@@ -66,7 +66,7 @@ export default function FPATransformation() {
               clientInfo={{
                 industry: "Industrial Manufacturing",
                 companySize: "320 employees",
-                revenue: "$85M"
+                revenue: "Mid-market"
               }}
               testimonial={{
                 quote: "Our finance team was working incredibly hard, but we weren't getting the insights we needed to run the business. We were always looking in the rearview mirror instead of through the windshield.",
@@ -134,7 +134,7 @@ export default function FPATransformation() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a growing industrial equipment manufacturer with $85M in annual revenue and operations across three facilities. The company had grown rapidly through acquisition but was struggling with fragmented financial systems and manual processes that made it difficult to get a clear picture of performance.
+                Our client is a growing industrial equipment manufacturer with operations across three facilities. The company had grown rapidly through acquisition but was struggling with fragmented financial systems and manual processes that made it difficult to get a clear picture of performance.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 The finance team of eight was spending the majority of their time on data collection and reconciliation rather than analysis and strategic support. Leadership was frustrated by the lack of timely, accurate financial information to guide decision-making.
@@ -151,8 +151,8 @@ export default function FPATransformation() {
                 <div className="text-charcoal font-medium">320 employees</div>
               </div>
               <div>
-                <div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div>
-                <div className="text-charcoal font-medium">$85M</div>
+                <div className="text-sm font-semibold text-primary mb-2">Operations</div>
+                <div className="text-charcoal font-medium">Three facilities</div>
               </div>
             </div>
           </motion.div>

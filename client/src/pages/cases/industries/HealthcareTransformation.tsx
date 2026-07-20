@@ -1,5 +1,5 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Heart, Clock, TrendingUp, Users, Database, Activity, DollarSign } from "lucide-react";
+import { Heart, Clock, TrendingUp, Users, Database, Activity } from "lucide-react";
 
 export default function HealthcareTransformation() {
   return (
@@ -15,7 +15,7 @@ export default function HealthcareTransformation() {
       metrics={[
         { value: "35%", label: "Better Patient Outcomes" },
         { value: "28%", label: "Fewer Readmissions" },
-        { value: "$45M", label: "Saved Each Year" },
+        { value: "12 → 1", label: "Systems Into One View" },
         { value: "4.8/5", label: "Patient Satisfaction" }
       ]}
       clientContextTitle="Digital Records, but Still No Full Picture of the Patient"
@@ -23,7 +23,7 @@ export default function HealthcareTransformation() {
       clientContextBody="The cost of that fragmentation showed up in the numbers that count. Readmissions ran well above comparable systems, patients stayed longer than they needed to, and satisfaction scores had stalled despite years of effort to lift them. Warning signs that a patient was deteriorating were often present in the data but scattered across systems, so they were noticed late or not at all. Leadership concluded the problem was not the quality of its people or its records; it was that no one could see the whole patient in one place, at the moment a decision had to be made."
       clientProfile={{
         industry: "Regional Health System",
-        companySize: "~$650M Annual Revenue",
+        companySize: "4 Hospitals + Clinics",
         projectDuration: "18 Months",
         additionalInfo: "~350K Patients a Year",
         additionalLabel: "Patient Volume"
@@ -90,10 +90,10 @@ export default function HealthcareTransformation() {
           detail: "Patients returning within 30 days"
         },
         {
-          icon: DollarSign,
-          value: "$45M",
-          label: "Saved each year",
-          detail: "From shorter stays and avoided complications"
+          icon: Database,
+          value: "12 → 1",
+          label: "Systems into one view",
+          detail: "With shorter stays and fewer avoidable complications"
         },
         {
           icon: Users,
@@ -114,9 +114,9 @@ export default function HealthcareTransformation() {
           image: "/images/cases/healthcare-readmission-hero.jpg"
         },
         {
-          title: "Recovering $32M in Lost Revenue",
-          metric: "$32M",
-          label: "revenue recovered each year",
+          title: "Collecting What Was Already Owed",
+          metric: "45%",
+          label: "fewer rejected claims",
           link: "/cases/healthcare-revenue-cycle",
           image: "/case-healthcare-team.5797392b.jpg"
         }

@@ -15,7 +15,7 @@ export default function UrbanSmartBuildings() {
       metrics={[
         { value: "22%", label: "Lower Operating Costs" },
         { value: "28%", label: "Less Energy Used" },
-        { value: "$6M", label: "Saved Each Year" },
+        { value: "40", label: "Buildings Optimized" },
         { value: "12 pts", label: "Higher Tenant Satisfaction" }
       ]}
       clientContextTitle="Running Buildings Blind"
@@ -23,7 +23,7 @@ export default function UrbanSmartBuildings() {
       clientContextBody="The result was a business that was always a step behind its own buildings. Heating and cooling ran on timers rather than on how spaces were actually being used, so energy was wasted on empty floors and comfort complaints were common on busy ones. Equipment was serviced on a calendar or after it failed, which meant paying for work that was not yet needed and, worse, absorbing the cost and disruption of breakdowns that better information could have caught early. Tenants noticed. In a market where they had choices, uneven comfort and slow responses were quietly costing the owner renewals — and every empty floor is expensive."
       clientProfile={{
         industry: "Property Owner and Operator",
-        companySize: "~$180M Annual Rental Income",
+        companySize: "~6M Sq Ft, 40 Buildings",
         projectDuration: "15 Months",
         additionalInfo: "~40 Buildings / 6M Sq Ft",
         additionalLabel: "Portfolio Managed"
@@ -91,9 +91,9 @@ export default function UrbanSmartBuildings() {
         },
         {
           icon: DollarSign,
-          value: "$6M",
-          label: "Saved each year",
-          detail: "Across the 40-building portfolio"
+          value: "40",
+          label: "Buildings optimized",
+          detail: "Savings compounding across the full portfolio"
         },
         {
           icon: Users,

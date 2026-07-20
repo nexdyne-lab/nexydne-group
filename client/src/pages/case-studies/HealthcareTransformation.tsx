@@ -91,7 +91,7 @@ export default function HealthcareTransformation() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a regional healthcare system with three hospitals and 25 outpatient facilities serving a population of 1.2 million. With $850M in annual revenue and 6,500 employees, they are a major employer and healthcare provider in their region.
+                Our client is a regional healthcare system with three hospitals and 25 outpatient facilities serving a population of 1.2 million. With 6,500 employees, they are a major employer and healthcare provider in their region.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 Facing pressure from value-based care models and increasing competition, the organization needed to transform operations to improve quality while reducing costs—a challenge that required fundamental changes to how care was delivered.
@@ -100,7 +100,7 @@ export default function HealthcareTransformation() {
             <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-charcoal/5 rounded-xl">
               <div><div className="text-sm font-semibold text-primary mb-2">Industry</div><div className="text-charcoal font-medium">Healthcare System</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">Employees</div><div className="text-charcoal font-medium">6,500</div></div>
-              <div><div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div><div className="text-charcoal font-medium">$850M</div></div>
+              <div><div className="text-sm font-semibold text-primary mb-2">Population Served</div><div className="text-charcoal font-medium">1.2 Million</div></div>
             </div>
           </motion.div>
         </div>
@@ -216,10 +216,10 @@ export default function HealthcareTransformation() {
           <div className="space-y-8">
             <div>
               <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><TrendingUp className="w-6 h-6 text-primary" />Significant cost reduction</h3>
-              <p className="text-charcoal/70 leading-relaxed mb-4">Operating costs decreased by 22% through improved efficiency, reduced waste, and optimized care delivery—generating $187M in annual savings.</p>
+              <p className="text-charcoal/70 leading-relaxed mb-4">Operating costs decreased by 22% through improved efficiency, reduced waste, and optimized care delivery.</p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">22%</div><div className="text-sm text-charcoal/60">Cost reduction achieved</div></div>
-                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$187M</div><div className="text-sm text-charcoal/60">Annual savings</div></div>
+                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">All 3</div><div className="text-sm text-charcoal/60">Hospitals hit cost targets</div></div>
               </div>
             </div>
             <div>

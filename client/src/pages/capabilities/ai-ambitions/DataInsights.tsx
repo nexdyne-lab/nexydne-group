@@ -20,7 +20,7 @@ const caseStudies: CaseStudy[] = [
     id: 1,
     industry: "Retail",
     company: "Multi-Location Retailer",
-    title: "Unified Data Platform Reveals $2M in Hidden Revenue Opportunities",
+    title: "Unified Data Platform Reveals Hidden Revenue Opportunities",
     description: "A regional retailer consolidated fragmented data sources to uncover customer behavior patterns that led to targeted promotions and significant revenue growth.",
     image: "/images/industries/tech-glasses.jpg"
   },

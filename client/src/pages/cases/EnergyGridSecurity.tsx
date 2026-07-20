@@ -5,7 +5,7 @@ export default function EnergyGridSecurity() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Preventing Blackouts and Wildfires with Predictive Grid Maintenance | Energy Case Study"
-      seoDescription="A major utility faced wildfire liability from aging infrastructure. AI-driven monitoring now catches 95% of ignition sources before they spark — saving $12M a year."
+      seoDescription="A major utility faced wildfire liability from aging infrastructure. AI-driven monitoring now catches 95% of ignition sources before they spark — at 30% lower inspection cost."
       canonical="/case-studies/energy-grid-security"
       industry="Energy & Utilities"
       industryLink="/industries/energy-utilities"
@@ -15,7 +15,7 @@ export default function EnergyGridSecurity() {
       metrics={[
         { value: "95%", label: "Ignition Sources Caught" },
         { value: "40%", label: "Shorter Outages" },
-        { value: "$12M", label: "Annual Savings" },
+        { value: "30%", label: "Lower Inspection Cost" },
         { value: "98%", label: "Hardware Detection Accuracy" }
       ]}
       clientContextTitle="Aging Infrastructure, Rising Stakes"
@@ -91,9 +91,9 @@ export default function EnergyGridSecurity() {
         },
         {
           icon: DollarSign,
-          value: "$12M",
-          label: "Annual maintenance savings",
-          detail: "From optimized inspection and crew deployment"
+          value: "30%",
+          label: "Lower inspection cost",
+          detail: "Crews dispatched by risk score, not routine patrol"
         },
         {
           icon: Satellite,

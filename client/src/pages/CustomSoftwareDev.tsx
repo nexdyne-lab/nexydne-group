@@ -208,7 +208,7 @@ export default function CustomSoftwareDev() {
           {/* Quote */}
           <div className="mt-12 border-l-4 border-primary pl-8 py-6 bg-white">
             <p className="text-xl italic text-charcoal mb-4">
-              "We were paying $8,000/month for enterprise software that didn't fit our manufacturing process. Custom software cost us $120K to build and saves us $96K annually in license fees—plus it actually works the way we need it to."
+              "We were paying a steep monthly bill for enterprise software that didn't fit our manufacturing process. The custom build paid for itself inside the first year in license fees alone—plus it actually works the way we need it to."
             </p>
             <p className="text-lg font-semibold text-charcoal">COO, Mid-Size Manufacturer</p>
           </div>

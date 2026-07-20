@@ -23,7 +23,7 @@ export default function SubscriptionCdpIdentity() {
       clientContextBody="Because the same customer appeared three times, every downstream ambition — journey analytics, personalization, lifecycle marketing — was built on sand. A customer who researched on the web, subscribed in the app, and later called support looked like three unrelated people, so the analytics stack simply could not see the journey that actually happened. The CDP investment sat idle behind this wall. Leadership needed identity solved correctly and provably, not patched, before anything else could move."
       clientProfile={{
         industry: "Subscription Services Operator",
-        companySize: "~$290M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "4 Months",
         additionalInfo: "Web, App & Support Channels",
         additionalLabel: "Touchpoints"

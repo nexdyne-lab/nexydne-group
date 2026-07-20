@@ -23,7 +23,7 @@ export default function HealthcareClosedLoopVoc() {
       clientContextBody="The program had all the machinery of listening and none of the machinery of responding. A patient who reported a poor experience received no follow-up, so the system never closed the loop or fixed the underlying cause. Recurring issues surfaced quarter after quarter with no named owner accountable for resolving them. Meanwhile patient-experience escalations — the formal complaints that consume leadership time and erode trust — kept climbing. Leadership wanted a program that turned feedback into action, not a scoreboard."
       clientProfile={{
         industry: "Regional Health System",
-        companySize: "~$680M Annual Revenue",
+        companySize: "Upper Mid-Market",
         projectDuration: "6 Months",
         additionalInfo: "Multi-Site Patient Base",
         additionalLabel: "Care Network"

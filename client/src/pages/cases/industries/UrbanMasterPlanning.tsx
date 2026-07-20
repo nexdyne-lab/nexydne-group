@@ -14,18 +14,18 @@ export default function UrbanMasterPlanning() {
       heroImage="/images/industries/skyscraper.jpg"
       metrics={[
         { value: "18%", label: "Higher Projected Returns" },
-        { value: "$14M", label: "Carrying Cost Avoided" },
+        { value: "30%", label: "Lower Carrying Cost" },
         { value: "40%", label: "Less Capital at Risk" },
         { value: "2 Yrs", label: "Sooner to Stable Income" }
       ]}
       clientContextTitle="A Whole District, and No Clear Order to Build It"
-      clientContextIntro="A regional real-estate developer had secured the rights to transform a former industrial site into a new mixed-use district — homes, offices, shops and public space spread across a program worth roughly $220 million and expected to take more than a decade to complete. It was the largest single project the company had ever taken on, and comfortably within reach of its ambitions. What it did not yet have was a credible answer to a deceptively simple question: in what order should the district actually be built?"
+      clientContextIntro="A regional real-estate developer had secured the rights to transform a former industrial site into a new mixed-use district — homes, offices, shops and public space spread across a program expected to take more than a decade to complete. It was the largest single project the company had ever taken on, and comfortably within reach of its ambitions. What it did not yet have was a credible answer to a deceptively simple question: in what order should the district actually be built?"
       clientContextBody="The instinct was to move on every part of the site at once, to show progress and get the whole vision out of the ground quickly. But that approach meant borrowing heavily and carrying vacant, unfinished buildings for years before any of them earned a dollar — a level of exposure that made the developer's lenders nervous and left almost no room for anything to go wrong. Decisions about what to build first were being made on gut feel and on which parcel happened to be ready, rather than on which sequence would put the project on the soundest financial footing. Leadership recognized that the plan for the buildings was strong; what was missing was a plan for the money and the timing behind them."
       clientProfile={{
         industry: "Real-Estate Developer",
-        companySize: "~$300M Annual Revenue",
+        companySize: "Regional Developer",
         projectDuration: "12 Months",
-        additionalInfo: "~$220M District Program",
+        additionalInfo: "Decade-Long District Program",
         additionalLabel: "Project Scale"
       }}
       challengeTitle="Why the Numbers Were Fragile"
@@ -85,8 +85,8 @@ export default function UrbanMasterPlanning() {
         },
         {
           icon: DollarSign,
-          value: "$14M",
-          label: "Carrying cost avoided",
+          value: "30%",
+          label: "Lower carrying cost",
           detail: "Less debt held against empty buildings"
         },
         {

@@ -5,7 +5,7 @@ export function RetailOmnichannel() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Increasing Customer Engagement 156% With an Omnichannel Platform | Retail Case Study"
-      seoDescription="A 380-store, $1.9B specialty retailer ran mobile, email, and loyalty in silos. A unified omnichannel platform lifted engagement 156%, app usage 43%, and lifetime value 31%."
+      seoDescription="A 380-store national specialty retailer ran mobile, email, and loyalty in silos. A unified omnichannel platform lifted engagement 156%, app usage 43%, and lifetime value 31%."
       canonical="/cases/retail-omnichannel"
       industry="Retail"
       industryLink="/industries/retail"
@@ -18,13 +18,13 @@ export function RetailOmnichannel() {
         { value: "31%", label: "Higher Lifetime Value" }
       ]}
       clientContextTitle="Channels That Didn't Talk"
-      clientContextIntro="A national specialty retailer with 380 stores and $1.9B in revenue faced a critical engagement problem. Despite having a mobile app, email platform, and loyalty program, these channels operated in silos — creating disjointed experiences that frustrated customers and limited marketing effectiveness."
+      clientContextIntro="A national specialty retailer with 380 stores faced a critical engagement problem. Despite having a mobile app, email platform, and loyalty program, these channels operated in silos — creating disjointed experiences that frustrated customers and limited marketing effectiveness."
       clientContextBody="App engagement lagged benchmarks by 45%, email open rates had fallen 22% year-over-year, and loyalty participation stalled at 28% of customers. A shopper browsing winter coats online would get a summer-dress email the next day; in-store shoppers couldn't reach loyalty points or offers on mobile. The fragmentation drove customers to competitors with seamless engagement — and created operational drag as teams manually coordinated campaigns across channels."
       clientProfile={{
         industry: "Specialty Retailer",
         companySize: "380 Stores",
         projectDuration: "Unified CDP",
-        additionalInfo: "$1.9B Revenue",
+        additionalInfo: "National Footprint",
         additionalLabel: "Scale"
       }}
       challengeTitle="Why Engagement Stalled"

@@ -19,11 +19,11 @@ export default function RetailPdpRecommender() {
         { value: "1 Qtr", label: "To First Measurable Lift" }
       ]}
       clientContextTitle="Recommending the Same Best-Sellers to Everyone"
-      clientContextIntro="A multi-category specialty retailer with several hundred million dollars in online sales was leaning on its product detail page to do the heavy lifting of discovery. But the recommendations on that page came from a single rule — show the category's best-sellers — that treated a first-time visitor and a loyal repeat buyer exactly the same."
+      clientContextIntro="A multi-category specialty retailer whose online store had become its largest sales channel was leaning on its product detail page to do the heavy lifting of discovery. But the recommendations on that page came from a single rule — show the category's best-sellers — that treated a first-time visitor and a loyal repeat buyer exactly the same."
       clientContextBody="The rule was easy to reason about and easy to ignore. It never looked past the item currently on screen, so a shopper who had spent ten minutes browsing a specific style was shown the same generic block as everyone else. Merchandising suspected the page was leaving revenue on the table, but they had no way to prove it and no infrastructure to serve anything smarter without slowing the page down. The catalog's long tail — thousands of products that rarely surfaced — sat unseen while the same few best-sellers cycled endlessly."
       clientProfile={{
         industry: "Multi-Category Specialty Retailer",
-        companySize: "~$480M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "5 Months",
         additionalInfo: "12M+ Sessions / Month",
         additionalLabel: "Digital Traffic"

@@ -16,7 +16,7 @@ export default function SmartCityInfrastructure() {
         { value: "30%", label: "Less Congestion" },
         { value: "25%", label: "Lower Emissions" },
         { value: "40%", label: "Faster Response" },
-        { value: "$9M", label: "Yearly Benefit" }
+        { value: "180", label: "Adaptive Intersections" }
       ]}
       clientContextTitle="Roads Built for Yesterday's City"
       clientContextIntro="A city of around 300,000 people had grown faster than the roads that served it, and the daily commute had become its most visible frustration. Travel times had crept up year after year, air quality was slipping, and residents increasingly felt that a city struggling to move them around was a city struggling, full stop. The infrastructure itself had not kept pace with the way people now lived and traveled."
@@ -97,9 +97,9 @@ export default function SmartCityInfrastructure() {
         },
         {
           icon: DollarSign,
-          value: "$9M",
-          label: "Yearly benefit to the city",
-          detail: "From time saved and productivity no longer lost to gridlock"
+          value: "180",
+          label: "Intersections running adaptively",
+          detail: "Commuter time no longer lost to gridlock, every day"
         }
       ]}
       quote="We didn't need to rebuild our roads — we needed them to pay attention. Once the signals could respond to the traffic actually in front of them, the whole city started to move a little easier. And knowing an ambulance can get a clear path through downtown is worth more than any statistic on a page."

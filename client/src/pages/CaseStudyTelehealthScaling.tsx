@@ -194,7 +194,7 @@ export default function CaseStudyTelehealthScaling() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="prose prose-lg max-w-none">
             <p className="text-xl leading-relaxed text-charcoal/80 mb-6">
-              We partnered with the telehealth provider to design and implement an intelligent operations platform that automated administrative workflows while maintaining clinical quality and patient satisfaction. The $78,000 investment focused on creating seamless integration with existing systems and ensuring compliance with healthcare regulations.
+              We partnered with the telehealth provider to design and implement an intelligent operations platform that automated administrative workflows while maintaining clinical quality and patient satisfaction. The investment focused on creating seamless integration with existing systems and ensuring compliance with healthcare regulations.
             </p>
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Intelligent scheduling and capacity management</h3>
@@ -269,7 +269,7 @@ export default function CaseStudyTelehealthScaling() {
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Operational scalability and efficiency</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
-              Active patient population grew from 45,000 to 225,000 while staff increased from 110 to 220—a 5x volume increase supported by 2x headcount growth. Provider productivity increased by 140%, with each clinician handling an average of 28 patient encounters daily versus 12 previously. Administrative time per visit decreased by 78%, from 42 minutes to 9 minutes. The organization eliminated the need for 85 administrative positions that would have been required under the previous operating model, generating annual savings of $4.8 million.
+              Active patient population grew from 45,000 to 225,000 while staff increased from 110 to 220—a 5x volume increase supported by 2x headcount growth. Provider productivity increased by 140%, with each clinician handling an average of 28 patient encounters daily versus 12 previously. Administrative time per visit decreased by 78%, from 42 minutes to 9 minutes. The organization eliminated the need for 85 administrative positions that would have been required under the previous operating model.
             </p>
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Patient access and satisfaction</h3>
@@ -284,7 +284,7 @@ export default function CaseStudyTelehealthScaling() {
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Financial performance and strategic positioning</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
-              The $78,000 investment generated annual benefits of $5.3 million through avoided hiring costs ($4.8 million) and improved collections ($500,000), representing a 290% ROI over 18 months. More strategically, the platform enabled the organization to achieve profitable unit economics at scale, with cost per visit decreasing by 58% despite wage increases. The organization secured $25 million in Series B funding, with investors specifically citing operational excellence and scalability as key factors. Management projects the platform will support growth to 500,000 active patients without proportional increases in administrative staff, positioning the organization as a category leader in accessible, affordable telehealth services.
+              Through avoided hiring costs and improved collections, the platform repaid its cost many times over within 18 months. More strategically, it enabled the organization to achieve profitable unit economics at scale, with cost per visit decreasing by 58% despite wage increases. The organization went on to secure Series B funding, with investors specifically citing operational excellence and scalability as key factors. Management projects the platform will support growth to 500,000 active patients without proportional increases in administrative staff, positioning the organization as a category leader in accessible, affordable telehealth services.
             </p>
           </div>
         </div>

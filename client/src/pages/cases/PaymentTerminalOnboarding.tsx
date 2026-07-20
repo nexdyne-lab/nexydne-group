@@ -10,7 +10,7 @@ export function PaymentTerminalOnboarding() {
       industry="Financial Services"
       industryLink="/industries/financial-services"
       title="How a Payment Processor Sped Terminal Onboarding 52%"
-      subtitle="A payment processor deployed Sitecore DXP and journey mapping to personalize merchant onboarding — cutting time-to-activation 52%, lifting satisfaction from 2.9 to 4.7, and recovering $2.4M in revenue."
+      subtitle="A payment processor deployed Sitecore DXP and journey mapping to personalize merchant onboarding — cutting time-to-activation 52%, lifting satisfaction from 2.9 to 4.7, and cutting onboarding abandonment from 12% to 3%."
       heroImage="/images/industries/fin-monitors.jpg"
       metrics={[
         { value: "52%", label: "Faster Onboarding" },
@@ -87,13 +87,13 @@ export function PaymentTerminalOnboarding() {
           icon: MessageSquareWarning,
           value: "48%",
           label: "Contacted support",
-          detail: "Down from 78%, cutting cost per onboarded merchant by $42"
+          detail: "Down from 78%, sharply cutting cost per onboarded merchant"
         },
         {
           icon: TrendingUp,
           value: "3%",
           label: "Onboarding abandonment",
-          detail: "Down from 12%, recovering $2.4M in annual revenue"
+          detail: "Down from 12%, recovering merchants who once gave up mid-setup"
         }
       ]}
       quote=""

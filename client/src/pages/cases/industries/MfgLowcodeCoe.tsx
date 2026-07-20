@@ -23,7 +23,7 @@ export default function MfgLowcodeCoe() {
       clientContextBody="Traditional development could not close a gap that size fast enough, and the business users who understood the needs best had no way to build anything themselves. But simply letting people build apps freely would have created an ungoverned sprawl of unmaintainable tools. The manufacturer needed a low-code center of excellence: a governed platform and operating model that let a trained cohort of citizen developers build production applications safely, multiplying delivery capacity without sacrificing control."
       clientProfile={{
         industry: "Industrial Manufacturer",
-        companySize: "~$540M Annual Revenue",
+        companySize: "~2,400 Employees",
         projectDuration: "18 Months",
         additionalInfo: "Low-Code CoE + Citizen Devs",
         additionalLabel: "Delivery Model"

@@ -23,7 +23,7 @@ export default function IndustrialMaIntegration() {
       clientContextBody="Integration is where acquisition value is won or lost. Done poorly, integrations drag on, synergies evaporate, and the acquiring organization exhausts itself — leaving no capacity for the next deal. Three at once multiplied every risk: competing for the same integration resources, three sets of systems and cultures to reconcile, and three synergy cases to deliver. The holding company needed a disciplined, repeatable M&A integration playbook — clear governance, sequenced workstreams, and rigorous synergy tracking — to capture the value on schedule while keeping capacity intact for the deals still to come."
       clientProfile={{
         industry: "Industrial Holding Company",
-        companySize: "~$800M Annual Revenue",
+        companySize: "~3,500 Employees",
         projectDuration: "14 Months",
         additionalInfo: "3 Acquisitions Integrated",
         additionalLabel: "M&A Program"

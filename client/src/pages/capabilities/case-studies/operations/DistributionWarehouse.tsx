@@ -5,21 +5,21 @@ export function DistributionWarehouse() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Doubling Warehouse Throughput Without Expanding | Distribution Case Study"
-      seoDescription="A $95M distributor was planning a $12M warehouse expansion, but the facility wasn't at physical capacity — it was at process capacity. Optimization doubled throughput and avoided the expansion."
+      seoDescription="A regional distributor was planning a major warehouse expansion, but the facility wasn't at physical capacity — it was at process capacity. Optimization doubled throughput and avoided the expansion."
       canonical="/capabilities/operations/case-studies/distribution-warehouse"
       industry="Transportation & Logistics"
       industryLink="/industries/transportation-logistics"
       title="How a Distributor Doubled Warehouse Throughput Without Expanding"
-      subtitle="A distribution company transformed its warehouse operations — narrow-aisle racking, velocity slotting, and lean flow — doubling throughput within the existing footprint and avoiding a $12M facility expansion."
+      subtitle="A distribution company transformed its warehouse operations — narrow-aisle racking, velocity slotting, and lean flow — doubling throughput within the existing footprint and avoiding the planned facility expansion entirely."
       heroImage="/images/capabilities/cap-warehouse-robot.jpg"
       metrics={[
         { value: "2x", label: "Throughput Increase" },
         { value: "30%", label: "Space Utilization Gain" },
-        { value: "$12M", label: "Expansion Avoided" },
+        { value: "0", label: "Expansion Capital Spent" },
         { value: "99.5%", label: "Order Accuracy" }
       ]}
       clientContextTitle="At Capacity, or Just at Process Limits?"
-      clientContextIntro="A 180-employee distribution company with $95M in revenue operates a 350,000-square-foot distribution center handling 15,000 SKUs across the Southeast. Growing demand had pushed the warehouse to apparent capacity, and management was planning a $12M facility expansion despite lead-time and capital constraints."
+      clientContextIntro="A 180-employee distribution company operates a 350,000-square-foot distribution center handling 15,000 SKUs across the Southeast. Growing demand had pushed the warehouse to apparent capacity, and management was planning a major facility expansion despite lead-time and capital constraints."
       clientContextBody="Analysis revealed the warehouse wasn't at physical capacity — it was at the limit of its current processes. Vertical space was underutilized at 60% of racking height, slotting hadn't been optimized in years so fast movers were scattered, pick paths forced constant backtracking, and receiving and shipping competed for the same dock doors at peak."
       clientProfile={{
         industry: "Industrial Distributor",
@@ -85,8 +85,8 @@ export function DistributionWarehouse() {
         },
         {
           icon: DollarSign,
-          value: "$12M",
-          label: "Expansion avoided",
+          value: "0",
+          label: "Expansion capital spent",
           detail: "Preserving capital and years of lead time"
         },
         {

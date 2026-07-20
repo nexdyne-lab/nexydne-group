@@ -4,25 +4,25 @@ import { Database, Swords, HelpCircle, Boxes, Map, MessagesSquare, FlaskConical,
 export function ManufacturerDataMonetization() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Finding a $4M Revenue Opportunity Through Data Monetization | Manufacturing Case Study"
-      seoDescription="A $200M manufacturer collected telemetry from 8,000 machines but used it only for warranty claims. A 6-week data-strategy sprint mapped a $4M predictive-maintenance subscription opportunity."
+      seoTitle="Finding a New Recurring-Revenue Line Through Data Monetization | Manufacturing Case Study"
+      seoDescription="A manufacturer collected telemetry from 8,000 machines but used it only for warranty claims. A 6-week data-strategy sprint mapped a predictive-maintenance subscription opportunity — funded on the spot."
       canonical="/cases/manufacturer-data-monetization"
       industry="Manufacturing"
       industryLink="/industries/manufacturing"
-      title="How a Manufacturer Found a $4M Revenue Opportunity in Its Own Data"
-      subtitle="A data-strategy engagement mapped the equipment-telemetry landscape and built a roadmap to launch a predictive-maintenance subscription service — a $4M recurring-revenue opportunity approved on the spot."
+      title="How a Manufacturer Found a New Revenue Line in Its Own Data"
+      subtitle="A data-strategy engagement mapped the equipment-telemetry landscape and built a roadmap to launch a predictive-maintenance subscription service — a recurring-revenue opportunity approved on the spot."
       heroImage="/images/industries/mfg-robotics.jpg"
       metrics={[
-        { value: "$4M", label: "Projected Annual Recurring Revenue" },
+        { value: "3x", label: "Revenue Potential vs. Next-Best Use Case" },
         { value: "12", label: "Use Cases Prioritized" },
         { value: "6 wks", label: "Kickoff to Executive Approval" }
       ]}
       clientContextTitle="Data Sitting Idle"
-      clientContextIntro="A growing industrial-equipment manufacturer with $200M in revenue collected massive telemetry from 8,000 machines at customer sites — vibration, temperature, operating hours, fault codes. The data sat in S3 buckets, used only for warranty-claim investigations when equipment failed."
+      clientContextIntro="A growing mid-market industrial-equipment manufacturer collected massive telemetry from 8,000 machines at customer sites — vibration, temperature, operating hours, fault codes. The data sat in S3 buckets, used only for warranty-claim investigations when equipment failed."
       clientContextBody="The CEO watched competitors launch equipment-as-a-service offerings with predictive maintenance, and customers were asking if the manufacturer could predict failures before they happened. The product team proposed building a platform but had no data strategy — no clarity on what data existed, its condition, or which use cases would generate the most value. It needed a strategy to map the landscape, identify monetization opportunities, prioritize by ROI, and produce an executable roadmap."
       clientProfile={{
         industry: "Industrial Equipment Manufacturer",
-        companySize: "$200M Revenue",
+        companySize: "8,000 Machines in the Field",
         projectDuration: "6-Week Sprint",
         additionalInfo: "8,000 Machines",
         additionalLabel: "Telemetry"
@@ -66,7 +66,7 @@ export function ManufacturerDataMonetization() {
         {
           step: "03",
           title: "Score the use cases",
-          description: "Weeks 4–5 identified 12 opportunities and ranked predictive maintenance first at $4M ARR potential with existing telemetry."
+          description: "Weeks 4–5 identified 12 opportunities and ranked predictive maintenance first — 3x the revenue potential of any other use case, using existing telemetry."
         },
         {
           step: "04",
@@ -78,14 +78,14 @@ export function ManufacturerDataMonetization() {
       results={[
         {
           icon: DollarSign,
-          value: "$4M",
-          label: "Projected ARR",
-          detail: "From a predictive-maintenance subscription at $500/machine/month"
+          value: "3x",
+          label: "Revenue potential",
+          detail: "Predictive maintenance ranked far ahead of the next-best use case"
         },
         {
           icon: FlaskConical,
-          value: "$1.2M",
-          label: "Investment approved on the spot",
+          value: "Same day",
+          label: "Build investment approved",
           detail: "After the CEO reviewed the working proof-of-concept"
         },
         {
@@ -95,7 +95,7 @@ export function ManufacturerDataMonetization() {
           detail: "vs. 78% industry average, launching 9 months ahead of rivals"
         }
       ]}
-      quote="Before the strategy sprint, we knew we had valuable telemetry data but no idea how to monetize it. NEXDYNE mapped our entire data landscape, interviewed our teams, and identified 12 potential use cases in 6 weeks. The prioritization framework was eye-opening — predictive maintenance had 3x the revenue potential of other ideas. The proof-of-concept they built during the engagement proved the roadmap worked. We approved the $1.2M investment on the spot."
+      quote="Before the strategy sprint, we knew we had valuable telemetry data but no idea how to monetize it. NEXDYNE mapped our entire data landscape, interviewed our teams, and identified 12 potential use cases in 6 weeks. The prioritization framework was eye-opening — predictive maintenance had 3x the revenue potential of other ideas. The proof-of-concept they built during the engagement proved the roadmap worked. We approved the investment on the spot."
       quoteAuthor="David Martinez"
       quoteRole="Chief Product Officer"
       relatedStudies={[
@@ -107,9 +107,9 @@ export function ManufacturerDataMonetization() {
           image: "/images/industries/mfg-robotics.jpg"
         },
         {
-          title: "Prioritizing a $12M Analytics Backlog in 6 Weeks",
-          metric: "$13.3M",
-          label: "prioritized value",
+          title: "Prioritizing a 47-Project Analytics Backlog in 6 Weeks",
+          metric: "47→8",
+          label: "projects after prioritization",
           link: "/cases/insurance-analytics-backlog",
           image: "/images/cases/insurance-analytics-backlog-hero.jpg"
         }

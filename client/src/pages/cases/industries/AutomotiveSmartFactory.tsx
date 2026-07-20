@@ -5,7 +5,7 @@ export default function AutomotiveSmartFactory() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Turning an Aging Plant into a Smart Factory | Manufacturing Case Study"
-      seoDescription="A vehicle manufacturer had watched output from its flagship plant plateau for years. Connecting the line and acting on its equipment's own signals lifted productivity by 40% and avoided $18M a year."
+      seoDescription="A vehicle manufacturer had watched output from its flagship plant plateau for years. Connecting the line and acting on its equipment's own signals lifted productivity by 40% and cut unplanned downtime 65%."
       canonical="/cases/automotive-smart-factory"
       industry="Manufacturing"
       industryLink="/industries/manufacturing"
@@ -15,15 +15,15 @@ export default function AutomotiveSmartFactory() {
       metrics={[
         { value: "40%", label: "Higher Productivity" },
         { value: "65%", label: "Less Unplanned Downtime" },
-        { value: "$18M", label: "Saved Each Year" },
+        { value: "80%", label: "Fewer Defects" },
         { value: "99.2%", label: "Right First Time" }
       ]}
       clientContextTitle="A Thirty-Year-Old Plant That Had Stopped Getting Better"
-      clientContextIntro="A vehicle manufacturer ran its flagship assembly plant much as it had for three decades. Years of continuous-improvement work had made the operation leaner, yet its productivity had flattened: the plant was turning only about 62 cents of every dollar of its equipment's capacity into finished vehicles, against an industry best of roughly 85. When a machine stopped without warning, a single lost hour of production could cost tens of thousands of dollars."
+      clientContextIntro="A vehicle manufacturer ran its flagship assembly plant much as it had for three decades. Years of continuous-improvement work had made the operation leaner, yet its productivity had flattened: the plant was using only about 62% of its equipment's effective capacity, against an industry best of roughly 85%. When a machine stopped without warning, every lost hour of production was painfully expensive."
       clientContextBody="The deeper trouble was that the plant could never see problems coming. Equipment was maintained on a fix-it-when-it-breaks basis, so failures arrived as surprises and always at the wrong moment. Quality defects were caught late in the line, after the cost of the work was already sunk, and putting them right meant expensive rework. The plant's leaders knew modernization was overdue, but the investment was large and the case for it hard to prove — until they could show, in the plant's own numbers, exactly where the lost capacity was going."
       clientProfile={{
         industry: "Automotive Manufacturing",
-        companySize: "~$500M Annual Revenue",
+        companySize: "Flagship Assembly Plant",
         projectDuration: "18 Months",
         additionalInfo: "30-Year-Old Plant",
         additionalLabel: "Flagship Facility"
@@ -91,8 +91,8 @@ export default function AutomotiveSmartFactory() {
         },
         {
           icon: BarChart3,
-          value: "$18M",
-          label: "Saved each year",
+          value: "Year one",
+          label: "Payback on modernization",
           detail: "From higher output and far less emergency maintenance"
         },
         {
@@ -115,8 +115,8 @@ export default function AutomotiveSmartFactory() {
         },
         {
           title: "Turning an Equipment Maker into a Services Business",
-          metric: "$30M",
-          label: "new service revenue",
+          metric: "2,700",
+          label: "machines on connected services",
           link: "/cases/industrial-connected-products",
           image: "/images/capabilities/cap-battery-factory.jpg"
         }

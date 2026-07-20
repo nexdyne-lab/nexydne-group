@@ -5,16 +5,16 @@ export function InsuranceDocumentAI() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Cutting Claims Processing Time 73% With Document AI | Insurance Case Study"
-      seoDescription="A 200-employee P&C insurer's adjusters spent 60% of their time on document review, stretching claims to 12 days. Intelligent document processing cut it to 3.2 days and saved $1.2M."
+      seoDescription="A 200-employee P&C insurer's adjusters spent 60% of their time on document review, stretching claims to 12 days. Intelligent document processing cut it to 3.2 days and lifted first-touch resolution from 23% to 41%."
       canonical="/capabilities/artificial-intelligence/case-studies/insurance-document-ai"
       industry="Insurance"
       industryLink="/industries/insurance"
       title="How a Regional Insurer Cut Claims Processing Time 73% With Document AI"
-      subtitle="A property & casualty insurer deployed intelligent document processing and AI triage — cutting average claims time from 12 days to 3.2, processing 50,000+ claims a year at 94% accuracy, and saving $1.2M."
+      subtitle="A property & casualty insurer deployed intelligent document processing and AI triage — cutting average claims time from 12 days to 3.2, processing 50,000+ claims a year at 94% accuracy, and paying for itself inside the first year."
       heroImage="/case-insurance-office.f039a4a1.jpg"
       metrics={[
         { value: "73%", label: "Faster Processing" },
-        { value: "$1.2M", label: "Annual Savings" },
+        { value: "41%", label: "First-Touch Resolution" },
         { value: "50K+", label: "Claims Automated" },
         { value: "94%", label: "Accuracy Rate" }
       ]}
@@ -91,9 +91,9 @@ export function InsuranceDocumentAI() {
         },
         {
           icon: DollarSign,
-          value: "$1.2M",
-          label: "Annual benefits",
-          detail: "From labor, fraud detection, and subrogation recovery"
+          value: "<1 yr",
+          label: "Payback period",
+          detail: "From labor savings, fraud detection, and subrogation recovery"
         }
       ]}
       quote="I became an adjuster because I wanted to help people, not shuffle papers. Now I actually have time to talk to policyholders, understand their situations, and find solutions. The AI handles the paperwork so I can do my real job."

@@ -91,7 +91,7 @@ export default function AutomotiveOperationsExcellence() {
       stats={[
         { number: "15–25%", label: "reduction in unplanned line downtime during launch ramp" },
         { number: "30%+", label: "fewer warranty-driving defects caught before shipment" },
-        { number: "$1.8M", label: "average annual savings per plant transformation" },
+        { number: "<1 yr", label: "typical payback on a plant transformation" },
       ]}
       casesHeading="Operations excellence, proved in outcomes."
       cases={cases}

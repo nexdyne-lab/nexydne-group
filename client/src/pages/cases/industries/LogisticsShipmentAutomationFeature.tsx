@@ -23,7 +23,7 @@ export default function LogisticsShipmentAutomationFeature() {
       clientContextBody="The errors were a direct consequence of manual handling. People keying and checking shipment details at volume inevitably make mistakes, and without automation there was no systematic guard against them. The errors compounded downstream — a mislabeled package might travel to the wrong hub before anyone noticed — so the cost of each mistake was amplified. Customers experienced the failures directly, and reputation suffered. The provider needed to automate shipment processing so accuracy was built in and errors were caught before they propagated, rather than discovered after they had already cost a delivery."
       clientProfile={{
         industry: "Regional Logistics Provider",
-        companySize: "~$300M Annual Revenue",
+        companySize: "500,000+ Shipments / Year",
         projectDuration: "5 Months",
         additionalInfo: "Shipment Processing Automation",
         additionalLabel: "Fulfillment Operations"

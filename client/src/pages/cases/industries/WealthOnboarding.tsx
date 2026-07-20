@@ -1,5 +1,5 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Clock, FileCheck, Shield, Users, Zap, DollarSign, Star } from "lucide-react";
+import { Clock, FileCheck, Shield, Users, Zap, Star } from "lucide-react";
 
 export default function WealthOnboarding() {
   return (
@@ -15,7 +15,7 @@ export default function WealthOnboarding() {
       metrics={[
         { value: "60%", label: "Faster Onboarding" },
         { value: "95%", label: "Documents Right First Time" },
-        { value: "$4.2M", label: "Saved Each Year" },
+        { value: "40%", label: "Less Admin for Advisers" },
         { value: "92%", label: "Client Satisfaction" }
       ]}
       clientContextTitle="A Premium Promise Undone by Paperwork"
@@ -23,7 +23,7 @@ export default function WealthOnboarding() {
       clientContextBody="Behind the scenes, advisers were spending around 40% of their time on administrative work rather than with clients — chasing the same paperwork more than once, since the average new relationship involved close to fifty separate documents, many resubmitted because they arrived incomplete or unreadable. The checks that regulators require were done one after another by hand, creating bottlenecks and no small amount of compliance risk. A firm that prided itself on a white-glove touch was letting a paper-bound process quietly undercut the very promise it was built on."
       clientProfile={{
         industry: "Wealth Management Firm",
-        companySize: "~$3.5B Client Assets",
+        companySize: "Boutique Wealth Manager",
         projectDuration: "15 Months",
         additionalInfo: "Wealthy Families",
         additionalLabel: "Clients Served"
@@ -90,10 +90,10 @@ export default function WealthOnboarding() {
           detail: "Details captured automatically, with people checking only the exceptions"
         },
         {
-          icon: DollarSign,
-          value: "$4.2M",
-          label: "Saved each year",
-          detail: "From far less manual handling and rework"
+          icon: Users,
+          value: "40%",
+          label: "Less admin work for advisers",
+          detail: "Far less manual handling and rework, more time with clients"
         },
         {
           icon: Star,
@@ -115,8 +115,8 @@ export default function WealthOnboarding() {
         },
         {
           title: "Turning Single Accounts into Real Relationships",
-          metric: "$24M",
-          label: "in new revenue",
+          metric: "40%",
+          label: "more products per customer",
           link: "/cases/bank-cross-sell",
           image: "/images/cases/bank-cross-sell-hero.jpg"
         }

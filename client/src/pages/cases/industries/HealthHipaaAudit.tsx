@@ -23,7 +23,7 @@ export default function HealthHipaaAudit() {
       clientContextBody="An auditor asks two questions the health system could not confidently answer: who can access this data, and where did it come from. Access controls varied by system, lineage was undocumented, and remediation, when it happened, was ad hoc with no owner. Failing the audit carried regulatory and reputational consequences the organization could not accept. It needed governance rebuilt around the things an auditor actually checks — provable lineage, enforced access controls, and named stewards accountable for remediation — before the audit window opened."
       clientProfile={{
         industry: "Regional Health System",
-        companySize: "~$680M Annual Revenue",
+        companySize: "6 Hospitals, 40+ Clinics",
         projectDuration: "6 Months",
         additionalInfo: "HIPAA-Regulated Data Estate",
         additionalLabel: "Compliance Environment"

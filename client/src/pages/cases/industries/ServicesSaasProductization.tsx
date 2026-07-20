@@ -23,7 +23,7 @@ export default function ServicesSaasProductization() {
       clientContextBody="The partners knew their methodology was, in effect, a product delivered by hand. Codifying it into software could turn a linear, headcount-bound business into one with predictable recurring revenue and value that scaled beyond billable hours. But services firms routinely fail at this — they over-build, mistake a services process for a product, and stall. The firm needed to validate that clients would actually buy and use a software version before investing heavily, then package and launch it in a way that shifted the revenue model without abandoning the services relationships that funded it."
       clientProfile={{
         industry: "Professional-Services Firm",
-        companySize: "~$340M Annual Revenue",
+        companySize: "1,800 Employees",
         projectDuration: "9 Months",
         additionalInfo: "Methodology-to-Software",
         additionalLabel: "New Product Line"

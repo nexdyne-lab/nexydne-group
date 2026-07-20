@@ -276,8 +276,8 @@ export default function MarketplacePlaybook() {
       </p>
 
       <p>
-        <strong>Results (18 months):</strong> $10M GMV achieved, 2,500+ active users, a 15% take rate on transactions,
-        and a 45% repeat purchase rate.
+        <strong>Results (18 months):</strong> 2,500+ active users, a 15% take rate on transactions, a 45% repeat
+        purchase rate, and transaction volume that grew month over month from launch.
       </p>
     </InsightArticleV2>
   );

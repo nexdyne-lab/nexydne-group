@@ -67,7 +67,7 @@ export default function DigitalTransformationManufacturing() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
             {[
               { metric: "35%", label: "Efficiency Improvement" },
-              { metric: "$2.8M", label: "Annual Cost Savings" },
+              { metric: "28%", label: "Lower Inventory Carrying Cost" },
               { metric: "18 mo", label: "Transformation Timeline" },
               { metric: "98%", label: "On-Time Delivery" }
             ].map((stat, index) => (
@@ -147,8 +147,8 @@ export default function DigitalTransformationManufacturing() {
                   <TrendingUp className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-primary mb-1">Annual Revenue</div>
-                  <div className="text-charcoal font-medium">$45M</div>
+                  <div className="text-sm font-semibold text-primary mb-1">Scale</div>
+                  <div className="text-charcoal font-medium">Mid-market manufacturer</div>
                 </div>
               </div>
             </div>
@@ -282,7 +282,7 @@ export default function DigitalTransformationManufacturing() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Quantified improvement opportunities totaling $3.5M in annual value</span>
+                    <span>Quantified improvement opportunities worth several points of margin annually</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -435,8 +435,8 @@ export default function DigitalTransformationManufacturing() {
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-charcoal/5 rounded-xl">
-                  <div className="text-2xl font-bold text-charcoal mb-1">$2.8M</div>
-                  <div className="text-sm text-charcoal/60">Annual cost savings</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">&lt;1 yr</div>
+                  <div className="text-sm text-charcoal/60">Payback on the program</div>
                 </div>
                 <div className="p-4 bg-charcoal/5 rounded-xl">
                   <div className="text-2xl font-bold text-charcoal mb-1">28%</div>

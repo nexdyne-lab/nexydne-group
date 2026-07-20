@@ -23,7 +23,7 @@ export default function GlobalProfessionalServicesErpAdoption() {
       clientContextBody="Every previous program had treated training as a go-live event — teach people the new screens the week it launched, then hope usage followed. It rarely did. Users met the new system cold, fell back on familiar workarounds under deadline pressure, and the expensive platform ran at a fraction of its value. Leadership wanted this rollout to be different: adoption measured from day one, each region prepared before its wave rather than after, and a network of local champions in place early enough to actually influence behavior."
       clientProfile={{
         industry: "Global Professional-Services Firm",
-        companySize: "~$900M Annual Revenue",
+        companySize: "Upper Mid-Market",
         projectDuration: "9 Months",
         additionalInfo: "38-Country Rollout",
         additionalLabel: "Program Scope"

@@ -227,9 +227,9 @@ export default function Operations() {
         {
           industry: "Service Operations",
           cases: [
-            { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+            { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", metric: "45% fewer rejected claims", image: "/case-healthcare-team.5797392b.jpg" },
             { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", metric: "60%", image: "/images/cases/insurance-claims-automation-hero.jpg" },
-            { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
+            { slug: "industrial-connected-products", title: "Building a Recurring Services Business on Machines Already Sold", metric: "2,700 machines on connected services", image: "/images/capabilities/cap-battery-factory.jpg" },
           ],
         },
       ]}

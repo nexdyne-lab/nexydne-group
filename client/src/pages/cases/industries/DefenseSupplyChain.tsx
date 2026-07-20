@@ -16,14 +16,14 @@ export default function DefenseSupplyChain() {
         { value: "98%", label: "Mission Readiness" },
         { value: "35%", label: "Better Availability" },
         { value: "25%", label: "Less Inventory" },
-        { value: "$9M", label: "Saved Each Year" }
+        { value: "<1 Year", label: "To Pay for Itself" }
       ]}
-      clientContextTitle="Billions in Inventory, and Aircraft Still Grounded"
-      clientContextIntro="A defense sustainment provider kept a fleet of around 300 military aircraft mission-ready for its government customers across roughly 30 sites. In this business a missing part is not an inconvenience — a grounded aircraft is a mission that cannot be flown. Yet at any given moment roughly one aircraft in seven was waiting on a part, even as some $80 million in spares sat idle in warehouses."
+      clientContextTitle="Warehouses Full of Spares, and Aircraft Still Grounded"
+      clientContextIntro="A defense sustainment provider kept a fleet of around 300 military aircraft mission-ready for its government customers across roughly 30 sites. In this business a missing part is not an inconvenience — a grounded aircraft is a mission that cannot be flown. Yet at any given moment roughly one aircraft in seven was waiting on a part, even as warehouses sat full of idle spares."
       clientContextBody="The root of the problem was timing. The supply chain reacted to failures after they happened, and it stocked parts based on what had been needed in the past rather than what would be needed next. For the low-volume, high-stakes components that actually keep aircraft flying, that left the provider perpetually a step behind — too much of the wrong inventory, too little of the right, and mission readiness paying the price."
       clientProfile={{
         industry: "Defense Sustainment Provider",
-        companySize: "~$450M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "16 Months",
         additionalInfo: "~300 Aircraft",
         additionalLabel: "Fleet Supported"
@@ -38,7 +38,7 @@ export default function DefenseSupplyChain() {
         {
           icon: Package,
           title: "Capital in the Wrong Places",
-          description: "Some $80 million in spares sat unused, tying up capital in the wrong parts at the wrong locations."
+          description: "Warehouses of spares sat unused, tying up capital in the wrong parts at the wrong locations."
         },
         {
           icon: Target,
@@ -93,13 +93,13 @@ export default function DefenseSupplyChain() {
           icon: Package,
           value: "25%",
           label: "Less inventory",
-          detail: "About $20M in capital freed up"
+          detail: "A quarter of the capital tied up in spares freed for better use"
         },
         {
           icon: DollarSign,
-          value: "$9M",
-          label: "Saved each year",
-          detail: "Across inventory and logistics"
+          value: "<1 Year",
+          label: "To pay for itself",
+          detail: "Inventory and logistics savings covered the program's cost"
         }
       ]}
       quote="Readiness was never about holding more inventory — it was about holding the right inventory in the right place. Once we could see a failure coming a month out, we could have the replacement waiting. That is the difference between an aircraft that flies its mission and one that sits on the ground."

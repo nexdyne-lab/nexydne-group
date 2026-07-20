@@ -19,11 +19,11 @@ export default function CapitalRaiseSeriesB() {
         { value: "20%", label: "Higher Valuation" }
       ]}
       clientContextTitle="A Strong Business With a Story Investors Could Poke Holes In"
-      clientContextIntro="A growing software company had built something real. It was approaching $60 million in annual recurring revenue, growing quickly, and adding blue-chip customers who stayed for years. On the strength of the business alone, it should have been an easy company to fund. But the way it told its financial story kept getting in the way. Its metrics were inconsistent from one board deck to the next, its model rested on assumptions no one could fully defend, and it had no clear answer to the simplest investor question of all: why this company, and why now."
+      clientContextIntro="A growing software company had built something real. It had built a substantial recurring-revenue base, was growing quickly, and was adding blue-chip customers who stayed for years. On the strength of the business alone, it should have been an easy company to fund. But the way it told its financial story kept getting in the way. Its metrics were inconsistent from one board deck to the next, its model rested on assumptions no one could fully defend, and it had no clear answer to the simplest investor question of all: why this company, and why now."
       clientContextBody="The gaps were not cosmetic. Growth, retention and margin were each calculated differently depending on who pulled the numbers, so a sharp investor could make any of them look worse simply by asking how they were defined. The financial model was a sprawling spreadsheet that broke under scrutiny, with revenue and cost drivers buried in ways that invited doubt rather than confidence. And the equity narrative — the case for what the money would buy and what the company would be worth because of it — had never been written down. Management knew a raise on those foundations would be slow, would attract lowball terms, and would cost the founders far more of the company than the business warranted."
       clientProfile={{
         industry: "B2B Software Company",
-        companySize: "~$60M ARR, growing ~50% a year",
+        companySize: "Growing ~50% a Year",
         projectDuration: "10 Weeks",
         additionalInfo: "Series B Growth Round",
         additionalLabel: "Financing Objective"
@@ -114,8 +114,8 @@ export default function CapitalRaiseSeriesB() {
           image: "/images/industries/advisor-charts.jpg"
         },
         {
-          title: "Adding $18M in EBITDA at an industrial manufacturer",
-          metric: "$18M",
+          title: "Adding seven points of EBITDA margin at an industrial manufacturer",
+          metric: "7 pts",
           label: "added EBITDA",
           link: "/cases/pe-industrial-transformation",
           image: "/images/cases/pe-industrial-transformation-hero.jpg"

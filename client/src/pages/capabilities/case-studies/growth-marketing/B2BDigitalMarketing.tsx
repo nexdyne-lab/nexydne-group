@@ -5,7 +5,7 @@ export function B2BDigitalMarketing() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Digital Marketing Transformation That Doubled Lead Generation | B2B Case Study"
-      seoDescription="A $45M B2B services firm relied on fading referrals and events, generating under 50 leads a month. A modern digital engine doubled leads to 150+ and cut acquisition cost 35%."
+      seoDescription="A 150-employee B2B services firm relied on fading referrals and events, generating under 50 leads a month. A modern digital engine doubled leads to 150+ and cut acquisition cost 35%."
       canonical="/capabilities/growth-marketing-sales/case-studies/b2b-digital-marketing"
       industry="Professional Services"
       industryLink="/industries"
@@ -19,11 +19,11 @@ export function B2BDigitalMarketing() {
         { value: "42%", label: "Lead-to-Opportunity Rate" }
       ]}
       clientContextTitle="Referrals Running Dry"
-      clientContextIntro="A 150-employee B2B professional-services company with $45M in revenue had relied primarily on referrals and events for leads. But referrals were declining as key contacts retired or changed roles, and event marketing was expensive and unpredictable."
+      clientContextIntro="A 150-employee B2B professional-services company had relied primarily on referrals and events for leads. But referrals were declining as key contacts retired or changed roles, and event marketing was expensive and unpredictable."
       clientContextBody="The diagnostic revealed a marketing function that had underinvested in digital for years: an outdated, non-SEO website generating under 50 leads a month, content limited to service descriptions with no thought leadership, sporadic email disconnected from the CRM, and minimal social presence. The team lacked digital capabilities entirely."
       clientProfile={{
         industry: "B2B Professional Services",
-        companySize: "$45M Revenue",
+        companySize: "150 Employees",
         projectDuration: "Full-Funnel Build",
         additionalInfo: "SEO + Automation",
         additionalLabel: "Infrastructure"
@@ -102,8 +102,8 @@ export function B2BDigitalMarketing() {
       relatedStudies={[
         {
           title: "Landing Enterprise Clients With Account-Based Marketing",
-          metric: "$18M",
-          label: "pipeline created",
+          metric: "12",
+          label: "enterprise wins",
           link: "/capabilities/growth-marketing-sales/case-studies/tech-abm",
           image: "/images/industries/tech-datacenter.jpg"
         },

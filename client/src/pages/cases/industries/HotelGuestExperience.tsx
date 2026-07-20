@@ -15,7 +15,7 @@ export default function HotelGuestExperience() {
       metrics={[
         { value: "+25pts", label: "Guest Recommendation Score" },
         { value: "40%", label: "More Loyalty Sign-Ups" },
-        { value: "$11M", label: "Revenue Impact" },
+        { value: "15%", label: "More Repeat Bookings" },
         { value: "92%", label: "Guest Satisfaction" }
       ]}
       clientContextTitle="A Brand Built on the Personal Touch — and Quietly Losing It"
@@ -91,8 +91,8 @@ export default function HotelGuestExperience() {
         },
         {
           icon: DollarSign,
-          value: "$11M",
-          label: "Revenue impact",
+          value: "15%",
+          label: "More repeat bookings",
           detail: "From stronger loyalty and higher spend"
         },
         {

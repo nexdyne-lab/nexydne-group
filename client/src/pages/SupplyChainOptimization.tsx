@@ -354,7 +354,7 @@ export default function SupplyChainOptimization() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:p-6 md:p-8">
             {[
               { metric: "50+", label: "Supply Chain Projects" },
-              { metric: "$200M+", label: "Cost Savings Delivered" },
+              { metric: "<1 yr", label: "Typical Program Payback" },
               { metric: "25%", label: "Average Cost Reduction" },
               { metric: "15+", label: "Industries Served" }
             ].map((item, index) => (

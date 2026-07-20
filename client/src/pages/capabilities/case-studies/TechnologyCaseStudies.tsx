@@ -53,7 +53,7 @@ const caseStudies = [
     industry: "Insurance",
     metrics: [
       { value: "70%", label: "Processing Speed Improvement" },
-      { value: "$2.1M", label: "Annual Savings" },
+      { value: "40%", label: "Lower Maintenance Cost" },
     ],
   },
   {

@@ -23,7 +23,7 @@ export default function RetailRecommendations() {
       clientContextBody="The consequence was a recommender that endlessly recycled the same popular items to the same known shoppers, leaving the long tail of the catalog and every new visitor underserved. New products struggled to gain traction because the system that should have surfaced them ignored them, and first-time shoppers saw generic bestsellers. The retailer was leaving basket growth on the table. It needed a recommender that handled cold-start gracefully and blended signals — a hybrid model that could surface relevant long-tail products and serve new shoppers from their first session."
       clientProfile={{
         industry: "National Retailer",
-        companySize: "~$620M Annual Revenue",
+        companySize: "400+ Stores",
         projectDuration: "5 Months",
         additionalInfo: "Product Recommendations",
         additionalLabel: "Digital Merchandising"

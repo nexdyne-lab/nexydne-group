@@ -23,7 +23,7 @@ export default function InsurerClaimsOrchestration() {
       clientContextBody="The gaps between the tools were where time and errors accumulated. A claim would wait in one system for someone to notice it needed to move to the next, status was invisible across the whole flow, and there was no way to enforce the process consistently. Because the journey was stitched together by hand, cycle times were long and unpredictable, and improving the process was nearly impossible without a model of what the process actually was. The insurer needed an orchestration layer that expressed the whole claims journey — intake to payout — as a single executable model coordinating the six tools."
       clientProfile={{
         industry: "National Insurer",
-        companySize: "~$1.1B Annual Revenue",
+        companySize: "~850,000 Policyholders",
         projectDuration: "7 Months",
         additionalInfo: "Claims Orchestration",
         additionalLabel: "Process Estate"

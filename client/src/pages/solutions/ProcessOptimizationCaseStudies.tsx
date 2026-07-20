@@ -36,7 +36,7 @@ const caseStudies: CaseStudy[] = [
     solution: "NexDyne deployed an intelligent automation platform combining RPA for data extraction, AI for carrier selection optimization, and workflow orchestration for exception management.",
     results: [
       { metric: "78%", label: "Faster processing", icon: <Zap className="w-5 h-5" /> },
-      { metric: "$420K", label: "Annual savings", icon: <DollarSign className="w-5 h-5" /> },
+      { metric: "18%", label: "Fewer miles driven", icon: <DollarSign className="w-5 h-5" /> },
       { metric: "99.2%", label: "Accuracy rate", icon: <TrendingUp className="w-5 h-5" /> },
     ],
     image: "/images/capabilities/cap-robot-factory.jpg",
@@ -45,14 +45,14 @@ const caseStudies: CaseStudy[] = [
   },
   {
     id: "manufacturing-invoice-automation",
-    title: "Manufacturing company automates invoice processing, saves $285K annually",
+    title: "Manufacturing company automates invoice processing end to end",
     client: "Industrial Equipment Manufacturer",
     industry: "Manufacturing",
     challenge: "A 250-employee manufacturer processed 3,000+ invoices monthly with a 5-person AP team. Manual data entry led to 4% error rates and delayed payments.",
     solution: "Implemented intelligent document processing with AI-powered extraction, automated three-way matching, and exception routing workflows.",
     results: [
       { metric: "92%", label: "Time reduction", icon: <Clock className="w-5 h-5" /> },
-      { metric: "$285K", label: "Cost savings", icon: <DollarSign className="w-5 h-5" /> },
+      { metric: "3,000+", label: "Invoices automated monthly", icon: <DollarSign className="w-5 h-5" /> },
       { metric: "0.3%", label: "Error rate", icon: <TrendingUp className="w-5 h-5" /> },
     ],
     image: "/images/capabilities/cap-warehouse-robot.jpg",
@@ -83,7 +83,7 @@ const caseStudies: CaseStudy[] = [
     results: [
       { metric: "85%", label: "Faster processing", icon: <Clock className="w-5 h-5" /> },
       { metric: "45%", label: "Fewer denials", icon: <TrendingUp className="w-5 h-5" /> },
-      { metric: "$1.2M", label: "Revenue recovered", icon: <DollarSign className="w-5 h-5" /> },
+      { metric: "14d → 2d", label: "Claims turnaround", icon: <DollarSign className="w-5 h-5" /> },
     ],
     image: "/images/capabilities/cap-circuit-green.jpg",
     url: "/cases/healthcare-patient-portal",
@@ -379,7 +379,7 @@ export default function ProcessOptimizationCaseStudies() {
           <div className="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
             {[
               { metric: "60-80%", label: "Average process time reduction" },
-              { metric: "$15M+", label: "Total client savings" },
+              { metric: "<1 yr", label: "Typical program payback" },
               { metric: "99%+", label: "Accuracy improvement" },
               { metric: "50+", label: "Successful implementations" },
             ].map((stat, i) => (

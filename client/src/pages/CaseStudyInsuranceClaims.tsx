@@ -139,7 +139,7 @@ export default function CaseStudyInsuranceClaims() {
               Claims adjusters spent 60-70% of their time on administrative tasks including data entry, document collection, and status updates rather than on actual claims evaluation and customer service. The average claim took 14 days from submission to resolution, with simple claims requiring the same lengthy process as complex ones. Customer satisfaction scores lagged industry benchmarks by 22 points.
             </p>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
-              The company's leadership recognized that manual processes were unsustainable. Independent agents were directing clients toward competitors with faster turnaround times, and the company was spending $1.2 million annually on temporary staff during peak claims periods. More concerning, the slow processing created cash flow challenges for small business policyholders who needed quick resolution to resume operations after losses.
+              The company's leadership recognized that manual processes were unsustainable. Independent agents were directing clients toward competitors with faster turnaround times, and the company depended on a costly bench of temporary staff during peak claims periods. More concerning, the slow processing created cash flow challenges for small business policyholders who needed quick resolution to resume operations after losses.
             </p>
             <p className="text-base leading-relaxed text-charcoal/70">
               The carrier needed automation that could handle straightforward claims end-to-end while routing complex cases to experienced adjusters. The solution had to integrate with legacy systems, maintain compliance with state insurance regulations, and preserve the personalized service that differentiated the company in the small commercial market.
@@ -191,7 +191,7 @@ export default function CaseStudyInsuranceClaims() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="prose prose-lg max-w-none">
             <p className="text-xl leading-relaxed text-charcoal/80 mb-6">
-              We designed and implemented an intelligent claims processing platform that automated routine tasks while maintaining the human judgment required for complex claims. The $75,000 investment focused on creating seamless integration with existing systems and ensuring regulatory compliance across all automated workflows.
+              We designed and implemented an intelligent claims processing platform that automated routine tasks while maintaining the human judgment required for complex claims. The engagement focused on creating seamless integration with existing systems and ensuring regulatory compliance across all automated workflows.
             </p>
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Automated intake and triage</h3>
@@ -265,7 +265,7 @@ export default function CaseStudyInsuranceClaims() {
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Processing speed and efficiency</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
-              Average claims cycle time decreased from 14 days to 4.5 days, with routine claims now resolving in under 24 hours. The platform processes 92% of straightforward claims without human intervention, freeing adjusters to focus on complex cases requiring investigation and negotiation. Adjuster productivity increased by 180%, enabling the company to handle 40% more claims with the same staff. The need for temporary workers during peak periods was eliminated, saving $320,000 annually.
+              Average claims cycle time decreased from 14 days to 4.5 days, with routine claims now resolving in under 24 hours. The platform processes 92% of straightforward claims without human intervention, freeing adjusters to focus on complex cases requiring investigation and negotiation. Adjuster productivity increased by 180%, enabling the company to handle 40% more claims with the same staff. The need for temporary workers during peak periods was eliminated entirely.
             </p>
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Customer satisfaction and retention</h3>
@@ -275,12 +275,12 @@ export default function CaseStudyInsuranceClaims() {
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Fraud detection and loss control</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
-              The automated fraud detection algorithms identified 28% more potentially fraudulent claims than the previous manual review process, preventing an estimated $450,000 in inappropriate payments during the measurement period. Pattern recognition capabilities spotted emerging fraud schemes faster than human reviewers, enabling proactive responses. The platform also identified opportunities to improve loss control recommendations to policyholders, reducing repeat claims.
+              The automated fraud detection algorithms identified 28% more potentially fraudulent claims than the previous manual review process, preventing a meaningful volume of inappropriate payments during the measurement period. Pattern recognition capabilities spotted emerging fraud schemes faster than human reviewers, enabling proactive responses. The platform also identified opportunities to improve loss control recommendations to policyholders, reducing repeat claims.
             </p>
 
             <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Financial performance</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
-              The $75,000 investment in the platform generated annual benefits of $895,000 through reduced staffing costs ($320,000), fraud prevention ($450,000), and improved retention value ($125,000). This represents a 340% ROI over 18 months. The company's combined ratio improved by 4.2 points, driven by both expense reduction and better loss outcomes. Management views the platform as a strategic asset that enables profitable growth in the small commercial segment where larger competitors struggle to achieve acceptable unit economics.
+              The platform paid for itself inside the first year through reduced staffing costs, fraud prevention, and improved retention. The company's combined ratio improved by 4.2 points, driven by both expense reduction and better loss outcomes. Management views the platform as a strategic asset that enables profitable growth in the small commercial segment where larger competitors struggle to achieve acceptable unit economics.
             </p>
           </div>
         </div>

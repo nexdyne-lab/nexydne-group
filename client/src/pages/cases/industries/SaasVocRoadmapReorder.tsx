@@ -23,7 +23,7 @@ export default function SaasVocRoadmapReorder() {
       clientContextBody="The cost was subtle but real. Because the roadmap chased individual deals and competitor parity, the features most likely to deepen adoption and drive expansion in the existing base kept getting pushed down the list. There was no systematic read on what customers as a whole actually needed, so genuinely high-value work sat at position seven while lower-value parity features shipped first. Product leadership suspected the sequencing was wrong but had no evidence base strong enough to overrule the loudest voices in the room."
       clientProfile={{
         industry: "B2B SaaS Provider",
-        companySize: "~$240M ARR",
+        companySize: "Mid-Market SaaS",
         projectDuration: "5 Months",
         additionalInfo: "Product-Led Expansion Motion",
         additionalLabel: "Growth Model"

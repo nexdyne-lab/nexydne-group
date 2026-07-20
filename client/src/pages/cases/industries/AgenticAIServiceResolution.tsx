@@ -16,14 +16,14 @@ export default function AgenticAIServiceResolution() {
         { value: "60%", label: "Resolved Without a Handoff" },
         { value: "70%", label: "Faster Resolution" },
         { value: "30%", label: "Lower Cost to Serve" },
-        { value: "$6M", label: "Saved Each Year" }
+        { value: "24/7", label: "Requests Handled Any Hour" }
       ]}
       clientContextTitle="When Every Request Ends Up in Someone's Queue"
       clientContextIntro="A regional retail bank served several hundred thousand everyday customers across a few dozen branches and its mobile app. Most of what those customers asked for was routine — reset a card PIN, dispute a small charge, update an address, move a payment date. Yet almost every one of these requests, however simple, ended up in a queue waiting for a person to pick it up, look up the account, take the action and confirm it was done."
       clientContextBody="The bank's older tools could answer questions but could not do anything. A chatbot might tell a customer how to replace a lost card, but it could not actually order the card, so the request still went to a person. The result was long waits for customers on requests that should have taken seconds, and a service team spending most of its day on repetitive tasks rather than the complicated cases that genuinely needed human judgment. Leadership saw the pattern clearly: the problem was not the volume of requests, it was that the bank had no way to finish a request without a human doing every step."
       clientProfile={{
         industry: "Regional Retail Bank",
-        companySize: "~$320M Annual Revenue",
+        companySize: "Mid-Market Bank",
         projectDuration: "10 Months",
         additionalInfo: "~250 Service Staff",
         additionalLabel: "Customer Operations Team"
@@ -97,9 +97,9 @@ export default function AgenticAIServiceResolution() {
         },
         {
           icon: DollarSign,
-          value: "$6M",
-          label: "Saved each year",
-          detail: "As staff shifted to higher-value work"
+          value: "24/7",
+          label: "Requests handled any hour",
+          detail: "With staff shifted to higher-value work"
         }
       ]}
       quote="For years our best people spent their days resetting PINs and updating addresses. The difference now is that the AI does not just tell a customer what to do — it actually does it, then confirms it is done. That freed our team to spend their time on the customers who really need a human, and our customers stopped waiting for things that should have taken seconds."

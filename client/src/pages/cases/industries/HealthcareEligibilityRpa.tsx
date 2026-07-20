@@ -23,7 +23,7 @@ export default function HealthcareEligibilityRpa() {
       clientContextBody="Multiplied across thousands of encounters a day, that manual effort added up to an enormous amount of staff time spent on rote work, and it introduced errors that led to denied claims downstream. Eligibility verification is exactly the kind of repetitive, rules-and-documents work that consumes staff capacity without needing human judgment. The provider network needed to collapse the multi-step process into a single, streamlined action — using attended bots to work alongside staff and intelligent document processing to read the documents automatically — reclaiming the tens of thousands of hours the manual process consumed."
       clientProfile={{
         industry: "Provider Network",
-        companySize: "~$680M Annual Revenue",
+        companySize: "~40 Care Sites",
         projectDuration: "6 Months",
         additionalInfo: "Eligibility Automation",
         additionalLabel: "Revenue Cycle"
@@ -54,7 +54,7 @@ export default function HealthcareEligibilityRpa() {
       quoteAuthor="VP of Revenue Cycle"
       quoteRole="Provider network"
       relatedStudies={[
-        { title: "How a Global Bank Captured $400M in Value by Reorganizing Around Customer Journeys", metric: "$400M", label: "in annual value", link: "/cases/bank-operating-model-transformation", image: "/images/industries/fin-monitors.jpg" },
+        { title: "How a Global Bank Took Four Points Off Its Cost-to-Income Ratio by Reorganizing Around Customer Journeys", metric: "4 pts", label: "off cost-to-income ratio", link: "/cases/bank-operating-model-transformation", image: "/images/industries/fin-monitors.jpg" },
         { title: "How an Industrial Holding Company Integrated Three Acquisitions and Beat Its Synergy Targets", metric: "110%", label: "of synergy targets captured", link: "/cases/industrial-ma-integration", image: "/images/capabilities/cap-battery-factory.jpg" }
       ]}
       ctaTitle="Is a manual verification process eating your capacity?"

@@ -5,7 +5,7 @@ export function TechnologyCaseStudy() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Cutting Deployment Time 82% With a DevOps Transformation | Technology Case Study"
-      seoDescription="A $28M ARR SaaS company deployed twice a month through a 2-person bottleneck, losing 30% of engineering to rollbacks. A DevOps transformation cut deployment time 82% at 99.95% uptime."
+      seoDescription="A 400-customer enterprise SaaS company deployed twice a month through a 2-person bottleneck, losing 30% of engineering to rollbacks. A DevOps transformation cut deployment time 82% at 99.95% uptime."
       canonical="/case-studies/technology-devops-transformation"
       industry="Technology, Media & Telecom"
       industryLink="/industries/technology-media-telecom"
@@ -19,11 +19,11 @@ export function TechnologyCaseStudy() {
         { value: "12x", label: "Deployment Frequency" }
       ]}
       clientContextTitle="Growth Outpacing Infrastructure"
-      clientContextIntro="A B2B SaaS company providing workflow-automation tools to enterprises — 145 employees, $28M ARR, and 400+ enterprise customers — had grown 3x in two years, but its infrastructure hadn't kept pace. A 45-developer team spent more time on infrastructure maintenance than feature development."
+      clientContextIntro="A B2B SaaS company providing workflow-automation tools to enterprises — 145 employees and 400+ enterprise customers — had grown 3x in two years, but its infrastructure hadn't kept pace. A 45-developer team spent more time on infrastructure maintenance than feature development."
       clientContextBody="Each deployment took 3–4 days of manual work, and only 2 senior engineers were authorized to deploy — limiting releases to twice a month. Environment drift caused features that worked in development to fail in production, with emergency fixes consuming 30% of engineering time. The team learned about outages from customers (23-minute average detection), and cloud costs grew 180% year-over-year against just 60% customer growth."
       clientProfile={{
         industry: "B2B SaaS Company",
-        companySize: "$28M ARR",
+        companySize: "145 Employees",
         projectDuration: "IaC + CI/CD",
         additionalInfo: "Terraform + K8s",
         additionalLabel: "Stack"
@@ -93,7 +93,7 @@ export function TechnologyCaseStudy() {
           icon: DollarSign,
           value: "40%",
           label: "Lower cloud spend",
-          detail: "$180K to $108K a month, with infra time from 35% to 8%"
+          detail: "With engineering time on infrastructure down from 35% to 8%"
         }
       ]}
       quote="NEXDYNE didn't just fix our infrastructure — they transformed how our engineering team operates. We went from dreading deployments to shipping features multiple times a day with confidence. The ROI was evident within the first quarter."

@@ -16,14 +16,14 @@ export default function SecurityComplianceHardening() {
         { value: "Audit-ready", label: "Every Day, Not Once a Year" },
         { value: "80%", label: "Less Audit Prep Time" },
         { value: "70%", label: "Fewer Findings" },
-        { value: "$4M", label: "Exposure Closed" }
+        { value: "100%", label: "Critical Gaps Closed" }
       ]}
       clientContextTitle="When Every Audit Is a Fire Drill"
       clientContextIntro="A financial services firm — a company that manages money and moves sensitive customer data for a living — faced a wall of security and compliance obligations from its regulators, its customers and its own board. On paper it met them. In practice, it met them the same way every year: in a frantic scramble in the weeks before each audit, when teams stopped their regular work to hunt down evidence and prove that controls were in place."
       clientContextBody="The problem was that security and compliance lived outside the flow of the business rather than inside it. Controls were checked periodically instead of enforced continuously, and evidence was assembled by hand from screenshots, spreadsheets and email threads. Because no one had a live picture of where the firm actually stood, gaps were discovered late — during an audit, or worse, after an incident. Each audit consumed thousands of staff hours, findings piled up faster than they could be closed, and the firm was never quite sure, on any given day, whether it was truly compliant or simply between audits."
       clientProfile={{
         industry: "Financial Services Firm",
-        companySize: "~$500M Annual Revenue",
+        companySize: "Mid-Market Firm",
         projectDuration: "14 Months",
         additionalInfo: "12+ Frameworks",
         additionalLabel: "Regulatory Obligations"
@@ -97,9 +97,9 @@ export default function SecurityComplianceHardening() {
         },
         {
           icon: DollarSign,
-          value: "$4M",
-          label: "Exposure closed",
-          detail: "Real weaknesses fixed, and avoided regulatory and breach costs"
+          value: "100%",
+          label: "Critical gaps closed",
+          detail: "Real weaknesses fixed, and regulatory and breach exposure avoided"
         }
       ]}
       quote="We used to prove we were secure a few weeks a year and hope for the best in between. Now the controls run every day, and the evidence is simply there when anyone asks. The audit stopped being an event we brace for — and, more importantly, the gaps that used to hide between audits aren't there anymore."

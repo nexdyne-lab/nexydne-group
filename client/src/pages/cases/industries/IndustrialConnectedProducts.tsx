@@ -5,25 +5,25 @@ export default function IndustrialConnectedProducts() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Turning an Equipment Maker into a Services Business | Manufacturing Case Study"
-      seoDescription="An industrial equipment manufacturer sold machines and lost touch the moment they left the factory. Staying connected to them in the field built a $30M recurring-services business."
+      seoDescription="An industrial equipment manufacturer sold machines and lost touch the moment they left the factory. Staying connected to them in the field built a fast-growing recurring-services business at 40% margins."
       canonical="/cases/industrial-connected-products"
       industry="Manufacturing"
       industryLink="/industries/manufacturing"
-      title="Building a $30M Services Business on Machines Already Sold"
+      title="Building a Recurring Services Business on Machines Already Sold"
       subtitle="An industrial equipment manufacturer earned lumpy, one-off revenue from the machines it sold and lost sight of them the moment they shipped. Staying connected to that installed base turned it into a steady, higher-margin services business."
       heroImage="/images/capabilities/cap-battery-factory.jpg"
       metrics={[
-        { value: "$30M", label: "New Service Revenue" },
+        { value: "2,700", label: "Connected Machines" },
         { value: "85%", label: "Customer Retention" },
         { value: "40%", label: "Service Margin" },
-        { value: "2,700", label: "Connected Machines" }
+        { value: "60%", label: "Less Customer Downtime" }
       ]}
       clientContextTitle="A Manufacturer That Lost Touch at the Loading Dock"
       clientContextIntro="An industrial equipment manufacturer built heavy machinery — compressors, pumps and turbines — for customers in energy, power and manufacturing. It was good at making and selling that equipment, but its relationship with each customer effectively ended the moment a machine left the loading dock. Revenue came in large, unpredictable lumps as orders were won and lost, and low-cost rivals were steadily squeezing the margin on the hardware itself."
       clientContextBody="Meanwhile the roughly 9,000 of the company's machines already running in the field represented a standing opportunity it had no way to reach. Its customers wrestled with unplanned breakdowns and inefficient operation; the manufacturer had the engineering knowledge to help them, but no means of delivering that expertise to thousands of machines spread across the world. To break out of the boom-and-bust of one-off sales, it needed to become a company that sold not just equipment, but the performance of that equipment over its whole life."
       clientProfile={{
         industry: "Industrial Equipment",
-        companySize: "~$750M Annual Revenue",
+        companySize: "Global Installed Base",
         projectDuration: "24 Months",
         additionalInfo: "~9,000 Machines in the Field",
         additionalLabel: "Installed Base"
@@ -79,9 +79,9 @@ export default function IndustrialConnectedProducts() {
       results={[
         {
           icon: DollarSign,
-          value: "$30M",
-          label: "New service revenue each year",
-          detail: "Recurring, and at around 40% margins"
+          value: "Recurring",
+          label: "Service revenue, year after year",
+          detail: "Steady income at around 40% margins, smoothing the equipment cycle"
         },
         {
           icon: Users,

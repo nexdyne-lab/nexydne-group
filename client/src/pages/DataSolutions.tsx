@@ -26,7 +26,7 @@ export default function DataSolutions() {
     {
       title: "Insurance Fraud Detection",
       category: "Insurance",
-      description: "AI-driven fraud detection saving millions in potential losses.",
+      description: "AI-driven fraud detection that stops losses before they land.",
       image: "/images/capabilities/cap-data-presentation.jpg",
       link: "/cases/insurance-claims-processing"
     },

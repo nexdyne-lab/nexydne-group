@@ -15,7 +15,7 @@ export default function HealthcareFunding() {
     <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Healthcare Strategic Funding | Case Study | NexDyne Technologies" 
-        description="How we helped a medical device company secure $28M in strategic funding from a healthcare-focused investor, accelerating market expansion."
+        description="How we helped a medical device company secure strategic funding from a healthcare-focused investor in 10 weeks, accelerating market expansion."
         canonical="/case-studies/healthcare-funding"
       />
       <Navigation />
@@ -37,7 +37,7 @@ export default function HealthcareFunding() {
               Case Study · Medical Devices
             </span>
             <h1 className="nx-h1 mb-4">
-              <span className="text-primary">$28M</span> strategic healthcare investment
+              <span className="text-primary">10 weeks</span> to a strategic healthcare investment
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
               How we helped a medical device company secure strategic funding from a healthcare-focused investor, providing capital and partnership opportunities to accelerate market expansion.
@@ -45,7 +45,7 @@ export default function HealthcareFunding() {
             
             {/* PDF Download Button */}
             <CaseStudyPDFButton
-              title="$28M strategic healthcare investment"
+              title="Strategic healthcare investment closed in 10 weeks"
               industry="Medical Devices"
               summary="How we helped a medical device company secure strategic funding from a healthcare-focused investor, providing capital and partnership opportunities to accelerate market expansion."
               challenge="See full case study for detailed challenge description."
@@ -66,7 +66,7 @@ export default function HealthcareFunding() {
         <div className="container px-4 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             {[
-              { metric: "$28M", label: "Strategic investment secured" },
+              { metric: "Strategic", label: "Growth investor secured" },
               { metric: "4", label: "Hospital system partnerships" },
               { metric: "2.5x", label: "Revenue growth in 18 months" },
               { metric: "10 weeks", label: "Time to close" }
@@ -105,7 +105,7 @@ export default function HealthcareFunding() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a medical device company specializing in minimally invasive surgical instruments. With $15M in annual revenue and FDA clearance for their flagship product line, they had established strong clinical evidence and a growing customer base among ambulatory surgery centers.
+                Our client is a medical device company specializing in minimally invasive surgical instruments. With FDA clearance for their flagship product line, they had established strong clinical evidence and a growing customer base among ambulatory surgery centers.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 The company was seeking growth capital to expand their sales force, pursue additional FDA clearances, and enter the hospital market. They wanted a strategic investor who could provide more than just capital—they needed access to healthcare networks and industry expertise.
@@ -114,7 +114,7 @@ export default function HealthcareFunding() {
             <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-charcoal/5 rounded-xl">
               <div><div className="text-sm font-semibold text-primary mb-2">Industry</div><div className="text-charcoal font-medium">Medical Devices</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">Stage</div><div className="text-charcoal font-medium">Growth Equity</div></div>
-              <div><div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div><div className="text-charcoal font-medium">$15M</div></div>
+              <div><div className="text-sm font-semibold text-primary mb-2">Regulatory Status</div><div className="text-charcoal font-medium">FDA-cleared</div></div>
             </div>
           </motion.div>
         </div>
@@ -233,9 +233,9 @@ export default function HealthcareFunding() {
           <div className="space-y-8">
             <div>
               <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><DollarSign className="w-6 h-6 text-primary" />Strategic investment secured</h3>
-              <p className="text-charcoal/70 leading-relaxed mb-4">The company secured $28M from a healthcare-focused growth equity fund with deep hospital system relationships and medical device expertise.</p>
+              <p className="text-charcoal/70 leading-relaxed mb-4">The company secured a strategic investment from a healthcare-focused growth equity fund with deep hospital system relationships and medical device expertise.</p>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$28M</div><div className="text-sm text-charcoal/60">Strategic investment secured</div></div>
+                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">Closed</div><div className="text-sm text-charcoal/60">Strategic investment secured</div></div>
                 <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">10 weeks</div><div className="text-sm text-charcoal/60">Time from launch to close</div></div>
               </div>
             </div>
@@ -281,7 +281,7 @@ export default function HealthcareFunding() {
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
             {[
-              { title: "$45M Series B at 3x valuation premium", industry: "HealthTech", description: "How we helped a healthtech startup secure Series B funding", link: "/case-studies/series-b-funding" },
+              { title: "Series B closed at a 3x valuation premium", industry: "HealthTech", description: "How we helped a healthtech startup secure Series B funding", link: "/case-studies/series-b-funding" },
               { title: "Manufacturing growth equity transaction", industry: "Manufacturing", description: "How we positioned a manufacturer for successful growth equity raise", link: "/case-studies/manufacturing-growth-equity" }
             ].map((item, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>

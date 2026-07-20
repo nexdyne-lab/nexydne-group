@@ -23,7 +23,7 @@ export default function PublisherHeadlessJamstack() {
       clientContextBody="For a publisher, speed is revenue. Slow pages lose readers before the content loads, hurt the search visibility that drives discovery, and reduce the ad impressions that fund the business. The monolithic platform rendered pages slowly and coupled editorial to delivery, so improving performance and improving editorial velocity pulled against each other. The publisher needed to rebuild on a headless CMS with static Jamstack delivery — pre-rendering pages for speed while decoupling editorial — to restore performance, ranking, and the ability to launch new monetization surfaces."
       clientProfile={{
         industry: "Digital Publisher",
-        companySize: "~$180M Annual Revenue",
+        companySize: "~20M Monthly Page Views",
         projectDuration: "5 Months",
         additionalInfo: "Headless + Jamstack Rebuild",
         additionalLabel: "Publishing Platform"

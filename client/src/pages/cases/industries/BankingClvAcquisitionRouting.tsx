@@ -23,7 +23,7 @@ export default function BankingClvAcquisitionRouting() {
       clientContextBody="The consequence built up slowly. The bank was efficiently acquiring large numbers of low-value accounts while under-investing in the customers who would generate the balances, products, and tenure that actually drive a bank's economics. Because value never entered the optimization, no one could see the mix problem in the cost-per-account dashboard. Leadership wanted the same acquisition budget pointed at high-value customers, which meant getting a credible lifetime-value signal into the systems that decided where the money went."
       clientProfile={{
         industry: "Regional Retail Bank",
-        companySize: "~$430M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "6 Months",
         additionalInfo: "Digital Acquisition Program",
         additionalLabel: "Growth Engine"

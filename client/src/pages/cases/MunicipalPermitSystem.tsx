@@ -90,9 +90,9 @@ export function MunicipalPermitSystem() {
         },
         {
           icon: Accessibility,
-          value: "$420K",
-          label: "Annual cost savings",
-          detail: "With regulatory findings down 85% and staff productivity up 40%"
+          value: "40%",
+          label: "Higher staff productivity",
+          detail: "With regulatory findings down 85% and processing costs well below the old system"
         }
       ]}
       quote=""

@@ -5,7 +5,7 @@ export default function GlobalRetailer() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Automating Supply-Chain Order Processing with RPA | Retail Case Study"
-      seoDescription="A 200-location retailer's procurement team spent 40+ hours a week re-keying orders across three systems. RPA cut processing time 45%, errors 60%, and saved $1.8M a year."
+      seoDescription="A 200-location retailer's procurement team spent 40+ hours a week re-keying orders across three systems. RPA cut processing time 45%, errors 60%, and paid for itself in 7 months."
       canonical="/cases/global-retailer"
       industry="Retail"
       industryLink="/industries/retail"
@@ -15,11 +15,11 @@ export default function GlobalRetailer() {
       metrics={[
         { value: "45%", label: "Faster Processing" },
         { value: "60%", label: "Fewer Order Errors" },
-        { value: "$1.8M", label: "Annual Savings" }
+        { value: "7 mo", label: "Payback Period" }
       ]}
       clientContextTitle="Drowning in Manual Orders"
       clientContextIntro="A multinational retail chain with 200+ locations was drowning in manual order processing. Its procurement team spent 40+ hours a week transferring data between a legacy ERP, supplier portals, and an inventory platform — entering each order across three systems by hand."
-      clientContextBody="The manual process introduced errors that cascaded through the supply chain: wrong quantities, wrong SKUs, duplicate orders — costing $2M+ a year in expedited shipping, stockouts, and excess inventory. Traditional integration wasn't viable, because the ERP was slated for replacement within 18 months, making API development hard to justify."
+      clientContextBody="The manual process introduced errors that cascaded through the supply chain: wrong quantities, wrong SKUs, duplicate orders — a heavy annual cost in expedited shipping, stockouts, and excess inventory. Traditional integration wasn't viable, because the ERP was slated for replacement within 18 months, making API development hard to justify."
       clientProfile={{
         industry: "Multinational Retail Chain",
         companySize: "200+ Locations",
@@ -41,7 +41,7 @@ export default function GlobalRetailer() {
         },
         {
           icon: DollarSign,
-          title: "$2M+ a year in waste",
+          title: "A heavy annual cost in waste",
           description: "Those errors drove expedited shipping fees, stockouts, and excess inventory."
         },
         {
@@ -90,9 +90,9 @@ export default function GlobalRetailer() {
         },
         {
           icon: Package,
-          value: "$1.8M",
-          label: "Annual savings",
-          detail: "With stockouts down 35% and payback in 7 months"
+          value: "7 mo",
+          label: "Payback period",
+          detail: "With stockouts down 35% across the network"
         }
       ]}
       quote=""

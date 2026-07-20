@@ -23,7 +23,7 @@ export default function EcommerceOrderFulfillmentFeature() {
       clientContextBody="Manual fulfillment coordination scales poorly. As volume grew, the seams between channels, warehouses, and carriers required more and more human effort to hold together, and the risk of delays, mis-ships, and bottlenecks grew with every order. The retailer could not simply add staff fast enough to keep pace, and errors at volume damaged the customer experience across every channel. It needed order fulfillment automation that coordinated the whole flow — across channels, warehouses, and carriers — so it could handle thousands of daily orders reliably without the process breaking down."
       clientProfile={{
         industry: "Multi-Channel Retailer",
-        companySize: "~$430M Annual Revenue",
+        companySize: "~90 Stores",
         projectDuration: "6 Months",
         additionalInfo: "Fulfillment Automation",
         additionalLabel: "Operations"

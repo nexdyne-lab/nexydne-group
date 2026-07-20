@@ -23,7 +23,7 @@ export default function RetailEngagement() {
       clientContextBody="The result was a lifecycle program that ran but did not perform. Static drips ignored what each customer actually did, so the messages were often irrelevant, and the flaky automation meant sends fired late, twice, or not at all. Repeat-purchase behavior — the whole point of lifecycle marketing — was left largely to chance. The retailer needed two things: a reliable end-to-end automation foundation it could trust, and personalized lifecycle programs that responded to real customer behavior across email and SMS, so repeat purchasing became a durable habit rather than an accident."
       clientProfile={{
         industry: "Specialty Retailer",
-        companySize: "~$430M Annual Revenue",
+        companySize: "~90 Stores",
         projectDuration: "5 Months",
         additionalInfo: "Lifecycle Marketing Rebuild",
         additionalLabel: "Email + SMS"

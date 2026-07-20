@@ -10,12 +10,12 @@ export function RetailInventoryApp() {
       industry="Retail"
       industryLink="/industries/retail"
       title="How a Retailer Built a Custom Inventory App and Cut Stockouts 40%"
-      subtitle="A multi-location retailer deployed a mobile inventory app with real-time sync, barcode scanning, and automated reorder triggers across 85 stores — lifting accuracy to 98.5% and saving $1.2M a year."
+      subtitle="A multi-location retailer deployed a mobile inventory app with real-time sync, barcode scanning, and automated reorder triggers across 85 stores — lifting accuracy to 98.5% and sales 8%."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
       metrics={[
         { value: "40%", label: "Fewer Stockouts" },
         { value: "98.5%", label: "Inventory Accuracy" },
-        { value: "$1.2M", label: "Annual Labor Savings" }
+        { value: "8%", label: "Higher Sales" }
       ]}
       clientContextTitle="Counting by Hand"
       clientContextIntro="A specialty outdoor gear retailer running 85 stores across the Western US struggled with chronic inventory accuracy. Its legacy system required manual data entry on back-office desktops, causing delayed updates and frequent gaps between records and actual shelf stock."
@@ -90,9 +90,9 @@ export function RetailInventoryApp() {
         },
         {
           icon: DollarSign,
-          value: "$1.2M",
-          label: "Annual labor savings",
-          detail: "With 1,850 stockouts prevented and sales up 8%"
+          value: "8%",
+          label: "Higher sales",
+          detail: "With 1,850 stockouts prevented and inventory labor sharply reduced"
         }
       ]}
       quote=""

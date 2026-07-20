@@ -5,25 +5,25 @@ export function DistributionPricing() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Pricing Optimization That Improved Margins 8 Points | Distribution Case Study"
-      seoDescription="A $125M distributor's margins eroded from 28% to 22% amid ad-hoc discounting. Systematic, value-based pricing recovered 8 margin points and $10M in profit — while lifting retention 3%."
+      seoDescription="An industrial distributor's margins eroded from 28% to 22% amid ad-hoc discounting. Systematic, value-based pricing recovered 8 points of gross margin — while lifting retention 3%."
       canonical="/capabilities/growth-marketing-sales/case-studies/distribution-pricing"
       industry="Transportation & Logistics"
       industryLink="/industries/transportation-logistics"
       title="How a Distributor Improved Margins 8 Points With Pricing Optimization"
-      subtitle="An industrial distributor transformed ad-hoc pricing into a systematic, value-based discipline — recovering 8 margin points and $10M in annual profit while improving customer retention 3%."
+      subtitle="An industrial distributor transformed ad-hoc pricing into a systematic, value-based discipline — recovering 8 points of gross margin while improving customer retention 3%."
       heroImage="/images/capabilities/cap-chess.jpg"
       metrics={[
         { value: "8 pts", label: "Margin Improvement" },
         { value: "3%", label: "Retention Gain" },
-        { value: "$10M", label: "Profit Impact" },
+        { value: "30%", label: "Gross Margin Achieved" },
         { value: "30%", label: "Pricing Consistency Gain" }
       ]}
       clientContextTitle="Value Leaking Away"
-      clientContextIntro="A 160-employee distribution company with $125M in revenue serves industrial customers with MRO supplies. Gross margins had eroded from 28% to 22% over five years as reps discounted to win deals, with pricing set ad hoc and no systematic approach."
+      clientContextIntro="A 160-employee distribution company serves industrial customers with MRO supplies. Gross margins had eroded from 28% to 22% over five years as reps discounted to win deals, with pricing set ad hoc and no systematic approach."
       clientContextBody="The company had grown through acquisition, leaving pricing inconsistent across the combined customer base. Analysis found value leaking on every dimension: list prices hadn't been updated in years, similar customers received vastly different discounts, freight and handling were regularly waived without justification, and rebates had accumulated without review. Some accounts were actually losing money while competitors priced on data."
       clientProfile={{
         industry: "Industrial Distributor",
-        companySize: "$125M Revenue",
+        companySize: "160 Employees",
         projectDuration: "18-Month Program",
         additionalInfo: "Pricing Governance",
         additionalLabel: "Structure"
@@ -81,7 +81,7 @@ export function DistributionPricing() {
           icon: DollarSign,
           value: "8 pts",
           label: "Margin improvement",
-          detail: "$10M in annual profit on a $125M revenue base"
+          detail: "Gross margin back to 30%, above where the erosion began"
         },
         {
           icon: Users,

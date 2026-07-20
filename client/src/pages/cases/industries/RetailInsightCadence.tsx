@@ -23,7 +23,7 @@ export default function RetailInsightCadence() {
       clientContextBody="The mismatch was one of cadence and audience. Operators making daily merchandising and inventory calls needed timely, relevant nudges, not twelve dashboards to monitor or a quarterly deck that arrived long after the decisions it discussed. Eight of the twelve dashboards were barely opened, yet maintaining them consumed a large share of analyst capacity. The retailer needed to match the rhythm of insight to the rhythm of decisions: frequent, digestible operator briefs for the front line and a monthly readout for executives, retiring the dashboards nobody used."
       clientProfile={{
         industry: "Multi-Channel Retailer",
-        companySize: "~$620M Annual Revenue",
+        companySize: "~120 Stores",
         projectDuration: "4 Months",
         additionalInfo: "Insight Function Redesign",
         additionalLabel: "Analytics Cadence"

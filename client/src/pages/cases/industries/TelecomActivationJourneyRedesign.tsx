@@ -23,7 +23,7 @@ export default function TelecomActivationJourneyRedesign() {
       clientContextBody="Those calls were expensive twice over: they cost the contact center directly, and they undercut the whole point of the carrier's digital-channel strategy, which was to let customers self-serve. The operations team assumed the problem was spread thinly across a complicated journey and would take a major overhaul to fix. In reality the calls were concentrated. What the team lacked was the analytics to prove where, so they could fix the few moments that mattered instead of rebuilding everything."
       clientProfile={{
         industry: "National Telecom Carrier",
-        companySize: "~$1.1B Annual Revenue",
+        companySize: "Upper Mid-Market",
         projectDuration: "5 Months",
         additionalInfo: "Digital-First Activation Goal",
         additionalLabel: "Channel Strategy"

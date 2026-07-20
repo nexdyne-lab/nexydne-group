@@ -15,7 +15,7 @@ export default function ManufacturingCostReduction() {
     <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Manufacturing Cost Reduction | Case Study | NexDyne Technologies" 
-        description="How we helped a manufacturer achieve $18M in annual cost savings through operational excellence and lean transformation."
+        description="How we helped a manufacturer cut COGS 15% through operational excellence and lean transformation."
         canonical="/case-studies/manufacturing-cost-reduction"
       />
       <Navigation />
@@ -30,7 +30,7 @@ export default function ManufacturingCostReduction() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">Case Study · Manufacturing</span>
             <h1 className="nx-h1 mb-4">
-              <span className="text-primary">$18M</span> annual savings through operational excellence
+              <span className="text-primary">15%</span> off COGS through operational excellence
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
               How we helped a growing manufacturer achieve significant cost reductions through lean transformation, process optimization, and strategic sourcing.
@@ -38,7 +38,7 @@ export default function ManufacturingCostReduction() {
             
             {/* PDF Download Button */}
             <CaseStudyPDFButton
-              title="$18M annual savings through operational excellence"
+              title="15% off COGS through operational excellence"
               industry="Manufacturing"
               summary="How we helped a growing manufacturer achieve significant cost reductions through lean transformation, process optimization, and strategic sourcing."
               challenge="See full case study for detailed challenge description."
@@ -59,7 +59,7 @@ export default function ManufacturingCostReduction() {
         <div className="container px-4 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             {[
-              { metric: "$18M", label: "Annual cost savings" },
+              { metric: "30%", label: "Gross margin restored" },
               { metric: "15%", label: "Reduction in COGS" },
               { metric: "40%", label: "Improvement in OEE" },
               { metric: "65%", label: "Reduction in defect rate" }
@@ -91,7 +91,7 @@ export default function ManufacturingCostReduction() {
             <h2 className="nx-h2 text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a growing manufacturer of industrial components with $120M in revenue and 450 employees across three production facilities. They serve automotive, aerospace, and industrial equipment OEMs with precision-machined parts.
+                Our client is a growing manufacturer of industrial components with 450 employees across three production facilities. They serve automotive, aerospace, and industrial equipment OEMs with precision-machined parts.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 Facing margin pressure from customers and rising input costs, the company needed to significantly reduce costs while maintaining quality standards. Previous cost reduction efforts had delivered incremental improvements but hadn't addressed fundamental operational issues.
@@ -100,7 +100,7 @@ export default function ManufacturingCostReduction() {
             <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-charcoal/5 rounded-xl">
               <div><div className="text-sm font-semibold text-primary mb-2">Industry</div><div className="text-charcoal font-medium">Industrial Manufacturing</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">Employees</div><div className="text-charcoal font-medium">450</div></div>
-              <div><div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div><div className="text-charcoal font-medium">$120M</div></div>
+              <div><div className="text-sm font-semibold text-primary mb-2">Production Facilities</div><div className="text-charcoal font-medium">Three plants</div></div>
             </div>
           </motion.div>
         </div>
@@ -216,9 +216,9 @@ export default function ManufacturingCostReduction() {
           <div className="space-y-8">
             <div>
               <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><TrendingUp className="w-6 h-6 text-primary" />Significant cost reduction</h3>
-              <p className="text-charcoal/70 leading-relaxed mb-4">The program delivered $18M in annual cost savings, reducing COGS by 15% and restoring gross margins to 30%.</p>
+              <p className="text-charcoal/70 leading-relaxed mb-4">The program cut COGS by 15%, restoring gross margins to 30%.</p>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$18M</div><div className="text-sm text-charcoal/60">Annual cost savings</div></div>
+                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">15%</div><div className="text-sm text-charcoal/60">Lower COGS</div></div>
                 <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">15%</div><div className="text-sm text-charcoal/60">Reduction in COGS</div></div>
               </div>
             </div>
@@ -264,7 +264,7 @@ export default function ManufacturingCostReduction() {
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
             {[
-              { title: "Distribution working capital optimization", industry: "Distribution", description: "How we helped free up $12M in working capital", link: "/case-studies/distribution-working-capital" },
+              { title: "Distribution working capital optimization", industry: "Distribution", description: "How we helped free up 20% of working capital", link: "/case-studies/distribution-working-capital" },
               { title: "E-commerce operations transformation", industry: "E-commerce", description: "How we helped scale operations 3x", link: "/case-studies/ecommerce-operations" }
             ].map((item, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>

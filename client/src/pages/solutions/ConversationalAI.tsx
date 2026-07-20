@@ -66,8 +66,8 @@ export default function ConversationalAI() {
       label: "average containment rate across customer support deployments",
     },
     {
-      stat: "$8M",
-      label: "median annualized support cost takeout per enterprise client",
+      stat: "30%",
+      label: "typical reduction in cost to serve across support deployments",
     },
   ];
 
@@ -372,8 +372,8 @@ export default function ConversationalAI() {
               className="nx-h2 text-white mb-8"
             >
               Agents that resolve, not just deflect. NexDyne clients have hit
-              double-digit containment lifts and delivered eight-figure
-              annualized cost takeout—without sacrificing CSAT.
+              double-digit containment lifts and step-change reductions in
+              cost to serve—without sacrificing CSAT.
             </h2>
             <p className="nx-lead text-white/85 max-w-[60ch] mb-8">
               We've built customer, sales, and internal agents across

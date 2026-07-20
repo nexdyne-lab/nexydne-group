@@ -12,7 +12,7 @@ export default function CaseStudyB2BDigitalOrdering() {
     <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Case Study: Industrial Supplier B2B Digital Ordering" 
-        description="How a 220-employee industrial supplier added $4.5M in revenue through a digital ordering platform with 58% self-service adoption."
+        description="How a 220-employee industrial supplier lifted revenue 5% through a digital ordering platform with 58% self-service adoption."
         canonical="/cases/b2b-digital-ordering"
       />
       <Navigation />
@@ -41,7 +41,7 @@ export default function CaseStudyB2BDigitalOrdering() {
             </div>
 
             <h1 className="text-charcoal font-bold tracking-[-0.035em] leading-[1.05] text-[clamp(2.2rem,4.8vw,3.8rem)]">
-              Industrial supplier adds $4.5M revenue through digital ordering
+              Industrial supplier lifts revenue 5% through digital ordering
             </h1>
 
             <p className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[62ch]">
@@ -50,8 +50,8 @@ export default function CaseStudyB2BDigitalOrdering() {
 
             <div className="flex flex-wrap gap-8 mt-8 mb-10">
               <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary">$4.5M</p>
-                <p className="text-muted-foreground text-sm">New Revenue</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary">5%</p>
+                <p className="text-muted-foreground text-sm">Revenue Lift</p>
               </div>
               <div>
                 <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary">58%</p>
@@ -65,19 +65,19 @@ export default function CaseStudyB2BDigitalOrdering() {
 
             {/* PDF Download Button */}
             <CaseStudyPDFButton
-              title="Industrial supplier adds $4.5M revenue through digital ordering"
+              title="Industrial supplier lifts revenue 5% through digital ordering"
               industry="B2B Manufacturing"
               capability="Digital Commerce"
               summary="220-employee industrial supplier launched B2B e-commerce platform with customer-specific pricing, inventory visibility, and self-service reordering."
               challenge="Traditional phone and fax ordering was limiting growth and creating operational bottlenecks."
               solution="Implemented a B2B e-commerce platform with customer-specific pricing, inventory visibility, and self-service reordering capabilities."
               results={[
-                "$4.5M in new revenue",
+                "5% revenue lift from the digital channel",
                 "58% self-service order adoption",
                 "35% reduction in order processing costs"
               ]}
               metrics={[
-                { value: "$4.5M", label: "New Revenue" },
+                { value: "5%", label: "Revenue Lift" },
                 { value: "58%", label: "Self-Service Orders" },
                 { value: "35%", label: "Cost Reduction" }
               ]}
@@ -107,7 +107,7 @@ export default function CaseStudyB2BDigitalOrdering() {
               
               <div className="space-y-6 text-lg text-charcoal/70 leading-relaxed">
                 <p>
-                  This industrial supplier had been in business for 40 years, serving manufacturing and construction companies across the Midwest. With 220 employees, 3 distribution centers, and $85M in annual revenue, they were a trusted partner for MRO supplies, safety equipment, and industrial consumables.
+                  This industrial supplier had been in business for 40 years, serving manufacturing and construction companies across the Midwest. With 220 employees and 3 distribution centers, they were a trusted partner for MRO supplies, safety equipment, and industrial consumables.
                 </p>
                 <p>
                   However, the ordering process was stuck in the past. Customers placed orders via phone, fax, or email to sales reps who manually entered them into the ERP system. This created bottlenecks, errors, and limited the company's ability to scale without adding headcount.
@@ -133,8 +133,8 @@ export default function CaseStudyB2BDigitalOrdering() {
                   <span className="font-semibold">220</span>
                 </div>
                 <div className="flex justify-between py-3 border-b border-border">
-                  <span className="text-charcoal/60">Annual Revenue</span>
-                  <span className="font-semibold">$85M (pre-project)</span>
+                  <span className="text-charcoal/60">Track Record</span>
+                  <span className="font-semibold">40 years in business</span>
                 </div>
                 <div className="flex justify-between py-3 border-b border-border">
                   <span className="text-charcoal/60">Distribution Centers</span>
@@ -375,7 +375,7 @@ export default function CaseStudyB2BDigitalOrdering() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16">
             {[
-              { stat: "$4.5M", label: "New revenue", description: "Incremental sales through digital channel" },
+              { stat: "5%", label: "Revenue lift", description: "Incremental sales through digital channel" },
               { stat: "58%", label: "Self-service orders", description: "Orders placed without sales rep involvement" },
               { stat: "35%", label: "Cost reduction", description: "Order processing cost savings" },
               { stat: "24/7", label: "Ordering availability", description: "Customers can order anytime" }
@@ -410,7 +410,7 @@ export default function CaseStudyB2BDigitalOrdering() {
               </svg>
             </div>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed mb-5 sm:mb-6 md:mb-8 italic">
-              "We had tried to build a marketplace internally for 2 years with no success. NEXDYNE validated the opportunity, built the MVP in 8 weeks, and helped us reach product-market fit in 4 months. We're now processing $500K monthly GMV."
+              "We had tried to build a marketplace internally for 2 years with no success. NEXDYNE validated the opportunity, built the MVP in 8 weeks, and helped us reach product-market fit in 4 months. Order volume through the platform has grown every month since launch."
             </p>
             <div>
               <p className="font-bold text-white text-lg">Priya Sharma</p>
@@ -443,14 +443,14 @@ export default function CaseStudyB2BDigitalOrdering() {
               {
                 category: "Specialty Retail",
                 title: "Outdoor gear retailer grows online revenue 180% in 18 months",
-                stats: [{ value: "180%", label: "Revenue growth" }, { value: "$3.2M", label: "New revenue" }],
+                stats: [{ value: "180%", label: "Revenue growth" }, { value: "0→11%", label: "Share of sales now digital" }],
                 color: "from-amber to-primary",
                 link: "/cases/retail-ecommerce-growth"
               },
               {
                 category: "Professional Services",
                 title: "Training company launches subscription platform with 2,400 members",
-                stats: [{ value: "2,400", label: "Active members" }, { value: "$1.8M", label: "Annual MRR" }],
+                stats: [{ value: "2,400", label: "Active members" }, { value: "30%", label: "Of revenue now recurring" }],
                 color: "from-purple to-purple",
                 link: "/cases/training-subscription-platform"
               }

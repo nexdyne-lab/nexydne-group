@@ -23,7 +23,7 @@ export default function EnterpriseSoftwarePricingRebuild() {
       clientContextBody="The tiers were not anchored to value, so the highest-value features were bundled indiscriminately and reps had no structured way to hold price. Discounting had become the path of least resistance, and years of it had reset customer expectations. Fixing this was delicate: raise price the wrong way and renewals wobble. The operator needed the tier architecture rebuilt around value, the packaging repackaged so the features customers valued most anchored the price, and a rollout engineered so customer success could migrate the installed base without putting renewals at risk."
       clientProfile={{
         industry: "Enterprise Software Operator",
-        companySize: "~$290M ARR",
+        companySize: "2,000+ Enterprise Customers",
         projectDuration: "6 Months",
         additionalInfo: "Subscription Licensing",
         additionalLabel: "Revenue Model"

@@ -218,7 +218,7 @@ export default function PerformanceImprovement() {
               <div className="space-y-6">
                 {[
                   "8% average operating cost reduction",
-                  "$6.5M working capital released in 6 months",
+                  "12% of working capital released in 6 months",
                   "40% reduction in order-to-ship cycle time",
                   "60% increase in throughput capacity"
                 ].map((item, i) => (
@@ -239,7 +239,7 @@ export default function PerformanceImprovement() {
             >
               {[
                 { metric: "8%", label: "Cost Reduction" },
-                { metric: "$6.5M", label: "Capital Released" },
+                { metric: "12%", label: "Capital Released" },
                 { metric: "40%", label: "Faster Cycles" },
                 { metric: "60%", label: "Capacity Gain" }
               ].map((item, index) => (
@@ -287,13 +287,13 @@ export default function PerformanceImprovement() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 sm:p-6 md:p-8 lg:gap-5 sm:p-7 md:p-5 sm:p-7 md:p-10">
             {[
               {
-                title: "Manufacturer reduces operating costs by $3.2M annually",
+                title: "Manufacturer reduces operating costs 8% annually",
                 category: "Cost Optimization",
                 image: "/images/industries/ops-gears.jpg",
                 link: "/case-studies/manufacturing-cost-reduction"
               },
               {
-                title: "Distributor releases $6.5M in working capital",
+                title: "Distributor releases 12% of its working capital",
                 category: "Working Capital",
                 image: "/images/capabilities/cap-data-bars.jpg",
                 link: "/case-studies/distribution-working-capital"

@@ -67,7 +67,7 @@ export default function OperationalExcellenceHealthcare() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
             {[
               { metric: "22%", label: "Cost Reduction" },
-              { metric: "$8.4M", label: "Annual Savings" },
+              { metric: "35%", label: "Fewer Claim Denials" },
               { metric: "15%", label: "Patient Satisfaction Increase" },
               { metric: "12 mo", label: "Implementation Timeline" }
             ].map((stat, index) => (
@@ -147,8 +147,8 @@ export default function OperationalExcellenceHealthcare() {
                   <TrendingUp className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-primary mb-1">Annual Revenue</div>
-                  <div className="text-charcoal font-medium">$120M</div>
+                  <div className="text-sm font-semibold text-primary mb-1">Footprint</div>
+                  <div className="text-charcoal font-medium">Multi-site network</div>
                 </div>
               </div>
             </div>
@@ -282,7 +282,7 @@ export default function OperationalExcellenceHealthcare() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Identified $10M+ in annual improvement opportunities</span>
+                    <span>Identified improvement opportunities worth over a fifth of operating cost</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -414,8 +414,8 @@ export default function OperationalExcellenceHealthcare() {
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-charcoal/5 rounded-xl">
-                  <div className="text-2xl font-bold text-charcoal mb-1">$8.4M</div>
-                  <div className="text-sm text-charcoal/60">Annual cost savings</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">&lt;1 yr</div>
+                  <div className="text-sm text-charcoal/60">Payback on the program</div>
                 </div>
                 <div className="p-4 bg-charcoal/5 rounded-xl">
                   <div className="text-2xl font-bold text-charcoal mb-1">22%</div>
@@ -464,8 +464,8 @@ export default function OperationalExcellenceHealthcare() {
                   <div className="text-sm text-charcoal/60">Reduction in claim denials</div>
                 </div>
                 <div className="p-4 bg-charcoal/5 rounded-xl">
-                  <div className="text-2xl font-bold text-charcoal mb-1">$1.8M</div>
-                  <div className="text-sm text-charcoal/60">Additional revenue recovered</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">1.5%</div>
+                  <div className="text-sm text-charcoal/60">Of net revenue recovered</div>
                 </div>
               </div>
             </div>

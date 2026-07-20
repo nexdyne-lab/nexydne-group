@@ -23,7 +23,7 @@ export default function ManufacturingOptimization() {
       clientContextBody="The losses were hiding in plain sight and going unmeasured. Changeovers took longer than anyone tracked, work-in-progress queued between stations without visibility, and the line was unbalanced so faster stations sat idle waiting on slower ones. None of this showed up in a capacity number; it only showed up when the process was discovered and measured station by station. The manufacturer needed the real drivers of cycle time surfaced before it spent money solving a problem it had not diagnosed."
       clientProfile={{
         industry: "Discrete Manufacturer",
-        companySize: "~$390M Annual Revenue",
+        companySize: "Mid-Market",
         projectDuration: "5 Months",
         additionalInfo: "Single-Site Production Line",
         additionalLabel: "Operating Scope"
@@ -46,7 +46,7 @@ export default function ManufacturingOptimization() {
       resultsTitle="Gains That Were Already on the Floor"
       results={[
         { icon: TrendingDown, value: "22%", label: "Faster cycle time", detail: "Without new equipment" },
-        { icon: DollarSign, value: "$0", label: "New capital", detail: "Gains from flow, not capacity" },
+        { icon: DollarSign, value: "Zero", label: "New capital", detail: "Gains from flow, not capacity" },
         { icon: Target, value: "Balanced", label: "Line", detail: "Stations no longer waiting on each other" },
         { icon: CheckCircle, value: "Visible", label: "Losses", detail: "Changeover and queue time surfaced" }
       ]}

@@ -23,7 +23,7 @@ export default function BankSubjectRights() {
       clientContextBody="The process was slow, expensive, and risky. Six weeks strained regulatory deadlines, the manual search was error-prone, and there was no reliable audit trail proving the bank had found and handled everything. Because the data landscape was undocumented, staff essentially rediscovered it on every request. The bank needed the subject-rights process wired into a data catalog that knew where customer data lived and into the CRM that anchored customer identity, turning a six-week manual hunt into a fast, repeatable, auditable operation."
       clientProfile={{
         industry: "Regional Bank",
-        companySize: "~$430M Annual Revenue",
+        companySize: "900,000+ Customers",
         projectDuration: "5 Months",
         additionalInfo: "Subject-Rights Compliance",
         additionalLabel: "Privacy Program"

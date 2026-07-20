@@ -16,7 +16,7 @@ export default function NonprofitDigitalTransformation() {
         { value: "60%", label: "Higher Engagement" },
         { value: "45%", label: "More Donations" },
         { value: "3x", label: "Donor Retention" },
-        { value: "$25M", label: "Revenue Growth" }
+        { value: "2x", label: "Online Giving" }
       ]}
       clientContextTitle="A Nonprofit Losing Connection with Donors"
       clientContextIntro="A global humanitarian organization with 2 million donors was struggling to maintain engagement. Donor retention had fallen to 35%—below the nonprofit average. Communications were generic mass mailings that didn't resonate. Younger donors expected digital experiences the organization couldn't deliver."
@@ -25,7 +25,7 @@ export default function NonprofitDigitalTransformation() {
         industry: "Humanitarian Nonprofit",
         companySize: "2M Donors",
         projectDuration: "18 Months",
-        additionalInfo: "$200M Annual Revenue",
+        additionalInfo: "Global Operations",
         additionalLabel: "Fundraising Scale"
       }}
       challengeTitle="Disconnected from Donors"
@@ -97,8 +97,8 @@ export default function NonprofitDigitalTransformation() {
         },
         {
           icon: Globe,
-          value: "$25M",
-          label: "Revenue growth",
+          value: "2x",
+          label: "Online giving growth",
           detail: "Funding more mission impact"
         }
       ]}

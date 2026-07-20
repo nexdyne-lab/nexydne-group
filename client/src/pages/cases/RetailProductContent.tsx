@@ -1,26 +1,26 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Clock, Shuffle, CalendarX, FileSpreadsheet, Database, GitBranch, Send, DollarSign } from "lucide-react";
+import { Clock, Shuffle, CalendarX, FileSpreadsheet, Database, GitBranch, Send, CalendarPlus } from "lucide-react";
 
 export function RetailProductContent() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Launching Products 60% Faster With a Content Platform | Retail Case Study"
-      seoDescription="A home-goods retailer's product launches took 6 weeks across spreadsheets, drives, and email, with 15% missing launch day. A PIM platform cut launch time to 2.5 weeks and added $2.8M."
+      seoDescription="A home-goods retailer's product launches took 6 weeks across spreadsheets, drives, and email, with 15% missing launch day. A PIM platform cut launch time to 2.5 weeks and made room for two extra collections a year."
       canonical="/cases/retail-product-content"
       industry="Retail"
       industryLink="/industries/retail"
       title="How a Retailer Launched Products 60% Faster With a Content Platform"
-      subtitle="Automated product-content workflows across 15,000 SKUs, 8 regional websites, and print catalogs cut time-to-market from 6 weeks to 2.5 — generating $2.8M in incremental revenue."
+      subtitle="Automated product-content workflows across 15,000 SKUs, 8 regional websites, and print catalogs cut time-to-market from 6 weeks to 2.5 — making room for two extra seasonal collections a year."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
       metrics={[
         { value: "60%", label: "Faster Launches" },
         { value: "15,000", label: "SKUs Managed" },
         { value: "8", label: "Regional Sites Automated" },
-        { value: "$2.8M", label: "Annual Revenue Gain" }
+        { value: "+2", label: "Seasonal Collections a Year" }
       ]}
       clientContextTitle="Product Content Chaos"
       clientContextIntro="A mid-sized home-goods retailer with 15,000 SKUs across 8 regional websites and quarterly print catalogs struggled with product-content chaos. Product info lived in spreadsheets, images sat on shared drives, and marketing copy hid in email threads."
-      clientContextBody="Launching a product took 6 weeks of sequential handoffs across merchandising, photography, copywriting, design, and web teams manually entering everything into each site. Inconsistencies plagued the experience — the same product had different descriptions across regional sites, images didn't match between web and print, and pricing errors slipped through. Seasonal launches were nightmares: the fall catalog meant coordinating 2,000 products at once, and 15% still missed launch day, costing $400K per season."
+      clientContextBody="Launching a product took 6 weeks of sequential handoffs across merchandising, photography, copywriting, design, and web teams manually entering everything into each site. Inconsistencies plagued the experience — the same product had different descriptions across regional sites, images didn't match between web and print, and pricing errors slipped through. Seasonal launches were nightmares: the fall catalog meant coordinating 2,000 products at once, and 15% still missed launch day, forfeiting sales every season."
       clientProfile={{
         industry: "Home-Goods Retailer",
         companySize: "15,000 SKUs",
@@ -48,7 +48,7 @@ export function RetailProductContent() {
         {
           icon: CalendarX,
           title: "15% missed launch day",
-          description: "Seasonal launches forced nights and weekends, and still lost $400K a season to unready content."
+          description: "Seasonal launches forced nights and weekends, and still lost sales every season to unready content."
         }
       ]}
       approachTitle="One Source of Truth, Auto-Published"
@@ -90,10 +90,10 @@ export function RetailProductContent() {
           detail: "With description-mismatch returns down 40%"
         },
         {
-          icon: DollarSign,
-          value: "$2.8M",
-          label: "Incremental revenue",
-          detail: "From two extra seasonal collections a year"
+          icon: CalendarPlus,
+          value: "+2",
+          label: "Seasonal collections a year",
+          detail: "Launch capacity freed by the faster content pipeline"
         }
       ]}
       quote=""
@@ -109,8 +109,8 @@ export function RetailProductContent() {
         },
         {
           title: "Centralizing 2M Media Assets With a DAM Platform",
-          metric: "$3.2M",
-          label: "annual savings",
+          metric: "Zero",
+          label: "rights violations",
           link: "/cases/media-company-dam",
           image: "/images/industries/tech-datacenter.jpg"
         }

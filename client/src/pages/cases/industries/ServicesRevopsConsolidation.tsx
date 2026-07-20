@@ -23,7 +23,7 @@ export default function ServicesRevopsConsolidation() {
       clientContextBody="The proliferation was expensive twice: in licensing for tools whose jobs duplicated one another, and in the daily cost of a data spine so fragmented that no report could be trusted. Every pipeline question triggered a reconciliation exercise, and leadership made decisions on figures it quietly doubted. The firm did not need another tool to unify the others; it needed a hard-nosed diagnostic of what each tool actually did, the courage to retire the redundant ones, and a rebuilt data spine on the consolidated stack that could finally serve as a single source of truth."
       clientProfile={{
         industry: "Professional Services Firm",
-        companySize: "~$400M Annual Revenue",
+        companySize: "2,500 Employees",
         projectDuration: "6 Months",
         additionalInfo: "Post-Acquisition RevOps",
         additionalLabel: "Operating Stack"

@@ -16,14 +16,14 @@ export default function WorkforceSchedulingOptimization() {
         { value: "22%", label: "Less Overtime" },
         { value: "31%", label: "Fewer Coverage Gaps" },
         { value: "6pts", label: "Better On-Time Service" },
-        { value: "$4.5M", label: "Saved Each Year" }
+        { value: "2 weeks", label: "Earlier Schedules" }
       ]}
       clientContextTitle="Paying for Too Many People and Too Few, Often in the Same Week"
       clientContextIntro="A regional distribution and logistics operator moved goods through a network of warehouses and delivery hubs for retail and industrial customers. Its shift schedules were built by hand roughly a week ahead, drawn up by supervisors who leaned on experience and instinct to guess how busy each shift would be. When the guess was high, the operator paid overtime and idle time it did not need. When the guess was low, shifts ran short-handed, orders backed up, and trucks left late."
-      clientContextBody="The pattern repeated itself constantly. A single missed forecast could mean a Tuesday of expensive overtime followed by a Thursday of missed delivery windows — and neither problem was anyone's fault, because the schedule had simply been set before anyone could know what the days would really bring. Overtime alone was running into the millions, on-time delivery was slipping below the levels customers expected, and the workforce bore the cost too: shifts were announced late, hours swung week to week, and the people doing the work could not plan their own lives around a schedule that kept changing. Leadership saw the same lever behind every symptom — schedules that were set too early, on too little information, to ever match the day's real demand."
+      clientContextBody="The pattern repeated itself constantly. A single missed forecast could mean a Tuesday of expensive overtime followed by a Thursday of missed delivery windows — and neither problem was anyone's fault, because the schedule had simply been set before anyone could know what the days would really bring. Overtime had become a heavy, recurring cost, on-time delivery was slipping below the levels customers expected, and the workforce bore the cost too: shifts were announced late, hours swung week to week, and the people doing the work could not plan their own lives around a schedule that kept changing. Leadership saw the same lever behind every symptom — schedules that were set too early, on too little information, to ever match the day's real demand."
       clientProfile={{
         industry: "Regional Distribution & Logistics",
-        companySize: "~$400M Annual Revenue",
+        companySize: "Multi-Site Network",
         projectDuration: "10 Months",
         additionalInfo: "~2,500 Shift Workers",
         additionalLabel: "Frontline Workforce"
@@ -33,7 +33,7 @@ export default function WorkforceSchedulingOptimization() {
         {
           icon: DollarSign,
           title: "Overtime the Business Didn't Need",
-          description: "When supervisors staffed for a busy day that never came, the operator paid millions a year in overtime and idle hours it could have avoided."
+          description: "When supervisors staffed for a busy day that never came, the operator paid heavily in overtime and idle hours it could have avoided."
         },
         {
           icon: Users,
@@ -81,7 +81,7 @@ export default function WorkforceSchedulingOptimization() {
           icon: DollarSign,
           value: "22%",
           label: "Less overtime",
-          detail: "About $4.5M a year no longer spent on avoidable hours"
+          detail: "Avoidable hours that are simply no longer paid for"
         },
         {
           icon: Target,

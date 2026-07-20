@@ -23,7 +23,7 @@ export default function B2bEcommerceLaunch() {
       clientContextBody="The cost was opportunity, not just efficiency. Every hour spent typing a predictable re-order was an hour not spent on the larger, more complex accounts where a salesperson's judgment actually grew the business. Customers, for their part, would happily have placed those re-orders themselves if given a simple way to do it. The distributor needed a self-service channel for the recurring catalog and, crucially, a plan to move customers onto it without disrupting the relationships inside sales had built."
       clientProfile={{
         industry: "B2B Industrial Distributor",
-        companySize: "~$470M Annual Revenue",
+        companySize: "10,000+ Active Accounts",
         projectDuration: "12 Months",
         additionalInfo: "Inside-Sales Order Desk",
         additionalLabel: "Order Channel"

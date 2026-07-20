@@ -5,21 +5,21 @@ export function ManufacturingIoTPipeline() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Building an IoT Sensor Platform for Predictive Maintenance | Manufacturing Case Study"
-      seoDescription="A manufacturer's 450 machines logged sensor data nobody analyzed, with downtime costing $85K/hour. An IoT platform ingesting 2M events/hour cut downtime 30% and saved $1.8M a year."
+      seoDescription="A manufacturer's 450 machines logged sensor data nobody analyzed, while every hour of downtime halted production. An IoT platform ingesting 2M events/hour cut unplanned downtime 30%."
       canonical="/cases/manufacturing-iot-pipeline"
       industry="Manufacturing"
       industryLink="/industries/manufacturing"
       title="How a Manufacturer Built an IoT Platform for Predictive Maintenance"
-      subtitle="An industrial-equipment maker built a platform ingesting 2 million sensor events an hour across 8 facilities — enabling predictive maintenance, a 30% downtime reduction, and $1.8M in annual savings."
+      subtitle="An industrial-equipment maker built a platform ingesting 2 million sensor events an hour across 8 facilities — enabling predictive maintenance, a 30% downtime reduction, and far fewer emergency repair calls."
       heroImage="/images/industries/mfg-robotics.jpg"
       metrics={[
         { value: "30%", label: "Less Unplanned Downtime" },
-        { value: "$1.8M", label: "Annual Maintenance Savings" },
+        { value: "48–72 hrs", label: "Advance Failure Warning" },
         { value: "88%", label: "Failure Prediction Accuracy" }
       ]}
       clientContextTitle="Data Logged, Never Used"
       clientContextIntro="A mid-sized industrial-equipment manufacturer running 8 US production facilities faced mounting maintenance costs and unplanned downtime. Its 450 CNC machines, robotic arms, and conveyors generated sensor data — temperature, vibration, pressure, runtime — that was logged locally but never analyzed."
-      clientContextBody="Maintenance teams relied on reactive repairs and fixed schedules, so unexpected failures cost $85K per hour in lost production plus $15K per emergency service call. The company's 6-person IT team had no experience building IoT pipelines or ML for predictive maintenance. Leadership wanted an in-house cloud solution to centralize data from 1,200+ devices, monitor plant health in real time, and forecast failures 48–72 hours ahead — but lacked the specialized engineering talent."
+      clientContextBody="Maintenance teams relied on reactive repairs and fixed schedules, so every unexpected failure halted production by the hour and triggered costly emergency service calls. The company's 6-person IT team had no experience building IoT pipelines or ML for predictive maintenance. Leadership wanted an in-house cloud solution to centralize data from 1,200+ devices, monitor plant health in real time, and forecast failures 48–72 hours ahead — but lacked the specialized engineering talent."
       clientProfile={{
         industry: "Industrial Equipment Manufacturer",
         companySize: "8 Facilities",
@@ -31,8 +31,8 @@ export function ManufacturingIoTPipeline() {
       challenges={[
         {
           icon: AlertTriangle,
-          title: "$85K/hour downtime",
-          description: "Unexpected failures halted production, with emergency service calls averaging $15K each."
+          title: "Production-halting downtime",
+          description: "Unexpected failures stopped lines for hours, each one triggering a costly emergency service call."
         },
         {
           icon: LineChart,
@@ -90,8 +90,8 @@ export function ManufacturingIoTPipeline() {
         },
         {
           icon: DollarSign,
-          value: "$1.8M",
-          label: "Annual maintenance savings",
+          value: "Year one",
+          label: "Payback on the platform",
           detail: "From fewer emergencies and condition-based maintenance"
         }
       ]}

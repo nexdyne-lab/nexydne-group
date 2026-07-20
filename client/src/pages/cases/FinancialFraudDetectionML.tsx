@@ -1,5 +1,5 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Zap, BellOff, DollarSign, Network, Activity, ThumbsUp, ShieldAlert } from "lucide-react";
+import { Zap, BellOff, Network, Activity, ThumbsUp, ShieldAlert } from "lucide-react";
 
 export default function FinancialFraudDetectionML() {
   return (
@@ -15,7 +15,7 @@ export default function FinancialFraudDetectionML() {
       metrics={[
         { value: "40%", label: "Faster Fraud Detection" },
         { value: "65%", label: "Fewer False Positives" },
-        { value: "$18M", label: "Fraud Prevented / Year" }
+        { value: "3.2 pts", label: "Higher Approval Rates" }
       ]}
       clientContextTitle="Too Many Alarms, Too Little Insight"
       clientContextIntro="A regional bank processing 15M transactions monthly struggled with fraud detection that generated too many false alarms while missing sophisticated fraud rings. Its rule-based system flagged 8% of transactions for manual review, overwhelming analysts and blocking legitimate purchases."
@@ -89,10 +89,10 @@ export default function FinancialFraudDetectionML() {
           detail: "Manual review from 8% down to 2.8% of transactions"
         },
         {
-          icon: DollarSign,
-          value: "$18M",
-          label: "Fraud prevented / year",
-          detail: "With approval rates up 3.2 points"
+          icon: ThumbsUp,
+          value: "3.2 pts",
+          label: "Higher approval rates",
+          detail: "Legitimate purchases stopped being blocked as fraud"
         }
       ]}
       quote=""

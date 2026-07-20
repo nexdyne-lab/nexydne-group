@@ -23,7 +23,7 @@ export default function InsurerSitecoreMigration() {
       clientContextBody="The monolith tied content, presentation, and delivery into one tightly-coupled system, so the marketing and product teams could not move at the speed the business needed. Compliance-driven content updates — important in insurance — queued behind a slow release process, and the platform could not easily adopt modern channels or tools. The insurer needed to migrate to Sitecore's composable stack, decoupling content from delivery, but it had to do so in stages to avoid disrupting a live, regulated digital presence."
       clientProfile={{
         industry: "National Insurer",
-        companySize: "~$1.1B Annual Revenue",
+        companySize: "~900,000 Policyholders",
         projectDuration: "12 Months",
         additionalInfo: "Sitecore Composable Migration",
         additionalLabel: "Digital Platform"

@@ -31,17 +31,17 @@ const caseStudies = [
     industry: "Media & Entertainment",
     metrics: [
       { value: "40%", label: "Churn Reduction" },
-      { value: "$2.4M", label: "Retained Revenue" },
+      { value: "2.7%", label: "New Monthly Churn" },
     ],
   },
   {
-    title: "E-commerce Launch Drives $5M New Revenue",
+    title: "E-commerce Launch Wins 15,000 Direct Customers",
     client:
       "A 200-employee manufacturer launching direct-to-consumer channel",
     href: "/capabilities/growth-marketing-sales/case-studies/manufacturer-ecommerce",
     industry: "Manufacturing",
     metrics: [
-      { value: "$5M", label: "Year 1 Revenue" },
+      { value: "45%", label: "Gross Margin" },
       { value: "15K", label: "New Customers" },
     ],
   },

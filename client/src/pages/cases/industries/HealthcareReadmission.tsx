@@ -5,21 +5,21 @@ export default function HealthcareReadmission() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Cutting Avoidable Readmissions by 42% | Healthcare Case Study"
-      seoDescription="A community hospital network was paying millions in penalties for patients who kept coming back. Predicting who was truly at risk — and acting before discharge — cut avoidable readmissions by 42%."
+      seoDescription="A community hospital network was paying heavy federal penalties for patients who kept coming back. Predicting who was truly at risk — and acting before discharge — cut avoidable readmissions by 42%."
       canonical="/cases/healthcare-readmission"
       industry="Healthcare"
       industryLink="/industries/healthcare"
       title="How a Hospital Network Cut Avoidable Readmissions by 42%"
-      subtitle="The network was paying millions in penalties for patients who returned within weeks of going home. Learning to tell — before a patient left — who was genuinely at risk let its care teams put their effort where it would do the most good."
+      subtitle="The network was paying heavy penalties for patients who returned within weeks of going home. Learning to tell — before a patient left — who was genuinely at risk let its care teams put their effort where it would do the most good."
       heroImage="/images/cases/healthcare-readmission-hero.jpg"
       metrics={[
         { value: "42%", label: "Fewer Readmissions" },
         { value: "85%", label: "Prediction Accuracy" },
-        { value: "$28M", label: "Saved Each Year" },
+        { value: "50%", label: "Fewer False Alarms" },
         { value: "72 hrs", label: "Head Start on Risk" }
       ]}
       clientContextTitle="Paying for Patients Who Came Back"
-      clientContextIntro="A community hospital network — five hospitals serving a diverse population — was under growing financial pressure from federal penalties tied to readmissions. Too many patients treated for heart failure, pneumonia or a hip or knee replacement were back in a hospital bed within a month, and the resulting Medicare penalties were costing the network around $8 million a year."
+      clientContextIntro="A community hospital network — five hospitals serving a diverse population — was under growing financial pressure from federal penalties tied to readmissions. Too many patients treated for heart failure, pneumonia or a hip or knee replacement were back in a hospital bed within a month, and the resulting Medicare penalties had become a heavy annual burden."
       clientContextBody="The tools meant to catch these patients were doing the opposite. A simple set of rules flagged so many people as high-risk that care managers could not tell where to focus, while some of the patients who actually came back were never flagged at all. The network was spreading a limited care-management team thin across the wrong patients. What it needed was precision — a reliable way to know, before a patient walked out the door, which ones truly needed extra support."
       clientProfile={{
         industry: "Community Hospital Network",
@@ -33,7 +33,7 @@ export default function HealthcareReadmission() {
         {
           icon: AlertTriangle,
           title: "Penalties Adding Up",
-          description: "Around $8 million a year in federal penalties for patients readmitted within 30 days of going home."
+          description: "A heavy annual federal penalty for patients readmitted within 30 days of going home, growing year over year."
         },
         {
           icon: Target,
@@ -91,8 +91,8 @@ export default function HealthcareReadmission() {
         },
         {
           icon: DollarSign,
-          value: "$28M",
-          label: "Saved each year",
+          value: "Year one",
+          label: "Payback on the program",
           detail: "Penalties avoided plus the cost of readmissions prevented"
         },
         {
@@ -114,9 +114,9 @@ export default function HealthcareReadmission() {
           image: "/images/cases/healthcare-transformation-hero.jpg"
         },
         {
-          title: "Recovering $32M in Lost Revenue",
-          metric: "$32M",
-          label: "revenue recovered each year",
+          title: "Collecting What Was Already Owed",
+          metric: "45%",
+          label: "fewer rejected claims",
           link: "/cases/healthcare-revenue-cycle",
           image: "/case-healthcare-team.5797392b.jpg"
         }

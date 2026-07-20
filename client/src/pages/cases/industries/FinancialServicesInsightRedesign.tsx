@@ -23,7 +23,7 @@ export default function FinancialServicesInsightRedesign() {
       clientContextBody="The pack was the problem. It answered every question the analysts could think of rather than the few questions the executives needed to decide, and its sheer length guaranteed that busy leaders skimmed it and moved on. The insight team was working hard and producing volume, but the volume itself buried the signal. The CMO wanted the function rebuilt not around a deck but around decisions — a small set of the questions the leadership team actually needed answered, delivered in a form they would genuinely use."
       clientProfile={{
         industry: "Consumer Financial-Services Firm",
-        companySize: "~$400M Annual Revenue",
+        companySize: "~1,500 Employees",
         projectDuration: "4 Months",
         additionalInfo: "Insight Function Redesign",
         additionalLabel: "Executive Reporting"

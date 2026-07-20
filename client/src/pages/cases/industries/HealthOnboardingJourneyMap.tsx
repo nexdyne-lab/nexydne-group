@@ -23,7 +23,7 @@ export default function HealthOnboardingJourneyMap() {
       clientContextBody="The disagreement was itself the clue: the problem lived in the gaps between functions, where no single team could see it. A new member's journey crossed enrollment, ID-card fulfillment, and the welcome call, and the failures were at the handoffs between them — invisible from inside any one function's view. Without a reconstruction of the actual end-to-end journey, the organization was arguing from partial pictures. The carrier needed both qualitative discovery with real new members and a quantitative reconstruction across the systems, to make the broken handoffs visible and fixable."
       clientProfile={{
         industry: "Regional Health-Insurance Carrier",
-        companySize: "~$680M Annual Revenue",
+        companySize: "~500,000 Members",
         projectDuration: "4 Months",
         additionalInfo: "New-Member Onboarding",
         additionalLabel: "Journey Redesign"

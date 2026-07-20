@@ -5,17 +5,17 @@ export function SaaSProductAnalytics() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Lifting Trial-to-Paid Conversion 28% With Product Analytics | SaaS Case Study"
-      seoDescription="A B2B SaaS company converted only 18% of trials, blind to user behavior. A product-analytics dashboard found the onboarding friction, lifting conversion to 23% and adding $3.2M ARR."
+      seoDescription="A B2B SaaS company converted only 18% of trials, blind to user behavior. A product-analytics dashboard found the onboarding friction, lifting conversion to 23% and adding 50 paying customers a month."
       canonical="/cases/saas-product-analytics"
       industry="Technology, Media & Telecom"
       industryLink="/industries/technology-media-telecom"
       title="How a SaaS Company Lifted Trial-to-Paid Conversion 28%"
-      subtitle="Usage analytics identified friction points in the onboarding flow — driving targeted improvements that raised trial-to-paid conversion from 18% to 23% and added $3.2M in ARR."
+      subtitle="Usage analytics identified friction points in the onboarding flow — driving targeted improvements that raised trial-to-paid conversion from 18% to 23% and added 50 paying customers a month."
       heroImage="/images/cases/saas-product-analytics-hero.jpg"
       metrics={[
         { value: "28%", label: "Higher Trial-to-Paid Conversion" },
         { value: "23%", label: "Conversion Rate Achieved" },
-        { value: "$3.2M", label: "Additional ARR" }
+        { value: "+50", label: "Paying Customers Added Monthly" }
       ]}
       clientContextTitle="Flying Blind Through the Trial"
       clientContextIntro="A B2B SaaS company offering project-management software struggled with low trial-to-paid conversion — only 18% of trial users converted, well below the 25–30% industry benchmark. The product team had no visibility into user behavior during the trial."
@@ -84,9 +84,9 @@ export function SaaSProductAnalytics() {
         },
         {
           icon: DollarSign,
-          value: "$3.2M",
-          label: "Additional ARR",
-          detail: "From 50 more paying customers a month"
+          value: "+50",
+          label: "Paying customers a month",
+          detail: "With the dashboard paying for itself in the first quarter"
         },
         {
           icon: Filter,
@@ -95,7 +95,7 @@ export function SaaSProductAnalytics() {
           detail: "Refocusing go-to-market and lifting sales efficiency 40%"
         }
       ]}
-      quote="We were flying blind during the trial period. The analytics dashboard showed us exactly where users got stuck and which features drove conversion. We redesigned onboarding based on the data — completion rates jumped from 58% to 82%. Trial-to-paid conversion increased from 18% to 23%, adding $3.2M in ARR. The dashboard paid for itself in the first quarter."
+      quote="We were flying blind during the trial period. The analytics dashboard showed us exactly where users got stuck and which features drove conversion. We redesigned onboarding based on the data — completion rates jumped from 58% to 82%. Trial-to-paid conversion increased from 18% to 23%, adding roughly fifty new paying customers a month. The dashboard paid for itself in the first quarter."
       quoteAuthor="David Chen"
       quoteRole="VP of Product"
       relatedStudies={[

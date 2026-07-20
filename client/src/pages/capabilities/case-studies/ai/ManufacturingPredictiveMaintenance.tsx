@@ -5,18 +5,18 @@ export function ManufacturingPredictiveMaintenance() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Predictive Maintenance That Cut Downtime 45% | Manufacturing Case Study"
-      seoDescription="A metal fabricator spent 40% of its maintenance budget on reactive repairs with 8 breakdowns a month. AI predictive maintenance cut unplanned downtime 45% and saved $680K a year."
+      seoDescription="A metal fabricator spent 40% of its maintenance budget on reactive repairs with 8 breakdowns a month. AI predictive maintenance cut unplanned downtime 45% and maintenance costs 28%."
       canonical="/capabilities/artificial-intelligence/case-studies/manufacturing-predictive-maintenance"
       industry="Manufacturing"
       industryLink="/industries/manufacturing"
       title="How a Metal Fabricator Cut Unplanned Downtime 45% With Predictive Maintenance"
-      subtitle="A precision metal fabrication company used AI predictive maintenance across 45 machines and 3 facilities — cutting unplanned downtime 45%, saving 28% on maintenance, and $680K a year."
+      subtitle="A precision metal fabrication company used AI predictive maintenance across 45 machines and 3 facilities — cutting unplanned downtime 45% and maintenance costs 28%, at 92% prediction accuracy."
       heroImage="/images/industries/mfg-robotics.jpg"
       metrics={[
         { value: "45%", label: "Less Downtime" },
         { value: "28%", label: "Maintenance Cost Savings" },
         { value: "92%", label: "Prediction Accuracy" },
-        { value: "$680K", label: "Annual Savings" }
+        { value: "<1 yr", label: "Payback Period" }
       ]}
       clientContextTitle="Stuck in Reactive Mode"
       clientContextIntro="A precision metal fabrication company with 150 employees and 3 facilities serves automotive and aerospace customers with tight quality and delivery requirements. Across 45 major machines, it averaged 8 unplanned breakdowns a month — each meaning production delays, expedited shipping, and occasional quality issues from rushed restarts."
@@ -91,9 +91,9 @@ export function ManufacturingPredictiveMaintenance() {
         },
         {
           icon: DollarSign,
-          value: "$680K",
-          label: "Annual savings",
-          detail: "From maintenance, avoided losses, and quality costs"
+          value: "<1 yr",
+          label: "Payback period",
+          detail: "From lower maintenance costs, avoided losses, and quality gains"
         }
       ]}
       quote=""
