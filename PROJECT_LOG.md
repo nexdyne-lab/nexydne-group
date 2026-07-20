@@ -860,3 +860,10 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   8.4 content integrity) + wired into the Port-to-a-new-project checklist (item
   H) + pointer note over the dated updates. PROJECT_LOG stays the changelog;
   GROWTH doc is now the replication template.
+
+### 2026-07-21 — Proposition collage (6-frame manifesto image)
+- Facebook portrait 1080×1350 collage explaining the daily-lead proposition via
+  6 curated pool images (arc: human+data → AR-augmented → team judgment →
+  human+cobot build → governed server engine → red light-trail momentum) +
+  brand band "Using human intelligence to drive innovations." Template
+  social-tiles/fb-collage.html; output + caption in facebook-content/.
