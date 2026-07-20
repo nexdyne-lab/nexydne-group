@@ -337,7 +337,7 @@ export default function Home() {
             className="relative min-h-[260px] lg:min-h-0"
           >
             <img
-              src="/images/careers-hero.jpg"
+              src="/images/careers-hero2.jpg"
               alt="Careers at NexDyne"
               className="absolute inset-0 w-full h-full object-cover"
             />

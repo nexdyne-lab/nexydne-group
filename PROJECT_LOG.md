@@ -673,3 +673,9 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   → electric-blue Meydan bridge; Growth → amber Saigon roundabout light-trails.
   Old tiles were bright/off-spec vs the component's stated "charcoal dark
   authority" intent. Files /images/sol-card-*.jpg. Localhost-reviewed, approved.
+
+### 2026-07-20 — Homepage careers band image
+- Surfers-on-cliff shot replaced (read as leisure; also duplicated the
+  ma-failure-analysis article hero) with amber-teal glass-lobby professionals
+  in motion (/images/careers-hero2.jpg, q5 Drive pick). Localhost-reviewed,
+  approved.
