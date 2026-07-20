@@ -41,7 +41,7 @@ for (const [route, comp] of routes) {
     const subtitle = grab(src, "subtitle");
     const hero = grab(src, "heroImage");
     if (title) {
-      meta[route] = { title, description: subtitle || "", image: hero || "/og-image.jpg" };
+      meta[route] = { title, description: subtitle || "", image: hero || "/og-card-v2.jpg" };
       articles++;
     }
     continue;
@@ -54,7 +54,7 @@ for (const [route, comp] of routes) {
     const desc = grab(src, "seoDescription") || grab(src, "subtitle");
     const hero = grab(src, "heroImage");
     if (title) {
-      meta[route] = { title, description: desc || "", image: hero || "/og-image.jpg" };
+      meta[route] = { title, description: desc || "", image: hero || "/og-card-v2.jpg" };
       cases++;
     }
   }
@@ -67,7 +67,7 @@ for (const block of lm.split(/\n  "(?=[a-z0-9-]+": \{)/).slice(1)) {
   const title = block.match(/seoTitle: "([^"]+)"/)?.[1];
   const desc = block.match(/seoDescription:\s*\n?\s*"([^"]+)"/)?.[1];
   const og = block.match(/ogImage: "([^"]+)"/)?.[1];
-  if (slug && title) meta[`/resources/${slug}`] = { title, description: desc || "", image: og || "/og-image.jpg" };
+  if (slug && title) meta[`/resources/${slug}`] = { title, description: desc || "", image: og || "/og-card-v2.jpg" };
 }
 
 fs.writeFileSync(path.join(root, "client/public/og-meta.json"), JSON.stringify(meta, null, 1));

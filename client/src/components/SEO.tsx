@@ -13,7 +13,7 @@ export function SEO({
   title,
   description,
   canonical,
-  ogImage = '/og-image.jpg', // Default OG image if not provided
+  ogImage = '/og-card-v2.jpg', // Default OG image if not provided
   ogType = 'website',
   twitterCard = 'summary_large_image',
 }: SEOProps) {

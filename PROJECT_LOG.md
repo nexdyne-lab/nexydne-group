@@ -876,3 +876,13 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   of the daily-lead proposition (human as still center, tech swirling around),
   strongest brand-palette match, non-sector, distinctive. Reused canonical
   filename hero2-hig.jpg (centered focal, zoom 1.0). Temp candidates removed.
+
+### 2026-07-21 — Default OG card refreshed (hero photo, cache-busted)
+- Default social preview (homepage + any page without its own hero OG) changed
+  from the flat-charcoal card to the light-painting hero photo behind the same
+  brand text ("Human intelligence. Governed. Scaled." + tagline + badge), flat
+  veil for legibility (no gradient). Template social-tiles/og-default.html.
+- NEW FILENAME og-card-v2.jpg (not a content-swap of og-image.jpg) to bust
+  WhatsApp/FB OG caches. Repointed: index.html og:image+twitter:image,
+  SEO.tsx default ogImage, generate-og-meta.mjs 3 fallbacks. Pages with their
+  own hero OG unaffected (only 4 fallback routes + homepage use the default).

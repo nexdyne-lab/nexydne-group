@@ -42,7 +42,7 @@
  "/capabilities/artificial-intelligence/insights/ai-roi-framework": {
   "title": "The ROI of AI: What Mid-Size Companies Need to Know",
   "description": "A practical framework for measuring AI investment returns, with benchmarks from 50+ implementations at growing companies.",
-  "image": "/og-image.jpg"
+  "image": "/og-card-v2.jpg"
  },
  "/capabilities/artificial-intelligence/case-studies/insurance-document-ai": {
   "title": "Cutting Claims Processing Time 73% With Document AI | Insurance Case Study",
@@ -52,12 +52,12 @@
  "/capabilities/artificial-intelligence/insights/practical-ai-guide": {
   "title": "Building Your First AI Use Case: A Step-by-Step Guide",
   "description": "How to identify, validate, and implement your organization's first AI initiative without enterprise-level resources.",
-  "image": "/og-image.jpg"
+  "image": "/og-card-v2.jpg"
  },
  "/capabilities/artificial-intelligence/insights/ai-governance": {
   "title": "AI Governance for Growing Companies",
   "description": "Establishing responsible AI practices that scale with your business, from data privacy to algorithmic transparency.",
-  "image": "/og-image.jpg"
+  "image": "/og-card-v2.jpg"
  },
  "/capabilities/artificial-intelligence/case-studies/manufacturing-predictive-maintenance": {
   "title": "Predictive Maintenance That Cut Downtime 45% | Manufacturing Case Study",
@@ -907,7 +907,7 @@
  "/capabilities/operations/insights/lean-operations-scale": {
   "title": "Lean Operations for Mid-Size Companies: Beyond the Basics",
   "description": "Advanced lean techniques adapted for companies without dedicated continuous improvement teams.",
-  "image": "/og-image.jpg"
+  "image": "/og-card-v2.jpg"
  },
  "/capabilities/operations/insights/automation-roi": {
   "title": "The Automation ROI Calculator: Where to Invest First",
