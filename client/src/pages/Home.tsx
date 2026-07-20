@@ -83,7 +83,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="px-6 sm:px-10 lg:pl-14 lg:pr-16 py-12 lg:py-16"
+            className="pl-3 pr-6 md:pl-[76px] lg:pl-[100px] sm:pr-10 lg:pr-16 py-12 lg:py-16"
           >
             <div className="flex items-center gap-3 mb-7">
               <span className="block h-[3px] w-9 bg-amber" />
@@ -158,7 +158,7 @@ export default function Home() {
               "radial-gradient(44% 58% at 0% 100%, rgba(255,255,255,0.03) 0%, transparent 58%)",
           }}
         />
-        <div className="nx-band relative">
+        <div className="relative px-3 md:px-[76px] lg:px-[100px]">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
             {/* Left — 40%: statement + tab-aware CTA (the journey endpoint) */}
             <div className="lg:col-span-5">

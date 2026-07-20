@@ -799,3 +799,10 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   NonprofitDigitalTransformation 3x-vs-1.6x donor retention;
   TechEngineeringTransformation 3x vs monthly→daily; B2BDigitalMarketing
   "doubled" vs 3x math. Fix in a future content-accuracy pass.
+
+### 2026-07-21 — Homepage left-line alignment (logo line)
+- Hero headline, "Discover our capabilities" cell, and "Explore our core
+  areas" section unified on ONE left line = the nav logo's edge (px-3 /
+  md 76px / lg 100px, full-width, no centering cap). Measured 100/100/100/100
+  (hero/discover/explore/logo) at 1440. Chosen over the 56px variant after a
+  two-port A/B on localhost (headline no longer juts left of the wordmark).
