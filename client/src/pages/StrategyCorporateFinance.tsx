@@ -217,7 +217,7 @@ export default function StrategyCorporateFinance() {
         {
           industry: "Finance & Planning",
           cases: [
-            { slug: "fpa-forecasting-transformation", title: "Turning finance into a forecasting engine", metric: "Days", image: "/images/industries/advisor-charts.jpg" },
+            { slug: "fpa-forecasting-transformation", title: "Turning finance into a forecasting engine", metric: "Days, not weeks", image: "/images/industries/advisor-charts.jpg" },
             { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
             { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "40% more products per customer", image: "/images/cases/bank-cross-sell-hero.jpg" },
           ],

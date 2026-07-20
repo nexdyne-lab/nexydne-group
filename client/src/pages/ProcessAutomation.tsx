@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Zap, TrendingUp, Users, DollarSign, Target, CheckCircle2, Cog, FileText, Bot } from "lucide-react";
+import { ArrowRight, Zap, TrendingUp, Target, Cog, FileText, Bot } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navigation";

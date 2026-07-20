@@ -55,7 +55,7 @@ export default function BankSubjectRights() {
       quoteRole="Regional bank"
       relatedStudies={[
         { title: "How a National Retailer Cut Time-to-Insight by 70% With a Lakehouse", metric: "70%", label: "faster time-to-insight", link: "/cases/retailer-databricks-lakehouse", image: "/images/industries/retail-shelves.jpg" },
-        { title: "How an Asset Manager Let Portfolio Teams Ship Analytics in Days, Not Quarters", metric: "Days", label: "not quarters to ship analytics", link: "/cases/asset-manager-data-mesh", image: "/images/industries/fin-handshake-city.jpg" }
+        { title: "How an Asset Manager Let Portfolio Teams Ship Analytics in Days, Not Quarters", metric: "Days, not weeks", label: "not quarters to ship analytics", link: "/cases/asset-manager-data-mesh", image: "/images/industries/fin-handshake-city.jpg" }
       ]}
       ctaTitle="Are subject-rights requests a manual scramble?"
       ctaDescription="Let's wire the workflow into your catalog and CRM and make it fast and auditable."

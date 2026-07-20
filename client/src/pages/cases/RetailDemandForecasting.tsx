@@ -1,5 +1,5 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { PackageX, TrendingDown, LineChart, Boxes, Brain, CloudSun, Gauge, DollarSign } from "lucide-react";
+import { PackageX, LineChart, Boxes, Brain, Gauge, DollarSign } from "lucide-react";
 
 export function RetailDemandForecasting() {
   return (

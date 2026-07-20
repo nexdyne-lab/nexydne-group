@@ -108,7 +108,7 @@ export default function CapitalRaiseSeriesB() {
       relatedStudies={[
         {
           title: "Turning finance into a forecasting engine",
-          metric: "Days",
+          metric: "Days, not weeks",
           label: "faster close",
           link: "/cases/fpa-forecasting-transformation",
           image: "/images/industries/advisor-charts.jpg"

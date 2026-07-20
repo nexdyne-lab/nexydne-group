@@ -54,7 +54,7 @@ export default function RetailerDatabricksLakehouse() {
       quoteAuthor="VP of Analytics"
       quoteRole="National retailer"
       relatedStudies={[
-        { title: "How an Asset Manager Let Portfolio Teams Ship Analytics in Days, Not Quarters", metric: "Days", label: "not quarters to ship analytics", link: "/cases/asset-manager-data-mesh", image: "/images/industries/fin-handshake-city.jpg" },
+        { title: "How an Asset Manager Let Portfolio Teams Ship Analytics in Days, Not Quarters", metric: "Days, not weeks", label: "not quarters to ship analytics", link: "/cases/asset-manager-data-mesh", image: "/images/industries/fin-handshake-city.jpg" },
         { title: "How a Manufacturer Cut Its Reporting Cycle From 14 Days to 6 Hours", metric: "14 days → 6 hrs", label: "reporting cycle", link: "/cases/manufacturing-data-platform", image: "/images/industries/mfg-robot-arm.jpg" }
       ]}
       ctaTitle="Is fragmented data slowing your insight?"

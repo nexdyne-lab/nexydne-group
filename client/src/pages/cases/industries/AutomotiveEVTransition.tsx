@@ -90,10 +90,10 @@ export default function AutomotiveEVTransition() {
           detail: "Less scrap and rework on every part made"
         },
         {
-          icon: DollarSign,
+          icon: Zap,
           value: "Zero",
           label: "Launch delays",
-          detail: "Scrap and delay costs that never happened"
+          detail: "No scrap spikes, no missed launch windows"
         },
         {
           icon: Zap,

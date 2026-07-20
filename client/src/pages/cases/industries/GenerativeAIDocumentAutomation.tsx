@@ -1,5 +1,5 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Clock, FileText, Shield, DollarSign, Target, Zap } from "lucide-react";
+import { Clock, FileText, Shield, Target, Zap } from "lucide-react";
 
 export default function GenerativeAIDocumentAutomation() {
   return (
@@ -96,7 +96,7 @@ export default function GenerativeAIDocumentAutomation() {
           detail: "Fewer errors reaching review meant far less redoing"
         },
         {
-          icon: DollarSign,
+          icon: Clock,
           value: "Same-day",
           label: "Routine turnaround",
           detail: "Customers covered without waiting on paperwork"

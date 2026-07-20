@@ -1,5 +1,5 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Swords, Phone, Users, Timer, SearchCheck, Rocket, TrendingUp, DollarSign } from "lucide-react";
+import { Swords, Phone, Users, Timer, SearchCheck, Rocket, TrendingUp } from "lucide-react";
 
 export function EcommercePlatformLaunch() {
   return (

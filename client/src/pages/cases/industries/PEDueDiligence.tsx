@@ -19,7 +19,7 @@ export default function PEDueDiligence() {
         { value: "1", label: "Bad Deal Avoided" }
       ]}
       clientContextTitle="More Deals Than It Could Properly Assess"
-      clientContextIntro="A private equity fund investing in healthcare services reviewed well over a hundred opportunities a year but could run deep commercial diligence on only a handful. Each deep review took six to eight weeks and leaned heavily on outside consultants at a cost of several hundred thousand dollars. Good targets were lost to faster buyers, while effort was spent on deals that should have been set aside sooner."
+      clientContextIntro="A private equity fund investing in healthcare services reviewed well over a hundred opportunities a year but could run deep commercial diligence on only a handful. Each deep review took six to eight weeks and leaned heavily on outside consultants at meaningful cost in fees and deal momentum. Good targets were lost to faster buyers, while effort was spent on deals that should have been set aside sooner."
       clientContextBody="The work was also inconsistent. Every deal team built its diligence from scratch — sizing the market from costly research reports, gathering customer views ad hoc, and reaching a judgment in its own way. On a live acquisition — a multi-site provider of outpatient care — the fund wanted a clear, well-supported read in weeks rather than months, and it was not willing to lower the bar on rigour to get there."
       clientProfile={{
         industry: "Healthcare-Focused Private Equity",
@@ -48,7 +48,7 @@ export default function PEDueDiligence() {
         {
           icon: DollarSign,
           title: "Costly Outside Help",
-          description: "Several hundred thousand dollars of consultants per deal put a hard cap on how many could be assessed."
+          description: "A heavy consulting bill on every deal put a hard cap on how many could be assessed."
         }
       ]}
       approachTitle="A Faster, More Consistent Read"

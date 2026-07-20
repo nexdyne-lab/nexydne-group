@@ -786,3 +786,16 @@ outputs live in **`social-tiles/`** (project root, not `site-a-neutral/`).
   rendered-text dollar scan on 8 pages (clean except whitelisted second-person
   growth framing on one solutions page), 0 JS errors. Committed for David's
   review before push.
+
+### 2026-07-21 — De-monetization QC round 2 (adversarial verification)
+- Beyond tsc/build/tests: prose-literal artifact scan (clean) + 2 adversarial
+  agents read 30 random rewritten files end-to-end hunting defects. Found and
+  FIXED: duplicate stat badge (RetailModernizationPersonalization), 2 leftover
+  "several hundred thousand dollars" phrases (PEDueDiligence), bare
+  `metric:"Days"` in 21 files → "Days, not weeks", 3 orphaned DollarSign icons
+  + 1 mismatched tile detail, dead icon imports in 3 files.
+- BACKLOG (pre-existing, NOT from this edit): CaseStudyConsultingKnowledge
+  65-employee vs 1,800-consultant contradiction + 3x-vs-40% ramp + "analyzes";
+  NonprofitDigitalTransformation 3x-vs-1.6x donor retention;
+  TechEngineeringTransformation 3x vs monthly→daily; B2BDigitalMarketing
+  "doubled" vs 3x math. Fix in a future content-accuracy pass.

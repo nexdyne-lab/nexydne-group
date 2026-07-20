@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import { ArrowRight, TrendingUp, DollarSign, Target } from 'lucide-react';
+import { ArrowRight, TrendingUp, Target } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -40,7 +40,7 @@ export default function FractionalCFOCaseStudies() {
     },
     {
       id: 'saas-category-leadership',
-      icon: DollarSign,
+      icon: TrendingUp,
       title: 'Shifting Mindsets to Drive Performance',
       company: 'B2B SaaS Platform',
       industry: 'Software & Technology',

@@ -16,7 +16,7 @@ export function RetailModernizationPersonalization() {
         { value: "34%", label: "Revenue Increase" },
         { value: "47%", label: "Conversion Lift" },
         { value: "2.8x", label: "Email CTR Improvement" },
-        { value: "47%", label: "Conversion Lift" }
+        { value: "150+", label: "Stores on One Platform" }
       ]}
       clientContextTitle="Batch Systems in a Real-Time World"
       clientContextIntro="A national home-goods retailer with 150+ stores and a growing e-commerce presence faced mounting pressure from digital-native competitors offering personalized shopping. Its legacy stack — monolithic systems and overnight batch processing — made real-time personalization impossible across channels."
